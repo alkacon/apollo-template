@@ -1,0 +1,64 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd" />
+	<xsd:include
+		schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/sliderimage.xsd" />
+
+
+	<xsd:element name="ApolloSliders" type="OpenCmsApolloSliders" />
+
+	<xsd:complexType name="OpenCmsApolloSliders">
+		<xsd:sequence>
+			<xsd:element name="ApolloSlider" type="OpenCmsApolloSlider"
+				minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsApolloSlider">
+		<xsd:sequence>
+			<xsd:element name="Title" type="OpenCmsString" />
+			<xsd:element name="Delay" type="OpenCmsString" />
+			<xsd:element name="ShowTimer" type="OpenCmsBoolean" />
+			<xsd:element name="ShowNumbers" type="OpenCmsBoolean" />
+			<xsd:element name="ShowNavButtons" type="OpenCmsBoolean" />
+			<xsd:element name="ShowPlayButton" type="OpenCmsBoolean" />
+			<xsd:element name="TextColor" type="OpenCmsColor" />
+			<xsd:element name="TextBackgroundColor" type="OpenCmsColor"
+				minOccurs="0" />
+			<xsd:element name="ImageHeight" type="OpenCmsString" />
+			<xsd:element name="Image" type="OpenCmsApolloSliderImage"
+				minOccurs="1" maxOccurs="20" />
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="required" />
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="org.opencms.apollo.template.schemas.slider" />
+			<layouts>
+				<layout element="Delay" widget="SelectorWidget"
+					configuration="1000:1 %(key.apollo.slider.delay.sec)|2000:2 %(key.apollo.slider.delay.secs)|3000:3 %(key.apollo.slider.delay.secs)|5000:5 %(key.apollo.slider.delay.secs)|8000:8 %(key.apollo.slider.delay.secs)|10000:10 %(key.apollo.slider.delay.secs)|15000:15 %(key.apollo.slider.delay.secs)" />
+			</layouts>
+			<defaults>
+				<default element="Delay" value="5000" />
+				<default element="ShowTimer" value="true" />
+				<default element="ShowNumbers" value="true" />
+				<default element="TextColor" value="#FFFFFF" />
+				<default element="TextBackgroundColor" value="#BBA746" />
+				<default element="ImageHeight" value="277" />
+				<default element="Image/Position/Top" value="55" />
+				<default element="Image/Position/Left" value="10" />
+			</defaults>
+			<mappings>
+				<mapping element="Title" mapto="property:Title" />
+			</mappings>
+			<tabs>
+				<tab element="Title" collapse="false" name="TabConfig" />
+				<tab element="Image" collapse="false" name="TabImages" />
+			</tabs>
+			<searchsettings containerPageOnly="true" />
+		</xsd:appinfo>
+	</xsd:annotation>
+
+</xsd:schema>

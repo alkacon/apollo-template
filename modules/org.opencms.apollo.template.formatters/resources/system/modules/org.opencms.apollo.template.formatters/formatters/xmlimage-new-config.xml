@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Standard XML image formatter]]></NiceName>
+    <Type><![CDATA[xmlimage]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-new.jsp]]></target>
+        <uuid>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[5000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[default]]></ContainerType>
+        <ContainerType><![CDATA[image]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>false</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>false</Detail>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[cssClass]]></PropertyName>
+      <DisplayName><![CDATA[Wrapper CSS class]]></DisplayName>
+      <Description><![CDATA[Optional CSS class name for the outer <div> element.]]></Description>
+      <Widget><![CDATA[combo]]></Widget>
+      <WidgetConfig><![CDATA[mb-20 box-shadow shadow-effect-1:Shadow box for image|box-shadow shadow-effect-2 rounded-2x:Rounded shadow box for image]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[cssShape]]></PropertyName>
+      <DisplayName><![CDATA[Image CSS class]]></DisplayName>
+      <Widget><![CDATA[combo]]></Widget>
+      <WidgetConfig><![CDATA[img-bordered:Bordered image|rounded-2x:Rounded image|img-bordered rounded-x:Bordered round image]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showtext]]></PropertyName>
+      <DisplayName><![CDATA[Text display]]></DisplayName>
+      <Description><![CDATA[Select how text will be shown.]]></Description>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[false]]></Default>
+      <WidgetConfig><![CDATA[false:Don't show the text|true:Text below, left aligned]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

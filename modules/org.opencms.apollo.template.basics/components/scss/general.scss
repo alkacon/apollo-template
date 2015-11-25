@@ -1,0 +1,540 @@
+//
+// Alkacon Apollo SCSS.
+// 
+// Generic helpers. 
+//
+
+//Screen sizes (https://github.com/twbs/bootstrap/blob/master/less/variables.less)
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+//Returns a readable color depending on the given color 
+@function set-text-color($color) {
+  @if (lightness($color) > 60) {
+    @return $text-dark; 
+  } @else {
+    @return $text-light; 
+  }
+}
+
+
+/* Empty container markers.
+----------------------------------------------------------------------------- */
+
+// OpenCms roles and their matching colors  
+$oc-container-types:
+(
+ (jsp, $red-lighter),        
+ (template, $orange-lighter),         
+ (layout, $gray-light),         
+ (detailonly, $blue-lighter),         
+); 
+
+$oc-container-labels:
+(
+ (developer, $red),         
+ (editor, $orange),         
+ (author, $blue),         
+ (detail, $cyan),
+ (detailonly, $green),         
+ (special, $red-light),         
+); 
+
+%oc-container-type {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;  
+    
+    h1 {
+        font-size: 22px;
+        font-weight: 400;
+        margin: 5px;
+    }  
+    p {
+        margin: 5px;
+        font-size: 14px;        
+    } 
+}
+
+%oc-container-label {
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    top: -5px;
+    padding: 2px 5px;
+    margin-left: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;  
+    color: $white;             
+} 
+
+@each $type-name, $bg-color in $oc-container-types {
+    .oc-container-#{""+$type-name} {
+        @extend %oc-container-type;        
+        background-color: rgba($bg-color, 0.75);      
+    }
+}
+
+@each $role-name, $label-color in $oc-container-labels {      
+	.oc-label-#{""+$role-name} {
+	    @extend %oc-container-label;  
+	    background-color: $label-color;        
+	}  
+}
+
+.oc-modelinfo {
+    border: 2px solid $gray;  
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.oc-modelinfo .alert {
+    margin: 0 0 10px 0;   
+}
+
+/* Generic helpers. For further information please read css-doc.md
+----------------------------------------------------------------------------- */
+
+//backgrounds
+$colors: ((
+	'white', $white),(        
+	'black', $black),(   
+	'blue', $blue),(      
+	'blue-light', $blue-light),(     
+	'blue-lighter', $blue-lighter),(   
+	'blue-dark', $blue-dark),( 
+	'blue-darker', $blue-darker),(   
+	'red', $red),(       
+	'red-light', $red-light),( 
+	'red-lighter', $red-lighter),(     
+	'red-dark', $red-dark),(  
+	'red-darker', $red-darker),(
+	'orange', $orange),(    
+	'orange-light', $orange-light),(    
+	'orange-lighter', $orange-lighter),(  
+	'orange-dark', $orange-dark),(      
+	'orange-darker', $orange-darker),(    
+	'cyan', $cyan),(     
+	'grey', $gray),(     
+	'grey-lighter', $gray-lighter),(      
+	'grey-light', $gray-light),(  
+	'grey-dark', $gray-dark),( 
+	'grey-darker', $gray-darker),(       
+	'sea', $sea),(			
+	'yellow', $yellow),(
+	'blue-cyan', $blue-cyan),(
+	'violet', $violet),(    
+	'brown', $brown),(   
+	'red-orange', $red-orange),(       
+	'red-cyan', $red-cyan),(
+	'green', $green),(  
+	'green-light', $green-light)
+);		
+
+@each $name, $color in $colors {
+	.bg-#{$name}{
+		background-color: $color;
+		color: set-text-color($color);
+		h2,h3,h4, p, li, .fa{				
+			color: set-text-color($color);
+			text-decoration: none;
+			border: none;
+			background-color: $color;			
+		}
+		a{
+			color: lighten(set-text-color($color), 50%);	
+			&:hover,&:active, &:focus, &:hover{
+				color: set-text-color($color);
+			}
+		}
+		.headline{
+			border: none;			
+			h2,h3{
+				border: none;			
+			}
+		}
+	
+		&.h-u{	
+			.headline{		
+				padding-bottom: 10px;
+				border-bottom: 1px solid lighten(set-text-color($color), 50%);
+			}
+		}	
+		&.h-c{	
+			.headline{		
+				text-align: center;
+			}
+		}	
+	}	
+}
+@for $i from 1 through 9 {
+	@each $name, $color in $colors {
+		.bg-#{$name}-#{$i}{
+			background-color: rgba($color,$i/10);
+			color: set-text-color($color);
+		}	
+	}
+}
+
+//borders
+
+@for $line-size from 1 through 10 {  
+	@each $style in (solid, dashed, dotted) {    
+		@each $name, $color in $colors {
+	 		.b-#{$name}-#{$line-size}-#{$style}  {    
+        		border: $color #{$line-size}px $style;  
+        	}
+        	@each $n, $side in ((t,top), (r,right), (b,bottom), (l, left)) {
+        		.b#{$n}-#{$name}-#{$line-size}-#{$style}  {    
+        			border-#{$side}: $color #{$line-size}px $style !important;  
+        		}
+        	}
+        }     
+    }    
+}
+
+@for $radius from 1 through 30 {    
+	.br-#{$radius}  {
+        border-radius: #{$radius}px;                    
+    }
+    @each $n, $side in ((tl,top-left), (tr,top-right), (bl,bottom-left), (br, bottom-right)) {
+	    .br#{$n}-#{$radius}  {    	
+	    	border-#{$side}-radius: #{$radius}px !important;
+	    }
+	}
+}
+
+//font
+
+//Alignment
+@each $align in (left, center, right) {
+	.fa-#{$align} {
+		text-align: $align;
+	}
+}
+
+
+//sizes
+@each $fontsize in (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 26, 28, 30, 36, 48, 72) {
+    .fs-#{$fontsize} {
+        font-size: #{$fontsize}px;
+    } 
+}
+
+//color (also if it's a link)
+@each $name, $color in $colors {
+	.fc-#{$name}{
+		color: $color;
+		&.a, p, h2, .fa{
+			color: $color;		
+		}
+	}
+}
+
+
+
+//link color
+@each $name, $color in $colors {
+	.lc-#{$name}{
+		a, &.a{
+			color: $color;		
+		}
+	}
+	.lch-#{$name}{
+		a, &.a{
+		 &:hover, &:active, &:focus, &:hover{
+				color: $color;	
+			}	
+		}
+	}
+}
+.l-nu {
+	a, &.a{
+		text-decoration: none;
+	}
+}	
+
+//line height
+@each $lineheight in (10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) {
+    .lh-#{$lineheight} {
+        line-height: #{$lineheight/10};
+    } 
+}
+
+//margin, padding
+@each $space in (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 500, 1000, 2000) {
+
+	.pl-#{$space} {
+	    padding-left: #{$space}px;
+	}
+    .pr-#{$space} {
+        padding-right: #{$space}px;
+    }
+    .pt-#{$space} {
+        padding-top: #{$space}px;
+    }       
+    .pb-#{$space} {
+        padding-bottom: #{$space}px;
+    }    
+	.mt-#{$space} {
+	    margin-top: #{$space}px;
+	}    	
+    .mb-#{$space} {
+        margin-bottom: #{$space}px;
+    }
+    .mr-#{$space} {
+        margin-right: #{$space}px;
+    }       
+    .ml-#{$space} {
+        margin-left: #{$space}px;
+    }
+    .mv-#{$space} {
+        margin-top: #{$space}px;
+        margin-bottom: #{$space}px;
+    }	
+    .pv-#{$space} {
+        padding-top: #{$space}px;
+        padding-bottom: #{$space}px;
+    }   
+    .mh-#{$space} {
+        margin-left: #{$space}px;
+        margin-right: #{$space}px;
+    }   
+    .ph-#{$space} {
+        padding-left: #{$space}px;
+        padding-right: #{$space}px;
+    }
+    .p-#{$space} {
+        padding: #{$space}px;
+    }
+    .m-#{$space} {
+        margin: #{$space}px;
+    }  
+}
+
+
+//square and tile grid
+   
+.square {
+	.inner{
+		float:left;
+		position: relative;
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:cover;
+		overflow: hidden;
+		a{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&:hover .title{
+		bottom: 0;
+		transition: bottom 1s;				
+	}	
+	.title{
+	    padding: 10px;
+	    color: #fff;
+	    background-color: rgba(0,0,0,0.2);
+	    position: absolute;
+	    bottom: -100px;
+	    width: 100%;
+	    transition: bottom 1s;
+	}
+	
+	.content{
+		position: absolute;	
+		padding: 0;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}    
+
+.tile { 
+    float: left;
+    position: relative;
+    min-height: 1px;
+    white-space: nowrap;
+}
+
+$maxCols: 12; 
+@mixin make-square($size)   {  
+	@for $i from 1 through $maxCols{ 
+		$width: 100/($maxCols/$i);
+		$margin: 2;
+		@if $i == $maxCols {
+			$margin: 0;	
+		}	
+	
+		.square-#{$size}-#{$i} {
+			.inner{
+					width: calc(#{$width}% - #{$margin*2}px);
+					padding-bottom : calc(#{$width}% - #{$margin*2}px);	
+					@if $i == $maxCols {
+						margin: 2px 0;	
+					}@else{
+						margin: #{$margin}px;						
+					}			
+			}
+		}
+	}
+}
+
+@mixin make-tile($size)   {  
+	@for $i from 1 through $maxCols{ 
+		$width: 100/($maxCols/$i);
+		$margin: 2;
+		$padding: 10;
+		@if $i == $maxCols {
+			$margin: 0;	
+		}
+	
+		.tile-#{$size}-#{$i} {
+			width: calc(#{$width}% - #{$margin*2}px);
+			@if $i == $maxCols {
+				margin: 2px 0;	
+			}@else{
+				margin: #{$margin}px;
+				padding: 0 #{$padding}px
+					
+								
+			}			
+		}
+	}
+}
+
+@each $size in (xs,sm,md,lg){
+@for $i from 1 through $maxCols{ 
+		.square-#{$size}-#{$i} {
+			@extend .square;
+		}
+		@include make-square($size);
+		.tile-#{$size}-#{$i} {
+			@extend .tile;
+		}
+		@include make-tile($size);		
+	}
+}
+@include make-square(xs);		
+@include make-tile(xs);		
+
+@media (min-width: $screen-sm-min){	
+	@include make-square(sm);	
+	@include make-tile(sm);
+}	
+@media (min-width: $screen-md-min){	
+	@include make-square(md);
+	@include make-tile(md);
+}		
+@media (min-width: $screen-lg-min){	
+	@include make-square(lg);
+	@include make-tile(lg);
+}		
+
+//Image gallery animation
+.comein {
+ 	transform: translateY(150px);
+	animation: come-in 0.8s ease forwards;
+	&:nth-child(odd) {
+  		animation-duration: 0.6s; /* So they look staggered */
+	}
+}
+
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+//spinner animation
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner{
+	width: 25px;	
+	height: auto;
+	font-size: 25px;
+	position: absolute;
+	transform: translateY(-50%);
+	&, a &  {
+		color: $gray;
+	}
+	
+	left: 50%;
+	i{
+		animation: spinner 1s infinite;
+	}
+}
+      
+
+/* Social color helpers.
+----------------------------------------------------------------------------- */
+
+// Social general colors
+$social-links-bg: transparent;
+$social-links-border: #737373;
+$social-links-text: #d6d6d6;
+$social-links-text-hover: #ffffff;
+
+// Fixed social colors
+$color-facebook:    #3b5998;
+$color-googleplus:  #dd4b39;
+$color-youtube:     #b31217;
+$color-twitter:     #55acee;
+$color-linkedin:    #0976b4;
+$color-github:      #777777;
+$color-slideshare:  #e98325;
+$color-xing:        #126567;
+$color-rss:         #ee802f;
+
+// Map to generate the social icon styles with
+$social-links:  (facebook, $color-facebook),  
+                (googleplus, $color-googleplus), 
+                (youtube, $color-youtube), 
+                (twitter, $color-twitter), 
+                (github, $color-github),
+                (xing, $color-xing),
+                (rss, $color-rss),
+                (slideshare, $color-slideshare);
+                
+.social-links li a {
+    color: $social-links-text;
+    background-color: transparent;
+    border-color: $social-links-border;
+}
+.social-links li a:hover {
+    color: $social-links-text-hover;
+    background-color: $social-links-border;
+    border-color: $social-links-border;
+}
+
+@each $social-link, $social-color in $social-links {
+.social-links li.#{$social-link} a:hover,
+.colored.social-links li.#{$social-link} a {
+        background-color: $social-color;
+        border-color: $social-color;
+        color: $social-links-text-hover;
+    }
+}
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloTexts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/text.xsd">
+  <ApolloText language="en">
+    <Headline><![CDATA[Documentation]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>The central documentation source on the web, including a detailed HTML documentation.</p>]]></content>
+    </Text>
+    <Link>
+      <Text><![CDATA[Documentation]]></Text>
+      <URI>
+        <link internal="false" type="WEAK">
+          <target><![CDATA[http://documentation.opencms.org/]]></target>
+        </link>
+      </URI>
+    </Link>
+  </ApolloText>
+</ApolloTexts>

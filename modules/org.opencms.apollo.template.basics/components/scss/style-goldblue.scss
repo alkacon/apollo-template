@@ -1,0 +1,70 @@
+//
+// Alkacon Apollo SCSS.
+// 
+// Main file - GOLD BLUE theme 
+//
+
+/*
+ * Alkacon Apollo CSS - GOLD BLUE theme
+ *
+ * -----------------------------------------------------------------------------
+ * 
+ * Alkacon Software - The OpenCms experts. 
+ *
+ * http://www.alkacon.com
+ * http://www.opencms.org
+ */
+ 
+// Import default colors
+@import 'defaultcolors'; 
+
+$blue: #003374;
+$blue-light: lighten($blue, 40%);
+$blue-lighter: lighten($blue, 60%);
+
+$gold: #BEAA41;
+$gold-light: #F0EBCC;
+$gold-lighter: #FFFDEE;
+
+// Main theme colors
+$main-theme: $gold;
+$main-theme-hover: $gold-light;
+$main-theme-additional: $gold-lighter;
+
+// Navigation colors
+
+$nav-main-bg: $white;
+$nav-main-color: $blue;
+$nav-main-bg-hover: $white;
+$nav-main-color-hover: $gold;
+$nav-main-bg-active: $white;
+$nav-main-color-active: $gold;
+
+$nav-sub-divider: $white;
+$nav-sub-bg: $gold;
+$nav-sub-color: $white;
+$nav-sub-bg-hover: $gold-light;
+$nav-sub-color-hover: $gold;
+$nav-sub-bg-active: $gold-light;
+$nav-sub-color-active: $gold;
+
+$nav-left-bg: $gold-light;
+$nav-left-color: $text-dark;
+$nav-left-bg-hover: $gold;
+$nav-left-color-hover:$white;
+$nav-left-bg-active: $white;
+$nav-left-color-active: $gold;
+
+$nav-left-sub-color: $text-dark;
+$nav-left-sub-color-active: $text-dark;
+$nav-left-sub-color-hover: $text-dark;
+$nav-left-sub-bg: $gold-lighter;
+
+// Import the other files
+@import 'imports';
+
+//Special settings for this theme
+.header .dropdown-menu{
+	border-bottom-color: $gold;
+}
+

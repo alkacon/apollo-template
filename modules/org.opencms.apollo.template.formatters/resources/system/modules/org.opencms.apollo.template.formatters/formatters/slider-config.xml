@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Simple Slider standard formatter]]></NiceName>
+    <Type><![CDATA[a-slider]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/slider.jsp]]></target>
+        <uuid>b741cb4c-73c2-11e5-92dc-15b01ffdc6a6</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[1000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[default]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>true</Detail>
+    <NestedContainers>false</NestedContainers>
+    <HeadIncludeCss>
+      <CssLink>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/css/settings.css]]></target>
+          <uuid>66da3603-7ccb-11e5-8038-0242ac11002b</uuid>
+        </link>
+      </CssLink>
+    </HeadIncludeCss>
+    <HeadIncludeJs>
+      <JavascriptLink>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js]]></target>
+          <uuid>678ae88a-7ccb-11e5-8038-0242ac11002b</uuid>
+        </link>
+      </JavascriptLink>
+      <JavascriptLink>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js]]></target>
+          <uuid>67806138-7ccb-11e5-8038-0242ac11002b</uuid>
+        </link>
+      </JavascriptLink>
+      <JavascriptInline><![CDATA[createBanner();]]></JavascriptInline>
+    </HeadIncludeJs>
+  </NewFormatter>
+</NewFormatters>

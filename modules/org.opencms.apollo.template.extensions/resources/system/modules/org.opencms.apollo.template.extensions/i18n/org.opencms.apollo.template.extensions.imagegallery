@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.Title]]></Key>
+      <Value><![CDATA[Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.Title.help]]></Key>
+      <Value><![CDATA[Der Titel der Bildergallerie.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.default.Title]]></Key>
+      <Value><![CDATA[Neue Bildergallerie]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageFolder]]></Key>
+      <Value><![CDATA[Ordner]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageFolder.help]]></Key>
+      <Value><![CDATA[Ordner der die Bilder enthält.]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="en">
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.Title]]></Key>
+      <Value><![CDATA[Title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.Title.help]]></Key>
+      <Value><![CDATA[The title of the image gallery.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.default.Title]]></Key>
+      <Value><![CDATA[New image gallery]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageFolder]]></Key>
+      <Value><![CDATA[Folder]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageFolder.help]]></Key>
+      <Value><![CDATA[Folder which contains the images. ]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageLarge]]></Key>
+      <Value><![CDATA[Large image width]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageLarge.help]]></Key>
+      <Value><![CDATA[Width of the scaled large image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageMiddle]]></Key>
+      <Value><![CDATA[Middle image width]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageMiddle.help]]></Key>
+      <Value><![CDATA[Width of the scaled middle image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageSmall]]></Key>
+      <Value><![CDATA[Small image width]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageSmall.help]]></Key>
+      <Value><![CDATA[Width of the scaled small image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.message.new]]></Key>
+      <Value><![CDATA[Please add a folder.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.message.prev]]></Key>
+      <Value><![CDATA[Previous]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.message.next]]></Key>
+      <Value><![CDATA[Next]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.message.more]]></Key>
+      <Value><![CDATA[More images]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.message.empty]]></Key>
+      <Value><![CDATA[No images found.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.message.edit]]></Key>
+      <Value><![CDATA[Element was edited, page will be reloaded.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.error.imagesize]]></Key>
+      <Value><![CDATA[Please use only numbers!]]></Value>
+    </Message>
+  </Bundle>
+</XmlVfsBundles>

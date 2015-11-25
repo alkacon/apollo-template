@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Sample formatter for Generates an image gallery from a given folder.]]></NiceName>
+    <Type><![CDATA[a-imagegallery]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.extensions/formatters/imagegallery.jsp]]></target>
+        <uuid>68958b5e-8f73-11e5-9ae7-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[1000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[container]]></ContainerType>
+        <ContainerType><![CDATA[default]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>true</Detail>
+    <NestedContainers>false</NestedContainers>
+    <HeadIncludeJs>
+      <JavascriptInline><![CDATA[
+				init();
+			]]></JavascriptInline>
+    </HeadIncludeJs>
+    <Setting>
+      <PropertyName><![CDATA[imagesPerPage]]></PropertyName>
+      <DisplayName><![CDATA[Images per page]]></DisplayName>
+      <Description><![CDATA[Set a number how much images shall be shown per page.]]></Description>
+      <Widget><![CDATA[string]]></Widget>
+      <Default><![CDATA[20]]></Default>
+      <RuleRegex><![CDATA[[0-9]+]]></RuleRegex>
+      <RuleType><![CDATA[error]]></RuleType>
+      <Error><![CDATA[Only numbers please.]]></Error>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showTitle]]></PropertyName>
+      <DisplayName><![CDATA[Show title]]></DisplayName>
+      <Description><![CDATA[Show the image title.]]></Description>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[cssClass]]></PropertyName>
+      <DisplayName><![CDATA[Wrapper CSS class]]></DisplayName>
+      <Description><![CDATA[CSS class name for the images <div> elements.]]></Description>
+      <Widget><![CDATA[string]]></Widget>
+      <Default><![CDATA[square-xs-12 square-md-3]]></Default>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

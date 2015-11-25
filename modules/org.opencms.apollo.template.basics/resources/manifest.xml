@@ -1,0 +1,3290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<infoproject>Offline</infoproject>
+		<export_version>10</export_version>
+	</info>
+	<module>
+		<name>org.opencms.apollo.template.basics</name>
+		<nicename><![CDATA[Apollo Template Basics]]></nicename>
+		<group>Apollo Template</group>
+		<class/>
+		<export-mode name="reduced"/>
+		<description><![CDATA[Contains the necessary components used by the Apollo template.]]></description>
+		<version>10.0.0</version>
+		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
+		<authoremail/>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies>
+			<dependency name="org.opencms.ade.config" version="10.0.0"/>
+			<dependency name="org.opencms.jsp.search" version="10.0.0"/>
+		</dependencies>
+		<exportpoints>
+			<exportpoint uri="/system/modules/org.opencms.apollo.template.basics/git-scripts/module-checkin.conf" destination="WEB-INF/git-scripts/module-checkin.conf"/>
+		</exportpoints>
+		<resources>
+			<resource uri="/system/modules/org.opencms.apollo.template.basics/"/>
+		</resources>
+		<excluderesources/>
+		<parameters/>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics</destination>
+			<type>folder</type>
+			<uuidstructure>96f41b8b-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 08:35:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/elements</destination>
+			<type>folder</type>
+			<uuidstructure>d2270501-91c7-11e5-aada-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 23 Nov 2015 09:51:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/elements/photoswipe.html</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/elements/photoswipe.html</destination>
+			<type>plain</type>
+			<uuidstructure>da0295f3-91c7-11e5-aada-0242ac11002b</uuidstructure>
+			<uuidresource>da0295f4-91c7-11e5-aada-0242ac11002b</uuidresource>
+			<datecreated>Mon, 23 Nov 2015 09:52:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/git-scripts</destination>
+			<type>folder</type>
+			<uuidstructure>dc83c608-5d6d-11e5-96ab-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 17 Sep 2015 18:56:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/git-scripts/module-checkin.conf</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/git-scripts/module-checkin.conf</destination>
+			<type>plain</type>
+			<uuidstructure>1a9dc0da-5d6e-11e5-96ab-0242ac11002b</uuidstructure>
+			<uuidresource>1a9dc0db-5d6e-11e5-96ab-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Sep 2015 18:58:37 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Demo config for the module check in]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources</destination>
+			<type>folder</type>
+			<uuidstructure>9700c5bd-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 08:35:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>export</name>
+					<value><![CDATA[true]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap-paginator</destination>
+			<type>folder</type>
+			<uuidstructure>41533bf9-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:09:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap-paginator/bootstrap-paginator.min.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap-paginator/bootstrap-paginator.min.js</destination>
+			<type>plain</type>
+			<uuidstructure>415ba06b-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>415ba06c-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:09:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap</destination>
+			<type>folder</type>
+			<uuidstructure>264285d1-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:08:17 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css</destination>
+			<type>folder</type>
+			<uuidstructure>3068ca17-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:08:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css/bootstrap-theme.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css/bootstrap-theme.css</destination>
+			<type>plain</type>
+			<uuidstructure>3081d05d-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>3081d05e-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css/bootstrap-theme.css.map</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css/bootstrap-theme.css.map</destination>
+			<type>plain</type>
+			<uuidstructure>30941fdf-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>30941fe0-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css/bootstrap-theme.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css/bootstrap-theme.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>30a2ecf1-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>30a2ecf2-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css/bootstrap.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css/bootstrap.css</destination>
+			<type>plain</type>
+			<uuidstructure>30b5d8b3-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>30b5d8b4-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css/bootstrap.css.map</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css/bootstrap.css.map</destination>
+			<type>plain</type>
+			<uuidstructure>30c84f45-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>30c84f46-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css/bootstrap.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/css/bootstrap.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>30dc2567-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>30dc2568-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/fonts</destination>
+			<type>folder</type>
+			<uuidstructure>306f80d9-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:08:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/fonts/glyphicons-halflings-regular.eot</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/fonts/glyphicons-halflings-regular.eot</destination>
+			<type>plain</type>
+			<uuidstructure>30f13409-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>30f1340a-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/fonts/glyphicons-halflings-regular.svg</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/fonts/glyphicons-halflings-regular.svg</destination>
+			<type>plain</type>
+			<uuidstructure>3100282b-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>3100282c-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/fonts/glyphicons-halflings-regular.ttf</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/fonts/glyphicons-halflings-regular.ttf</destination>
+			<type>plain</type>
+			<uuidstructure>311584ed-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>311584ee-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/fonts/glyphicons-halflings-regular.woff</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/fonts/glyphicons-halflings-regular.woff</destination>
+			<type>plain</type>
+			<uuidstructure>3127ad5f-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>3127ad60-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/fonts/glyphicons-halflings-regular.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/fonts/glyphicons-halflings-regular.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>313a9921-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>313a9922-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/js</destination>
+			<type>folder</type>
+			<uuidstructure>3077490b-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:08:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/js/bootstrap.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/js/bootstrap.js</destination>
+			<type>plain</type>
+			<uuidstructure>314d0fb3-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>314d0fb4-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/js/bootstrap.min.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/js/bootstrap.min.js</destination>
+			<type>plain</type>
+			<uuidstructure>31610ce5-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>31610ce6-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/js/npm.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/bootstrap/js/npm.js</destination>
+			<type>plain</type>
+			<uuidstructure>3174e307-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>3174e308-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:08:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/compatibility</destination>
+			<type>folder</type>
+			<uuidstructure>fd6c7cdc-515a-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 10:11:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/compatibility/html5shiv.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/compatibility/html5shiv.js</destination>
+			<type>plain</type>
+			<uuidstructure>163824de-515b-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>163824df-515b-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 10:12:16 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/compatibility/placeholder-IE-fixes.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/compatibility/placeholder-IE-fixes.js</destination>
+			<type>plain</type>
+			<uuidstructure>16423700-515b-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>16423701-515b-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 10:12:16 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/compatibility/respond.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/compatibility/respond.js</destination>
+			<type>plain</type>
+			<uuidstructure>164f5662-515b-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>164f5663-515b-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 10:12:16 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css</destination>
+			<type>folder</type>
+			<uuidstructure>cf505ca3-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 08:37:13 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/critical.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/critical.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>54787b38-7e0b-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>54787b39-7e0b-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Thu, 29 Oct 2015 07:04:43 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/default-skin.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/default-skin.png</destination>
+			<type>image</type>
+			<uuidstructure>46ed70b2-8f80-11e5-a6ad-0242ac11002b</uuidstructure>
+			<uuidresource>46ed70b3-8f80-11e5-a6ad-0242ac11002b</uuidresource>
+			<datecreated>Fri, 20 Nov 2015 12:14:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:264,h:88]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/default-skin.svg</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/default-skin.svg</destination>
+			<type>plain</type>
+			<uuidstructure>46d66640-8f80-11e5-a6ad-0242ac11002b</uuidstructure>
+			<uuidresource>46d66641-8f80-11e5-a6ad-0242ac11002b</uuidresource>
+			<datecreated>Fri, 20 Nov 2015 12:14:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/plugins.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/plugins.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>8b87e678-7ef3-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>8b87e679-7ef3-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Fri, 30 Oct 2015 10:46:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/preloader.gif</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/preloader.gif</destination>
+			<type>image</type>
+			<uuidstructure>47156b15-8f80-11e5-a6ad-0242ac11002b</uuidstructure>
+			<uuidresource>47156b16-8f80-11e5-a6ad-0242ac11002b</uuidresource>
+			<datecreated>Fri, 20 Nov 2015 12:14:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:20,h:20]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>9bac2ec4-8936-11e5-a24e-0242ac11002b</uuidstructure>
+			<uuidresource>9bac2ec5-8936-11e5-a24e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 12 Nov 2015 12:12:13 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-blue-gold.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-blue-gold.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>1afc2e30-8933-11e5-a24e-0242ac11002b</uuidstructure>
+			<uuidresource>1afc2e31-8933-11e5-a24e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 12 Nov 2015 11:47:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-blue.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-blue.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>0f6c6463-5155-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0f6c6464-5155-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:29:07 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-bluegold.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-bluegold.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>ba29b88c-8930-11e5-a24e-0242ac11002b</uuidstructure>
+			<uuidresource>ba29b88d-8930-11e5-a24e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 12 Nov 2015 11:30:07 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-editor.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-editor.css</destination>
+			<type>plain</type>
+			<uuidstructure>f946a7c8-5157-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>f946a7c9-5157-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:49:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-gold-blue.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-gold-blue.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>1b19c852-8933-11e5-a24e-0242ac11002b</uuidstructure>
+			<uuidresource>1b19c853-8933-11e5-a24e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 12 Nov 2015 11:47:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-goldblue.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-goldblue.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>ee571973-892c-11e5-a24e-0242ac11002b</uuidstructure>
+			<uuidresource>ee571974-892c-11e5-a24e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 12 Nov 2015 11:02:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-red.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-red.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>8729d975-56c9-11e5-bfd9-0242ac11002b</uuidstructure>
+			<uuidresource>8729d976-56c9-11e5-bfd9-0242ac11002b</uuidresource>
+			<datecreated>Wed, 09 Sep 2015 08:05:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/styles-main.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/styles-main.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>0fa43d45-5155-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0fa43d46-5155-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:29:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/fonts</destination>
+			<type>folder</type>
+			<uuidstructure>d536d455-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/fonts/Simple-Line-Icons.dev.svg</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/fonts/Simple-Line-Icons.dev.svg</destination>
+			<type>plain</type>
+			<uuidstructure>d53b6837-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>d53b6838-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/fonts/Simple-Line-Icons.eot</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/fonts/Simple-Line-Icons.eot</destination>
+			<type>plain</type>
+			<uuidstructure>d547eb59-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>d547eb5a-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/fonts/Simple-Line-Icons.svg</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/fonts/Simple-Line-Icons.svg</destination>
+			<type>plain</type>
+			<uuidstructure>d553ab2b-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>d553ab2c-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/fonts/Simple-Line-Icons.ttf</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/fonts/Simple-Line-Icons.ttf</destination>
+			<type>plain</type>
+			<uuidstructure>d5613fbd-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>d5613fbe-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/fonts/Simple-Line-Icons.woff</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/fonts/Simple-Line-Icons.woff</destination>
+			<type>plain</type>
+			<uuidstructure>d56b9fff-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>d56ba000-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts</destination>
+			<type>folder</type>
+			<uuidstructure>cd80a57b-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 08:37:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/fontawesome-webfont.eot</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/fontawesome-webfont.eot</destination>
+			<type>plain</type>
+			<uuidstructure>cd87f87d-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cd87f87e-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/fontawesome-webfont.svg</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/fontawesome-webfont.svg</destination>
+			<type>plain</type>
+			<uuidstructure>cd927fcf-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cd927fd0-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/fontawesome-webfont.ttf</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/fontawesome-webfont.ttf</destination>
+			<type>plain</type>
+			<uuidstructure>cd9d7c51-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cd9d7c52-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/fontawesome-webfont.woff</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/fontawesome-webfont.woff</destination>
+			<type>plain</type>
+			<uuidstructure>cda655f3-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cda655f4-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/fontawesome-webfont.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/fontawesome-webfont.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>cdaeba65-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cdaeba66-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/FontAwesome.otf</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/FontAwesome.otf</destination>
+			<type>plain</type>
+			<uuidstructure>cdb80937-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cdb80938-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-cyrillic-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-cyrillic-ext.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>cdc2dea9-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cdc2deaa-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-cyrillic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-cyrillic.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>cdcc2d7b-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cdcc2d7c-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-greek-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-greek-ext.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>cdd57c4d-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cdd57c4e-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-greek.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-greek.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>cdde55ef-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cdde55f0-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-latin-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-latin-ext.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>cde61e21-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cde61e22-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-latin.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-latin.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>cdeed0b3-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cdeed0b4-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-vietnamese.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-300-vietnamese.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>cdf9a625-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>cdf9a626-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-cyrillic-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-cyrillic-ext.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce067767-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce067768-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-cyrillic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-cyrillic.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce10d7a9-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce10d7aa-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-greek-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-greek-ext.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce1ee16b-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce1ee16c-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-greek.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-greek.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce2f0e0d-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce2f0e0e-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-latin-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-latin-ext.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce3a319f-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce3a31a0-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-latin.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-latin.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce450711-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce450712-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-vietnamese.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-400-vietnamese.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce4f8e63-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce4f8e64-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-cyrillic-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-cyrillic-ext.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce59c795-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce59c796-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-cyrillic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-cyrillic.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce66e6f7-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce66e6f8-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-greek-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-greek-ext.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce747b89-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce747b8a-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-greek.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-greek.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce8125bb-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce8125bc-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-latin-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-latin-ext.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce8ae9bd-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce8ae9be-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-latin.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-latin.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce96345f-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce963460-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-vietnamese.woff2</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/fonts/opensans-600-vietnamese.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>ce9faa41-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>ce9faa42-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img</destination>
+			<type>folder</type>
+			<uuidstructure>0bed04ea-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:57:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/favicon_120.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/favicon_120.png</destination>
+			<type>image</type>
+			<uuidstructure>0c514573-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c514574-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:120,h:120]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/favicon_16.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/favicon_16.png</destination>
+			<type>image</type>
+			<uuidstructure>0c536856-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c536857-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/favicon_32.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/favicon_32.png</destination>
+			<type>image</type>
+			<uuidstructure>0c556429-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c55642a-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:32,h:32]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/overlay-icon.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/overlay-icon.png</destination>
+			<type>image</type>
+			<uuidstructure>5abe2bc8-57a9-11e5-8e67-0242ac11002b</uuidstructure>
+			<uuidresource>5abe2bc9-57a9-11e5-8e67-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 10:47:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:20,h:20]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox</destination>
+			<type>folder</type>
+			<uuidstructure>d6d5fc0f-57ab-11e5-8e67-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 10 Sep 2015 11:05:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox/blank.gif</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox/blank.gif</destination>
+			<type>image</type>
+			<uuidstructure>f84f792a-57ab-11e5-8e67-0242ac11002b</uuidstructure>
+			<uuidresource>f84f792b-57ab-11e5-8e67-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 11:06:22 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1,h:1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox/fancybox_loading.gif</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox/fancybox_loading.gif</destination>
+			<type>image</type>
+			<uuidstructure>f863765d-57ab-11e5-8e67-0242ac11002b</uuidstructure>
+			<uuidresource>f863765e-57ab-11e5-8e67-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 11:06:22 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox/fancybox_loading2x.gif</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox/fancybox_loading2x.gif</destination>
+			<type>image</type>
+			<uuidstructure>f8774c80-57ab-11e5-8e67-0242ac11002b</uuidstructure>
+			<uuidresource>f8774c81-57ab-11e5-8e67-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 11:06:22 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:48,h:48]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox/fancybox_overlay.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox/fancybox_overlay.png</destination>
+			<type>image</type>
+			<uuidstructure>f81d4594-57ab-11e5-8e67-0242ac11002b</uuidstructure>
+			<uuidresource>f81d4595-57ab-11e5-8e67-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 11:06:21 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:10,h:10]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox/fancybox_sprite.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox/fancybox_sprite.png</destination>
+			<type>image</type>
+			<uuidstructure>f7f8f4b1-57ab-11e5-8e67-0242ac11002b</uuidstructure>
+			<uuidresource>f7f8f4b2-57ab-11e5-8e67-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 11:06:21 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:44,h:152]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox/fancybox_sprite2x.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/fancybox/fancybox_sprite2x.png</destination>
+			<type>image</type>
+			<uuidstructure>f8303157-57ab-11e5-8e67-0242ac11002b</uuidstructure>
+			<uuidresource>f8303158-57ab-11e5-8e67-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 11:06:21 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:88,h:304]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons</destination>
+			<type>folder</type>
+			<uuidstructure>0bf4f42c-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:57:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social</destination>
+			<type>folder</type>
+			<uuidstructure>0bf6a1de-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:57:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/amazon.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/amazon.png</destination>
+			<type>image</type>
+			<uuidstructure>0bf876a0-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0bf876a1-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/behance.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/behance.png</destination>
+			<type>image</type>
+			<uuidstructure>0bfac093-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0bfac094-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/blogger.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/blogger.png</destination>
+			<type>image</type>
+			<uuidstructure>0bfce376-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0bfce377-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/deviantart.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/deviantart.png</destination>
+			<type>image</type>
+			<uuidstructure>0bff0659-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0bff065a-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/dribbble.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/dribbble.png</destination>
+			<type>image</type>
+			<uuidstructure>0c01293c-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c01293d-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/dropbox.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/dropbox.png</destination>
+			<type>image</type>
+			<uuidstructure>0c034c1f-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c034c20-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/evernote.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/evernote.png</destination>
+			<type>image</type>
+			<uuidstructure>0c056f02-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c056f03-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/facebook.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/facebook.png</destination>
+			<type>image</type>
+			<uuidstructure>0c0791e5-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c0791e6-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/forrst.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/forrst.png</destination>
+			<type>image</type>
+			<uuidstructure>0c098db8-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c098db9-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/github.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/github.png</destination>
+			<type>image</type>
+			<uuidstructure>0c0bb09b-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c0bb09c-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/googleplus.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/googleplus.png</destination>
+			<type>image</type>
+			<uuidstructure>0c0dd37e-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c0dd37f-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/jolicloud.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/jolicloud.png</destination>
+			<type>image</type>
+			<uuidstructure>0c0ff661-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c0ff662-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/last-fm.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/last-fm.png</destination>
+			<type>image</type>
+			<uuidstructure>0c121944-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c121945-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/linkedin.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/linkedin.png</destination>
+			<type>image</type>
+			<uuidstructure>0c143c27-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c143c28-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/picasa.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/picasa.png</destination>
+			<type>image</type>
+			<uuidstructure>0c165f0a-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c165f0b-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/pintrest.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/pintrest.png</destination>
+			<type>image</type>
+			<uuidstructure>0c185add-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c185ade-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/rss.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/rss.png</destination>
+			<type>image</type>
+			<uuidstructure>0c1a7dc0-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c1a7dc1-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/skype.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/skype.png</destination>
+			<type>image</type>
+			<uuidstructure>0c1ca0a3-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c1ca0a4-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/slideshare.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/slideshare.png</destination>
+			<type>image</type>
+			<uuidstructure>0c1ec386-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c1ec387-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/spotify.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/spotify.png</destination>
+			<type>image</type>
+			<uuidstructure>0c20e669-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c20e66a-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/stumbleupon.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/stumbleupon.png</destination>
+			<type>image</type>
+			<uuidstructure>0c23094c-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c23094d-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/tumblr.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/tumblr.png</destination>
+			<type>image</type>
+			<uuidstructure>0c252c2f-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c252c30-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/twitter.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/twitter.png</destination>
+			<type>image</type>
+			<uuidstructure>0c28d5b2-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c28d5b3-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/vimeo.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/vimeo.png</destination>
+			<type>image</type>
+			<uuidstructure>0c2b1fa5-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c2b1fa6-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/vk.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/vk.png</destination>
+			<type>image</type>
+			<uuidstructure>0c2d6998-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c2d6999-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/wordpress.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/wordpress.png</destination>
+			<type>image</type>
+			<uuidstructure>0c33841b-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c33841c-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/xing.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/xing.png</destination>
+			<type>image</type>
+			<uuidstructure>0c357fee-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c357fef-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/yahoo.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/yahoo.png</destination>
+			<type>image</type>
+			<uuidstructure>0c37a2d1-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c37a2d2-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/youtube.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/icons/social/youtube.png</destination>
+			<type>image</type>
+			<uuidstructure>0c3ab014-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c3ab015-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:28,h:66]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/logo</destination>
+			<type>folder</type>
+			<uuidstructure>0c3cd2f7-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/logo/logo_alkacon_png24.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/logo/logo_alkacon_png24.png</destination>
+			<type>image</type>
+			<uuidstructure>0c3e5999-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c3e599a-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:154,h:50]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/logo/logo_opencms_png24.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/logo/logo_opencms_png24.png</destination>
+			<type>image</type>
+			<uuidstructure>0c407c7c-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c407c7d-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:206,h:50]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/transparent</destination>
+			<type>folder</type>
+			<uuidstructure>0c429f5f-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/transparent/bg-black.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/transparent/bg-black.png</destination>
+			<type>image</type>
+			<uuidstructure>0c444d11-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c444d12-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:30,h:23]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/transparent/bg-black1.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/transparent/bg-black1.png</destination>
+			<type>image</type>
+			<uuidstructure>0c466ff4-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c466ff5-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:25,h:25]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/transparent/bg-green.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/transparent/bg-green.png</destination>
+			<type>image</type>
+			<uuidstructure>0c4892d7-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c4892d8-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:20,h:20]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/transparent/bg-white.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/transparent/bg-white.png</destination>
+			<type>image</type>
+			<uuidstructure>0c4b03da-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c4b03db-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:25,h:25]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/transparent/black.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/transparent/black.png</destination>
+			<type>image</type>
+			<uuidstructure>0c4d26bd-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c4d26be-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:50,h:50]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/transparent/white.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/transparent/white.png</destination>
+			<type>image</type>
+			<uuidstructure>0c4f2290-5159-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0c4f2291-5159-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:50,h:50]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui</destination>
+			<type>folder</type>
+			<uuidstructure>7664496d-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:10:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/index.html</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/index.html</destination>
+			<type>plain</type>
+			<uuidstructure>861725a9-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>861725aa-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.css</destination>
+			<type>plain</type>
+			<uuidstructure>85db2e0f-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>85db2e10-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.js</destination>
+			<type>plain</type>
+			<uuidstructure>857f2b53-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>857f2b54-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>85e6c6d1-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>85e6c6d2-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.min.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.min.js</destination>
+			<type>plain</type>
+			<uuidstructure>85974735-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>85974736-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.structure.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.structure.css</destination>
+			<type>plain</type>
+			<uuidstructure>85a9e4d7-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>85a9e4d8-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.structure.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.structure.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>85b68f09-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>85b68f0a-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.theme.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.theme.css</destination>
+			<type>plain</type>
+			<uuidstructure>85c44aab-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>85c44aac-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.theme.min.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/jquery-ui.theme.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>85d0cdcd-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>85d0cdce-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/external</destination>
+			<type>folder</type>
+			<uuidstructure>85f17533-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:10:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/external/jquery</destination>
+			<type>folder</type>
+			<uuidstructure>85f93d65-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:10:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/external/jquery/jquery.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/external/jquery/jquery.js</destination>
+			<type>plain</type>
+			<uuidstructure>86034f87-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>86034f88-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images</destination>
+			<type>folder</type>
+			<uuidstructure>86209b8b-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:10:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_diagonals-thick_18_b81900_40x40.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_diagonals-thick_18_b81900_40x40.png</destination>
+			<type>image</type>
+			<uuidstructure>86774716-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>86774717-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:40,h:40]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_diagonals-thick_20_666666_40x40.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_diagonals-thick_20_666666_40x40.png</destination>
+			<type>image</type>
+			<uuidstructure>86cfee72-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>86cfee73-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:40,h:40]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_flat_10_000000_40x100.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_flat_10_000000_40x100.png</destination>
+			<type>image</type>
+			<uuidstructure>86dc4a85-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>86dc4a86-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:40,h:100]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_glass_100_f6f6f6_1x400.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_glass_100_f6f6f6_1x400.png</destination>
+			<type>image</type>
+			<uuidstructure>8664a973-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>8664a974-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1,h:400]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_glass_100_fdf5ce_1x400.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_glass_100_fdf5ce_1x400.png</destination>
+			<type>image</type>
+			<uuidstructure>86c1486f-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>86c14870-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1,h:400]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_glass_65_ffffff_1x400.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_glass_65_ffffff_1x400.png</destination>
+			<type>image</type>
+			<uuidstructure>8633603d-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>8633603e-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1,h:400]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_gloss-wave_35_f6a828_500x100.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_gloss-wave_35_f6a828_500x100.png</destination>
+			<type>image</type>
+			<uuidstructure>868eedc9-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>868eedca-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:500,h:100]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_highlight-soft_100_eeeeee_1x100.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_highlight-soft_100_eeeeee_1x100.png</destination>
+			<type>image</type>
+			<uuidstructure>864cb4a0-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>864cb4a1-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1,h:100]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_highlight-soft_75_ffe45c_1x100.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-bg_highlight-soft_75_ffe45c_1x100.png</destination>
+			<type>image</type>
+			<uuidstructure>86b190fc-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>86b190fd-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1,h:100]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-icons_222222_256x240.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-icons_222222_256x240.png</destination>
+			<type>image</type>
+			<uuidstructure>86fe035b-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>86fe035c-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:256,h:240]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-icons_228ef1_256x240.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-icons_228ef1_256x240.png</destination>
+			<type>image</type>
+			<uuidstructure>873985c4-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>873985c5-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:11:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:256,h:240]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-icons_ef8c08_256x240.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-icons_ef8c08_256x240.png</destination>
+			<type>image</type>
+			<uuidstructure>86edd6b8-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>86edd6b9-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:10:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:256,h:240]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-icons_ffd27a_256x240.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-icons_ffd27a_256x240.png</destination>
+			<type>image</type>
+			<uuidstructure>8713fc5e-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>8713fc5f-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:11:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:256,h:240]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-icons_ffffff_256x240.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery-ui/images/ui-icons_ffffff_256x240.png</destination>
+			<type>image</type>
+			<uuidstructure>8727d281-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>8727d282-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:11:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:256,h:240]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery</destination>
+			<type>folder</type>
+			<uuidstructure>8cf6f1a7-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:11:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery/jquery-1.11.3.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery/jquery-1.11.3.js</destination>
+			<type>plain</type>
+			<uuidstructure>de42680b-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>de42680c-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:13:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery/jquery-1.11.3.min.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery/jquery-1.11.3.min.js</destination>
+			<type>plain</type>
+			<uuidstructure>dac3c899-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>dac3c89a-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:13:20 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery/jquery-migrate-1.2.1.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery/jquery-migrate-1.2.1.js</destination>
+			<type>plain</type>
+			<uuidstructure>e6b270cf-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>e6b270d0-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:13:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/jquery/jquery-migrate-1.2.1.min.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/jquery/jquery-migrate-1.2.1.min.js</destination>
+			<type>plain</type>
+			<uuidstructure>e45260bd-5152-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>e45260be-5152-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:13:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/js</destination>
+			<type>folder</type>
+			<uuidstructure>04129411-5153-11e5-abeb-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Sep 2015 09:14:29 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/js/loadCSS.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/js/loadCSS.js</destination>
+			<type>plain</type>
+			<uuidstructure>599353ae-7e0d-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>599353af-7e0d-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Thu, 29 Oct 2015 07:19:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/js/scripts-all.min.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/js/scripts-all.min.js</destination>
+			<type>plain</type>
+			<uuidstructure>0fc90357-5155-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>0fc90358-5155-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 09:29:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify</destination>
+			<type>folder</type>
+			<uuidstructure>4d9761ac-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 27 Oct 2015 16:53:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins</destination>
+			<type>folder</type>
+			<uuidstructure>6509e252-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider</destination>
+			<type>folder</type>
+			<uuidstructure>650fd5c4-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin</destination>
+			<type>folder</type>
+			<uuidstructure>6513f476-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets</destination>
+			<type>folder</type>
+			<uuidstructure>651c58e8-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_large_right.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_large_right.png</destination>
+			<type>image</type>
+			<uuidstructure>6532ee2d-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>6532ee2e-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:46,h:92]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left.png</destination>
+			<type>image</type>
+			<uuidstructure>65445350-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65445351-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:26,h:52]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left2.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left2.png</destination>
+			<type>image</type>
+			<uuidstructure>654c90b3-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>654c90b4-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:12,h:34]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right.png</destination>
+			<type>image</type>
+			<uuidstructure>6553bca6-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>6553bca7-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:26,h:52]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right2.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right2.png</destination>
+			<type>image</type>
+			<uuidstructure>655bd2f9-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>655bd2fa-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:12,h:34]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowleft.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowleft.png</destination>
+			<type>image</type>
+			<uuidstructure>65634d0c-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65634d0d-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:9,h:32]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowright.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowright.png</destination>
+			<type>image</type>
+			<uuidstructure>656d381f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>656d3820-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:9,h:32]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrows.psd</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrows.psd</destination>
+			<type>plain</type>
+			<uuidstructure>65785bb2-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65785bb3-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/black50.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/black50.png</destination>
+			<type>image</type>
+			<uuidstructure>65804af4-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65804af5-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:100,h:100]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/boxed_bgtile.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/boxed_bgtile.png</destination>
+			<type>image</type>
+			<uuidstructure>658a3607-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>658a3608-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:100,h:40]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet.png</destination>
+			<type>image</type>
+			<uuidstructure>6599ed7a-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>6599ed7b-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:20,h:40]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet_boxed.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet_boxed.png</destination>
+			<type>image</type>
+			<uuidstructure>65abeedd-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65abeede-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:18,h:38]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.png</destination>
+			<type>image</type>
+			<uuidstructure>65b3b710-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65b3b711-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:23,h:46]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.psd</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.psd</destination>
+			<type>plain</type>
+			<uuidstructure>65bdc933-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65bdc934-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets2.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets2.png</destination>
+			<type>image</type>
+			<uuidstructure>65c7b445-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65c7b446-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:19,h:38]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/coloredbg.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/coloredbg.png</destination>
+			<type>image</type>
+			<uuidstructure>65ce9218-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65ce9219-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:5,h:5]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/grain.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/grain.png</destination>
+			<type>image</type>
+			<uuidstructure>65d744ab-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65d744ac-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:100,h:100]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile.png</destination>
+			<type>image</type>
+			<uuidstructure>65df0cde-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65df0cdf-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:2,h:2]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3.png</destination>
+			<type>image</type>
+			<uuidstructure>65eb68f1-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65eb68f2-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:3,h:3]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3_white.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3_white.png</destination>
+			<type>image</type>
+			<uuidstructure>65f44294-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65f44295-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:3,h:3]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_white.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_white.png</destination>
+			<type>image</type>
+			<uuidstructure>65fbbca7-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>65fbbca8-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:2,h:2]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_left.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_left.png</destination>
+			<type>image</type>
+			<uuidstructure>660643fa-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>660643fb-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:40,h:80]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_right.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_right.png</destination>
+			<type>image</type>
+			<uuidstructure>6615fb6d-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>6615fb6e-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:40,h:80]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader.gif</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader.gif</destination>
+			<type>image</type>
+			<uuidstructure>66240530-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>66240531-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader2.gif</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader2.gif</destination>
+			<type>image</type>
+			<uuidstructure>66347ff3-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>6634a704-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:32,h:32]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots.png</destination>
+			<type>image</type>
+			<uuidstructure>66412a26-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>66412a27-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:15,h:30]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots_bgtile.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots_bgtile.png</destination>
+			<type>image</type>
+			<uuidstructure>664a2ad9-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>664a2ada-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:10,h:35]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow1.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow1.png</destination>
+			<type>image</type>
+			<uuidstructure>6653c7cc-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>6653c7cd-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:900,h:30]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow2.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow2.png</destination>
+			<type>image</type>
+			<uuidstructure>665f397f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>665f3980-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:900,h:60]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow3.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow3.png</destination>
+			<type>image</type>
+			<uuidstructure>6668af62-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>6668af63-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:900,h:60]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_arrows.psd</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_arrows.psd</destination>
+			<type>plain</type>
+			<uuidstructure>66707795-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>66707796-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left.png</destination>
+			<type>image</type>
+			<uuidstructure>66790317-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>66790318-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:19,h:28]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left_boxed.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left_boxed.png</destination>
+			<type>image</type>
+			<uuidstructure>6680f25a-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>6680f25b-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:20,h:30]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right.png</destination>
+			<type>image</type>
+			<uuidstructure>668e11bd-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>668e11be-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:19,h:28]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right_boxed.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right_boxed.png</destination>
+			<type>image</type>
+			<uuidstructure>669823e0-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>669823e1-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:20,h:30]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/timer.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/timer.png</destination>
+			<type>image</type>
+			<uuidstructure>669fec13-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>669fec14-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1,h:10]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/timerdot.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/timerdot.png</destination>
+			<type>image</type>
+			<uuidstructure>66a93ae6-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>66a93ae7-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1,h:10]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/transparent.jpg</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/transparent.jpg</destination>
+			<type>image</type>
+			<uuidstructure>66b19f59-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>66b19f5a-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:10,h:10]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/white50.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/assets/white50.png</destination>
+			<type>image</type>
+			<uuidstructure>66bce9fc-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>66bce9fd-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:100,h:100]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/css</destination>
+			<type>folder</type>
+			<uuidstructure>66c7985f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/css/settings-ie8.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/css/settings-ie8.css</destination>
+			<type>plain</type>
+			<uuidstructure>66ce0101-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>66ce0102-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/css/settings.css</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/css/settings.css</destination>
+			<type>plain</type>
+			<uuidstructure>66da3603-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>66da3604-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/font</destination>
+			<type>folder</type>
+			<uuidstructure>66e580a5-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.eot</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.eot</destination>
+			<type>plain</type>
+			<uuidstructure>66ec3767-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>66ec3768-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.svg</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.svg</destination>
+			<type>plain</type>
+			<uuidstructure>66f58639-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>66f5863a-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.ttf</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.ttf</destination>
+			<type>plain</type>
+			<uuidstructure>66fdc39b-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>66fdc39c-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.woff</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.woff</destination>
+			<type>plain</type>
+			<uuidstructure>6707aead-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>6707aeae-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/images</destination>
+			<type>folder</type>
+			<uuidstructure>6712ab2f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside.png</destination>
+			<type>image</type>
+			<uuidstructure>673af3b9-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>673af3ba-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:4,h:4]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside_white.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside_white.png</destination>
+			<type>image</type>
+			<uuidstructure>674af94c-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>674af94d-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:4,h:4]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_testimonial.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_testimonial.png</destination>
+			<type>image</type>
+			<uuidstructure>6759512f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>67595130-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:10,h:4]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient</destination>
+			<type>folder</type>
+			<uuidstructure>671a2541-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g30.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g30.png</destination>
+			<type>image</type>
+			<uuidstructure>6721ed73-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>6721ed74-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1,h:60]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g40.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g40.png</destination>
+			<type>image</type>
+			<uuidstructure>672ee5c6-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>672ee5c7-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1,h:80]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js</destination>
+			<type>folder</type>
+			<uuidstructure>67675af2-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.enablelog.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.enablelog.js</destination>
+			<type>plain</type>
+			<uuidstructure>676cb224-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>676cb225-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.js</destination>
+			<type>plain</type>
+			<uuidstructure>6775d9e6-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>6775d9e7-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js</destination>
+			<type>plain</type>
+			<uuidstructure>67806138-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>67806139-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js</destination>
+			<type>plain</type>
+			<uuidstructure>678ae88a-7ccb-11e5-8038-0242ac11002b</uuidstructure>
+			<uuidresource>678ae88b-7ccb-11e5-8038-0242ac11002b</uuidresource>
+			<datecreated>Tue, 27 Oct 2015 16:54:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>

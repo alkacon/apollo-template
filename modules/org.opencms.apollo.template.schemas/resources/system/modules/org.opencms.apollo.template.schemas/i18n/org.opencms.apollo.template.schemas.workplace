@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
+  <Bundle language="en">
+    <Message>
+      <Key><![CDATA[fileicon.a-menu]]></Key>
+      <Value><![CDATA[Apollo Template]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-menu]]></Key>
+      <Value><![CDATA[New Apollo Template]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-menu]]></Key>
+      <Value><![CDATA[Contains all content types belonging to the Apollo Template.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-templaterow]]></Key>
+      <Value><![CDATA[Creates a template row that builds the main template layout.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-templaterow]]></Key>
+      <Value><![CDATA[New Template Row]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-templaterow]]></Key>
+      <Value><![CDATA[Template Row]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-text]]></Key>
+      <Value><![CDATA[Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-text]]></Key>
+      <Value><![CDATA[New Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-text]]></Key>
+      <Value><![CDATA[A simple text with an optional link.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-navigation]]></Key>
+      <Value><![CDATA[Navigation]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-navigation]]></Key>
+      <Value><![CDATA[Shows a main navigation element with configurable header and breadcrumb navigation or a side navigation.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-navigation]]></Key>
+      <Value><![CDATA[New Navigation]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-flexible]]></Key>
+      <Value><![CDATA[Use the flexible content to insert code (HTML, JavaScript), images or texts.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-flexible]]></Key>
+      <Value><![CDATA[Flexible Content]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-flexible]]></Key>
+      <Value><![CDATA[New Flexible Content]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-tabs]]></Key>
+      <Value><![CDATA[Creates multiple tabs, it can also be rendered as accordion.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-tabs]]></Key>
+      <Value><![CDATA[Tabs / Accordion]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-tabs]]></Key>
+      <Value><![CDATA[New Tabs / Accordion]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-iconbox]]></Key>
+      <Value><![CDATA[Shows a colored box with icon that can link to more information.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-iconbox]]></Key>
+      <Value><![CDATA[New Icon Box]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-iconbox]]></Key>
+      <Value><![CDATA[Icon Box]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-carousel]]></Key>
+      <Value><![CDATA[This cycles through images like a carousel.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-carousel]]></Key>
+      <Value><![CDATA[Carousel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-carousel]]></Key>
+      <Value><![CDATA[New Carousel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-blog]]></Key>
+      <Value><![CDATA[A blog entry with a date, paragraphs and optional images.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-blog]]></Key>
+      <Value><![CDATA[New Blog Entry]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-blog]]></Key>
+      <Value><![CDATA[Blog Entry]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-list]]></Key>
+      <Value><![CDATA[Shows a list of collected blog/event entries.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-list]]></Key>
+      <Value><![CDATA[New Blog/Event List]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-list]]></Key>
+      <Value><![CDATA[Blog/Event List]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-map]]></Key>
+      <Value><![CDATA[New Location Map]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-map]]></Key>
+      <Value><![CDATA[Generates a location map.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-map]]></Key>
+      <Value><![CDATA[Location Map]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-event]]></Key>
+      <Value><![CDATA[New Event]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-event]]></Key>
+      <Value><![CDATA[Within this content all the necessary information for an event can be stored.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-event]]></Key>
+      <Value><![CDATA[Event]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-slider]]></Key>
+      <Value><![CDATA[Creates a image slider.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-slider]]></Key>
+      <Value><![CDATA[Slider]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-slider]]></Key>
+      <Value><![CDATA[Slider]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-sitemap]]></Key>
+      <Value><![CDATA[Sitemap]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-sitemap]]></Key>
+      <Value><![CDATA[Creates a sitemap.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-sitemap]]></Key>
+      <Value><![CDATA[Sitemap]]></Value>
+    </Message>
+  </Bundle>
+</XmlVfsBundles>

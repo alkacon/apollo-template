@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloTexts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/text.xsd">
+  <ApolloText language="en">
+    <Headline><![CDATA[Text in different flavours]]></Headline>
+    <Text name="Text0">
+      <links>
+        <link name="link0" internal="true" type="A">
+          <target><![CDATA[/sites/default/grid-demo/]]></target>
+        </link>
+      </links>
+      <content><![CDATA[<p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.&nbsp;<a href="%(link0)">Read more...</a></p>]]></content>
+    </Text>
+  </ApolloText>
+</ApolloTexts>

@@ -1,0 +1,1257 @@
+//
+// Alkacon Apollo SCSS.
+// 
+// Modifications and additions to the common styles. 
+//
+
+.clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+
+/* Animated image.
+ -----------------------------------------------------------------------------*/
+
+.thumbnail-style{
+	padding: 0;
+	&:hover{
+		box-shadow: none;
+	}
+}
+
+
+/* Buttons that are red should always use "OpenCms red".
+----------------------------------------------------------------------------- */
+
+.btn-u-red {
+   background: $alkacon-red !important;
+}
+.btn-u-red:hover {
+   background: lighten($alkacon-red, 30%) !important;
+}
+
+.service-block-red, i.icon-bg-red {
+    background-color: $alkacon-red;
+}
+
+/* Carousel caption color.
+----------------------------------------------------------------------------- */
+
+.carousel-caption h3 {
+    color: $white;
+}
+
+/* Colored boxes.
+----------------------------------------------------------------------------- */
+
+$colored-box-variants:
+(
+ (white, $white),         
+ (lightgrey, $gray-lighter),         
+ (mediumgrey, $gray-light),         
+ (dark, $gray-darker),
+ (red, $red),         
+ (blue, $blue),         
+ (green, $green),
+ (sea, $sea),
+ (orange, $orange),
+ (yellow, $yellow),
+ (purple, $violet),
+ (aqua, $blue-cyan),
+ (brown, $brown),
+ (dark-blue, $blue-dark),
+ (light-green, $green-light)
+);
+
+.colored-box, .colored-box-light {
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.colored-box-light {
+    color: $gray-darker;
+}
+
+.colored-box .headline, .colored-box-light .headline {
+	border-bottom: none;
+	margin: 0;
+}
+
+.colored-box .headline h2, .colored-box-light .headline h2 {
+	border-bottom: none;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.colored-box p, 
+.colored-box li, 
+.colored-box h1, 
+.colored-box h2, 
+.colored-box h3, 
+.colored-box h4,  
+.colored-box h5, 
+.colored-box h6 {
+    color: $white;
+}
+
+.colored-box{
+	a {
+    	color: $gray-lighter;
+    }
+    &-light a {
+    	color: $red;
+	}
+}
+
+
+
+.colored-box  a.btn-u,
+.colored-box-light  a.btn-u  {
+    color: $white;
+}
+
+.colored-box-light p, 
+.colored-box-light li, 
+.colored-box-light h1, 
+.colored-box-light h2, 
+.colored-box-light h3, 
+.colored-box-light h4,  
+.colored-box-light h5, 
+.colored-box-light h6 {
+    color: $gray-darker;
+}
+
+/* Background color */
+
+@each $type-name, $bg-color in $colored-box-variants {
+    .colored-box.#{""+$type-name}, .colored-box-light.#{""+$type-name} {      
+        background-color: $bg-color;      
+    }
+}
+
+/* Border style */
+
+$colored-box-borderstyles:
+(
+ (none, 0, none),         
+ (dotted, 1px, $gray-light),         
+ (dashed, 1px, $gray-light),         
+ (solid, 1px, $gray-light)
+);
+
+@each $style-name, $width, $bg-color in $colored-box-borderstyles {
+    .colored-box.border-style-#{""+$style-name}, .colored-box-light.border-style-#{""+$style-name} {
+	    border-style: #{""+$style-name};
+	    border-width: $width;
+	    border-color: $bg-color;
+	}
+}
+
+
+
+
+/* Dropdown color */
+
+@each $type-name, $bg-color in $colored-box-variants {
+
+	.btn-u.btn-u-#{""+$type-name},  .open .dropdown-toggle.btn-u.btn-u-#{""+$type-name}{
+		background-color: $bg-color; 
+		&:hover, &:focus, &:active{
+    		background: lighten($bg-color,10) !important;
+    	}   
+	}
+
+    .dropdown-#{""+$type-name}{ 
+    	  	   
+        .active a{
+        	background: lighten($bg-color,10);     
+        	&:hover{
+        		background: $bg-color; 
+        	}
+	        @if (lightness($bg-color) > 90) {
+	    		color: #000000; 
+			} @else {
+				color: #ffffff; 
+	  		}  		
+  		}
+    }
+}
+
+/* Event dates */
+@each $type-name, $bg-color in $colored-box-variants {
+
+	.date-#{""+$type-name}{
+		border: 1px solid $gray-light;
+		box-shadow:  8px 8px 6px -6px $gray;
+		text-align: center; 
+		backhround: #eee;
+		.day, .monthYear{
+			padding: 10px;		
+		}
+		a &{
+			color: #555;
+			transform: scale(1) rotate(0);
+			transition: 1s all;
+			&:hover{
+				transform: scale(0.97) rotate(-1deg);
+				transition: 1s all;
+			}
+		}
+		h3{
+			font-weight: bolder;
+		}
+		&:before{
+			display: block;
+			content: '';
+			border-top: 20px solid #ddd;
+		}		
+	}
+}
+
+/* Line position and color */
+
+$colored-box-positions:
+(
+ top, bottom, left, right
+);
+
+@each $type-name, $bg-color in $colored-box-variants {
+
+    @each $position in $colored-box-positions {
+	    .colored-box.line-#{""+$position}-color-#{""+$type-name}, .colored-box-light.line-#{""+$position}-color-#{""+$type-name} {
+	    	border-#{""+$position}-style: solid;
+	    	border-#{""+$position}-width: 2px;
+	    	border-#{""+$position}-color: $bg-color;
+		}
+	}
+	.colored-box.line-box-color-#{""+$type-name}, .colored-box-light.line-box-color-#{""+$type-name} {
+	    border: 2px solid $bg-color;
+	}
+	.colored-box.line-none-color-#{""+$type-name}, .colored-box-light.line-none-color-#{""+$type-name} {
+	    border-color: $gray-light;
+	}
+}
+
+/* Fancybox additions for zoom effect.
+----------------------------------------------------------------------------- */
+
+.zoomer:hover .overlay-zoom .zoom-icon {
+    opacity: 0.4;
+    transform: scale(1);
+}
+.overlay-zoom {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    position: relative;
+    transition: all 0.1s ease-in-out 0s;
+    width: 100%;
+    z-index: 90;
+}
+.overlay-zoom .zoom-icon {
+    background-color: #000;
+    background-image: url("../img/overlay-icon.png");
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    height: inherit;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out 0s;
+    width: inherit;
+    z-index: 100;
+}
+
+/* Footer colors.
+----------------------------------------------------------------------------- */
+
+.footer-default .copyright {
+    background-color: #dddddd; //$gray;
+    border-top: 1px solid #777;
+}
+
+.footer-default .copyright p {
+    color: #333333; //$text-dark;
+}
+
+.footer-default .header {
+	border: none;
+}
+
+/* Jumbotron headline.
+----------------------------------------------------------------------------- */
+
+.jumbotron h1, .jumbotron .h1 {
+  line-height: 1.0;
+}
+
+/* Login element.
+----------------------------------------------------------------------------- */
+
+.reg-page {
+    background: none repeat scroll 0 0 $gray-lighter;
+    border: 1px solid $gray-light;
+    box-shadow: 0 0 3px $gray-light;
+    color: $gray-darker;
+	margin: 0 auto;
+    padding: 30px;
+	width: auto;
+}
+.reg-header {
+    border-bottom: 1px solid $gray-light;
+    color: $gray-darker;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.reg-header h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.reg-page label {
+    color: $gray;
+}
+
+/* Navigation colors.
+----------------------------------------------------------------------------- */
+
+// Main menu
+.header  {
+	.navbar-nav {
+		a{
+			border-bottom-color: $nav-main-color;
+  			color: $nav-main-color;
+		}
+		&>.active {
+			&>a {
+				border-bottom-color: $nav-main-color;
+  				color: $nav-main-color;  
+  				&:hover{
+  					border-bottom-color: $nav-main-color-active;
+  					color: $nav-main-color-active;  
+  				}				
+  			}	
+  		}
+  		&>li{
+  			transition: all 1s;
+  			&>a:hover {
+  				border-bottom-color: $nav-main-color-hover;
+  				color: $nav-main-color-hover;
+			}
+			&:hover>a {
+				color: $nav-main-color-hover;
+			}
+			> .search{
+				background: transparent;
+				border-bottom-color: transparent;
+				&:hover {
+					background: transparent;
+	    			border-bottom-color: $nav-main-color-hover;
+	   				color: $nav-main-color-hover;
+				}
+			}
+		}
+  	}
+}
+
+// Sub menu
+
+.header .dropdown-menu {
+  border-bottom: solid 2px $nav-main-color-active;
+  border-bottom-color: $nav-main-color;
+  border-top: solid 2px $nav-main-color-active;
+  border-top-color: $nav-main-color-active;
+}
+
+.header .navbar-nav .mega-menu-fullwidth ul.dropdown-menu,
+.header .navbar-nav .dropdown-menu li a {
+	background-color: $nav-sub-bg;
+	color: $nav-sub-color;
+}
+
+.header .navbar-nav .dropdown-menu li a:hover {
+	background-color: $nav-sub-bg-hover !important;
+	color: $nav-sub-color-hover;
+}
+
+.header .navbar-nav .dropdown-menu li.active a {
+	background-color: $nav-sub-bg-active !important;
+	color: $nav-sub-color-active;
+}
+
+
+// Side menu
+
+
+.sidebar-nav-v1 li {
+	background-color: $nav-left-bg;
+}
+
+.sidebar-nav-v1 li a,
+.sidebar-nav-v1 .list-toggle:after {
+	color: $nav-left-color;
+}
+
+.sidebar-nav-v1 li:hover {
+	background-color: $nav-left-bg-hover;
+}
+
+.sidebar-nav-v1 li:hover a {
+	color: $nav-left-color-hover;
+}
+
+.sidebar-nav-v1 > li.active, .sidebar-nav-v1 > li.active:hover {
+	background-color: $nav-left-bg-active;
+}
+
+.sidebar-nav-v1 > li.active a, .sidebar-nav-v1 > li.active:hover a,
+.sidebar-nav-v1 .list-toggle.active:after {
+	color: $nav-left-color-active;
+}
+
+.sidebar-nav-v1 > li.active li.active a, .sidebar-nav-v1 > li.active:hover li.active a {
+	color: $nav-left-sub-color-active;
+}
+
+.sidebar-nav-v1 > li.active li a, .sidebar-nav-v1 > li.active:hover li a {
+	color: $nav-left-sub-color;
+}
+
+.sidebar-nav-v1 > li.active li:hover a {
+	color: $nav-left-sub-color-hover;
+}
+
+.sidebar-nav-v1 li ul, .sidebar-nav-v1 li.active ul a {
+	background-color: $nav-left-sub-bg;
+}
+
+/* Sitemap.
+----------------------------------------------------------------------------- */
+
+.sitemap{
+	ul, li{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding: 5px;
+		background: transparent;
+	}
+	ul>ul{
+		li {
+			background: $main-theme;
+			padding: 10px;
+			color: $text-light;
+			font-weight: bold;
+			font-size: 1em;	
+			line-height: 1;
+			&.parent{
+				cursor: pointer;	
+			}
+			a{			
+				color: $text-light;
+				width: 100%;
+				display: block;
+				height: 100%;
+			}
+			span{
+				float: left;
+			}
+			i{
+				transform: rotate(-90deg);
+				transition: transform 1s;
+			    float: right;	
+				&.open{
+					transform: rotate(0);
+					transition: transform 1s;
+				}
+			}
+		}
+		&>ul li {
+			padding: 5px 10px;
+			margin: 0;
+			background: $main-theme-additional;
+			color: $text-dark;
+			font-weight: normal;
+			&:hover{
+				background: $main-theme;
+				color: $text-light;
+				a{
+					color: $text-light;			
+					text-decoration: none;	
+				}
+			}
+			a{			
+				color: $text-dark;	
+			}			
+		}	
+	}
+}
+
+
+/* Slider (Play/Pause Button, caption, copyright).
+----------------------------------------------------------------------------- */
+
+.slider{
+	.control{
+      	margin: -40px 20px;
+      	position: relative;
+      	z-index:999;
+      	opacity: 0;
+      	transition: opacity 1s;
+   }
+   &:hover>.control{   	
+      	opacity: 1;
+      	transition: opacity 1s;
+   }
+   .caption{
+   		padding: 10px !important;   
+   		h2,  h3{
+			margin: 0;
+			padding: 0;
+			line-height: 1.1;
+		}	
+		h2{
+			font-size: 18px;
+		}
+		h3{
+			font-size: 15px;
+		}
+		&.copyright{
+			color: #fff;
+			font-size: 12px !important;
+		}
+   }
+}
+
+
+
+/* OpenCms logo.
+----------------------------------------------------------------------------- */
+
+.opencms-logo {
+	background: rgba(0, 0, 0, 0) url("data:image/png;base64,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") no-repeat scroll 0 0;
+	background-size: cover;
+    display: inline-block;
+    height: 42px;
+    overflow: hidden;
+    width: 170px;
+}
+
+.clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+
+/* Animated image.
+ -----------------------------------------------------------------------------*/
+
+.thumbnail-style{
+	padding: 0;
+	&:hover{
+		box-shadow: none;
+	}
+}
+
+
+/* Buttons that are red should always use "OpenCms red".
+----------------------------------------------------------------------------- */
+
+.btn-u-red {
+   background: $alkacon-red !important;
+}
+.btn-u-red:hover {
+   background: lighten($alkacon-red, 30%) !important;
+}
+
+.service-block-red, i.icon-bg-red {
+    background-color: $alkacon-red;
+}
+
+/* Carousel caption color.
+----------------------------------------------------------------------------- */
+
+.carousel-caption h3 {
+    color: $white;
+}
+
+/* Colored boxes.
+----------------------------------------------------------------------------- */
+
+$colored-box-variants:
+(
+ (white, $white),         
+ (lightgrey, $gray-lighter),         
+ (mediumgrey, $gray-light),         
+ (dark, $gray-darker),
+ (red, $red),         
+ (blue, $blue),         
+ (green, $green),
+ (sea, $sea),
+ (orange, $orange),
+ (yellow, $yellow),
+ (purple, $violet),
+ (aqua, $blue-cyan),
+ (brown, $brown),
+ (dark-blue, $blue-dark),
+ (light-green, $green-light)
+);
+
+.colored-box, .colored-box-light {
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.colored-box-light {
+    color: $gray-darker;
+}
+
+.colored-box .headline, .colored-box-light .headline {
+	border-bottom: none;
+	margin: 0;
+}
+
+.colored-box .headline h2, .colored-box-light .headline h2 {
+	border-bottom: none;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.colored-box p, 
+.colored-box li, 
+.colored-box h1, 
+.colored-box h2, 
+.colored-box h3, 
+.colored-box h4,  
+.colored-box h5, 
+.colored-box h6 {
+    color: $white;
+}
+
+.colored-box{
+	a {
+    	color: $gray-lighter;
+    }
+    &-light a {
+    	color: $red;
+	}
+}
+
+
+
+.colored-box  a.btn-u,
+.colored-box-light  a.btn-u  {
+    color: $white;
+}
+
+.colored-box-light p, 
+.colored-box-light li, 
+.colored-box-light h1, 
+.colored-box-light h2, 
+.colored-box-light h3, 
+.colored-box-light h4,  
+.colored-box-light h5, 
+.colored-box-light h6 {
+    color: $gray-darker;
+}
+
+/* Background color */
+
+@each $type-name, $bg-color in $colored-box-variants {
+    .colored-box.#{""+$type-name}, .colored-box-light.#{""+$type-name} {      
+        background-color: $bg-color;      
+    }
+}
+
+/* Border style */
+
+$colored-box-borderstyles:
+(
+ (none, 0, none),         
+ (dotted, 1px, $gray-light),         
+ (dashed, 1px, $gray-light),         
+ (solid, 1px, $gray-light)
+);
+
+@each $style-name, $width, $bg-color in $colored-box-borderstyles {
+    .colored-box.border-style-#{""+$style-name}, .colored-box-light.border-style-#{""+$style-name} {
+	    border-style: #{""+$style-name};
+	    border-width: $width;
+	    border-color: $bg-color;
+	}
+}
+
+
+
+
+/* Dropdown color */
+
+@each $type-name, $bg-color in $colored-box-variants {
+
+	.btn-u.btn-u-#{""+$type-name},  .open .dropdown-toggle.btn-u.btn-u-#{""+$type-name}{
+		background-color: $bg-color; 
+		&:hover, &:focus, &:active{
+    		background: lighten($bg-color,10) !important;
+    	}   
+	}
+
+    .dropdown-#{""+$type-name}{ 
+    	  	   
+        .active a{
+        	background: lighten($bg-color,10);     
+        	&:hover{
+        		background: $bg-color; 
+        	}
+	        @if (lightness($bg-color) > 90) {
+	    		color: #000000; 
+			} @else {
+				color: #ffffff; 
+	  		}  		
+  		}
+    }
+}
+
+/* Event dates */
+@each $type-name, $bg-color in $colored-box-variants {
+
+	.date-#{""+$type-name}{
+		border: 1px solid $gray-light;
+		box-shadow:  8px 8px 6px -6px $gray;
+		text-align: center; 
+		backhround: #eee;
+		.day, .monthYear{
+			padding: 10px;		
+		}
+		a &{
+			color: #555;
+			transform: scale(1) rotate(0);
+			transition: 1s all;
+			&:hover{
+				transform: scale(0.97) rotate(-1deg);
+				transition: 1s all;
+			}
+		}
+		h3{
+			font-weight: bolder;
+		}
+		&:before{
+			display: block;
+			content: '';
+			border-top: 20px solid #ddd;
+		}		
+	}
+}
+
+
+.list-entry{
+	animation-duration: 1s;	
+	&:nth-child(2n){
+		animation-duration: 2s;
+	}
+}
+
+/* Line position and color */
+
+$colored-box-positions:
+(
+ top, bottom, left, right
+);
+
+@each $type-name, $bg-color in $colored-box-variants {
+
+    @each $position in $colored-box-positions {
+	    .colored-box.line-#{""+$position}-color-#{""+$type-name}, .colored-box-light.line-#{""+$position}-color-#{""+$type-name} {
+	    	border-#{""+$position}-style: solid;
+	    	border-#{""+$position}-width: 2px;
+	    	border-#{""+$position}-color: $bg-color;
+		}
+	}
+	.colored-box.line-box-color-#{""+$type-name}, .colored-box-light.line-box-color-#{""+$type-name} {
+	    border: 2px solid $bg-color;
+	}
+	.colored-box.line-none-color-#{""+$type-name}, .colored-box-light.line-none-color-#{""+$type-name} {
+	    border-color: $gray-light;
+	}
+}
+
+/* Fancybox additions for zoom effect.
+----------------------------------------------------------------------------- */
+
+.zoomer:hover .overlay-zoom .zoom-icon {
+    opacity: 0.4;
+    transform: scale(1);
+}
+.overlay-zoom {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    position: relative;
+    transition: all 0.1s ease-in-out 0s;
+    width: 100%;
+    z-index: 90;
+}
+.overlay-zoom .zoom-icon {
+    background-color: #000;
+    background-image: url("../img/overlay-icon.png");
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    height: inherit;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out 0s;
+    width: inherit;
+    z-index: 100;
+}
+
+/* Footer colors.
+----------------------------------------------------------------------------- */
+
+.footer-default .copyright {
+    background-color: #dddddd; //$gray;
+    border-top: 1px solid #777;
+}
+
+.footer-default .copyright p {
+    color: #333333; //$text-dark;
+}
+
+.footer-default .header {
+	border: none;
+}
+
+/* Jumbotron headline.
+----------------------------------------------------------------------------- */
+
+.jumbotron h1, .jumbotron .h1 {
+  line-height: 1.0;
+}
+
+/* Login element.
+----------------------------------------------------------------------------- */
+
+.reg-page {
+    background: none repeat scroll 0 0 $gray-lighter;
+    border: 1px solid $gray-light;
+    box-shadow: 0 0 3px $gray-light;
+    color: $gray-darker;
+	margin: 0 auto;
+    padding: 30px;
+	width: auto;
+}
+.reg-header {
+    border-bottom: 1px solid $gray-light;
+    color: $gray-darker;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.reg-header h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.reg-page label {
+    color: $gray;
+}
+
+/* Navigation colors.
+----------------------------------------------------------------------------- */
+
+// Main menu
+.header  {
+	.navbar-nav {
+		&>.active {
+			&>a {
+				&:hover {
+  					border-bottom-color: $nav-main-color-active;
+  					color: $nav-main-color-active;
+  				}
+  			}	
+  		}
+  		&>li{
+  			&>a:hover {
+  				border-bottom-color: $nav-main-color-hover;
+  				color: $nav-main-color-hover;
+			}
+			&:hover>a {
+				color: $nav-main-color-hover;
+			}
+			> .search{
+				background: transparent;
+				border-bottom-color: transparent;
+				&:hover {
+					background: transparent;
+	    			border-bottom-color: $nav-main-color-hover;
+	   				color: $nav-main-color-hover;
+				}
+			}
+		}
+  	}
+}
+
+// Sub menu
+
+.header .dropdown-menu {
+  border-bottom: solid 2px $nav-main-color-active;
+  border-bottom-color: $nav-main-color;
+  border-top: solid 2px $nav-main-color-active;
+  border-top-color: $nav-main-color-active;
+}
+
+.header .navbar-nav .mega-menu-fullwidth ul.dropdown-menu,
+.header .navbar-nav .dropdown-menu li a {
+	background-color: $nav-sub-bg;
+	color: $nav-sub-color;
+}
+
+.header .navbar-nav .dropdown-menu li a:hover {
+	background-color: $nav-sub-bg-hover !important;
+	color: $nav-sub-color-hover;
+}
+
+.header .navbar-nav .dropdown-menu li.active a {
+	background-color: $nav-sub-bg-active !important;
+	color: $nav-sub-color-active;
+}
+
+
+// Side menu
+
+
+.sidebar-nav-v1 li {
+	background-color: $nav-left-bg;
+}
+
+.sidebar-nav-v1 li a,
+.sidebar-nav-v1 .list-toggle:after {
+	color: $nav-left-color;
+}
+
+.sidebar-nav-v1 li:hover {
+	background-color: $nav-left-bg-hover;
+}
+
+.sidebar-nav-v1 li:hover a {
+	color: $nav-left-color-hover;
+}
+
+.sidebar-nav-v1 > li.active, .sidebar-nav-v1 > li.active:hover {
+	background-color: $nav-left-bg-active;
+}
+
+.sidebar-nav-v1 > li.active a, .sidebar-nav-v1 > li.active:hover a,
+.sidebar-nav-v1 .list-toggle.active:after {
+	color: $nav-left-color-active;
+}
+
+.sidebar-nav-v1 > li.active li.active a, .sidebar-nav-v1 > li.active:hover li.active a {
+	color: $nav-left-sub-color-active;
+}
+
+.sidebar-nav-v1 > li.active li a, .sidebar-nav-v1 > li.active:hover li a {
+	color: $nav-left-sub-color;
+}
+
+.sidebar-nav-v1 > li.active li:hover a {
+	color: $nav-left-sub-color-hover;
+}
+
+.sidebar-nav-v1 li ul, .sidebar-nav-v1 li.active ul a {
+	background-color: $nav-left-sub-bg;
+}
+
+/* Sitemap.
+----------------------------------------------------------------------------- */
+
+.sitemap{
+	ul, li{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding: 5px;
+		background: transparent;
+	}
+	ul>ul{
+		li {
+			background: $main-theme;
+			padding: 10px;
+			color: $text-light;
+			font-weight: bold;
+			font-size: 1em;	
+			line-height: 1;
+			&.parent{
+				cursor: pointer;	
+			}
+			a{			
+				color: $text-light;
+				width: 100%;
+				display: block;
+				height: 100%;
+			}
+			span{
+				float: left;
+			}
+			i{
+				transform: rotate(-90deg);
+				transition: transform 1s;
+			    float: right;	
+				&.open{
+					transform: rotate(0);
+					transition: transform 1s;
+				}
+			}
+		}
+		&>ul li {
+			padding: 5px 10px;
+			margin: 0;
+			background: $main-theme-additional;
+			color: $text-dark;
+			font-weight: normal;
+			&:hover{
+				background: $main-theme;
+				color: $text-light;
+				a{
+					color: $text-light;			
+					text-decoration: none;	
+				}
+			}
+			a{			
+				color: $text-dark;	
+			}			
+		}	
+	}
+}
+
+
+/* Slider (Play/Pause Button, caption, copyright).
+----------------------------------------------------------------------------- */
+
+.slider{
+	.control{
+      	margin: -40px 20px;
+      	position: relative;
+      	z-index:999;
+      	opacity: 0;
+      	transition: opacity 1s;
+   }
+   &:hover>.control{   	
+      	opacity: 1;
+      	transition: opacity 1s;
+   }
+   .caption{
+   		padding: 10px !important;   
+   		h2,  h3{
+			margin: 0;
+			padding: 0;
+			line-height: 1.1;
+		}	
+		h2{
+			font-size: 18px;
+		}
+		h3{
+			font-size: 15px;
+		}
+		&.copyright{
+			color: #fff;
+			font-size: 12px !important;
+		}
+   }
+}
+
+
+/* spinner animation ----------------------------------------------------------------------------- */
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner{
+	width: 25px;
+	margin: 5px auto;
+	height: auto;
+	font-size: 25px;
+	i{
+		animation: spinner 1s infinite;
+	}
+}
+
+/* OpenCms logo.
+----------------------------------------------------------------------------- */
+
+.header{
+	.logo{
+		display: block;
+		height: 42px;
+		overflow: hidden;
+		width: 170px;
+		position: relative;
+		z-index: 10;		
+		float:left;
+		&.opencms-logo {
+			background: rgba(0, 0, 0, 0) url("data:image/png;base64,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") no-repeat scroll 0 0;
+			background-size: cover;			
+    		text-indent: -9999px;  
+		    @media(min-width: 992px){
+		    	margin: 30px 0 0;		    
+		     }		    
+		}
+	}
+}
+
+
+
+/* Service Boxes.
+----------------------------------------------------------------------------- */
+
+.service-block a:hover, .service-block-in a:hover {
+	text-decoration: none;
+}
+
+.service-block-colored {
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.service-block-colored:hover {
+  opacity: 0.8;
+}
+
+.service-block-colored.service-block-default:hover {
+  box-shadow: 0 0 8px #DDDDDD;
+}
+
+.service-block-colored.service-block-default:hover h2, .service-block-colored.service-block-default:hover i {
+  color:    #72c02c;
+}
+
+/* Paragraphs in service blocks should use default margins */
+.tag-box p {
+  margin: 0 0 10px;
+}
+
+/* Slider additional styles.
+----------------------------------------------------------------------------- */
+
+.tp-caption.mediumthickblackbg, .tp-caption.mediumthickgreybg,  .tp-caption.mediumthickwhitebg {
+	font-size:36px;
+	line-height:36px;
+	font-weight:800;
+	font-family:"Open Sans";
+	text-decoration:none;
+	text-shadow:none;
+	border-width:0px;
+	border-color:rgb(255, 255, 255);
+	border-style:none;
+	padding: 0 4px;
+}
+
+.tp-caption.mediumthickblackbg {
+	color:rgb(255, 255, 255);
+	background-color:rgb(0, 0, 0);
+}
+
+.tp-caption.mediumthickgreybg {
+	color:rgb(255, 255, 255);
+	background-color:rgb(128, 128, 128);
+}
+
+.tp-caption.blackbgtransparent {
+	background-color:rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background-color: rgba(0, 0, 0, 0.5);
+	padding:7px;
+}
+
+.tp-caption.mediumthickwhitebg {
+	color:rgb(0, 0, 0);
+	background-color:rgb(255, 255, 255);
+}
+
+#logo-footer{
+	@media (max-width: 992px){
+		float: none;
+	}
+	float: right;
+}
+
+.mavbar .open .dropdown-menu{
+    display: none;
+}
+
+
+.active .dropdown-menu{
+	@media (max-width: 992px){
+		border: 0;
+		left: 0;
+	    float: none;
+	    width: auto;
+	    margin-top: 0;
+	    position: static;
+	    box-shadow: none;
+	    background-color: transparent;
+	    display: block;
+	    transition: all 1s;
+    }
+}
+
+.caption{
+	font-family: "Open Sans" sans-serif !important;
+}
+
+
+/* Social icons.
+----------------------------------------------------------------------------- */
+
+.social_slideshare {
+    background: url("../img/icons/social/slideshare.png") no-repeat;
+}
+
+
+ul.social-icons{
+	li{
+		a{
+			@media (max-width: 992px){
+				width: 48px;
+				height:48px;
+				background-size: 48px;
+				&:hover{
+					background-position: 0 -66px ;					
+				}
+			}				
+			&:first-child{
+				margin-left: 0;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+		}	
+	}
+}
+
+
+
+
+/* Superscript for user name in nav.
+----------------------------------------------------------------------------- */
+
+.superscript {
+    top: -9px; 
+    left: 4px; 
+    position: relative
+}

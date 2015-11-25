@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Animation Slider formatter]]></NiceName>
+    <Type><![CDATA[a-sliderextended]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.extensions/formatters/slider.jsp]]></target>
+        <uuid>9e325ab7-56ce-11e5-bfd9-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[1000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[headsection]]></ContainerType>
+        <ContainerType><![CDATA[container]]></ContainerType>
+        <ContainerType><![CDATA[default]]></ContainerType>
+        <ContainerType><![CDATA[slider]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>false</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>false</Detail>
+    <NestedContainers>false</NestedContainers>
+    <HeadIncludeCss>
+      <CssLink>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/css/settings.css]]></target>
+          <uuid>66da3603-7ccb-11e5-8038-0242ac11002b</uuid>
+        </link>
+      </CssLink>
+    </HeadIncludeCss>
+    <HeadIncludeJs>
+      <JavascriptLink>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js]]></target>
+          <uuid>678ae88a-7ccb-11e5-8038-0242ac11002b</uuid>
+        </link>
+      </JavascriptLink>
+      <JavascriptLink>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js]]></target>
+          <uuid>67806138-7ccb-11e5-8038-0242ac11002b</uuid>
+        </link>
+      </JavascriptLink>
+    </HeadIncludeJs>
+    <Setting>
+      <PropertyName><![CDATA[hidetitle]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.hidetitle)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>
