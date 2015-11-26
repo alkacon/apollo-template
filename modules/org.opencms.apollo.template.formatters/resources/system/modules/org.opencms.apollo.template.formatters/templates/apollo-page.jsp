@@ -31,7 +31,7 @@
 <cms:headincludes type="css" />
 
  	<c:set var="colortheme"><cms:property name="apollo.theme" file="search" default="red" /></c:set>
-	<link  rel="stylesheet" href="<cms:link>/system/modules/org.opencms.apollo.template.basics/resources/css/style-${colortheme}.min.css</cms:link>" onload="this.rel='stylesheet'" />
+	<link  rel="stylesheet" href="<cms:link>/system/modules/org.opencms.apollo.template.basics/resources/css/style-${colortheme}.min.css</cms:link>" />
 
 </head>
 <body>

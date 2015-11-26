@@ -52,7 +52,7 @@
 					configuration="asc:%(key.apollo.list.value.asc)|desc:%(key.apollo.list.value.desc)" />
 				<layout element="TypesToCollect"
 					widget="org.opencms.apollo.template.schemas.CmsSelectListWidget"
-					configuration="itemPath:elements/list|itemSuffix:-item.jsp|moduleName:apollo" />
+					configuration="" />
 
 			</layouts>
 			<validationrules />

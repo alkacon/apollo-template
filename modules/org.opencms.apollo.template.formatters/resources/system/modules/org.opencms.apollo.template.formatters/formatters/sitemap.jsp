@@ -47,7 +47,8 @@
 								<c:set var="firstLevel">${item.navTreeLevel}</c:set>
 							</c:if>
 							<c:if test="${item.navTreeLevel < maxDepth}">
-								<c:set var="currentLevel" value="${item.navTreeLevel-firstLevel}" />
+								<c:set var="currentLevel"
+									value="${item.navTreeLevel-firstLevel}" />
 								<%--close opened ul tags --%>
 								<c:if test="${currentLevel < oldLevel}">
 									<c:forEach begin="${currentLevel+1}" end="${oldLevel}"
@@ -56,18 +57,22 @@
 					<c:set var="ulCount">${ulCount-1}</c:set>
 
 					</c:forEach>
+					<c:if test="${currentLevel==0}">
+						</ul>
+					</c:if>
 					<c:if
 						test="${value.IncludeSubSiteMaps == 'true' and currentLevel == 0}">
-						</ul>
+
 						<c:set var="ulCount">${ulCount-1}</c:set>
 					</c:if>
 					</c:if>
 					<%-- begin test if subsitemaps should be shown --%>
+
+
 					<c:choose>
 						<c:when
-							test="${value.IncludeSubSiteMaps == 'false' and item.resource.typeId == 23}">
+							test="${value.IncludeSubSiteMaps == 'false' and  item.resource.typeId == 23 }">
 							<c:set var="insideSubSitemap">true</c:set>
-							<c:set var="oldLevel">${currentLevel}</c:set>
 						</c:when>
 						<c:when
 							test="${insideSubSitemap == 'true' and currentLevel == oldLevel}">
@@ -81,61 +86,63 @@
 							<c:when test="${currentLevel == 0}">
 								<%-- close previous top level item --%>
 								<c:if test="${not status.first and oldLevel == 0}">
+									</ul>
+								</c:if>
+								<%-- Create new bootstrap in case of enough columns --%>
+								<c:if
+									test="${colCount > (not empty cms.element.settings.cols?((12/cms.element.settings.cols)-1):2)}">
+									</ul>
+									<ul class="row">
+										<c:set var="colCount">0</c:set>
+								</c:if>
+								<c:set var="colCount">${colCount +1}</c:set>
+								<ul
+									class="col-xs-12 col-md-${not empty cms.element.settings.cols?cms.element.settings.cols: '4'}">
+									<c:set var="ulCount">${ulCount+1}</c:set>
+							</c:when>
+							<%-- open new sublist in case of subitems --%>
+							<c:when test="${currentLevel > oldLevel}">
+								<ul
+									${(value.SubFoldersOpenedPerDefault == 'true' or  (currentLevel == 1 and value.SitemapOpenedPerDefault == 'true'))?'':'style="display: none;"'}>
+									<c:set var="ulCount">${ulCount+1}</c:set>
+							</c:when>
+						</c:choose>
+						<%-- test if item includes subitems --%>
+						<c:set var="parentItem">false</c:set>
+						<c:forEach items="${nav.items}" var="nextItem"
+							varStatus="nextstatus">
+							<c:if
+								test="${(nextstatus.index eq (status.index + 1) and (nextItem.navTreeLevel-firstLevel) > currentLevel) and nextItem.navTreeLevel < maxDepth}">
+								<c:set var="parentItem">true</c:set>
+							</c:if>
+						</c:forEach>
+						<%-- begin show of the item depending on type (parent or not) --%>
+						<c:choose>
+							<c:when test="${parentItem eq 'true'}">
+								<li class="parent clearfix"><span>${item.navText}</span><i
+									class="fa fa-chevron-down ${(value.SitemapOpenedPerDefault eq 'true' and currentLevel == 0) or (value.SubFoldersOpenedPerDefault eq 'true')?'open':'' }"></i>
+								</li>
+							</c:when>
+							<c:otherwise>
+								<li><a href="<cms:link>${item.resourceName}</cms:link>">${item.navText}</a>
+								</li>
+							</c:otherwise>
+						</c:choose>
+						<%-- end show of the item depending on type (parent or not) --%>
+					</c:if>
+					</c:if>
+					<c:set var="oldLevel">${currentLevel}</c:set>
+
+					</c:forEach>
+					<%-- close opened sublists --%>
+					<c:if test="${ulCount>0}">
+						<c:forEach begin="0" end="${ulCount}">
+							</ul>
+						</c:forEach>
+					</c:if>
+					<%--end loop over all --%>
 					</ul>
-					</c:if>
-					<%-- Create new bootstrap in case of enough columns --%>
-					<c:if
-						test="${colCount > (not empty cms.element.settings.cols?((12/cms.element.settings.cols)-1):2)}">
-						</ul>
-						<ul class="row">
-							<c:set var="colCount">0</c:set>
-					</c:if>
-					<c:set var="colCount">${colCount +1}</c:set>
-					<ul
-						class="col-xs-12 col-md-${not empty cms.element.settings.cols?cms.element.settings.cols: '4'}">
-						<c:set var="ulCount">${ulCount+1}</c:set>
-					</c:when>
-					<%-- open new sublist in case of subitems --%>
-					<c:when test="${currentLevel > oldLevel}">
-						<ul
-							${(value.SubFoldersOpenedPerDefault == 'true' or  (currentLevel == 1 and value.SitemapOpenedPerDefault == 'true'))?'':'style="display: none;"'}>
-							<c:set var="ulCount">${ulCount+1}</c:set>
-					</c:when>
-			</c:choose>
-			<%-- test if item includes subitems --%>
-			<c:set var="parentItem">false</c:set>
-			<c:forEach items="${nav.items}" var="nextItem" varStatus="nextstatus">
-				<c:if
-					test="${(nextstatus.index eq (status.index + 1) and (nextItem.navTreeLevel-firstLevel) > currentLevel) and nextItem.navTreeLevel < maxDepth}">
-					<c:set var="parentItem">true</c:set>
-				</c:if>
-			</c:forEach>
-			<%-- begin show of the item depending on type (parent or not) --%>
-			<c:choose>
-				<c:when test="${parentItem eq 'true'}">
-					<li class="parent clearfix"><span>${item.navText}</span><i
-						class="fa fa-chevron-down ${(value.SitemapOpenedPerDefault eq 'true' and currentLevel == 0) or (value.SubFoldersOpenedPerDefault eq 'true')?'open':'' }"></i>
-					</li>
-				</c:when>
-				<c:otherwise>
-					<li><a href="<cms:link>${item.resourceName}</cms:link>">${item.navText}</a>
-					</li>
 				</c:otherwise>
-			</c:choose>
-			<%-- end show of the item depending on type (parent or not) --%>
-			<c:set var="oldLevel">${currentLevel}</c:set>
-			</c:if>
-			</c:if>
-			</c:forEach>
-			<%-- close opened sublists --%>
-			<c:if test="${ulCount>0}">
-				<c:forEach begin="0" end="${ulCount}">
-					</ul>
-				</c:forEach>
-			</c:if>
-			<%--end loop over all --%>
-			</ul>
-			</c:otherwise>
 			</c:choose>
 		</div>
 		<script>
