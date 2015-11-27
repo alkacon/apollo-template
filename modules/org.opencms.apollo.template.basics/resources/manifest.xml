@@ -1732,6 +1732,33 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/patterns</destination>
+			<type>folder</type>
+			<uuidstructure>e56a0647-9430-11e5-8382-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 26 Nov 2015 11:29:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/img/patterns/breadcrumbs.png</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/patterns/breadcrumbs.png</destination>
+			<type>image</type>
+			<uuidstructure>e6eed189-9430-11e5-8382-0242ac11002b</uuidstructure>
+			<uuidresource>e6eed18a-9430-11e5-8382-0242ac11002b</uuidresource>
+			<datecreated>Thu, 26 Nov 2015 11:29:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:200,h:200]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>system/modules/org.opencms.apollo.template.basics/resources/img/transparent</destination>
 			<type>folder</type>
 			<uuidstructure>0c429f5f-5159-11e5-abeb-0242ac11002b</uuidstructure>
