@@ -12,6 +12,7 @@
 			<cms:contentaccess var="content" val="value" />
 			<c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
 			<c:set var="teaserLength" value="${param.teaserLength}" />
+			<c:set var="buttonColor" value="${param.buttonColor}" />
 
 			<c:if test="${paragraph.value.Image.exists}">
 				<a

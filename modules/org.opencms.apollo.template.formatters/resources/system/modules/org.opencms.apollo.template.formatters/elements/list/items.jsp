@@ -15,6 +15,7 @@
 					<cms:include page="${param.typesToCollect}">
 						<cms:param name="filename" value="${content.filename}" />
 						<cms:param name="teaserLength" value="${param.teaserLength}" />
+						<cms:param name="buttonColor">${param.buttonColor}</cms:param>
 					</cms:include>
 				</div>
 			</cms:edit>

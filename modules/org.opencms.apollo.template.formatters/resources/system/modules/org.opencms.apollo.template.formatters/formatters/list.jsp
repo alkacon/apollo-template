@@ -9,7 +9,6 @@
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
 	<cms:formatter var="con" rdfa="rdfa">
 		<c:set var="categoryFacetField">category_exact</c:set>
-
 		<div>
 			${cms.reloadMarker}
 			<c:choose>
@@ -50,33 +49,35 @@
 						</c:when>
 						<c:otherwise>
 							<c:set var="linkInnerPage">
-
 								<cms:link>%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list-dynamic-inner.jsp:bc2fedfd-76f9-11e5-904d-15b01ffdc6a6)</cms:link>
 							</c:set>
 						</c:otherwise>
 					</c:choose>
-					<div class="posts lists blog-item">
-						<cms:include file="${linkInnerPage}">
-							<cms:param name="cssID">${innerPageDivId}</cms:param>
-							<cms:param name="categoryFacetField">${categoryFacetField}</cms:param>
-							<cms:param name="typesToCollect">${con.value.TypesToCollect}</cms:param>
-							<cms:param name="pathes">${cms.requestContext.siteRoot}${cms.subSitePath}</cms:param>
-							<cms:param name="showSort">${cms.element.settings.showsort}</cms:param>
-							<cms:param name="showCategoryFilter">${cms.element.settings.showcategoryfiler}</cms:param>
-							<cms:param name="itemsPerPage">${itemsPerPage}</cms:param>
-							<cms:param name="buttonColor">${buttonColor}</cms:param>
-							<cms:param name="teaserLength">${teaserLength}</cms:param>
-							<cms:param name="extraQueries">${con.value.FilterQueries}</cms:param>
-							<cms:param name="__locale">${cms.locale}</cms:param>
-							<cms:param name="sortOrder">${con.value.SortOrder}</cms:param>
-							<cms:param name="pageUri">${cms.requestContext.uri}</cms:param>
 
+					<c:set var="params">cssID=${innerPageDivId}</c:set>
+					<c:set var="params">${params}&categoryFacetField=${categoryFacetField}</c:set>
+					<c:set var="params">${params}&typesToCollect=${con.value.TypesToCollect}</c:set>
+					<c:set var="params">${params}&pathes=${cms.requestContext.siteRoot}${cms.subSitePath}</c:set>
+					<c:set var="params">${params}&showSort=${cms.element.settings.showsort}</c:set>
+					<c:set var="params">${params}&showCategoryFilter=${cms.element.settings.showcategoryfiler}</c:set>
+					<c:set var="params">${params}&itemsPerPage=${itemsPerPage}</c:set>
+					<c:set var="params">${params}&buttonColor=${buttonColor}</c:set>
+					<c:set var="params">${params}&teaserLength=${teaserLength}</c:set>
+					<c:set var="params">${params}&teaserLength=${con.value.FilterQueries}</c:set>
+					<c:set var="params">${params}&__locale=${cms.locale}</c:set>
+					<c:set var="params">${params}&sortOrder=${con.value.SortOrder}</c:set>
+					<c:set var="params">${params}&pageUri=${cms.requestContext.uri}</c:set>
+
+
+					<div class="posts lists">
+						<cms:include file="${linkInnerPage}">
+							<c:forTokens items="${params}" delims="&" var="p">
+								<cms:param name="${fn:split(p,'=')[0]}">${fn:split(p,'=')[1]}</cms:param>
+							</c:forTokens>
 						</cms:include>
 					</div>
 
-					<c:set var="linkInnerPage">${linkInnerPage}?cssID=${innerPageDivId}&typesToCollect=${con.value.TypesToCollect}&pathes=/sites/default${cms.subSitePath}&itemsPerPage=${itemsPerPage}&teaserLength=${teaserLength}</c:set>
-					<c:set var="linkInnerPage">${linkInnerPage}&showSort=${cms.element.settings.showsort}&showCategoryFilter=${cms.element.settings.showcategoryfiler}</c:set>
-					<c:set var="linkInnerPage">${linkInnerPage}&extraQueries=<%=CmsEncoder.encode((String) pageContext.getAttribute("additionalFilterQueries"))%>&__locale=${cms.locale}&sortOrder=${con.value.SortOrder}&pageUri=${cms.requestContext.uri}&buttonColor=${buttonColor}&teaserLength=${teaserLength}</c:set>
+					<c:set var="linkInnerPage">${linkInnerPage}?${params}</c:set>
 					<script type="text/javascript">
 						var lock = false;
 						function reloadInnerList(searchStateParameters) {

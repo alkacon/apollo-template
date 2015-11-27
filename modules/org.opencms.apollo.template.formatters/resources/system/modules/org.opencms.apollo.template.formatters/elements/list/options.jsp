@@ -10,6 +10,8 @@
 		<c:set var="categoryFacetField">${param.categoryFacetField}	</c:set>
 		<c:set var="showCategoryFilter">${param.showCategoryFilter}	</c:set>
 		<c:set var="showSort">${param.showSort}	</c:set>
+		<c:set var="buttonColor" value="${param.buttonColor}" />
+
 		<cms:search configString="${param.searchConfig}" var="search"
 			addContentInfo="true" />
 		<c:set var="cmsObject" value="${cms.vfs.cmsObject}" />

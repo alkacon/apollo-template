@@ -27,6 +27,7 @@
 									<cms:param name="searchConfig">${searchConfig}</cms:param>
 									<cms:param name="showCategoryFilter">${param.showCategoryFilter}</cms:param>
 									<cms:param name="showSort">${param.showSort}</cms:param>
+									<cms:param name="buttonColor">${param.buttonColor}</cms:param>
 									<cms:param name="categoryFacetField">${categoryFacetField}</cms:param>
 								</cms:include>
 							</div>
@@ -34,7 +35,8 @@
 								<cms:include
 									page="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list/items.jsp:b3767e91-7704-11e5-904d-15b01ffdc6a6)">
 									<cms:param name="searchConfig">${searchConfig}</cms:param>
-									<cms:param name="teaserLength">${param.teaserLength}</cms:param>
+									<cms:param name="teaserLength">${param.teaserLength}</cms:param>									
+									<cms:param name="buttonColor">${param.buttonColor}</cms:param>
 								</cms:include>
 							</div>
 							<div class="spinner mv-20" style="opacity: 0">
@@ -70,8 +72,8 @@
 					</c:if>
 				</c:when>
 				<c:otherwise>
-					<cms:include
-						page="%(link.weak:/system/modules/org.opencms.apollo.template.formatters/elements/list/new.jsp:0aeecb5b-8a1b-11e5-a24e-0242ac11002b)"></cms:include>
+					<%@include
+						file="%(link.weak:/system/modules/org.opencms.apollo.template.formatters/elements/list/new.jsp:0aeecb5b-8a1b-11e5-a24e-0242ac11002b)"%>
 				</c:otherwise>
 			</c:choose>
 		</c:if>

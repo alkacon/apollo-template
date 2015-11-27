@@ -13,7 +13,6 @@
 	<c:if test="${empty fn:trim(buttonColor) }">
 		<c:set var="buttonColor" scope="request">red</c:set>
 	</c:if>
-
 	<div>
 		<c:set var="searchConfig">
 			<%@include

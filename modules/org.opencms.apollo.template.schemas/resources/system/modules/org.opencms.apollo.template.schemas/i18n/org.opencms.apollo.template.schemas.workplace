@@ -64,7 +64,7 @@
     </Message>
     <Message>
       <Key><![CDATA[desc.a-tabs]]></Key>
-      <Value><![CDATA[Erzeugt mehrere reiter, kann auch als Akkordion dargestellt werden.]]></Value>
+      <Value><![CDATA[Erzeugt mehrere Reiter, kann auch als Akkordion dargestellt werden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[fileicon.a-tabs]]></Key>
@@ -88,7 +88,7 @@
     </Message>
     <Message>
       <Key><![CDATA[desc.a-blog]]></Key>
-      <Value><![CDATA[Ein Blg Eintrag mit Datum, Absätzen und optionalen Bildern.]]></Value>
+      <Value><![CDATA[Ein Blog Eintrag mit Datum, Absätzen und optionalen Bildern.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[title.a-blog]]></Key>
@@ -100,7 +100,7 @@
     </Message>
     <Message>
       <Key><![CDATA[desc.a-list]]></Key>
-      <Value><![CDATA[Zeigt eine neue konfigurierbare Liste von Inhalten an, z.B. Blog Einträge, Veranstaltungen.]]></Value>
+      <Value><![CDATA[Zeigt eine konfigurierbare Liste von Inhalten an, z.B. Blog Einträge, Veranstaltungen.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[title.a-list]]></Key>
@@ -152,7 +152,7 @@
     </Message>
     <Message>
       <Key><![CDATA[desc.a-sitemap]]></Key>
-      <Value><![CDATA[Erzeugt eine Sitemapübersicht der aktuellen Subsite.]]></Value>
+      <Value><![CDATA[Erzeugt eine Sitemap Übersicht der aktuellen Subsite.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[fileicon.a-sitemap]]></Key>
