@@ -8,6 +8,7 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
 	<cms:formatter var="con" rdfa="rdfa">
+		<c:set var="categoryFacetField">category_exact</c:set>
 
 		<div>
 			${cms.reloadMarker}
@@ -57,8 +58,9 @@
 					<div class="posts lists blog-item">
 						<cms:include file="${linkInnerPage}">
 							<cms:param name="cssID">${innerPageDivId}</cms:param>
+							<cms:param name="categoryFacetField">${categoryFacetField}</cms:param>
 							<cms:param name="typesToCollect">${con.value.TypesToCollect}</cms:param>
-							<cms:param name="pathes">"${cms.requestContext.siteRoot}${cms.subSitePath}"</cms:param>
+							<cms:param name="pathes">${cms.requestContext.siteRoot}${cms.subSitePath}</cms:param>
 							<cms:param name="showSort">${cms.element.settings.showsort}</cms:param>
 							<cms:param name="showCategoryFilter">${cms.element.settings.showcategoryfiler}</cms:param>
 							<cms:param name="itemsPerPage">${itemsPerPage}</cms:param>
@@ -68,10 +70,11 @@
 							<cms:param name="__locale">${cms.locale}</cms:param>
 							<cms:param name="sortOrder">${con.value.SortOrder}</cms:param>
 							<cms:param name="pageUri">${cms.requestContext.uri}</cms:param>
+
 						</cms:include>
 					</div>
 
-					<c:set var="linkInnerPage">${linkInnerPage}?cssID=${innerPageDivId}&typesToCollect=${con.value.TypesToCollect}&pathes=\"/sites/default${cms.subSitePath}\"&itemsPerPage=${itemsPerPage}&teaserLength=${teaserLength}</c:set>
+					<c:set var="linkInnerPage">${linkInnerPage}?cssID=${innerPageDivId}&typesToCollect=${con.value.TypesToCollect}&pathes=/sites/default${cms.subSitePath}&itemsPerPage=${itemsPerPage}&teaserLength=${teaserLength}</c:set>
 					<c:set var="linkInnerPage">${linkInnerPage}&showSort=${cms.element.settings.showsort}&showCategoryFilter=${cms.element.settings.showcategoryfiler}</c:set>
 					<c:set var="linkInnerPage">${linkInnerPage}&extraQueries=<%=CmsEncoder.encode((String) pageContext.getAttribute("additionalFilterQueries"))%>&__locale=${cms.locale}&sortOrder=${con.value.SortOrder}&pageUri=${cms.requestContext.uri}&buttonColor=${buttonColor}&teaserLength=${teaserLength}</c:set>
 					<script type="text/javascript">
@@ -83,8 +86,8 @@
 									.concat(searchStateParameters), function(
 									resultList) {
 								$('.posts').html(resultList);
-								$('.spinner').css(
-										'animated infinite bounceOut');
+								$('.spinner')
+										.css('animated infinite bounceOut');
 							});
 							$('html, body').animate(
 									{
@@ -113,22 +116,35 @@
 							}
 						}
 					</script>
-					<c:if test="${cms.element.settings.usepagination != 'true' }">
-						<script>
-							function init() {
-								$(window).scroll(
-										function(event) {
-											if ($(".pagination").length
-													&& $(".pagination")
-															.visible(true)) {
-												appendInnerList($('#loadMore')
-														.attr('data-load'));
-											}
-										});
-							}
-						</script>
-					</c:if>
-
+					<c:choose>
+						<c:when test="${cms.element.settings.usepagination != 'true' }">
+							<script>
+								function initList() {
+									$(window)
+											.scroll(
+													function(event) {
+														if ($(".pagination").length
+																&& $(
+																		".pagination")
+																		.visible(
+																				true)) {
+															appendInnerList($(
+																	'#loadMore')
+																	.attr(
+																			'data-load'));
+														}
+													});
+								}
+							</script>
+						</c:when>
+						<c:otherwise>
+							<script>
+								function initList() {
+									//Nothing has to initialized in case of a static list.
+								}
+							</script>
+						</c:otherwise>
+					</c:choose>
 				</c:otherwise>
 			</c:choose>
 		</div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="de">
@@ -20,23 +20,23 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.Headline.help]]></Key>
-      <Value><![CDATA[Die Überschrift für diese Liste, kann mittels Element Setting ausgeblended werden.]]></Value>
+      <Value><![CDATA[Die Überschrift für diese Liste, kann mit Hilfe einer Einstellung ausgeblendet werden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.TypesToCollect]]></Key>
-      <Value><![CDATA[Zu sammelnde Einträge]]></Value>
+      <Value><![CDATA[Listentyp]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.TypesToCollect.help]]></Key>
-      <Value><![CDATA[Wählen Sie die Art der Einträge, welche in der Liste angezeigt werden.]]></Value>
+      <Value><![CDATA[Wählen Sie den Typ der Inhalte, die in der Liste angezeigt werden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.FilterQueries]]></Key>
-      <Value><![CDATA[Filter queries]]></Value>
+      <Value><![CDATA[Filter Queries]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.FilterQueries.help]]></Key>
-      <Value><![CDATA[Zusätzliche Solr filter queries <i>(Syntax: &amp;fq=fieldName:"term")</i>.]]></Value>
+      <Value><![CDATA[Zusätzliche Solr Filter Queries <i>(Syntax: &amp;fq=fieldName:"term")</i>.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.SortOrder]]></Key>
@@ -61,14 +61,6 @@
     <Message>
       <Key><![CDATA[label.ApolloList.ItemsPerPage.help]]></Key>
       <Value><![CDATA[Legt die Anzahl der angezeigten Elemente pro Seite fest.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloList.CreatePath]]></Key>
-      <Value><![CDATA[Erstellungspfad]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloList.CreatePath.help]]></Key>
-      <Value><![CDATA[Der Ort, an dem neue Ressourcen angelegt werden sollen, wenn man das "+"-Symbol des Collectors verwendet.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.GalleryTitle]]></Key>
@@ -195,14 +187,6 @@
     <Message>
       <Key><![CDATA[label.ApolloList.ItemsPerPage.help]]></Key>
       <Value><![CDATA[Sets the number of items that are shown per page.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloList.CreatePath]]></Key>
-      <Value><![CDATA[Create path]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloList.CreatePath.help]]></Key>
-      <Value><![CDATA[The path where to create new resources, when using the "+" symbol.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.Link]]></Key>

@@ -5,16 +5,17 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
-	<c:if test="${not empty searchT}">
-		<c:set var="teaserLength">${param.teaserLength}</c:set>
-		<c:set var="search" value="${searchT}" />
+	<c:if test="${not empty param.searchConfig}">
+		<cms:search configString="${param.searchConfig}" var="search"
+			addContentInfo="true" />
 		<c:forEach var="result" items="${search.searchResults}">
-			<c:set var="content" value="${result.xmlContent}" scope="request" />
-			<c:set var="paragraph" value="${content.valueList.Paragraph['0']}"
-				scope="request" />
+			<c:set var="content" value="${result.xmlContent}" />
 			<cms:edit uuid='${result.fields["id"]}' create="true" delete="true">
 				<div class="list-entry row mb-20">
-					<cms:include page="${param.typesToCollect}"></cms:include>
+					<cms:include page="${param.typesToCollect}">
+						<cms:param name="filename" value="${content.filename}" />
+						<cms:param name="teaserLength" value="${param.teaserLength}" />
+					</cms:include>
 				</div>
 			</cms:edit>
 		</c:forEach>

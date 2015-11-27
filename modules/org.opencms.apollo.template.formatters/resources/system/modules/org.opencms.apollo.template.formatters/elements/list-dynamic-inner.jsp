@@ -4,16 +4,18 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<c:set var="cssID">${param.cssID}</c:set>
-
+<cms:secureparams />
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
-	<cms:include
-		page="%(link.weak:/system/modules/org.opencms.apollo.template.formatters/elements/list/search-options.jsp:914d991e-8a1b-11e5-a24e-0242ac11002b)"></cms:include>
+	<c:set var="cssID">${param.cssID}</c:set>
+	<c:set var="categoryFacetField">category_exact</c:set>
 	<div>
+		<c:set var="searchConfig">
+			<%@include
+				file="%(link.weak:/system/modules/org.opencms.apollo.template.formatters/elements/list/search-options.jsp:914d991e-8a1b-11e5-a24e-0242ac11002b)"%>
+		</c:set>
 		<cms:search configString="${searchConfig}" var="search"
 			addContentInfo="true" />
-		<c:set var="searchT" value="${search}" scope="request" />
 		<c:if test="${empty param.page or search.numPages>=param.page}">
 			<c:choose>
 				<c:when test="${search.numFound > 0}">
@@ -22,11 +24,18 @@
 							<div id="list_large_pages">
 								<cms:include
 									page="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list/options.jsp:50e6b434-7700-11e5-904d-15b01ffdc6a6)">
+									<cms:param name="searchConfig">${searchConfig}</cms:param>
+									<cms:param name="showCategoryFilter">${param.showCategoryFilter}</cms:param>
+									<cms:param name="showSort">${param.showSort}</cms:param>
+									<cms:param name="categoryFacetField">${categoryFacetField}</cms:param>
 								</cms:include>
 							</div>
 							<div id="${cssID}">
 								<cms:include
-									page="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list/items.jsp:b3767e91-7704-11e5-904d-15b01ffdc6a6)"></cms:include>
+									page="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list/items.jsp:b3767e91-7704-11e5-904d-15b01ffdc6a6)">
+									<cms:param name="searchConfig">${searchConfig}</cms:param>
+									<cms:param name="teaserLength">${param.teaserLength}</cms:param>
+								</cms:include>
 							</div>
 							<div class="spinner mv-20" style="opacity: 0">
 								<i class="fa fa-spinner"></i>
@@ -35,6 +44,8 @@
 						<c:otherwise>
 							<cms:include
 								page="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list/items.jsp:b3767e91-7704-11e5-904d-15b01ffdc6a6)">
+								<cms:param name="searchConfig">${searchConfig}</cms:param>
+								<cms:param name="teaserLength">${param.teaserLength}</cms:param>
 							</cms:include>
 						</c:otherwise>
 					</c:choose>
@@ -64,5 +75,6 @@
 				</c:otherwise>
 			</c:choose>
 		</c:if>
+
 	</div>
 </cms:bundle>

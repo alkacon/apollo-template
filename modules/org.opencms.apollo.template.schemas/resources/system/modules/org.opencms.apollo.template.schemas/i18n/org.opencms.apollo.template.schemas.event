@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -25,6 +25,14 @@
     <Message>
       <Key><![CDATA[label.ApolloEvent.EndDate.help]]></Key>
       <Value><![CDATA[The end date of the event.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEvent.Teaser]]></Key>
+      <Value><![CDATA[Teaser]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEvent.Teaser.help]]></Key>
+      <Value><![CDATA[The teaser text of the event.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Paragraph]]></Key>
@@ -73,22 +81,6 @@
     <Message>
       <Key><![CDATA[label.ApolloEvent.GalleryTitle.help]]></Key>
       <Value><![CDATA[The gallery title of the event. It is not shown on the page.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNestedImage.Image]]></Key>
-      <Value><![CDATA[Image Path]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNestedImage.Image.help]]></Key>
-      <Value><![CDATA[The absolute path to the image.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNestedImage.Title]]></Key>
-      <Value><![CDATA[Title]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNestedImage.Title.help]]></Key>
-      <Value><![CDATA[The title of the image.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.TabGeneral]]></Key>
@@ -143,6 +135,14 @@
     <Message>
       <Key><![CDATA[label.ApolloEvent.EndDate.help]]></Key>
       <Value><![CDATA[Das Enddatum der Veranstaltung.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEvent.Teaser]]></Key>
+      <Value><![CDATA[Teaser]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEvent.Teaser.help]]></Key>
+      <Value><![CDATA[Der Teasertext der Veranstaltung.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Paragraph]]></Key>

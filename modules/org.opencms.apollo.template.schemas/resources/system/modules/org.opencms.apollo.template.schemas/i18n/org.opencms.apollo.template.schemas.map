@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -101,6 +101,108 @@
     <Message>
       <Key><![CDATA[label.ApolloMap.Points]]></Key>
       <Value><![CDATA[Coordinates]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[label.ApolloMap.Headline]]></Key>
+      <Value><![CDATA[Überschrift]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.Headline.help]]></Key>
+      <Value><![CDATA[Die Überschrift oberhalb der Karte.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.Text]]></Key>
+      <Value><![CDATA[Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.Text.help]]></Key>
+      <Value><![CDATA[Der Text wird mit der Karte angezeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.MapSize]]></Key>
+      <Value><![CDATA[Kartengröße]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.MapSize.help]]></Key>
+      <Value><![CDATA[Die Größe der Karte in Pixeln, das Format ist &quot;Breite x Höhe&quot;. Prozent Notation (%) kann auch verwendet werden, z.B. &quot;100%x400&quot;.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.MapType]]></Key>
+      <Value><![CDATA[Kartentyp]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.MapType.help]]></Key>
+      <Value><![CDATA[Der Typ der angezeigten Karte.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.MapZoom]]></Key>
+      <Value><![CDATA[Zoom]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.MapZoom.help]]></Key>
+      <Value><![CDATA[Der Zoom Faktor der angezeigten Karte.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.Route]]></Key>
+      <Value><![CDATA[Route]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.Route.help]]></Key>
+      <Value><![CDATA[Wenn angekreuzt, zeigt die Seite einen Routenplaner zum Ziel an (zum ersten Eintrag der Koordinaten).]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.ShowMarkers]]></Key>
+      <Value><![CDATA[Zeige Marker]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.ShowMarkers.help]]></Key>
+      <Value><![CDATA[Wenn angekreuzt, werden Marker sofort in der Karte angezeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.MapCoord]]></Key>
+      <Value><![CDATA[Koordinaten]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMapCoord.Caption]]></Key>
+      <Value><![CDATA[Beschriftung]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMapCoord.Caption.help]]></Key>
+      <Value><![CDATA[Die Beschriftung der Korrdinaten.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMapCoord.Address]]></Key>
+      <Value><![CDATA[Adresse]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMapCoord.Address.help]]></Key>
+      <Value><![CDATA[Die optionale Adresse für die Korrdinaten. Wenn die Adresse nicht von Google ermittelt werden soll, kann hier die Adresse manuell eingegeben werden.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMapCoord.MarkerGroup]]></Key>
+      <Value><![CDATA[Marker Gruppe]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMapCoord.MarkerGroup.help]]></Key>
+      <Value><![CDATA[Der optionale Name der Marker Gruppe. Diese Option kann zur Gruppierung von Koordinaten benutzt werden. Benutzen Sie den gleichen Gruppennamen für alle Koordinaten einer Gruppe.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMapCoord.Coord]]></Key>
+      <Value><![CDATA[Koordinaten]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMapCoord.Coord.help]]></Key>
+      <Value><![CDATA[Die exakten Koordinaten des anzuzeigenden Punktes.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.General]]></Key>
+      <Value><![CDATA[Einstellungen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloMap.Points]]></Key>
+      <Value><![CDATA[Koordinaten]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -74,7 +74,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloFlexibleElement.Choice.help]]></Key>
-      <Value><![CDATA[WÃ¤hlen Sie das anzuzeigende Element.]]></Value>
+      <Value><![CDATA[Wählen Sie das anzuzeigende Element.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloFlexibleElement.GalleryTitle]]></Key>

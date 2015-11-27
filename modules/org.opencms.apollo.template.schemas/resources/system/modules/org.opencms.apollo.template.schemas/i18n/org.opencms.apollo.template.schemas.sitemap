@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -42,7 +42,7 @@
   <Bundle language="de">
     <Message>
       <Key><![CDATA[apollo.sitemap.message.edited]]></Key>
-      <Value><![CDATA[Das Element wurde bearbeitet, die Seite wird neugeladen.]]></Value>
+      <Value><![CDATA[Das Element wurde bearbeitet, die Seite wird neu geladen.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSitemap.Title]]></Key>
@@ -58,11 +58,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSitemap.ShowFrom.help]]></Key>
-      <Value><![CDATA[Pfad ab welchem die Sitemap erstellt werden soll.]]></Value>
+      <Value><![CDATA[Der Pfad, ab welchem die Sitemap erstellt werden soll.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSitemap.SitemapOpenedPerDefault]]></Key>
-      <Value><![CDATA[Erste Stude geöffnet]]></Value>
+      <Value><![CDATA[Erste Stufe geöffnet]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSitemap.SubFoldersOpenedPerDefault]]></Key>
@@ -74,7 +74,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSitemap.IncludeSubSiteMaps]]></Key>
-      <Value><![CDATA[Subsitemap inbehalten]]></Value>
+      <Value><![CDATA[Inklusive Subsitemaps]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

@@ -6,12 +6,17 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
-	<c:if test="${not empty searchT}">
-		<c:set var="search" value="${searchT}" />
+	<c:if test="${not empty param.searchConfig}">
+		<c:set var="categoryFacetField">${param.categoryFacetField}	</c:set>
+		<c:set var="showCategoryFilter">${param.showCategoryFilter}	</c:set>
+		<c:set var="showSort">${param.showSort}	</c:set>
+		<cms:search configString="${param.searchConfig}" var="search"
+			addContentInfo="true" />
 		<c:set var="cmsObject" value="${cms.vfs.cmsObject}" />
 		<%
 	    CmsObject cmsObject = (CmsObject)pageContext.getAttribute("cmsObject");
 	%>
+
 		<div class="row mb-20">
 			<section id="listOptions" class="btn-group pull-right">
 				<%--Category filter --%>
@@ -19,7 +24,7 @@
 					<c:set var="facetController"
 						value="${search.controller.fieldFacets.fieldFacetController[categoryFacetField]}" />
 					<c:set var="facetResult"
-						value="${searchT.fieldFacet[categoryFacetField]}" />
+						value="${search.fieldFacet[categoryFacetField]}" />
 					<c:if
 						test="${not empty facetResult and cms:getListSize(facetResult.values) > 0}">
 

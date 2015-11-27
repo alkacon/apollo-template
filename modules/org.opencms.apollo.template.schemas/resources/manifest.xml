@@ -277,7 +277,12 @@
 			<uuidstructure>d644e4b6-523d-11e5-9495-0242ac11002b</uuidstructure>
 			<datecreated>Thu, 03 Sep 2015 13:15:24 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
