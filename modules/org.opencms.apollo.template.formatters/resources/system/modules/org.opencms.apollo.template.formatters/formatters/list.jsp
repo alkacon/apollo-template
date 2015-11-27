@@ -44,12 +44,12 @@
 					<c:choose>
 						<c:when test="${cms.element.settings.usepagination == 'true' }">
 							<c:set var="linkInnerPage">
-								<cms:link>%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list-inner.jsp:5ca5be42-5cff-11e5-96ab-0242ac11002b)</cms:link>
+								%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list-inner.jsp:5ca5be42-5cff-11e5-96ab-0242ac11002b)
 							</c:set>
 						</c:when>
 						<c:otherwise>
 							<c:set var="linkInnerPage">
-								<cms:link>%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list-dynamic-inner.jsp:bc2fedfd-76f9-11e5-904d-15b01ffdc6a6)</cms:link>
+								%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list-dynamic-inner.jsp:bc2fedfd-76f9-11e5-904d-15b01ffdc6a6)
 							</c:set>
 						</c:otherwise>
 					</c:choose>
@@ -77,7 +77,7 @@
 						</cms:include>
 					</div>
 
-					<c:set var="linkInnerPage">${linkInnerPage}?${params}</c:set>
+					<c:set var="linkInnerPage"><cms:link>${linkInnerPage}</cms:link>?${params}</c:set>
 					<script type="text/javascript">
 						var lock = false;
 						function reloadInnerList(searchStateParameters) {
