@@ -66,11 +66,11 @@
   <Bundle language="de">
     <Message>
       <Key><![CDATA[label.ApolloCarousel.Headline]]></Key>
-      <Value><![CDATA[Ãœberschrift]]></Value>
+      <Value><![CDATA[Überschrift]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloCarousel.Headline.help]]></Key>
-      <Value><![CDATA[Die Ãœberschrift des Karussells kann mit einer Elementeinstellung verborgen werden.]]></Value>
+      <Value><![CDATA[Die Überschrift des Karussells kann mit einer Elementeinstellung verborgen werden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloCarousel.Item]]></Key>
@@ -90,11 +90,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloCarouselItem.Headline]]></Key>
-      <Value><![CDATA[BildÃ¼berschrift]]></Value>
+      <Value><![CDATA[Bildüberschrift]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloCarouselItem.Headline.help]]></Key>
-      <Value><![CDATA[Optionale Ãœberschrift des Bildtexts.]]></Value>
+      <Value><![CDATA[Optionale Überschrift des Bildtexts.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloCarouselItem.Text]]></Key>
@@ -110,7 +110,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloCarousel.GalleryTitle.help]]></Key>
-      <Value><![CDATA[Der Titel des Karussells fÃ¼r die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
+      <Value><![CDATA[Der Titel des Karussells für die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.carousel.default.Headline]]></Key>

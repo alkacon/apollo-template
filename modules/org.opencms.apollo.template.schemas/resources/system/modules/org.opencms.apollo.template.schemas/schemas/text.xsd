@@ -1,6 +1,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 	
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+    <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/image.xsd"/>s
 	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/link.xsd"/>
 
 	<xsd:element name="ApolloTexts" type="OpenCmsApolloTexts"/>
@@ -15,6 +16,7 @@
 		<xsd:sequence>
 			<xsd:element name="Headline" type="OpenCmsString" />
 			<xsd:element name="Text" type="OpenCmsHtml" />
+            <xsd:element name="Image" type="OpenCmsApolloNestedImage" minOccurs="0" />
 			<xsd:element name="Link" type="OpenCmsApolloLink" minOccurs="0" />
 			<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
 		</xsd:sequence>
@@ -43,6 +45,11 @@
 		  	<visibilities>
                 <visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
             </visibilities>
+            <editorchangehandlers>
+   				<editorchangehandler 
+   					class="org.opencms.ade.contenteditor.CmsEditorChangeHandlerProperty" 
+   					scope="Image*/Image" configuration="Copyright|../Copyright" />
+    		</editorchangehandlers>
 		</xsd:appinfo>
 	</xsd:annotation>  
 </xsd:schema>

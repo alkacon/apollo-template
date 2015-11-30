@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -64,7 +64,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.TextBackgroundColor.help]]></Key>
-      <Value><![CDATA[The optionale background color of the  text box. If not background color is activated, the color will be set to transparent.]]></Value>
+      <Value><![CDATA[The optional background color of the  text box. If not background color is activated, the color will be set to transparent.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.ImageHeight]]></Key>
@@ -120,7 +120,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderImage.TitleLine1.help]]></Key>
-      <Value><![CDATA[DThe first line of the text box.]]></Value>
+      <Value><![CDATA[The first line of the text box.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderImage.TitleLine2]]></Key>
@@ -136,7 +136,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderImage.Copyright.help]]></Key>
-      <Value><![CDATA[The Copyright Information is optional and is displyed in the lower left corner of the image.]]></Value>
+      <Value><![CDATA[The Copyright information is optional and is displayed in the lower left corner of the image.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderImage.Position]]></Key>
@@ -190,11 +190,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.Delay]]></Key>
-      <Value><![CDATA[VerzÃ¶gerung]]></Value>
+      <Value><![CDATA[Verzögerung]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.Delay.help]]></Key>
-      <Value><![CDATA[Die Zeit bis zum nÃ¤chsten Bildwechsel.]]></Value>
+      <Value><![CDATA[Die Zeit bis zum nächsten Bildwechsel.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.ShowTimer]]></Key>
@@ -202,7 +202,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.ShowTimer.help]]></Key>
-      <Value><![CDATA[Wenn angekreuzt, wird die Zeitleiste bis zum nÃ¤chsten Bildwechsel angezeigt.]]></Value>
+      <Value><![CDATA[Wenn angekreuzt, wird die Zeitleiste bis zum nächsten Bildwechsel angezeigt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider..ShowNumbers]]></Key>
@@ -210,7 +210,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.ShowNumbers.help]]></Key>
-      <Value><![CDATA[Wenn angekreuzt, werden fÃ¼r die Bilder klickbare Nummern angezeigt.]]></Value>
+      <Value><![CDATA[Wenn angekreuzt, werden für die Bilder klickbare Nummern angezeigt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.ShowNavButtons]]></Key>
@@ -246,11 +246,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.ImageHeight]]></Key>
-      <Value><![CDATA[BildhÃ¶he]]></Value>
+      <Value><![CDATA[Bildhöhe]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.ImageHeight.help]]></Key>
-      <Value><![CDATA[Die HÃ¶he der Bilder, die Breite wird automatisch berechnet.]]></Value>
+      <Value><![CDATA[Die Höhe der Bilder, die Breite wird automatisch berechnet.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.Image]]></Key>
@@ -258,7 +258,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.Image.help]]></Key>
-      <Value><![CDATA[Das hier ausgewÃ¤hlte Bild wird fÃ¼r den Rotator verwendet.]]></Value>
+      <Value><![CDATA[Das hier ausgewählte Bild wird für den Rotator verwendet.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderImage.Uri]]></Key>
@@ -274,15 +274,15 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderImage.Link.help]]></Key>
-      <Value><![CDATA[Optionaler Link, der bei Klick auf das Bild geÃ¶ffnet wird. <i>Beachten Sie:</i> Bei externen Links bitte mit <b>http://</b> PrÃ¤fix eingeben.]]></Value>
+      <Value><![CDATA[Optionaler Link, der bei Klick auf das Bild geöffnet wird. <i>Beachten Sie:</i> Bei externen Links bitte mit <b>http://</b> Präfix eingeben.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderImage.NewWin]]></Key>
-      <Value><![CDATA[Ã–ffne Link in neuem Fenster]]></Value>
+      <Value><![CDATA[Öffne Link in neuem Fenster]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderImage.NewWin.help]]></Key>
-      <Value><![CDATA[Wenn angekreuzt, wird der Link in einem neuen Browserfenster geÃ¶ffnet.]]></Value>
+      <Value><![CDATA[Wenn angekreuzt, wird der Link in einem neuen Browserfenster geöffnet.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderImage.SuperTitle]]></Key>
@@ -318,11 +318,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderImage.Position]]></Key>
-      <Value><![CDATA[Optionale Position der Textbox innerhalb des Bildes, falls die Standardposition nicht gewÃ¼nscht wird.]]></Value>
+      <Value><![CDATA[Box Position]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderImage.Position.help]]></Key>
-      <Value><![CDATA[Die Copyright Information zu dem Bild ist optional und wird unten links eingeblendet.]]></Value>
+      <Value><![CDATA[Optionale Position der Textbox innerhalb des Bildes, falls die Standardposition nicht gewünscht wird.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderImageTextPosition.Top]]></Key>

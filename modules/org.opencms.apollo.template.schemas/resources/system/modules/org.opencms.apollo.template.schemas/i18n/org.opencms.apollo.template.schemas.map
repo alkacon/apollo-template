@@ -170,7 +170,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMapCoord.Caption.help]]></Key>
-      <Value><![CDATA[Die Beschriftung der Korrdinaten.]]></Value>
+      <Value><![CDATA[Die Beschriftung der Koordinaten.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMapCoord.Address]]></Key>
@@ -178,7 +178,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMapCoord.Address.help]]></Key>
-      <Value><![CDATA[Die optionale Adresse für die Korrdinaten. Wenn die Adresse nicht von Google ermittelt werden soll, kann hier die Adresse manuell eingegeben werden.]]></Value>
+      <Value><![CDATA[Die optionale Adresse für die Koordinaten. Wenn die Adresse nicht von Google ermittelt werden soll, kann hier die Adresse manuell eingegeben werden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMapCoord.MarkerGroup]]></Key>

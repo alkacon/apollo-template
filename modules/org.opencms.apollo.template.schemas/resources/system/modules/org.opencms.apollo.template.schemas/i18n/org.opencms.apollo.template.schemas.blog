@@ -52,11 +52,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.AuthorMail]]></Key>
-      <Value><![CDATA[E-Mail]]></Value>
+      <Value><![CDATA[Email]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.AuthorMail.help]]></Key>
-      <Value><![CDATA[The e-mail of the blog entry creator.]]></Value>
+      <Value><![CDATA[The email address of the blog entry creator.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Availability]]></Key>
@@ -118,7 +118,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Paragraph.help]]></Key>
-      <Value><![CDATA[Die AbsÃ¤tze des Blog Eintrags.]]></Value>
+      <Value><![CDATA[Die Absätze des Blog Eintrags.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Category]]></Key>
@@ -150,11 +150,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Availability]]></Key>
-      <Value><![CDATA[GÃ¼ltigkeit]]></Value>
+      <Value><![CDATA[Gültigkeit]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Availability.help]]></Key>
-      <Value><![CDATA[Die GÃ¼ltigkeit des Blog Eintrags.]]></Value>
+      <Value><![CDATA[Die Gültigkeit des Blog Eintrags.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.General]]></Key>
@@ -166,7 +166,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.GalleryTitle.help]]></Key>
-      <Value><![CDATA[Der Titel des Blogs fÃ¼r die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
+      <Value><![CDATA[Der Titel des Blogs für die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.blog.default.Text]]></Key>
