@@ -27,7 +27,7 @@
       <Value><![CDATA[If checked, the timeline until the next image is shown.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloSlider..ShowNumbers]]></Key>
+      <Key><![CDATA[label.ApolloSlider.ShowNumbers]]></Key>
       <Value><![CDATA[Show Numbers]]></Value>
     </Message>
     <Message>
@@ -205,7 +205,7 @@
       <Value><![CDATA[Wenn angekreuzt, wird die Zeitleiste bis zum nächsten Bildwechsel angezeigt.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloSlider..ShowNumbers]]></Key>
+      <Key><![CDATA[label.ApolloSlider.ShowNumbers]]></Key>
       <Value><![CDATA[Zeige Bildnummern]]></Value>
     </Message>
     <Message>

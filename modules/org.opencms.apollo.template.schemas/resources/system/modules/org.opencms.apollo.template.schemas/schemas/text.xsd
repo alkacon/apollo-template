@@ -1,7 +1,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 	
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
-    <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/image.xsd"/>s
+    <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/image.xsd"/>
 	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/link.xsd"/>
 
 	<xsd:element name="ApolloTexts" type="OpenCmsApolloTexts"/>

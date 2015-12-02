@@ -18,10 +18,8 @@
             or (value.Link.isSet and cms.element.setting.showlink.value == 'button')}">
 					<c:set var="showTextBelow" value="true" />
 				</c:if>
-				<cms:include
-					page="%(link.weak:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)">
-					<cms:param name="copyright">${value.Copyright}</cms:param>
-				</cms:include>
+				<c:set var="copyright">${value.Copyright}</c:set>
+				<%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
 
 				<c:if
 					test="${value.Headline.isSet and cms.element.setting.showheadline.value == 'top'}">

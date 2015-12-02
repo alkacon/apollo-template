@@ -17,10 +17,8 @@
 			<c:if test="${paragraph.value.Image.exists}">
 				<a
 					href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">
-					<cms:include
-						page="%(link.weak:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)">
-						<cms:param name="copyright">${paragraph.value.Image.value.Copyright}</cms:param>
-					</cms:include>
+					<c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
+				    <%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
 					<div class="col-md-4 search-img">
 						<cms:img src="${paragraph.value.Image.value.Image}" width="800"
 							cssclass="img-responsive" scaleColor="transparent" scaleType="0"

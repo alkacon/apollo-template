@@ -111,11 +111,8 @@
 								</c:when>
 								<c:when test="${imgalign == 'left' or imgalign == 'right'}">
 
-
-									<cms:include
-										page="%(link.weak:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)">
-										<cms:param name="copyright">${paragraph.value.Image.value.Copyright}</cms:param>
-									</cms:include>
+                                    <c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
+									<%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
 
 									<div class="row">
 										<div class="col-md-4 pull-${imgalign}">
