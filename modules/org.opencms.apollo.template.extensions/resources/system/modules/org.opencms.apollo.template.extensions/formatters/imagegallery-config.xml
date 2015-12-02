@@ -24,7 +24,7 @@
     <NestedContainers>false</NestedContainers>
     <HeadIncludeJs>
       <JavascriptInline><![CDATA[
-				init();
+				initImageGallery();
 			]]></JavascriptInline>
     </HeadIncludeJs>
     <Setting>

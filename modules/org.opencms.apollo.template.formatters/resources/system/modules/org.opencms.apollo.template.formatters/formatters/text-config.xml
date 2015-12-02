@@ -27,8 +27,14 @@
       <DisplayName><![CDATA[Show elements]]></DisplayName>
       <Description><![CDATA[Sets the elements to display.]]></Description>
       <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[all]]></Default>
-      <WidgetConfig><![CDATA[all:All|headline:Only Headline|text:Only Text|]]></WidgetConfig>
+      <Default><![CDATA[textheadline]]></Default>
+      <WidgetConfig><![CDATA[all:All|textheadline:Headline and Text|textimage:Text and Image|headline:Only Headline|text:Only Text|image:Only Image]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[imgalign]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.imgalign)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <WidgetConfig><![CDATA[left:%(key.apollo.setting.image.left)|right:%(key.apollo.setting.image.right)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>

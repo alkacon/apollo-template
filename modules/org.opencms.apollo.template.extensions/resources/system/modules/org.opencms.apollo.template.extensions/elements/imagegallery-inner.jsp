@@ -26,6 +26,7 @@
 					test="${search.numFound >= param.items*param.page or (search.numFound - (param.items*param.page-1) < param.items and search.numFound - (param.items*(param.page-1)) > 0)}">
 					<c:forEach var="result" items="${search.searchResults}"
 						varStatus="status">
+						
 						<c:set var="image" value="${result.searchResource}" />
 						<c:set var="title">${fn:trim(result.fields['Title_dprop_s'])}</c:set>
 						<c:set var="imagesrc">${image.rootPath}</c:set>
@@ -35,7 +36,7 @@
 						</c:set>
 						<div class="${cssClass} comein">
 							<div class="inner">
-								<a class="content image-gallery" href="${imgsrclink}"
+								<a class="content image-gallery" href="${imgsrclink}" onclick="openGallery(event, ${status.index+param.items*(param.page-1)})" 
 									title="${showTitle eq 'true' ? title:''}" > <cms:include
 										page="responsive-image.jsp">
 										<cms:param name="css">${cssClass}</cms:param>
