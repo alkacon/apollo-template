@@ -178,7 +178,8 @@ $colored-box-borderstyles:
 			} @else {
 				color: #ffffff; 
 	  		}  		
-  		}
+  		} 		
+  		
     }
 }
 
@@ -388,49 +389,56 @@ $colored-box-positions:
 // Side menu
 
 
-.sidebar-nav-v1 li {
-	background-color: $nav-left-bg;
+ul.sidebar-nav-v1{
+	 li {
+			background-color: $nav-left-bg;
+			a, &.list-toggle:after {
+				color: $nav-left-color;				
+			}
+			a, &.active ul a{
+				background-color: $nav-left-bg;
+				&.active, &:hover{
+					background: $nav-left-bg-hover;
+					color: $nav-left-color-hover;
+					transition: all 0.5s;
+				}
+			}
+			//First level
+			a.accordion-toggle, .list-group-item.active{
+				background-color: $nav-left-bg-active;
+				border: none;
+				color: $nav-left-color-active;
+				transition: all 0.5s;				
+				&:hover{
+					background: $nav-left-bg-hover;
+					color: $nav-left-color-hover;
+					transition: all 0.5s;
+				}
+				a{
+					background: $white;
+				}
+						
+				//Second and further level
+				a.accordion-toggle, .active a{
+					background-color: $main-theme;
+					color: set-text-color($main-theme);					
+					&:hover{
+						background-color: $main-theme-hover;
+						color: set-text-color($main-theme-hover);
+						transition: all 0.5s;
+					}					
+				}		
+				&.collapsed{
+					background-color: $nav-left-bg;
+					color: $nav-left-color;
+				}
+			}		
+	}
 }
 
-.sidebar-nav-v1 li a,
-.sidebar-nav-v1 .list-toggle:after {
-	color: $nav-left-color;
-}
 
-.sidebar-nav-v1 li:hover {
-	background-color: $nav-left-bg-hover;
-}
-
-.sidebar-nav-v1 li:hover a {
-	color: $nav-left-color-hover;
-}
-
-.sidebar-nav-v1 > li.active, .sidebar-nav-v1 > li.active:hover {
-	background-color: $nav-left-bg-active;
-}
-
-.sidebar-nav-v1 > li.active a, .sidebar-nav-v1 > li.active:hover a,
-.sidebar-nav-v1 .list-toggle.active:after {
-	color: $nav-left-color-active;
-}
-
-.sidebar-nav-v1 > li.active li.active a, .sidebar-nav-v1 > li.active:hover li.active a {
-	color: $nav-left-sub-color-active;
-}
-
-.sidebar-nav-v1 > li.active li a, .sidebar-nav-v1 > li.active:hover li a {
-	color: $nav-left-sub-color;
-}
-
-.sidebar-nav-v1 > li.active li:hover a {
-	color: $nav-left-sub-color-hover;
-}
-
-.sidebar-nav-v1 li ul, .sidebar-nav-v1 li.active ul a {
-	background-color: $nav-left-sub-bg;
-}
-
-/* Sitemap.
+/*
+ Sitemap.
 ----------------------------------------------------------------------------- */
 
 .sitemap{
@@ -924,50 +932,6 @@ $colored-box-positions:
 }
 
 
-// Side menu
-
-
-.sidebar-nav-v1 li {
-	background-color: $nav-left-bg;
-}
-
-.sidebar-nav-v1 li a,
-.sidebar-nav-v1 .list-toggle:after {
-	color: $nav-left-color;
-}
-
-.sidebar-nav-v1 li:hover {
-	background-color: $nav-left-bg-hover;
-}
-
-.sidebar-nav-v1 li:hover a {
-	color: $nav-left-color-hover;
-}
-
-.sidebar-nav-v1 > li.active, .sidebar-nav-v1 > li.active:hover {
-	background-color: $nav-left-bg-active;
-}
-
-.sidebar-nav-v1 > li.active a, .sidebar-nav-v1 > li.active:hover a,
-.sidebar-nav-v1 .list-toggle.active:after {
-	color: $nav-left-color-active;
-}
-
-.sidebar-nav-v1 > li.active li.active a, .sidebar-nav-v1 > li.active:hover li.active a {
-	color: $nav-left-sub-color-active;
-}
-
-.sidebar-nav-v1 > li.active li a, .sidebar-nav-v1 > li.active:hover li a {
-	color: $nav-left-sub-color;
-}
-
-.sidebar-nav-v1 > li.active li:hover a {
-	color: $nav-left-sub-color-hover;
-}
-
-.sidebar-nav-v1 li ul, .sidebar-nav-v1 li.active ul a {
-	background-color: $nav-left-sub-bg;
-}
 
 /* Sitemap.
 ----------------------------------------------------------------------------- */
