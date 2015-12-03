@@ -28,29 +28,29 @@
     <NestedContainers>true</NestedContainers>
     <Setting>
       <PropertyName><![CDATA[param]]></PropertyName>
-      <DisplayName><![CDATA[Param]]></DisplayName>
-      <Description><![CDATA[Optional parameter for the pre-HTML markup.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.param)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.param.description)]]></Description>
       <Widget><![CDATA[string]]></Widget>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[link]]></PropertyName>
-      <DisplayName><![CDATA[Link]]></DisplayName>
-      <Description><![CDATA[Optional link to be used in the pre-HTML markup.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.link)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.link.description)]]></Description>
       <Widget><![CDATA[string]]></Widget>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[cssHints]]></PropertyName>
-      <DisplayName><![CDATA[CSS Hints]]></DisplayName>
-      <Description><![CDATA[Optional CSS classes, usually for child elements.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.csshints)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.csshints.description)]]></Description>
       <Widget><![CDATA[string]]></Widget>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[detail]]></PropertyName>
-      <DisplayName><![CDATA[Detail page settings]]></DisplayName>
-      <Description><![CDATA[Set the use of the container(s) on detail pages.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.detail)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.detail.description)]]></Description>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[none]]></Default>
-      <WidgetConfig><![CDATA[none:No special detail page settings (Default)|view:Use first container as detail view|only:Show container(s) only on detail pages]]></WidgetConfig>
+      <WidgetConfig><![CDATA[none:%(key.apollo.setting.detail.none)|view:%(key.apollo.setting.detail.view)|only:%(key.apollo.setting.detail.only)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

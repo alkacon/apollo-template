@@ -24,34 +24,34 @@
     <NestedContainers>false</NestedContainers>
     <Setting>
       <PropertyName><![CDATA[showheadline]]></PropertyName>
-      <DisplayName><![CDATA[Headline display]]></DisplayName>
-      <Description><![CDATA[Select how the headline will be shown.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.showheadline)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showheadline.description)]]></Description>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:Don't show the headline|top:Headline above the image, left aligned|bottom:Headline below, left aligned|bottomcenter:Small Headline below, centered]]></WidgetConfig>
+      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showheadline.false)|top:%(key.apollo.setting.showheadline.top)|bottom:%(key.apollo.setting.showheadline.bottom)|bottomcenter:%(key.apollo.setting.showheadline.bottomcenter)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showtext]]></PropertyName>
-      <DisplayName><![CDATA[Text display]]></DisplayName>
-      <Description><![CDATA[Select how text will be shown.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.showtext)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showtext.description)]]></Description>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:Don't show the text|true:Text below, left aligned]]></WidgetConfig>
+      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showtext.false)|true:%(key.apollo.setting.showtext.true)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showlink]]></PropertyName>
-      <DisplayName><![CDATA[Link display]]></DisplayName>
-      <Description><![CDATA[Select how the link will be shown.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.showlink)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showlink.description)]]></Description>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:Don't show the link|image:Show the link button as image overlay|button:Show a link button below the image|headline:Use the headline as link]]></WidgetConfig>
+      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showlink.false)|image:%(key.apollo.setting.showlink.image)|button:%(key.apollo.setting.showlink.button)|headline:%(key.apollo.setting.showlink.headline)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[cssClass]]></PropertyName>
-      <DisplayName><![CDATA[Wrapper CSS class]]></DisplayName>
-      <Description><![CDATA[Optional CSS class name for the outer <div> element.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
       <Widget><![CDATA[combo]]></Widget>
-      <WidgetConfig><![CDATA[mb-20 box-shadow shadow-effect-1:Shadow box for image|box-shadow shadow-effect-2 rounded-2x:Rounded shadow box for image]]></WidgetConfig>
+      <WidgetConfig><![CDATA[mb-20 box-shadow shadow-effect-1:%(key.apollo.setting.cssclass.shadowbox)|box-shadow shadow-effect-2 rounded-2x:%(key.apollo.setting.cssclass.roundedshadowbox)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

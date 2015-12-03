@@ -25,17 +25,17 @@
     <NestedContainers>false</NestedContainers>
     <Setting>
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
-      <DisplayName><![CDATA[Wrapper CSS class]]></DisplayName>
-      <Description><![CDATA[CSS class name for the outer <div> element, e.g. 'service-block service-block-red rounded-2x' sets the background color.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
       <Widget><![CDATA[combo]]></Widget>
-      <WidgetConfig><![CDATA[service-block service-block--default:Default light grey box|service-block service-block-red rounded-2x:Red box with rounded corners]]></WidgetConfig>
+      <WidgetConfig><![CDATA[service-block service-block-default:%(key.apollo.setting.cssclass.lightbox)|service-block service-block-red rounded-2x:%(key.apollo.setting.cssclass.redbox)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[iconclass]]></PropertyName>
-      <DisplayName><![CDATA[Icon CSS class]]></DisplayName>
-      <Description><![CDATA[CSS class name for the icon  element, e.g. 'icon-lg icon-bg-red fa fa-lightbulb-o' sets the icon color and shape.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.iconclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.iconclass.description)]]></Description>
       <Widget><![CDATA[combo]]></Widget>
-      <WidgetConfig><![CDATA[icon-lg icon-bg-default fa fa-info:Info icon for default box|icon-lg icon-bg-red fa fa-lightbulb-o:Lightbulb icon for red box]]></WidgetConfig>
+      <WidgetConfig><![CDATA[icon-lg icon-bg-default fa fa-info:%(key.apollo.setting.iconclass.info)|icon-lg icon-bg-red fa fa-lightbulb-o:%(key.apollo.setting.iconclass.lightbulb)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>
