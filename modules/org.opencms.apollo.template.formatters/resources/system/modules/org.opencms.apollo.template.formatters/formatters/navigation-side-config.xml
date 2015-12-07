@@ -24,10 +24,10 @@
     <NestedContainers>false</NestedContainers>
     <Setting>
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
-      <DisplayName><![CDATA[Wrapper CSS class]]></DisplayName>
-      <Description><![CDATA[Optional CSS class name for the outer <div> element.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
       <Widget><![CDATA[combo]]></Widget>
-      <WidgetConfig><![CDATA[hidden-xs:Hidden on small screens.]]></WidgetConfig>
+      <WidgetConfig><![CDATA[hidden-xs:%(key.apollo.setting.cssclass.hiddenxs)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

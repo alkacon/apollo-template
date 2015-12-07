@@ -25,27 +25,26 @@
     <NestedContainers>false</NestedContainers>
     <Setting>
       <PropertyName><![CDATA[color]]></PropertyName>
-      <DisplayName><![CDATA[Color]]></DisplayName>
-      <Description><![CDATA[The background color of the box.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.color)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[red]]></Default>
-      <WidgetConfig><![CDATA[red:Red|purple:Purple|blue:Blue|green:Green|yellow:Yellow|orange:Orange|brown:Brown]]></WidgetConfig>
+      <WidgetConfig><![CDATA[red:%(key.apollo.setting.color.red)|purple:%(key.apollo.setting.color.purple)|blue:%(key.apollo.setting.color.blue)|green:%(key.apollo.setting.color.green)|yellow:%(key.apollo.setting.color.yellow)|orange:%(key.apollo.setting.color.orange)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[rounded]]></PropertyName>
-      <DisplayName><![CDATA[Rounded corners]]></DisplayName>
-      <Description><![CDATA[Select this for rounded corners.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.rounded)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.rounded.description)]]></Description>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[x]]></Default>
-      <WidgetConfig><![CDATA[x:None|rounded:4px|rounded-2x:10px|rounded-4x:20px|rounded-x:50%]]></WidgetConfig>
+      <WidgetConfig><![CDATA[x:%(key.apollo.setting.rounded.none)|rounded:%(key.apollo.setting.rounded.1x)|rounded-2x:%(key.apollo.setting.rounded.2x)|rounded-4x:%(key.apollo.setting.rounded.4x)|rounded-x:%(key.apollo.setting.rounded.x)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[icon]]></PropertyName>
-      <DisplayName><![CDATA[Icon]]></DisplayName>
-      <Description><![CDATA[Select the displayed icon.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.icon)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.icon.description)]]></Description>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[star]]></Default>
-      <WidgetConfig><![CDATA[bookmark:Bookmark|key:Key|lightbulb-o:Lightbulb|star:Star|thumbs-up:Thumbs-Up|]]></WidgetConfig>
+      <WidgetConfig><![CDATA[bookmark:%(key.apollo.setting.icon.bookmark)|key:%(key.apollo.setting.icon.key)|lightbulb-o:%(key.apollo.setting.icon.lightbulb)|star:%(key.apollo.setting.icon.star)|thumbs-up:%(key.apollo.setting.icon.thumbsup)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

@@ -24,15 +24,15 @@
     <NestedContainers>false</NestedContainers>
     <Setting>
       <PropertyName><![CDATA[hidetitle]]></PropertyName>
-      <DisplayName><![CDATA[Hide title]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.hidetitle)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
-      <DisplayName><![CDATA[Wrapper CSS class]]></DisplayName>
-      <Description><![CDATA[Optional CSS class name for the outer <div> element.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
       <Widget><![CDATA[combo]]></Widget>
-      <WidgetConfig><![CDATA[colored-box green border-style-dotted:Green box with dotted border|colored-box red border-style-none: Red box without border]]></WidgetConfig>
+      <WidgetConfig><![CDATA[colored-box green border-style-dotted:%(key.apollo.setting.cssclass.green)|colored-box red border-style-none:%(key.apollo.setting.cssclass.red)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>
