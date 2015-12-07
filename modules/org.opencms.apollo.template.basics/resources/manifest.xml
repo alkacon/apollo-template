@@ -53,28 +53,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.basics/elements</destination>
-			<type>folder</type>
-			<uuidstructure>d2270501-91c7-11e5-aada-0242ac11002b</uuidstructure>
-			<datecreated>Mon, 23 Nov 2015 09:51:51 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.basics/elements/photoswipe.html</source>
-			<destination>system/modules/org.opencms.apollo.template.basics/elements/photoswipe.html</destination>
-			<type>plain</type>
-			<uuidstructure>da0295f3-91c7-11e5-aada-0242ac11002b</uuidstructure>
-			<uuidresource>da0295f4-91c7-11e5-aada-0242ac11002b</uuidresource>
-			<datecreated>Mon, 23 Nov 2015 09:52:04 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>system/modules/org.opencms.apollo.template.basics/git-scripts</destination>
 			<type>folder</type>
 			<uuidstructure>dc83c608-5d6d-11e5-96ab-0242ac11002b</uuidstructure>
