@@ -8794,7 +8794,24 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 1: Release Notes for OpenCms 10.0.0 Alpha 1]]></value>
+					<value><![CDATA[OpenCms 10.0.0 Alpha 1: Release Notes for OpenCms 10 Alpha 1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>release/.content/texts/t_00017.xml</source>
+			<destination>release/.content/texts/t_00017.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>fea99918-9e5e-11e5-8382-0242ac11002b</uuidstructure>
+			<uuidresource>fea99919-9e5e-11e5-8382-0242ac11002b</uuidresource>
+			<datecreated>Wed, 09 Dec 2015 10:24:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.0.0 Alpha 2: Release Notes for OpenCms 10 Alpha 2]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8893,11 +8910,11 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 1]]></value>
+					<value><![CDATA[OpenCms 10 Alpha 1]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 1]]></value>
+					<value><![CDATA[OpenCms 10 Alpha 1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8914,7 +8931,47 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 1]]></value>
+					<value><![CDATA[OpenCms 10 Alpha 1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>release/opencms-10.0.0-alpha-2-notes</destination>
+			<type>folder</type>
+			<uuidstructure>73735638-9e57-11e5-8382-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 09 Dec 2015 09:30:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[40.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[OpenCms 10 Alpha 2]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10 Alpha 2]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>release/opencms-10.0.0-alpha-2-notes/index.html</source>
+			<destination>release/opencms-10.0.0-alpha-2-notes/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>737af75d-9e57-11e5-8382-0242ac11002b</uuidstructure>
+			<uuidresource>737af75e-9e57-11e5-8382-0242ac11002b</uuidresource>
+			<datecreated>Wed, 09 Dec 2015 09:30:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10 Alpha 2]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10296,7 +10353,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:1000,h:325]]></value>
+					<value><![CDATA[w:150,h:49]]></value>
 				</property>
 			</properties>
 			<relations/>
