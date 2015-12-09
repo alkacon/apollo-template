@@ -8794,7 +8794,24 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 1: Release Notes for OpenCms 10.0.0 Alpha 1]]></value>
+					<value><![CDATA[OpenCms 10.0.0 Alpha 1: Release Notes for OpenCms 10 Alpha 1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>release/.content/texts/t_00017.xml</source>
+			<destination>release/.content/texts/t_00017.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>fea99918-9e5e-11e5-8382-0242ac11002b</uuidstructure>
+			<uuidresource>fea99919-9e5e-11e5-8382-0242ac11002b</uuidresource>
+			<datecreated>Wed, 09 Dec 2015 10:24:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.0.0 Alpha 2: Release Notes for OpenCms 10 Alpha 2]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8893,11 +8910,11 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 1]]></value>
+					<value><![CDATA[OpenCms 10 Alpha 1]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 1]]></value>
+					<value><![CDATA[OpenCms 10 Alpha 1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8914,7 +8931,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 1]]></value>
+					<value><![CDATA[OpenCms 10 Alpha 1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8933,11 +8950,11 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 2]]></value>
+					<value><![CDATA[OpenCms 10 Alpha 2]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 2]]></value>
+					<value><![CDATA[OpenCms 10 Alpha 2]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8954,7 +8971,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 2]]></value>
+					<value><![CDATA[OpenCms 10 Alpha 2]]></value>
 				</property>
 			</properties>
 			<relations/>

@@ -2,7 +2,7 @@
 
 <ApolloTexts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/text.xsd">
   <ApolloText language="en">
-    <Headline><![CDATA[Release Notes for OpenCms 10 Alpha 1]]></Headline>
+    <Headline><![CDATA[Release Notes for OpenCms 10 Alpha 2]]></Headline>
     <Text name="Text0">
       <links>
         <link name="link2" internal="false" type="A">
@@ -16,8 +16,8 @@
           <target><![CDATA[https://github.com/alkacon/opencms-core/pulls]]></target>
         </link>
       </links>
-      <content><![CDATA[<p>September 28, 2015: OpenCms 10 Alpha 1 is here! Try&nbsp;out the forthcoming new features of OpenCms 10 with&nbsp;this alpha release.</p>
-<p><span class="label label-danger">Please note</span>&nbsp;This alpha&nbsp;version&nbsp;is not feature complete! Some important functionalities are missing, these will be added in later alpha or beta release. We do not recommend to use this version&nbsp;in productive OpenCms environments.</p>
+      <content><![CDATA[<p>Dezember&nbsp;9, 2015: OpenCms 10 Alpha 2 is available! Try&nbsp;out the forthcoming new features of OpenCms 10 with&nbsp;this second alpha release.</p>
+<p><span class="label label-danger">Please note</span>&nbsp;This alpha&nbsp;version&nbsp;is not feature complete! Some important functionalities are still missing, these will be added in the next beta release. We do not recommend to use this version&nbsp;in productive OpenCms environments.</p>
 <h2>New in OpenCms 10</h2>
 <ul>
 <li><span class="label label-warning">#</span>&nbsp;Modernized the look &amp; feel of the&nbsp;overall&nbsp;user interface&nbsp;</li>
@@ -40,17 +40,29 @@
 <li>Updated the responsive demo template based on Bootstrap</li>
 </ul>
 <p>Items marked with <span class="label label-warning">#</span> are considered important improvements in this version.</p>
-<h2>Improved in OpenCms 10 Alpha 1</h2>
+<h2>Improved in OpenCms 10 Alpha 2 over Alpha 1</h2>
 <ul>
-<li>Extended lookup of login-form property to also work with detail pages.</li>
-<li>Made pointers/htmlredirects work for internationalized domain names.</li>
-<li>Improved synchronization in SQL manager and content type definitions.</li>
-<li>Fixed issue #323 with missing manifest entries for Russian localization.</li>
-<li>Fixed script tag generation in action elements for better IE compatibility.</li>
-<li>Fixed issue where import failed due to missing principals.</li>
-<li>Fixed issue with null pointers during inline editing.</li>
-<li>Fixed issue with null pointers when reading search document dependencies.</li>
-<li>Fixed issue where validation messages were not displayed in the workplace locale.</li>
+<li>Copy or move resources with drag and drop in the new explorer.</li>
+<li>Upload files with drag and drop from the local desktop to the new explorer.</li>
+<li>Quick navigation with keyboard shortcuts in the new explorer.</li>
+<li>Added create resource dialog to new explorer.</li>
+<li>Added change resource type dialog to new explorer.</li>
+<li>Added lock/unlock/steal lock dialog to new explorer.</li>
+<li>Added copy to project dialog to new explorer.</li>
+<li>Added publish scheduled dialog to new explorer.</li>
+<li>Added restore deleted dialog to new explorer.</li>
+<li>Added secure/export dialog to new explorer.</li>
+<li>Added resource info dialog to new explorer.</li>
+<li>Added assign categories dialog to new explorer.</li>
+<li>Added gallery dialog to new explorer.</li>
+<li>Added project select dialog to new explorer.</li>
+<li>Nicer default error page used for 404 and 500 server errors.</li>
+<li>Separated several old workplace dialog classes from the core.</li>
+<li>Support for static resource loading from classpath.</li>
+<li>Merged all GWT based modules into a single one to improve page load time.</li>
+<li>Improved workplace error dialog.</li>
+<li>Fixed security issue advisory ID SYSS-2015-063 with XSS in displayresource.jsp.</li>
+<li>Fixed security issue related to commons collections library.</li>
 </ul>
 <h2>General OpenCms features</h2>
 <ul>
@@ -77,19 +89,19 @@
 <li>... and many more</li>
 </ul>
 <h3>Backward compatibility</h3>
-<p>OpenCms 10.0.0 Alpha 1 is fully backward compatible with all 9.x versions. Templates and other OpenCms developed code from these versions should work "out of the box" with version 10.0.0 Alpha 1.</p>
-<p><span class="label label-danger">Notice for users of Alkacon OCEE</span>&nbsp;OpenCms&nbsp;10.0.0 Alpha 1 will not work with current versions of Alkacon OCEE. There will be an updated OCEE available for the final release of OpenCms 10. The&nbsp;update will be free for Alkacon customers with a valid OCEE update subscription.</p>
+<p>OpenCms 10.0.0 Alpha 2&nbsp;is fully backward compatible with all 9.x versions. Templates and other OpenCms developed code from these versions should work "out of the box" with version 10.0.0 Alpha 2.</p>
+<p><span class="label label-danger">Notice for users of Alkacon OCEE</span>&nbsp;OpenCms&nbsp;10.0.0 Alpha 2 will not work with current versions of Alkacon OCEE. There will be an updated OCEE available for the final release of OpenCms 10. The&nbsp;update will be free for Alkacon customers with a valid OCEE update subscription.</p>
 <h3>Compatibility with Java versions, servlet containers and databases</h3>
-<p>OpenCms&nbsp;10.0.0 Alpha 1 has been written and tested for Java 8&nbsp;and Java 7. We have tested with ORACLEs JDK as well as OpenJDK. OpenCms should run with all compliant JVMs.</p>
-<p>We have tested this release on the Tomcat servlet engine. OpenCms works "out of the box" with Tomcat 7, which we recommend. Others have reported deploying OpenCms successfully on other servlet containers like JBoss, BEA, Websphere, Glassfish and Resin Professional.</p>
+<p>OpenCms&nbsp;10.0.0 Alpha 2 has been written and tested for Java 8&nbsp;and Java 7. We have tested with ORACLEs JDK as well as OpenJDK. OpenCms should run with all compliant JVMs.</p>
+<p>We have tested this release on the Tomcat servlet engine. OpenCms works "out of the box" with Tomcat 8, which we recommend. Others have reported deploying OpenCms successfully on other servlet containers like JBoss, BEA, Websphere, Glassfish and Resin Professional.</p>
 <p>On the database side, we have tested with MySQL, Oracle, PostgreSQL, MS SQL Server, DB2 and HSQLDB.</p>
 <h3>Regarding version numbers and build tags</h3>
 <p>The main OpenCms Git repository is available on Github at <a href="%(link0)" target="_blank">github.com/alkacon/opencms-core</a>.</p>
-<p>In case you want to get the most current OpenCms&nbsp;10.0.0 Alpha 1 sources from Git, please check out <span class="label label-info">branch_10_0_x</span>. The&nbsp;10.0.0 Alpha 1 release is tagged <span class="label label-info">build_10_0_0_alpha_1</span>.</p>
+<p>In case you want to get the most current OpenCms&nbsp;10 development sources from Git, please check out <span class="label label-info">branch_10_0_x</span>. The&nbsp;10.0.0 Alpha 2 release is tagged <span class="label label-info">build_10_0_0_alpha_2</span>.</p>
 <h3>How you can help</h3>
 <p>Contributions to the OpenCms core development are most welcome. <a href="%(link1)" target="_blank">Please send us your pull requests directly on GitHub.</a></p>
 <p>Please report issues found in OpenCms using <a href="%(link2)" target="_blank">our GitHub issue tracker</a>.</p>
-<p>Thank you for using OpenCms and have fun with OpenCms&nbsp;10.0.0 Alpha 1 :-)</p>]]></content>
+<p>Thank you for using OpenCms and have fun with OpenCms&nbsp;10 :-)</p>]]></content>
     </Text>
   </ApolloText>
 </ApolloTexts>
