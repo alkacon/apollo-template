@@ -36685,13 +36685,12 @@ ul.sidebar-nav-v1 li {
     #logo-footer {
       float: none; } }
 
-/* line 1157, ../../../components/scss/modifications.scss */
-.mavbar .open .dropdown-menu {
-  display: none; }
-
 @media (max-width: 992px) {
-  /* line 1162, ../../../components/scss/modifications.scss */
-  .active .dropdown-menu {
+  /* line 1159, ../../../components/scss/modifications.scss */
+  .header .open .dropdown-menu {
+    display: none; }
+  /* line 1164, ../../../components/scss/modifications.scss */
+  .header .active .dropdown-menu {
     border: 0;
     left: 0;
     float: none;
@@ -36702,36 +36701,35 @@ ul.sidebar-nav-v1 li {
     background-color: transparent;
     display: block;
     transition: all 1s; } }
-
-/* line 1177, ../../../components/scss/modifications.scss */
+/* line 1178, ../../../components/scss/modifications.scss */
 .caption {
   font-family: "Open Sans" sans-serif !important; }
 
 /* Social icons.
 ----------------------------------------------------------------------------- */
-/* line 1185, ../../../components/scss/modifications.scss */
+/* line 1186, ../../../components/scss/modifications.scss */
 .social_slideshare {
   background: url("../img/icons/social/slideshare.png") no-repeat; }
 
 @media (max-width: 992px) {
-  /* line 1192, ../../../components/scss/modifications.scss */
+  /* line 1193, ../../../components/scss/modifications.scss */
   ul.social-icons li a {
     width: 48px;
     height: 48px;
     background-size: 48px; }
-    /* line 1197, ../../../components/scss/modifications.scss */
+    /* line 1198, ../../../components/scss/modifications.scss */
     ul.social-icons li a:hover {
       background-position: 0 -66px; } }
-/* line 1201, ../../../components/scss/modifications.scss */
+/* line 1202, ../../../components/scss/modifications.scss */
 ul.social-icons li a:first-child {
   margin-left: 0; }
-/* line 1204, ../../../components/scss/modifications.scss */
+/* line 1205, ../../../components/scss/modifications.scss */
 ul.social-icons li a:last-child {
   margin-right: 0; }
 
 /* Superscript for user name in nav.
 ----------------------------------------------------------------------------- */
-/* line 1217, ../../../components/scss/modifications.scss */
+/* line 1218, ../../../components/scss/modifications.scss */
 .superscript {
   top: -9px;
   left: 4px;
