@@ -550,7 +550,7 @@
   <Bundle language="de">
     <Message>
       <Key><![CDATA[apollo.setting.requirereload]]></Key>
-      <Value><![CDATA[Benötigt Reload]]></Value>
+      <Value><![CDATA[Die Seite muss neu geladen werden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.image.left]]></Key>
@@ -559,6 +559,10 @@
     <Message>
       <Key><![CDATA[apollo.setting.image.right]]></Key>
       <Value><![CDATA[Rechts vom Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[xmlimage.message.new]]></Key>
+      <Value><![CDATA[New image, please edit the content.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.image.top]]></Key>
@@ -598,7 +602,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.color.green]]></Key>
-      <Value><![CDATA[Grün]]></Value>
+      <Value><![CDATA[Grï¿½n]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.color.blue]]></Key>
@@ -634,7 +638,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.teaserlength]]></Key>
-      <Value><![CDATA[Teaser Länge]]></Value>
+      <Value><![CDATA[Teaser Lï¿½nge]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.hidetitle]]></Key>
@@ -662,7 +666,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.usepagination]]></Key>
-      <Value><![CDATA[Verwende Blätterfunktion]]></Value>
+      <Value><![CDATA[Verwende Blï¿½tterfunktion]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showimgtitle]]></Key>
@@ -674,7 +678,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssclass.description]]></Key>
-      <Value><![CDATA[Optionale CSS Klassennamen für das umschließende <div> Element.]]></Value>
+      <Value><![CDATA[Optionale CSS Klassennamen fï¿½r das umschlieï¿½ende <div> Element.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass]]></Key>
@@ -682,15 +686,15 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.description]]></Key>
-      <Value><![CDATA[CSS Klassen für das Icon Element, z.B. 'icon-lg icon-bg-red fa fa-lightbulb-o' setzt die Iconfarbe und Form.]]></Value>
+      <Value><![CDATA[CSS Klassen fï¿½r das Icon Element, z.B. 'icon-lg icon-bg-red fa fa-lightbulb-o' setzt die Iconfarbe und Form.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.info]]></Key>
-      <Value><![CDATA[Info Icon für Standard Box]]></Value>
+      <Value><![CDATA[Info Icon fï¿½r Standard Box]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.lightbulb]]></Key>
-      <Value><![CDATA[Glühbirnen Icon für rote Box]]></Value>
+      <Value><![CDATA[Glï¿½hbirnen Icon fï¿½r rote Box]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon]]></Key>
@@ -698,7 +702,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.description]]></Key>
-      <Value><![CDATA[Wählen Sie das anzuzeigende Icon.]]></Value>
+      <Value><![CDATA[Wï¿½hlen Sie das anzuzeigende Icon.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.bookmark]]></Key>
@@ -706,11 +710,11 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.key]]></Key>
-      <Value><![CDATA[Schlüssel]]></Value>
+      <Value><![CDATA[Schlï¿½ssel]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.lightbulb]]></Key>
-      <Value><![CDATA[Glühbirne]]></Value>
+      <Value><![CDATA[Glï¿½hbirne]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.star]]></Key>
@@ -726,7 +730,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.rounded.description]]></Key>
-      <Value><![CDATA[Wählen Sie dies für abgerundete Ecken aus.]]></Value>
+      <Value><![CDATA[Wï¿½hlen Sie dies fï¿½r abgerundete Ecken aus.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.rounded.none]]></Key>
@@ -774,7 +778,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssclass.green]]></Key>
-      <Value><![CDATA[Grüne Box mit gepunktetem Rand]]></Value>
+      <Value><![CDATA[Grï¿½ne Box mit gepunktetem Rand]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssclass.red]]></Key>
@@ -806,11 +810,11 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssclass.shadowbox]]></Key>
-      <Value><![CDATA[Box mit Schatten für Bild]]></Value>
+      <Value><![CDATA[Box mit Schatten fï¿½r Bild]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssclass.roundedshadowbox]]></Key>
-      <Value><![CDATA[Abgerundete Box mit Schatten für Bild]]></Value>
+      <Value><![CDATA[Abgerundete Box mit Schatten fï¿½r Bild]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.param]]></Key>
@@ -818,7 +822,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.param.description]]></Key>
-      <Value><![CDATA[Optionaler Parameter für das Pre-HTML Markup.]]></Value>
+      <Value><![CDATA[Optionaler Parameter fï¿½r das Pre-HTML Markup.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.link]]></Key>
@@ -834,7 +838,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.csshints.description]]></Key>
-      <Value><![CDATA[Optionale CSS Klassen, die meist für Kind Elemente benutzt werden.]]></Value>
+      <Value><![CDATA[Optionale CSS Klassen, die meist fï¿½r Kind Elemente benutzt werden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.detail]]></Key>
@@ -842,7 +846,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.detail.description]]></Key>
-      <Value><![CDATA[Stellt die Verwendung von Containern für Detailseiten ein.]]></Value>
+      <Value><![CDATA[Stellt die Verwendung von Containern fï¿½r Detailseiten ein.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.detail.none]]></Key>
@@ -870,7 +874,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showelements.textheadline]]></Key>
-      <Value><![CDATA[Überschrift und Text]]></Value>
+      <Value><![CDATA[ï¿½berschrift und Text]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showelements.textimage]]></Key>
@@ -878,7 +882,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showelements.headline]]></Key>
-      <Value><![CDATA[Nur Überschrift]]></Value>
+      <Value><![CDATA[Nur ï¿½berschrift]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showelements.text]]></Key>
@@ -898,27 +902,27 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showheadline]]></Key>
-      <Value><![CDATA[Überschrift Anzeige]]></Value>
+      <Value><![CDATA[ï¿½berschrift Anzeige]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showheadline.description]]></Key>
-      <Value><![CDATA[Legt fest, wie die Überschrift dargestellt wird.]]></Value>
+      <Value><![CDATA[Legt fest, wie die ï¿½berschrift dargestellt wird.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showheadline.false]]></Key>
-      <Value><![CDATA[Keine Überschrift]]></Value>
+      <Value><![CDATA[Keine ï¿½berschrift]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showheadline.top]]></Key>
-      <Value><![CDATA[Überschrift oberhalb des Bildes, links ausgerichtet]]></Value>
+      <Value><![CDATA[ï¿½berschrift oberhalb des Bildes, links ausgerichtet]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showheadline.bottom]]></Key>
-      <Value><![CDATA[Überschrift darunter, links ausgerichtet]]></Value>
+      <Value><![CDATA[ï¿½berschrift darunter, links ausgerichtet]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showheadline.bottomcenter]]></Key>
-      <Value><![CDATA[Kleine Überschrift darunter, zentriert]]></Value>
+      <Value><![CDATA[Kleine ï¿½berschrift darunter, zentriert]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showtext]]></Key>
@@ -958,7 +962,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showlink.headline]]></Key>
-      <Value><![CDATA[Verwende Überschrift als Link]]></Value>
+      <Value><![CDATA[Verwende ï¿½berschrift als Link]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssshape]]></Key>
@@ -966,7 +970,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssshape.description]]></Key>
-      <Value><![CDATA[Wählen Sie CSS Klassen für die Bild Form.]]></Value>
+      <Value><![CDATA[Wï¿½hlen Sie CSS Klassen fï¿½r die Bild Form.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssshape.bordered]]></Key>

@@ -4,6 +4,9 @@
   <NewFormatter language="en">
     <NiceName><![CDATA[Enlargement XML image formatter]]></NiceName>
     <Type><![CDATA[xmlimage]]></Type>
+    <Type><![CDATA[a-text]]></Type>
+    <Type><![CDATA[a-blog]]></Type>
+    <Type><![CDATA[a-event]]></Type>
     <Jsp>
       <link type="WEAK">
         <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-enlarge.jsp]]></target>
