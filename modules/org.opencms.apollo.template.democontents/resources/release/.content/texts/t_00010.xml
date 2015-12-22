@@ -5,15 +5,15 @@
     <Headline><![CDATA[Release Notes for OpenCms 8.0.1]]></Headline>
     <Text name="Text0">
       <links>
-        <link name="link2" internal="false" type="A">
-          <target><![CDATA[http://bugzilla.opencms.org/]]></target>
-        </link>
         <link name="link0" internal="false" type="A">
           <target><![CDATA[https://github.com/alkacon/opencms-core]]></target>
         </link>
         <link name="link1" internal="true" type="A">
           <target><![CDATA[/sites/default/release/mailing-list/index.html]]></target>
           <uuid>26651f1b-6066-11e5-9199-0242ac11002b</uuid>
+        </link>
+        <link name="link2" internal="false" type="A">
+          <target><![CDATA[http://bugzilla.opencms.org/]]></target>
         </link>
       </links>
       <content><![CDATA[<p>June 29, 2011: This is the release of OpenCms 8.0.1. With OpenCms 8.0.1, a number of issues that persisted in the 8.0.0 release have been fixed. Some new features have been added as well.</p>

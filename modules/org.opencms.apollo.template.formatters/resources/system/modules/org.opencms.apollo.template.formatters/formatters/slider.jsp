@@ -58,11 +58,23 @@
 												<h2 style="color: ${value.TextColor};">${image.value.TitleLine2}</h2>
 											</c:if>
 										</div>
-									</c:if> <c:if test="${image.value.Copyright.isSet}">
+									</c:if> <c:set var="copyright" value="" />
+                                            <c:choose>
+                                                <c:when test="${image.value.Copyright.isSet}">
+                                					<c:set var="copyright" value="${image.value.Copyright.stringValue}" />
+                                				</c:when>
+                                                <c:otherwise>
+                                                    <c:set var="copyright"><cms:property name="Copyright" file="${image.value.Uri}" default="" /></c:set>
+                                                </c:otherwise>
+                                            </c:choose>
+                            
+                            				<c:if test="${not empty copyright}">
+                                                <c:if test="${not fn:startsWith(copyright, '&copy;')}">
+                                                    <c:set var="copyright">&copy; ${copyright}</c:set>
+                                                </c:if>
 										<fmt:parseNumber var="y" integerOnly="true" type="number"
 											value="${value.ImageHeight}" />
-										<div class="caption copyright" data-x="0" data-y="${y-30}">&copy;
-											${image.value.Copyright}</div>
+										<div class="caption copyright" data-x="0" data-y="${y-30}">${copyright}</div>
 									</c:if></li>
 							</c:forEach>
 						</ul>

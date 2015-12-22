@@ -13,5 +13,15 @@
 <p><strong>An der Wachsfabrik 13<br />50996 Köln (Cologne)<br /></strong><strong>Germany</strong></p>
 <p><a href="%(link0)">http://alkacon.com</a></p>]]></content>
     </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/05.jpg]]></target>
+          <uuid>c2581db0-4705-11e3-8417-000c29d28104</uuid>
+        </link>
+      </Image>
+      <Title><![CDATA[Company Building]]></Title>
+      <Copyright><![CDATA[pixabay.com]]></Copyright>
+    </Image>
   </ApolloText>
 </ApolloTexts>

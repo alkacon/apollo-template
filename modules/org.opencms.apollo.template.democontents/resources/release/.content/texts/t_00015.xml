@@ -5,18 +5,18 @@
     <Headline><![CDATA[Release Notes for OpenCms 9.5.2]]></Headline>
     <Text name="Text0">
       <links>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[http://www.alkacon.com/contact/]]></target>
+        </link>
+        <link name="link1" internal="false" type="A">
+          <target><![CDATA[https://github.com/alkacon/opencms-core]]></target>
+        </link>
         <link name="link2" internal="false" type="A">
           <target><![CDATA[https://github.com/alkacon/opencms-core/pulls]]></target>
         </link>
         <link name="link3" internal="false" type="A">
           <target><![CDATA[https://github.com/alkacon/opencms-core/issues]]></target>
           <query><![CDATA[state=open]]></query>
-        </link>
-        <link name="link0" internal="false" type="A">
-          <target><![CDATA[http://www.alkacon.com/contact/]]></target>
-        </link>
-        <link name="link1" internal="false" type="A">
-          <target><![CDATA[https://github.com/alkacon/opencms-core]]></target>
         </link>
       </links>
       <content><![CDATA[<p>June 22, 2015: OpenCms 9.5.2 fixes a number of issues that persisted in the 9.5.1 release. This version also contains important security improvements against XSS attacks.</p>

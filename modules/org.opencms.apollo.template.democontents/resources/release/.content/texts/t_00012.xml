@@ -5,28 +5,11 @@
     <Headline><![CDATA[OpenCms 10 Server installation]]></Headline>
     <Text name="Text0">
       <links>
-        <link name="link8" internal="true" type="A">
-          <target><![CDATA[]]></target>
-          <anchor><![CDATA[a7]]></anchor>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[http://tomcat.apache.org]]></target>
         </link>
-        <link name="link9" internal="false" type="A">
-          <target><![CDATA[http://www.oracle.com/technetwork/java/javase/downloads/index.html]]></target>
-        </link>
-        <link name="link6" internal="true" type="A">
-          <target><![CDATA[]]></target>
-          <anchor><![CDATA[a5]]></anchor>
-        </link>
-        <link name="link7" internal="true" type="A">
-          <target><![CDATA[]]></target>
-          <anchor><![CDATA[a6]]></anchor>
-        </link>
-        <link name="link4" internal="true" type="A">
-          <target><![CDATA[]]></target>
-          <anchor><![CDATA[a3]]></anchor>
-        </link>
-        <link name="link5" internal="true" type="A">
-          <target><![CDATA[]]></target>
-          <anchor><![CDATA[a4]]></anchor>
+        <link name="link1" internal="false" type="A">
+          <target><![CDATA[http://www.mysql.com]]></target>
         </link>
         <link name="link2" internal="true" type="A">
           <target><![CDATA[]]></target>
@@ -36,14 +19,28 @@
           <target><![CDATA[]]></target>
           <anchor><![CDATA[a2]]></anchor>
         </link>
-        <link name="link0" internal="false" type="A">
-          <target><![CDATA[http://tomcat.apache.org]]></target>
+        <link name="link4" internal="true" type="A">
+          <target><![CDATA[]]></target>
+          <anchor><![CDATA[a3]]></anchor>
         </link>
-        <link name="link1" internal="false" type="A">
-          <target><![CDATA[http://www.mysql.com]]></target>
+        <link name="link5" internal="true" type="A">
+          <target><![CDATA[]]></target>
+          <anchor><![CDATA[a4]]></anchor>
         </link>
-        <link name="link13" internal="false" type="A">
-          <target><![CDATA[http://www.mysql.com/documentation/index.html]]></target>
+        <link name="link6" internal="true" type="A">
+          <target><![CDATA[]]></target>
+          <anchor><![CDATA[a5]]></anchor>
+        </link>
+        <link name="link7" internal="true" type="A">
+          <target><![CDATA[]]></target>
+          <anchor><![CDATA[a6]]></anchor>
+        </link>
+        <link name="link8" internal="true" type="A">
+          <target><![CDATA[]]></target>
+          <anchor><![CDATA[a7]]></anchor>
+        </link>
+        <link name="link9" internal="false" type="A">
+          <target><![CDATA[http://www.oracle.com/technetwork/java/javase/downloads/index.html]]></target>
         </link>
         <link name="link10" internal="false" type="A">
           <target><![CDATA[http://tomcat.apache.org]]></target>
@@ -53,6 +50,9 @@
         </link>
         <link name="link12" internal="false" type="A">
           <target><![CDATA[http://www.mysql.com/downloads/]]></target>
+        </link>
+        <link name="link13" internal="false" type="A">
+          <target><![CDATA[http://www.mysql.com/documentation/index.html]]></target>
         </link>
       </links>
       <content><![CDATA[<p>This page provides information on how to install OpenCms using&nbsp;<a title="External link, opens in new window" href="%(link0)" target="_blank">Tomcat</a>&nbsp;and&nbsp;<a title="External link, opens in new window" href="%(link1)" target="_blank">MySQL</a>. All installation parts are described as single steps. After completing each step you are strongly advised to verify the success of your work.</p>

@@ -6599,6 +6599,499 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/texts/t_00055.xml</source>
+			<destination>apollo-demo/.content/texts/t_00055.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>409a767d-9f51-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>409a767e-9f51-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Dec 2015 15:18:22 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: Intuitive]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00056.xml</source>
+			<destination>apollo-demo/.content/texts/t_00056.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>2271069c-a884-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>2271069d-a884-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 08:15:17 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: Simple]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00057.xml</source>
+			<destination>apollo-demo/.content/texts/t_00057.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>a7900163-a884-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>a7900164-a884-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 08:19:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: Fun]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00058.xml</source>
+			<destination>apollo-demo/.content/texts/t_00058.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>dd93852a-a884-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>dd93852b-a884-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 08:20:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: Responsive]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00059.xml</source>
+			<destination>apollo-demo/.content/texts/t_00059.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>86172b35-a885-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>86172b36-a885-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 08:25:13 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[About: Turbine]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00060.xml</source>
+			<destination>apollo-demo/.content/texts/t_00060.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>b9f3b04c-a885-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>b9f3b04d-a885-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 08:26:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[About: Machine]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00061.xml</source>
+			<destination>apollo-demo/.content/texts/t_00061.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>f1307762-a885-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>f1307763-a885-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 08:28:13 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[About: Architecture]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00062.xml</source>
+			<destination>apollo-demo/.content/texts/t_00062.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>2af46831-a887-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>2af46832-a887-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 08:36:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Introduction to the team: Message from the CEO]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00063.xml</source>
+			<destination>apollo-demo/.content/texts/t_00063.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>86db79e7-a887-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>86db79e8-a887-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 08:39:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Introduction to the team: Director, HR]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00064.xml</source>
+			<destination>apollo-demo/.content/texts/t_00064.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>ba13a8ae-a887-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>ba13a8af-a887-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 08:41:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Introduction to the team: VP of Operations]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00065.xml</source>
+			<destination>apollo-demo/.content/texts/t_00065.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>f0e94985-a887-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>f0e94986-a887-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 08:42:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Introduction to the team: Team Manager]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00066.xml</source>
+			<destination>apollo-demo/.content/texts/t_00066.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>436caa0d-a890-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>436caa0e-a890-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 09:42:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Introduction to the team: Consultant]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00067.xml</source>
+			<destination>apollo-demo/.content/texts/t_00067.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>6f82acd2-a890-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>6f82acd3-a890-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 09:43:20 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Introduction to the team: Designer]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00068.xml</source>
+			<destination>apollo-demo/.content/texts/t_00068.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>9bb956f7-a890-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>9bb956f8-a890-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 09:44:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Introduction to the team: Marketing]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00069.xml</source>
+			<destination>apollo-demo/.content/texts/t_00069.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>c0bb859c-a890-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>c0bb859d-a890-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 09:45:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Introduction to the team: Analyst]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00070.xml</source>
+			<destination>apollo-demo/.content/texts/t_00070.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>34e81816-a894-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>34e81817-a894-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 10:10:20 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Frequently asked questions: FAQ]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00071.xml</source>
+			<destination>apollo-demo/.content/texts/t_00071.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>8e218413-a896-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>8e218414-a896-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 10:27:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Frequently asked questions: Click 'Add content']]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00072.xml</source>
+			<destination>apollo-demo/.content/texts/t_00072.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>bf507559-a896-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>bf50755a-a896-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 10:28:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Frequently asked questions: Select 'Move to page']]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00073.xml</source>
+			<destination>apollo-demo/.content/texts/t_00073.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>e636581f-a896-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>e6365820-a896-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 10:29:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Frequently asked questions: Drag and drop the element]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00074.xml</source>
+			<destination>apollo-demo/.content/texts/t_00074.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>798c2ba3-a899-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>798c2ba4-a899-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 10:48:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Two columns: Powerful]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00075.xml</source>
+			<destination>apollo-demo/.content/texts/t_00075.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>9f41130e-a89a-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>9f41130f-a89a-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 10:56:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Two columns: Great]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00076.xml</source>
+			<destination>apollo-demo/.content/texts/t_00076.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>d66262e5-a89a-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>d66262e6-a89a-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 10:57:47 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Two columns: Super]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00077.xml</source>
+			<destination>apollo-demo/.content/texts/t_00077.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>fd41dd0b-a89a-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>fd41dd0c-a89a-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 10:58:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Two columns: Awesome]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00078.xml</source>
+			<destination>apollo-demo/.content/texts/t_00078.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>b36d7410-a89b-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>b36d7411-a89b-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 11:03:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[English page: Powerful]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00079.xml</source>
+			<destination>apollo-demo/.content/texts/t_00079.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>f03c2a37-a89b-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>f03c2a38-a89b-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 11:05:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[English page: Intuitive]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00080.xml</source>
+			<destination>apollo-demo/.content/texts/t_00080.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>4252dfdd-a89c-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>4252dfde-a89c-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 11:07:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[English page: Responsive]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00081.xml</source>
+			<destination>apollo-demo/.content/texts/t_00081.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>67bde273-a89c-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>67bde274-a89c-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 11:09:01 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[English page: Fun]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00082.xml</source>
+			<destination>apollo-demo/.content/texts/t_00082.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>339a577c-a89e-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>339a577d-a89e-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 11:21:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image elements: Egg holders]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/texts/t_00083.xml</source>
+			<destination>apollo-demo/.content/texts/t_00083.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>c721c125-a8a0-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>c721c126-a8a0-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 11:40:19 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image elements: Egg holders (stretched)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/ugc_config</destination>
 			<type>folder</type>
 			<uuidstructure>13fd4cbb-613b-11e5-bcba-0242ac11002b</uuidstructure>
@@ -6628,730 +7121,6 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				<property>
 					<name>locale-available</name>
 					<value><![CDATA[en]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>apollo-demo/.content/xmlimage</destination>
-			<type>folder</type>
-			<uuidstructure>8129ec87-5bb3-11e5-8f8e-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 15 Sep 2015 14:10:22 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00001.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00001.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>812e0b39-5bb3-11e5-8f8e-0242ac11002b</uuidstructure>
-			<uuidresource>812e0b3a-5bb3-11e5-8f8e-0242ac11002b</uuidresource>
-			<datecreated>Tue, 15 Sep 2015 14:10:22 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Default placeholder image]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00002.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00002.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>b073320c-61f1-11e5-bcba-0242ac11002b</uuidstructure>
-			<uuidresource>b073320d-61f1-11e5-bcba-0242ac11002b</uuidresource>
-			<datecreated>Wed, 23 Sep 2015 12:50:38 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Location: Company Building]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00003.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00003.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>9deebf1c-6069-11e5-9199-0242ac11002b</uuidstructure>
-			<uuidresource>9deebf1d-6069-11e5-9199-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 14:04:04 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Home: Intuitive]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00004.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00004.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>252b90ed-606a-11e5-9199-0242ac11002b</uuidstructure>
-			<uuidresource>252b90ee-606a-11e5-9199-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 14:07:51 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Home: Simple]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00005.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00005.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>46c69fc1-606a-11e5-9199-0242ac11002b</uuidstructure>
-			<uuidresource>46c69fc2-606a-11e5-9199-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 14:08:47 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Home: Fun]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00006.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00006.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>7137f335-606a-11e5-9199-0242ac11002b</uuidstructure>
-			<uuidresource>7137f336-606a-11e5-9199-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 14:09:58 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Home: Responsive]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00007.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00007.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>aed833b1-6076-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>aed833b2-6076-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 15:37:36 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Propellers]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00008.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00008.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>26c04edd-6077-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>26c04ede-6077-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 15:40:57 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[About: Turbine]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00009.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00009.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>78b9917a-6077-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>78b9917b-6077-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 15:43:14 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[About: Looking Glass]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00010.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00010.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>8c0c5b43-6078-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>8c0c5b44-6078-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 15:50:56 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[About: Architecture]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00011.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00011.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>d50127e4-6079-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>d5014ef5-6079-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 16:00:08 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Introduction to the team: Message from the CEO]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00012.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00012.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>175f8dc3-607b-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>175f8dc4-607b-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 16:09:09 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Introduction to the team: Director, HR]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00013.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00013.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>32451517-607b-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>32451518-607b-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 16:09:54 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Introduction to the team: VP of Operations]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00014.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00014.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>4b87e8eb-607b-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>4b87e8ec-607b-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 16:10:36 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Introduction to the team: Team Manager]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00015.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00015.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>41736184-607c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>41736185-607c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 16:17:29 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Consultant]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00016.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00016.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>64992f08-607c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>64992f09-607c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 16:18:28 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Designer]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00017.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00017.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>7e4f0ffc-607c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>7e4f0ffd-607c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 16:19:11 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Marketing]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00018.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00018.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>b0ed48b0-607c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>b0ed48b1-607c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 16:20:36 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Analyst]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00019.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00019.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>7c340d6e-607e-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>7c340d6f-607e-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 16:33:27 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[A selection of clients: Lucky Charm Ltd.]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00020.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00020.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>aa1162b2-607e-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>aa1162b3-607e-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 16:34:44 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[A selection of clients: The Surprise Company]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00021.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00021.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>bb2e7d36-607e-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>bb2e7d37-607e-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 16:35:12 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[A selection of clients: Java cup Inc.]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00022.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00022.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>435f9d5b-6083-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>435f9d5c-6083-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 17:07:39 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: FAQ image]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00023.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00023.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>ed4464a9-6084-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>ed4464aa-6084-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 17:19:33 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: Help is on the way]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00024.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00024.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>465a1177-6086-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>465a1178-6086-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 17:29:12 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: Click 'Add content']]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00025.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00025.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>9fd0e67b-6086-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>9fd0e67c-6086-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 17:31:42 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: Select 'Move to page']]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00026.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00026.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>af5c647f-6086-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>af5c6480-6086-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 17:32:08 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: Drag and drop the element]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00027.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00027.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>e9a11464-6086-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>e9a11465-6086-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 17:33:46 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: It's safe to update!]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00028.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00028.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>0948fea4-608a-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>0948fea5-608a-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 17:56:08 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Two columns: Feature rich]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00029.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00029.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>5e93354c-6103-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>5e93354d-6103-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 08:24:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Two columns: Powerful]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00030.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00030.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>72e1e0b0-6103-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>72e1e0b1-6103-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 08:25:14 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Two columns: Great]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00031.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00031.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>86d9b984-6103-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>86d9b985-6103-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 08:25:47 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Two columns: Super]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00032.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00032.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>9760ae89-6103-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>9760ae8a-6103-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 08:26:15 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Two columns: Awesome]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00033.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00033.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>7bfee371-6109-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>7bfee372-6109-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 09:08:26 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Home: Powerful yet simple]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00034.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00034.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>a1987018-6109-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>a1987019-6109-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 09:09:29 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Home: More features than ever]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00035.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00035.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>c7625b90-6109-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>c7625b91-6109-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 09:10:33 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Home: Great responsive template]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00036.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00036.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>c7d67314-610c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>c7d67315-610c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 09:32:02 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[English page: Powerful]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00037.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00037.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>fcd04f08-610c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>fcd04f09-610c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 09:33:31 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[English page: Intuitive]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00038.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00038.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>25da233c-610d-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>25da233d-610d-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 09:34:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[English page: Responsive]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00039.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00039.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>44e1b5f2-610d-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>44e1b5f3-610d-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 09:35:32 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[English page: Fun]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00040.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00040.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>8e1e9fe5-6114-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>8e1e9fe6-6114-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 10:27:41 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Image elements: Egg holders]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00041.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00041.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>f1b99649-6114-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>f1b9964a-6114-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 10:30:28 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Image elements: Egg holders (Streched)]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/xmlimage/xmlimage_00042.xml</source>
-			<destination>apollo-demo/.content/xmlimage/xmlimage_00042.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>8a041f0a-61ec-11e5-bcba-0242ac11002b</uuidstructure>
-			<uuidresource>8a041f0b-61ec-11e5-bcba-0242ac11002b</uuidresource>
-			<datecreated>Wed, 23 Sep 2015 12:13:46 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Location: Building]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8794,7 +8563,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 1: Release Notes for OpenCms 10 Alpha 1]]></value>
+					<value><![CDATA[OpenCms 10 Alpha 1: Release Notes for OpenCms 10 Alpha 1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8811,7 +8580,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.0.0 Alpha 2: Release Notes for OpenCms 10 Alpha 2]]></value>
+					<value><![CDATA[OpenCms 10 Alpha 2: Release Notes for OpenCms 10 Alpha 2]]></value>
 				</property>
 			</properties>
 			<relations/>

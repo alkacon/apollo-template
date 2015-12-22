@@ -5,17 +5,17 @@
     <Headline><![CDATA[Mailing list]]></Headline>
     <Text name="Text0">
       <links>
-        <link name="link2" internal="false" type="A">
-          <target><![CDATA[http://www.opencms.org/en/development/mailinglist-archive.html]]></target>
-        </link>
-        <link name="link3" internal="false" type="A">
-          <target><![CDATA[mailto:opencms-dev@opencms.org]]></target>
-        </link>
         <link name="link0" internal="false" type="A">
           <target><![CDATA[http://www.alkacon.com/]]></target>
         </link>
         <link name="link1" internal="false" type="A">
           <target><![CDATA[http://www.opencms.org/en/support/index.html]]></target>
+        </link>
+        <link name="link2" internal="false" type="A">
+          <target><![CDATA[http://www.opencms.org/en/development/mailinglist-archive.html]]></target>
+        </link>
+        <link name="link3" internal="false" type="A">
+          <target><![CDATA[mailto:opencms-dev@opencms.org]]></target>
         </link>
       </links>
       <content><![CDATA[<p>The <strong>opencms-dev</strong> mailing list is the place for all questions, comments and suggestions for OpenCms and the main forum of the OpenCms community. Use this list for simple "first time" user questions as well as for specialized comments, questions and/or feedback regarding OpenCms. The OpenCms core development team from <a href="%(link0)">Alkacon Software GmbH</a> and several other experienced OpenCms users and developers are regularly answering questions on this list.</p>

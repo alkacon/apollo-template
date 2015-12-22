@@ -6,26 +6,11 @@
     <Choice>
       <Code name="Code0">
         <links>
-          <link name="link8" internal="false" type="A">
-            <target><![CDATA[https://www.xing.com/net/pri17d83bx/opencmsusergroup]]></target>
+          <link name="link0" internal="false" type="A">
+            <target><![CDATA[http://www.opencms-wiki.org]]></target>
           </link>
-          <link name="link9" internal="false" type="A">
-            <target><![CDATA[http://www.youtube.com/alkacon]]></target>
-          </link>
-          <link name="link6" internal="false" type="A">
-            <target><![CDATA[http://www.facebook.com/opencms]]></target>
-          </link>
-          <link name="link7" internal="false" type="A">
-            <target><![CDATA[https://google.com/+opencms]]></target>
-          </link>
-          <link name="link4" internal="false" type="A">
-            <target><![CDATA[http://github.com/alkacon]]></target>
-          </link>
-          <link name="link10" internal="false" type="A">
-            <target><![CDATA[http://slideshare.net/AlkaconOpenCms/presentations]]></target>
-          </link>
-          <link name="link5" internal="false" type="A">
-            <target><![CDATA[https://twitter.com/OpenCms]]></target>
+          <link name="link1" internal="false" type="A">
+            <target><![CDATA[http://www.alkacon.com/en/products/]]></target>
           </link>
           <link name="link2" internal="false" type="A">
             <target><![CDATA[http://www.alkacon.com/contact]]></target>
@@ -33,11 +18,26 @@
           <link name="link3" internal="false" type="A">
             <target><![CDATA[http://www.opencms.org/en/home/rss-news.xml]]></target>
           </link>
-          <link name="link0" internal="false" type="A">
-            <target><![CDATA[http://www.opencms-wiki.org]]></target>
+          <link name="link4" internal="false" type="A">
+            <target><![CDATA[http://github.com/alkacon]]></target>
           </link>
-          <link name="link1" internal="false" type="A">
-            <target><![CDATA[http://www.alkacon.com/en/products/]]></target>
+          <link name="link5" internal="false" type="A">
+            <target><![CDATA[https://twitter.com/OpenCms]]></target>
+          </link>
+          <link name="link6" internal="false" type="A">
+            <target><![CDATA[http://www.facebook.com/opencms]]></target>
+          </link>
+          <link name="link7" internal="false" type="A">
+            <target><![CDATA[https://google.com/+opencms]]></target>
+          </link>
+          <link name="link8" internal="false" type="A">
+            <target><![CDATA[https://www.xing.com/net/pri17d83bx/opencmsusergroup]]></target>
+          </link>
+          <link name="link9" internal="false" type="A">
+            <target><![CDATA[http://www.youtube.com/alkacon]]></target>
+          </link>
+          <link name="link10" internal="false" type="A">
+            <target><![CDATA[http://slideshare.net/AlkaconOpenCms/presentations]]></target>
           </link>
         </links>
         <content><![CDATA[<!--=== Footer ===-->
@@ -107,6 +107,12 @@ Phone: +49 2236 / 3826 - 0<br />
       </Code>
       <Code name="Code1">
         <links>
+          <link name="link0" internal="false" type="A">
+            <target><![CDATA[http://www.opencms.org]]></target>
+          </link>
+          <link name="link1" internal="false" type="A">
+            <target><![CDATA[http://www.alkacon.com]]></target>
+          </link>
           <link name="link2" internal="false" type="A">
             <target><![CDATA[http://www.alkacon.com]]></target>
           </link>
@@ -114,12 +120,6 @@ Phone: +49 2236 / 3826 - 0<br />
             <target><![CDATA[/sites/default/tutorial/.galleries/tutorial-images/alkacon_logo.png]]></target>
             <uuid>36f7f7bb-6101-11e5-9eef-0242ac11002b</uuid>
             <query><![CDATA[__scale=w:120,h:39,c:transparent]]></query>
-          </link>
-          <link name="link0" internal="false" type="A">
-            <target><![CDATA[http://www.opencms.org]]></target>
-          </link>
-          <link name="link1" internal="false" type="A">
-            <target><![CDATA[http://www.alkacon.com]]></target>
           </link>
         </links>
         <content><![CDATA[<!--=== Copyright ===-->

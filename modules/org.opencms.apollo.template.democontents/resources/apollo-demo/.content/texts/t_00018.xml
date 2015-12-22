@@ -8,5 +8,15 @@
       <content><![CDATA[<p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>]]></content>
     </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/cliparts/08.png]]></target>
+          <uuid>f08556a8-55fb-11e4-8db5-005056b61161</uuid>
+        </link>
+      </Image>
+      <Title><![CDATA[Java Cup Inc.]]></Title>
+      <Copyright><![CDATA[openclipart.org]]></Copyright>
+    </Image>
   </ApolloText>
 </ApolloTexts>

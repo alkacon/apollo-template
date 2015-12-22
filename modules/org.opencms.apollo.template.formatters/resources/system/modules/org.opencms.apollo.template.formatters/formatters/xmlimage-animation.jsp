@@ -99,10 +99,16 @@
 										</c:otherwise>
 									</c:choose>
 								</c:if>
-								<c:if
-									test="${value_start.Image.value.Description.isSet and cms.element.setting.showtext.value == 'true'}">
-									<p ${value_start.Image.rdfa.Description}>${value_start.Image.value.Description}</p>
-								</c:if>
+								<c:choose>
+                                  <c:when
+  									test="${value_start.Image.value.Description.isSet and cms.element.setting.showtext.value == 'true'}">
+  									<p ${value_start.Image.rdfa.Description}>${value_start.Image.value.Description}</p>
+  								</c:when>
+                                  <c:when
+          							test="${value_start.Text.isSet and cms.element.setting.showtext.value == 'true'}">
+          							<p ${value_start.Text.rdfa}>${value_start.Text}</p>
+          						</c:when>
+                                </c:choose>
 								<c:if
 									test="${value.Link.isSet and cms.element.setting.showlink.value == 'button'}">
 									<div style="text-align: right; margin-top: 20px;">

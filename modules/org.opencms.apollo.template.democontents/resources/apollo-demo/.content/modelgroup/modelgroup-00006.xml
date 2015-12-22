@@ -37,15 +37,15 @@
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[use_as_copy_model]]></Name>
-          <Value>
-            <String><![CDATA[true]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[templateContexts]]></Name>
           <Value>
             <String><![CDATA[desktop|tablet|mobile]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[use_as_copy_model]]></Name>
+          <Value>
+            <String><![CDATA[true]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -107,7 +107,7 @@
         <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[8fa362dd-61c1-11e5-bcba-0242ac11002b]]></String>
+            <String><![CDATA[0abb5dd8-a8b0-11e5-b3e7-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -151,15 +151,15 @@
         <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[8fa389ee-61c1-11e5-bcba-0242ac11002b]]></String>
+            <String><![CDATA[0abb5dd9-a8b0-11e5-b3e7-0242ac11002b]]></String>
           </Value>
         </Properties>
       </Elements>
     </Containers>
     <Containers>
-      <Name><![CDATA[8fa389ee-61c1-11e5-bcba-0242ac11002b-c1]]></Name>
+      <Name><![CDATA[0abb5dd9-a8b0-11e5-b3e7-0242ac11002b-c1]]></Name>
       <Type><![CDATA[container,default]]></Type>
-      <ParentInstanceId><![CDATA[8fa389ee-61c1-11e5-bcba-0242ac11002b]]></ParentInstanceId>
+      <ParentInstanceId><![CDATA[0abb5dd9-a8b0-11e5-b3e7-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
           <link type="STRONG">
@@ -193,12 +193,6 @@
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[formatterSettings#8fa389ee-61c1-11e5-bcba-0242ac11002b-c1]]></Name>
-          <Value>
-            <String><![CDATA[77afe200-5578-11e5-8d6b-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[formatterSettings#c8476b1e-5d18-11e5-96ab-0242ac11002b-c1]]></Name>
           <Value>
             <String><![CDATA[77afe200-5578-11e5-8d6b-0242ac11002b]]></String>
@@ -223,9 +217,15 @@
           </Value>
         </Properties>
         <Properties>
+          <Name><![CDATA[formatterSettings#0abb5dd9-a8b0-11e5-b3e7-0242ac11002b-c1]]></Name>
+          <Value>
+            <String><![CDATA[77afe200-5578-11e5-8d6b-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[8fa389ef-61c1-11e5-bcba-0242ac11002b]]></String>
+            <String><![CDATA[0abb5dda-a8b0-11e5-b3e7-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -243,14 +243,14 @@
       </Elements>
     </Containers>
     <Containers>
-      <Name><![CDATA[8fa389ee-61c1-11e5-bcba-0242ac11002b-c2]]></Name>
+      <Name><![CDATA[0abb5dd9-a8b0-11e5-b3e7-0242ac11002b-c2]]></Name>
       <Type><![CDATA[container,default]]></Type>
-      <ParentInstanceId><![CDATA[8fa389ee-61c1-11e5-bcba-0242ac11002b]]></ParentInstanceId>
+      <ParentInstanceId><![CDATA[0abb5dd9-a8b0-11e5-b3e7-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
           <link type="STRONG">
-            <target><![CDATA[/sites/default/apollo-demo/.content/xmlimage/xmlimage_00001.xml]]></target>
-            <uuid>812e0b39-5bb3-11e5-8f8e-0242ac11002b</uuid>
+            <target><![CDATA[/sites/default/apollo-demo/.content/texts/t_00001.xml]]></target>
+            <uuid>3c98f51f-5c59-11e5-96ab-0242ac11002b</uuid>
           </link>
         </Uri>
         <Formatter>
@@ -261,69 +261,21 @@
         </Formatter>
         <CreateNew>true</CreateNew>
         <Properties>
-          <Name><![CDATA[formatterSettings#3c8c3f4d-605c-11e5-9199-0242ac11002b-c2]]></Name>
+          <Name><![CDATA[formatterSettings#0abb5dd9-a8b0-11e5-b3e7-0242ac11002b-c2]]></Name>
           <Value>
             <String><![CDATA[3677fe84-5bc0-11e5-8f8e-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[formatterSettings#4a622da3-604b-11e5-9199-0242ac11002b-c2]]></Name>
+          <Name><![CDATA[showtext]]></Name>
           <Value>
-            <String><![CDATA[3677fe84-5bc0-11e5-8f8e-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#3aa71964-61c1-11e5-bcba-0242ac11002b-c2]]></Name>
-          <Value>
-            <String><![CDATA[3677fe84-5bc0-11e5-8f8e-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#8fa389ee-61c1-11e5-bcba-0242ac11002b-c2]]></Name>
-          <Value>
-            <String><![CDATA[3677fe84-5bc0-11e5-8f8e-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#660d666c-605c-11e5-9199-0242ac11002b-c2]]></Name>
-          <Value>
-            <String><![CDATA[3677fe84-5bc0-11e5-8f8e-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[templateContexts]]></Name>
-          <Value>
-            <String><![CDATA[desktop|tablet|mobile]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#bcee732f-5d18-11e5-96ab-0242ac11002b-c2]]></Name>
-          <Value>
-            <String><![CDATA[3677fe84-5bc0-11e5-8f8e-0242ac11002b]]></String>
+            <String><![CDATA[false]]></String>
           </Value>
         </Properties>
         <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[8fa389f0-61c1-11e5-bcba-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#c8476b1e-5d18-11e5-96ab-0242ac11002b-c2]]></Name>
-          <Value>
-            <String><![CDATA[3677fe84-5bc0-11e5-8f8e-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#2a24e635-5d0c-11e5-96ab-0242ac11002b-c2]]></Name>
-          <Value>
-            <String><![CDATA[3677fe84-5bc0-11e5-8f8e-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#02ebd229-5dde-11e5-96ab-0242ac11002b-c2]]></Name>
-          <Value>
-            <String><![CDATA[3677fe84-5bc0-11e5-8f8e-0242ac11002b]]></String>
+            <String><![CDATA[7cfddae0-a8b0-11e5-b3e7-0242ac11002b]]></String>
           </Value>
         </Properties>
       </Elements>

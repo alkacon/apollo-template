@@ -75,8 +75,8 @@
       <Elements>
         <Uri>
           <link type="STRONG">
-            <target><![CDATA[/sites/default/apollo-demo/.content/xmlimage/xmlimage_00001.xml]]></target>
-            <uuid>812e0b39-5bb3-11e5-8f8e-0242ac11002b</uuid>
+            <target><![CDATA[/sites/default/apollo-demo/.content/texts/t_00001.xml]]></target>
+            <uuid>3c98f51f-5c59-11e5-96ab-0242ac11002b</uuid>
           </link>
         </Uri>
         <Formatter>
@@ -87,15 +87,15 @@
         </Formatter>
         <CreateNew>true</CreateNew>
         <Properties>
-          <Name><![CDATA[templateContexts]]></Name>
+          <Name><![CDATA[showtext]]></Name>
           <Value>
-            <String><![CDATA[desktop|tablet|mobile]]></String>
+            <String><![CDATA[false]]></String>
           </Value>
         </Properties>
         <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[8fa33bc5-61c1-11e5-bcba-0242ac11002b]]></String>
+            <String><![CDATA[39995a3d-a8b0-11e5-b3e7-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -125,21 +125,15 @@
         </Formatter>
         <CreateNew>true</CreateNew>
         <Properties>
-          <Name><![CDATA[templateContexts]]></Name>
-          <Value>
-            <String><![CDATA[desktop|tablet|mobile]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[8fa33bc6-61c1-11e5-bcba-0242ac11002b]]></String>
+            <String><![CDATA[0ab85091-a8b0-11e5-b3e7-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
           <Name><![CDATA[showelements]]></Name>
           <Value>
-            <String><![CDATA[all]]></String>
+            <String><![CDATA[textheadline]]></String>
           </Value>
         </Properties>
         <Properties>

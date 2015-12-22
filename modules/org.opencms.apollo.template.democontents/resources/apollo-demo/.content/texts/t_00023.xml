@@ -8,5 +8,15 @@
       <content><![CDATA[<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>]]></content>
     </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/cliparts/15.png]]></target>
+          <uuid>f0c238b4-55fb-11e4-8db5-005056b61161</uuid>
+        </link>
+      </Image>
+      <Title><![CDATA[Help is on the way]]></Title>
+      <Copyright><![CDATA[openclipart.org]]></Copyright>
+    </Image>
   </ApolloText>
 </ApolloTexts>
