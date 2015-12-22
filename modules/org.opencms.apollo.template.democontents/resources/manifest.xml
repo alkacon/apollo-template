@@ -638,22 +638,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>.content/xmlimage</destination>
-			<type>folder</type>
-			<uuidstructure>78af7673-60ff-11e5-9eef-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 22 Sep 2015 07:56:46 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/xmlimage/xmlimage_00001.xml</source>
-			<destination>.content/xmlimage/xmlimage_00001.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>78b1e775-60ff-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>78b1e776-60ff-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 07:56:46 GMT</datecreated>
+			<source>.content/texts/t_00007.xml</source>
+			<destination>.content/texts/t_00007.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>432b1e54-a8be-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>432b1e55-a8be-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 15:11:22 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9715,22 +9705,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>tutorial/.content/xmlimage</destination>
-			<type>folder</type>
-			<uuidstructure>2f816a75-6126-11e5-9eef-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 22 Sep 2015 12:33:53 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00001.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00001.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>2f882137-6126-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>2f882138-6126-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 12:33:53 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00017.xml</source>
+			<destination>tutorial/.content/texts/t_00017.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>a3de9bb2-a8b5-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>a3de9bb3-a8b5-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:09:39 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9742,12 +9722,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00002.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00002.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>1cd1105c-6127-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>1cd1105d-6127-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 12:40:31 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00018.xml</source>
+			<destination>tutorial/.content/texts/t_00018.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>77ce96f7-a8b6-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>77ce96f8-a8b6-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:15:35 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9759,12 +9739,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00003.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00003.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>2db2f6a0-6127-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>2db2f6a1-6127-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 12:41:00 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00019.xml</source>
+			<destination>tutorial/.content/texts/t_00019.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>f9d3a78d-a8b6-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>f9d3a78e-a8b6-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:19:13 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9776,12 +9756,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00004.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00004.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>54d85364-6127-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>54d85365-6127-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 12:42:05 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00020.xml</source>
+			<destination>tutorial/.content/texts/t_00020.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>7a23dc32-a8b7-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>7a23dc33-a8b7-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:22:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9793,12 +9773,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00005.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00005.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>66dd83f8-6127-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>66dd83f9-6127-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 12:42:36 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00021.xml</source>
+			<destination>tutorial/.content/texts/t_00021.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>384f06d8-a8b8-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>384f06d9-a8b8-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:28:07 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9810,12 +9790,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00006.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00006.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>c1daa9e1-6127-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>c1daa9e2-6127-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 12:45:08 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00022.xml</source>
+			<destination>tutorial/.content/texts/t_00022.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>80d01f7d-a8b8-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>80d01f7e-a8b8-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:30:09 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9827,12 +9807,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00007.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00007.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>ab9c837e-612a-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>ab9c837f-612a-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:06:00 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00023.xml</source>
+			<destination>tutorial/.content/texts/t_00023.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>07fc0142-a8b9-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>07fc0143-a8b9-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:33:56 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9844,12 +9824,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00008.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00008.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>c0595a02-612a-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>c0595a03-612a-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:06:34 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00024.xml</source>
+			<destination>tutorial/.content/texts/t_00024.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>e2e45967-a8b9-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>e2e45968-a8b9-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:40:03 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9861,12 +9841,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00009.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00009.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>ee1f2fa6-612a-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>ee1f2fa7-612a-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:07:51 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00025.xml</source>
+			<destination>tutorial/.content/texts/t_00025.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>6dca0edd-a8ba-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>6dca0ede-a8ba-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:43:56 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9878,12 +9858,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00010.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00010.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>0637662a-612b-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>0637662b-612b-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:08:32 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00026.xml</source>
+			<destination>tutorial/.content/texts/t_00026.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>92c00882-a8ba-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>92c00883-a8ba-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:44:58 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9895,12 +9875,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00011.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00011.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>38cf0f32-612b-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>38cf0f33-612b-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:09:56 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00027.xml</source>
+			<destination>tutorial/.content/texts/t_00027.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>bd0bd297-a8ba-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>bd0bd298-a8ba-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:46:09 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9912,12 +9892,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00012.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00012.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>c783ce11-612b-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>c783ce12-612b-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:13:56 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00028.xml</source>
+			<destination>tutorial/.content/texts/t_00028.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>091a099c-a8bb-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>091a099d-a8bb-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:48:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9929,12 +9909,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00013.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00013.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>db16f1a5-612b-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>db16f1a6-612b-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:14:29 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00029.xml</source>
+			<destination>tutorial/.content/texts/t_00029.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>5c8c7eb2-a8bb-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>5c8c7eb3-a8bb-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:50:36 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9946,12 +9926,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00014.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00014.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>edb777d9-612b-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>edb777da-612b-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:15:00 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00030.xml</source>
+			<destination>tutorial/.content/texts/t_00030.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>bcbbc167-a8bb-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>bcbbc168-a8bb-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:53:18 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9963,12 +9943,12 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00015.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00015.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>04eb8fed-612c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>04eb8fee-612c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:15:39 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00031.xml</source>
+			<destination>tutorial/.content/texts/t_00031.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>d8beedbc-a8bb-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>d8beedbd-a8bb-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:54:05 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -9980,46 +9960,46 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00016.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00016.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>52d341ea-612c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>52d341eb-612c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:17:50 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00032.xml</source>
+			<destination>tutorial/.content/texts/t_00032.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>4b315461-a8bc-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>4b315462-a8bc-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:57:17 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Preview in a device: Click on 'Show menu']]></value>
+					<value><![CDATA[Step 4: Preview in a device: Click on 'Show menu']]></value>
 				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00017.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00017.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>6a22831e-612c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>6a22831f-612c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:18:29 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00033.xml</source>
+			<destination>tutorial/.content/texts/t_00033.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>74288af6-a8bc-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>74288af7-a8bc-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:58:26 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Preview in a device: Select 'Show in device']]></value>
+					<value><![CDATA[Step 4: Preview in a device: Select 'Show in device']]></value>
 				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00018.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00018.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>81244092-612c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>81244093-612c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:19:07 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00034.xml</source>
+			<destination>tutorial/.content/texts/t_00034.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>913beecb-a8bc-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>913beecc-a8bc-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:59:14 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -10031,29 +10011,29 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00019.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00019.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>ca99562f-612c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>ca995630-612c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:21:11 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00035.xml</source>
+			<destination>tutorial/.content/texts/t_00035.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>7b02bb10-a8bd-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>7b02bb11-a8bd-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 15:05:47 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes: Click on 'Publish' in the toolbar]]></value>
+					<value><![CDATA[Step 5: Publish your changes: Click on 'Publish' in the toolbar]]></value>
 				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00020.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00020.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>e7526503-612c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>e7526504-612c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:21:59 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00036.xml</source>
+			<destination>tutorial/.content/texts/t_00036.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>9955cad5-a8bd-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>9955cad6-a8bd-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 15:06:37 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -10065,17 +10045,17 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/.content/xmlimage/xmlimage_00021.xml</source>
-			<destination>tutorial/.content/xmlimage/xmlimage_00021.xml</destination>
-			<type>xmlimage</type>
-			<uuidstructure>fccf0917-612c-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>fccf0918-612c-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:22:35 GMT</datecreated>
+			<source>tutorial/.content/texts/t_00037.xml</source>
+			<destination>tutorial/.content/texts/t_00037.xml</destination>
+			<type>a-text</type>
+			<uuidstructure>e39905da-a8bd-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>e39905db-a8bd-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 15:08:42 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes: Confirm by clicking 'Publish']]></value>
+					<value><![CDATA[Step 5: Publish your changes: Confirm by clicking 'Publish']]></value>
 				</property>
 			</properties>
 			<relations/>
