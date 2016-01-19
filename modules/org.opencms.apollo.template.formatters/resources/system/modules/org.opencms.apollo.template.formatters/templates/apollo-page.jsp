@@ -21,11 +21,13 @@
 <meta name="robots" content="index, follow">
 <meta name="revisit-after" content="7 days">
 
-<link rel="apple-touch-icon" sizes="120x120"
-	href="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/img/favicon_120.png:0c514573-5159-11e5-abeb-0242ac11002b)</cms:link>" />
-<link rel="shortcut icon"
-	href="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/img/favicon_16.png:0c536856-5159-11e5-abeb-0242ac11002b)</cms:link>"
-	type="image/png" />
+<c:set var="faviconPath">${cms.subSitePath}favicon.png</c:set>
+<c:if test="${not cms.vfs.existsResource[faviconPath]}">
+	<c:set var="faviconPath">/system/modules/org.opencms.apollo.template.basics/resources/img/favicon_120.png</c:set>
+</c:if>
+<link rel="apple-touch-icon" href="<cms:link>${faviconPath}</cms:link>" />
+<link rel="icon" href="<cms:link>${faviconPath}</cms:link>" type="image/png" />
+
 <cms:enable-ade />
 
 <cms:headincludes type="css" />

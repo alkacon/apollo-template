@@ -4,6 +4,12 @@
   <ApolloNavigation language="en">
     <Title><![CDATA[Apollo Demo main navigation]]></Title>
     <NavStartLevel><![CDATA[0]]></NavStartLevel>
+    <LogoImage>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.basics/resources/img/logo/logo_opencms_170x42.png]]></target>
+        <uuid>71ac2b99-be83-11e5-a9f8-0242ac11002b</uuid>
+      </link>
+    </LogoImage>
     <LogoLink>
       <link internal="true" type="WEAK">
         <target><![CDATA[/sites/default/overview/]]></target>

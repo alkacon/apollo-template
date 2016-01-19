@@ -6786,7 +6786,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Introduction to the team: Consultant]]></value>
+					<value><![CDATA[Consultant]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6803,7 +6803,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Introduction to the team: Designer]]></value>
+					<value><![CDATA[Designer]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6820,7 +6820,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Introduction to the team: Marketing]]></value>
+					<value><![CDATA[Marketing]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6837,7 +6837,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Introduction to the team: Analyst]]></value>
+					<value><![CDATA[Analyst]]></value>
 				</property>
 			</properties>
 			<relations/>

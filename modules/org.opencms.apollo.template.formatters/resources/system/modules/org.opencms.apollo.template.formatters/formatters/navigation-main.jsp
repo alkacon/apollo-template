@@ -1,6 +1,7 @@
 <%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
 <cms:formatter var="content" val="value" rdfa="rdfa">
 	<div>
@@ -17,8 +18,9 @@
 			</div>
 			<div class="container">
 
-
-				<a class="logo opencms-logo" href="<cms:link>${value.LogoLink}</cms:link>">OpenCms</a>
+				<c:set var="logoPath">${value.LogoImage}</c:set>
+				<c:set var="logoSizes"><cms:property name="image.size" file="${logoPath}" default="170x42" /></c:set>
+				<a title="${logoSizes}" class="logo apollo-logo" href="<cms:link>${value.LogoLink}</cms:link>" style="width: ${fn:substringAfter(fn:substringBefore(logoSizes,','), 'w:')}px;height: ${fn:substringAfter(logoSizes,'h:')}px;background-image:url('<cms:link>${logoPath}</cms:link>');"></a>
 
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target=".navbar-responsive-collapse">
