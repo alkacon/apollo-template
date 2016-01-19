@@ -9,6 +9,8 @@
   "repository": "cust-ebk",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
+    "autoprefixer-core": "^6.0.1",
+    "grunt-autoprefixer": "^3.0.3",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-copy": "~0.8.0",
     "grunt-contrib-cssmin": "~0.12.2",
