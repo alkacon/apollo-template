@@ -36,15 +36,7 @@
       <Disabled><![CDATA[false]]></Disabled>
     </ResourceType>
     <ResourceType>
-      <TypeName><![CDATA[a-carousel]]></TypeName>
-      <Disabled><![CDATA[false]]></Disabled>
-    </ResourceType>
-    <ResourceType>
       <TypeName><![CDATA[a-slider]]></TypeName>
-      <Disabled><![CDATA[false]]></Disabled>
-    </ResourceType>
-    <ResourceType>
-      <TypeName><![CDATA[xmlimage]]></TypeName>
       <Disabled><![CDATA[false]]></Disabled>
     </ResourceType>
     <ResourceType>

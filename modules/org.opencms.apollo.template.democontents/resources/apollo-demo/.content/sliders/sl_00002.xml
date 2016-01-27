@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSliders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/slider.xsd">
+  <ApolloSlider language="en">
+    <Title><![CDATA[4 Technicals]]></Title>
+    <Delay><![CDATA[5000]]></Delay>
+    <ShowTimer>false</ShowTimer>
+    <ShowNumbers>false</ShowNumbers>
+    <ShowNavButtons>false</ShowNavButtons>
+    <ShowPlayButton>false</ShowPlayButton>
+    <TextColor>#FFFFFF</TextColor>
+    <ImageHeight><![CDATA[277]]></ImageHeight>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/48.jpg]]></target>
+          <uuid>8ac494fd-635f-11e5-81df-0242ac11002b</uuid>
+        </link>
+      </Uri>
+      <SuperTitle/>
+      <TitleLine1><![CDATA[Simple and intuitive]]></TitleLine1>
+      <TitleLine2/>
+    </Image>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/09.jpg]]></target>
+          <uuid>c56a66cc-4705-11e3-8417-000c29d28104</uuid>
+        </link>
+      </Uri>
+      <SuperTitle/>
+      <TitleLine1><![CDATA[Great features]]></TitleLine1>
+      <TitleLine2/>
+    </Image>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/45.jpg]]></target>
+          <uuid>1d7778d8-635f-11e5-81df-0242ac11002b</uuid>
+        </link>
+      </Uri>
+      <SuperTitle/>
+      <TitleLine1><![CDATA[Easy to use]]></TitleLine1>
+      <TitleLine2/>
+    </Image>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/34.jpg]]></target>
+          <uuid>d5ae01bb-4785-11e3-ba23-000c29d28104</uuid>
+        </link>
+      </Uri>
+      <SuperTitle/>
+      <TitleLine1><![CDATA[Full control]]></TitleLine1>
+      <TitleLine2/>
+    </Image>
+  </ApolloSlider>
+</ApolloSliders>

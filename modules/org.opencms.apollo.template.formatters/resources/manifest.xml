@@ -603,60 +603,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/carousel-config.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/carousel-config.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>2a90776e-57a1-11e5-8281-0242ac11002b</uuidstructure>
-			<uuidresource>2a90776f-57a1-11e5-8281-0242ac11002b</uuidresource>
-			<datecreated>Thu, 10 Sep 2015 09:49:02 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Carousel formatter]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/carousel.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/carousel.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>2a8b956b-57a1-11e5-8281-0242ac11002b</uuidstructure>
-			<uuidresource>2a8b956c-57a1-11e5-8281-0242ac11002b</uuidresource>
-			<datecreated>Thu, 10 Sep 2015 09:49:01 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Formatter JSP for carousel]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[container-element;locale]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/event-config.xml</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/event-config.xml</destination>
 			<type>formatter_config</type>
@@ -667,7 +613,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Sample formatter for Event]]></value>
+					<value><![CDATA[Event formatter]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -694,6 +640,14 @@
 			<datecreated>Tue, 15 Sep 2015 08:29:04 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for event]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
@@ -742,7 +696,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter for Flexible content]]></value>
+					<value><![CDATA[Formatter JSP for Flexible content]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -796,7 +750,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Sample formatter for a search form]]></value>
+					<value><![CDATA[Formatter JSP for a search form]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>
@@ -950,7 +904,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter for main navigation]]></value>
+					<value><![CDATA[Formatter JSP for main navigation]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1004,7 +958,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter for side navigation]]></value>
+					<value><![CDATA[Formatter JSP for side navigation]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1029,7 +983,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Sample formatter for Sitemap]]></value>
+					<value><![CDATA[Sitemap formatter]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1056,6 +1010,68 @@
 			<datecreated>Fri, 16 Oct 2015 08:58:26 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for sitemap]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[uri;container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/slider-carousel-config.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/slider-carousel-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>f3d2faa7-c4d0-11e5-9ca7-0242ac11002b</uuidstructure>
+			<uuidresource>f3d2faa8-c4d0-11e5-9ca7-0242ac11002b</uuidresource>
+			<datecreated>Wed, 27 Jan 2016 08:35:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Slider as carousel formatter]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/slider-carousel.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/slider-carousel.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>ca17b0c1-c4d0-11e5-9ca7-0242ac11002b</uuidstructure>
+			<uuidresource>ca17b0c2-c4d0-11e5-9ca7-0242ac11002b</uuidresource>
+			<datecreated>Wed, 27 Jan 2016 08:34:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for slider as carousel]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
@@ -1075,7 +1091,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Simple Slider standard formatter]]></value>
+					<value><![CDATA[Slider standard formatter]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1102,6 +1118,14 @@
 			<datecreated>Fri, 16 Oct 2015 04:59:44 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for slider]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
@@ -1283,7 +1307,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Text formatter ]]></value>
+					<value><![CDATA[Text formatter]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1356,6 +1380,14 @@
 			<datecreated>Wed, 23 Sep 2015 11:07:10 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for text as icon box (settings)]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
@@ -1375,7 +1407,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for texts as icon box]]></value>
+					<value><![CDATA[Formatter JSP for text as icon box]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1400,7 +1432,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Text as jumbotron formatter ]]></value>
+					<value><![CDATA[Text as jumbotron formatter]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1429,7 +1461,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for texts as jumbotron]]></value>
+					<value><![CDATA[Formatter JSP for text as jumbotron]]></value>
 				</property>
 				<property>
 					<name>cache</name>

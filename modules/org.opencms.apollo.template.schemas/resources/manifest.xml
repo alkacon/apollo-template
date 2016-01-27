@@ -39,8 +39,6 @@
 			<resource uri="/system/workplace/resources/filetypes/a-slider_big.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-tabs.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-tabs_big.png"/>
-			<resource uri="/system/workplace/resources/filetypes/a-carousel.png"/>
-			<resource uri="/system/workplace/resources/filetypes/a-carousel_big.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-blog.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-blog_big.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-list.png"/>
@@ -69,9 +67,6 @@
 			</type>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-tabs" id="455">
 				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/tabs.xsd</param>
-			</type>
-			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-carousel" id="457">
-				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/carousel.xsd</param>
 			</type>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-event" id="458">
 				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/event.xsd</param>
@@ -110,9 +105,6 @@
 			</explorertype>
 			<explorertype name="a-tabs" key="fileicon.a-tabs" icon="a-tabs.png" bigicon="a-tabs_big.png" reference="xmlcontent">
 				<newresource page="a-menu" uri="newresource_xmlcontent.jsp?newresourcetype=a-tabs" order="40" autosetnavigation="false" autosettitle="false" info="desc.a-tabs" key="title.a-tabs"/>
-			</explorertype>
-			<explorertype name="a-carousel" key="fileicon.a-carousel" icon="a-carousel.png" bigicon="a-carousel_big.png" reference="xmlcontent">
-				<newresource page="a-menu" uri="newresource_xmlcontent.jsp?newresourcetype=a-carousel" order="60" autosetnavigation="false" autosettitle="false" info="desc.a-carousel" key="title.a-carousel"/>
 			</explorertype>
 			<explorertype name="a-event" key="fileicon.a-event" icon="a-event.png" bigicon="a-event_big.png" reference="xmlcontent">
 				<newresource page="a-menu" uri="newresource_xmlcontent.jsp?newresourcetype=a-event" order="70" autosetnavigation="false" autosettitle="false" info="desc.a-event" key="title.a-event"/>
@@ -293,23 +285,6 @@
 			<uuidstructure>bb43a22f-57bf-11e5-a989-0242ac11002b</uuidstructure>
 			<uuidresource>bb43a230-57bf-11e5-a989-0242ac11002b</uuidresource>
 			<datecreated>Thu, 10 Sep 2015 13:27:49 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.schemas/i18n/org.opencms.apollo.template.schemas.carousel</source>
-			<destination>system/modules/org.opencms.apollo.template.schemas/i18n/org.opencms.apollo.template.schemas.carousel</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>53cdded4-57a1-11e5-8281-0242ac11002b</uuidstructure>
-			<uuidresource>53cdded5-57a1-11e5-8281-0242ac11002b</uuidresource>
-			<datecreated>Thu, 10 Sep 2015 09:50:11 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
@@ -574,23 +549,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.schemas/schemas/carousel.xsd</source>
-			<destination>system/modules/org.opencms.apollo.template.schemas/schemas/carousel.xsd</destination>
-			<type>plain</type>
-			<uuidstructure>2a6a03a0-57a1-11e5-8281-0242ac11002b</uuidstructure>
-			<uuidresource>2a6a03a1-57a1-11e5-8281-0242ac11002b</uuidresource>
-			<datecreated>Thu, 10 Sep 2015 09:49:01 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[XSD for a carousel]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.schemas/schemas/event.xsd</source>
 			<destination>system/modules/org.opencms.apollo.template.schemas/schemas/event.xsd</destination>
 			<type>plain</type>
@@ -805,23 +763,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.schemas/schemas/nested/carouselitem.xsd</source>
-			<destination>system/modules/org.opencms.apollo.template.schemas/schemas/nested/carouselitem.xsd</destination>
-			<type>plain</type>
-			<uuidstructure>329c98f7-57a2-11e5-8281-0242ac11002b</uuidstructure>
-			<uuidresource>329c98f8-57a2-11e5-8281-0242ac11002b</uuidresource>
-			<datecreated>Thu, 10 Sep 2015 09:56:25 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Nested XSD for a carousel item]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.schemas/schemas/nested/flexiblechoice.xsd</source>
 			<destination>system/modules/org.opencms.apollo.template.schemas/schemas/nested/flexiblechoice.xsd</destination>
 			<type>plain</type>
@@ -981,40 +922,6 @@
 			<uuidstructure>fcf7af8a-57c6-11e5-a989-0242ac11002b</uuidstructure>
 			<uuidresource>caa35bcf-57c7-11e5-a989-0242ac11002b</uuidresource>
 			<datecreated>Thu, 10 Sep 2015 14:25:31 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property type="shared">
-					<name>image.size</name>
-					<value><![CDATA[w:24,h:24]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/workplace/resources/filetypes/a-carousel.png</source>
-			<destination>system/workplace/resources/filetypes/a-carousel.png</destination>
-			<type>image</type>
-			<uuidstructure>2a7bb6e3-57a1-11e5-8281-0242ac11002b</uuidstructure>
-			<uuidresource>972cba29-57a1-11e5-8281-0242ac11002b</uuidresource>
-			<datecreated>Thu, 10 Sep 2015 09:52:04 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property type="shared">
-					<name>image.size</name>
-					<value><![CDATA[w:16,h:16]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/workplace/resources/filetypes/a-carousel_big.png</source>
-			<destination>system/workplace/resources/filetypes/a-carousel_big.png</destination>
-			<type>image</type>
-			<uuidstructure>2a7fd597-57a1-11e5-8281-0242ac11002b</uuidstructure>
-			<uuidresource>9ee66b3e-57a1-11e5-8281-0242ac11002b</uuidresource>
-			<datecreated>Thu, 10 Sep 2015 09:52:17 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">

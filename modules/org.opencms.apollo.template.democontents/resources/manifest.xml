@@ -4049,84 +4049,6 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>apollo-demo/.content/carousels</destination>
-			<type>folder</type>
-			<uuidstructure>cb609fda-5ad1-11e5-a17e-0242ac11002b</uuidstructure>
-			<datecreated>Mon, 15 Sep 2014 15:04:06 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/carousels/c_00001.xml</source>
-			<destination>apollo-demo/.content/carousels/c_00001.xml</destination>
-			<type>a-carousel</type>
-			<uuidstructure>b7c1a3d5-5d17-11e5-96ab-0242ac11002b</uuidstructure>
-			<uuidresource>b7c1a3d6-5d17-11e5-96ab-0242ac11002b</uuidresource>
-			<datecreated>Thu, 17 Sep 2015 08:40:15 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Test Carousel]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/carousels/c_00002.xml</source>
-			<destination>apollo-demo/.content/carousels/c_00002.xml</destination>
-			<type>a-carousel</type>
-			<uuidstructure>cb61ff6c-5ad1-11e5-a17e-0242ac11002b</uuidstructure>
-			<uuidresource>cb61ff6d-5ad1-11e5-a17e-0242ac11002b</uuidresource>
-			<datecreated>Tue, 21 Oct 2014 12:58:13 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Home: 4 Technicals]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/carousels/c_00003.xml</source>
-			<destination>apollo-demo/.content/carousels/c_00003.xml</destination>
-			<type>a-carousel</type>
-			<uuidstructure>cb64495f-5ad1-11e5-a17e-0242ac11002b</uuidstructure>
-			<uuidresource>cb644960-5ad1-11e5-a17e-0242ac11002b</uuidresource>
-			<datecreated>Tue, 28 Oct 2014 17:07:59 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Three columns: It's just easy]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/carousels/c_00004.xml</source>
-			<destination>apollo-demo/.content/carousels/c_00004.xml</destination>
-			<type>a-carousel</type>
-			<uuidstructure>a8e517c3-5d24-11e5-96ab-0242ac11002b</uuidstructure>
-			<uuidresource>a8e517c4-5d24-11e5-96ab-0242ac11002b</uuidresource>
-			<datecreated>Thu, 17 Sep 2015 10:12:53 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Test Carousel]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>apollo-demo/.content/events</destination>
 			<type>folder</type>
 			<uuidstructure>ae8e34f8-5b98-11e5-9eb7-0242ac11002b</uuidstructure>
@@ -5303,6 +5225,40 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 		<file>
 			<source>apollo-demo/.content/sliders/sl_00001.xml</source>
 			<destination>apollo-demo/.content/sliders/sl_00001.xml</destination>
+			<type>a-slider</type>
+			<uuidstructure>fb5adea2-c4d6-11e5-9ca7-0242ac11002b</uuidstructure>
+			<uuidresource>fb5adea3-c4d6-11e5-9ca7-0242ac11002b</uuidresource>
+			<datecreated>Wed, 27 Jan 2016 09:18:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Three columns: It's just easy]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/sliders/sl_00002.xml</source>
+			<destination>apollo-demo/.content/sliders/sl_00002.xml</destination>
+			<type>a-slider</type>
+			<uuidstructure>65a1b101-c4dd-11e5-9ca7-0242ac11002b</uuidstructure>
+			<uuidresource>65a1b102-c4dd-11e5-9ca7-0242ac11002b</uuidresource>
+			<datecreated>Wed, 27 Jan 2016 10:04:47 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: 4 Technicals]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/sliders/slx_00001.xml</source>
+			<destination>apollo-demo/.content/sliders/slx_00001.xml</destination>
 			<type>a-sliderextended</type>
 			<uuidstructure>018bc274-56d4-11e5-946f-0242ac11002b</uuidstructure>
 			<uuidresource>018bc275-56d4-11e5-946f-0242ac11002b</uuidresource>
