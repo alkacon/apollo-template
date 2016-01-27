@@ -8,9 +8,8 @@
 		class="${cms.element.parent.setting.cssHints.isSet ? cms.element.parent.setting.cssHints : "
 		" }${' ' }${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "mb-20" }">
 		<c:set var="subIdCounter">1</c:set>
-		<c:set var="pathparts"
-			value="${fn:split(cms.requestContext.folderUri, '/')}" />
-		<c:set var="navStartLevel">${param.startlevel + 1}</c:set>
+		<c:set var="pathparts" value="${fn:split(cms.requestContext.folderUri, '/')}" />
+		<c:set var="navStartLevel">${value.NavStartLevel.stringValue}</c:set>
 		<c:set var="navStartFolder" value="/" />
 		<c:set var="lastItem" value="" />
 		<c:forEach var="folderName" items="${pathparts}" varStatus="status">
