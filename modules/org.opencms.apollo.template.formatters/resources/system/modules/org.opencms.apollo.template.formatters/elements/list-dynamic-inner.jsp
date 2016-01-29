@@ -75,7 +75,7 @@
 				</c:when>
 				<c:otherwise>
 					<%@include
-						file="%(link.weak:/system/modules/org.opencms.apollo.template.formatters/elements/list/new.jsp:0aeecb5b-8a1b-11e5-a24e-0242ac11002b)"%>
+						file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list/new.jsp:0aeecb5b-8a1b-11e5-a24e-0242ac11002b)"%>
 				</c:otherwise>
 			</c:choose>
 		</c:if>
