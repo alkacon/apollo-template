@@ -4,7 +4,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<c:set var="solrParamType">fq=type:${cms.vfs.property[param.typesToCollect]['list.type']}</c:set>
+
+<c:set var="resType">${fn:substringBefore(param.typesToCollect, ":")}</c:set>
+
+<c:set var="solrParamType">fq=type:${resType}</c:set>
 <c:set var="solrParamDirs">&fq=parent-folders:"${param.pathes}"</c:set>
 <c:set var="solrFilterQue">${param.extraQueries}</c:set>
 <c:set var="sortOptionAsc">{ "label" : sortorder.asc, "paramvalue" : "asc", "solrvalue" : "newsdate_${cms.locale}_dt asc" }</c:set>

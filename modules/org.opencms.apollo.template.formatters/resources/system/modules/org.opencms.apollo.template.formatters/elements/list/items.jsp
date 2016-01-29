@@ -6,19 +6,18 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
 	<c:if test="${not empty param.searchConfig}">
+		<cms:contentload collector="singleFile" param="%(param.listConfig)">
+			<cms:contentaccess var="listConfig" />
+		</cms:contentload>
 		<cms:search configString="${param.searchConfig}" var="search"
 			addContentInfo="true" />
 		<c:forEach var="result" items="${search.searchResults}">
-			<c:set var="content" value="${result.xmlContent}" />
-			<cms:edit uuid='${result.fields["id"]}' create="true" delete="true">
-				<div class="list-entry row mb-20">
-					<cms:include page="${param.typesToCollect}">
-						<cms:param name="filename" value="${content.filename}" />
-						<cms:param name="teaserLength" value="${param.teaserLength}" />
-						<cms:param name="buttonColor">${param.buttonColor}</cms:param>
-					</cms:include>
-				</div>
-			</cms:edit>
+			<div class="row mb-20">
+			<cms:display value="${result.xmlContent.filename}" displayFormatters="${listConfig.value.TypesToCollect}">
+				<cms:param name="teaserLength" value="${param.teaserLength}" />
+				<cms:param name="buttonColor">${param.buttonColor}</cms:param>
+			</cms:display>
+			</div>
 		</c:forEach>
 	</c:if>
 </cms:bundle>

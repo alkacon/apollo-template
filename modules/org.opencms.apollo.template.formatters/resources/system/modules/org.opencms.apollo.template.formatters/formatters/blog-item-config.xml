@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Blog Entry list item formatter]]></NiceName>
+    <Type><![CDATA[a-blog]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/blog-item.jsp]]></target>
+        <uuid>a3851db8-c663-11e5-a73e-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[100]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[none]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>false</Detail>
+    <Display>true</Display>
+    <NestedContainers>false</NestedContainers>
+    <HeadIncludeCss/>
+    <Setting>
+      <PropertyName><![CDATA[imgalign]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.imgalign)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <WidgetConfig><![CDATA[left:%(key.apollo.setting.image.left)|right:%(key.apollo.setting.image.right)]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

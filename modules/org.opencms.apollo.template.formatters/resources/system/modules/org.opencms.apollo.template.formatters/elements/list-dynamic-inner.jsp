@@ -12,7 +12,7 @@
 	<div>
 		<c:set var="searchConfig">
 			<%@include
-				file="%(link.weak:/system/modules/org.opencms.apollo.template.formatters/elements/list/search-options.jsp:914d991e-8a1b-11e5-a24e-0242ac11002b)"%>
+				file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list/search-options.jsp:914d991e-8a1b-11e5-a24e-0242ac11002b)"%>
 		</c:set>
 		<cms:search configString="${searchConfig}" var="search"
 			addContentInfo="true" />
@@ -37,6 +37,7 @@
 									<cms:param name="searchConfig">${searchConfig}</cms:param>
 									<cms:param name="teaserLength">${param.teaserLength}</cms:param>									
 									<cms:param name="buttonColor">${param.buttonColor}</cms:param>
+									<cms:param name="listConfig">${param.listConfig}</cms:param>
 								</cms:include>
 							</div>
 							<div class="spinner mv-20" style="opacity: 0">
@@ -48,6 +49,7 @@
 								page="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list/items.jsp:b3767e91-7704-11e5-904d-15b01ffdc6a6)">
 								<cms:param name="searchConfig">${searchConfig}</cms:param>
 								<cms:param name="teaserLength">${param.teaserLength}</cms:param>
+								<cms:param name="listConfig">${param.listConfig}</cms:param>
 							</cms:include>
 						</c:otherwise>
 					</c:choose>

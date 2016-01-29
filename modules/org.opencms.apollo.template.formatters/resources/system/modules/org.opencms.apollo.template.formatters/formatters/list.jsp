@@ -7,7 +7,7 @@
 
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
-	<cms:formatter var="con" rdfa="rdfa">
+	<cms:formatter var="con" val="value" rdfa="rdfa">
 		<c:set var="categoryFacetField">category_exact</c:set>
 		<div>
 			${cms.reloadMarker}
@@ -67,7 +67,7 @@
 					<c:set var="params">${params}&__locale=${cms.locale}</c:set>
 					<c:set var="params">${params}&sortOrder=${con.value.SortOrder}</c:set>
 					<c:set var="params">${params}&pageUri=${cms.requestContext.uri}</c:set>
-
+					<c:set var="params">${params}&listConfig=${cms.element.sitePath}</c:set>
 
 					<div class="posts lists">
 						<cms:include file="${linkInnerPage}">

@@ -17,7 +17,7 @@
 	<xsd:complexType name="OpenCmsApolloList">
 		<xsd:sequence>
 			<xsd:element name="Headline" type="OpenCmsString" />
-			<xsd:element name="TypesToCollect" type="OpenCmsString" />
+			<xsd:element name="TypesToCollect" type="OpenCmsDisplayFormatter" />
 			<xsd:element name="FilterQueries" type="OpenCmsString" />
 			<xsd:element name="SortOrder" type="OpenCmsString" />
 			<xsd:element name="ItemsPerPage" type="OpenCmsString"
@@ -51,7 +51,7 @@
 				<layout element="SortOrder" widget="SelectorWidget"
 					configuration="asc:%(key.apollo.list.value.asc)|desc:%(key.apollo.list.value.desc)" />
 				<layout element="TypesToCollect"
-					widget="org.opencms.apollo.template.schemas.CmsSelectListWidget"
+					widget="DisplayTypeSelectWidget"
 					configuration="" />
 
 			</layouts>

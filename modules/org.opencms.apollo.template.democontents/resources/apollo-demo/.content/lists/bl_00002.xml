@@ -3,7 +3,7 @@
 <ApolloLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/list.xsd">
   <ApolloList language="en">
     <Headline><![CDATA[Events]]></Headline>
-    <TypesToCollect><![CDATA[/system/modules/org.opencms.apollo.template.formatters/elements/list/event-item.jsp]]></TypesToCollect>
+    <TypesToCollect>a-event:194e26bc-c5b6-11e5-a73e-0242ac11002b</TypesToCollect>
     <FilterQueries/>
     <SortOrder><![CDATA[asc]]></SortOrder>
     <ItemsPerPage><![CDATA[5]]></ItemsPerPage>
