@@ -9,11 +9,12 @@
 		<cms:contentload collector="singleFile" param="%(param.listConfig)">
 			<cms:contentaccess var="listConfig" />
 		</cms:contentload>
-		<cms:search configString="${param.searchConfig}" var="search"
-			addContentInfo="true" />
+
+		<cms:search configString="${param.searchConfig}" var="search" addContentInfo="true" />
+
 		<c:forEach var="result" items="${search.searchResults}">
 			<div class="row mb-20">
-			<cms:display value="${result.xmlContent.filename}" displayFormatters="${listConfig.value.TypesToCollect}" editable="true">
+			<cms:display value="${result.xmlContent.filename}" displayFormatters="${listConfig.value.TypesToCollect}" editable="true" create="true">
 				<cms:param name="teaserLength" value="${param.teaserLength}" />
 				<cms:param name="buttonColor">${param.buttonColor}</cms:param>
 			</cms:display>
