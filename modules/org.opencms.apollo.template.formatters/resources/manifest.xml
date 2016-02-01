@@ -773,6 +773,168 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-animation-config.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-animation-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>cb455793-5c7b-11e5-96ab-0242ac11002b</uuidstructure>
+			<uuidresource>cb455794-5c7b-11e5-96ab-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Sep 2015 14:04:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Animation image formatter]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-animation.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-animation.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>cb40276e-5c7b-11e5-96ab-0242ac11002b</uuidstructure>
+			<uuidresource>cb40276f-5c7b-11e5-96ab-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Sep 2015 14:04:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Animation formatter JSP for image]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-enlarge-config.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-enlarge-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>18c11a42-5bb3-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>18c11a43-5bb3-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 14:07:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Enlargement image formatter]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-enlarge.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-enlarge.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>ce88186c-5bb2-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>ce88186d-5bb2-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 14:05:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Enlargement Formatter JSP for image]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-new-config.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-new-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>3677fe85-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 15:41:21 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Standard image formatter]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-new.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-new.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>1106ba60-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 15:40:18 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Standard Formatter JSP for image]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/jsp-search-formatter-config.xml</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/jsp-search-formatter-config.xml</destination>
 			<type>formatter_config</type>
@@ -1549,168 +1711,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Formatter JSP for texts]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[container-element;locale]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-animation-config.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-animation-config.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>cb455793-5c7b-11e5-96ab-0242ac11002b</uuidstructure>
-			<uuidresource>cb455794-5c7b-11e5-96ab-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Sep 2015 14:04:06 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Animation XML image formatter]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-animation.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-animation.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>cb40276e-5c7b-11e5-96ab-0242ac11002b</uuidstructure>
-			<uuidresource>cb40276f-5c7b-11e5-96ab-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Sep 2015 14:04:06 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Animation formatter JSP for xmlimage]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[container-element;locale]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-enlarge-config.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-enlarge-config.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>18c11a42-5bb3-11e5-8f8e-0242ac11002b</uuidstructure>
-			<uuidresource>18c11a43-5bb3-11e5-8f8e-0242ac11002b</uuidresource>
-			<datecreated>Tue, 15 Sep 2015 14:07:27 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Enlargement XML image formatter]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-enlarge.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-enlarge.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>ce88186c-5bb2-11e5-8f8e-0242ac11002b</uuidstructure>
-			<uuidresource>ce88186d-5bb2-11e5-8f8e-0242ac11002b</uuidresource>
-			<datecreated>Tue, 15 Sep 2015 14:05:23 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Enlargement Formatter JSP for xmlimage]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[container-element;locale]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-new-config.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-new-config.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
-			<uuidresource>3677fe85-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
-			<datecreated>Tue, 15 Sep 2015 15:41:21 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Standard XML image formatter]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-new.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-new.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
-			<uuidresource>1106ba60-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
-			<datecreated>Tue, 15 Sep 2015 15:40:18 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Formatter JSP for xmlimage]]></value>
 				</property>
 				<property>
 					<name>cache</name>

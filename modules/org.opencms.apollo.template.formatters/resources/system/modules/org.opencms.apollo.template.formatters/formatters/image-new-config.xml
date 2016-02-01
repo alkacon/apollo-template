@@ -2,17 +2,17 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Enlargement XML image formatter]]></NiceName>
+    <NiceName><![CDATA[Standard image formatter]]></NiceName>
     <Type><![CDATA[a-text]]></Type>
     <Type><![CDATA[a-blog]]></Type>
     <Type><![CDATA[a-event]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-enlarge.jsp]]></target>
-        <uuid>ce88186c-5bb2-11e5-8f8e-0242ac11002b</uuid>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/image-new.jsp]]></target>
+        <uuid>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuid>
       </link>
     </Jsp>
-    <Rank><![CDATA[4000]]></Rank>
+    <Rank><![CDATA[5000]]></Rank>
     <Match>
       <Types>
         <ContainerType><![CDATA[default]]></ContainerType>
@@ -23,6 +23,7 @@
     <SearchContent>false</SearchContent>
     <AutoEnabled>true</AutoEnabled>
     <Detail>false</Detail>
+    <Display>false</Display>
     <NestedContainers>false</NestedContainers>
     <Setting>
       <PropertyName><![CDATA[cssClass]]></PropertyName>
@@ -39,12 +40,12 @@
       <WidgetConfig><![CDATA[img-bordered:%(key.apollo.setting.cssshape.bordered)|rounded-2x:%(key.apollo.setting.cssshape.rounded)|img-bordered rounded-x:%(key.apollo.setting.cssshape.borderedround)]]></WidgetConfig>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[showheadline]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showheadline)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.showheadline.description)]]></Description>
+      <PropertyName><![CDATA[showtext]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showtext)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showtext.description)]]></Description>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showheadline.false)|bottomcenter:%(key.apollo.setting.showheadline.bottomcenter)]]></WidgetConfig>
+      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showtext.false)|true:%(key.apollo.setting.showtext.true)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>
