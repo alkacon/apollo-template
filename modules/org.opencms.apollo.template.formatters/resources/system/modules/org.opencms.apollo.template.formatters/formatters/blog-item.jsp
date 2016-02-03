@@ -21,8 +21,8 @@
 				href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>"><cms:img src="${paragraph.value.Image.value.Image}" width="800"
 						cssclass="img-responsive" scaleColor="transparent" scaleType="0"
 						noDim="true"
-						alt="${paragraph.value.Image.value.Title} ${copyright}"
-						title="${paragraph.value.Image.value.Title}  ${copyright}" /></a>
+						alt="${paragraph.value.Image.value.Title}${' '}${copyright}"
+						title="${paragraph.value.Image.value.Title}${' '}${copyright}" /></a>
 				</div>
 
 			

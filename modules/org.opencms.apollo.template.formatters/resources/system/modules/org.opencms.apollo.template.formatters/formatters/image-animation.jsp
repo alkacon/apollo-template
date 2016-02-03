@@ -7,45 +7,41 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.messages">
 	<cms:formatter var="content" val="value" rdfa="rdfa">
-		<%@include
-			file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/image/xpath.jsp:6d9929b8-9f5c-11e5-b3e7-0242ac11002b)"%>
+		<%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/imagevariables.jsp:6d9929b8-9f5c-11e5-b3e7-0242ac11002b)"%>
 		<c:choose>
-			<c:when test="${not value[xpath_image].isSet}">
+			<c:when test="${not imgValParent.Image.isSet or not imgValParent.Image.value.Image.isSet}">
 				<div class="alert">
 					<fmt:message key="no.image" />
 				</div>
 			</c:when>
 			<c:otherwise>
 				<div>
-					<%@include
-						file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/image/variables.jsp:e5da6ee0-a000-11e5-b3e7-0242ac11002b)"%>
-
 					<div class="thumbnails thumbnail-style thumbnail-kenburn"
-						${value_start.Image.rdfa.Image}>
+						${imgValParent.Image.rdfa.Image}>
 
 						<c:set var="showTextBelow" value="false" />
 						<c:if
-							test="${(value.Headline.isSet and cms.element.setting.showheadline.value == 'bottom') 
+							test="${(imgValParent.Headline.isSet and cms.element.setting.showheadline.value == 'bottom') 
             or (cms.element.setting.showtext.value == 'true') 
-            or (value.Link.isSet and cms.element.setting.showlink.value == 'button')}">
+            or (imgValParent.Link.isSet and cms.element.setting.showlink.value == 'button')}">
 							<c:set var="showTextBelow" value="true" />
 						</c:if>
 						<c:if
-							test="${value.Headline.isSet and cms.element.setting.showheadline.value == 'top'}">
+							test="${imgValParent.Headline.isSet and cms.element.setting.showheadline.value == 'top'}">
 							<div class="caption">
 								<c:choose>
 									<c:when
-										test="${value.Link.isSet and cms.element.setting.showlink.value == 'headline'}">
+										test="${imgValParent.Link.isSet and cms.element.setting.showlink.value == 'headline'}">
 										<div class="headline">
 											<h2>
 												<a class="hover-effect"
-													href="<cms:link>${value.Link}</cms:link>" ${rdfa.headline}>${value.Headline}</a>
+													href="<cms:link>${imgValParent.Link.value.URI}</cms:link>" ${imgValParent.Headline.rdfaAttr}>${imgValParent.Headline}</a>
 											</h2>
 										</div>
 									</c:when>
 									<c:otherwise>
 										<div class="headline">
-											<h2 ${rdfa.Headline}>${value.Headline}</h2>
+											<h2 ${imgValParent.Headline.rdfaAttr}>${imgValParent.Headline}</h2>
 										</div>
 									</c:otherwise>
 								</c:choose>
@@ -58,17 +54,16 @@
 								value="${cms.element.setting.cssClass.value}" />
 						</c:if>
 						<div class="${cssClass} ${showTextBelow ? thumbnail-img: ''}"
-							${value_start.Image.rdfa.Image} ${content.imageDnd[xpath_image]}>
+							${imgValParent.Image.rdfa.Image} ${content.imageDnd[imgValParent.Image.value.Image.path]}>
 							<div class="overflow-hidden">
-								<img src="<cms:link>${value_start.Image.value.Image}</cms:link>"
+								<img src="<cms:link>${imgValParent.Image.value.Image}</cms:link>"
 									class="img-responsive ${cms.element.setting.cssShape}"
-									alt="${title} ${copyright}"
-									title="<c:out value='${title}  ${copyright}' escapeXml='false' />" />
+									alt="${imgTitle}${' '}${imgCopyright}"
+									title="${imgTitle}${' '}${imgCopyright}" />
 							</div>
-							<c:if
-								test="${value.Link.isSet and cms.element.setting.showlink.value == 'image'}">
+							<c:if test="${imgValParent.Link.isSet and cms.element.setting.showlink.value == 'image'}">
 								<a class="btn-more hover-effect"
-									href="<cms:link>${value.Link}</cms:link>"><fmt:message
+									href="<cms:link>${imgValParent.Link}</cms:link>"><fmt:message
 										key="apollo.image.frontend.readmore" /></a>
 							</c:if>
 						</div>
@@ -76,13 +71,13 @@
 						<c:if test="${showTextBelow}">
 							<div class="caption">
 								<c:if
-									test="${value.Headline.isSet and fn:startsWith(cms.element.setting.showheadline.value,'bottom')}">
+									test="${imgValParent.Headline.isSet and fn:startsWith(cms.element.setting.showheadline.value,'bottom')}">
 									<c:choose>
 										<c:when
-											test="${value.Link.isSet and cms.element.setting.showlink.value == 'headline'}">
+											test="${imgValParent.Link.isSet and cms.element.setting.showlink.value == 'headline'}">
 											<h2>
 												<a class="hover-effect"
-													href="<cms:link>${value.Link}</cms:link>" ${rdfa.Headline}>${value.Headline}</a>
+													href="<cms:link>${imgValParent.Link.value.URI}</cms:link>" ${imgValParent.Headline.rdfaAttr}>${imgValParent.Headline}</a>
 											</h2>
 										</c:when>
 										<c:when
@@ -90,30 +85,30 @@
 											<div class="fa-center">
 												<div class="margin-bottom-20"></div>
 												<p>
-													<strong ${rdfa.Headline}>${value.Headline}</strong>
+													<strong ${imgValParent.Headline.rdfaAttr}>${imgValParent.Headline}</strong>
 												</p>
 											</div>
 										</c:when>
 										<c:otherwise>
-											<h2 ${rdfa.Headline}>${value.Headline}</h2>
+											<h2 ${imgValParent.Headline.rdfaAttr}>${imgValParent.Headline}</h2>
 										</c:otherwise>
 									</c:choose>
 								</c:if>
 								<c:choose>
                                   <c:when
-  									test="${value_start.Image.value.Description.isSet and cms.element.setting.showtext.value == 'true'}">
-  									<p ${value_start.Image.rdfa.Description}>${value_start.Image.value.Description}</p>
+  									test="${imgValParent.Image.value.Description.isSet and cms.element.setting.showtext.value == 'true'}">
+  									<p ${imgValParent.Image.rdfa.Description}>${imgValParent.Image.value.Description}</p>
   								</c:when>
                                   <c:when
-          							test="${value_start.Text.isSet and cms.element.setting.showtext.value == 'true'}">
-          							<p ${value_start.Text.rdfa}>${value_start.Text}</p>
+          							test="${imgValParent.Text.isSet and cms.element.setting.showtext.value == 'true'}">
+          							<p ${imgValParent.Text.rdfa}>${imgValParent.Text}</p>
           						</c:when>
                                 </c:choose>
 								<c:if
-									test="${value.Link.isSet and cms.element.setting.showlink.value == 'button'}">
+									test="${imgValParent.Link.isSet and cms.element.setting.showlink.value == 'button'}">
 									<div style="text-align: right; margin-top: 20px;">
 										<a class="btn-more hover-effect" style="position: relative;"
-											href="<cms:link>${value.Link}</cms:link>"><fmt:message
+											href="<cms:link>${imgValParent.Link.value.URI}</cms:link>"><fmt:message
 												key="apollo.image.frontend.readmore" /></a>
 									</div>
 								</c:if>

@@ -38,8 +38,8 @@
         							<cms:img src="${value.Image.value.Image}"
         								scaleColor="transparent" width="400" scaleType="0"
         								cssclass="img-responsive"
-        								alt="${value.Image.value.Title} ${copyright}"
-        								title="${value.Image.value.Title} ${copyright}" />
+        								alt="${value.Image.value.Title}${' '}${copyright}"
+        								title="${value.Image.value.Title}${' '}${copyright}" />
                                     <c:if test="${value.Image.value.Description.isSet}">
                                         <div class="caption" ${value.Image.rdfa.Description}>${value.Image.value.Description}</div>                                    
                                     </c:if>

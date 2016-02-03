@@ -121,8 +121,8 @@
 													<cms:img src="${paragraph.value.Image.value.Image}"
 														scaleColor="transparent" width="400" scaleType="0"
 														cssclass="img-responsive"
-														alt="${paragraph.value.Image.value.Title} ${copyright}"
-														title="${paragraph.value.Image.value.Title} ${copyright}" />
+														alt="${paragraph.value.Image.value.Title}${' '}${copyright}"
+														title="${paragraph.value.Image.value.Title}${' '}${copyright}" />
 												</div>
 											</div>
 										</div>

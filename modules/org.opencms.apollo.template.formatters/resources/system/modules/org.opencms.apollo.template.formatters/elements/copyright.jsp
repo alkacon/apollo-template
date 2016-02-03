@@ -9,5 +9,4 @@
 	<c:if test="${not fn:contains(copyright, copyrightSymbol)}">
 		<c:set var="copyright">${copyrightSymbol}${' '}${copyright}</c:set>
 	</c:if>
-	<c:set var="copyright">${' '}${copyright}</c:set>
 </c:if>

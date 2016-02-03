@@ -149,6 +149,27 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/elements/imagevariables.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/elements/imagevariables.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>6d9929b8-9f5c-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>6d9929b9-9f5c-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Dec 2015 16:38:22 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sets variables for image formatters]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/elements/list-dynamic-inner.jsp</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/elements/list-dynamic-inner.jsp</destination>
 			<type>jsp</type>
@@ -157,6 +178,10 @@
 			<datecreated>Tue, 20 Oct 2015 07:11:08 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Dynamic inner list]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
@@ -320,50 +345,6 @@
 					<name>cache</name>
 					<value><![CDATA[container-element;user]]></value>
 				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo.template.formatters/elements/image</destination>
-			<type>folder</type>
-			<uuidstructure>997816eb-9f5c-11e5-b3e7-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 10 Dec 2015 16:39:36 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/elements/image/variables.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/elements/image/variables.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>e5da6ee0-a000-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>e5da6ee1-a000-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Fri, 11 Dec 2015 12:15:42 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/elements/image/xpath.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/elements/image/xpath.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>6d9929b8-9f5c-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>6d9929b9-9f5c-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Thu, 10 Dec 2015 16:38:22 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
