@@ -881,8 +881,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-new-config.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-new-config.xml</destination>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-standard-config.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-standard-config.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
 			<uuidresource>3677fe85-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
@@ -910,8 +910,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-new.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-new.jsp</destination>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-standard.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-standard.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
 			<uuidresource>1106ba60-5bc0-11e5-8f8e-0242ac11002b</uuidresource>

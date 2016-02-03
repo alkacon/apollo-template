@@ -255,7 +255,7 @@
         </Uri>
         <Formatter>
           <link type="STRONG">
-            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/xmlimage-new.jsp]]></target>
+            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/image-new.jsp]]></target>
             <uuid>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuid>
           </link>
         </Formatter>
