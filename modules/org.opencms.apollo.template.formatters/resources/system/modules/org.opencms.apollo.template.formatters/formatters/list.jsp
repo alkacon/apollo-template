@@ -63,7 +63,7 @@
 					<c:set var="params">${params}&itemsPerPage=${itemsPerPage}</c:set>
 					<c:set var="params">${params}&buttonColor=${buttonColor}</c:set>
 					<c:set var="params">${params}&teaserLength=${teaserLength}</c:set>
-					<c:set var="params">${params}&teaserLength=${con.value.FilterQueries}</c:set>
+					<c:set var="params">${params}&extraQueries=${con.value.FilterQueries}</c:set>
 					<c:set var="params">${params}&__locale=${cms.locale}</c:set>
 					<c:set var="params">${params}&sortOrder=${con.value.SortOrder}</c:set>
 					<c:set var="params">${params}&pageUri=${cms.requestContext.uri}</c:set>
