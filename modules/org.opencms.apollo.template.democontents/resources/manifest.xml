@@ -6136,8 +6136,8 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/lists/bl_00001.xml</source>
-			<destination>apollo-demo/.content/lists/bl_00001.xml</destination>
+			<source>apollo-demo/.content/lists/l_00001.xml</source>
+			<destination>apollo-demo/.content/lists/l_00001.xml</destination>
 			<type>a-list</type>
 			<uuidstructure>2a8a5f46-5874-11e5-a17e-0242ac11002b</uuidstructure>
 			<uuidresource>2a8a5f47-5874-11e5-a17e-0242ac11002b</uuidresource>
@@ -6153,8 +6153,8 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/lists/bl_00002.xml</source>
-			<destination>apollo-demo/.content/lists/bl_00002.xml</destination>
+			<source>apollo-demo/.content/lists/l_00002.xml</source>
+			<destination>apollo-demo/.content/lists/l_00002.xml</destination>
 			<type>a-list</type>
 			<uuidstructure>f6384725-5d23-11e5-96ab-0242ac11002b</uuidstructure>
 			<uuidresource>f6384726-5d23-11e5-96ab-0242ac11002b</uuidresource>
