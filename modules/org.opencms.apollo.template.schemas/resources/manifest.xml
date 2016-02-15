@@ -763,23 +763,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.schemas/schemas/nested/flexiblechoice.xsd</source>
-			<destination>system/modules/org.opencms.apollo.template.schemas/schemas/nested/flexiblechoice.xsd</destination>
-			<type>plain</type>
-			<uuidstructure>cde2d0ff-560f-11e5-b868-0242ac11002b</uuidstructure>
-			<uuidresource>cde2d100-560f-11e5-b868-0242ac11002b</uuidresource>
-			<datecreated>Tue, 08 Sep 2015 09:55:58 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Nested XSD for flexible element choice]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.schemas/schemas/nested/image.xsd</source>
 			<destination>system/modules/org.opencms.apollo.template.schemas/schemas/nested/image.xsd</destination>
 			<type>plain</type>

@@ -3,17 +3,16 @@
 <ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/flexible.xsd">
   <ApolloFlexibleElement language="en">
     <Title><![CDATA[Footer for welcome page]]></Title>
-    <Choice>
-      <Code name="Code0">
-        <links>
-          <link name="link0" internal="false" type="A">
-            <target><![CDATA[http://www.alkacon.com]]></target>
-          </link>
-          <link name="link1" internal="false" type="A">
-            <target><![CDATA[http://www.opencms.org]]></target>
-          </link>
-        </links>
-        <content><![CDATA[<div class="header">
+    <Code name="Code0">
+      <links>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[http://www.alkacon.com]]></target>
+        </link>
+        <link name="link1" internal="false" type="A">
+          <target><![CDATA[http://www.opencms.org]]></target>
+        </link>
+      </links>
+      <content><![CDATA[<div class="header">
     <div class="topbar">
       <div class="container">
         <ul class="loginbar pull-left pl-0">
@@ -25,7 +24,6 @@
      </div>
 </div>
 </div><!--/top-->]]></content>
-      </Code>
-    </Choice>
+    </Code>
   </ApolloFlexibleElement>
 </ApolloFlexibleElements>
