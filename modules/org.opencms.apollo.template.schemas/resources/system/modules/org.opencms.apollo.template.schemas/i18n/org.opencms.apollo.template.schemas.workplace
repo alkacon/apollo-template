@@ -27,16 +27,16 @@
       <Value><![CDATA[Template Row]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[fileicon.a-text]]></Key>
-      <Value><![CDATA[Text]]></Value>
+      <Key><![CDATA[fileicon.a-block]]></Key>
+      <Value><![CDATA[Content Block]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[title.a-text]]></Key>
-      <Value><![CDATA[New Text]]></Value>
+      <Key><![CDATA[title.a-block]]></Key>
+      <Value><![CDATA[New Content Block]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[desc.a-text]]></Key>
-      <Value><![CDATA[A simple text with an optional link.]]></Value>
+      <Key><![CDATA[desc.a-block]]></Key>
+      <Value><![CDATA[A generic content for texts, images and / or links.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[fileicon.a-navigation]]></Key>
@@ -281,16 +281,16 @@
       <Value><![CDATA[Templatezeile]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[fileicon.a-text]]></Key>
-      <Value><![CDATA[Text]]></Value>
+      <Key><![CDATA[fileicon.a-block]]></Key>
+      <Value><![CDATA[Inhaltsbaustein]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[title.a-text]]></Key>
-      <Value><![CDATA[Neuer Text]]></Value>
+      <Key><![CDATA[title.a-block]]></Key>
+      <Value><![CDATA[Neuer Inhaltsbaustein]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[desc.a-text]]></Key>
-      <Value><![CDATA[Ein einfacher Text mit optionalem Link.]]></Value>
+      <Key><![CDATA[desc.a-block]]></Key>
+      <Value><![CDATA[Ein allgemeiner Inhalt für Texte, Bilder und / oder Links.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[fileicon.a-navigation]]></Key>

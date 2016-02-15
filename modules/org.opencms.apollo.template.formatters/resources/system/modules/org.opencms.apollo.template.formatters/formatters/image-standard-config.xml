@@ -3,12 +3,12 @@
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
     <NiceName><![CDATA[Standard image formatter]]></NiceName>
-    <Type><![CDATA[a-text]]></Type>
+    <Type><![CDATA[a-block]]></Type>
     <Type><![CDATA[a-blog]]></Type>
     <Type><![CDATA[a-event]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/image-new.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/image-standard.jsp]]></target>
         <uuid>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuid>
       </link>
     </Jsp>

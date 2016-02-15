@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloBlocks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/block.xsd">
+  <ApolloBlock language="en">
+    <Headline><![CDATA[Edit the page title]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content/>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/.galleries/tutorial-images/tut-10.png]]></target>
+          <uuid>371ac21c-6101-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </Image>
+      <Title/>
+    </Image>
+  </ApolloBlock>
+</ApolloBlocks>

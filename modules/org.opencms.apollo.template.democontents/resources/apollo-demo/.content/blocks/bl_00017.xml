@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloBlocks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/block.xsd">
+  <ApolloBlock language="en">
+    <Headline><![CDATA[The Surprise Company]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+<p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/cliparts/13.png]]></target>
+          <uuid>f0b392ac-55fb-11e4-8db5-005056b61161</uuid>
+        </link>
+      </Image>
+      <Title><![CDATA[The Surprise Company]]></Title>
+      <Copyright><![CDATA[openclipart.org]]></Copyright>
+    </Image>
+  </ApolloBlock>
+</ApolloBlocks>

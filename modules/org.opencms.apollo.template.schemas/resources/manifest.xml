@@ -31,8 +31,8 @@
 			<resource uri="/system/workplace/resources/filetypes/a-templaterow_big.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-navigation.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-navigation_big.png"/>
-			<resource uri="/system/workplace/resources/filetypes/a-text.png"/>
-			<resource uri="/system/workplace/resources/filetypes/a-text_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/a-block.png"/>
+			<resource uri="/system/workplace/resources/filetypes/a-block_big.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-flexible.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-flexible_big.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-slider.png"/>
@@ -59,8 +59,8 @@
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-navigation" id="451">
 				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/navigation.xsd</param>
 			</type>
-			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-text" id="452">
-				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/text.xsd</param>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-block" id="452">
+				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/block.xsd</param>
 			</type>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-flexible" id="453">
 				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/flexible.xsd</param>
@@ -97,8 +97,8 @@
 			<explorertype name="a-navigation" key="fileicon.a-navigation" icon="a-navigation.png" bigicon="a-navigation_big.png" reference="xmlcontent">
 				<newresource page="a-menu" uri="newresource_xmlcontent.jsp?newresourcetype=a-navigation" order="100" autosetnavigation="false" autosettitle="false" info="desc.a-navigation" key="title.a-navigation"/>
 			</explorertype>
-			<explorertype name="a-text" key="fileicon.a-text" icon="a-text.png" bigicon="a-text_big.png" reference="xmlcontent">
-				<newresource page="a-menu" uri="newresource_xmlcontent.jsp?newresourcetype=a-text" order="10" autosetnavigation="false" autosettitle="false" info="desc.a-text" key="title.a-text"/>
+			<explorertype name="a-block" key="fileicon.a-block" icon="a-block.png" bigicon="a-block_big.png" reference="xmlcontent">
+				<newresource page="a-menu" uri="newresource_xmlcontent.jsp?newresourcetype=a-block" order="10" autosetnavigation="false" autosettitle="false" info="desc.a-block" key="title.a-block"/>
 			</explorertype>
 			<explorertype name="a-flexible" key="fileicon.a-flexible" icon="a-flexible.png" bigicon="a-flexible_big.png" reference="xmlcontent">
 				<newresource page="a-menu" uri="newresource_xmlcontent.jsp?newresourcetype=a-flexible" order="20" autosetnavigation="false" autosettitle="false" info="desc.a-flexible" key="title.a-flexible"/>
@@ -273,6 +273,23 @@
 				<property>
 					<name>content-encoding</name>
 					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.schemas/i18n/org.opencms.apollo.template.schemas.block</source>
+			<destination>system/modules/org.opencms.apollo.template.schemas/i18n/org.opencms.apollo.template.schemas.block</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>44b45c49-557a-11e5-8d6b-0242ac11002b</uuidstructure>
+			<uuidresource>44b45c4a-557a-11e5-8d6b-0242ac11002b</uuidresource>
+			<datecreated>Mon, 07 Sep 2015 16:05:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -466,23 +483,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.schemas/i18n/org.opencms.apollo.template.schemas.text</source>
-			<destination>system/modules/org.opencms.apollo.template.schemas/i18n/org.opencms.apollo.template.schemas.text</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>44b45c49-557a-11e5-8d6b-0242ac11002b</uuidstructure>
-			<uuidresource>44b45c4a-557a-11e5-8d6b-0242ac11002b</uuidresource>
-			<datecreated>Mon, 07 Sep 2015 16:05:33 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.schemas/i18n/org.opencms.apollo.template.schemas.workplace</source>
 			<destination>system/modules/org.opencms.apollo.template.schemas/i18n/org.opencms.apollo.template.schemas.workplace</destination>
 			<type>xmlvfsbundle</type>
@@ -528,6 +528,23 @@
 			<datecreated>Thu, 03 Sep 2015 08:34:00 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.schemas/schemas/block.xsd</source>
+			<destination>system/modules/org.opencms.apollo.template.schemas/schemas/block.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>7771c880-5578-11e5-8d6b-0242ac11002b</uuidstructure>
+			<uuidresource>7771c881-5578-11e5-8d6b-0242ac11002b</uuidresource>
+			<datecreated>Mon, 07 Sep 2015 15:52:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[XSD for a content block]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
@@ -719,23 +736,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.schemas/schemas/text.xsd</source>
-			<destination>system/modules/org.opencms.apollo.template.schemas/schemas/text.xsd</destination>
-			<type>plain</type>
-			<uuidstructure>7771c880-5578-11e5-8d6b-0242ac11002b</uuidstructure>
-			<uuidresource>7771c881-5578-11e5-8d6b-0242ac11002b</uuidresource>
-			<datecreated>Mon, 07 Sep 2015 15:52:39 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[XSD for a text]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>system/modules/org.opencms.apollo.template.schemas/schemas/nested</destination>
 			<type>folder</type>
 			<uuidstructure>ab0d2252-523f-11e5-9495-0242ac11002b</uuidstructure>
@@ -897,6 +897,40 @@
 			<destination>system/workplace/resources</destination>
 			<type>folder</type>
 			<properties/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-block.png</source>
+			<destination>system/workplace/resources/filetypes/a-block.png</destination>
+			<type>image</type>
+			<uuidstructure>7795cb43-5578-11e5-8d6b-0242ac11002b</uuidstructure>
+			<uuidresource>97b51f30-55fb-11e5-8d6b-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 07:31:17 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-block_big.png</source>
+			<destination>system/workplace/resources/filetypes/a-block_big.png</destination>
+			<type>image</type>
+			<uuidstructure>779a5f27-5578-11e5-8d6b-0242ac11002b</uuidstructure>
+			<uuidresource>a25b8ff5-55fb-11e5-8d6b-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 07:31:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
 		</file>
 		<file>
 			<source>system/workplace/resources/filetypes/a-blog.png</source>
@@ -1245,40 +1279,6 @@
 			<uuidstructure>d6416242-523d-11e5-9495-0242ac11002b</uuidstructure>
 			<uuidresource>02c34663-523e-11e5-9495-0242ac11002b</uuidresource>
 			<datecreated>Thu, 03 Sep 2015 13:16:39 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property type="shared">
-					<name>image.size</name>
-					<value><![CDATA[w:24,h:24]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/workplace/resources/filetypes/a-text.png</source>
-			<destination>system/workplace/resources/filetypes/a-text.png</destination>
-			<type>image</type>
-			<uuidstructure>7795cb43-5578-11e5-8d6b-0242ac11002b</uuidstructure>
-			<uuidresource>97b51f30-55fb-11e5-8d6b-0242ac11002b</uuidresource>
-			<datecreated>Tue, 08 Sep 2015 07:31:17 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property type="shared">
-					<name>image.size</name>
-					<value><![CDATA[w:16,h:16]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/workplace/resources/filetypes/a-text_big.png</source>
-			<destination>system/workplace/resources/filetypes/a-text_big.png</destination>
-			<type>image</type>
-			<uuidstructure>779a5f27-5578-11e5-8d6b-0242ac11002b</uuidstructure>
-			<uuidresource>a25b8ff5-55fb-11e5-8d6b-0242ac11002b</uuidresource>
-			<datecreated>Tue, 08 Sep 2015 07:31:35 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloBlocks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/block.xsd">
+  <ApolloBlock language="en">
+    <Headline><![CDATA[Intuitive]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>With it's drag &amp; drop user interface OpenCms is intuitive to use.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/people/16.jpg]]></target>
+          <uuid>f6ce55a0-590a-11e4-903d-005056b61161</uuid>
+          <query><![CDATA[__scale=h:600,w:600,cx:14,cy:48,ch:748,cw:748]]></query>
+        </link>
+      </Image>
+      <Title/>
+    </Image>
+  </ApolloBlock>
+  <ApolloBlock language="de">
+    <Headline><![CDATA[Intuitiv]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Die Funktionen von OpenCms sind einfach und intuitiv zu bedienen.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/people/16.jpg]]></target>
+          <uuid>f6ce55a0-590a-11e4-903d-005056b61161</uuid>
+          <query><![CDATA[__scale=h:600,w:600,cx:14,cy:48,ch:748,cw:748]]></query>
+        </link>
+      </Image>
+      <Title/>
+    </Image>
+  </ApolloBlock>
+</ApolloBlocks>
