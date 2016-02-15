@@ -2,15 +2,13 @@
 	elementFormDefault="qualified">
 
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd" />
-	<xsd:include
-		schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/link.xsd" />
+	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/link.xsd" />
 
 	<xsd:element name="ApolloLists" type="OpenCmsApolloLists" />
 
 	<xsd:complexType name="OpenCmsApolloLists">
 		<xsd:sequence>
-			<xsd:element name="ApolloList" type="OpenCmsApolloList"
-				minOccurs="0" maxOccurs="unbounded" />
+			<xsd:element name="ApolloList" type="OpenCmsApolloList"	minOccurs="0" maxOccurs="unbounded" />
 		</xsd:sequence>
 	</xsd:complexType>
 
@@ -18,14 +16,11 @@
 		<xsd:sequence>
 			<xsd:element name="Headline" type="OpenCmsString" />
 			<xsd:element name="TypesToCollect" type="OpenCmsDisplayFormatter" />
-			<xsd:element name="FilterQueries" type="OpenCmsString" />
 			<xsd:element name="SortOrder" type="OpenCmsString" />
-			<xsd:element name="ItemsPerPage" type="OpenCmsString"
-				minOccurs="0" />
-			<xsd:element name="Link" type="OpenCmsApolloLink"
-				minOccurs="0" />
-			<xsd:element name="GalleryTitle" type="OpenCmsString"
-				minOccurs="0" />
+			<xsd:element name="ItemsPerPage" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="FilterQueries" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Link" type="OpenCmsApolloLink" minOccurs="0" />
+			<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="required" />
 	</xsd:complexType>
@@ -34,25 +29,18 @@
 		<xsd:appinfo>
 			<resourcebundle name="org.opencms.apollo.template.schemas.list" />
 			<mappings>
-				<mapping element="GalleryTitle" mapto="property:Title"
-					useDefault="true" />
+				<mapping element="GalleryTitle" mapto="property:Title" useDefault="true" />
 				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
 			</mappings>
 			<defaults>
 				<default element="Headline" value="%(key.apollo.list.default.Headline)" />
-				<default element="TypesToCollect" value="both" />
 				<default element="ItemsPerPage" value="5" />
-				<default element="GalleryTitle"
-					value="%(page_title)%(no_prefix:: )%(value:Headline)"
-					resolveMacros="false" />
+				<default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Headline)" resolveMacros="false" />
 			</defaults>
 			<layouts>
 
-				<layout element="SortOrder" widget="SelectorWidget"
-					configuration="asc:%(key.apollo.list.value.asc)|desc:%(key.apollo.list.value.desc)" />
-				<layout element="TypesToCollect"
-					widget="DisplayTypeSelectWidget"
-					configuration="" />
+				<layout element="SortOrder" widget="SelectorWidget"	configuration="asc:%(key.apollo.list.value.asc)|desc:%(key.apollo.list.value.desc)" />
+				<layout element="TypesToCollect" widget="DisplayTypeSelectWidget" configuration="" />
 
 			</layouts>
 			<validationrules />

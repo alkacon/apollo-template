@@ -24,7 +24,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.TypesToCollect]]></Key>
-      <Value><![CDATA[Entries to collect]]></Value>
+      <Value><![CDATA[List type]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.TypesToCollect.help]]></Key>
@@ -32,7 +32,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.FilterQueries]]></Key>
-      <Value><![CDATA[Filter queries]]></Value>
+      <Value><![CDATA[Filter options]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.FilterQueries.help]]></Key>
@@ -64,7 +64,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.Link]]></Key>
-      <Value><![CDATA[Link]]></Value>
+      <Value><![CDATA[Link below the list]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.Link.help]]></Key>
@@ -93,18 +93,6 @@
     <Message>
       <Key><![CDATA[apollo.list.value.desc]]></Key>
       <Value><![CDATA[Descending]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.list.value.type.blog]]></Key>
-      <Value><![CDATA[Blog entries]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.list.value.type.event]]></Key>
-      <Value><![CDATA[Events]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.list.value.type.both]]></Key>
-      <Value><![CDATA[Blog entries and events]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.readmore]]></Key>
@@ -142,7 +130,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.FilterQueries]]></Key>
-      <Value><![CDATA[Filter Queries]]></Value>
+      <Value><![CDATA[Filteroptionen]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.FilterQueries.help]]></Key>
@@ -182,7 +170,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.Link]]></Key>
-      <Value><![CDATA[Link]]></Value>
+      <Value><![CDATA[Link unter der Liste]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.Link.help]]></Key>
@@ -203,18 +191,6 @@
     <Message>
       <Key><![CDATA[apollo.list.value.desc]]></Key>
       <Value><![CDATA[absteigend]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.list.value.type.blog]]></Key>
-      <Value><![CDATA[Blogeinträge]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.list.value.type.event]]></Key>
-      <Value><![CDATA[Veranstaltungen]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.list.value.type.both]]></Key>
-      <Value><![CDATA[Blogeinträge und Veranstaltungen]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.readmore]]></Key>
