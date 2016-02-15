@@ -16,15 +16,15 @@
     </Message>
     <Message>
       <Key><![CDATA[desc.a-templaterow]]></Key>
-      <Value><![CDATA[Creates a template row that builds the main template layout.]]></Value>
+      <Value><![CDATA[Creates flexible row layouts that can be combined and nested.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[title.a-templaterow]]></Key>
-      <Value><![CDATA[New Template Row]]></Value>
+      <Value><![CDATA[New Layout Row]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[fileicon.a-templaterow]]></Key>
-      <Value><![CDATA[Template Row]]></Value>
+      <Value><![CDATA[Layout Row]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[fileicon.a-block]]></Key>
@@ -270,15 +270,15 @@
     </Message>
     <Message>
       <Key><![CDATA[desc.a-templaterow]]></Key>
-      <Value><![CDATA[Mit der Templatezeile wird das Template Layout erzeugt.]]></Value>
+      <Value><![CDATA[Erzeugt flexible Zeilenlayouts die kombiniert und verschachtelt werden können.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[title.a-templaterow]]></Key>
-      <Value><![CDATA[Neue Templatezeile]]></Value>
+      <Value><![CDATA[Neue Layout-Zeile]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[fileicon.a-templaterow]]></Key>
-      <Value><![CDATA[Templatezeile]]></Value>
+      <Value><![CDATA[Layout-Zeile]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[fileicon.a-block]]></Key>
