@@ -31,6 +31,14 @@
       <Value><![CDATA[Select which kind of entries should be shown in the list.]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[label.ApolloList.Category]]></Key>
+      <Value><![CDATA[Preselect Categories]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloList.Category.help]]></Key>
+      <Value><![CDATA[Select categories for entries that should be shown in the list.]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.ApolloList.FilterQueries]]></Key>
       <Value><![CDATA[Filter options]]></Value>
     </Message>
@@ -127,6 +135,14 @@
     <Message>
       <Key><![CDATA[label.ApolloList.TypesToCollect.help]]></Key>
       <Value><![CDATA[Wählen Sie den Typ der Inhalte, die in der Liste angezeigt werden.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloList.Category]]></Key>
+      <Value><![CDATA[Vorauswahl Kategorien]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloList.Category.help]]></Key>
+      <Value><![CDATA[Vorauswahl von Kategorien für Inhalte, die in der Liste angezeigt werden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.FilterQueries]]></Key>

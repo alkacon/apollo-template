@@ -16,6 +16,7 @@
 		<xsd:sequence>
 			<xsd:element name="Headline" type="OpenCmsString" />
 			<xsd:element name="TypesToCollect" type="OpenCmsDisplayFormatter" />
+			<xsd:element name="Category" type="OpenCmsCategory" minOccurs="0" />
 			<xsd:element name="SortOrder" type="OpenCmsString" />
 			<xsd:element name="ItemsPerPage" type="OpenCmsString" minOccurs="0" />
 			<xsd:element name="FilterQueries" type="OpenCmsString" minOccurs="0" />
@@ -38,10 +39,9 @@
 				<default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Headline)" resolveMacros="false" />
 			</defaults>
 			<layouts>
-
 				<layout element="SortOrder" widget="SelectorWidget"	configuration="asc:%(key.apollo.list.value.asc)|desc:%(key.apollo.list.value.desc)" />
 				<layout element="TypesToCollect" widget="DisplayTypeSelectWidget" configuration="" />
-
+				<layout element="Category" widget="CategoryWidget" configuration="onlyleafs=false" />
 			</layouts>
 			<validationrules />
 			<searchsettings containerPageOnly="true">

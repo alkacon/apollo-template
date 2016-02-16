@@ -18,8 +18,7 @@
 			<%@include
 				file="%(link.weak:/system/modules/org.opencms.apollo.template.formatters/elements/list/search-options.jsp:914d991e-8a1b-11e5-a24e-0242ac11002b)"%>
 		</c:set>
-		<cms:search configString="${searchConfig}" var="search"
-			addContentInfo="true" />
+		<cms:search configString="${searchConfig}" var="search"	addContentInfo="true" />
 		<c:choose>
 			<c:when test="${search.numFound > 0}">
 				<div id="list_large_pages">

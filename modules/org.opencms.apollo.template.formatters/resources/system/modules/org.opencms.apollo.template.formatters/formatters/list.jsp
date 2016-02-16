@@ -57,6 +57,9 @@
 					<c:set var="params">cssID=${innerPageDivId}</c:set>
 					<c:set var="params">${params}&categoryFacetField=${categoryFacetField}</c:set>
 					<c:set var="params">${params}&typesToCollect=${con.value.TypesToCollect}</c:set>
+					<c:if test="${con.value.Category.isSet}">
+						<c:set var="params">${params}&categoriesToCollect=${con.value.Category}</c:set>
+					</c:if>
 					<c:set var="params">${params}&pathes=${cms.requestContext.siteRoot}${cms.subSitePath}</c:set>
 					<c:set var="params">${params}&showSort=${cms.element.settings.showsort}</c:set>
 					<c:set var="params">${params}&showCategoryFilter=${cms.element.settings.showcategoryfiler}</c:set>
