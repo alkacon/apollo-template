@@ -106,7 +106,7 @@
     </Message>
     <Message>
       <Key><![CDATA[pagination.next.title]]></Key>
-      <Value><![CDATA[NÃ¤chste Seite]]></Value>
+      <Value><![CDATA[Nächste Seite]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[pagination.last.title]]></Key>
@@ -114,11 +114,11 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.new]]></Key>
-      <Value><![CDATA[<strong>Neue Liste</strong>, bitte bearbeiten Sie den Inhalt!]]></Value>
+      <Value><![CDATA[<strong>Ne Liste</strong>, bitte bearbeiten Sie den Inhalt!eu]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.empty]]></Key>
-      <Value><![CDATA[Derzeit sind keine EintrÃ¤ge vorhanden.]]></Value>
+      <Value><![CDATA[Derzeit sind keine Einträge vorhanden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.newentry]]></Key>

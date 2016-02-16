@@ -1824,6 +1824,10 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>Title</name>
+					<value><![CDATA[Localization for settings]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
