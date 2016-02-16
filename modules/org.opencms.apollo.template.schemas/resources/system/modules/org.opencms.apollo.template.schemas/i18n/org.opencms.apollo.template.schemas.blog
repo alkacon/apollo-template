@@ -8,11 +8,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Title.help]]></Key>
-      <Value><![CDATA[The title of the blog entry.]]></Value>
+      <Value><![CDATA[The title of the blog article.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.blog.default.Title]]></Key>
-      <Value><![CDATA[New blog entry]]></Value>
+      <Value><![CDATA[New blog article]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Date]]></Key>
@@ -20,7 +20,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Date.help]]></Key>
-      <Value><![CDATA[The date of the blog entry.]]></Value>
+      <Value><![CDATA[The date of the blog article.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Paragraph]]></Key>
@@ -28,7 +28,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Paragraph.help]]></Key>
-      <Value><![CDATA[The paragraphs of the blog entry.]]></Value>
+      <Value><![CDATA[The paragraphs of the blog article.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Category]]></Key>
@@ -36,7 +36,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Category.help]]></Key>
-      <Value><![CDATA[Assigns categories to the blog entry.]]></Value>
+      <Value><![CDATA[Assigns categories to the blog article.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.AuthorTab]]></Key>
@@ -48,7 +48,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Author.help]]></Key>
-      <Value><![CDATA[The creator of this blog entry.]]></Value>
+      <Value><![CDATA[The creator of this blog article.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.AuthorMail]]></Key>
@@ -56,7 +56,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.AuthorMail.help]]></Key>
-      <Value><![CDATA[The email address of the blog entry creator.]]></Value>
+      <Value><![CDATA[The email address of the blog article creator.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Availability]]></Key>
@@ -64,7 +64,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Availability.help]]></Key>
-      <Value><![CDATA[The availability of the blog entry.]]></Value>
+      <Value><![CDATA[The availability of the blog article.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.General]]></Key>
@@ -76,15 +76,15 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.GalleryTitle.help]]></Key>
-      <Value><![CDATA[The gallery title of the blog. It is not shown on the page.]]></Value>
+      <Value><![CDATA[The gallery title of the blog article. It is not shown on the page.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.blog.default.Text]]></Key>
-      <Value><![CDATA[Please edit the blog entry text.]]></Value>
+      <Value><![CDATA[Please edit the blog article text.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.blog.message.edit]]></Key>
-      <Value><![CDATA[<strong>New blog entry</strong>, please edit the content.]]></Value>
+      <Value><![CDATA[<strong>New blog article</strong>, please edit the content.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.blog.message.readmore]]></Key>
@@ -98,11 +98,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Title.help]]></Key>
-      <Value><![CDATA[Der Titel des Blog Eintrags.]]></Value>
+      <Value><![CDATA[Der Titel des Blog-Artikels.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.blog.default.Title]]></Key>
-      <Value><![CDATA[Neuer Blog Eintrag]]></Value>
+      <Value><![CDATA[Neuer Blog-Artikel]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Date]]></Key>
@@ -110,7 +110,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Date.help]]></Key>
-      <Value><![CDATA[Das Datum des Blog Eintrags.]]></Value>
+      <Value><![CDATA[Das Datum des Blog-Artikels.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Paragraph]]></Key>
@@ -118,7 +118,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Paragraph.help]]></Key>
-      <Value><![CDATA[Die Absätze des Blog Eintrags.]]></Value>
+      <Value><![CDATA[Die Absätze des Blog-Artikels.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Category]]></Key>
@@ -126,7 +126,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Category.help]]></Key>
-      <Value><![CDATA[Ordnet dem Blog Eintrag Kategorien zu.]]></Value>
+      <Value><![CDATA[Ordnet dem Blog-Artikel Kategorien zu.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.AuthorTab]]></Key>
@@ -138,7 +138,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Author.help]]></Key>
-      <Value><![CDATA[Der Verfasser des Blog Eintrags.]]></Value>
+      <Value><![CDATA[Der Verfasser des Blog-Artikels.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.AuthorMail]]></Key>
@@ -154,7 +154,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Availability.help]]></Key>
-      <Value><![CDATA[Die Gültigkeit des Blog Eintrags.]]></Value>
+      <Value><![CDATA[Die Gültigkeit des Blog-Artikels.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.General]]></Key>
@@ -166,7 +166,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.GalleryTitle.help]]></Key>
-      <Value><![CDATA[Der Titel des Blogs für die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
+      <Value><![CDATA[Der Titel des Blog-Artikels für die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.blog.default.Text]]></Key>
@@ -174,7 +174,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.blog.message.edit]]></Key>
-      <Value><![CDATA[<strong>Neuer Blog Eintrag</strong>, bitte bearbeiten Sie den Inhalt.]]></Value>
+      <Value><![CDATA[<strong>Neuer Blog-Artikel</strong>, bitte bearbeiten Sie den Inhalt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.blog.message.readmore]]></Key>
