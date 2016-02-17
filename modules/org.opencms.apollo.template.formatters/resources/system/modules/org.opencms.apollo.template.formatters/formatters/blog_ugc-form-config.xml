@@ -60,6 +60,12 @@
     <HeadIncludeJs>
       <JavascriptLink>
         <link type="WEAK">
+          <target><![CDATA[/handleStatic/gwt/ugc/ugc.nocache.js]]></target>
+          <uuid>00000000-0000-0000-0000-000000000000</uuid>
+        </link>
+      </JavascriptLink>
+      <JavascriptLink>
+        <link type="WEAK">
           <target><![CDATA[/system/modules/org.opencms.ugc/resources/js/ugc-jquery.js]]></target>
           <uuid>b8d5d3fd-e00b-11e3-b2f0-005056b60ccd</uuid>
         </link>
