@@ -9,32 +9,30 @@
 
 	<cms:formatter var="content" val="value">
 		<c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
-		<c:set var="teaserLength" value="${param.teaserLength}" />
-		<c:set var="buttonColor" value="${param.buttonColor}" />
+		<c:set var="teaserLength" value="${cms.element.settings.teaserLength}" />
+		<c:set var="buttonColor" value="${cms.element.settings.buttonColor}" />
+		<c:set var="compactForm" value="${cms.element.settings.compactForm}" />
+		<c:set var="showImage" value="${paragraph.value.Image.exists and not compactForm}" />
+		<c:if test="${showImage}">
 
-		<c:if test="${paragraph.value.Image.exists}">
-			
-				<c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
-			    <%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
-				<div class="col-md-4 search-img">
-					<a
-				href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>"><cms:img src="${paragraph.value.Image.value.Image}" width="800"
-						cssclass="img-responsive" scaleColor="transparent" scaleType="0"
-						noDim="true"
-						alt="${paragraph.value.Image.value.Title}${' '}${copyright}"
-						title="${paragraph.value.Image.value.Title}${' '}${copyright}" /></a>
-				</div>
+			<c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
+		    <%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
+			<div class="col-md-4 search-img">
+				<a
+			href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>"><cms:img src="${paragraph.value.Image.value.Image}" width="800"
+					cssclass="img-responsive" scaleColor="transparent" scaleType="0"
+					noDim="true"
+					alt="${paragraph.value.Image.value.Title}${' '}${copyright}"
+					title="${paragraph.value.Image.value.Title}${' '}${copyright}" /></a>
+			</div>
 
-			
 		</c:if>
-		<div class="col-md-${paragraph.value.Image.exists?'8':'12'}">
+		<div class="col-md-${showImage ? '8' : '12'}">
 			<h2>
 				<a
 					href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
 			</h2>
-			<c:set var="showdate">
-				<c:out value="${param.showDate}" default="true" />
-			</c:set>
+			<c:set var="showdate"><c:out value="${cms.element.settings.showDate}" default="true" /></c:set>
 			<c:if test="${showdate}">
 				<p>
 					<i><fmt:formatDate

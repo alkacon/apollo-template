@@ -1,7 +1,6 @@
 <%@page buffer="none" session="false" trimDirectiveWhitespaces="true"
-	import="org.opencms.jsp.*, org.opencms.relations.CmsCategoryService, org.opencms.file.CmsObject"%>
+	import="org.opencms.file.*, org.opencms.relations.*, org.opencms.jsp.*, org.opencms.relations.CmsCategoryService, org.opencms.file.CmsObject"%>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
-<%@ page import="org.opencms.file.*, org.opencms.relations.*" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>

@@ -61,6 +61,7 @@
 						<c:set var="params">${params}&categoriesToCollect=${con.value.Category}</c:set>
 					</c:if>
 					<c:set var="params">${params}&pathes=${cms.requestContext.siteRoot}${cms.subSitePath}</c:set>
+					<c:set var="params">${params}&showDate=${cms.element.settings.showdate}</c:set>
 					<c:set var="params">${params}&showSort=${cms.element.settings.showsort}</c:set>
 					<c:set var="params">${params}&showCategoryFilter=${cms.element.settings.showcategoryfiler}</c:set>
 					<c:set var="params">${params}&itemsPerPage=${itemsPerPage}</c:set>

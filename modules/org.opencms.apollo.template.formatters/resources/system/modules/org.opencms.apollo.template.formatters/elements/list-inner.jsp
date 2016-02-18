@@ -29,13 +29,13 @@
 						<cms:param name="showSort">${param.showSort}</cms:param>
 						<cms:param name="categoryFacetField">${categoryFacetField}</cms:param>
 					</cms:include>
-
 					<div id="list_large_page_1">
 						<cms:include
 							page="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list/items.jsp:b3767e91-7704-11e5-904d-15b01ffdc6a6)">
 							<cms:param name="searchConfig">${searchConfig}</cms:param>
 							<cms:param name="teaserLength">${param.teaserLength}</cms:param>
 							<cms:param name="listConfig">${param.listConfig}</cms:param>
+							<cms:param name="showDate">${param.showDate}</cms:param>
 						</cms:include>
 					</div>
 				</div>

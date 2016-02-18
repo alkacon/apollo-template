@@ -2,15 +2,15 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Blog Entry list item formatter]]></NiceName>
+    <NiceName><![CDATA[Blog Entry compact list item formatter]]></NiceName>
     <Type><![CDATA[a-blog]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/blog-item.jsp]]></target>
-        <uuid>a3851db8-c663-11e5-a73e-0242ac11002b</uuid>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/blog-item-compact.jsp]]></target>
+        <uuid>8ed4e94e-d64a-11e5-9ef3-0242ac11002b</uuid>
       </link>
     </Jsp>
-    <Rank><![CDATA[100]]></Rank>
+    <Rank><![CDATA[50]]></Rank>
     <Match>
       <Types>
         <ContainerType><![CDATA[none]]></ContainerType>

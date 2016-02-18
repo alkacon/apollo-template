@@ -38,6 +38,7 @@
 									<cms:param name="teaserLength">${param.teaserLength}</cms:param>									
 									<cms:param name="buttonColor">${param.buttonColor}</cms:param>
 									<cms:param name="listConfig">${param.listConfig}</cms:param>
+									<cms:param name="showDate">${param.showDate}</cms:param>
 								</cms:include>
 							</div>
 							<div class="spinner mv-20" style="opacity: 0">

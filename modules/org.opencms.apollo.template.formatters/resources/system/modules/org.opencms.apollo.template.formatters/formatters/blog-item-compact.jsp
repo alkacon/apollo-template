@@ -6,33 +6,12 @@
 <cms:secureparams />
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
-<div>
+
 	<cms:formatter var="content" val="value">
 		<c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
 		<c:set var="teaserLength" value="${cms.element.settings.teaserLength}" />
 		<c:set var="buttonColor" value="${cms.element.settings.buttonColor}" />
-		<c:set var="compactForm" value="${cms.element.settings.compactForm}" />
-
-		<c:if test="${not compactForm}">
-			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">
-	
-				<div class="date-dark col-sm-2 hidden-xs">
-					<div class="day">
-						<fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-							pattern="EEEE" type="date" />
-					</div>
-					<h3>
-						<fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-							pattern="dd" type="date" />
-					</h3>
-					<div class="monthYear">
-						<fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-							pattern="MMM yyyy" type="date" />
-					</div>
-				</div>
-			</a>
-		</c:if>
-		<div class="col-sm-${compactForm ? '12' : '10'}">
+		<div class="col-md-12">
 			<h2>
 				<a
 					href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
@@ -66,5 +45,5 @@
 					key="apollo.list.message.readmore" /></a>
 		</div>
 	</cms:formatter>
-</div>
+
 </cms:bundle>
