@@ -6,7 +6,7 @@
     <Type><![CDATA[a-block]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/text-iconbox.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/block-iconbox.jsp]]></target>
         <uuid>c5862c1b-56fc-11e5-aad7-0242ac11002b</uuid>
       </link>
     </Jsp>
@@ -27,14 +27,14 @@
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
-      <Widget><![CDATA[combo]]></Widget>
+      <Widget><![CDATA[selectcombo]]></Widget>
       <WidgetConfig><![CDATA[service-block service-block-default:%(key.apollo.setting.cssclass.lightbox)|service-block service-block-red rounded-2x:%(key.apollo.setting.cssclass.redbox)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[iconclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.iconclass)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.iconclass.description)]]></Description>
-      <Widget><![CDATA[combo]]></Widget>
+      <Widget><![CDATA[selectcombo]]></Widget>
       <WidgetConfig><![CDATA[icon-lg icon-bg-default fa fa-info:%(key.apollo.setting.iconclass.info)|icon-lg icon-bg-red fa fa-lightbulb-o:%(key.apollo.setting.iconclass.lightbulb)]]></WidgetConfig>
     </Setting>
   </NewFormatter>

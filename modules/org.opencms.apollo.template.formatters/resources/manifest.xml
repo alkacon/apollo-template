@@ -24,6 +24,7 @@
 		</dependencies>
 		<exportpoints>
 			<exportpoint uri="/system/modules/org.opencms.apollo.template.schemas/lib/" destination="WEB-INF/lib/"/>
+			<exportpoint uri="/system/modules/org.opencms.apollo.template.formatters/tags/" destination="WEB-INF/tags/apollo/"/>
 		</exportpoints>
 		<resources>
 			<resource uri="/system/modules/org.opencms.apollo.template.formatters/"/>
@@ -86,27 +87,6 @@
 			<datecreated>Wed, 02 Sep 2015 09:44:03 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/elements/container-box.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/elements/container-box.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>49d1a304-5243-11e5-9495-0242ac11002b</uuidstructure>
-			<uuidresource>49d1a305-5243-11e5-9495-0242ac11002b</uuidresource>
-			<datecreated>Thu, 03 Sep 2015 13:54:25 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Container Box]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
@@ -227,48 +207,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Login element]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/elements/model-box-end.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/elements/model-box-end.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>8550f5cc-5243-11e5-9495-0242ac11002b</uuidstructure>
-			<uuidresource>8550f5cd-5243-11e5-9495-0242ac11002b</uuidresource>
-			<datecreated>Thu, 03 Sep 2015 13:56:05 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Model Box End]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/elements/model-box-start.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/elements/model-box-start.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>704c8ef8-5243-11e5-9495-0242ac11002b</uuidstructure>
-			<uuidresource>704c8ef9-5243-11e5-9495-0242ac11002b</uuidresource>
-			<datecreated>Thu, 03 Sep 2015 13:55:30 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Model Box Start]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>
@@ -883,6 +821,60 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/event-item-compact-config.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/event-item-compact-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>d60fa8bc-d71a-11e5-b10a-0242ac11002b</uuidstructure>
+			<uuidresource>d60fa8bd-d71a-11e5-b10a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 19 Feb 2016 15:09:56 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Event compact list item formatter]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/event-item-compact.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/event-item-compact.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>aa2326f2-d71a-11e5-b10a-0242ac11002b</uuidstructure>
+			<uuidresource>aa2326f3-d71a-11e5-b10a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 19 Feb 2016 15:08:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for compact event list item]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;params]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/event-item-config.xml</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/event-item-config.xml</destination>
 			<type>formatter_config</type>
@@ -1218,56 +1210,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Formatter JSP for a search form]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/list-compact-config.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/list-compact-config.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>aea62d4f-d564-11e5-9ef3-0242ac11002b</uuidstructure>
-			<uuidresource>aea62d50-d564-11e5-9ef3-0242ac11002b</uuidresource>
-			<datecreated>Wed, 17 Feb 2016 10:53:30 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Compact list formatter]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/list-compact.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/list-compact.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>8fe0106a-d564-11e5-9ef3-0242ac11002b</uuidstructure>
-			<uuidresource>8fe0106b-d564-11e5-9ef3-0242ac11002b</uuidresource>
-			<datecreated>Wed, 17 Feb 2016 10:52:39 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Formatter JSP for compact lists]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>
@@ -2013,6 +1955,37 @@
 			<datecreated>Thu, 10 Sep 2015 14:57:31 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.formatters/tags</destination>
+			<type>folder</type>
+			<uuidstructure>534ed022-d65b-11e5-b10a-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 18 Feb 2016 16:19:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/tags/container-box.tag</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/tags/container-box.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>53d77972-d661-11e5-b10a-0242ac11002b</uuidstructure>
+			<uuidresource>53d77973-d661-11e5-b10a-0242ac11002b</uuidresource>
+			<datecreated>Thu, 18 Feb 2016 17:02:01 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Container Box Tag]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>

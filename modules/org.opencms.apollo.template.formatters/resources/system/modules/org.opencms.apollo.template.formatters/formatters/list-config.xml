@@ -69,5 +69,11 @@
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>
+    <Setting>
+      <PropertyName><![CDATA[compactform]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.compactform)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
   </NewFormatter>
 </NewFormatters>

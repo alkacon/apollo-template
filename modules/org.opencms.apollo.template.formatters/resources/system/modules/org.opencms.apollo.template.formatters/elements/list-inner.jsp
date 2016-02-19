@@ -36,61 +36,64 @@
 							<cms:param name="teaserLength">${param.teaserLength}</cms:param>
 							<cms:param name="listConfig">${param.listConfig}</cms:param>
 							<cms:param name="showDate">${param.showDate}</cms:param>
+                            <cms:param name="compactForm">${param.compactForm}</cms:param>
 						</cms:include>
 					</div>
 				</div>
-				<c:set var="pagination" value="${search.controller.pagination}" />
-				<!-- show pagination if it should be given and if it's really necessary -->
-				<c:if test="${not empty pagination && search.numPages > 1}">
-					<ul class="pagination">
-						<li ${pagination.state.currentPage > 1 ? "" : "class='disabled'"}>
-							<a href="javascript:void(0)"
-							onclick='reloadInnerList("${search.stateParameters.setPage['
-							1']}")'
-						   aria-label='<fmt:message key="pagination.first.title"/>'>
-								<span aria-hidden="true"><fmt:message
-										key="pagination.first" /></span>
-						</a>
-						</li>
-						<c:set var="previousPage">${pagination.state.currentPage > 1 ? pagination.state.currentPage - 1 : 1}</c:set>
-						<li ${pagination.state.currentPage > 1 ? "" : "class='disabled'"}>
-							<a href="javascript:void(0)"
-							onclick='reloadInnerList("${search.stateParameters.setPage[previousPage]}")'
-							aria-label='<fmt:message key="pagination.previous.title"/>'>
-								<span aria-hidden="true"><fmt:message
-										key="pagination.previous" /></span>
-						</a>
-						</li>
-						<c:forEach var="i" begin="${search.pageNavFirst}"
-							end="${search.pageNavLast}">
-							<c:set var="is">${i}</c:set>
-							<li ${pagination.state.currentPage eq i ? "class='active'" : ""}>
-								<a href="javascript:void(0)"
-								onclick='reloadInnerList("${search.stateParameters.setPage[is]}")'>${is}</a>
-							</li>
-						</c:forEach>
-						<c:set var="pages">${search.numPages}</c:set>
-						<c:set var="next">${pagination.state.currentPage < search.numPages ? pagination.state.currentPage + 1 : pagination.state.currentPage}</c:set>
-						<li
-							${pagination.state.currentPage >= search.numPages ? "class='disabled'" : ""}>
-							<a aria-label='<fmt:message key="pagination.next.title"/>'
-							href="javascript:void(0)"
-							onclick='reloadInnerList("${search.stateParameters.setPage[next]}")'>
-								<span aria-hidden="true"><fmt:message
-										key="pagination.next" /></span>
-						</a>
-						</li>
-						<li
-							${pagination.state.currentPage >= search.numPages ? "class='disabled'" : ""}>
-							<a aria-label='<fmt:message key="pagination.last.title"/>'
-							href="javascript:void(0)"
-							onclick='reloadInnerList("${search.stateParameters.setPage[pages]}")'>
-								<span aria-hidden="true"><fmt:message
-										key="pagination.last" /></span>
-						</a>
-						</li>
-					</ul>
-				</c:if>
+				<c:if test="${param.compactForm == 'false'}">
+                  <c:set var="pagination" value="${search.controller.pagination}" />
+  				<!-- show pagination if it should be given and if it's really necessary -->
+  				<c:if test="${not empty pagination && search.numPages > 1}">
+  					<ul class="pagination">
+  						<li ${pagination.state.currentPage > 1 ? "" : "class='disabled'"}>
+  							<a href="javascript:void(0)"
+  							onclick='reloadInnerList("${search.stateParameters.setPage['
+  							1']}")'
+  						   aria-label='<fmt:message key="pagination.first.title"/>'>
+  								<span aria-hidden="true"><fmt:message
+  										key="pagination.first" /></span>
+  						</a>
+  						</li>
+  						<c:set var="previousPage">${pagination.state.currentPage > 1 ? pagination.state.currentPage - 1 : 1}</c:set>
+  						<li ${pagination.state.currentPage > 1 ? "" : "class='disabled'"}>
+  							<a href="javascript:void(0)"
+  							onclick='reloadInnerList("${search.stateParameters.setPage[previousPage]}")'
+  							aria-label='<fmt:message key="pagination.previous.title"/>'>
+  								<span aria-hidden="true"><fmt:message
+  										key="pagination.previous" /></span>
+  						</a>
+  						</li>
+  						<c:forEach var="i" begin="${search.pageNavFirst}"
+  							end="${search.pageNavLast}">
+  							<c:set var="is">${i}</c:set>
+  							<li ${pagination.state.currentPage eq i ? "class='active'" : ""}>
+  								<a href="javascript:void(0)"
+  								onclick='reloadInnerList("${search.stateParameters.setPage[is]}")'>${is}</a>
+  							</li>
+  						</c:forEach>
+  						<c:set var="pages">${search.numPages}</c:set>
+  						<c:set var="next">${pagination.state.currentPage < search.numPages ? pagination.state.currentPage + 1 : pagination.state.currentPage}</c:set>
+  						<li
+  							${pagination.state.currentPage >= search.numPages ? "class='disabled'" : ""}>
+  							<a aria-label='<fmt:message key="pagination.next.title"/>'
+  							href="javascript:void(0)"
+  							onclick='reloadInnerList("${search.stateParameters.setPage[next]}")'>
+  								<span aria-hidden="true"><fmt:message
+  										key="pagination.next" /></span>
+  						</a>
+  						</li>
+  						<li
+  							${pagination.state.currentPage >= search.numPages ? "class='disabled'" : ""}>
+  							<a aria-label='<fmt:message key="pagination.last.title"/>'
+  							href="javascript:void(0)"
+  							onclick='reloadInnerList("${search.stateParameters.setPage[pages]}")'>
+  								<span aria-hidden="true"><fmt:message
+  										key="pagination.last" /></span>
+  						</a>
+  						</li>
+  					</ul>
+  				</c:if>
+                </c:if>
 			</c:when>
 			<c:otherwise>
 				<cms:include

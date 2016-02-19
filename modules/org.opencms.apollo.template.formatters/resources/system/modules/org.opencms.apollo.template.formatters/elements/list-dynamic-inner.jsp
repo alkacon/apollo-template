@@ -39,6 +39,7 @@
 									<cms:param name="buttonColor">${param.buttonColor}</cms:param>
 									<cms:param name="listConfig">${param.listConfig}</cms:param>
 									<cms:param name="showDate">${param.showDate}</cms:param>
+                                    <cms:param name="compactForm">${param.compactForm}</cms:param>
 								</cms:include>
 							</div>
 							<div class="spinner mv-20" style="opacity: 0">
@@ -51,28 +52,31 @@
 								<cms:param name="searchConfig">${searchConfig}</cms:param>
 								<cms:param name="teaserLength">${param.teaserLength}</cms:param>
 								<cms:param name="listConfig">${param.listConfig}</cms:param>
+                                <cms:param name="compactForm">${param.compactForm}</cms:param>
 							</cms:include>
 						</c:otherwise>
 					</c:choose>
-					<c:set var="pagination" value="${search.controller.pagination}" />
-					<!-- show pagination if it should be given and if it's really necessary -->
-					<c:if test="${not empty pagination && search.numPages > 1}">
-						<c:set var="next">${ pagination.state.currentPage + 1}</c:set>
-						<c:if test="${search.numPages+1 != next}">
-							<div class="pagination col-xs-12">
-								<c:set var="pages">${search.numPages}</c:set>
-								<button
-									class="btn-u btn-primary col-xs-12 mt-5 mb-20 ${pagination.state.currentPage >= search.numPages ? ' disabled' : ''}"
-									aria-label='<fmt:message key="pagination.next.title"/>'
-									id="loadMore"
-									data-load="${search.stateParameters.setPage[next]}"
-									onclick="appendInnerList($(this).attr('data-load'));">
-									<span aria-hidden="true"><fmt:message
-											key="pagination.next" /></span>
-								</button>
-							</div>
-						</c:if>
-					</c:if>
+                    <c:if test="${param.compactForm == 'false'}">
+    					<c:set var="pagination" value="${search.controller.pagination}" />
+    					<!-- show pagination if it should be given and if it's really necessary -->
+    					<c:if test="${not empty pagination && search.numPages > 1}">
+    						<c:set var="next">${ pagination.state.currentPage + 1}</c:set>
+    						<c:if test="${search.numPages+1 != next}">
+    							<div class="pagination col-xs-12">
+    								<c:set var="pages">${search.numPages}</c:set>
+    								<button
+    									class="btn-u btn-primary col-xs-12 mt-5 mb-20 ${pagination.state.currentPage >= search.numPages ? ' disabled' : ''}"
+    									aria-label='<fmt:message key="pagination.next.title"/>'
+    									id="loadMore"
+    									data-load="${search.stateParameters.setPage[next]}"
+    									onclick="appendInnerList($(this).attr('data-load'));">
+    									<span aria-hidden="true"><fmt:message
+    											key="pagination.next" /></span>
+    								</button>
+    							</div>
+    						</c:if>
+    					</c:if>
+                    </c:if>
 				</c:when>
 				<c:otherwise>
 					<%@include

@@ -31,9 +31,10 @@
 <c:set var="sortOptionDesc">{ "label" : sortorder.desc, "paramvalue" : "desc", "solrvalue" : "newsdate_${cms.locale}_dt desc" }</c:set>
 <c:set var="extraSolrParams">${solrParamType}${solrParamDirs}${solrParamCats}${param.extraQueries}</c:set>
 
-{ "ignorequery" : true, "extrasolrparams" :
-"${fn:replace(extraSolrParams,'"','\\"')}", "pagesize" :
-${param.itemsPerPage}, "sortoptions" : [
+{ 
+    "ignorequery" : true, "extrasolrparams" : "${fn:replace(extraSolrParams,'"','\\"')}",
+    "pagesize" : ${param.itemsPerPage}, 
+    "sortoptions" : [
 <c:choose>
 	<c:when test='${param.sortOrder eq "asc"}'>	
 		  		${sortOptionAsc},	  		
@@ -44,6 +45,6 @@ ${param.itemsPerPage}, "sortoptions" : [
 		  		${sortOptionAsc}
 		  	</c:otherwise>
 </c:choose>
-], "fieldfacets" : [ { "field" : "${categoryFacetField}", "label" :
+],"fieldfacets" : [ { "field" : "${categoryFacetField}", "label" :
 "facet.category.label", "order" : "index", "mincount" : 1 } ],
 pagenavlength: 5 }${param.pathes}

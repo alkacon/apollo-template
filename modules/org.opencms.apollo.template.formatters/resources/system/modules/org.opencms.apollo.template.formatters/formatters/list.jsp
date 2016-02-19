@@ -36,6 +36,7 @@
 					</c:if>
 					<c:set var="teaserLength">${cms.element.settings.teaserlength}</c:set>
 					<c:set var="buttonColor">${cms.element.settings.buttoncolor}</c:set>
+					<c:set var="compactForm">${cms.element.settings.compactform}</c:set>
 					<c:set var="itemsPerPage">
 						<c:out value="${con.value.ItemsPerPage}" default="100" />
 					</c:set>
@@ -66,6 +67,7 @@
 					<c:set var="params">${params}&showCategoryFilter=${cms.element.settings.showcategoryfiler}</c:set>
 					<c:set var="params">${params}&itemsPerPage=${itemsPerPage}</c:set>
 					<c:set var="params">${params}&buttonColor=${buttonColor}</c:set>
+					<c:set var="params">${params}&compactForm=${compactForm}</c:set>
 					<c:set var="params">${params}&teaserLength=${teaserLength}</c:set>
 					<c:set var="params">${params}&extraQueries=${con.value.FilterQueries}</c:set>
 					<c:set var="params">${params}&__locale=${cms.locale}</c:set>

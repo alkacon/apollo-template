@@ -18,6 +18,7 @@
 				<cms:param name="teaserLength" value="${param.teaserLength}" />
 				<cms:param name="buttonColor">${param.buttonColor}</cms:param>
 				<cms:param name="showDate">${param.showDate}</cms:param>
+                <cms:param name="compactForm">${param.compactform}</cms:param>
 			</cms:display>
 			</div>
 		</c:forEach>

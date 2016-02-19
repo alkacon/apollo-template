@@ -2,26 +2,25 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Content Block as jumbotron formatter ]]></NiceName>
-    <Type><![CDATA[a-block]]></Type>
+    <NiceName><![CDATA[Event compact list item formatter]]></NiceName>
+    <Type><![CDATA[a-event]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/block-jumbotron.jsp]]></target>
-        <uuid>b0901ea8-55fd-11e5-8d6b-0242ac11002b</uuid>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/event-item-compact.jsp]]></target>
+        <uuid>aa2326f2-d71a-11e5-b10a-0242ac11002b</uuid>
       </link>
     </Jsp>
-    <Rank><![CDATA[500]]></Rank>
+    <Rank><![CDATA[50]]></Rank>
     <Match>
       <Types>
-        <ContainerType><![CDATA[default]]></ContainerType>
-        <ContainerType><![CDATA[text]]></ContainerType>
-        <ContainerType><![CDATA[text-jumbotron]]></ContainerType>
+        <ContainerType><![CDATA[none]]></ContainerType>
       </Types>
     </Match>
     <Preview>false</Preview>
     <SearchContent>true</SearchContent>
     <AutoEnabled>true</AutoEnabled>
     <Detail>false</Detail>
+    <Display>true</Display>
     <NestedContainers>false</NestedContainers>
   </NewFormatter>
 </NewFormatters>
