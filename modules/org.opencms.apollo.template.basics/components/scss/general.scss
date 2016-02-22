@@ -29,7 +29,7 @@ $oc-container-types:
  (jsp, $red-lighter),        
  (template, $orange-lighter),         
  (layout, $gray-light),         
- (detailonly, $blue-lighter),         
+ (detailonly, $blue-lighter),           
 ); 
 
 $oc-container-labels:
@@ -38,8 +38,8 @@ $oc-container-labels:
  (editor, $orange),         
  (author, $blue),         
  (detail, $cyan),
- (detailonly, $green),         
- (special, $red-light),         
+ (detailonly, $cyan),         
+ (special, $red-light),
 ); 
 
 %oc-container-type {
@@ -72,7 +72,8 @@ $oc-container-labels:
     margin-left: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;  
+    border-radius: 5px;
+    white-space: nowrap;  
     color: $white;             
 } 
 
