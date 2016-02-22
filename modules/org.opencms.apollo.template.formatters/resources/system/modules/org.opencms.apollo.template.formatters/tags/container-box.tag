@@ -2,12 +2,12 @@
        description="Generates box HTML for layout rows"%>
 
 <%@attribute name="content" type="org.opencms.jsp.util.CmsJspContentAccessBean" required="true" %>
+<%@attribute name="boxType" type="java.lang.String" required="true" %>
 
 <%@attribute name="column" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
 <%@attribute name="role" type="java.lang.String" required="false" %>
 <%@attribute name="type" type="java.lang.String" required="false" %>
 <%@attribute name="detailView" type="java.lang.String" required="false" %>
-<%@attribute name="modelBox" type="java.lang.String" required="false" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
@@ -22,7 +22,7 @@
 <%-- Never generate any of output in online project --%>
 </c:when>
 <c:when test="${not empty column}">
-<%-- Use case 1: Create container box --%>
+<%-- Use case 1: Create container or container placeholder box --%>
 
 <c:set var="parent_role" value="${cms.container.param}" />
 
@@ -39,7 +39,7 @@
 </c:choose>
 
 <c:choose>
-  <c:when test="${(detailView == 'showBox') || (column.value.Count.stringValue == '0')}">
+  <c:when test="${boxType == 'detail-placeholder'}">
     <c:set var="variant" value="detailonly" />
   </c:when>
   <c:when test="${type == 'mainsection'}">
@@ -54,28 +54,32 @@
 </c:choose>
 
 <div class="oc-container-${variant}">
-    <h1>
-      <c:choose>
-        <c:when test="${detailView == 'showBox'}">
-          Detail container <div class="oc-label-special">BLOCKED</div>
-          <div class="oc-label-detail">Only&nbsp;for&nbsp;detail&nbsp;pages</div>
-        </c:when>
-        <c:when test="${column.value.Count.stringValue != '0'}">
-          <fmt:message key="apollo.row.headline.emptycontainer"/>
-          <div class="oc-label-${myrole}">${fn:toUpperCase(myrole)}</div>
-          <c:if test="${detailView == 'true'}"><div class="oc-label-detail">DETAIL VIEW</div></c:if>
-        </c:when>
-        <c:otherwise>
-          Zero Element Container <div class="oc-label-special">BLOCKED</div>
-        </c:otherwise>
-      </c:choose>
-    </h1>
-    <p>${content.value.Title}<c:if test="${column.value.Name.isSet}"> - ${column.value.Name}</c:if></p>
+  <h1>
+    <c:choose>
+      <c:when test="${boxType == 'detail-placeholder'}">
+        Detail container <div class="oc-label-special">BLOCKED</div>
+        <div class="oc-label-detailonly">Only for detail pages</div>
+      </c:when>
+      <c:otherwise>
+        <fmt:message key="apollo.row.headline.emptycontainer"/>
+        <div class="oc-label-${myrole}">${fn:toUpperCase(myrole)}</div>
+        <c:choose>
+          <c:when test="${detailView == 'true'}">
+            <div class="oc-label-detail">DETAIL VIEW</div>
+          </c:when>
+          <c:when test="${cms.detailRequest && (cms.element.setting.detail == 'only')}">
+            <div class="oc-label-detail">Only for detail pages</div>
+          </c:when>
+        </c:choose>
+      </c:otherwise>
+    </c:choose>
+  </h1>
+  <p>${content.value.Title}<c:if test="${column.value.Name.isSet}"> - ${column.value.Name}</c:if></p>
 </div>
 
 <%-- End of use case 1: Create container box --%>
 </c:when>
-<c:when test="${cms.modelGroupElement && (modelBox == 'start') }">
+<c:when test="${cms.modelGroupElement && (boxType == 'model-start') }">
 <%-- Use case 2: Model box start --%>
 
 <c:set var="modelTitle">${content.value.Title}</c:set>
@@ -98,7 +102,7 @@
 
 <%-- End of use case 2: Model box start --%>
 </c:when>
-<c:when test="${cms.modelGroupElement && (modelBox == 'end') }">
+<c:when test="${cms.modelGroupElement && (boxType == 'model-end') }">
 <%-- Use case 3: Model box end --%>
 
 </div>

@@ -13,7 +13,7 @@
 <%-- Element matches the configured parent container --%>
 
 	<%-- Insert HTML for model group start (if required) --%>
-	<apollo:container-box content="${content}" modelBox="start" />
+	<apollo:container-box content="${content}" boxType="model-start" />
 
 	<c:if test="${content.value.PreMarkup.isSet}">
 		<%-- Expand macros in markup --%>
@@ -27,6 +27,7 @@
 
 	<c:set var="detailOnly" value="${(cms.element.setting.detail == 'only') ? 'true' : 'false' }" />
 	<c:set var="showDetailOnly" value="${(cms.isEditMode) and (detailOnly == 'true') and (not cms.detailRequest)}" />
+
 
 	<c:forEach var="column" items="${content.valueList.Column}" varStatus="loop">
 
@@ -42,7 +43,7 @@
 					Therefore we insert a placeholder in this case.
 				--%>
 				<div class="${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}">
-					<apollo:container-box content="${content}" column="${column}" detailView="showBox" />
+					<apollo:container-box content="${content}" boxType="detail-placeholder" column="${column}" />
 				</div>
 
 			</c:when>
@@ -65,7 +66,7 @@
 					editableby="${role}"
 					param="role:${role}|${cms.container.param}|css:${cssClass}">
 
-					<apollo:container-box content="${content}" column="${column}" role="${role}" type="${typeName}" detailView="${detailView}" />
+					<apollo:container-box content="${content}" boxType="container-box" column="${column}" role="${role}" type="${typeName}" detailView="${detailView}"  />
 				</cms:container>
 
 			</c:when>
@@ -73,11 +74,10 @@
 
 				<%--
 					The number of elements this container accepts is zero.
-					No container tag is generated, but a message box to inform the template developer.
+					No container is generated, but the layout grid DIV element is written.
+					This can be required for layout purposes, e.g. empty placeholders.
 				--%>
-				<div class="${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}">
-						<apollo:container-box content="${content}" column="${column}" />
-				</div>
+				<div class="${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}"></div>
 
 			</c:otherwise>
 		</c:choose>
@@ -91,7 +91,7 @@
 	</c:if>
 
 	<%-- Insert HTML for model group end (if required) --%>
-	<apollo:container-box content="${content}" modelBox="end" />
+	<apollo:container-box content="${content}" boxType="model-end" />
 
 </c:when>
 <c:otherwise>
