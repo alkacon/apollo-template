@@ -449,9 +449,9 @@
 			<source>system/workplace/resources/filetypes/a-sliderextended.png</source>
 			<destination>system/workplace/resources/filetypes/a-sliderextended.png</destination>
 			<type>image</type>
-			<uuidstructure>78705ab6-766d-11e5-aeab-15b01ffdc6a6</uuidstructure>
-			<uuidresource>78705ab7-766d-11e5-aeab-15b01ffdc6a6</uuidresource>
-			<datecreated>Mon, 19 Oct 2015 14:27:04 GMT</datecreated>
+			<uuidstructure>9e200b2d-56ce-11e5-bfd9-0242ac11002b</uuidstructure>
+			<uuidresource>b764b3e3-56ce-11e5-bfd9-0242ac11002b</uuidresource>
+			<datecreated>Wed, 09 Sep 2015 08:42:34 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -466,9 +466,9 @@
 			<source>system/workplace/resources/filetypes/a-sliderextended_big.png</source>
 			<destination>system/workplace/resources/filetypes/a-sliderextended_big.png</destination>
 			<type>image</type>
-			<uuidstructure>787c8fb9-766d-11e5-aeab-15b01ffdc6a6</uuidstructure>
-			<uuidresource>787c8fba-766d-11e5-aeab-15b01ffdc6a6</uuidresource>
-			<datecreated>Mon, 19 Oct 2015 14:27:04 GMT</datecreated>
+			<uuidstructure>9e2402d1-56ce-11e5-bfd9-0242ac11002b</uuidstructure>
+			<uuidresource>bfe3d7d8-56ce-11e5-bfd9-0242ac11002b</uuidresource>
+			<datecreated>Wed, 09 Sep 2015 08:42:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">

@@ -56,7 +56,7 @@
                       <c:set var="listClass">class="dropdown-submenu</c:set>
                 </c:otherwise>
               </c:choose>
-              <c:if test="${markItem or (parentItem and fn:startsWith(elem.resourceName,cms.subSitePath))}">
+              <c:if test="${markItem or (parentItem and cms.subSitePath != '/' and fn:startsWith(elem.resourceName,cms.subSitePath))}">
                        <c:set var="listClass">${listClass} active</c:set>
               </c:if>  
               <c:set var="listClass">${listClass}"</c:set>
