@@ -8523,6 +8523,23 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>release/.content/blocks/bl_00019.xml</source>
+			<destination>release/.content/blocks/bl_00019.xml</destination>
+			<type>a-block</type>
+			<uuidstructure>369427f9-db94-11e5-a941-0242ac11002b</uuidstructure>
+			<uuidresource>369427fa-db94-11e5-a941-0242ac11002b</uuidresource>
+			<datecreated>Thu, 25 Feb 2016 07:48:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 9.5.3: Release Notes for OpenCms 9.5.3]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>release/.content/flexiblecontents</destination>
 			<type>folder</type>
 			<uuidstructure>4f9dda93-6060-11e5-9199-0242ac11002b</uuidstructure>
@@ -9264,6 +9281,46 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OpenCms 9.5.2]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>release/opencms-9.5.3-notes</destination>
+			<type>folder</type>
+			<uuidstructure>a0b7e5ee-db93-11e5-a941-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 25 Feb 2016 07:44:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[52.5]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[OpenCms 9.5.3]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 9.5.3]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>release/opencms-9.5.3-notes/index.html</source>
+			<destination>release/opencms-9.5.3-notes/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>a0c0bf93-db93-11e5-a941-0242ac11002b</uuidstructure>
+			<uuidresource>a0c0bf94-db93-11e5-a941-0242ac11002b</uuidresource>
+			<datecreated>Thu, 25 Feb 2016 07:44:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 9.5.3]]></value>
 				</property>
 			</properties>
 			<relations/>
