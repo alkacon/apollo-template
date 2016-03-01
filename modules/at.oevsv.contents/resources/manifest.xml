@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<infoproject>Offline</infoproject>
+		<export_version>10</export_version>
+	</info>
+	<module>
+		<name>at.oevsv.contents</name>
+		<nicename><![CDATA[OeVSV content module]]></nicename>
+		<class/>
+		<import-site>/</import-site>
+		<export-mode name="reduced"/>
+		<description><![CDATA[This moduke contains the contents for the basic OeVSV customer installation.]]></description>
+		<version>0.1</version>
+		<authorname><![CDATA[Alkacon Software]]></authorname>
+		<authoremail><![CDATA[info@alkacon.com]]></authoremail>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies/>
+		<exportpoints/>
+		<resources>
+			<resource uri="/system/modules/at.oevsv.contents/"/>
+			<resource uri="/sites/oevsv/"/>
+			<resource uri="/sites/oe1/"/>
+		</resources>
+		<excluderesources/>
+		<parameters/>
+	</module>
+	<files>
+		<file>
+			<destination>sites</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>sites/oe1</destination>
+			<type>folder</type>
+			<uuidstructure>dab500f6-dfb8-11e5-817b-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 14:21:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[ÖVSV - Landesverband Wien OE1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv</destination>
+			<type>folder</type>
+			<uuidstructure>ae6e5143-dfb8-11e5-817b-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 14:19:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[ÖVSV - Hauptsteite]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/at.oevsv.contents</destination>
+			<type>folder</type>
+			<uuidstructure>2d240531-dfb8-11e5-817b-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 14:16:22 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>
