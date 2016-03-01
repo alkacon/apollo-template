@@ -27,6 +27,15 @@
 			<resource uri="/sites/.content/"/>
 			<resource uri="/sites/oevsv/"/>
 			<resource uri="/sites/oe1/"/>
+			<resource uri="/sites/oe2/"/>
+			<resource uri="/sites/oe3/"/>
+			<resource uri="/sites/oe4/"/>
+			<resource uri="/sites/oe5/"/>
+			<resource uri="/sites/oe6/"/>
+			<resource uri="/sites/oe7/"/>
+			<resource uri="/sites/oe8/"/>
+			<resource uri="/sites/oe9/"/>
+			<resource uri="/sites/amrs/"/>
 		</resources>
 		<excluderesources/>
 		<parameters/>
@@ -447,27 +456,930 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>sites/oe1</destination>
-			<type>folder</type>
-			<uuidstructure>dab500f6-dfb8-11e5-817b-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 01 Mar 2016 14:21:14 GMT</datecreated>
+			<destination>sites/amrs</destination>
+			<type>subsitemap</type>
+			<uuidstructure>65a70233-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:45:33 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[ÖVSV - Landesverband Wien OE1]]></value>
+					<value><![CDATA[AMRS - Austrian Military Radio Society]]></value>
 				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/amrs/.content</destination>
+			<type>content_folder</type>
+			<uuidstructure>65aa0f75-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:45:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/amrs/.content/.config</source>
+			<destination>sites/amrs/.content/.config</destination>
+			<type>sitemap_config</type>
+			<uuidstructure>65ab20e7-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>65ab20e8-dfd5-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:45:33 GMT</datecreated>
+			<flags>512</flags>
+			<properties>
 				<property>
-					<name>apollo.theme</name>
-					<value><![CDATA[/system/modules/at.oevsv.contents/resources/css/style-oevsv.min.css]]></value>
+					<name>Title</name>
+					<value><![CDATA[Sitemap configuration file]]></value>
 				</property>
 				<property>
 					<name>locale</name>
-					<value><![CDATA[de]]></value>
+					<value><![CDATA[en]]></value>
 				</property>
 				<property>
-					<name>template</name>
-					<value><![CDATA[/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp]]></value>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/amrs/.content/.templates</destination>
+			<type>folder</type>
+			<uuidstructure>65aea35d-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:45:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/amrs/.content/.templates/blank.html</source>
+			<destination>sites/amrs/.content/.templates/blank.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>65b0510f-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>65b05110-dfd5-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:45:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe1</destination>
+			<type>subsitemap</type>
+			<uuidstructure>800d0b24-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:31:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OE1 - Landesverband Wien]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe1/.content</destination>
+			<type>content_folder</type>
+			<uuidstructure>800fa336-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:31:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe1/.content/.config</source>
+			<destination>sites/oe1/.content/.config</destination>
+			<type>sitemap_config</type>
+			<uuidstructure>8010b4a8-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>8010b4a9-dfd3-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:31:58 GMT</datecreated>
+			<flags>512</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sitemap configuration file]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe1/.content/.templates</destination>
+			<type>folder</type>
+			<uuidstructure>801659fe-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:31:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe1/.content/.templates/blank.html</source>
+			<destination>sites/oe1/.content/.templates/blank.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>801b6310-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>801b6311-dfd3-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:31:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe2</destination>
+			<type>subsitemap</type>
+			<uuidstructure>e23f9803-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:34:43 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OE2 - Landesverband Salzburg]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe2/.content</destination>
+			<type>content_folder</type>
+			<uuidstructure>e240d085-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:34:43 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe2/.content/.config</source>
+			<destination>sites/oe2/.content/.config</destination>
+			<type>sitemap_config</type>
+			<uuidstructure>e241e1f7-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>e241e1f8-dfd3-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:34:43 GMT</datecreated>
+			<flags>512</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sitemap configuration file]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe2/.content/.templates</destination>
+			<type>folder</type>
+			<uuidstructure>e24871ad-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:34:43 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe2/.content/.templates/blank.html</source>
+			<destination>sites/oe2/.content/.templates/blank.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>e24a1f5f-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>e24a1f60-dfd3-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:34:43 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe3</destination>
+			<type>subsitemap</type>
+			<uuidstructure>fc61f680-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:35:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OE3 - Landesverband Niederösterreich]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe3/.content</destination>
+			<type>content_folder</type>
+			<uuidstructure>fc63f252-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:35:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe3/.content/.config</source>
+			<destination>sites/oe3/.content/.config</destination>
+			<type>sitemap_config</type>
+			<uuidstructure>fc64dcb4-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>fc64dcb5-dfd3-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:35:27 GMT</datecreated>
+			<flags>512</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sitemap configuration file]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe3/.content/.templates</destination>
+			<type>folder</type>
+			<uuidstructure>fc69227a-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:35:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe3/.content/.templates/blank.html</source>
+			<destination>sites/oe3/.content/.templates/blank.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>fc6ad02c-dfd3-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>fc6ad02d-dfd3-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:35:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe4</destination>
+			<type>subsitemap</type>
+			<uuidstructure>21a1554d-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:36:29 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OE4 - Burgenländischer Amateur Radio Club (BARC)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe4/.content</destination>
+			<type>content_folder</type>
+			<uuidstructure>21a28dcf-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:36:29 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe4/.content/.config</source>
+			<destination>sites/oe4/.content/.config</destination>
+			<type>sitemap_config</type>
+			<uuidstructure>21a46291-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>21a46292-dfd4-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:36:29 GMT</datecreated>
+			<flags>512</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sitemap configuration file]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe4/.content/.templates</destination>
+			<type>folder</type>
+			<uuidstructure>21a9e0d7-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:36:29 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe4/.content/.templates/blank.html</source>
+			<destination>sites/oe4/.content/.templates/blank.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>21ab6779-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>21ab677a-dfd4-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:36:29 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe5</destination>
+			<type>subsitemap</type>
+			<uuidstructure>48081d1a-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:37:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OE5 - Landesverband Oberösterreich]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe5/.content</destination>
+			<type>content_folder</type>
+			<uuidstructure>48097cac-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:37:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe5/.content/.config</source>
+			<destination>sites/oe5/.content/.config</destination>
+			<type>sitemap_config</type>
+			<uuidstructure>480a8e1e-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>480a8e1f-dfd4-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:37:33 GMT</datecreated>
+			<flags>512</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sitemap configuration file]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe5/.content/.templates</destination>
+			<type>folder</type>
+			<uuidstructure>480eabd4-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:37:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe5/.content/.templates/blank.html</source>
+			<destination>sites/oe5/.content/.templates/blank.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>48105986-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>48105987-dfd4-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:37:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe6</destination>
+			<type>subsitemap</type>
+			<uuidstructure>636a74a7-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:38:19 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OE6 - Landesverband Steiermark]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe6/.content</destination>
+			<type>content_folder</type>
+			<uuidstructure>636bd439-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:38:19 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe6/.content/.config</source>
+			<destination>sites/oe6/.content/.config</destination>
+			<type>sitemap_config</type>
+			<uuidstructure>636df71b-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>636df71c-dfd4-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:38:19 GMT</datecreated>
+			<flags>512</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sitemap configuration file]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe6/.content/.templates</destination>
+			<type>folder</type>
+			<uuidstructure>63717991-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:38:19 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe6/.content/.templates/blank.html</source>
+			<destination>sites/oe6/.content/.templates/blank.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>63732743-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>63732744-dfd4-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:38:19 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe7</destination>
+			<type>subsitemap</type>
+			<uuidstructure>8fd0e174-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:39:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OE7 - Landesverband Tirol]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe7/.content</destination>
+			<type>content_folder</type>
+			<uuidstructure>8fd3c7a6-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:39:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe7/.content/.config</source>
+			<destination>sites/oe7/.content/.config</destination>
+			<type>sitemap_config</type>
+			<uuidstructure>8fd4b208-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>8fd4b209-dfd4-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:39:34 GMT</datecreated>
+			<flags>512</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sitemap configuration file]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe7/.content/.templates</destination>
+			<type>folder</type>
+			<uuidstructure>8fd8f7ce-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:39:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe7/.content/.templates/blank.html</source>
+			<destination>sites/oe7/.content/.templates/blank.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>8fdaa580-dfd4-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>8fdaa581-dfd4-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:39:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe8</destination>
+			<type>subsitemap</type>
+			<uuidstructure>0697ae39-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:42:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OE8 - Landesverband Kärnten]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe8/.content</destination>
+			<type>content_folder</type>
+			<uuidstructure>069a464b-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:42:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe8/.content/.config</source>
+			<destination>sites/oe8/.content/.config</destination>
+			<type>sitemap_config</type>
+			<uuidstructure>069b57bd-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>069b57be-dfd5-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:42:53 GMT</datecreated>
+			<flags>512</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sitemap configuration file]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe8/.content/.templates</destination>
+			<type>folder</type>
+			<uuidstructure>06a1c063-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:42:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe8/.content/.templates/blank.html</source>
+			<destination>sites/oe8/.content/.templates/blank.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>06a36e15-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>06a36e16-dfd5-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:42:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe9</destination>
+			<type>subsitemap</type>
+			<uuidstructure>28c78316-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:43:50 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OE9 - Landesverband Vorarlberg]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe9/.content</destination>
+			<type>content_folder</type>
+			<uuidstructure>28c97ee8-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:43:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe9/.content/.config</source>
+			<destination>sites/oe9/.content/.config</destination>
+			<type>sitemap_config</type>
+			<uuidstructure>28ca905a-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>28ca905b-dfd5-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:43:51 GMT</datecreated>
+			<flags>512</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sitemap configuration file]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oe9/.content/.templates</destination>
+			<type>folder</type>
+			<uuidstructure>28ce12d0-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 01 Mar 2016 17:43:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oe9/.content/.templates/blank.html</source>
+			<destination>sites/oe9/.content/.templates/blank.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>28cfc082-dfd5-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>28cfc083-dfd5-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 01 Mar 2016 17:43:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Description</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_DESCRIPTION_1]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[GUI_DEFAULT_MODEL_TITLE_1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -475,14 +1387,14 @@
 		</file>
 		<file>
 			<destination>sites/oevsv</destination>
-			<type>folder</type>
+			<type>subsitemap</type>
 			<uuidstructure>ae6e5143-dfb8-11e5-817b-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 01 Mar 2016 14:19:59 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OeVSV - Hauptseite]]></value>
+					<value><![CDATA[ÖVSV - Dachverband]]></value>
 				</property>
 				<property>
 					<name>apollo.theme</name>
