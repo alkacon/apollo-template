@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloNavigations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/navigation.xsd">
+  <ApolloNavigation language="de">
+    <Title><![CDATA[Hauptnavigation]]></Title>
+    <NavStartLevel><![CDATA[1]]></NavStartLevel>
+    <LogoImage>
+      <link type="WEAK">
+        <target><![CDATA[/shared/.content/.galleries/logos/OeVSV-Logo.png]]></target>
+        <uuid>af3c5af4-e04d-11e5-bff6-0242ac11002b</uuid>
+      </link>
+    </LogoImage>
+    <LogoLink>
+      <link internal="true" type="WEAK">
+        <target><![CDATA[/sites/oevsv/]]></target>
+        <uuid>ae6e5143-dfb8-11e5-817b-0242ac11002b</uuid>
+      </link>
+    </LogoLink>
+    <Header name="Header0">
+      <links/>
+      <content/>
+    </Header>
+  </ApolloNavigation>
+</ApolloNavigations>

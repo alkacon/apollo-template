@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/templaterow.xsd">
-  <ApolloTemplateRow language="en">
+  <ApolloTemplateRow language="de">
     <Title><![CDATA[Container (Fluid)]]></Title>
     <PreMarkup><![CDATA[<div class="container-fluid p-0 $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>

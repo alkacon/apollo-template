@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[OEVSV Navigation main formatter]]></NiceName>
+    <Type><![CDATA[a-navigation]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/at.oevsv.contents/formatters/navigation-main.jsp]]></target>
+        <uuid>42c96e9a-e054-11e5-bff6-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[2000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[headsection]]></ContainerType>
+        <ContainerType><![CDATA[navigation-main]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>false</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>false</Detail>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[showbreadcrumb]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showbreadcrumb)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

@@ -86,6 +86,298 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>shared/.content/.galleries</destination>
+			<type>folder</type>
+			<uuidstructure>7978ee3e-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Mar 2016 08:05:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>shared/.content/.galleries/logos</destination>
+			<type>imagegallery</type>
+			<uuidstructure>84b1b3f0-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Mar 2016 08:05:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Logos]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/.galleries/logos/Hintergrund-mit-Verlauf.png</source>
+			<destination>shared/.content/.galleries/logos/Hintergrund-mit-Verlauf.png</destination>
+			<type>image</type>
+			<uuidstructure>aed0c8bc-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>aed0c8bd-e04d-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:06:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Hintergrund mit Verlauf]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:573,h:145]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/.galleries/logos/Oesterreich-Karte.png</source>
+			<destination>shared/.content/.galleries/logos/Oesterreich-Karte.png</destination>
+			<type>image</type>
+			<uuidstructure>af4582b8-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>af4582b9-e04d-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:06:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Österreich Karte]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:209,h:125]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/.galleries/logos/OeVSV-Logo.png</source>
+			<destination>shared/.content/.galleries/logos/OeVSV-Logo.png</destination>
+			<type>image</type>
+			<uuidstructure>af3c5af4-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>af3c5af5-e04d-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:06:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[ÖVSV Logo]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:495,h:145]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>shared/.content/.galleries/wappen</destination>
+			<type>imagegallery</type>
+			<uuidstructure>beade85c-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Mar 2016 08:07:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Wappen]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/.galleries/wappen/Burgenland.png</source>
+			<destination>shared/.content/.galleries/wappen/Burgenland.png</destination>
+			<type>image</type>
+			<uuidstructure>d41be670-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>d41be671-e04d-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:07:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Burgenland]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:600,h:728]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/.galleries/wappen/Kaernten.png</source>
+			<destination>shared/.content/.galleries/wappen/Kaernten.png</destination>
+			<type>image</type>
+			<uuidstructure>d4249904-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>d4249905-e04d-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:07:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Kärnten]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:582,h:720]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/.galleries/wappen/Niederoesterreich.png</source>
+			<destination>shared/.content/.galleries/wappen/Niederoesterreich.png</destination>
+			<type>image</type>
+			<uuidstructure>d42c6138-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>d42c6139-e04d-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:07:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Niederösterreich]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:600,h:773]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/.galleries/wappen/Oberoesterreich.png</source>
+			<destination>shared/.content/.galleries/wappen/Oberoesterreich.png</destination>
+			<type>image</type>
+			<uuidstructure>d4333f0c-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>d4333f0d-e04d-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:07:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Oberoesterreich]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:600,h:742]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/.galleries/wappen/Salzburg.png</source>
+			<destination>shared/.content/.galleries/wappen/Salzburg.png</destination>
+			<type>image</type>
+			<uuidstructure>d43a9210-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>d43a9211-e04d-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:07:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Salzburg]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:600,h:695]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/.galleries/wappen/Steiermark.png</source>
+			<destination>shared/.content/.galleries/wappen/Steiermark.png</destination>
+			<type>image</type>
+			<uuidstructure>d4416fe4-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>d4416fe5-e04d-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:07:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Steiermark]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:600,h:745]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/.galleries/wappen/Tirol.png</source>
+			<destination>shared/.content/.galleries/wappen/Tirol.png</destination>
+			<type>image</type>
+			<uuidstructure>d448e9f8-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>d448e9f9-e04d-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:07:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tirol]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:600,h:710]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/.galleries/wappen/Vorarlberg.png</source>
+			<destination>shared/.content/.galleries/wappen/Vorarlberg.png</destination>
+			<type>image</type>
+			<uuidstructure>d451275c-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>d451275d-e04d-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:07:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Vorarlberg]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:600,h:832]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/.galleries/wappen/Wien.png</source>
+			<destination>shared/.content/.galleries/wappen/Wien.png</destination>
+			<type>image</type>
+			<uuidstructure>d4560960-e04d-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>d4560961-e04d-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:07:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Wien]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:600,h:778]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>shared/.content/blogentries</destination>
 			<type>folder</type>
 			<uuidstructure>4ff0bcf9-dfc0-11e5-91d0-0242ac11002b</uuidstructure>
@@ -466,6 +758,18 @@
 					<name>Title</name>
 					<value><![CDATA[AMRS - Austrian Military Radio Society]]></value>
 				</property>
+				<property>
+					<name>apollo.theme</name>
+					<value><![CDATA[/system/modules/at.oevsv.contents/resources/css/style-oevsv.min.css]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[de]]></value>
+				</property>
+				<property>
+					<name>template</name>
+					<value><![CDATA[/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp]]></value>
+				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
@@ -558,6 +862,18 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OE1 - Landesverband Wien]]></value>
+				</property>
+				<property>
+					<name>apollo.theme</name>
+					<value><![CDATA[/system/modules/at.oevsv.contents/resources/css/style-oevsv.min.css]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[de]]></value>
+				</property>
+				<property>
+					<name>template</name>
+					<value><![CDATA[/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -652,6 +968,18 @@
 					<name>Title</name>
 					<value><![CDATA[OE2 - Landesverband Salzburg]]></value>
 				</property>
+				<property>
+					<name>apollo.theme</name>
+					<value><![CDATA[/system/modules/at.oevsv.contents/resources/css/style-oevsv.min.css]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[de]]></value>
+				</property>
+				<property>
+					<name>template</name>
+					<value><![CDATA[/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp]]></value>
+				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
@@ -744,6 +1072,18 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OE3 - Landesverband Niederösterreich]]></value>
+				</property>
+				<property>
+					<name>apollo.theme</name>
+					<value><![CDATA[/system/modules/at.oevsv.contents/resources/css/style-oevsv.min.css]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[de]]></value>
+				</property>
+				<property>
+					<name>template</name>
+					<value><![CDATA[/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -838,6 +1178,18 @@
 					<name>Title</name>
 					<value><![CDATA[OE4 - Burgenländischer Amateur Radio Club (BARC)]]></value>
 				</property>
+				<property>
+					<name>apollo.theme</name>
+					<value><![CDATA[/system/modules/at.oevsv.contents/resources/css/style-oevsv.min.css]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[de]]></value>
+				</property>
+				<property>
+					<name>template</name>
+					<value><![CDATA[/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp]]></value>
+				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
@@ -930,6 +1282,18 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OE5 - Landesverband Oberösterreich]]></value>
+				</property>
+				<property>
+					<name>apollo.theme</name>
+					<value><![CDATA[/system/modules/at.oevsv.contents/resources/css/style-oevsv.min.css]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[de]]></value>
+				</property>
+				<property>
+					<name>template</name>
+					<value><![CDATA[/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -1024,6 +1388,18 @@
 					<name>Title</name>
 					<value><![CDATA[OE6 - Landesverband Steiermark]]></value>
 				</property>
+				<property>
+					<name>apollo.theme</name>
+					<value><![CDATA[/system/modules/at.oevsv.contents/resources/css/style-oevsv.min.css]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[de]]></value>
+				</property>
+				<property>
+					<name>template</name>
+					<value><![CDATA[/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp]]></value>
+				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
@@ -1116,6 +1492,18 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OE7 - Landesverband Tirol]]></value>
+				</property>
+				<property>
+					<name>apollo.theme</name>
+					<value><![CDATA[/system/modules/at.oevsv.contents/resources/css/style-oevsv.min.css]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[de]]></value>
+				</property>
+				<property>
+					<name>template</name>
+					<value><![CDATA[/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -1210,6 +1598,18 @@
 					<name>Title</name>
 					<value><![CDATA[OE8 - Landesverband Kärnten]]></value>
 				</property>
+				<property>
+					<name>apollo.theme</name>
+					<value><![CDATA[/system/modules/at.oevsv.contents/resources/css/style-oevsv.min.css]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[de]]></value>
+				</property>
+				<property>
+					<name>template</name>
+					<value><![CDATA[/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp]]></value>
+				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
@@ -1302,6 +1702,18 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OE9 - Landesverband Vorarlberg]]></value>
+				</property>
+				<property>
+					<name>apollo.theme</name>
+					<value><![CDATA[/system/modules/at.oevsv.contents/resources/css/style-oevsv.min.css]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[de]]></value>
+				</property>
+				<property>
+					<name>template</name>
+					<value><![CDATA[/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -1473,6 +1885,181 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>sites/oevsv/.content/.modelgroups</destination>
+			<type>folder</type>
+			<uuidstructure>05d7d594-e04e-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Mar 2016 08:09:01 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/.modelgroups/modelgroup_0001.html</source>
+			<destination>sites/oevsv/.content/.modelgroups/modelgroup_0001.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>05db09e7-e04e-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>05db09e8-e04e-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:09:01 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Enthält wiederverwendbare Elemente]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Reuse Groups]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv/.content/.templates</destination>
+			<type>folder</type>
+			<uuidstructure>3c093565-e050-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Mar 2016 08:24:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/.templates/templatemodel_0001.html</source>
+			<destination>sites/oevsv/.content/.templates/templatemodel_0001.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>3c0e1768-e050-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>3c0e1769-e050-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:24:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Inhaltsseite mit 3 Spalten.]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Standard]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv/.content/modelgroup</destination>
+			<type>folder</type>
+			<uuidstructure>2f0907ec-e04e-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Mar 2016 08:10:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/modelgroup/modelgroup-00001.xml</source>
+			<destination>sites/oevsv/.content/modelgroup/modelgroup-00001.xml</destination>
+			<type>modelgroup</type>
+			<uuidstructure>2f0b03be-e04e-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>2f0b03bf-e04e-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:10:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Dieser Kopf wird für alle Seiten verwendet.]]></value>
+				</property>
+				<property type="shared">
+					<name>Description</name>
+					<value><![CDATA[Dieser Kopf wird für alle Seiten verwendet.]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Seitenkopf]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[Seitenkopf]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[true]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/modelgroup/modelgroup-00002.xml</source>
+			<destination>sites/oevsv/.content/modelgroup/modelgroup-00002.xml</destination>
+			<type>modelgroup</type>
+			<uuidstructure>4372b566-e04e-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>4372b567-e04e-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:10:44 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Dieser Fuß wird auf allen Seiten verwendet.]]></value>
+				</property>
+				<property type="shared">
+					<name>Description</name>
+					<value><![CDATA[Dieser Fuß wird auf allen Seiten verwendet.]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Seitenfuß]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[Seitenfuß]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[true]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv/.content/navigations</destination>
+			<type>folder</type>
+			<uuidstructure>75cbf5de-e04e-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Mar 2016 08:12:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/navigations/nv_00001.xml</source>
+			<destination>sites/oevsv/.content/navigations/nv_00001.xml</destination>
+			<type>a-navigation</type>
+			<uuidstructure>75cdcaa0-e04e-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>75cdcaa1-e04e-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:12:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Hauptnavigation]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>sites/oevsv/home</destination>
 			<type>folder</type>
 			<uuidstructure>e1b9af0a-dfc2-11e5-91d0-0242ac11002b</uuidstructure>
@@ -1524,6 +2111,70 @@
 			<datecreated>Tue, 01 Mar 2016 14:16:22 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/at.oevsv.contents/formatters</destination>
+			<type>folder</type>
+			<uuidstructure>2940b828-e054-11e5-bff6-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 02 Mar 2016 08:52:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/at.oevsv.contents/formatters/navigation-main-config.xml</source>
+			<destination>system/modules/at.oevsv.contents/formatters/navigation-main-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>42cfb02f-e054-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>42cfb030-e054-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:53:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OEVSV Navigation main formatter]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/at.oevsv.contents/formatters/navigation-main.jsp</source>
+			<destination>system/modules/at.oevsv.contents/formatters/navigation-main.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>42c96e9a-e054-11e5-bff6-0242ac11002b</uuidstructure>
+			<uuidresource>42c96e9b-e054-11e5-bff6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Mar 2016 08:53:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for main navigation]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;uri;user]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
