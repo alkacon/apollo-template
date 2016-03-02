@@ -16,19 +16,27 @@
 				</c:if>
 
 			</div>
-			<div class="container" style="height: 145px; background-repeat: no-repeat; beackground-position: right center; background-image: url('<cms:link>%(link.weak:/shared/.content/.galleries/logos/Hintergrund-mit-Verlauf.png:aed0c8bc-e04d-11e5-bff6-0242ac11002b)</cms:link>');">
 
-				<c:set var="logoPath">${value.LogoImage}</c:set>
-				<c:set var="logoSizes"><cms:property name="image.size" file="${logoPath}" default="170x42" /></c:set>
-				<a title="" class="logo apollo-logo" href="<cms:link>${value.LogoLink}</cms:link>" style="width: ${fn:substringAfter(fn:substringBefore(logoSizes,','), 'w:')}px;height: ${fn:substringAfter(logoSizes,'h:')}px;"><img src="<cms:link>${logoPath}</cms:link>" alt="" /></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                         <c:set var="logoPath">${value.LogoImage}</c:set>
+				        <c:set var="logoSizes"><cms:property name="image.size" file="${logoPath}" default="170x42" /></c:set>
+				        <a title="" class="" href="<cms:link>${value.LogoLink}</cms:link>" style="width: ${fn:substringAfter(fn:substringBefore(logoSizes,','), 'w:')}px;height: ${fn:substringAfter(logoSizes,'h:')}px;"><img src="<cms:link>${logoPath}</cms:link>" alt="" /></a>
+                    </div>
+                    <div class="col-sm-6" style="height: 145px; background-repeat: no-repeat; background-position: 100% 0px; background-image: url('<cms:link>%(link.weak:/shared/.content/.galleries/logos/Hintergrund-mit-Verlauf.png:aed0c8bc-e04d-11e5-bff6-0242ac11002b)</cms:link>');">
+                        hiho     
+                    </div>
+                </div>
+                
+            </div>
             
-                 
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
+			<div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target=".navbar-responsive-collapse">
 					<span class="sr-only">Toggle navigation</span> <span
 						class="fa fa-bars"></span>
 				</button>
-
 			</div>
 			<!--/end container-->
 
