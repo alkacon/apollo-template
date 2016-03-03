@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Image with overlay formatter]]></NiceName>
+    <Type><![CDATA[a-block]]></Type>
+    <Type><![CDATA[a-blog]]></Type>
+    <Type><![CDATA[a-event]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/at.oevsv.contents/formatters/image-overlay.jsp]]></target>
+        <uuid>149fd4a3-e081-11e5-8d6e-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[5000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[default]]></ContainerType>
+        <ContainerType><![CDATA[image]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>false</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>false</Detail>
+    <Display>false</Display>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[cssClass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[combo]]></Widget>
+      <WidgetConfig><![CDATA[mb-20 box-shadow shadow-effect-1:%(key.apollo.setting.cssclass.shadowbox)|box-shadow shadow-effect-2 rounded-2x:%(key.apollo.setting.cssclass.roundedshadowbox)]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showtext]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showtext)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showtext.description)]]></Description>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[false]]></Default>
+      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showtext.false)|true:%(key.apollo.setting.showtext.true)]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[textbg]]></PropertyName>
+      <DisplayName><![CDATA[Text Hintergrundfarbe]]></DisplayName>
+      <Description><![CDATA[Setzt die Hintergrundfarbe des Overlaytextes.]]></Description>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[blue]]></Default>
+      <WidgetConfig><![CDATA[blue:Blau|red:Rot]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

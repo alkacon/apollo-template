@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/flexible.xsd">
+  <ApolloFlexibleElement language="de">
+    <Title><![CDATA[Seitenfuß letzte Zeile]]></Title>
+    <Code name="Code0">
+      <links>
+        <link name="link0" internal="true" type="A">
+          <target><![CDATA[]]></target>
+          <anchor><![CDATA[top]]></anchor>
+        </link>
+        <link name="link1" internal="true" type="A">
+          <target><![CDATA[/sites/oevsv/sitemap/]]></target>
+        </link>
+        <link name="link2" internal="true" type="IMG">
+          <target><![CDATA[/shared/.content/.galleries/icons/Facebook.png]]></target>
+          <uuid>21eb4b90-e136-11e5-8d6e-0242ac11002b</uuid>
+        </link>
+        <link name="link3" internal="true" type="IMG">
+          <target><![CDATA[/shared/.content/.galleries/icons/Twitter.png]]></target>
+          <uuid>21f50fa4-e136-11e5-8d6e-0242ac11002b</uuid>
+        </link>
+        <link name="link4" internal="true" type="IMG">
+          <target><![CDATA[/shared/.content/.galleries/icons/Instagram.png]]></target>
+          <uuid>21ef6a48-e136-11e5-8d6e-0242ac11002b</uuid>
+        </link>
+        <link name="link5" internal="true" type="IMG">
+          <target><![CDATA[/shared/.content/.galleries/icons/YouTube.png]]></target>
+          <uuid>21f6bd58-e136-11e5-8d6e-0242ac11002b</uuid>
+        </link>
+        <link name="link6" internal="true" type="IMG">
+          <target><![CDATA[/shared/.content/.galleries/icons/Google.png]]></target>
+          <uuid>21ed6e74-e136-11e5-8d6e-0242ac11002b</uuid>
+        </link>
+        <link name="link7" internal="true" type="IMG">
+          <target><![CDATA[/shared/.content/.galleries/icons/RSS.png]]></target>
+          <uuid>21f33ae0-e136-11e5-8d6e-0242ac11002b</uuid>
+        </link>
+        <link name="link8" internal="true" type="IMG">
+          <target><![CDATA[/shared/.content/.galleries/icons/Pinterest.png]]></target>
+          <uuid>21f13f0c-e136-11e5-8d6e-0242ac11002b</uuid>
+        </link>
+        <link name="link9" internal="true" type="A">
+          <target><![CDATA[/sites/oevsv/impressum/]]></target>
+        </link>
+      </links>
+      <content><![CDATA[<div class="row">
+  <div class="col-sm-4 col-md-3 mb-20">
+    <a href="%(link0)"><i class="fa fa-caret-square-o-up"></i> zum Seitenanfang</a>
+  </div>
+  <div class="col-sm-4 col-md-3 mb-20">
+    <a href="%(link1)"><i class="fa fa-folder-open"></i> Sitemap</a>
+  </div>
+  <div class="col-sm-4 col-md-3 mb-20">
+    <ul class="social-oevsv">
+      <li><a href=""><img src="%(link2)" alt="" /></a></li>
+      <li><a href=""><img src="%(link3)" alt="" /></a></li>
+      <li><a href=""><img src="%(link4)" alt="" /></a></li>
+      <li><a href=""><img src="%(link5)" alt="" /></a></li>
+      <li><a href=""><img src="%(link6)" alt="" /></a></li>
+      <li><a href=""><img src="%(link7)" alt="" /></a></li>
+      <li><a href=""><img src="%(link8)" alt="" /></a></li>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-sm-12 col-md-3 mb-20">
+    <a href="%(link9)">Impressum</a>
+  </div>
+</div>]]></content>
+    </Code>
+  </ApolloFlexibleElement>
+</ApolloFlexibleElements>

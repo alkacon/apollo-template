@@ -1,37 +1,71 @@
-<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
+<%@page buffer="none" session="false" trimDirectiveWhitespaces="true" import="org.opencms.file.*, org.opencms.jsp.*, org.opencms.main.*" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<% 
+    CmsObject cms = new CmsJspActionElement(pageContext, request, response).getCmsObject();
+    pageContext.setAttribute("sites", OpenCms.getSiteManager().getAvailableSites(cms, false));
+    pageContext.setAttribute("siteRoot", cms.getRequestContext().getSiteRoot());
+%>
+
+<fmt:setLocale value="${cms.locale}" />
+<cms:bundle basename="at.oevsv.sites">
 
 <cms:formatter var="content" val="value" rdfa="rdfa">
 	<div>
-		<div class="header">
 
-			<div class="container">
-				<c:if test="${not value.Header.isEmpty}">
-					<!--=== Top ===-->
-					<div class="topbar">${value.Header}</div>
-					<!--/top-->
-					<!--=== End Top ===-->
-				</c:if>
+		<div class="header topheader-oevsv">
 
-			</div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                         <c:set var="logoPath">${value.LogoImage}</c:set>
-				        <c:set var="logoSizes"><cms:property name="image.size" file="${logoPath}" default="170x42" /></c:set>
-				        <a title="" class="" href="<cms:link>${value.LogoLink}</cms:link>" style="width: ${fn:substringAfter(fn:substringBefore(logoSizes,','), 'w:')}px;height: ${fn:substringAfter(logoSizes,'h:')}px;"><img src="<cms:link>${logoPath}</cms:link>" alt="" /></a>
+            <div class="container oevsv">
+                    <!--=== Top ===-->
+                    <div class="topbar">
+                        <ul class="loginbar pull-right">
+                            <li class="hoverSelector">
+                                <i class="fa fa-globe"></i>
+                                <a>ÖVSV - LANDESVERBÄNDE</a>
+                                <ul class="languages hoverSelectorBlock">
+                                    <c:forEach var="site" items="${sites}">
+                                        <c:set var="sitePath">${fn:substringAfter(site.siteRoot, '/sites/')}</c:set>
+                                        <c:set var="title"><fmt:message key="title.site.${sitePath}" /></c:set>
+                                        <c:if test="${not fn:contains(title, '??')}">
+                                            <c:choose>
+                                                <c:when test="${site.siteRoot == siteRoot}">
+                                                    <li class="active"><a href="${site.url}">${title}&nbsp;<i class="fa fa-check"></i></a></li>
+                                                </c:when>
+                                                <c:otherwise>
+                                                    <li><a href="${site.url}">${title}</a></li>
+                                                </c:otherwise>
+                                            </c:choose>
+                                        </c:if>
+                                    </c:forEach>
+                                </ul>
+                            </li>
+                            <li class="topbar-devider"></li>
+                            <li class="hoverSelector">
+                                <i class="fa fa-key"></i>
+                                <a href="<cms:link>/login/</cms:link>">Login</a>
+                            </li>
+                        </ul>
+                        <%-- ${value.Header} --%>
                     </div>
-                    <div class="col-sm-6" style="height: 145px; background-repeat: no-repeat; background-position: 100% 0px; background-image: url('<cms:link>%(link.weak:/shared/.content/.galleries/logos/Hintergrund-mit-Verlauf.png:aed0c8bc-e04d-11e5-bff6-0242ac11002b)</cms:link>');">
-                        hiho     
-                    </div>
-                </div>
-                
+                    <!--=== End Top ===-->
             </div>
-            
-			<div class="container">
+
+        </div>
+        
+        <div class="container oevsv">
+            <div class="row">
+            <div class="col-xs-12">
+            <a href="<cms:link>${value.LogoLink}</cms:link>">
+                <img src="<cms:link>${value.LogoImage}</cms:link>" alt="" class="img-responsive">
+            </a> 
+            </div>
+            </div>
+        </div>
+        
+        <div class="header">
+			<div class="container oevsv">
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target=".navbar-responsive-collapse">
 					<span class="sr-only">Toggle navigation</span> <span
@@ -75,3 +109,5 @@
 
 	</div>
 </cms:formatter>
+
+</cms:bundle>

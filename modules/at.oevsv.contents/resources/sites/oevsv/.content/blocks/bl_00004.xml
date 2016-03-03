@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloBlocks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/block.xsd">
+  <ApolloBlock language="de">
+    <Headline><![CDATA[Links]]></Headline>
+    <Text name="Text0">
+      <links>
+        <link name="link0" internal="true" type="A">
+          <target><![CDATA[/sites/oevsv/]]></target>
+          <uuid>ae6e5143-dfb8-11e5-817b-0242ac11002b</uuid>
+        </link>
+      </links>
+      <content><![CDATA[<ul>
+<li><a href="%(link0)">Link 1</a></li>
+<li>Text</li>
+</ul>]]></content>
+    </Text>
+  </ApolloBlock>
+</ApolloBlocks>

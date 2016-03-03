@@ -51,7 +51,7 @@
         <Properties>
           <Name><![CDATA[formatterSettings#page-complete]]></Name>
           <Value>
-            <String><![CDATA[schema_formatterd652a05d-523d-11e5-9495-0242ac11002b]]></String>
+            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -64,6 +64,223 @@
           <Name><![CDATA[model_group_description]]></Name>
           <Value>
             <String><![CDATA[Dieser Fuß wird auf allen Seiten verwendet.]]></String>
+          </Value>
+        </Properties>
+      </Elements>
+    </Containers>
+    <Containers>
+      <Name><![CDATA[f6fcfc91-e131-11e5-8d6e-0242ac11002b-c1]]></Name>
+      <Type><![CDATA[default]]></Type>
+      <ParentInstanceId><![CDATA[f6fcfc91-e131-11e5-8d6e-0242ac11002b]]></ParentInstanceId>
+      <Elements>
+        <Uri>
+          <link type="STRONG">
+            <target><![CDATA[/sites/oevsv/.content/blocks/bl_00002.xml]]></target>
+            <uuid>ada83cd3-e12d-11e5-8d6e-0242ac11002b</uuid>
+          </link>
+        </Uri>
+        <Formatter>
+          <link type="STRONG">
+            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/image-standard.jsp]]></target>
+            <uuid>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuid>
+          </link>
+        </Formatter>
+        <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[f6fcfc92-e131-11e5-8d6e-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#f6fcfc91-e131-11e5-8d6e-0242ac11002b-c1]]></Name>
+          <Value>
+            <String><![CDATA[3677fe84-5bc0-11e5-8f8e-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[showtext]]></Name>
+          <Value>
+            <String><![CDATA[false]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[cssShape]]></Name>
+          <Value>
+            <String><![CDATA[center-block]]></String>
+          </Value>
+        </Properties>
+      </Elements>
+    </Containers>
+    <Containers>
+      <Name><![CDATA[f6fcfc91-e131-11e5-8d6e-0242ac11002b-c2]]></Name>
+      <Type><![CDATA[default]]></Type>
+      <ParentInstanceId><![CDATA[f6fcfc91-e131-11e5-8d6e-0242ac11002b]]></ParentInstanceId>
+      <Elements>
+        <Uri>
+          <link type="STRONG">
+            <target><![CDATA[/sites/oevsv/.content/blocks/bl_00005.xml]]></target>
+            <uuid>5b5ced49-e12e-11e5-8d6e-0242ac11002b</uuid>
+          </link>
+        </Uri>
+        <Formatter>
+          <link type="STRONG">
+            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/block.jsp]]></target>
+            <uuid>77ab762d-5578-11e5-8d6b-0242ac11002b</uuid>
+          </link>
+        </Formatter>
+        <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[f6fcfc93-e131-11e5-8d6e-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#f6fcfc91-e131-11e5-8d6e-0242ac11002b-c2]]></Name>
+          <Value>
+            <String><![CDATA[77afe200-5578-11e5-8d6b-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+      </Elements>
+    </Containers>
+    <Containers>
+      <Name><![CDATA[f6fcfc91-e131-11e5-8d6e-0242ac11002b-c3]]></Name>
+      <Type><![CDATA[default]]></Type>
+      <ParentInstanceId><![CDATA[f6fcfc91-e131-11e5-8d6e-0242ac11002b]]></ParentInstanceId>
+      <Elements>
+        <Uri>
+          <link type="STRONG">
+            <target><![CDATA[/sites/oevsv/.content/blocks/bl_00004.xml]]></target>
+            <uuid>2aeda283-e12e-11e5-8d6e-0242ac11002b</uuid>
+          </link>
+        </Uri>
+        <Formatter>
+          <link type="STRONG">
+            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/block.jsp]]></target>
+            <uuid>77ab762d-5578-11e5-8d6b-0242ac11002b</uuid>
+          </link>
+        </Formatter>
+        <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[f6fcfc94-e131-11e5-8d6e-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#f6fcfc91-e131-11e5-8d6e-0242ac11002b-c3]]></Name>
+          <Value>
+            <String><![CDATA[77afe200-5578-11e5-8d6b-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+      </Elements>
+    </Containers>
+    <Containers>
+      <Name><![CDATA[f6fcfc91-e131-11e5-8d6e-0242ac11002b-c4]]></Name>
+      <Type><![CDATA[default]]></Type>
+      <ParentInstanceId><![CDATA[f6fcfc91-e131-11e5-8d6e-0242ac11002b]]></ParentInstanceId>
+      <Elements>
+        <Uri>
+          <link type="STRONG">
+            <target><![CDATA[/sites/oevsv/.content/blocks/bl_00003.xml]]></target>
+            <uuid>f1e4cdff-e12d-11e5-8d6e-0242ac11002b</uuid>
+          </link>
+        </Uri>
+        <Formatter>
+          <link type="STRONG">
+            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/block.jsp]]></target>
+            <uuid>77ab762d-5578-11e5-8d6b-0242ac11002b</uuid>
+          </link>
+        </Formatter>
+        <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[f6fcfc95-e131-11e5-8d6e-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#f6fcfc91-e131-11e5-8d6e-0242ac11002b-c4]]></Name>
+          <Value>
+            <String><![CDATA[77afe200-5578-11e5-8d6b-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+      </Elements>
+    </Containers>
+    <Containers>
+      <Name><![CDATA[33fa2325-e04e-11e5-bff6-0242ac11002b-c1]]></Name>
+      <Type><![CDATA[footsection,container]]></Type>
+      <ParentInstanceId><![CDATA[33fa2325-e04e-11e5-bff6-0242ac11002b]]></ParentInstanceId>
+      <Elements>
+        <Uri>
+          <link type="STRONG">
+            <target><![CDATA[/shared/.content/templaterows/tr_00019.xml]]></target>
+            <uuid>08b3f47f-e12c-11e5-8d6e-0242ac11002b</uuid>
+          </link>
+        </Uri>
+        <Formatter>
+          <link type="STRONG">
+            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/templaterow.jsp]]></target>
+            <uuid>d652a05d-523d-11e5-9495-0242ac11002b</uuid>
+          </link>
+        </Formatter>
+        <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[f6fcfc91-e131-11e5-8d6e-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[detail]]></Name>
+          <Value>
+            <String><![CDATA[none]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[param]]></Name>
+          <Value>
+            <String><![CDATA[mb-20]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#33fa2325-e04e-11e5-bff6-0242ac11002b-c1]]></Name>
+          <Value>
+            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+      </Elements>
+      <Elements>
+        <Uri>
+          <link type="STRONG">
+            <target><![CDATA[/sites/oevsv/.content/flexiblecontents/fc_00001.xml]]></target>
+            <uuid>6f9ccef9-e132-11e5-8d6e-0242ac11002b</uuid>
+          </link>
+        </Uri>
+        <Formatter>
+          <link type="STRONG">
+            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/flexible.jsp]]></target>
+            <uuid>9c98ef7c-560d-11e5-b868-0242ac11002b</uuid>
+          </link>
+        </Formatter>
+        <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[64e85478-e132-11e5-8d6e-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[requireReload]]></Name>
+          <Value>
+            <String><![CDATA[false]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[hideTitle]]></Name>
+          <Value>
+            <String><![CDATA[true]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#33fa2325-e04e-11e5-bff6-0242ac11002b-c1]]></Name>
+          <Value>
+            <String><![CDATA[9c9d5c4f-560d-11e5-b868-0242ac11002b]]></String>
           </Value>
         </Properties>
       </Elements>

@@ -3,11 +3,11 @@
 <ApolloNavigations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/navigation.xsd">
   <ApolloNavigation language="de">
     <Title><![CDATA[Hauptnavigation]]></Title>
-    <NavStartLevel><![CDATA[1]]></NavStartLevel>
+    <NavStartLevel><![CDATA[0]]></NavStartLevel>
     <LogoImage>
       <link type="WEAK">
-        <target><![CDATA[/shared/.content/.galleries/logos/OeVSV-Logo.png]]></target>
-        <uuid>af3c5af4-e04d-11e5-bff6-0242ac11002b</uuid>
+        <target><![CDATA[/shared/.content/.galleries/logos/Kopfleiste-Oesterreich.png]]></target>
+        <uuid>aea91740-e148-11e5-8d6e-0242ac11002b</uuid>
       </link>
     </LogoImage>
     <LogoLink>
@@ -17,8 +17,21 @@
       </link>
     </LogoLink>
     <Header name="Header0">
-      <links/>
-      <content/>
+      <links>
+        <link name="link0" internal="true" type="A">
+          <target><![CDATA[]]></target>
+          <anchor><![CDATA[1]]></anchor>
+        </link>
+        <link name="link1" internal="true" type="A">
+          <target><![CDATA[]]></target>
+          <anchor><![CDATA[2]]></anchor>
+        </link>
+      </links>
+      <content><![CDATA[<ul class="loginbar pull-right">
+            <li><a href="%(link0)">Search</a></li>
+            <li class="topbar-devider"></li>
+            <li><a href="%(link1)">Login</a></li>
+</ul>]]></content>
     </Header>
   </ApolloNavigation>
 </ApolloNavigations>
