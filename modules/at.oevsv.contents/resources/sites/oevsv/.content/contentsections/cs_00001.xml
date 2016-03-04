@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloBlocks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/block.xsd">
-  <ApolloBlock language="de">
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="de">
     <Headline><![CDATA[Test 123]]></Headline>
     <Text name="Text0">
       <links/>
@@ -25,5 +25,5 @@
         </link>
       </URI>
     </Link>
-  </ApolloBlock>
-</ApolloBlocks>
+  </ApolloSection>
+</ApolloSections>

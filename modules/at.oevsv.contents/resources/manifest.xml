@@ -142,7 +142,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Google ]]></value>
+					<value><![CDATA[Google]]></value>
 				</property>
 				<property type="shared">
 					<name>image.size</name>
@@ -883,6 +883,23 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[4 Columns Row (3 - 3 - 3 - 3) for Footsection]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>shared/.content/templaterows/tr_00020.xml</source>
+			<destination>shared/.content/templaterows/tr_00020.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>157497da-e1de-11e5-8a28-0242ac11002b</uuidstructure>
+			<uuidresource>157497db-e1de-11e5-8a28-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 07:52:46 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[2 Columns Main Layout Row (9 - 3)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -2142,7 +2159,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>sites/oevsv/.content/blocks</destination>
+			<destination>sites/oevsv/.content/contentsections</destination>
 			<type>folder</type>
 			<uuidstructure>027940b7-e07e-11e5-8d6e-0242ac11002b</uuidstructure>
 			<datecreated>Wed, 02 Mar 2016 13:52:31 GMT</datecreated>
@@ -2152,9 +2169,9 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>sites/oevsv/.content/blocks/bl_00001.xml</source>
-			<destination>sites/oevsv/.content/blocks/bl_00001.xml</destination>
-			<type>a-block</type>
+			<source>sites/oevsv/.content/contentsections/cs_00001.xml</source>
+			<destination>sites/oevsv/.content/contentsections/cs_00001.xml</destination>
+			<type>a-section</type>
 			<uuidstructure>027c7509-e07e-11e5-8d6e-0242ac11002b</uuidstructure>
 			<uuidresource>027c750a-e07e-11e5-8d6e-0242ac11002b</uuidresource>
 			<datecreated>Wed, 02 Mar 2016 13:52:31 GMT</datecreated>
@@ -2162,16 +2179,16 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Home: Test 123]]></value>
+					<value><![CDATA[Der ÖVSV: Test 123]]></value>
 				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>sites/oevsv/.content/blocks/bl_00002.xml</source>
-			<destination>sites/oevsv/.content/blocks/bl_00002.xml</destination>
-			<type>a-block</type>
+			<source>sites/oevsv/.content/contentsections/cs_00002.xml</source>
+			<destination>sites/oevsv/.content/contentsections/cs_00002.xml</destination>
+			<type>a-section</type>
 			<uuidstructure>ada83cd3-e12d-11e5-8d6e-0242ac11002b</uuidstructure>
 			<uuidresource>ada83cd4-e12d-11e5-8d6e-0242ac11002b</uuidresource>
 			<datecreated>Thu, 03 Mar 2016 10:50:00 GMT</datecreated>
@@ -2186,9 +2203,9 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>sites/oevsv/.content/blocks/bl_00003.xml</source>
-			<destination>sites/oevsv/.content/blocks/bl_00003.xml</destination>
-			<type>a-block</type>
+			<source>sites/oevsv/.content/contentsections/cs_00003.xml</source>
+			<destination>sites/oevsv/.content/contentsections/cs_00003.xml</destination>
+			<type>a-section</type>
 			<uuidstructure>f1e4cdff-e12d-11e5-8d6e-0242ac11002b</uuidstructure>
 			<uuidresource>f1e4ce00-e12d-11e5-8d6e-0242ac11002b</uuidresource>
 			<datecreated>Thu, 03 Mar 2016 10:51:55 GMT</datecreated>
@@ -2203,9 +2220,9 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>sites/oevsv/.content/blocks/bl_00004.xml</source>
-			<destination>sites/oevsv/.content/blocks/bl_00004.xml</destination>
-			<type>a-block</type>
+			<source>sites/oevsv/.content/contentsections/cs_00004.xml</source>
+			<destination>sites/oevsv/.content/contentsections/cs_00004.xml</destination>
+			<type>a-section</type>
 			<uuidstructure>2aeda283-e12e-11e5-8d6e-0242ac11002b</uuidstructure>
 			<uuidresource>2aeda284-e12e-11e5-8d6e-0242ac11002b</uuidresource>
 			<datecreated>Thu, 03 Mar 2016 10:53:30 GMT</datecreated>
@@ -2220,9 +2237,9 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>sites/oevsv/.content/blocks/bl_00005.xml</source>
-			<destination>sites/oevsv/.content/blocks/bl_00005.xml</destination>
-			<type>a-block</type>
+			<source>sites/oevsv/.content/contentsections/cs_00005.xml</source>
+			<destination>sites/oevsv/.content/contentsections/cs_00005.xml</destination>
+			<type>a-section</type>
 			<uuidstructure>5b5ced49-e12e-11e5-8d6e-0242ac11002b</uuidstructure>
 			<uuidresource>5b5ced4a-e12e-11e5-8d6e-0242ac11002b</uuidresource>
 			<datecreated>Thu, 03 Mar 2016 10:54:52 GMT</datecreated>
@@ -2231,6 +2248,169 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Letzte Postings]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/contentsections/cs_00006.xml</source>
+			<destination>sites/oevsv/.content/contentsections/cs_00006.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>8acc8e40-e20a-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>8acc8e41-e20a-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 13:11:01 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: Was ist Amateurfunk?]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/contentsections/cs_00007.xml</source>
+			<destination>sites/oevsv/.content/contentsections/cs_00007.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>35a7dff1-e20b-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>35a7dff2-e20b-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 13:15:47 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: Schreibworkshop in Graz]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/contentsections/cs_00008.xml</source>
+			<destination>sites/oevsv/.content/contentsections/cs_00008.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>b905b86a-e20d-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>b905b86b-e20d-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 13:33:47 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: Funkbetrieb]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/contentsections/cs_00009.xml</source>
+			<destination>sites/oevsv/.content/contentsections/cs_00009.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>36c5a540-e20e-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>36c5a541-e20e-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 13:37:18 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: Frequenzen]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/contentsections/cs_00010.xml</source>
+			<destination>sites/oevsv/.content/contentsections/cs_00010.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>400dcb5d-e213-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>400dcb5e-e213-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 14:13:21 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: Verschiedenes]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv/.content/events</destination>
+			<type>folder</type>
+			<uuidstructure>dd95aeaa-e20b-11e5-b050-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 04 Mar 2016 13:20:29 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/events/ev_00001.xml</source>
+			<destination>sites/oevsv/.content/events/ev_00001.xml</destination>
+			<type>a-event</type>
+			<uuidstructure>dd970e3c-e20b-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>dd970e3d-e20b-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 13:20:29 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: 90 Jahre ÖVSV]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/events/ev_00002.xml</source>
+			<destination>sites/oevsv/.content/events/ev_00002.xml</destination>
+			<type>a-event</type>
+			<uuidstructure>f4fd8bac-e20c-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>f4fd8bad-e20c-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 13:28:18 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Schreibworkshop in Graz]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/events/ev_00003.xml</source>
+			<destination>sites/oevsv/.content/events/ev_00003.xml</destination>
+			<type>a-event</type>
+			<uuidstructure>1b3fb46c-e20d-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>1b3fb46d-e20d-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 13:29:22 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Simelque Untine Culpaqui]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/events/ev_00004.xml</source>
+			<destination>sites/oevsv/.content/events/ev_00004.xml</destination>
+			<type>a-event</type>
+			<uuidstructure>6453491d-e20d-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>6453491e-e20d-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 13:31:25 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Dolor sit amet]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -2258,6 +2438,33 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Seitenfuß letzte Zeile]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv/.content/lists</destination>
+			<type>folder</type>
+			<uuidstructure>9df513c8-e20b-11e5-b050-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 04 Mar 2016 13:18:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/lists/l_00001.xml</source>
+			<destination>sites/oevsv/.content/lists/l_00001.xml</destination>
+			<type>a-list</type>
+			<uuidstructure>9df64c4a-e20b-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>9df64c4b-e20b-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 13:18:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: Veranstaltungen, Termine]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -2367,15 +2574,308 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>sites/oevsv/.content/sliders</destination>
+			<type>folder</type>
+			<uuidstructure>3a323196-e205-11e5-b050-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 04 Mar 2016 12:32:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/sliders/sl_00001.xml</source>
+			<destination>sites/oevsv/.content/sliders/sl_00001.xml</destination>
+			<type>a-slider</type>
+			<uuidstructure>3a3565e8-e205-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>3a3565e9-e205-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 12:32:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home: Startseite]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv/.content/tabs</destination>
+			<type>folder</type>
+			<uuidstructure>bb0baec0-e20f-11e5-b050-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 04 Mar 2016 13:48:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv/.galleries</destination>
+			<type>folder</type>
+			<uuidstructure>ce5f53ce-e1fc-11e5-b050-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 04 Mar 2016 11:32:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv/.galleries/Bilder</destination>
+			<type>imagegallery</type>
+			<uuidstructure>ce639990-e1fc-11e5-b050-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 04 Mar 2016 11:32:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Bilder]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.galleries/Bilder/01.jpg</source>
+			<destination>sites/oevsv/.galleries/Bilder/01.jpg</destination>
+			<type>image</type>
+			<uuidstructure>76405139-e1fd-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>7640513a-e1fd-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 11:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[01]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1024,h:768]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.galleries/Bilder/02.jpg</source>
+			<destination>sites/oevsv/.galleries/Bilder/02.jpg</destination>
+			<type>image</type>
+			<uuidstructure>76736f2d-e1fd-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>76736f2e-e1fd-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 11:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[02]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1024,h:768]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.galleries/Bilder/03.jpg</source>
+			<destination>sites/oevsv/.galleries/Bilder/03.jpg</destination>
+			<type>image</type>
+			<uuidstructure>76a22051-e1fd-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>76a22052-e1fd-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 11:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[03]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1024,h:768]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.galleries/Bilder/04.jpg</source>
+			<destination>sites/oevsv/.galleries/Bilder/04.jpg</destination>
+			<type>image</type>
+			<uuidstructure>76dae395-e1fd-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>76dae396-e1fd-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 11:37:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[04]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1024,h:768]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.galleries/Bilder/05.jpg</source>
+			<destination>sites/oevsv/.galleries/Bilder/05.jpg</destination>
+			<type>image</type>
+			<uuidstructure>7709bbc9-e1fd-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>7709bbca-e1fd-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 11:37:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[05]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1024,h:768]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.galleries/Bilder/06.jpg</source>
+			<destination>sites/oevsv/.galleries/Bilder/06.jpg</destination>
+			<type>image</type>
+			<uuidstructure>7711d21d-e1fd-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>7711d21e-e1fd-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 11:37:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[06]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1024,h:768]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.galleries/Bilder/07.jpg</source>
+			<destination>sites/oevsv/.galleries/Bilder/07.jpg</destination>
+			<type>image</type>
+			<uuidstructure>7718fd11-e1fd-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>7718fd12-e1fd-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 11:37:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[07]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1024,h:768]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.galleries/Bilder/08.jpg</source>
+			<destination>sites/oevsv/.galleries/Bilder/08.jpg</destination>
+			<type>image</type>
+			<uuidstructure>77458b55-e1fd-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>77458b56-e1fd-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 11:37:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[08]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1024,h:768]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.galleries/Bilder/09.jpg</source>
+			<destination>sites/oevsv/.galleries/Bilder/09.jpg</destination>
+			<type>image</type>
+			<uuidstructure>774c9039-e1fd-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>774c903a-e1fd-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 11:37:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[09]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1024,h:768]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.galleries/Bilder/10.jpg</source>
+			<destination>sites/oevsv/.galleries/Bilder/10.jpg</destination>
+			<type>image</type>
+			<uuidstructure>7754a68d-e1fd-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>7754a68e-e1fd-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 11:37:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[10]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1024,h:768]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.galleries/Bilder/banner1-90er-neu.png</source>
+			<destination>sites/oevsv/.galleries/Bilder/banner1-90er-neu.png</destination>
+			<type>image</type>
+			<uuidstructure>dca13ad4-e1fc-11e5-b050-0242ac11002b</uuidstructure>
+			<uuidresource>dca13ad5-e1fc-11e5-b050-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 11:33:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Banner 90er neu]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:700,h:190]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>sites/oevsv/home</destination>
 			<type>folder</type>
-			<uuidstructure>e1b9af0a-dfc2-11e5-91d0-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 01 Mar 2016 15:33:00 GMT</datecreated>
+			<uuidstructure>a0790e33-e1e0-11e5-8a28-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 04 Mar 2016 08:10:58 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>NavPos</name>
-					<value><![CDATA[1.0]]></value>
+					<value><![CDATA[10.0]]></value>
 				</property>
 				<property>
 					<name>NavText</name>
@@ -2393,11 +2893,112 @@
 			<source>sites/oevsv/home/index.html</source>
 			<destination>sites/oevsv/home/index.html</destination>
 			<type>containerpage</type>
-			<uuidstructure>992fd496-dfc8-11e5-bf0c-0242ac11002b</uuidstructure>
-			<uuidresource>992fd497-dfc8-11e5-bf0c-0242ac11002b</uuidresource>
-			<datecreated>Tue, 01 Mar 2016 16:13:56 GMT</datecreated>
+			<uuidstructure>a0803a28-e1e0-11e5-8a28-0242ac11002b</uuidstructure>
+			<uuidresource>a0803a29-e1e0-11e5-8a28-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 08:10:58 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv/oevsv</destination>
+			<type>folder</type>
+			<uuidstructure>48c2d4d1-e1e0-11e5-8a28-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 04 Mar 2016 08:08:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[20.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[ÖVSV]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[ÖVSV]]></value>
+				</property>
+				<property>
+					<name>default-file</name>
+					<value><![CDATA[##navigation_level_folder##]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/oevsv/index.html</source>
+			<destination>sites/oevsv/oevsv/index.html</destination>
+			<type>htmlredirect</type>
+			<uuidstructure>48c96487-e1e0-11e5-8a28-0242ac11002b</uuidstructure>
+			<uuidresource>48c96488-e1e0-11e5-8a28-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 08:08:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[page]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+				<property type="shared">
+					<name>template-elements</name>
+					<value><![CDATA[/system/modules/org.opencms.ade.sitemap/pages/redirect-detail.jsp]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv/oevsv/der-oevsv</destination>
+			<type>folder</type>
+			<uuidstructure>58a9441f-e1e0-11e5-8a28-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 04 Mar 2016 08:08:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[1.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Der ÖVSV]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Der ÖVSV]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/oevsv/der-oevsv/index.html</source>
+			<destination>sites/oevsv/oevsv/der-oevsv/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>58aee974-e1e0-11e5-8a28-0242ac11002b</uuidstructure>
+			<uuidresource>58aee975-e1e0-11e5-8a28-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Mar 2016 08:08:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Der ÖVSV]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="de">
+    <Headline><![CDATA[Funkbetrieb]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/oevsv/.galleries/Bilder/06.jpg]]></target>
+          <uuid>7711d21d-e1fd-11e5-b050-0242ac11002b</uuid>
+          <query><![CDATA[__scale=h:480,w:1024,cx:0,cy:117,ch:480,cw:1024]]></query>
+        </link>
+      </Image>
+      <Title><![CDATA[Funkbetrieb]]></Title>
+    </Image>
+  </ApolloSection>
+</ApolloSections>

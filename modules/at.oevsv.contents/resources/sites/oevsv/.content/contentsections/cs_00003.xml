@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloBlocks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/block.xsd">
-  <ApolloBlock language="de">
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="de">
     <Headline><![CDATA[Kontakt]]></Headline>
     <Text name="Text0">
       <links>
@@ -11,5 +11,5 @@
       </links>
       <content><![CDATA[<p>ÖVSV -<br />Österreichischer Versuchssenderverband<br />Eisvogelgasse 4/1<br />A-1060 Wien<br /><em class="fa fa-phone">&nbsp;</em> +43 (0) 1 / 999 21 32<br /><em class="fa fa-print">&nbsp;</em>+43 (0) 1 / 999 21 33<br /><em class="fa fa-envelope">&nbsp;</em> <a href="%(link0)">webmaster@oevsv.at</a></p>]]></content>
     </Text>
-  </ApolloBlock>
-</ApolloBlocks>
+  </ApolloSection>
+</ApolloSections>

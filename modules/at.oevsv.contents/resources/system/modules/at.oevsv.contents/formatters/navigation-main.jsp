@@ -13,7 +13,7 @@
 <cms:bundle basename="at.oevsv.sites">
 
 <cms:formatter var="content" val="value" rdfa="rdfa">
-	<div>
+	<div class="mb-20">
 
 		<div class="header topheader-oevsv">
 

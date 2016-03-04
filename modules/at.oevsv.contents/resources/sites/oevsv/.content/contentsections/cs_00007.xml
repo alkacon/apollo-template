@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="de">
+    <Headline><![CDATA[Schreibworkshop in Graz]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Per sustio cor sequip ero odiat illam ilis am irit, sequatue sed tatue tet, verciliquat am zzriuscillum exerate eugueros nim ip ea feuissequis adigniat.</p>
+<p>Pit dolorpero exer sis nim velenia Per sustio cor sequip ero odiat illam ilis am irit, sequatue sed tatue tet, verciliquat am zzriuscillum exerate eugueros nim ip ea feuissequis adigniat.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/oevsv/.galleries/Bilder/01.jpg]]></target>
+          <uuid>76405139-e1fd-11e5-b050-0242ac11002b</uuid>
+          <query><![CDATA[__scale=h:480,w:1024,cx:0,cy:3,ch:480,cw:1024]]></query>
+        </link>
+      </Image>
+      <Title><![CDATA[Schreibworkshop in Graz]]></Title>
+    </Image>
+  </ApolloSection>
+</ApolloSections>
