@@ -20,7 +20,7 @@
 
 				<c:set var="logoPath">${value.LogoImage}</c:set>
 				<c:set var="logoSizes"><cms:property name="image.size" file="${logoPath}" default="170x42" /></c:set>
-				<a title="${logoSizes}" class="logo apollo-logo" href="<cms:link>${value.LogoLink}</cms:link>" style="width: ${fn:substringAfter(fn:substringBefore(logoSizes,','), 'w:')}px;height: ${fn:substringAfter(logoSizes,'h:')}px;background-image:url('<cms:link>${logoPath}</cms:link>');"></a>
+				<a title="" class="logo apollo-logo" href="<cms:link>${value.LogoLink}</cms:link>" style="width: ${fn:substringAfter(fn:substringBefore(logoSizes,','), 'w:')}px;height: ${fn:substringAfter(logoSizes,'h:')}px;background-image:url('<cms:link>${logoPath}</cms:link>');"></a>
 
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target=".navbar-responsive-collapse">
