@@ -1,248 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
-  <Bundle language="en">
-    <Message>
-      <Key><![CDATA[fileicon.a-menu]]></Key>
-      <Value><![CDATA[Apollo Template]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[title.a-menu]]></Key>
-      <Value><![CDATA[New Apollo Template]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[desc.a-menu]]></Key>
-      <Value><![CDATA[Contains all content types belonging to the Apollo Template.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[desc.a-templaterow]]></Key>
-      <Value><![CDATA[Creates flexible row layouts that can be combined and nested.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[title.a-templaterow]]></Key>
-      <Value><![CDATA[New Layout Row]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[fileicon.a-templaterow]]></Key>
-      <Value><![CDATA[Layout Row]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[fileicon.a-block]]></Key>
-      <Value><![CDATA[Content Block]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[title.a-block]]></Key>
-      <Value><![CDATA[New Content Block]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[desc.a-block]]></Key>
-      <Value><![CDATA[A generic content for texts, images and / or links.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[fileicon.a-navigation]]></Key>
-      <Value><![CDATA[Navigation]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[desc.a-navigation]]></Key>
-      <Value><![CDATA[Shows a main navigation element with configurable header and breadcrumb navigation or a side navigation.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[title.a-navigation]]></Key>
-      <Value><![CDATA[New Navigation]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[desc.a-flexible]]></Key>
-      <Value><![CDATA[Use the flexible content to insert code (HTML, JavaScript), images or texts.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[fileicon.a-flexible]]></Key>
-      <Value><![CDATA[Flexible Content]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[title.a-flexible]]></Key>
-      <Value><![CDATA[New Flexible Content]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[desc.a-tabs]]></Key>
-      <Value><![CDATA[Creates multiple tabs, it can also be rendered as accordion.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[fileicon.a-tabs]]></Key>
-      <Value><![CDATA[Tabs / Accordion]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[title.a-tabs]]></Key>
-      <Value><![CDATA[New Tabs / Accordion]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[desc.a-blog]]></Key>
-      <Value><![CDATA[Combines several paragraphs with optional images, author, date and categories.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[title.a-blog]]></Key>
-      <Value><![CDATA[New Blog Article]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[fileicon.a-blog]]></Key>
-      <Value><![CDATA[Blog Article]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[desc.a-list]]></Key>
-      <Value><![CDATA[Displays a configurable list of contents, e.g. blog entries, events etc.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[title.a-list]]></Key>
-      <Value><![CDATA[New List of contents]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[fileicon.a-list]]></Key>
-      <Value><![CDATA[List of contents]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[title.a-map]]></Key>
-      <Value><![CDATA[New Location Map]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[desc.a-map]]></Key>
-      <Value><![CDATA[Generates a location map.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[fileicon.a-map]]></Key>
-      <Value><![CDATA[Location Map]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[title.a-event]]></Key>
-      <Value><![CDATA[New Event]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[desc.a-event]]></Key>
-      <Value><![CDATA[Within this content all the necessary information for an event can be stored.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[fileicon.a-event]]></Key>
-      <Value><![CDATA[Event]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[desc.a-slider]]></Key>
-      <Value><![CDATA[A simple image carousel with text overlays and basic effects.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[fileicon.a-slider]]></Key>
-      <Value><![CDATA[Simple Slider]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[title.a-slider]]></Key>
-      <Value><![CDATA[New Simple Slider]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[title.a-sitemap]]></Key>
-      <Value><![CDATA[New Sitemap]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[desc.a-sitemap]]></Key>
-      <Value><![CDATA[Creates a sitemap overview of the subsite.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[fileicon.a-sitemap]]></Key>
-      <Value><![CDATA[Sitemap]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAvailability.Release]]></Key>
-      <Value><![CDATA[Release date]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAvailability.Release.help]]></Key>
-      <Value><![CDATA[The date when the content will be available on the website.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAvailability.Expiration]]></Key>
-      <Value><![CDATA[Expiration date]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAvailability.Expiration.help]]></Key>
-      <Value><![CDATA[The expiration date when the content will become invalid.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloLink.Text]]></Key>
-      <Value><![CDATA[Text]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloLink.Text.help]]></Key>
-      <Value><![CDATA[The display text for the link.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloLink.URI]]></Key>
-      <Value><![CDATA[Target]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloLink.URI.help]]></Key>
-      <Value><![CDATA[The link target.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNestedImage.Image]]></Key>
-      <Value><![CDATA[Image Path]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNestedImage.Image.help]]></Key>
-      <Value><![CDATA[The image path in OpenCms.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNestedImage.Title]]></Key>
-      <Value><![CDATA[Title]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNestedImage.Title.help]]></Key>
-      <Value><![CDATA[The title of the image.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNestedImage.Copyright]]></Key>
-      <Value><![CDATA[Copyright]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNestedImage.Copyright.help]]></Key>
-      <Value><![CDATA[Optional copyright information of the image.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNestedImage.Description]]></Key>
-      <Value><![CDATA[Description]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNestedImage.Description.help]]></Key>
-      <Value><![CDATA[Optional description of the image.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloParagraph.Headline]]></Key>
-      <Value><![CDATA[Headline]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloParagraph.Headline.help]]></Key>
-      <Value><![CDATA[The optional headline of the paragraph.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloParagraph.Text]]></Key>
-      <Value><![CDATA[Text]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloParagraph.Text.help]]></Key>
-      <Value><![CDATA[The paragraph text.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloParagraph.Image]]></Key>
-      <Value><![CDATA[Image]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloParagraph.Image.help]]></Key>
-      <Value><![CDATA[An optional image for the paragraph.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloParagraph.Link]]></Key>
-      <Value><![CDATA[Link]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloParagraph.Link.help]]></Key>
-      <Value><![CDATA[Optional link for the paragraph. External links have to start with <i>http://</i>.]]></Value>
-    </Message>
-  </Bundle>
   <Bundle language="de">
     <Message>
       <Key><![CDATA[fileicon.a-menu]]></Key>
@@ -269,15 +27,15 @@
       <Value><![CDATA[Layout-Zeile]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[fileicon.a-block]]></Key>
-      <Value><![CDATA[Inhaltsbaustein]]></Value>
+      <Key><![CDATA[fileicon.a-section]]></Key>
+      <Value><![CDATA[Inhalts-Abschnitt]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[title.a-block]]></Key>
-      <Value><![CDATA[Neuer Inhaltsbaustein]]></Value>
+      <Key><![CDATA[title.a-section]]></Key>
+      <Value><![CDATA[Neuer Inhalts-Abschnitt]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[desc.a-block]]></Key>
+      <Key><![CDATA[desc.a-section]]></Key>
       <Value><![CDATA[Ein allgemeiner Inhalt für Texte, Bilder und / oder Links.]]></Value>
     </Message>
     <Message>
@@ -483,6 +241,248 @@
     <Message>
       <Key><![CDATA[label.ApolloParagraph.Link.help]]></Key>
       <Value><![CDATA[Optionaler Link. Externe Links müssen mit <i>http://</i> beginnen.]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="en">
+    <Message>
+      <Key><![CDATA[fileicon.a-menu]]></Key>
+      <Value><![CDATA[Apollo Template]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-menu]]></Key>
+      <Value><![CDATA[New Apollo Template]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-menu]]></Key>
+      <Value><![CDATA[Contains all content types belonging to the Apollo Template.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-templaterow]]></Key>
+      <Value><![CDATA[Creates flexible row layouts that can be combined and nested.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-templaterow]]></Key>
+      <Value><![CDATA[New Layout Row]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-templaterow]]></Key>
+      <Value><![CDATA[Layout Row]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-section]]></Key>
+      <Value><![CDATA[Content Section]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-section]]></Key>
+      <Value><![CDATA[New Content Section]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-section]]></Key>
+      <Value><![CDATA[A generic content for texts, images and / or links.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-navigation]]></Key>
+      <Value><![CDATA[Navigation]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-navigation]]></Key>
+      <Value><![CDATA[Shows a main navigation element with configurable header and breadcrumb navigation or a side navigation.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-navigation]]></Key>
+      <Value><![CDATA[New Navigation]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-flexible]]></Key>
+      <Value><![CDATA[Use the flexible content to insert code (HTML, JavaScript), images or texts.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-flexible]]></Key>
+      <Value><![CDATA[Flexible Content]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-flexible]]></Key>
+      <Value><![CDATA[New Flexible Content]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-tabs]]></Key>
+      <Value><![CDATA[Creates multiple tabs, it can also be rendered as accordion.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-tabs]]></Key>
+      <Value><![CDATA[Tabs / Accordion]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-tabs]]></Key>
+      <Value><![CDATA[New Tabs / Accordion]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-blog]]></Key>
+      <Value><![CDATA[Combines several paragraphs with optional images, author, date and categories.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-blog]]></Key>
+      <Value><![CDATA[New Blog Article]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-blog]]></Key>
+      <Value><![CDATA[Blog Article]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-list]]></Key>
+      <Value><![CDATA[Displays a configurable list of contents, e.g. blog entries, events etc.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-list]]></Key>
+      <Value><![CDATA[New List of contents]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-list]]></Key>
+      <Value><![CDATA[List of contents]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-map]]></Key>
+      <Value><![CDATA[New Location Map]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-map]]></Key>
+      <Value><![CDATA[Generates a location map.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-map]]></Key>
+      <Value><![CDATA[Location Map]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-event]]></Key>
+      <Value><![CDATA[New Event]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-event]]></Key>
+      <Value><![CDATA[Within this content all the necessary information for an event can be stored.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-event]]></Key>
+      <Value><![CDATA[Event]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-slider]]></Key>
+      <Value><![CDATA[A simple image carousel with text overlays and basic effects.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-slider]]></Key>
+      <Value><![CDATA[Simple Slider]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-slider]]></Key>
+      <Value><![CDATA[New Simple Slider]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-sitemap]]></Key>
+      <Value><![CDATA[New Sitemap]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-sitemap]]></Key>
+      <Value><![CDATA[Creates a sitemap overview of the subsite.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-sitemap]]></Key>
+      <Value><![CDATA[Sitemap]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAvailability.Release]]></Key>
+      <Value><![CDATA[Release date]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAvailability.Release.help]]></Key>
+      <Value><![CDATA[The date when the content will be available on the website.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAvailability.Expiration]]></Key>
+      <Value><![CDATA[Expiration date]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAvailability.Expiration.help]]></Key>
+      <Value><![CDATA[The expiration date when the content will become invalid.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.Text]]></Key>
+      <Value><![CDATA[Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.Text.help]]></Key>
+      <Value><![CDATA[The display text for the link.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.URI]]></Key>
+      <Value><![CDATA[Target]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.URI.help]]></Key>
+      <Value><![CDATA[The link target.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Image]]></Key>
+      <Value><![CDATA[Image Path]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Image.help]]></Key>
+      <Value><![CDATA[The image path in OpenCms.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Title]]></Key>
+      <Value><![CDATA[Title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Title.help]]></Key>
+      <Value><![CDATA[The title of the image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Copyright]]></Key>
+      <Value><![CDATA[Copyright]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Copyright.help]]></Key>
+      <Value><![CDATA[Optional copyright information of the image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Description]]></Key>
+      <Value><![CDATA[Description]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Description.help]]></Key>
+      <Value><![CDATA[Optional description of the image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Headline]]></Key>
+      <Value><![CDATA[Headline]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Headline.help]]></Key>
+      <Value><![CDATA[The optional headline of the paragraph.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Text]]></Key>
+      <Value><![CDATA[Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Text.help]]></Key>
+      <Value><![CDATA[The paragraph text.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Image]]></Key>
+      <Value><![CDATA[Image]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Image.help]]></Key>
+      <Value><![CDATA[An optional image for the paragraph.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Link]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Link.help]]></Key>
+      <Value><![CDATA[Optional link for the paragraph. External links have to start with <i>http://</i>.]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

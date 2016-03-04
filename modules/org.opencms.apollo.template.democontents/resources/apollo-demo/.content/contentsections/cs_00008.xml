@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[About OpenCms]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>OpenCms is great. Easy to use. Fun to work with. Simple and intuitive. Yet full featured and powerful.</p>]]></content>
+    </Text>
+    <Link>
+      <Text><![CDATA[Read more]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/home/]]></target>
+          <uuid>d53f32c1-5c61-11e5-96ab-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
+  </ApolloSection>
+</ApolloSections>

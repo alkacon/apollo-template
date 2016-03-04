@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Select 'My changes']]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content/>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/.galleries/tutorial-images/tut-15.png]]></target>
+          <uuid>372aa0ab-6101-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </Image>
+      <Title/>
+    </Image>
+  </ApolloSection>
+</ApolloSections>

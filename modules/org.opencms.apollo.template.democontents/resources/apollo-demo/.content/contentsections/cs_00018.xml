@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Java Cup Inc.]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/cliparts/08.png]]></target>
+          <uuid>f08556a8-55fb-11e4-8db5-005056b61161</uuid>
+        </link>
+      </Image>
+      <Title><![CDATA[Java Cup Inc.]]></Title>
+      <Copyright><![CDATA[openclipart.org]]></Copyright>
+    </Image>
+  </ApolloSection>
+</ApolloSections>

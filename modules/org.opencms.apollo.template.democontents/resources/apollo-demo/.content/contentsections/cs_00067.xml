@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Designer]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Mitchell Pritchett</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/people/11.jpg]]></target>
+          <uuid>af315050-4705-11e3-8417-000c29d28104</uuid>
+        </link>
+      </Image>
+      <Title/>
+      <Copyright><![CDATA[pixabay.com]]></Copyright>
+    </Image>
+  </ApolloSection>
+</ApolloSections>

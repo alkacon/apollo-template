@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[FAQ text 2]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<h2>YES!</h2>
+<p>It's safe&nbsp;to update to OpenCms 10!</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/people/15.jpg]]></target>
+          <uuid>f67db0b0-55f8-11e4-8db5-005056b61161</uuid>
+        </link>
+      </Image>
+      <Title/>
+      <Copyright><![CDATA[publicdomainpictures.net]]></Copyright>
+    </Image>
+  </ApolloSection>
+</ApolloSections>
