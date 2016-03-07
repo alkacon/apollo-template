@@ -25,13 +25,13 @@
 	</c:forTokens>
 	<c:set var="solrParamCats">&fq=category:(${catFilter})</c:set>
 </c:if>
-<c:set var="solrParamDirs">&fq=parent-folders:"${param.pathes}"</c:set>
 <c:set var="solrFilterQue">${param.extraQueries}</c:set>
+<c:set var="solrParamDirs">&fq=parent-folders:"${param.pathes}"</c:set>
 <c:set var="sortOptionAsc">{ "label" : sortorder.asc, "paramvalue" : "asc", "solrvalue" : "newsdate_${cms.locale}_dt asc" }</c:set>
 <c:set var="sortOptionDesc">{ "label" : sortorder.desc, "paramvalue" : "desc", "solrvalue" : "newsdate_${cms.locale}_dt desc" }</c:set>
-<c:set var="extraSolrParams">${solrParamType}${solrParamDirs}${solrParamCats}${param.extraQueries}</c:set>
+<c:set var="extraSolrParams">${solrParamType}${solrParamDirs}${solrParamCats}${solrFilterQue}</c:set>
 
-{ 
+{ "test": "${solrFilterQue}",
     "ignorequery" : true, "extrasolrparams" : "${fn:replace(extraSolrParams,'"','\\"')}",
     "pagesize" : ${param.itemsPerPage}, 
     "sortoptions" : [

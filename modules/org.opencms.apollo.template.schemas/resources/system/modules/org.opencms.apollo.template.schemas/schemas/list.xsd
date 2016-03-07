@@ -16,6 +16,7 @@
 		<xsd:sequence>
 			<xsd:element name="Headline" type="OpenCmsString" />
 			<xsd:element name="TypesToCollect" type="OpenCmsDisplayFormatter" />
+            <xsd:element name="Folder" type="OpenCmsVfsFile" minOccurs="0" />
 			<xsd:element name="Category" type="OpenCmsCategory" minOccurs="0" />
 			<xsd:element name="SortOrder" type="OpenCmsString" />
 			<xsd:element name="ItemsPerPage" type="OpenCmsString" minOccurs="0" />
