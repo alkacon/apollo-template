@@ -4,6 +4,12 @@
   <ApolloList language="de">
     <Headline><![CDATA[Veranstaltungen, Termine]]></Headline>
     <TypesToCollect>a-event:d60fa8bc-d71a-11e5-b10a-0242ac11002b</TypesToCollect>
+    <Folder>
+      <link type="WEAK">
+        <target><![CDATA[/shared/.content/]]></target>
+        <uuid>05db219f-dfc0-11e5-91d0-0242ac11002b</uuid>
+      </link>
+    </Folder>
     <SortOrder><![CDATA[desc]]></SortOrder>
     <ItemsPerPage><![CDATA[5]]></ItemsPerPage>
   </ApolloList>

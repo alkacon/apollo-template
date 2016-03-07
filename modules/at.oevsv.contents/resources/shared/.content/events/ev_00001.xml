@@ -11,6 +11,12 @@
 <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>]]></content>
       </Text>
     </Paragraph>
+    <Category>
+      <link type="WEAK">
+        <target><![CDATA[/system/categories/verbaende/oevsv/]]></target>
+        <uuid>197478ca-e453-11e5-b050-0242ac11002b</uuid>
+      </link>
+    </Category>
     <Location><![CDATA[Wien]]></Location>
   </ApolloEvent>
 </ApolloEvents>
