@@ -19,7 +19,9 @@
 		<datecreated/>
 		<userinstalled/>
 		<dateinstalled/>
-		<dependencies/>
+		<dependencies>
+			<dependency name="at.oevsv.apollo.extensions" version="1.0.0"/>
+		</dependencies>
 		<exportpoints/>
 		<resources>
 			<resource uri="/system/modules/at.oevsv.contents/"/>
@@ -3015,6 +3017,46 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Der ÖVSV]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv/oevsv/veranstaltungen</destination>
+			<type>folder</type>
+			<uuidstructure>1b36acd9-e53a-11e5-a75e-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 08 Mar 2016 14:29:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[2.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Veranstaltungen]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Veranstaltungen]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/oevsv/veranstaltungen/index.html</source>
+			<destination>sites/oevsv/oevsv/veranstaltungen/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>1b463d3e-e53a-11e5-a75e-0242ac11002b</uuidstructure>
+			<uuidresource>1b463d3f-e53a-11e5-a75e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Mar 2016 14:29:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Veranstaltungen]]></value>
 				</property>
 			</properties>
 			<relations/>

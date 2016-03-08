@@ -4,7 +4,7 @@
 	<info>
 		<creator>zahner</creator>
 		<opencms_version>10.0.x</opencms_version>
-		<createdate>Mon, 07 Mar 2016 11:49:44 GMT</createdate>
+		<createdate>Tue, 08 Mar 2016 15:56:09 GMT</createdate>
 		<infoproject>Offline</infoproject>
 		<export_version>10</export_version>
 	</info>
@@ -22,7 +22,11 @@
 		<datecreated/>
 		<userinstalled/>
 		<dateinstalled/>
-		<dependencies/>
+		<dependencies>
+			<dependency name="org.opencms.apollo.template.basics" version="10.0.0"/>
+			<dependency name="org.opencms.apollo.template.schemas" version="10.0.0"/>
+			<dependency name="org.opencms.apollo.template.formatters" version="10.0.0"/>
+		</dependencies>
 		<exportpoints/>
 		<resources>
 			<resource uri="/system/modules/at.oevsv.apollo.extensions/"/>
@@ -291,7 +295,7 @@
 			<type>plain</type>
 			<uuidstructure>e96b02ac-dfbf-11e5-91d0-0242ac11002b</uuidstructure>
 			<uuidresource>e96b02ad-dfbf-11e5-91d0-0242ac11002b</uuidresource>
-			<datelastmodified>Mon, 07 Mar 2016 10:51:03 GMT</datelastmodified>
+			<datelastmodified>Tue, 08 Mar 2016 08:32:24 GMT</datelastmodified>
 			<userlastmodified>Admin</userlastmodified>
 			<datecreated>Tue, 01 Mar 2016 15:11:45 GMT</datecreated>
 			<usercreated>Admin</usercreated>
