@@ -38,8 +38,8 @@
                         tagClass="panel-body" 
                         maxElements="2">
                         
-                        <div class="service-block rounded-3x service-block-aqua">
-                            <h2 class="heading-md"><fmt:message key="apollo.tabs.emptycontainer.headline"/></h2>
+                        <div class="alert alert-warning fade in">
+                            <h4><fmt:message key="apollo.tabs.emptycontainer.headline"/></h4>
                             <p><fmt:message key="apollo.tabs.emptycontainer.text"/></p>           
                         </div>     
                     </cms:container>

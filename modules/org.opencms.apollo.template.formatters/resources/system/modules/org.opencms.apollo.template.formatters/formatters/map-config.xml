@@ -31,8 +31,8 @@
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
-      <Widget><![CDATA[combo]]></Widget>
-      <WidgetConfig><![CDATA[colored-box green border-style-dotted:%(key.apollo.setting.cssclass.green)|colored-box red border-style-none:%(key.apollo.setting.cssclass.red)]]></WidgetConfig>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.coloredbox)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

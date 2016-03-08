@@ -2,7 +2,7 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Content Section as Icon Box formatter (CSS)]]></NiceName>
+    <NiceName><![CDATA[Content Section as Icon Box formatter]]></NiceName>
     <Type><![CDATA[a-section]]></Type>
     <Jsp>
       <link type="WEAK">
@@ -28,14 +28,14 @@
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
       <Widget><![CDATA[selectcombo]]></Widget>
-      <WidgetConfig><![CDATA[service-block service-block-default:%(key.apollo.setting.cssclass.lightbox)|service-block service-block-red rounded-2x:%(key.apollo.setting.cssclass.redbox)]]></WidgetConfig>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.iconbox)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[iconclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.iconclass)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.iconclass.description)]]></Description>
       <Widget><![CDATA[selectcombo]]></Widget>
-      <WidgetConfig><![CDATA[icon-lg icon-bg-default fa fa-info:%(key.apollo.setting.iconclass.info)|icon-lg icon-bg-red fa fa-lightbulb-o:%(key.apollo.setting.iconclass.lightbulb)]]></WidgetConfig>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.icon)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>
