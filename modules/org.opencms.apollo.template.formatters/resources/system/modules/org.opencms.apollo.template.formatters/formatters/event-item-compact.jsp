@@ -30,10 +30,10 @@
             <c:choose>
 				<c:when
 					test="${content.value.Teaser.isSet and not empty fn:trim(content.value.Teaser)}">
-					<p>${content.value.Teaser}</p>
+					<p class="mb-5">${content.value.Teaser}</p>
 				</c:when>
 				<c:otherwise>
-					<p>${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</p>
+					<p class="mb-5">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</p>
 				</c:otherwise>
 			</c:choose>
 			<a
