@@ -10,7 +10,9 @@
 		<nicename><![CDATA[OeVSV content module]]></nicename>
 		<group>OeVSV</group>
 		<class/>
-		<import-script>writeProperty '/sites/' 'template' '/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp'
+		<import-script>setSiteRoot &quot;/&quot;
+
+writeProperty '/sites/' 'template' '/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp'
 writeProperty '/sites/' 'apollo.theme' '/system/modules/at.oevsv.apollo.extensions/resources/css/style-oevsv.min.css'
 
 writeProperty '/sites/' 'apollo.css.coloredbox' 'colored-box blue:Blaue Box|colored-box red:Rote Box|colored-box blue line-top-color-red:Blaue Box mit roter Linie oben|colored-box blue line-box-color-red:Blaue Box mit rotem Rahmen|colored-box red line-top-color-blue:Rote Box mit blauer Linie oben|colored-box red line-box-color-blue:Rote Box mit blauem Rahmen'
