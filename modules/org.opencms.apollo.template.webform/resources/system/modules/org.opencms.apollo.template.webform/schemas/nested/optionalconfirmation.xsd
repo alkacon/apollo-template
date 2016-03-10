@@ -1,0 +1,40 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+		
+	<xsd:element name="OptionalApolloWebFormConfirmationMails" type="OpenCmsOptionalApolloWebFormConfirmationMails"/>
+	
+	<xsd:complexType name="OpenCmsOptionalApolloWebFormConfirmationMails">
+		<xsd:sequence>
+			<xsd:element name="OptionalApolloWebFormConfirmationMail" type="OpenCmsOptionalApolloWebFormConfirmationMail" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsOptionalApolloWebFormConfirmationMail">
+		<xsd:sequence>
+			<xsd:element name="ConfirmationMailEnabled" type="OpenCmsBoolean" />
+			<xsd:element name="ConfirmationMailOptional" type="OpenCmsBoolean" />
+			<xsd:element name="ConfirmationCheckboxLabel" type="OpenCmsString" />
+			<xsd:element name="ConfirmationField" type="OpenCmsString" />
+			<xsd:element name="ConfirmationMailFrom" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="ConfirmationMailFromName" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="ConfirmationMailSubject" type="OpenCmsString" />
+			<xsd:element name="ConfirmationMailText" type="OpenCmsHtml" />
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
+	</xsd:complexType>
+	
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="org.opencms.apollo.template.webform.workplace"/>
+			<layouts>
+				<layout element="ConfirmationField" widget="org.opencms.widgets.CmsDependentSelectWidget" configuration="InputField|FieldLabel" />
+				<layout element="ConfirmationMailText" widget="HtmlWidget" configuration="formatselect,source,table" />
+			</layouts>
+			<validationrules>
+				<rule element="ConfirmationMailFrom" regex=".+" type="warning" message="%(key.apollo.webform.warn.xmlcontent.field.empty)"/>
+			</validationrules>
+		</xsd:appinfo>
+	</xsd:annotation>  
+
+</xsd:schema>

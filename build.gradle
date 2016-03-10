@@ -42,14 +42,14 @@ apply from: 'dependencies.gradle'
 allModuleNames.split(',').each{ moduleName ->
     sourceSets.create(moduleName,{
         java {
-            srcDir "${projectDir}/src"
+            srcDir "modules/${moduleName}/src"
             exclude '**/test/**'
         }
-        resources.srcDir "${projectDir}/src"
+        resources.srcDir "modules/${moduleName}/src"
     });
-    sourceSets[moduleName].compileClasspath=configurations.compile
+   sourceSets[moduleName].compileClasspath=configurations.compile
     def moduleFolder = file("${projectDir}/modules/${moduleName}")
-    def srcGwtDir = file("${projectDir}/src-gwt")
+    def srcGwtDir = file("${moduleFolder}/src")
     def manifestFile = file("${moduleFolder}/resources/manifest.xml")
     def gwtModule = null
     def gwtSourceSetName = null
@@ -85,7 +85,7 @@ allModuleNames.split(',').each{ moduleName ->
         ext.moduleName = moduleName
         ext.moduleVersion= moduleVersion
         manifest {
-            attributes 'Implementation-Title': 'Alkacon OAMP', 'Implementation-Version': moduleVersion
+            attributes 'Implementation-Title': 'Apollo template', 'Implementation-Version': moduleVersion
         }
         from sourceSets[moduleName].output
         archiveName moduleName+'.jar'

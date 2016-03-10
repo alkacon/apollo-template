@@ -3,3 +3,4 @@
 /.gradle
 /.sass-cache/
 Gruntfile-local.js
+/build/

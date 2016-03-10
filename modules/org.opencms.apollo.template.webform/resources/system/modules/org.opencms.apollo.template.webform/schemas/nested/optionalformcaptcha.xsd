@@ -1,0 +1,32 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+		
+	<xsd:element name="ApolloWebFormCaptchas" type="OpenCmsApolloWebFormCaptchas"/>
+	
+	<xsd:complexType name="OpenCmsApolloWebFormCaptchas">
+		<xsd:sequence>
+			<xsd:element name="ApolloWebFormCaptcha" type="OpenCmsApolloWebFormCaptcha" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsApolloWebFormCaptcha">
+		<xsd:sequence>
+			<xsd:element name="FieldLabel" type="OpenCmsString" />			
+            <xsd:element name="Preset" type="OpenCmsString" minOccurs="0" maxOccurs="1" />	
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
+	</xsd:complexType>
+	
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="org.opencms.apollo.template.webform.workplace"/>
+			<layouts>
+				<layout element="Preset" widget="org.opencms.apollo.template.webform.CmsSelectWidgetXmlcontentType" configuration="folder=/system/modules/org.opencms.apollo.template.webform/captcha/|resourcetypeName=xmlcontent|displayOptionMacro=${property.Title}|sortMacro=${property.collector.priority}|ignoreLocaleMatch=true"/>
+			</layouts>
+			<defaults>
+				<default element="FieldLabel" value="${key.GUI_FORMCAPTCHA_LABEL_DEFAULT_0}" />
+			</defaults>
+		</xsd:appinfo>
+	</xsd:annotation>   
+</xsd:schema>
