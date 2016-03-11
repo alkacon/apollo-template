@@ -1628,24 +1628,9 @@ public class CmsForm {
             stringValue = getContentStringValue(content, cms, NODE_FORMCONFIRMATION, locale);
         }
         setFormConfirmationText(getConfigurationValue(resolver, stringValue, ""));
-        // get the optional target URI
-        stringValue = getValueFromDynamicConfig(dynamicConfig, NODE_TARGET_URI);
-        if (stringValue == null) {
-            stringValue = getContentStringValue(content, cms, NODE_TARGET_URI, locale);
-        }
-        setTargetUri(getConfigurationValue(stringValue, ""));
-        // get the optional forward mode
-        stringValue = getValueFromDynamicConfig(dynamicConfig, NODE_FORWARD_MODE);
-        if (stringValue == null) {
-            stringValue = getContentStringValue(content, cms, NODE_FORWARD_MODE, locale);
-        }
-        setForwardMode(Boolean.parseBoolean(getConfigurationValue(stringValue, Boolean.FALSE.toString())));
-        // get the optional instant redirect
-        stringValue = getValueFromDynamicConfig(dynamicConfig, NODE_INSTANTREDIRECT);
-        if (stringValue == null) {
-            stringValue = getContentStringValue(content, cms, NODE_INSTANTREDIRECT, locale);
-        }
-        setInstantRedirect(Boolean.parseBoolean(getConfigurationValue(stringValue, Boolean.FALSE.toString())));
+        // get the mail type
+        stringValue = getContentStringValue(content, cms, NODE_MAILTYPE, locale);
+        setMailType(getConfigurationValue(stringValue, MAILTYPE_HTML));
         // get the mail from address
         stringValue = getValueFromDynamicConfig(dynamicConfig, NODE_MAILFROM);
         if (stringValue == null) {
@@ -1669,6 +1654,16 @@ public class CmsForm {
         } else {
             setMailTo(getConfigurationValue(stringValue, ""));
         }
+        // get the mail CC recipient(s)
+        stringValue = getContentStringValue(content, cms, NODE_MAILCC, locale);
+        setMailCC(getConfigurationValue(stringValue, ""));
+        // get the mail BCC recipient(s)
+        stringValue = getContentStringValue(content, cms, NODE_MAILBCC, locale);
+        setMailBCC(getConfigurationValue(stringValue, ""));
+        // get the mail CSS style sheet
+        stringValue = getContentStringValue(content, cms, NODE_MAILCSS, locale);
+        setMailCSS(getConfigurationValue(stringValue, ""));
+
         // get the mail subject
         stringValue = getValueFromDynamicConfig(dynamicConfig, NODE_MAILSUBJECT);
         if (stringValue == null) {
@@ -1707,18 +1702,6 @@ public class CmsForm {
             // optional configuration options
             pathPrefix = NODE_OPTIONALCONFIGURATION + "/";
 
-            // get the mail type
-            stringValue = getContentStringValue(content, cms, pathPrefix + NODE_MAILTYPE, locale);
-            setMailType(getConfigurationValue(stringValue, MAILTYPE_HTML));
-            // get the mail CC recipient(s)
-            stringValue = getContentStringValue(content, cms, pathPrefix + NODE_MAILCC, locale);
-            setMailCC(getConfigurationValue(stringValue, ""));
-            // get the mail BCC recipient(s)
-            stringValue = getContentStringValue(content, cms, pathPrefix + NODE_MAILBCC, locale);
-            setMailBCC(getConfigurationValue(stringValue, ""));
-            // get the mail CSS style sheet
-            stringValue = getContentStringValue(content, cms, pathPrefix + NODE_MAILCSS, locale);
-            setMailCSS(getConfigurationValue(stringValue, ""));
             // get the form check page flag
             stringValue = getContentStringValue(content, cms, pathPrefix + NODE_SHOWCHECK, locale);
             setShowCheck(Boolean.valueOf(stringValue).booleanValue());
@@ -1751,74 +1734,25 @@ public class CmsForm {
                     // invalid value found, just do not set value
                 }
             }
-        }
 
-        // set or potentially overwrite optional configurations by the dynamic configuration
-        if (dynamicConfig != null) {
-            // get the mail type
-            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_MAILTYPE);
-            if (stringValue != null) {
-                setMailType(getConfigurationValue(stringValue, MAILTYPE_HTML));
+            // get the optional target URI
+            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_TARGET_URI);
+            if (stringValue == null) {
+                stringValue = getContentStringValue(content, cms, pathPrefix + NODE_TARGET_URI, locale);
             }
-            // get the mail CC recipient(s)
-            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_MAILCC);
-            if (stringValue != null) {
-                setMailCC(getConfigurationValue(stringValue, ""));
+            setTargetUri(getConfigurationValue(stringValue, ""));
+            // get the optional forward mode
+            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_FORWARD_MODE);
+            if (stringValue == null) {
+                stringValue = getContentStringValue(content, cms, pathPrefix + NODE_FORWARD_MODE, locale);
             }
-            // get the mail BCC recipient(s)
-            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_MAILBCC);
-            if (stringValue != null) {
-                setMailBCC(getConfigurationValue(stringValue, ""));
+            setForwardMode(Boolean.parseBoolean(getConfigurationValue(stringValue, Boolean.FALSE.toString())));
+            // get the optional instant redirect
+            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_INSTANTREDIRECT);
+            if (stringValue == null) {
+                stringValue = getContentStringValue(content, cms, pathPrefix + NODE_INSTANTREDIRECT, locale);
             }
-            // get the mail CSS style sheet
-            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_MAILCSS);
-            if (stringValue != null) {
-                setMailCSS(getConfigurationValue(stringValue, ""));
-            }
-            // get the form check page flag
-            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_SHOWCHECK);
-            if (stringValue != null) {
-                setShowCheck(Boolean.valueOf(stringValue).booleanValue());
-            }
-            // get the check page text
-            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_FORMCHECKTEXT);
-            if (stringValue != null) {
-                setFormCheckText(getConfigurationValue(resolver, stringValue, ""));
-            }
-            // get the optional HTML template file
-            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_TEMPLATE_FILE);
-            if (stringValue != null) {
-                String defaultTemplateFile = OpenCms.getModuleManager().getModule(MODULE_NAME).getParameter(
-                    MODULE_PARAM_TEMPLATE_FILE,
-                    VFS_PATH_DEFAULT_TEMPLATEFILE);
-                setTemplateFile(getConfigurationValue(stringValue, defaultTemplateFile));
-            }
-            // get the optional web form action class
-            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_ACTION_CLASS);
-            if (stringValue != null) {
-                setActionClass(getConfigurationValue(stringValue, ""));
-            }
-            // get the show mandatory setting
-            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_SHOWMANDATORY);
-            if (stringValue != null) {
-                setShowMandatory(
-                    Boolean.valueOf(getConfigurationValue(stringValue, Boolean.TRUE.toString())).booleanValue());
-            }
-            // get the show reset button setting
-            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_SHOWRESET);
-            if (stringValue != null) {
-                setShowReset(
-                    Boolean.valueOf(getConfigurationValue(stringValue, Boolean.TRUE.toString())).booleanValue());
-            }
-            // get the refresh session interval
-            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_KEEPSESSION);
-            if (stringValue != null) {
-                try {
-                    setRefreshSessionInterval(Integer.parseInt(stringValue) * 1000);
-                } catch (NumberFormatException nfe) {
-                    // invalid value found, just do not set value
-                }
-            }
+            setInstantRedirect(Boolean.parseBoolean(getConfigurationValue(stringValue, Boolean.FALSE.toString())));
         }
 
         // optional confirmation mail nodes

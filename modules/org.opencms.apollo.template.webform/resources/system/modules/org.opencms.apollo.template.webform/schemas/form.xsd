@@ -21,30 +21,30 @@
 	<xsd:complexType name="OpenCmsApolloWebForm">
 		<xsd:sequence>
 			<xsd:element name="Title" type="OpenCmsString" />
-			<xsd:element name="MailFrom" type="OpenCmsString" />
-			<xsd:element name="MailFromName" type="OpenCmsString" minOccurs="0" />
-			<xsd:element name="MailTo" type="OpenCmsString" />
-			<xsd:element name="MailSubject" type="OpenCmsString" />
-			<xsd:element name="MailText" type="OpenCmsHtml" />				
 			<xsd:element name="FormText" type="OpenCmsHtml" />
 			<xsd:element name="FormMiddleText" type="OpenCmsHtml" minOccurs="0" />
 			<xsd:element name="FormFooterText" type="OpenCmsHtml" minOccurs="0" />
 			<xsd:element name="FormConfirmation" type="OpenCmsHtml" />
-			<xsd:element name="TargetUri" type="OpenCmsVfsFile" minOccurs="0" />
-			<xsd:element name="ForwardMode" type="OpenCmsBoolean" minOccurs="0" />
-            <xsd:element name="InstantRedirect" type="OpenCmsBoolean" minOccurs="0" />
+            <xsd:element name="FormCaptcha" type="OpenCmsApolloWebFormCaptcha" minOccurs="0" />
 			<xsd:element name="OptionalFormRelease" type="OpenCmsOptionalApolloWebFormRelease" minOccurs="0" />
 			<xsd:element name="OptionalFormExpiration" type="OpenCmsOptionalApolloWebFormExpiration" minOccurs="0" />
+            <xsd:element name="OptionalFormConfiguration" type="OpenCmsOptionalApolloWebFormConfiguration" minOccurs="0" />
 
 			<xsd:element name="InputField" type="OpenCmsApolloWebFormInputField" maxOccurs="unbounded" />
+            <xsd:element name="OptionalFieldText" type="OpenCmsOptionalApolloWebFormFieldText" minOccurs="0" maxOccurs="unbounded" />
 
 			<xsd:element name="OptionalSubField" type="OpenCmsOptionalApolloWebFormSubField" minOccurs="0" maxOccurs="unbounded" />
 
-			<xsd:element name="FormCaptcha" type="OpenCmsApolloWebFormCaptcha" minOccurs="0" />
-			<xsd:element name="OptionalFormConfiguration" type="OpenCmsOptionalApolloWebFormConfiguration" minOccurs="0" />
-			<xsd:element name="OptionalFieldText" type="OpenCmsOptionalApolloWebFormFieldText" minOccurs="0" maxOccurs="unbounded" />
-
-			<xsd:element name="OptionalConfirmationMail" type="OpenCmsOptionalApolloWebFormConfirmationMail" minOccurs="0" />
+			<xsd:element name="MailType" type="OpenCmsString" minOccurs="0" />
+            <xsd:element name="MailFrom" type="OpenCmsString" />
+			<xsd:element name="MailFromName" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="MailTo" type="OpenCmsString" />
+			<xsd:element name="MailCC" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="MailBCC" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="MailSubject" type="OpenCmsString" />
+			<xsd:element name="MailText" type="OpenCmsHtml" minOccurs="0" />
+            <xsd:element name="MailCSS" type="OpenCmsString" minOccurs="0" />            
+            <xsd:element name="OptionalConfirmationMail" type="OpenCmsOptionalApolloWebFormConfirmationMail" minOccurs="0" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
 	</xsd:complexType>
@@ -53,15 +53,16 @@
 		<xsd:appinfo>
 			<resourcebundle name="org.opencms.apollo.template.webform.workplace"/>
 			<defaults>
-                <default element="ForwardMode" value="true" />
-                <default element="InstantRedirect" value="true" />
-				<default element="OptionalFormConfiguration/MailCSS" value="%(key.form.email.css)" />
+                <default element="OptionalFormConfiguration/ForwardMode" value="true" />
+                <default element="OptionalFormConfiguration/InstantRedirect" value="true" />	
 				<default element="OptionalFormConfiguration/ShowMandatory" value="true" />
 				<default element="OptionalFormConfiguration/ShowReset" value="true" />
 				<default element="OptionalFormConfiguration/ActionClass" value="org.opencms.apollo.template.webform.DefaultActionHandler" />
 				<default element="OptionalFormConfiguration/KeepSession" value="360" />
 				<default element="OptionalFormExpiration/Date" value="%(currenttime + 604800000)" />
 				<default element="OptionalFormRelease/Date" value="%(currenttime)" />
+                <default element="MailCSS" value="%(key.form.email.css)" />
+                <default element="OptionalConfirmationMail/ConfirmationMailEnabled" value="true" />
 			</defaults>
 			<validationrules>
 				<rule element="MailFrom" regex=".+" type="warning" message="%(key.apollo.webform.warn.xmlcontent.field.empty)"/>
@@ -69,21 +70,30 @@
 				<rule element="MailSubject" regex=".+" type="warning" message="%(key.apollo.webform.warn.xmlcontent.field.empty)"/>
 			</validationrules>
 			<layouts>
-				<layout element="MailText" widget="HtmlWidget" configuration="formatselect,source,table" />
 				<layout element="FormText" widget="HtmlWidget" configuration="imagegallery,downloadgallery,formatselect,source,link,anchor,table" />
 				<layout element="FormMiddleText" widget="HtmlWidget" configuration="imagegallery,downloadgallery,formatselect,source,link,anchor,table" />
 				<layout element="FormFooterText" widget="HtmlWidget" configuration="imagegallery,downloadgallery,formatselect,source,link,anchor,table" />
 				<layout element="FormConfirmation" widget="HtmlWidget" configuration="imagegallery,downloadgallery,formatselect,source,link,anchor,table" />
+                <layout element="MailType" widget="SelectorWidget" configuration="html*:${key.form.email.type.html}|text:${key.form.email.type.text}" />
+                <layout element="MailText" widget="HtmlWidget" configuration="formatselect,source,table" />                
+				<layout element="MailCSS" widget="TextareaWidget" configuration="6" />
 			</layouts>
 			<mappings>
 				<mapping element="Title" mapto="property:Title" />
 			</mappings>
 			<tabs>				
-				<tab element="Title" name="Tab.Basic" collapse="false" />
-				<tab element="InputField" name="Tab.Fields" collapse="false" />
-				<tab element="OptionalSubField" name="Tab.SubFieldConfig" collapse="false" />
-				<tab element="FormCaptcha" name="Tab.FormConfig" collapse="false" />
-				<tab element="OptionalConfirmationMail" name="Tab.ConfirmationMail" collapse="true" />		
+				<tab element="Title" name="Tab.FormPage" collapse="false">
+                    <description><![CDATA[%(key.label.ApolloWebForm.Tab.FormPage.Description)]]></description>
+                </tab>
+				<tab element="InputField" name="Tab.Fields" collapse="false">
+                    <description><![CDATA[%(key.label.ApolloWebForm.Tab.Fields.Description)]]></description>
+                </tab>
+				<tab element="OptionalSubField" name="Tab.SubFieldConfig" collapse="false">
+                <description><![CDATA[%(key.label.ApolloWebForm.Tab.SubFieldConfig.Description)]]></description>
+                </tab>
+				<tab element="MailType" name="Tab.Mail" collapse="true">
+                    <description><![CDATA[%(key.label.ApolloWebForm.Tab.Mail.Description)]]></description>
+                </tab>
 			</tabs>
 			<searchsettings containerPageOnly="true" />
 		</xsd:appinfo>

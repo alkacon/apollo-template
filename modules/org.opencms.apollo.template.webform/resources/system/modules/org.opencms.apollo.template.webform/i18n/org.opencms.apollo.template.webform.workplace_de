@@ -8,11 +8,15 @@ apollo.webform.err.xmlcontent.field.empty = Dieses Feld darf nicht leer sein.
 apollo.webform.warn.xmlcontent.field.empty = Dieses Feld sollte nicht leer sein.
 
 # Form editor tabs
-label.ApolloWebForm.Tab.Basic = Grundkonfiguration
+label.ApolloWebForm.Tab.FormPage = Formularseite
+label.ApolloWebForm.Tab.FormPage.Description = Konfiguriert Texte und Verhaltensweisen der angezeigten Formularseite.
 label.ApolloWebForm.Tab.Fields = Eingabefelder
+label.ApolloWebForm.Tab.Fields.Description = Definiert die angezeigten Eingabefelder des Formulars.
 label.ApolloWebForm.Tab.SubFieldConfig = Abh&auml;ngige Felder
-label.ApolloWebForm.Tab.FormConfig = Zus&auml;tzliche Konfiguration
-label.ApolloWebForm.Tab.ConfirmationMail = Best&auml;tigungsmail
+label.ApolloWebForm.Tab.SubFieldConfig.Description = Mit abh&auml;ngigen Feldern k&ouml;nnen Felder definiert werden, die abh&auml;ngig vom Wert eines Eingabefelds, meist eine Selectbox oder Radiobuttons, angezeigt werden.
+label.ApolloWebForm.Tab.Mail = E-Mail Konfiguration
+label.ApolloWebForm.Tab.Mail.Description = Stellen Sie die Absenderadresse sowie Empf&auml;ngeradresse(n) f&uuml;r die E-Mail Benachrichtigung ein. Au&szlig;erdem k&ouml;nnen weitere Optionen zum _Mail Versand konfiguriert werden.
+
 
 # Form nodes
 label.ApolloWebForm.Title = Titel
@@ -25,20 +29,22 @@ label.ApolloWebForm.FormFooterText = Formular Fusstext
 label.ApolloWebForm.FormFooterText.help = Text, der unterhalb des Submit-Button angezeigt wird.
 label.ApolloWebForm.FormConfirmation = Best&auml;tigungstext
 label.ApolloWebForm.FormConfirmation.help = Text, der auf der Best&auml;tigungsseite angezeigt wird.
-label.ApolloWebForm.TargetUri = Ziel URI
-label.ApolloWebForm.TargetUri.help = Nach dem Versenden der E-Mail Best&auml;tigung wird der Benutzer direkt zu dieser internen URI weitergeleitet.
-label.ApolloWebForm.ForwardMode = Forward Modus 
-label.ApolloWebForm.ForwardMode.help = Anstatt eines Redirects zu der Ziel URI, wird der Request an die Ziel URI weitergeleitet.
-label.ApolloWebForm.InstantRedirect= Sofortige Weiterleitung
-label.ApolloWebForm.InstantRedirect.help = Leitet sofort nach dem ersten Abschicken auf die angegebene Ziel URI um.
 label.ApolloWebForm.ReturnUri = Zur&uuml;ck URI
 label.ApolloWebForm.ReturnUri.help = Eine interne URI die auf der Best&auml;tigungsseite angezeigt wird, um dem Benutzer zu erm&ouml;glichen &uuml;ber diesen Link weiter zu navigieren.
+label.ApolloWebForm.MailType = Mail Typ
+label.ApolloWebForm.MailType.help = Der Typ der E-Mail kann eine <b>Textmail</b> oder eine <b>HTML formatierte Mail</b> sein, Standard ist HTML.
 label.ApolloWebForm.MailFrom = Mail von
 label.ApolloWebForm.MailFrom.help = Absenderadresse der E-Mail, muss eine g&uuml;ltige E-Mailadresse sein, darf nicht leer sein.
 label.ApolloWebForm.MailFromName = Mail von Name
 label.ApolloWebForm.MailFromName.help = Der Name, der von E-Mail Programmen als Absender der E-Mail angezeigt wird.
 label.ApolloWebForm.MailTo = Mail an
 label.ApolloWebForm.MailTo.help = Mailempf&auml;ngeradresse(n), bei mehreren Adressen sind diese durch Semikolons zu trennen.
+label.ApolloWebForm.MailCC = Mail CC 
+label.ApolloWebForm.MailCC.help = E-Mail CC Empf&auml;nger, bei mehreren Empf&auml;ngeradressen sind diese durch Semikolons zu trennen.
+label.ApolloWebForm.MailBCC = Mail BCC
+label.ApolloWebForm.MailBCC.help = E-Mail BCC Empf&auml;nger, bei mehreren Empf&auml;ngeradressen sind diese durch Semikolons zu trennen.
+label.ApolloWebForm.MailCSS = Mail Text CSS
+label.ApolloWebForm.MailCSS.help = Das optionale CSS Style Sheet f&uuml;r die E-Mails, falls das Standard CSS nicht verwendet werden soll.
 label.ApolloWebForm.MailSubject = Mail Betreff
 label.ApolloWebForm.MailSubject.help = Betreff der E-Mail.
 label.ApolloWebForm.MailText = Mail Text
@@ -46,14 +52,7 @@ label.ApolloWebForm.MailText.help = Einleitender Text der E-Mail, es k&ouml;nnen
 
 # Optional configuration options nodes
 label.ApolloWebForm.OptionalFormConfiguration= Erweiterte Konfiguration
-label.OptionalApolloWebFormConfiguration.MailType = Mail Typ
-label.OptionalApolloWebFormConfiguration.MailType.help = Der Typ der E-Mail kann eine <b>Textmail</b> oder eine <b>HTML formatierte Mail</b> sein, Standard ist HTML.
-label.OptionalApolloWebFormConfiguration.MailCC = Mail CC 
-label.OptionalApolloWebFormConfiguration.MailCC.help = E-Mail CC Empf&auml;nger, bei mehreren Empf&auml;ngeradressen sind diese durch Semikolons zu trennen.
-label.OptionalApolloWebFormConfiguration.MailBCC = Mail BCC
-label.OptionalApolloWebFormConfiguration.MailBCC.help = E-Mail BCC Empf&auml;nger, bei mehreren Empf&auml;ngeradressen sind diese durch Semikolons zu trennen.
-label.OptionalApolloWebFormConfiguration.MailCSS = Mail CSS
-label.OptionalApolloWebFormConfiguration.MailCSS.help = Das optionale CSS Style Sheet f&uuml;r die E-Mails, falls das Standard CSS nicht verwendet werden soll.
+
 label.OptionalApolloWebFormConfiguration.ShowCheck = Aktiviere Zwischenseite
 label.OptionalApolloWebFormConfiguration.ShowCheck.help = Wenn aktiviert, wird eine zus&auml;tzliche Zwischenseite zur Kontrolle der Eingabedaten angezeigt, bevor das Formular endg&uuml;ltig verschickt wird.
 label.OptionalApolloWebFormConfiguration.CheckText = Text Zwischenseite
@@ -80,9 +79,16 @@ label.OptionalApolloWebFormConfiguration.ActionClass = Action Klasse
 label.OptionalApolloWebFormConfiguration.ActionClass.help = Die Action Klasse f&uuml;r diese Form, &uuml;ber welche eine Aktion implementiert werden kann, welche nach Speichern/Sendern der Webform Inhalte ausgef&uuml;hrt wird.
 label.OptionalApolloWebFormConfiguration.KeepSession = Erhalte Session
 label.OptionalApolloWebFormConfiguration.KeepSession.help = Wenn aktiviert, kann die Zeit (in Sekunden) angegeben werden, nach der die Session aktualisiert werden soll, w&auml;hrend das Formular angezeigt wird.
+label.OptionalApolloWebFormConfiguration.TargetUri = Ziel URI
+label.OptionalApolloWebFormConfiguration.TargetUri.help = Nach dem Versenden der E-Mail Best&auml;tigung wird der Benutzer direkt zu dieser internen URI weitergeleitet.
+label.OptionalApolloWebFormConfiguration.ForwardMode = Forward Modus 
+label.OptionalApolloWebFormConfiguration.ForwardMode.help = Anstatt eines Redirects zu der Ziel URI, wird der Request an die Ziel URI weitergeleitet.
+label.OptionalApolloWebFormConfiguration.InstantRedirect= Sofortige Weiterleitung
+label.OptionalApolloWebFormConfiguration.InstantRedirect.help = Leitet sofort nach dem ersten Abschicken auf die angegebene Ziel URI um.
  
 # Optional confirmation mail nodes
-label.ApolloWebForm.OptionalConfirmationMail= Best&auml;tigungsmail
+label.ApolloWebForm.OptionalConfirmationMail= Benutzer Best&auml;tigung
+label.ApolloWebForm.OptionalConfirmationMail.help = Optionen, um eine Best&auml;tigungsmail an den Benutzer, der das Formular ausgef&uuml;llt hat, zu schicken.
 label.OptionalApolloWebFormConfirmationMail.ConfirmationMailEnabled = Aktiviere Best&auml;tigungsmail
 label.OptionalApolloWebFormConfirmationMail.ConfirmationMailEnabled.help = Aktiviert das Absenden einer Best&auml;tigungsmail an den Benutzer, der das Formular ausgef&uuml;llt hat.
 label.OptionalApolloWebFormConfirmationMail.ConfirmationMailOptional = W&auml;hlbare Best&auml;tigungsmail
@@ -101,13 +107,13 @@ label.OptionalApolloWebFormConfirmationMail.ConfirmationMailFromName = Best&auml
 label.OptionalApolloWebFormConfirmationMail.ConfirmationMailFromName.help = Optionaler Name, der von E-Mail Programmen als Absender der Best&auml;tigungsmail angezeigt wird.
 
 # Optional field text nodes
-label.ApolloWebForm.OptionalFieldText = Zwischentext
-label.OptionalApolloWebFormFieldText.InputField = Feld Name
+label.ApolloWebForm.OptionalFieldText = Text zwischen Feldern
+label.OptionalApolloWebFormFieldText.InputField = Feld Beschreibungstext
 label.OptionalApolloWebFormFieldText.InputField.help = Der Beschreibungstext des Eingabefelds, nach dem der Text angezeigt wird.
 label.OptionalApolloWebFormFieldText.Column = Text Spalte
 label.OptionalApolloWebFormFieldText.Column.help = Die Spalte, in der der Text angezeigt wird, links, rechts oder beide.
 label.OptionalApolloWebFormFieldText.Text = Text
-label.OptionalApolloWebFormFieldText.Text.help = Dieser Text wird nach dem ausgew&auml;hlten Eingabefeld angezeigt.
+label.OptionalApolloWebFormFieldText.Text.help = Dieser Text wird unterhalb des ausgew&auml;hlten Eingabefelds angezeigt.
 
 # Optional sub field nodes
 label.ApolloWebForm.OptionalSubField = Abh&auml;ngige Felder

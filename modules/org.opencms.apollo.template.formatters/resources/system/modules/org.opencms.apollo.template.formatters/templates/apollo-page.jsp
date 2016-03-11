@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>OpenCms | ${cms.title}</title>
+<title>${cms.title}</title>
 
 <meta charset="${cms.requestContext.encoding}">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">

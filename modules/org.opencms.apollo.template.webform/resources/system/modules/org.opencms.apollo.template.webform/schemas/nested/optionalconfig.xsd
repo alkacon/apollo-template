@@ -13,10 +13,7 @@
 
 	<xsd:complexType name="OpenCmsOptionalApolloWebFormConfiguration">
 		<xsd:sequence>
-			<xsd:element name="MailType" type="OpenCmsString" />
-			<xsd:element name="MailCC" type="OpenCmsString" />
-			<xsd:element name="MailBCC" type="OpenCmsString" />
-			<xsd:element name="MailCSS" type="OpenCmsString" minOccurs="0" />
+			
 			<xsd:element name="ShowCheck" type="OpenCmsBoolean" />
 			<xsd:element name="CheckText" type="OpenCmsHtml" />
 			<xsd:element name="ShowMandatory" type="OpenCmsBoolean" />
@@ -24,6 +21,9 @@
 			<xsd:element name="TemplateFile" type="OpenCmsVfsFile" minOccurs="0" />
 			<xsd:element name="ActionClass" type="OpenCmsString" minOccurs="0" />
 			<xsd:element name="KeepSession" type="OpenCmsString" minOccurs="0" />
+            <xsd:element name="TargetUri" type="OpenCmsVfsFile" minOccurs="0" />
+			<xsd:element name="ForwardMode" type="OpenCmsBoolean" minOccurs="0" />
+            <xsd:element name="InstantRedirect" type="OpenCmsBoolean" minOccurs="0" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
 	</xsd:complexType>
@@ -32,8 +32,6 @@
 		<xsd:appinfo>
 			<resourcebundle name="org.opencms.apollo.template.webform.workplace"/>
 			<layouts>
-				<layout element="MailType" widget="SelectorWidget" configuration="html*:${key.form.email.type.html}|text:${key.form.email.type.text}" />
-				<layout element="MailCSS" widget="TextareaWidget" configuration="6" />
 				<layout element="CheckText" widget="HtmlWidget" configuration="imagegallery,downloadgallery,formatselect,source,link,anchor,table" />
 			</layouts>
 		</xsd:appinfo>
