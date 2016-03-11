@@ -38,7 +38,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Represents a empty field.<p>
+ * Represents a parameter field.<p>
  */
 public class CmsParameterField extends A_CmsField {
 
@@ -156,8 +156,8 @@ public class CmsParameterField extends A_CmsField {
                         }
                         setItems(items);
                     } else {
-                        // parameter has a single value -> display as non-editable text
-                        type = CmsDisplayField.getStaticType();
+                        // parameter has a single value -> display as editable text
+                        type = CmsTextField.getStaticType();
                         String value = paramValues.get(0);
                         if (!isAscii(value)) {
                             value = decode(value);
@@ -167,7 +167,7 @@ public class CmsParameterField extends A_CmsField {
                     }
                 } else {
                     // pre-defined parameter not found in request parameters.
-                    type = CmsDisplayField.getStaticType();
+                    type = CmsTextField.getStaticType();
                     setValue(CmsEncoder.escapeXml(""));
                     setMandatory(false);
                 }

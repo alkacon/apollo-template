@@ -21,7 +21,6 @@
 			<xsd:element name="CheckText" type="OpenCmsHtml" />
 			<xsd:element name="ShowMandatory" type="OpenCmsBoolean" />
 			<xsd:element name="ShowReset" type="OpenCmsBoolean" />
-			<xsd:element name="DynamicFieldClass" type="OpenCmsString" />
 			<xsd:element name="TemplateFile" type="OpenCmsVfsFile" minOccurs="0" />
 			<xsd:element name="ActionClass" type="OpenCmsString" minOccurs="0" />
 			<xsd:element name="KeepSession" type="OpenCmsString" minOccurs="0" />

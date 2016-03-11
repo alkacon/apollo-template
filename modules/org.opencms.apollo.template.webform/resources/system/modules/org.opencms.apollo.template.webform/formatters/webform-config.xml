@@ -22,5 +22,12 @@
     <AutoEnabled>true</AutoEnabled>
     <Detail>false</Detail>
     <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.iconbox)]]></WidgetConfig>
+    </Setting>
   </NewFormatter>
 </NewFormatters>

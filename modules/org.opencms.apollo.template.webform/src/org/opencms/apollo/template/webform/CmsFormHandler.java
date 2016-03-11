@@ -481,18 +481,7 @@ public class CmsFormHandler extends CmsJspActionElement {
                 continue;
             }
             String value = current.toString();
-            if (((current instanceof CmsDynamicField)
-                && !((current instanceof CmsDisplayField) || (current instanceof CmsHiddenDisplayField)))) {
-                if (!current.isMandatory()) {
-                    // show dynamic fields only if they are marked as mandatory
-                    continue;
-                }
-                // compute the value for the dynamic field
-                value = getFormConfiguration().getFieldStringValueByName(current.getName());
-            } else if (current instanceof CmsHiddenDisplayField) {
-                // do not show hidden display fields and empty fields
-                continue;
-            } else if (current instanceof CmsFileUploadField) {
+            if (current instanceof CmsFileUploadField) {
                 value = current.getValue();
                 if (CmsStringUtil.isEmptyOrWhitespaceOnly(value)) {
                     // try to read upload item from session attribute
@@ -1105,16 +1094,6 @@ public class CmsFormHandler extends CmsJspActionElement {
                     continue;
                 }
                 String fValue = field.toString();
-                if ((field instanceof CmsDynamicField)
-                    && !((field instanceof CmsDisplayField) || (field instanceof CmsHiddenDisplayField))) {
-                    fValue = data.getFieldStringValueByName(field.getName());
-                }
-                if (field instanceof CmsDynamicField) {
-                    if (fValue.startsWith(PREFIX_ENCRYPTED)) {
-                        fValue = fValue.substring(PREFIX_ENCRYPTED.length());
-                        fValue = CmsStringCrypter.decrypt(fValue);
-                    }
-                }
                 if (field instanceof CmsFileUploadField) {
                     if (CmsStringUtil.isEmptyOrWhitespaceOnly(fValue)) {
                         // try to read upload item from session attribute
@@ -1369,11 +1348,8 @@ public class CmsFormHandler extends CmsJspActionElement {
         List<I_CmsField> checkFields = new ArrayList<I_CmsField>(fields.size());
         for (int i = 0, n = fields.size(); i < n; i++) {
             I_CmsField current = fields.get(i);
-            if ((!CmsDynamicField.class.isAssignableFrom(current.getClass())
-                && !CmsHiddenField.class.isAssignableFrom(current.getClass())
-                && !CmsCaptchaField.class.isAssignableFrom(current.getClass())
-                && !CmsHiddenDisplayField.class.isAssignableFrom(current.getClass()))
-                || (CmsDisplayField.class.isAssignableFrom(current.getClass()))) {
+            if ((!CmsHiddenField.class.isAssignableFrom(current.getClass())
+                && !CmsCaptchaField.class.isAssignableFrom(current.getClass()))) {
 
                 // only show the empty field in the confirmation mail, if it is marked as mandatory
                 if (((current instanceof CmsEmptyField) && (!current.isMandatory()))
@@ -1456,19 +1432,7 @@ public class CmsFormHandler extends CmsJspActionElement {
                 label = "";
             }
             String value = current.toString();
-            if ((current instanceof CmsDisplayField)) {
-                value = convertToHtmlValue(value);
-            } else if ((current instanceof CmsHiddenDisplayField)) {
-                continue;
-            } else if ((current instanceof CmsDynamicField)) {
-                if (!current.isMandatory()) {
-                    // show dynamic fields only if they are marked as mandatory
-                    continue;
-                }
-                // compute the value for the dynamic field
-                value = getFormConfiguration().getFieldStringValueByName(current.getName());
-                value = convertToHtmlValue(value);
-            } else if (current instanceof CmsTableField) {
+            if (current instanceof CmsTableField) {
                 value = ((CmsTableField)current).buildRows(this);
             } else if (current instanceof CmsPasswordField) {
                 value = value.replaceAll(".", "*");
@@ -1832,7 +1796,7 @@ public class CmsFormHandler extends CmsJspActionElement {
 
         // get the localized messages
         CmsModule module = OpenCms.getModuleManager().getModule(CmsForm.MODULE_NAME);
-        String para = module.getParameter("message", "/org/opencms/apollo/template/webform/workplace");
+        String para = module.getParameter("message", "org.opencms.apollo.template.webform.workplace");
 
         // get the site message
         String siteroot = getCmsObject().getRequestContext().getSiteRoot();

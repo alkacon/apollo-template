@@ -577,53 +577,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.webform/classes/org/opencms/apollo/template/webform/messages_de.properties</source>
-			<destination>system/modules/org.opencms.apollo.template.webform/classes/org/opencms/apollo/template/webform/messages_de.properties</destination>
-			<type>plain</type>
-			<uuidstructure>7e0f638c-e6a8-11e5-8ea1-0242ac11002b</uuidstructure>
-			<uuidresource>7e0f638d-e6a8-11e5-8ea1-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Nov 2011 14:23:34 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.webform/classes/org/opencms/apollo/template/webform/workplace.properties</source>
-			<destination>system/modules/org.opencms.apollo.template.webform/classes/org/opencms/apollo/template/webform/workplace.properties</destination>
-			<type>plain</type>
-			<uuidstructure>7e115f5f-e6a8-11e5-8ea1-0242ac11002b</uuidstructure>
-			<uuidresource>7e115f60-e6a8-11e5-8ea1-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Nov 2011 14:23:34 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.webform/classes/org/opencms/apollo/template/webform/workplace_de.properties</source>
-			<destination>system/modules/org.opencms.apollo.template.webform/classes/org/opencms/apollo/template/webform/workplace_de.properties</destination>
-			<type>plain</type>
-			<uuidstructure>7e138242-e6a8-11e5-8ea1-0242ac11002b</uuidstructure>
-			<uuidresource>7e138243-e6a8-11e5-8ea1-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Nov 2011 14:23:34 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo.template.webform/classes/org/opencms/apollo/template/webform/workplace_en.properties</destination>
-			<type>plain</type>
-			<uuidstructure>102ab17e-e6c4-11e5-804b-0242ac11002b</uuidstructure>
-			<uuidresource>7e115f60-e6a8-11e5-8ea1-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Nov 2011 14:23:34 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>system/modules/org.opencms.apollo.template.webform/elements</destination>
 			<type>folder</type>
 			<uuidstructure>7e1975bb-e6a8-11e5-8ea1-0242ac11002b</uuidstructure>
@@ -740,6 +693,52 @@
 					<value><![CDATA[false]]></value>
 				</property>
 			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.webform/i18n</destination>
+			<type>folder</type>
+			<uuidstructure>60d9a8a7-e75d-11e5-ae6a-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 11 Mar 2016 07:46:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.webform/i18n/org.opencms.apollo.template.webform.messages_de</source>
+			<destination>system/modules/org.opencms.apollo.template.webform/i18n/org.opencms.apollo.template.webform.messages_de</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>7e5a744d-e75d-11e5-ae6a-0242ac11002b</uuidstructure>
+			<uuidresource>7e5a744e-e75d-11e5-ae6a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 11 Mar 2016 07:47:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.webform/i18n/org.opencms.apollo.template.webform.workplace</source>
+			<destination>system/modules/org.opencms.apollo.template.webform/i18n/org.opencms.apollo.template.webform.workplace</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>7e5d818f-e75d-11e5-ae6a-0242ac11002b</uuidstructure>
+			<uuidresource>7e5d8190-e75d-11e5-ae6a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 11 Mar 2016 07:47:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.webform/i18n/org.opencms.apollo.template.webform.workplace_de</source>
+			<destination>system/modules/org.opencms.apollo.template.webform/i18n/org.opencms.apollo.template.webform.workplace_de</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>7e60b5e1-e75d-11e5-ae6a-0242ac11002b</uuidstructure>
+			<uuidresource>7e60b5e2-e75d-11e5-ae6a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 11 Mar 2016 07:47:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>

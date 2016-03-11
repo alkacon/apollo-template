@@ -91,12 +91,9 @@ public final class CmsFieldFactory {
         registerFieldType(CmsTextareaField.getStaticType(), CmsTextareaField.class.getName());
         registerFieldType(CmsEmptyField.getStaticType(), CmsEmptyField.class.getName());
         registerFieldType(CmsPrivacyField.getStaticType(), CmsPrivacyField.class.getName());
-        registerFieldType(CmsDynamicField.getStaticType(), CmsDynamicField.class.getName());
         registerFieldType(CmsTableField.getStaticType(), CmsTableField.class.getName());
         registerFieldType(CmsPasswordField.getStaticType(), CmsPasswordField.class.getName());
         registerFieldType(CmsPagingField.getStaticType(), CmsPagingField.class.getName());
-        registerFieldType(CmsDisplayField.getStaticType(), CmsDisplayField.class.getName());
-        registerFieldType(CmsHiddenDisplayField.getStaticType(), CmsHiddenDisplayField.class.getName());
         registerFieldType(CmsParameterField.getStaticType(), CmsParameterField.class.getName());
 
         File propertyFile = null;

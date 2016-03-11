@@ -123,6 +123,7 @@ public abstract class A_CmsField implements I_CmsField {
      *
      * @return the HTML input element for this element to be used in a frontend JSP
      */
+    @Override
     public String buildHtml(
         CmsFormHandler formHandler,
         CmsMessages messages,
@@ -436,7 +437,7 @@ public abstract class A_CmsField implements I_CmsField {
     /**
      * This functions looks if the row should be started. By one colsize, its
      * every time starting. By two colsize every second cell its starting.<p>
-    
+
      * @return true if the row should be shown
      */
     public boolean isShowRowStart() {

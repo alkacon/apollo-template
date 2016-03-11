@@ -1,4 +1,7 @@
-<%@page buffer="none" session="false" taglibs="c,cms,fmt,fn" import="org.opencms.apollo.template.webform.*"%>
+<%@page buffer="none" session="false" trimDirectiveWhitespaces="true" import="org.opencms.apollo.template.webform.*" %>
+<%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <c:set var="uri" value="${cms.element.sitePath}" />
 <%
 	CmsFormHandler form = null;
@@ -25,7 +28,7 @@
 </c:choose>
 
 <cms:formatter var="content" val="value">
-	<div class="OpenCmsWebform">
+	<div class="OpenCmsApolloWebform ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "mb-20"}">
 		<%
 			form.createForm();
 		%>

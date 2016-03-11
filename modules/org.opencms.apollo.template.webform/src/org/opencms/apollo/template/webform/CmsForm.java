@@ -63,15 +63,6 @@ import org.apache.commons.fileupload.FileItem;
  */
 public class CmsForm {
 
-    /** Constant used as value in the XML content defining that the data target is database. */
-    public static final String DATATARGET_DATABASE = "database";
-
-    /** Constant used as value in the XML content defining that the data target is email. */
-    public static final String DATATARGET_EMAIL = "email";
-
-    /** Constant used as value in the XML content defining that the data target is database and email. */
-    public static final String DATATARGET_EMAIL_DATABASE = "email-database";
-
     /** The macro to determine that field items for radio buttons and check boxes should be shown in a row. */
     public static final String MACRO_SHOW_ITEMS_IN_ROW = "%(row)";
 
@@ -137,9 +128,6 @@ public class CmsForm {
 
     /** Configuration node name for the date. */
     public static final String NODE_DATE = "Date";
-
-    /** Configuration node name for the optional dynamic field class node. */
-    public static final String NODE_DYNAMICFIELDCLASS = "DynamicFieldClass";
 
     /** Configuration node name for the Email node. */
     public static final String NODE_EMAIL = "Email";
@@ -301,10 +289,7 @@ public class CmsForm {
         + CmsForm.MODULE_NAME
         + "/resources/formtemplates/error.st";
 
-    /** Resource type ID of XML content forms. */
-    public static final String TYPE_NAME = "alkacon-v8-webform";
-
-    /** configuration value. */
+    /** The webform action class name. */
     protected String m_actionClass;
 
     /** The captcha field. */
@@ -351,9 +336,6 @@ public class CmsForm {
 
     /** Stores the form dynamic input fields. */
     protected List<I_CmsField> m_dynaFields;
-
-    /** The class name for the dynamic field value resolver. */
-    protected String m_dynamicFieldClass;
 
     /** The optional form expiration date. */
     protected long m_expirationDate;
@@ -553,16 +535,6 @@ public class CmsForm {
             return value;
         }
         return defaultValue;
-    }
-
-    /**
-     * Returns the resource type name of XML content forms.<p>
-     *
-     * @return the resource type name of XML content forms
-     */
-    public static String getStaticType() {
-
-        return TYPE_NAME;
     }
 
     /**
@@ -828,16 +800,6 @@ public class CmsForm {
     }
 
     /**
-     * Returns the class name for the dynamic field value resolver.<p>
-     *
-     * @return the class name for the dynamic field value resolver
-     */
-    public String getDynamicFieldClass() {
-
-        return m_dynamicFieldClass;
-    }
-
-    /**
      * Returns the optional form expiration date.<p>
      *
      * @return the optional form expiration date
@@ -910,9 +872,6 @@ public class CmsForm {
         I_CmsField field = m_fieldsByName.get(fieldName);
         if (field != null) {
             String fieldValue = field.getValue();
-            if ((field instanceof CmsDynamicField)) {
-                fieldValue = getDynamicFieldValue((CmsDynamicField)field);
-            }
             return (fieldValue != null) ? fieldValue.trim() : "";
         }
 
@@ -1488,13 +1447,7 @@ public class CmsForm {
      */
     protected void addField(I_CmsField field) {
 
-        if ((field instanceof CmsDisplayField) || (field instanceof CmsHiddenDisplayField)) {
-            m_fields.add(field);
-        } else if (field instanceof CmsDynamicField) {
-            m_dynaFields.add(field);
-        } else {
-            m_fields.add(field);
-        }
+        m_fields.add(field);
         // the fields are also internally backed in a map keyed by their field name
         m_fieldsByName.put(field.getName(), field);
     }
@@ -1529,27 +1482,6 @@ public class CmsForm {
         items.add(item);
         field.setItems(items);
         return field;
-    }
-
-    /**
-     * Resolves the value of a dynamic field.<p>
-     *
-     * @param field the field to resolve the value for
-     *
-     * @return the value of the given dynamic field
-     */
-    protected String getDynamicFieldValue(CmsDynamicField field) {
-
-        if (field.getResolvedValue() == null) {
-            try {
-                I_CmsDynamicFieldResolver resolver = (I_CmsDynamicFieldResolver)Class.forName(
-                    getDynamicFieldClass()).newInstance();
-                field.setResolvedValue(resolver.resolveValue(field, this));
-            } catch (Throwable e) {
-                field.setResolvedValue(e.getLocalizedMessage());
-            }
-        }
-        return field.getResolvedValue();
     }
 
     /**
@@ -1793,9 +1725,6 @@ public class CmsForm {
             // get the check page text
             stringValue = getContentStringValue(content, cms, pathPrefix + NODE_FORMCHECKTEXT, locale);
             setFormCheckText(getConfigurationValue(resolver, stringValue, ""));
-            // get the dynamic fields class
-            stringValue = getContentStringValue(content, cms, pathPrefix + NODE_DYNAMICFIELDCLASS, locale);
-            setDynamicFieldClass(getConfigurationValue(stringValue, ""));
             // get the optional HTML template file
             stringValue = getContentStringValue(content, cms, pathPrefix + NODE_TEMPLATE_FILE, locale);
             String defaultTemplateFile = OpenCms.getModuleManager().getModule(MODULE_NAME).getParameter(
@@ -1855,11 +1784,6 @@ public class CmsForm {
             stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_FORMCHECKTEXT);
             if (stringValue != null) {
                 setFormCheckText(getConfigurationValue(resolver, stringValue, ""));
-            }
-            // get the dynamic fields class
-            stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_DYNAMICFIELDCLASS);
-            if (stringValue != null) {
-                setDynamicFieldClass(getConfigurationValue(stringValue, ""));
             }
             // get the optional HTML template file
             stringValue = getValueFromDynamicConfig(dynamicConfig, pathPrefix + NODE_TEMPLATE_FILE);
@@ -2354,16 +2278,6 @@ public class CmsForm {
     protected void setConfirmationMailTextPlain(String confirmationMailTextPlain) {
 
         m_confirmationMailTextPlain = confirmationMailTextPlain;
-    }
-
-    /**
-     * Sets the class name for the dynamic field value resolver.<p>
-     *
-     * @param className the class name to set
-     */
-    protected void setDynamicFieldClass(String className) {
-
-        m_dynamicFieldClass = className;
     }
 
     /**
@@ -2919,18 +2833,12 @@ public class CmsForm {
             && !CmsTableField.class.isAssignableFrom(field.getClass())) {
             // only fill in values from configuration file if called initially
             if (!field.needsItems()) {
-                if (CmsDisplayField.class.isAssignableFrom(field.getClass())
-                    || CmsHiddenDisplayField.class.isAssignableFrom(field.getClass())) {
-                    String fieldValue = getDynamicFieldValue((CmsDynamicField)field);
-                    field.setValue(fieldValue);
-                } else {
-                    String fieldValue = content.getStringValue(cms, inputFieldPath + NODE_FIELDDEFAULTVALUE, locale);
-                    if (CmsStringUtil.isNotEmpty(fieldValue)) {
-                        CmsMacroResolver resolver = CmsMacroResolver.newInstance().setCmsObject(cms).setJspPageContext(
-                            jsp.getJspContext());
-                        fieldValue = resolver.resolveMacros(fieldValue);
-                        field.setValue(fieldValue.trim());
-                    }
+                String fieldValue = content.getStringValue(cms, inputFieldPath + NODE_FIELDDEFAULTVALUE, locale);
+                if (CmsStringUtil.isNotEmpty(fieldValue)) {
+                    CmsMacroResolver resolver = CmsMacroResolver.newInstance().setCmsObject(cms).setJspPageContext(
+                        jsp.getJspContext());
+                    fieldValue = resolver.resolveMacros(fieldValue);
+                    field.setValue(fieldValue.trim());
                 }
             } else {
                 // for field that needs items,
@@ -2965,17 +2873,6 @@ public class CmsForm {
                 }
             }
             field.setValue(value.toString());
-        } else if (CmsDisplayField.class.isAssignableFrom(field.getClass())
-            || CmsDisplayField.class.isAssignableFrom(field.getClass())) {
-            String fieldValue = getDynamicFieldValue((CmsDynamicField)field);
-            if (CmsStringUtil.isEmpty(fieldValue)) {
-                // get field value from request for standard fields
-                String[] parameterValues = m_parameterMap.get(field.getName());
-                if (parameterValues != null) {
-                    fieldValue = parameterValues[0];
-                }
-            }
-            field.setValue(fieldValue);
         } else if (CmsEmptyField.class.isAssignableFrom(field.getClass())) {
             String fieldValue = content.getStringValue(cms, inputFieldPath + NODE_FIELDDEFAULTVALUE, locale);
             field.setValue(fieldValue);
