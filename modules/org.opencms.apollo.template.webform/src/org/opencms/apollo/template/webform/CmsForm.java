@@ -36,6 +36,7 @@ import org.opencms.file.CmsFile;
 import org.opencms.file.CmsObject;
 import org.opencms.i18n.CmsMessages;
 import org.opencms.jsp.CmsJspActionElement;
+import org.opencms.mail.CmsMailHost;
 import org.opencms.main.OpenCms;
 import org.opencms.util.CmsMacroResolver;
 import org.opencms.util.CmsStringUtil;
@@ -2519,6 +2520,11 @@ public class CmsForm {
                 // specified confirmation mail input field has wrong field type
                 getConfigurationErrors().add(messages.key("form.configuration.error.emailfield.type"));
             }
+        }
+        // check mail configuration
+        CmsMailHost host = OpenCms.getSystemInfo().getMailSettings().getDefaultMailHost();
+        if ("my.smtp.server".equals(host.getHostname())) {
+            getConfigurationErrors().add(messages.key("form.configuration.error.email.host"));
         }
     }
 

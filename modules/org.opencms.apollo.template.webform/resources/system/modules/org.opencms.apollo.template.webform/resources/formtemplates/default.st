@@ -111,25 +111,6 @@ $row_end(field=field,formconfig=formconfig)$
 >>
 
 
-field_display(field,formconfig,attributes,errormessage,mandatory) ::= <<
-$! ###### DISPLAY field ###### !$
-$row_start(field=field)$
-$label(field=field,formconfig=formconfig,errormessage=errormessage,mandatory=mandatory)$
-<label class="input$if(errormessage)$ state-error$endif$">
-	$if(field.valueEscaped)$
-		$field.valueEscaped$
-	$else$
-		&nbsp;
-	$endif$
-	<input type="hidden" name="$field.name$" value="$field.valueEscaped$"/>
-</label>
-$if(errormessage)$
-	<div class="note note-error">$errormessage$</div>
-$endif$
-$row_end(field=field,formconfig=formconfig)$
->>
-
-
 field_email(field,formconfig,errormessage,mandatory) ::= <<
 $! ###### EMAIL field ###### !$
 $field_text(field=field,formconfig=formconfig,errormessage=errormessage,mandatory=mandatory)$
@@ -179,19 +160,6 @@ field_hidden(field,formconfig,attributes,errormessage,mandatory) ::= <<
 $! ###### HIDDEN field ###### !$
 <div style="display: none;"><input type="hidden" name="$field.name$" value="$field.valueEscaped$"/></div>
 $subtext(field=field,formconfig=formconfig)$
->>
-
-
-field_hiddendisplay(field,formconfig,attributes,errormessage,mandatory) ::= <<
-$! ###### HIDDEN DISPLAY field ###### !$
-$row_start(field=field)$
-<label class="input">
-	<input type="hidden" name="$field.name$" value="$field.valueEscaped$"/>
-</label>
-$if(errormessage)$
-	<div class="note note-error">$errormessage$</div>
-$endif$
-$row_end(field=field,formconfig=formconfig)$
 >>
 
 
@@ -523,50 +491,6 @@ $confirmfields:{
 >>
 
 
-datadownloadpage(formuri,formconfig,locale,skinuri,labelfrom,datefrom,labelto,dateto,calendaralttext,submitbutton,resetbutton) ::= <<
-$! ###### DATA DOWNLOAD page of the form ###### !$
-<style type="text/css">
-.webform_row {
-	display: block;
-	margin-bottom: 8px;
-}
-.webform_row label {
-	display: inline-block;
-	width: 160px;
-}
-.calendarinput {
-	padding: 1px 2px 1px 2px; border-top: 1px solid #868686; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-left: 1px solid #868686; background-color: #fff; width: 150px;
-}
-.calendarbutton {
-	height: 20px; width: 20px; border: 0px none; vertical-align: middle;
-}
-a.button {
-	color: ButtonText; text-decoration: none; cursor: pointer;
-}
-</style>
-<div>
-	<form name="emailform$formconfig.configId$" action="$formuri$" method="post">
-		<div class="webform_row">
-			<label for="starttime">$labelfrom$</label>
-			<input id="starttime" type="text" value="$datefrom$" name="starttime" class="calendarinput" />  
-			<a href="#" class="button" title="$calendaralttext$" id="starttime.calendar"><img class="calendarbutton" src="$skinuri$buttons/calendar.png" alt="$calendaralttext$"></a>
-		</div>
-		<div class="webform_row">
-			<label for="endtime">$labelto$</label>
-			<input id="endtime" type="text" value="$dateto$" name="endtime" class="calendarinput" /> 
-			<a href="#" class="button" title="$calendaralttext$" id="endtime.calendar"><img class="calendarbutton" src="$skinuri$buttons/calendar.png" alt="$calendaralttext$"></a>
-		</div>
-		<div class="webform_row">
-			<input type="submit" value="$submitbutton$" class="formbutton" />&nbsp;&nbsp;
-			<input type="reset" value="$resetbutton$" class="formbutton"/>
-		</div>
-		<input type="hidden" name="formaction$formconfig.configId$" value="export2" />
-		<input type="hidden" name="__locale" value="$locale$" />
-	</form>
-</div>
->>
-
-
 htmlemail(mailcss,mailtext,errorheadline,errors) ::= <<
 $! ###### HTML email for the form ###### !$
 <html><head>
@@ -625,16 +549,20 @@ $rest(fields):{
 
 emailerror(headline,text,error) ::= <<
 $! ###### EMAIL error message ###### !$
-<h3 class="webform_error_start">$headline$</h3>
-<p class="webform_error_text_start">$text$</p>
-<!--
-        Error description: $error$
-//-->
+<div class="alert alert-danger">
+    <h3 class="webform_error_start">$headline$</h3>
+    <p class="webform_error_text">$text$</p>
+    <!--
+            Error description: $error$
+    //-->
+</div>
 >>
 
 
 initerror(headline,text) ::= <<
 $! ###### Initialization error message ###### !$
-<h1 class="webform_error_start">$headline$</h1>
-<p class="webform_error_text_start">$text$</p>
+<div class="alert alert-warning">
+    <h3 class="webform_error_start">$headline$</h3>
+    <p class="webform_error_text">$text$</p>
+</div>
 >>

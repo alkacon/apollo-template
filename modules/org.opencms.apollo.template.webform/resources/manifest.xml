@@ -714,7 +714,12 @@
 			<uuidresource>7e5a744e-e75d-11e5-ae6a-0242ac11002b</uuidresource>
 			<datecreated>Fri, 11 Mar 2016 07:47:24 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
@@ -738,7 +743,12 @@
 			<uuidresource>7e60b5e2-e75d-11e5-ae6a-0242ac11002b</uuidresource>
 			<datecreated>Fri, 11 Mar 2016 07:47:24 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>

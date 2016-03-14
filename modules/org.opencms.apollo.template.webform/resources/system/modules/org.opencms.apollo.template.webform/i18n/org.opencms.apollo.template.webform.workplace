@@ -9,13 +9,13 @@ apollo.webform.warn.xmlcontent.field.empty = This field should not be empty.
 
 # Form editor tabs
 label.ApolloWebForm.Tab.FormPage = Form page
-label.ApolloWebForm.Tab.FormPage.Description = Configures texts and behaviour of the shown form page.
+label.ApolloWebForm.Tab.FormPage.Description = <div style="border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Configures texts and behaviour of the shown form page.</div>
 label.ApolloWebForm.Tab.Fields = Inputs fields
-label.ApolloWebForm.Tab.Fields.Description = Defines the shown fields of the form.
+label.ApolloWebForm.Tab.Fields.Description = <div style="border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Defines the shown fields of the form.</div>
 label.ApolloWebForm.Tab.SubFieldConfig = Dependent fields
-label.ApolloWebForm.Tab.SubFieldConfig.Description = With dependent fields it is possible to define fields which are shown if an input field (usually a select box or radio buttons) has a specific value.
+label.ApolloWebForm.Tab.SubFieldConfig.Description = <div style="border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">With dependent fields it is possible to define fields which are shown if an input field (usually a select box or radio buttons) has a specific value.</div>
 label.ApolloWebForm.Tab.Mail = Email configuration
-label.ApolloWebForm.Tab.Mail.Description = Set the sender and receiver adresse(s) for the notification email. Additional options for sending the mail can be configured.
+label.ApolloWebForm.Tab.Mail.Description = <div style="border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Set the sender and receiver addresse(s) for the notification email. Additional options for sending the mail can be configured.</div>
 
 # Form nodes
 label.ApolloWebForm.Title = Title
@@ -166,12 +166,9 @@ form.field.type.hidden = Hidden field
 form.field.type.email = Email field 
 form.field.type.fileupload = File upload
 form.field.type.empty = Empty field
-form.field.type.dynamic = Dynamic field
 form.field.type.table = Table field
 form.field.type.password = Password field
 form.field.type.paging = New page
-form.field.type.display = Display field
-form.field.type.hiddendisplay = Hidden display
 form.field.type.parameter = Parameter field
 
 # Mail types
@@ -208,6 +205,7 @@ form.init.error.description = Most likely, the form has not yet been edited or f
 form.configuration.error.headline = The online form contains the following configuration errors:
 form.configuration.error.emailfield.notfound = The input field specified to be used for the confirmation email does not exist.
 form.configuration.error.emailfield.type = The input field specified to be used for the confirmation email does not have the type "Email field".
+form.configuration.error.email.host = Please note: the mail host that is used by the webform to send the form data has not yet been configured.
 
 # Used for form HTML creation
 form.html.multiline.placeholder = 0
@@ -277,4 +275,4 @@ label.CaptchaPreset.FilterWaveLength.help = Sets the length of a wave for the de
 GUI_FORMCAPTCHA_LABEL_DEFAULT_0 = Please copy the letters from the image to the field below.
 
 webform.init.newAlkaconWebform	= New Webform
-webform.init.pleaseEdit	= Please edit!
+webform.init.pleaseEdit	= Please edit the content.

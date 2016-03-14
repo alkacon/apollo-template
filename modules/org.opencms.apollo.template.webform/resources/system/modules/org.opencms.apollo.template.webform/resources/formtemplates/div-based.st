@@ -117,25 +117,6 @@ $row_end(field=field,formconfig=formconfig)$
 >>
 
 
-field_display(field,formconfig,attributes,errormessage,mandatory) ::= <<
-$! ###### DISPLAY field ###### !$
-$row_start(field=field)$
-$label(field=field,formconfig=formconfig,errormessage=errormessage,mandatory=mandatory)$
-<div class="webform_field">
-	$if(field.valueEscaped)$
-		$field.valueEscaped$
-	$else$
-		&nbsp;
-	$endif$
-	<input type="hidden" name="$field.name$" value="$field.valueEscaped$"/>
-	$if(errormessage)$
-	<br/><span class="webform_label_error">$errormessage$</span>
-	$endif$
-</div>
-$row_end(field=field,formconfig=formconfig)$
->>
-
-
 field_email(field,formconfig,errormessage,mandatory) ::= <<
 $! ###### EMAIL field ###### !$
 $field_text(field=field,formconfig=formconfig,errormessage=errormessage,mandatory=mandatory)$
@@ -193,21 +174,6 @@ field_hidden(field,formconfig,attributes,errormessage,mandatory) ::= <<
 $! ###### HIDDEN field ###### !$
 <div style="display: none;"><input type="hidden" name="$field.name$" value="$field.valueEscaped$"/></div>
 $subtext(field=field,formconfig=formconfig)$
->>
-
-
-field_hiddendisplay(field,formconfig,attributes,errormessage,mandatory) ::= <<
-$! ###### HIDDEN DISPLAY field ###### !$
-$row_start(field=field)$
-<div class="webform_label">&nbsp;</div>
-<div class="webform_field">
-
-	<input type="hidden" name="$field.name$" value="$field.valueEscaped$"/>
-	$if(errormessage)$
-	<br/><span class="webform_label_error">$errormessage$</span>
-	$endif$
-</div>
-$row_end(field=field,formconfig=formconfig)$
 >>
 
 
@@ -571,50 +537,6 @@ $confirmfields:{
 		<div class="webform_field">$it.value$</div>
 	</div>
 }$
-</div>
->>
-
-
-datadownloadpage(formuri,formconfig,locale,skinuri,labelfrom,datefrom,labelto,dateto,calendaralttext,submitbutton,resetbutton) ::= <<
-$! ###### DATA DOWNLOAD page of the form ###### !$
-<style type="text/css">
-.webform_row {
-	display: block;
-	margin-bottom: 8px;
-}
-.webform_row label {
-	display: inline-block;
-	width: 160px;
-}
-.calendarinput {
-	padding: 1px 2px 1px 2px; border-top: 1px solid #868686; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-left: 1px solid #868686; background-color: #fff; width: 150px;
-}
-.calendarbutton {
-	height: 20px; width: 20px; border: 0px none; vertical-align: middle;
-}
-a.button {
-	color: ButtonText; text-decoration: none; cursor: pointer;
-}
-</style>
-<div>
-	<form name="emailform$formconfig.configId$" action="$formuri$" method="post">
-		<div class="webform_row">
-			<label for="starttime">$labelfrom$</label>
-			<input id="starttime" type="text" value="$datefrom$" name="starttime" class="calendarinput" />  
-			<a href="#" class="button" title="$calendaralttext$" id="starttime.calendar"><img class="calendarbutton" src="$skinuri$buttons/calendar.png" alt="$calendaralttext$"></a>
-		</div>
-		<div class="webform_row">
-			<label for="endtime">$labelto$</label>
-			<input id="endtime" type="text" value="$dateto$" name="endtime" class="calendarinput" /> 
-			<a href="#" class="button" title="$calendaralttext$" id="endtime.calendar"><img class="calendarbutton" src="$skinuri$buttons/calendar.png" alt="$calendaralttext$"></a>
-		</div>
-		<div class="webform_row">
-			<input type="submit" value="$submitbutton$" class="formbutton" />&nbsp;&nbsp;
-			<input type="reset" value="$resetbutton$" class="formbutton"/>
-		</div>
-		<input type="hidden" name="formaction$formconfig.configId$" value="export2" />
-		<input type="hidden" name="__locale" value="$locale$" />
-	</form>
 </div>
 >>
 

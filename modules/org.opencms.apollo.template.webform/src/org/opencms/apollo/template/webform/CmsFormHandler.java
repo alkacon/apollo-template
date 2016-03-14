@@ -1492,6 +1492,14 @@ public class CmsFormHandler extends CmsJspActionElement {
             mandatoryMessage = getMessages().key("form.message.mandatory");
         }
 
+        // check if the mail host has been configured
+        if (!hasValidationErrors()
+            && getFormConfiguration().hasConfigurationErrors()
+            && getFormConfiguration().getConfigurationErrors().contains(
+                getMessages().key("form.configuration.error.email.host"))) {
+            errorMessage = getMessages().key("form.configuration.error.email.host");
+        }
+
         // calculate fields to show (e.g. if paging is activated)
         boolean paging = false;
         int pos = 0;
