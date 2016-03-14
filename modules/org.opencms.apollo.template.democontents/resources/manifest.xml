@@ -18,6 +18,7 @@ writeProperty '/' 'apollo.css.coloredbox' 'colored-box yellow line-top-color-red
 writeProperty '/' 'apollo.css.color' 'red:%(key.apollo.setting.color.red)|purple:%(key.apollo.setting.color.purple)|blue:%(key.apollo.setting.color.blue)|green:%(key.apollo.setting.color.green)|yellow:%(key.apollo.setting.color.yellow)|orange:%(key.apollo.setting.color.orange)'
 writeProperty '/' 'apollo.css.iconbox' 'service-block service-block-default:%(key.apollo.setting.cssclass.lightbox)|service-block service-block-red rounded-2x:%(key.apollo.setting.cssclass.redbox)'
 writeProperty '/' 'apollo.css.icon' 'icon-bg-default fa fa-info:%(key.apollo.setting.iconclass.info)|icon-bg-red fa fa-lightbulb-o:%(key.apollo.setting.iconclass.lightbulb)'
+writeProperty '/' 'apollo.title.prefix' 'OpenCms |'
 
 createUser 'Author' 'password' 'Sample author user'
 addUserToGroup 'Author' 'Users'
