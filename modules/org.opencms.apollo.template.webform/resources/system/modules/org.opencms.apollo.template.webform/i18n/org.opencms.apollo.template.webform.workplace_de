@@ -9,13 +9,13 @@ apollo.webform.warn.xmlcontent.field.empty = Dieses Feld sollte nicht leer sein.
 
 # Form editor tabs
 label.ApolloWebForm.Tab.FormPage = Formularseite
-label.ApolloWebForm.Tab.FormPage.Description = <div style="border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Konfiguriert Texte und Verhaltensweisen der angezeigten Formularseite.</div>
+label.ApolloWebForm.Tab.FormPage.Description = <div style="background-color: #ffffcc; color: #474747; border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Konfiguriert Texte und Verhaltensweisen der angezeigten Formularseite.</div>
 label.ApolloWebForm.Tab.Fields = Eingabefelder
-label.ApolloWebForm.Tab.Fields.Description = <div style="border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Definiert die angezeigten Eingabefelder des Formulars.</div>
+label.ApolloWebForm.Tab.Fields.Description = <div style="background-color: #ffffcc; color: #474747; border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Definiert die angezeigten Eingabefelder des Formulars.</div>
 label.ApolloWebForm.Tab.SubFieldConfig = Abhängige Felder
-label.ApolloWebForm.Tab.SubFieldConfig.Description = <div style="border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Mit abhängigen Feldern können Felder definiert werden, die abhängig vom Wert eines Eingabefelds, meist eine Selectbox oder Radiobuttons, angezeigt werden.</div>
+label.ApolloWebForm.Tab.SubFieldConfig.Description = <div style="background-color: #ffffcc; color: #474747; border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Mit abhängigen Feldern können Felder definiert werden, die abhängig vom Wert eines Eingabefelds, meist eine Selectbox oder Radiobuttons, angezeigt werden.</div>
 label.ApolloWebForm.Tab.Mail = E-Mail Konfiguration
-label.ApolloWebForm.Tab.Mail.Description = <div style="border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Stellen Sie die Absenderadresse sowie Empfängeradresse(n) für die E-Mail Benachrichtigung ein. Außerdem können weitere Optionen zum E-Mail Versand konfiguriert werden.</div>
+label.ApolloWebForm.Tab.Mail.Description = <div style="background-color: #ffffcc; color: #474747; border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Stellen Sie die Absenderadresse sowie Empfängeradresse(n) für die E-Mail Benachrichtigung ein. Außerdem können weitere Optionen zum E-Mail Versand konfiguriert werden.</div>
 
 
 # Form nodes
