@@ -1231,8 +1231,8 @@
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-config.xml</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-config.xml</destination>
 			<type>formatter_config</type>
-			<uuidstructure>77afe200-5578-11e5-8d6b-0242ac11002b</uuidstructure>
-			<uuidresource>77afe201-5578-11e5-8d6b-0242ac11002b</uuidresource>
+			<uuidstructure>34dec913-eaaf-11e5-99f8-0242ac11002b</uuidstructure>
+			<uuidresource>34dec914-eaaf-11e5-99f8-0242ac11002b</uuidresource>
 			<datecreated>Mon, 07 Sep 2015 15:52:39 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
@@ -1260,8 +1260,8 @@
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-iconbox-config.xml</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-iconbox-config.xml</destination>
 			<type>formatter_config</type>
-			<uuidstructure>c58c6dae-56fc-11e5-aad7-0242ac11002b</uuidstructure>
-			<uuidresource>c58c6daf-56fc-11e5-aad7-0242ac11002b</uuidresource>
+			<uuidstructure>34e11309-eaaf-11e5-99f8-0242ac11002b</uuidstructure>
+			<uuidresource>34e1130a-eaaf-11e5-99f8-0242ac11002b</uuidresource>
 			<datecreated>Wed, 09 Sep 2015 14:12:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
@@ -1289,8 +1289,8 @@
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-iconbox.jsp</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-iconbox.jsp</destination>
 			<type>jsp</type>
-			<uuidstructure>c5862c1b-56fc-11e5-aad7-0242ac11002b</uuidstructure>
-			<uuidresource>c5862c1c-56fc-11e5-aad7-0242ac11002b</uuidresource>
+			<uuidstructure>34e3840f-eaaf-11e5-99f8-0242ac11002b</uuidstructure>
+			<uuidresource>34e38410-eaaf-11e5-99f8-0242ac11002b</uuidresource>
 			<datecreated>Wed, 09 Sep 2015 14:12:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
@@ -1314,8 +1314,8 @@
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-jumbotron-config.xml</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-jumbotron-config.xml</destination>
 			<type>formatter_config</type>
-			<uuidstructure>a97bae42-55fd-11e5-8d6b-0242ac11002b</uuidstructure>
-			<uuidresource>a97bae43-55fd-11e5-8d6b-0242ac11002b</uuidresource>
+			<uuidstructure>34e5cd04-eaaf-11e5-99f8-0242ac11002b</uuidstructure>
+			<uuidresource>34e5cd05-eaaf-11e5-99f8-0242ac11002b</uuidresource>
 			<datecreated>Tue, 08 Sep 2015 07:46:06 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
@@ -1343,8 +1343,8 @@
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-jumbotron.jsp</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-jumbotron.jsp</destination>
 			<type>jsp</type>
-			<uuidstructure>b0901ea8-55fd-11e5-8d6b-0242ac11002b</uuidstructure>
-			<uuidresource>b0901ea9-55fd-11e5-8d6b-0242ac11002b</uuidresource>
+			<uuidstructure>34e7efea-eaaf-11e5-99f8-0242ac11002b</uuidstructure>
+			<uuidresource>34e7efeb-eaaf-11e5-99f8-0242ac11002b</uuidresource>
 			<datecreated>Tue, 08 Sep 2015 07:46:18 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
@@ -1368,8 +1368,8 @@
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section.jsp</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section.jsp</destination>
 			<type>jsp</type>
-			<uuidstructure>77ab762d-5578-11e5-8d6b-0242ac11002b</uuidstructure>
-			<uuidresource>77ab762e-5578-11e5-8d6b-0242ac11002b</uuidresource>
+			<uuidstructure>34ea12cf-eaaf-11e5-99f8-0242ac11002b</uuidstructure>
+			<uuidresource>34ea12d0-eaaf-11e5-99f8-0242ac11002b</uuidresource>
 			<datecreated>Mon, 07 Sep 2015 15:52:39 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
