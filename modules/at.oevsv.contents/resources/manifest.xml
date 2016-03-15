@@ -13,6 +13,9 @@
 		<import-script>setSiteRoot &quot;/&quot;
 
 writeProperty '/sites/' 'template' '/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp'
+
+writeProperty '/sites/' 'apollo.template.head' '/system/modules/at.oevsv.apollo.extensions/elements/rss-feed.jsp'
+
 writeProperty '/sites/' 'apollo.theme' '/system/modules/at.oevsv.apollo.extensions/resources/css/style-oevsv.min.css'
 
 writeProperty '/sites/' 'apollo.css.coloredbox' 'colored-box blue:Blaue Box|colored-box red:Rote Box|colored-box blue line-top-color-red:Blaue Box mit roter Linie oben|colored-box blue line-box-color-red:Blaue Box mit rotem Rahmen|colored-box red line-top-color-blue:Rote Box mit blauer Linie oben|colored-box red line-box-color-blue:Rote Box mit blauem Rahmen'
@@ -30,6 +33,7 @@ writeProperty '/sites/' 'apollo.css.icon' 'icon-bg-default fa fa-info:Info Icon 
 		<dateinstalled/>
 		<dependencies>
 			<dependency name="at.oevsv.apollo.extensions" version="1.0.0"/>
+			<dependency name="com.alkacon.opencms.v8.feeder" version="2.0.0"/>
 		</dependencies>
 		<exportpoints/>
 		<resources>
@@ -2112,10 +2116,6 @@ writeProperty '/sites/' 'apollo.css.icon' 'icon-bg-default fa fa-info:Info Icon 
 					<value><![CDATA[ÖVSV - Dachverband]]></value>
 				</property>
 				<property>
-					<name>locale</name>
-					<value><![CDATA[de]]></value>
-				</property>
-				<property>
 					<name>template</name>
 					<value><![CDATA[/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp]]></value>
 				</property>
@@ -2139,6 +2139,48 @@ writeProperty '/sites/' 'apollo.css.icon' 'icon-bg-default fa fa-info:Info Icon 
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/rss-events.xml</source>
+			<destination>sites/oevsv/rss-events.xml</destination>
+			<type>alkacon-v8-feed</type>
+			<uuidstructure>065fa664-e9f1-11e5-834b-0242ac11002b</uuidstructure>
+			<uuidresource>065fa665-e9f1-11e5-834b-0242ac11002b</uuidresource>
+			<datecreated>Mon, 14 Mar 2016 14:28:30 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Veranstaltungen & Termine]]></value>
+				</property>
+				<property type="shared">
+					<name>template-elements</name>
+					<value><![CDATA[/system/modules/com.alkacon.opencms.v8.feeder/templates/alkacon-v8-feed.jsp]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/rss-news.xml</source>
+			<destination>sites/oevsv/rss-news.xml</destination>
+			<type>alkacon-v8-feed</type>
+			<uuidstructure>6b3172cf-e9f5-11e5-834b-0242ac11002b</uuidstructure>
+			<uuidresource>6b3172d0-e9f5-11e5-834b-0242ac11002b</uuidresource>
+			<datecreated>Mon, 14 Mar 2016 14:59:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Aktuelles]]></value>
+				</property>
+				<property type="shared">
+					<name>template-elements</name>
+					<value><![CDATA[/system/modules/com.alkacon.opencms.v8.feeder/templates/alkacon-v8-feed.jsp]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -3088,6 +3130,21 @@ writeProperty '/sites/' 'apollo.css.icon' 'icon-bg-default fa fa-info:Info Icon 
 			<datecreated>Mon, 07 Mar 2016 10:55:03 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/categories/verbaende/alle</destination>
+			<type>folder</type>
+			<uuidstructure>4c2b98a5-ea8a-11e5-91a1-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 15 Mar 2016 08:45:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Alle Verbände]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>

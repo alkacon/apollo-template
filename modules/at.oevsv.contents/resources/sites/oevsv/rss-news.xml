@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AlkaconV8Feeds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/com.alkacon.opencms.v8.feeder/schemas/alkacon-v8-feed.xsd">
+  <AlkaconV8Feed language="de">
+    <Title><![CDATA[Aktuelles]]></Title>
+    <Type><![CDATA[rss_2.0]]></Type>
+    <Description><![CDATA[Aktuelle Nachrichten des ÖVSV]]></Description>
+    <Copyright><![CDATA[ÖVSV]]></Copyright>
+    <Image>
+      <Title><![CDATA[ÖVSV]]></Title>
+      <Url>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/shared/.content/.galleries/logos/OeVSV-Logo.png]]></target>
+          <uuid>af3c5af4-e04d-11e5-bff6-0242ac11002b</uuid>
+        </link>
+      </Url>
+      <Link>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/oevsv/]]></target>
+          <uuid>ae6e5143-dfb8-11e5-817b-0242ac11002b</uuid>
+        </link>
+      </Link>
+      <Description><![CDATA[ÖVSV]]></Description>
+    </Image>
+    <Collector><![CDATA[byQuery]]></Collector>
+    <Parameter><![CDATA[fq=type:a-blog&fq=parent-folders:"/shared/.content/blogentries/"&fq=category:("oevsv" OR "alle")&sort=newsdate_dt desc&rows=10]]></Parameter>
+    <Mapping>
+      <Field><![CDATA[Title]]></Field>
+      <XmlNode><![CDATA[Title]]></XmlNode>
+    </Mapping>
+    <Mapping>
+      <Field><![CDATA[Description]]></Field>
+      <XmlNode><![CDATA[Paragraph/Text]]></XmlNode>
+    </Mapping>
+    <Mapping>
+      <Field><![CDATA[Author]]></Field>
+      <XmlNode><![CDATA[Author]]></XmlNode>
+    </Mapping>
+    <Mapping>
+      <Field><![CDATA[DatePublished]]></Field>
+      <XmlNode><![CDATA[Date]]></XmlNode>
+    </Mapping>
+  </AlkaconV8Feed>
+</AlkaconV8Feeds>

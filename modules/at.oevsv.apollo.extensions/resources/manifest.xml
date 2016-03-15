@@ -53,6 +53,41 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>system/modules/at.oevsv.apollo.extensions/elements</destination>
+			<type>folder</type>
+			<uuidstructure>87b0cca4-e9ed-11e5-834b-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 14 Mar 2016 14:03:29 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/at.oevsv.apollo.extensions/elements/rss-feed.jsp</source>
+			<destination>system/modules/at.oevsv.apollo.extensions/elements/rss-feed.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>90a3e816-e9ed-11e5-834b-0242ac11002b</uuidstructure>
+			<uuidresource>90a3e817-e9ed-11e5-834b-0242ac11002b</uuidresource>
+			<datecreated>Mon, 14 Mar 2016 14:03:44 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[RSS Feed head inclusion]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[uri;user]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>system/modules/at.oevsv.apollo.extensions/formatters</destination>
 			<type>folder</type>
 			<uuidstructure>2940b828-e054-11e5-bff6-0242ac11002b</uuidstructure>

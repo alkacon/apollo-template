@@ -81,7 +81,7 @@
         </Uri>
         <Formatter>
           <link type="STRONG">
-            <target><![CDATA[/system/modules/at.oevsv.contents/formatters/navigation-main.jsp]]></target>
+            <target><![CDATA[/system/modules/at.oevsv.apollo.extensions/formatters/navigation-main.jsp]]></target>
             <uuid>42c96e9a-e054-11e5-bff6-0242ac11002b</uuid>
           </link>
         </Formatter>
