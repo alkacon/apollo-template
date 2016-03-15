@@ -59,7 +59,7 @@
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-navigation" id="451">
 				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/navigation.xsd</param>
 			</type>
-			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-section" id="452">
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-section" id="464">
 				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd</param>
 			</type>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-flexible" id="453">
