@@ -4,8 +4,6 @@ dependencies {
     compile group: 'org.opencms', name: 'opencms-core', version: opencms_version
     
     compile files('modules/org.opencms.apollo.template.webform/resources/system/modules/org.opencms.apollo.template.webform/lib/jcaptcha-1.0-all.jar')
-	compile files('modules/com.alkacon.opencms.v8.feeder/resources/system/modules/com.alkacon.opencms.v8.feeder/lib/jdom-1.0.jar')
-    compile files('modules/com.alkacon.opencms.v8.feeder/resources/system/modules/com.alkacon.opencms.v8.feeder/lib/rome-1.0RC1.jar')
 
     testCompile group: 'org.opencms', name: 'opencms-test', version: opencms_version
     testCompile group: 'junit', name: 'junit', version: '4.11'
