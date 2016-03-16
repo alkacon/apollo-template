@@ -6747,7 +6747,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Main page section]]></value>
+					<value><![CDATA[Section - Main page]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6764,7 +6764,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Container (Standard)]]></value>
+					<value><![CDATA[Container [For Rows]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6781,7 +6781,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Container (Fluid)]]></value>
+					<value><![CDATA[Container (Fluid) [For Rows]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6798,7 +6798,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Footer]]></value>
+					<value><![CDATA[Section - Foot]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6815,7 +6815,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Header]]></value>
+					<value><![CDATA[Section - Head]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6832,7 +6832,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[1 Column Row (12 - Full)]]></value>
+					<value><![CDATA[OLD - 1 Column Row (12 - Full)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6849,7 +6849,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Columns Row (4 - 8)]]></value>
+					<value><![CDATA[OLD - 2 Columns Row (4 - 8)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6866,7 +6866,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Columns Row (8 - 4)]]></value>
+					<value><![CDATA[OLD - 2 Columns Row (8 - 4)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6883,7 +6883,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Columns Row (3 - 9)]]></value>
+					<value><![CDATA[OLD - 2 Columns Row (3 - 9)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6900,7 +6900,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Columns Row (6 - 6)]]></value>
+					<value><![CDATA[OLD - 2 Columns Row (6 - 6)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6917,7 +6917,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[3 Columns Row (4 - 4 - 4)]]></value>
+					<value><![CDATA[3 Col Row (4 - 4 - 4)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6934,7 +6934,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[3 Columns Row (3 - 3 - 6)]]></value>
+					<value><![CDATA[3 Col Row (3 - 3 - 6)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6951,7 +6951,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[4 Columns Row (3 - 3 - 3 - 3)]]></value>
+					<value><![CDATA[4 Col Row (3 - 3 - 3 - 3)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6968,7 +6968,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 narrow Columns Row (4 - 4)]]></value>
+					<value><![CDATA[2 Col Row (4 - 4) [Narrow]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6985,7 +6985,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 narrow Columns Row (4 push - 4 pull)]]></value>
+					<value><![CDATA[2 Col Row (4 push - 4 pull) [Narrow]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7002,7 +7002,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Columns Row (9 - 3)]]></value>
+					<value><![CDATA[OLD - 2 Columns Row (9 - 3)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7019,7 +7019,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Columns Row (6 - 6, also on XS)]]></value>
+					<value><![CDATA[2 Col Row (6 - 6) [Also on XS]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7036,7 +7036,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Columns Row (4 - 8)]]></value>
+					<value><![CDATA[OLD - 2 Columns Row (4 - 8)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9491,7 +9491,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Login to OpenCms: Welcome to the OpenCms 9.5 tutorial]]></value>
+					<value><![CDATA[Login to OpenCms: Welcome to the OpenCms 10.0 tutorial]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9542,7 +9542,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 1: Modify a page: Activate the OpenCms Toolbar]]></value>
+					<value><![CDATA[Step 1: Modify a page: Check out the OpenCms Toolbar]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9747,23 +9747,6 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Start exploring OpenCms: There is a lot more to discover]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>tutorial/.content/contentsections/cs_00017.xml</source>
-			<destination>tutorial/.content/contentsections/cs_00017.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>a3de9bb2-a8b5-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>a3de9bb3-a8b5-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 14:09:39 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Step 1: Modify a page: Activate the toolbar]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10137,6 +10120,169 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>tutorial/.content/templaterows</destination>
+			<type>folder</type>
+			<uuidstructure>24722fec-eb8c-11e5-8519-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Mar 2016 15:31:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/templaterows/tr_00001.xml</source>
+			<destination>tutorial/.content/templaterows/tr_00001.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>2474a0ee-eb8c-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>2474a0ef-eb8c-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 15:31:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Grid 2 Cols (3 - 9)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/templaterows/tr_00003.xml</source>
+			<destination>tutorial/.content/templaterows/tr_00003.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>654a63c0-eb90-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>654a63c1-eb90-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 16:01:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Container [For Grids]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/templaterows/tr_00004.xml</source>
+			<destination>tutorial/.content/templaterows/tr_00004.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>3026752f-eb91-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>30267530-eb91-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 16:07:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[2 Col Row (3 - 9)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/templaterows/tr_00005.xml</source>
+			<destination>tutorial/.content/templaterows/tr_00005.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>4c445574-eb91-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>4c445575-eb91-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 16:08:18 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[1 Col Row (12 - Full)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/templaterows/tr_00006.xml</source>
+			<destination>tutorial/.content/templaterows/tr_00006.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>6c8a82a9-eb91-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>6c8a82aa-eb91-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 16:09:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[2 Col Row (4 - 8)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/templaterows/tr_00007.xml</source>
+			<destination>tutorial/.content/templaterows/tr_00007.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>8e8f2bee-eb95-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>8e8f2bef-eb95-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 16:38:47 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[2 Col Row (6 - 6) [From MD]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/templaterows/tr_00008.xml</source>
+			<destination>tutorial/.content/templaterows/tr_00008.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>a4985893-eb95-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>a4985894-eb95-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 16:39:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[2 Col Row (8 - 4)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/templaterows/tr_00009.xml</source>
+			<destination>tutorial/.content/templaterows/tr_00009.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>69d2a96f-eb9b-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>69d2a970-eb9b-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 17:20:43 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[2 Col Row (6 - 6) [From SM]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/templaterows/tr_00010.xml</source>
+			<destination>tutorial/.content/templaterows/tr_00010.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>36395d12-eb9d-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>36395d13-eb9d-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 17:33:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Container (Fluid) [For Grids]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>tutorial/.galleries</destination>
 			<type>folder</type>
 			<uuidstructure>36f2a085-6101-11e5-9eef-0242ac11002b</uuidstructure>
@@ -10195,23 +10341,6 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:400,h:100]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>tutorial/.galleries/tutorial-images/tut-01.png</source>
-			<destination>tutorial/.galleries/tutorial-images/tut-01.png</destination>
-			<type>image</type>
-			<uuidstructure>36fe1241-6101-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>36fe1242-6101-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property type="shared">
-					<name>image.size</name>
-					<value><![CDATA[w:50,h:50]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10835,6 +10964,46 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Step 5: Publish your changes]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>tutorial/test</destination>
+			<type>folder</type>
+			<uuidstructure>e33c00f1-eb8b-11e5-8519-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Mar 2016 15:29:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.5]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Test]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Test]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/test/index.html</source>
+			<destination>tutorial/test/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>e341f466-eb8b-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>e341f467-eb8b-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 15:29:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Test]]></value>
 				</property>
 			</properties>
 			<relations/>

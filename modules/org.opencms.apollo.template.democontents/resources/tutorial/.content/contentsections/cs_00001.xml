@@ -2,7 +2,7 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Welcome to the OpenCms 9.5 tutorial]]></Headline>
+    <Headline><![CDATA[Welcome to the OpenCms 10.0 tutorial]]></Headline>
     <Text name="Text0">
       <links/>
       <content><![CDATA[<p>This little&nbsp;tutorial tries to guide your first steps in OpenCms. It will explain how to edit content and create new pages.</p>
