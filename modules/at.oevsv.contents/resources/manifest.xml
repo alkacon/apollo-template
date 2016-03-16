@@ -2515,6 +2515,33 @@ writeProperty '/sites/' 'apollo.css.icon' 'icon-bg-default fa fa-info:Info Icon 
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>sites/oevsv/.content/jsp-search</destination>
+			<type>folder</type>
+			<uuidstructure>cc199d90-eb50-11e5-854f-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Mar 2016 08:26:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/.content/jsp-search/jsp-search-00001.xml</source>
+			<destination>sites/oevsv/.content/jsp-search/jsp-search-00001.xml</destination>
+			<type>jsp-search</type>
+			<uuidstructure>cc1cd1e2-eb50-11e5-854f-0242ac11002b</uuidstructure>
+			<uuidresource>cc1cd1e3-eb50-11e5-854f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 08:26:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[ÖVSV Suchkonfiguration]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>sites/oevsv/.content/lists</destination>
 			<type>folder</type>
 			<uuidstructure>9df513c8-e20b-11e5-b050-0242ac11002b</uuidstructure>
@@ -3108,6 +3135,50 @@ writeProperty '/sites/' 'apollo.css.icon' 'icon-bg-default fa fa-info:Info Icon 
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Veranstaltungen]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>sites/oevsv/suche</destination>
+			<type>folder</type>
+			<uuidstructure>aaa9e56f-eb50-11e5-854f-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Mar 2016 08:25:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavInfo</name>
+					<value><![CDATA[ignoreInDefaultNav]]></value>
+				</property>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[21.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Suche]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Suche]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>sites/oevsv/suche/index.html</source>
+			<destination>sites/oevsv/suche/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>aabb98b4-eb50-11e5-854f-0242ac11002b</uuidstructure>
+			<uuidresource>aabb98b5-eb50-11e5-854f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 08:25:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Suche]]></value>
 				</property>
 			</properties>
 			<relations/>
