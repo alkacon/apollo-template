@@ -49,7 +49,14 @@
 				<searchsetting element="PreMarkup" searchcontent="false" />
 				<searchsetting element="PostMarkup" searchcontent="false" />
 				<searchsetting element="Container" searchcontent="false" />
-			</searchsettings> 
+			</searchsettings>
+            <synchronizations>
+                <synchronization element="PreMarkup" />
+                <synchronization element="PostMarkup" />
+                <synchronization element="Container" />
+                <synchronization element="Defaults" />
+                <synchronization element="Column" />
+            </synchronizations>
 		</xsd:appinfo>
 	</xsd:annotation>
 
