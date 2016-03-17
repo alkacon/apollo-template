@@ -6993,6 +6993,23 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/templaterows/tr_00026.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00026.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>e90fa46f-ec60-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>e90fa470-ec60-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 16:54:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Grid 2 Cols (8 - 4)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/ugc_config</destination>
 			<type>folder</type>
 			<uuidstructure>13fd4cbb-613b-11e5-bcba-0242ac11002b</uuidstructure>

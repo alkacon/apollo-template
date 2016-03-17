@@ -2,9 +2,9 @@
 
 <MacroFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/macro_formatter.xsd">
   <MacroFormatter language="en">
-    <NiceName><![CDATA[Paragraph with headline on top and big image left]]></NiceName>
+    <NiceName><![CDATA[Paragraph with headline on top and small image right]]></NiceName>
     <Type><![CDATA[a-section]]></Type>
-    <Rank><![CDATA[6200]]></Rank>
+    <Rank><![CDATA[6295]]></Rank>
     <Match>
       <Types>
         <ContainerType><![CDATA[default]]></ContainerType>
@@ -17,11 +17,11 @@
   <div class="col-sm-12">
     %(headline)
   </div>
-  <div class="col-sm-4">
-    %(image)
-  </div>
-  <div class="col-sm-8">
+  <div class="col-xs-10 col-sm-9">
     %(text)
+  </div>
+  <div class="col-xs-2 col-sm-3">
+    %(image)
   </div>
 </div>]]></Macro>
     <Formatters>
@@ -36,20 +36,20 @@
     <Formatters>
       <Formatter>
         <link type="WEAK">
-          <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/image-standard-config.xml]]></target>
-          <uuid>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuid>
-        </link>
-      </Formatter>
-      <MacroName><![CDATA[image]]></MacroName>
-    </Formatters>
-    <Formatters>
-      <Formatter>
-        <link type="WEAK">
           <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-text-config.xml]]></target>
           <uuid>fcab1d1e-eb7d-11e5-854f-0242ac11002b</uuid>
         </link>
       </Formatter>
       <MacroName><![CDATA[text]]></MacroName>
+    </Formatters>
+    <Formatters>
+      <Formatter>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/image-standard-config.xml]]></target>
+          <uuid>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuid>
+        </link>
+      </Formatter>
+      <MacroName><![CDATA[image]]></MacroName>
     </Formatters>
   </MacroFormatter>
 </MacroFormatters>

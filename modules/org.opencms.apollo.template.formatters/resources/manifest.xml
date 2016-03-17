@@ -1419,6 +1419,35 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-paragraph-hltext-image-smxml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-paragraph-hltext-image-smxml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>0f86adfc-ec63-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>0f86adfd-ec63-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 17:09:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paragraph with headline left and small image right]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-paragraph-hltext-image.xml</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-paragraph-hltext-image.xml</destination>
 			<type>macro_formatter</type>
@@ -1429,7 +1458,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Paragraph with headline and text left, image right]]></value>
+					<value><![CDATA[Paragraph with headline left and big image right]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1458,7 +1487,36 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Paragraph with headline and text only]]></value>
+					<value><![CDATA[Paragraph with headline on top only]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-paragraph-hltop-image-text-sm.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-paragraph-hltop-image-text-sm.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>38096d36-ec62-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>38096d37-ec62-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 17:03:49 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paragraph with headline on top and small image left]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1487,7 +1545,36 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Paragraph with headline on top, image left and text]]></value>
+					<value><![CDATA[Paragraph with headline on top and big image left]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-paragraph-hltop-text-image-sm.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-paragraph-hltop-text-image-sm.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>849c167c-ec62-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>849c167d-ec62-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 17:05:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paragraph with headline on top and small image right]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1516,7 +1603,36 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Paragraph with headline on top, text and image right]]></value>
+					<value><![CDATA[Paragraph with headline on top and big image right]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-paragraph-image-hltext-sm.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-paragraph-image-hltext-sm.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>01b64d76-ec63-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>01b64d77-ec63-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 17:09:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paragraph with headline right and small image left]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1545,7 +1661,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Paragraph with image left, headline and text right]]></value>
+					<value><![CDATA[Paragraph with headline right and big image left]]></value>
 				</property>
 				<property>
 					<name>locale</name>

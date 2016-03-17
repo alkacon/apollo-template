@@ -2,7 +2,7 @@
 
 <MacroFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/macro_formatter.xsd">
   <MacroFormatter language="en">
-    <NiceName><![CDATA[Paragraph with image left, headline and text right]]></NiceName>
+    <NiceName><![CDATA[Paragraph with headline right and big image left]]></NiceName>
     <Type><![CDATA[a-section]]></Type>
     <Rank><![CDATA[6000]]></Rank>
     <Match>
