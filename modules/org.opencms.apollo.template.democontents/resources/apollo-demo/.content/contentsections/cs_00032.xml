@@ -2,7 +2,7 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Powerful and Easy to use OpenCms]]></Headline>
+    <Headline><![CDATA[Powerful and Easy to use]]></Headline>
     <Text name="Text0">
       <links/>
       <content><![CDATA[<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.</p>]]></content>

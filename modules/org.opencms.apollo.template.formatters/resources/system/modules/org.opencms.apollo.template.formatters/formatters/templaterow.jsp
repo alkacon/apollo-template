@@ -13,7 +13,7 @@
 <%-- Element matches the configured parent container --%>
 
 	<%-- Insert HTML for model group start (if required) --%>
-	<apollo:container-box content="${content}" boxType="model-start" />
+	<apollo:container-box label="${content.value.Title}" boxType="model-start" />
 
 	<c:if test="${content.value.PreMarkup.isSet}">
 		<%-- Expand macros in markup --%>
@@ -27,11 +27,12 @@
 
 	<c:set var="detailOnly" value="${(cms.element.setting.detail == 'only') ? 'true' : 'false' }" />
 	<c:set var="showDetailOnly" value="${(cms.isEditMode) and (detailOnly == 'true') and (not cms.detailRequest)}" />
-
+	<c:set var="grid" value="${cms.element.setting.grid.value}" />
 
 	<c:forEach var="column" items="${content.valueList.Column}" varStatus="loop">
 
 		<c:set var="detailView" value="${((loop.count == 1) and (cms.element.setting.detail == 'view')) ? 'true' : 'false' }" />
+
 		<c:if test="${column.value.PreMarkup.isSet}">${column.value.PreMarkup}</c:if>
 
 		<c:choose>
@@ -43,7 +44,7 @@
 					Therefore we insert a placeholder in this case.
 				--%>
 				<div class="${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}">
-					<apollo:container-box content="${content}" boxType="detail-placeholder" column="${column}" />
+					<apollo:container-box label="${content.value.Title}${column.value.Name.isSet ? ' - ' += column.value.Name : ''}"  boxType="detail-placeholder" />
 				</div>
 
 			</c:when>
@@ -54,6 +55,9 @@
 				--%>
 				<c:set var="role" value="${column.value.Editors.isSet ? column.value.Editors : (content.value.Defaults.isSet ? content.value.Defaults.value.Editors : 'ROLE.DEVELOPER')}" />
 				<c:set var="typeName" value="${column.value.Type.isSet ? column.value.Type : (content.value.Defaults.isSet ? content.value.Defaults.value.Type : 'unknown')}" />
+				<c:if test="${grid.charAt(loop.count - 1) == '1'.charAt(0)}">
+					<c:set var="typeName" value="container" />				
+				</c:if>
 				<c:set var="cssClass">${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}</c:set>
 				<cms:container
 
@@ -66,7 +70,13 @@
 					editableby="${role}"
 					param="role:${role}|${cms.container.param}|css:${cssClass}">
 
-					<apollo:container-box content="${content}" boxType="container-box" column="${column}" role="${role}" type="${typeName}" detailView="${detailView}"  />
+					<apollo:container-box
+						label="${content.value.Title}${column.value.Name.isSet ? ' - ' += column.value.Name : ''}"
+						boxType="container-box"
+						role="${role}"
+						type="${typeName}"
+						detailView="${detailView}"  />
+
 				</cms:container>
 
 			</c:when>
@@ -91,7 +101,7 @@
 	</c:if>
 
 	<%-- Insert HTML for model group end (if required) --%>
-	<apollo:container-box content="${content}" boxType="model-end" />
+	<apollo:container-box label="${content.value.Title}" boxType="model-end" />
 
 </c:when>
 <c:otherwise>

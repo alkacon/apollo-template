@@ -2,15 +2,23 @@
 
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/templaterow.xsd">
   <ApolloTemplateRow language="en">
-    <Title><![CDATA[Container [For Grids]]]></Title>
-    <PreMarkup><![CDATA[<div class="container $(param)">]]></PreMarkup>
+    <Title><![CDATA[Grid 2 Cols (9 - 3)]]></Title>
+    <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
-    <Container><![CDATA[mainsection]]></Container>
+    <Container><![CDATA[grid]]></Container>
     <Column>
       <Name><![CDATA[g1]]></Name>
-      <Type><![CDATA[grid]]></Type>
+      <Type><![CDATA[container]]></Type>
       <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
+      <Grid><![CDATA[col-md-9]]></Grid>
+    </Column>
+    <Column>
+      <Name><![CDATA[g2]]></Name>
+      <Type><![CDATA[container]]></Type>
+      <Count><![CDATA[50]]></Count>
+      <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
+      <Grid><![CDATA[col-md-3]]></Grid>
     </Column>
   </ApolloTemplateRow>
 </ApolloTemplateRows>

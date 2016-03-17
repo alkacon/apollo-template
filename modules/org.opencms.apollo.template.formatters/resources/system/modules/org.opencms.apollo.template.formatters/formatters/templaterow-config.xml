@@ -46,6 +46,12 @@
       <Widget><![CDATA[string]]></Widget>
     </Setting>
     <Setting>
+      <PropertyName><![CDATA[grid]]></PropertyName>
+      <DisplayName><![CDATA[Grid]]></DisplayName>
+      <Description><![CDATA[Container grid settings]]></Description>
+      <Widget><![CDATA[string]]></Widget>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[detail]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.detail)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.detail.description)]]></Description>

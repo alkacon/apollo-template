@@ -2,6 +2,7 @@
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.schemas.tabs">
@@ -16,36 +17,37 @@
 	<div class="panel-group acc-v2" id="accordion${cms.element.instanceId}">
 		<c:forEach var="label" items="${content.valueList.Label}" varStatus="status">
 			<div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a 
-                            class="accordion-toggle ${status.first? 'active':''}" 
-                            data-toggle="collapse" 
-                            data-parent="#accordion${cms.element.instanceId}" 
-                            href="#collapse${cms.element.instanceId}-${status.count}">
-                            ${label}
-                        </a>
-                    </h4>
-                </div>
-                <div 
-                    id="collapse${cms.element.instanceId}-${status.count}" 
-                    class="panel-collapse collapse ${status.first? 'in':''}" 
-                    style="height: ${status.first?'auto':'0px'};">
-                    
-                    <cms:container 
-                        name="tab-container${status.count}" 
-                        type="container" 
-                        tagClass="panel-body" 
-                        maxElements="2">
-                        
-                        <div class="alert alert-warning fade in">
-                            <h4><fmt:message key="apollo.tabs.emptycontainer.headline"/></h4>
-                            <p><fmt:message key="apollo.tabs.emptycontainer.text"/></p>           
-                        </div>     
-                    </cms:container>
-                </div>
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a
+								class="accordion-toggle ${status.first? 'active':''}"
+								data-toggle="collapse"
+								data-parent="#accordion${cms.element.instanceId}"
+								href="#collapse${cms.element.instanceId}-${status.count}">
+								${label}
+						</a>
+					</h4>
+				</div>
+				<div
+					id="collapse${cms.element.instanceId}-${status.count}"
+					class="panel-collapse collapse ${status.first? 'in':''}"
+					style="height: ${status.first?'auto':'0px'};">
+
+					<cms:container
+							name="tab-container${status.count}"
+							type="container"
+							tagClass="panel-body"
+							maxElements="2">
+								<c:set var="msg"><fmt:message key="apollo.tabs.emptycontainer.text"/></c:set>
+								<apollo:container-box
+									label="${msg}"
+									boxType="container-box"
+									role="ROLE.AUTHOR"
+									type="container" />
+						</cms:container>
+				</div>
 			</div>
-		</c:forEach>	
+		</c:forEach>
 	</div>
 </div>
 

@@ -3,6 +3,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <fmt:setLocale value="${cms.locale}" />
 <!DOCTYPE html>
@@ -42,10 +43,11 @@
 	<div class="wrapper">
 		<c:if test="${cms.isEditMode}">
 			<!--=== Placeholder for OpenCms toolbar in edit mode ===-->
-			<div style="background: lightgray; height: 52px;">&nbsp;</div>
+			<div style="background: #fff; height: 52px;">&nbsp;</div>
 		</c:if>
-		<cms:container name="page-complete" type="page" width="1200"
-			maxElements="15" editableby="ROLE.DEVELOPER">
+		<cms:container name="page-complete" type="page" width="1200" maxElements="50" editableby="ROLE.DEVELOPER">
+			<apollo:container-box label="Hello World!" boxType="container-box" type="mainsection" role="ROLE.DEVELOPER" />
+			<%--
 			<cms:bundle basename="org.opencms.apollo.template.formatters.messages">
 				<div class="oc-container-jsp">
 					<h1>
@@ -57,6 +59,7 @@
 					</p>
 				</div>
 			</cms:bundle>
+			--%>
 		</cms:container>
 
 	</div>

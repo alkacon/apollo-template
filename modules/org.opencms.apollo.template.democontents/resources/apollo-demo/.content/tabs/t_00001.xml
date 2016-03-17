@@ -8,5 +8,6 @@
     <Label><![CDATA[Can I use the demo template for my website?]]></Label>
     <Label><![CDATA[How can I edit contents?]]></Label>
     <Label><![CDATA[Is it safe to update?]]></Label>
+    <Label><![CDATA[This tab is empty]]></Label>
   </ApolloTab>
 </ApolloTabs>

@@ -1,10 +1,9 @@
 <%@tag display-name="container-box" body-content="empty"
        description="Generates box HTML for layout rows"%>
 
-<%@attribute name="content" type="org.opencms.jsp.util.CmsJspContentAccessBean" required="true" %>
+<%@attribute name="label" type="java.lang.String" required="true" %>
 <%@attribute name="boxType" type="java.lang.String" required="true" %>
 
-<%@attribute name="column" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
 <%@attribute name="role" type="java.lang.String" required="false" %>
 <%@attribute name="type" type="java.lang.String" required="false" %>
 <%@attribute name="detailView" type="java.lang.String" required="false" %>
@@ -21,8 +20,8 @@
 <c:when test="${cms.isOnlineProject}">
 <%-- Never generate any of output in online project --%>
 </c:when>
-<c:when test="${not empty column}">
-<%-- Use case 1: Create container or container placeholder box --%>
+<c:when test="${(boxType == 'container-box') || (boxType == 'detail-placeholder')}">
+<%-- Use case 1: Create container or detail container placeholder box --%>
 
 <c:set var="parent_role" value="${cms.container.param}" />
 
@@ -42,13 +41,12 @@
   <c:when test="${boxType == 'detail-placeholder'}">
     <c:set var="variant" value="detailonly" />
   </c:when>
-  <c:when test="${type == 'mainsection'}">
+  <c:when test="${type == 'mainsection' || type == 'grid'}">
     <c:set var="variant" value="jsp" />
   </c:when>
   <c:when test="${not fn:containsIgnoreCase(type, 'default')}">
     <c:set var="variant" value="template" />
-  </c:when>
-  <c:otherwise>
+  </c:when>  <c:otherwise>
     <c:set var="variant" value="layout" />
   </c:otherwise>
 </c:choose>
@@ -74,15 +72,15 @@
       </c:otherwise>
     </c:choose>
   </h1>
-  <p>${content.value.Title}<c:if test="${column.value.Name.isSet}"> - ${column.value.Name}</c:if></p>
+  <p>${label} - In: ${cms.container.type} For: ${type}</p>
 </div>
 
 <%-- End of use case 1: Create container box --%>
 </c:when>
-<c:when test="${cms.modelGroupElement && (boxType == 'model-start') }">
+<c:when test="${(boxType == 'model-start') && cms.modelGroupElement }">
 <%-- Use case 2: Model box start --%>
 
-<c:set var="modelTitle">${content.value.Title}</c:set>
+<c:set var="modelTitle">${label}</c:set>
 <c:if test="${not empty cms.element.setting.model_group_title}">
   <c:set var="modelTitle">${cms.element.setting.model_group_title}</c:set>
 </c:if>
@@ -102,7 +100,7 @@
 
 <%-- End of use case 2: Model box start --%>
 </c:when>
-<c:when test="${cms.modelGroupElement && (boxType == 'model-end') }">
+<c:when test="${(boxType == 'model-end') && cms.modelGroupElement }">
 <%-- Use case 3: Model box end --%>
 
 </div>
