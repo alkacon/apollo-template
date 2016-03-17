@@ -380,7 +380,7 @@ $colored-box-positions:
 	color: $nav-sub-color-hover;
 }
 
-.header .navbar-nav .dropdown-menu li.active a {
+.header .navbar-nav .dropdown-menu li.active > a {
 	background-color: $nav-sub-bg-active !important;
 	color: $nav-sub-color-active;
 }
@@ -938,7 +938,7 @@ $colored-box-positions:
 	color: $nav-sub-color-hover;
 }
 
-.header .navbar-nav .dropdown-menu li.active a {
+.header .navbar-nav .dropdown-menu li.active > a {
 	background-color: $nav-sub-bg-active !important;
 	color: $nav-sub-color-active;
 }
