@@ -12,7 +12,6 @@
     }
 }
 
-
 /* Animated image.
  -----------------------------------------------------------------------------*/
 
@@ -22,524 +21,6 @@
 		box-shadow: none;
 	}
 }
-
-
-/* Buttons that are red should always use "OpenCms red".
------------------------------------------------------------------------------ */
-
-.btn-u-red {
-   background: $alkacon-red !important;
-}
-.btn-u-red:hover {
-   background: lighten($alkacon-red, 30%) !important;
-}
-
-.service-block-red, i.icon-bg-red {
-    background-color: $alkacon-red;
-}
-
-/* Carousel caption color.
------------------------------------------------------------------------------ */
-
-.carousel-caption h3 {
-    color: $white;
-}
-
-/* Colored boxes.
------------------------------------------------------------------------------ */
-
-$colored-box-variants:
-(
- (white, $white),         
- (lightgrey, $gray-lighter),         
- (mediumgrey, $gray-light),         
- (dark, $gray-darker),
- (red, $red),         
- (blue, $blue),         
- (green, $green),
- (sea, $sea),
- (orange, $orange),
- (yellow, $yellow),
- (purple, $violet),
- (aqua, $blue-cyan),
- (brown, $brown),
- (dark-blue, $blue-dark),
- (light-green, $green-light)
-);
-
-.colored-box, .colored-box-light {
-  overflow: hidden;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.colored-box-light {
-    color: $gray-darker;
-}
-
-.colored-box .headline, .colored-box-light .headline {
-	border-bottom: none;
-	margin: 0;
-}
-
-.colored-box .headline h2, .colored-box-light .headline h2 {
-	border-bottom: none;
-	margin-top: 5px;
-	margin-bottom: 10px;
-}
-
-.colored-box p, 
-.colored-box li, 
-.colored-box h1, 
-.colored-box h2, 
-.colored-box h3, 
-.colored-box h4,  
-.colored-box h5, 
-.colored-box h6 {
-    color: $white;
-}
-
-.colored-box{
-	a {
-    	color: $gray-lighter;
-    }
-    &-light a {
-    	color: $red;
-	}
-}
-
-
-
-.colored-box  a.btn-u,
-.colored-box-light  a.btn-u  {
-    color: $white;
-}
-
-.colored-box-light p, 
-.colored-box-light li, 
-.colored-box-light h1, 
-.colored-box-light h2, 
-.colored-box-light h3, 
-.colored-box-light h4,  
-.colored-box-light h5, 
-.colored-box-light h6 {
-    color: $gray-darker;
-}
-
-/* Background color */
-
-@each $type-name, $bg-color in $colored-box-variants {
-    .colored-box.#{""+$type-name}, .colored-box-light.#{""+$type-name} {      
-        background-color: $bg-color;      
-    }
-}
-
-/* Border style */
-
-$colored-box-borderstyles:
-(
- (none, 0, none),         
- (dotted, 1px, $gray-light),         
- (dashed, 1px, $gray-light),         
- (solid, 1px, $gray-light)
-);
-
-@each $style-name, $width, $bg-color in $colored-box-borderstyles {
-    .colored-box.border-style-#{""+$style-name}, .colored-box-light.border-style-#{""+$style-name} {
-	    border-style: #{""+$style-name};
-	    border-width: $width;
-	    border-color: $bg-color;
-	}
-}
-
-
-
-
-/* Dropdown color */
-
-@each $type-name, $bg-color in $colored-box-variants {
-
-	.btn-u.btn-u-#{""+$type-name},  .open .dropdown-toggle.btn-u.btn-u-#{""+$type-name}{
-		background-color: $bg-color; 
-		&:hover, &:focus, &:active{
-    		background: lighten($bg-color,10) !important;
-    	}   
-	}
-
-    .dropdown-#{""+$type-name}{ 
-    	  	   
-        .active a{
-        	background: lighten($bg-color,10);     
-        	&:hover{
-        		background: $bg-color; 
-        	}
-	        @if (lightness($bg-color) > 90) {
-	    		color: #000000; 
-			} @else {
-				color: #ffffff; 
-	  		}  		
-  		} 		
-  		
-    }
-}
-
-/* Event dates */
-@each $type-name, $bg-color in $colored-box-variants {
-
-	.date-#{""+$type-name}{
-		border: 1px solid $gray-light;
-		box-shadow:  8px 8px 6px -6px $gray;
-		text-align: center; 
-		backhround: #eee;
-		.day, .monthYear{
-			padding: 10px;		
-		}
-		a &{
-			color: #555;
-			transform: scale(1) rotate(0);
-			transition: 1s all;
-			&:hover{
-				transform: scale(0.97) rotate(-1deg);
-				transition: 1s all;
-			}
-		}
-		h3{
-			font-weight: bolder;
-		}
-		&:before{
-			display: block;
-			content: '';
-			border-top: 20px solid #ddd;
-		}		
-	}
-}
-
-/* Line position and color */
-
-$colored-box-positions:
-(
- top, bottom, left, right
-);
-
-@each $type-name, $bg-color in $colored-box-variants {
-
-    @each $position in $colored-box-positions {
-	    .colored-box.line-#{""+$position}-color-#{""+$type-name}, .colored-box-light.line-#{""+$position}-color-#{""+$type-name} {
-	    	border-#{""+$position}-style: solid;
-	    	border-#{""+$position}-width: 2px;
-	    	border-#{""+$position}-color: $bg-color;
-		}
-	}
-	.colored-box.line-box-color-#{""+$type-name}, .colored-box-light.line-box-color-#{""+$type-name} {
-	    border: 2px solid $bg-color;
-	}
-	.colored-box.line-none-color-#{""+$type-name}, .colored-box-light.line-none-color-#{""+$type-name} {
-	    border-color: $gray-light;
-	}
-}
-
-/* Fancybox additions for zoom effect.
------------------------------------------------------------------------------ */
-
-.zoomer:hover .overlay-zoom .zoom-icon {
-    opacity: 0.4;
-    transform: scale(1);
-}
-.overlay-zoom {
-    cursor: pointer;
-    display: block;
-    height: 100%;
-    position: relative;
-    transition: all 0.1s ease-in-out 0s;
-    width: 100%;
-    z-index: 90;
-}
-.overlay-zoom .zoom-icon {
-    background-color: #000;
-    background-image: url("../img/overlay-icon.png");
-    background-position: 50% center;
-    background-repeat: no-repeat;
-    height: inherit;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transform: scale(0);
-    transition: all 0.4s ease-in-out 0s;
-    width: inherit;
-    z-index: 100;
-}
-
-/* Footer colors.
------------------------------------------------------------------------------ */
-
-.footer-default .copyright {
-    background-color: #dddddd; //$gray;
-    border-top: 1px solid #777;
-}
-
-.footer-default .copyright p {
-    color: #333333; //$text-dark;
-}
-
-.footer-default .header {
-	border: none;
-}
-
-/* Jumbotron headline.
------------------------------------------------------------------------------ */
-
-.jumbotron h1, .jumbotron .h1 {
-  line-height: 1.0;
-}
-
-/* Login element.
------------------------------------------------------------------------------ */
-
-.reg-page {
-    background: none repeat scroll 0 0 $gray-lighter;
-    border: 1px solid $gray-light;
-    box-shadow: 0 0 3px $gray-light;
-    color: $gray-darker;
-	margin: 0 auto;
-    padding: 30px;
-	width: auto;
-}
-.reg-header {
-    border-bottom: 1px solid $gray-light;
-    color: $gray-darker;
-    margin-bottom: 35px;
-    text-align: center;
-}
-.reg-header h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-.reg-page label {
-    color: $gray;
-}
-
-/* Navigation colors.
------------------------------------------------------------------------------ */
-
-// Main menu
-.header  {
-	.navbar-nav {
-		a{
-			border-bottom-color: $nav-main-color;
-  			color: $nav-main-color;
-		}
-		&>.active {
-			&>a {
-				border-bottom-color: $nav-main-color;
-  				color: $nav-main-color;  
-  				&:hover{
-  					border-bottom-color: $nav-main-color-active;
-  					color: $nav-main-color-active;  
-  				}				
-  			}	
-  		}
-  		&>li{
-  			transition: all 1s;
-  			&>a:hover {
-  				border-bottom-color: $nav-main-color-hover;
-  				color: $nav-main-color-hover;
-			}
-			&:hover>a {
-				color: $nav-main-color-hover;
-			}
-			> .search{
-				background: transparent;
-				border-bottom-color: transparent;
-				&:hover {
-					background: transparent;
-	    			border-bottom-color: $nav-main-color-hover;
-	   				color: $nav-main-color-hover;
-				}
-			}
-		}
-  	}
-}
-
-// Sub menu
-
-.header .dropdown-menu {
-  border-bottom: solid 2px $nav-main-color-active;
-  border-bottom-color: $nav-main-color;
-  border-top: solid 2px $nav-main-color-active;
-  border-top-color: $nav-main-color-active;
-}
-
-.header .navbar-nav .mega-menu-fullwidth ul.dropdown-menu,
-.header .navbar-nav .dropdown-menu li a {
-	background-color: $nav-sub-bg;
-	color: $nav-sub-color;
-}
-
-.header .navbar-nav .dropdown-menu li a:hover {
-	background-color: $nav-sub-bg-hover !important;
-	color: $nav-sub-color-hover;
-}
-
-.header .navbar-nav .dropdown-menu li.active > a {
-	background-color: $nav-sub-bg-active !important;
-	color: $nav-sub-color-active;
-}
-
-
-// Side menu
-
-
-ul.sidebar-nav-v1{
-	 li {
-			background-color: $nav-left-bg;
-			a, &.list-toggle:after {
-				color: $nav-left-color;				
-			}
-			a, &.active ul a{
-				background-color: $nav-left-bg;
-				&.active, &:hover{
-					background: $nav-left-bg-hover;
-					color: $nav-left-color-hover;
-					transition: all 0.5s;
-				}
-			}
-			//First level
-			a.accordion-toggle, .list-group-item.active{
-				background-color: $nav-left-bg-active;
-				border: none;
-				color: $nav-left-color-active;
-				transition: all 0.5s;				
-				&:hover{
-					background: $nav-left-bg-hover;
-					color: $nav-left-color-hover;
-					transition: all 0.5s;
-				}
-				a{
-					background: $white;
-				}
-						
-				//Second and further level
-				a.accordion-toggle, .active a{
-					background-color: $main-theme;
-					color: set-text-color($main-theme);					
-					&:hover{
-						background-color: $main-theme-hover;
-						color: set-text-color($main-theme-hover);
-						transition: all 0.5s;
-					}					
-				}		
-				&.collapsed{
-					background-color: $nav-left-bg;
-					color: $nav-left-color;
-				}
-			}		
-	}
-}
-
-
-/*
- Sitemap.
------------------------------------------------------------------------------ */
-
-.sitemap{
-	ul, li{
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		padding: 5px;
-		background: transparent;
-	}
-	ul>ul{
-		li {
-			background: $main-theme;
-			padding: 10px;
-			color: $text-light;
-			font-weight: bold;
-			font-size: 1em;	
-			line-height: 1;
-			&.parent{
-				cursor: pointer;	
-			}
-			a{			
-				color: $text-light;
-				width: 100%;
-				display: block;
-				height: 100%;
-			}
-			span{
-				float: left;
-			}
-			i{
-				transform: rotate(-90deg);
-				transition: transform 1s;
-			    float: right;	
-				&.open{
-					transform: rotate(0);
-					transition: transform 1s;
-				}
-			}
-		}
-		&>ul li {
-			padding: 5px 10px;
-			margin: 0;
-			background: $main-theme-additional;
-			color: $text-dark;
-			font-weight: normal;
-			&:hover{
-				background: $main-theme;
-				color: $text-light;
-				a{
-					color: $text-light;			
-					text-decoration: none;	
-				}
-			}
-			a{			
-				color: $text-dark;	
-			}			
-		}	
-	}
-}
-
-
-/* Slider (Play/Pause Button, caption, copyright).
------------------------------------------------------------------------------ */
-
-.slider{
-	.control{
-      	margin: -40px 20px;
-      	position: relative;
-      	z-index:999;
-      	opacity: 0;
-      	transition: opacity 1s;
-   }
-   &:hover>.control{   	
-      	opacity: 1;
-      	transition: opacity 1s;
-   }
-   .caption{
-   		padding: 10px !important;   
-   		h2,  h3{
-			margin: 0;
-			padding: 0;
-			line-height: 1.1;
-		}	
-		h2{
-			font-size: 18px;
-		}
-		h3{
-			font-size: 15px;
-		}
-		&.copyright{
-			color: #fff;
-			font-size: 12px !important;
-		}
-   }
-}
-
-.slider.revslider-initialised.tp-simpleresponsive {
-	position: relative;
-}
-
 
 /* Apollo logo.
 ----------------------------------------------------------------------------- */
@@ -570,18 +51,6 @@ ul.sidebar-nav-v1{
     }
 }
 
-
-/* Animated image.
- -----------------------------------------------------------------------------*/
-
-.thumbnail-style{
-	padding: 0;
-	&:hover{
-		box-shadow: none;
-	}
-}
-
-
 /* Buttons that are red should always use "OpenCms red".
 ----------------------------------------------------------------------------- */
 
@@ -666,8 +135,6 @@ $colored-box-variants:
 	}
 }
 
-
-
 .colored-box  a.btn-u,
 .colored-box-light  a.btn-u  {
     color: $white;
@@ -709,9 +176,6 @@ $colored-box-borderstyles:
 	    border-color: $bg-color;
 	}
 }
-
-
-
 
 /* Dropdown color */
 
@@ -770,7 +234,6 @@ $colored-box-borderstyles:
 		}		
 	}
 }
-
 
 .list-entry{
 	animation-duration: 1s;	
@@ -887,17 +350,25 @@ $colored-box-positions:
 ----------------------------------------------------------------------------- */
 
 // Main menu
+
 .header  {
 	.navbar-nav {
+		a{
+			border-bottom-color: $nav-main-color;
+  			color: $nav-main-color;
+		}
 		&>.active {
 			&>a {
-				&:hover {
+				border-bottom-color: $nav-main-color;
+  				color: $nav-main-color;  
+  				&:hover{
   					border-bottom-color: $nav-main-color-active;
-  					color: $nav-main-color-active;
-  				}
+  					color: $nav-main-color-active;  
+  				}				
   			}	
   		}
   		&>li{
+  			transition: all 1s;
   			&>a:hover {
   				border-bottom-color: $nav-main-color-hover;
   				color: $nav-main-color-hover;
@@ -943,9 +414,57 @@ $colored-box-positions:
 	color: $nav-sub-color-active;
 }
 
+// Side menu
 
+ul.sidebar-nav-v1 {
+	 li {
+			background-color: $nav-left-bg;
+			a, &.list-toggle:after {
+				color: $nav-left-color;				
+			}
+			a, &.active ul a{
+				background-color: $nav-left-bg;
+				&.active, &:hover{
+					background: $nav-left-bg-hover;
+					color: $nav-left-color-hover;
+					transition: all 0.5s;
+				}
+			}
+			//First level
+			a.accordion-toggle, .list-group-item.active{
+				background-color: $nav-left-bg-active;
+				border: none;
+				color: $nav-left-color-active;
+				transition: all 0.5s;				
+				&:hover{
+					background: $nav-left-bg-hover;
+					color: $nav-left-color-hover;
+					transition: all 0.5s;
+				}
+				a{
+					background: $white;
+				}
+						
+				//Second and further level
+				a.accordion-toggle, .active a{
+					background-color: $main-theme;
+					color: set-text-color($main-theme);					
+					&:hover{
+						background-color: $main-theme-hover;
+						color: set-text-color($main-theme-hover);
+						transition: all 0.5s;
+					}					
+				}		
+				&.collapsed{
+					background-color: $nav-left-bg;
+					color: $nav-left-color;
+				}
+			}		
+	}
+}
 
-/* Sitemap.
+/*
+ Sitemap.
 ----------------------------------------------------------------------------- */
 
 .sitemap{
@@ -1007,7 +526,6 @@ $colored-box-positions:
 	}
 }
 
-
 /* Slider (Play/Pause Button, caption, copyright).
 ----------------------------------------------------------------------------- */
 
@@ -1043,6 +561,9 @@ $colored-box-positions:
    }
 }
 
+.slider.revslider-initialised.tp-simpleresponsive {
+	position: relative;
+}
 
 /* spinner animation ----------------------------------------------------------------------------- */
 @keyframes spinner {
@@ -1090,8 +611,6 @@ $colored-box-positions:
 		}
 	}
 }
-
-
 
 /* Service Boxes.
 ----------------------------------------------------------------------------- */
@@ -1191,14 +710,12 @@ $colored-box-positions:
 	font-family: "Open Sans" sans-serif !important;
 }
 
-
 /* Social icons.
 ----------------------------------------------------------------------------- */
 
 .social_slideshare {
     background: url("../img/icons/social/slideshare.png") no-repeat;
 }
-
 
 ul.social-icons{
 	li{
@@ -1220,9 +737,6 @@ ul.social-icons{
 		}	
 	}
 }
-
-
-
 
 /* Superscript for user name in nav.
 ----------------------------------------------------------------------------- */
