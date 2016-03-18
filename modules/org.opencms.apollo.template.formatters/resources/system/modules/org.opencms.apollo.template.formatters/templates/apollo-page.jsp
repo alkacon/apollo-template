@@ -45,21 +45,11 @@
 			<!--=== Placeholder for OpenCms toolbar in edit mode ===-->
 			<div style="background: #fff; height: 52px;">&nbsp;</div>
 		</c:if>
-		<cms:container name="page-complete" type="page" width="1200" maxElements="50" editableby="ROLE.DEVELOPER">
-			<apollo:container-box label="Hello World!" boxType="container-box" type="mainsection" role="ROLE.DEVELOPER" />
-			<%--
-			<cms:bundle basename="org.opencms.apollo.template.formatters.messages">
-				<div class="oc-container-jsp">
-					<h1>
-						<fmt:message key="apollo.page.headline.emptycontainer" />
-						<div class="oc-label-developer">DEVELOPER</div>
-					</h1>
-					<p>
-						<fmt:message key="apollo.page.text.emptycontainer" />
-					</p>
-				</div>
-			</cms:bundle>
-			--%>
+		<cms:container name="page-complete" type="page" width="1200" maxElements="50" editableby="ROLE.DEVELOPER"> 
+            <cms:bundle basename="org.opencms.apollo.template.formatters.messages">        
+                <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
+            </cms:bundle>
+			<apollo:container-box label="${message}" boxType="container-box" type="mainsection" role="ROLE.DEVELOPER" />
 		</cms:container>
 
 	</div>

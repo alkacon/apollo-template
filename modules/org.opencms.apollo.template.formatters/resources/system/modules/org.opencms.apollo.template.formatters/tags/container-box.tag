@@ -72,7 +72,7 @@
       </c:otherwise>
     </c:choose>
   </h1>
-  <p>${label} - In: ${cms.container.type} For: ${type}</p>
+  <p>${label} - ${not empty cms.container.type ? 'In: ' += cms.container.type : ''} For: ${type}</p>
 </div>
 
 <%-- End of use case 1: Create container box --%>

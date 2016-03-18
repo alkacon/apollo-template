@@ -12,6 +12,15 @@
 <li>And of course you can edit the element. You will see how this works on the next page of this introduction.</li>
 </ul>]]></content>
     </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/.galleries/tutorial-images/tut-06.png]]></target>
+          <uuid>370e6600-6101-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </Image>
+      <Title><![CDATA["Edit point" element menu]]></Title>
+    </Image>
     <Link>
       <Text><![CDATA[Continue to step 2: Edit content]]></Text>
       <URI>
