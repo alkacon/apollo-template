@@ -16,12 +16,13 @@
 		<c:otherwise>
 			<c:set var="imgUri">${imgValParent.Image.value.Image}</c:set>
 			<c:if test="${fn:contains(imgUri, '?')}">
-				<c:set var="imgUri">${fn:substringBefore(imgUri, '?')}</c:set>  
+				<c:set var="imgUri">${fn:substringBefore(imgUri, '?')}</c:set>
 			</c:if>
 			<c:set var="imgCopyright"><cms:property name="Copyright" file="${imgUri}" default="" /></c:set>
 		</c:otherwise>
 	</c:choose>
 </c:if>
+
 <c:if test="${not empty imgCopyright}">
 	<c:set var="imgCopyrightSymbol">(c)</c:set>
 	<c:set var="imgCopyright">${fn:replace(imgCopyright, '&copy;', imgCopyrightSymbol)}</c:set>

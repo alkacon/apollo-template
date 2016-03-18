@@ -21,9 +21,9 @@
 
 						<c:set var="showTextBelow" value="false" />
 						<c:if
-							test="${(imgValParent.Headline.isSet and cms.element.setting.showheadline.value == 'bottom') 
-            or (cms.element.setting.showtext.value == 'true') 
-            or (imgValParent.Link.isSet and cms.element.setting.showlink.value == 'button')}">
+							test="${(imgValParent.Headline.isSet and ((cms.element.setting.showheadline.value == 'bottom') or (cms.element.setting.showheadline.value == 'bottomcenter'))
+											or (cms.element.setting.showtext.value == 'true')
+											or (imgValParent.Link.isSet and cms.element.setting.showlink.value == 'button'))}">
 							<c:set var="showTextBelow" value="true" />
 						</c:if>
 						<c:if
@@ -95,21 +95,21 @@
 									</c:choose>
 								</c:if>
 								<c:choose>
-                                  <c:when
-  									test="${imgValParent.Image.value.Description.isSet and cms.element.setting.showtext.value == 'true'}">
-  									<p ${imgValParent.Image.rdfa.Description}>${imgValParent.Image.value.Description}</p>
-  								</c:when>
-                                  <c:when
-          							test="${imgValParent.Text.isSet and cms.element.setting.showtext.value == 'true'}">
-          							<p ${imgValParent.Text.rdfa}>${imgValParent.Text}</p>
-          						</c:when>
-                                </c:choose>
+									<c:when
+										test="${imgValParent.Image.value.Description.isSet and cms.element.setting.showtext.value == 'true'}">
+										<p ${imgValParent.Image.rdfa.Description}>${imgValParent.Image.value.Description}</p>
+									</c:when>
+									<c:when
+												test="${imgValParent.Text.isSet and cms.element.setting.showtext.value == 'true'}">
+												<p ${imgValParent.Text.rdfa}>${imgValParent.Text}</p>
+									</c:when>
+								</c:choose>
 								<c:if
 									test="${imgValParent.Link.isSet and cms.element.setting.showlink.value == 'button'}">
 									<div style="text-align: right; margin-top: 20px;">
 										<a class="btn-more hover-effect" style="position: relative;"
 											href="<cms:link>${imgValParent.Link.value.URI}</cms:link>"><fmt:message
-												key="apollo.image.frontend.readmore" /></a>
+											key="apollo.image.frontend.readmore" /></a>
 									</div>
 								</c:if>
 							</div>

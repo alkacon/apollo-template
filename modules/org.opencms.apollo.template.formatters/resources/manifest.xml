@@ -814,7 +814,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Animation image]]></value>
+					<value><![CDATA[Image with animation effect]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -843,7 +843,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Animation formatter JSP for image]]></value>
+					<value><![CDATA[Image with animation formatter JSP]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -868,7 +868,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Enlargement image]]></value>
+					<value><![CDATA[Image with enlargement effect]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -897,7 +897,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Enlargement Formatter JSP for image]]></value>
+					<value><![CDATA[Image with enlargement formatter JSP]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -922,7 +922,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Standard image only]]></value>
+					<value><![CDATA[Image without effect]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -951,7 +951,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Standard Formatter JSP for image]]></value>
+					<value><![CDATA[Image without effect formatter JSP]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -2254,6 +2254,27 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/resources/default.png</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/resources/default.png</destination>
+			<type>image</type>
+			<uuidstructure>59b52296-ecef-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>59b52297-ecef-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Mar 2016 09:54:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Default placeholder image]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:640,h:480]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>system/modules/org.opencms.apollo.template.formatters/resources/js</destination>
 			<type>folder</type>
 			<uuidstructure>3853a9e1-57cc-11e5-a989-0242ac11002b</uuidstructure>
@@ -2306,7 +2327,28 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Container Box Tag]]></value>
+					<value><![CDATA[Container box tag]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/tags/image-vars.tag</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/tags/image-vars.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>d595a379-ecfe-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>d595a37a-ecfe-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Mar 2016 11:44:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image variable access tag]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>

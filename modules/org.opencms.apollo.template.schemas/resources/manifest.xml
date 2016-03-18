@@ -500,6 +500,51 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>system/modules/org.opencms.apollo.template.schemas/models</destination>
+			<type>folder</type>
+			<uuidstructure>9dcb119c-ecf2-11e5-af37-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 18 Mar 2016 10:17:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.schemas/models/section</destination>
+			<type>folder</type>
+			<uuidstructure>abc456de-ecf2-11e5-af37-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 18 Mar 2016 10:17:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.schemas/models/section/cs_00001.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.schemas/models/section/cs_00001.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>ca156ad0-ecf2-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>ca156ad1-ecf2-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Mar 2016 10:18:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Sample text with image for direct editing]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Default placeholder text]]></value>
+				</property>
+				<property>
+					<name>element.model</name>
+					<value><![CDATA[true]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>system/modules/org.opencms.apollo.template.schemas/schemas</destination>
 			<type>folder</type>
 			<uuidstructure>866bad98-5216-11e5-8e22-0242ac11002b</uuidstructure>

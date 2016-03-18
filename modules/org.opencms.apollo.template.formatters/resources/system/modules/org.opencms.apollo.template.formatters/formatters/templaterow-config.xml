@@ -16,7 +16,7 @@
         <ContainerType><![CDATA[page]]></ContainerType>
         <ContainerType><![CDATA[mainsection]]></ContainerType>
         <ContainerType><![CDATA[footsection]]></ContainerType>
-        <ContainerType><![CDATA[template]]></ContainerType>
+        <ContainerType><![CDATA[locked]]></ContainerType>
         <ContainerType><![CDATA[grid]]></ContainerType>
         <ContainerType><![CDATA[container]]></ContainerType>
         <ContainerType><![CDATA[element]]></ContainerType>

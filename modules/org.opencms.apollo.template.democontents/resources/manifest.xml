@@ -4026,7 +4026,11 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Default placeholder text]]></value>
+					<value><![CDATA[! Default placeholder text]]></value>
+				</property>
+				<property>
+					<name>element.model</name>
+					<value><![CDATA[true]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7876,6 +7880,46 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo/test</destination>
+			<type>folder</type>
+			<uuidstructure>96109b8b-ecd8-11e5-af37-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 18 Mar 2016 07:11:07 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.125]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Test]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Test]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/test/index.html</source>
+			<destination>apollo-demo/test/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>96152f70-ecd8-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>96152f71-ecd8-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Mar 2016 07:11:07 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Test]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/the-team</destination>
 			<type>folder</type>
 			<uuidstructure>a3023c68-6079-11e5-9eef-0242ac11002b</uuidstructure>
@@ -9720,6 +9764,23 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>tutorial/.content/contentsections/cs_00017.xml</source>
+			<destination>tutorial/.content/contentsections/cs_00017.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>ab0ac397-ecf5-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>ab0ac398-ecf5-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Mar 2016 10:39:18 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[! Default placeholder text]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>tutorial/.content/contentsections/cs_00018.xml</source>
 			<destination>tutorial/.content/contentsections/cs_00018.xml</destination>
 			<type>a-section</type>
@@ -9867,23 +9928,6 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Step 2: edit content: Form based editing]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>tutorial/.content/contentsections/cs_00027.xml</source>
-			<destination>tutorial/.content/contentsections/cs_00027.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>bd0bd297-a8ba-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>bd0bd298-a8ba-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 14:46:09 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Step 2: edit content: Click to edit the image]]></value>
 				</property>
 			</properties>
 			<relations/>

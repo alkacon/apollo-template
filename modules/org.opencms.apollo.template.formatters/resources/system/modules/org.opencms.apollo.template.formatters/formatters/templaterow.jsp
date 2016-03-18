@@ -9,7 +9,11 @@
 <cms:formatter var="content" val="value">
 
 <c:choose>
-<c:when test="${!content.value.Container.isSet || (content.value.Container.isSet && fn:containsIgnoreCase(cms.container.type, content.value.Container))}">
+<c:when test="${!content.value.Container.isSet
+	|| (content.value.Container.isSet
+	&& (fn:containsIgnoreCase(cms.container.type, content.value.Container)
+		  || ((cms.container.type == 'locked') && !cms.edited)
+			))}">
 <%-- Element matches the configured parent container --%>
 
 	<%-- Insert HTML for model group start (if required) --%>
@@ -56,7 +60,10 @@
 				<c:set var="role" value="${column.value.Editors.isSet ? column.value.Editors : (content.value.Defaults.isSet ? content.value.Defaults.value.Editors : 'ROLE.DEVELOPER')}" />
 				<c:set var="typeName" value="${column.value.Type.isSet ? column.value.Type : (content.value.Defaults.isSet ? content.value.Defaults.value.Type : 'unknown')}" />
 				<c:if test="${grid.charAt(loop.count - 1) == '1'.charAt(0)}">
-					<c:set var="typeName" value="container" />				
+					<c:set var="typeName" value="container" />
+				</c:if>
+				<c:if test="${grid.charAt(loop.count - 1) == 'X'.charAt(0)}">
+					<c:set var="typeName" value="locked" />
 				</c:if>
 				<c:set var="cssClass">${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}</c:set>
 				<cms:container

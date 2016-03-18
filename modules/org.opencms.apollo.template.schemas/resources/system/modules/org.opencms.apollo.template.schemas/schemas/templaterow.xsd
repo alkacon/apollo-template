@@ -15,10 +15,10 @@
 		<xsd:sequence>
 			<xsd:element name="Title" type="OpenCmsString" />
 			<xsd:element name="PreMarkup" type="OpenCmsString" minOccurs="0" />
-			<xsd:element name="PostMarkup" type="OpenCmsString" minOccurs="0" />            
-			<xsd:element name="Container" type="OpenCmsString" minOccurs="0" /> 
+			<xsd:element name="PostMarkup" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Container" type="OpenCmsString" minOccurs="0" />
 			<xsd:element name="Defaults" type="OpenCmsApolloRowColumn" minOccurs="0" />
-			<xsd:element name="Column" type="OpenCmsApolloRowColumn" maxOccurs="12" /> 
+			<xsd:element name="Column" type="OpenCmsApolloRowColumn" maxOccurs="12" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
 	</xsd:complexType>
@@ -42,7 +42,7 @@
 			<layouts>
 				<layout element="PreMarkup" widget="TextareaWidget" configuration="5" />
 				<layout element="PostMarkup" widget="TextareaWidget" configuration="5" />
-			</layouts>            
+			</layouts>
 			<validationrules/>
 			<searchsettings containerPageOnly="true">
 				<searchsetting element="Title" searchcontent="false" />
@@ -50,13 +50,13 @@
 				<searchsetting element="PostMarkup" searchcontent="false" />
 				<searchsetting element="Container" searchcontent="false" />
 			</searchsettings>
-            <synchronizations>
-                <synchronization element="PreMarkup" />
-                <synchronization element="PostMarkup" />
-                <synchronization element="Container" />
-                <synchronization element="Defaults" />
-                <synchronization element="Column" />
-            </synchronizations>
+			<synchronizations>
+					<synchronization element="PreMarkup" />
+					<synchronization element="PostMarkup" />
+					<synchronization element="Container" />
+					<synchronization element="Defaults" />
+					<synchronization element="Column" />
+			</synchronizations>
 		</xsd:appinfo>
 	</xsd:annotation>
 

@@ -2,7 +2,7 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Animation image]]></NiceName>
+    <NiceName><![CDATA[Image with animation effect]]></NiceName>
     <Type><![CDATA[a-section]]></Type>
     <Type><![CDATA[a-blog]]></Type>
     <Type><![CDATA[a-event]]></Type>
