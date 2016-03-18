@@ -75,25 +75,6 @@
 /* Colored boxes.
 ----------------------------------------------------------------------------- */
 
-$colored-box-variants:
-(
- (white, $white),         
- (lightgrey, $gray-lighter),         
- (mediumgrey, $gray-light),         
- (dark, $gray-darker),
- (red, $red),         
- (blue, $blue),         
- (green, $green),
- (sea, $sea),
- (orange, $orange),
- (yellow, $yellow),
- (purple, $violet),
- (aqua, $blue-cyan),
- (brown, $brown),
- (dark-blue, $blue-dark),
- (light-green, $green-light)
-);
-
 .colored-box, .colored-box-light {
   overflow: hidden;
   padding: 20px;

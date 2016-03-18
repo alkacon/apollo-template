@@ -85,10 +85,10 @@ $oc-container-labels:
 }
 
 @each $role-name, $label-color in $oc-container-labels {      
-	.oc-label-#{""+$role-name} {
-	    @extend %oc-container-label;  
-	    background-color: $label-color;        
-	}  
+    .oc-label-#{""+$role-name} {
+        @extend %oc-container-label;  
+        background-color: $label-color;        
+    }  
 }
 
 .oc-modelinfo {
@@ -102,124 +102,88 @@ $oc-container-labels:
 }
 
 /* Generic helpers. For further information please read css-doc.md
------------------------------------------------------------------------------ */
-
-//backgrounds
-$colors: ((
-	'white', $white),(        
-	'black', $black),(   
-	'blue', $blue),(      
-	'blue-light', $blue-light),(     
-	'blue-lighter', $blue-lighter),(   
-	'blue-dark', $blue-dark),( 
-	'blue-darker', $blue-darker),(   
-	'red', $red),(       
-	'red-light', $red-light),( 
-	'red-lighter', $red-lighter),(     
-	'red-dark', $red-dark),(  
-	'red-darker', $red-darker),(
-	'orange', $orange),(    
-	'orange-light', $orange-light),(    
-	'orange-lighter', $orange-lighter),(  
-	'orange-dark', $orange-dark),(      
-	'orange-darker', $orange-darker),(    
-	'cyan', $cyan),(     
-	'grey', $gray),(     
-	'grey-lighter', $gray-lighter),(      
-	'grey-light', $gray-light),(  
-	'grey-dark', $gray-dark),( 
-	'grey-darker', $gray-darker),(       
-	'sea', $sea),(			
-	'yellow', $yellow),(
-	'blue-cyan', $blue-cyan),(
-	'violet', $violet),(    
-	'brown', $brown),(   
-	'red-orange', $red-orange),(       
-	'red-cyan', $red-cyan),(
-	'green', $green),(  
-	'green-light', $green-light)
-);		
+----------------------------------------------------------------------------- */    
 
 @each $name, $color in $colors {
-	.bg-#{$name}{
-		background-color: $color;
-		color: set-text-color($color);
-		h2,h3,h4, p, li, .fa{				
-			color: set-text-color($color);
-			text-decoration: none;
-			border: none;
-			background-color: $color;			
-		}
-		a{
-			color: lighten(set-text-color($color), 50%);	
-			&:hover,&:active, &:focus, &:hover{
-				color: set-text-color($color);
-			}
-		}
-		.headline{
-			border: none;			
-			h2,h3{
-				border: none;			
-			}
-		}
-	
-		&.h-u{	
-			.headline{		
-				padding-bottom: 10px;
-				border-bottom: 1px solid lighten(set-text-color($color), 50%);
-			}
-		}	
-		&.h-c{	
-			.headline{		
-				text-align: center;
-			}
-		}	
-	}	
+    .bg-#{$name}{
+        background-color: $color;
+        color: set-text-color($color);
+        h2,h3,h4, p, li, .fa{               
+            color: set-text-color($color);
+            text-decoration: none;
+            border: none;
+            background-color: $color;           
+        }
+        a{
+            color: lighten(set-text-color($color), 50%);    
+            &:hover,&:active, &:focus, &:hover{
+                color: set-text-color($color);
+            }
+        }
+        .headline{
+            border: none;           
+            h2,h3{
+                border: none;           
+            }
+        }
+    
+        &.h-u{  
+            .headline{      
+                padding-bottom: 10px;
+                border-bottom: 1px solid lighten(set-text-color($color), 50%);
+            }
+        }   
+        &.h-c{  
+            .headline{      
+                text-align: center;
+            }
+        }   
+    }   
 }
-@for $i from 1 through 9 {
-	@each $name, $color in $colors {
-		.bg-#{$name}-#{$i}{
-			background-color: rgba($color,$i/10);
-			color: set-text-color($color);
-		}	
-	}
+@each $i in (1,2,4,5,8,10) {  
+    @each $name, $color in $colors {
+        .bg-#{$name}-#{$i}{
+            background-color: rgba($color,$i/10);
+            color: set-text-color($color);
+        }   
+    }
 }
 
 //borders
 
-@for $line-size from 1 through 10 {  
-	@each $style in (solid, dashed, dotted) {    
-		@each $name, $color in $colors {
-	 		.b-#{$name}-#{$line-size}-#{$style}  {    
-        		border: $color #{$line-size}px $style;  
-        	}
-        	@each $n, $side in ((t,top), (r,right), (b,bottom), (l, left)) {
-        		.b#{$n}-#{$name}-#{$line-size}-#{$style}  {    
-        			border-#{$side}: $color #{$line-size}px $style !important;  
-        		}
-        	}
+@each $line-size in (1,2,3,4,5) {  
+    @each $style in (solid, dashed, dotted) {    
+        @each $name, $color in $colors {
+            .b-#{$name}-#{$line-size}-#{$style}  {    
+                border: $color #{$line-size}px $style;  
+            }
+            @each $n, $side in ((t,top), (r,right), (b,bottom), (l, left)) {
+                .b#{$n}-#{$name}-#{$line-size}-#{$style}  {    
+                    border-#{$side}: $color #{$line-size}px $style !important;  
+                }
+            }
         }     
     }    
 }
 
-@for $radius from 1 through 30 {    
-	.br-#{$radius}  {
+@each $radius in (1,2,4,5,10,15,20) {    
+    .br-#{$radius}  {
         border-radius: #{$radius}px;                    
     }
     @each $n, $side in ((tl,top-left), (tr,top-right), (bl,bottom-left), (br, bottom-right)) {
-	    .br#{$n}-#{$radius}  {    	
-	    	border-#{$side}-radius: #{$radius}px !important;
-	    }
-	}
+        .br#{$n}-#{$radius}  {      
+            border-#{$side}-radius: #{$radius}px !important;
+        }
+    }
 }
 
 //font
 
 //Alignment
 @each $align in (left, center, right) {
-	.fa-#{$align} {
-		text-align: $align;
-	}
+    .fa-#{$align} {
+        text-align: $align;
+    }
 }
 
 
@@ -232,36 +196,36 @@ $colors: ((
 
 //color (also if it's a link)
 @each $name, $color in $colors {
-	.fc-#{$name}{
-		color: $color;
-		&.a, p, h2, .fa{
-			color: $color;		
-		}
-	}
+    .fc-#{$name}{
+        color: $color;
+        &.a, p, h2, .fa{
+            color: $color;      
+        }
+    }
 }
 
 
 
 //link color
 @each $name, $color in $colors {
-	.lc-#{$name}{
-		a, &.a{
-			color: $color;		
-		}
-	}
-	.lch-#{$name}{
-		a, &.a{
-		 &:hover, &:active, &:focus, &:hover{
-				color: $color;	
-			}	
-		}
-	}
+    .lc-#{$name}{
+        a, &.a{
+            color: $color;      
+        }
+    }
+    .lch-#{$name}{
+        a, &.a{
+         &:hover, &:active, &:focus, &:hover{
+                color: $color;  
+            }   
+        }
+    }
 }
 .l-nu {
-	a, &.a{
-		text-decoration: none;
-	}
-}	
+    a, &.a{
+        text-decoration: none;
+    }
+}   
 
 //line height
 @each $lineheight in (10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) {
@@ -273,9 +237,9 @@ $colors: ((
 //margin, padding
 @each $space in (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 500, 1000, 2000) {
 
-	.pl-#{$space} {
-	    padding-left: #{$space}px;
-	}
+    .pl-#{$space} {
+        padding-left: #{$space}px;
+    }
     .pr-#{$space} {
         padding-right: #{$space}px;
     }
@@ -285,9 +249,9 @@ $colors: ((
     .pb-#{$space} {
         padding-bottom: #{$space}px;
     }    
-	.mt-#{$space} {
-	    margin-top: #{$space}px;
-	}    	
+    .mt-#{$space} {
+        margin-top: #{$space}px;
+    }       
     .mb-#{$space} {
         margin-bottom: #{$space}px;
     }
@@ -300,7 +264,7 @@ $colors: ((
     .mv-#{$space} {
         margin-top: #{$space}px;
         margin-bottom: #{$space}px;
-    }	
+    }   
     .pv-#{$space} {
         padding-top: #{$space}px;
         padding-bottom: #{$space}px;
@@ -325,41 +289,41 @@ $colors: ((
 //square and tile grid
    
 .square {
-	.inner{
-		float:left;
-		position: relative;
-		background-position:center center;
-		background-repeat:no-repeat;
-		background-size:cover;
-		overflow: hidden;
-		a{
-			display: block;
-			width: 100%;
-			height: 100%;
-		}
-	}
-	&:hover .title{
-		bottom: 0;
-		transition: bottom 1s;				
-	}	
-	.title{
-	    padding: 10px;
-	    color: #fff;
-	    background-color: rgba(0,0,0,0.2);
-	    position: absolute;
-	    bottom: -100px;
-	    width: 100%;
-	    transition: bottom 1s;
-	}
-	
-	.content{
-		position: absolute;	
-		padding: 0;
-		img{
-			width: 100%;
-			height: 100%;
-		}
-	}
+    .inner{
+        float:left;
+        position: relative;
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        overflow: hidden;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &:hover .title{
+        bottom: 0;
+        transition: bottom 1s;              
+    }   
+    .title{
+        padding: 10px;
+        color: #fff;
+        background-color: rgba(0,0,0,0.2);
+        position: absolute;
+        bottom: -100px;
+        width: 100%;
+        transition: bottom 1s;
+    }
+    
+    .content{
+        position: absolute; 
+        padding: 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
 }    
 
 .tile { 
@@ -371,85 +335,85 @@ $colors: ((
 
 $maxCols: 12; 
 @mixin make-square($size)   {  
-	@for $i from 1 through $maxCols{ 
-		$width: 100/($maxCols/$i);
-		$margin: 2;
-		@if $i == $maxCols {
-			$margin: 0;	
-		}	
-	
-		.square-#{$size}-#{$i} {
-			.inner{
-					width: calc(#{$width}% - #{$margin*2}px);
-					padding-bottom : calc(#{$width}% - #{$margin*2}px);	
-					@if $i == $maxCols {
-						margin: 2px 0;	
-					}@else{
-						margin: #{$margin}px;						
-					}			
-			}
-		}
-	}
+    @for $i from 1 through $maxCols{ 
+        $width: 100/($maxCols/$i);
+        $margin: 2;
+        @if $i == $maxCols {
+            $margin: 0; 
+        }   
+    
+        .square-#{$size}-#{$i} {
+            .inner{
+                    width: calc(#{$width}% - #{$margin*2}px);
+                    padding-bottom : calc(#{$width}% - #{$margin*2}px); 
+                    @if $i == $maxCols {
+                        margin: 2px 0;  
+                    }@else{
+                        margin: #{$margin}px;                       
+                    }           
+            }
+        }
+    }
 }
 
 @mixin make-tile($size)   {  
-	@for $i from 1 through $maxCols{ 
-		$width: 100/($maxCols/$i);
-		$margin: 2;
-		$padding: 10;
-		@if $i == $maxCols {
-			$margin: 0;	
-		}
-	
-		.tile-#{$size}-#{$i} {
-			width: calc(#{$width}% - #{$margin*2}px);
-			@if $i == $maxCols {
-				margin: 2px 0;	
-			}@else{
-				margin: #{$margin}px;
-				padding: 0 #{$padding}px
-					
-								
-			}			
-		}
-	}
+    @for $i from 1 through $maxCols{ 
+        $width: 100/($maxCols/$i);
+        $margin: 2;
+        $padding: 10;
+        @if $i == $maxCols {
+            $margin: 0; 
+        }
+    
+        .tile-#{$size}-#{$i} {
+            width: calc(#{$width}% - #{$margin*2}px);
+            @if $i == $maxCols {
+                margin: 2px 0;  
+            }@else{
+                margin: #{$margin}px;
+                padding: 0 #{$padding}px
+                    
+                                
+            }           
+        }
+    }
 }
 
 @each $size in (xs,sm,md,lg){
 @for $i from 1 through $maxCols{ 
-		.square-#{$size}-#{$i} {
-			@extend .square;
-		}
-		@include make-square($size);
-		.tile-#{$size}-#{$i} {
-			@extend .tile;
-		}
-		@include make-tile($size);		
-	}
+        .square-#{$size}-#{$i} {
+            @extend .square;
+        }
+        @include make-square($size);
+        .tile-#{$size}-#{$i} {
+            @extend .tile;
+        }
+        @include make-tile($size);      
+    }
 }
-@include make-square(xs);		
-@include make-tile(xs);		
+@include make-square(xs);       
+@include make-tile(xs);     
 
-@media (min-width: $screen-sm-min){	
-	@include make-square(sm);	
-	@include make-tile(sm);
-}	
-@media (min-width: $screen-md-min){	
-	@include make-square(md);
-	@include make-tile(md);
-}		
-@media (min-width: $screen-lg-min){	
-	@include make-square(lg);
-	@include make-tile(lg);
-}		
+@media (min-width: $screen-sm-min){ 
+    @include make-square(sm);   
+    @include make-tile(sm);
+}   
+@media (min-width: $screen-md-min){ 
+    @include make-square(md);
+    @include make-tile(md);
+}       
+@media (min-width: $screen-lg-min){ 
+    @include make-square(lg);
+    @include make-tile(lg);
+}       
 
 //Image gallery animation
 .comein {
- 	transform: translateY(150px);
-	animation: come-in 0.8s ease forwards;
-	&:nth-child(odd) {
-  		animation-duration: 0.6s; /* So they look staggered */
-	}
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+    &:nth-child(odd) {
+        animation-duration: 0.6s; /* So they look staggered */
+    }
 }
 
 
@@ -472,21 +436,20 @@ $maxCols: 12;
 }
 
 .spinner{
-	width: 25px;	
-	height: auto;
-	font-size: 25px;
-	position: absolute;
-	transform: translateY(-50%);
-	&, a &  {
-		color: $gray;
-	}
-	
-	left: 50%;
-	i{
-		animation: spinner 1s infinite;
-	}
+    width: 25px;    
+    height: auto;
+    font-size: 25px;
+    position: absolute;
+    transform: translateY(-50%);
+    &, a &  {
+        color: $gray;
+    }
+    
+    left: 50%;
+    i{
+        animation: spinner 1s infinite;
+    }
 }
-      
 
 /* Social color helpers.
 ----------------------------------------------------------------------------- */

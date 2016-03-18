@@ -6,8 +6,8 @@ module.exports = function(grunt) {
 				sass : {
 					dist : {
 						options : {
-							sourcemap : 'auto',
-							lineNumbers : true,
+							sourcemap : 'none',
+							lineNumbers : false,
 							style : 'nested',
 						},
 						files : [ {
@@ -40,24 +40,24 @@ module.exports = function(grunt) {
 						dest : 'output/resources/css/plugins.css',
 					},
 					apollo_red : {
-						src : [ 'output/resources/css/plugins.min.css',
-								'output/resources/css/style-red.min.css' ],
-						dest : 'output/resources/css/style-red.min.css',
+						src : [ 'output/resources/css/min/plugins.min.css',
+								'output/resources/css/min/style-red.min.css' ],
+						dest : 'output/resources/css/min/style-red.min.css',
 					},
 					apollo_blue : {
-						src : [ 'output/resources/css/plugins.min.css',
-								'output/resources/css/style-blue.min.css' ],
-						dest : 'output/resources/css/style-blue.min.css',
+						src : [ 'output/resources/css/min/plugins.min.css',
+								'output/resources/css/min/style-blue.min.css' ],
+						dest : 'output/resources/css/min/style-blue.min.css',
 					},
 					apollo_bluegold : {
-						src : [ 'output/resources/css/plugins.min.css',
-								'output/resources/css/style-bluegold.min.css' ],
-						dest : 'output/resources/css/style-bluegold.min.css',
+						src : [ 'output/resources/css/min/plugins.min.css',
+								'output/resources/css/min/style-bluegold.min.css' ],
+						dest : 'output/resources/css/min/style-bluegold.min.css',
 					},
 					apollo_goldblue : {
-						src : [ 'output/resources/css/plugins.min.css',
-								'output/resources/css/style-goldblue.min.css' ],
-						dest : 'output/resources/css/style-goldblue.min.css',
+						src : [ 'output/resources/css/min/plugins.min.css',
+								'output/resources/css/min/style-goldblue.min.css' ],
+						dest : 'output/resources/css/min/style-goldblue.min.css',
 					}
 				},
 				cssmin : {
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
 					plugins : {
 						files : [
 								{
-									'output/resources/css/plugins.min.css' : [
+									'output/resources/css/min/plugins.min.css' : [
 											'output/resources/css/plugins.css',
 											'components/css/style.css', ]
 								}, ]
@@ -81,7 +81,7 @@ module.exports = function(grunt) {
 							expand : true,
 							cwd : 'output/resources/css',
 							src : [ 'style-*.css', '!*.min.css' ],
-							dest : 'output/resources/css',
+							dest : 'output/resources/css/min',
 							ext : '.min.css'
 						} ]
 
@@ -122,7 +122,7 @@ module.exports = function(grunt) {
 								{
 									expand : true,
 									flatten : true,
-									src : [ 'output/resources/css/*.min.css', 'components/plugins/PhotoSwipe/default-skin/*.svg', 'components/plugins/PhotoSwipe/default-skin/*.png', 'components/plugins/PhotoSwipe/default-skin/*.gif' ],
+									src : [ 'output/resources/css/min/*.min.css', 'components/plugins/PhotoSwipe/default-skin/*.svg', 'components/plugins/PhotoSwipe/default-skin/*.png', 'components/plugins/PhotoSwipe/default-skin/*.gif' ],
 									dest : '/home/user/opencms-mount/docker-2/demo/system/modules/org.opencms.apollo.template.basics/resources/css/',
 									filter : 'isFile'
 								},
@@ -159,11 +159,11 @@ module.exports = function(grunt) {
 				watch : {
 					scss : {
 						files : '**/*.scss',
-						tasks : [ 'apollo', 'copy' ]
+						tasks : [ 'apollo' ]
 					},
 					uglify : {
 						files : 'components/**/*.js',
-						tasks : [ 'uglify', 'copy' ]
+						tasks : [ 'uglify' ]
 					},
 					markdown : {
 						files : 'components//*.md',
