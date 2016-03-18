@@ -12,8 +12,7 @@
 <c:when test="${!content.value.Container.isSet
 	|| (content.value.Container.isSet
 	&& (fn:containsIgnoreCase(cms.container.type, content.value.Container)
-		  || ((cms.container.type == 'locked') && !cms.edited)
-			))}">
+		  || ((cms.container.type == 'locked') && !cms.dragMode)))}">
 <%-- Element matches the configured parent container --%>
 
 	<%-- Insert HTML for model group start (if required) --%>

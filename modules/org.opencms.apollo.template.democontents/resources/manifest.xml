@@ -7880,46 +7880,6 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>apollo-demo/test</destination>
-			<type>folder</type>
-			<uuidstructure>96109b8b-ecd8-11e5-af37-0242ac11002b</uuidstructure>
-			<datecreated>Fri, 18 Mar 2016 07:11:07 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[0.125]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[Test]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Test]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/test/index.html</source>
-			<destination>apollo-demo/test/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>96152f70-ecd8-11e5-af37-0242ac11002b</uuidstructure>
-			<uuidresource>96152f71-ecd8-11e5-af37-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Mar 2016 07:11:07 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Test]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>apollo-demo/the-team</destination>
 			<type>folder</type>
 			<uuidstructure>a3023c68-6079-11e5-9eef-0242ac11002b</uuidstructure>

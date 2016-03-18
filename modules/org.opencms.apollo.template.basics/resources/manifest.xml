@@ -352,59 +352,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.basics/resources/css/critical.min.css</source>
-			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/critical.min.css</destination>
-			<type>plain</type>
-			<uuidstructure>54787b38-7e0b-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>54787b39-7e0b-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Thu, 29 Oct 2015 07:04:43 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.basics/resources/css/default-skin.png</source>
-			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/default-skin.png</destination>
-			<type>image</type>
-			<uuidstructure>46ed70b2-8f80-11e5-a6ad-0242ac11002b</uuidstructure>
-			<uuidresource>46ed70b3-8f80-11e5-a6ad-0242ac11002b</uuidresource>
-			<datecreated>Fri, 20 Nov 2015 12:14:41 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property type="shared">
-					<name>image.size</name>
-					<value><![CDATA[w:264,h:88]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.basics/resources/css/default-skin.svg</source>
-			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/default-skin.svg</destination>
-			<type>plain</type>
-			<uuidstructure>46d66640-8f80-11e5-a6ad-0242ac11002b</uuidstructure>
-			<uuidresource>46d66641-8f80-11e5-a6ad-0242ac11002b</uuidresource>
-			<datecreated>Fri, 20 Nov 2015 12:14:41 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.basics/resources/css/plugins.min.css</source>
-			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/plugins.min.css</destination>
-			<type>plain</type>
-			<uuidstructure>8b87e678-7ef3-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>8b87e679-7ef3-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Fri, 30 Oct 2015 10:46:58 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.basics/resources/css/preloader.gif</source>
 			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/preloader.gif</destination>
 			<type>image</type>
@@ -422,36 +369,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-.min.css</source>
-			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-.min.css</destination>
-			<type>plain</type>
-			<uuidstructure>9bac2ec4-8936-11e5-a24e-0242ac11002b</uuidstructure>
-			<uuidresource>9bac2ec5-8936-11e5-a24e-0242ac11002b</uuidresource>
-			<datecreated>Thu, 12 Nov 2015 12:12:13 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-blue-gold.min.css</source>
-			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-blue-gold.min.css</destination>
-			<type>plain</type>
-			<uuidstructure>1afc2e30-8933-11e5-a24e-0242ac11002b</uuidstructure>
-			<uuidresource>1afc2e31-8933-11e5-a24e-0242ac11002b</uuidresource>
-			<datecreated>Thu, 12 Nov 2015 11:47:09 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-blue.min.css</source>
 			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-blue.min.css</destination>
 			<type>plain</type>
-			<uuidstructure>0f6c6463-5155-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>0f6c6464-5155-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 09:29:07 GMT</datecreated>
+			<uuidstructure>a1ca069f-ed26-11e5-a0c5-0242ac11002b</uuidstructure>
+			<uuidresource>a1ca06a0-ed26-11e5-a0c5-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Mar 2016 16:29:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -482,18 +405,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-gold-blue.min.css</source>
-			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-gold-blue.min.css</destination>
-			<type>plain</type>
-			<uuidstructure>1b19c852-8933-11e5-a24e-0242ac11002b</uuidstructure>
-			<uuidresource>1b19c853-8933-11e5-a24e-0242ac11002b</uuidresource>
-			<datecreated>Thu, 12 Nov 2015 11:47:09 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-goldblue.min.css</source>
 			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-goldblue.min.css</destination>
 			<type>plain</type>
@@ -509,21 +420,9 @@
 			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-red.min.css</source>
 			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-red.min.css</destination>
 			<type>plain</type>
-			<uuidstructure>8729d975-56c9-11e5-bfd9-0242ac11002b</uuidstructure>
-			<uuidresource>8729d976-56c9-11e5-bfd9-0242ac11002b</uuidresource>
-			<datecreated>Wed, 09 Sep 2015 08:05:26 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.basics/resources/css/styles-main.min.css</source>
-			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/styles-main.min.css</destination>
-			<type>plain</type>
-			<uuidstructure>0fa43d45-5155-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>0fa43d46-5155-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 09:29:08 GMT</datecreated>
+			<uuidstructure>a1be94eb-ed26-11e5-a0c5-0242ac11002b</uuidstructure>
+			<uuidresource>a1be94ec-ed26-11e5-a0c5-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Mar 2016 16:29:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
