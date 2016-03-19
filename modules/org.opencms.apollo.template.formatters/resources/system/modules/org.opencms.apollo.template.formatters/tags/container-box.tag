@@ -23,20 +23,6 @@
 <c:when test="${(boxType == 'container-box') || (boxType == 'detail-placeholder')}">
 <%-- Use case 1: Create container or detail container placeholder box --%>
 
-<c:set var="parent_role" value="${cms.container.param}" />
-
-<c:choose>
-  <c:when test="${(role == 'ROLE.DEVELOPER') or (parent_role == 'ROLE.DEVELOPER')}">
-    <c:set var="myrole" value="developer" />
-  </c:when>
-  <c:when test="${(role == 'ROLE.EDITOR') or (parent_role == 'ROLE.EDITOR')}">
-    <c:set var="myrole" value="editor" />
-  </c:when>
-  <c:otherwise>
-    <c:set var="myrole" value="author" />
-  </c:otherwise>
-</c:choose>
-
 <c:choose>
   <c:when test="${boxType == 'detail-placeholder'}">
     <c:set var="variant" value="detailonly" />
@@ -46,7 +32,8 @@
   </c:when>
   <c:when test="${not fn:containsIgnoreCase(type, 'default')}">
     <c:set var="variant" value="template" />
-  </c:when>  <c:otherwise>
+  </c:when>
+  <c:otherwise>
     <c:set var="variant" value="layout" />
   </c:otherwise>
 </c:choose>
@@ -60,7 +47,7 @@
       </c:when>
       <c:otherwise>
         <fmt:message key="apollo.row.headline.emptycontainer"/>
-        <div class="oc-label-${myrole}">${fn:toUpperCase(myrole)}</div>
+        <div class="oc-label-${fn:toLowerCase(role)}">${fn:toUpperCase(role)}</div>
         <c:choose>
           <c:when test="${detailView == 'true'}">
             <div class="oc-label-detail">DETAIL VIEW</div>

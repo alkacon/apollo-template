@@ -56,7 +56,24 @@
 				<%--
 					Generate the container tag.
 				--%>
+                
 				<c:set var="role" value="${column.value.Editors.isSet ? column.value.Editors : (content.value.Defaults.isSet ? content.value.Defaults.value.Editors : 'ROLE.DEVELOPER')}" />
+                <c:set var="parent_role" value="${cms.container.param}" />
+                <c:choose>
+                  <c:when test="${(role == 'ROLE.DEVELOPER') or (parent_role == 'ROLE.DEVELOPER')}">
+                    <c:set var="role" value="ROLE.DEVELOPER" />
+                    <c:set var="myrole" value="DEVELOPER" />
+                  </c:when>
+                  <c:when test="${(role == 'ROLE.EDITOR') or (parent_role == 'ROLE.EDITOR')}">
+                    <c:set var="role" value="ROLE.EDITOR" />
+                    <c:set var="myrole" value="EDITOR" />
+                  </c:when>
+                  <c:otherwise>
+                    <c:set var="role" value="ROLE.ELEMENT_AUTHOR" />
+                    <c:set var="myrole" value="AUTHOR" />
+                  </c:otherwise>
+                </c:choose>
+                
 				<c:set var="typeName" value="${column.value.Type.isSet ? column.value.Type : (content.value.Defaults.isSet ? content.value.Defaults.value.Type : 'unknown')}" />
 				<c:if test="${grid.charAt(loop.count - 1) == '1'.charAt(0)}">
 					<c:set var="typeName" value="container" />
@@ -74,12 +91,12 @@
 					detailview="${detailView}"
 					detailonly="${detailOnly}"
 					editableby="${role}"
-					param="role:${role}|${cms.container.param}|css:${cssClass}">
+					param="${role}">
 
 					<apollo:container-box
 						label="${content.value.Title}${column.value.Name.isSet ? ' - ' += column.value.Name : ''}"
 						boxType="container-box"
-						role="${role}"
+						role="${myrole}"
 						type="${typeName}"
 						detailView="${detailView}"  />
 

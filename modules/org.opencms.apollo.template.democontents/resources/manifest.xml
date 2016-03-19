@@ -747,6 +747,220 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>.content/templaterows</destination>
+			<type>folder</type>
+			<uuidstructure>16fad9e4-ed60-11e5-a02c-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 18 Mar 2016 23:21:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ROLE.DEVELOPER</uuidprincipal>
+					<flags>514</flags>
+					<permissionset>
+						<allowed>7</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+				<accessentry>
+					<uuidprincipal>GROUP.Users</uuidprincipal>
+					<flags>38</flags>
+					<permissionset>
+						<allowed>1</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<source>.content/templaterows/tr_00001.xml</source>
+			<destination>.content/templaterows/tr_00001.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>2db2879c-562d-11e5-bfd9-0242ac11002b</uuidstructure>
+			<uuidresource>2db2879d-562d-11e5-bfd9-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 13:26:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Section - Main page]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/templaterows/tr_00002.xml</source>
+			<destination>.content/templaterows/tr_00002.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>13f27815-562e-11e5-bfd9-0242ac11002b</uuidstructure>
+			<uuidresource>13f27816-562e-11e5-bfd9-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 13:32:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Section - Foot]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/templaterows/tr_00003.xml</source>
+			<destination>.content/templaterows/tr_00003.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>78b6a0d1-5638-11e5-bfd9-0242ac11002b</uuidstructure>
+			<uuidresource>78b6a0d2-5638-11e5-bfd9-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 14:47:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Section - Head]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/templaterows/tr_00004.xml</source>
+			<destination>.content/templaterows/tr_00004.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>9537d791-562d-11e5-bfd9-0242ac11002b</uuidstructure>
+			<uuidresource>9537d792-562d-11e5-bfd9-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 13:29:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Container [For Rows]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/templaterows/tr_00005.xml</source>
+			<destination>.content/templaterows/tr_00005.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>65d0d0e0-56d3-11e5-946f-0242ac11002b</uuidstructure>
+			<uuidresource>65d0d0e1-56d3-11e5-946f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 09 Sep 2015 09:16:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Container (Fluid) [For Rows]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/templaterows/tr_00006.xml</source>
+			<destination>.content/templaterows/tr_00006.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>654a63c0-eb90-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>654a63c1-eb90-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 16:01:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Container [For Grids]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/templaterows/tr_00007.xml</source>
+			<destination>.content/templaterows/tr_00007.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>36395d12-eb9d-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>36395d13-eb9d-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 17:33:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Container (Fluid) [For Grids]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/templaterows/tr_00008.xml</source>
+			<destination>.content/templaterows/tr_00008.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>2474a0ee-eb8c-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>2474a0ef-eb8c-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 15:31:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Grid 2 Cols (3 - 9)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/templaterows/tr_00009.xml</source>
+			<destination>.content/templaterows/tr_00009.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>09a31d37-ec33-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>09a31d38-ec33-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 11:26:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Grid 2 Cols (4 - 8)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/templaterows/tr_00010.xml</source>
+			<destination>.content/templaterows/tr_00010.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>e90fa46f-ec60-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>e90fa470-ec60-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 16:54:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Grid 2 Cols (8 - 4)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/templaterows/tr_00011.xml</source>
+			<destination>.content/templaterows/tr_00011.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>30c5acc3-ec53-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>30c5acc4-ec53-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 15:16:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Grid 2 Cols (9 - 3)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>.galleries</destination>
 			<type>folder</type>
 			<uuidstructure>138a0084-46db-11e3-ae58-000c29d28104</uuidstructure>
@@ -6515,14 +6729,14 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<source>apollo-demo/.content/templaterows/tr_00001.xml</source>
 			<destination>apollo-demo/.content/templaterows/tr_00001.xml</destination>
 			<type>a-templaterow</type>
-			<uuidstructure>2db2879c-562d-11e5-bfd9-0242ac11002b</uuidstructure>
-			<uuidresource>2db2879d-562d-11e5-bfd9-0242ac11002b</uuidresource>
-			<datecreated>Tue, 08 Sep 2015 13:26:14 GMT</datecreated>
+			<uuidstructure>4c445574-eb91-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>4c445575-eb91-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 16:08:18 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Section - Main page]]></value>
+					<value><![CDATA[1 Col Row (12 - Full)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6531,244 +6745,6 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 		<file>
 			<source>apollo-demo/.content/templaterows/tr_00002.xml</source>
 			<destination>apollo-demo/.content/templaterows/tr_00002.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>9537d791-562d-11e5-bfd9-0242ac11002b</uuidstructure>
-			<uuidresource>9537d792-562d-11e5-bfd9-0242ac11002b</uuidresource>
-			<datecreated>Tue, 08 Sep 2015 13:29:08 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Container [For Rows]]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00003.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00003.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>65d0d0e0-56d3-11e5-946f-0242ac11002b</uuidstructure>
-			<uuidresource>65d0d0e1-56d3-11e5-946f-0242ac11002b</uuidresource>
-			<datecreated>Wed, 09 Sep 2015 09:16:05 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Container (Fluid) [For Rows]]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00004.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00004.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>13f27815-562e-11e5-bfd9-0242ac11002b</uuidstructure>
-			<uuidresource>13f27816-562e-11e5-bfd9-0242ac11002b</uuidresource>
-			<datecreated>Tue, 08 Sep 2015 13:32:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Section - Foot]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00005.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00005.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>78b6a0d1-5638-11e5-bfd9-0242ac11002b</uuidstructure>
-			<uuidresource>78b6a0d2-5638-11e5-bfd9-0242ac11002b</uuidresource>
-			<datecreated>Tue, 08 Sep 2015 14:47:04 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Section - Head]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00006.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00006.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>2474a0ee-eb8c-11e5-8519-0242ac11002b</uuidstructure>
-			<uuidresource>2474a0ef-eb8c-11e5-8519-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Mar 2016 15:31:24 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Grid 2 Cols (3 - 9)]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00007.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00007.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>e90fa46f-ec60-11e5-af37-0242ac11002b</uuidstructure>
-			<uuidresource>e90fa470-ec60-11e5-af37-0242ac11002b</uuidresource>
-			<datecreated>Thu, 17 Mar 2016 16:54:27 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Grid 2 Cols (8 - 4)]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00008.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00008.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>654a63c0-eb90-11e5-8519-0242ac11002b</uuidstructure>
-			<uuidresource>654a63c1-eb90-11e5-8519-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Mar 2016 16:01:51 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Container [For Grids]]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00009.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00009.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>36395d12-eb9d-11e5-8519-0242ac11002b</uuidstructure>
-			<uuidresource>36395d13-eb9d-11e5-8519-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Mar 2016 17:33:35 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Container (Fluid) [For Grids]]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00010.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00010.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>09a31d37-ec33-11e5-8519-0242ac11002b</uuidstructure>
-			<uuidresource>09a31d38-ec33-11e5-8519-0242ac11002b</uuidresource>
-			<datecreated>Thu, 17 Mar 2016 11:26:05 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Grid 2 Cols (4 - 8)]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00011.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00011.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>222a42b9-56cc-11e5-bfd9-0242ac11002b</uuidstructure>
-			<uuidresource>222a42ba-56cc-11e5-bfd9-0242ac11002b</uuidresource>
-			<datecreated>Wed, 09 Sep 2015 08:24:05 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[3 Col Row (4 - 4 - 4)]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00012.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00012.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>4fe6063c-56cc-11e5-bfd9-0242ac11002b</uuidstructure>
-			<uuidresource>4fe6063d-56cc-11e5-bfd9-0242ac11002b</uuidresource>
-			<datecreated>Wed, 09 Sep 2015 08:25:21 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[3 Col Row (3 - 3 - 6)]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00013.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00013.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>e3256481-6065-11e5-9199-0242ac11002b</uuidstructure>
-			<uuidresource>e3256482-6065-11e5-9199-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 13:37:22 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[4 Col Row (3 - 3 - 3 - 3)]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00014.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00014.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>e3e231a2-6075-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>e3e231a3-6075-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 15:31:55 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[2 Col Row (4 - 4) [Narrow]]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00015.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00015.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>40d89b20-6077-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>40d89b21-6077-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 15:41:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[2 Col Row (4 push - 4 pull) [Narrow]]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00016.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00016.xml</destination>
 			<type>a-templaterow</type>
 			<uuidstructure>3026752f-eb91-11e5-8519-0242ac11002b</uuidstructure>
 			<uuidresource>30267530-eb91-11e5-8519-0242ac11002b</uuidresource>
@@ -6784,76 +6760,8 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/templaterows/tr_00017.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00017.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>fbc08570-621d-11e5-bcba-0242ac11002b</uuidstructure>
-			<uuidresource>fbc08571-621d-11e5-bcba-0242ac11002b</uuidresource>
-			<datecreated>Wed, 23 Sep 2015 18:07:42 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[2 Col Row (6 - 6) [Also on XS]]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00018.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00018.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>4c445574-eb91-11e5-8519-0242ac11002b</uuidstructure>
-			<uuidresource>4c445575-eb91-11e5-8519-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Mar 2016 16:08:18 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[1 Col Row (12 - Full)]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00019.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00019.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>79503d19-ec3d-11e5-8519-0242ac11002b</uuidstructure>
-			<uuidresource>79503d1a-ec3d-11e5-8519-0242ac11002b</uuidresource>
-			<datecreated>Thu, 17 Mar 2016 12:40:47 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[2 Col Row (9 - 3)]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00020.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00020.xml</destination>
-			<type>a-templaterow</type>
-			<uuidstructure>30c5acc3-ec53-11e5-8519-0242ac11002b</uuidstructure>
-			<uuidresource>30c5acc4-ec53-11e5-8519-0242ac11002b</uuidresource>
-			<datecreated>Thu, 17 Mar 2016 15:16:14 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Grid 2 Cols (9 - 3)]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/templaterows/tr_00021.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00021.xml</destination>
+			<source>apollo-demo/.content/templaterows/tr_00003.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00003.xml</destination>
 			<type>a-templaterow</type>
 			<uuidstructure>6c8a82a9-eb91-11e5-8519-0242ac11002b</uuidstructure>
 			<uuidresource>6c8a82aa-eb91-11e5-8519-0242ac11002b</uuidresource>
@@ -6869,8 +6777,42 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/templaterows/tr_00022.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00022.xml</destination>
+			<source>apollo-demo/.content/templaterows/tr_00004.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00004.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>fbc08570-621d-11e5-bcba-0242ac11002b</uuidstructure>
+			<uuidresource>fbc08571-621d-11e5-bcba-0242ac11002b</uuidresource>
+			<datecreated>Wed, 23 Sep 2015 18:07:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[2 Col Row (6 - 6) [Also on XS]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/templaterows/tr_00005.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00005.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>69d2a96f-eb9b-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>69d2a970-eb9b-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 17:20:43 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[2 Col Row (6 - 6) [From SM]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/templaterows/tr_00006.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00006.xml</destination>
 			<type>a-templaterow</type>
 			<uuidstructure>8e8f2bee-eb95-11e5-8519-0242ac11002b</uuidstructure>
 			<uuidresource>8e8f2bef-eb95-11e5-8519-0242ac11002b</uuidresource>
@@ -6886,8 +6828,8 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/templaterows/tr_00023.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00023.xml</destination>
+			<source>apollo-demo/.content/templaterows/tr_00007.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00007.xml</destination>
 			<type>a-templaterow</type>
 			<uuidstructure>a4985893-eb95-11e5-8519-0242ac11002b</uuidstructure>
 			<uuidresource>a4985894-eb95-11e5-8519-0242ac11002b</uuidresource>
@@ -6903,17 +6845,85 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/templaterows/tr_00024.xml</source>
-			<destination>apollo-demo/.content/templaterows/tr_00024.xml</destination>
+			<source>apollo-demo/.content/templaterows/tr_00008.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00008.xml</destination>
 			<type>a-templaterow</type>
-			<uuidstructure>69d2a96f-eb9b-11e5-8519-0242ac11002b</uuidstructure>
-			<uuidresource>69d2a970-eb9b-11e5-8519-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Mar 2016 17:20:43 GMT</datecreated>
+			<uuidstructure>79503d19-ec3d-11e5-8519-0242ac11002b</uuidstructure>
+			<uuidresource>79503d1a-ec3d-11e5-8519-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 12:40:47 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Col Row (6 - 6) [From SM]]]></value>
+					<value><![CDATA[2 Col Row (9 - 3)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/templaterows/tr_00009.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00009.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>222a42b9-56cc-11e5-bfd9-0242ac11002b</uuidstructure>
+			<uuidresource>222a42ba-56cc-11e5-bfd9-0242ac11002b</uuidresource>
+			<datecreated>Wed, 09 Sep 2015 08:24:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[3 Col Row (4 - 4 - 4)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/templaterows/tr_00010.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00010.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>e3256481-6065-11e5-9199-0242ac11002b</uuidstructure>
+			<uuidresource>e3256482-6065-11e5-9199-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Sep 2015 13:37:22 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[4 Col Row (3 - 3 - 3 - 3)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/templaterows/tr_00011.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00011.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>e3e231a2-6075-11e5-9eef-0242ac11002b</uuidstructure>
+			<uuidresource>e3e231a3-6075-11e5-9eef-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Sep 2015 15:31:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[2 Col Row (4 - 4) [Narrow]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/templaterows/tr_00012.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00012.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>40d89b20-6077-11e5-9eef-0242ac11002b</uuidstructure>
+			<uuidresource>40d89b21-6077-11e5-9eef-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Sep 2015 15:41:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[2 Col Row (4 push - 4 pull) [Narrow]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9624,23 +9634,6 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Start exploring OpenCms: There is a lot more to discover]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>tutorial/.content/contentsections/cs_00017.xml</source>
-			<destination>tutorial/.content/contentsections/cs_00017.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>ab0ac397-ecf5-11e5-af37-0242ac11002b</uuidstructure>
-			<uuidresource>ab0ac398-ecf5-11e5-af37-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Mar 2016 10:39:18 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[! Default placeholder text]]></value>
 				</property>
 			</properties>
 			<relations/>
