@@ -2,19 +2,19 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Egg holders]]></Headline>
+    <Headline><![CDATA[Sample Headline]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Text from the egg holders.</p>]]></content>
+      <content><![CDATA[<p>This is the default placeholder text that is copied.</p>]]></content>
     </Text>
     <Image>
       <Image>
         <link type="WEAK">
-          <target><![CDATA[/sites/default/.galleries/samples/10.jpg]]></target>
-          <uuid>c64906ff-4705-11e3-8417-000c29d28104</uuid>
+          <target><![CDATA[/sites/default/.galleries/cliparts/default.png]]></target>
+          <uuid>3efc64a5-5c52-11e5-9651-0242ac11002b</uuid>
         </link>
       </Image>
-      <Copyright><![CDATA[pixabay.com]]></Copyright>
+      <Title><![CDATA[Defaul placeholder image]]></Title>
     </Image>
   </ApolloSection>
 </ApolloSections>

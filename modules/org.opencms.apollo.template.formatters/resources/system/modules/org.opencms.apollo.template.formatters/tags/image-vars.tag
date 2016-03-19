@@ -2,54 +2,60 @@
 
 <%@attribute name="content" type="org.opencms.jsp.util.CmsJspContentAccessBean" required="true" %>
 
-<%@ variable name-given="imgVal" declare="true" variable-class="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" %>
-<%@ variable name-given="imgCopyright" declare="true" %>
-<%@ variable name-given="imgTitle" declare="true" %>
+<%@ variable name-given="image" declare="true" variable-class="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" %>
+<%@ variable name-given="imageLink" declare="true" %>
+<%@ variable name-given="imageCopyright" declare="true" %>
+<%@ variable name-given="imageTitleAttr" declare="true" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
-<c:choose>
-	<c:when test="${content.value.Paragraph.exists}">
-		<c:set var="imgVal" value="${value.Paragraph.value}" />
-	</c:when>
-	<c:otherwise>
-		<c:set var="imgVal" value="${content.value}" />
-	</c:otherwise>
-</c:choose>
+<c:set var="imageLink" value="" />
+<c:set var="imageCopyright" value="" />
+<c:set var="imageTitle" value="" />
 
-<c:set var="imgCopyright" value=""/>
-<c:if test="${imgVal.Image.isSet}">
+<c:set var="image" value="${content.value.Image}" />
+
+<c:if test="${image.isSet && image.value.Image.isSet }">
+<%-- We only initialize the other stuff if the image link is set --%>
+
+    <c:set var="imageLink" value="${image.value.Image}" />
+
+    <%--
+        For the copyright, we check if this is set in the content first, 
+        if not we try to read it from the property.
+    --%>
 	<c:choose>
-		<c:when test="${imgVal.Image.value.Copyright.isSet}">
-			<c:set var="imgCopyright">${imgVal.Image.value.Copyright}</c:set>
+		<c:when test="${image.value.Copyright.isSet}">
+			<c:set var="imageCopyright">${image.value.Copyright}</c:set>
 		</c:when>
 		<c:otherwise>
-			<c:set var="imgUri">${imgVal.Image.value.Image}</c:set>
-			<c:if test="${fn:contains(imgUri, '?')}">
-				<c:set var="imgUri">${fn:substringBefore(imgUri, '?')}</c:set>
+			<c:set var="imageUri">${imageLink}</c:set>
+			<c:if test="${fn:contains(imageUri, '?')}">
+				<c:set var="imageUri">${fn:substringBefore(imageUri, '?')}</c:set>
 			</c:if>
-			<c:set var="imgCopyright"><cms:property name="Copyright" file="${imgUri}" default="" /></c:set>
+			<c:set var="imageCopyright"><cms:property name="Copyright" file="${imageUri}" default="" /></c:set>
 		</c:otherwise>
-	</c:choose>
-</c:if>
+	</c:choose>    
+    <%--
+        Add copyright symbol. Make sure &copy; is replaced 
+        with (c) since tooltips / title attributes have problems with HTML entities.
+    --%>
+    <c:if test="${not empty imageCopyright}">
+        <c:set var="imageCopyright">${fn:replace(imageCopyright, '&copy;', '(c)')}</c:set>
+        <c:if test="${not fn:contains(imageCopyright, '(c)')}">
+            <c:set var="imageCopyright">${'(c)'}${' '}${imageCopyright}</c:set>
+        </c:if>
+    </c:if>
 
-<c:if test="${not empty imgCopyright}">
-	<c:set var="imgCopyrightSymbol">(c)</c:set>
-	<c:set var="imgCopyright">${fn:replace(imgCopyright, '&copy;', imgCopyrightSymbol)}</c:set>
-	<c:if test="${not fn:contains(imgCopyright, imgCopyrightSymbol)}">
-		<c:set var="imgCopyright">${imgCopyrightSymbol}${' '}${imgCopyright}</c:set>
-	</c:if>
-</c:if>
+    <%--
+        Set the image title from the dedicated field.
+    --%>
+    <c:if test="${image.value.Title.isSet}">
+        <c:set var="imageTitle">${image.value.Title}</c:set>
+    </c:if>
 
-<c:choose>
-	<c:when test="${imgVal.Image.isSet and imgVal.Image.value.Title.isSet}">
-		<c:set var="imgTitle">${imgVal.Image.value.Title}</c:set>
-	</c:when>
-	<c:otherwise>
-		<c:set var="imgTitle">${value.Headline}</c:set>
-	</c:otherwise>
-</c:choose>
+</c:if>
 
 <jsp:doBody/>

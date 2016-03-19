@@ -2,5 +2,7 @@
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 
 <cms:formatter var="content" val="value" rdfa="rdfa">
-	<div class="headline"><h2 ${rdfa.Headline}>${value.Headline}</h2></div>
+    <div class="${cms.element.setting.hstyle}">
+        <${cms.element.setting.hsize}${' '}${rdfa.Headline}>${value.Headline}</${cms.element.setting.hsize}>
+    </div>
 </cms:formatter>

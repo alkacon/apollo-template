@@ -26,23 +26,32 @@
     <Display>false</Display>
     <NestedContainers>false</NestedContainers>
     <Setting>
-      <PropertyName><![CDATA[cssClass]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
-      <Widget><![CDATA[combo]]></Widget>
-      <WidgetConfig><![CDATA[mb-20 box-shadow shadow-effect-1:%(key.apollo.setting.cssclass.shadowbox)|box-shadow shadow-effect-2 rounded-2x:%(key.apollo.setting.cssclass.roundedshadowbox)]]></WidgetConfig>
+      <PropertyName><![CDATA[istyle]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.style.label)]]></DisplayName>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[image-plain]]></Default>
+      <WidgetConfig><![CDATA[
+            image-plain:Plain          
+        ]]></WidgetConfig>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[cssShape]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.cssshape)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.cssshape.description)]]></Description>
-      <Widget><![CDATA[combo]]></Widget>
-      <WidgetConfig><![CDATA[img-bordered:%(key.apollo.setting.cssshape.bordered)|rounded-2x:%(key.apollo.setting.cssshape.rounded)|img-bordered rounded-x:%(key.apollo.setting.cssshape.borderedround)]]></WidgetConfig>
+      <PropertyName><![CDATA[ieffect]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[
+            box-shadow shadow-effect-1:Shadow|    
+            rounded-2x:Round corners|
+            rounded-x:Circle vignette|
+            img-bordered:Bordered|
+            img-bordered rounded-2x:Bordered and round corners|
+            img-bordered rounded-x:Bordered and circle vignette|
+            box-shadow shadow-effect-1 rounded-2x:Shadow and round corners|
+            box-shadow shadow-effect-1 img-bordered:Shadow and Bordered
+        ]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showtext]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showtext)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.showtext.description)]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.label)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
       <WidgetConfig><![CDATA[false:%(key.apollo.setting.showtext.false)|true:%(key.apollo.setting.showtext.true)]]></WidgetConfig>

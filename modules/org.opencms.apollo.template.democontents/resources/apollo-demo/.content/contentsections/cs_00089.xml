@@ -2,19 +2,20 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Egg holders]]></Headline>
+    <Headline><![CDATA[Telescope image]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Text from the egg holders.</p>]]></content>
+      <content><![CDATA[<p>Text in the telescope image.</p>]]></content>
     </Text>
     <Image>
       <Image>
         <link type="WEAK">
-          <target><![CDATA[/sites/default/.galleries/samples/10.jpg]]></target>
-          <uuid>c64906ff-4705-11e3-8417-000c29d28104</uuid>
+          <target><![CDATA[/sites/default/.galleries/samples/12.jpg]]></target>
+          <uuid>c76d14a5-4705-11e3-8417-000c29d28104</uuid>
         </link>
       </Image>
-      <Copyright><![CDATA[pixabay.com]]></Copyright>
+      <Title><![CDATA[Telescope]]></Title>
+      <Description><![CDATA[A telescope helps you to find things at a large distance.]]></Description>
     </Image>
   </ApolloSection>
 </ApolloSections>

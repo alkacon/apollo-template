@@ -449,6 +449,30 @@
   </Bundle>
   <Bundle language="en">
     <Message>
+      <Key><![CDATA[apollo.section.header.size.label]]></Key>
+      <Value><![CDATA[Headline size]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.style.label]]></Key>
+      <Value><![CDATA[Headline style]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.text.style.label]]></Key>
+      <Value><![CDATA[Text style]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.style.label]]></Key>
+      <Value><![CDATA[Image style]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.label]]></Key>
+      <Value><![CDATA[Image effect]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.label]]></Key>
+      <Value><![CDATA[Image text]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.requirereload]]></Key>
       <Value><![CDATA[Requires reload]]></Value>
     </Message>
@@ -570,11 +594,11 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssclass]]></Key>
-      <Value><![CDATA[Wrapper CSS class(es)]]></Value>
+      <Value><![CDATA[CSS wrapper]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssclass.description]]></Key>
-      <Value><![CDATA[Optional CSS class name for the outer <div> element.]]></Value>
+      <Value><![CDATA[Optional CSS class name(s) for the outer <div> element.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass]]></Key>
