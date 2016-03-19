@@ -1,5 +1,36 @@
 # Possible colors 
-white, black, blue, blue-light, blue-lighter, blue-dark, blue-darker, red, red-light, red-lighter, red-dark, red-darker, orange, orange-light, orange-lighter, orange-dark, orange-darker, cyan, gray, gray-lighter, gray-light, gray-dark, gray-darker, sea, yellow, blue-cyan, violet, brown, red-orange, red-cyan, green, green-light
+white, 
+black, 
+blue, 
+blue-light, 
+blue-lighter, 
+blue-dark, 
+blue-darker, 
+red, 
+red-light, 
+red-lighter, 
+red-dark, 
+red-darker, 
+orange, 
+orange-light, 
+orange-lighter, 
+orange-dark, 
+orange-darker, 
+cyan, 
+gray, 
+gray-lighter, 
+gray-light, 
+gray-dark, 
+gray-darker, 
+sea, 
+yellow, 
+blue-cyan, 
+violet, 
+brown, 
+red-orange, 
+red-cyan, 
+green, 
+green-light
 
 # Available CSS classes
 

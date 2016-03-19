@@ -10,16 +10,6 @@ $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
 
-//Returns a readable color depending on the given color 
-@function set-text-color($color) {
-  @if (lightness($color) > 60) {
-    @return $text-dark; 
-  } @else {
-    @return $text-light; 
-  }
-}
-
-
 /* Empty container markers.
 ----------------------------------------------------------------------------- */
 
@@ -104,14 +94,46 @@ $oc-container-labels:
 /* Generic helpers. For further information please read css-doc.md
 ----------------------------------------------------------------------------- */    
 
+
+
+// Returns a readable color depending on the given color 
+@function set-text-color($color) {
+  @if (lightness($color) > 60) {
+    @return $text-dark; 
+  } @else {
+    @return $text-light; 
+  }
+}
+
+.ap-sec-one {
+
+	.ap-sec-img-txt {
+	
+		.ap-sec-img-tit {
+			margin-top: 10px;
+			color: $cyan;
+			background-color: $red-light;	
+		}
+		
+		.ap-sec-img-desc {
+			margin-top: 5px;
+			color: $orange;
+			background-color: $blue;	
+		}	
+		
+	}
+
+}
+
+
 @each $name, $color in $colors {
     .bg-#{$name}{
         background-color: $color;
         color: set-text-color($color);
-        h2,h3,h4, p, li, .fa{               
+        h1, h2, h3, h4, p, div, li, .fa{               
             color: set-text-color($color);
-            text-decoration: none;
-            border: none;
+            // text-decoration: none;
+            // border: none;
             background-color: $color;           
         }
         a{
@@ -121,10 +143,11 @@ $oc-container-labels:
             }
         }
         .headline{
-            border: none;           
-            h2,h3{
-                border: none;           
-            }
+              border-bottom: 1px dotted lighten(set-text-color($color), 25%);
+//            border: none;           
+//            h2, h3, h4{
+//                border: none;           
+//           }
         }
     
         &.h-u{  
