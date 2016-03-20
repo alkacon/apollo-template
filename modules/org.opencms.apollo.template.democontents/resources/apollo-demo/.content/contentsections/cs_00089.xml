@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Telescope image]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Text in the telescope image.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/12.jpg]]></target>
+          <uuid>c76d14a5-4705-11e3-8417-000c29d28104</uuid>
+        </link>
+      </Image>
+      <Title><![CDATA[Telescope]]></Title>
+      <Description><![CDATA[A telescope helps you to find things at a large distance.]]></Description>
+    </Image>
+    <Link>
+      <Text><![CDATA[To the demo homepage]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/]]></target>
+          <uuid>acb43685-5224-11e5-9495-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
+  </ApolloSection>
+</ApolloSections>

@@ -7,49 +7,66 @@
 
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.messages">
-	<cms:formatter var="content" val="value" rdfa="rdfa">
-		<apollo:image-vars content="${content}">
+<cms:formatter var="content" val="value" rdfa="rdfa">
+<apollo:image-vars content="${content}">
 
-		<c:choose>
-			<c:when test="${not imgVal.Image.isSet or not imgVal.Image.value.Image.isSet}">
-				<div class="alert">
-					<fmt:message key="no.image" />
-				</div>
-			</c:when>
+<c:choose>
+    <c:when test="${empty imageLink}">
+        <div class="alert">
+            <fmt:message key="no.image" />
+        </div>
+    </c:when>
 
-			<c:otherwise>
-				<c:set var="cssClass">${cms.element.parent.setting.cssHints.isSet ? cms.element.parent.setting.cssHints : 'mb-20'}</c:set>
-				<c:if test="${cms.element.setting.cssClass.isSet}">
-					<c:set var="cssClass" value="${cms.element.setting.cssClass.value}" />
-				</c:if>
-				<div class="${cssClass}" >
-					<c:if test="${imgVal.Link.isSet}">
-						<a href="<cms:link>${imgVal.Link.value.URI}</cms:link>">
-					</c:if>
-					<span ${imgVal.Image.rdfa.Image}> <img
-						src="<cms:link>${imgVal.Image.value.Image}</cms:link>"
-						class="img-responsive ${cms.element.setting.cssShape}"
-						${content.imageDnd[imgVal.Image.value.Image.path]} alt="${imgTitle}${' '}${imgCopyright}"
-						title="${imgTitle}${' '}${imgCopyright}" />
-					</span>
-					<c:if test="${imgVal.Link.isSet}">
-						</a>
-					</c:if>
-					<c:choose>
-						<c:when	test="${imgVal.Image.value.Description.isSet and cms.element.setting.showtext.value == 'true'}">
-							<p class="mt-10" ${imgVal.Image.rdfa.Description}>${imgVal.Image.value.Description}</p>
-						</c:when>
-						<c:when	test="${imgVal.Image.value.Title.isSet and cms.element.setting.showtext.value == 'true'}">
-							<p class="mt-10" ${imgVal.Image.rdfa.Title}>${imgVal.Image.value.Title}</p>
-						</c:when>
-						<c:when	test="${imgVal.Text.isSet and cms.element.setting.showtext.value == 'true'}">
-							<p class="mt-10" ${imgVal.Text.rdfaAttr}>${imgVal.Text}</p>
-						</c:when>
-					</c:choose>
-				</div>
-			</c:otherwise>
-		</c:choose>
+    <c:otherwise>
 
-	</apollo:image-vars>
-	</cms:formatter>
+    <div class="ap-img ${cms.element.setting.istyle}">
+        
+        <c:if test="${content.value.Link.isSet && cms.element.setting.ilink.value != 'none'}">
+            <a href="<cms:link>${content.value.Link.value.URI}</cms:link>"
+                <c:if test="${content.value.Link.value.Text.isSet}">
+                title="${content.value.Link.value.Text}"
+                </c:if>
+            >
+        </c:if>
+            
+        <div class="ap-img-pic ${cms.element.setting.ieffect != 'none' ? cms.element.setting.ieffect : ''}">
+            <span ${image.rdfa.Image} ${content.imageDnd[image.value.Image.path]}>
+            <img
+                src="<cms:link>${imageLink}</cms:link>"
+                class="img-responsive ${cms.element.setting.ieffect != 'none' ? cms.element.setting.ieffect : ''}"
+                alt="${imageTitle}${' '}${imageCopyright}"
+                title="${imageTitle}${' '}${imageCopyright}" />
+            </span>
+        </div>
+        
+        <c:if test="${cms.element.setting.itext.value != 'none'}">
+            <div class="ap-img-txt">
+            <c:if test="${fn:contains(cms.element.setting.itext.value, 'title')}">
+                <c:choose>
+                    <c:when	test="${image.value.Title.isSet}">
+                        <div class="ap-img-title" ${image.rdfa.Title}>${image.value.Title}</div>
+                    </c:when>
+                    <c:when	test="${content.value.Headline.isSet}">
+                        <div class="ap-img-title" ${content.rdfa.Headline}>${content.value.Headline}</div>
+                    </c:when>                        
+                </c:choose>
+            </c:if>
+            <c:if test="${fn:contains(cms.element.setting.itext.value, 'desc') && image.value.Description.isSet}">
+                <div class="ap-img-desc" ${image.rdfa.Description}>${image.value.Description}</div>
+            </c:if>
+            </div>
+        </c:if>          
+
+        <c:if test="${content.value.Link.isSet && cms.element.setting.ilink.value != 'none'}">
+            </a>
+        </c:if>
+        
+    </div>
+
+    </c:otherwise>
+    
+</c:choose>
+
+</apollo:image-vars>
+</cms:formatter>
 </cms:bundle>

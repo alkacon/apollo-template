@@ -22,5 +22,19 @@
     <AutoEnabled>true</AutoEnabled>
     <Detail>false</Detail>
     <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[hstyle]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.header.style.label)]]></DisplayName>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[headline]]></Default>
+      <WidgetConfig><![CDATA[headline:Underlined|headline-plain:Plain]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[hsize]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.header.size.label)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[h2]]></Default>
+      <WidgetConfig><![CDATA[h1:Large|h2:Normal|h3:Small|h4:Very small]]></WidgetConfig>
+    </Setting>
   </NewFormatter>
 </NewFormatters>

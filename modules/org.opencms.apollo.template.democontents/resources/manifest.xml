@@ -5732,6 +5732,108 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/contentsections/cs_00084.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00084.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>0bc5875f-edbb-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>0bc58760-edbb-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sat, 19 Mar 2016 10:12:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Section formatters: Sample Headline]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00085.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00085.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>93854011-edcd-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>93854012-edcd-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sat, 19 Mar 2016 12:24:50 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Section formatters: Sample Headlines]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00086.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00086.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>87197157-edd0-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>87197158-edd0-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sat, 19 Mar 2016 12:45:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Section elements: Sample Text]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00087.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00087.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>db7004e0-edd0-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>db7004e1-edd0-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sat, 19 Mar 2016 12:48:19 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Section formatters: Wizard of OZ placeholder text]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00088.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00088.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>594b1e1d-edd5-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>594b1e1e-edd5-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sat, 19 Mar 2016 13:20:28 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Section elements: The Content Section Element]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00089.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00089.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>4cc480e5-ede8-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>4cc480e6-ede8-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sat, 19 Mar 2016 15:36:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image elements: Telescope image]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/events</destination>
 			<type>folder</type>
 			<uuidstructure>ae8e34f8-5b98-11e5-9eb7-0242ac11002b</uuidstructure>
@@ -7279,6 +7381,46 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Image elements]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/element-pages/section-formatters</destination>
+			<type>folder</type>
+			<uuidstructure>9a4a330e-edb7-11e5-a02c-0242ac11002b</uuidstructure>
+			<datecreated>Sat, 19 Mar 2016 09:47:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.5]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Section elements]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Section elements]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/element-pages/section-formatters/index.html</source>
+			<destination>apollo-demo/element-pages/section-formatters/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>9a51d433-edb7-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>9a51d434-edb7-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sat, 19 Mar 2016 09:47:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Section elements]]></value>
 				</property>
 			</properties>
 			<relations/>

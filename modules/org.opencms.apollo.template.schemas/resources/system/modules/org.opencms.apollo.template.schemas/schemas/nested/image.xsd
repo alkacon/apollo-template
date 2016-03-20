@@ -13,7 +13,7 @@
 	<xsd:complexType name="OpenCmsApolloNestedImage">
 		<xsd:sequence>
 			<xsd:element name="Image" type="OpenCmsVfsFile" />
-			<xsd:element name="Title" type="OpenCmsString" />
+			<xsd:element name="Title" type="OpenCmsString" minOccurs="0" />
 			<xsd:element name="Copyright" type="OpenCmsString" minOccurs="0" />
 			<xsd:element name="Description" type="OpenCmsString" minOccurs="0" />
 		</xsd:sequence>

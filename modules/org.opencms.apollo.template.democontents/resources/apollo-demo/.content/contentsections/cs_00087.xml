@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Wizard of OZ placeholder text]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry, who was a farmer, and Aunt Em, who was the farmer's wife. Their house was small, for the lumber to build it had to be carried by wagon many miles. There were four walls, a floor and a roof, which made one room; and this room contained a rusty looking cookstove, a cupboard for the dishes, a table, three or four chairs, and the beds.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/cliparts/default.png]]></target>
+          <uuid>3efc64a5-5c52-11e5-9651-0242ac11002b</uuid>
+        </link>
+      </Image>
+      <Title><![CDATA[Defaul placeholder image]]></Title>
+    </Image>
+  </ApolloSection>
+</ApolloSections>
