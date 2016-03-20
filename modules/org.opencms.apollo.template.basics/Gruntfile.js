@@ -122,15 +122,15 @@ module.exports = function(grunt) {
 								{
 									expand : true,
 									flatten : true,
-									src : [ 'output/resources/css/min/*.min.css', 'components/plugins/PhotoSwipe/default-skin/*.svg', 'components/plugins/PhotoSwipe/default-skin/*.png', 'components/plugins/PhotoSwipe/default-skin/*.gif' ],
-									dest : '/home/user/opencms-mount/docker-2/demo/system/modules/org.opencms.apollo.template.basics/resources/css/',
+									src : [ 'output/resources/css/min/style-*.min.css', 'components/plugins/PhotoSwipe/default-skin/*.svg', 'components/plugins/PhotoSwipe/default-skin/*.png', 'components/plugins/PhotoSwipe/default-skin/*.gif' ],
+									dest : process.env.OCMOUNT + '/system/modules/org.opencms.apollo.template.basics/resources/css/',
 									filter : 'isFile'
 								},
 								{
 									expand : true,
 									flatten : true,
 									src : [ 'output/resources/js/*.min.js' ],
-									dest : '/home/user/opencms-mount/docker-2/demo/system/modules/org.opencms.apollo.template.basics/resources/js/',
+									dest : process.env.OCMOUNT + '/system/modules/org.opencms.apollo.template.basics/resources/js/',
 									filter : 'isFile'
 								} ],
 					},
@@ -159,11 +159,11 @@ module.exports = function(grunt) {
 				watch : {
 					scss : {
 						files : '**/*.scss',
-						tasks : [ 'apollo' ]
+						tasks : [ 'apollo', 'copy' ]
 					},
 					uglify : {
 						files : 'components/**/*.js',
-						tasks : [ 'uglify' ]
+						tasks : [ 'uglify', 'copy' ]
 					},
 					markdown : {
 						files : 'components//*.md',
@@ -186,8 +186,12 @@ module.exports = function(grunt) {
 	// By default, lint and run all tests.
 	grunt.registerTask('default', [ 'plugins', 'apollo', 'uglify' ]);
 	grunt.registerTask('plugins', [ 'concat:plugins', 'cssmin:plugins' ]);
-	grunt.registerTask('apollo', [ 'sass', 'cssmin:apollo',
-			'concat:apollo_red', 'concat:apollo_blue',
-			'concat:apollo_bluegold', 'concat:apollo_goldblue' ]);
+	grunt.registerTask('apollo', [ 
+		'sass', 
+		'cssmin:apollo',
+		'concat:apollo_red',
+		'concat:apollo_blue',
+		'concat:apollo_bluegold',
+		'concat:apollo_goldblue' ]);
 
 };
