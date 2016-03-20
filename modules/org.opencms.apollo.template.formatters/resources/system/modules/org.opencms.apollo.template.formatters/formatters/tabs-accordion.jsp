@@ -8,7 +8,7 @@
 <cms:bundle basename="org.opencms.apollo.template.schemas.tabs">
 <cms:formatter var="content" val="value" rdfa="rdfa">
 
-<div class="mb-30">
+<div class="ap-sec">
 
 	<c:if test="${not cms.element.settings.hidetitle}">
 		<div class="headline"><h2 ${rdfa.Title}>${value.Title}</h2></div>
@@ -42,7 +42,7 @@
 								<apollo:container-box
 									label="${msg}"
 									boxType="container-box"
-									role="ROLE.AUTHOR"
+									role="author"
 									type="container" />
 						</cms:container>
 				</div>

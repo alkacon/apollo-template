@@ -2,11 +2,11 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Animation Slider formatter]]></NiceName>
+    <NiceName><![CDATA[Complex slider]]></NiceName>
     <Type><![CDATA[a-sliderextended]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.extensions/formatters/slider.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.extensions/formatters/slider-complex.jsp]]></target>
         <uuid>9e325ab7-56ce-11e5-bfd9-0242ac11002b</uuid>
       </link>
     </Jsp>

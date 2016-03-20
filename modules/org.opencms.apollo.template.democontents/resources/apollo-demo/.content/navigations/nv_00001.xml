@@ -28,9 +28,9 @@
         </link>
       </links>
       <content><![CDATA[<ul class="loginbar pull-right">
-            <li><a href="%(link0)">Search</a></li>
-            <li class="topbar-devider"></li>
-            <li><a href="%(link1)">Login</a></li>
+  <li><a href="%(link0)">Search</a></li>
+  <li class="topbar-devider"></li>
+  <li><a href="%(link1)">Login</a></li>
 </ul>]]></content>
     </Header>
   </ApolloNavigation>

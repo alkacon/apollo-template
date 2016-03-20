@@ -2,17 +2,17 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Image only]]></NiceName>
+    <NiceName><![CDATA[Image only (direct)]]></NiceName>
     <Type><![CDATA[a-section]]></Type>
     <Type><![CDATA[a-blog]]></Type>
     <Type><![CDATA[a-event]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/image-standard.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-image.jsp]]></target>
         <uuid>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuid>
       </link>
     </Jsp>
-    <Rank><![CDATA[5950]]></Rank>
+    <Rank><![CDATA[5500]]></Rank>
     <Match>
       <Types>
         <ContainerType><![CDATA[default]]></ContainerType>
@@ -21,7 +21,7 @@
     </Match>
     <Preview>false</Preview>
     <SearchContent>false</SearchContent>
-    <AutoEnabled>true</AutoEnabled>
+    <AutoEnabled>false</AutoEnabled>
     <Detail>false</Detail>
     <Display>false</Display>
     <NestedContainers>false</NestedContainers>
@@ -49,7 +49,7 @@
         img-bordered rounded-2x:Bordered and round corners|
         img-bordered rounded-x:Bordered and circle vignette|
         box-shadow shadow-effect-1 rounded-2x:Shadow and round corners|
-        box-shadow shadow-effect-1 img-bordered:Shadow and Bordered
+        box-shadow shadow-effect-1 img-bordered:Shadow and bordered
       ]]></WidgetConfig>
     </Setting>
     <Setting>

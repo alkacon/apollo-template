@@ -2,10 +2,10 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Further login options]]></Headline>
+    <Headline><![CDATA[Next: How to modify a page]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Once you have successfully logged in, please continue to the next step.&nbsp;</p>]]></content>
+      <content><![CDATA[<p>Once you have successfully logged in, please continue to the next step to learn how to edit content and modify pages.</p>]]></content>
     </Text>
     <Link>
       <Text><![CDATA[Continue with Step 1: Modify a page]]></Text>

@@ -426,352 +426,6 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>.content/.formatters</destination>
-			<type>folder</type>
-			<uuidstructure>eb523bdb-ee99-11e5-a02c-0242ac11002b</uuidstructure>
-			<datecreated>Sun, 20 Mar 2016 12:47:35 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol>
-				<accessentry>
-					<uuidprincipal>ROLE.DEVELOPER</uuidprincipal>
-					<flags>514</flags>
-					<permissionset>
-						<allowed>7</allowed>
-						<denied>0</denied>
-					</permissionset>
-				</accessentry>
-				<accessentry>
-					<uuidprincipal>GROUP.Users</uuidprincipal>
-					<flags>38</flags>
-					<permissionset>
-						<allowed>5</allowed>
-						<denied>0</denied>
-					</permissionset>
-				</accessentry>
-			</accesscontrol>
-		</file>
-		<file>
-			<source>.content/.formatters/section-head-and-text.xml</source>
-			<destination>.content/.formatters/section-head-and-text.xml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>549e54ad-ec1c-11e5-854f-0242ac11002b</uuidstructure>
-			<uuidresource>549e54ae-ec1c-11e5-854f-0242ac11002b</uuidresource>
-			<datecreated>Thu, 17 Mar 2016 08:43:32 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Headline and text only]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/.formatters/section-head-left-big-image-right.xml</source>
-			<destination>.content/.formatters/section-head-left-big-image-right.xml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>446b9966-eb88-11e5-854f-0242ac11002b</uuidstructure>
-			<uuidresource>446b9967-eb88-11e5-854f-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Mar 2016 15:03:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Headline left and big image right]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/.formatters/section-head-left-small-image-rightml</source>
-			<destination>.content/.formatters/section-head-left-small-image-rightml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>0f86adfc-ec63-11e5-af37-0242ac11002b</uuidstructure>
-			<uuidresource>0f86adfd-ec63-11e5-af37-0242ac11002b</uuidresource>
-			<datecreated>Thu, 17 Mar 2016 17:09:51 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Headline left and small image right]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/.formatters/section-head-only.xml</source>
-			<destination>.content/.formatters/section-head-only.xml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>631ccfde-ee8d-11e5-a02c-0242ac11002b</uuidstructure>
-			<uuidresource>631ccfdf-ee8d-11e5-a02c-0242ac11002b</uuidresource>
-			<datecreated>Sun, 20 Mar 2016 11:17:52 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Headline only]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/.formatters/section-head-right-big-image-left.xml</source>
-			<destination>.content/.formatters/section-head-right-big-image-left.xml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>57e72830-eb86-11e5-854f-0242ac11002b</uuidstructure>
-			<uuidresource>57e72831-eb86-11e5-854f-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Mar 2016 14:49:53 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Headline right and big image left]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/.formatters/section-head-right-small-image-left.xml</source>
-			<destination>.content/.formatters/section-head-right-small-image-left.xml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>01b64d76-ec63-11e5-af37-0242ac11002b</uuidstructure>
-			<uuidresource>01b64d77-ec63-11e5-af37-0242ac11002b</uuidresource>
-			<datecreated>Thu, 17 Mar 2016 17:09:27 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Headline right and small image left]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/.formatters/section-head-top-big-image-left.xml</source>
-			<destination>.content/.formatters/section-head-top-big-image-left.xml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>14879c44-eb79-11e5-854f-0242ac11002b</uuidstructure>
-			<uuidresource>14879c45-eb79-11e5-854f-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Mar 2016 13:14:57 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Headline on top and big image left]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/.formatters/section-head-top-big-image-right.xml</source>
-			<destination>.content/.formatters/section-head-top-big-image-right.xml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>cc12067a-eb81-11e5-854f-0242ac11002b</uuidstructure>
-			<uuidresource>cc12067b-eb81-11e5-854f-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Mar 2016 14:17:21 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Headline on top and big image right]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/.formatters/section-head-top-small-image-left.xml</source>
-			<destination>.content/.formatters/section-head-top-small-image-left.xml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>38096d36-ec62-11e5-af37-0242ac11002b</uuidstructure>
-			<uuidresource>38096d37-ec62-11e5-af37-0242ac11002b</uuidresource>
-			<datecreated>Thu, 17 Mar 2016 17:03:49 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Headline on top and small image left]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/.formatters/section-head-top-small-image-right.xml</source>
-			<destination>.content/.formatters/section-head-top-small-image-right.xml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>849c167c-ec62-11e5-af37-0242ac11002b</uuidstructure>
-			<uuidresource>849c167d-ec62-11e5-af37-0242ac11002b</uuidresource>
-			<datecreated>Thu, 17 Mar 2016 17:05:58 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Headline on top and small image right]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/.formatters/section-text-only.xml</source>
-			<destination>.content/.formatters/section-text-only.xml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>9a9bd408-ee86-11e5-a02c-0242ac11002b</uuidstructure>
-			<uuidresource>9a9bd409-ee86-11e5-a02c-0242ac11002b</uuidresource>
-			<datecreated>Sun, 20 Mar 2016 10:29:19 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Text only]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>.content/.modelgroups</destination>
 			<type>folder</type>
 			<uuidstructure>5740a35a-ec79-11e5-a02c-0242ac11002b</uuidstructure>
@@ -4611,33 +4265,6 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>apollo-demo/.content/blogentries/.detailContainers</destination>
-			<type>folder</type>
-			<uuidstructure>cc5efebb-5c73-11e5-96ab-0242ac11002b</uuidstructure>
-			<datecreated>Wed, 16 Sep 2015 13:06:52 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/blogentries/.detailContainers/be_00005.xml</source>
-			<destination>apollo-demo/.content/blogentries/.detailContainers/be_00005.xml</destination>
-			<type>containerpage</type>
-			<uuidstructure>cc625a1e-5c73-11e5-96ab-0242ac11002b</uuidstructure>
-			<uuidresource>cc625a1f-5c73-11e5-96ab-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Sep 2015 13:06:52 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>apollo-demo/.content/blogentries/images-ugc</destination>
 			<type>imagegallery</type>
 			<uuidstructure>cb5f1937-5ad1-11e5-a17e-0242ac11002b</uuidstructure>
@@ -4694,7 +4321,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Website demo contents: Special detail content]]></value>
+					<value><![CDATA[%(page_title): Special detail content]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -4847,7 +4474,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[About: OpenCms has all the features]]></value>
+					<value><![CDATA[OpenCms has all the features]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -4864,7 +4491,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[About: Full control over the created HTML]]></value>
+					<value><![CDATA[Full control over the created HTML]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -4932,7 +4559,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[A selection of clients: Lucky Charm Ltd.]]></value>
+					<value><![CDATA[Lucky Charm Ltd.]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -4949,7 +4576,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[A selection of clients: The Surprise Company]]></value>
+					<value><![CDATA[The Surprise Company]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -4966,7 +4593,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[A selection of clients: Java Cup Inc.]]></value>
+					<value><![CDATA[Java Cup Inc.]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5680,7 +5307,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[About: Machine]]></value>
+					<value><![CDATA[Machine]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6088,7 +5715,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Section formatters: Sample Headline]]></value>
+					<value><![CDATA[Section elements: Sample Headline]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6105,7 +5732,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Section formatters: Sample Headlines]]></value>
+					<value><![CDATA[Section elements: Sample Headlines]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6139,7 +5766,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Section formatters: Wizard of OZ placeholder text]]></value>
+					<value><![CDATA[Section elements: Wizard of OZ placeholder text]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6174,6 +5801,40 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Image elements: Telescope image]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00090.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00090.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>cb27735e-eecb-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>cb27735f-eecb-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sun, 20 Mar 2016 18:44:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tabs and Accordions: Tab and Accordion demo page]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00091.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00091.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>977a8f91-eed3-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>977a8f92-eed3-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sun, 20 Mar 2016 19:40:25 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[! Default placeholder text]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7164,6 +6825,40 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/tabs/t_00002.xml</source>
+			<destination>apollo-demo/.content/tabs/t_00002.xml</destination>
+			<type>a-tabs</type>
+			<uuidstructure>13926bf6-eecc-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>13926bf7-eecc-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sun, 20 Mar 2016 18:46:37 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tabs and Accordions: Tab content demo]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/tabs/t_00003.xml</source>
+			<destination>apollo-demo/.content/tabs/t_00003.xml</destination>
+			<type>a-tabs</type>
+			<uuidstructure>747d849b-eecc-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>747d849c-eecc-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sun, 20 Mar 2016 18:49:19 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tabs and Accordions: Accordion demo content]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/templaterows</destination>
 			<type>folder</type>
 			<uuidstructure>b41271b2-5609-11e5-b868-0242ac11002b</uuidstructure>
@@ -8025,7 +7720,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>NavPos</name>
-					<value><![CDATA[660.4961]]></value>
+					<value><![CDATA[705.37305]]></value>
 				</property>
 				<property>
 					<name>NavText</name>
@@ -8278,6 +7973,46 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Search]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/tabs-and-accordions</destination>
+			<type>folder</type>
+			<uuidstructure>93414ce3-eecb-11e5-a02c-0242ac11002b</uuidstructure>
+			<datecreated>Sun, 20 Mar 2016 18:43:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[707.3242]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Tabs and Accordions]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tabs and Accordions]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/tabs-and-accordions/index.html</source>
+			<destination>apollo-demo/tabs-and-accordions/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>93456b98-eecb-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>93456b99-eecb-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sun, 20 Mar 2016 18:43:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tabs and Accordions]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9900,7 +9635,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Login to OpenCms: Further login options]]></value>
+					<value><![CDATA[Login to OpenCms: Next: How to modify a page]]></value>
 				</property>
 			</properties>
 			<relations/>

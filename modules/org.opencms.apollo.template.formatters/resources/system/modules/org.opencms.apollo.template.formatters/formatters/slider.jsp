@@ -12,8 +12,7 @@
 			</c:when>
 			<c:when test="${cms.edited}">
 				<div>${cms.enableReload}</div>
-				<div class="alert alert-danger">Der Slider wurde
-					ge&auml;ndert, die Seite wird neu geladen.</div>
+				<div class="alert alert-danger">The slider was changed, the page is reloaded.</div>
 			</c:when>
 			<c:otherwise>
 				<div class="fullwidthbanner-container mb-20" style="overflow: hidden;">

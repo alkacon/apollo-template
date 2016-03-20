@@ -10,14 +10,7 @@
 <cms:formatter var="content" val="value" rdfa="rdfa">
 <apollo:image-vars content="${content}">
 
-<c:choose>
-    <c:when test="${empty imageLink}">
-        <div class="alert">
-            <fmt:message key="no.image" />
-        </div>
-    </c:when>
-
-    <c:otherwise>
+<c:if test="${not empty imageLink}">
 
     <div class="ap-img ${cms.element.setting.istyle}">
         
@@ -64,9 +57,7 @@
         
     </div>
 
-    </c:otherwise>
-    
-</c:choose>
+</c:if>
 
 </apollo:image-vars>
 </cms:formatter>

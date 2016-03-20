@@ -4,10 +4,11 @@
   <ApolloNavigation language="en">
     <Title><![CDATA[Apollo demo side navigation]]></Title>
     <NavStartLevel><![CDATA[1]]></NavStartLevel>
+    <LogoImage/>
     <LogoLink>
       <link internal="true" type="WEAK">
         <target><![CDATA[/sites/default/]]></target>
-        <uuid>08ee0954-bdeb-11e5-8fba-0242ac11002b</uuid>
+        <uuid>df2c7fa0-ed2b-11e5-b860-0242ac11002b</uuid>
       </link>
     </LogoLink>
     <Header name="Header0">

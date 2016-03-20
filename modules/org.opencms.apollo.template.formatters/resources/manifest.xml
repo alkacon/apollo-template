@@ -10,6 +10,7 @@
 		<nicename><![CDATA[Apollo Template Formatters]]></nicename>
 		<group>Apollo Template</group>
 		<class/>
+		<import-site>/sites/default/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[The OpenCms 10 Apollo template and formatters.]]></description>
 		<version>10.0.0</version>
@@ -28,6 +29,7 @@
 		</exportpoints>
 		<resources>
 			<resource uri="/system/modules/org.opencms.apollo.template.formatters/"/>
+			<resource uri="/.formatters/"/>
 		</resources>
 		<excluderesources/>
 		<parameters>
@@ -35,6 +37,444 @@
 		</parameters>
 	</module>
 	<files>
+		<file>
+			<destination>.formatters</destination>
+			<type>folder</type>
+			<uuidstructure>eb523bdb-ee99-11e5-a02c-0242ac11002b</uuidstructure>
+			<datecreated>Sun, 20 Mar 2016 12:47:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Site formatters]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ROLE.DEVELOPER</uuidprincipal>
+					<flags>514</flags>
+					<permissionset>
+						<allowed>7</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+				<accessentry>
+					<uuidprincipal>GROUP.Users</uuidprincipal>
+					<flags>38</flags>
+					<permissionset>
+						<allowed>5</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<source>.formatters/section-head-image-text.xml</source>
+			<destination>.formatters/section-head-image-text.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>c6236d09-eec0-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>c6236d0a-eec0-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sun, 20 Mar 2016 17:25:43 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline, image and text]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-head-left-big-image-right.xml</source>
+			<destination>.formatters/section-head-left-big-image-right.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>446b9966-eb88-11e5-854f-0242ac11002b</uuidstructure>
+			<uuidresource>446b9967-eb88-11e5-854f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 15:03:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline left, big image right]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-head-left-small-image-rightml</source>
+			<destination>.formatters/section-head-left-small-image-rightml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>0f86adfc-ec63-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>0f86adfd-ec63-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 17:09:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline left, small image right]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-head-only.xml</source>
+			<destination>.formatters/section-head-only.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>631ccfde-ee8d-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>631ccfdf-ee8d-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sun, 20 Mar 2016 11:17:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline only]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-head-right-big-image-left.xml</source>
+			<destination>.formatters/section-head-right-big-image-left.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>57e72830-eb86-11e5-854f-0242ac11002b</uuidstructure>
+			<uuidresource>57e72831-eb86-11e5-854f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 14:49:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline right, big image left]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-head-right-small-image-left.xml</source>
+			<destination>.formatters/section-head-right-small-image-left.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>01b64d76-ec63-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>01b64d77-ec63-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 17:09:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline right, small image left]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-head-text-image.xml</source>
+			<destination>.formatters/section-head-text-image.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>972390c3-eec0-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>972390c4-eec0-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sun, 20 Mar 2016 17:24:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline, text and image]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-head-text.xml</source>
+			<destination>.formatters/section-head-text.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>549e54ad-ec1c-11e5-854f-0242ac11002b</uuidstructure>
+			<uuidresource>549e54ae-ec1c-11e5-854f-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 08:43:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline and text only]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-head-top-big-image-left.xml</source>
+			<destination>.formatters/section-head-top-big-image-left.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>14879c44-eb79-11e5-854f-0242ac11002b</uuidstructure>
+			<uuidresource>14879c45-eb79-11e5-854f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 13:14:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline on top, big image left]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-head-top-big-image-right.xml</source>
+			<destination>.formatters/section-head-top-big-image-right.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>cc12067a-eb81-11e5-854f-0242ac11002b</uuidstructure>
+			<uuidresource>cc12067b-eb81-11e5-854f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 14:17:21 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline on top, big image right]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-head-top-small-image-left.xml</source>
+			<destination>.formatters/section-head-top-small-image-left.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>38096d36-ec62-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>38096d37-ec62-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 17:03:49 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline on top, small image left]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-head-top-small-image-right.xml</source>
+			<destination>.formatters/section-head-top-small-image-right.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>849c167c-ec62-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>849c167d-ec62-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Thu, 17 Mar 2016 17:05:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline on top, small image right]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-image-only.xml</source>
+			<destination>.formatters/section-image-only.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>e41c23a6-eec7-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>e41c23a7-eec7-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sun, 20 Mar 2016 18:16:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image only]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.formatters/section-text-only.xml</source>
+			<destination>.formatters/section-text-only.xml</destination>
+			<type>macro_formatter</type>
+			<uuidstructure>9a9bd408-ee86-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>9a9bd409-ee86-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sun, 20 Mar 2016 10:29:19 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Text only]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
 		<file>
 			<destination>system</destination>
 			<type>folder</type>
@@ -912,60 +1352,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-standard-config.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-standard-config.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
-			<uuidresource>3677fe85-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
-			<datecreated>Tue, 15 Sep 2015 15:41:21 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Image only]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-standard.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-standard.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
-			<uuidresource>1106ba60-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
-			<datecreated>Tue, 15 Sep 2015 15:40:18 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Image without effect formatter JSP]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[container-element;locale]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/jsp-search-formatter-config.xml</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/jsp-search-formatter-config.xml</destination>
 			<type>formatter_config</type>
@@ -1228,35 +1614,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-config.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-config.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>34dec913-eaaf-11e5-99f8-0242ac11002b</uuidstructure>
-			<uuidresource>34dec914-eaaf-11e5-99f8-0242ac11002b</uuidresource>
-			<datecreated>Mon, 07 Sep 2015 15:52:39 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Selectable paragraph layout]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-headline-config.xml</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-headline-config.xml</destination>
 			<type>formatter_config</type>
@@ -1365,6 +1722,60 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-image-config.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-image-config.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>3677fe85-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 15:41:21 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image only (direct)]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-image.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-image.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>1106ba60-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 15:40:18 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for content section image]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section-jumbotron-config.xml</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section-jumbotron-config.xml</destination>
 			<type>formatter_config</type>
@@ -1459,31 +1870,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Formatter JSP for content sections as text]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[container-element;locale]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/section.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/section.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>34ea12cf-eaaf-11e5-99f8-0242ac11002b</uuidstructure>
-			<uuidresource>34ea12d0-eaaf-11e5-99f8-0242ac11002b</uuidresource>
-			<datecreated>Mon, 07 Sep 2015 15:52:39 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Formatter JSP for content sections]]></value>
 				</property>
 				<property>
 					<name>cache</name>
