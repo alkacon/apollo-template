@@ -29,32 +29,49 @@
       <PropertyName><![CDATA[istyle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.section.image.style.label)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>
-      <Default><![CDATA[image-plain]]></Default>
+      <Default><![CDATA[ap-img-v0]]></Default>
       <WidgetConfig><![CDATA[
-            image-plain:Plain          
-        ]]></WidgetConfig>
+        ap-img-v0:Plain|
+        ap-img-v1:Bold title, centered
+      ]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[ieffect]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>
       <WidgetConfig><![CDATA[
-            box-shadow shadow-effect-1:Shadow|    
-            rounded-2x:Round corners|
-            rounded-x:Circle vignette|
-            img-bordered:Bordered|
-            img-bordered rounded-2x:Bordered and round corners|
-            img-bordered rounded-x:Bordered and circle vignette|
-            box-shadow shadow-effect-1 rounded-2x:Shadow and round corners|
-            box-shadow shadow-effect-1 img-bordered:Shadow and Bordered
-        ]]></WidgetConfig>
+        none:No effect|
+        box-shadow shadow-effect-1:Shadow|    
+        rounded-2x:Round corners|
+        rounded-x:Circle vignette|
+        img-bordered:Bordered|
+        img-bordered rounded-2x:Bordered and round corners|
+        img-bordered rounded-x:Bordered and circle vignette|
+        box-shadow shadow-effect-1 rounded-2x:Shadow and round corners|
+        box-shadow shadow-effect-1 img-bordered:Shadow and Bordered
+      ]]></WidgetConfig>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[showtext]]></PropertyName>
+      <PropertyName><![CDATA[itext]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.section.image.text.label)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showtext.false)|true:%(key.apollo.setting.showtext.true)]]></WidgetConfig>
+      <Default><![CDATA[none]]></Default>
+      <WidgetConfig><![CDATA[
+        none:Show nothing|
+        title:Show title|
+        desc:Show description|
+        title-desc:Show title and description
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[ilink]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.link.label)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[none]]></Default>
+      <WidgetConfig><![CDATA[
+        none:No link|
+        all:Link image and text
+      ]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

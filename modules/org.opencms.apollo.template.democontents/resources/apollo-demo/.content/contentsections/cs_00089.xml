@@ -17,5 +17,14 @@
       <Title><![CDATA[Telescope]]></Title>
       <Description><![CDATA[A telescope helps you to find things at a large distance.]]></Description>
     </Image>
+    <Link>
+      <Text><![CDATA[To the demo homepage]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/]]></target>
+          <uuid>acb43685-5224-11e5-9495-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
   </ApolloSection>
 </ApolloSections>
