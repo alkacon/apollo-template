@@ -105,51 +105,46 @@ $oc-container-labels:
   }
 }
 
+// Styles for image section variations
+// Plain style
 .ap-img {
 
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 
 	.ap-img-pic {
 	}
-
 	.ap-img-txt {
-	
 		.ap-img-title {
 			margin-top: 10px;
 		}
-		
 		.ap-img-desc {
 			margin-top: 5px;
 		}			
 	}
 	
 	a {
+	
     	color: $text-dark;
     	
 		&:hover, &:active, &:focus {
         	color: $text-dark;
         	text-decoration: none;
       	}
-      	
       	.ap-img-desc {
 			color: $main-theme;
-			
 			&:hover, &:active, &:focus {
 	        	text-decoration: underline;
 	        }
 		}
 	}	
 }
-
+// Image section style "Bold headline, centered"
 .ap-img-v1 {
-
 	.ap-img-txt {
-
 		.ap-img-title {
 			text-align: center;
 			font-weight: 700;
 		}
-	
 		.ap-img-desc {
 			margin-top: 5px;
 		}	
@@ -158,8 +153,11 @@ $oc-container-labels:
 
 @each $name, $color in $colors {
     .bg-#{$name}{
+        
         background-color: $color;
         color: set-text-color($color);
+        padding: 20px;
+        
         h1, h2, h3, h4, p, div, li, .fa{               
             color: set-text-color($color);
             // text-decoration: none;
@@ -207,14 +205,20 @@ $oc-container-labels:
 @each $line-size in (1,2,3,4,5) {  
     @each $style in (solid, dashed, dotted) {    
         @each $name, $color in $colors {
-            .b-#{$name}-#{$line-size}-#{$style}  {    
-                border: $color #{$line-size}px $style;  
+        
+            .b-#{$name}-#{$line-size}-#{$style}  {                    
+                padding: 20px;
+                border: $color #{$line-size}px $style;                  
             }
+            
             @each $n, $side in ((t,top), (r,right), (b,bottom), (l, left)) {
+    
                 .b#{$n}-#{$name}-#{$line-size}-#{$style}  {    
+	                padding: 20px;
                     border-#{$side}: $color #{$line-size}px $style !important;  
                 }
             }
+
         }     
     }    
 }
