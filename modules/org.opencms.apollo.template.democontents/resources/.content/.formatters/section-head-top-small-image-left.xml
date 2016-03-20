@@ -2,9 +2,9 @@
 
 <MacroFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/macro_formatter.xsd">
   <MacroFormatter language="en">
-    <NiceName><![CDATA[Headline and text paragraph]]></NiceName>
+    <NiceName><![CDATA[Headline on top and small image left]]></NiceName>
     <Type><![CDATA[a-section]]></Type>
-    <Rank><![CDATA[6400]]></Rank>
+    <Rank><![CDATA[6195]]></Rank>
     <Match>
       <Types>
         <ContainerType><![CDATA[default]]></ContainerType>
@@ -13,9 +13,16 @@
     </Match>
     <Detail>false</Detail>
     <Display>false</Display>
-    <Macro><![CDATA[<div class="mb-20 %(settings.wrapperclass)">
-  %(headline)
-  %(text)
+    <Macro><![CDATA[<div class="row">
+  <div class="col-sm-12">
+    %(headline)
+  </div>
+  <div class="col-xs-2 col-sm-3">
+    %(image)
+  </div>
+  <div class="col-xs-10 col-sm-9">
+    %(text)
+  </div>
 </div>]]></Macro>
     <Formatters>
       <Formatter>
@@ -29,18 +36,20 @@
     <Formatters>
       <Formatter>
         <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/image-standard-config.xml]]></target>
+          <uuid>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuid>
+        </link>
+      </Formatter>
+      <MacroName><![CDATA[image]]></MacroName>
+    </Formatters>
+    <Formatters>
+      <Formatter>
+        <link type="WEAK">
           <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-text-config.xml]]></target>
           <uuid>fcab1d1e-eb7d-11e5-854f-0242ac11002b</uuid>
         </link>
       </Formatter>
       <MacroName><![CDATA[text]]></MacroName>
     </Formatters>
-    <Setting>
-      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
-      <Widget><![CDATA[selectcombo]]></Widget>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.coloredbox)]]></WidgetConfig>
-    </Setting>
   </MacroFormatter>
 </MacroFormatters>

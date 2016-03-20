@@ -19,7 +19,7 @@
     </Match>
     <Preview>false</Preview>
     <SearchContent>true</SearchContent>
-    <AutoEnabled>true</AutoEnabled>
+    <AutoEnabled>false</AutoEnabled>
     <Detail>false</Detail>
     <NestedContainers>false</NestedContainers>
     <Setting>

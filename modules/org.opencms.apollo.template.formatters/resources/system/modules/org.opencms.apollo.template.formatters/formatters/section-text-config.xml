@@ -2,7 +2,7 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Text only]]></NiceName>
+    <NiceName><![CDATA[Text only (direct)]]></NiceName>
     <Type><![CDATA[a-section]]></Type>
     <Jsp>
       <link type="WEAK">
@@ -19,7 +19,7 @@
     </Match>
     <Preview>false</Preview>
     <SearchContent>true</SearchContent>
-    <AutoEnabled>true</AutoEnabled>
+    <AutoEnabled>false</AutoEnabled>
     <Detail>false</Detail>
     <NestedContainers>false</NestedContainers>
     <Setting>

@@ -2,9 +2,9 @@
 
 <MacroFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/macro_formatter.xsd">
   <MacroFormatter language="en">
-    <NiceName><![CDATA[Paragraph with headline left and big image right]]></NiceName>
+    <NiceName><![CDATA[Headline on top and big image right]]></NiceName>
     <Type><![CDATA[a-section]]></Type>
-    <Rank><![CDATA[6100]]></Rank>
+    <Rank><![CDATA[6300]]></Rank>
     <Match>
       <Types>
         <ContainerType><![CDATA[default]]></ContainerType>
@@ -14,8 +14,10 @@
     <Detail>false</Detail>
     <Display>false</Display>
     <Macro><![CDATA[<div class="row">
-  <div class="col-sm-8">
+  <div class="col-sm-12">
     %(headline)
+  </div>
+  <div class="col-sm-8">
     %(text)
   </div>
   <div class="col-sm-4">
@@ -34,20 +36,20 @@
     <Formatters>
       <Formatter>
         <link type="WEAK">
-          <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/image-standard-config.xml]]></target>
-          <uuid>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuid>
-        </link>
-      </Formatter>
-      <MacroName><![CDATA[image]]></MacroName>
-    </Formatters>
-    <Formatters>
-      <Formatter>
-        <link type="WEAK">
           <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-text-config.xml]]></target>
           <uuid>fcab1d1e-eb7d-11e5-854f-0242ac11002b</uuid>
         </link>
       </Formatter>
       <MacroName><![CDATA[text]]></MacroName>
+    </Formatters>
+    <Formatters>
+      <Formatter>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/image-standard-config.xml]]></target>
+          <uuid>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuid>
+        </link>
+      </Formatter>
+      <MacroName><![CDATA[image]]></MacroName>
     </Formatters>
   </MacroFormatter>
 </MacroFormatters>

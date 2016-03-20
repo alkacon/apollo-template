@@ -2,9 +2,9 @@
 
 <MacroFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/macro_formatter.xsd">
   <MacroFormatter language="en">
-    <NiceName><![CDATA[Paragraph with headline on top and small image left]]></NiceName>
+    <NiceName><![CDATA[Headline right and big image left]]></NiceName>
     <Type><![CDATA[a-section]]></Type>
-    <Rank><![CDATA[6195]]></Rank>
+    <Rank><![CDATA[6000]]></Rank>
     <Match>
       <Types>
         <ContainerType><![CDATA[default]]></ContainerType>
@@ -14,13 +14,11 @@
     <Detail>false</Detail>
     <Display>false</Display>
     <Macro><![CDATA[<div class="row">
-  <div class="col-sm-12">
-    %(headline)
-  </div>
-  <div class="col-xs-2 col-sm-3">
+  <div class="col-sm-4">
     %(image)
   </div>
-  <div class="col-xs-10 col-sm-9">
+  <div class="col-sm-8">
+    %(headline)
     %(text)
   </div>
 </div>]]></Macro>

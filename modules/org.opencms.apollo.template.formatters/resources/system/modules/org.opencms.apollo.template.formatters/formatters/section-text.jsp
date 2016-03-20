@@ -2,11 +2,23 @@
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<cms:formatter var="content" val="value" rdfa="rdfa">
-    <div class="${cms.element.setting.tstyle}" <c:if test="${not value.Link.exists}">${rdfa.Link}</c:if>>
-        <div ${rdfa.Text}>${value.Text}</div>
-        <c:if test="${value.Link.exists}">
-            <p ${rdfa.Link}><a class="btn btn-u u-small" href="<cms:link>${value.Link.value.URI}</cms:link>">${value.Link.value.Text}</a></p>
+<cms:formatter var="content">
+
+<c:if test="${content.value.Text.isSet}">
+    <div class="${cms.element.setting.tstyle}" <c:if test="${not content.value.Link.exists}">${content.rdfa.Link}</c:if>>
+        <div ${content.rdfa.Text}>
+            ${content.value.Text}
+        </div>
+        <c:if test="${content.value.Link.exists}">
+            <p ${content.rdfa.Link}>
+                <a 
+                    class="btn btn-u u-small" 
+                    href="<cms:link>${content.value.Link.value.URI}</cms:link>">
+                        ${content.value.Link.value.Text}
+                </a>
+            </p>
         </c:if>
-    </div>
+    </div> 
+</c:if>
+
 </cms:formatter>
