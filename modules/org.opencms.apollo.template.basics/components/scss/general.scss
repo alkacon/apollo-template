@@ -105,6 +105,13 @@ $oc-container-labels:
   }
 }
 
+
+// Base style used by all section macro formatters
+.ap-sec {
+
+	margin-bottom: 20px;
+}
+
 // Styles for image section variations
 // Plain style
 .ap-img {
@@ -162,7 +169,7 @@ $oc-container-labels:
             color: set-text-color($color);
             // text-decoration: none;
             // border: none;
-            background-color: $color;           
+            background-color: $color;
         }
         a{
             color: lighten(set-text-color($color), 50%);    
