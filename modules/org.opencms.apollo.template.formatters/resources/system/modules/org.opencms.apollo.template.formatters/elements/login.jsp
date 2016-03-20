@@ -35,14 +35,14 @@
         </c:if>
 </jsp:useBean>
 
-<form class="bg-grey-lighter b-grey-light-2-solid p-20 mb-20 h-u h-c" action="<cms:link>${cms.requestContext.uri}</cms:link>" method="get">
+<form class="bg-grey-lighter b-grey-light-2-solid mb-20" action="<cms:link>${cms.requestContext.uri}</cms:link>" method="get">
 
 <input type="hidden" name="requestedResource" value="${param.requestedResource}" />
 
 <c:choose>
 	<c:when test="${! login.loggedIn}">
 		<div class="headline">		
-			<h3><fmt:message key="apollo.login.title.loggedoff" /></h3>
+			<h2><fmt:message key="apollo.login.title.loggedoff" /></h2>
 			<p><fmt:message key="apollo.login.message.loggedoff" /></p>
 		</div>
 
@@ -60,10 +60,12 @@
 	</c:when>
 	<c:otherwise>
 		<div class="headline">
-			<h3><fmt:message key="apollo.login.title.loggedin" /></h3>
+			<h2><fmt:message key="apollo.login.title.loggedin" /></h2>
 		</div>
-		<div class="bg-white b-grey-light-2-solid p-20 mb-20"><fmt:message key="apollo.login.message.loggedin" />: <span class="badge badge-dark-blue rounded">${cms.requestContext.currentUser.name}</span></div>
-
+		<div class="bg-white b-grey-light-2-solid mb-20">
+            <fmt:message key="apollo.login.message.loggedin" />: 
+            <span class="badge badge-dark-blue rounded">${cms.requestContext.currentUser.name}</span>
+        </div>
 		<div class="controls form-inline">
 			<button class="btn-u btn-u-orange" type="submit" name="action" value="logoff" ><fmt:message key="apollo.login.label.logoff" /></button>
 		</div>   

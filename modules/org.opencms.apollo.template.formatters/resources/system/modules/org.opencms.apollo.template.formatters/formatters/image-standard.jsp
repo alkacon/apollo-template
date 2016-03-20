@@ -31,11 +31,12 @@
             
         <div class="ap-img-pic ${cms.element.setting.ieffect != 'none' ? cms.element.setting.ieffect : ''}">
             <span ${image.rdfa.Image} ${content.imageDnd[image.value.Image.path]}>
-            <img
-                src="<cms:link>${imageLink}</cms:link>"
-                class="img-responsive ${cms.element.setting.ieffect != 'none' ? cms.element.setting.ieffect : ''}"
-                alt="${imageTitle}${' '}${imageCopyright}"
-                title="${imageTitle}${' '}${imageCopyright}" />
+                <img
+                    src="<cms:link>${imageLink}</cms:link>"
+                    class="img-responsive ${cms.element.setting.ieffect != 'none' ? cms.element.setting.ieffect : ''}"
+                    alt="${imageTitle}${' '}${imageCopyright}"
+                    title="${imageTitle}${' '}${imageCopyright}" 
+                />
             </span>
         </div>
         

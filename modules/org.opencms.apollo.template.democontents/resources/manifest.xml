@@ -4722,7 +4722,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: FAQ text 2]]></value>
+					<value><![CDATA[Frequently asked questions: YES]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5096,7 +5096,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English page: This box is red!]]></value>
+					<value><![CDATA[English page: This box is blue!]]></value>
 				</property>
 			</properties>
 			<relations/>

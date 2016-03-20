@@ -39,6 +39,7 @@
       <PropertyName><![CDATA[ieffect]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
         none:No effect|
         box-shadow shadow-effect-1:Shadow|    

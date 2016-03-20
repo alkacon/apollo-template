@@ -26,8 +26,11 @@
       <PropertyName><![CDATA[tstyle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.section.text.style.label)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>
-      <Default><![CDATA[plain]]></Default>
-      <WidgetConfig><![CDATA[text-plain:Plain|lead:Lead]]></WidgetConfig>
+      <Default><![CDATA[ap-plain]]></Default>
+      <WidgetConfig><![CDATA[
+        ap-plain:Plain|
+        lead:Lead
+      ]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>
