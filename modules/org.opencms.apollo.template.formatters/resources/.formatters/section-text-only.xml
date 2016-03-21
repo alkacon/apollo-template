@@ -11,6 +11,7 @@
         <ContainerType><![CDATA[section]]></ContainerType>
       </Types>
     </Match>
+    <AutoEnabled>true</AutoEnabled>
     <Detail>false</Detail>
     <Display>false</Display>
     <Macro><![CDATA[<div class="ap-sec %(settings.wrapperclass)">

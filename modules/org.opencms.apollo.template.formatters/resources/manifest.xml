@@ -830,7 +830,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog Entry detail formatter]]></value>
+					<value><![CDATA[Full blog article]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -859,7 +859,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog Entry compact list item formatter]]></value>
+					<value><![CDATA[Compact blog article teaser]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -888,7 +888,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for compact blog list item]]></value>
+					<value><![CDATA[Formatter JSP for compact teaser blog article]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -917,7 +917,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog Entry list item formatter]]></value>
+					<value><![CDATA[ Blog article teaser]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -946,7 +946,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for blog list item]]></value>
+					<value><![CDATA[Formatter JSP for blog article teaser]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -975,7 +975,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for blog]]></value>
+					<value><![CDATA[Formatter JSP for full blog article]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1017,7 +1017,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for Blog UGC form]]></value>
+					<value><![CDATA[Formatter JSP for blog UGC form]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>
@@ -1038,7 +1038,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Event formatter]]></value>
+					<value><![CDATA[Full event]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1067,7 +1067,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Event compact list item formatter]]></value>
+					<value><![CDATA[Compact event]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1096,7 +1096,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for compact event list item]]></value>
+					<value><![CDATA[Formatter JSP for compact event]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1121,7 +1121,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Event list item formatter]]></value>
+					<value><![CDATA[Verbose event]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1150,7 +1150,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for event list item]]></value>
+					<value><![CDATA[Formatter JSP for verbose event]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1200,7 +1200,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Flexible Content formatter]]></value>
+					<value><![CDATA[Flexible content]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1229,7 +1229,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for Flexible content]]></value>
+					<value><![CDATA[Formatter JSP for flexible content]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1337,7 +1337,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Image with enlargement formatter JSP]]></value>
+					<value><![CDATA[Image with zoom formatter JSP]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1362,7 +1362,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo demo search formatter]]></value>
+					<value><![CDATA[Search default]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1391,7 +1391,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for a search form]]></value>
+					<value><![CDATA[Formatter JSP for search]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>
@@ -1412,7 +1412,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[List standard formatter]]></value>
+					<value><![CDATA[List default]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1462,7 +1462,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Location Map formatter]]></value>
+					<value><![CDATA[Location map default]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1491,7 +1491,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for map]]></value>
+					<value><![CDATA[Formatter JSP for location map]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1516,7 +1516,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Navigation main formatter]]></value>
+					<value><![CDATA[Head navigation]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1545,7 +1545,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for main navigation]]></value>
+					<value><![CDATA[Formatter JSP for head navigation]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1570,7 +1570,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Navigation side formatter]]></value>
+					<value><![CDATA[Side navigation]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1653,7 +1653,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for content sections as headline]]></value>
+					<value><![CDATA[Formatter JSP for content section headline only]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1761,7 +1761,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for content section image]]></value>
+					<value><![CDATA[Formatter JSP for content section image only]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1869,7 +1869,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for content sections as text]]></value>
+					<value><![CDATA[Formatter JSP for content section text only]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1894,7 +1894,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Sitemap formatter]]></value>
+					<value><![CDATA[Sitemap default]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1948,7 +1948,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Slider as carousel formatter]]></value>
+					<value><![CDATA[Carousel]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -1977,7 +1977,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for slider as carousel]]></value>
+					<value><![CDATA[Formatter JSP for simple-slider carousel]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -2002,7 +2002,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Slider standard formatter]]></value>
+					<value><![CDATA[Slider]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -2031,7 +2031,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for slider]]></value>
+					<value><![CDATA[Formatter JSP for simple-slider slider]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -2056,7 +2056,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Tabs as accordion formatter]]></value>
+					<value><![CDATA[Accordion]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -2085,7 +2085,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for tabs as accordion]]></value>
+					<value><![CDATA[Formatter JSP for tabs-accordion as accordion]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -2110,7 +2110,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Tabs standard formatter]]></value>
+					<value><![CDATA[Tabs]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -2139,7 +2139,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for tabs as standard tabs]]></value>
+					<value><![CDATA[Formatter JSP for tabs-accordion as tabs]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -2164,7 +2164,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Template row formatter]]></value>
+					<value><![CDATA[Template row default]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -2193,7 +2193,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for Template Row]]></value>
+					<value><![CDATA[Formatter JSP for template row]]></value>
 				</property>
 				<property>
 					<name>cache</name>

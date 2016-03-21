@@ -2,10 +2,10 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Tab and Accordion demo page]]></Headline>
+    <Headline><![CDATA[The Tabs / Accordion element]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Tabs and accordions allow you to structure content on a&nbsp;page</p>]]></content>
+      <content><![CDATA[<p>Tabs and accordions allow you to structure content on a&nbsp;page. You can select the appearance as either <em>Tab</em> or <em>Accordion</em> by selecting the respective formatter in the element settings.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

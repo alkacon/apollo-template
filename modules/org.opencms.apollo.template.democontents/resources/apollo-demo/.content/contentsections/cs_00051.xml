@@ -2,10 +2,10 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Icon Boxes]]></Headline>
+    <Headline><![CDATA[Using the Content Section for icon boxes]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>This page demonstrates repeated use of the same text element formatted as <em><strong>Icon Box </strong></em>in multiple containers with different settings.</p>]]></content>
+      <content><![CDATA[<p>This page demonstrates repeated use of the same <em>Content&nbsp;Section<strong>&nbsp;</strong></em>element using&nbsp;the special&nbsp;<em>Icon box </em>layout. Styles&nbsp;are applied&nbsp;and the icon is selected&nbsp;through individual element settings.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

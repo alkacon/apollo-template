@@ -7,11 +7,12 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
 
-	<cms:formatter var="content" val="value">
+<cms:formatter var="content" val="value">
+	<div class="row mb-5">
 		<c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
-		<c:set var="teaserLength" value="${cms.element.settings.teaserLength}" />
-		<c:set var="buttonColor" value="${cms.element.settings.buttonColor}" />
-		<div class="col-md-12">
+		<c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
+		<c:set var="buttonColor" value="${cms.element.settings.buttoncolor}" />
+		<div class="col-xs-12">
 			<h3 class="mb-5">
 				<a
 					href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
@@ -43,6 +44,7 @@
 				class="btn-u btn-u-xs btn-u-${buttonColor}"><fmt:message
 					key="apollo.list.message.readmore" /></a>
 		</div>
-	</cms:formatter>
+	</div>
+</cms:formatter>
 
 </cms:bundle>

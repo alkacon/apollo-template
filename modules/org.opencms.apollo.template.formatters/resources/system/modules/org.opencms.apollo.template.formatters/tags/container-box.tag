@@ -59,7 +59,13 @@
       </c:otherwise>
     </c:choose>
   </h1>
-  <p>${label} - ${not empty cms.container.type ? 'In: '.concat(cms.container.type) : ''} For: ${type}</p>
+  <p class="fc-grey-dark lh-12">
+    ${label}
+    <c:if test="${not empty cms.container.type}">
+      <br>
+      <small>In: ${cms.container.type} - For: ${type}</small>
+    </c:if>
+  </p>
 </div>
 
 <%-- End of use case 1: Create container box --%>

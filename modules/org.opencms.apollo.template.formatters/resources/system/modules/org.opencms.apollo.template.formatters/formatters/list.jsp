@@ -61,16 +61,16 @@
 					<c:if test="${con.value.Category.isSet}">
 						<c:set var="params">${params}&categoriesToCollect=${con.value.Category}</c:set>
 					</c:if>
-                    <c:choose>
-                        <c:when test="${value.Folder.isSet}">
-                            <c:set var="folder">${value.Folder}</c:set>
-                            <c:if test="${not fn:startsWith(folder, '/shared/')}"><c:set var="folder">${cms.requestContext.siteRoot}${folder}</c:set></c:if>
-                            <c:set var="params">${params}&pathes=${folder}</c:set>
-                        </c:when>
-                        <c:otherwise>
-                            <c:set var="params">${params}&pathes=${cms.requestContext.siteRoot}${cms.subSitePath}</c:set>
-                        </c:otherwise>
-                    </c:choose>
+					<c:choose>
+						<c:when test="${value.Folder.isSet}">
+							<c:set var="folder">${value.Folder}</c:set>
+							<c:if test="${not fn:startsWith(folder, '/shared/')}"><c:set var="folder">${cms.requestContext.siteRoot}${folder}</c:set></c:if>
+							<c:set var="params">${params}&pathes=${folder}</c:set>
+						</c:when>
+						<c:otherwise>
+							<c:set var="params">${params}&pathes=${cms.requestContext.siteRoot}${cms.subSitePath}</c:set>
+						</c:otherwise>
+					</c:choose>
 					<c:set var="params">${params}&showDate=${cms.element.settings.showdate}</c:set>
 					<c:set var="params">${params}&showSort=${cms.element.settings.showsort}</c:set>
 					<c:set var="params">${params}&showCategoryFilter=${cms.element.settings.showcategoryfiler}</c:set>

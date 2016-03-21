@@ -4,8 +4,6 @@
   <NewFormatter language="en">
     <NiceName><![CDATA[Image only with zoom option]]></NiceName>
     <Type><![CDATA[a-section]]></Type>
-    <Type><![CDATA[a-blog]]></Type>
-    <Type><![CDATA[a-event]]></Type>
     <Jsp>
       <link type="WEAK">
         <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/image-enlarge.jsp]]></target>

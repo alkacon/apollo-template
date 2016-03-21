@@ -2,11 +2,10 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Simple slider variations]]></Headline>
+    <Headline><![CDATA[The Simple Slider element]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>This page shows the two versions of the simple image slider element that are available for the Apollo template.</p>
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>]]></content>
+      <content><![CDATA[<p>This page demonstrates&nbsp;the two versions of the <em>Simple Slider</em> element. You can select the appearance either as <em>Slider</em> or <em>Carousel</em> through the element settings.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

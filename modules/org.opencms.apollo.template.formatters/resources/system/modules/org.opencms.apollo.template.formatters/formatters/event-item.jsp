@@ -6,16 +6,16 @@
 <cms:secureparams />
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
-<div>
-	<cms:formatter var="content" val="value">
+<cms:formatter var="content" val="value">
+	<div class="row ap-sec">
 		<c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
-		<c:set var="teaserLength" value="${cms.element.settings.teaserLength}" />
-		<c:set var="buttonColor" value="${cms.element.settings.buttonColor}" />
-		<c:set var="compactForm" value="${cms.element.settings.compactForm}" />
+		<c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
+		<c:set var="buttonColor" value="${cms.element.settings.buttoncolor}" />
+		<c:set var="compactForm" value="${cms.element.settings.compactform}" />
 
 		<c:if test="${not compactForm}">
 			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">
-	
+
 				<div class="date-dark col-sm-2 hidden-xs">
 					<div class="day">
 						<fmt:formatDate value="${cms:convertDate(content.value.Date)}"
@@ -65,6 +65,7 @@
 				class="btn-u btn-u-${buttonColor}"><fmt:message
 					key="apollo.list.message.readmore" /></a>
 		</div>
-	</cms:formatter>
 </div>
+</cms:formatter>
+
 </cms:bundle>

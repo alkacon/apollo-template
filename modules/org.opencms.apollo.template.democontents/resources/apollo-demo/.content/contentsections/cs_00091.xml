@@ -2,7 +2,7 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Simple slider: Slider format]]></Headline>
+    <Headline><![CDATA[Element pages]]></Headline>
     <Text name="Text0">
       <links/>
       <content><![CDATA[<p>This is the default placeholder text that is copied.</p>]]></content>

@@ -2,10 +2,10 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Images]]></Headline>
+    <Headline><![CDATA[Using the Content Section for images]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>This page demonstrates repeated use of the same&nbsp;<em><strong>Image</strong> </em>element in multiple containers with different settings.</p>]]></content>
+      <content><![CDATA[<p>This page demonstrates repeated use of the same <em>Content&nbsp;Section<strong>&nbsp;</strong></em>element for <em>Image</em>&nbsp;display. Effects&nbsp;are applied by selecting different&nbsp;formatters such as <em>Image only</em>, <em>Zoom</em> or <em>Animation</em>, as well as through individual element settings.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

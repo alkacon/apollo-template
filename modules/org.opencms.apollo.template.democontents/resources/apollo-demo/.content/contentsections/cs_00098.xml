@@ -2,10 +2,11 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Simple slider: Slider format]]></Headline>
+    <Headline><![CDATA[The Blog Article element]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>This is the default placeholder text that is copied.</p>]]></content>
+      <content><![CDATA[<p>The&nbsp;<em>Blog Article</em> is a full featured article element. It can contain several paragraphs and images, as well as information about author, publihing date etc. Compared to the much simpler&nbsp;<em>Content Section</em>, a <em>Blog Article</em>&nbsp;forms a semantic entity.&nbsp;&nbsp;</p>
+<p>The&nbsp;full content of a&nbsp;Blog Article is usually displayed on a&nbsp;<em>Detail page</em>.&nbsp;On this page, teaser elements&nbsp;are created using the&nbsp;<em>Blog Article Teaser</em> formatter.&nbsp;</p>]]></content>
     </Text>
     <Image>
       <Image>

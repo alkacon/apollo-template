@@ -2,10 +2,10 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Form demo]]></Headline>
+    <Headline><![CDATA[The Form element]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>This page demonstrates the usage and capabilities of the form content that is part of the Apollo template.</p>]]></content>
+      <content><![CDATA[<p>This page demonstrates the usage and capabilities of the <em>Form</em> element&nbsp;that is part of the Apollo template. With the <em>Form</em> element, you can create from simple to complex forms for your pages. When the&nbsp;form is submitted, an email is send to a specified address containing the data entered. A variety of processing options can be set in the form content.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

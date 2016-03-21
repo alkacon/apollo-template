@@ -13,14 +13,12 @@
 		<cms:search configString="${param.searchConfig}" var="search" addContentInfo="true" />
 
 		<c:forEach var="result" items="${search.searchResults}">
-			<div class="row mb-20">
 			<cms:display value="${result.xmlContent.filename}" displayFormatters="${listConfig.value.TypesToCollect}" editable="true" create="true">
-				<cms:param name="teaserLength" value="${param.teaserLength}" />
-				<cms:param name="buttonColor">${param.buttonColor}</cms:param>
-				<cms:param name="showDate">${param.showDate}</cms:param>
-                <cms:param name="compactForm">${param.compactform}</cms:param>
+				<cms:param name="teaserlength" value="${param.teaserLength}" />
+				<cms:param name="buttoncolor">${param.buttonColor}</cms:param>
+				<cms:param name="showdate">${param.showDate}</cms:param>
+				<cms:param name="compactform">${param.compactForm}</cms:param>
 			</cms:display>
-			</div>
 		</c:forEach>
 	</c:if>
 </cms:bundle>
