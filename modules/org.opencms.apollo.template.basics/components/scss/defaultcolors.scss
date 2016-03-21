@@ -93,18 +93,12 @@ $colors: ((
 $colored-box-variants:
 (
  (white, $white),         
- (lightgrey, $gray-lighter),         
- (mediumgrey, $gray-light),         
+ (grey, $gray),       
  (dark, $gray-darker),
  (red, $red),         
- (blue, $blue),         
- (green, $green),
- (sea, $sea),
+ (blue, $blue),
+ (blue-light, $blue-light),             
+ (cyan, $sea),
  (orange, $orange),
- (yellow, $yellow),
- (purple, $violet),
- (aqua, $blue-cyan),
-// (brown, $brown),
- (dark-blue, $blue-dark),
- (light-green, $green-light)
+ (blue-dark, $blue-dark)
 );
