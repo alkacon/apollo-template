@@ -3,7 +3,7 @@
 <ApolloBlogs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/blog.xsd">
   <ApolloBlog language="en">
     <Title><![CDATA[OpenCms can do it]]></Title>
-    <Date>1412192000000</Date>
+    <Date>1441913580000</Date>
     <Paragraph>
       <Text name="Text0">
         <links/>
@@ -16,11 +16,12 @@
       <Image>
         <Image>
           <link type="WEAK">
-            <target><![CDATA[/sites/default/.galleries/samples/02.jpg]]></target>
-            <uuid>c0ac6977-4705-11e3-8417-000c29d28104</uuid>
+            <target><![CDATA[/sites/default/.galleries/samples/11.jpg]]></target>
+            <uuid>c6d9d552-4705-11e3-8417-000c29d28104</uuid>
           </link>
         </Image>
         <Title/>
+        <Copyright><![CDATA[pixabay.com]]></Copyright>
       </Image>
       <Link>
         <Text><![CDATA[The Alkacon Homepage]]></Text>

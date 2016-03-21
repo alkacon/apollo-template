@@ -2,18 +2,18 @@
 
 <CaptchaPresets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.webform/schemas/captchapreset.xsd">
   <CaptchaPreset language="en">
-    <Name><![CDATA[Alkacon Dict DE]]></Name>
+    <Name><![CDATA[Light - German words]]></Name>
     <Dictionary><![CDATA[org.opencms.apollo.template.webform.dict-de]]></Dictionary>
     <ImageWidth><![CDATA[520]]></ImageWidth>
     <ImageHeight><![CDATA[60]]></ImageHeight>
-    <MinPhraseLength><![CDATA[5]]></MinPhraseLength>
+    <MinPhraseLength><![CDATA[4]]></MinPhraseLength>
     <MaxPhraseLength><![CDATA[8]]></MaxPhraseLength>
     <MinFontSize><![CDATA[25]]></MinFontSize>
-    <MaxFontSize><![CDATA[30]]></MaxFontSize>
+    <MaxFontSize><![CDATA[35]]></MaxFontSize>
     <FontColor>#B31B34</FontColor>
     <BackgroundColor>#FFFFFF</BackgroundColor>
     <HolesPerGlyph><![CDATA[0]]></HolesPerGlyph>
     <FilterAmplitude><![CDATA[0]]></FilterAmplitude>
-    <FilterWaveLength><![CDATA[100]]></FilterWaveLength>
+    <FilterWaveLength><![CDATA[40]]></FilterWaveLength>
   </CaptchaPreset>
 </CaptchaPresets>

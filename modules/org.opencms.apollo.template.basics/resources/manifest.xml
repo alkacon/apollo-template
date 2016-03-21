@@ -10,6 +10,7 @@
 		<nicename><![CDATA[Apollo Template Basics]]></nicename>
 		<group>Apollo Template</group>
 		<class/>
+		<import-site>/sites/default/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[Contains the necessary components used by the Apollo template.]]></description>
 		<version>10.0.0</version>

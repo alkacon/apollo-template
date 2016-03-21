@@ -14,7 +14,7 @@
     <ShowMarkers>true</ShowMarkers>
     <MapCoord>
       <Caption/>
-      <Coord><![CDATA[{"lat":51.4936478,"lng":-0.21581459999993058,"zoom":14,"type":"roadmap","mode":"dynamic","address":"Hammersmith Rd, London, UK"}]]></Coord>
+      <Coord><![CDATA[{"lat":51.4960948,"lng":-0.21109400000000278,"zoom":14,"type":"roadmap","mode":"dynamic","address":"Olympia, London W14, Vereinigtes Königreich"}]]></Coord>
     </MapCoord>
   </ApolloMap>
 </ApolloMaps>

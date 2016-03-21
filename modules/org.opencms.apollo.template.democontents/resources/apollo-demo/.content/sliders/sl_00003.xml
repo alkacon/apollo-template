@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSliders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/slider.xsd">
+  <ApolloSlider language="en">
+    <Title><![CDATA[Simple slider]]></Title>
+    <Delay><![CDATA[5000]]></Delay>
+    <ShowTimer>true</ShowTimer>
+    <ShowNumbers>true</ShowNumbers>
+    <ShowNavButtons>true</ShowNavButtons>
+    <ShowPlayButton>false</ShowPlayButton>
+    <TextColor>#FFFFFF</TextColor>
+    <TextBackgroundColor>#b31b34</TextBackgroundColor>
+    <ImageHeight><![CDATA[277]]></ImageHeight>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/slider/bg_sl_06.jpg]]></target>
+          <uuid>00610d7a-586c-11e4-a786-005056b61161</uuid>
+        </link>
+      </Uri>
+      <SuperTitle><![CDATA[OpenCms rocks!]]></SuperTitle>
+      <TitleLine1/>
+      <TitleLine2/>
+      <Position>
+        <Top><![CDATA[55]]></Top>
+        <Left><![CDATA[55]]></Left>
+      </Position>
+    </Image>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/slider/bg_sl_01.jpg]]></target>
+          <uuid>275f340b-24e8-11e3-9bbf-000c29d28104</uuid>
+        </link>
+      </Uri>
+      <SuperTitle><![CDATA[OpenCms is great]]></SuperTitle>
+      <TitleLine1/>
+      <TitleLine2/>
+      <Position>
+        <Top><![CDATA[55]]></Top>
+        <Left><![CDATA[55]]></Left>
+      </Position>
+    </Image>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/slider/bg_sl_02.jpg]]></target>
+          <uuid>278e816f-24e8-11e3-9bbf-000c29d28104</uuid>
+        </link>
+      </Uri>
+      <SuperTitle><![CDATA[OpenCms is easy to use]]></SuperTitle>
+      <TitleLine1/>
+      <TitleLine2/>
+      <Position>
+        <Top><![CDATA[55]]></Top>
+        <Left><![CDATA[55]]></Left>
+      </Position>
+    </Image>
+  </ApolloSlider>
+</ApolloSliders>

@@ -3,8 +3,8 @@
 <ApolloTabs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/tabs.xsd">
   <ApolloTab language="en">
     <Title><![CDATA[Accordion demo content]]></Title>
-    <Label><![CDATA[OpenCms is great]]></Label>
+    <Label><![CDATA[Accordions are great]]></Label>
     <Label><![CDATA[Easy to use]]></Label>
-    <Label><![CDATA[Powerful template engine]]></Label>
+    <Label><![CDATA[Powerful grouping options]]></Label>
   </ApolloTab>
 </ApolloTabs>

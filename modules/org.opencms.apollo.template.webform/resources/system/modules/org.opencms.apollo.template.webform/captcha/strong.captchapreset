@@ -2,16 +2,16 @@
 
 <CaptchaPresets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.webform/schemas/captchapreset.xsd">
   <CaptchaPreset language="en">
-    <Name><![CDATA[Strong]]></Name>
+    <Name><![CDATA[Strong - Random letters]]></Name>
     <ImageWidth><![CDATA[300]]></ImageWidth>
     <ImageHeight><![CDATA[60]]></ImageHeight>
-    <MinPhraseLength><![CDATA[5]]></MinPhraseLength>
-    <MaxPhraseLength><![CDATA[7]]></MaxPhraseLength>
+    <MinPhraseLength><![CDATA[6]]></MinPhraseLength>
+    <MaxPhraseLength><![CDATA[9]]></MaxPhraseLength>
     <MinFontSize><![CDATA[20]]></MinFontSize>
     <MaxFontSize><![CDATA[35]]></MaxFontSize>
-    <FontColor>#000000</FontColor>
-    <HolesPerGlyph><![CDATA[1]]></HolesPerGlyph>
+    <FontColor>#144382</FontColor>
+    <HolesPerGlyph><![CDATA[2]]></HolesPerGlyph>
     <FilterAmplitude><![CDATA[5]]></FilterAmplitude>
-    <FilterWaveLength><![CDATA[100]]></FilterWaveLength>
+    <FilterWaveLength><![CDATA[140]]></FilterWaveLength>
   </CaptchaPreset>
 </CaptchaPresets>

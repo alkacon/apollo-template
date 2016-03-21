@@ -2,7 +2,7 @@
 
 <CaptchaPresets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.webform/schemas/captchapreset.xsd">
   <CaptchaPreset language="en">
-    <Name><![CDATA[Math]]></Name>
+    <Name><![CDATA[Math captcha - User has to solve a simple Math task]]></Name>
     <MathField>true</MathField>
   </CaptchaPreset>
 </CaptchaPresets>

@@ -1,7 +1,7 @@
 # Alkacon webform
-fileicon.a-webform=Webform
-title.newa-webform=Create a new Webform
-desc.a-webform=Configurable web forms that will send their submitted data to an email recepient.
+fileicon.a-webform=Form
+title.newa-webform=Create a new form
+desc.a-webform=Configurable forms that will send their submitted data to an email recipient.
 
 # Errors, Warnings 
 apollo.webform.err.xmlcontent.field.empty = This field must not be empty.
@@ -205,7 +205,7 @@ form.init.error.description = Most likely, the form has not yet been edited or f
 form.configuration.error.headline = The online form contains the following configuration errors:
 form.configuration.error.emailfield.notfound = The input field specified to be used for the confirmation email does not exist.
 form.configuration.error.emailfield.type = The input field specified to be used for the confirmation email does not have the type "Email field".
-form.configuration.error.email.host = Please note: the mail host that is used by the webform to send the form data has not yet been configured.
+form.configuration.error.email.host = Please note: The mail host has not been configured. You have to do this in the OpenCms server configuration file opencms-system.xml.
 
 # Used for form HTML creation
 form.html.multiline.placeholder = 0

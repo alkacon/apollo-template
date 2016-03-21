@@ -1,7 +1,7 @@
 # Email form
-fileicon.a-webform=Webformular
-title.newa-webform=Neues Webformular anlegen 
-desc.a-webform=Konfigurierbare Formulare, die in einer E-Mail gesendet werden.
+fileicon.a-webform=Formular
+title.newa-webform=Neues Formular anlegen 
+desc.a-webform=Konfigurierbare Formulare, deren Daten in einer E-Mail versendet werden.
 
 # Errors, Warnings: 
 apollo.webform.err.xmlcontent.field.empty = Dieses Feld darf nicht leer sein.
@@ -207,7 +207,7 @@ form.init.error.description = Wahrscheinlich wurde das Formular noch nicht bearb
 form.configuration.error.headline = Das Onlineformular enthält folgende Konfigurationsfehler:
 form.configuration.error.emailfield.notfound = Das Eingabefeld, das für die Bestätigungsmail verwendet werden soll, existiert nicht.
 form.configuration.error.emailfield.type = Das Eingabefeld, das für die Bestätigungsmail verwendet werden soll, hat nicht den Typ "E-Mail" Feld.
-form.configuration.error.email.host = Bitte beachten: der Mailhost, der von dem Formular zum Versenden der Daten benötigt wird, wurde noch nicht konfiguriert.
+form.configuration.error.email.host = Bitte beachten: der Mailhost, wurde noch nicht konfiguriert. Sie müssen dies in der OpenCms Server Konfigurationsdatei opencms-system.xml vornehmen.
 
 # captcha field keys
 label.ApolloWebForm.FormCaptcha = Captcha Feld

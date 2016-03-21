@@ -3,8 +3,8 @@
 <ApolloEvents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/event.xsd">
   <ApolloEvent language="en">
     <Title><![CDATA[Happy Hacking Days]]></Title>
-    <Date>1446537600000</Date>
-    <EndDate>1446566400000</EndDate>
+    <Date>1478160000000</Date>
+    <EndDate>1478188800000</EndDate>
     <Teaser><![CDATA[Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.]]></Teaser>
     <Paragraph>
       <Text name="Text0">

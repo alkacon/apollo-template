@@ -128,8 +128,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>.formatters/section-head-left-small-image-rightml</source>
-			<destination>.formatters/section-head-left-small-image-rightml</destination>
+			<source>.formatters/section-head-left-small-image-right.xml</source>
+			<destination>.formatters/section-head-left-small-image-right.xml</destination>
 			<type>macro_formatter</type>
 			<uuidstructure>0f86adfc-ec63-11e5-af37-0242ac11002b</uuidstructure>
 			<uuidresource>0f86adfd-ec63-11e5-af37-0242ac11002b</uuidresource>
