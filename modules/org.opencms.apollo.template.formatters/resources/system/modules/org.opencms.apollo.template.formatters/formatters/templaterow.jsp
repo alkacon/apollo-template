@@ -47,7 +47,7 @@
 					Therefore we insert a placeholder in this case.
 				--%>
 				<div class="${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}">
-					<apollo:container-box label="${content.value.Title}${column.value.Name.isSet ? ' - ' += column.value.Name : ''}"  boxType="detail-placeholder" />
+					<apollo:container-box label="${content.value.Title}${column.value.Name.isSet ? ' - '.concat(column.value.Name) : ''}"  boxType="detail-placeholder" />
 				</div>
 
 			</c:when>
@@ -94,7 +94,7 @@
 					param="${role}">
 
 					<apollo:container-box
-						label="${content.value.Title}${column.value.Name.isSet ? ' - ' += column.value.Name : ''}"
+						label="${content.value.Title}${column.value.Name.isSet ? ' - '.concat(column.value.Name) : ''}"
 						boxType="container-box"
 						role="${myrole}"
 						type="${typeName}"
