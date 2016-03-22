@@ -49,7 +49,7 @@
             <cms:bundle basename="org.opencms.apollo.template.formatters.messages">        
                 <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
             </cms:bundle>
-			<apollo:container-box label="${message}" boxType="container-box" type="mainsection" role="ROLE.DEVELOPER" />
+			<apollo:container-box label="${message}" boxType="container-box" type="mainsection" role="DEVELOPER" />
 		</cms:container>
 
 	</div>
