@@ -42,14 +42,14 @@ apply from: 'dependencies.gradle'
 allModuleNames.split(',').each{ moduleName ->
     sourceSets.create(moduleName,{
         java {
-            srcDir "modules/${moduleName}/src"
+            srcDir "${projectDir}/src"
             exclude '**/test/**'
         }
-        resources.srcDir "modules/${moduleName}/src"
+        resources.srcDir "${projectDir}/src"
     });
-   sourceSets[moduleName].compileClasspath=configurations.compile
+    sourceSets[moduleName].compileClasspath=configurations.compile
     def moduleFolder = file("${projectDir}/modules/${moduleName}")
-    def srcGwtDir = file("${moduleFolder}/src")
+    def srcGwtDir = file("${projectDir}/src-gwt")
     def manifestFile = file("${moduleFolder}/resources/manifest.xml")
     def gwtModule = null
     def gwtSourceSetName = null
