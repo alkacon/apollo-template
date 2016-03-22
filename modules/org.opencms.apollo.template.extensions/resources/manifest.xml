@@ -151,35 +151,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.extensions/formatters/imagegallery-config.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.extensions/formatters/imagegallery-config.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>689934e1-8f73-11e5-9ae7-0242ac11002b</uuidstructure>
-			<uuidresource>689934e2-8f73-11e5-9ae7-0242ac11002b</uuidresource>
-			<datecreated>Fri, 20 Nov 2015 10:42:34 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Image gallery from a given folder]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.extensions/formatters/imagegallery.jsp</source>
 			<destination>system/modules/org.opencms.apollo.template.extensions/formatters/imagegallery.jsp</destination>
 			<type>jsp</type>
@@ -201,17 +172,17 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.extensions/formatters/slider-complex-config.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.extensions/formatters/slider-complex-config.xml</destination>
+			<source>system/modules/org.opencms.apollo.template.extensions/formatters/imagegallery.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.extensions/formatters/imagegallery.xml</destination>
 			<type>formatter_config</type>
-			<uuidstructure>9e37d8fa-56ce-11e5-bfd9-0242ac11002b</uuidstructure>
-			<uuidresource>9e37d8fb-56ce-11e5-bfd9-0242ac11002b</uuidresource>
-			<datecreated>Wed, 09 Sep 2015 08:41:52 GMT</datecreated>
+			<uuidstructure>689934e1-8f73-11e5-9ae7-0242ac11002b</uuidstructure>
+			<uuidresource>689934e2-8f73-11e5-9ae7-0242ac11002b</uuidresource>
+			<datecreated>Fri, 20 Nov 2015 10:42:34 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Complex slider default]]></value>
+					<value><![CDATA[Image Gallery from a given folder]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -249,6 +220,35 @@
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.extensions/formatters/slider-complex.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.extensions/formatters/slider-complex.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>9e37d8fa-56ce-11e5-bfd9-0242ac11002b</uuidstructure>
+			<uuidresource>9e37d8fb-56ce-11e5-bfd9-0242ac11002b</uuidresource>
+			<datecreated>Wed, 09 Sep 2015 08:41:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Standard Complex Slider]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
 				</property>
 			</properties>
 			<relations/>

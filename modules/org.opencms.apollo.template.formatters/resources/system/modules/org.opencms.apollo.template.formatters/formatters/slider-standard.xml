@@ -2,27 +2,25 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Complex slider default]]></NiceName>
-    <Type><![CDATA[a-sliderextended]]></Type>
+    <NiceName><![CDATA[Slider]]></NiceName>
+    <Type><![CDATA[a-slider]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.extensions/formatters/slider-complex.jsp]]></target>
-        <uuid>9e325ab7-56ce-11e5-bfd9-0242ac11002b</uuid>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/slider-standard.jsp]]></target>
+        <uuid>b741cb4c-73c2-11e5-92dc-15b01ffdc6a6</uuid>
       </link>
     </Jsp>
     <Rank><![CDATA[1000]]></Rank>
     <Match>
       <Types>
-        <ContainerType><![CDATA[headsection]]></ContainerType>
-        <ContainerType><![CDATA[container]]></ContainerType>
         <ContainerType><![CDATA[default]]></ContainerType>
-        <ContainerType><![CDATA[slider]]></ContainerType>
       </Types>
     </Match>
     <Preview>false</Preview>
-    <SearchContent>false</SearchContent>
+    <SearchContent>true</SearchContent>
     <AutoEnabled>true</AutoEnabled>
     <Detail>false</Detail>
+    <Display>false</Display>
     <NestedContainers>false</NestedContainers>
     <HeadIncludeCss>
       <CssLink>
@@ -45,12 +43,7 @@
           <uuid>67806138-7ccb-11e5-8038-0242ac11002b</uuid>
         </link>
       </JavascriptLink>
+      <JavascriptInline><![CDATA[createBanner();]]></JavascriptInline>
     </HeadIncludeJs>
-    <Setting>
-      <PropertyName><![CDATA[hidetitle]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.hidetitle)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
-    </Setting>
   </NewFormatter>
 </NewFormatters>

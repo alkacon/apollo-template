@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Compact Blog Article teaser]]></NiceName>
+    <Type><![CDATA[a-blog]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/blog-teaser-compact.jsp]]></target>
+        <uuid>8ed4e94e-d64a-11e5-9ef3-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[900]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[default]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>false</Detail>
+    <Display>true</Display>
+    <NestedContainers>false</NestedContainers>
+    <HeadIncludeCss/>
+    <Setting>
+      <PropertyName><![CDATA[buttoncolor]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[red]]></Default>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:Red|blue:Blue|blue-light:Light blue|blue-dark:Dark blue|orange:Orange|cyan:Cyan|grey:Grey)]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[teaserlength]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.teaserlength)]]></DisplayName>
+      <Widget><![CDATA[string]]></Widget>
+      <Default><![CDATA[200]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showdate]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showdate)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

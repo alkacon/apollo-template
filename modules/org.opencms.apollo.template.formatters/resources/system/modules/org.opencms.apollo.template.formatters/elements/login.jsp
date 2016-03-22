@@ -10,29 +10,29 @@
 <cms:bundle basename="org.opencms.apollo.template.schemas.login">
 
 <jsp:useBean id="login" class="org.opencms.jsp.CmsJspLoginBean" scope="page">
-        <%
-                login.init (pageContext, request, response);
-        %>
-        <c:set var ="loginou">${cms.element.settings.loginou}</c:set>
-        <c:if test="${param.action eq 'login' && !empty param.name && !empty param.password}">
-                <c:choose>
-                        <c:when test ="${not empty cms.element.settings.loginou}">
-                          <% login.login ("/"+(String)pageContext.getAttribute ("loginou")+"/" + request.getParameter("name"), request.getParameter("password"), "Offline", request.getParameter("requestedResource")); %>
-                        </c:when>
-                        <c:otherwise>
-                         <%
-                            String requestedResource = request.getParameter("requestedResource");
-                            if (requestedResource != null && requestedResource.equals("")) requestedResource = null;
-                            login.login (request.getParameter("name"), request.getParameter("password"), "Offline", requestedResource);
-                         %> 
-                        </c:otherwise>
-                </c:choose>
-        </c:if>
-        <c:if test="${param.action eq 'logoff'}">
-        <%
-                login.logout();
-        %>
-        </c:if>
+	<%
+		login.init (pageContext, request, response);
+	%>
+	<c:set var ="loginou">${cms.element.settings.loginou}</c:set>
+	<c:if test="${param.action eq 'login' && !empty param.name && !empty param.password}">
+	<c:choose>
+		<c:when test ="${not empty cms.element.settings.loginou}">
+			<% login.login ("/"+(String)pageContext.getAttribute ("loginou")+"/" + request.getParameter("name"), request.getParameter("password"), "Offline", request.getParameter("requestedResource")); %>
+		</c:when>
+		<c:otherwise>
+		 <%
+				String requestedResource = request.getParameter("requestedResource");
+				if (requestedResource != null && requestedResource.equals("")) requestedResource = null;
+				login.login (request.getParameter("name"), request.getParameter("password"), "Offline", requestedResource);
+		 %>
+		</c:otherwise>
+	</c:choose>
+	</c:if>
+	<c:if test="${param.action eq 'logoff'}">
+	<%
+	login.logout();
+	%>
+	</c:if>
 </jsp:useBean>
 
 <form class="bg-grey-lighter b-grey-light-2-solid mb-20" action="<cms:link>${cms.requestContext.uri}</cms:link>" method="get">
@@ -40,12 +40,12 @@
 <input type="hidden" name="requestedResource" value="${param.requestedResource}" />
 
 <c:choose>
+
 	<c:when test="${! login.loggedIn}">
-		<div class="headline">		
+		<div class="ap-plain">
 			<h2><fmt:message key="apollo.login.title.loggedoff" /></h2>
 			<p><fmt:message key="apollo.login.message.loggedoff" /></p>
 		</div>
-
 		<div class="input-group margin-bottom-20">
 			<span class="input-group-addon"><i class="icon-user"></i></span>
 			<input class="form-control" type="text" name="name" placeholder="<fmt:message key="apollo.login.label.username" />"/>
@@ -56,20 +56,23 @@
 		</div>
 		<div class="controls form-inline">
 			<button class="btn-u" type="submit" name="action" value="login" ><fmt:message key="apollo.login.label.login" /></button>
-		</div>   
-	</c:when>
-	<c:otherwise>
-		<div class="headline">
-			<h2><fmt:message key="apollo.login.title.loggedin" /></h2>
 		</div>
-		<div class="bg-white b-grey-light-2-solid mb-20">
-            <fmt:message key="apollo.login.message.loggedin" />: 
-            <span class="badge badge-dark-blue rounded">${cms.requestContext.currentUser.name}</span>
-        </div>
+	</c:when>
+
+	<c:otherwise>
+		<div class="ap-plain">
+			<h2><fmt:message key="apollo.login.title.loggedin" /></h2>
+			<p><fmt:message key="apollo.login.message.loggedin" /></p>
+		</div>
+		<div class="input-group margin-bottom-20">
+			<span class="input-group-addon"><i class="icon-user"></i></span>
+			<input class="form-control" type="text" name="name" placeholder="${cms.requestContext.currentUser.name}"/>
+		</div>
 		<div class="controls form-inline">
 			<button class="btn-u btn-u-orange" type="submit" name="action" value="logoff" ><fmt:message key="apollo.login.label.logoff" /></button>
-		</div>   
+		</div>
 	</c:otherwise>
+
 </c:choose>
 
 <c:if test="${!login.loginSuccess}">
@@ -78,7 +81,7 @@
 		${login.loginException.localizedMessage}
 	</div>
 </c:if>
-               
-</form>  
 
-</cms:bundle> 
+</form>
+
+</cms:bundle>

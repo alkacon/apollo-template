@@ -5,6 +5,6 @@
     <Headline><![CDATA[Latest entries]]></Headline>
     <TypesToCollect>a-blog:532e6791-c663-11e5-a73e-0242ac11002b</TypesToCollect>
     <SortOrder><![CDATA[desc]]></SortOrder>
-    <ItemsPerPage><![CDATA[4]]></ItemsPerPage>
+    <ItemsPerPage><![CDATA[20]]></ItemsPerPage>
   </ApolloList>
 </ApolloLists>

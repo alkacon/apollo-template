@@ -2,11 +2,11 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Full blog article]]></NiceName>
+    <NiceName><![CDATA[Complete Blog Article]]></NiceName>
     <Type><![CDATA[a-blog]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/blog.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/blog-complete.jsp]]></target>
         <uuid>fd062e7e-57c6-11e5-a989-0242ac11002b</uuid>
       </link>
     </Jsp>

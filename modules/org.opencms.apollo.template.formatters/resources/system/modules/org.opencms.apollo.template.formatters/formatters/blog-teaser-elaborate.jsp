@@ -8,8 +8,9 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
 
-	<cms:formatter var="content" val="value">
-		<div class="row ap-sec">
+<cms:formatter var="content" val="value">
+
+	<div class="row ap-sec">
 		<c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
 		<c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
 		<c:set var="buttonColor" value="${cms.element.settings.buttoncolor}" />
@@ -40,11 +41,12 @@
 
 			<c:out value="${imgDivStart}" escapeXml="false" />
 
-			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>"><cms:img src="${paragraph.value.Image.value.Image}" width="800"
-				cssclass="img-responsive" scaleColor="transparent" scaleType="0"
-				noDim="true"
-				alt="${paragraph.value.Image.value.Title}${' '}${copyright}"
-				title="${paragraph.value.Image.value.Title}${' '}${copyright}" /></a>
+			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">
+				<cms:img src="${paragraph.value.Image.value.Image}"
+					width="800" cssclass="img-responsive" scaleColor="transparent" scaleType="0" noDim="true"
+					alt="${paragraph.value.Image.value.Title}${' '}${copyright}"
+					title="${paragraph.value.Image.value.Title}${' '}${copyright}" />
+			</a>
 		</c:if>
 
 		<c:out value="${imgDivCenter}" escapeXml="false" />
@@ -56,14 +58,13 @@
 			<c:set var="showdate"><c:out value="${cms.element.settings.showDate}" default="true" /></c:set>
 			<c:if test="${showdate}">
 				<p>
-					<i><fmt:formatDate
-							value="${cms:convertDate(content.value.Date)}" dateStyle="LONG"
-							timeStyle="SHORT" type="both" /> <c:if
-							test="${content.value.EndDate.exists}">
-										 	-&nbsp;<fmt:formatDate
-								value="${cms:convertDate(content.value.EndDate)}"
-								dateStyle="LONG" timeStyle="SHORT" type="both" />
-						</c:if> </i>
+					<i>
+						<fmt:formatDate value="${cms:convertDate(content.value.Date)}" dateStyle="LONG" timeStyle="SHORT" type="both" />
+						<c:if test="${content.value.EndDate.exists}">
+							-&nbsp;
+							<fmt:formatDate value="${cms:convertDate(content.value.EndDate)}" dateStyle="LONG" timeStyle="SHORT" type="both" />
+						</c:if>
+					</i>
 				</p>
 			</c:if>
 
@@ -76,14 +77,13 @@
 				</c:otherwise>
 			</c:choose>
 
-			<a
-				href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>"
-				class="btn-u btn-u-${buttonColor}"><fmt:message
-					key="apollo.list.message.readmore" /></a>
+			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>" class="btn-u btn-u-${buttonColor}">
+				<fmt:message key="apollo.list.message.readmore" />
+			</a>
 
 		<c:out value="${imgDivEnd}" escapeXml="false" />
 
 	</div>
-	</cms:formatter>
 
+</cms:formatter>
 </cms:bundle>

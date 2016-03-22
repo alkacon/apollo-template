@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/flexible.xsd">
+  <ApolloFlexibleElement language="en">
+    <Title><![CDATA[Slideshare presentation]]></Title>
+    <Code name="Code0">
+      <links/>
+      <content><![CDATA[<iframe src="http://de.slideshare.net/AlkaconOpenCms/slideshelf" width="490px" height="470px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>]]></content>
+    </Code>
+  </ApolloFlexibleElement>
+</ApolloFlexibleElements>

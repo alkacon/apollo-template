@@ -5,6 +5,6 @@
     <Headline><![CDATA[Events]]></Headline>
     <TypesToCollect>a-event:194e26bc-c5b6-11e5-a73e-0242ac11002b</TypesToCollect>
     <SortOrder><![CDATA[asc]]></SortOrder>
-    <ItemsPerPage><![CDATA[5]]></ItemsPerPage>
+    <ItemsPerPage><![CDATA[50]]></ItemsPerPage>
   </ApolloList>
 </ApolloLists>

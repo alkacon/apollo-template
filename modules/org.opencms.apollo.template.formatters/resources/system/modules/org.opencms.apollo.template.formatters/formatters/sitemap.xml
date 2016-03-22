@@ -2,7 +2,7 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Sitemap default]]></NiceName>
+    <NiceName><![CDATA[Standard Sitemap]]></NiceName>
     <Type><![CDATA[a-sitemap]]></Type>
     <Jsp>
       <link type="WEAK">
@@ -25,6 +25,12 @@
     <HeadIncludeJs>
       <JavascriptInline><![CDATA[sitemap();]]></JavascriptInline>
     </HeadIncludeJs>
+    <Setting>
+      <PropertyName><![CDATA[color]]></PropertyName>
+      <DisplayName><![CDATA[Color]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:Red|blue:Blue|blue-light:Light blue|blue-dark:Dark blue|orange:Orange|cyan:Cyan|grey:Grey)]]></WidgetConfig>
+    </Setting>
     <Setting>
       <PropertyName><![CDATA[cols]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.sitemap.cols)]]></DisplayName>

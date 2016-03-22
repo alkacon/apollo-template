@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[The Flexible Content element]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>The <em>Flexible Content</em> allows you to place HTML source snippets in your page. These can be useful e.g. to embed a video file or other external widgets. Of course, you can also use the <em>Flexible Content</em> to add&nbsp;special markup for your page&nbsp;that is not available from the&nbsp;other elements.&nbsp;</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/cliparts/default.png]]></target>
+          <uuid>3efc64a5-5c52-11e5-9651-0242ac11002b</uuid>
+        </link>
+      </Image>
+      <Title><![CDATA[Defaul placeholder image]]></Title>
+    </Image>
+  </ApolloSection>
+</ApolloSections>

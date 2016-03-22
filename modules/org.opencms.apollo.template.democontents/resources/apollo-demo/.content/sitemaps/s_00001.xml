@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSitemaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/sitemap.xsd">
+  <ApolloSitemap language="en">
+    <Title><![CDATA[Example Sitemap]]></Title>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>]]></content>
+    </Text>
+    <SitemapOpenedPerDefault>false</SitemapOpenedPerDefault>
+    <SubFoldersOpenedPerDefault>false</SubFoldersOpenedPerDefault>
+    <MaximumDepth/>
+    <IncludeSubSiteMaps>true</IncludeSubSiteMaps>
+  </ApolloSitemap>
+</ApolloSitemaps>

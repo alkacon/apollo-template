@@ -5,8 +5,8 @@
     <Headline><![CDATA[The Blog Article element]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>The&nbsp;<em>Blog Article</em> is a full featured article element. It can contain several paragraphs and images, as well as information about author, publihing date etc. Compared to the much simpler&nbsp;<em>Content Section</em>, a <em>Blog Article</em>&nbsp;forms a semantic entity.&nbsp;&nbsp;</p>
-<p>The&nbsp;full content of a&nbsp;Blog Article is usually displayed on a&nbsp;<em>Detail page</em>.&nbsp;On this page, teaser elements&nbsp;are created using the&nbsp;<em>Blog Article Teaser</em> formatter.&nbsp;</p>]]></content>
+      <content><![CDATA[<p>The&nbsp;<em>Blog Article</em> is a full featured article element. It can contain several paragraphs and images, as well as information about author, publishing&nbsp;date etc. Compared to the much simpler&nbsp;<em>Content Section</em>, a <em>Blog Article</em>&nbsp;forms a semantic entity.&nbsp;&nbsp;</p>
+<p>The&nbsp;full content of a&nbsp;Blog Article is usually displayed on a&nbsp;<em>Detail page&nbsp;</em>that is accessed&nbsp;through a<em><em> List</em></em>.&nbsp;On this page, teaser elements&nbsp;are directly placed using the&nbsp;<em>Blog Article Teaser</em> formatters.</p>]]></content>
     </Text>
     <Image>
       <Image>

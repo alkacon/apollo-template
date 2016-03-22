@@ -560,35 +560,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.webform/formatters/webform-config.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.webform/formatters/webform-config.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>76889093-e6ad-11e5-8ea1-0242ac11002b</uuidstructure>
-			<uuidresource>76889094-e6ad-11e5-8ea1-0242ac11002b</uuidresource>
-			<datecreated>Thu, 10 Mar 2016 10:47:19 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Webform formatter]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.webform/formatters/webform.jsp</source>
 			<destination>system/modules/org.opencms.apollo.template.webform/formatters/webform.jsp</destination>
 			<type>jsp</type>
@@ -608,6 +579,35 @@
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.webform/formatters/webform.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.webform/formatters/webform.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>76889093-e6ad-11e5-8ea1-0242ac11002b</uuidstructure>
+			<uuidresource>76889094-e6ad-11e5-8ea1-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Mar 2016 10:47:19 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Standard Form]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
 				</property>
 			</properties>
 			<relations/>

@@ -2,17 +2,18 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Compact blog article teaser]]></NiceName>
-    <Type><![CDATA[a-blog]]></Type>
+    <NiceName><![CDATA[Compact Event teaser]]></NiceName>
+    <Type><![CDATA[a-event]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/blog-item-compact.jsp]]></target>
-        <uuid>8ed4e94e-d64a-11e5-9ef3-0242ac11002b</uuid>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/event-teaser-compact.jsp]]></target>
+        <uuid>aa2326f2-d71a-11e5-b10a-0242ac11002b</uuid>
       </link>
     </Jsp>
     <Rank><![CDATA[900]]></Rank>
     <Match>
       <Types>
+        <ContainerType><![CDATA[none]]></ContainerType>
         <ContainerType><![CDATA[default]]></ContainerType>
       </Types>
     </Match>
@@ -22,7 +23,6 @@
     <Detail>false</Detail>
     <Display>true</Display>
     <NestedContainers>false</NestedContainers>
-    <HeadIncludeCss/>
     <Setting>
       <PropertyName><![CDATA[buttoncolor]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>

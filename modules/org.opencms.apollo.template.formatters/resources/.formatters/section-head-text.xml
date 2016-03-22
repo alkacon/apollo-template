@@ -21,7 +21,7 @@
     <Formatters>
       <Formatter>
         <link type="WEAK">
-          <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-headline-config.xml]]></target>
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-headline.xml]]></target>
           <uuid>261ffa03-eb7c-11e5-854f-0242ac11002b</uuid>
         </link>
       </Formatter>
@@ -30,7 +30,7 @@
     <Formatters>
       <Formatter>
         <link type="WEAK">
-          <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-text-config.xml]]></target>
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-text.xml]]></target>
           <uuid>fcab1d1e-eb7d-11e5-854f-0242ac11002b</uuid>
         </link>
       </Formatter>
