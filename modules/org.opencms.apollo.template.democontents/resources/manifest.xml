@@ -52,6 +52,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<dependency name="org.opencms.apollo.template.formatters" version="10.0.0"/>
 			<dependency name="org.opencms.apollo.template.schemas" version="10.0.0"/>
 			<dependency name="org.opencms.apollo.template.extensions" version="10.0.0"/>
+			<dependency name="org.opencms.apollo.template.webform" version="10.0.0"/>
 		</dependencies>
 		<exportpoints/>
 		<resources>
