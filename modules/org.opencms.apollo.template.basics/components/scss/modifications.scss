@@ -507,6 +507,22 @@ ul.sidebar-nav-v1 {
 	}
 }
 
+@each $type-name, $bg-color in $colored-box-variants {
+    .colored-box.#{""+$type-name}, .colored-box-light.#{""+$type-name} {      
+        background-color: $bg-color;      
+    }
+    .sitemap-#{""+$type-name}{
+        ul>ul{
+            li {
+                background: $bg-color; 
+            }
+            &>ul li {
+                background: lighten($bg-color, 50%);      
+            }   
+        }
+    }    
+}
+
 /* Slider (Play/Pause Button, caption, copyright).
 ----------------------------------------------------------------------------- */
 

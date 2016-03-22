@@ -56,7 +56,6 @@ $navigation-bg: #EEE;
 
 
 $colors: ((
-    'white', $white),(        
     'black', $black),(   
     'blue', $blue),(      
     'blue-light', $blue-light),(     
@@ -87,18 +86,19 @@ $colors: ((
     'violet', $violet),(    
 //    'brown', $brown),(   
     'green', $green),(  
-    'green-light', $green-light)
+    'green-light', $green-light),(
+    'white', $white)
 );  
 
 $colored-box-variants:
 (
- (white, $white),         
  (grey, $gray),       
  (dark, $gray-darker),
- (red, $red),         
+ (red, $red),
+ (red-light, $red-light),         
  (blue, $blue),
  (blue-light, $blue-light),             
+ (blue-dark, $blue-dark),       
  (cyan, $sea),
  (orange, $orange),
- (blue-dark, $blue-dark)
 );
