@@ -2,17 +2,22 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Great responsive template]]></Headline>
+    <Headline><![CDATA[New options for developers]]></Headline>
     <Text name="Text0">
-      <links/>
-      <content><![CDATA[<p style="box-sizing: border-box; margin: 0px 0px 10px; color: #555555; border-radius: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">This demo template features a responsive design using the Apollo theme based on Bootstrap.</p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; color: #555555; border-radius: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>]]></content>
+      <links>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[http://documentation.opencms.org/central/]]></target>
+        </link>
+      </links>
+      <content><![CDATA[<p style="box-sizing: border-box; margin: 0px 0px 10px; color: #555555; border-radius: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">OpenCms 10 brings new features for developers such as &nbsp;list generation based on&nbsp;SOLR and with dynamic selection of formatters.&nbsp;<strong>Macro formatters</strong> allow you to quickly define multiple&nbsp;output variations for your content elements.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: #555555; border-radius: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">The <strong>Git integration</strong>&nbsp;app available from the new Launchpad enables you to easily&nbsp;push or pull changed module content without leaving OpenCms.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: #555555; border-radius: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Check the updated&nbsp;<a href="%(link0)">OpenCms Documentation</a> for more info about the new developer features.&nbsp;</p>]]></content>
     </Text>
     <Image>
       <Image>
         <link type="WEAK">
-          <target><![CDATA[/sites/default/.galleries/people/02.jpg]]></target>
-          <uuid>b1ccbbbc-4705-11e3-8417-000c29d28104</uuid>
+          <target><![CDATA[/sites/default/.galleries/people/24.jpg]]></target>
+          <uuid>f528ac8c-635d-11e5-81df-0242ac11002b</uuid>
         </link>
       </Image>
       <Title/>

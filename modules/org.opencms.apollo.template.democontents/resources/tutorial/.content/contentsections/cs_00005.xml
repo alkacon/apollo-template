@@ -2,7 +2,7 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[More modification options]]></Headline>
+    <Headline><![CDATA[Content modification options]]></Headline>
     <Text name="Text0">
       <links/>
       <content><![CDATA[<p>Have you already noticed the grey "edit point" icon that appears on the right corner over some elements that you see on the page? Move the mouse over one of these icons and you will see a list of options.</p>

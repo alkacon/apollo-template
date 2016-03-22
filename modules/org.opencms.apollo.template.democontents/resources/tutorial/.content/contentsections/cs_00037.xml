@@ -2,19 +2,18 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Confirm by clicking 'Publish']]></Headline>
+    <Headline><![CDATA[Select the Formatter]]></Headline>
     <Text name="Text0">
       <links/>
-      <content/>
+      <content><![CDATA[<p>This is the default placeholder text that is copied.</p>]]></content>
     </Text>
     <Image>
       <Image>
         <link type="WEAK">
-          <target><![CDATA[/sites/default/tutorial/.galleries/tutorial-images/tut-16.png]]></target>
-          <uuid>372dd4fe-6101-11e5-9eef-0242ac11002b</uuid>
+          <target><![CDATA[/sites/default/tutorial/.galleries/tutorial-images/tut-23.png]]></target>
+          <uuid>65433d63-f055-11e5-b20f-0242ac11002b</uuid>
         </link>
       </Image>
-      <Title/>
     </Image>
   </ApolloSection>
 </ApolloSections>

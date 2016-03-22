@@ -4683,7 +4683,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: What is new in OpenCms?]]></value>
+					<value><![CDATA[Frequently asked questions: What is the Apollo Template?]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -4802,7 +4802,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Two columns: Easy to use]]></value>
+					<value><![CDATA[Two columns: Great Apollo Template]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5006,7 +5006,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Three columns: Beautiful websites with OpenCms]]></value>
+					<value><![CDATA[Three columns: Beautiful websites with OpenCms and the Apollo Template]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5057,7 +5057,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Home: Powerful yet simple]]></value>
+					<value><![CDATA[Home: New responsive Apollo Template]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5074,7 +5074,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Home: More features than ever]]></value>
+					<value><![CDATA[Home: Greatly enhanced Workplace]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5091,7 +5091,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Home: Great responsive template]]></value>
+					<value><![CDATA[Home: New options for developers]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6036,14 +6036,14 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<source>apollo-demo/.content/contentsections/cs_00100.xml</source>
 			<destination>apollo-demo/.content/contentsections/cs_00100.xml</destination>
 			<type>a-section</type>
-			<uuidstructure>4a16a076-f01e-11e5-b20f-0242ac11002b</uuidstructure>
-			<uuidresource>4a16a077-f01e-11e5-b20f-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Mar 2016 11:07:38 GMT</datecreated>
+			<uuidstructure>59519200-f061-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>59519201-f061-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 19:07:40 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[! Default placeholder text]]></value>
+					<value><![CDATA[Frequently asked questions: Yes, You Can!]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6070,14 +6070,14 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<source>apollo-demo/.content/contentsections/cs_00102.xml</source>
 			<destination>apollo-demo/.content/contentsections/cs_00102.xml</destination>
 			<type>a-section</type>
-			<uuidstructure>00b5e0cf-f01f-11e5-b20f-0242ac11002b</uuidstructure>
-			<uuidresource>00b5e0d0-f01f-11e5-b20f-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Mar 2016 11:12:45 GMT</datecreated>
+			<uuidstructure>cb58dac7-f061-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>cb58dac8-f061-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 19:10:51 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[! Default placeholder text]]></value>
+					<value><![CDATA[Frequently asked questions: It's a ready-to-use Template for OpenCms]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6826,7 +6826,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog List: Latest entries]]></value>
+					<value><![CDATA[Blog List: Latest entries from the Blog]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6843,7 +6843,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Events: Events]]></value>
+					<value><![CDATA[Events: Upcoming Events]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9485,6 +9485,23 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>release/.content/contentsections/cs_00020.xml</source>
+			<destination>release/.content/contentsections/cs_00020.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>58865d5f-f03d-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>58865d60-f03d-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 14:49:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.0.0: Release Notes for OpenCms 10]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>release/.content/flexiblecontents</destination>
 			<type>folder</type>
 			<uuidstructure>4f9dda93-6060-11e5-9199-0242ac11002b</uuidstructure>
@@ -9706,6 +9723,46 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OpenCms 10 Beta]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>release/opencms-10.0.0-notes</destination>
+			<type>folder</type>
+			<uuidstructure>54e6bda5-f03c-11e5-b20f-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 22 Mar 2016 14:42:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[20.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[OpenCms 10.0.0]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.0.0]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>release/opencms-10.0.0-notes/index.html</source>
+			<destination>release/opencms-10.0.0-notes/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>54e97cca-f03c-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>54e97ccb-f03c-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 14:42:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.0.0]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10404,7 +10461,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo template. Tutorial page]]></value>
+					<value><![CDATA[Apollo template: Tutorial page]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10482,7 +10539,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 1: Modify a page: Check out the OpenCms Toolbar]]></value>
+					<value><![CDATA[Step 1: Modify a page: Modify the conent of a page]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10499,7 +10556,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 1: Modify a page: More modification options]]></value>
+					<value><![CDATA[Step 1: Modify a page: Content modification options]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10550,7 +10607,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 2: edit content: Inline editing of optional or special content]]></value>
+					<value><![CDATA[Step 2: edit content: Inline editing of images and hidden content]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10601,7 +10658,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Preview in a device: Preview a page in different devices]]></value>
+					<value><![CDATA[Step 5: Lauchpad and Explorer: The Lauchpad and the Explorer]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10618,7 +10675,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Preview in a device: Link to Step 5]]></value>
+					<value><![CDATA[Step 4: Lauchpad and Explorer: Link to Step 5]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10635,7 +10692,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes: Publishing changes]]></value>
+					<value><![CDATA[Step 5: Publish your changes: Publishing your changes]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10652,7 +10709,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes: Link to summary]]></value>
+					<value><![CDATA[Step 6: Publish your changes: Link to summary]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10679,14 +10736,31 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<source>tutorial/.content/contentsections/cs_00016.xml</source>
 			<destination>tutorial/.content/contentsections/cs_00016.xml</destination>
 			<type>a-section</type>
-			<uuidstructure>5b8e8f31-612d-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>5b8e8f32-612d-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 13:25:14 GMT</datecreated>
+			<uuidstructure>e39905da-a8bd-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>e39905db-a8bd-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 15:08:42 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Start exploring OpenCms: There is a lot more to discover]]></value>
+					<value><![CDATA[Step 5: Publish your changes: Confirm by clicking 'Publish']]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/contentsections/cs_00017.xml</source>
+			<destination>tutorial/.content/contentsections/cs_00017.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>9955cad5-a8bd-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>9955cad6-a8bd-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 15:06:37 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Step 5: Publish your changes: Select 'My changes']]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10720,7 +10794,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 1: Modify a page: Click on 'Text']]></value>
+					<value><![CDATA[Step 1: Modify a page: Select 'Content Section']]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10761,6 +10835,23 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>tutorial/.content/contentsections/cs_00022.xml</source>
+			<destination>tutorial/.content/contentsections/cs_00022.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>7b02bb10-a8bd-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>7b02bb11-a8bd-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 15:05:47 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Step 5: Publish your changes: Click on 'Publish' in the toolbar]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>tutorial/.content/contentsections/cs_00023.xml</source>
 			<destination>tutorial/.content/contentsections/cs_00023.xml</destination>
 			<type>a-section</type>
@@ -10788,7 +10879,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 2: edit content: Adding optional links]]></value>
+					<value><![CDATA[Step 2: edit content: Image galleries]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10805,7 +10896,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 2: edit content: Image galleries]]></value>
+					<value><![CDATA[Step 2: edit content: Drag & Drop of images]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10829,6 +10920,23 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>tutorial/.content/contentsections/cs_00027.xml</source>
+			<destination>tutorial/.content/contentsections/cs_00027.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>913beecb-a8bc-11e5-b3e7-0242ac11002b</uuidstructure>
+			<uuidresource>913beecc-a8bc-11e5-b3e7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Dec 2015 14:59:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Step 4: Lauchpad and Explorer: Explorer context menu]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>tutorial/.content/contentsections/cs_00028.xml</source>
 			<destination>tutorial/.content/contentsections/cs_00028.xml</destination>
 			<type>a-section</type>
@@ -10839,7 +10947,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 3: Work with the sitemap: Open the sitemap]]></value>
+					<value><![CDATA[Step 3: Work with the sitemap: <p>Open the Sitemap</p>]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10907,7 +11015,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Preview in a device: Click on 'Show menu']]></value>
+					<value><![CDATA[Step 4: Lauchpad and Explorer: Lauchpad]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10924,7 +11032,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Preview in a device: Select 'Show in device']]></value>
+					<value><![CDATA[Step 4: Lauchpad and Explorer: Explorer]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10934,14 +11042,14 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<source>tutorial/.content/contentsections/cs_00034.xml</source>
 			<destination>tutorial/.content/contentsections/cs_00034.xml</destination>
 			<type>a-section</type>
-			<uuidstructure>913beecb-a8bc-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>913beecc-a8bc-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 14:59:14 GMT</datecreated>
+			<uuidstructure>83f19178-f04e-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>83f19179-f04e-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 16:52:51 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Preview in a device: The device preview appears]]></value>
+					<value><![CDATA[Step 3: Fun with Formatters: Fun with Formatters and Settings]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10951,14 +11059,14 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<source>tutorial/.content/contentsections/cs_00035.xml</source>
 			<destination>tutorial/.content/contentsections/cs_00035.xml</destination>
 			<type>a-section</type>
-			<uuidstructure>7b02bb10-a8bd-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>7b02bb11-a8bd-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 15:05:47 GMT</datecreated>
+			<uuidstructure>889269cc-f04e-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>889269cd-f04e-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 16:52:59 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes: Click on 'Publish' in the toolbar]]></value>
+					<value><![CDATA[Step 3: Fun with Formatters: It' s  the same element]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10968,14 +11076,14 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<source>tutorial/.content/contentsections/cs_00036.xml</source>
 			<destination>tutorial/.content/contentsections/cs_00036.xml</destination>
 			<type>a-section</type>
-			<uuidstructure>9955cad5-a8bd-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>9955cad6-a8bd-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 15:06:37 GMT</datecreated>
+			<uuidstructure>c99f8cf3-f04e-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>c99f8cf4-f04e-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 16:54:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes: Select 'My changes']]></value>
+					<value><![CDATA[Step 3: Fun with Formatters: Open Element Settings]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10985,14 +11093,82 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<source>tutorial/.content/contentsections/cs_00037.xml</source>
 			<destination>tutorial/.content/contentsections/cs_00037.xml</destination>
 			<type>a-section</type>
-			<uuidstructure>e39905da-a8bd-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>e39905db-a8bd-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 15:08:42 GMT</datecreated>
+			<uuidstructure>cc6b3017-f04e-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>cc6b3018-f04e-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 16:54:53 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes: Confirm by clicking 'Publish']]></value>
+					<value><![CDATA[Step 3: Fun with Formatters: Select the Formatter]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/contentsections/cs_00038.xml</source>
+			<destination>tutorial/.content/contentsections/cs_00038.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>cefab49b-f04e-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>cefab49c-f04e-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 16:54:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Step 3: Fun with Formatters: Edit the Settings]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/contentsections/cs_00039.xml</source>
+			<destination>tutorial/.content/contentsections/cs_00039.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>d13e8a1f-f04e-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>d13e8a20-f04e-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 16:55:01 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Step 3: Fun with Formatters: Change the Formatter]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/contentsections/cs_00040.xml</source>
+			<destination>tutorial/.content/contentsections/cs_00040.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>d41b6b53-f04e-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>d41b6b54-f04e-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 16:55:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Step 3: Fun with Formatters: Try it yourself]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/contentsections/cs_00041.xml</source>
+			<destination>tutorial/.content/contentsections/cs_00041.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>cadc67f5-f050-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>cadc67f6-f050-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 17:09:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Step 3: Fun with Formatters: This is another element]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11100,6 +11276,23 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>tutorial/.galleries/tutorial-images/tut-01.png</source>
+			<destination>tutorial/.galleries/tutorial-images/tut-01.png</destination>
+			<type>image</type>
+			<uuidstructure>373a301a-6101-11e5-9eef-0242ac11002b</uuidstructure>
+			<uuidresource>373a301b-6101-11e5-9eef-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:800,h:600]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>tutorial/.galleries/tutorial-images/tut-02.png</source>
 			<destination>tutorial/.galleries/tutorial-images/tut-02.png</destination>
 			<type>image</type>
@@ -11110,7 +11303,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:789,h:577]]></value>
+					<value><![CDATA[w:800,h:600]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11127,7 +11320,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:789,h:577]]></value>
+					<value><![CDATA[w:800,h:600]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11144,7 +11337,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:789,h:577]]></value>
+					<value><![CDATA[w:800,h:600]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11161,7 +11354,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:789,h:577]]></value>
+					<value><![CDATA[w:800,h:600]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11178,7 +11371,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:200,h:200]]></value>
+					<value><![CDATA[w:800,h:600]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11314,7 +11507,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:789,h:577]]></value>
+					<value><![CDATA[w:800,h:600]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11365,7 +11558,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:789,h:577]]></value>
+					<value><![CDATA[w:800,h:600]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11382,7 +11575,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:789,h:577]]></value>
+					<value><![CDATA[w:800,h:600]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11399,7 +11592,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:789,h:577]]></value>
+					<value><![CDATA[w:800,h:600]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11409,14 +11602,65 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<source>tutorial/.galleries/tutorial-images/tut-20.png</source>
 			<destination>tutorial/.galleries/tutorial-images/tut-20.png</destination>
 			<type>image</type>
-			<uuidstructure>373a301a-6101-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>373a301b-6101-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
+			<uuidstructure>654efd3f-f055-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>654efd40-f055-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 17:42:06 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:789,h:577]]></value>
+					<value><![CDATA[w:800,h:600]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.galleries/tutorial-images/tut-21.png</source>
+			<destination>tutorial/.galleries/tutorial-images/tut-21.png</destination>
+			<type>image</type>
+			<uuidstructure>654ba1db-f055-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>654ba1dc-f055-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 17:42:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:800,h:600]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.galleries/tutorial-images/tut-22.png</source>
+			<destination>tutorial/.galleries/tutorial-images/tut-22.png</destination>
+			<type>image</type>
+			<uuidstructure>6547f857-f055-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>6547f858-f055-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 17:42:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:800,h:600]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.galleries/tutorial-images/tut-23.png</source>
+			<destination>tutorial/.galleries/tutorial-images/tut-23.png</destination>
+			<type>image</type>
+			<uuidstructure>65433d63-f055-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>65433d64-f055-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 17:42:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:800,h:600]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11507,7 +11751,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>tutorial/step-1-modify-a-page-</destination>
+			<destination>tutorial/step-1-modify-a-page</destination>
 			<type>folder</type>
 			<uuidstructure>5ceb673f-6105-11e5-9eef-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 22 Sep 2015 08:38:56 GMT</datecreated>
@@ -11530,8 +11774,8 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/step-1-modify-a-page-/index.html</source>
-			<destination>tutorial/step-1-modify-a-page-/index.html</destination>
+			<source>tutorial/step-1-modify-a-page/index.html</source>
+			<destination>tutorial/step-1-modify-a-page/index.html</destination>
 			<type>containerpage</type>
 			<uuidstructure>5cefd414-6105-11e5-9eef-0242ac11002b</uuidstructure>
 			<uuidresource>5cefd415-6105-11e5-9eef-0242ac11002b</uuidresource>
@@ -11591,7 +11835,47 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>tutorial/step-3-work-with-the-sitemap</destination>
+			<destination>tutorial/step-3-fun-with-formatters</destination>
+			<type>folder</type>
+			<uuidstructure>82f11fdf-f048-11e5-b20f-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 22 Mar 2016 16:09:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[3.5]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Step 3: Fun with Formatters]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Step 3: Fun with Formatters]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/step-3-fun-with-formatters/index.html</source>
+			<destination>tutorial/step-3-fun-with-formatters/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>82f342c4-f048-11e5-b20f-0242ac11002b</uuidstructure>
+			<uuidresource>82f342c5-f048-11e5-b20f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Mar 2016 16:09:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Step 3: Fun with Formatters]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>tutorial/step-4-work-with-the-sitemap</destination>
 			<type>folder</type>
 			<uuidstructure>fb838f17-6127-11e5-9eef-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 22 Sep 2015 12:46:45 GMT</datecreated>
@@ -11603,11 +11887,11 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Step 3: Work with the sitemap]]></value>
+					<value><![CDATA[Step 4: Work with the Sitemap]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 3: Work with the sitemap]]></value>
+					<value><![CDATA[Step 4: Work with the Sitemap]]></value>
 				</property>
 				<property type="shared">
 					<name>Title</name>
@@ -11618,8 +11902,8 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/step-3-work-with-the-sitemap/index.html</source>
-			<destination>tutorial/step-3-work-with-the-sitemap/index.html</destination>
+			<source>tutorial/step-4-work-with-the-sitemap/index.html</source>
+			<destination>tutorial/step-4-work-with-the-sitemap/index.html</destination>
 			<type>containerpage</type>
 			<uuidstructure>fb88711d-6127-11e5-9eef-0242ac11002b</uuidstructure>
 			<uuidresource>fb88711e-6127-11e5-9eef-0242ac11002b</uuidresource>
@@ -11628,14 +11912,14 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 3: Work with the sitemap]]></value>
+					<value><![CDATA[Step 4: Work with the Sitemap]]></value>
 				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>tutorial/step-4-preview-in-a-device</destination>
+			<destination>tutorial/step-5-preview-in-a-device</destination>
 			<type>folder</type>
 			<uuidstructure>f8fe1cac-6127-11e5-9eef-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 22 Sep 2015 12:46:41 GMT</datecreated>
@@ -11647,11 +11931,11 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Step 4: Preview in a device]]></value>
+					<value><![CDATA[Step 5: Lauchpad and Explorer]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Preview in a device]]></value>
+					<value><![CDATA[Step 5: Lauchpad and Explorer]]></value>
 				</property>
 				<property type="shared">
 					<name>Title</name>
@@ -11662,8 +11946,8 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/step-4-preview-in-a-device/index.html</source>
-			<destination>tutorial/step-4-preview-in-a-device/index.html</destination>
+			<source>tutorial/step-5-preview-in-a-device/index.html</source>
+			<destination>tutorial/step-5-preview-in-a-device/index.html</destination>
 			<type>containerpage</type>
 			<uuidstructure>f908cb12-6127-11e5-9eef-0242ac11002b</uuidstructure>
 			<uuidresource>f908cb13-6127-11e5-9eef-0242ac11002b</uuidresource>
@@ -11672,14 +11956,14 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Preview in a device]]></value>
+					<value><![CDATA[Step 5: Lauchpad and Explorer]]></value>
 				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>tutorial/step-5-publish-your-changes</destination>
+			<destination>tutorial/step-6-publish-your-changes</destination>
 			<type>folder</type>
 			<uuidstructure>f3d66111-6127-11e5-9eef-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 22 Sep 2015 12:46:32 GMT</datecreated>
@@ -11691,11 +11975,11 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Step 5: Publish your changes]]></value>
+					<value><![CDATA[Step 6: Publish your changes]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes]]></value>
+					<value><![CDATA[Step 6: Publish your changes]]></value>
 				</property>
 				<property type="shared">
 					<name>Title</name>
@@ -11706,8 +11990,8 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/step-5-publish-your-changes/index.html</source>
-			<destination>tutorial/step-5-publish-your-changes/index.html</destination>
+			<source>tutorial/step-6-publish-your-changes/index.html</source>
+			<destination>tutorial/step-6-publish-your-changes/index.html</destination>
 			<type>containerpage</type>
 			<uuidstructure>f3e30b47-6127-11e5-9eef-0242ac11002b</uuidstructure>
 			<uuidresource>f3e30b48-6127-11e5-9eef-0242ac11002b</uuidresource>
@@ -11716,7 +12000,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes]]></value>
+					<value><![CDATA[Step 6: Publish your changes]]></value>
 				</property>
 			</properties>
 			<relations/>

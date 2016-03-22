@@ -5,14 +5,14 @@
     <Headline><![CDATA[Using the form based editor]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>All content in OpenCms is stored in structured fields. You can open the full form based editor by either clicking the pen icon that is shown on the "edit point" menu that appears on the upper right of an element, or by clicking the pen icon in the toolbar while you edit content inline.</p>
+      <content><![CDATA[<p>All content in OpenCms is stored in structured content elements. You can open a&nbsp;full form based editor by either clicking the pen icon that is shown on the "edit point" menu that appears on the upper right of an element, or by clicking the pen icon in the toolbar while you edit content inline.</p>
 <p>Using either the form based editor or the inline editor is a matter of preference.</p>]]></content>
     </Text>
     <Link>
-      <Text><![CDATA[Continue with step 3: Work with the sitemap]]></Text>
+      <Text><![CDATA[Continue with step 3: Fun with Formatters]]></Text>
       <URI>
         <link internal="true" type="WEAK">
-          <target><![CDATA[/sites/default/tutorial/step-3-work-with-the-sitemap/]]></target>
+          <target><![CDATA[/sites/default/tutorial/step-4-work-with-the-sitemap/]]></target>
           <uuid>fb838f17-6127-11e5-9eef-0242ac11002b</uuid>
         </link>
       </URI>

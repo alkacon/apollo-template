@@ -2,10 +2,10 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[! Default placeholder text]]></Headline>
+    <Headline><![CDATA[Yes, You Can!]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>This is the default placeholder text that is copied.</p>]]></content>
+      <content><![CDATA[<p>This is the default placeholder text that is copied. You can change this text directly using the inline editor.&nbsp;This is the default placeholder text that is copied. You can change this text directly using the inline editor.</p>]]></content>
     </Text>
     <Image>
       <Image>
@@ -14,7 +14,6 @@
           <uuid>3efc64a5-5c52-11e5-9651-0242ac11002b</uuid>
         </link>
       </Image>
-      <Title><![CDATA[Defaul placeholder image]]></Title>
     </Image>
   </ApolloSection>
 </ApolloSections>

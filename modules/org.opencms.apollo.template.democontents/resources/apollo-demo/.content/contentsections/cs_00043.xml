@@ -2,18 +2,23 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[More features than ever]]></Headline>
+    <Headline><![CDATA[Greatly enhanced Workplace]]></Headline>
     <Text name="Text0">
-      <links/>
-      <content><![CDATA[<p>With more features than ever, this latest OpenCms version is powerful, yet easy to use.<br /><br />Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>]]></content>
+      <links>
+        <link name="link0" internal="true" type="A">
+          <target><![CDATA[/sites/default/tutorial/]]></target>
+          <uuid>e46f947b-6100-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </links>
+      <content><![CDATA[<p>OpenCms 10 comes with a rewritten power-user backoffice called the Workplace.&nbsp;</p>
+<p>With improved inline editing options such as <strong>drag &amp; drop for images</strong> it's easier than ever for content manager to create great looking websites with OpenCms.</p>
+<p>Check out the <a href="%(link0)">Tutorial</a> for a quick intro&nbsp;about the use of the new editing features.</p>]]></content>
     </Text>
     <Image>
       <Image>
         <link type="WEAK">
-          <target><![CDATA[/sites/default/.galleries/people/17.jpg]]></target>
-          <uuid>1b88f3f3-590b-11e4-903d-005056b61161</uuid>
-          <query><![CDATA[__scale=h:600,w:600,cx:13,cy:69,ch:740,cw:741]]></query>
+          <target><![CDATA[/sites/default/.galleries/people/05.jpg]]></target>
+          <uuid>b3d8df75-4705-11e3-8417-000c29d28104</uuid>
         </link>
       </Image>
       <Title/>

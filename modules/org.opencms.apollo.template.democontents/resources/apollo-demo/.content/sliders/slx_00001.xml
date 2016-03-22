@@ -88,7 +88,7 @@
         <Easing><![CDATA[easeInOutBounce]]></Easing>
       </Caption>
       <Caption>
-        <Text><![CDATA[GRID BASED, RESPONSIVE TEMPLATE GENERATOR]]></Text>
+        <Text><![CDATA[BOOTSTRAP BASED APOLLO TEMPLATE]]></Text>
         <Class><![CDATA[caption mediumthickblackbg blackbgtransparent sfb]]></Class>
         <PosX><![CDATA[10]]></PosX>
         <PosY><![CDATA[100]]></PosY>
@@ -97,7 +97,7 @@
         <Easing><![CDATA[easeOutExpo]]></Easing>
       </Caption>
       <Caption>
-        <Text><![CDATA[BUILD YOUR TEMPLATES WITHOUT CODING]]></Text>
+        <Text><![CDATA[BUILD YOUR WEBSITE WITHOUT CODING]]></Text>
         <Class><![CDATA[caption sft mediumthickwhitebg]]></Class>
         <PosX><![CDATA[10]]></PosX>
         <PosY><![CDATA[160]]></PosY>

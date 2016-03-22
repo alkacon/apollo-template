@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Try it yourself]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Check the out screenshots above&nbsp;for a short&nbsp;demo&nbsp;about how to access the element formatter.&nbsp;</p>
+<p>Each formatter may provide additional <strong>Settings.&nbsp;</strong>Settings allow you to tweak to generated output. It's important to understand that formatter and settings are stored in the <strong>Page</strong>, not the <strong>Content&nbsp;</strong>itself. So you&nbsp;can&nbsp;use the same content on different pages or even on the same page with different formatters and settings.&nbsp;</p>
+<p>Go ahead and try to change the formatter and settings&nbsp;for some elements on this pageto get familiar with the concept.&nbsp;</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/cliparts/default.png]]></target>
+          <uuid>3efc64a5-5c52-11e5-9651-0242ac11002b</uuid>
+        </link>
+      </Image>
+    </Image>
+    <Link>
+      <Text><![CDATA[Continue with step 4: Working with the Sitemap]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/step-4-work-with-the-sitemap/]]></target>
+          <uuid>fb838f17-6127-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
+  </ApolloSection>
+</ApolloSections>

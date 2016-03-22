@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
-  <ApolloSection language="en">
-    <Headline><![CDATA[Responsive]]></Headline>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Responsiv]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>OpenCms ships with a responsive demo template, based on Bootstrap.</p>]]></content>
+      <content><![CDATA[<p>OpenCms kommt mit dem&nbsp;responsiven Apollo Template auf der Basis von Bootstrap.</p>]]></content>
     </Text>
     <Image>
       <Image>
@@ -18,11 +18,11 @@
       <Title/>
     </Image>
   </ApolloSection>
-  <ApolloSection language="de">
-    <Headline><![CDATA[Responsiv]]></Headline>
+  <ApolloSection language="en">
+    <Headline><![CDATA[Responsive]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>OpenCms kommt mit einem responsiven Template auf der Basis von Bootstrap.</p>]]></content>
+      <content><![CDATA[<p>OpenCms ships with the&nbsp;responsive Apollo Template, based on Bootstrap.</p>]]></content>
     </Text>
     <Image>
       <Image>

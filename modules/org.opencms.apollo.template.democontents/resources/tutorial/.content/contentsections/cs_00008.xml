@@ -2,17 +2,17 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Inline editing of optional or special content]]></Headline>
+    <Headline><![CDATA[Inline editing of images and hidden content]]></Headline>
     <Text name="Text0">
       <links/>
       <content><![CDATA[<p>If you edit text inline, you may&nbsp;notice a row of symbols that is shown to the right hand side of the element being edited. These controls allow you to add optional content, e.g. extra "read more..." links that are not yet enabled, as well as special content that is not well suited for direct inline editing such as images. You will get a small form displayed where you can enter or modify the content.</p>
-<p>To add an extra link box to this text, click <strong>here</strong> and then move your mouse over the plus symbol on the right hand side to add an optional link to this content element. To edit the image on the right side, just click on the image.</p>]]></content>
+<p>To add an extra link box to this text, click <strong>here</strong> and then move your mouse over the plus symbol on the right hand side to add an optional <em><strong>Link</strong></em> to this content element. To edit the image on the right side, click on the pen icon.</p>]]></content>
     </Text>
     <Image>
       <Image>
         <link type="WEAK">
-          <target><![CDATA[/sites/default/.galleries/people/13.jpg]]></target>
-          <uuid>b064a036-4705-11e3-8417-000c29d28104</uuid>
+          <target><![CDATA[/sites/default/.galleries/people/28.jpg]]></target>
+          <uuid>d51a14ca-635e-11e5-81df-0242ac11002b</uuid>
         </link>
       </Image>
       <Title><![CDATA[Change this image with drag & drop]]></Title>

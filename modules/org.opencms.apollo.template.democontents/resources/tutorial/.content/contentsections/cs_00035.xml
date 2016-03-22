@@ -2,19 +2,19 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Click on 'Publish' in the toolbar]]></Headline>
+    <Headline><![CDATA[It' s  the same element]]></Headline>
     <Text name="Text0">
       <links/>
-      <content/>
+      <content><![CDATA[<p>This&nbsp;content section element is reused twice on this page. The output is created using different formatters with special style settings.&nbsp;</p>]]></content>
     </Text>
     <Image>
       <Image>
         <link type="WEAK">
-          <target><![CDATA[/sites/default/tutorial/.galleries/tutorial-images/tut-14.png]]></target>
-          <uuid>3727e188-6101-11e5-9eef-0242ac11002b</uuid>
+          <target><![CDATA[/sites/default/.galleries/people/15.jpg]]></target>
+          <uuid>f67db0b0-55f8-11e4-8db5-005056b61161</uuid>
         </link>
       </Image>
-      <Title/>
+      <Title><![CDATA[Defaul placeholder image]]></Title>
     </Image>
   </ApolloSection>
 </ApolloSections>

@@ -83,6 +83,10 @@
 					<value><![CDATA[Headline, image and text]]></value>
 				</property>
 				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
+				</property>
+				<property>
 					<name>locale</name>
 					<value><![CDATA[en]]></value>
 				</property>
@@ -110,6 +114,10 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Headline left, big image right]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -141,6 +149,10 @@
 					<value><![CDATA[Headline left, small image right]]></value>
 				</property>
 				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
+				</property>
+				<property>
 					<name>locale</name>
 					<value><![CDATA[en]]></value>
 				</property>
@@ -168,6 +180,10 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Headline only]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -199,6 +215,10 @@
 					<value><![CDATA[Headline right, big image left]]></value>
 				</property>
 				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
+				</property>
+				<property>
 					<name>locale</name>
 					<value><![CDATA[en]]></value>
 				</property>
@@ -226,6 +246,10 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Headline right, small image left]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -257,6 +281,10 @@
 					<value><![CDATA[Headline, text and image]]></value>
 				</property>
 				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
+				</property>
+				<property>
 					<name>locale</name>
 					<value><![CDATA[en]]></value>
 				</property>
@@ -284,6 +312,10 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Headline and text only]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -315,6 +347,10 @@
 					<value><![CDATA[Headline on top, big image left]]></value>
 				</property>
 				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
+				</property>
+				<property>
 					<name>locale</name>
 					<value><![CDATA[en]]></value>
 				</property>
@@ -342,6 +378,10 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Headline on top, big image right]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -373,6 +413,10 @@
 					<value><![CDATA[Headline on top, small image left]]></value>
 				</property>
 				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
+				</property>
+				<property>
 					<name>locale</name>
 					<value><![CDATA[en]]></value>
 				</property>
@@ -400,6 +444,10 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Headline on top, small image right]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -431,6 +479,10 @@
 					<value><![CDATA[Image only]]></value>
 				</property>
 				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
+				</property>
+				<property>
 					<name>locale</name>
 					<value><![CDATA[en]]></value>
 				</property>
@@ -458,6 +510,10 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Text only]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;uri]]></value>
 				</property>
 				<property>
 					<name>locale</name>

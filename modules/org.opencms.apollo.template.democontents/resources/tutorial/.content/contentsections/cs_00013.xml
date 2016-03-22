@@ -2,10 +2,10 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Publishing changes]]></Headline>
+    <Headline><![CDATA[Publishing your changes]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>OpenCms features an integrated staging mechanism. This means changes made to the content are not immediately visible to the public. They need to be published first.</p>]]></content>
+      <content><![CDATA[<p>OpenCms features an integrated staging mechanism. This means changes you make to your&nbsp;content are not immediately visible to the public. They need to be published first.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

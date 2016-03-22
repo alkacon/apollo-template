@@ -2,7 +2,7 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Check out the OpenCms Toolbar]]></Headline>
+    <Headline><![CDATA[Modify the conent of a page]]></Headline>
     <Text name="Text0">
       <links/>
       <content><![CDATA[<p>If you are logged in you will see the OpenCms editor toolbar on top of the&nbsp;screen.&nbsp;The toolbar allows you to directly edit the page you are currently viewing.</p>
@@ -10,8 +10,8 @@
 <ul>
 <li><strong>Step 1:</strong> Click on the <em><strong>Add content</strong></em>&nbsp;("Magic wand") button in the toolbar. You will see&nbsp;a list of the available content types that you can use on this&nbsp;page.</li>
 <li><strong>Step 2:</strong> Click on the first entry "Content Section". A&nbsp;list of content sections&nbsp;that have already been created is shown in the dialog.</li>
-<li><strong>Step 3:</strong> Move the mouse over the elements&nbsp;in this&nbsp;list. You will notice&nbsp;some icons apperaing on the right hand side of the element box.</li>
-<li><strong>Step 4:</strong> Move the cursor over the <em><strong>Move to page </strong></em>icon, click and drag one&nbsp;element into the page. Possible target areas will be highlighted. Place the content anywhere you like.</li>
+<li><strong>Step 3:</strong>&nbsp;Locate the list entry titled "<strong>! Default placeholder text (copy model)</strong>". If you set the sort order to "Title Ascending" this should be the first entry in the list. Move the mouse over this&nbsp;element. You will notice&nbsp;some icons appearing&nbsp;on the right side of the element box.</li>
+<li><strong>Step 4:</strong> Move the cursor over the <em><strong>Move to page </strong></em>icon, click and drag one&nbsp;element into the page. Possible target areas will be highlighted. Place the content anywhere you like, for example right below this paragraph. When you drop the element&nbsp;you&nbsp;should see the new contents placeholder text and image.</li>
 </ul>]]></content>
     </Text>
   </ApolloSection>

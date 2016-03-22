@@ -23,30 +23,30 @@
         </link>
       </links>
       <content><![CDATA[<div class="header">
- <div class="container">
-<!--=== Top ===-->
-<div class="topbar margin-bottom-20">
-  <ul class="loginbar pull-right">
-            <li><a href="%(link0)">Demo Website</a></li>
-            <li class="topbar-devider"></li>
-            <li><a href="%(link1)">Release Notes</a></li>
-            <li class="topbar-devider"></li>
-            <li><a href="%(link2)">Search</a></li>
-</ul></div><!--/top-->
-<!--=== End Top ===-->
-</div>
-</div>
 
-
-<div class="row margin-top-20">
 <div class="container">
-<div class="col-sm-3"><a href="%(link3)"> <span class="logo opencms-logo"></span></a></div>
-<div class="col-sm-9">
-<div class="headline">
-<h1>Beginners tutorial</h1>
+  <div class="topbar margin-bottom-20">
+    <ul class="loginbar pull-right">
+      <li><a href="%(link0)">Demo Website</a></li>
+      <li class="topbar-devider"></li>
+      <li><a href="%(link1)">Release Notes</a></li>
+      <li class="topbar-devider"></li>
+      <li><a href="%(link2)">Search</a></li>
+    </ul></div>
+  </div>
 </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <a href="%(link3)"><span class="logo opencms-logo"></span></a></div>
+    <div class="col-sm-9">
+    <div class="headline bb-grey-light-1-solid p-0 mt-30 mb-0">
+     <h1>Beginners tutorial</h1>
+   </div>
+  </div>
 </div>
-</div>
+
 </div>]]></content>
     </Code>
   </ApolloFlexibleElement>

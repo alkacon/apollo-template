@@ -9,12 +9,17 @@
           <target><![CDATA[/sites/default/apollo-demo/]]></target>
           <uuid>acb43685-5224-11e5-9495-0242ac11002b</uuid>
         </link>
+        <link name="link1" internal="true" type="A">
+          <target><![CDATA[/sites/default/apollo-demo/element-pages/]]></target>
+          <uuid>fbf6580e-610e-11e5-9eef-0242ac11002b</uuid>
+        </link>
       </links>
       <content><![CDATA[<h4>Congratulations!</h4>
-<p>Now you know&nbsp;how&nbsp;to manage contents in OpenCms. Of course, there are many more possibilities. OpenCms is a full featured website CMS that allows creation of the most demanding websites.</p>
+<p>Now you know the basics of how&nbsp;to manage contents in OpenCms. Of course, there are many more possibilities. OpenCms is a full featured website CMS that allows creation of the most demanding websites.</p>
 <h4>Click on any of the boxes below to continue exploring</h4>
 <p>The <strong><em>Release Notes</em></strong> contain information about what is new in this OpenCms release. Our&nbsp;<em><strong>Documentation</strong></em>&nbsp;contains in depth information&nbsp;about how to manage and develop websites with OpenCms.</p>
-<p>We recommend you start with the <a href="%(link0)"><em><strong>OpenCms Demo Website</strong></em></a>, which provides a full featured, nice looking example.</p>]]></content>
+<p>We recommend you start with the <a href="%(link0)">OpenCms Demo Website</a>, which provides a full featured, nice looking example based on the Apollo Template.</p>
+<p>Of particular interest in the demo may be the <a href="%(link1)">Element pages</a>&nbsp;section. Here you get an overview about all the content types available with the Apollo template.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

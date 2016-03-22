@@ -5,7 +5,7 @@
     <Headline><![CDATA[Demo Website]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Example responsive website using a grid layout template based on Bootstrap.</p>]]></content>
+      <content><![CDATA[<p>Example responsive website using the <strong>Apollo Template</strong> based on Bootstrap.</p>]]></content>
     </Text>
     <Link>
       <Text><![CDATA[Demo Website]]></Text>
