@@ -9083,6 +9083,10 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 					<name>default-file</name>
 					<value><![CDATA[##navigation_level_folder##]]></value>
 				</property>
+				<property>
+					<name>search.subsite</name>
+					<value><![CDATA[Release Notes]]></value>
+				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
@@ -11066,7 +11070,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 3: Fun with Formatters: It's  the same element]]></value>
+					<value><![CDATA[Step 3: Fun with Formatters: It' s  the same element]]></value>
 				</property>
 			</properties>
 			<relations/>
