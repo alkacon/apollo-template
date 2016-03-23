@@ -4496,7 +4496,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Open Source]]></value>
+					<value><![CDATA[It's Open Source]]></value>
 				</property>
 			</properties>
 			<relations/>
