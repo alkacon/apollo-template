@@ -2,13 +2,13 @@
 
 <ApolloNavigations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/navigation.xsd">
   <ApolloNavigation language="en">
-    <Title><![CDATA[Apollo demo side navigation]]></Title>
+    <Title><![CDATA[Apollo Demo side first level navigation]]></Title>
     <NavStartLevel><![CDATA[1]]></NavStartLevel>
     <LogoImage/>
     <LogoLink>
       <link internal="true" type="WEAK">
-        <target><![CDATA[/sites/default/]]></target>
-        <uuid>57c97df0-f0f3-11e5-b495-0242ac11002b</uuid>
+        <target><![CDATA[/sites/default/index.html]]></target>
+        <uuid>37a44795-5ab9-11e4-955d-005056b61161</uuid>
       </link>
     </LogoLink>
     <Header name="Header0">

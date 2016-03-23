@@ -7192,7 +7192,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo demo side navigation]]></value>
+					<value><![CDATA[Apollo Demo side first level navigation]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7209,7 +7209,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Second Level navigation]]></value>
+					<value><![CDATA[Apollo Demo side second level navigation]]></value>
 				</property>
 			</properties>
 			<relations/>
