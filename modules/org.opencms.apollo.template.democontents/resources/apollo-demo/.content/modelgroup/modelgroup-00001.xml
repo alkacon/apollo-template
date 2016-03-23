@@ -19,15 +19,15 @@
           </link>
         </Formatter>
         <Properties>
-          <Name><![CDATA[formatterSettings#page-complete]]></Name>
+          <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
+            <String><![CDATA[59a9853c-5637-11e5-bfd9-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[model_group_title]]></Name>
+          <Name><![CDATA[model_group_state]]></Name>
           <Value>
-            <String><![CDATA[Apollo Demo Footer]]></String>
+            <String><![CDATA[isModelGroup]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -37,9 +37,27 @@
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[templateContexts]]></Name>
+          <Name><![CDATA[grid]]></Name>
           <Value>
-            <String><![CDATA[desktop|tablet|mobile]]></String>
+            <String><![CDATA[E]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[model_group_title]]></Name>
+          <Value>
+            <String><![CDATA[Apollo Demo Footer]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[detail]]></Name>
+          <Value>
+            <String><![CDATA[none]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#page-complete]]></Name>
+          <Value>
+            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -49,28 +67,16 @@
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[element_instance_id]]></Name>
-          <Value>
-            <String><![CDATA[59a9853c-5637-11e5-bfd9-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[model_group_description]]></Name>
           <Value>
             <String><![CDATA[Generates the default page footer.]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[model_group_state]]></Name>
-          <Value>
-            <String><![CDATA[isModelGroup]]></String>
           </Value>
         </Properties>
       </Elements>
     </Containers>
     <Containers>
       <Name><![CDATA[59a9853c-5637-11e5-bfd9-0242ac11002b-c1]]></Name>
-      <Type><![CDATA[footsection]]></Type>
+      <Type><![CDATA[element]]></Type>
       <ParentInstanceId><![CDATA[59a9853c-5637-11e5-bfd9-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
@@ -86,6 +92,18 @@
           </link>
         </Formatter>
         <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[786c245f-f0e8-11e5-9067-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[requireReload]]></Name>
+          <Value>
+            <String><![CDATA[false]]></String>
+          </Value>
+        </Properties>
+        <Properties>
           <Name><![CDATA[formatterSettings#59a9853c-5637-11e5-bfd9-0242ac11002b-c1]]></Name>
           <Value>
             <String><![CDATA[9c9d5c4f-560d-11e5-b868-0242ac11002b]]></String>
@@ -95,24 +113,6 @@
           <Name><![CDATA[hideTitle]]></Name>
           <Value>
             <String><![CDATA[true]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[templateContexts]]></Name>
-          <Value>
-            <String><![CDATA[desktop|tablet]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[element_instance_id]]></Name>
-          <Value>
-            <String><![CDATA[7c11f526-622d-11e5-bcba-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[requireReload]]></Name>
-          <Value>
-            <String><![CDATA[false]]></String>
           </Value>
         </Properties>
       </Elements>

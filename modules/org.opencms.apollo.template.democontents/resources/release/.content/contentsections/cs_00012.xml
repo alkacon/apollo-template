@@ -11,70 +11,75 @@
         <link name="link1" internal="false" type="A">
           <target><![CDATA[http://www.mysql.com]]></target>
         </link>
-        <link name="link2" internal="true" type="A">
-          <target><![CDATA[]]></target>
-          <anchor><![CDATA[a1]]></anchor>
+        <link name="link2" internal="false" type="A">
+          <target><![CDATA[https://hub.docker.com/r/alkacon/opencms-docker/]]></target>
         </link>
         <link name="link3" internal="true" type="A">
           <target><![CDATA[]]></target>
-          <anchor><![CDATA[a2]]></anchor>
+          <anchor><![CDATA[a1]]></anchor>
         </link>
         <link name="link4" internal="true" type="A">
           <target><![CDATA[]]></target>
-          <anchor><![CDATA[a3]]></anchor>
+          <anchor><![CDATA[a2]]></anchor>
         </link>
         <link name="link5" internal="true" type="A">
           <target><![CDATA[]]></target>
-          <anchor><![CDATA[a4]]></anchor>
+          <anchor><![CDATA[a3]]></anchor>
         </link>
         <link name="link6" internal="true" type="A">
           <target><![CDATA[]]></target>
-          <anchor><![CDATA[a5]]></anchor>
+          <anchor><![CDATA[a4]]></anchor>
         </link>
         <link name="link7" internal="true" type="A">
           <target><![CDATA[]]></target>
-          <anchor><![CDATA[a6]]></anchor>
+          <anchor><![CDATA[a5]]></anchor>
         </link>
         <link name="link8" internal="true" type="A">
           <target><![CDATA[]]></target>
+          <anchor><![CDATA[a6]]></anchor>
+        </link>
+        <link name="link9" internal="true" type="A">
+          <target><![CDATA[]]></target>
           <anchor><![CDATA[a7]]></anchor>
         </link>
-        <link name="link9" internal="false" type="A">
+        <link name="link10" internal="false" type="A">
           <target><![CDATA[http://www.oracle.com/technetwork/java/javase/downloads/index.html]]></target>
         </link>
-        <link name="link10" internal="false" type="A">
+        <link name="link11" internal="false" type="A">
           <target><![CDATA[http://tomcat.apache.org]]></target>
         </link>
-        <link name="link11" internal="false" type="A">
+        <link name="link12" internal="false" type="A">
           <target><![CDATA[http://httpd.apache.org]]></target>
         </link>
-        <link name="link12" internal="false" type="A">
+        <link name="link13" internal="false" type="A">
           <target><![CDATA[http://www.mysql.com/downloads/]]></target>
         </link>
-        <link name="link13" internal="false" type="A">
+        <link name="link14" internal="false" type="A">
           <target><![CDATA[http://www.mysql.com/documentation/index.html]]></target>
         </link>
       </links>
-      <content><![CDATA[<p>This page provides information on how to install OpenCms using&nbsp;<a title="External link, opens in new window" href="%(link0)" target="_blank">Tomcat</a>&nbsp;and&nbsp;<a title="External link, opens in new window" href="%(link1)" target="_blank">MySQL</a>. All installation parts are described as single steps. After completing each step you are strongly advised to verify the success of your work.</p>
+      <content><![CDATA[<p>This page provides information on how to install OpenCms using&nbsp;<a title="External link, opens in new window" href="%(link0)" target="_blank">Tomcat</a>&nbsp;and&nbsp;<a title="External link, opens in new window" href="%(link1)" target="_blank">MySQL</a>.</p>
+<p>In case you don't want to go through the full installation procedure for a test drive, you can also use our read-to-run Docker image available from the Docker Hub at <a href="%(link2)">https://hub.docker.com/r/alkacon/opencms-docker</a>.</p>
+<p>All installation parts are described as single steps. After completing each step you are strongly advised to verify the success of your work.</p>
 <ul>
-<li><a href="%(link2)">Install the Java SDK, version 6 or newer</a></li>
-<li><a href="%(link3)">Install Tomcat</a></li>
-<li><a href="%(link4)">Install MySQL</a></li>
-<li><a href="%(link5)">Deploy the&nbsp;<code>opencms.war</code>&nbsp;file</a></li>
-<li><a href="%(link6)">Install OpenCms using the Setup-Wizard</a></li>
-<li><a href="%(link7)">Now your system is ready</a></li>
-<li><a href="%(link8)">Security issues</a></li>
+<li><a href="%(link3)">Install the Java SDK, version 6 or newer</a></li>
+<li><a href="%(link4)">Install Tomcat</a></li>
+<li><a href="%(link5)">Install MySQL</a></li>
+<li><a href="%(link6)">Deploy the&nbsp;<code>opencms.war</code>&nbsp;file</a></li>
+<li><a href="%(link7)">Install OpenCms using the Setup-Wizard</a></li>
+<li><a href="%(link8)">Now your system is ready</a></li>
+<li><a href="%(link9)">Security issues</a></li>
 </ul>
 <h2><a id="a1" name="a1"></a>Install the Java SDK, version 7 or newer</h2>
-<p>Install the Java JDK, version 7 or newer (from Oracle&nbsp;<code><a title="External link, opens in new window" href="%(link9)" target="_blank">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></code>). For details on how to install these components on your operating system, see the documentation that comes with them. You must install the Java&nbsp;<em>JDK</em>&nbsp;(Java Development Kit), not the&nbsp;<em>JRE</em>&nbsp;(Java Runtime Environment) that is also available from Oracle. The JRE is&nbsp;<em>not</em>&nbsp;sufficient to run OpenCms!</p>
+<p>Install the Java JDK, version 7 or newer (from Oracle&nbsp;<code><a title="External link, opens in new window" href="%(link10)" target="_blank">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></code>). For details on how to install these components on your operating system, see the documentation that comes with them. You must install the Java&nbsp;<em>JDK</em>&nbsp;(Java Development Kit), not the&nbsp;<em>JRE</em>&nbsp;(Java Runtime Environment) that is also available from Oracle. The JRE is&nbsp;<em>not</em>&nbsp;sufficient to run OpenCms!</p>
 <h2><a id="a2" name="a2"></a>Install Tomcat</h2>
 <p>OpenCms requires a Servlet 2.4 / JSP 2.0 standards compliant container. This release was tested with Tomcat 6.0.x. and Tomcat 7.0.x.</p>
-<p>Install Tomcat from&nbsp;<code><a title="External link, opens in new window" href="%(link10)" target="_blank">http://tomcat.apache.org</a>&nbsp;</code>into a folder of your choice. This is the&nbsp;<code>CATALINA_HOME</code>&nbsp;folder. Don't forget to set the environment variables&nbsp;<code>CATALINA_HOME</code>&nbsp;and&nbsp;<code>JAVA_HOME</code>.</p>
+<p>Install Tomcat from&nbsp;<code><a title="External link, opens in new window" href="%(link11)" target="_blank">http://tomcat.apache.org</a>&nbsp;</code>into a folder of your choice. This is the&nbsp;<code>CATALINA_HOME</code>&nbsp;folder. Don't forget to set the environment variables&nbsp;<code>CATALINA_HOME</code>&nbsp;and&nbsp;<code>JAVA_HOME</code>.</p>
 <p>Test the installation by running Tomcat in standalone mode and check the examples. Note: Tomcat uses port 8080 in standalone mode. If you wish, you can combine the servlet-engine with a webserver like the Apache Web Server&nbsp;<code><a title="External link,
-opens in new window" href="%(link11)" target="_blank">http://httpd.apache.org</a></code>. Please see the documentation available with the webserver on how to combine it with your servlet environment.</p>
+opens in new window" href="%(link12)" target="_blank">http://httpd.apache.org</a></code>. Please see the documentation available with the webserver on how to combine it with your servlet environment.</p>
 <p><strong>Please note:</strong>&nbsp;On Linux systems, Tomcat's JVM has to be started with the command line argument&nbsp;<code>-Djava.awt.headless=true</code>.</p>
 <h2><a id="a3" name="a3"></a>Install MySQL</h2>
-<p>Install MySQL from&nbsp;<code><a title="External link, opens in new window" href="%(link12)" target="_blank">http://www.mysql.com/downloads/</a>&nbsp;</code>(see the MySQL documentation on<code><a title="External link, opens in new window" href="%(link13)" target="_blank">http://www.mysql.com/documentation/index.html</a></code>). On Windows-based systems MySQL has to be installed on the&nbsp;<code>C:\</code>&nbsp;drive and should be registered as service using&nbsp;<code>%MYSQL_HOME%/bin/mysqld -install</code>.</p>
+<p>Install MySQL from&nbsp;<code><a title="External link, opens in new window" href="%(link13)" target="_blank">http://www.mysql.com/downloads/</a>&nbsp;</code>(see the MySQL documentation on<code><a title="External link, opens in new window" href="%(link14)" target="_blank">http://www.mysql.com/documentation/index.html</a></code>). On Windows-based systems MySQL has to be installed on the&nbsp;<code>C:\</code>&nbsp;drive and should be registered as service using&nbsp;<code>%MYSQL_HOME%/bin/mysqld -install</code>.</p>
 <p>OpenCms can be used with MySQL 5.0, 5.1 and 5.5.</p>
 <p>Start the MySQL server by running the service (WIN32) or executing&nbsp;<code>%MYSQL_HOME%/bin/mysqld</code>&nbsp;(UNIX).</p>
 <p>Check that MySQL is running before you continue by starting the MySQL monitor (execute&nbsp;<code>mysql</code>&nbsp;in your MySQL bin folder). The database works correctly if a MySQL prompt appears after calling the monitor. Quit the MySQL monitor by typing exit and go to the next step.</p>

@@ -19,21 +19,15 @@
           </link>
         </Formatter>
         <Properties>
-          <Name><![CDATA[detail]]></Name>
+          <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[none]]></String>
+            <String><![CDATA[79d0739f-605c-11e5-9199-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[model_group_title]]></Name>
+          <Name><![CDATA[model_group_state]]></Name>
           <Value>
-            <String><![CDATA[Apollo Release Notes Header]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#page-complete]]></Name>
-          <Value>
-            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
+            <String><![CDATA[isModelGroup]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -43,15 +37,27 @@
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[model_group_id]]></Name>
+          <Name><![CDATA[model_group_title]]></Name>
           <Value>
-            <String><![CDATA[91809980-605c-11e5-9199-0242ac11002b]]></String>
+            <String><![CDATA[Apollo Release Notes Header]]></String>
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[element_instance_id]]></Name>
+          <Name><![CDATA[detail]]></Name>
           <Value>
-            <String><![CDATA[79d0739f-605c-11e5-9199-0242ac11002b]]></String>
+            <String><![CDATA[none]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#page-complete]]></Name>
+          <Value>
+            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[model_group_id]]></Name>
+          <Value>
+            <String><![CDATA[91809980-605c-11e5-9199-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -60,17 +66,11 @@
             <String><![CDATA[Generates the release notes header.]]></String>
           </Value>
         </Properties>
-        <Properties>
-          <Name><![CDATA[model_group_state]]></Name>
-          <Value>
-            <String><![CDATA[isModelGroup]]></String>
-          </Value>
-        </Properties>
       </Elements>
     </Containers>
     <Containers>
       <Name><![CDATA[79d0739f-605c-11e5-9199-0242ac11002b-c1]]></Name>
-      <Type><![CDATA[headsection]]></Type>
+      <Type><![CDATA[section]]></Type>
       <ParentInstanceId><![CDATA[79d0739f-605c-11e5-9199-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
@@ -88,7 +88,7 @@
         <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[7c11f525-622d-11e5-bcba-0242ac11002b]]></String>
+            <String><![CDATA[786c245e-f0e8-11e5-9067-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>

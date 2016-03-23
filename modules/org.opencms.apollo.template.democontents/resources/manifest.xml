@@ -599,7 +599,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Demo Website]]></value>
+					<value><![CDATA[Apollo Demo Website]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -789,7 +789,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Section - Main page]]></value>
+					<value><![CDATA[Main Segment - Page Body]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -806,7 +806,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Section - Foot]]></value>
+					<value><![CDATA[Main Segment - Foot]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -823,7 +823,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Section - Head]]></value>
+					<value><![CDATA[Main Segment - Head]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -840,7 +840,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Container [For Rows]]]></value>
+					<value><![CDATA[Section [For Rows]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -857,7 +857,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Container (Fluid) [For Rows]]]></value>
+					<value><![CDATA[Section (Fluid) [For Rows]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -874,7 +874,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Container [For Grids]]]></value>
+					<value><![CDATA[Section [For Grids]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -891,7 +891,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Container (Fluid) [For Grids]]]></value>
+					<value><![CDATA[Section (Fluid) [For Grids]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6694,7 +6694,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Desktop Footer]]></value>
+					<value><![CDATA[Full Demo Footer]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6711,7 +6711,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Reduced footer for tutorial / release notes]]></value>
+					<value><![CDATA[Tutorial / Release notes footer]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10624,7 +10624,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 3: Work with the sitemap: Working with the sitemap]]></value>
+					<value><![CDATA[Step 4: Work with the Sitemap: Working with the sitemap]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10641,7 +10641,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 3: Work with the sitemap: Link to Step 4]]></value>
+					<value><![CDATA[Step 4: Work with the Sitemap: Link to Step 4]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10675,7 +10675,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Lauchpad and Explorer: Link to Step 5]]></value>
+					<value><![CDATA[Step 5: Lauchpad and Explorer: Link to Step 5]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10692,7 +10692,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes: Publishing your changes]]></value>
+					<value><![CDATA[Step 6: Publish your changes: Publishing your changes]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10743,7 +10743,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes: Confirm by clicking 'Publish']]></value>
+					<value><![CDATA[Step 6: Publish your changes: Confirm by clicking 'Publish']]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10760,7 +10760,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes: Select 'My changes']]></value>
+					<value><![CDATA[Step 6: Publish your changes: Select 'My changes']]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10845,7 +10845,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Publish your changes: Click on 'Publish' in the toolbar]]></value>
+					<value><![CDATA[Step 6: Publish your changes: Click on 'Publish' in the toolbar]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10930,7 +10930,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Lauchpad and Explorer: Explorer context menu]]></value>
+					<value><![CDATA[Step 5: Lauchpad and Explorer: Explorer context menu]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10947,7 +10947,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 3: Work with the sitemap: <p>Open the Sitemap</p>]]></value>
+					<value><![CDATA[Step 4: Work with the Sitemap: <p>Open the Sitemap</p>]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10964,7 +10964,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 3: Work with the sitemap: Select 'Add pages']]></value>
+					<value><![CDATA[Step 4: Work with the Sitemap: Select 'Add pages']]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10981,7 +10981,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 3: Work with the sitemap: Create a new page]]></value>
+					<value><![CDATA[Step 4: Work with the Sitemap: Create a new page]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10998,7 +10998,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 3: Work with the sitemap: Edit the page title]]></value>
+					<value><![CDATA[Step 4: Work with the Sitemap: Edit the page title]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11015,7 +11015,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Lauchpad and Explorer: Lauchpad]]></value>
+					<value><![CDATA[Step 5: Lauchpad and Explorer: Lauchpad]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11032,7 +11032,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Lauchpad and Explorer: Explorer]]></value>
+					<value><![CDATA[Step 5: Lauchpad and Explorer: Explorer]]></value>
 				</property>
 			</properties>
 			<relations/>

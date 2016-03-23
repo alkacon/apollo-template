@@ -5,7 +5,7 @@
     <Title><![CDATA[2 Col Row (4 - 4) [Narrow]]]></Title>
     <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
-    <Container><![CDATA[container]]></Container>
+    <Container><![CDATA[row]]></Container>
     <Column>
       <Name><![CDATA[h1]]></Name>
       <Count><![CDATA[0]]></Count>
@@ -14,14 +14,14 @@
     </Column>
     <Column>
       <Name><![CDATA[c1]]></Name>
-      <Type><![CDATA[default]]></Type>
+      <Type><![CDATA[element]]></Type>
       <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-xs-12 col-sm-5 col-md-4]]></Grid>
     </Column>
     <Column>
       <Name><![CDATA[c2]]></Name>
-      <Type><![CDATA[default]]></Type>
+      <Type><![CDATA[element]]></Type>
       <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-xs-12 col-sm-5 col-md-4]]></Grid>

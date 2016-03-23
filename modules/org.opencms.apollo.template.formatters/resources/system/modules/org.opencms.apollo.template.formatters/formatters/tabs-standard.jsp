@@ -23,10 +23,10 @@
 
 		<div class="tab-content">
 			<c:forEach var="label" items="${content.valueList.Label}" varStatus="status">
-            
-            	<cms:container
+
+				<cms:container
 					name="tab-container${status.count}"
-					type="container"
+					type="row"
 					tagClass="tab-pane ${status.first? 'active':''}"
 					maxElements="2">
 						<c:set var="msg"><fmt:message key="apollo.tabs.emptycontainer.text"/></c:set>
@@ -34,7 +34,7 @@
                             label="${msg}"
 							boxType="container-box"
 							role="author"
-							type="container" />
+							type="row" />
 					</cms:container>
 
 			</c:forEach>

@@ -27,10 +27,10 @@
   <c:when test="${boxType == 'detail-placeholder'}">
     <c:set var="variant" value="detailonly" />
   </c:when>
-  <c:when test="${type == 'mainsection' || type == 'grid'}">
+  <c:when test="${(fn:containsIgnoreCase(type, 'default')) || (type == 'segment') || (type == 'section') || (type == 'grid')}">
     <c:set var="variant" value="jsp" />
   </c:when>
-  <c:when test="${not fn:containsIgnoreCase(type, 'default')}">
+  <c:when test="${not fn:containsIgnoreCase(type, 'element')}">
     <c:set var="variant" value="template" />
   </c:when>
   <c:otherwise>
@@ -38,7 +38,7 @@
   </c:otherwise>
 </c:choose>
 
-<div class="oc-container-${variant}">
+<div class="oc-container-${variant} ${(empty cms.container.type) ? 'mh-20' : ''}">
   <h1>
     <c:choose>
       <c:when test="${boxType == 'detail-placeholder'}">
@@ -60,10 +60,12 @@
     </c:choose>
   </h1>
   <p class="fc-grey-dark lh-12">
-    ${label}
+    ${label}<br>
     <c:if test="${not empty cms.container.type}">
-      <br>
       <small>In: ${cms.container.type} - For: ${type}</small>
+    </c:if>
+    <c:if test="${empty cms.container.type}">
+      <small>For: ${type}</small>
     </c:if>
   </p>
 </div>

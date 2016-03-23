@@ -45,11 +45,11 @@
 			<!--=== Placeholder for OpenCms toolbar in edit mode ===-->
 			<div style="background: #fff; height: 52px;">&nbsp;</div>
 		</c:if>
-		<cms:container name="page-complete" type="page" width="1200" maxElements="50" editableby="ROLE.DEVELOPER"> 
-            <cms:bundle basename="org.opencms.apollo.template.formatters.messages">        
-                <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
-            </cms:bundle>
-			<apollo:container-box label="${message}" boxType="container-box" type="mainsection" role="DEVELOPER" />
+		<cms:container name="page-complete" type="segment" width="1200" maxElements="50" editableby="ROLE.DEVELOPER">
+			<cms:bundle basename="org.opencms.apollo.template.formatters.messages">
+				<c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
+			</cms:bundle>
+			<apollo:container-box label="${message}" boxType="container-box" type="segment" role="DEVELOPER" />
 		</cms:container>
 
 	</div>
@@ -69,9 +69,9 @@
 		});
 	</script>
 	<!--[if lt IE 9]>
-    <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/respond.js:164f5662-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
-    <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/html5shiv.js:163824de-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
-    <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/placeholder-IE-fixes.js:16423700-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
+		<script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/respond.js:164f5662-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
+		<script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/html5shiv.js:163824de-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
+		<script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/placeholder-IE-fixes.js:16423700-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
 	<![endif]-->
 	<c:set var="afoot"><cms:property name="apollo.template.foot" file="search" default="" /></c:set>
 	<c:if test="${not empty afoot}"><cms:include file="${afoot}" /></c:if>

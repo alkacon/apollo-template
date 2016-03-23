@@ -8,14 +8,14 @@
     <Container><![CDATA[grid]]></Container>
     <Column>
       <Name><![CDATA[g1]]></Name>
-      <Type><![CDATA[container]]></Type>
+      <Type><![CDATA[row]]></Type>
       <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-md-9]]></Grid>
     </Column>
     <Column>
       <Name><![CDATA[g2]]></Name>
-      <Type><![CDATA[container]]></Type>
+      <Type><![CDATA[row]]></Type>
       <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
       <Grid><![CDATA[col-md-3]]></Grid>

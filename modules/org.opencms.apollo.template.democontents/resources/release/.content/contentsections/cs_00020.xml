@@ -58,8 +58,8 @@
 <li>Fixed issue in permission dialog where it was not possible to add role based entries</li>
 <li>Fixed issue in permission dialog where inherited entries where not displayed correctly</li>
 <li>Fixed issue with "Create new" dialog where resources where created to early</li>
-<li>Fixing issue in the Page editor where elements where wrongly marked as new</li>
-<li>Fixed issue with invisible scroll bars boxes on Mac OS</li>
+<li>Fixed issue in the Page editor where elements where wrongly marked as new</li>
+<li>Fixed issue with invisible scroll bars in select boxes on Mac OS</li>
 </ul>
 <h2>General OpenCms features</h2>
 <ul>

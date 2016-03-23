@@ -5,10 +5,10 @@
     <Title><![CDATA[1 Col Row (12 - Full)]]></Title>
     <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
-    <Container><![CDATA[container]]></Container>
+    <Container><![CDATA[row]]></Container>
     <Column>
       <Name><![CDATA[c1]]></Name>
-      <Type><![CDATA[default]]></Type>
+      <Type><![CDATA[element]]></Type>
       <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-xs-12]]></Grid>

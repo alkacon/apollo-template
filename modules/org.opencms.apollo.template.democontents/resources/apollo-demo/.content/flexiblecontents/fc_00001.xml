@@ -2,7 +2,7 @@
 
 <ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/flexible.xsd">
   <ApolloFlexibleElement language="en">
-    <Title><![CDATA[Desktop Footer]]></Title>
+    <Title><![CDATA[Full Demo Footer]]></Title>
     <Code name="Code0">
       <links>
         <link name="link0" internal="false" type="A">

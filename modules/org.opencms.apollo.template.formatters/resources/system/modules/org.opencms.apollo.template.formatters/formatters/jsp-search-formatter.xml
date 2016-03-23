@@ -12,9 +12,10 @@
     </Jsp>
     <Rank><![CDATA[1100]]></Rank>
     <Match>
-      <Width>
-        <Width><![CDATA[-1]]></Width>
-      </Width>
+      <Types>
+        <ContainerType><![CDATA[element]]></ContainerType>
+        <ContainerType><![CDATA[search]]></ContainerType>
+      </Types>
     </Match>
     <Preview>false</Preview>
     <SearchContent>false</SearchContent>

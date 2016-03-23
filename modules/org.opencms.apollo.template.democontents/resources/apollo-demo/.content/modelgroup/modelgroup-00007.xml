@@ -19,21 +19,15 @@
           </link>
         </Formatter>
         <Properties>
-          <Name><![CDATA[detail]]></Name>
+          <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[none]]></String>
+            <String><![CDATA[7f537e16-604b-11e5-9199-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[model_group_title]]></Name>
+          <Name><![CDATA[model_group_state]]></Name>
           <Value>
-            <String><![CDATA[Apollo Release Notes Footer]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#page-complete]]></Name>
-          <Value>
-            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
+            <String><![CDATA[isModelGroup]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -43,15 +37,33 @@
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[model_group_id]]></Name>
+          <Name><![CDATA[grid]]></Name>
           <Value>
-            <String><![CDATA[97d43a67-604b-11e5-9199-0242ac11002b]]></String>
+            <String><![CDATA[E]]></String>
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[element_instance_id]]></Name>
+          <Name><![CDATA[model_group_title]]></Name>
           <Value>
-            <String><![CDATA[7f537e16-604b-11e5-9199-0242ac11002b]]></String>
+            <String><![CDATA[Apollo Release Notes Footer]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[detail]]></Name>
+          <Value>
+            <String><![CDATA[none]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#page-complete]]></Name>
+          <Value>
+            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[model_group_id]]></Name>
+          <Value>
+            <String><![CDATA[97d43a67-604b-11e5-9199-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -60,17 +72,11 @@
             <String><![CDATA[Generates the footer for release notes.]]></String>
           </Value>
         </Properties>
-        <Properties>
-          <Name><![CDATA[model_group_state]]></Name>
-          <Value>
-            <String><![CDATA[isModelGroup]]></String>
-          </Value>
-        </Properties>
       </Elements>
     </Containers>
     <Containers>
       <Name><![CDATA[7f537e16-604b-11e5-9199-0242ac11002b-c1]]></Name>
-      <Type><![CDATA[footsection]]></Type>
+      <Type><![CDATA[element]]></Type>
       <ParentInstanceId><![CDATA[7f537e16-604b-11e5-9199-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
@@ -86,15 +92,9 @@
           </link>
         </Formatter>
         <Properties>
-          <Name><![CDATA[hideTitle]]></Name>
-          <Value>
-            <String><![CDATA[true]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[7c121c37-622d-11e5-bcba-0242ac11002b]]></String>
+            <String><![CDATA[786c2460-f0e8-11e5-9067-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -107,6 +107,12 @@
           <Name><![CDATA[formatterSettings#7f537e16-604b-11e5-9199-0242ac11002b-c1]]></Name>
           <Value>
             <String><![CDATA[9c9d5c4f-560d-11e5-b868-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[hideTitle]]></Name>
+          <Value>
+            <String><![CDATA[true]]></String>
           </Value>
         </Properties>
       </Elements>

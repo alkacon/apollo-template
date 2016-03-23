@@ -35,7 +35,7 @@
 
 					<cms:container
 							name="tab-container${status.count}"
-							type="container"
+							type="row"
 							tagClass="panel-body"
 							maxElements="2">
 								<c:set var="msg"><fmt:message key="apollo.tabs.emptycontainer.text"/></c:set>
@@ -43,7 +43,7 @@
 									label="${msg}"
 									boxType="container-box"
 									role="author"
-									type="container" />
+									type="row" />
 						</cms:container>
 				</div>
 			</div>

@@ -11,7 +11,7 @@
       </link>
     </FunctionProvider>
     <ContainerSettings>
-      <Type><![CDATA[default]]></Type>
+      <Type><![CDATA[element]]></Type>
       <MinWidth/>
     </ContainerSettings>
   </DynamicFunction>

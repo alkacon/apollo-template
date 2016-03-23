@@ -5,31 +5,31 @@
     <Title><![CDATA[4 Col Row (3 - 3 - 3 - 3)]]></Title>
     <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
-    <Container><![CDATA[container]]></Container>
+    <Container><![CDATA[row]]></Container>
     <Column>
       <Name><![CDATA[c1]]></Name>
-      <Type><![CDATA[default]]></Type>
+      <Type><![CDATA[element]]></Type>
       <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-xs-12 col-sm-6 col-md-3]]></Grid>
     </Column>
     <Column>
       <Name><![CDATA[c2]]></Name>
-      <Type><![CDATA[default]]></Type>
+      <Type><![CDATA[element]]></Type>
       <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-xs-12 col-sm-6 col-md-3]]></Grid>
     </Column>
     <Column>
       <Name><![CDATA[c3]]></Name>
-      <Type><![CDATA[default]]></Type>
+      <Type><![CDATA[element]]></Type>
       <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-xs-12 col-sm-6 col-md-3]]></Grid>
     </Column>
     <Column>
       <Name><![CDATA[c4]]></Name>
-      <Type><![CDATA[default]]></Type>
+      <Type><![CDATA[element]]></Type>
       <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-xs-12 col-sm-6 col-md-3]]></Grid>

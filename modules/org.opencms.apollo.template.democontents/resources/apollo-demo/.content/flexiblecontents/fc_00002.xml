@@ -2,7 +2,7 @@
 
 <ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/flexible.xsd">
   <ApolloFlexibleElement language="en">
-    <Title><![CDATA[Reduced footer for tutorial / release notes]]></Title>
+    <Title><![CDATA[Tutorial / Release notes footer]]></Title>
     <Code name="Code0">
       <links>
         <link name="link0" internal="false" type="A">

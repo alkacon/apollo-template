@@ -10,121 +10,132 @@
 
 <c:choose>
 <c:when test="${!content.value.Container.isSet
-	|| (content.value.Container.isSet
-	&& (fn:containsIgnoreCase(cms.container.type, content.value.Container)
-		  || ((cms.container.type == 'locked') && !cms.dragMode)))}">
+  || (content.value.Container.isSet
+  && (fn:containsIgnoreCase(cms.container.type, content.value.Container)
+      || ((cms.container.type == 'locked') && !cms.dragMode)))}">
 <%-- Element matches the configured parent container --%>
 
-	<%-- Insert HTML for model group start (if required) --%>
-	<apollo:container-box label="${content.value.Title}" boxType="model-start" />
+  <%-- Insert HTML for model group start (if required) --%>
+  <apollo:container-box label="${content.value.Title}" boxType="model-start" />
 
-	<c:if test="${content.value.PreMarkup.isSet}">
-		<%-- Expand macros in markup --%>
-		<c:set var="preMarkup" value="${fn:replace(content.value.PreMarkup, '$(param)', cms.element.setting.param.value)}" />
-		<c:set var="link" value="" />
-		<c:if test="${cms.element.setting.link.isSet}">
-			<c:set var="link"><cms:link>${cms.element.setting.link}</cms:link></c:set>
-		</c:if>
-		${fn:replace(preMarkup, '$(link)', link)}
-	</c:if>
+  <c:if test="${content.value.PreMarkup.isSet}">
+    <%-- Expand macros in markup --%>
+    <c:set var="preMarkup" value="${fn:replace(content.value.PreMarkup, '$(param)', cms.element.setting.param.value)}" />
+    <c:set var="link" value="" />
+    <c:if test="${cms.element.setting.link.isSet}">
+      <c:set var="link"><cms:link>${cms.element.setting.link}</cms:link></c:set>
+    </c:if>
+    ${fn:replace(preMarkup, '$(link)', link)}
+  </c:if>
 
-	<c:set var="detailOnly" value="${(cms.element.setting.detail == 'only') ? 'true' : 'false' }" />
-	<c:set var="showDetailOnly" value="${(cms.isEditMode) and (detailOnly == 'true') and (not cms.detailRequest)}" />
-	<c:set var="grid" value="${cms.element.setting.grid.value}" />
+  <c:set var="detailOnly" value="${(cms.element.setting.detail == 'only') ? 'true' : 'false' }" />
+  <c:set var="showDetailOnly" value="${(cms.isEditMode) and (detailOnly == 'true') and (not cms.detailRequest)}" />
+  <c:set var="grid" value="${cms.element.setting.grid.value}" />
 
-	<c:forEach var="column" items="${content.valueList.Column}" varStatus="loop">
+  <c:forEach var="column" items="${content.valueList.Column}" varStatus="loop">
 
-		<c:set var="detailView" value="${((loop.count == 1) and (cms.element.setting.detail == 'view')) ? 'true' : 'false' }" />
+    <c:set var="detailView" value="${((loop.count == 1) and (cms.element.setting.detail == 'view')) ? 'true' : 'false' }" />
 
-		<c:if test="${column.value.PreMarkup.isSet}">${column.value.PreMarkup}</c:if>
+    <c:if test="${column.value.PreMarkup.isSet}">${column.value.PreMarkup}</c:if>
 
-		<c:choose>
-			<c:when test="${showDetailOnly}">
+    <c:choose>
+      <c:when test="${showDetailOnly}">
 
-				<%--
-					If the container is shown only on detail pages, the container tag later would
-					not generate any output on a page that is not a detail page.
-					Therefore we insert a placeholder in this case.
-				--%>
-				<div class="${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}">
-					<apollo:container-box label="${content.value.Title}${column.value.Name.isSet ? ' - '.concat(column.value.Name) : ''}"  boxType="detail-placeholder" />
-				</div>
+        <%--
+          If the container is shown only on detail pages, the container tag later would
+          not generate any output on a page that is not a detail page.
+          Therefore we insert a placeholder in this case.
+        --%>
+        <div class="${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}">
+          <apollo:container-box label="${content.value.Title}${column.value.Name.isSet ? ' - '.concat(column.value.Name) : ''}"  boxType="detail-placeholder" />
+        </div>
 
-			</c:when>
-			<c:when test="${column.value.Count.stringValue != '0'}">
+      </c:when>
+      <c:when test="${column.value.Count.stringValue != '0'}">
 
-				<%--
-					Generate the container tag.
-				--%>
-                
-				<c:set var="role" value="${column.value.Editors.isSet ? column.value.Editors : (content.value.Defaults.isSet ? content.value.Defaults.value.Editors : 'ROLE.DEVELOPER')}" />
-                <c:set var="parent_role" value="${cms.container.param}" />
-                <c:choose>
-                  <c:when test="${(role == 'ROLE.DEVELOPER') or (parent_role == 'ROLE.DEVELOPER')}">
-                    <c:set var="role" value="ROLE.DEVELOPER" />
-                    <c:set var="myrole" value="DEVELOPER" />
-                  </c:when>
-                  <c:when test="${(role == 'ROLE.EDITOR') or (parent_role == 'ROLE.EDITOR')}">
-                    <c:set var="role" value="ROLE.EDITOR" />
-                    <c:set var="myrole" value="EDITOR" />
-                  </c:when>
-                  <c:otherwise>
-                    <c:set var="role" value="ROLE.ELEMENT_AUTHOR" />
-                    <c:set var="myrole" value="AUTHOR" />
-                  </c:otherwise>
-                </c:choose>
-                
-				<c:set var="typeName" value="${column.value.Type.isSet ? column.value.Type : (content.value.Defaults.isSet ? content.value.Defaults.value.Type : 'unknown')}" />
-				<c:if test="${grid.charAt(loop.count - 1) == '1'.charAt(0)}">
-					<c:set var="typeName" value="container" />
-				</c:if>
-				<c:if test="${grid.charAt(loop.count - 1) == 'X'.charAt(0)}">
-					<c:set var="typeName" value="locked" />
-				</c:if>
-				<c:set var="cssClass">${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}</c:set>
-				<cms:container
+        <%--
+          Generate the container tag.
+        --%>
 
-					name="${column.value.Name}"
-					type="${typeName}"
-					tagClass="${cssClass}"
-					maxElements="${column.value.Count.isSet ? column.value.Count : (content.value.Defaults.isSet ? content.value.Defaults.value.Count : '50')}"
-					detailview="${detailView}"
-					detailonly="${detailOnly}"
-					editableby="${role}"
-					param="${role}">
+        <c:set var="role" value="${column.value.Editors.isSet ? column.value.Editors : (content.value.Defaults.isSet ? content.value.Defaults.value.Editors : 'ROLE.DEVELOPER')}" />
+        <c:set var="parent_role" value="${cms.container.param}" />
+        <c:choose>
+          <c:when test="${(role == 'ROLE.DEVELOPER') or (parent_role == 'ROLE.DEVELOPER')}">
+            <c:set var="role" value="ROLE.DEVELOPER" />
+            <c:set var="myrole" value="DEVELOPER" />
+          </c:when>
+          <c:when test="${(role == 'ROLE.EDITOR') or (parent_role == 'ROLE.EDITOR')}">
+            <c:set var="role" value="ROLE.EDITOR" />
+            <c:set var="myrole" value="EDITOR" />
+          </c:when>
+          <c:otherwise>
+            <c:set var="role" value="ROLE.ELEMENT_AUTHOR" />
+            <c:set var="myrole" value="AUTHOR" />
+          </c:otherwise>
+        </c:choose>
 
-					<apollo:container-box
-						label="${content.value.Title}${column.value.Name.isSet ? ' - '.concat(column.value.Name) : ''}"
-						boxType="container-box"
-						role="${myrole}"
-						type="${typeName}"
-						detailView="${detailView}"  />
+        <c:set var="typeName" value="${column.value.Type.isSet ? column.value.Type : (content.value.Defaults.isSet ? content.value.Defaults.value.Type : 'unknown')}" />
 
-				</cms:container>
+        <c:if test="${not empty grid}">
+	        <c:choose>
+	          <c:when test="${grid.charAt(loop.count - 1) == '1'.charAt(0)}">
+	            <c:set var="typeName" value="row" />
+	          </c:when>
+            <c:when test="${grid.charAt(loop.count - 1) == 'R'.charAt(0)}">
+	            <c:set var="typeName" value="row" />
+	          </c:when>
+	          <c:when test="${grid.charAt(loop.count - 1) == 'E'.charAt(0)}">
+	            <c:set var="typeName" value="element" />
+	          </c:when>
+	          <c:when test="${grid.charAt(loop.count - 1) == 'X'.charAt(0)}">
+	            <c:set var="typeName" value="locked" />
+	          </c:when>
+	        </c:choose>
+      	</c:if>
+        <c:set var="cssClass">${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}</c:set>
+        <cms:container
 
-			</c:when>
-			<c:otherwise>
+          name="${column.value.Name}"
+          type="${typeName}"
+          tagClass="${cssClass}"
+          maxElements="${column.value.Count.isSet ? column.value.Count : (content.value.Defaults.isSet ? content.value.Defaults.value.Count : '50')}"
+          detailview="${detailView}"
+          detailonly="${detailOnly}"
+          editableby="${role}"
+          param="${role}">
 
-				<%--
-					The number of elements this container accepts is zero.
-					No container is generated, but the layout grid DIV element is written.
-					This can be required for layout purposes, e.g. empty placeholders.
-				--%>
-				<div class="${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}"></div>
+          <apollo:container-box
+            label="${content.value.Title}${column.value.Name.isSet ? ' - '.concat(column.value.Name) : ''}"
+            boxType="container-box"
+            role="${myrole}"
+            type="${typeName}"
+            detailView="${detailView}"  />
 
-			</c:otherwise>
-		</c:choose>
+        </cms:container>
 
-		<c:if test="${column.value.PostMarkup.isSet}">${column.value.PostMarkup}</c:if>
+      </c:when>
+      <c:otherwise>
 
-	</c:forEach>
+        <%--
+          The number of elements this container accepts is zero.
+          No container is generated, but the layout grid DIV element is written.
+          This can be required for layout purposes, e.g. empty placeholders.
+        --%>
+        <div class="${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}"></div>
 
-	<c:if test="${content.value.PostMarkup.isSet}">
-		${content.value.PostMarkup}
-	</c:if>
+      </c:otherwise>
+    </c:choose>
 
-	<%-- Insert HTML for model group end (if required) --%>
-	<apollo:container-box label="${content.value.Title}" boxType="model-end" />
+    <c:if test="${column.value.PostMarkup.isSet}">${column.value.PostMarkup}</c:if>
+
+  </c:forEach>
+
+  <c:if test="${content.value.PostMarkup.isSet}">
+    ${content.value.PostMarkup}
+  </c:if>
+
+  <%-- Insert HTML for model group end (if required) --%>
+  <apollo:container-box label="${content.value.Title}" boxType="model-end" />
 
 </c:when>
 <c:otherwise>

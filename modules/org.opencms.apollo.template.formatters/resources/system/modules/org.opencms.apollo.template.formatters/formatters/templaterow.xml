@@ -13,13 +13,12 @@
     <Rank><![CDATA[1000]]></Rank>
     <Match>
       <Types>
-        <ContainerType><![CDATA[page]]></ContainerType>
-        <ContainerType><![CDATA[mainsection]]></ContainerType>
-        <ContainerType><![CDATA[footsection]]></ContainerType>
-        <ContainerType><![CDATA[locked]]></ContainerType>
+        <ContainerType><![CDATA[segment]]></ContainerType>
+        <ContainerType><![CDATA[section]]></ContainerType>
         <ContainerType><![CDATA[grid]]></ContainerType>
-        <ContainerType><![CDATA[container]]></ContainerType>
+        <ContainerType><![CDATA[row]]></ContainerType>
         <ContainerType><![CDATA[element]]></ContainerType>
+        <ContainerType><![CDATA[locked]]></ContainerType>
       </Types>
     </Match>
     <Preview>true</Preview>
