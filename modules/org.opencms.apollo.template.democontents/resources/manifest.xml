@@ -11066,7 +11066,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 3: Fun with Formatters: It' s  the same element]]></value>
+					<value><![CDATA[Step 3: Fun with Formatters: It's  the same element]]></value>
 				</property>
 			</properties>
 			<relations/>
