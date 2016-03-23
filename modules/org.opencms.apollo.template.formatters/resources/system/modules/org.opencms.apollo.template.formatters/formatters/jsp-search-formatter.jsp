@@ -116,7 +116,14 @@
 											<c:choose>
 												<c:when test='${facet.name eq "type"}'>
 													<c:set var="itemName">${facetItem.name}</c:set>
-													<c:set var="label"><%= CmsWorkplaceMessages.getResourceTypeName((java.util.Locale) pageContext.getAttribute("locale"), (String) pageContext.getAttribute("itemName")) %></c:set>
+													<c:choose>
+													<c:when test='${itemName eq "containerpage"}'>
+														<c:set var="label"><fmt:message key="type.containerpage" /></c:set>
+													</c:when>
+													<c:otherwise>
+														<c:set var="label"><%= CmsWorkplaceMessages.getResourceTypeName((java.util.Locale) pageContext.getAttribute("locale"), (String) pageContext.getAttribute("itemName")) %></c:set>
+													</c:otherwise>
+													</c:choose>
 												</c:when>
 												<c:when test='${facet.name eq "category_exact"}'>
 													<c:set var="itemName">${facetItem.name}</c:set>
@@ -221,7 +228,7 @@
 							</h3>
 							<hr />
 							<!-- show search results -->
-							<c:if test="${not empty search.highlighting}">
+							<c:if test="${not empty search.highlighting and not empty common.state.query}">
 								<%! CmsHtmlConverter htmlConverter = new CmsHtmlConverter(); %>
 							</c:if>
 							<c:forEach var="searchResult" items="${search.searchResults}">
@@ -230,7 +237,7 @@
 									<p>
 										<!-- if highlighting is returned - show it; otherwise show content_en (up to 250 characters) -->
 										<c:choose>
-											<c:when test="${not empty search.highlighting}">
+											<c:when test="${not empty search.highlighting and not empty common.state.query}">
 												<%-- To avoid destroying the HTML, if the highlighted snippet contains unbalanced tag, use the htmlConverter for cleaning the HTML. --%>
 												<c:set var="highlightSnippet" value='${search.highlighting[searchResult.fields["id"]][search.controller.highlighting.config.hightlightField][0]}' />
 												<c:if test="${not empty highlightSnippet}">
