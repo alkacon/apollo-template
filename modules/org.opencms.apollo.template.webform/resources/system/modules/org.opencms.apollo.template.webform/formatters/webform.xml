@@ -13,8 +13,8 @@
     <Rank><![CDATA[1000]]></Rank>
     <Match>
       <Types>
-        <ContainerType><![CDATA[default]]></ContainerType>
-        <ContainerType><![CDATA[webform]]></ContainerType>
+        <ContainerType><![CDATA[element]]></ContainerType>
+        <ContainerType><![CDATA[form]]></ContainerType>
       </Types>
     </Match>
     <Preview>false</Preview>
