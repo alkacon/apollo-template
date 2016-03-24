@@ -5,9 +5,9 @@
     <Headline><![CDATA[Try it yourself]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Check the out screenshots above&nbsp;for a short&nbsp;demo&nbsp;about how to access the element formatter.&nbsp;</p>
-<p>Each formatter may provide additional <strong>Settings.&nbsp;</strong>Settings allow you to tweak to generated output. It's important to understand that formatter and settings are stored in the <strong>Page</strong>, not the <strong>Content&nbsp;</strong>itself. So you&nbsp;can&nbsp;use the same content on different pages or even on the same page with different formatters and settings.&nbsp;</p>
-<p>Go ahead and try to change the formatter and settings&nbsp;for some elements on this pageto get familiar with the concept.</p>]]></content>
+      <content><![CDATA[<p>Check the out screenshots above for a short demo about how to access the element formatter.</p>
+<p>Each formatter may provide additional <strong>Settings</strong>. Settings allow you to tweak to generated output. It's important to understand that formatter and settings are stored in the <strong>Page</strong>, not the <strong>Content</strong> itself. So you can use the same content on different pages or even on the same page with different formatters and settings.</p>
+<p>Go ahead and try to change the formatter and settings for some elements on this page to get familiar with the concept.</p>]]></content>
     </Text>
     <Image>
       <Image>
