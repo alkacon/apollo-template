@@ -24,17 +24,11 @@
 <%-- Use case 1: Create container or detail container placeholder box --%>
 
 <c:choose>
-  <c:when test="${boxType == 'detail-placeholder'}">
-    <c:set var="variant" value="detailonly" />
-  </c:when>
-  <c:when test="${(fn:containsIgnoreCase(type, 'default')) || (type == 'segment') || (type == 'section') || (type == 'grid')}">
-    <c:set var="variant" value="jsp" />
-  </c:when>
-  <c:when test="${not fn:containsIgnoreCase(type, 'element')}">
-    <c:set var="variant" value="template" />
+  <c:when test="${(type == 'segment') || (type == 'section') || (type == 'grid') || (type == 'row') || (type == 'element')}">
+    <c:set var="variant" value="${type}" />
   </c:when>
   <c:otherwise>
-    <c:set var="variant" value="layout" />
+    <c:set var="variant" value="special" />
   </c:otherwise>
 </c:choose>
 

@@ -31,32 +31,64 @@
   <c:set var="detailOnly" value="${(cms.element.setting.detail == 'only') ? 'true' : 'false' }" />
   <c:set var="showDetailOnly" value="${(cms.isEditMode) and (detailOnly == 'true') and (not cms.detailRequest)}" />
   <c:set var="grid" value="${cms.element.setting.grid.value}" />
-
+  
+  <%-- check for grid setting --%>
+  <c:if test="${(not empty grid) && fn:contains(grid, ':')}">
+    <c:set var="gridParts" value="${fn:split(grid, ':')}" />
+  </c:if> 
+    
   <c:forEach var="column" items="${content.valueList.Column}" varStatus="loop">
 
     <c:set var="detailView" value="${((loop.count == 1) and (cms.element.setting.detail == 'view')) ? 'true' : 'false' }" />
-
+    <c:set var="typeName" value="${column.value.Type.isSet ? column.value.Type : (content.value.Defaults.isSet ? content.value.Defaults.value.Type : 'unknown')}" />
+    <c:if test="${not empty grid}">
+      <c:choose>
+          <c:when test="${not empty gridParts}">
+            <c:if test="${not empty gridParts[loop.count -1]}">
+                <c:set var="typeName" value="${fn:toLowerCase(gridParts[loop.count -1])}" />
+            </c:if>
+          </c:when>
+          <c:otherwise>
+              <c:choose>
+                <c:when test="${grid.charAt(loop.count - 1) == '1'.charAt(0)}">
+                  <c:set var="typeName" value="row" />
+                </c:when>
+              <c:when test="${grid.charAt(loop.count - 1) == 'R'.charAt(0)}">
+                  <c:set var="typeName" value="row" />
+                </c:when>
+                <c:when test="${grid.charAt(loop.count - 1) == 'E'.charAt(0)}">
+                  <c:set var="typeName" value="element" />
+                </c:when>
+                <c:when test="${grid.charAt(loop.count - 1) == 'X'.charAt(0)}">
+                  <c:set var="typeName" value="locked" />
+                </c:when>
+              </c:choose>
+          </c:otherwise>
+      </c:choose>
+    </c:if>
+        
     <c:if test="${column.value.PreMarkup.isSet}">${column.value.PreMarkup}</c:if>
-
+    
     <c:choose>
+      
       <c:when test="${showDetailOnly}">
-
         <%--
           If the container is shown only on detail pages, the container tag later would
           not generate any output on a page that is not a detail page.
           Therefore we insert a placeholder in this case.
         --%>
         <div class="${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}">
-          <apollo:container-box label="${content.value.Title}${column.value.Name.isSet ? ' - '.concat(column.value.Name) : ''}"  boxType="detail-placeholder" />
+          <apollo:container-box 
+            label="${content.value.Title}${column.value.Name.isSet ? ' - '.concat(column.value.Name) : ''}"  
+            boxType="detail-placeholder" 
+            type="${typeName}" />
         </div>
-
       </c:when>
+      
       <c:when test="${column.value.Count.stringValue != '0'}">
-
         <%--
           Generate the container tag.
         --%>
-
         <c:set var="role" value="${column.value.Editors.isSet ? column.value.Editors : (content.value.Defaults.isSet ? content.value.Defaults.value.Editors : 'ROLE.DEVELOPER')}" />
         <c:set var="parent_role" value="${cms.container.param}" />
         <c:choose>
@@ -74,24 +106,6 @@
           </c:otherwise>
         </c:choose>
 
-        <c:set var="typeName" value="${column.value.Type.isSet ? column.value.Type : (content.value.Defaults.isSet ? content.value.Defaults.value.Type : 'unknown')}" />
-
-        <c:if test="${not empty grid}">
-	        <c:choose>
-	          <c:when test="${grid.charAt(loop.count - 1) == '1'.charAt(0)}">
-	            <c:set var="typeName" value="row" />
-	          </c:when>
-            <c:when test="${grid.charAt(loop.count - 1) == 'R'.charAt(0)}">
-	            <c:set var="typeName" value="row" />
-	          </c:when>
-	          <c:when test="${grid.charAt(loop.count - 1) == 'E'.charAt(0)}">
-	            <c:set var="typeName" value="element" />
-	          </c:when>
-	          <c:when test="${grid.charAt(loop.count - 1) == 'X'.charAt(0)}">
-	            <c:set var="typeName" value="locked" />
-	          </c:when>
-	        </c:choose>
-      	</c:if>
         <c:set var="cssClass">${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}</c:set>
         <cms:container
 
@@ -114,16 +128,16 @@
         </cms:container>
 
       </c:when>
+      
       <c:otherwise>
-
         <%--
           The number of elements this container accepts is zero.
           No container is generated, but the layout grid DIV element is written.
           This can be required for layout purposes, e.g. empty placeholders.
         --%>
         <div class="${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}"></div>
-
       </c:otherwise>
+    
     </c:choose>
 
     <c:if test="${column.value.PostMarkup.isSet}">${column.value.PostMarkup}</c:if>
