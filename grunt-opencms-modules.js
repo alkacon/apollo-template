@@ -28,6 +28,8 @@ exports.initGrunt = function(_grunt, _buildDir) {
 	if (grunt.option('verbose')) {
 		console.log('OpenCms module source directory: ' + moduleDir);
 		console.log('OpenCms module build directory : ' + buildDir);
+
+		require('time-grunt')(grunt);
 	}
 
 	_gruntLoadNpmTasks();

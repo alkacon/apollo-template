@@ -10,6 +10,7 @@ $btn-border-style:      none !default;
 $btn-border-radius:     0 !default;
 $btn-min-width:         0 !default;
 $btn-padding:           8px !default;
+$btn-colors:			$primary-colors !default;
 
 @mixin apollo-button($bg-color, $text-color, $highlight-color) {
 
@@ -85,7 +86,7 @@ div.ap-btn-xs a.btn,
 	@include apollo-button($btn-default, $text-light, $btn-default-active);
 }
 
-@each $color-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+@each $color-name, $bg-color, $text-color, $highlight-color in $btn-colors {
 
 	div.ap-btn-#{""+$color-name} a.btn,
     .btn.ap-btn-#{""+$color-name}  {

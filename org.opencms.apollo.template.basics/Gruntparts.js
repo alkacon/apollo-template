@@ -11,10 +11,17 @@ exports.rf = rf;
 exports.repo = repo;
 exports.module = module;
 
-exports.templates = [ 
-	'style-blue', 
-	'style-red'
-];
+_getTemplates = function() {
+	if (process.env.TEMPLATES_APOLLO) {
+		return [ process.env.TEMPLATES_APOLLO ];
+	} 
+	return [ 
+		'style-blue', 
+		'style-red'
+	];
+};
+
+exports.templates = _getTemplates();
 	
 exports.deployTarget = process.env.OCMOUNT + '/system/modules/org.opencms.apollo.template.basics/resources/';
 
@@ -31,7 +38,7 @@ exports.cssSrc = [
 	mf + 'plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css',
 	mf + 'plugins/photoswipe/photoswipe.css',
 	mf + 'plugins/photoswipe/default-skin/default-skin.css',
-],
+];
 
 exports.jsSrc = [		
 	mf + 'plugins/bootstrap-paginator/bootstrap-paginator.js',
@@ -42,10 +49,10 @@ exports.jsSrc = [
 	mf + 'plugins/owl-carousel/owl-carousel/owl.carousel.js',
 	mf + 'plugins/photoswipe/photoswipe.min.js',
 	mf + 'plugins/photoswipe/photoswipe-ui-default.js',
-],
+];
 
 exports.resources = [
 	mf + 'plugins/photoswipe/default-skin/*.svg', 
 	mf + 'plugins/photoswipe/default-skin/*.png', 
 	mf + 'plugins/photoswipe/default-skin/*.gif',
-]
+];

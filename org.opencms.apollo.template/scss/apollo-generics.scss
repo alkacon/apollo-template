@@ -1,0 +1,130 @@
+
+// Generic CSS selectors that apply to any DIV or similar block element
+
+$bg-colors: $colors !default;
+
+// color scheme adjustments
+@each $color-name, $bg-color, $text-color, $highlight-color in $bg-colors {
+
+    .bg-#{""+$color-name} {
+        
+        background-color: $bg-color;
+        color: $text-color;         
+        overflow: hidden;    
+        padding: 20px;  
+        
+        h1, 
+        h2, 
+        h3, 
+        h4, 
+        h5, 
+        h6,
+        p,
+        div,
+        li,
+        .fa {
+            color: $text-color;
+        }
+    
+        a {
+            color: $text-color;
+            text-decoration: underline;
+            &.btn,
+ 			&:hover {
+            	text-decoration: none;
+            }
+        }
+        
+        .headline{
+              border-bottom: 1px dotted $highlight-color;
+        }        
+    }
+    
+    .translucent-bg-#{""+$color-name} {
+        @extend .bg-#{""+$color-name};
+        
+        background-color: rgba($bg-color, 0.7);
+    }    
+}
+
+$spacers: (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 500, 1000, 2000) !default;
+
+@each $space in $spacers {
+
+    .p-#{$space} {
+        padding: #{$space}px;
+    }
+    .pv-#{$space} {
+        padding-top: #{$space}px;
+        padding-bottom: #{$space}px;
+    }   
+    .ph-#{$space} {
+        padding-left: #{$space}px;
+        padding-right: #{$space}px;
+    }
+	.pl-#{$space} {
+	    padding-left: #{$space}px;
+	}
+    .pr-#{$space} {
+        padding-right: #{$space}px;
+    }
+    .pt-#{$space} {
+        padding-top: #{$space}px;
+    }       
+    .pb-#{$space} {
+        padding-bottom: #{$space}px;
+    }    
+    .m-#{$space} {
+        margin: #{$space}px;
+    }  
+    .mv-#{$space} {
+        margin-top: #{$space}px;
+        margin-bottom: #{$space}px;
+    }	
+    .mh-#{$space} {
+        margin-left: #{$space}px;
+        margin-right: #{$space}px;
+    }   
+    .ml-#{$space} {
+        margin-left: #{$space}px;
+    }
+    .mr-#{$space} {
+        margin-right: #{$space}px;
+    }       
+	.mt-#{$space} {
+	    margin-top: #{$space}px;
+	}    	
+    .mb-#{$space} {
+        margin-bottom: #{$space}px;
+    }
+}
+
+$fontsizes: (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 26, 28, 30, 36, 48, 72) !default;
+
+@each $fontsize in $fontsizes {
+
+    .fs-#{$fontsize} {
+        font-size: #{$fontsize}px;
+    } 
+}
+
+$lineheights: (10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) !default;
+
+@each $lineheight in $lineheights {
+
+    .lh-#{$lineheight} {
+        line-height: #{$lineheight / 10};
+    } 
+}
+
+.disp-i {
+    display: inline;
+}
+
+.disp-ib {
+    display: inline-block;
+}
+
+.disp-b {
+    display: block;
+}

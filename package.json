@@ -1,22 +1,19 @@
 {
   "version": "1.0.0",
   "name": "Alkacon-Apollo-Template",
-  "dependencies": {
-    "grunt-contrib-watch": "0.5.1"
-  },
-  "description": "The Alkacon OpenCms Apollo Template.",
-  "license": "GNU Lesser General Public License",
-  "repository": "cust-ebk",
-  "devDependencies": {
-    "autoprefixer": "^6.0.3",
-    "autoprefixer-core": "^6.0.1",
-    "grunt-autoprefixer": "^3.0.3",
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-copy": "~0.8.0",
-    "grunt-contrib-cssmin": "~0.12.2",
-    "grunt-contrib-sass": "~0.9.2",
-    "grunt-contrib-uglify": "~0.8.0",
-    "grunt-markdown": "^0.7.0",
-    "grunt-postcss": "^0.6.0"
+  "description": "The Alkacon OpenCms Apollo template.",
+  "license": "AGPL-3.0",
+  "repository": "apollo-template",
+  "private": true,
+  "dependencies": {  
+    "grunt": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-concat": "latest",
+    "time-grunt": "latest"    
   }
 }

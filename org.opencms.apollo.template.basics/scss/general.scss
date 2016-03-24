@@ -23,46 +23,6 @@ $screen-lg-min: 1200px;
   }
 }
 
-@each $name, $color in $colors {
-    .bg-#{""+$name}{
-        
-        background-color: $color;
-        color: set-text-color($color);
-        padding: 20px;
-        
-        h1, h2, h3, h4, p, div, li, .fa{               
-            color: set-text-color($color);
-            // text-decoration: none;
-            // border: none;
-            background-color: $color;
-        }
-        a{
-            color: lighten(set-text-color($color), 50%);    
-            &:hover, &:active, &:focus {
-                color: set-text-color($color);
-            }
-        }
-        .headline{
-              border-bottom: 1px dotted lighten(set-text-color($color), 25%);
-//            border: none;           
-//            h2, h3, h4{
-//                border: none;           
-//           }
-        }
-    
-        &.h-u{  
-            .headline{      
-                padding-bottom: 10px;
-                border-bottom: 1px solid lighten(set-text-color($color), 50%);
-            }
-        }   
-        &.h-c{  
-            .headline{      
-                text-align: center;
-            }
-        }   
-    }   
-}
 @each $i in (1,2,4,5,8,10) {  
     @each $name, $color in $colors {
         .bg-#{""+$name}-#{$i}{
@@ -115,14 +75,6 @@ $screen-lg-min: 1200px;
     }
 }
 
-
-//sizes
-@each $fontsize in (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 26, 28, 30, 36, 48, 72) {
-    .fs-#{$fontsize} {
-        font-size: #{$fontsize}px;
-    } 
-}
-
 //color (also if it's a link)
 @each $name, $color in $colors {
     .fc-#{""+$name}{
@@ -154,66 +106,7 @@ $screen-lg-min: 1200px;
     a, &.a{
         text-decoration: none;
     }
-}   
-
-//line height
-@each $lineheight in (10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) {
-    .lh-#{$lineheight} {
-        line-height: #{$lineheight/10};
-    } 
 }
-
-//margin, padding
-@each $space in (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 500, 1000, 2000) {
-
-    .pl-#{$space} {
-        padding-left: #{$space}px;
-    }
-    .pr-#{$space} {
-        padding-right: #{$space}px;
-    }
-    .pt-#{$space} {
-        padding-top: #{$space}px;
-    }       
-    .pb-#{$space} {
-        padding-bottom: #{$space}px;
-    }    
-    .mt-#{$space} {
-        margin-top: #{$space}px;
-    }       
-    .mb-#{$space} {
-        margin-bottom: #{$space}px;
-    }
-    .mr-#{$space} {
-        margin-right: #{$space}px;
-    }       
-    .ml-#{$space} {
-        margin-left: #{$space}px;
-    }
-    .mv-#{$space} {
-        margin-top: #{$space}px;
-        margin-bottom: #{$space}px;
-    }   
-    .pv-#{$space} {
-        padding-top: #{$space}px;
-        padding-bottom: #{$space}px;
-    }   
-    .mh-#{$space} {
-        margin-left: #{$space}px;
-        margin-right: #{$space}px;
-    }   
-    .ph-#{$space} {
-        padding-left: #{$space}px;
-        padding-right: #{$space}px;
-    }
-    .p-#{$space} {
-        padding: #{$space}px;
-    }
-    .m-#{$space} {
-        margin: #{$space}px;
-    }  
-}
-
 
 //square and tile grid
    
