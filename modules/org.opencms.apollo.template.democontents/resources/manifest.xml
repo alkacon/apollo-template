@@ -789,7 +789,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Main Segment - Page Body]]></value>
+					<value><![CDATA[Area - Page Body]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -806,7 +806,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Main Segment - Foot]]></value>
+					<value><![CDATA[Area - Foot]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -823,7 +823,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Main Segment - Head]]></value>
+					<value><![CDATA[Area - Head]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -840,7 +840,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Section [For Rows]]]></value>
+					<value><![CDATA[Segment [For Rows]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -857,7 +857,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Section (Fluid) [For Rows]]]></value>
+					<value><![CDATA[Segment (Fluid) [For Rows]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -874,7 +874,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Section [For Grids]]]></value>
+					<value><![CDATA[Segment [For Grids]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -891,7 +891,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Section (Fluid) [For Grids]]]></value>
+					<value><![CDATA[Segment (Fluid) [For Grids]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7402,7 +7402,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[1 Col Row (12 - Full)]]></value>
+					<value><![CDATA[Row 1 Col (12 - Full)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7419,7 +7419,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Col Row (3 - 9)]]></value>
+					<value><![CDATA[Row 2 Cols (3 - 9)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7436,7 +7436,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Col Row (4 - 8)]]></value>
+					<value><![CDATA[Row 2 Cols (4 - 8)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7453,7 +7453,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Col Row (6 - 6) [Also on XS]]]></value>
+					<value><![CDATA[Row 2 Cols (6 - 6) [From XS]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7470,7 +7470,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Col Row (6 - 6) [From SM]]]></value>
+					<value><![CDATA[Row 2 Cols (6 - 6) [From SM]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7487,7 +7487,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Col Row (6 - 6) [From MD]]]></value>
+					<value><![CDATA[Row 2 Cols (6 - 6) [From MD]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7504,7 +7504,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Col Row (8 - 4)]]></value>
+					<value><![CDATA[Row 2 Cols (8 - 4)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7521,7 +7521,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Col Row (9 - 3)]]></value>
+					<value><![CDATA[Row 2 Cols (9 - 3)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7538,7 +7538,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[3 Col Row (4 - 4 - 4)]]></value>
+					<value><![CDATA[Row 3 Cols (4 - 4 - 4)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7555,7 +7555,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[4 Col Row (3 - 3 - 3 - 3)]]></value>
+					<value><![CDATA[Row 4 Cols (3 - 3 - 3 - 3)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7572,7 +7572,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Col Row (4 - 4) [Narrow]]]></value>
+					<value><![CDATA[Row 2 Cols (4 - 4) [Narrow]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7589,7 +7589,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[2 Col Row (4 push - 4 pull) [Narrow]]]></value>
+					<value><![CDATA[Row 2 Cols (4 - 4) [Narrow / push - pull]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7930,6 +7930,46 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo/element-pages/content-section</destination>
+			<type>folder</type>
+			<uuidstructure>9a4a330e-edb7-11e5-a02c-0242ac11002b</uuidstructure>
+			<datecreated>Sat, 19 Mar 2016 09:47:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.5]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Content Section]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Content Section]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/element-pages/content-section/index.html</source>
+			<destination>apollo-demo/element-pages/content-section/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>9a51d433-edb7-11e5-a02c-0242ac11002b</uuidstructure>
+			<uuidresource>9a51d434-edb7-11e5-a02c-0242ac11002b</uuidresource>
+			<datecreated>Sat, 19 Mar 2016 09:47:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Content Section]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/element-pages/event</destination>
 			<type>folder</type>
 			<uuidstructure>00c52893-f00d-11e5-b20f-0242ac11002b</uuidstructure>
@@ -8252,46 +8292,6 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Location Map]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>apollo-demo/element-pages/section-formatters</destination>
-			<type>folder</type>
-			<uuidstructure>9a4a330e-edb7-11e5-a02c-0242ac11002b</uuidstructure>
-			<datecreated>Sat, 19 Mar 2016 09:47:32 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[0.5]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[Content Section]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Content Section]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/element-pages/section-formatters/index.html</source>
-			<destination>apollo-demo/element-pages/section-formatters/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>9a51d433-edb7-11e5-a02c-0242ac11002b</uuidstructure>
-			<uuidresource>9a51d434-edb7-11e5-a02c-0242ac11002b</uuidresource>
-			<datecreated>Sat, 19 Mar 2016 09:47:32 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Content Section]]></value>
 				</property>
 			</properties>
 			<relations/>

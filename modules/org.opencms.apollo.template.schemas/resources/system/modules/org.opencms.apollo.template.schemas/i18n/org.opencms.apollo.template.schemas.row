@@ -111,16 +111,36 @@
       <Value><![CDATA[New layout row]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.row.headline.emptycontainer]]></Key>
-      <Value><![CDATA[Empty Container]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.row.restricted]]></Key>
       <Value><![CDATA[Restricted]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.row.headline.detailonlycontainer]]></Key>
-      <Value><![CDATA[Please note: this layout row is only shown on type detail pages.]]></Value>
+      <Value><![CDATA[Please note: This Layout Row is only shown on type detail pages.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.row.headline.emptycontainer]]></Key>
+      <Value><![CDATA[Empty Container]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.row.in]]></Key>
+      <Value><![CDATA[In:]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.row.for]]></Key>
+      <Value><![CDATA[For:]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.row.detailonly]]></Key>
+      <Value><![CDATA[Only for detail pages]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.row.detailview]]></Key>
+      <Value><![CDATA[DETAIL VIEW]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.row.blocked]]></Key>
+      <Value><![CDATA[BLOCKED]]></Value>
     </Message>
   </Bundle>
   <Bundle language="de">
@@ -233,16 +253,36 @@
       <Value><![CDATA[Neue Layoutzeile]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.row.headline.emptycontainer]]></Key>
-      <Value><![CDATA[Leerer Container]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.row.restricted]]></Key>
       <Value><![CDATA[Begrenzt]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.row.headline.detailonlycontainer]]></Key>
       <Value><![CDATA[Zur Info: Diese Layout-Zeile wird nur auf Typen Detailseiten angezeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.row.headline.emptycontainer]]></Key>
+      <Value><![CDATA[Leerer Container]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.row.in]]></Key>
+      <Value><![CDATA[In:]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.row.for]]></Key>
+      <Value><![CDATA[Für:]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.row.detailonly]]></Key>
+      <Value><![CDATA[Nur für Detailseiten]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.row.detailview]]></Key>
+      <Value><![CDATA[DETAIL ANSICHT]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.row.blocked]]></Key>
+      <Value><![CDATA[GESPERRT]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

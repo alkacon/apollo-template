@@ -49,6 +49,8 @@
 				<searchsetting element="PreMarkup" searchcontent="false" />
 				<searchsetting element="PostMarkup" searchcontent="false" />
 				<searchsetting element="Container" searchcontent="false" />
+				<searchsetting element="Defaults" searchcontent="false" />
+				<searchsetting element="Column" searchcontent="false" />
 			</searchsettings>
 			<synchronizations>
 					<synchronization element="PreMarkup" />

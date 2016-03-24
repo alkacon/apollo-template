@@ -1458,6 +1458,60 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/layoutrow.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/layoutrow.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>d652a05d-523d-11e5-9495-0242ac11002b</uuidstructure>
+			<uuidresource>d652a05e-523d-11e5-9495-0242ac11002b</uuidresource>
+			<datecreated>Thu, 03 Sep 2015 13:15:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for Layout Row]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[uri;container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/layoutrow.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/layoutrow.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>d65670f0-523d-11e5-9495-0242ac11002b</uuidstructure>
+			<uuidresource>d65670f1-523d-11e5-9495-0242ac11002b</uuidresource>
+			<datecreated>Thu, 03 Sep 2015 13:15:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Standard Layout Row]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/list.jsp</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/list.jsp</destination>
 			<type>jsp</type>
@@ -2192,60 +2246,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Tabs]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/templaterow.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/templaterow.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>d652a05d-523d-11e5-9495-0242ac11002b</uuidstructure>
-			<uuidresource>d652a05e-523d-11e5-9495-0242ac11002b</uuidresource>
-			<datecreated>Thu, 03 Sep 2015 13:15:24 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Formatter JSP for template row]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[uri;container-element;locale]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/templaterow.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/templaterow.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>d65670f0-523d-11e5-9495-0242ac11002b</uuidstructure>
-			<uuidresource>d65670f1-523d-11e5-9495-0242ac11002b</uuidresource>
-			<datecreated>Thu, 03 Sep 2015 13:15:24 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Standard Template Row]]></value>
 				</property>
 				<property>
 					<name>locale</name>

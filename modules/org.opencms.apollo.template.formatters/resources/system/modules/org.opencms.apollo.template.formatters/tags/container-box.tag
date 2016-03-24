@@ -24,30 +24,49 @@
 <%-- Use case 1: Create container or detail container placeholder box --%>
 
 <c:choose>
-  <c:when test="${(type == 'segment') || (type == 'section') || (type == 'grid') || (type == 'row') || (type == 'element')}">
-    <c:set var="variant" value="${type}" />
+  <c:when test="${fn:containsIgnoreCase(type, 'area')}">
+    <c:set var="variant" value="area" />
+  </c:when>
+  <c:when test="${fn:containsIgnoreCase(type, 'segment')}">
+    <c:set var="variant" value="segment" />
+  </c:when>
+  <c:when test="${fn:containsIgnoreCase(type, 'grid')}">
+    <c:set var="variant" value="grid" />
+  </c:when>
+  <c:when test="${fn:containsIgnoreCase(type, 'row')}">
+    <c:set var="variant" value="row" />
+  </c:when>
+  <c:when test="${fn:containsIgnoreCase(type, 'element')}">
+    <c:set var="variant" value="element" />
   </c:when>
   <c:otherwise>
     <c:set var="variant" value="special" />
   </c:otherwise>
 </c:choose>
 
+<c:if test="${not empty role}">
+  <c:set var="role" value="${fn:substringAfter(role, '.')}" />
+  <c:if test="${fn:startsWith(role, 'ELEMENT_')}">
+      <c:set var="role" value="${fn:substringAfter(role, '_')}" />
+  </c:if>
+</c:if>
+
 <div class="oc-container-${variant} ${(empty cms.container.type) ? 'mh-20' : ''}">
   <h1>
     <c:choose>
       <c:when test="${boxType == 'detail-placeholder'}">
-        Detail container <div class="oc-label-special">BLOCKED</div>
-        <div class="oc-label-detailonly">Only for detail pages</div>
+        Detail container <div class="oc-label-special"><fmt:message key="apollo.row.blocked"/></div>
+        <div class="oc-label-detailonly"><fmt:message key="apollo.row.detailonly"/></div>
       </c:when>
       <c:otherwise>
         <fmt:message key="apollo.row.headline.emptycontainer"/>
         <div class="oc-label-${fn:toLowerCase(role)}">${fn:toUpperCase(role)}</div>
         <c:choose>
           <c:when test="${detailView == 'true'}">
-            <div class="oc-label-detail">DETAIL VIEW</div>
+            <div class="oc-label-detail"><fmt:message key="apollo.row.detailview"/></div>
           </c:when>
           <c:when test="${cms.detailRequest && (cms.element.setting.detail == 'only')}">
-            <div class="oc-label-detail">Only for detail pages</div>
+            <div class="oc-label-detail"><fmt:message key="apollo.row.detailonly"/></div>
           </c:when>
         </c:choose>
       </c:otherwise>
@@ -56,10 +75,19 @@
   <p class="fc-grey-dark lh-12">
     ${label}<br>
     <c:if test="${not empty cms.container.type}">
-      <small>In: ${cms.container.type} - For: ${type}</small>
+      <small>
+        <fmt:message key="apollo.row.in"/>
+        ${fn:toUpperCase(fn:substring(cms.container.type, 0, 1))}${fn:substring(cms.container.type, 1, -1)}
+        -
+        <fmt:message key="apollo.row.for"/>
+        ${fn:toUpperCase(fn:substring(type, 0, 1))}${fn:substring(type, 1, -1)}
+    </small>
     </c:if>
     <c:if test="${empty cms.container.type}">
-      <small>For: ${type}</small>
+      <small>
+        <fmt:message key="apollo.row.for"/>
+        ${fn:toUpperCase(fn:substring(type, 0, 1))}${fn:substring(type, 1, -1)}
+      </small>
     </c:if>
   </p>
 </div>

@@ -16,7 +16,6 @@
     <Match>
       <Types>
         <ContainerType><![CDATA[element]]></ContainerType>
-        <ContainerType><![CDATA[image]]></ContainerType>
       </Types>
     </Match>
     <Preview>false</Preview>

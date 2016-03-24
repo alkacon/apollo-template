@@ -1,453 +1,11 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
-  <Bundle language="de">
-    <Message>
-      <Key><![CDATA[apollo.setting.requirereload]]></Key>
-      <Value><![CDATA[Die Seite muss neu geladen werden.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.image.left]]></Key>
-      <Value><![CDATA[Links vom Text]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.image.right]]></Key>
-      <Value><![CDATA[Rechts vom Text]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[xmlimage.message.new]]></Key>
-      <Value><![CDATA[New image, please edit the content.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.image.top]]></Key>
-      <Value><![CDATA[Oben]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.imgalign]]></Key>
-      <Value><![CDATA[Bildausrichtung]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[no.image]]></Key>
-      <Value><![CDATA[Kein Bild vorhanden.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showdate]]></Key>
-      <Value><![CDATA[Zeige Datum]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.color]]></Key>
-      <Value><![CDATA[Farbe]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.color.default]]></Key>
-      <Value><![CDATA[Standard]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.color.red]]></Key>
-      <Value><![CDATA[Rot]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.color.sea]]></Key>
-      <Value><![CDATA[Meer]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.color.grey]]></Key>
-      <Value><![CDATA[Grau]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.color.green]]></Key>
-      <Value><![CDATA[Grün]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.color.blue]]></Key>
-      <Value><![CDATA[Blau]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.color.orange]]></Key>
-      <Value><![CDATA[Orange]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.color.purple]]></Key>
-      <Value><![CDATA[Violett]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.color.yellow]]></Key>
-      <Value><![CDATA[Gelb]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.layoutvariant]]></Key>
-      <Value><![CDATA[Layout Variante]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.layout.top]]></Key>
-      <Value><![CDATA[Rahmen oben]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.layout.left]]></Key>
-      <Value><![CDATA[Rahmen links]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.layout.box]]></Key>
-      <Value><![CDATA[Box]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.buttoncolor]]></Key>
-      <Value><![CDATA[Button Farbe]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.teaserlength]]></Key>
-      <Value><![CDATA[Teaser Länge]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.hidetitle]]></Key>
-      <Value><![CDATA[Verstecke Titel]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.hideTitle]]></Key>
-      <Value><![CDATA[Verstecke Titel]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.hideText]]></Key>
-      <Value><![CDATA[Verstecke Text]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.hideText]]></Key>
-      <Value><![CDATA[Verstecke Text]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showcategoryfiler]]></Key>
-      <Value><![CDATA[Anzeige Kategoriefilter]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showsort]]></Key>
-      <Value><![CDATA[Anzeige Sortierreihenfolge]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.usepagination]]></Key>
-      <Value><![CDATA[Verwende Blätterfunktion]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showimgtitle]]></Key>
-      <Value><![CDATA[Zeige Bilduntertitel]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssclass]]></Key>
-      <Value><![CDATA[Wrapper CSS Klasse(n)]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssclass.description]]></Key>
-      <Value><![CDATA[Optionale CSS Klassennamen für das umschließende <div> Element.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass]]></Key>
-      <Value><![CDATA[Icon CSS Klasse(n)]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.description]]></Key>
-      <Value><![CDATA[CSS Klassen für das Icon Element, z.B. 'icon-lg icon-bg-red fa fa-lightbulb-o' setzt die Iconfarbe und Form.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.info]]></Key>
-      <Value><![CDATA[Info Icon für Standard Box]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.lightbulb]]></Key>
-      <Value><![CDATA[Glï¿½hbirnen Icon für rote Box]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.icon]]></Key>
-      <Value><![CDATA[Icon Name]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.icon.description]]></Key>
-      <Value><![CDATA[Wï¿½hlen Sie das anzuzeigende Icon.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.icon.bookmark]]></Key>
-      <Value><![CDATA[Bookmark]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.icon.key]]></Key>
-      <Value><![CDATA[Schlï¿½ssel]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.icon.lightbulb]]></Key>
-      <Value><![CDATA[Glühbirne]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.icon.star]]></Key>
-      <Value><![CDATA[Stern]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.icon.thumbsup]]></Key>
-      <Value><![CDATA[Daumen Hoch]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.rounded]]></Key>
-      <Value><![CDATA[Abgerundete Ecken]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.rounded.description]]></Key>
-      <Value><![CDATA[Wï¿½hlen Sie dies für abgerundete Ecken aus.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.rounded.none]]></Key>
-      <Value><![CDATA[Keine]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.rounded.1x]]></Key>
-      <Value><![CDATA[4px]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.rounded.2x]]></Key>
-      <Value><![CDATA[10px]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.rounded.4x]]></Key>
-      <Value><![CDATA[20px]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.rounded.x]]></Key>
-      <Value><![CDATA[50%]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showbreadcrumb]]></Key>
-      <Value><![CDATA[Zeige Brotkrumennavigation]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.compactform]]></Key>
-      <Value><![CDATA[Kompakte Form]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.image.frontend.readmore]]></Key>
-      <Value><![CDATA[mehr lesen +]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.page.headline.emptycontainer]]></Key>
-      <Value><![CDATA[Leerer Seitencontainer]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.page.text.emptycontainer]]></Key>
-      <Value><![CDATA[Bitte ziehen Sie Templatereihen in diesen Container.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.sitemap.cols]]></Key>
-      <Value><![CDATA[Anzahl an Spalten]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.sitemap.cols.help]]></Key>
-      <Value><![CDATA[Anzahl der zu erstellenden Spalten festlegen.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssclass.green]]></Key>
-      <Value><![CDATA[Grüne Box mit gepunktetem Rand]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssclass.red]]></Key>
-      <Value><![CDATA[Rote Box ohne Rand]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssclass.yellow]]></Key>
-      <Value><![CDATA[Gelbe Box mit roter Linie oben]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssclass.blue]]></Key>
-      <Value><![CDATA[Blaue Box mit orangener Linie]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssclass.orange]]></Key>
-      <Value><![CDATA[Orangene Box mit gestricheltem Rand]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssclass.hiddenxs]]></Key>
-      <Value><![CDATA[Versteckt auf kleinen Bildschirmen]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssclass.lightbox]]></Key>
-      <Value><![CDATA[Standard hellgraue Box]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssclass.redbox]]></Key>
-      <Value><![CDATA[Rote Box mit abgerundeten Ecken]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssclass.shadowbox]]></Key>
-      <Value><![CDATA[Box mit Schatten fï¿½r Bild]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssclass.roundedshadowbox]]></Key>
-      <Value><![CDATA[Abgerundete Box mit Schatten für Bild]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.param]]></Key>
-      <Value><![CDATA[Param]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.param.description]]></Key>
-      <Value><![CDATA[Optionaler Parameter für das Pre-HTML Markup.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.link]]></Key>
-      <Value><![CDATA[Link]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.link.description]]></Key>
-      <Value><![CDATA[Optionaler Link, der im Pre-HTML Markup verwendet werden kann.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.csshints]]></Key>
-      <Value><![CDATA[CSS Hints]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.csshints.description]]></Key>
-      <Value><![CDATA[Optionale CSS Klassen, die meist für Kind Elemente benutzt werden.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.detail]]></Key>
-      <Value><![CDATA[Detailseiten Einstellungen]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.detail.description]]></Key>
-      <Value><![CDATA[Stellt die Verwendung von Containern für Detailseiten ein.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.detail.none]]></Key>
-      <Value><![CDATA[Keine speziellen Detailseiten Einstellungen (Standard)]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.detail.view]]></Key>
-      <Value><![CDATA[Verwende ersten Container als Detailansicht]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.detail.only]]></Key>
-      <Value><![CDATA[Zeige Container nur auf Detailseiten]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showelements]]></Key>
-      <Value><![CDATA[Zeige Elemente]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showelements.description]]></Key>
-      <Value><![CDATA[Legt die zu zeigenden Inhalte fest.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showelements.all]]></Key>
-      <Value><![CDATA[Alle]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showelements.textheadline]]></Key>
-      <Value><![CDATA[Überschrift und Text]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showelements.textimage]]></Key>
-      <Value><![CDATA[Text und Bild]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showelements.headline]]></Key>
-      <Value><![CDATA[Nur Überschrift]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showelements.text]]></Key>
-      <Value><![CDATA[Nur Text]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showelements.image]]></Key>
-      <Value><![CDATA[Nur Bild]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.anchorid]]></Key>
-      <Value><![CDATA[Anker ID]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.anchorid.description]]></Key>
-      <Value><![CDATA[Anker, der vor dem Element gesetzt wird.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showheadline]]></Key>
-      <Value><![CDATA[Überschrift Anzeige]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showheadline.description]]></Key>
-      <Value><![CDATA[Legt fest, wie die Überschrift dargestellt wird.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showheadline.false]]></Key>
-      <Value><![CDATA[Keine Überschrift]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showheadline.top]]></Key>
-      <Value><![CDATA[Überschrift oberhalb des Bildes, links ausgerichtet]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showheadline.bottom]]></Key>
-      <Value><![CDATA[Überschrift darunter, links ausgerichtet]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showheadline.bottomcenter]]></Key>
-      <Value><![CDATA[Kleine Überschrift darunter, zentriert]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showtext]]></Key>
-      <Value><![CDATA[Text Anzeige]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showtext.description]]></Key>
-      <Value><![CDATA[Legt fest, wie der Text angezeigt wird.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showtext.false]]></Key>
-      <Value><![CDATA[Keinen Text anzeigen]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showtext.true]]></Key>
-      <Value><![CDATA[Text unterhalb, links ausgerichtet]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showlink]]></Key>
-      <Value><![CDATA[Link Anzeige]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showlink.description]]></Key>
-      <Value><![CDATA[Legt fest, wie der Link dargestellt wird.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showlink.false]]></Key>
-      <Value><![CDATA[Keinen Link anzeigen]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showlink.image]]></Key>
-      <Value><![CDATA[Zeige den Link Button als Bildoverlay]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showlink.button]]></Key>
-      <Value><![CDATA[Zeige Linkbutton unterhalb des Bildes]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showlink.headline]]></Key>
-      <Value><![CDATA[Verwende Überschrift als Link]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssshape]]></Key>
-      <Value><![CDATA[Bild CSS Klasse]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssshape.description]]></Key>
-      <Value><![CDATA[Wählen Sie CSS Klassen für die Bild Form.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssshape.bordered]]></Key>
-      <Value><![CDATA[Bild mit Rahmen]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssshape.rounded]]></Key>
-      <Value><![CDATA[Abgerundetes Bild]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.cssshape.borderedround]]></Key>
-      <Value><![CDATA[Abgerundetes Bild mit Rahmen]]></Value>
-    </Message>
-  </Bundle>
   <Bundle language="en">
+    <Message>
+      <Key><![CDATA[apollo.setting.row.grid]]></Key>
+      <Value><![CDATA[Container]]></Value>
+    </Message>
     <Message>
       <Key><![CDATA[apollo.section.header.size.label]]></Key>
       <Value><![CDATA[Headline size]]></Value>
@@ -810,7 +368,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.page.text.emptycontainer]]></Key>
-      <Value><![CDATA[Please drop template rows in this container.]]></Value>
+      <Value><![CDATA[Please drop a Layout Row in this container.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.sitemap.cols]]></Key>
@@ -1027,6 +585,456 @@
     <Message>
       <Key><![CDATA[apollo.setting.cssshape.borderedround]]></Key>
       <Value><![CDATA[Bordered round image]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[apollo.setting.row.grid]]></Key>
+      <Value><![CDATA[Container]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.requirereload]]></Key>
+      <Value><![CDATA[Die Seite muss neu geladen werden.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.image.left]]></Key>
+      <Value><![CDATA[Links vom Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.image.right]]></Key>
+      <Value><![CDATA[Rechts vom Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[xmlimage.message.new]]></Key>
+      <Value><![CDATA[New image, please edit the content.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.image.top]]></Key>
+      <Value><![CDATA[Oben]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.imgalign]]></Key>
+      <Value><![CDATA[Bildausrichtung]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[no.image]]></Key>
+      <Value><![CDATA[Kein Bild vorhanden.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showdate]]></Key>
+      <Value><![CDATA[Zeige Datum]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color]]></Key>
+      <Value><![CDATA[Farbe]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.default]]></Key>
+      <Value><![CDATA[Standard]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.red]]></Key>
+      <Value><![CDATA[Rot]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.sea]]></Key>
+      <Value><![CDATA[Meer]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.grey]]></Key>
+      <Value><![CDATA[Grau]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.green]]></Key>
+      <Value><![CDATA[Grün]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.blue]]></Key>
+      <Value><![CDATA[Blau]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.orange]]></Key>
+      <Value><![CDATA[Orange]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.purple]]></Key>
+      <Value><![CDATA[Violett]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.yellow]]></Key>
+      <Value><![CDATA[Gelb]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.layoutvariant]]></Key>
+      <Value><![CDATA[Layout Variante]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.layout.top]]></Key>
+      <Value><![CDATA[Rahmen oben]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.layout.left]]></Key>
+      <Value><![CDATA[Rahmen links]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.layout.box]]></Key>
+      <Value><![CDATA[Box]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.buttoncolor]]></Key>
+      <Value><![CDATA[Button Farbe]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.teaserlength]]></Key>
+      <Value><![CDATA[Teaser Länge]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.hidetitle]]></Key>
+      <Value><![CDATA[Verstecke Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.hideTitle]]></Key>
+      <Value><![CDATA[Verstecke Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.hideText]]></Key>
+      <Value><![CDATA[Verstecke Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.hideText]]></Key>
+      <Value><![CDATA[Verstecke Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showcategoryfiler]]></Key>
+      <Value><![CDATA[Anzeige Kategoriefilter]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showsort]]></Key>
+      <Value><![CDATA[Anzeige Sortierreihenfolge]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.usepagination]]></Key>
+      <Value><![CDATA[Verwende Blätterfunktion]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showimgtitle]]></Key>
+      <Value><![CDATA[Zeige Bilduntertitel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssclass]]></Key>
+      <Value><![CDATA[Wrapper CSS Klasse(n)]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssclass.description]]></Key>
+      <Value><![CDATA[Optionale CSS Klassennamen für das umschließende <div> Element.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass]]></Key>
+      <Value><![CDATA[Icon CSS Klasse(n)]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.description]]></Key>
+      <Value><![CDATA[CSS Klassen für das Icon Element, z.B. 'icon-lg icon-bg-red fa fa-lightbulb-o' setzt die Iconfarbe und Form.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.info]]></Key>
+      <Value><![CDATA[Info Icon für Standard Box]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.lightbulb]]></Key>
+      <Value><![CDATA[Glï¿½hbirnen Icon für rote Box]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.icon]]></Key>
+      <Value><![CDATA[Icon Name]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.icon.description]]></Key>
+      <Value><![CDATA[Wï¿½hlen Sie das anzuzeigende Icon.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.icon.bookmark]]></Key>
+      <Value><![CDATA[Bookmark]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.icon.key]]></Key>
+      <Value><![CDATA[Schlï¿½ssel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.icon.lightbulb]]></Key>
+      <Value><![CDATA[Glühbirne]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.icon.star]]></Key>
+      <Value><![CDATA[Stern]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.icon.thumbsup]]></Key>
+      <Value><![CDATA[Daumen Hoch]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.rounded]]></Key>
+      <Value><![CDATA[Abgerundete Ecken]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.rounded.description]]></Key>
+      <Value><![CDATA[Wï¿½hlen Sie dies für abgerundete Ecken aus.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.rounded.none]]></Key>
+      <Value><![CDATA[Keine]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.rounded.1x]]></Key>
+      <Value><![CDATA[4px]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.rounded.2x]]></Key>
+      <Value><![CDATA[10px]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.rounded.4x]]></Key>
+      <Value><![CDATA[20px]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.rounded.x]]></Key>
+      <Value><![CDATA[50%]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showbreadcrumb]]></Key>
+      <Value><![CDATA[Zeige Brotkrumennavigation]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform]]></Key>
+      <Value><![CDATA[Kompakte Form]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.image.frontend.readmore]]></Key>
+      <Value><![CDATA[mehr lesen +]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.page.headline.emptycontainer]]></Key>
+      <Value><![CDATA[Leerer Container]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.page.text.emptycontainer]]></Key>
+      <Value><![CDATA[Bitte ziehen Sie eine Layout-Zeile in diesen Container.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.sitemap.cols]]></Key>
+      <Value><![CDATA[Anzahl an Spalten]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.sitemap.cols.help]]></Key>
+      <Value><![CDATA[Anzahl der zu erstellenden Spalten festlegen.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssclass.green]]></Key>
+      <Value><![CDATA[Grüne Box mit gepunktetem Rand]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssclass.red]]></Key>
+      <Value><![CDATA[Rote Box ohne Rand]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssclass.yellow]]></Key>
+      <Value><![CDATA[Gelbe Box mit roter Linie oben]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssclass.blue]]></Key>
+      <Value><![CDATA[Blaue Box mit orangener Linie]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssclass.orange]]></Key>
+      <Value><![CDATA[Orangene Box mit gestricheltem Rand]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssclass.hiddenxs]]></Key>
+      <Value><![CDATA[Versteckt auf kleinen Bildschirmen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssclass.lightbox]]></Key>
+      <Value><![CDATA[Standard hellgraue Box]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssclass.redbox]]></Key>
+      <Value><![CDATA[Rote Box mit abgerundeten Ecken]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssclass.shadowbox]]></Key>
+      <Value><![CDATA[Box mit Schatten fï¿½r Bild]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssclass.roundedshadowbox]]></Key>
+      <Value><![CDATA[Abgerundete Box mit Schatten für Bild]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.param]]></Key>
+      <Value><![CDATA[Param]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.param.description]]></Key>
+      <Value><![CDATA[Optionaler Parameter für das Pre-HTML Markup.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.link]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.link.description]]></Key>
+      <Value><![CDATA[Optionaler Link, der im Pre-HTML Markup verwendet werden kann.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.csshints]]></Key>
+      <Value><![CDATA[CSS Hints]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.csshints.description]]></Key>
+      <Value><![CDATA[Optionale CSS Klassen, die meist für Kind Elemente benutzt werden.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.detail]]></Key>
+      <Value><![CDATA[Detailseiten Einstellungen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.detail.description]]></Key>
+      <Value><![CDATA[Stellt die Verwendung von Containern für Detailseiten ein.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.detail.none]]></Key>
+      <Value><![CDATA[Keine speziellen Detailseiten Einstellungen (Standard)]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.detail.view]]></Key>
+      <Value><![CDATA[Verwende ersten Container als Detailansicht]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.detail.only]]></Key>
+      <Value><![CDATA[Zeige Container nur auf Detailseiten]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showelements]]></Key>
+      <Value><![CDATA[Zeige Elemente]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showelements.description]]></Key>
+      <Value><![CDATA[Legt die zu zeigenden Inhalte fest.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showelements.all]]></Key>
+      <Value><![CDATA[Alle]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showelements.textheadline]]></Key>
+      <Value><![CDATA[Überschrift und Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showelements.textimage]]></Key>
+      <Value><![CDATA[Text und Bild]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showelements.headline]]></Key>
+      <Value><![CDATA[Nur Überschrift]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showelements.text]]></Key>
+      <Value><![CDATA[Nur Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showelements.image]]></Key>
+      <Value><![CDATA[Nur Bild]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.anchorid]]></Key>
+      <Value><![CDATA[Anker ID]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.anchorid.description]]></Key>
+      <Value><![CDATA[Anker, der vor dem Element gesetzt wird.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showheadline]]></Key>
+      <Value><![CDATA[Überschrift Anzeige]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showheadline.description]]></Key>
+      <Value><![CDATA[Legt fest, wie die Überschrift dargestellt wird.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showheadline.false]]></Key>
+      <Value><![CDATA[Keine Überschrift]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showheadline.top]]></Key>
+      <Value><![CDATA[Überschrift oberhalb des Bildes, links ausgerichtet]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showheadline.bottom]]></Key>
+      <Value><![CDATA[Überschrift darunter, links ausgerichtet]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showheadline.bottomcenter]]></Key>
+      <Value><![CDATA[Kleine Überschrift darunter, zentriert]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showtext]]></Key>
+      <Value><![CDATA[Text Anzeige]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showtext.description]]></Key>
+      <Value><![CDATA[Legt fest, wie der Text angezeigt wird.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showtext.false]]></Key>
+      <Value><![CDATA[Keinen Text anzeigen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showtext.true]]></Key>
+      <Value><![CDATA[Text unterhalb, links ausgerichtet]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showlink]]></Key>
+      <Value><![CDATA[Link Anzeige]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showlink.description]]></Key>
+      <Value><![CDATA[Legt fest, wie der Link dargestellt wird.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showlink.false]]></Key>
+      <Value><![CDATA[Keinen Link anzeigen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showlink.image]]></Key>
+      <Value><![CDATA[Zeige den Link Button als Bildoverlay]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showlink.button]]></Key>
+      <Value><![CDATA[Zeige Linkbutton unterhalb des Bildes]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showlink.headline]]></Key>
+      <Value><![CDATA[Verwende Überschrift als Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssshape]]></Key>
+      <Value><![CDATA[Bild CSS Klasse]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssshape.description]]></Key>
+      <Value><![CDATA[Wählen Sie CSS Klassen für die Bild Form.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssshape.bordered]]></Key>
+      <Value><![CDATA[Bild mit Rahmen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssshape.rounded]]></Key>
+      <Value><![CDATA[Abgerundetes Bild]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.cssshape.borderedround]]></Key>
+      <Value><![CDATA[Abgerundetes Bild mit Rahmen]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

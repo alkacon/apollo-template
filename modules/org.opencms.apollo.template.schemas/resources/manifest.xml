@@ -566,7 +566,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[XSD for a blog entry]]></value>
+					<value><![CDATA[XSD for a blog article]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -702,7 +702,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Sample resource type schema]]></value>
+					<value><![CDATA[XSD for a sitemap]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -719,7 +719,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[XSD for a-slider]]></value>
+					<value><![CDATA[XSD for a slider]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -753,7 +753,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[XSD for a template row]]></value>
+					<value><![CDATA[XSD for a layout row]]></value>
 				</property>
 			</properties>
 			<relations/>
