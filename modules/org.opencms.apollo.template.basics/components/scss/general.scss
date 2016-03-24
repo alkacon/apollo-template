@@ -16,8 +16,8 @@ $screen-lg-min: 1200px;
 // OpenCms roles and their matching colors  
 $oc-container-types:
 (
- (segment, darken($red-lighter, 7%)),        
- (section, $red-lighter),        
+ (area, darken($red-lighter, 5%)),        
+ (segment, $red-lighter),        
  (grid, mix(darken($red-lighter, 5%), $orange-lighter, 40%)),         
  (row, $orange-lighter),         
  (element, #e8f3f8),         
