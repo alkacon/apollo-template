@@ -2,7 +2,7 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Link to Step 5]]></Headline>
+    <Headline><![CDATA[Link to Step 6]]></Headline>
     <Text name="Text0">
       <links/>
       <content><![CDATA[<p>The <em><strong>Explorer</strong></em>&nbsp;allows you a behind the scenes look about the file&nbsp;and folder&nbsp;structure that is created when you use the <em><strong>Page editor</strong></em> and the <em><strong>Sitemap</strong></em>.&nbsp;</p>
@@ -11,7 +11,7 @@
 <p>Go ahead and try out the Explorer. Once you are finished, come back to the tutorial and continue with the next step.</p>]]></content>
     </Text>
     <Link>
-      <Text><![CDATA[Continue with step 5: Publish your changes]]></Text>
+      <Text><![CDATA[Continue with step 6: Publish your changes]]></Text>
       <URI>
         <link internal="true" type="WEAK">
           <target><![CDATA[/sites/default/tutorial/step-6-publish-your-changes/]]></target>

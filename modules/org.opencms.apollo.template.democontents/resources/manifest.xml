@@ -10645,7 +10645,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 4: Work with the Sitemap: Link to Step 4]]></value>
+					<value><![CDATA[Step 4: Work with the Sitemap: Link to Step 5]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10679,7 +10679,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Lauchpad and Explorer: Link to Step 5]]></value>
+					<value><![CDATA[Step 5: Lauchpad and Explorer: Link to Step 6]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11923,7 +11923,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>tutorial/step-5-preview-in-a-device</destination>
+			<destination>tutorial/step-5-lauchpad-and-explorer</destination>
 			<type>folder</type>
 			<uuidstructure>f8fe1cac-6127-11e5-9eef-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 22 Sep 2015 12:46:41 GMT</datecreated>
@@ -11950,8 +11950,8 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/step-5-preview-in-a-device/index.html</source>
-			<destination>tutorial/step-5-preview-in-a-device/index.html</destination>
+			<source>tutorial/step-5-lauchpad-and-explorer/index.html</source>
+			<destination>tutorial/step-5-lauchpad-and-explorer/index.html</destination>
 			<type>containerpage</type>
 			<uuidstructure>f908cb12-6127-11e5-9eef-0242ac11002b</uuidstructure>
 			<uuidresource>f908cb13-6127-11e5-9eef-0242ac11002b</uuidresource>

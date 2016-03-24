@@ -2,7 +2,7 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Link to Step 4]]></Headline>
+    <Headline><![CDATA[Link to Step 5]]></Headline>
     <Text name="Text0">
       <links/>
       <content><![CDATA[<p>The images above provide a quick intro to using the sitemap. In the sitemap, you can move existing pages around or create new pages by drag and drop, similar to editing content.</p>
@@ -10,10 +10,10 @@
 <p>Go ahead and try the sitemap editor. Afterwards, come back and continue the introduction tour with the device preview.</p>]]></content>
     </Text>
     <Link>
-      <Text><![CDATA[Continue with step 4: Lauchpad and Explorer]]></Text>
+      <Text><![CDATA[Continue with step 5: Lauchpad and Explorer]]></Text>
       <URI>
         <link internal="true" type="WEAK">
-          <target><![CDATA[/sites/default/tutorial/step-5-preview-in-a-device/]]></target>
+          <target><![CDATA[/sites/default/tutorial/step-5-lauchpad-and-explorer/]]></target>
           <uuid>f8fe1cac-6127-11e5-9eef-0242ac11002b</uuid>
         </link>
       </URI>
