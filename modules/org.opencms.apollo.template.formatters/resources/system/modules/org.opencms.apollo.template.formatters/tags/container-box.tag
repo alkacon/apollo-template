@@ -55,7 +55,8 @@
   <h1>
     <c:choose>
       <c:when test="${boxType == 'detail-placeholder'}">
-        Detail container <div class="oc-label-special"><fmt:message key="apollo.row.blocked"/></div>
+        <fmt:message key="apollo.row.detailcontainer"/>
+        <div class="oc-label-special"><fmt:message key="apollo.row.blocked"/></div>
         <div class="oc-label-detailonly"><fmt:message key="apollo.row.detailonly"/></div>
       </c:when>
       <c:otherwise>

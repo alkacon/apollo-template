@@ -47,7 +47,7 @@
       <DisplayName><![CDATA[%(key.apollo.setting.compactform)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:Show calendar sheet|true:Hide calendar sheet|big:Show image and calendar sheet]]></WidgetConfig>
+      <WidgetConfig><![CDATA[false:Show calendar sheet|true:Hide calendar sheet|big:Show image and hide calendar sheet]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>
