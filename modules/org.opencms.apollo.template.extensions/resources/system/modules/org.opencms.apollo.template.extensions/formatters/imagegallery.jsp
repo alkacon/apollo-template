@@ -31,13 +31,6 @@
 						<fmt:message key="apollo.imagegallery.message.more" />
 					</button>
 
-
-
-				</c:otherwise>
-			</c:choose>
-
-
-
 			<c:set var="solrParamType">fq=type:"image"</c:set>
 			<c:set var="solrParamDirs">&fq=parent-folders:"${cms.requestContext.siteRoot}${content.value.ImageFolder}"</c:set>
 			<c:set var="extraSolrParams">${solrParamType}${solrParamDirs}&sort=path asc</c:set>
@@ -97,7 +90,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+
 		<c:set var="linkInnerPage">
 			<cms:link>%(link.strong:/system/modules/org.opencms.apollo.template.extensions/elements/imagegallery-inner.jsp:9bb25674-8f80-11e5-a6ad-0242ac11002b)</cms:link>
 		</c:set>
@@ -186,5 +179,9 @@
        			new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options).init();
    			};
 		</script>
+		
+		</c:otherwise>
+	  </c:choose>
+	</div>
 	</cms:formatter>
 </cms:bundle>
