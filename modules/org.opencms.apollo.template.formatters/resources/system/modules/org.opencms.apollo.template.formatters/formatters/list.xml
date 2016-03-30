@@ -42,7 +42,7 @@
       <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[red]]></Default>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:Red|blue:Blue|blue-light:Light blue|blue-dark:Dark blue|orange:Orange|cyan:Cyan|grey:Grey)]]></WidgetConfig>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[teaserlength]]></PropertyName>

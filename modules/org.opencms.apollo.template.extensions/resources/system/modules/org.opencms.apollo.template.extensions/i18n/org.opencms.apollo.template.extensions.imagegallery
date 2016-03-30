@@ -22,6 +22,58 @@
       <Key><![CDATA[label.ApolloImageGallery.ImageFolder.help]]></Key>
       <Value><![CDATA[Ordner der die Bilder enthält.]]></Value>
     </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageLarge]]></Key>
+      <Value><![CDATA[Großes Bild Breite]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageLarge.help]]></Key>
+      <Value><![CDATA[Breite des skalierten großen Bildes.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageMiddle]]></Key>
+      <Value><![CDATA[Mittleres Bild Breite]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageMiddle.help]]></Key>
+      <Value><![CDATA[Breite des skalierten mittleren Bildes.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageSmall]]></Key>
+      <Value><![CDATA[Kleines Bild Breite]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloImageGallery.ImageSmall.help]]></Key>
+      <Value><![CDATA[Breite des skalierten kleines Bildes.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.message.new]]></Key>
+      <Value><![CDATA[Bitte geben Sie einen Bilderordner an.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.message.prev]]></Key>
+      <Value><![CDATA[Zurück]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.message.next]]></Key>
+      <Value><![CDATA[Nächste]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.message.more]]></Key>
+      <Value><![CDATA[Mehr Bilder]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.message.empty]]></Key>
+      <Value><![CDATA[Keine Bilder gefunden.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.message.edit]]></Key>
+      <Value><![CDATA[Der Inhalt wurde bearbeitet, die Seite wird neu geladen.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imagegallery.error.imagesize]]></Key>
+      <Value><![CDATA[Bitte nur Zahlen benutzen!]]></Value>
+    </Message>
   </Bundle>
   <Bundle language="en">
     <Message>

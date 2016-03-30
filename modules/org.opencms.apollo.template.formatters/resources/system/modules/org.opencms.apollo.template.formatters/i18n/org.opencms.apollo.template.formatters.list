@@ -114,7 +114,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.new]]></Key>
-      <Value><![CDATA[<strong>Ne Liste</strong>, bitte bearbeiten Sie den Inhalt!eu]]></Value>
+      <Value><![CDATA[<strong>Neue Liste</strong>, bitte bearbeiten Sie den Inhalt!]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.empty]]></Key>

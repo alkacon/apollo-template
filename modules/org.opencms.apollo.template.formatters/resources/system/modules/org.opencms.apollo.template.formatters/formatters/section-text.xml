@@ -28,8 +28,8 @@
       <Widget><![CDATA[selectcombo]]></Widget>
       <Default><![CDATA[ap-plain]]></Default>
       <WidgetConfig><![CDATA[
-        ap-plain:Plain|
-        lead:Lead
+        ap-plain:%(key.apollo.section.text.style.plain)|
+        lead:%(key.apollo.section.text.style.lead)
       ]]></WidgetConfig>
     </Setting>
   </NewFormatter>

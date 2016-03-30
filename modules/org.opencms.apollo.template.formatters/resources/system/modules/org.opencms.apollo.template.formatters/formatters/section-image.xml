@@ -30,8 +30,8 @@
       <Widget><![CDATA[selectcombo]]></Widget>
       <Default><![CDATA[ap-img-v0]]></Default>
       <WidgetConfig><![CDATA[
-        ap-img-v0:Plain|
-        ap-img-v1:Bold title, centered
+        ap-img-v0:%(key.apollo.section.image.style.plain)|
+        ap-img-v1:%(key.apollo.section.image.style.boldtitle)
       ]]></WidgetConfig>
     </Setting>
     <Setting>
@@ -40,15 +40,15 @@
       <Widget><![CDATA[selectcombo]]></Widget>
       <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
-        none:No effect|
-        box-shadow shadow-effect-1:Shadow|    
-        rounded-2x:Round corners|
-        rounded-x:Circle vignette|
-        img-bordered:Bordered|
-        img-bordered rounded-2x:Bordered and round corners|
-        img-bordered rounded-x:Bordered and circle vignette|
-        box-shadow shadow-effect-1 rounded-2x:Shadow and round corners|
-        box-shadow shadow-effect-1 img-bordered:Shadow and bordered
+        none:%(key.apollo.section.image.effect.none)|
+        box-shadow shadow-effect-1:%(key.apollo.section.image.effect.shadow)|    
+        rounded-2x:%(key.apollo.section.image.effect.roundcorners)|
+        rounded-x:%(key.apollo.section.image.effect.vignette)|
+        img-bordered:%(key.apollo.section.image.effect.bordered)|
+        img-bordered rounded-2x:%(key.apollo.section.image.effect.borderedround)|
+        img-bordered rounded-x:%(key.apollo.section.image.effect.borderedvignette)|
+        box-shadow shadow-effect-1 rounded-2x:%(key.apollo.section.image.effect.shadowround)|
+        box-shadow shadow-effect-1 img-bordered:%(key.apollo.section.image.effect.shadowbordered)
       ]]></WidgetConfig>
     </Setting>
     <Setting>
@@ -57,10 +57,10 @@
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
-        none:Show nothing|
-        title:Show title|
-        desc:Show description|
-        title-desc:Show title and description
+        none:%(key.apollo.section.image.text.nothing)|
+        title:%(key.apollo.section.image.text.title)|
+        desc:%(key.apollo.section.image.text.description)|
+        title-desc:%(key.apollo.section.image.text.titledescription)
       ]]></WidgetConfig>
     </Setting>
     <Setting>
@@ -69,8 +69,8 @@
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
-        none:No link|
-        all:Link image and text
+        none:%(key.apollo.section.image.link.none)|
+        all:%(key.apollo.section.image.link.all)
       ]]></WidgetConfig>
     </Setting>
   </NewFormatter>

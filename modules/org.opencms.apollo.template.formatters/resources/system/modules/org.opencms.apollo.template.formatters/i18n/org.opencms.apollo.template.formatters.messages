@@ -271,10 +271,6 @@
       <Value><![CDATA[Created asc, Created desc]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.sort.created]]></Key>
-      <Value><![CDATA[Created asc, Created desc]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[label.sort.title]]></Key>
       <Value><![CDATA[Title asc, Title desc]]></Value>
     </Message>
@@ -586,8 +582,172 @@
       <Key><![CDATA[apollo.setting.cssshape.borderedround]]></Key>
       <Value><![CDATA[Bordered round image]]></Value>
     </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.lightblue]]></Key>
+      <Value><![CDATA[Light Blue]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.darkblue]]></Key>
+      <Value><![CDATA[Dark Blue]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.cyan]]></Key>
+      <Value><![CDATA[Cyan]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform.hideimage]]></Key>
+      <Value><![CDATA[Hide image]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform.smallimage]]></Key>
+      <Value><![CDATA[Small image left]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform.largeimage]]></Key>
+      <Value><![CDATA[Large image]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform.showcalendar]]></Key>
+      <Value><![CDATA[Show calendar sheet]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform.hidecalendar]]></Key>
+      <Value><![CDATA[Hide calendar sheet]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform.showimagehidecalendar]]></Key>
+      <Value><![CDATA[Show image and hide calendar sheet]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.style.plain]]></Key>
+      <Value><![CDATA[Plain]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.style.boldtitle]]></Key>
+      <Value><![CDATA[Bold title, centered]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.none]]></Key>
+      <Value><![CDATA[No effect]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.shadow]]></Key>
+      <Value><![CDATA[Shadow]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.roundcorners]]></Key>
+      <Value><![CDATA[Round corners]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.vignette]]></Key>
+      <Value><![CDATA[Circle vignette]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.bordered]]></Key>
+      <Value><![CDATA[Bordered]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.borderedround]]></Key>
+      <Value><![CDATA[Bordered and round corners]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.borderedvignette]]></Key>
+      <Value><![CDATA[Bordered and circle vignette]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.shadowround]]></Key>
+      <Value><![CDATA[Shadow and round corners]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.shadowbordered]]></Key>
+      <Value><![CDATA[Shadow and bordered]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.nothing]]></Key>
+      <Value><![CDATA[Show nothing]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.title]]></Key>
+      <Value><![CDATA[Show title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.description]]></Key>
+      <Value><![CDATA[Show description]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.titledescription]]></Key>
+      <Value><![CDATA[Show title and description]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.link.none]]></Key>
+      <Value><![CDATA[No link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.link.all]]></Key>
+      <Value><![CDATA[Link image and text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.style.underlined]]></Key>
+      <Value><![CDATA[Underlined]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.style.plain]]></Key>
+      <Value><![CDATA[Plain]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.size.large]]></Key>
+      <Value><![CDATA[Large]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.size.normal]]></Key>
+      <Value><![CDATA[Normal]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.size.small]]></Key>
+      <Value><![CDATA[Small]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.size.verysmall]]></Key>
+      <Value><![CDATA[Very small]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.text.style.plain]]></Key>
+      <Value><![CDATA[Plain]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.text.style.lead]]></Key>
+      <Value><![CDATA[Lead]]></Value>
+    </Message>
   </Bundle>
   <Bundle language="de">
+    <Message>
+      <Key><![CDATA[apollo.section.header.size.label]]></Key>
+      <Value><![CDATA[Überschrift Größe]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.style.label]]></Key>
+      <Value><![CDATA[Überschrift Stil]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.text.style.label]]></Key>
+      <Value><![CDATA[Text Stil]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.style.label]]></Key>
+      <Value><![CDATA[Bild Stil]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.label]]></Key>
+      <Value><![CDATA[Bild Effekt]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.label]]></Key>
+      <Value><![CDATA[Bild Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.link.label]]></Key>
+      <Value><![CDATA[Bild Link]]></Value>
+    </Message>
     <Message>
       <Key><![CDATA[apollo.setting.row.grid]]></Key>
       <Value><![CDATA[Container]]></Value>
@@ -603,10 +763,6 @@
     <Message>
       <Key><![CDATA[apollo.setting.image.right]]></Key>
       <Value><![CDATA[Rechts vom Text]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[xmlimage.message.new]]></Key>
-      <Value><![CDATA[New image, please edit the content.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.image.top]]></Key>
@@ -693,10 +849,6 @@
       <Value><![CDATA[Verstecke Titel]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.hideTitle]]></Key>
-      <Value><![CDATA[Verstecke Titel]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.setting.hideText]]></Key>
       <Value><![CDATA[Verstecke Text]]></Value>
     </Message>
@@ -750,7 +902,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.description]]></Key>
-      <Value><![CDATA[Wï¿½hlen Sie das anzuzeigende Icon.]]></Value>
+      <Value><![CDATA[Wählen Sie das anzuzeigende Icon.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.bookmark]]></Key>
@@ -758,7 +910,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.key]]></Key>
-      <Value><![CDATA[Schlï¿½ssel]]></Value>
+      <Value><![CDATA[Schlüssel]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.lightbulb]]></Key>
@@ -778,7 +930,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.rounded.description]]></Key>
-      <Value><![CDATA[Wï¿½hlen Sie dies für abgerundete Ecken aus.]]></Value>
+      <Value><![CDATA[Wählen Sie dies für abgerundete Ecken aus.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.rounded.none]]></Key>
@@ -807,6 +959,118 @@
     <Message>
       <Key><![CDATA[apollo.setting.compactform]]></Key>
       <Value><![CDATA[Kompakte Form]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.your.selection]]></Key>
+      <Value><![CDATA[Ihre Auswahl]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.search]]></Key>
+      <Value><![CDATA[Suche]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.last.changes]]></Key>
+      <Value><![CDATA[letzte Änderungen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.sort.by]]></Key>
+      <Value><![CDATA[Sortierung:]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.sort.relevance]]></Key>
+      <Value><![CDATA[Relevanz]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.sort.modified]]></Key>
+      <Value><![CDATA[Geändert aufst., Geändert abst.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.sort.created]]></Key>
+      <Value><![CDATA[Erstellt aufst., Erstellt abst.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.sort.title]]></Key>
+      <Value><![CDATA[Titel aufst., Titel abst.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.show.results]]></Key>
+      <Value><![CDATA[Zeige Ergebnisse:]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.reset]]></Key>
+      <Value><![CDATA[Auswahl zurücksetzen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.advice]]></Key>
+      <Value><![CDATA[Ergebnis teilen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.showMore]]></Key>
+      <Value><![CDATA[Zeige mehr]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.showLess]]></Key>
+      <Value><![CDATA[Zeige weniger]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.undefined]]></Key>
+      <Value><![CDATA[nicht definiert]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.from]]></Key>
+      <Value><![CDATA[von]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.until]]></Key>
+      <Value><![CDATA[bis]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.hits]]></Key>
+      <Value><![CDATA[Ergebnisse]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.searchedFor]]></Key>
+      <Value><![CDATA[Sie suchten nach]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.back]]></Key>
+      <Value><![CDATA[zurück]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.next]]></Key>
+      <Value><![CDATA[nächste]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.nothingFoundForQuery]]></Key>
+      <Value><![CDATA[Keine Ergebnisse für Suche nach]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.share.box]]></Key>
+      <Value><![CDATA[Kopieren Sie diesen Link um das aktuelle Ergebnis zu teilen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.share]]></Key>
+      <Value><![CDATA[Ergebnis teilen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.loading]]></Key>
+      <Value><![CDATA[lade ...]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.noExcerpt]]></Key>
+      <Value><![CDATA[Kein Suchausdruck um einen Auszug zu erstellen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.didYouMean]]></Key>
+      <Value><![CDATA[Meinten Sie?]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[de]]></Key>
+      <Value><![CDATA[Deutsch]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[en]]></Key>
+      <Value><![CDATA[English]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.image.frontend.readmore]]></Key>
@@ -1035,6 +1299,142 @@
     <Message>
       <Key><![CDATA[apollo.setting.cssshape.borderedround]]></Key>
       <Value><![CDATA[Abgerundetes Bild mit Rahmen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.lightblue]]></Key>
+      <Value><![CDATA[Hellblau]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.darkblue]]></Key>
+      <Value><![CDATA[Dunkelblau]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.cyan]]></Key>
+      <Value><![CDATA[Cyan]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform.hideimage]]></Key>
+      <Value><![CDATA[Verstecke Bild]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform.smallimage]]></Key>
+      <Value><![CDATA[Kleines Bild links]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform.largeimage]]></Key>
+      <Value><![CDATA[Großes Bild]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform.showcalendar]]></Key>
+      <Value><![CDATA[Zeige Kalenderblatt]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform.hidecalendar]]></Key>
+      <Value><![CDATA[Verstecke Kalenderblatt]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.compactform.showimagehidecalendar]]></Key>
+      <Value><![CDATA[Zeige Bild und verstecke Kalenderblatt]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.style.plain]]></Key>
+      <Value><![CDATA[Einfach]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.style.boldtitle]]></Key>
+      <Value><![CDATA[Titel fett, zentriert]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.none]]></Key>
+      <Value><![CDATA[Kein Effekt]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.shadow]]></Key>
+      <Value><![CDATA[Schatten]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.roundcorners]]></Key>
+      <Value><![CDATA[Abgerundete Ecken]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.vignette]]></Key>
+      <Value><![CDATA[Rund verziert]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.bordered]]></Key>
+      <Value><![CDATA[Gerahmt]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.borderedround]]></Key>
+      <Value><![CDATA[Gerahmt mit abgerundeten Ecken]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.borderedvignette]]></Key>
+      <Value><![CDATA[Gerahmt und rund verziert]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.shadowround]]></Key>
+      <Value><![CDATA[Schatten mit abgerundeten Ecken]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.shadowbordered]]></Key>
+      <Value><![CDATA[Schatten mit Rahmen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.nothing]]></Key>
+      <Value><![CDATA[Zeige nichts]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.title]]></Key>
+      <Value><![CDATA[Zeige Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.description]]></Key>
+      <Value><![CDATA[Zeige Beschreibung]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.titledescription]]></Key>
+      <Value><![CDATA[Zeige Titel und Beschreibung]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.link.none]]></Key>
+      <Value><![CDATA[Kein Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.link.all]]></Key>
+      <Value><![CDATA[Link Bild und Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.style.underlined]]></Key>
+      <Value><![CDATA[Unterstrichen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.style.plain]]></Key>
+      <Value><![CDATA[Einfach]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.size.large]]></Key>
+      <Value><![CDATA[Groß]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.size.normal]]></Key>
+      <Value><![CDATA[Normal]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.size.small]]></Key>
+      <Value><![CDATA[Klein]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.header.size.verysmall]]></Key>
+      <Value><![CDATA[Sehr klein]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.text.style.plain]]></Key>
+      <Value><![CDATA[Einfach]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.text.style.lead]]></Key>
+      <Value><![CDATA[Lead]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>
