@@ -1,5 +1,7 @@
-<%@tag display-name="container-box" body-content="empty"
-       description="Generates box HTML for layout rows"%>
+<%@tag display-name="container-box"
+  body-content="empty"
+  trimDirectiveWhitespaces="true"
+  description="Generates box HTML for layout rows" %>
 
 <%@attribute name="label" type="java.lang.String" required="true" %>
 <%@attribute name="boxType" type="java.lang.String" required="true" %>

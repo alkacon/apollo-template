@@ -36,11 +36,13 @@ module.exports = function(grunt) {
 		templateConcatTasks[i] = 'concat:template:' + templates[i];
 	}
 
+	var buildBase = 'build/grunt/';
+
 	// Project configuration.
 	grunt.initConfig({
 			
 		clean : {
-			all : [ 'build/**' ]
+			all : [ buildBase + '**' ]
 		},
 		
 		copy : {
@@ -48,7 +50,7 @@ module.exports = function(grunt) {
 				files : [ {
 						expand : true,
 						src : [ '<%= pluginDeps %>' ],
-						dest : 'build/04_final',
+						dest : buildBase + '04_final',
 						flatten : true,
 						filter : 'isFile'
 				} ],
@@ -56,13 +58,14 @@ module.exports = function(grunt) {
 			deploy : {
 				files : [ {
 					expand : true,
-					src : [ 'build/04_final/*', '!*.js'],
-					dest : process.env.OCMOUNT + 'css',
+					cwd : buildBase + '04_final/',
+					src : [ '*', '!*.js' ],
+					dest : deployTarget + 'css',
 					flatten: true
 				},{
 					expand : true,
-					src : [ 'build/04_final/*.js' ],
-					dest : process.env.OCMOUNT + 'js',
+					src : [ buildBase + '04_final/*.js' ],
+					dest : deployTarget + 'js',
 					flatten: true
 				} ]
 			}
@@ -79,7 +82,7 @@ module.exports = function(grunt) {
 					expand : true,
 					cwd : './',
 					src : templateSassSrc,
-					dest : 'build/01_pre',
+					dest : buildBase + '01_pre',
 					ext : '.css',
 					flatten: true
 				} ]
@@ -87,15 +90,14 @@ module.exports = function(grunt) {
 		},
 		
 		postcss : {
-			importBaseCss : {
+			baseCss : {
 				options : {
 					processors : [ 
 						require('postcss-import')(), // resolve all css imports
-						require('postcss-banner')({banner : '! ' + copynote}), // add copyright banner						
 					]
 				},
 				src : '<%= baseTemplateCssSrc %>',
-				dest : 'build/01_pre/base-template.css',
+				dest : buildBase + '01_pre/base-template.css',
 			},
 			pluginCss : {
 				options : {
@@ -106,10 +108,22 @@ module.exports = function(grunt) {
 				},
 				files : [ {
 					expand : true,
-					src : [ 'build/01_pre/plugins.css', 'build/01_pre/base-template.css'],
-					dest : 'build/02_post',
+					src : [ 
+						buildBase + '01_pre/plugins.css', 
+						buildBase + '01_pre/base-template.css'
+					],
+					dest : buildBase + '02_post',
 					flatten: true
-				}]
+				} ]
+			},
+			banner : {
+				options : {
+					processors : [
+						require('postcss-banner')({banner : '! ' + copynote}), // add copyright banner
+					]
+				},
+				src : buildBase + '02_post/plugins.css',
+				dest : buildBase + '02_post/plugins.css',
 			},
 			template : {
 				options : {
@@ -118,32 +132,28 @@ module.exports = function(grunt) {
 						require('perfectionist')(), // pretty-print the output
 					]
 				},				
-				files : [{
+				files : [ {
 					expand : true,
-					cwd : 'build/01_pre',
+					cwd : buildBase + '01_pre',
 					src : templateCssSrc,
-					dest : 'build/02_post',
+					dest : buildBase + '02_post',
 					ext : '.css'
-				}]
+				} ]
 			}
 		},
 
 		concat : {
 			pluginCss : {
 				src : [ '<%= pluginCssSrc %>' ],
-				dest : 'build/01_pre/plugins.css',
+				dest : buildBase + '01_pre/plugins.css',
 			},
-			pluginJs : {
-				src : [ '<%= pluginJsSrc %>' ],
-				dest : 'build/01_pre/scripts-all.js',
-			},	
 			template : {
 				src: [ 
-					'build/03_minified/base-template.min.css',
-					'build/03_minified/plugins.min.css', 
-					'build/03_minified/<%= grunt.task.current.args[0] %>.min.css' 
+					buildBase + '03_minified/plugins.min.css', 
+					buildBase + '03_minified/base-template.min.css',
+					buildBase + '03_minified/<%= grunt.task.current.args[0] %>.min.css' 
 				], 
-				dest: 'build/04_final/<%= grunt.task.current.args[0] %>.min.css' 
+				dest: buildBase + '04_final/<%= grunt.task.current.args[0] %>.min.css' 
 			},
 		},
 		
@@ -155,17 +165,20 @@ module.exports = function(grunt) {
 			template : {
 				files : [{
 					expand : true,
-					cwd : 'build/02_post',
+					cwd : buildBase + '02_post',
 					src : templateCssSrc,
-					dest : 'build/03_minified',
+					dest : buildBase + '03_minified',
 					ext : '.min.css'
 				}]
 			},
-			plugins : {
+			pluginCss : {
 				files : [{
 					expand : true,
-					src : [ 'build/02_post/plugins.css', 'build/02_post/base-template.css'],
-					dest : 'build/03_minified',
+					src : [ 
+						buildBase + '02_post/plugins.css', 
+						buildBase + '02_post/base-template.css'
+					],
+					dest : buildBase + '03_minified',
 					flatten: true,
 					ext : '.min.css'
 				}]
@@ -173,7 +186,7 @@ module.exports = function(grunt) {
 		},
 		
 		uglify : {
-			pluginJsMinified : {
+			pluginJs : {
 				options : {
 					mangleProperties : false,
 					mangle : {
@@ -185,8 +198,8 @@ module.exports = function(grunt) {
 						],
 					},
 				},
-				src : 'build/01_pre/scripts-all.js',
-				dest : 'build/04_final/scripts-all.min.js',
+				src : [ '<%= pluginJsSrc %>' ],
+				dest : buildBase + '04_final/scripts-all.min.js',
 			},
 		},
 		
@@ -254,7 +267,8 @@ module.exports = function(grunt) {
 		'clean',
 		'template',
 		'plugins',
-		'combine'
+		'combine',
+		'deploy'
 	]);
 	
 	grunt.registerTask('template', [ 
@@ -264,12 +278,12 @@ module.exports = function(grunt) {
 	]);
 	
 	grunt.registerTask('plugins', [ 
-		'postcss:importBaseCss',
+		'postcss:baseCss',
 		'concat:pluginCss',
 		'postcss:pluginCss', 
-		'cssmin:plugins',
-		'concat:pluginJs',
-		'uglify:pluginJsMinified',
+		'postcss:banner', 
+		'cssmin:pluginCss',
+		'uglify:pluginJs',
 		'copy:pluginDeps'
 	]);
 	

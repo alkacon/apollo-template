@@ -43,6 +43,7 @@
 <div class="footer">
 <div class="container">
 <div class="row">
+
 <div class="col-md-4 md-margin-bottom-40">
 <!-- About -->
 <div class="headline"><h3>About</h3></div>
@@ -54,9 +55,9 @@
 <dt><a href="%(link1)">OpenCms Services by Alkacon Software</a></dt>
 <dd>Alkacon Software's focus area is to develop OpenCms extensions as well as provide professional support and outsourcing services for OpenCms projects. </dd>
 </dl>
-			</div><!--/span4-->	
+</div>
 			
-			<div class="hidden-xs hidden-sm col-md-4 md-margin-bottom-40">
+<div class="hidden-xs hidden-sm col-md-4 md-margin-bottom-40">
 <!-- Mailing List -->
 <div class="headline"><h3>The OpenCms Mailing List</h3></div>
 <p>The opencms-dev mailing list is the place for all questions, comments and suggestions for OpenCms and the main forum of the OpenCms community. Subscribe to the list by filling out the following form.</p>
@@ -69,14 +70,9 @@
 </div>
 <div><p>Connection to the internet is required for subscription.</p></div>
 </form>							
-                    
-			</div><!--/span4-->
+</div>
 
-
-
-
-			<div class="col-md-4">
-<!-- Contact -->
+<div class="col-md-4">
 <div class="headline"><h3>Contact Us</h3></div>
 <address>
 Alkacon Software GmbH<br />
@@ -85,9 +81,7 @@ An der Wachsfabrik 13<br />
 Phone: +49 2236 / 3826 - 0<br />
 <a href="%(link2)">Send us an email</a>
 </address>
-
-                <!-- Stay Connected -->
-		        <div class="headline"><h3>Stay Connected</h3></div>
+<div class="headline"><h3>Stay Connected</h3></div>
 <ul class="social-icons">
 <li><a href="%(link3)" data-original-title="Feed" class="social_rss" title="RSS Feed"></a></li>
 <li><a href="%(link4)" data-original-title="GitHub" class="social_github" title="GitHub"></a></li>
@@ -98,9 +92,10 @@ Phone: +49 2236 / 3826 - 0<br />
 <li><a href="%(link9)" data-original-title="Youtube" class="social_youtube" title="YouTube"></a></li>
 <li><a href="%(link10)" data-original-title="SlideShare" class="social_slideshare" title="SlideShare"></a></li>
 </ul>
-			</div><!--/span4-->
-		</div>
-    </div>
+</div>
+
+</div><!--/row-->	
+</div><!--/container-->	
 </div><!--/footer-->	
 <!--=== End Footer ===-->]]></content>
     </Code>

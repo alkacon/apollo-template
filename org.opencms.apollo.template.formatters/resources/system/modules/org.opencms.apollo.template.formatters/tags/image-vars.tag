@@ -1,4 +1,6 @@
-<%@tag display-name="image-vars" description="Provides quick access to image values from XML"%>
+<%@tag display-name="image-vars"
+  trimDirectiveWhitespaces="true" 
+  description="Provides quick access to image values from XML"%>
 
 <%@attribute name="content" type="org.opencms.jsp.util.CmsJspContentAccessBean" required="true" %>
 

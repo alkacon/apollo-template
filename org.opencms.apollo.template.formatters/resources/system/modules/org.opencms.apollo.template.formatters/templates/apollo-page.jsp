@@ -23,7 +23,7 @@
 
 <c:set var="faviconPath">${cms.subSitePath}favicon.png</c:set>
 <c:if test="${not cms.vfs.existsResource[faviconPath]}">
-	<c:set var="faviconPath">/system/modules/org.opencms.apollo.template.basics/resources/img/favicon_120.png</c:set>
+  <c:set var="faviconPath">/system/modules/org.opencms.apollo.template.basics/resources/img/favicon_120.png</c:set>
 </c:if>
 <link rel="apple-touch-icon" href="<cms:link>${faviconPath}</cms:link>" />
 <link rel="icon" href="<cms:link>${faviconPath}</cms:link>" type="image/png" />
@@ -40,40 +40,43 @@
 
 </head>
 <body>
-	<div class="wrapper">
-		<c:if test="${cms.isEditMode}">
-			<!--=== Placeholder for OpenCms toolbar in edit mode ===-->
-			<div style="background: #fff; height: 52px;">&nbsp;</div>
-		</c:if>
-		<cms:container name="page-complete" type="area" width="1200" maxElements="50" editableby="ROLE.DEVELOPER">
-			<cms:bundle basename="org.opencms.apollo.template.formatters.messages">
-				<c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
-			</cms:bundle>
-			<apollo:container-box label="${message}" boxType="container-box" type="area" role="ROLE.DEVELOPER" />
-		</cms:container>
+<div class="wrapper">
 
-	</div>
-	<!--/wrapper-->
+<c:if test="${cms.isEditMode}">
+  <!--=== Placeholder for OpenCms toolbar in edit mode ===-->
+  <div style="background: #fff; height: 52px;">&nbsp;</div>
+</c:if>
 
-	<%-- JavaScript files placed at the end of the document so the pages load faster --%>
-	<cms:headincludes type="javascript" defaults="%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/js/scripts-all.min.js:0fc90357-5155-11e5-abeb-0242ac11002b)" />
-	<script type="text/javascript">
-		jQuery(document).ready(function() {
-			App.init();
-			try {
-				createBanner();
-			} catch (e) {}
-			try {
-				$("#list_pagination").bootstrapPaginator(options);
-			} catch (e) {}
-		});
-	</script>
-	<!--[if lt IE 9]>
-		<script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/respond.js:164f5662-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
-		<script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/html5shiv.js:163824de-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
-		<script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/placeholder-IE-fixes.js:16423700-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
-	<![endif]-->
-	<c:set var="afoot"><cms:property name="apollo.template.foot" file="search" default="" /></c:set>
-	<c:if test="${not empty afoot}"><cms:include file="${afoot}" /></c:if>
+<cms:container name="page-complete" type="area" width="1200" maxElements="50" editableby="ROLE.DEVELOPER">
+  <cms:bundle basename="org.opencms.apollo.template.formatters.messages">
+    <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
+  </cms:bundle>
+  <apollo:container-box label="${message}" boxType="container-box" type="area" role="ROLE.DEVELOPER" />
+</cms:container>
+
+</div><!--/wrapper-->
+
+<%-- JavaScript files placed at the end of the document so the pages load faster --%>
+<cms:headincludes type="javascript" defaults="%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/js/scripts-all.min.js:0fc90357-5155-11e5-abeb-0242ac11002b)" />
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+    App.init();
+    try {
+      createBanner();
+    } catch (e) {}
+    try {
+      $("#list_pagination").bootstrapPaginator(options);
+    } catch (e) {}
+  });
+</script>
+
+<!--[if lt IE 9]>
+  <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/respond.js:164f5662-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
+  <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/html5shiv.js:163824de-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
+  <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/placeholder-IE-fixes.js:16423700-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
+<![endif]-->
+<c:set var="afoot"><cms:property name="apollo.template.foot" file="search" default="" /></c:set>
+<c:if test="${not empty afoot}"><cms:include file="${afoot}" /></c:if>
+
 </body>
 </html>
