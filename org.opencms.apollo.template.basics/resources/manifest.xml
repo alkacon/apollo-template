@@ -411,36 +411,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-bluegold.min.css</source>
-			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-bluegold.min.css</destination>
-			<type>plain</type>
-			<uuidstructure>ba29b88c-8930-11e5-a24e-0242ac11002b</uuidstructure>
-			<uuidresource>ba29b88d-8930-11e5-a24e-0242ac11002b</uuidresource>
-			<datecreated>Thu, 12 Nov 2015 11:30:07 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-editor.css</source>
 			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-editor.css</destination>
 			<type>plain</type>
 			<uuidstructure>f946a7c8-5157-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>f946a7c9-5157-11e5-abeb-0242ac11002b</uuidresource>
 			<datecreated>Wed, 02 Sep 2015 09:49:59 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-goldblue.min.css</source>
-			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-goldblue.min.css</destination>
-			<type>plain</type>
-			<uuidstructure>ee571973-892c-11e5-a24e-0242ac11002b</uuidstructure>
-			<uuidresource>ee571974-892c-11e5-a24e-0242ac11002b</uuidresource>
-			<datecreated>Thu, 12 Nov 2015 11:02:57 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
