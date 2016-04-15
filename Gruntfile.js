@@ -9,19 +9,20 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-postcss');
+	grunt.loadNpmTasks('grunt-banner');
 	// grunt.loadNpmTasks('grunt-markdown');
 	
 	// Postcss modules required:
 	// ('perfectionist');
 	// ('autoprefixer');
 	// ('postcss-import');
-	// ('postcss-banner');
 	
-	var copynote = '\n\n' +
-		'OpenCms Apollo Template CSS\n\n' +
+	var copynote = '/*!\n\n' +
+		'The OpenCms Apollo Template\n\n' +
 		'(c) Alkacon Software GmbH\n' +
 		'http://alkacon.com - http://opencms.org\n\n' +
-		'Apache License 2.0 - http://www.apache.org/licenses/LICENSE-2.0 \n\n';
+		'The Apollo Template is available under the MIT License - http://opensource.org/licenses/MIT.\n' +
+		'All plugins used herein retain the original copyright of their creators.\n\n*/';
 
 	var templates = [ 'style-blue', 'style-red' ];
 	
@@ -116,15 +117,6 @@ module.exports = function(grunt) {
 					flatten: true
 				} ]
 			},
-			banner : {
-				options : {
-					processors : [
-						require('postcss-banner')({banner : '! ' + copynote}), // add copyright banner
-					]
-				},
-				src : buildBase + '02_post/plugins.css',
-				dest : buildBase + '02_post/plugins.css',
-			},
 			template : {
 				options : {
 					processors : [ 
@@ -140,6 +132,16 @@ module.exports = function(grunt) {
 					ext : '.css'
 				} ]
 			}
+		},
+		
+		usebanner: {
+			pluginCss : {
+				options : {
+					banner: copynote,
+				},
+				src : buildBase + '02_post/plugins.css',
+				dest : buildBase + '02_post/plugins.css',
+			},
 		},
 
 		concat : {
@@ -188,6 +190,7 @@ module.exports = function(grunt) {
 		uglify : {
 			pluginJs : {
 				options : {
+					banner : copynote,
 					mangleProperties : false,
 					mangle : {
 						except : [ 
@@ -281,7 +284,7 @@ module.exports = function(grunt) {
 		'postcss:baseCss',
 		'concat:pluginCss',
 		'postcss:pluginCss', 
-		'postcss:banner', 
+		'usebanner:pluginCss', 
 		'cssmin:pluginCss',
 		'uglify:pluginJs',
 		'copy:pluginDeps'
