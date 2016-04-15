@@ -4,3 +4,4 @@
 /.sass-cache/
 Gruntfile-local.js
 /build/
+/output/
