@@ -30,7 +30,7 @@
 					<c:if test="${not cms.element.settings.hidetitle}">
 						<div class="headline headline-md">
 							<h2 ${rdfa.Headline}>
-								<c:out value="${con.value.Headline}" escapeXml="false" />
+								<c:out value="${value.Headline}" escapeXml="false" />
 							</h2>
 						</div>
 					</c:if>
@@ -38,9 +38,9 @@
 					<c:set var="buttonColor">${cms.element.settings.buttoncolor}</c:set>
 					<c:set var="compactForm">${cms.element.settings.compactform}</c:set>
 					<c:set var="itemsPerPage">
-						<c:out value="${con.value.ItemsPerPage}" default="100" />
+						<c:out value="${value.ItemsPerPage}" default="100" />
 					</c:set>
-					<c:set var="additionalFilterQueries">${con.value.FilterQueries}</c:set>
+					<c:set var="additionalFilterQueries">${value.FilterQueries}</c:set>
 					<c:set var="innerPageDivId">${cms.element.id}-inner</c:set>
 					<c:choose>
 						<c:when test="${cms.element.settings.usepagination == 'true' }">
@@ -57,9 +57,9 @@
 
 					<c:set var="params">cssID=${innerPageDivId}</c:set>
 					<c:set var="params">${params}&categoryFacetField=${categoryFacetField}</c:set>
-					<c:set var="params">${params}&typesToCollect=${con.value.TypesToCollect}</c:set>
-					<c:if test="${con.value.Category.isSet}">
-						<c:set var="params">${params}&categoriesToCollect=${con.value.Category}</c:set>
+					<c:set var="params">${params}&typesToCollect=${value.TypesToCollect}</c:set>
+					<c:if test="${value.Category.isSet}">
+						<c:set var="params">${params}&categoriesToCollect=${value.Category}</c:set>
 					</c:if>
 					<c:choose>
 						<c:when test="${value.Folder.isSet}">
@@ -80,7 +80,7 @@
 					<c:set var="params">${params}&teaserLength=${teaserLength}</c:set>
 					<c:set var="params">${params}&extraQueries=${value.FilterQueries}</c:set>
 					<c:set var="params">${params}&__locale=${cms.locale}</c:set>
-					<c:set var="params">${params}&sortOrder=${con.value.SortOrder}</c:set>
+					<c:set var="params">${params}&sortOrder=${value.SortOrder}</c:set>
 					<c:set var="params">${params}&pageUri=${cms.requestContext.uri}</c:set>
 					<c:set var="params">${params}&listConfig=${cms.element.sitePath}</c:set>
 
@@ -91,6 +91,10 @@
 							</c:forTokens>
 						</cms:include>
 					</div>
+
+					<c:if test="${value.Link.exists}">
+						<div class="mv-10"><a class="btn-u btn-u-${cms.element.settings.buttoncolor} btn-u-sm" href="<cms:link>${value.Link.value.URI}</cms:link>">${value.Link.value.Text}</a></div>
+					</c:if>	
 
 					<c:set var="linkInnerPage"><cms:link>${linkInnerPage}</cms:link>?${params}</c:set>
 					<script type="text/javascript">
