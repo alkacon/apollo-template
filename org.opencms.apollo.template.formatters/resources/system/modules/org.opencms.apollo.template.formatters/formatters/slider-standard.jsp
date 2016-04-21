@@ -7,8 +7,7 @@
 	<div>
 		<c:choose>
 			<c:when test="${cms.element.inMemoryOnly}">
-				<div class="alert alert-danger">Bitte bearbeiten Sie den
-					Slider.</div>
+				<div class="alert alert-danger">Please edit the slider.</div>
 			</c:when>
 			<c:when test="${cms.edited}">
 				<div>${cms.enableReload}</div>
@@ -34,27 +33,20 @@
 									<c:set var="bg" value="${value.TextBackgroundColor}" />
 								</c:if>
 								<li style="display: none;" data-masterspeed=" ${value.Delay}"
-									data-transition="fade" data-slotamount="12"><c:if
-										test="${image.value.Link.isSet}">
-										<a href="<cms:link>${image.value.Link}</cms:link>"
-											${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?'target="_blank"':''}>
-									</c:if> <img src="<cms:link>${image.value.Uri}</cms:link>"
-									alt="${image.value.Tooltip}" /> <c:if
-										test="${image.value.Link.isSet}">
-										</a>
-									</c:if> <c:if
-										test="${image.value.SuperTitle.isSet || image.value.TitleLine1.isSet || image.value.TitleLine2.isSet}">
+									data-transition="fade" data-slotamount="12" <c:if test="${image.value.Link.isSet}">data-link="<cms:link>${image.value.Link}</cms:link>" ${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?' data-target="_blank"':''}</c:if>>
+									<img src="<cms:link>${image.value.Uri}</cms:link>" alt="${image.value.Tooltip}" />
+									<c:if test="${image.value.SuperTitle.isSet || image.value.TitleLine1.isSet || image.value.TitleLine2.isSet}">
 										<div class="hidden-xs caption fade" data-x="${x}"
 											data-y="${y}" data-easing="easeOutBack"
 											style="background-color: ${bg}; color: ${value.TextColor};">
 											<c:if test="${image.value.SuperTitle.isSet}">
-												<h3 style="color: ${value.TextColor};">${image.value.SuperTitle}</h3>
+												<h2 style="color: ${value.TextColor};">${image.value.SuperTitle}</h2>
 											</c:if>
 											<c:if test="${image.value.TitleLine1.isSet}">
-												<h2 style="color: ${value.TextColor};">${image.value.TitleLine1}</h2>
+												<h3 style="color: ${value.TextColor};">${image.value.TitleLine1}</h3>
 											</c:if>
 											<c:if test="${image.value.TitleLine2.isSet}">
-												<h2 style="color: ${value.TextColor};">${image.value.TitleLine2}</h2>
+												<h3 style="color: ${value.TextColor};">${image.value.TitleLine2}</h3>
 											</c:if>
 										</div>
 									</c:if> <c:set var="copyright" value="" />
