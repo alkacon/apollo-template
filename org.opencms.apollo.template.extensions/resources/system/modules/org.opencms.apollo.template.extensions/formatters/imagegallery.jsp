@@ -31,8 +31,10 @@
 						<fmt:message key="apollo.imagegallery.message.more" />
 					</button>
 
+			<c:set var="pathPrefix">${cms.requestContext.siteRoot}</c:set>
+			<c:if test="${fn:startsWith(content.value.ImageFolder.stringValue, '/shared/')}"><c:set var="pathPrefix"></c:set></c:if>
 			<c:set var="solrParamType">fq=type:"image"</c:set>
-			<c:set var="solrParamDirs">&fq=parent-folders:"${cms.requestContext.siteRoot}${content.value.ImageFolder}"</c:set>
+			<c:set var="solrParamDirs">&fq=parent-folders:"${pathPrefix}${content.value.ImageFolder}"</c:set>
 			<c:set var="extraSolrParams">${solrParamType}${solrParamDirs}&sort=path asc</c:set>
 			<c:set var="searchConfig">
 		{ "ignorequery" : true,
@@ -108,7 +110,7 @@
 				$('.spinner').removeClass('bounceOut').addClass('bounceIn');
 
 				$.get("${linkInnerPage}?items=" + items + "&page=" + page
-						+ "&path=\"${cms.requestContext.siteRoot}${content.value.ImageFolder}\"&title=${cms.element.settings.showTitle}&css="+css,
+						+ "&path=\"${pathPrefix}${content.value.ImageFolder}\"&title=${cms.element.settings.showTitle}&css="+css,
 						function(images) {
 							if (images.length == 0) {
 								$('#more').remove();
