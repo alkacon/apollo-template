@@ -411,6 +411,18 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-blue.min.css.map</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-blue.min.css.map</destination>
+			<type>plain</type>
+			<uuidstructure>aa27afdc-0c85-11e6-b01b-0242ac11002b</uuidstructure>
+			<uuidresource>aa27afdd-0c85-11e6-b01b-0242ac11002b</uuidresource>
+			<datecreated>Wed, 27 Apr 2016 14:38:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-editor.css</source>
 			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-editor.css</destination>
 			<type>plain</type>
@@ -429,6 +441,18 @@
 			<uuidstructure>a1be94eb-ed26-11e5-a0c5-0242ac11002b</uuidstructure>
 			<uuidresource>a1be94ec-ed26-11e5-a0c5-0242ac11002b</uuidresource>
 			<datecreated>Fri, 18 Mar 2016 16:29:48 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/css/style-red.min.css.map</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/css/style-red.min.css.map</destination>
+			<type>plain</type>
+			<uuidstructure>aa38c6de-0c85-11e6-b01b-0242ac11002b</uuidstructure>
+			<uuidresource>aa38c6df-0c85-11e6-b01b-0242ac11002b</uuidresource>
+			<datecreated>Wed, 27 Apr 2016 14:38:10 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -2226,6 +2250,18 @@
 			<uuidstructure>0fc90357-5155-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>0fc90358-5155-11e5-abeb-0242ac11002b</uuidresource>
 			<datecreated>Wed, 02 Sep 2015 09:29:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.basics/resources/js/scripts-all.min.js.map</source>
+			<destination>system/modules/org.opencms.apollo.template.basics/resources/js/scripts-all.min.js.map</destination>
+			<type>plain</type>
+			<uuidstructure>aa439c50-0c85-11e6-b01b-0242ac11002b</uuidstructure>
+			<uuidresource>aa439c51-0c85-11e6-b01b-0242ac11002b</uuidresource>
+			<datecreated>Wed, 27 Apr 2016 14:38:10 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
