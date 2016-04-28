@@ -1,4 +1,4 @@
-<%@page buffer="none" session="false" import="org.opencms.file.*, org.opencms.main.*" trimDirectiveWhitespaces="true"%>
+<%@page buffer="none" session="false" import="org.opencms.file.*, org.opencms.main.*, org.opencms.util.*" trimDirectiveWhitespaces="true"%>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -6,6 +6,9 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.schemas.disqus">
 	<div class="a-disqus ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : 'mb-20' }">
+		<c:set var="clickToLoad" value="false"/>
+		<c:if test="${param.clicktoload == 'true'}"><c:set var="clickToLoad" value="true"/></c:if>
+
 		<c:choose>
 			<c:when test="${not empty cms.element.settings.disqus}">
 				<c:set var="disqusSite">${cms.element.settings.disqus}</c:set>
@@ -29,28 +32,66 @@
 				<c:choose>
 					<c:when test="${cms.detailRequest}">
 						<c:set var="fileName">${cms.detailContentSitePath}</c:set>
-						<c:set var="pageId">${cms.detailContentId}</c:set>
+						<c:set var="pageId" value="${cms.locale}-${cms.detailContentId}" />
+						<%-- alternatively, use the permalink = OpenCms.getLinkManager().getPermalink((CmsObject)pageContext.getAttribute("cmsObject"),(String)pageContext.getAttribute("fileName"), (CmsUUID)pageContext.getAttribute("pageId")) --%>
 					</c:when>
 					<c:otherwise>
 						<c:set var="fileName">${cms.requestContext.uri}</c:set>
-						<c:set var="pageId">${content.vfs.readResource[fileName].structureId}</c:set>
+						<c:set var="pageId">${cms.locale}-${cms.vfs.readResource[fileName].structureId}</c:set>
 					</c:otherwise>
 				</c:choose>
+				<c:set var="pageUrl"><%= OpenCms.getLinkManager().getOnlineLink((CmsObject)pageContext.getAttribute("cmsObject"),(String)pageContext.getAttribute("fileName")) %></c:set>
 
-				<div id="disqus_thread"></div>
-				<script>
+				<c:if test="${clickToLoad}">
+					<button type="button" class="btn-block btn-u btn-u-${cms.element.settings.buttoncolor}" onclick="toggleComments();this.blur();">
+						<span class="pull-left"><fmt:message key="apollo.disqus.message.comments" /></span>
+						<i id="disqus_toggle" class="fa fa-chevron-down pull-right"></i>
+					</button>
+				</c:if>
 
+				<div id="disqus_thread" <c:if test="${clickToLoad}">style="display: none;"</c:if>></div>
+				<script type="text/javascript">
+
+					var disqus_loaded = false;
+					var disqus_open = false;
 					var disqus_config = function () {
-						this.page.url = '<%= OpenCms.getLinkManager().getOnlineLink((CmsObject)pageContext.getAttribute("cmsObject"),(String)pageContext.getAttribute("fileName")) %>';  
+						this.page.url = '${pageUrl}';  
 						this.page.identifier = '${pageId}';
 					};
 
-					(function() {  // DON'T EDIT BELOW THIS LINE
+					function loadComments() {
 						var d = document, s = d.createElement('script');
 						s.src = '//${disqusSite}.disqus.com/embed.js';
-						s.setAttribute('data-timestamp', +new Date());
+						s.setAttribute('data-timestamp', + new Date());
 						(d.head || d.body).appendChild(s);
-					})();
+					}
+
+					<c:choose>
+						<c:when test="${clickToLoad}">
+							function toggleComments() {
+								if (disqus_open) {
+									$("#disqus_toggle").toggleClass("fa-chevron-down", true);
+									$("#disqus_toggle").toggleClass("fa-chevron-up", false);
+									$("#disqus_thread").slideUp();
+								} else {
+									$("#disqus_toggle").toggleClass("fa-chevron-down", false);
+									$("#disqus_toggle").toggleClass("fa-chevron-up", true);
+									if (!disqus_loaded) {
+										$("#disqus_thread").show();
+										disqus_loaded = true;
+										loadComments();
+									} else {
+										$("#disqus_thread").slideDown();
+									}
+								}
+								disqus_open = !disqus_open;
+							}
+						</c:when>
+						<c:otherwise>
+							loadComments();
+						</c:otherwise>
+					</c:choose>
+
 				</script>
 				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 			</c:otherwise>

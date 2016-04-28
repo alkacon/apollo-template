@@ -61,6 +61,27 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.disqus/functions/disqus-load.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.disqus/functions/disqus-load.xml</destination>
+			<type>function</type>
+			<uuidstructure>089d4a4d-0d1c-11e6-8fbd-0242ac11002b</uuidstructure>
+			<uuidresource>089d4a4e-0d1c-11e6-8fbd-0242ac11002b</uuidresource>
+			<datecreated>Thu, 28 Apr 2016 08:34:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[With this function, pages and articles can be commented using the Disqus service.]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Disqus Comments (load after click)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.disqus/functions/disqus.jsp</source>
 			<destination>system/modules/org.opencms.apollo.template.disqus/functions/disqus.jsp</destination>
 			<type>jsp</type>
@@ -75,7 +96,7 @@
 				</property>
 				<property>
 					<name>cache</name>
-					<value><![CDATA[container-element;locale]]></value>
+					<value><![CDATA[container-element;locale;params=(clicktoload)]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>

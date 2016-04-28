@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DynamicFunctions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.containerpage/schemas/function.xsd">
+  <DynamicFunction language="de">
+    <Title><![CDATA[Disqus Kommentare (Klicken zum Laden)]]></Title>
+    <Description><![CDATA[Ermöglicht Kommentare für Seiten und Artikel mit Hilfe der Disqus Kommentarfunktion.]]></Description>
+    <FunctionProvider>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.disqus/functions/disqus.jsp]]></target>
+        <uuid>1d12162c-0c45-11e6-bbac-0242ac11002b</uuid>
+      </link>
+    </FunctionProvider>
+    <Parameter>
+      <Key><![CDATA[clicktoload]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameter>
+    <ContainerSettings>
+      <Type><![CDATA[element]]></Type>
+      <MinWidth/>
+    </ContainerSettings>
+    <SettingConfig>
+      <PropertyName><![CDATA[disqus]]></PropertyName>
+      <DisplayName><![CDATA[Disqus Site]]></DisplayName>
+      <Description><![CDATA[Der einfache Site Name, der in Disqus konfiguriert wurde, z.B. "apollo", dieser Teil wird zur URL https://<strong>apollo</strong>.disqus.com hinzugefügt.]]></Description>
+      <Type><![CDATA[string]]></Type>
+      <Widget><![CDATA[string]]></Widget>
+    </SettingConfig>
+    <SettingConfig>
+      <PropertyName><![CDATA[buttoncolor]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
+      <Type><![CDATA[string]]></Type>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[red]]></Default>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
+    </SettingConfig>
+    <SettingConfig>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Type><![CDATA[string]]></Type>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
+    </SettingConfig>
+  </DynamicFunction>
+  <DynamicFunction language="en">
+    <Title><![CDATA[Disqus Comments (load after click)]]></Title>
+    <Description><![CDATA[With this function, pages and articles can be commented using the Disqus service.]]></Description>
+    <FunctionProvider>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.disqus/functions/disqus.jsp]]></target>
+        <uuid>1d12162c-0c45-11e6-bbac-0242ac11002b</uuid>
+      </link>
+    </FunctionProvider>
+    <Parameter>
+      <Key><![CDATA[clicktoload]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameter>
+    <ContainerSettings>
+      <Type><![CDATA[element]]></Type>
+      <MinWidth/>
+    </ContainerSettings>
+    <SettingConfig>
+      <PropertyName><![CDATA[disqus]]></PropertyName>
+      <DisplayName><![CDATA[Disqus Site ]]></DisplayName>
+      <Description><![CDATA[The simple site name configured in Disqus, e.g. "apollo", the part that is added to https://<strong>apollo</strong>.disqus.com.]]></Description>
+      <Type><![CDATA[string]]></Type>
+      <Widget><![CDATA[string]]></Widget>
+    </SettingConfig>
+    <SettingConfig>
+      <PropertyName><![CDATA[buttoncolor]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
+      <Type><![CDATA[string]]></Type>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[red]]></Default>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
+    </SettingConfig>
+    <SettingConfig>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Type><![CDATA[string]]></Type>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
+    </SettingConfig>
+  </DynamicFunction>
+</DynamicFunctions>
