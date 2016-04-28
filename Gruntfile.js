@@ -1,10 +1,15 @@
 module.exports = function(grunt) {
 
 	oc = require('./grunt-opencms-modules.js');
+	oc.initGrunt(grunt, 'build/grunt/');
 	
+	oc.loadModule('./org.opencms.apollo.template/jquery');
+	oc.loadModule('./org.opencms.apollo.template/bootstrap');
+	oc.loadModule('./org.opencms.apollo.template/font-awesome');
+	oc.loadModule('./org.opencms.apollo.template/unify');
 	oc.loadModule('./org.opencms.apollo.template.basics');
 	
-	oc.initGrunt(grunt, 'build/grunt/');
+	oc.registerGruntTasks();
 };
 
 /**

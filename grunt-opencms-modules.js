@@ -11,10 +11,8 @@ var templateSassSrc = [];
 var templateCssSrc = [];
 var templateConcatTasks = [];
 
-var baseTemplateCssSrc;
-var deployTarget;
-
 var grunt;
+var deployTarget;
 var buildBase;
 
 exports.loadModule = function(moduleName) {
@@ -23,20 +21,31 @@ exports.loadModule = function(moduleName) {
 	try {
 		var m = require(f);
 		
-		modules[m.module] = m;
-
-		sassSrc = sassSrc.concat(m.sassSrc);
-		cssSrc = cssSrc.concat(m.cssSrc);
-		jsSrc = jsSrc.concat(m.jsSrc);
-		resources = resources.concat(m.resources);
-		templates = templates.concat(m.templates);
+		modules[_moduleName(m.mf)] = m;
 		
-		exports.baseTemplateCssSrc = baseTemplateCssSrc = m.baseTemplateCssSrc;
-		exports.deployTarget = deployTarget = m.deployTarget;
+		if (m.sassSrc) {
+			sassSrc = sassSrc.concat(m.sassSrc);
+		}
+		if (m.cssSrc) {
+			cssSrc = cssSrc.concat(m.cssSrc);
+		}
+		if (m.jsSrc) {
+			jsSrc = jsSrc.concat(m.jsSrc);
+		}
+		if (m.resources) {
+			resources = resources.concat(m.resources);
+		}
+		if (m.templates) {
+			templates = templates.concat(m.templates);
+		}
+		if (m.deployTarget) {
+			exports.deployTarget = deployTarget = m.deployTarget;
+		}
 
 		return m;
+		
 	} catch (err) {
-		console.error('Error: ' + err.message);
+		grunt.log.errorlns('Error: ' + err.message);
 	}
 }
 
@@ -46,12 +55,22 @@ exports.initGrunt = function(_grunt, _buildBase) {
 	buildBase = _buildBase;
 	
 	_gruntLoadNpmTasks();
+}
+
+exports.registerGruntTasks = function() {
+	
 	_gruntInitConfig();
 	_gruntRegisterTasks();
 		
 	if (grunt.option('verbose')) {
 		_showImports();
 	}	
+}
+
+
+_moduleName = function(mf) {
+
+	return mf.split('/').slice(-1);
 }
 
 _gruntLoadNpmTasks = function() {
@@ -243,7 +262,11 @@ _gruntRegisterTasks = function() {
 _showImports = function() {
 	
 	console.log('\nLoaded path elements from OpenCms modules');
-	console.log('- Sass');
+
+	console.log('- Templates');
+	for (var i in templates) { console.log("    " + templates[i]) };
+	
+	console.log('\n- Sass');
 	for (var i in sassSrc) { console.log("    " + sassSrc[i]) };
 	
 	console.log('\n- Css');

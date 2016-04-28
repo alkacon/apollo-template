@@ -23,14 +23,8 @@ exports.sassSrc = [
 ];
 
 exports.cssSrc = [		
-	mf + 'plugins/bootstrap/css/bootstrap.css',
-	mf + 'plugins/unify/css/style.css',	
-	mf + 'plugins/unify/css/fonts.css',
-	mf + 'plugins/unify/css/headers/header-default.css',
-	mf + 'plugins/unify/css/footers/footer-default.css',
 	mf + 'plugins/line-icons/line-icons.css',
 	mf + 'plugins/animate.css',
-	mf + 'plugins/font-awesome/css/font-awesome.css',
 	mf + 'plugins/parallax-slider/css/parallax-slider.css',
 	mf + 'plugins/owl-carousel/owl-carousel/owl.carousel.css',
 	mf + 'plugins/sky-forms-pro/skyforms/css/sky-forms.css',
@@ -40,19 +34,14 @@ exports.cssSrc = [
 ],
 
 exports.jsSrc = [		
-	mf + 'plugins/jquery/jquery.js',
-	mf + 'plugins/jquery/jquery-migrate.js',
-	mf + 'plugins/bootstrap/js/bootstrap.js',
 	mf + 'plugins/bootstrap-paginator/bootstrap-paginator.js',
 	mf + 'plugins/back-to-top.js',
 	mf + 'plugins/smoothScroll.js',
 	mf + 'plugins/parallax-slider/js/modernizr.js',
 	mf + 'plugins/parallax-slider/js/jquery.cslider.js',
 	mf + 'plugins/owl-carousel/owl-carousel/owl.carousel.js',
-	mf + 'plugins/unify/js/app.js',
 	mf + 'plugins/photoswipe/photoswipe.min.js',
 	mf + 'plugins/photoswipe/photoswipe-ui-default.js',
-	mf + 'plugins/unify/js/apollo.js',
 ],
 
 exports.resources = [
