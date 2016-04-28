@@ -53,7 +53,7 @@
   </c:if>
 </c:if>
 
-<div class="oc-container-${variant} ${(empty cms.container.type) ? 'mh-20' : ''}">
+<div class="oc-container-${variant}${(empty cms.container.type) ? ' mh-20' : ''}">
   <h1>
     <c:choose>
       <c:when test="${boxType == 'detail-placeholder'}">
@@ -79,16 +79,16 @@
     ${label}<br>
     <c:if test="${not empty cms.container.type}">
       <small>
-        <fmt:message key="apollo.row.in"/>
+        <fmt:message key="apollo.row.in"/>${' '}
         ${fn:toUpperCase(fn:substring(cms.container.type, 0, 1))}${fn:substring(cms.container.type, 1, -1)}
-        -
-        <fmt:message key="apollo.row.for"/>
+        ${' - '}
+        <fmt:message key="apollo.row.for"/>${' '}
         ${fn:toUpperCase(fn:substring(type, 0, 1))}${fn:substring(type, 1, -1)}
     </small>
     </c:if>
     <c:if test="${empty cms.container.type}">
       <small>
-        <fmt:message key="apollo.row.for"/>
+        <fmt:message key="apollo.row.for"/>${' '}
         ${fn:toUpperCase(fn:substring(type, 0, 1))}${fn:substring(type, 1, -1)}
       </small>
     </c:if>
