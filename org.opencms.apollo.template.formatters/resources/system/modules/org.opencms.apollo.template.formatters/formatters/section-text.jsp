@@ -11,14 +11,14 @@
         </div>
         <c:if test="${content.value.Link.exists}">
             <p ${content.rdfa.Link}>
-                <a 
-                    class="btn btn-u u-small" 
+                <a
+                    class="btn btn-default"
                     href="<cms:link>${content.value.Link.value.URI}</cms:link>">
                         ${content.value.Link.value.Text}
                 </a>
             </p>
         </c:if>
-    </div> 
+    </div>
 </c:if>
 
 </cms:formatter>
