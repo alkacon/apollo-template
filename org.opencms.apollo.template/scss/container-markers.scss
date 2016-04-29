@@ -1,0 +1,98 @@
+/* Empty container markers.
+----------------------------------------------------------------------------- */
+
+$oc-col-area:          #ffc9d2; // darken($red-lighter, 5%)
+$oc-col-segment:       #ffe3e7; // $red-lighter
+$oc-col-grid:          #ffdac7; // mix(darken($red-lighter, 5%), $orange-lighter, 40%)),
+$oc-col-row:           #ffe5bf; // $orange-lighter
+$oc-col-element:       #e8f3f8; // "light steel blue"
+$oc-col-special:       #effab4; // "light green"
+
+$oc-col-developer:     #b31b34; // $red
+$oc-col-editor:        #ffa826; // $orange
+$oc-col-author:        #144382; // $blue
+$oc-col-detail:        #1bb39a; // $cyan
+$oc-col-detailonly:    #1bb39a; // $cyan
+$oc-col-special:       #ff264a; // $red-light
+
+$oc-col-text:          #ffffff; // white
+$oc-col-border:        #a8adb4; // $gray
+
+// OpenCms roles and their matching colors  
+$oc-container-types:
+(
+ (area, $oc-col-area),        
+ (segment, $oc-col-segment),        
+ (grid, $oc-col-grid),         
+ (row, $oc-col-row),         
+ (element, $oc-col-element),         
+ (special, $oc-col-special),        
+);
+
+$oc-container-labels:
+(
+ (developer, $oc-col-developer),         
+ (editor, $oc-col-editor),         
+ (author, $oc-col-author),         
+ (detail, $oc-col-detail),
+ (detailonly, $oc-col-detailonly),         
+ (special, $oc-col-special),
+); 
+
+%oc-container-type {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;    
+    border-radius: 10px;  
+    -webkit-border-radius: 10px;
+    
+    h1 {
+        font-size: 22px;
+        font-weight: 400;
+        margin: 5px;
+    }  
+    p {
+        margin: 5px;
+        font-size: 14px;        
+    } 
+}
+
+%oc-container-label {
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    top: -5px;
+    padding: 2px 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    white-space: nowrap;  
+    color: $oc-col-text;             
+} 
+
+@each $type-name, $bg-color in $oc-container-types {
+    .oc-container-#{""+$type-name} {
+        @extend %oc-container-type;        
+        background-color: rgba($bg-color, 0.75);      
+    }
+}
+
+@each $role-name, $label-color in $oc-container-labels {      
+    .oc-label-#{""+$role-name} {
+        @extend %oc-container-label;  
+        background-color: $label-color;        
+    }  
+}
+
+.oc-modelinfo {
+    border: 2px solid $oc-col-border;  
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.oc-modelinfo .alert {
+    margin: 0 0 10px 0;   
+}
+
