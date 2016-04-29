@@ -6,9 +6,7 @@
 
 <c:if test="${content.value.Headline.isSet}">
     <div class="${cms.element.setting.hstyle}">
-        <${cms.element.setting.hsize}${' '}${content.rdfa.Headline}>
-            ${content.value.Headline}
-        </${cms.element.setting.hsize}>
+        <${cms.element.setting.hsize}${' '}${content.rdfa.Headline}>${content.value.Headline}</${cms.element.setting.hsize}>
     </div>
 </c:if>
 
