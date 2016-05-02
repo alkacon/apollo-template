@@ -13,11 +13,34 @@ var templateConcatTasks = [];
 
 var grunt;
 var deployTarget;
-var buildBase;
+var buildDir;
+var moduleDir;
+
+var path = require('path');
+
+exports.initGrunt = function(_grunt, _buildDir) {
+
+	grunt = _grunt;
+	
+	moduleDir = path.normalize(process.cwd()) + '/';
+	buildDir = path.normalize(moduleDir + _buildDir);
+
+	if (grunt.option('verbose')) {
+		console.log('OpenCms module source directory: ' + moduleDir);
+		console.log('OpenCms module build directory : ' + buildDir);
+	}
+
+	_gruntLoadNpmTasks();
+}
 
 exports.loadModule = function(moduleName) {
 	
-	var f = moduleName + '/Gruntparts.js';
+	var f = path.normalize(moduleDir + moduleName + '/Gruntparts.js');
+
+	if (grunt.option('verbose')) {
+		console.log('Loading OpenCms module: ' + f);
+	}
+	
 	try {
 		var m = require(f);
 		
@@ -49,14 +72,6 @@ exports.loadModule = function(moduleName) {
 	}
 }
 
-exports.initGrunt = function(_grunt, _buildBase) {
-	
-	grunt = _grunt;
-	buildBase = _buildBase;
-	
-	_gruntLoadNpmTasks();
-}
-
 exports.registerGruntTasks = function() {
 	
 	_gruntInitConfig();
@@ -66,7 +81,6 @@ exports.registerGruntTasks = function() {
 		_showImports();
 	}	
 }
-
 
 _moduleName = function(mf) {
 
@@ -91,7 +105,7 @@ _gruntInitConfig = function() {
 	grunt.initConfig({
 			
 		clean : {
-			all : [ buildBase + '**' ],
+			all : [ buildDir + '**' ],
 			template : {
 				files : [ {
 					expand : true,
@@ -106,7 +120,7 @@ _gruntInitConfig = function() {
 				files : [ {
 					expand : true,
 					src : oc.resources(),
-					dest : buildBase + '03_final/css',
+					dest : buildDir + '03_final/css',
 					flatten : true,
 					filter : 'isFile'
 				} ],
@@ -115,23 +129,23 @@ _gruntInitConfig = function() {
 				files : [ {
 					expand : true,
 					src : [ '*.css', '*.css.map' ],
-					dest : buildBase + '02_minified',
+					dest : buildDir + '02_minified',
 					filter : 'isFile',
 				} ],
 			},
 			restore : {
 				files : [ {
 					expand : true,
-					cwd : buildBase + '02_minified',
+					cwd : buildDir + '02_minified',
 					src : [ '*.css', '*.css.map' ],
-					dest : './',
+					dest : moduleDir,
 					filter : 'isFile',
 				} ],
 			},			
 			deploy : {
 				files : [ {
 					expand : true,
-					cwd : buildBase + '03_final/',
+					cwd : buildDir + '03_final/',
 					src : [ '**' ],
 					dest : oc.deployTarget,
 				} ]
@@ -147,9 +161,9 @@ _gruntInitConfig = function() {
 				},
 				files : [ {
 					expand : true,
-					cwd : './',
+					cwd : moduleDir,
 					src : oc.templateSassSrc(),
-					dest : buildBase + '01_processed',
+					dest : buildDir + '01_processed',
 					ext : '.css',
 					flatten: true
 				} ]
@@ -163,10 +177,10 @@ _gruntInitConfig = function() {
 					sourceMapStyle: 'embed',
 				},
 				src: [ 
-					'./plugins.min.css', 
+					moduleDir + 'plugins.min.css', 
 					'<%= grunt.task.current.args[0] %>.min.css' 
 				], 
-				dest: buildBase + '03_final/css/<%= grunt.task.current.args[0] %>.min.css' 
+				dest: buildDir + '03_final/css/<%= grunt.task.current.args[0] %>.min.css' 
 			},
 		},
 		
@@ -182,21 +196,21 @@ _gruntInitConfig = function() {
 			//   The source map is inlined and also referenced to the original file.
 			//   If we use different src / dest folders the path information 
 			//   to the original source maps gets lost in the cssmin task. 
-			//   The workaround is to write to the './' folder, in which case the relative path information 
+			//   The workaround is to write to the 'moduleDir' folder, in which case the relative path information 
 			//   remains intact. We clean up later in separate 'copy:save' and 'clean:template' tasks.
 			//
 			template : {
 				files : [{
 					expand : true,
-					cwd : buildBase + '01_processed',
+					cwd : buildDir + '01_processed',
 					src : oc.templateCssSrc(),
-					dest : './',
+					dest : moduleDir,
 					ext : '.min.css'
 				}]
 			},
 			pluginCss : {
 				src : oc.cssSrc(),
-				dest : './plugins.min.css',
+				dest : moduleDir + 'plugins.min.css',
 			},
 		},
 		
@@ -216,7 +230,7 @@ _gruntInitConfig = function() {
 			},
 			pluginJs : {
 				src : oc.jsSrc(),
-				dest : buildBase + '03_final/js/scripts-all.min.js',
+				dest : buildDir + '03_final/js/scripts-all.min.js',
 			},
 		},
 		
@@ -309,7 +323,6 @@ _showImports = function() {
 	console.log();
 	
 	console.log('\n- Deploy target folder: ' + deployTarget + "\n");	
-
 }
 
 exports.sassSrc = function () {
