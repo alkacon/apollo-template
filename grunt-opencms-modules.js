@@ -102,7 +102,7 @@ _gruntInitConfig = function() {
 		},
 		
 		copy : {
-			pluginDeps : {
+			resources : {
 				files : [ {
 					expand : true,
 					src : oc.resources(),
@@ -111,7 +111,7 @@ _gruntInitConfig = function() {
 					filter : 'isFile'
 				} ],
 			},
-			template : {
+			save : {
 				files : [ {
 					expand : true,
 					src : [ '*.css', '*.css.map' ],
@@ -119,6 +119,15 @@ _gruntInitConfig = function() {
 					filter : 'isFile',
 				} ],
 			},
+			restore : {
+				files : [ {
+					expand : true,
+					cwd : buildBase + '02_minified',
+					src : [ '*.css', '*.css.map' ],
+					dest : './',
+					filter : 'isFile',
+				} ],
+			},			
 			deploy : {
 				files : [ {
 					expand : true,
@@ -174,7 +183,7 @@ _gruntInitConfig = function() {
 			//   If we use different src / dest folders the path information 
 			//   to the original source maps gets lost in the cssmin task. 
 			//   The workaround is to write to the './' folder, in which case the relative path information 
-			//   remains intact. We clean up later in separate 'copy:template' and 'clean:template' tasks.
+			//   remains intact. We clean up later in separate 'copy:save' and 'clean:template' tasks.
 			//
 			template : {
 				files : [{
@@ -214,11 +223,19 @@ _gruntInitConfig = function() {
 		watch: {
 			scss : {
 				files : [ '*/scss/*.scss' ],
-				tasks : [ 'template', 'combine', 'deploy' ],
+				tasks : [ 'copy:restore', 'template', 'combine', 'deploy' ],
 			},	
-			plugins : {
-				files : [ oc.cssSrc(), oc.jsSrc() ],
-				tasks : [ 'plugins', 'combine', 'deploy' ],
+			pluginCss : {
+				files : [ oc.cssSrc() ],
+				tasks : [ 'copy:restore', 'pluginCss', 'combine', 'deploy' ],
+			},
+			pluginJs : {
+				files : [ oc.jsSrc() ],
+				tasks : [ 'pluginJs', 'deploy' ],
+			},
+			resources : {
+				files : [ oc.resources() ],
+				tasks : [ 'deploy' ],
 			},
 		},
 	});
@@ -229,8 +246,9 @@ _gruntRegisterTasks = function() {
 	grunt.registerTask('default', [ 
 		'clean',
 		'template',
-		'plugins',
+		'pluginCss',
 		'combine',
+		'pluginJs',
 		'deploy',
 	]);
 	
@@ -242,15 +260,26 @@ _gruntRegisterTasks = function() {
 	grunt.registerTask('plugins', [ 
 		'cssmin:pluginCss',
 		'uglify:pluginJs',
-		
 	]);
 	
-	grunt.registerTask('combine', oc.templateConcatTasks().concat(['copy:template', 'clean:template']));
+	grunt.registerTask('pluginCss', [ 
+		'cssmin:pluginCss',
+	]);
+		
+	grunt.registerTask('pluginJs', [ 
+		'uglify:pluginJs',
+	]);
+	
+	grunt.registerTask('combine',
+		oc.templateConcatTasks().concat(
+		'copy:save', 
+		'clean:template'
+	));
 	
 	grunt.registerTask('deploy', function() {
 		if (grunt.file.expand(oc.deployTarget + '*').length) { 
 			grunt.task.run( [
-				'copy:pluginDeps',
+				'copy:resources',
 				'copy:deploy',
 			] );
 		} else {
