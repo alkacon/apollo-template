@@ -5,7 +5,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.carousel">
+<cms:bundle basename="org.opencms.apollo.template.schemas.slider">
 <cms:formatter var="content" val="value" rdfa="rdfa">
 
 <div class="margin-bottom-30">
@@ -15,11 +15,11 @@
 			<div class="alert"><fmt:message key="apollo.carousel.message.new" /></div>
 		</c:when>
 		<c:otherwise>
-		
+
 			<c:if test="${not cms.element.settings.hidetitle}">
 				<div class="headline"><h2 ${rdfa.Title}>${value.Title}</h2></div>
 			</c:if>
-			
+
 			<c:set var="bg" value="black" />
 			<c:if test="${value.TextBackgroundColor.isSet}">
 				<c:set var="bg" value="${value.TextBackgroundColor}" />
@@ -30,7 +30,7 @@
 				<div class="carousel-inner">
 					<c:forEach var="image" items="${content.valueList.Image}" varStatus="status">
 						<div class="item<c:if test="${status.first}"> active</c:if>">
-							
+
 							<c:set var="copyright" value="" />
                             <c:choose>
                                	<c:when test="${image.value.Copyright.isSet}">
@@ -44,12 +44,12 @@
                                 	<c:set var="copyright"><cms:property name="Copyright" file="${mainimguri}" default="" /></c:set>
                                 </c:otherwise>
                             </c:choose>
-              
+
               				<c:if test="${not empty copyright and not fn:startsWith(copyright, '(c)')}">
               					<c:set var="copyright">${fn:replace(copyright, "&copy;", "")}</c:set>
                             	<c:set var="copyright">(c) ${copyright}</c:set>
                             </c:if>
-							
+
 							<c:if test="${image.value.Link.isSet}">
 								<a href="<cms:link>${image.value.Link}</cms:link>" ${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?'target="_blank"':''}>
 							</c:if>
@@ -82,7 +82,7 @@
 					</a>
 				</div>
 			</div>
-			
+
 			<script type="text/javascript">
 				function createCarousel() {
 					$(".carousel").carousel({
