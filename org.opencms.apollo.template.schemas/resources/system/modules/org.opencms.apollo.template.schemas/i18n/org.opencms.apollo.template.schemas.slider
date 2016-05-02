@@ -64,7 +64,15 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.TextBackgroundColor.help]]></Key>
-      <Value><![CDATA[The optional background color of the  text box. If not background color is activated, the color will be set to transparent.]]></Value>
+      <Value><![CDATA[The optional background color of the text box. If not background color is activated, the color will be set to transparent.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Position]]></Key>
+      <Value><![CDATA[Text Box Position]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Position.help]]></Key>
+      <Value><![CDATA[The default position of the text box. This value can be overridden for individual slides.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.ImageHeight]]></Key>
@@ -178,6 +186,18 @@
       <Key><![CDATA[apollo.slider.delay.secs]]></Key>
       <Value><![CDATA[Seconds]]></Value>
     </Message>
+    <Message>
+      <Key><![CDATA[apollo.carousel.message.new]]></Key>
+      <Value><![CDATA[New carousel, please edit the content.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.slider.message.new]]></Key>
+      <Value><![CDATA[New slider, please edit the content.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.slider.message.edited]]></Key>
+      <Value><![CDATA[The slider was changed, the page is reloaded.]]></Value>
+    </Message>
   </Bundle>
   <Bundle language="de">
     <Message>
@@ -243,6 +263,14 @@
     <Message>
       <Key><![CDATA[label.ApolloSlider.TextBackgroundColor.help]]></Key>
       <Value><![CDATA[Die optionale Hintergrundfarbe der Textbox. Bei nicht aktivierter Hintergrundfarbe wird diese auf transparent gesetzt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Position]]></Key>
+      <Value><![CDATA[Textbox Position]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Position.help]]></Key>
+      <Value><![CDATA[Die Standardposition der Textbox innerhalb des Bildes. Kann für einzelne Bilder überschrieben werden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.ImageHeight]]></Key>
@@ -355,6 +383,18 @@
     <Message>
       <Key><![CDATA[apollo.slider.delay.secs]]></Key>
       <Value><![CDATA[Sekunden]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.carousel.message.new]]></Key>
+      <Value><![CDATA[Neues Karussell, bitte bearbeiten Sie den Inhalt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.slider.message.new]]></Key>
+      <Value><![CDATA[Neuer Slider, bitte bearbeiten Sie den Inhalt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.slider.message.edited]]></Key>
+      <Value><![CDATA[Der Slider wurde bearbeitet, die Seite wird neu geladen.]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

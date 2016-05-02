@@ -2,9 +2,7 @@
 	elementFormDefault="qualified">
 
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd" />
-	<xsd:include
-		schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/sliderimagetextposition.xsd" />
-
+	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/sliderimagetextposition.xsd" />
 
 	<xsd:element name="ApolloSliderImages" type="OpenCmsApolloSliderImages" />
 
@@ -19,16 +17,12 @@
 		<xsd:sequence>
 			<xsd:element name="Uri" type="OpenCmsVfsFile" />
 			<xsd:element name="Link" type="OpenCmsVarLink" minOccurs="0" />
-			<xsd:element name="NewWin" type="OpenCmsBoolean"
-				minOccurs="0" />
+			<xsd:element name="NewWin" type="OpenCmsBoolean" minOccurs="0" />
 			<xsd:element name="SuperTitle" type="OpenCmsString" />
 			<xsd:element name="TitleLine1" type="OpenCmsString" />
 			<xsd:element name="TitleLine2" type="OpenCmsString" />
-
-			<xsd:element name="Copyright" type="OpenCmsString"
-				minOccurs="0" />
-			<xsd:element name="Position" type="OpenCmsApolloSliderImageTextPosition"
-				minOccurs="0" />
+			<xsd:element name="Copyright" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Position" type="OpenCmsApolloSliderImageTextPosition" minOccurs="0" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="optional" />
 	</xsd:complexType>

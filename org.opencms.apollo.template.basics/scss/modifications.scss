@@ -68,8 +68,26 @@
 /* Carousel caption color.
 ----------------------------------------------------------------------------- */
 
+.carousel-v1 .carousel-caption {
+	padding: 2px 10px 8px 10px;
+}
+
+.carousel-caption h3, .carousel-v1 .carousel-caption p {
+	color: $white;
+	line-height: 1.1;
+	margin: 0;
+	padding: 6px 0 0 0;
+}
+
 .carousel-caption h3 {
+    font-size: 20px;
     color: $white;
+    line-height: 1.1;
+}
+
+.carousel-v1 .carousel-caption p {
+	font-size: 15px;
+	
 }
 
 /* Colored boxes.
@@ -539,19 +557,22 @@ ul.sidebar-nav-v1 {
       	transition: opacity 1s;
    }
    .caption{
-   		padding: 10px !important;   
-   		h2,  h3{
+   		opacity: 0.7;
+   		padding: 2px 10px 8px 10px !important;   
+   		h2,  h3 {
 			margin: 0;
-			padding: 0;
+			padding: 6px 0 0 0;
 			line-height: 1.1;
 		}	
-		h2{
-			font-size: 18px;
+		h2 {
+			font-size: 20px;
+			font-weight: 400;
 		}
-		h3{
+		h3 {
 			font-size: 15px;
+			font-weight: 400;
 		}
-		&.copyright{
+		&.copyright {
 			color: #fff;
 			font-size: 12px !important;
 		}
