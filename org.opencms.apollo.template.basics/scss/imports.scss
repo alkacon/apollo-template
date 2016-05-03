@@ -4,9 +4,6 @@
 // Common import file
 //
 
-// general generic styles
-@import 'general';
-
 // theme based styles
 @import 'theme';
 
@@ -17,3 +14,6 @@
 @import '../../org.opencms.apollo.template/scss/container-markers.scss';
 @import '../../org.opencms.apollo.template/scss/apollo-button.scss';
 @import '../../org.opencms.apollo.template/scss/apollo-section.scss';
+
+// general generic styles (must be behind Apollo includes!)
+@import 'general';

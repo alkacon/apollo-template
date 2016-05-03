@@ -1,11 +1,13 @@
 
+// Is it grey or gray?
+$graey-spelling: grey !default;
 
 // Main colors
 
 $alkacon-red:       #b31b34;
 $alkacon-blue:      #144382; // for print this is #003082;
 $alkacon-orange:    #ffa826; // for print this is #ffb340;
-$alkacon-gray:      #a8adb4;
+$alkacon-grey:      #a8adb4;
 
 $white:             #fff;
 $black:             #000;
@@ -28,17 +30,17 @@ $orange-lighter:    lighten($orange, 30%);
 $orange-dark:       darken($orange, 8%);
 $orange-darker:     darken($orange, 16%);
 
-$gray:              $alkacon-gray;
-$gray-lighter:      lighten($gray, 27%);
-$gray-light:        lighten($gray, 21%);  
-$gray-dark:         darken($gray, 15%);
-$gray-darker:       darken($gray, 35%);
+$grey:              $alkacon-grey;
+$grey-lighter:      lighten($grey, 27%);
+$grey-light:        lighten($grey, 21%);  
+$grey-dark:         darken($grey, 15%);
+$grey-darker:       darken($grey, 35%);
 
-$grey:              $gray;
-$grey-lighter:      $gray-lighter;
-$grey-light:        $gray-light;  
-$grey-dark:         $gray-dark;
-$grey-darker:       $gray-darker;
+$gray:              $grey;
+$gray-lighter:      $grey-lighter;
+$gray-light:        $grey-light;  
+$gray-dark:         $grey-dark;
+$gray-darker:       $grey-darker;
 
 $cyan:              #1bb39a; // complementary color
 $yellow:            #f1c40f;
@@ -69,9 +71,9 @@ $primary-colors:
  (red-dark,     $red-dark,     $text-light,    $red),
  (red-darker,   $red-darker,   $text-light,    $red-dark),
  (red-light,    $red-light,    $text-light,    $red),
- (gray,         $gray,         $text-dark,     $gray-light),
- (gray-light,   $gray-light,   $text-dark,     $gray-lighter),
- (gray-darker,  $gray-darker,  $text-light,    $gray-dark),
+ (#{""+$graey-spelling},         $grey,         $text-light,    $grey-light),
+ (#{""+$graey-spelling}-light,   $grey-light,   $text-dark,     $grey-lighter),
+ (#{""+$graey-spelling}-darker,  $grey-darker,  $text-light,    $grey-dark),
  (orange,       $orange,       $text-light,    $red-orange),
  (orange-dark,  $orange-dark,  $text-light,    $orange),
  (orange-darker,$orange-darker,$text-light,    $orange-dark),
@@ -87,8 +89,8 @@ $secondary-colors:
  (blue-lighter, $blue-lighter, $text-dark,     $blue-light),
  (red-lighter,  $red-lighter,  $text-dark,     $red-light),
  (orange-lighter,$orange-lighter,$text-dark,   $orange-light),
- (gray-dark,    $gray-dark,    $text-light,    $gray),
- (gray-lighter, $gray-lighter, $text-dark,     $gray-light),
+ (#{""+$graey-spelling}-dark,    $grey-dark,    $text-light,    $grey),
+ (#{""+$graey-spelling}-lighter, $grey-lighter, $text-dark,     $grey-light),
  (violet,       $violet,       $text-light,    $red),
  (brown,        $brown,        $text-light,    $orange),
  (red-orange,   $red-orange,   $text-light,    $orange),
@@ -101,12 +103,12 @@ $colors: join($primary-colors, $secondary-colors);
 
 $border-colors: 
 (
+ (#{""+$graey-spelling},         $grey,         $text-dark,     $grey-light),
+ (#{""+$graey-spelling}-light,   $grey-light,   $text-dark,     $grey-lighter), 
  (blue,         $blue,         $text-light,    $blue-light),
  (red,          $red,          $text-light,    $red-light),
- (gray,         $gray,         $text-dark,     $gray-light),
  (cyan,         $cyan,         $text-light,    $blue-cyan),
  (orange,       $orange,       $text-light,    $red-orange),
- (gray-light,   $gray-light,   $text-dark,     $gray-lighter), 
 );
 
 // Alert colors
