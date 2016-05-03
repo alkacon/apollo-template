@@ -15,9 +15,8 @@
  * http://www.opencms.org
  */
  
-// Import default colors
-@import 'defaultcolors'; 
-
+// import the Apollo variables (colors etc.)
+@import 'apollo-variables-unify';
 
 // Main theme colors
 $main-theme: $blue;

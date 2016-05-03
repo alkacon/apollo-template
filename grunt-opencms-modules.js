@@ -156,7 +156,7 @@ _gruntInitConfig = function() {
 			template : {
 				options : {
 					sourcemap : 'auto',
-					lineNumbers : true,
+					lineNumbers : false,
 					style : 'nested',
 				},
 				files : [ {
@@ -186,6 +186,7 @@ _gruntInitConfig = function() {
 		
 		cssmin : {
 			options : {
+				advanced: true,  // sometimes setting this to false helps to debug SASS
 				processImport: true,
 				sourceMap: true,
 				sourceMapInlineSources: true,
@@ -235,8 +236,12 @@ _gruntInitConfig = function() {
 		},
 		
 		watch: {
+			options: {
+				interrupt: true,     // interrupt when new modification happens during build
+				debounceDelay: 2000, // wait 2 seconds after file was saved before starting build 
+			},
 			scss : {
-				files : [ '*/scss/*.scss' ],
+				files : [ oc.sassSrc() ],
 				tasks : [ 'copy:restore', 'template', 'combine', 'deploy' ],
 			},	
 			pluginCss : {

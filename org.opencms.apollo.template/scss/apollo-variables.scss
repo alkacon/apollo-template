@@ -1,0 +1,130 @@
+
+
+// Main colors
+
+$alkacon-red:       #b31b34;
+$alkacon-blue:      #144382; // for print this is #003082;
+$alkacon-orange:    #ffa826; // for print this is #ffb340;
+$alkacon-gray:      #a8adb4;
+
+$white:             #fff;
+$black:             #000;
+
+$blue:              $alkacon-blue;
+$blue-light:        #2197db; // handmade looks better
+$blue-lighter:      lighten($blue-light, 42%);
+$blue-dark:         darken($blue, 10%);
+$blue-darker:       darken($blue, 15%);
+
+$red:               $alkacon-red;
+$red-light:         #ff264a; // handmade looks better
+$red-lighter:       lighten($red-light, 37%);
+$red-dark:          darken($red, 9%);
+$red-darker:        darken($red, 21%);
+
+$orange:            $alkacon-orange;
+$orange-light:      lighten($orange, 15%);
+$orange-lighter:    lighten($orange, 30%);
+$orange-dark:       darken($orange, 8%);
+$orange-darker:     darken($orange, 16%);
+
+$gray:              $alkacon-gray;
+$gray-lighter:      lighten($gray, 27%);
+$gray-light:        lighten($gray, 21%);  
+$gray-dark:         darken($gray, 15%);
+$gray-darker:       darken($gray, 35%);
+
+$grey:              $gray;
+$grey-lighter:      $gray-lighter;
+$grey-light:        $gray-light;  
+$grey-dark:         $gray-dark;
+$grey-darker:       $gray-darker;
+
+$cyan:              #1bb39a; // complementary color
+$yellow:            #f1c40f;
+$sea:               #1abc9c;
+$green:             mix($orange, $cyan);
+$green-light:       lighten($green, 20%);
+
+$blue-cyan:         mix($blue, $cyan);
+$violet:            mix($blue, $red);
+$brown:             mix($blue, $orange);
+$red-orange:        mix($red, $orange);
+$red-cyan:          mix($red, $cyan);
+
+// Text colors 
+$text-light: #fff;
+$text-dark: #444;
+
+// these are all colors that make sense as highlight color, e.g. in a button background
+$primary-colors:
+(
+ // name        // background  // text         // highlight
+ (blue,         $blue,         $text-light,    $blue-light),
+ (blue-dark,    $blue-dark,    $text-light,    $blue),
+ (blue-darker,  $blue-darker,  $text-light,    $blue-dark),
+ (blue-light,   $blue-light,   $text-light,    $blue),
+ (cyan,         $cyan,         $text-light,    $blue-cyan),
+ (red,          $red,          $text-light,    $red-light),
+ (red-dark,     $red-dark,     $text-light,    $red),
+ (red-darker,   $red-darker,   $text-light,    $red-dark),
+ (red-light,    $red-light,    $text-light,    $red),
+ (gray,         $gray,         $text-dark,     $gray-light),
+ (gray-light,   $gray-light,   $text-dark,     $gray-lighter),
+ (gray-darker,  $gray-darker,  $text-light,    $gray-dark),
+ (orange,       $orange,       $text-light,    $red-orange),
+ (orange-dark,  $orange-dark,  $text-light,    $orange),
+ (orange-darker,$orange-darker,$text-light,    $orange-dark),
+ (orange-light, $orange-light, $text-dark,     $orange),
+ (blue-cyan,    $blue-cyan,    $text-light,    $cyan),
+ (white,        $white,        $text-dark,     $red-light),
+); 
+
+
+// complimentary colors not suitable for highlighting  
+$secondary-colors:
+(
+ (blue-lighter, $blue-lighter, $text-dark,     $blue-light),
+ (red-lighter,  $red-lighter,  $text-dark,     $red-light),
+ (orange-lighter,$orange-lighter,$text-dark,   $orange-light),
+ (gray-dark,    $gray-dark,    $text-light,    $gray),
+ (gray-lighter, $gray-lighter, $text-dark,     $gray-light),
+ (violet,       $violet,       $text-light,    $red),
+ (brown,        $brown,        $text-light,    $orange),
+ (red-orange,   $red-orange,   $text-light,    $orange),
+ (red-cyan,     $red-cyan,     $text-light,    $red),          
+ (green,        $green,        $text-light,    $orange),          
+); 
+
+// all colors combined
+$colors: join($primary-colors, $secondary-colors);     
+
+$border-colors: 
+(
+ (blue,         $blue,         $text-light,    $blue-light),
+ (red,          $red,          $text-light,    $red-light),
+ (gray,         $gray,         $text-dark,     $gray-light),
+ (cyan,         $cyan,         $text-light,    $blue-cyan),
+ (orange,       $orange,       $text-light,    $red-orange),
+ (gray-light,   $gray-light,   $text-dark,     $gray-lighter), 
+);
+
+// Alert colors
+$color-info:        $blue-light;
+$color-warning:     $orange;
+$color-success:     $cyan;
+$color-danger :     $red;
+$color-primary:     $blue;
+
+// Bootstrap screen sizes (minimum)
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+// Bootstrap screen sizes (maximum)
+
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+

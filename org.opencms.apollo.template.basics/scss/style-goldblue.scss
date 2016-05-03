@@ -15,8 +15,8 @@
  * http://www.opencms.org
  */
  
-// Import default colors
-@import 'defaultcolors'; 
+// import the Apollo variables (colors etc.)
+@import 'apollo-variables-unify';
 
 $blue: #003374;
 $blue-light: lighten($blue, 40%);

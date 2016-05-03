@@ -1,0 +1,92 @@
+
+// Apollo buttons
+
+$btn-default:           $main-theme !default;
+$btn-default-active:    lighten($btn-default, 10%) !default;
+$btn-text:              $text-light !default;
+$btn-dark-text:         $text-dark !default;
+$btn-text-transform:    none !default;
+$btn-border-style:      none !default;
+$btn-border-radius:     0 !default;
+
+@mixin apollo-button($bg-color, $text-color, $highlight-color) {
+
+    background-color: $bg-color;
+    color:$text-color !important;
+    border-color:  $highlight-color;
+
+	&:hover,
+	&:focus,
+	&:active,
+	&.active,
+	.open .dropdown-toggle & {
+	    color:$text-color !important;
+	    background-color: $highlight-color;
+	    border-color: $highlight-color;
+	}
+	
+	&.disabled,
+	&[disabled], 
+	fieldset[disabled] & {
+	    background-color: $highlight-color;
+	    border-color: $highlight-color;
+	}
+}
+
+.btn {
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    min-width: 160px;
+    text-align: center;
+    border: $btn-border-style;
+    border-radius: $btn-border-radius;
+    text-transform: $btn-text-transform;
+    margin: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    
+    @include apollo-button($btn-default, $text-light, $btn-default-active);
+}
+
+.btn:focus,
+.btn:active {
+    outline: none;
+    box-shadow: none;
+}
+
+div.ap-btn-lg a.btn,
+.btn.ap-btn-lg, 
+.btn.btn-lg {
+    padding: 10px 25px;
+    font-size: 18px;
+    min-width: 210px;
+}
+div.ap-btn-sm a.btn,
+.btn.ap-btn-sm, 
+.btn.btn-sm {
+    padding: 6px 13px;
+    min-width: 105px;
+}
+div.ap-btn-xs a.btn,
+.btn.ap-btn-xs, 
+.btn.btn-xs {
+    font-size: 12px;
+    padding: 2px 10px;
+}
+
+.btn-default  {
+	@include apollo-button($btn-default, $text-light, $btn-default-active);
+}
+
+@each $color-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+
+	div.cs-#{""+$color-name} a.btn,
+    .btn.cs-#{""+$color-name}  {
+		@include apollo-button($bg-color, $text-color, $highlight-color);
+	}
+}
+

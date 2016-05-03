@@ -24,7 +24,7 @@ $screen-lg-min: 1200px;
 }
 
 @each $name, $color in $colors {
-    .bg-#{$name}{
+    .bg-#{""+$name}{
         
         background-color: $color;
         color: set-text-color($color);
@@ -65,7 +65,7 @@ $screen-lg-min: 1200px;
 }
 @each $i in (1,2,4,5,8,10) {  
     @each $name, $color in $colors {
-        .bg-#{$name}-#{$i}{
+        .bg-#{""+$name}-#{$i}{
             background-color: rgba($color,$i/10);
             color: set-text-color($color);
         }   
@@ -78,14 +78,14 @@ $screen-lg-min: 1200px;
     @each $style in (solid, dashed, dotted) {    
         @each $name, $color in $colors {
         
-            .b-#{$name}-#{$line-size}-#{$style}  {                    
+            .b-#{""+$name}-#{$line-size}-#{$style}  {                    
                 padding: 20px;
                 border: $color #{$line-size}px $style;                  
             }
             
             @each $n, $side in ((t,top), (r,right), (b,bottom), (l, left)) {
     
-                .b#{$n}-#{$name}-#{$line-size}-#{$style}  {    
+                .b#{$n}-#{""+$name}-#{$line-size}-#{$style}  {    
 	                padding: 20px;
                     border-#{$side}: $color #{$line-size}px $style !important;  
                 }
@@ -125,7 +125,7 @@ $screen-lg-min: 1200px;
 
 //color (also if it's a link)
 @each $name, $color in $colors {
-    .fc-#{$name}{
+    .fc-#{""+$name}{
         color: $color;
         &.a, p, h2, .fa{
             color: $color;      
@@ -137,12 +137,12 @@ $screen-lg-min: 1200px;
 
 //link color
 @each $name, $color in $colors {
-    .lc-#{$name}{
+    .lc-#{""+$name}{
         a, &.a{
             color: $color;      
         }
     }
-    .lch-#{$name}{
+    .lch-#{""+$name}{
         a, &.a{
          &:hover, &:active, &:focus, &:hover{
                 color: $color;  
