@@ -41,7 +41,7 @@
 					<div class="blog-page">
 						<div class="blog">
 							<div class="hidden-xs pull-right">
-								<a class=" btn-u btn-u-xs"
+								<a class="btn ap-btn-xs"
 									href="<cms:pdf format='%(link.weak:/system/modules/org.opencms.apollo.template.formatters/pages/blog-pdf.jsp:ca595340-57ca-11e5-a989-0242ac11002b)' content='${content.filename}' locale='en'/>"
 									target="pdf"> <i class="fa fa-file-pdf-o"></i> Download PDF
 								</a>
@@ -52,7 +52,7 @@
 							</div>
 
 							<div class="visible-xs margin-bottom-20">
-								<a class=" btn-u btn-u-red"
+								<a class="btn ap-btn-red"
 									href="<cms:pdf format='%(link.weak:/system/modules/org.opencms.apollo.template.formatters/pages/blog-pdf.jsp:ca595340-57ca-11e5-a989-0242ac11002b)' content='${content.filename}' locale='en'/>"
 									target="pdf"> <i class="fa fa-file-pdf-o"></i> Download PDF
 								</a>
@@ -104,7 +104,7 @@
 									<div ${paragraph.rdfa.Text}>${paragraph.value.Text}</div>
 									<c:if test="${paragraph.value.Link.exists}">
 										<p>
-											<a class="btn-u btn-u-small"
+											<a class="btn ap-btn-sm"
 												href="<cms:link>${paragraph.value.Link.value.URI}</cms:link>">${paragraph.value.Link.value.Text}</a>
 										</p>
 									</c:if>
@@ -130,7 +130,7 @@
 											<div ${paragraph.rdfa.Text}>${paragraph.value.Text}</div>
 											<c:if test="${paragraph.value.Link.exists}">
 												<p>
-													<a class="btn-u btn-u-small"
+													<a class="btn ap-btn-sm"
 														href="<cms:link>${paragraph.value.Link.value.URI}</cms:link>">${paragraph.value.Link.value.Text}</a>
 												</p>
 											</c:if>

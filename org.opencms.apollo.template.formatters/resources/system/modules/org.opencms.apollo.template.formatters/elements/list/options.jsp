@@ -32,7 +32,7 @@
 
 						<div class="btn-group hidden-xs">
 							<button type="button"
-								class="dropdown-toggle btn-u btn-u-${buttonColor}"
+								class="dropdown-toggle btn ap-btn-${buttonColor}"
 								data-toggle="dropdown" aria-haspopup="true"
 								aria-expanded="false" id="dropdownMenu1" aria-expanded="true">
 								<fmt:message key="${facetController.config.label}" />
@@ -92,7 +92,7 @@
 
 					<div class="btn-group hidden-xs">
 						<button type="button"
-							class="btn-u btn-u-${buttonColor} dropdown-toggle"
+							class="btn ap-btn-${buttonColor} dropdown-toggle"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
 							id="dropdownMenu2" aria-expanded="true">
 							<fmt:message key="sort.options.label" />

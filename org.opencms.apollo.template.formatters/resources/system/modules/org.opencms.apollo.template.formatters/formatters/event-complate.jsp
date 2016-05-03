@@ -88,7 +88,7 @@
 									</c:if>
 									<c:if test="${paragraph.value.Link.exists}">
 										<p>
-											<a class="btn-u btn-u-small"
+											<a class="btn ap-btn-sm"
 												href="<cms:link>${paragraph.value.Link.value.URI}</cms:link>">${paragraph.value.Link.value.Text}</a>
 										</p>
 									</c:if>
@@ -132,7 +132,7 @@
 											</c:if>
 											<c:if test="${paragraph.value.Link.exists}">
 												<p>
-													<a class="btn-u btn-u-small"
+													<a class="btn ap-btn-sm"
 														href="<cms:link>${paragraph.value.Link.value.URI}</cms:link>">${paragraph.value.Link.value.Text}</a>
 												</p>
 											</c:if>

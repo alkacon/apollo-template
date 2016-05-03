@@ -82,7 +82,7 @@
       <div class="input-group animated fadeInDown" id="searchContentHeader">
         <input type="text" name="q" class="form-control" placeholder="Search" id="searchWidgetAutoCompleteHeader" />
         <span class="input-group-btn">
-          <button class="btn-u" type="button" onclick="this.form.submit(); return false;">Go</button>
+          <button class="btn" type="button" onclick="this.form.submit(); return false;">Go</button>
         </span>
       </div>
     </form>

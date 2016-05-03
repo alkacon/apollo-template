@@ -2,8 +2,9 @@
 	elementFormDefault="qualified">
 
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd" />
-	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/sliderimage.xsd" />
-	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/sliderimagetextposition.xsd" />
+	<xsd:include
+		schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/sliderimage.xsd" />
+
 
 	<xsd:element name="ApolloSliders" type="OpenCmsApolloSliders" />
 
@@ -23,11 +24,12 @@
 			<xsd:element name="ShowNavButtons" type="OpenCmsBoolean" />
 			<xsd:element name="ShowPlayButton" type="OpenCmsBoolean" />
 			<xsd:element name="TextColor" type="OpenCmsColor" />
-			<xsd:element name="TextBackgroundColor" type="OpenCmsColor"	minOccurs="0" />
-			<xsd:element name="Position" type="OpenCmsApolloSliderImageTextPosition" minOccurs="0" />
+			<xsd:element name="TextBackgroundColor" type="OpenCmsColor"
+				minOccurs="0" />
 			<xsd:element name="ImageHeight" type="OpenCmsString" />
 			<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
-			<xsd:element name="Image" type="OpenCmsApolloSliderImage" minOccurs="1" maxOccurs="20" />
+			<xsd:element name="Image" type="OpenCmsApolloSliderImage"
+				minOccurs="1" maxOccurs="20" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="required" />
 	</xsd:complexType>
@@ -36,7 +38,8 @@
 		<xsd:appinfo>
 			<resourcebundle name="org.opencms.apollo.template.schemas.slider" />
 			<layouts>
-				<layout element="Delay" widget="SelectorWidget" configuration="1000:1 %(key.apollo.slider.delay.sec)|2000:2 %(key.apollo.slider.delay.secs)|3000:3 %(key.apollo.slider.delay.secs)|5000:5 %(key.apollo.slider.delay.secs)|8000:8 %(key.apollo.slider.delay.secs)|10000:10 %(key.apollo.slider.delay.secs)|15000:15 %(key.apollo.slider.delay.secs)" />
+				<layout element="Delay" widget="SelectorWidget"
+					configuration="1000:1 %(key.apollo.slider.delay.sec)|2000:2 %(key.apollo.slider.delay.secs)|3000:3 %(key.apollo.slider.delay.secs)|5000:5 %(key.apollo.slider.delay.secs)|8000:8 %(key.apollo.slider.delay.secs)|10000:10 %(key.apollo.slider.delay.secs)|15000:15 %(key.apollo.slider.delay.secs)" />
 			</layouts>
 			<defaults>
 				<default element="Delay" value="5000" />

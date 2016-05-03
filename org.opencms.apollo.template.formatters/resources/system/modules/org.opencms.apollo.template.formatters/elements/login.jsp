@@ -55,7 +55,7 @@
 			<input class="form-control" type="password" name="password" placeholder="<fmt:message key="apollo.login.label.password" />">
 		</div>
 		<div class="controls form-inline">
-			<button class="btn-u" type="submit" name="action" value="login" ><fmt:message key="apollo.login.label.login" /></button>
+			<button class="btn ap-btn-red" type="submit" name="action" value="login" ><fmt:message key="apollo.login.label.login" /></button>
 		</div>
 	</c:when>
 
@@ -69,7 +69,7 @@
 			<input class="form-control" type="text" name="name" placeholder="${cms.requestContext.currentUser.name}"/>
 		</div>
 		<div class="controls form-inline">
-			<button class="btn-u btn-u-orange" type="submit" name="action" value="logoff" ><fmt:message key="apollo.login.label.logoff" /></button>
+			<button class="btn ap-btn-orange" type="submit" name="action" value="logoff" ><fmt:message key="apollo.login.label.logoff" /></button>
 		</div>
 	</c:otherwise>
 

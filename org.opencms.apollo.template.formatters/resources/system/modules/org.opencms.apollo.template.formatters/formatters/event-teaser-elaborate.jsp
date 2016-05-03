@@ -79,7 +79,7 @@
 			</c:choose>
 
 			<div class="margin-bottom-10"></div>
-			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>" class="btn-u btn-u-${buttonColor}">
+			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>" class="btn ap-btn-${buttonColor}">
 				<fmt:message key="apollo.list.message.readmore" />
 			</a>
 		</div>

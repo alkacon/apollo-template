@@ -13,7 +13,7 @@
 	<p><div ${rdfa.Text}>${value.Text}</div></p>
 	<c:if test="${value.Link.exists and value.Link.value.URI.isSet}">
 		<p>
-			<a class="btn btn-u btn-lg" href="<cms:link>${value.Link.value.URI}</cms:link>">${value.Link.value.Text}</a>
+			<a class="btn ap-btn-lg" href="<cms:link>${value.Link.value.URI}</cms:link>">${value.Link.value.Text}</a>
 		</p>
 	</c:if>
 </div>

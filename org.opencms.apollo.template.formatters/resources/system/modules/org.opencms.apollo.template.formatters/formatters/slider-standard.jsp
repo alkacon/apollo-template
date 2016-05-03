@@ -14,26 +14,19 @@
 				<div class="alert alert-danger">The slider was changed, the page is reloaded.</div>
 			</c:when>
 			<c:otherwise>
-				<c:choose>
-					<c:when test="${value.Position.exists}">
-						<fmt:parseNumber var="posX" integerOnly="true" type="number" value="${value.Position.value.Left}" />
-						<fmt:parseNumber var="posY" integerOnly="true" type="number" value="${value.Position.value.Top}" />
-					</c:when>
-					<c:otherwise>
-						<c:set var="posX">10</c:set>
-						<c:set var="posY">55</c:set>
-					</c:otherwise>
-				</c:choose>
 				<div class="fullwidthbanner-container mb-20" style="overflow: hidden;">
 					<div class="slider fullwidthbanner">
 						<ul>
-							<c:forEach var="image" items="${content.valueList.Image}" varStatus="status">
-								<c:set var="x">${posX}</c:set>
-								<c:set var="y">${posY}</c:set>
+							<c:forEach var="image" items="${content.valueList.Image}"
+								varStatus="status">
+								<c:set var="x">10</c:set>
+								<c:set var="y">55</c:set>
 								<c:if test="${image.value.Position.exists}">
 									<c:set var="pos" value="${image.value.Position}" />
-									<fmt:parseNumber var="x" integerOnly="true" type="number" value="${pos.value.Left}" />
-									<fmt:parseNumber var="y" integerOnly="true" type="number" value="${pos.value.Top}" />
+									<fmt:parseNumber var="x" integerOnly="true" type="number"
+										value="${pos.value.Left}" />
+									<fmt:parseNumber var="y" integerOnly="true" type="number"
+										value="${pos.value.Top}" />
 								</c:if>
 								<c:set var="bg" value="transparent" />
 								<c:if test="${value.TextBackgroundColor.isSet}">
@@ -72,7 +65,8 @@
                             
                             				<c:if test="${not empty copyright and not fn:startsWith(copyright, '&copy;')}">
                                                 <c:set var="copyright">&copy; ${copyright}</c:set>
-										<fmt:parseNumber var="y" integerOnly="true" type="number" value="${value.ImageHeight}" />
+										<fmt:parseNumber var="y" integerOnly="true" type="number"
+											value="${value.ImageHeight}" />
 										<div class="caption copyright" data-x="0" data-y="${y-30}">${copyright}</div>
 									</c:if></li>
 							</c:forEach>
@@ -87,17 +81,22 @@
 								</button>
 							</section>
 						</c:if>
-						<div class="tp-bannertimer tp-top" ${value.ShowTimer ne 'true'?'style="display: none;"':''}></div>
+						<div class="tp-bannertimer tp-top"
+							${value.ShowTimer ne 'true'?'style="display: none;"':''}></div>
+
+
 
 					</div>
 
 				</div>
-				<fmt:parseNumber var="height" integerOnly="true" type="number" value="${value.ImageHeight}" />
+				<fmt:parseNumber var="height" integerOnly="true" type="number"
+					value="${value.ImageHeight}" />
 				<script type="text/javascript">
 					function createBanner() {
 						$('.fullwidthbanner').revolution({
 							delay : ${value.Delay},
 							startheight : ${value.ImageHeight},
+									
 							navigationType : ${value.ShowNumbers eq 'true'?'"bullet"':'"none"'},
 							navigationArrows : ${value.ShowNavButtons eq 'true'?'"solo"':'"none"'}, 
 							navigationStyle : "round", // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom

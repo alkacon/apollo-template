@@ -93,7 +93,7 @@
 					</div>
 
 					<c:if test="${value.Link.exists}">
-						<div class="mv-10"><a class="btn-u btn-u-${cms.element.settings.buttoncolor} btn-u-sm" href="<cms:link>${value.Link.value.URI}</cms:link>">${value.Link.value.Text}</a></div>
+						<div class="mv-10"><a class="btn ap-btn-${cms.element.settings.buttoncolor} ap-btn-sm" href="<cms:link>${value.Link.value.URI}</cms:link>">${value.Link.value.Text}</a></div>
 					</c:if>	
 
 					<c:set var="linkInnerPage"><cms:link>${linkInnerPage}</cms:link>?${params}</c:set>

@@ -65,7 +65,7 @@
     							<div class="pagination col-xs-12">
     								<c:set var="pages">${search.numPages}</c:set>
     								<button
-    									class="btn-u btn-primary col-xs-12 mt-5 mb-20 ${pagination.state.currentPage >= search.numPages ? ' disabled' : ''}"
+    									class="btn ap-btn-red col-xs-12 mt-5 mb-20 ${pagination.state.currentPage >= search.numPages ? ' disabled' : ''}"
     									aria-label='<fmt:message key="pagination.next.title"/>'
     									id="loadMore"
     									data-load="${search.stateParameters.setPage[next]}"

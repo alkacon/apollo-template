@@ -12,7 +12,7 @@
         <c:if test="${content.value.Link.exists}">
             <p ${content.rdfa.Link}>
                 <a
-                    class="btn btn-default"
+                    class="btn btn-sm" 
                     href="<cms:link>${content.value.Link.value.URI}</cms:link>">
                         ${content.value.Link.value.Text}
                 </a>
