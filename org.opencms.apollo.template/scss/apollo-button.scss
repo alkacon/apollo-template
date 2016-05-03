@@ -8,6 +8,8 @@ $btn-dark-text:         $text-dark !default;
 $btn-text-transform:    none !default;
 $btn-border-style:      none !default;
 $btn-border-radius:     0 !default;
+$btn-min-width:         0 !default;
+$btn-padding:           8px !default;
 
 @mixin apollo-button($bg-color, $text-color, $highlight-color) {
 
@@ -34,10 +36,10 @@ $btn-border-radius:     0 !default;
 }
 
 .btn {
-    padding: 10px 12px;
+    padding: $btn-padding round($btn-padding * 2);
     font-size: 14px;
     line-height: 1.42857143;
-    min-width: 160px;
+    min-width: $btn-min-width; // was 160
     text-align: center;
     border: $btn-border-style;
     border-radius: $btn-border-radius;
@@ -61,21 +63,22 @@ $btn-border-radius:     0 !default;
 div.ap-btn-lg a.btn,
 .btn.ap-btn-lg, 
 .btn.btn-lg {
-    padding: 10px 25px;
+    padding: round($btn-padding * 1.25) round($btn-padding * 3);
     font-size: 18px;
-    min-width: 210px;
+    min-width: round($btn-min-width * 1.25);
 }
 div.ap-btn-sm a.btn,
 .btn.ap-btn-sm, 
 .btn.btn-sm {
-    padding: 6px 13px;
-    min-width: 105px;
+    padding: round($btn-padding * 0.75) round($btn-padding * 1.5);
+    min-width: round($btn-min-width * 0.625);
 }
 div.ap-btn-xs a.btn,
 .btn.ap-btn-xs, 
 .btn.btn-xs {
     font-size: 12px;
-    padding: 2px 10px;
+    padding: round($btn-padding * 0.25) round($btn-padding * 1.25);
+    min-width: 0;
 }
 
 .btn-default  {
@@ -84,8 +87,8 @@ div.ap-btn-xs a.btn,
 
 @each $color-name, $bg-color, $text-color, $highlight-color in $primary-colors {
 
-	div.cs-#{""+$color-name} a.btn,
-    .btn.cs-#{""+$color-name}  {
+	div.ap-btn-#{""+$color-name} a.btn,
+    .btn.ap-btn-#{""+$color-name}  {
 		@include apollo-button($bg-color, $text-color, $highlight-color);
 	}
 }
