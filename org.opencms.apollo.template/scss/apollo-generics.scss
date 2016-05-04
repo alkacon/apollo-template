@@ -1,7 +1,7 @@
 
 // Generic CSS selectors that apply to any DIV or similar block element
 
-$bg-colors: $colors !default;
+$bg-colors: $all-colors !default;
 
 // color scheme adjustments
 @each $color-name, $bg-color, $text-color, $highlight-color in $bg-colors {
@@ -45,6 +45,11 @@ $bg-colors: $colors !default;
         
         background-color: rgba($bg-color, 0.7);
     }    
+}
+
+a.no-underline:hover,
+a.no-underline {
+	text-decoration: none;
 }
 
 $spacers: (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 500, 1000, 2000) !default;

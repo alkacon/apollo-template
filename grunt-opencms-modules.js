@@ -35,6 +35,14 @@ exports.initGrunt = function(_grunt, _buildDir) {
 	_gruntLoadNpmTasks();
 }
 
+_getModuleTemplates = function(envname, templates) {
+	console.log('Value of env ' + envname + ': ' + process.env[envname]);
+	if (grunt.option('useenv') && process.env[envname]) {
+		return [ process.env[envname] ];
+	} 
+	return templates;
+};
+
 exports.loadModule = function(moduleName) {
 	
 	var f = path.normalize(moduleDir + moduleName + '/Gruntparts.js');
@@ -61,7 +69,7 @@ exports.loadModule = function(moduleName) {
 			resources = resources.concat(m.resources);
 		}
 		if (m.templates) {
-			templates = templates.concat(m.templates);
+			templates = templates.concat(_getModuleTemplates(m.envname, m.templates));
 		}
 		if (m.deployTarget) {
 			exports.deployTarget = deployTarget = m.deployTarget;

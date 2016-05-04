@@ -10,19 +10,13 @@ exports.mf = mf;
 exports.rf = rf;
 exports.repo = repo;
 exports.module = module;
+exports.envname = 'TEMPLATES_APOLLO';
 
-_getTemplates = function() {
-	if (process.env.TEMPLATES_APOLLO) {
-		return [ process.env.TEMPLATES_APOLLO ];
-	} 
-	return [ 
-		'style-blue', 
-		'style-red'
-	];
-};
+exports.templates = [ 
+	'style-blue', 
+	'style-red'
+];
 
-exports.templates = _getTemplates();
-	
 exports.deployTarget = process.env.OCMOUNT + '/system/modules/org.opencms.apollo.template.basics/resources/';
 
 exports.sassSrc = [
