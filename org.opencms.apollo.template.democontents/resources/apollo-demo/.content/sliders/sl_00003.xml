@@ -10,6 +10,10 @@
     <ShowPlayButton>false</ShowPlayButton>
     <TextColor>#FFFFFF</TextColor>
     <TextBackgroundColor>#b31b34</TextBackgroundColor>
+    <Position>
+      <Top><![CDATA[55]]></Top>
+      <Left><![CDATA[55]]></Left>
+    </Position>
     <ImageHeight><![CDATA[277]]></ImageHeight>
     <Image>
       <Uri>
@@ -21,10 +25,6 @@
       <SuperTitle><![CDATA[OpenCms rocks!]]></SuperTitle>
       <TitleLine1/>
       <TitleLine2/>
-      <Position>
-        <Top><![CDATA[55]]></Top>
-        <Left><![CDATA[55]]></Left>
-      </Position>
     </Image>
     <Image>
       <Uri>
@@ -34,12 +34,8 @@
         </link>
       </Uri>
       <SuperTitle><![CDATA[OpenCms is great]]></SuperTitle>
-      <TitleLine1/>
+      <TitleLine1><![CDATA[Take website editing to a new level!]]></TitleLine1>
       <TitleLine2/>
-      <Position>
-        <Top><![CDATA[55]]></Top>
-        <Left><![CDATA[55]]></Left>
-      </Position>
     </Image>
     <Image>
       <Uri>
@@ -51,10 +47,6 @@
       <SuperTitle><![CDATA[OpenCms is easy to use]]></SuperTitle>
       <TitleLine1/>
       <TitleLine2/>
-      <Position>
-        <Top><![CDATA[55]]></Top>
-        <Left><![CDATA[55]]></Left>
-      </Position>
     </Image>
   </ApolloSlider>
 </ApolloSliders>

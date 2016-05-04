@@ -7,16 +7,16 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.schemas.text">
 <cms:formatter var="content" val="value" rdfa="rdfa">
-	<div class="${cms.element.parent.setting.cssHints.isSet ? cms.element.parent.setting.cssHints : "" }${' ' }${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "p-20 fa-center" }" ${rdfa.Link}>
+	<div class="ap-iconbox ${cms.element.parent.setting.cssHints.isSet ? cms.element.parent.setting.cssHints : '' }${' '}${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }" ${rdfa.Link}>
 	
     <c:choose>
     	<c:when test="${cms.element.inMemoryOnly}">
     		<p><fmt:message key="apollo.text.message.new" /></p>
     	</c:when>
         <c:otherwise>
-            <c:if test="${value.Link.exists}"><a href="<cms:link>${value.Link.value.URI}</cms:link>"<c:if test="${value.Link.value.Text.isSet}"> title="${value.Link.value.Text}"</c:if>></c:if>
+            <c:if test="${value.Link.exists}"><a class="no-underline" href="<cms:link>${value.Link.value.URI}</cms:link>"<c:if test="${value.Link.value.Text.isSet}"> title="${value.Link.value.Text}"</c:if>></c:if>
   			<h2 class="heading-md" ${rdfa.Headline}>${value.Headline}</h2>
-  			<div><i class="icon-lg ${cms.element.setting.iconclass.isSet ? cms.element.setting.iconclass : "icon-bg-default fa fa-lightbulb-o" }"></i></div>
+  			<div><i class="icon-lg fa fa-${cms.element.setting.iconclass.isSet ? cms.element.setting.iconclass : 'warning' }"></i></div>
   			<div ${rdfa.Text}>${value.Text}</div>
   			<c:if test="${value.Link.exists}"></a></c:if>
         </c:otherwise>
