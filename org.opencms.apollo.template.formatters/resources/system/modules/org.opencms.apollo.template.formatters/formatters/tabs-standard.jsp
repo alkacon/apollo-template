@@ -8,26 +8,28 @@
 <cms:bundle basename="org.opencms.apollo.template.schemas.tabs">
 <cms:formatter var="content" val="value" rdfa="rdfa">
 
-<div class="ap-sec">
+<div class="ap-tab-section ${cms.element.setting.wrapperclass}">
 
 	<c:if test="${not cms.element.settings.hidetitle}">
 		<div class="headline"><h2 ${rdfa.Title}>${value.Title}</h2></div>
 	</c:if>
 
-	<div class="tab-v1">
+	<div class="ap-tab">
 		<ul class="nav nav-tabs">
 			<c:forEach var="label" items="${content.valueList.Label}" varStatus="status">
-				<li class="${status.first? 'active':''}"><a href="#${cms.element.instanceId}-tab-container${status.count}" data-toggle="tab">${label}</a></li>
+				<li ${status.first ? ' class="active"' : ''}><a href="#collapse-${cms.element.instanceId}-${status.count}" data-toggle="tab">${label}</a></li>
 			</c:forEach>
 		</ul>
 
 		<div class="tab-content">
 			<c:forEach var="label" items="${content.valueList.Label}" varStatus="status">
 
+                <div 
+                    id="collapse-${cms.element.instanceId}-${status.count}"
+                    class="tab-pane ap-tab-pane fade ${status.first? 'active in':''}" >
 				<cms:container
 					name="tab-container${status.count}"
 					type="row"
-					tagClass="tab-pane ${status.first? 'active':''}"
 					maxElements="2">
 						<c:set var="msg"><fmt:message key="apollo.tabs.emptycontainer.text"/></c:set>
 						<apollo:container-box
@@ -36,7 +38,8 @@
 							role="author"
 							type="row" />
 					</cms:container>
-
+                </div>
+                
 			</c:forEach>
 		</div>
 	</div>

@@ -28,5 +28,10 @@
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>
+    <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Widget><![CDATA[string]]></Widget>
+    </Setting>
   </NewFormatter>
 </NewFormatters>
