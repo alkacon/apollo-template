@@ -14,8 +14,9 @@
 @import '../../org.opencms.apollo.template/scss/container-markers.scss';
 @import '../../org.opencms.apollo.template/scss/apollo-button.scss';
 @import '../../org.opencms.apollo.template/scss/apollo-section.scss';
+@import '../../org.opencms.apollo.template/scss/apollo-tabs.scss';
 
-// general generic styles (must be behind Apollo includes!)
+// general generic styles (just before generics)
 @import 'general';
 
 @import '../../org.opencms.apollo.template/scss/apollo-generics.scss';

@@ -1,0 +1,134 @@
+
+// Apollo tabs and panels 
+
+$tab-text-transform:    none !default;
+$tab-colors:            $border-colors !default;
+$tab-active-bg:         $main-theme !default;
+
+$panel-text-transform:  none !default;
+$panel-colors:          $border-colors !default;
+$panel-border-color:    $grey-light !default;
+$panel-collapsed-bg:    $grey-lighter !default;
+$panel-active-bg:       $main-theme !default;
+
+// Tabs:
+
+.ap-tab-section {
+    margin-bottom: 20px;
+}
+
+.ap-tab-pane .ap-section  {
+    margin-bottom: 0;
+}
+
+.ap-tab .nav-tabs { 
+  border: none;
+  background: none;
+  border-bottom: solid 2px $tab-active-bg;
+}
+
+.ap-tab .nav-tabs > li > a:hover,
+.ap-tab .nav-tabs > .active > a, 
+.ap-tab .nav-tabs > .active > a:hover, 
+.ap-tab .nav-tabs > .active > a:focus { 
+  color: $text-light;
+  border: none; 
+  background: $tab-active-bg; 
+}
+
+.ap-tab .nav-tabs a { 
+  font-size: 14px;
+  padding: 5px 15px; 
+}
+
+.ap-tab .nav-tabs > li > a { 
+  border: none;
+  color: $text-dark;
+  text-transform: $tab-text-transform;
+  border-radius: 0;
+  transition: all .2s ease-in-out;
+}
+
+.ap-tab .tab-content { 
+  padding: 10px 0;
+}
+
+@each $color-name, $bg-color, $text-color, $highlight-color in $tab-colors {
+
+    div.ap-tab-#{""+$color-name}  .ap-tab .nav-tabs { 
+      border-bottom: solid 2px $bg-color;
+    }
+
+    div.ap-tab-#{""+$color-name}  .ap-tab .nav-tabs > li > a:hover,
+    div.ap-tab-#{""+$color-name}  .ap-tab .nav-tabs > .active > a, 
+    div.ap-tab-#{""+$color-name}  .ap-tab .nav-tabs > .active > a:hover, 
+    div.ap-tab-#{""+$color-name}  .ap-tab .nav-tabs > .active > a:focus { 
+      background: $bg-color; 
+      color: $text-color;
+    }
+}
+
+
+// Panels:
+
+.ap-panel-section {
+  margin-bottom: 20px;
+}
+
+.ap-panel-body .ap-section  {
+    margin-bottom: 0;
+}
+
+.panel,
+.panel-heading,
+.panel-group .panel {
+    border-radius: 0;
+}
+
+.panel {
+    border-color: $panel-border-color;
+}
+
+.panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0px;
+    color: inherit;
+    border-color: $panel-border-color;
+}
+
+.panel-heading h4.panel-title {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 25px;
+    text-transform: $panel-text-transform;    
+}
+
+.panel-heading h4.panel-title a.accordion-toggle.collapsed {
+    color: $text-dark;
+    background: $panel-collapsed-bg;
+    transition: all .2s ease-in-out;    
+}
+
+.panel-heading h4.panel-title a,
+.panel-heading h4.panel-title a.accordion-toggle.collapsed:hover,
+.panel-heading h4.panel-title a:hover {
+    background: $panel-active-bg; 
+    color: $text-light; 
+    text-decoration: none;
+}
+
+.ap-panel-title {
+    padding: 5px 15px;  
+    background: inherit;
+}
+
+@each $color-name, $bg-color, $text-color, $highlight-color in $panel-colors {
+
+    div.ap-tab-#{""+$color-name} .panel-heading h4.panel-title a,
+    div.ap-tab-#{""+$color-name} .panel-heading h4.panel-title a.accordion-toggle.collapsed:hover,
+    div.ap-tab-#{""+$color-name} .panel-heading h4.panel-title a:hover {
+        background: $bg-color; 
+        color:  $text-color; 
+    }
+}
+
