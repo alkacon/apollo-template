@@ -19,7 +19,7 @@
 
 		<c:if test="${compactForm == 'false'}">
 			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">
-				<div class="date-dark col-sm-2 hidden-xs">
+				<div class="date-grey-dark col-sm-2 hidden-xs">
 					<div class="day">
 						<fmt:formatDate value="${cms:convertDate(content.value.Date)}"
 							pattern="EEEE" type="date" />
