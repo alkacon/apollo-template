@@ -1,18 +1,5 @@
-//
-// Alkacon Apollo SCSS.
-// 
-// Main file - BLUE theme 
-//
-
 /*
  * Alkacon Apollo CSS - BLUE theme
- *
- * -----------------------------------------------------------------------------
- * 
- * Alkacon Software - The OpenCms experts. 
- *
- * http://www.alkacon.com
- * http://www.opencms.org
  */
  
 // import the Apollo variables (colors etc.)
@@ -22,35 +9,6 @@
 $main-theme: $blue;
 $main-theme-hover: $blue-light;
 $main-theme-additional: $blue-lighter;
-
-
-// Navigation colors
-$nav-main-bg: $white;
-$nav-main-color: $navigation-text;
-$nav-main-bg-hover: $white;
-$nav-main-color-hover: $main-theme;
-$nav-main-bg-active: $white;
-$nav-main-color-active: $main-theme;
-
-$nav-sub-divider: $white;
-$nav-sub-bg: $white;
-$nav-sub-color: $navigation-text;
-$nav-sub-bg-hover: $navigation-bg;
-$nav-sub-color-hover: $navigation-text;
-$nav-sub-bg-active: $navigation-bg;
-$nav-sub-color-active: $navigation-text;
-
-$nav-left-bg: $white;
-$nav-left-color: $navigation-text;
-$nav-left-bg-hover: $white;
-$nav-left-color-hover:$main-theme;
-$nav-left-bg-active: $navigation-text;
-$nav-left-color-active: $white;
-
-$nav-left-sub-color: $navigation-text;
-$nav-left-sub-color-active: $main-theme;
-$nav-left-sub-color-hover: $main-theme;
-$nav-left-sub-bg: $navigation-bg;
 
 // Import the other files
 @import 'imports';

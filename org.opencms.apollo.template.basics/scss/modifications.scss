@@ -90,121 +90,8 @@
 	
 }
 
-/* Colored boxes.
------------------------------------------------------------------------------ */
-
-.colored-box, .colored-box-light {
-  overflow: hidden;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.colored-box-light {
-    color: $gray-darker;
-}
-
-.colored-box .headline, .colored-box-light .headline {
-	border-bottom: none;
-	margin: 0;
-}
-
-.colored-box .headline h2, .colored-box-light .headline h2 {
-	border-bottom: none;
-	margin-top: 5px;
-	margin-bottom: 10px;
-}
-
-.colored-box p, 
-.colored-box li, 
-.colored-box h1, 
-.colored-box h2, 
-.colored-box h3, 
-.colored-box h4,  
-.colored-box h5, 
-.colored-box h6 {
-    color: $white;
-}
-
-.colored-box{
-	a {
-    	color: $gray-lighter;
-    }
-    &-light a {
-    	color: $red;
-	}
-}
-
-.colored-box  a.btn-u,
-.colored-box-light  a.btn-u  {
-    color: $white;
-}
-
-.colored-box-light p, 
-.colored-box-light li, 
-.colored-box-light h1, 
-.colored-box-light h2, 
-.colored-box-light h3, 
-.colored-box-light h4,  
-.colored-box-light h5, 
-.colored-box-light h6 {
-    color: $gray-darker;
-}
-
-/* Background color */
-
-@each $type-name, $bg-color in $colored-box-variants {
-    .colored-box.#{""+$type-name}, .colored-box-light.#{""+$type-name} {      
-        background-color: $bg-color;      
-    }
-}
-
-/* Border style */
-
-$colored-box-borderstyles:
-(
- (none, 0, none),         
- (dotted, 1px, $gray-light),         
- (dashed, 1px, $gray-light),         
- (solid, 1px, $gray-light)
-);
-
-@each $style-name, $width, $bg-color in $colored-box-borderstyles {
-    .colored-box.border-style-#{""+$style-name}, .colored-box-light.border-style-#{""+$style-name} {
-	    border-style: #{""+$style-name};
-	    border-width: $width;
-	    border-color: $bg-color;
-	}
-}
-
-/* Dropdown color */
-
-@each $type-name, $bg-color in $colored-box-variants {
-
-	.btn-u.btn-u-#{""+$type-name},  .open .dropdown-toggle.btn-u.btn-u-#{""+$type-name}{
-		background-color: $bg-color; 
-		&:hover, &:focus, &:active{
-    		background: lighten($bg-color,10) !important;
-    	}   
-	}
-
-    .dropdown-#{""+$type-name}{ 
-    	  	   
-        .active a{
-        	background: lighten($bg-color,10);     
-        	&:hover{
-        		background: $bg-color; 
-        	}
-	        @if (lightness($bg-color) > 90) {
-	    		color: #000000; 
-			} @else {
-				color: #ffffff; 
-	  		}  		
-  		}
-    }
-}
-
 /* Event dates */
-@each $type-name, $bg-color in $colored-box-variants {
+@each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
 
 	.date-#{""+$type-name}{
 		border: 1px solid $gray-light;
@@ -238,30 +125,6 @@ $colored-box-borderstyles:
 	animation-duration: 1s;	
 	&:nth-child(2n){
 		animation-duration: 2s;
-	}
-}
-
-/* Line position and color */
-
-$colored-box-positions:
-(
- top, bottom, left, right
-);
-
-@each $type-name, $bg-color in $colored-box-variants {
-
-    @each $position in $colored-box-positions {
-	    .colored-box.line-#{""+$position}-color-#{""+$type-name}, .colored-box-light.line-#{""+$position}-color-#{""+$type-name} {
-	    	border-#{""+$position}-style: solid;
-	    	border-#{""+$position}-width: 2px;
-	    	border-#{""+$position}-color: $bg-color;
-		}
-	}
-	.colored-box.line-box-color-#{""+$type-name}, .colored-box-light.line-box-color-#{""+$type-name} {
-	    border: 2px solid $bg-color;
-	}
-	.colored-box.line-none-color-#{""+$type-name}, .colored-box-light.line-none-color-#{""+$type-name} {
-	    border-color: $gray-light;
 	}
 }
 
@@ -525,10 +388,8 @@ ul.sidebar-nav-v1 {
 	}
 }
 
-@each $type-name, $bg-color in $colored-box-variants {
-    .colored-box.#{""+$type-name}, .colored-box-light.#{""+$type-name} {      
-        background-color: $bg-color;      
-    }
+@each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+
     .sitemap-#{""+$type-name}{
         ul>ul{
             li {

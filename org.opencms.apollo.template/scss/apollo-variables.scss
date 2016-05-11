@@ -4,59 +4,59 @@ $graey-spelling: grey !default;
 
 // Main colors
 
-$alkacon-red:       #b31b34;
-$alkacon-blue:      #144382; // for print this is #003082;
-$alkacon-orange:    #ffa826; // for print this is #ffb340;
-$alkacon-grey:      #a8adb4;
+$alkacon-red:       #b31b34 !default;
+$alkacon-blue:      #144382 !default; // for print this is #003082
+$alkacon-orange:    #ffa826 !default; // for print this is #ffb340
+$alkacon-grey:      #a8adb4 !default;
 
-$white:             #fff;
-$black:             #000;
+$white:             #fff !default;
+$black:             #000 !default;
 
-$blue:              $alkacon-blue;
-$blue-light:        #2197db; // handmade looks better
-$blue-lighter:      lighten($blue-light, 42%);
-$blue-dark:         darken($blue, 10%);
-$blue-darker:       darken($blue, 15%);
+$blue:              $alkacon-blue !default;
+$blue-light:        #2197db !default; // handmade looks better
+$blue-lighter:      lighten($blue-light, 42%) !default;
+$blue-dark:         darken($blue, 10%) !default;
+$blue-darker:       darken($blue, 15%) !default;
 
-$red:               $alkacon-red;
-$red-light:         #ff264a; // handmade looks better
-$red-lighter:       lighten($red-light, 37%);
-$red-dark:          darken($red, 9%);
-$red-darker:        darken($red, 21%);
+$red:               $alkacon-red !default;
+$red-light:         #ff264a !default; // handmade looks better
+$red-lighter:       lighten($red-light, 37%) !default;
+$red-dark:          darken($red, 9%) !default;
+$red-darker:        darken($red, 21%) !default;
 
-$orange:            $alkacon-orange;
-$orange-light:      lighten($orange, 15%);
-$orange-lighter:    lighten($orange, 30%);
-$orange-dark:       darken($orange, 8%);
-$orange-darker:     darken($orange, 16%);
+$orange:            $alkacon-orange !default;
+$orange-light:      lighten($orange, 15%) !default;
+$orange-lighter:    lighten($orange, 30%) !default;
+$orange-dark:       darken($orange, 8%) !default;
+$orange-darker:     darken($orange, 16%) !default;
 
-$grey:              $alkacon-grey;
-$grey-lighter:      lighten($grey, 27%);
-$grey-light:        lighten($grey, 21%);  
-$grey-dark:         darken($grey, 15%);
-$grey-darker:       darken($grey, 35%);
+$grey:              $alkacon-grey !default;
+$grey-lighter:      lighten($grey, 27%) !default;
+$grey-light:        lighten($grey, 21%) !default;  
+$grey-dark:         darken($grey, 15%) !default;
+$grey-darker:       darken($grey, 35%) !default;
 
-$gray:              $grey;
-$gray-lighter:      $grey-lighter;
-$gray-light:        $grey-light;  
-$gray-dark:         $grey-dark;
-$gray-darker:       $grey-darker;
+$gray:              $grey !default;
+$gray-lighter:      $grey-lighter !default;
+$gray-light:        $grey-light !default;  
+$gray-dark:         $grey-dark !default;
+$gray-darker:       $grey-darker !default;
 
-$cyan:              #1bb39a; // complementary color
-$yellow:            #f1c40f;
-$sea:               #1abc9c;
-$green:             mix($orange, $cyan);
-$green-light:       lighten($green, 20%);
+$cyan:              #1bb39a !default; // complementary color
+$yellow:            #f1c40f !default;
+$sea:               #1abc9c !default;
+$green:             mix($orange, $cyan) !default;
+$green-light:       lighten($green, 20%) !default;
 
-$blue-cyan:         mix($blue, $cyan);
-$violet:            mix($blue, $red);
-$brown:             mix($blue, $orange);
-$red-orange:        mix($red, $orange);
-$red-cyan:          mix($red, $cyan);
+$blue-cyan:         mix($blue, $cyan) !default;
+$violet:            mix($blue, $red) !default;
+$brown:             mix($blue, $orange) !default;
+$red-orange:        mix($red, $orange) !default;
+$red-cyan:          mix($red, $cyan) !default;
 
 // Text colors 
-$text-light: #fff;
-$text-dark: #444;
+$text-light: #fff !default;
+$text-dark: #444 !default;
 
 // these are all colors that make sense as highlight color, e.g. in a button background
 $primary-colors:
@@ -82,7 +82,7 @@ $primary-colors:
  (orange-darker,$orange-darker,$text-light,    $orange-dark),
  (blue-cyan,    $blue-cyan,    $text-light,    $cyan),
  (white,        $white,        $text-dark,     $red-light),
-); 
+) !default; 
 
 
 // complimentary colors not suitable for highlighting  
@@ -98,11 +98,11 @@ $secondary-colors:
  (green,        $green,        $text-light,    $orange),          
  (sea,          $sea,          $text-light,    $red-orange),
  (yellow,       $yellow,       $text-light,    $red-orange),
-); 
+) !default; 
 
 // all colors combined
-$all-colors: join($primary-colors, $secondary-colors);     
-$colors:     $all-colors;
+$all-colors: join($primary-colors, $secondary-colors) !default;     
+$colors:     $all-colors !default;
 
 $border-colors: 
 (
@@ -112,24 +112,24 @@ $border-colors:
  (red,          $red,          $text-light,    $red-light),
  (cyan,         $cyan,         $text-light,    $blue-cyan),
  (orange,       $orange,       $text-light,    $red-orange),
-);
+) !default;
 
 // Alert colors
-$color-info:        $blue-light;
-$color-warning:     $orange;
-$color-success:     $cyan;
-$color-danger :     $red;
-$color-primary:     $blue;
+$color-info:        $blue-light !default;
+$color-warning:     $orange !default;
+$color-success:     $cyan !default;
+$color-danger :     $red !default;
+$color-primary:     $blue !default;
 
 // Bootstrap screen sizes (minimum)
 
-$screen-sm-min: 768px;
-$screen-md-min: 992px;
-$screen-lg-min: 1200px;
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg-min: 1200px !default;
 
 // Bootstrap screen sizes (maximum)
 
-$screen-xs-max: ($screen-sm-min - 1);
-$screen-sm-max: ($screen-md-min - 1);
-$screen-md-max: ($screen-lg-min - 1);
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
 

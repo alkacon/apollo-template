@@ -1,7 +1,13 @@
 
 // Generic CSS selectors that apply to any DIV or similar block element
 
-$bg-colors: $all-colors !default;
+$bg-colors:       $all-colors !default;
+$font-colors:     $primary-colors !default;
+
+$border-default-color:   $main-theme !default;
+$border-colors:          $primary-colors !default;
+$border-sizes:           (1, 2) !default;
+$border-radiuses:        (2, 5, 10) !default;
 
 // color scheme adjustments
 @each $color-name, $bg-color, $text-color, $highlight-color in $bg-colors {
@@ -120,6 +126,81 @@ $lineheights: (10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) !default;
     .lh-#{$lineheight} {
         line-height: #{$lineheight / 10};
     } 
+}
+
+@each $align in (left, center, right) {
+    .fa-#{$align} {
+        text-align: $align;
+    }
+}
+
+@each $color-name, $bg-color, $text-color, $highlight-color in $font-colors {
+    .fc-#{""+$color-name} {
+        color: $color-name;
+        &.a, p, h2, .fa {
+            color: $bg-color;      
+        }
+    }
+}
+
+/**
+
+border-2
+border-red // implies: soild
+border-dashed
+border-left-grey
+border-left-solid
+
+**/
+
+$border-positions: (bottom, top, left, right);
+$border-styles:   (none, solid, dotted, dashed, hidden);
+
+@each $line-size in $border-sizes {    
+    .bo-#{""+$line-size}  {
+    
+        border: #{""+$line-size}px solid $border-default-color;
+        padding: 20px;       
+    }        
+}
+
+@each $color-name, $bg-color, $text-color, $highlight-color in $border-colors {
+    .bo-#{""+$color-name}  {
+    
+        border-color: $bg-color;      
+    }     
+}
+
+@each $border-style in $border-styles {
+
+    .bo-#{""+$border-style}  {
+        border-style: $border-style;    
+    }        
+}
+
+@each $position in $border-positions {
+
+	@each $line-size in $border-sizes {    
+	    .bo-#{""+$position}-#{""+$line-size}  {
+	    
+	        border-#{""+$position}: #{""+$line-size}px solid $border-default-color;
+	        padding: 20px;       
+	    }        
+	}  
+
+	@each $color-name, $bg-color, $text-color, $highlight-color in $border-colors {
+	    .bo-#{""+$position}-#{""+$color-name}  {
+	    
+	        border-#{""+$position}-color: $bg-color;      
+	    }     
+	}
+	
+	@each $border-style in $border-styles {
+	
+	    .bo-#{""+$position}-#{""+$border-style}  {
+	        border-#{""+$position}-style: $border-style;    
+	    }        
+	}
 }
 
 .disp-i {

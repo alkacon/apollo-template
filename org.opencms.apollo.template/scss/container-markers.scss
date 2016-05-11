@@ -1,22 +1,22 @@
 /* Empty container markers.
 ----------------------------------------------------------------------------- */
 
-$oc-col-area:          #ffc9d2; // darken($red-lighter, 5%)
-$oc-col-segment:       #ffe3e7; // $red-lighter
-$oc-col-grid:          #ffdac7; // mix(darken($red-lighter, 5%), $orange-lighter, 40%)),
-$oc-col-row:           #ffe5bf; // $orange-lighter
-$oc-col-element:       #e8f3f8; // "light steel blue"
-$oc-col-special:       #effab4; // "light green"
+$oc-col-area:          #ffc9d2 !default; // darken($red-lighter, 5%)
+$oc-col-segment:       #ffe3e7 !default; // $red-lighter
+$oc-col-grid:          #ffdac7 !default; // mix(darken($red-lighter, 5%), $orange-lighter, 40%)),
+$oc-col-row:           #ffe5bf !default; // $orange-lighter
+$oc-col-element:       #e8f3f8 !default; // "light steel blue"
+$oc-col-special1:      #effab4 !default; // "light green"
 
-$oc-col-developer:     #b31b34; // $red
-$oc-col-editor:        #ffa826; // $orange
-$oc-col-author:        #144382; // $blue
-$oc-col-detail:        #1bb39a; // $cyan
-$oc-col-detailonly:    #1bb39a; // $cyan
-$oc-col-special:       #ff264a; // $red-light
+$oc-col-developer:     #b31b34 !default; // $red
+$oc-col-editor:        #ffa826 !default; // $orange
+$oc-col-author:        #144382 !default; // $blue
+$oc-col-detail:        #1bb39a !default; // $cyan
+$oc-col-detailonly:    #1bb39a !default; // $cyan
+$oc-col-special2:      #ff264a !default; // $red-light
 
-$oc-col-text:          #ffffff; // white
-$oc-col-border:        #a8adb4; // $grey
+$oc-col-text:          #ffffff !default; // white
+$oc-col-border:        #a8adb4 !default; // $grey
 
 // OpenCms roles and their matching colors  
 $oc-container-types:
@@ -26,8 +26,8 @@ $oc-container-types:
  (grid, $oc-col-grid),         
  (row, $oc-col-row),         
  (element, $oc-col-element),         
- (special, $oc-col-special),        
-);
+ (special, $oc-col-special1),
+) !default;
 
 $oc-container-labels:
 (
@@ -36,8 +36,8 @@ $oc-container-labels:
  (author, $oc-col-author),         
  (detail, $oc-col-detail),
  (detailonly, $oc-col-detailonly),         
- (special, $oc-col-special),
-); 
+ (special, $oc-col-special2),
+) !default; 
 
 %oc-container-type {
     padding: 10px;
