@@ -1,15 +1,23 @@
 
-// Generic CSS selectors that apply to any DIV or similar block element
+// Generic CSS selectors that can apply to any DIV or similar block element
 
-$bg-colors:       $all-colors !default;
-$font-colors:     $primary-colors !default;
+$bg-colors:         $all-colors !default;
+$font-colors:       $primary-colors !default;
+
+$margins-paddings:  (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 500, 1000) !default;
+$font-sizes:        (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 26, 28, 30, 36, 48, 72) !default;
+$line-heights:      (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) !default;
 
 $border-default-color:   $main-theme !default;
 $border-colors:          $primary-colors !default;
 $border-sizes:           (1, 2) !default;
-$border-radiuses:        (2, 5, 10) !default;
+$border-radiuses:        ((0, 0px), (2, 2px), (5, 5px), (10, 10px), (15, 15px), (20, 20px), (30, 30px), (25p, 25%), (50p, 50%)) !default;
+$border-positions: (bottom, top, left, right) !default;
+$border-styles:   (none, solid, dotted, dashed, hidden) !default;
 
-// color scheme adjustments
+
+// Colored backgrounds
+
 @each $color-name, $bg-color, $text-color, $highlight-color in $bg-colors {
 
     .bg-#{""+$color-name} {
@@ -26,7 +34,6 @@ $border-radiuses:        (2, 5, 10) !default;
         h5, 
         h6,
         p,
-        div,
         li,
         .fa {
             color: $text-color;
@@ -53,14 +60,9 @@ $border-radiuses:        (2, 5, 10) !default;
     }    
 }
 
-a.no-underline:hover,
-a.no-underline {
-	text-decoration: none;
-}
+// Margins and paddings
 
-$spacers: (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 500, 1000, 2000) !default;
-
-@each $space in $spacers {
+@each $space in $margins-paddings {
 
     .p-#{$space} {
         padding: #{$space}px;
@@ -110,31 +112,10 @@ $spacers: (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90,
     }
 }
 
-$fontsizes: (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 26, 28, 30, 36, 48, 72) !default;
-
-@each $fontsize in $fontsizes {
-
-    .fs-#{$fontsize} {
-        font-size: #{$fontsize}px;
-    } 
-}
-
-$lineheights: (10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) !default;
-
-@each $lineheight in $lineheights {
-
-    .lh-#{$lineheight} {
-        line-height: #{$lineheight / 10};
-    } 
-}
-
-@each $align in (left, center, right) {
-    .fa-#{$align} {
-        text-align: $align;
-    }
-}
+// Font and text adjustments
 
 @each $color-name, $bg-color, $text-color, $highlight-color in $font-colors {
+
     .fc-#{""+$color-name} {
         color: $color-name;
         &.a, p, h2, .fa {
@@ -143,32 +124,55 @@ $lineheights: (10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) !default;
     }
 }
 
-/**
+@each $fontsize in $font-sizes {
 
-border-2
-border-red // implies: soild
-border-dashed
-border-left-grey
-border-left-solid
+    .fs-#{$fontsize} {
+        font-size: #{$fontsize}px;
+    } 
+}
 
-**/
+@each $lineheight in $line-heights {
 
-$border-positions: (bottom, top, left, right);
-$border-styles:   (none, solid, dotted, dashed, hidden);
+    .lh-#{$lineheight} {
+        line-height: #{$lineheight / 10};
+    } 
+}
+
+@each $align in (left, center, right) {
+
+    .fa-#{$align} {
+        text-align: $align;
+    }
+}
+
+a.no-underline:hover,
+a.no-underline {
+	text-decoration: none;
+}
+
+// Borders
+
+@each $radius-name, $radius in $border-radiuses {     
+   
+    .bo-radius-#{""+$radius-name} {
+        border: 0 solid;     
+        border-radius: $radius;
+    }
+} 
 
 @each $line-size in $border-sizes {    
+
     .bo-#{""+$line-size}  {
-    
-        border: #{""+$line-size}px solid $border-default-color;
+        border: #{$line-size}px solid $border-default-color;
         padding: 20px;       
     }        
 }
 
 @each $color-name, $bg-color, $text-color, $highlight-color in $border-colors {
+
     .bo-#{""+$color-name}  {
-    
         border-color: $bg-color;      
-    }     
+    }    
 }
 
 @each $border-style in $border-styles {
@@ -181,27 +185,29 @@ $border-styles:   (none, solid, dotted, dashed, hidden);
 @each $position in $border-positions {
 
 	@each $line-size in $border-sizes {    
+	
 	    .bo-#{""+$position}-#{""+$line-size}  {
-	    
-	        border-#{""+$position}: #{""+$line-size}px solid $border-default-color;
+	        border-#{$position}: #{$line-size}px solid $border-default-color;
 	        padding: 20px;       
 	    }        
 	}  
 
 	@each $color-name, $bg-color, $text-color, $highlight-color in $border-colors {
+	
 	    .bo-#{""+$position}-#{""+$color-name}  {
-	    
-	        border-#{""+$position}-color: $bg-color;      
+	        border-#{$position}-color: $bg-color;      
 	    }     
 	}
 	
 	@each $border-style in $border-styles {
 	
 	    .bo-#{""+$position}-#{""+$border-style}  {
-	        border-#{""+$position}-style: $border-style;    
+	        border-#{$position}-style: $border-style;    
 	    }        
 	}
 }
+
+// Block display settings
 
 .disp-i {
     display: inline;

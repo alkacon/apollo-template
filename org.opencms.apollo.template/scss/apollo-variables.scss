@@ -61,27 +61,27 @@ $text-dark: #444 !default;
 // these are all colors that make sense as highlight color, e.g. in a button background
 $primary-colors:
 (
- // name        // background  // text         // highlight
- (#{""+$graey-spelling}-lighter, $grey-lighter, $text-dark,     $grey-light),
- (#{""+$graey-spelling}-light,   $grey-light,   $text-dark,     $grey-lighter),
- (#{""+$graey-spelling},         $grey,         $text-light,    $grey-light),
- (#{""+$graey-spelling}-dark,    $grey-dark,    $text-light,    $grey),
- (#{""+$graey-spelling}-darker,  $grey-darker,  $text-light,    $grey-dark),
- (blue-light,   $blue-light,   $text-light,    $blue),
- (blue,         $blue,         $text-light,    $blue-light),
- (blue-dark,    $blue-dark,    $text-light,    $blue),
- (blue-darker,  $blue-darker,  $text-light,    $blue-dark),
- (cyan,         $cyan,         $text-light,    $blue-cyan),
- (red-light,    $red-light,    $text-light,    $red),
- (red,          $red,          $text-light,    $red-light),
- (red-dark,     $red-dark,     $text-light,    $red),
- (red-darker,   $red-darker,   $text-light,    $red-dark),
- (orange-light, $orange-light, $text-dark,     $orange),
- (orange,       $orange,       $text-light,    $red-orange),
- (orange-dark,  $orange-dark,  $text-light,    $orange),
- (orange-darker,$orange-darker,$text-light,    $orange-dark),
- (blue-cyan,    $blue-cyan,    $text-light,    $cyan),
- (white,        $white,        $text-dark,     $red-light),
+ // name                         // bg-color        // text-color    // highlight-color
+ (#{""+$graey-spelling}-lighter, $grey-lighter,     $text-dark,     $grey-light),
+ (#{""+$graey-spelling}-light,   $grey-light,       $text-dark,     $grey-lighter),
+ (#{""+$graey-spelling},         $grey,             $text-light,    $grey-light),
+ (#{""+$graey-spelling}-dark,    $grey-dark,        $text-light,    $grey),
+ (#{""+$graey-spelling}-darker,  $grey-darker,      $text-light,    $grey-dark),
+ (blue-light,                    $blue-light,       $text-light,    $blue),
+ (blue,                          $blue,             $text-light,    $blue-light),
+ (blue-dark,                     $blue-dark,        $text-light,    $blue),
+ (blue-darker,                   $blue-darker,      $text-light,    $blue-dark),
+ (cyan,                          $cyan,             $text-light,    $blue-cyan),
+ (red-light,                     $red-light,        $text-light,    $red),
+ (red,                           $red,              $text-light,    $red-light),
+ (red-dark,                      $red-dark,         $text-light,    $red),
+ (red-darker,                    $red-darker,       $text-light,    $red-dark),
+ (orange-light,                  $orange-light,     $text-dark,     $orange),
+ (orange,                        $orange,           $text-light,    $red-orange),
+ (orange-dark,                   $orange-dark,      $text-light,    $orange),
+ (orange-darker,                 $orange-darker,    $text-light,    $orange-dark),
+ (blue-cyan,                     $blue-cyan,        $text-light,    $cyan),
+ (white,                         $white,            $text-dark,     $red-light),
 ) !default; 
 
 
