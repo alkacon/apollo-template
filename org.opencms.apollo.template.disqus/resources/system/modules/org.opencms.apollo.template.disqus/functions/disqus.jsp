@@ -43,7 +43,7 @@
 				<c:set var="pageUrl"><%= OpenCms.getLinkManager().getOnlineLink((CmsObject)pageContext.getAttribute("cmsObject"),(String)pageContext.getAttribute("fileName")) %></c:set>
 
 				<c:if test="${clickToLoad}">
-					<button type="button" class="btn-block btn-u btn-u-${cms.element.settings.buttoncolor}" onclick="toggleComments();this.blur();">
+					<button type="button" class="btn-block btn ap-btn-${cms.element.settings.buttoncolor}" onclick="toggleComments();this.blur();">
 						<span class="pull-left"><fmt:message key="apollo.disqus.message.comments" /></span>
 						<i id="disqus_toggle" class="fa fa-chevron-down pull-right"></i>
 					</button>
