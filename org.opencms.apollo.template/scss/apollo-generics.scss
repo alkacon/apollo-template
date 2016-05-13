@@ -1,19 +1,23 @@
 
 // Generic CSS selectors that can apply to any DIV or similar block element
 
-$bg-colors:         $all-colors !default;
-$font-colors:       $primary-colors !default;
+$bg-colors:              $all-colors !default;
+$font-colors:            $primary-colors !default;
 
-$margins-paddings:  (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 500, 1000) !default;
-$font-sizes:        (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 26, 28, 30, 36, 48, 72) !default;
-$line-heights:      (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) !default;
+$margins-paddings:       (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 500, 1000) !default;
+$font-sizes:             (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 26, 28, 30, 36, 48, 72) !default;
+$line-heights:           (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) !default;
+
+$headline-linecolor:     $main-theme !default;
+$headline-bottom:        1px dotted $grey-light !default; 
+$headline-bottom-bg:     1px dotted $grey-light !default; 
 
 $border-default-color:   $main-theme !default;
 $border-colors:          $primary-colors !default;
 $border-sizes:           (1, 2) !default;
 $border-radiuses:        ((0, 0px), (2, 2px), (5, 5px), (10, 10px), (15, 15px), (20, 20px), (30, 30px), (25p, 25%), (50p, 50%)) !default;
-$border-positions: (bottom, top, left, right) !default;
-$border-styles:   (none, solid, dotted, dashed, hidden) !default;
+$border-positions:       (bottom, top, left, right) !default;
+$border-styles:          (none, solid, dotted, dashed, hidden) !default;
 
 
 // Colored backgrounds
@@ -48,8 +52,8 @@ $border-styles:   (none, solid, dotted, dashed, hidden) !default;
             }
         }
         
-        .headline{
-              border-bottom: 1px dotted $highlight-color;
+        .headline {
+              border-bottom: $headline-bottom-bg;
         }        
     }
     
@@ -148,6 +152,21 @@ $border-styles:   (none, solid, dotted, dashed, hidden) !default;
 a.no-underline:hover,
 a.no-underline {
 	text-decoration: none;
+}
+
+// Headlines
+
+.headline {
+  margin-bottom: 25px;
+  border-bottom: $headline-bottom;
+}
+
+.headline h2, 
+.headline h3, 
+.headline h4 {
+  display: inline-block;
+  margin-bottom: -2px;
+  border-bottom: 2px solid $headline-linecolor;
 }
 
 // Borders
