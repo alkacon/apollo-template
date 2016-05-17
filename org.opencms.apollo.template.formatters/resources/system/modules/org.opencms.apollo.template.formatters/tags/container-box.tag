@@ -75,7 +75,7 @@
       </c:otherwise>
     </c:choose>
   </h1>
-  <p class="fc-grey-dark lh-12">
+  <p class="oc-container-text">
     ${label}<br>
     <c:if test="${not empty cms.container.type}">
       <small>
