@@ -7,7 +7,7 @@
 <%@ variable name-given="image" declare="true" variable-class="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" %>
 <%@ variable name-given="imageLink" declare="true" %>
 <%@ variable name-given="imageCopyright" declare="true" %>
-<%@ variable name-given="imageTitleAttr" declare="true" %>
+<%@ variable name-given="imageTitle" declare="true" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
