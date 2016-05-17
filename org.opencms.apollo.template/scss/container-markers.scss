@@ -43,7 +43,9 @@ $oc-container-labels:
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    text-align: center;    
+    text-align: center;   
+    overflow: hidden; 
+    white-space: normal;
     border-radius: 10px;  
     -webkit-border-radius: 10px;
     
@@ -96,3 +98,7 @@ $oc-container-labels:
     margin: 0 0 10px 0;   
 }
 
+.oc-container-text {
+    color: darken($oc-col-border, 15%);
+    line-height: 1.2;
+}

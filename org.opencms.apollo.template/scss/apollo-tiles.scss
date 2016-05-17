@@ -1,0 +1,124 @@
+
+// Apollo tiles and squares
+   
+$ti-maxCols: 12; 
+$ti-margin: 0;
+// columns: 1         2       3       4       5           6,     8,          10,         12
+$ti-cols: ((12, 12), (6, 6), (4, 4), (3, 3), (2o4, 2.4), (2,2), (1o5, 1.5), (1o2, 1.2), (1,1));
+
+%square {
+    .inner{
+        float:left;
+        position: relative;
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        overflow: hidden;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &:hover .title{
+        bottom: 0;
+        transition: bottom 1s;                
+    }    
+    .title{
+        padding: 10px;
+        color: #fff;
+        background-color: rgba(0,0,0,0.2);
+        position: absolute;
+        bottom: -100px;
+        width: 100%;
+        transition: bottom 1s;
+    }
+
+    .content{
+        position: absolute;    
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}    
+
+.ap-tile { 
+    float: left;
+    position: relative;
+    min-height: 1px;
+    white-space: nowrap;
+    width: calc(100% - #{$ti-margin*2}px);
+    margin: #{$ti-margin}px;
+}
+
+
+@each $size in (xs,sm,md,lg){
+
+    @each $i, $ti-i in $ti-cols { 
+
+        .square-#{$size}-#{$i} {
+            @extend %square;
+        }
+
+//        .tile-#{$size}-#{$i} {
+//            @extend %tile;
+//        }    
+    }
+}
+
+@mixin make-square($size)   {  
+
+    @each $i, $ti-i in $ti-cols { 
+
+        $ti-width: 100/($ti-maxCols/$ti-i);
+
+        .square-#{$size}-#{$i} {
+
+            .inner{
+                    width: calc(#{$ti-width}% - #{$ti-margin*2}px);
+                    padding-bottom : calc(#{$ti-width}% - #{$ti-margin*2}px);    
+                    @if $i == $ti-maxCols {
+                        margin: #{$ti-margin}px 0;    
+                    }@else{
+                        margin: #{$ti-margin}px;                        
+                    }            
+            }
+        }
+    }
+}
+
+@mixin make-tile($size)   {  
+
+    @each $i, $ti-i in $ti-cols { 
+
+        $ti-width: 100/($ti-maxCols/$ti-i);
+
+        .tile-#{$size}-#{$i} {
+            width: calc(#{$ti-width}% - #{$ti-margin*2}px);
+            @if $i == $ti-maxCols {
+                margin: #{$ti-margin}px 0;
+            } @else {
+                margin: #{$ti-margin}px;
+            } 
+        }
+    }
+}
+
+@include make-square(xs);        
+@include make-tile(xs);        
+
+@media (min-width: $screen-sm-min){    
+    @include make-square(sm);    
+    @include make-tile(sm);
+}
+
+@media (min-width: $screen-md-min){    
+    @include make-square(md);
+    @include make-tile(md);
+}
+
+@media (min-width: $screen-lg-min){    
+    @include make-square(lg);
+    @include make-tile(lg);
+}

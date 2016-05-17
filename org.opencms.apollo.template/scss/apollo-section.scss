@@ -46,6 +46,15 @@
 		}
 	}	
 }
+
+.ap-tile .ap-sec,
+.ap-tile .ap-section,
+.ap-tile .ap-sec .ap-img,
+.ap-tile .ap-section .ap-img {
+
+    margin: 0;
+}
+
 // Image section style "Bold headline, centered"
 .ap-img-v1 {
 	.ap-img-txt {
