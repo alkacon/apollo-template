@@ -31,16 +31,17 @@
 				<c:set var="cmsObject" value="${cms.vfs.cmsObject}"/>
 				<c:choose>
 					<c:when test="${cms.detailRequest}">
-						<c:set var="fileName">${cms.detailContentSitePath}</c:set>
-						<c:set var="pageId" value="${cms.locale}-${cms.detailContentId}" />
-						<%-- alternatively, use the permalink = OpenCms.getLinkManager().getPermalink((CmsObject)pageContext.getAttribute("cmsObject"),(String)pageContext.getAttribute("fileName"), (CmsUUID)pageContext.getAttribute("pageId")) --%>
+						<c:set var="fileName">${cms.requestContext.uri}</c:set>
+						<c:set var="pageId" value="${cms.detailContentId}" />
+						<c:set var="pageUrl"><%= OpenCms.getLinkManager().getPermalink((CmsObject)pageContext.getAttribute("cmsObject"),(String)pageContext.getAttribute("fileName"), (CmsUUID)pageContext.getAttribute("pageId")) %></c:set>
+						<c:set var="pageId" value="${cms.locale}-${pageId}" />
 					</c:when>
 					<c:otherwise>
 						<c:set var="fileName">${cms.requestContext.uri}</c:set>
 						<c:set var="pageId">${cms.locale}-${cms.vfs.readResource[fileName].structureId}</c:set>
+						<c:set var="pageUrl"><%= OpenCms.getLinkManager().getOnlineLink((CmsObject)pageContext.getAttribute("cmsObject"),(String)pageContext.getAttribute("fileName")) %></c:set>
 					</c:otherwise>
 				</c:choose>
-				<c:set var="pageUrl"><%= OpenCms.getLinkManager().getOnlineLink((CmsObject)pageContext.getAttribute("cmsObject"),(String)pageContext.getAttribute("fileName")) %></c:set>
 
 				<c:if test="${clickToLoad}">
 					<button type="button" class="btn-block btn ap-btn-${cms.element.settings.buttoncolor}" onclick="toggleComments();this.blur();">
