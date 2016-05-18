@@ -66,6 +66,14 @@
       <Key><![CDATA[apollo.navigation.navstartlevel.3]]></Key>
       <Value><![CDATA[3 - Dritte Ebene]]></Value>
     </Message>
+	<Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.4]]></Key>
+      <Value><![CDATA[4 - Vierte Ebene]]></Value>
+    </Message>
+	<Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.5]]></Key>
+      <Value><![CDATA[5 - Fünfte Ebene]]></Value>
+    </Message>
   </Bundle>
   <Bundle language="en">
     <Message>
@@ -131,6 +139,14 @@
     <Message>
       <Key><![CDATA[apollo.navigation.navstartlevel.3]]></Key>
       <Value><![CDATA[3 - Third Level]]></Value>
+    </Message>
+	<Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.4]]></Key>
+      <Value><![CDATA[4 - Fourth Level]]></Value>
+    </Message>
+	<Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.5]]></Key>
+      <Value><![CDATA[5 - Fifth Level]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

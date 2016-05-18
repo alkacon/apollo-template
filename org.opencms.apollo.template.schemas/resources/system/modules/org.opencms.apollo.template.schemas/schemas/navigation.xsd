@@ -32,7 +32,7 @@
 				<default element="LogoLink" value="/" />
 			</defaults>
 			<layouts>
-				<layout element="NavStartLevel" widget="SelectorWidget" configuration="0:%(key.apollo.navigation.navstartlevel.0)|1*:%(key.apollo.navigation.navstartlevel.1)|2:%(key.apollo.navigation.navstartlevel.2)|3:%(key.apollo.navigation.navstartlevel.3)" />
+				<layout element="NavStartLevel" widget="SelectorWidget" configuration="0:%(key.apollo.navigation.navstartlevel.0)|1*:%(key.apollo.navigation.navstartlevel.1)|2:%(key.apollo.navigation.navstartlevel.2)|3:%(key.apollo.navigation.navstartlevel.3)|4:%(key.apollo.navigation.navstartlevel.4)|5:%(key.apollo.navigation.navstartlevel.5)" />
 				<layout element="LogoImage" widget="ImageGalleryWidget" configuration="{useformat:false}" />
 				<layout element="Header" widget="TextareaWidget" configuration="15" />
 			</layouts>
