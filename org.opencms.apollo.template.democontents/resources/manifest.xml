@@ -1437,6 +1437,27 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>.galleries/cliparts/default.png</source>
+			<destination>.galleries/cliparts/default.png</destination>
+			<type>image</type>
+			<uuidstructure>ecdb83f0-1dd4-11e6-b998-0242ac11002b</uuidstructure>
+			<uuidresource>ecdb83f1-1dd4-11e6-b998-0242ac11002b</uuidresource>
+			<datecreated>Thu, 19 May 2016 15:18:22 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Default placeholder image]]></value>
+				</property>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:640,h:480]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>.galleries/people</destination>
 			<type>imagegallery</type>
 			<uuidstructure>71ae8c67-4705-11e3-8417-000c29d28104</uuidstructure>
