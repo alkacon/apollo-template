@@ -1,47 +1,95 @@
 
 // Apollo tiles and squares
    
-$ti-maxCols: 12; 
-$ti-margin: 0;
+$ti-maxCols: 12 !default; 
+$ti-margin: 0 !default;
 // columns: 1         2       3       4       5           6,     8,          10,         12
-$ti-cols: ((12, 12), (6, 6), (4, 4), (3, 3), (2o4, 2.4), (2,2), (1o5, 1.5), (1o2, 1.2), (1,1));
+$ti-cols: ((12, 12), (6, 6), (4, 4), (3, 3), (2o4, 2.4), (2,2), (1o5, 1.5), (1o2, 1.2), (1,1)) !default;
 
-%square {
-    .inner{
-        float:left;
-        position: relative;
-        background-position:center center;
-        background-repeat:no-repeat;
-        background-size:cover;
-        overflow: hidden;
-        a {
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-    }
-    &:hover .title{
-        bottom: 0;
-        transition: bottom 1s;                
-    }    
-    .title{
-        padding: 10px;
-        color: #fff;
-        background-color: rgba(0,0,0,0.2);
-        position: absolute;
-        bottom: -100px;
-        width: 100%;
-        transition: bottom 1s;
-    }
+$sq-maxCols: $ti-maxCols !default; 
+$sq-margin: 0 !default;
+$sq-margins: $spacers !default;
+$sq-cols: $ti-cols !default;
+$sq-padding: 20 !default;
 
-    .content{
-        position: absolute;    
-        img{
-            width: 100%;
-            height: 100%;
+// Squares
+
+// For the basics of this square tile solution, see
+// http://stackoverflow.com/questions/20456694/grid-of-responsive-squares
+
+.ap-square { 
+   // base definition that is used if no media query matches
+   float: left;
+   position: relative;
+   width: 100%;
+   padding: 0 0 100% 0 !important; // !important because the "padding-bottom: 100%" is what makes the squares sqaure
+}
+
+@mixin make-ap-square($size)   { 
+
+    @each $i, $sq-i in $sq-cols { 
+        $sq-width: 100%/($sq-maxCols/$sq-i);
+
+        .square-#{$size}-#{$i} { 
+           // creates the media query square versions like .square-md-5 etc.
+            width: #{$sq-width};
+            padding: 0 0 #{$sq-width} 0 !important;
+
+            @each $h, $sq-h in ((0o16, 0.166), (0o25, 0.25), (0o33, 0.332), (0o5, 0.5), (1o5, 1.499), (2, 2)) {             
+
+                &-h-#{$h} { 
+                    // allows adjustmets of square height 
+                    width: #{$sq-width};                          
+                    padding: 0 0 #{$sq-width * $sq-h} 0 !important;            
+                }
+            }
         }
-    }
-}    
+    }  
+}
+
+.ap-square .ap-square-section { 
+    // required inner square class, the "position: absolute" does the trick 
+    position: absolute !important; // !important because otherwise OpenCms ADE will mix up the grid
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@each $m in $sq-margins  { 
+    // allows to set the margin between squares
+    .ap-square.square-m-#{$m} .ap-square-section {
+        height: calc(100% - #{$m * 2}px);
+        width:  calc(100% - #{$m * 2}px);
+        margin: #{$m}px;
+    }        
+}
+
+.ap-sq-square { 
+    // ensure we can have variable padding squares with hidden overflow
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;    
+}
+
+.ap-sq-table { 
+    // table needed for aligment of content inside square
+    display: table;  
+    height: 100%;
+    width: 100%;
+}
+
+.ap-sq-cell { 
+    // table cell needed for aligment of content inside square
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
+
+// Tiles
 
 .ap-tile { 
     float: left;
@@ -53,42 +101,7 @@ $ti-cols: ((12, 12), (6, 6), (4, 4), (3, 3), (2o4, 2.4), (2,2), (1o5, 1.5), (1o2
 }
 
 
-@each $size in (xs,sm,md,lg){
-
-    @each $i, $ti-i in $ti-cols { 
-
-        .square-#{$size}-#{$i} {
-            @extend %square;
-        }
-
-//        .tile-#{$size}-#{$i} {
-//            @extend %tile;
-//        }    
-    }
-}
-
-@mixin make-square($size)   {  
-
-    @each $i, $ti-i in $ti-cols { 
-
-        $ti-width: 100/($ti-maxCols/$ti-i);
-
-        .square-#{$size}-#{$i} {
-
-            .inner{
-                    width: calc(#{$ti-width}% - #{$ti-margin*2}px);
-                    padding-bottom : calc(#{$ti-width}% - #{$ti-margin*2}px);    
-                    @if $i == $ti-maxCols {
-                        margin: #{$ti-margin}px 0;    
-                    }@else{
-                        margin: #{$ti-margin}px;                        
-                    }            
-            }
-        }
-    }
-}
-
-@mixin make-tile($size)   {  
+@mixin make-ap-tile($size)   {  
 
     @each $i, $ti-i in $ti-cols { 
 
@@ -105,20 +118,20 @@ $ti-cols: ((12, 12), (6, 6), (4, 4), (3, 3), (2o4, 2.4), (2,2), (1o5, 1.5), (1o2
     }
 }
 
-@include make-square(xs);        
-@include make-tile(xs);        
+@include make-ap-square(xs);        
+@include make-ap-tile(xs);        
 
 @media (min-width: $screen-sm-min){    
-    @include make-square(sm);    
-    @include make-tile(sm);
+    @include make-ap-square(sm);    
+    @include make-ap-tile(sm);
 }
 
 @media (min-width: $screen-md-min){    
-    @include make-square(md);
-    @include make-tile(md);
+    @include make-ap-square(md);
+    @include make-ap-tile(md);
 }
 
 @media (min-width: $screen-lg-min){    
-    @include make-square(lg);
-    @include make-tile(lg);
+    @include make-ap-square(lg);
+    @include make-ap-tile(lg);
 }

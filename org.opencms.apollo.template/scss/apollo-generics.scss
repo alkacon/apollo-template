@@ -4,7 +4,7 @@
 $bg-colors:              $all-colors !default;
 $font-colors:            $primary-colors !default;
 
-$margins-paddings:       (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 500, 1000) !default;
+$margins-paddings:       $spacers !default;
 $font-sizes:             (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 26, 28, 30, 36, 48, 72) !default;
 $line-heights:           (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) !default;
 
@@ -62,58 +62,6 @@ $border-styles:          (none, solid, dotted, dashed, hidden) !default;
         
         background-color: rgba($bg-color, 0.7);
     }    
-}
-
-// Margins and paddings
-
-@each $space in $margins-paddings {
-
-    .p-#{$space} {
-        padding: #{$space}px;
-    }
-    .pv-#{$space} {
-        padding-top: #{$space}px;
-        padding-bottom: #{$space}px;
-    }   
-    .ph-#{$space} {
-        padding-left: #{$space}px;
-        padding-right: #{$space}px;
-    }
-	.pl-#{$space} {
-	    padding-left: #{$space}px;
-	}
-    .pr-#{$space} {
-        padding-right: #{$space}px;
-    }
-    .pt-#{$space} {
-        padding-top: #{$space}px;
-    }       
-    .pb-#{$space} {
-        padding-bottom: #{$space}px;
-    }    
-    .m-#{$space} {
-        margin: #{$space}px;
-    }  
-    .mv-#{$space} {
-        margin-top: #{$space}px;
-        margin-bottom: #{$space}px;
-    }	
-    .mh-#{$space} {
-        margin-left: #{$space}px;
-        margin-right: #{$space}px;
-    }   
-    .ml-#{$space} {
-        margin-left: #{$space}px;
-    }
-    .mr-#{$space} {
-        margin-right: #{$space}px;
-    }       
-	.mt-#{$space} {
-	    margin-top: #{$space}px;
-	}    	
-    .mb-#{$space} {
-        margin-bottom: #{$space}px;
-    }
 }
 
 // Font and text adjustments
@@ -238,4 +186,56 @@ a.no-underline {
 
 .disp-b {
     display: block;
+}
+
+// Margins and paddings
+
+@each $space in $margins-paddings {
+
+    .p-#{$space} {
+        padding: #{$space}px;
+    }
+    .pv-#{$space} {
+        padding-top: #{$space}px;
+        padding-bottom: #{$space}px;
+    }   
+    .ph-#{$space} {
+        padding-left: #{$space}px;
+        padding-right: #{$space}px;
+    }
+	.pl-#{$space} {
+	    padding-left: #{$space}px;
+	}
+    .pr-#{$space} {
+        padding-right: #{$space}px;
+    }
+    .pt-#{$space} {
+        padding-top: #{$space}px;
+    }       
+    .pb-#{$space} {
+        padding-bottom: #{$space}px;
+    }    
+    .m-#{$space} {
+        margin: #{$space}px;
+    }  
+    .mv-#{$space} {
+        margin-top: #{$space}px;
+        margin-bottom: #{$space}px;
+    }	
+    .mh-#{$space} {
+        margin-left: #{$space}px;
+        margin-right: #{$space}px;
+    }   
+    .ml-#{$space} {
+        margin-left: #{$space}px;
+    }
+    .mr-#{$space} {
+        margin-right: #{$space}px;
+    }       
+	.mt-#{$space} {
+	    margin-top: #{$space}px;
+	}    	
+    .mb-#{$space} {
+        margin-bottom: #{$space}px;
+    }
 }
