@@ -41,11 +41,13 @@
 
     <c:set var="detailView" value="${((loop.count == 1) and (cms.element.setting.detail == 'view')) ? 'true' : 'false' }" />
     <c:set var="typeName" value="${column.value.Type.isSet ? column.value.Type : (content.value.Defaults.isSet ? content.value.Defaults.value.Type : 'unknown')}" />
+    <c:set var="preMarkup"  value="${column.value.PreMarkup.isSet  ? column.value.PreMarkup  : (content.value.Defaults.isSet ? content.value.Defaults.value.PreMarkup  : '')}" />
+    <c:set var="postMarkup" value="${column.value.PostMarkup.isSet ? column.value.PostMarkup : (content.value.Defaults.isSet ? content.value.Defaults.value.PostMarkup : '')}" />
     <c:if test="${not empty gridParts[loop.count -1]}">
       <c:set var="typeName" value="${fn:toLowerCase(gridParts[loop.count -1])}" />
     </c:if>
 
-    <c:if test="${column.value.PreMarkup.isSet}">${column.value.PreMarkup}</c:if>
+    <c:if test="${not empty preMarkup}">${preMarkup}</c:if>
 
     <c:choose>
 
@@ -115,7 +117,7 @@
 
     </c:choose>
 
-    <c:if test="${column.value.PostMarkup.isSet}">${column.value.PostMarkup}</c:if>
+    <c:if test="${not empty postMarkup}">${postMarkup}</c:if>
 
   </c:forEach>
 

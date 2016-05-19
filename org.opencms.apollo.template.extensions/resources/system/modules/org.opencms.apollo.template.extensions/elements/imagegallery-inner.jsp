@@ -34,22 +34,21 @@
 						<c:set var="imgsrclink">
 							<cms:link>${imagesrc}</cms:link>
 						</c:set>
-						<div class="${cssClass} comein">
-							<div class="inner">
-								<a class="content image-gallery" href="${imgsrclink}" onclick="openGallery(event, ${status.index+param.items*(param.page-1)})" 
-									title="${showTitle eq 'true' ? title:''}" > <cms:include
-										page="responsive-image.jsp">
-										<cms:param name="css">${cssClass}</cms:param>
-										<cms:param name="imagesrc">${imagesrc}</cms:param>
-										<cms:param name="scale">2</cms:param>
-										<cms:param name="title">${title}</cms:param>
-										<cms:param name="samesize">true</cms:param>
-									</cms:include> <c:if test="${showTitle eq 'true' and not empty title}">
-										<span class="title">${title}</span>
-									</c:if>
-								</a>
-							</div>
-						</div>
+                        
+                        <div class="${cssClass} comein zoom">
+                            <a class="content image-gallery" 
+                               href="${imgsrclink}" 
+                               onclick="openGallery(event, ${status.index+param.items*(param.page-1)})" 
+                               title="${showTitle eq 'true' ? title:''}" > 
+                                <div class="ap-square-section" style="background-image:url('${imgsrclink}');">
+                                    <div class="zoom-overlay">
+                                        <div class="zoom-icon">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 					</c:forEach>
 					<c:if
 						test="${search.numFound < param.items*(param.page+1) and (search.numFound - (param.items*param.page) < 0)}">

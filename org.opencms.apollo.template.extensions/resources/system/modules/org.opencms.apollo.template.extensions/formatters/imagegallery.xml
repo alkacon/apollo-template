@@ -32,7 +32,7 @@
       <DisplayName><![CDATA[Images per page]]></DisplayName>
       <Description><![CDATA[Set a number how much images shall be shown per page.]]></Description>
       <Widget><![CDATA[string]]></Widget>
-      <Default><![CDATA[20]]></Default>
+      <Default><![CDATA[12]]></Default>
       <RuleRegex><![CDATA[[0-9]+]]></RuleRegex>
       <RuleType><![CDATA[error]]></RuleType>
       <Error><![CDATA[Only numbers please.]]></Error>
@@ -49,7 +49,7 @@
       <DisplayName><![CDATA[Wrapper CSS class]]></DisplayName>
       <Description><![CDATA[CSS class name for the images <div> elements.]]></Description>
       <Widget><![CDATA[string]]></Widget>
-      <Default><![CDATA[square-xs-12 square-md-3]]></Default>
+      <Default><![CDATA[ap-square square-sm-6 square-md-4 square-lg-3 square-m-2]]></Default>
     </Setting>
   </NewFormatter>
 </NewFormatters>

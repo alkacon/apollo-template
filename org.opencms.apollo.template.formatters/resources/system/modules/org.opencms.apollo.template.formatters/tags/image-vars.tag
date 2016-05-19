@@ -8,6 +8,7 @@
 <%@ variable name-given="imageLink" declare="true" %>
 <%@ variable name-given="imageCopyright" declare="true" %>
 <%@ variable name-given="imageTitle" declare="true" %>
+<%@ variable name-given="imageTitleCopyright" declare="true" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
@@ -16,6 +17,7 @@
 <c:set var="imageLink" value="" />
 <c:set var="imageCopyright" value="" />
 <c:set var="imageTitle" value="" />
+<c:set var="imageTitleCopyright" value="" />
 
 <c:set var="image" value="${content.value.Image}" />
 
@@ -40,6 +42,15 @@
 			<c:set var="imageCopyright"><cms:property name="Copyright" file="${imageUri}" default="" /></c:set>
 		</c:otherwise>
 	</c:choose>    
+    
+    <%--
+        Set the image title from the dedicated field.
+    --%>
+    <c:if test="${image.value.Title.isSet}">
+        <c:set var="imageTitle">${image.value.Title}</c:set>
+        <c:set var="imageTitleCopyright">${imageTitle}</c:set>        
+    </c:if>
+    
     <%--
         Add copyright symbol. Make sure &copy; is replaced 
         with (c) since tooltips / title attributes have problems with HTML entities.
@@ -49,13 +60,7 @@
         <c:if test="${not fn:contains(imageCopyright, '(c)')}">
             <c:set var="imageCopyright">${'(c)'}${' '}${imageCopyright}</c:set>
         </c:if>
-    </c:if>
-
-    <%--
-        Set the image title from the dedicated field.
-    --%>
-    <c:if test="${image.value.Title.isSet}">
-        <c:set var="imageTitle">${image.value.Title}</c:set>
+        <c:set var="imageTitleCopyright">${imageTitle}${' '}${imageCopyright}</c:set>        
     </c:if>
 
 </c:if>
