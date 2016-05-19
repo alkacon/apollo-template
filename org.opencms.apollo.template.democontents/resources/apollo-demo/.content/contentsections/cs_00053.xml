@@ -5,8 +5,9 @@
     <Headline><![CDATA[Contact Address]]></Headline>
     <Text name="Text0">
       <links>
-        <link name="link0" internal="false" type="A">
-          <target><![CDATA[http://alkacon.com]]></target>
+        <link name="link0" internal="true" type="A">
+          <target><![CDATA[/sites/alkacon/]]></target>
+          <uuid>0d2067e5-e6b3-11e5-9b14-0242ac11002b</uuid>
         </link>
       </links>
       <content><![CDATA[<h4>Alkacon Software GmbH</h4>
