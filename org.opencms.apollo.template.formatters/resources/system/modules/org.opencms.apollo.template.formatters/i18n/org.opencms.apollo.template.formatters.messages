@@ -151,6 +151,26 @@
       <Value><![CDATA[Use pagination]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.filtercolor]]></Key>
+      <Value><![CDATA[Filter color]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.yearcolor]]></Key>
+      <Value><![CDATA[Year filter color]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showsearch]]></Key>
+      <Value><![CDATA[Show search]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showlabels]]></Key>
+      <Value><![CDATA[Show labels]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showarchive]]></Key>
+      <Value><![CDATA[Show archive]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.showimgtitle]]></Key>
       <Value><![CDATA[Show image sub title]]></Value>
     </Message>
@@ -867,6 +887,26 @@
     <Message>
       <Key><![CDATA[apollo.setting.usepagination]]></Key>
       <Value><![CDATA[Verwende Blätterfunktion]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.filtercolor]]></Key>
+      <Value><![CDATA[Filter Farbe]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.yearcolor]]></Key>
+      <Value><![CDATA[Farbe Jahresfilter]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showsearch]]></Key>
+      <Value><![CDATA[Zeige Suche]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showlabels]]></Key>
+      <Value><![CDATA[Zeige Labels]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showarchive]]></Key>
+      <Value><![CDATA[Zeige Archiv]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showimgtitle]]></Key>

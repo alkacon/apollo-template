@@ -1,0 +1,55 @@
+$filterbox-colors:	$border-colors !default;
+
+@each $color-name, $bg-color, $text-color, $highlight-color in $filterbox-colors {
+    div.ap-list-filterbox-#{""+$color-name} { 
+      border: 1px solid $bg-color;
+    }
+}
+
+.ap-list-filterbox {
+	margin-bottom: 15px;
+	background-color: $white;
+	border: 1px solid transparent;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+	padding: 15px;
+}
+
+.ap-list-filter-labels-wrapper, .ap-list-filter-archive {
+	display: none;
+}
+
+.ap-list-filter-labels {
+	margin-top: 0;
+	padding-left: 0;
+	list-style: outside none none;
+}
+
+.ap-list-filter-labels li.active a {
+	font-weight: bold;
+} 
+
+.ap-list-filter-labels-wrapper hr {
+	margin: 20px 0 10px 0;
+}
+
+.ap-list-filterbtn-year {
+	margin-top: 15px;
+}
+
+.ap-list-filter-year {
+	margin-top: 10px;
+	margin-left: -5px;
+	padding-left: 0;
+	list-style: outside none none;
+}
+
+.ap-list-filter-year > li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-size: 12px;
+}
+
+.ap-list-filter-year li.active a {
+	font-weight: bold;
+} 
