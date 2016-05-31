@@ -33,6 +33,8 @@ $zoom-fg:  $text-light !default;
 }
 
 .zoom-overlay .zoom-icon i {  
+    // trick to position the element in the center of the surrounding div
+    // see http://stackoverflow.com/questions/5703552/css-center-text-horizontal-and-vertical-inside-a-div-block
     position: absolute;
     top: 50%;
     left: 50%;
