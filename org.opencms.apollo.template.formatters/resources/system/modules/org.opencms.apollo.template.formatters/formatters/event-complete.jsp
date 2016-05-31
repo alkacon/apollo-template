@@ -1,0 +1,183 @@
+<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
+<%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
+
+<fmt:setLocale value="${cms.locale}" />
+<cms:bundle basename="org.opencms.apollo.template.schemas.event">
+
+	<cms:formatter var="content" val="value" rdfa="rdfa">
+
+		<div class="mb-20">
+			<c:choose>
+				<c:when test="${cms.element.inMemoryOnly}">
+					<div class="alert">
+						<fmt:message key="apollo.event.message.edit" />
+					</div>
+				</c:when>
+				<c:otherwise>
+					<!-- blog header -->
+					<div class="blog-page">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <apollo:headline setting="${cms.element.setting}" headline="${content.value.Title}" />
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-6">
+                            
+                                <div class="row">
+                                <div class="col-xs-1 col-sm-2">
+                                    <i class="icon-custom icon-sm icon-color-u fa fa-calendar"></i>                                
+                                </div>
+                                <div class="col-xs-11 col-sm-10">
+                                
+                                    <h5>
+                                        <fmt:formatDate
+                                            value="${cms:convertDate(value.Date)}" 
+                                            dateStyle="SHORT"
+                                            timeStyle="SHORT" 
+                                            type="both" /> 
+                                        <c:if test="${value.EndDate.isSet}"> 
+                                            - <fmt:formatDate
+                                                value="${cms:convertDate(value.EndDate)}" 
+                                                dateStyle="SHORT"
+                                                timeStyle="SHORT" 
+                                                type="both" />
+                                        </c:if>
+                                    </h5>
+                                
+                                </div>
+                                </div>
+                                
+                                <c:if test="${fn:length(content.valueList.Category) > 0}">
+                                <div class="row">
+
+                                    <div class="col-xs-1 col-sm-2">
+                                        <i class="icon-custom icon-sm icon-color-u fa fa-tag"></i>                                
+                                    </div>
+                                    <div class="col-xs-11 col-sm-10">
+                                        <ul class="list-unstyled list-inline blog-tags">
+                                            <li> 
+                                                <c:forEach var="item"
+                                                    items="${fn:split(content.value.Category,',')}"
+                                                    varStatus="status">
+                                                    <span class="label rounded label-light">
+                                                        <i class="fa fa-tag"></i> ${cms.vfs.property[item]['Title']}
+                                                    </span>
+                                                </c:forEach>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                </c:if>
+                                
+                            </div>
+                            
+                            <c:if test="${value.Location.isSet or value.Address.isSet}">
+                                <div class="col-xs-1">
+                                    <i class="icon-custom icon-sm icon-color-u fa fa-map-marker"></i>
+                                </div>
+                                <div class="col-xs-11 col-sm-5">
+                                    <c:if test="${value.Location.isSet}">
+                                        <h5 ${rdfa.Location}>${value.Location}</h5>
+                                    </c:if>
+                                    <c:if test="${value.Address.isSet}">
+                                        <div ${rdfa.Address}>${value.Address}</div>
+                                    </c:if>
+                                </div>
+                            </c:if> 
+                                    
+						</div>                       
+					</div>
+					<%-- //END blog header --%>
+
+					<%-- paragraphs --%>
+					<c:forEach 
+                        var="paragraph" 
+                        items="${content.valueList.Paragraph}"
+						varStatus="status">
+
+						<div class="paragraph margin-bottom-20">
+
+							<c:set var="imgalign">noimage</c:set>
+							<c:if test="${paragraph.value.Image.exists}">
+								<c:set var="imgalign">
+									<cms:elementsetting name="imgalign" default="left" />
+								</c:set>
+							</c:if>
+
+							<c:if test="${paragraph.value.Headline.isSet}">
+								<div class="headline">
+									<h4 ${paragraph.rdfa.Headline}>${paragraph.value.Headline}</h4>
+								</div>
+							</c:if>
+
+							<c:choose>
+
+								<c:when test="${imgalign == 'noimage'}">
+									<span ${paragraph.rdfa.Image}></span>
+									<div ${paragraph.rdfa.Text}>${paragraph.value.Text}</div>
+									<c:if
+										test="${status.last and (value.Location.isSet or value.Address.isSet)}">
+										<div class="row">
+											<div class="hidden-xs col-sm-2 col-lg-1">
+												<i class="icon-custom icon-sm icon-color-u fa fa-map-marker"></i>
+											</div>
+											<div class="col-xs-12 col-sm-10 col-lg-11">
+												<c:if test="${value.Location.isSet}">
+													<h5 ${rdfa.Location}>${value.Location}</h5>
+												</c:if>
+												<c:if test="${value.Address.isSet}">
+													<div ${rdfa.Address}>${value.Address}</div>
+												</c:if>
+											</div>
+										</div>
+									</c:if>
+									<c:if test="${paragraph.value.Link.exists}">
+										<p>
+											<a class="btn ap-btn-sm"
+												href="<cms:link>${paragraph.value.Link.value.URI}</cms:link>">${paragraph.value.Link.value.Text}</a>
+										</p>
+									</c:if>
+								</c:when>
+
+								<c:when test="${imgalign == 'left' or imgalign == 'right'}">
+
+									<c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
+									<%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
+
+									<div class="row">
+										<div class="col-md-4 pull-${imgalign}">
+                                        
+                                        <apollo:image-kenburn 
+                                            setting="${cms.element.setting}" 
+                                            image="${paragraph.value.Image}"
+                                            width="400"
+                                            content="${content}" />
+
+										</div>
+										<div class="col-md-8">
+											<div ${paragraph.rdfa.Text}>${paragraph.value.Text}</div>
+											<c:if test="${paragraph.value.Link.exists}">
+												<p>
+													<a class="btn ap-btn-sm"
+														href="<cms:link>${paragraph.value.Link.value.URI}</cms:link>">${paragraph.value.Link.value.Text}</a>
+												</p>
+											</c:if>
+										</div>
+									</div>
+								</c:when>
+							</c:choose>
+
+						</div>
+
+					</c:forEach>
+					<%-- //END paragraphs --%>
+				</c:otherwise>
+			</c:choose>
+		</div>
+	</cms:formatter>
+</cms:bundle>

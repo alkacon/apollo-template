@@ -8,7 +8,7 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.messages">
 <cms:formatter var="content" val="value" rdfa="rdfa">
-<apollo:image-vars content="${content}">
+<apollo:image-vars image="${content.value.Image}">
 
 <c:set var="imageBg" value="" />
 <c:if test="${not empty imageLink}">

@@ -1,10 +1,10 @@
-<%@tag display-name="image-vars"
-  trimDirectiveWhitespaces="true" 
-  description="Provides quick access to image values from XML"%>
+<%@ tag 
+    display-name="image-vars"
+    trimDirectiveWhitespaces="true" 
+    description="Provides quick access to image values from XML"%>
 
-<%@attribute name="content" type="org.opencms.jsp.util.CmsJspContentAccessBean" required="true" %>
+<%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 
-<%@ variable name-given="image" declare="true" variable-class="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" %>
 <%@ variable name-given="imageLink" declare="true" %>
 <%@ variable name-given="imageCopyright" declare="true" %>
 <%@ variable name-given="imageTitle" declare="true" %>
@@ -18,8 +18,6 @@
 <c:set var="imageCopyright" value="" />
 <c:set var="imageTitle" value="" />
 <c:set var="imageTitleCopyright" value="" />
-
-<c:set var="image" value="${content.value.Image}" />
 
 <c:if test="${image.isSet && image.value.Image.isSet }">
 <%-- We only initialize the other stuff if the image link is set --%>
