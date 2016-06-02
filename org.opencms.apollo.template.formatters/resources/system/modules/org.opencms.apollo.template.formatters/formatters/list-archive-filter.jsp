@@ -8,9 +8,8 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
 	<cms:formatter var="content" val="value" rdfa="rdfa">
-		<apollo:list-archive-search content="${content}" usepagesize="false"/>
+		<apollo:list-archive-search content="${content}" usepagesize="true"/>
 		<div>
-
 			<div class="ap-list-filters">
 				<c:if test="${cms.element.settings.showsearch}">
 					<div class="ap-list-filterbox ap-list-filterbox-search ap-list-filterbox-${cms.element.settings.filtercolor}">
@@ -20,7 +19,7 @@
 								<input type="hidden" name="${search.controller.common.config.lastQueryParam}" value="${escapedQuery}" />
 								<input type="hidden" name="${search.controller.common.config.reloadedParam}" />
 								<span class="input-group-addon"><span class="icon-magnifier"></span></span>
-								<input name="${search.controller.common.config.queryParam}" class="form-control" type="text" value="${escapedQuery}" placeholder="Suche">
+								<input name="${search.controller.common.config.queryParam}" class="form-control" type="text" value="${escapedQuery}" placeholder="<fmt:message key="apollo.list.message.search" />">
 							</div>
 						</form>
 					</div>
@@ -32,9 +31,9 @@
 					    CmsObject cmsObject = (CmsObject)pageContext.getAttribute("cmsObject");
 					%>
 					<div class="ap-list-filterbox ap-list-filterbox-labels ap-list-filterbox-${cms.element.settings.filtercolor}">
-						<button type="button" class="btn-block btn ap-btn-${cms.element.settings.filtercolor} ap-list-filterbtn-labels" onclick="toggleApListLabels();this.blur();">
+						<button type="button" class="btn-block btn ap-btn-${cms.element.settings.filtercolor} ap-list-filterbtn-labels" onclick="toggleApListFilter('labels');this.blur();">
 							<span class="pull-left pr-10"><span class="fa fa-tag"></span></span>
-							<span class="pull-left">Labels</span>
+							<span class="pull-left"><fmt:message key="apollo.list.message.labels" /></span>
 							<span id="aplistlabels_toggle" class="fa fa-chevron-down pull-right"></span>
 						</button>
 
@@ -43,26 +42,30 @@
 							<ul class="ap-list-filter-labels">
 								<c:forEach var="value" items="${fieldFacetResult.values}">
 									<c:set var="selected">${fieldFacetController.state.isChecked[value.name] ? ' class="active"' : ""}</c:set>
-									<%-- BEGIN: Calculate category label --%>
 									<c:set var="itemName">${value.name}</c:set>
-									<c:set var="basePath"><%=org.opencms.relations.CmsCategoryService.getInstance().readCategory(
+									<% pageContext.setAttribute("currCat", org.opencms.relations.CmsCategoryService.getInstance().readCategory(
                                             cmsObject,
                                             (String)pageContext.getAttribute("itemName"),
-                                            cmsObject.getRequestContext().getUri()).getBasePath()%></c:set>
-									<c:set var="basePath">${fn:substring(basePath,0,fn:length(basePath)-1)}</c:set>
-									<c:set var="folders" value='${fn:split(itemName,"/")}' />
-									<c:set var="label"></c:set>
-									<c:forEach begin="0" end="${fn:length(folders)-1}"
-										varStatus="loop">
-										<c:set var="basePath">${basePath}/${folders[loop.index]}</c:set>
-										<c:set var="label">${label} / <%=org.opencms.relations.CmsCategoryService.getInstance().getCategory(
-                                                cmsObject, (String)pageContext.getAttribute("basePath")).getTitle()%></c:set>
-									</c:forEach>
-									<c:set var="label">${fn:substring(label,2,-1)}</c:set>
-									<%-- END: Calculate category label --%>
-									<li ${selected}>
-										<a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}</cms:link>">${label}	(${value.count})</a>
-									</li>
+                                            cmsObject.getRequestContext().getUri())); %>
+									<c:set var="showLabel" value="false" />
+									<c:choose>
+										<c:when test="${content.value.Category.isSet}">
+											<c:forTokens var="testCat" items="${categoryPaths}" delims=",">
+												<c:if test="${fn:startsWith(currCat.path, testCat)}">
+													<c:set var="showLabel" value="true" />
+												</c:if>	
+											</c:forTokens>
+										</c:when>
+										<c:otherwise>
+											<c:set var="showLabel" value="true" />	
+										</c:otherwise>
+									</c:choose>
+									
+									<c:if test="${showLabel}">
+										<li ${selected}>
+											<a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}</cms:link>">${currCat.title}	(${value.count})</a>
+										</li>
+									</c:if>
 								</c:forEach>
 							</ul>
 						</div>
@@ -71,12 +74,12 @@
 
 				<c:if test="${cms.element.settings.showarchive and not empty rangeFacet and cms:getListSize(rangeFacet.counts) > 0}">
 					<div class="ap-list-filterbox ap-list-filterbox-archive ap-list-filterbox-${cms.element.settings.filtercolor}">
-						<button type="button" class="btn-block btn ap-btn-${cms.element.settings.filtercolor} ap-list-filterbtn-archive" onclick="toggleApListArchive();this.blur();">
+						<button type="button" class="btn-block btn ap-btn-${cms.element.settings.filtercolor} ap-list-filterbtn-archive" onclick="toggleApListFilter('archive');this.blur();">
 							<span class="pull-left pr-10"><span class="fa fa-archive"></span></span>
-							<span class="pull-left">Archiv</span>
+							<span class="pull-left"><fmt:message key="apollo.list.message.archive" /></span>
 							<span id="aplistarchive_toggle" class="fa fa-chevron-down pull-right"></span>
 						</button>
-						
+
 						<div id="aplistarchive" class="ap-list-filter-archive">
 
 							<c:set var="archiveHtml" value="" />
@@ -95,7 +98,7 @@
 									</c:if>
 									<c:set var="archiveHtml">${yearHtml}${archiveHtml}</c:set>
 									<c:set var="yearHtml">
-										<button type="button" class="btn-block btn ap-btn-${cms.element.settings.yearcolor} btn-xs ap-list-filterbtn-year" onclick="toggleApListYear('${currYear}');this.blur();">
+										<button type="button" class="btn-block btn ap-btn-${cms.element.settings.yearcolor} btn-xs ap-list-filterbtn-year" onclick="toggleApListFilter('year${currYear}');this.blur();">
 											<span class="pull-left">${currYear}</span>
 											<i id="aplistyear${currYear}_toggle" class="fa fa-chevron-down pull-right"></i>
 										</button>
@@ -120,25 +123,13 @@
 			</div> <%-- /ap-list-filters --%>
 			
 			<script type="text/javascript">
-				function toggleApListLabels() {
-					$("#aplistlabels_toggle").toggleClass("fa-chevron-down");
-					$("#aplistlabels_toggle").toggleClass("fa-chevron-up");
-					$("#aplistlabels").slideToggle();
-				}
-				
-				function toggleApListArchive() {
-					$("#aplistarchive_toggle").toggleClass("fa-chevron-down");
-					$("#aplistarchive_toggle").toggleClass("fa-chevron-up");
-					$("#aplistarchive").slideToggle();
-				}
-				
-				function toggleApListYear(aYear) {
-					$("#aplistyear" + aYear + "_toggle").toggleClass("fa-chevron-down");
-					$("#aplistyear" + aYear + "_toggle").toggleClass("fa-chevron-up");
-					$("#aplistyear" + aYear).slideToggle();
+				function toggleApListFilter(fType) {
+					$("#aplist" + fType + "_toggle").toggleClass("fa-chevron-down");
+					$("#aplist" + fType + "_toggle").toggleClass("fa-chevron-up");
+					$("#aplist" + fType + "").slideToggle();
 				}
 			</script>
-	
+
 		</div>
 	</cms:formatter>
 

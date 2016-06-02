@@ -1,7 +1,7 @@
 <%@tag display-name="list-archive-search"
   trimDirectiveWhitespaces="true" 
   body-content="empty"
-  import="org.opencms.file.*, org.opencms.relations.*, org.opencms.file.CmsObject"
+  import="org.opencms.file.*, org.opencms.relations.*, org.opencms.util.*"
   description="Triggers the archive search with the given filters"%>
 
 <%@attribute name="content" type="org.opencms.jsp.util.CmsJspContentAccessBean" required="true" %>
@@ -10,6 +10,7 @@
 <%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" %>
 <%@ variable name-given="searchConfig" scope="AT_END" declare="true" %>
 
+<%@ variable name-given="categoryPaths" scope="AT_END" declare="true" %>
 <%@ variable name-given="categoryFacetField" scope="AT_END" declare="true" %>
 <%@ variable name-given="rangeFacetField" scope="AT_END" declare="true" %>
 <%@ variable name-given="fieldFacetController" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.controller.I_CmsSearchControllerFacetField" %>
@@ -39,17 +40,29 @@
 <c:if test="${content.value.Category.isSet}">
 	<c:set var="cmsObject" value="${cms.vfs.cmsObject}" scope="request" />
 	<c:set var="firstCat" value="true" />
+	<%
+		CmsObject cms = (CmsObject)request.getAttribute("cmsObject");
+		String allCatPaths = "";
+	%>
 	<c:forTokens items="${content.value.Category.stringValue}" delims="," var="catPath">
+		<c:set var="catRootPath" value="${catPath}" scope="request" />
 		<c:if test="${not firstCat}"><c:set var="catFilter">${catFilter} OR </c:set></c:if>
 		<%
-			CmsObject cms = (CmsObject)request.getAttribute("cmsObject");
-			String cPath = (String)request.getAttribute("catPath");
-			CmsCategory cat = CmsCategoryService.getInstance().getCategory(cms, cms.getRequestContext().addSiteRoot(cPath));
-            request.setAttribute("catPath", cat.getPath());
+			
+			String cPath = (String)request.getAttribute("catRootPath");
+			if (cPath != null) {
+				CmsCategory cat = CmsCategoryService.getInstance().getCategory(cms, cms.getRequestContext().addSiteRoot(cPath));
+            	request.setAttribute("cAdjustedPath", cat.getPath());
+            	if (CmsStringUtil.isNotEmpty(allCatPaths)) {
+            	    allCatPaths += ",";
+            	}
+            	allCatPaths += cat.getPath();
+			}
 		%>
-		<c:set var="catFilter">${catFilter} "${catPath}"</c:set>
+		<c:set var="catFilter">${catFilter} "${cAdjustedPath}"</c:set>
 		<c:set var="firstCat" value="false" />
 	</c:forTokens>
+	<c:set var="categoryPaths" value="<%= allCatPaths %>" />
 	<c:set var="solrCats">&fq=category:(${catFilter})</c:set>
 </c:if>
 <c:set var="solrFilterQue"></c:set>
