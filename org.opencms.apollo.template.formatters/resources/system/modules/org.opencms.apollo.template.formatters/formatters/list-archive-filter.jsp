@@ -60,7 +60,7 @@
 											<c:set var="showLabel" value="true" />	
 										</c:otherwise>
 									</c:choose>
-									
+
 									<c:if test="${showLabel}">
 										<li ${selected}>
 											<a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}</cms:link>">${currCat.title}	(${value.count})</a>
@@ -113,7 +113,7 @@
 							<c:set var="yearHtml">${fn:replace(yearHtml, 'style="display:none;"', '')}</c:set>
 							<c:set var="yearHtml">${fn:replace(yearHtml, 'fa-chevron-down', 'fa-chevron-up')}</c:set>
 							<c:set var="archiveHtml">${yearHtml}</ul>${archiveHtml}</c:set>
-							
+
 							${archiveHtml}
 						</div> <%-- /ap-list-filter-archive --%>
 

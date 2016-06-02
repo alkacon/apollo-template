@@ -611,6 +611,10 @@
       <Value><![CDATA[Dark Blue]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.color.bluecyan]]></Key>
+      <Value><![CDATA[Blue-Cyan]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.color.cyan]]></Key>
       <Value><![CDATA[Cyan]]></Value>
     </Message>
@@ -1347,6 +1351,10 @@
     <Message>
       <Key><![CDATA[apollo.setting.color.darkblue]]></Key>
       <Value><![CDATA[Dunkelblau]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.color.bluecyan]]></Key>
+      <Value><![CDATA[Blau-Cyan]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.color.cyan]]></Key>
