@@ -8,7 +8,7 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
 	<cms:formatter var="content" val="value" rdfa="rdfa">
-		<apollo:list-archive-search content="${content}" usepagesize="true"/>
+		<apollo:list-archive-search content="${content}" usepagesize="true" showexpired="${cms.element.settings.showexpired}" />
 		<div>
 			<div class="ap-list-filters">
 				<c:if test="${cms.element.settings.showsearch}">

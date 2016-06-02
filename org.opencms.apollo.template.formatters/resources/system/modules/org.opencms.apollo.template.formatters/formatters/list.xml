@@ -63,6 +63,12 @@
       <Default><![CDATA[true]]></Default>
     </Setting>
     <Setting>
+      <PropertyName><![CDATA[showexpired]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showexpired)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[usepagination]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.usepagination)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>

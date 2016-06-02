@@ -6,6 +6,7 @@
 
 <%@attribute name="content" type="org.opencms.jsp.util.CmsJspContentAccessBean" required="true" %>
 <%@attribute name="usepagesize" type="java.lang.Boolean" required="true" %>
+<%@attribute name="showexpired" type="java.lang.Boolean" required="true" %>
 
 <%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" %>
 <%@ variable name-given="searchConfig" scope="AT_END" declare="true" %>
@@ -78,6 +79,10 @@
 <c:set var="searchConfig">
 {
 	"searchforemptyquery" : true,
+<c:if test="${showexpired}">
+	"ignoreExpirationDate" : true,
+	"ignoreReleaseDate" : true,
+</c:if>
 	"querymodifier" : "content_en:%(query) OR content_de:%(query) OR spell:%(query) OR Title_prop:%(query)",
 	"escapequerychars" : true,
 	"extrasolrparams" : "fq=parent-folders:\"${folder}\"&fq=-type:image&fq=type:${resType}${fn:replace(extraSolrParams,'"','\\"')}",
