@@ -85,6 +85,7 @@
 							<c:set var="archiveHtml" value="" />
 							<c:set var="yearHtml" value="" />
 							<c:set var="prevYear" value="-1" />
+							<c:set var="monthSelected" value="false" />
 							<c:forEach var="facetItem" items="${rangeFacet.counts}" varStatus="status">
 								<c:set var="selected">${rangeFacetController.state.isChecked[facetItem.value] ? ' class="active"' : ""}</c:set>
 								<fmt:parseDate var="fDate" pattern="yyyy-MM-dd'T'HH:mm:ss'Z'" value="${facetItem.value}"/>
@@ -107,11 +108,18 @@
 								</c:if>
 								<%-- add month list entry to current year --%>
 								<c:set var="yearHtml">${yearHtml}<li ${selected}><a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}</cms:link>" title="${facetItem.count}"><fmt:formatDate value="${fDate}" pattern="MMM" /></a></li></c:set>
+								<c:if test="${not empty selected}">
+									<c:set var="yearHtml">${fn:replace(yearHtml, 'style="display:none;"', '')}</c:set>
+									<c:set var="yearHtml">${fn:replace(yearHtml, 'fa-chevron-down', 'fa-chevron-up')}</c:set>
+									<c:set var="monthSelected" value="true" />
+								</c:if>
 								<c:set var="prevYear" value="${currYear}" />
 							</c:forEach>
 							<%-- close month list of last year, remove style attribute, replace chevron and add it to archive HTML --%>
-							<c:set var="yearHtml">${fn:replace(yearHtml, 'style="display:none;"', '')}</c:set>
-							<c:set var="yearHtml">${fn:replace(yearHtml, 'fa-chevron-down', 'fa-chevron-up')}</c:set>
+							<c:if test="${not monthSelected}">
+								<c:set var="yearHtml">${fn:replace(yearHtml, 'style="display:none;"', '')}</c:set>
+								<c:set var="yearHtml">${fn:replace(yearHtml, 'fa-chevron-down', 'fa-chevron-up')}</c:set>
+							</c:if>
 							<c:set var="archiveHtml">${yearHtml}</ul>${archiveHtml}</c:set>
 
 							${archiveHtml}
@@ -121,7 +129,7 @@
 				</c:if>
 
 			</div> <%-- /ap-list-filters --%>
-			
+
 			<script type="text/javascript">
 				function toggleApListFilter(fType) {
 					$("#aplist" + fType + "_toggle").toggleClass("fa-chevron-down");
