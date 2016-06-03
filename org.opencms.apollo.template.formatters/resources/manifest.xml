@@ -2849,6 +2849,18 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/tags/paragraph.tag</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/tags/paragraph.tag</destination>
+			<type>plain</type>
+			<uuidstructure>70e47785-2967-11e6-8c7a-0242ac11002b</uuidstructure>
+			<uuidresource>70e47786-2967-11e6-8c7a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 03 Jun 2016 08:44:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/tags/text.tag</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/tags/text.tag</destination>
 			<type>jsp</type>

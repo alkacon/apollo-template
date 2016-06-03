@@ -10,35 +10,59 @@
 
 <cms:formatter var="content" val="value">
 
-	<div class="row ap-sec">
+	<div class="row ap-sec ap-event">
 		<c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
 		<c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
 		<c:set var="buttonColor" value="${cms.element.settings.buttoncolor}" />
+		<c:set var="calendarColor" value="${cms.element.settings.calendarcolor}" />
 		<c:set var="compactForm" value="${cms.element.settings.compactform}" />
-		<c:set var="showImage" value="${paragraph.value.Image.exists && (compactForm == 'big')}" />
+		<c:set var="showImageBig" value="${paragraph.value.Image.exists && (compactForm == 'big')}" />
+		<c:set var="showImageSmall" value="${paragraph.value.Image.exists && (compactForm == 'small')}" />
+		<c:set var="isCompactForm" value="${cms.element.settings.compactform != 'false' && !showImageSmall}" />
 
-		<c:if test="${compactForm == 'false'}">
+		<%-- ####### Show calendar or image if not compact form ######## --%>
+		<c:if test="${!isCompactForm}">
 			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">
-				<div class="date-grey-dark col-sm-2 hidden-xs">
-					<div class="day">
-						<fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-							pattern="EEEE" type="date" />
+				<div class="col-sm-3 col-md-2 hidden-xs">
+				<c:choose>
+				<%-- ####### Show calendar ######## --%>
+				<c:when test="${!showImageSmall}">
+					<div class="date-${calendarColor} ap-event-cal">
+						<div class="day">
+							<fmt:formatDate value="${cms:convertDate(content.value.Date)}"
+								pattern="EEEE" type="date" />
+						</div>
+						<h3>
+							<fmt:formatDate value="${cms:convertDate(content.value.Date)}"
+								pattern="dd" type="date" />
+						</h3>
+						<div class="monthYear">
+							<fmt:formatDate value="${cms:convertDate(content.value.Date)}"
+								pattern="MMM yyyy" type="date" />
+						</div>
 					</div>
-					<h3>
-						<fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-							pattern="dd" type="date" />
-					</h3>
-					<div class="monthYear">
-						<fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-							pattern="MMM yyyy" type="date" />
-					</div>
+				</c:when>
+				<%-- ####### Show small image in place of calendar ######## --%>
+				<c:when test="${showImageSmall}">
+					<c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
+					<%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
+
+					<c:out value="${imgDivStart}" escapeXml="false" />
+
+					<cms:img src="${paragraph.value.Image.value.Image}"
+						width="300" cssclass="img-responsive" scaleColor="transparent" scaleType="0" noDim="true"
+						alt="${paragraph.value.Image.value.Title}${' '}${copyright}"
+						title="${paragraph.value.Image.value.Title}${' '}${copyright}" />
+				</c:when>
+				</c:choose>
 				</div>
 			</a>
 		</c:if>
+		
+		<%-- ####### Render Teaser-Text and optional image, if set accordingly ######## --%>
+		<div class="col-xs-12 col-sm-${isCompactForm ? '12' : '9'} col-md-${isCompactForm ? '12' : '10'}">
 
-		<div class="col-xs-${compactForm != 'false' ? '12' : '10'}">
-
-			<c:if test="${showImage}">
+			<c:if test="${showImageBig}">
 				<c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
 				<%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
 

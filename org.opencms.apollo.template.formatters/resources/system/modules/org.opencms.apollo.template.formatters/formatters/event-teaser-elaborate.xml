@@ -31,6 +31,13 @@
       <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
     </Setting>
     <Setting>
+      <PropertyName><![CDATA[calendarcolor]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.calendarcolor)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[red]]></Default>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[teaserlength]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.teaserlength)]]></DisplayName>
       <Widget><![CDATA[string]]></Widget>
@@ -47,7 +54,7 @@
       <DisplayName><![CDATA[%(key.apollo.setting.compactform)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:%(key.apollo.setting.compactform.showcalendar)|true:%(key.apollo.setting.compactform.hidecalendar)|big:%(key.apollo.setting.compactform.showimagehidecalendar)]]></WidgetConfig>
+      <WidgetConfig><![CDATA[false:%(key.apollo.setting.compactform.showcalendar)|true:%(key.apollo.setting.compactform.hidecalendar)|big:%(key.apollo.setting.compactform.showimagehidecalendar)|small:%(key.apollo.setting.compactform.showsmallimagehidecalendar)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>
