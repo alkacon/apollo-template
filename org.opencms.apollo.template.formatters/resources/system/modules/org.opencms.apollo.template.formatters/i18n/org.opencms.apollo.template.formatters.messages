@@ -63,10 +63,6 @@
       <Value><![CDATA[Show date]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.showexpired]]></Key>
-      <Value><![CDATA[Show expired and unreleased list items]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.setting.color]]></Key>
       <Value><![CDATA[Color]]></Value>
     </Message>
@@ -619,10 +615,6 @@
       <Value><![CDATA[Dark Blue]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.color.bluecyan]]></Key>
-      <Value><![CDATA[Blue-Cyan]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.setting.color.cyan]]></Key>
       <Value><![CDATA[Cyan]]></Value>
     </Message>
@@ -815,10 +807,6 @@
     <Message>
       <Key><![CDATA[apollo.setting.showdate]]></Key>
       <Value><![CDATA[Zeige Datum]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.showexpired]]></Key>
-      <Value><![CDATA[Zeige abgelaufene und unveröffentlichte Listeneinträge]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.color]]></Key>
@@ -1371,10 +1359,6 @@
     <Message>
       <Key><![CDATA[apollo.setting.color.darkblue]]></Key>
       <Value><![CDATA[Dunkelblau]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.color.bluecyan]]></Key>
-      <Value><![CDATA[Blau-Cyan]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.color.cyan]]></Key>

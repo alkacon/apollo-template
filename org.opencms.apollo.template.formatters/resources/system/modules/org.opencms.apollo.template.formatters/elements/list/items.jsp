@@ -13,7 +13,7 @@
 		<cms:search configString="${param.searchConfig}" var="search" addContentInfo="true" />
 
 		<c:forEach var="result" items="${search.searchResults}">
-			<cms:display value="${result.xmlContent.filename}" displayFormatters="${listConfig.value.TypesToCollect}" editable="true" create="true" delete="true">
+			<cms:display value="${result.xmlContent.filename}" displayFormatters="${listConfig.value.TypesToCollect}" editable="true" create="true">
 				<cms:param name="teaserlength" value="${param.teaserLength}" />
 				<cms:param name="buttoncolor">${param.buttonColor}</cms:param>
 				<cms:param name="calendarcolor">${param.buttonColor}</cms:param>

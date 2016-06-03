@@ -32,12 +32,7 @@
 <c:set var="extraSolrParams">${solrParamType}${solrParamDirs}${solrParamCats}${solrFilterQue}</c:set>
 
 { "test": "${solrFilterQue}",
-    "ignorequery" : true,
-    <c:if test="${param.showExpired == 'true'}">
-	    "ignoreExpirationDate" : true,
-		"ignoreReleaseDate" : true,
-	</c:if>
-    "extrasolrparams" : "${fn:replace(extraSolrParams,'"','\\"')}",
+    "ignorequery" : true, "extrasolrparams" : "${fn:replace(extraSolrParams,'"','\\"')}",
     "pagesize" : ${param.itemsPerPage}, 
     "sortoptions" : [
 <c:choose>

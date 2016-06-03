@@ -55,18 +55,6 @@
       <Value><![CDATA[The list configuration has changed. Page will be reloaded.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.list.message.search]]></Key>
-      <Value><![CDATA[Search]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.list.message.labels]]></Key>
-      <Value><![CDATA[Labels]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.list.message.archive]]></Key>
-      <Value><![CDATA[Archive]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[sort.options.label]]></Key>
       <Value><![CDATA[Sort by date:]]></Value>
     </Message>
@@ -139,18 +127,6 @@
     <Message>
       <Key><![CDATA[apollo.list.message.edit]]></Key>
       <Value><![CDATA[Die Listenkonfiguration wurde bearbeitet. Seite wird neu geladen.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.list.message.search]]></Key>
-      <Value><![CDATA[Suche]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.list.message.labels]]></Key>
-      <Value><![CDATA[Labels]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.list.message.archive]]></Key>
-      <Value><![CDATA[Archiv]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[sort.options.label]]></Key>

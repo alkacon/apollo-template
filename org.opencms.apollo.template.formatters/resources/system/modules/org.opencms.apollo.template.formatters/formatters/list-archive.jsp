@@ -37,7 +37,6 @@
 					<c:set var="innerPageDivId">${cms.element.id}-inner</c:set>
 					<c:set var="params">cssID=${innerPageDivId}</c:set>
 					<c:set var="params">${params}&showDate=${cms.element.settings.showdate}</c:set>
-					<c:set var="params">${params}&showExpired=${cms.element.settings.showexpired}</c:set>
 					<c:set var="params">${params}&buttonColor=${cms.element.settings.buttoncolor}</c:set>
 					<c:set var="params">${params}&compactForm=false</c:set>
 					<c:set var="params">${params}&teaserLength=${cms.element.settings.teaserlength}</c:set>

@@ -12,7 +12,7 @@
 <cms:contentload collector="singleFile" param="%(param.listConfig)">
 	<cms:contentaccess var="listConfig" />
 </cms:contentload>
-<apollo:list-archive-search content="${listConfig}" usepagesize="true" showexpired="${param.showExpired}" />
+<apollo:list-archive-search content="${listConfig}" usepagesize="true" />
 	<c:set var="buttonColor" scope="request">${param.buttonColor}</c:set>
 	<c:if test="${empty fn:trim(buttonColor) }">
 		<c:set var="buttonColor" scope="request">red</c:set>

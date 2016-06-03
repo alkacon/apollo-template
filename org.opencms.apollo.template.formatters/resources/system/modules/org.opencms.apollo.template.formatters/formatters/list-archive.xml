@@ -38,12 +38,6 @@
       <Default><![CDATA[true]]></Default>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[showexpired]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showexpired)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
-    </Setting>
-    <Setting>
       <PropertyName><![CDATA[buttoncolor]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>

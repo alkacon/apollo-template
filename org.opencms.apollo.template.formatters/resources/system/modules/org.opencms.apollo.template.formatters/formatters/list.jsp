@@ -72,7 +72,6 @@
 						</c:otherwise>
 					</c:choose>
 					<c:set var="params">${params}&showDate=${cms.element.settings.showdate}</c:set>
-					<c:set var="params">${params}&showExpired=${cms.element.settings.showexpired}</c:set>
 					<c:set var="params">${params}&showSort=${cms.element.settings.showsort}</c:set>
 					<c:set var="params">${params}&showCategoryFilter=${cms.element.settings.showcategoryfiler}</c:set>
 					<c:set var="params">${params}&itemsPerPage=${itemsPerPage}</c:set>
