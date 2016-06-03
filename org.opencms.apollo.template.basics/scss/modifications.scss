@@ -90,37 +90,6 @@
 	
 }
 
-/* Event dates */
-@each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
-
-	.date-#{""+$type-name}{
-		border: 1px solid $gray-light;
-		box-shadow:  8px 8px 6px -6px $gray;
-		text-align: center; 
-		backhround: #eee;
-		.day, .monthYear{
-			padding: 10px;		
-		}
-		a &{
-			color: #555;
-			transform: scale(1) rotate(0);
-			transition: 1s all;
-			&:hover{
-				transform: scale(0.97) rotate(-1deg);
-				transition: 1s all;
-			}
-		}
-		h3{
-			font-weight: bolder;
-		}
-		&:before{
-			display: block;
-			content: '';
-			border-top: 20px solid #ddd;
-		}		
-	}
-}
-
 .list-entry{
 	animation-duration: 1s;	
 	&:nth-child(2n){

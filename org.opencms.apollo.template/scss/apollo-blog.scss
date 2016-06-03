@@ -1,0 +1,39 @@
+
+/* Event dates */
+@each $type-name, $bg-color in $primary-colors {
+
+	.ap-event {
+		.ap-event-cal {
+			transform: scale(1) rotate(0);
+			transition: 1s all;
+		}
+
+		&:hover .ap-event-cal {
+			transform: scale(1.05);
+			transition: 0.5s all;
+		}
+	}
+
+	.date-#{""+$type-name}{
+		border: 1px solid $gray-light;
+		box-shadow:  8px 8px 6px -6px $gray;
+		text-align: center; 
+		background: #fafafa;
+		.day, .monthYear{
+			padding: 10px;		
+		}
+		a &{
+			color: $bg-color;
+		}
+		h3{
+			color: darken($bg-color, 10%);
+			font-weight: bolder;
+		}
+		&:before{
+			display: block;
+			content: '';
+			border-top: 20px solid darken($bg-color, 10%);
+			margin: 0 10%;
+		}		
+	}
+}
