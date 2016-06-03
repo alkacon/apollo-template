@@ -10,7 +10,8 @@
 <%@ attribute name="paragraph" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 
@@ -47,7 +48,13 @@
 		<c:when test="${imgalign == 'left' or imgalign == 'right'}">
 
 			<c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
-			<%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
+			<c:if test="${not empty copyright}">
+				<c:set var="copyrightSymbol">(c)</c:set>
+				<c:set var="copyright">${fn:replace(copyright, '&copy;', copyrightSymbol)}</c:set>
+				<c:if test="${not fn:contains(copyright, copyrightSymbol)}">
+					<c:set var="copyright">${copyrightSymbol}${' '}${copyright}</c:set>
+				</c:if>
+			</c:if>
 
 			<div class="row">
 				<div class="col-md-4 pull-${imgalign}">
