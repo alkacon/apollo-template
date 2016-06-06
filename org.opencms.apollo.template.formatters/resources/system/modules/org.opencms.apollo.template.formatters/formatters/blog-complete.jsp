@@ -66,12 +66,13 @@
 									<li><i class="icon-pencil"></i> ${author}</li>
 								</c:if>
 							</ul>
-							<c:if test="${fn:length(content.valueList.Category) > 0}">
+							<c:set var="categories" value="${content.readCategories}" />
+							<c:if test="${not categories.isEmpty}">
 								<ul class="pull-left list-unstyled list-inline blog-tags">
-									<li><i class="fa fa-tag"></i>&nbsp; <c:forEach var="item"
-											items="${fn:split(content.value.Category,',')}"
+									<li><i class="fa fa-tag"></i>&nbsp; <c:forEach var="category"
+											items="${categories.leafItems}"
 											varStatus="status">
-											<span class="label rounded label-light">${cms.vfs.property[item]['Title']}</span>
+											<span class="label rounded label-light">${category.title}</span>
 										</c:forEach></li>
 								</ul>
 							</c:if>

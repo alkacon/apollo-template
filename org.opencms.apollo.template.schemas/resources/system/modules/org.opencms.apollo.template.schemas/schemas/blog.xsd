@@ -18,7 +18,7 @@
             <xsd:element name="Date" type="OpenCmsDateTime" />
             <xsd:element name="Teaser" type="OpenCmsString" minOccurs="0" />
             <xsd:element name="Paragraph" type="OpenCmsApolloParagraph" maxOccurs="5" />
-            <xsd:element name="Category" type="OpenCmsCategory" minOccurs="0" />
+            <xsd:element name="Category" type="OpenCmsDynamicCategory" />
             <xsd:element name="Author" type="OpenCmsString" />
             <xsd:element name="AuthorMail" type="OpenCmsString" minOccurs="0" />
             <xsd:element name="Availability" type="OpenCmsApolloAvailability" minOccurs="0" />

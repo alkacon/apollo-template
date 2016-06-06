@@ -19,7 +19,7 @@
 			<xsd:element name="EndDate" type="OpenCmsDateTime" minOccurs="0" />
             <xsd:element name="Teaser" type="OpenCmsString" minOccurs="0" />
             <xsd:element name="Paragraph" type="OpenCmsApolloParagraph" maxOccurs="5" />
-            <xsd:element name="Category" type="OpenCmsCategory" minOccurs="0" />
+            <xsd:element name="Category" type="OpenCmsDynamicCategory" />
 			<xsd:element name="Location" type="OpenCmsString" minOccurs="0" />
 			<xsd:element name="Address" type="OpenCmsHtml" minOccurs="0" />
             <xsd:element name="Availability" type="OpenCmsApolloAvailability" minOccurs="0" />

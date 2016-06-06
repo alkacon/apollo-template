@@ -906,6 +906,11 @@
 			<properties/>
 		</file>
 		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
 			<source>system/workplace/resources/filetypes/a-blog.png</source>
 			<destination>system/workplace/resources/filetypes/a-blog.png</destination>
 			<type>image</type>

@@ -26,10 +26,6 @@
 				</c:if>
 
 				<c:if test="${cms.element.settings.showlabels and not empty fieldFacetResult and cms:getListSize(fieldFacetResult.values) > 0}">
-					<c:set var="cmsObject" value="${cms.vfs.cmsObject}" />
-					<%
-					    CmsObject cmsObject = (CmsObject)pageContext.getAttribute("cmsObject");
-					%>
 					<div class="ap-list-filterbox ap-list-filterbox-labels ap-list-filterbox-${cms.element.settings.filtercolor}">
 						<button type="button" class="btn-block btn ap-btn-${cms.element.settings.filtercolor} ap-list-filterbtn-labels" onclick="toggleApListFilter('labels');this.blur();">
 							<span class="pull-left pr-10"><span class="fa fa-tag"></span></span>
@@ -43,10 +39,7 @@
 								<c:forEach var="value" items="${fieldFacetResult.values}">
 									<c:set var="selected">${fieldFacetController.state.isChecked[value.name] ? ' class="active"' : ""}</c:set>
 									<c:set var="itemName">${value.name}</c:set>
-									<% pageContext.setAttribute("currCat", org.opencms.relations.CmsCategoryService.getInstance().readCategory(
-                                            cmsObject,
-                                            (String)pageContext.getAttribute("itemName"),
-                                            cmsObject.getRequestContext().getUri())); %>
+									<c:set var="currCat" value="${cms.readCategory[itemName]}" />
 									<c:set var="showLabel" value="false" />
 									<c:choose>
 										<c:when test="${content.value.Category.isSet}">

@@ -4,7 +4,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%-- The import is only necessary to avoid highlighting snippets that destoy the HTML structure --%>
-<%@ page import="org.opencms.util.CmsHtmlConverter, org.opencms.file.CmsObject, org.opencms.workplace.CmsWorkplaceMessages, org.opencms.relations.CmsCategoryService"%>
+<%@ page import="org.opencms.util.CmsHtmlConverter, org.opencms.file.CmsObject, org.opencms.workplace.CmsWorkplaceMessages"%>
 <fmt:setLocale value="${cms.locale}" />
 <c:set var="locale" value="${cms.locale}" />
 <c:set var="cmsObject" value="${cms.vfs.cmsObject}" />
@@ -126,16 +126,11 @@
 													</c:choose>
 												</c:when>
 												<c:when test='${facet.name eq "category_exact"}'>
-													<c:set var="itemName">${facetItem.name}</c:set>
-													<c:set var="basePath"><%= org.opencms.relations.CmsCategoryService.getInstance().readCategory(cmsObject, (String) pageContext.getAttribute("itemName"), (String) pageContext.getAttribute("uri")).getBasePath() %></c:set>
-													<c:set var="basePath">${fn:substring(basePath,0,fn:length(basePath)-1)}</c:set>
-													<c:set var="folders" value='${fn:split(itemName,"/")}' />
 													<c:set var="label"></c:set>
-													<c:forEach begin="0" end="${fn:length(folders)-1}" varStatus="loop">
-														<c:set var="basePath">${basePath}/${folders[loop.index]}</c:set>
-														<c:set var="label">${label} / <%= org.opencms.relations.CmsCategoryService.getInstance().getCategory(cmsObject, (String) pageContext.getAttribute("basePath")).getTitle() %></c:set>
+													<c:forEach var="category" items="${cms.readPathCategories[facetItem.name]}" varStatus="status">
+														<c:set var="label">${label}${category.title}</c:set>
+														<c:if test="${not status.last}"><c:set var="label">${label}&nbsp;/&nbsp;</c:set></c:if>
 													</c:forEach>
-													<c:set var="label">${fn:substring(label,2,-1)}</c:set> 
 												</c:when>
 												<c:otherwise>
 													<c:set var="label" value="${facetItem.name}" />

@@ -51,7 +51,8 @@
                                 </div>
                                 </div>
                                 
-                                <c:if test="${fn:length(content.valueList.Category) > 0}">
+								<c:set var="categories" value="${content.readCategories}" />
+								<c:if test="${not categories.isEmpty}">
                                 <div class="row">
 
                                     <div class="col-xs-1 col-sm-2">
@@ -60,11 +61,11 @@
                                     <div class="col-xs-11 col-sm-10">
                                         <ul class="list-unstyled list-inline blog-tags">
                                             <li> 
-                                                <c:forEach var="item"
-                                                    items="${fn:split(content.value.Category,',')}"
+                                                <c:forEach var="category"
+                                                    items="${categories.leafItems}"
                                                     varStatus="status">
                                                     <span class="label rounded label-light">
-                                                        <i class="fa fa-tag"></i> ${cms.vfs.property[item]['Title']}
+                                                        <i class="fa fa-tag"></i> ${category.title}
                                                     </span>
                                                 </c:forEach>
                                             </li>
