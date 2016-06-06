@@ -23,7 +23,7 @@
 		<%-- ####### Show calendar or image if not compact form ######## --%>
 		<c:if test="${!isCompactForm}">
 			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">
-				<div class="col-sm-3 col-lg-2 hidden-xs">
+				<div class="col-sm-3 col-md-2 hidden-xs">
 				<c:choose>
 				<%-- ####### Show calendar ######## --%>
 				<c:when test="${!showImageSmall}">
@@ -60,7 +60,7 @@
 		</c:if>
 		
 		<%-- ####### Render Teaser-Text and optional image, if set accordingly ######## --%>
-		<div class="col-xs-12 col-sm-${isCompactForm ? '12' : '9'} col-lg-${isCompactForm ? '12' : '10'}">
+		<div class="col-xs-12 col-sm-${isCompactForm ? '12' : '9'} col-md-${isCompactForm ? '12' : '10'}">
 
 			<c:if test="${showImageBig}">
 				<c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>

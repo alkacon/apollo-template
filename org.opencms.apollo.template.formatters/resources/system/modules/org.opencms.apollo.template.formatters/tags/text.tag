@@ -12,12 +12,14 @@
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
 
-<c:if test="${text.isSet}">
-    <div class="${setting.tstyle}" <c:if test="${not link.exists}">${content.rdfa.Link}</c:if>>
-        <div ${text.rdfaAttr}>
-            ${text}
-        </div>
-        <c:if test="${link.exists}">
+<c:if test="${text.isSet || link.exists}">
+    <div class="${setting.tstyle}" <c:if test="${not link.exists}">${content.rdfa.Link}</c:if>>    
+    <c:if test="${text.isSet}">
+            <div ${text.rdfaAttr}>
+                ${text}
+            </div>
+    </c:if>        
+    <c:if test="${link.exists}">
             <p ${link.rdfaAttr}>
                 <a
                     class="btn btn-sm" 
@@ -25,6 +27,6 @@
                         ${link.value.Text}
                 </a>
             </p>
-        </c:if>
+    </c:if>
     </div>
 </c:if>

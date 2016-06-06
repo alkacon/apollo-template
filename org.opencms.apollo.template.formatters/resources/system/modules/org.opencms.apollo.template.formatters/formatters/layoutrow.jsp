@@ -22,10 +22,18 @@
     <%-- Expand macros in markup --%>
     <c:set var="preMarkup" value="${fn:replace(content.value.PreMarkup, '$(param)', cms.element.setting.param.value)}" />
     <c:set var="link" value="" />
+    <c:set var="anchor" value="" />
     <c:if test="${cms.element.setting.link.isSet}">
-      <c:set var="link"><cms:link>${cms.element.setting.link}</cms:link></c:set>
+        <c:choose>
+          <c:when test="${fn:startsWith(cms.element.setting.link, '#')}">
+            <c:set var="anchor"><a id="${fn:substringAfter(cms.element.setting.link, '#')}" class="anchor"></a></c:set>
+          </c:when>
+          <c:otherwise>
+            <c:set var="link"><cms:link>${cms.element.setting.link}</cms:link></c:set>
+          </c:otherwise>
+        </c:choose>
     </c:if>
-    ${fn:replace(preMarkup, '$(link)', link)}
+    ${fn:replace(preMarkup, '$(link)', link)}${anchor}
   </c:if>
 
   <c:set var="detailOnly" value="${(cms.element.setting.detail == 'only') ? 'true' : 'false' }" />
