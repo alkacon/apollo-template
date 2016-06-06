@@ -83,6 +83,7 @@
 			
 			// set the map options
 			var mapOptions = {
+                scrollwheel: false,
 				zoom: ${map.value.MapZoom},
 				center: mapCenterLatLng${varsuffix},
 				mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DEFAULT, mapTypeIds: new Array(google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID)},
@@ -241,7 +242,7 @@
         }
 	</script>
 
-	<c:if test="${cms.element.settings.hidetitle ne 'true'}"><div class="headline"><h1 ${rdfa.Headline}>${value.Headline}</h1></div></c:if>
+	<c:if test="${cms.element.settings.hidetitle ne 'true'}"><h1 ${rdfa.Headline}>${value.Headline}</h1></c:if>
 	<c:if test="${value.Text.isSet}"><div class="googlemaptext" ${rdfa.Text}>${value.Text}</div></c:if>
 
 	<div id="googlemap${cms.element.id}" class="map ${cms.element.setting.wrapperclass.isSet ? "" : "mb-20" }" style="${mapw}${maph}"></div>

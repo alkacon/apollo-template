@@ -8,7 +8,7 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.messages">
 <cms:formatter var="content" val="value" rdfa="rdfa">
-<apollo:image-vars content="${content}">
+<apollo:image-vars image="${content.value.Image}">
 
 <c:choose>
 
@@ -26,8 +26,8 @@
             <a
                 data-gallery="true"
                 class="zoom"
-                data-size="${cms.vfs.property[image.value.Image]['image.size']}"
-                href="<cms:link>${image.value.Image}</cms:link>"
+                data-size="${cms.vfs.property[imageLink]['image.size']}"
+                href="<cms:link>${imageLink}</cms:link>"
                 <c:if test="${not empty imageTitleCopyright}">title="${imageTitleCopyright}"</c:if>
                 data-rel="fancybox-button-${cms.element.instanceId}"
                 id="fancyboxzoom${cms.element.instanceId}">

@@ -82,11 +82,12 @@ $(document)
 													.querySelectorAll('.pswp')[0];
 
 											var options = {
-												history : true,
-												focus : true,
-												showAnimationDuration : 0,
-												hideAnimationDuration : 0,
-												index : index
+											   history: false,
+											   focus: true,
+											   showHideOpacity: true,
+											   getThumbBoundsFn: false,
+											   showAnimationDuration: 0,
+											   index: index
 											};
 											new PhotoSwipe(pswpElement,
 													PhotoSwipeUI_Default,

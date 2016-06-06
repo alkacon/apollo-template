@@ -15,6 +15,7 @@
       <Types>
         <ContainerType><![CDATA[element]]></ContainerType>
         <ContainerType><![CDATA[section]]></ContainerType>
+        <ContainerType><![CDATA[image-enlarge]]></ContainerType>
       </Types>
     </Match>
     <Preview>false</Preview>
