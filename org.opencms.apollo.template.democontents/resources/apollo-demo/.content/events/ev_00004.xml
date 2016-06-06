@@ -21,14 +21,7 @@
       </Image>
     </Paragraph>
     <Category>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/location/europe/]]></target>
-        <uuid>e73ef9d1-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/machines/]]></target>
-        <uuid>caf3e85e-5534-11e4-af67-005056b61161</uuid>
-      </link>
+      <!--Categories are read dynamically-->
     </Category>
     <Location><![CDATA[Olympia Grand Hall, London]]></Location>
     <Address name="Address0">

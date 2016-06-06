@@ -1,5 +1,4 @@
-<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"
-	import="org.opencms.i18n.CmsEncoder"%>
+<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -58,9 +57,12 @@
 					<c:set var="params">cssID=${innerPageDivId}</c:set>
 					<c:set var="params">${params}&categoryFacetField=${categoryFacetField}</c:set>
 					<c:set var="params">${params}&typesToCollect=${value.TypesToCollect}</c:set>
-					<c:if test="${value.Category.isSet}">
-						<c:set var="params">${params}&categoriesToCollect=${value.Category}</c:set>
-					</c:if>
+					<c:set var="categories"></c:set>
+					<c:forEach var="category" items="${con.readCategories.allItems}" varStatus="status">
+						<c:set var="categories">${categories}${category.path}</c:set>
+						<c:if test="${not status.last}"><c:set var="categories">${categories},</c:set></c:if>
+					</c:forEach>
+					<c:if test="${not empty categories}"><c:set var="params">${params}&categoriesToCollect=${categories}</c:set></c:if>
 					<c:choose>
 						<c:when test="${value.Folder.isSet}">
 							<c:set var="folder">${value.Folder}</c:set>

@@ -25,7 +25,7 @@
         <URI>
           <link internal="true" type="WEAK">
             <target><![CDATA[/sites/default/]]></target>
-            <uuid>5fbe1f92-1e93-11e6-ac35-0242ac11002b</uuid>
+            <uuid>f723294b-2baa-11e6-b21d-0242ac11002b</uuid>
           </link>
         </URI>
       </Link>
@@ -49,80 +49,13 @@
         <URI>
           <link internal="true" type="WEAK">
             <target><![CDATA[/sites/default/]]></target>
-            <uuid>5fbe1f92-1e93-11e6-ac35-0242ac11002b</uuid>
+            <uuid>f723294b-2baa-11e6-b21d-0242ac11002b</uuid>
           </link>
         </URI>
       </Link>
     </Paragraph>
     <Category>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/location/africa/]]></target>
-        <uuid>ee07bb34-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/location/antarctica/]]></target>
-        <uuid>2c8273b3-7194-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/location/asia/]]></target>
-        <uuid>0825108d-7194-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/location/australia/]]></target>
-        <uuid>0d18c3d0-7194-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/location/europe/]]></target>
-        <uuid>e73ef9d1-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/location/northamerica/]]></target>
-        <uuid>f41fca37-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/location/southamerica/]]></target>
-        <uuid>01e3597a-7194-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/priority/01_very_low/]]></target>
-        <uuid>c8b3ea1b-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/priority/02_low/]]></target>
-        <uuid>bab32ac8-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/priority/03_medium/]]></target>
-        <uuid>b5e32c25-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/priority/04_high/]]></target>
-        <uuid>acb97052-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/priority/05_very_high/]]></target>
-        <uuid>a2182faf-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/buildings/]]></target>
-        <uuid>52a797d2-5535-11e4-af67-005056b61161</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/machines/]]></target>
-        <uuid>caf3e85e-5534-11e4-af67-005056b61161</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/nature/]]></target>
-        <uuid>c3025e6b-5534-11e4-af67-005056b61161</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/people/]]></target>
-        <uuid>bbef2688-5534-11e4-af67-005056b61161</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/transportation/]]></target>
-        <uuid>5ce3fc25-5535-11e4-af67-005056b61161</uuid>
-      </link>
+      <!--Categories are read dynamically-->
     </Category>
     <Location><![CDATA[Lawrence Hall of Science, San Francisco]]></Location>
     <Address name="Address0">

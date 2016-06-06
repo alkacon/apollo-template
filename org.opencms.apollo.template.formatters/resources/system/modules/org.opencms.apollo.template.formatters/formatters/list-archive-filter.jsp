@@ -1,4 +1,4 @@
-<%@page buffer="none" session="false" trimDirectiveWhitespaces="true" import="org.opencms.i18n.CmsEncoder,org.opencms.file.*"%>
+<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -42,7 +42,7 @@
 									<c:set var="currCat" value="${cms.readCategory[itemName]}" />
 									<c:set var="showLabel" value="false" />
 									<c:choose>
-										<c:when test="${content.value.Category.isSet}">
+										<c:when test="${not empty categoryPaths}">
 											<c:forTokens var="testCat" items="${categoryPaths}" delims=",">
 												<c:if test="${fn:startsWith(currCat.path, testCat)}">
 													<c:set var="showLabel" value="true" />

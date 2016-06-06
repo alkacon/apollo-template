@@ -21,22 +21,7 @@
       </Image>
     </Paragraph>
     <Category>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/location/asia/]]></target>
-        <uuid>0825108d-7194-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/priority/05_very_high/]]></target>
-        <uuid>a2182faf-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/people/]]></target>
-        <uuid>bbef2688-5534-11e4-af67-005056b61161</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/transportation/]]></target>
-        <uuid>5ce3fc25-5535-11e4-af67-005056b61161</uuid>
-      </link>
+      <!--Categories are read dynamically-->
     </Category>
     <Author><![CDATA[Manny Delgado]]></Author>
   </ApolloBlog>

@@ -29,22 +29,7 @@
       </Text>
     </Paragraph>
     <Category>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/location/australia/]]></target>
-        <uuid>0d18c3d0-7194-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/priority/03_medium/]]></target>
-        <uuid>b5e32c25-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/buildings/]]></target>
-        <uuid>52a797d2-5535-11e4-af67-005056b61161</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/transportation/]]></target>
-        <uuid>5ce3fc25-5535-11e4-af67-005056b61161</uuid>
-      </link>
+      <!--Categories are read dynamically-->
     </Category>
     <Author><![CDATA[Arno Admin]]></Author>
   </ApolloBlog>

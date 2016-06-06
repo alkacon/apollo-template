@@ -31,18 +31,7 @@
       </Text>
     </Paragraph>
     <Category>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/location/europe/]]></target>
-        <uuid>e73ef9d1-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/priority/04_high/]]></target>
-        <uuid>acb97052-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/buildings/]]></target>
-        <uuid>52a797d2-5535-11e4-af67-005056b61161</uuid>
-      </link>
+      <!--Categories are read dynamically-->
     </Category>
     <Author><![CDATA[Arno Admin]]></Author>
   </ApolloBlog>

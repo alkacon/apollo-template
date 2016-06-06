@@ -1,5 +1,4 @@
-<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"
-	import="org.opencms.relations.CmsCategoryService, org.opencms.file.CmsObject"%>
+<%@page buffer="none" session="false" trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -14,10 +13,6 @@
 
 		<cms:search configString="${param.searchConfig}" var="search"
 			addContentInfo="true" />
-		<c:set var="cmsObject" value="${cms.vfs.cmsObject}" />
-		<%
-	    CmsObject cmsObject = (CmsObject)pageContext.getAttribute("cmsObject");
-	%>
 
 		<div class="row mb-20">
 			<section id="listOptions" class="btn-group pull-right">
@@ -49,22 +44,11 @@
 								<c:forEach var="value" items="${facetResult.values}">
 									<c:set var="selected">${facetController.state.isChecked[value.name] ? ' class="active"' : ""}</c:set>
 									<%-- BEGIN: Calculate category label --%>
-									<c:set var="itemName">${value.name}</c:set>
-									<c:set var="basePath"><%=org.opencms.relations.CmsCategoryService.getInstance().readCategory(
-                                            cmsObject,
-                                            (String)pageContext.getAttribute("itemName"),
-                                            request.getParameter("pageUri")).getBasePath()%></c:set>
-									<c:set var="basePath">${fn:substring(basePath,0,fn:length(basePath)-1)}</c:set>
-									<c:set var="folders" value='${fn:split(itemName,"/")}' />
 									<c:set var="label"></c:set>
-									<c:forEach begin="0" end="${fn:length(folders)-1}"
-										varStatus="loop">
-										<c:set var="basePath">${basePath}/${folders[loop.index]}</c:set>
-										<c:set var="label">${label} / <%=org.opencms.relations.CmsCategoryService.getInstance().getCategory(
-                                                cmsObject,
-                                                (String)pageContext.getAttribute("basePath")).getTitle()%></c:set>
+									<c:forEach var="category" items="${cms.readPathCategories[value.name]}" varStatus="status">
+										<c:set var="label">${label}${category.title}</c:set>
+										<c:if test="${not status.last}"><c:set var="label">${label}&nbsp;/&nbsp;</c:set></c:if>
 									</c:forEach>
-									<c:set var="label">${fn:substring(label,2,-1)}</c:set>
 									<%-- END: Calculate category label --%>
 									<li ${selected}><a href="javascript:void(0)"
 										onclick="reloadInnerList('${search.stateParameters.resetFacetState[categoryFacetField].checkFacetItem[categoryFacetField][value.name]}')">${label}
@@ -122,24 +106,14 @@
 					<fmt:message key="facet.category.none" /></option>
 				<c:forEach var="value" items="${facetResult.values}">
 					<c:set var="selected">${facetController.state.isChecked[value.name] ? ' selected' : ""}</c:set>
-							BEGIN: Calculate category label
-							<c:set var="itemName">${value.name}</c:set>
-					<c:set var="basePath"><%=org.opencms.relations.CmsCategoryService.getInstance().readCategory(
-                                        cmsObject,
-                                        (String)pageContext.getAttribute("itemName"),
-                                        request.getParameter("pageUri")).getBasePath()%></c:set>
-					<c:set var="basePath">${fn:substring(basePath,0,fn:length(basePath)-1)}</c:set>
-					<c:set var="folders" value='${fn:split(itemName,"/")}' />
+					<%-- BEGIN: Calculate category label --%>
 					<c:set var="label"></c:set>
-					<c:forEach begin="0" end="${fn:length(folders)-1}" varStatus="loop">
-						<c:set var="basePath">${basePath}/${folders[loop.index]}</c:set>
-						<c:set var="label">${label} / <%=org.opencms.relations.CmsCategoryService.getInstance().getCategory(
-                                            cmsObject,
-                                            (String)pageContext.getAttribute("basePath")).getTitle()%></c:set>
+					<c:forEach var="category" items="${cms.readPathCategories[facetItem.name]}" varStatus="status">
+						<c:set var="label">${label}${category.title}</c:set>
+						<c:if test="${not status.last}"><c:set var="label">${label}&nbsp;/&nbsp;</c:set></c:if>
 					</c:forEach>
-					<c:set var="label">${fn:substring(label,2,-1)}</c:set>
-							END: Calculate category label
-							<option
+					<%-- END: Calculate category label --%>
+					<option
 						value="${search.stateParameters.resetFacetState[categoryFacetField].checkFacetItem[categoryFacetField][value.name]}"
 						${selected}>${label}(${value.count})</option>
 				</c:forEach>

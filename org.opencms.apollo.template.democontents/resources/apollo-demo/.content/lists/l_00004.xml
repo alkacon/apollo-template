@@ -4,6 +4,9 @@
   <ApolloList language="en">
     <Headline><![CDATA[Compact Event List]]></Headline>
     <TypesToCollect>a-event:d60fa8bc-d71a-11e5-b10a-0242ac11002b</TypesToCollect>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
     <SortOrder><![CDATA[desc]]></SortOrder>
     <ItemsPerPage><![CDATA[3]]></ItemsPerPage>
   </ApolloList>

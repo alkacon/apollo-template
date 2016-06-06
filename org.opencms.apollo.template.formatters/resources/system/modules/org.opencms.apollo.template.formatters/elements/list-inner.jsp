@@ -1,5 +1,4 @@
-<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"
-	import="org.opencms.relations.CmsCategoryService, org.opencms.file.CmsObject"%>
+<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -47,8 +46,7 @@
   					<ul class="pagination">
   						<li ${pagination.state.currentPage > 1 ? "" : "class='disabled'"}>
   							<a href="javascript:void(0)"
-  							onclick='reloadInnerList("${search.stateParameters.setPage['
-  							1']}")'
+  							onclick='reloadInnerList("${search.stateParameters.setPage['1']}")'
   						   aria-label='<fmt:message key="pagination.first.title"/>'>
   								<span aria-hidden="true"><fmt:message
   										key="pagination.first" /></span>

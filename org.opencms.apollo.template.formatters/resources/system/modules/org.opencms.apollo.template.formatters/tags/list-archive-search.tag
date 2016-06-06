@@ -1,7 +1,6 @@
 <%@tag display-name="list-archive-search"
   trimDirectiveWhitespaces="true" 
   body-content="empty"
-  import="org.opencms.file.*, org.opencms.relations.*, org.opencms.util.*"
   description="Triggers the archive search with the given filters"%>
 
 <%@attribute name="content" type="org.opencms.jsp.util.CmsJspContentAccessBean" required="true" %>
@@ -38,34 +37,21 @@
 
 <c:set var="resType">${fn:substringBefore(content.value.TypesToCollect, ":")}</c:set>
 <c:set var="solrCats"></c:set>
-<c:if test="${content.value.Category.isSet}">
-	<c:set var="cmsObject" value="${cms.vfs.cmsObject}" scope="request" />
-	<c:set var="firstCat" value="true" />
-	<%
-		CmsObject cms = (CmsObject)request.getAttribute("cmsObject");
-		String allCatPaths = "";
-	%>
-	<c:forTokens items="${content.value.Category.stringValue}" delims="," var="catPath">
-		<c:set var="catRootPath" value="${catPath}" scope="request" />
-		<c:if test="${not firstCat}"><c:set var="catFilter">${catFilter} OR </c:set></c:if>
-		<%
-			
-			String cPath = (String)request.getAttribute("catRootPath");
-			if (cPath != null) {
-				CmsCategory cat = CmsCategoryService.getInstance().getCategory(cms, cms.getRequestContext().addSiteRoot(cPath));
-            	request.setAttribute("cAdjustedPath", cat.getPath());
-            	if (CmsStringUtil.isNotEmpty(allCatPaths)) {
-            	    allCatPaths += ",";
-            	}
-            	allCatPaths += cat.getPath();
-			}
-		%>
-		<c:set var="catFilter">${catFilter} "${cAdjustedPath}"</c:set>
-		<c:set var="firstCat" value="false" />
-	</c:forTokens>
-	<c:set var="categoryPaths" value="<%= allCatPaths %>" />
+<c:set var="categories" value="${content.readCategories}" />
+<c:if test="${not categories.isEmpty}">
+	<c:set var="categoryPaths"></c:set>
+	<c:set var="catFilter"></c:set>
+	<c:forEach var="category" items="${content.readCategories.leafItems}" varStatus="status">
+		<c:set var="categoryPaths">${categoryPaths}${category.path}</c:set>
+		<c:set var="catFilter">${catFilter}${category.path}</c:set>
+		<c:if test="${not status.last}">
+			<c:set var="categoryPaths">${categoryPaths},</c:set>
+			<c:set var="catFilter">${catFilter}&nbsp;</c:set>
+		</c:if>
+	</c:forEach>
 	<c:set var="solrCats">&fq=category:(${catFilter})</c:set>
 </c:if>
+
 <c:set var="solrFilterQue"></c:set>
 <c:if test="${content.value.FilterQueries.isSet}">
 	<c:set var="solrFilterQue">${content.value.FilterQueries}</c:set>

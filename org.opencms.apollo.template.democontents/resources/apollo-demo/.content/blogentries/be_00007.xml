@@ -23,22 +23,7 @@
       </Image>
     </Paragraph>
     <Category>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/location/southamerica/]]></target>
-        <uuid>01e3597a-7194-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/priority/03_medium/]]></target>
-        <uuid>b5e32c25-7193-11e0-87bc-000c2972a6a4</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/machines/]]></target>
-        <uuid>caf3e85e-5534-11e4-af67-005056b61161</uuid>
-      </link>
-      <link type="WEAK">
-        <target><![CDATA[/sites/default/.categories/topic/people/]]></target>
-        <uuid>bbef2688-5534-11e4-af67-005056b61161</uuid>
-      </link>
+      <!--Categories are read dynamically-->
     </Category>
     <Author><![CDATA[Luke Dunphy]]></Author>
   </ApolloBlog>

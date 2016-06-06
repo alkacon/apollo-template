@@ -26,12 +26,12 @@
         </div>
     </div>
     
- 	<c:if test="${fn:length(content.valueList.Category) > 0}">
+ 	<c:if test="${not content.readCategories.isEmpty}">
 	<div class="margin-top-10">
         <ul class="list-unstyled list-inline blog-tags">
             <li>
-            <c:forEach var="item" items="${fn:split(content.value.Category,',')}" varStatus="status">
-                <span class="label">${cms.vfs.property[item]['Title']}</span>
+            <c:forEach var="category" items="${content.readCategories.leafItems}" varStatus="status">
+                <span class="label">${category.title}</span>
                 <c:if test="${not status.last}"> </c:if>
             </c:forEach>
             </li>
