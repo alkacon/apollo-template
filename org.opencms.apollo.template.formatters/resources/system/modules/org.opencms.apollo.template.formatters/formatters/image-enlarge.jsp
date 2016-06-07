@@ -21,7 +21,7 @@
 	<c:otherwise>
 
 	<div class="ap-img ${cms.element.setting.istyle}">
-        <div class="ap-img-pic ${cms.element.setting.ieffect != 'none' ? cms.element.setting.ieffect : ''}">
+        <div class="ap-img-pic">
         
             <a
                 data-gallery="true"
@@ -43,7 +43,7 @@
                             </c:if>
                         />
                     </span>
-                    <span class="zoom-icon">
+                    <span class="zoom-icon ${cms.element.setting.ieffect != 'none' ? cms.element.setting.ieffect : ''}">
                         <i class="fa fa-search"></i>
                     </span>
                 </span>

@@ -41,14 +41,14 @@
       <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
         none:%(key.apollo.section.image.effect.none)|
-        box-shadow shadow-effect-1:%(key.apollo.section.image.effect.shadow)|    
-        rounded-2x:%(key.apollo.section.image.effect.roundcorners)|
-        rounded-x:%(key.apollo.section.image.effect.vignette)|
-        img-bordered:%(key.apollo.section.image.effect.bordered)|
-        img-bordered rounded-2x:%(key.apollo.section.image.effect.borderedround)|
-        img-bordered rounded-x:%(key.apollo.section.image.effect.borderedvignette)|
-        box-shadow shadow-effect-1 rounded-2x:%(key.apollo.section.image.effect.shadowround)|
-        box-shadow shadow-effect-1 img-bordered:%(key.apollo.section.image.effect.shadowbordered)
+        ap-shadow:%(key.apollo.section.image.effect.shadow)|    
+        bo-radius-10:%(key.apollo.section.image.effect.roundcorners)|
+        bo-radius-50p:%(key.apollo.section.image.effect.vignette)|
+        bo-1 bo-grey-lightest p-3:%(key.apollo.section.image.effect.bordered)|
+        bo-1 bo-grey-lightest p-3 bo-radius-10:%(key.apollo.section.image.effect.borderedround)|
+        bo-1 bo-grey-lightest p-3 bo-radius-50p:%(key.apollo.section.image.effect.borderedvignette)|
+        ap-shadow bo-radius-10:%(key.apollo.section.image.effect.shadowround)|
+        ap-shadow bo-1 bo-grey-lightest p-3:%(key.apollo.section.image.effect.shadowbordered)
       ]]></WidgetConfig>
     </Setting>
     <Setting>

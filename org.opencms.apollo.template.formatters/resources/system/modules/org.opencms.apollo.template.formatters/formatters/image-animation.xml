@@ -52,7 +52,10 @@
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
       <Widget><![CDATA[combo]]></Widget>
-      <WidgetConfig><![CDATA[mb-20 box-shadow shadow-effect-1:%(key.apollo.setting.cssclass.shadowbox)|box-shadow shadow-effect-2 rounded-2x:%(key.apollo.setting.cssclass.roundedshadowbox)]]></WidgetConfig>
+      <WidgetConfig><![CDATA[
+        mb-20 ap-shadow:%(key.apollo.setting.cssclass.shadowbox)|
+        overflow-fix ap-shadow bo-radius-10:%(key.apollo.setting.cssclass.roundedshadowbox)
+        ]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>
