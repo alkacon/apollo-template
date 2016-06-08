@@ -23,8 +23,8 @@
 <apollo:image-vars image="${image}">
 
 <c:if test="${not empty imageLink}">
-
 <c:if test="${link.isSet && setting.ilink.value != 'none'}">
+<div>
 	<a class="ap-img-link" href="<cms:link>${link.value.URI}</cms:link>"
 			<c:if test="${link.value.Text.isSet}">
 			title="${link.value.Text}"
@@ -66,7 +66,7 @@
 	</c:if>
 
 <c:if test="${link.isSet && setting.ilink.value != 'none'}">
-	</a>
+	</a></div>
 </c:if>
 
 </c:if>
