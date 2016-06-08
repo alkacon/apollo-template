@@ -34,7 +34,7 @@
 				>
 		</c:if>
 
-		<div class="ap-img-pic ${setting.ieffect != 'none' ? setting.ieffect : ''}">
+		<div class="ap-img-pic">
 				<span ${image.rdfa.Image} ${content.imageDnd[image.value.Image.path]}>
 						<img
 								src="<cms:link>${imageLink}</cms:link>"
