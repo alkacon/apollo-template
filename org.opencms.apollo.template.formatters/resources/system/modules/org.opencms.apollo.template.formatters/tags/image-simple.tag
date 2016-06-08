@@ -32,7 +32,7 @@
 	>
 </c:if>
 		
-	<div class="ap-img ${setting.istyle}">
+	<div class="ap-img">
 
 
 			<div class="ap-img-pic">
@@ -48,7 +48,7 @@
 	</div>
 	
 	<c:if test="${setting.itext.value != 'none'}">
-		<div class="ap-img-txt">
+		<div class="ap-img-txt ${setting.istyle}">
 		<c:if test="${fn:contains(setting.itext.value, 'title')}">
 				<c:choose>
 						<c:when	test="${image.value.Title.isSet}">

@@ -72,14 +72,12 @@ a.ap-img-link {
 }
 
 // Image section style "Bold headline, centered"
-.ap-img-v1 {
-	.ap-img-txt {
-		.ap-img-title {
-			text-align: center;
-			font-weight: 700;
-		}
-		.ap-img-desc {
-			margin-top: 5px;
-		}	
-	} 
+.ap-img-text-v1 {
+	.ap-img-title {
+		text-align: center;
+		font-weight: 700;
+	}
+	.ap-img-desc {
+		margin-top: 5px;
+	}	
 }
