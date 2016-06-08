@@ -20,56 +20,11 @@
 
 	<c:otherwise>
 
-	<div class="ap-img ${cms.element.setting.istyle}">
-        <div class="ap-img-pic">
-        
-            <a
-                data-gallery="true"
-                class="zoom"
-                data-size="${cms.vfs.property[imageLink]['image.size']}"
-                href="<cms:link>${imageLink}</cms:link>"
-                <c:if test="${not empty imageTitleCopyright}">title="${imageTitleCopyright}"</c:if>
-                data-rel="fancybox-button-${cms.element.instanceId}"
-                id="fancyboxzoom${cms.element.instanceId}">
-
-                <span class="zoom-overlay">
-                    <span ${content.imageDnd[image.value.Image.path]}>
-                        <img
-                            src="<cms:link>${imageLink}</cms:link>"
-                            class="img-responsive ${cms.element.setting.ieffect != 'none' ? cms.element.setting.ieffect : ''}"
-                            <c:if test="${not empty imageTitleCopyright}">
-                                alt="${imageTitleCopyright}"
-                                title="${imageTitleCopyright}"
-                            </c:if>
-                        />
-                    </span>
-                    <span class="zoom-icon ${cms.element.setting.ieffect != 'none' ? cms.element.setting.ieffect : ''}">
-                        <i class="fa fa-search"></i>
-                    </span>
-                </span>
-            </a>
-            
-        </div>
-
-        <c:if test="${cms.element.setting.itext.value != 'none'}">
-                <div class="ap-img-txt">
-                <c:if test="${fn:contains(cms.element.setting.itext.value, 'title')}">
-                        <c:choose>
-                                <c:when	test="${image.value.Title.isSet}">
-                                        <div class="ap-img-title"><span ${image.rdfa.Title}>${image.value.Title}</span></div>
-                                </c:when>
-                                <c:when	test="${content.value.Headline.isSet}">
-                  <div class="ap-img-title"><span ${content.rdfa.Headline}>${content.value.Headline}</span></div>
-                                </c:when>
-                        </c:choose>
-                </c:if>
-                <c:if test="${fn:contains(cms.element.setting.itext.value, 'desc') && image.value.Description.isSet}">
-                        <div class="ap-img-desc"><span ${image.rdfa.Description}>${image.value.Description}</span></div>
-                </c:if>
-                </div>
-        </c:if>
-
-	</div>
+	<apollo:image-zoom 
+		setting="${cms.element.setting}" 
+		image="${content.value.Image}"
+		headline="${content.value.Headline}" 
+		content="${content}" />
 
 	</c:otherwise>
 

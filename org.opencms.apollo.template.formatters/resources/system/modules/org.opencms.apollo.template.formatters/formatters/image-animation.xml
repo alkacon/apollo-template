@@ -24,22 +24,6 @@
     <Display>false</Display>
     <NestedContainers>false</NestedContainers>
     <Setting>
-      <PropertyName><![CDATA[showheadline]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showheadline)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.showheadline.description)]]></Description>
-      <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showheadline.false)|top:%(key.apollo.setting.showheadline.top)|bottom:%(key.apollo.setting.showheadline.bottom)|bottomcenter:%(key.apollo.setting.showheadline.bottomcenter)]]></WidgetConfig>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[showtext]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showtext)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.showtext.description)]]></Description>
-      <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showtext.false)|true:%(key.apollo.setting.showtext.true)]]></WidgetConfig>
-    </Setting>
-    <Setting>
       <PropertyName><![CDATA[showlink]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.showlink)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.showlink.description)]]></Description>
@@ -56,6 +40,18 @@
         mb-20 ap-shadow:%(key.apollo.setting.cssclass.shadowbox)|
         overflow-fix ap-shadow bo-radius-10:%(key.apollo.setting.cssclass.roundedshadowbox)
         ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[itext]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.label)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[none]]></Default>
+      <WidgetConfig><![CDATA[
+        none:%(key.apollo.section.image.text.nothing)|
+        title:%(key.apollo.section.image.text.title)|
+        desc:%(key.apollo.section.image.text.description)|
+        title-desc:%(key.apollo.section.image.text.titledescription)
+      ]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

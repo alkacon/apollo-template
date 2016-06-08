@@ -21,14 +21,6 @@
 
 	.ap-img-pic {
 	}
-	.ap-img-txt {
-		.ap-img-title {
-			margin-top: 10px;
-		}
-		.ap-img-desc {
-			margin-top: 5px;
-		}			
-	}
 	
 	a {
 	
@@ -45,6 +37,30 @@
 	        }
 		}
 	}	
+}
+
+.ap-img-txt {
+	.ap-img-title {
+		margin-top: 10px;
+	}
+	.ap-img-desc {
+		margin-top: 5px;
+	}			
+}
+
+a.ap-img-link {
+	color: $text-dark;
+
+	&:hover, &:active, &:focus {
+		color: $text-dark;
+		text-decoration: none;
+	}
+	.ap-img-desc {
+		color: $main-theme;
+		&:hover, &:active, &:focus {
+			text-decoration: underline;
+		}
+	}
 }
 
 .ap-tile .ap-sec,

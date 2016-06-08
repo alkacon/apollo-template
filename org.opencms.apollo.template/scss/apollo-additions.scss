@@ -40,6 +40,12 @@ a.thumbnail {
    transform: scale(1.2) rotate(2deg);
 }
 
+// overriding .ap-img margin-bottom
+.thumbnail-kenburn .ap-img {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
 .overflow-hidden{
     overflow: hidden;
 }
