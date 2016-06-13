@@ -45,7 +45,7 @@
                             scaleType="0"
                             cssclass="img-responsive"
                             alt="${imageTitle}${' '}${imageCopyright}"
-                            title="${imageTitle}${' '}${imageCopyright}${' - Class:'}${image.value.Image['class']}"
+                            title="${imageTitle}${' '}${imageCopyright}"
                     />
                 </div>
             </span>
