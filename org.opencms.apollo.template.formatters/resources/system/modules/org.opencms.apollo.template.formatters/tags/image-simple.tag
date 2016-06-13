@@ -23,8 +23,8 @@
 <apollo:image-vars image="${image}">
 
 <c:if test="${not empty imageLink}">
+<div class="ap-img ${setting.istyle}">
 <c:if test="${link.isSet && setting.ilink.value != 'none'}">
-<div>
 	<a class="ap-img-link" href="<cms:link>${link.value.URI}</cms:link>"
 			<c:if test="${link.value.Text.isSet}">
 			title="${link.value.Text}"
@@ -32,23 +32,21 @@
 	>
 </c:if>
 		
-	<div class="ap-img">
 
 
-			<div class="ap-img-pic">
-					<span ${image.rdfa.Image} ${content.imageDnd[image.value.Image.path]}>
-							<img
-									src="<cms:link>${imageLink}</cms:link>"
-									class="img-responsive ${setting.ieffect != 'none' ? setting.ieffect : ''}"
-									alt="${imageTitle}${' '}${imageCopyright}"
-									title="${imageTitle}${' '}${imageCopyright}"
-							/>
-					</span>
-			</div>
+	<div class="ap-img-pic">
+		<span ${image.rdfa.Image} ${content.imageDnd[image.value.Image.path]}>
+			<img
+					src="<cms:link>${imageLink}</cms:link>"
+					class="img-responsive ${setting.ieffect != 'none' ? setting.ieffect : ''}"
+					alt="${imageTitle}${' '}${imageCopyright}"
+					title="${imageTitle}${' '}${imageCopyright}"
+			/>
+		</span>
 	</div>
 	
 	<c:if test="${setting.itext.value != 'none'}">
-		<div class="ap-img-txt ${setting.istyle}">
+		<div class="ap-img-txt">
 		<c:if test="${fn:contains(setting.itext.value, 'title')}">
 				<c:choose>
 						<c:when	test="${image.value.Title.isSet}">
@@ -66,9 +64,9 @@
 	</c:if>
 
 <c:if test="${link.isSet && setting.ilink.value != 'none'}">
-	</a></div>
+	</a>
 </c:if>
-
+</div>
 </c:if>
 
 </apollo:image-vars>
