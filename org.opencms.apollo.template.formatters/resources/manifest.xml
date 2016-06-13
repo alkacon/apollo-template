@@ -2828,6 +2828,18 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/tags/image-zoom.tag</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/tags/image-zoom.tag</destination>
+			<type>plain</type>
+			<uuidstructure>cebb66b9-2d45-11e6-91a7-0242ac11002b</uuidstructure>
+			<uuidresource>cebb66ba-2d45-11e6-91a7-0242ac11002b</uuidresource>
+			<datecreated>Wed, 08 Jun 2016 06:54:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/tags/list-archive-search.tag</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/tags/list-archive-search.tag</destination>
 			<type>jsp</type>
