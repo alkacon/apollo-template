@@ -50,16 +50,12 @@
         none:%(key.apollo.section.image.text.nothing)|
         title:%(key.apollo.section.image.text.title)|
         desc:%(key.apollo.section.image.text.description)|
-        title-desc:%(key.apollo.section.image.text.titledescription)
+        copy:%(key.apollo.section.image.text.copy)|
+        title-desc:%(key.apollo.section.image.text.titledescription)|
+        title-copy:%(key.apollo.section.image.text.titlecopy)|
+        desc-copy:%(key.apollo.section.image.text.descriptioncopy)|
+        title-desc-copy:%(key.apollo.section.image.text.titledescriptioncopy)
       ]]></WidgetConfig>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[icopyright]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showcopyright)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.showcopyright.description)]]></Description>
-      <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showcopyright.false)|true:%(key.apollo.setting.showcopyright.true)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

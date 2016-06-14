@@ -60,7 +60,11 @@
         none:%(key.apollo.section.image.text.nothing)|
         title:%(key.apollo.section.image.text.title)|
         desc:%(key.apollo.section.image.text.description)|
-        title-desc:%(key.apollo.section.image.text.titledescription)
+        copy:%(key.apollo.section.image.text.copy)|
+        title-desc:%(key.apollo.section.image.text.titledescription)|
+        title-copy:%(key.apollo.section.image.text.titlecopy)|
+        desc-copy:%(key.apollo.section.image.text.descriptioncopy)|
+        title-desc-copy:%(key.apollo.section.image.text.titledescriptioncopy)
       ]]></WidgetConfig>
     </Setting>
     <Setting>

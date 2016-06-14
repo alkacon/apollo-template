@@ -56,8 +56,14 @@
 		</a>
 		
 	</div>
+		
+	<%-- ####### Show copyright if enabled ######## --%>
+	<c:if test="${fn:contains(setting.itext.value, 'copy') && image.value.Copyright.isSet}">
+		<div class="info">
+			<p class="copyright"><i>${imageCopyright}</i></p>
+		</div>
+	</c:if>
 	
-
 	<c:if test="${setting.itext.value != 'none'}">
 			<div class="ap-img-txt">
 			<c:if test="${fn:contains(setting.itext.value, 'title')}">
