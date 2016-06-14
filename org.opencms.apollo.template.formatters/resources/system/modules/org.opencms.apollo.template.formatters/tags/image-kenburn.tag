@@ -38,7 +38,7 @@
 		<%-- ####### Show image (with link button if enabled) ######## --%>
 		<div class="thumbnail-kenburn">
             <span ${image.rdfa.Image} ${content.imageDnd[image.value.Image.path]}>
-                <div class="overflow-hidden">
+                <div class="ap-img-pic ${setting.cssClass}">
                     <cms:img 
                             src="${imageLink}"
                             scaleColor="transparent" 
@@ -52,7 +52,7 @@
             </span>
 			<c:if test="${setting.ilink.value == 'image'}">
 				<a class="btn-more hover-effect"
-		-           	href="<cms:link>${link.value.URI}</cms:link>" 
+						href="<cms:link>${link.value.URI}</cms:link>" 
 						<c:if test="${link.value.Text.isSet}">
 							title="${link.value.Text}"
 						</c:if>>${link.value.Text}</a>
