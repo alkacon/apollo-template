@@ -655,6 +655,14 @@
       <Value><![CDATA[Show image in place of calendar sheet]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.section.setting.shadowborder]]></Key>
+      <Value><![CDATA[Display shadowed border (on mouse-over)]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.setting.shadowborder.description]]></Key>
+      <Value><![CDATA[Shows a shadowed border around the image box, when the mouse hovers over it.]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.section.image.style.plain]]></Key>
       <Value><![CDATA[Plain]]></Value>
     </Message>
@@ -1439,6 +1447,14 @@
     <Message>
       <Key><![CDATA[apollo.setting.compactform.showsmallimagehidecalendar]]></Key>
       <Value><![CDATA[Zeige Bild anstelle Kalenderblatt]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.setting.shadowborder]]></Key>
+      <Value><![CDATA[Zeige schattierten Rand (wenn Maus darüber)]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.setting.shadowborder.description]]></Key>
+      <Value><![CDATA[Wenn die Maus über das Element fährt, wird außen ein grauer Schattenrand eingeblendet.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.image.style.plain]]></Key>

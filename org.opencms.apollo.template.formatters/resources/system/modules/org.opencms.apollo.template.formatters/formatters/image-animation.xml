@@ -57,5 +57,11 @@
         title-desc-copy:%(key.apollo.section.image.text.titledescriptioncopy)
       ]]></WidgetConfig>
     </Setting>
+    <Setting>
+      <PropertyName><![CDATA[shadowborder]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.setting.shadowborder)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
   </NewFormatter>
 </NewFormatters>
