@@ -21,7 +21,7 @@
 						<apollo:image-kenburn 
 							setting="${cms.element.setting}" 
 							image="${content.value.Image}"
-							width="400"
+							width="-1"
 							headline="${content.value.Headline}" 
 							link="${content.value.Link}" 
 							content="${content}" />
