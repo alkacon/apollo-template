@@ -24,12 +24,12 @@
     <Display>false</Display>
     <NestedContainers>false</NestedContainers>
     <Setting>
-      <PropertyName><![CDATA[showlink]]></PropertyName>
+      <PropertyName><![CDATA[ilink]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.showlink)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.showlink.description)]]></Description>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showlink.false)|image:%(key.apollo.setting.showlink.image)|button:%(key.apollo.setting.showlink.button)|headline:%(key.apollo.setting.showlink.headline)]]></WidgetConfig>
+      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showlink.false)|image:%(key.apollo.setting.showlink.image)|button:%(key.apollo.setting.showlink.button)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[cssClass]]></PropertyName>
@@ -52,6 +52,14 @@
         desc:%(key.apollo.section.image.text.description)|
         title-desc:%(key.apollo.section.image.text.titledescription)
       ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[icopyright]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showcopyright)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showcopyright.description)]]></Description>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[false]]></Default>
+      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showcopyright.false)|true:%(key.apollo.setting.showcopyright.true)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

@@ -17,14 +17,24 @@
             </c:when>
             <c:otherwise>
                 <div>
-                    <div class="thumbnails thumbnail-style thumbnail-kenburn">
-						<apollo:image-simple 
+                    <div class="thumbnails thumbnail-style">
+						<apollo:image-kenburn 
 							setting="${cms.element.setting}" 
 							image="${content.value.Image}"
+							width="400"
 							headline="${content.value.Headline}" 
 							link="${content.value.Link}" 
 							content="${content}" />
                     </div>
+					
+					<%-- ####### Show link as button if enabled ######## --%>
+					<c:if
+						test="${content.value.Link.isSet and cms.element.setting.ilink.value == 'button'}">
+						<div class="thumbnails thumbnail-style"style="text-align: right; margin-top: 20px;">
+							<a class="btn-more no-hover-effect" style="position: relative;"
+								href="<cms:link>${content.value.Link.value.URI}</cms:link>">${content.value.Link.value.Text}</a>
+						</div>
+					</c:if>
                 </div>
             </c:otherwise>
         </c:choose>

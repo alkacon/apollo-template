@@ -35,13 +35,14 @@
 				>
 		</c:if>
 
+		<%-- ####### Show image (with link button if enabled) ######## --%>
 		<div class="thumbnail-kenburn">
             <span ${image.rdfa.Image} ${content.imageDnd[image.value.Image.path]}>
                 <div class="overflow-hidden">
                     <cms:img 
                             src="${imageLink}"
                             scaleColor="transparent" 
-                            width="400" 
+                            width="${width}" 
                             scaleType="0"
                             cssclass="img-responsive"
                             alt="${imageTitle}${' '}${imageCopyright}"
@@ -49,8 +50,23 @@
                     />
                 </div>
             </span>
+			<c:if test="${setting.ilink.value == 'image'}">
+				<a class="btn-more hover-effect"
+		-           	href="<cms:link>${link.value.URI}</cms:link>" 
+						<c:if test="${link.value.Text.isSet}">
+							title="${link.value.Text}"
+						</c:if>>${link.value.Text}</a>
+			</c:if>
 		</div>
+		
+		<%-- ####### Show copyright if enabled ######## --%>
+		<c:if test="${setting.icopyright.value}">
+			<div class="info">
+				<p class="copyright"><i>${imageCopyright}</i></p>
+			</div>
+		</c:if>
 
+		<%-- ####### Show title and/or headline if enabled ######## --%>
 		<c:if test="${setting.itext.value != 'none'}">
 				<div class="ap-img-txt">
 				<c:if test="${fn:contains(setting.itext.value, 'title')}">
