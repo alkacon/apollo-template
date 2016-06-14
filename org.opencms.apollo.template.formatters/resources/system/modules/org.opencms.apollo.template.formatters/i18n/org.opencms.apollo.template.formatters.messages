@@ -567,6 +567,22 @@
       <Value><![CDATA[Text below, left aligned]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.showcopyright]]></Key>
+      <Value><![CDATA[Copyright display]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showcopyright.description]]></Key>
+      <Value><![CDATA[Displays a small copyright text under the image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showcopyright.true]]></Key>
+      <Value><![CDATA[Show copyright]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showcopyright.false]]></Key>
+      <Value><![CDATA[Don't show copyright]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.showlink]]></Key>
       <Value><![CDATA[Link display]]></Value>
     </Message>
@@ -1319,6 +1335,22 @@
     <Message>
       <Key><![CDATA[apollo.setting.showtext.true]]></Key>
       <Value><![CDATA[Text unterhalb, links ausgerichtet]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showcopyright]]></Key>
+      <Value><![CDATA[Copyright Anzeige]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showcopyright.description]]></Key>
+      <Value><![CDATA[Zeigt unterhalb des Bildes einen kleinen Copyright-Text an.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showcopyright.true]]></Key>
+      <Value><![CDATA[Copyright anzeigen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showcopyright.false]]></Key>
+      <Value><![CDATA[Copyright nicht anzeigen]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showlink]]></Key>
