@@ -30,6 +30,12 @@ $zoom-fg:  $text-light !default;
     transition: all 0.4s ease-in-out 0s;
     z-index: 100;
     background-color: $zoom-bg;
+    &:before {
+        background: transparent;
+    }
+    &:after {
+        background: transparent;
+    }
 }
 
 .zoom-overlay .zoom-icon i {  
