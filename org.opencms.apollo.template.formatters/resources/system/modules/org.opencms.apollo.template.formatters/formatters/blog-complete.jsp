@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>	
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.schemas.blog">
 
@@ -117,15 +118,12 @@
 
 									<div class="row">
 										<div class="col-md-4 pull-${imgalign}">
-											<div ${paragraph.rdfa.Image} class="thumbnail-kenburn">
-												<div class="overflow-hidden">
-													<cms:img src="${paragraph.value.Image.value.Image}"
-														scaleColor="transparent" width="400" scaleType="0"
-														cssclass="img-responsive"
-														alt="${paragraph.value.Image.value.Title}${' '}${copyright}"
-														title="${paragraph.value.Image.value.Title}${' '}${copyright}" />
-												</div>
-											</div>
+										
+											<apollo:image-kenburn image="${paragraph.value.Image}"
+														setting="${cms.element.setting}"
+														width="400"
+														content="${content}" />
+											
 										</div>
 										<div class="col-md-8">
 											<div ${paragraph.rdfa.Text}>${paragraph.value.Text}</div>
