@@ -37,6 +37,25 @@
 	        }
 		}
 	}	
+	
+    .info {
+        text-align: right;
+        .copyright {
+            font-size: 10px;
+            color: $grey;
+        }
+    }
+
+	// Image section style "Bold headline, centered"
+    &.ap-img-v1 {
+		.ap-img-title {
+			text-align: center;
+			font-weight: 700;
+		}
+		.ap-img-desc {
+			margin-top: 5px;
+		}
+    }
 }
 
 .ap-img-txt {
@@ -71,13 +90,92 @@ a.ap-img-link {
     margin: 0;
 }
 
-// Image section style "Bold headline, centered"
-.ap-img-text-v1 {
-	.ap-img-title {
-		text-align: center;
-		font-weight: 700;
+// thumbnails
+
+a.thumbnail {
+    padding: 0;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.thumbnail-style { 
+    margin-bottom: 20px; 
+    padding: 0;
+    &:hover{
+        box-shadow: none;
+
+        a.btn-more:hover {
+            color: $white;
+        }
+
+        a.btn-more.no-hover-effect {
+            color: $white;
+            right: 0px;
+        }
+
+    }
+
+    a.btn-more {
+        z-index: 20;
+
+        &.no-hover-effect {
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+	&.shadow-border{
+		padding: 7px;
+		
+		&:hover{
+			box-shadow: 0 0 8px #ddd; 
+			-webkit-transition: box-shadow 0.2s ease-in-out;
+			-moz-transition: box-shadow 0.2s ease-in-out;
+			-o-transition: box-shadow 0.2s ease-in-out;
+			transition: box-shadow 0.2s ease-in-out;
+		}
 	}
-	.ap-img-desc {
-		margin-top: 5px;
-	}	
+
+}
+
+// thumbnail effects
+
+.thumbnail-kenburn {
+    position: relative;
+
+    img {
+        left: 10px;
+        margin-left: -10px;
+        position: relative;
+       -webkit-transition: all 0.8s ease-in-out;
+       -moz-transition: all 0.8s ease-in-out;
+       -o-transition: all 0.8s ease-in-out;
+       -ms-transition: all 0.8s ease-in-out;
+       transition: all 0.8s ease-in-out;
+    }
+}
+
+.thumbnail-kenburn:hover img {
+   -webkit-transform: scale(1.2) rotate(2deg);
+   -moz-transform: scale(1.2) rotate(2deg);
+   -o-transform: scale(1.2) rotate(2deg);
+   -ms-transform: scale(1.2) rotate(2deg);
+   transform: scale(1.2) rotate(2deg);
+}
+
+// overriding .ap-img margin-bottom
+.thumbnail-kenburn .ap-img-pic {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.overflow-fix{  
+    // fix for images showing through masks with overflow-hidden during transition.
+    // see http://stackoverflow.com/a/27935035
+    position: relative;
+    z-index: 10;
 }
