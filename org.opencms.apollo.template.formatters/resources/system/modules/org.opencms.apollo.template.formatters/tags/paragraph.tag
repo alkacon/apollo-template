@@ -17,7 +17,10 @@
 
 <%-- ####### Preset optional attributes ######## --%>
 <c:if test="${empty showimage}"><c:set var="showimage" value="true" /></c:if>
-<c:if test="${empty imgalign}"><c:set var="imgalin" value="left" /></c:if>
+<c:if test="${!paragraph.value.Image.isSet}">
+	<c:set var="showimage" value="false" />
+</c:if>
+<c:if test="${empty imgalign}"><c:set var="imgalign" value="left" /></c:if>
 
 
 <%-- ####### Render paragraph ######## --%>
