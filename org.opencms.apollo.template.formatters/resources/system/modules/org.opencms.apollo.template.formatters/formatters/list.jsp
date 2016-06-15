@@ -36,9 +36,10 @@
 					<c:set var="teaserLength">${cms.element.settings.teaserlength}</c:set>
 					<c:set var="buttonColor">${cms.element.settings.buttoncolor}</c:set>
 					<c:set var="compactForm">${cms.element.settings.compactform}</c:set>
-					<c:set var="itemsPerPage">
-						<c:out value="${value.ItemsPerPage}" default="100" />
-					</c:set>
+					<c:set var="itemsPerPage" value="100" />
+					<c:if test="${value.ItemsPerPage.isSet}">
+						<c:set var="itemsPerPage" value="${value.itemsPerPage}" />
+					</c:if>
 					<c:set var="additionalFilterQueries">${value.FilterQueries}</c:set>
 					<c:set var="innerPageDivId">${cms.element.id}-inner</c:set>
 					<c:choose>
