@@ -38,7 +38,7 @@
 					<c:set var="compactForm">${cms.element.settings.compactform}</c:set>
 					<c:set var="itemsPerPage" value="100" />
 					<c:if test="${value.ItemsPerPage.isSet}">
-						<c:set var="itemsPerPage" value="${value.itemsPerPage}" />
+						<c:set var="itemsPerPage" value="${value.ItemsPerPage}" />
 					</c:if>
 					<c:set var="additionalFilterQueries">${value.FilterQueries}</c:set>
 					<c:set var="innerPageDivId">${cms.element.id}-inner</c:set>

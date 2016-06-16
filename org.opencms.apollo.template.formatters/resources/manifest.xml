@@ -942,6 +942,16 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>system/modules/org.opencms.apollo.template.formatters/elements/Neuer-Ordner</destination>
+			<type>folder</type>
+			<uuidstructure>3b278537-3398-11e6-b2da-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 16 Jun 2016 07:59:20 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters</destination>
 			<type>folder</type>
 			<uuidstructure>2593b580-5157-11e5-abeb-0242ac11002b</uuidstructure>
