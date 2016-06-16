@@ -1,6 +1,6 @@
 
 /* Event dates */
-@each $type-name, $bg-color in $primary-colors {
+@each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
 
 	.ap-event {
 		.ap-event-cal {
@@ -23,16 +23,16 @@
 			padding: 10px;		
 		}
 		a &{
-			color: $bg-color;
+			color: $text-dark;
 		}
 		h3{
-			color: darken($bg-color, 10%);
+			color: $bg-color;
 			font-weight: bolder;
 		}
 		&:before{
 			display: block;
 			content: '';
-			border-top: 20px solid darken($bg-color, 10%);
+			border-top: 20px solid $bg-color;
 			margin: 0 10%;
 		}		
 	}
