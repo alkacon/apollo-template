@@ -67,6 +67,10 @@ $(document)
 																					this)
 																					.attr(
 																							'href'),
+																			title: $(
+																					this)
+																					.attr(
+																							'title'),
 																			w : size[0]
 																					.split(':')[1],
 																			h : size[1]
