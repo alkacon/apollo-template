@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="de">
@@ -8,11 +8,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloImageGallery.Title.help]]></Key>
-      <Value><![CDATA[Der Titel der Bildergallerie.]]></Value>
+      <Value><![CDATA[Der Titel der Bildergalerie.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.imagegallery.default.Title]]></Key>
-      <Value><![CDATA[Neue Bildergallerie]]></Value>
+      <Value><![CDATA[Neue Bildergalerie]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloImageGallery.ImageFolder]]></Key>
@@ -20,43 +20,19 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloImageGallery.ImageFolder.help]]></Key>
-      <Value><![CDATA[Ordner der die Bilder enthÃ¤lt.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloImageGallery.ImageLarge]]></Key>
-      <Value><![CDATA[GroÃŸes Bild Breite]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloImageGallery.ImageLarge.help]]></Key>
-      <Value><![CDATA[Breite des skalierten groÃŸen Bildes.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloImageGallery.ImageMiddle]]></Key>
-      <Value><![CDATA[Mittleres Bild Breite]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloImageGallery.ImageMiddle.help]]></Key>
-      <Value><![CDATA[Breite des skalierten mittleren Bildes.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloImageGallery.ImageSmall]]></Key>
-      <Value><![CDATA[Kleines Bild Breite]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloImageGallery.ImageSmall.help]]></Key>
-      <Value><![CDATA[Breite des skalierten kleines Bildes.]]></Value>
+      <Value><![CDATA[Der Ordner, der die anzuzeigenden Bilder enthält.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.imagegallery.message.new]]></Key>
-      <Value><![CDATA[Bitte geben Sie einen Bilderordner an.]]></Value>
+      <Value><![CDATA[Neue Bildergalerie, bitte bearbeiten Sie den Inhalt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.imagegallery.message.prev]]></Key>
-      <Value><![CDATA[ZurÃ¼ck]]></Value>
+      <Value><![CDATA[Zurück]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.imagegallery.message.next]]></Key>
-      <Value><![CDATA[NÃ¤chste]]></Value>
+      <Value><![CDATA[Nächste]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.imagegallery.message.more]]></Key>
@@ -69,10 +45,6 @@
     <Message>
       <Key><![CDATA[apollo.imagegallery.message.edit]]></Key>
       <Value><![CDATA[Der Inhalt wurde bearbeitet, die Seite wird neu geladen.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.imagegallery.error.imagesize]]></Key>
-      <Value><![CDATA[Bitte nur Zahlen benutzen!]]></Value>
     </Message>
   </Bundle>
   <Bundle language="en">
@@ -90,39 +62,15 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloImageGallery.ImageFolder]]></Key>
-      <Value><![CDATA[Folder]]></Value>
+      <Value><![CDATA[Image Folder]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloImageGallery.ImageFolder.help]]></Key>
-      <Value><![CDATA[Folder which contains the images. ]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloImageGallery.ImageLarge]]></Key>
-      <Value><![CDATA[Large image width]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloImageGallery.ImageLarge.help]]></Key>
-      <Value><![CDATA[Width of the scaled large image.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloImageGallery.ImageMiddle]]></Key>
-      <Value><![CDATA[Middle image width]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloImageGallery.ImageMiddle.help]]></Key>
-      <Value><![CDATA[Width of the scaled middle image.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloImageGallery.ImageSmall]]></Key>
-      <Value><![CDATA[Small image width]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloImageGallery.ImageSmall.help]]></Key>
-      <Value><![CDATA[Width of the scaled small image.]]></Value>
+      <Value><![CDATA[The folder which contains the images.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.imagegallery.message.new]]></Key>
-      <Value><![CDATA[Please add a folder.]]></Value>
+      <Value><![CDATA[New image gallery, please edit the content.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.imagegallery.message.prev]]></Key>
@@ -142,11 +90,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.imagegallery.message.edit]]></Key>
-      <Value><![CDATA[Element was edited, page will be reloaded.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.imagegallery.error.imagesize]]></Key>
-      <Value><![CDATA[Please use only numbers!]]></Value>
+      <Value><![CDATA[The content has been edited, the page will reload.]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

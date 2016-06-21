@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="de">
@@ -24,15 +24,15 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.Width.help]]></Key>
-      <Value><![CDATA[Basisbreite des Rotators in Desktopaufl√∂sung in Pixeln.]]></Value>
+      <Value><![CDATA[Basisbreite des Rotators in Desktopauflˆsung in Pixeln.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.Height]]></Key>
-      <Value><![CDATA[H√∂he]]></Value>
+      <Value><![CDATA[Hˆhe]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.Height.help]]></Key>
-      <Value><![CDATA[Basish√∂he des Rotators in Desktopaufl√∂sung in Pixeln.]]></Value>
+      <Value><![CDATA[Basishˆhe des Rotators in Desktopauflˆsung in Pixeln.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.GalleryTitle]]></Key>
@@ -40,7 +40,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.GalleryTitle.help]]></Key>
-      <Value><![CDATA[Der Titel des Sliders f√ºr die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
+      <Value><![CDATA[Der Titel des Sliders f¸r die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSlider.Item]]></Key>
@@ -76,11 +76,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderItem.Delay]]></Key>
-      <Value><![CDATA[Verz√∂gerung]]></Value>
+      <Value><![CDATA[Verzˆgerung]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderItem.Delay.help]]></Key>
-      <Value><![CDATA[Der Verz√∂gerungswert f√ºr das Element.]]></Value>
+      <Value><![CDATA[Der Verzˆgerungswert f¸r das Element.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderItem.Link]]></Key>
@@ -88,7 +88,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderItem.Link.help]]></Key>
-      <Value><![CDATA[Ein optionaler Link f√ºr das komplette Rotator Element.]]></Value>
+      <Value><![CDATA[Ein optionaler Link f¸r das komplette Rotator Element.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderItem.Caption]]></Key>
@@ -96,7 +96,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderItem.Caption.help]]></Key>
-      <Value><![CDATA[Unterelemente sind Container, die mit CSS, Klassen f√ºr die Start Animation und anderen Optionen definiert werden k√∂nnen.]]></Value>
+      <Value><![CDATA[Unterelemente sind Container, die mit CSS, Klassen f¸r die Start Animation und anderen Optionen definiert werden kˆnnen.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderCaption.Image]]></Key>
@@ -128,7 +128,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderCaption.PosX.help]]></Key>
-      <Value><![CDATA[Die horizontale Position in der Standard Bildschirmgr√∂√üe.]]></Value>
+      <Value><![CDATA[Die horizontale Position in der Standard Bildschirmgrˆﬂe.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderCaption.PosY]]></Key>
@@ -136,11 +136,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderCaption.PosY.help]]></Key>
-      <Value><![CDATA[Die vertikale Position in der Standard Bildschirmgr√∂√üe.]]></Value>
+      <Value><![CDATA[Die vertikale Position in der Standard Bildschirmgrˆﬂe.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderCaption.Start]]></Key>
-      <Value><![CDATA[Start Verz√∂gerung]]></Value>
+      <Value><![CDATA[Start Verzˆgerung]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSliderCaption.Start.help]]></Key>
@@ -196,7 +196,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.slider.message.edit]]></Key>
-      <Value><![CDATA[<strong>Der Rotator wurde ge√§ndert</strong>, die Seite wird zur Anzeige neu geladen.]]></Value>
+      <Value><![CDATA[<strong>Der Rotator wurde ge‰ndert</strong>, die Seite wird zur Anzeige neu geladen.]]></Value>
     </Message>
   </Bundle>
   <Bundle language="en">

@@ -1,5 +1,4 @@
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	elementFormDefault="qualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd" />
 
@@ -30,8 +29,7 @@
 				<default element="Title" value="%(key.apollo.imagegallery.default.Title)" />
 			</defaults>
 			<layouts>
-				<layout element="ImageFolder" widget="VfsFileWidget"
-					configuration="{selectabletypes: 'folder'}}" />
+				<layout element="ImageFolder" widget="VfsFileWidget" configuration="{selectabletypes: 'folder'}}" />
 			</layouts>
 			<relations />
 			<searchsettings containerPageOnly="true" />

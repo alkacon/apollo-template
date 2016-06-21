@@ -93,7 +93,7 @@
 			var autoload = false;
 			var page = 1;
 			var items = ${not empty cms.element.settings.imagesPerPage ? cms.element.settings.imagesPerPage:20};	
-			var css = '${cms.element.settings.cssClass}';			
+			var css = 'ap-square square-sm-6 square-md-4 square-lg-3 square-m-2';			
 
 			function loadImages() {
 				if(page == 2){					
@@ -140,9 +140,12 @@
 					varStatus="status">
 					<c:set var="image" value="${result.searchResource}" />
 					<c:set var="title">${fn:trim(result.fields['Title_dprop_s'])}</c:set>
+					<c:set var="copyright">${fn:trim(result.fields['Copyright_dprop_s'])}</c:set>
+					<%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
 					<c:set var="items">${items}
    						{
         					src: '<cms:link>${image.rootPath}</cms:link>',
+        					title: '<c:if test="${cms.element.settings.showTitle}">${title}${' '}</c:if>${copyright}',
         					${result.fields['image.size_dprop_s']}
     					},
 					</c:set>

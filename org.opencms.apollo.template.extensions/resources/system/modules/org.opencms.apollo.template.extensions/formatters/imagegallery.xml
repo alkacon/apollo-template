@@ -29,27 +29,20 @@
     </HeadIncludeJs>
     <Setting>
       <PropertyName><![CDATA[imagesPerPage]]></PropertyName>
-      <DisplayName><![CDATA[Images per page]]></DisplayName>
-      <Description><![CDATA[Set a number how much images shall be shown per page.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.imagesperpage)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.imagesperpage.description)]]></Description>
       <Widget><![CDATA[string]]></Widget>
       <Default><![CDATA[12]]></Default>
       <RuleRegex><![CDATA[[0-9]+]]></RuleRegex>
       <RuleType><![CDATA[error]]></RuleType>
-      <Error><![CDATA[Only numbers please.]]></Error>
+      <Error><![CDATA[%(key.apollo.setting.imagesperpage.error)]]></Error>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showTitle]]></PropertyName>
-      <DisplayName><![CDATA[Show title]]></DisplayName>
-      <Description><![CDATA[Show the image title.]]></Description>
+      <DisplayName><![CDATA[%(key.apollo.setting.showtitle)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showtitle.description)]]></Description>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[cssClass]]></PropertyName>
-      <DisplayName><![CDATA[Wrapper CSS class]]></DisplayName>
-      <Description><![CDATA[CSS class name for the images <div> elements.]]></Description>
-      <Widget><![CDATA[string]]></Widget>
-      <Default><![CDATA[ap-square square-sm-6 square-md-4 square-lg-3 square-m-2]]></Default>
     </Setting>
   </NewFormatter>
 </NewFormatters>

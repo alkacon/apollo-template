@@ -272,7 +272,12 @@
 			<uuidresource>f389e17f-8faa-11e5-aada-0242ac11002b</uuidresource>
 			<datecreated>Fri, 20 Nov 2015 17:20:09 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
@@ -285,6 +290,10 @@
 			<datecreated>Wed, 09 Sep 2015 08:35:20 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -302,6 +311,10 @@
 			<datecreated>Fri, 16 Oct 2015 05:29:17 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

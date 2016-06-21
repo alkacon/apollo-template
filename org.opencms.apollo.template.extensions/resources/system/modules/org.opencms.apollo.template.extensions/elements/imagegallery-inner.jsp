@@ -22,13 +22,13 @@
 		<c:choose>
 			<c:when test="${search.numFound > 0 }">
 
-				<c:if
-					test="${search.numFound >= param.items*param.page or (search.numFound - (param.items*param.page-1) < param.items and search.numFound - (param.items*(param.page-1)) > 0)}">
-					<c:forEach var="result" items="${search.searchResults}"
-						varStatus="status">
+				<c:if test="${search.numFound >= param.items*param.page or (search.numFound - (param.items*param.page-1) < param.items and search.numFound - (param.items*(param.page-1)) > 0)}">
+					<c:forEach var="result" items="${search.searchResults}"	varStatus="status">
 						
 						<c:set var="image" value="${result.searchResource}" />
 						<c:set var="title">${fn:trim(result.fields['Title_dprop_s'])}</c:set>
+						<c:set var="copyright">${fn:trim(result.fields['Copyright_dprop_s'])}</c:set>
+						<%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
 						<c:set var="imagesrc">${image.rootPath}</c:set>
 
 						<c:set var="imgsrclink">
@@ -39,7 +39,7 @@
                             <a class="content image-gallery" 
                                href="${imgsrclink}" 
                                onclick="openGallery(event, ${status.index+param.items*(param.page-1)})" 
-                               title="${showTitle eq 'true' ? title:''}" > 
+                               title='${showTitle eq 'true' ? title : ''}${' '}${copyright}' > 
                                 <div class="ap-square-section" style="background-image:url('${imgsrclink}');">
                                     <div class="zoom-overlay">
                                         <div class="zoom-icon">

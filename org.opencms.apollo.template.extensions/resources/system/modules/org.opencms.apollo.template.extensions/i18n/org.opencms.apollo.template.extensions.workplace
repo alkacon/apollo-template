@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -26,6 +26,26 @@
       <Key><![CDATA[desc.a-imagegallery]]></Key>
       <Value><![CDATA[Creates an image gallery from a given folder.]]></Value>
     </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.imagesperpage]]></Key>
+      <Value><![CDATA[Images per page]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.imagesperpage.description]]></Key>
+      <Value><![CDATA[Sets the number of images that will be loaded.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.imagesperpage.error]]></Key>
+      <Value><![CDATA[Please enter only numbers.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showtitle]]></Key>
+      <Value><![CDATA[Show image title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showtitle.description]]></Key>
+      <Value><![CDATA[If checked, the title of each image will be shown.]]></Value>
+    </Message>
   </Bundle>
   <Bundle language="de">
     <Message>
@@ -38,7 +58,7 @@
     </Message>
     <Message>
       <Key><![CDATA[desc.a-sliderextended]]></Key>
-      <Value><![CDATA[ErmÃ¶glicht das Erstellen komplexer Animationen mit aufwendigen Effekten.]]></Value>
+      <Value><![CDATA[Ermöglicht das Erstellen komplexer Animationen mit aufwendigen Effekten.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[fileicon.a-imagegallery]]></Key>
@@ -51,6 +71,26 @@
     <Message>
       <Key><![CDATA[desc.a-imagegallery]]></Key>
       <Value><![CDATA[Erzeugt eine Bildergalerie von Bildern in einem Ordner.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.imagesperpage]]></Key>
+      <Value><![CDATA[Bilder pro Seite]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.imagesperpage.description]]></Key>
+      <Value><![CDATA[Legt fest, wieviele Bilder nachgeladen werden.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.imagesperpage.error]]></Key>
+      <Value><![CDATA[Bitte nur Zahlen eingeben.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showtitle]]></Key>
+      <Value><![CDATA[Zeige Bildtitel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.showtitle.description]]></Key>
+      <Value><![CDATA[Legt fest, ob der Titel der einzelnen Bilder angezeigt werden soll.]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>
