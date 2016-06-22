@@ -2749,6 +2749,27 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/i18n/org.opencms.apollo.template.formatters.map</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/i18n/org.opencms.apollo.template.formatters.map</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>2db13f67-3862-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>2db13f68-3862-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Wed, 22 Jun 2016 10:15:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Message keys used in the map formatter]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/i18n/org.opencms.apollo.template.formatters.messages</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/i18n/org.opencms.apollo.template.formatters.messages</destination>
 			<type>xmlvfsbundle</type>

@@ -1,20 +1,29 @@
-<%@page import="org.opencms.file.*, org.opencms.main.*, org.opencms.util.*, org.opencms.widgets.*"%>
+<%@page import="org.opencms.file.*, org.opencms.main.*, org.opencms.util.*, org.opencms.widgets.*" buffer="none" session="false" trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
-<c:set var="locale" value="${cms:vfs(pageContext).context.locale}" />
+<c:set var="locale" value="${cms.locale}" />
+<fmt:setLocale value="${cms.locale}" />
+<cms:bundle basename="org.opencms.apollo.template.formatters.map">
 
-<div class="googlemap-wrapper ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "" }">
+<div class="ap-map ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "" }">
 <cms:formatter var="map" val="value" rdfa="rdfa">
 	<c:choose>
 	<c:when test="${cms.element.inMemoryOnly}">
-		<c:if test="${cms.element.settings.hidetitle ne 'true'}"><h1>${value.Headline}</h1></c:if>
-		<p>Please edit the Google Map Element.</p>
+		<div class="alert">
+            <h3>
+                <fmt:message key="apollo.map.message.new" />
+            </h3>
+        </div> 
 	</c:when>
 	<c:when test="${cms.edited}">
-		<c:if test="${cms.element.settings.hidetitle ne 'true'}"><h1>${value.Headline}</h1></c:if>
-		<p>The Google Map Element has been edited, the page will reload...</p>
+		<div class="alert">
+            <h3>
+                <fmt:message key="apollo.map.message.edit" />
+            </h3>
+        </div>
 		${cms.enableReload}
 	</c:when>
 	<c:otherwise>
@@ -50,10 +59,10 @@
 	          pageContext.setAttribute("varsuffix", suffix);
 	%>
 
-	<%-- include Google Maps JS --%>
-	<c:if test="${empty googlemapscript}">
+	<%-- include Maps JS --%>
+	<c:if test="${empty mapscript}">
 	    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&amp;language=${locale}"></script>
-		<c:set var="googlemapscript" scope="request" value="loaded"/>
+		<c:set var="mapscript" scope="request" value="loaded"/>
 	</c:if>
 	<script type="text/javascript">
 		// map object
@@ -68,7 +77,7 @@
 		var infoWindow${varsuffix} = [];
 		// stores the query error count
 		var queryErrors${varsuffix} = 0;
-		
+
 		<%-- get first manually entered coordinate, it is used as map center --%>
 		<c:forEach var="mapcoord" items="${map.valueList.MapCoord}" end="0">
 			<c:set var="loccent">${mapcoord.value.Coord}</c:set>
@@ -79,8 +88,8 @@
 			mapCenterLatLng${varsuffix} = new google.maps.LatLng(${loccent.lat}, ${loccent.lng});
 		</c:forEach>
 
-		function showGoogleMap${varsuffix}() {
-			
+		function showApolloMap${varsuffix}() {
+
 			// set the map options
 			var mapOptions = {
                 scrollwheel: false,
@@ -90,7 +99,7 @@
 				mapTypeId: google.maps.MapTypeId.${map.value.MapType}
 			};
 			// create the map
-			map${varsuffix} = new google.maps.Map(document.getElementById("googlemap${cms.element.id}"), mapOptions);
+			map${varsuffix} = new google.maps.Map(document.getElementById("apmap${cms.element.id}"), mapOptions);
 
 			var contentString, newMarker;
 			<jsp:useBean id="usedMarkers" class="java.util.LinkedHashMap" />
@@ -125,7 +134,7 @@
 					<c:if test="${not mapcoord.value.Caption.isEmptyOrWhitespaceOnly}">
 						contentString += "<b>${mapcoord.value.Caption}</b><br/>";
 					</c:if>
-					
+
 					<c:choose>
 						<c:when test="${mapcoord.value.Address.exists}">
 							<c:set var="gAdr">${mapcoord.value.Address}</c:set>
@@ -137,17 +146,17 @@
 							<c:set var="callgeocode">false</c:set>
 						</c:when>
 						<c:otherwise>
-							contentString += "ebkAddr";
+							contentString += "apolloAddr";
 							<c:set var="callgeocode">true</c:set>
 						</c:otherwise>
 					</c:choose>
-					
+
 					<c:if test="${map.value.Route == 'true'}">
 						// add calculate route form input
-						contentString += "<br/><br/>Show route to this location:<br/>Please enter your start address."
+						contentString += "<br/><br/><fmt:message key="apollo.map.message.route" /><br/><fmt:message key="apollo.map.message.start" />"
 							+ "<form action=\"https://maps.google.com/maps\" method=\"get\" target=\"_blank\">"
-							+ "<input type=\"text\" size=\"15\" maxlength=\"60\" name=\"saddr\" value=\"\" />"
-							+ "&nbsp;&nbsp;<input value=\"Show Route\" type=\"submit\"><input type=\"hidden\" name=\"daddr\" value=\""
+							+ "<input type=\"text\" class=\"form-control\" size=\"15\" maxlength=\"60\" name=\"saddr\" value=\"\" />"
+							+ "<input value=\"<fmt:message key="apollo.map.message.route.button" />\" type=\"submit\" class=\"mt-10 btn ap-btn btn-sm\"><input type=\"hidden\" name=\"daddr\" value=\""
 							+ "${loc.lat},${loc.lng}\"/>";
 					</c:if>
 
@@ -164,34 +173,33 @@
 					</c:if>
 			</c:forEach>
 
-
 		}
-		
+
 		// tries to geocode the given map coordinate
 		function geoCodeCoords${varsuffix}(mIndex) {
 			geocoder${varsuffix}.geocode({'latLng': mapMarkerLatLng${varsuffix}[mIndex] }, function(results, status) {
 				setMapInfoWindowContent${varsuffix}(results, status, mIndex);
 			});
 		}
-		
+
 		// sets the content of the specified info window
 		function setMapInfoWindowContent${varsuffix}(results, status, winIndex) {
 			var infoContent = infoWindow${varsuffix}[winIndex].getContent();
 			if (status == google.maps.GeocoderStatus.OK) {
 				if (results[0]) {
-					infoContent = infoContent.replace(/ebkAddr/, getMapInfoAddress(results[0]));
+					infoContent = infoContent.replace(/apolloAddr/, getMapInfoAddress(results[0]));
 				}
 			} else {
 				if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT && queryErrors${varsuffix} <= 20) {
 					setTimeout("geoCodeCoords${varsuffix}(" + winIndex + ");", 500 + (queryErrors${varsuffix} * 50));
 					queryErrors${varsuffix}++;
 				} else {
-					infoContent = infoContent.replace(/ebkAddr/, "");
+					infoContent = infoContent.replace(/apolloAddr/, "");
 				}
 			}
 			infoWindow${varsuffix}[winIndex].setContent(infoContent);
 		}
-		
+
 		function showMarkers${varsuffix}(category) {
 			for (var i = 0; i < marker${varsuffix}.length; i++) {
 				if (marker${varsuffix}[i].category == category || category == '') {
@@ -201,7 +209,7 @@
 				}
 			}
 		}
-        
+
         // returns the address from a geocode result in nicely formatted way
         function getMapInfoAddress(result) {
         	var street = "", strNum = "", zip = "", city = "", foundAdr = false;
@@ -230,7 +238,7 @@
         		return result.formatted_address;
         	}
         }
-        
+
         // open the info window for the clicked marker and close other open info windows
         function mapOpenInfo(mIndex, map, marker, infoWindow) {
         	for (var i = 0; i < marker.length; i++) {
@@ -243,23 +251,23 @@
 	</script>
 
 	<c:if test="${cms.element.settings.hidetitle ne 'true'}"><h1 ${rdfa.Headline}>${value.Headline}</h1></c:if>
-	<c:if test="${value.Text.isSet}"><div class="googlemaptext" ${rdfa.Text}>${value.Text}</div></c:if>
+	<c:if test="${value.Text.isSet}"><div class="ap-maptext" ${rdfa.Text}>${value.Text}</div></c:if>
 
-	<div id="googlemap${cms.element.id}" class="map ${cms.element.setting.wrapperclass.isSet ? "" : "mb-20" }" style="${mapw}${maph}"></div>
+	<div id="apmap${cms.element.id}" class="ap-mapcontent ${cms.element.setting.wrapperclass.isSet ? "" : "mb-20" }" style="${mapw}${maph}"></div>
 	<c:if test="${not empty usedMarkers || (value.ShowMarkers.exists && value.ShowMarkers != 'true')}">
-		<div class="googlemapmarkerbuttons">
+		<div class="ap-mapmarkerbuttons mb-20">
 			<c:choose>
 				<c:when test="${not empty usedMarkers}">
-					<button class="btn btn-default" onclick="showMarkers${varsuffix}('');">Show all markers</button>
+					<button class="btn ap-btn btn-sm" onclick="showMarkers${varsuffix}('');"><fmt:message key="apollo.map.message.button.showallmarkers" /></button>
 					<c:forEach var="markergroup" items="${usedMarkers}">
-						<button class="btn btn-default" onclick="showMarkers${varsuffix}('<c:out value="${markergroup.key}" />');">Show ${markergroup.key}</button>
+						<button class="btn ap-btn btn-sm" onclick="showMarkers${varsuffix}('<c:out value="${markergroup.key}" />');"><fmt:message key="apollo.map.message.button.show" />${' '}${markergroup.key}</button>
 					</c:forEach>
 				</c:when>
 				<c:otherwise>
-					<button class="btn btn-default" onclick="showMarkers${varsuffix}('');">Show markers</button>
+					<button class="btn ap-btn btn-sm" onclick="showMarkers${varsuffix}('');"><fmt:message key="apollo.map.message.button.showmarkers" /></button>
 				</c:otherwise>
 			</c:choose>
-			<button class="btn btn-default" onclick="showMarkers${varsuffix}('ebkhide');">Hide markers</button>
+			<button class="btn ap-btn btn-sm" onclick="showMarkers${varsuffix}('allhide');"><fmt:message key="apollo.map.message.button.hidemarkers" /></button>
 		</div>
 	</c:if>
 
@@ -268,6 +276,7 @@
 </cms:formatter>
 <script type="text/javascript">
 	// show map after loading
-	showGoogleMap${varsuffix}();	                               
+	showApolloMap${varsuffix}();	                               
 </script>
 </div>
+</cms:bundle>
