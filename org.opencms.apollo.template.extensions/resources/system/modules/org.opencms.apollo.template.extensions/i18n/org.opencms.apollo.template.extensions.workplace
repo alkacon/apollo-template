@@ -46,6 +46,14 @@
       <Key><![CDATA[apollo.setting.showtitle.description]]></Key>
       <Value><![CDATA[If checked, the title of each image will be shown.]]></Value>
     </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.imagecss]]></Key>
+      <Value><![CDATA[Image wrapper CSS class]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.imagecss.description]]></Key>
+      <Value><![CDATA[CSS class name for the images <div> elements.]]></Value>
+    </Message>
   </Bundle>
   <Bundle language="de">
     <Message>
@@ -91,6 +99,14 @@
     <Message>
       <Key><![CDATA[apollo.setting.showtitle.description]]></Key>
       <Value><![CDATA[Legt fest, ob der Titel der einzelnen Bilder angezeigt werden soll.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.imagecss]]></Key>
+      <Value><![CDATA[Bild CSS Klasse]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.imagecss.description]]></Key>
+      <Value><![CDATA[CSS Klasse(n) für die <div> Bilder Elemente.]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

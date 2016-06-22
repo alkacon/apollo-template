@@ -93,7 +93,7 @@
 			var autoload = false;
 			var page = 1;
 			var items = ${not empty cms.element.settings.imagesPerPage ? cms.element.settings.imagesPerPage:20};	
-			var css = 'ap-square square-sm-6 square-md-4 square-lg-3 square-m-2';			
+			var css = '${cms.element.settings.cssClass}';			
 
 			function loadImages() {
 				if(page == 2){					
@@ -155,7 +155,7 @@
 		<script>
 		function openGallery(e, index){
 			e.preventDefault();
-			 openPhotoSwipe(index);
+			openPhotoSwipe(index);
 		}
 			var openPhotoSwipe = function(index) {
     			var pswpElement = document.querySelectorAll('.pswp')[0];

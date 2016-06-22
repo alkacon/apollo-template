@@ -44,5 +44,12 @@
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>
+    <Setting>
+      <PropertyName><![CDATA[cssClass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.imagecss)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.imagecss.description)]]></Description>
+      <Widget><![CDATA[string]]></Widget>
+      <Default><![CDATA[ap-square square-sm-6 square-md-4 square-lg-3 square-m-2]]></Default>
+    </Setting>
   </NewFormatter>
 </NewFormatters>
