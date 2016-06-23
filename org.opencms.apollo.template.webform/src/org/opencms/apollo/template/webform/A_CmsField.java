@@ -79,6 +79,14 @@ public abstract class A_CmsField implements I_CmsField {
     private String m_value;
 
     /**
+     * @see org.opencms.apollo.template.webform.I_CmsField#decodeValue(java.lang.String)
+     */
+    public String decodeValue(String value) {
+
+        return value;
+    }
+
+    /**
      * Default constructor.<p>
      */
     public A_CmsField() {
@@ -437,7 +445,7 @@ public abstract class A_CmsField implements I_CmsField {
     /**
      * This functions looks if the row should be started. By one colsize, its
      * every time starting. By two colsize every second cell its starting.<p>
-
+    
      * @return true if the row should be shown
      */
     public boolean isShowRowStart() {

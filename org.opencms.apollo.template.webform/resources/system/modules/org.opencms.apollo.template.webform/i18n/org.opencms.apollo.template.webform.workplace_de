@@ -12,10 +12,10 @@ label.ApolloWebForm.Tab.FormPage = Formularseite
 label.ApolloWebForm.Tab.FormPage.Description = <div style="background-color: #ffffcc; color: #474747; border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Konfiguriert Texte und Verhaltensweisen der angezeigten Formularseite.</div>
 label.ApolloWebForm.Tab.Fields = Eingabefelder
 label.ApolloWebForm.Tab.Fields.Description = <div style="background-color: #ffffcc; color: #474747; border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Definiert die angezeigten Eingabefelder des Formulars.</div>
-label.ApolloWebForm.Tab.SubFieldConfig = Abhängige Felder
-label.ApolloWebForm.Tab.SubFieldConfig.Description = <div style="background-color: #ffffcc; color: #474747; border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Mit abhängigen Feldern können Felder definiert werden, die abhängig vom Wert eines Eingabefelds, meist eine Selectbox oder Radiobuttons, angezeigt werden.</div>
+label.ApolloWebForm.Tab.SubFieldConfig = Abhï¿½ngige Felder
+label.ApolloWebForm.Tab.SubFieldConfig.Description = <div style="background-color: #ffffcc; color: #474747; border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Mit abhï¿½ngigen Feldern kï¿½nnen Felder definiert werden, die abhï¿½ngig vom Wert eines Eingabefelds, meist eine Selectbox oder Radiobuttons, angezeigt werden.</div>
 label.ApolloWebForm.Tab.Mail = E-Mail Konfiguration
-label.ApolloWebForm.Tab.Mail.Description = <div style="background-color: #ffffcc; color: #474747; border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Stellen Sie die Absenderadresse sowie Empfängeradresse(n) für die E-Mail Benachrichtigung ein. Außerdem können weitere Optionen zum E-Mail Versand konfiguriert werden.</div>
+label.ApolloWebForm.Tab.Mail.Description = <div style="background-color: #ffffcc; color: #474747; border: 1px solid #c9c9c9; border-radius: 4px; padding: 6px; margin: 8px 25px 2px 3px; font-size: 14px;">Stellen Sie die Absenderadresse sowie Empfï¿½ngeradresse(n) fï¿½r die E-Mail Benachrichtigung ein. Auï¿½erdem kï¿½nnen weitere Optionen zum E-Mail Versand konfiguriert werden.</div>
 
 
 # Form nodes
@@ -25,86 +25,86 @@ label.ApolloWebForm.FormText = Formular Text
 label.ApolloWebForm.FormText.help = Text, der oberhalb der Formularfelder angezeigt wird.
 label.ApolloWebForm.FormMiddleText = Formular Zwischentext
 label.ApolloWebForm.FormMiddleText.help = Text, der unterhalb der Formularfelder angezeigt wird. 
-label.ApolloWebForm.FormFooterText = Formular Fußtext
+label.ApolloWebForm.FormFooterText = Formular Fuï¿½text
 label.ApolloWebForm.FormFooterText.help = Text, der unterhalb des Submit-Button angezeigt wird.
-label.ApolloWebForm.FormConfirmation = Bestätigungstext
-label.ApolloWebForm.FormConfirmation.help = Text, der auf der Bestätigungsseite angezeigt wird.
-label.ApolloWebForm.ReturnUri = Zurück URI
-label.ApolloWebForm.ReturnUri.help = Eine interne URI die auf der Bestätigungsseite angezeigt wird, um dem Benutzer zu ermöglichen über diesen Link weiter zu navigieren.
+label.ApolloWebForm.FormConfirmation = Bestï¿½tigungstext
+label.ApolloWebForm.FormConfirmation.help = Text, der auf der Bestï¿½tigungsseite angezeigt wird.
+label.ApolloWebForm.ReturnUri = Zurï¿½ck URI
+label.ApolloWebForm.ReturnUri.help = Eine interne URI die auf der Bestï¿½tigungsseite angezeigt wird, um dem Benutzer zu ermï¿½glichen ï¿½ber diesen Link weiter zu navigieren.
 label.ApolloWebForm.MailType = Mail Typ
 label.ApolloWebForm.MailType.help = Der Typ der E-Mail kann eine <b>Textmail</b> oder eine <b>HTML formatierte Mail</b> sein, Standard ist HTML.
 label.ApolloWebForm.MailFrom = Mail von
-label.ApolloWebForm.MailFrom.help = Absenderadresse der E-Mail, muss eine gültige E-Mailadresse sein, darf nicht leer sein.
+label.ApolloWebForm.MailFrom.help = Absenderadresse der E-Mail, muss eine gï¿½ltige E-Mailadresse sein, darf nicht leer sein.
 label.ApolloWebForm.MailFromName = Mail von Name
 label.ApolloWebForm.MailFromName.help = Der Name, der von E-Mail Programmen als Absender der E-Mail angezeigt wird.
 label.ApolloWebForm.MailTo = Mail an
-label.ApolloWebForm.MailTo.help = Mailempfängeradresse(n), bei mehreren Adressen sind diese durch Semikolons zu trennen.
+label.ApolloWebForm.MailTo.help = Mailempfï¿½ngeradresse(n), bei mehreren Adressen sind diese durch Semikolons zu trennen.
 label.ApolloWebForm.MailCC = Mail CC 
-label.ApolloWebForm.MailCC.help = E-Mail CC Empfänger, bei mehreren Empfängeradressen sind diese durch Semikolons zu trennen.
+label.ApolloWebForm.MailCC.help = E-Mail CC Empfï¿½nger, bei mehreren Empfï¿½ngeradressen sind diese durch Semikolons zu trennen.
 label.ApolloWebForm.MailBCC = Mail BCC
-label.ApolloWebForm.MailBCC.help = E-Mail BCC Empfänger, bei mehreren Empfängeradressen sind diese durch Semikolons zu trennen.
+label.ApolloWebForm.MailBCC.help = E-Mail BCC Empfï¿½nger, bei mehreren Empfï¿½ngeradressen sind diese durch Semikolons zu trennen.
 label.ApolloWebForm.MailCSS = Mail Text CSS
-label.ApolloWebForm.MailCSS.help = Das optionale CSS Style Sheet für die E-Mails, falls das Standard CSS nicht verwendet werden soll.
+label.ApolloWebForm.MailCSS.help = Das optionale CSS Style Sheet fï¿½r die E-Mails, falls das Standard CSS nicht verwendet werden soll.
 label.ApolloWebForm.MailSubject = Mail Betreff
 label.ApolloWebForm.MailSubject.help = Betreff der E-Mail.
 label.ApolloWebForm.MailText = Mail Text
-label.ApolloWebForm.MailText.help = Einleitender Text der E-Mail, es können die Makros <b>%(date)</b> für das Datum und <b>%(formdata)</b> als Platzhalter für die Formularwerte verwendet werden.
+label.ApolloWebForm.MailText.help = Einleitender Text der E-Mail, es kï¿½nnen die Makros <b>%(date)</b> fï¿½r das Datum und <b>%(formdata)</b> als Platzhalter fï¿½r die Formularwerte verwendet werden.
 
 # Optional configuration options nodes
 label.ApolloWebForm.OptionalFormConfiguration= Erweiterte Konfiguration
 
 label.OptionalApolloWebFormConfiguration.ShowCheck = Aktiviere Zwischenseite
-label.OptionalApolloWebFormConfiguration.ShowCheck.help = Wenn aktiviert, wird eine zusätzliche Zwischenseite zur Kontrolle der Eingabedaten angezeigt, bevor das Formular endgültig verschickt wird.
+label.OptionalApolloWebFormConfiguration.ShowCheck.help = Wenn aktiviert, wird eine zusï¿½tzliche Zwischenseite zur Kontrolle der Eingabedaten angezeigt, bevor das Formular endgï¿½ltig verschickt wird.
 label.OptionalApolloWebFormConfiguration.CheckText = Text Zwischenseite
 label.OptionalApolloWebFormConfiguration.CheckText.help = Text, der auf der Zwischenseite angezeigt wird.
 label.OptionalApolloWebFormConfiguration.ShowMandatory = Aktiviere Pflichtfeldkennzeichnung
 label.OptionalApolloWebFormConfiguration.ShowMandatory.help = Wenn aktiviert, werden die Pflichtfelder gekennzeichnet und der Hinweis auf Pflichtfelder eingeblendet.
-label.OptionalApolloWebFormConfiguration.ShowReset = Aktiviere Zurücksetzen Button
-label.OptionalApolloWebFormConfiguration.ShowReset.help = Wenn aktiviert, wird der Zurücksetzen Button auf der Formularseite angezeigt.
+label.OptionalApolloWebFormConfiguration.ShowReset = Aktiviere Zurï¿½cksetzen Button
+label.OptionalApolloWebFormConfiguration.ShowReset.help = Wenn aktiviert, wird der Zurï¿½cksetzen Button auf der Formularseite angezeigt.
 label.OptionalApolloWebFormConfiguration.FormAttributes = Form Attribute
 label.OptionalApolloWebFormConfiguration.FormAttributes.help = Optionale HTML Attribute um das Eingabeformular, z.B. kann ein CSS Klassenname wie <b>class="meineformularklasse"</b> angegeben werden.
 label.OptionalApolloWebFormConfiguration.FormFieldAttributes = Eingabefeld Attribute
-label.OptionalApolloWebFormConfiguration.FormFieldAttributes.help = Optionale HTML Attribute für jedes Eingabefeld, z.B. kann ein CSS Klassenname wie <b>class="meinefeldklasse"</b> angegeben werden.
-label.OptionalApolloWebFormConfiguration.FormFieldWidthRatio = Eingabefeld Breitenverhältnis
-label.OptionalApolloWebFormConfiguration.FormFieldWidthRatio.help = Optionale Angabe des Breitenverhältnisses von Eingabefeld Text und Eingabefeld.
-label.OptionalApolloWebFormConfiguration.DynamicFieldClass = Klasse für dynamische Felder
+label.OptionalApolloWebFormConfiguration.FormFieldAttributes.help = Optionale HTML Attribute fï¿½r jedes Eingabefeld, z.B. kann ein CSS Klassenname wie <b>class="meinefeldklasse"</b> angegeben werden.
+label.OptionalApolloWebFormConfiguration.FormFieldWidthRatio = Eingabefeld Breitenverhï¿½ltnis
+label.OptionalApolloWebFormConfiguration.FormFieldWidthRatio.help = Optionale Angabe des Breitenverhï¿½ltnisses von Eingabefeld Text und Eingabefeld.
+label.OptionalApolloWebFormConfiguration.DynamicFieldClass = Klasse fï¿½r dynamische Felder
 label.OptionalApolloWebFormConfiguration.DynamicFieldClass.help = Der name der Klasse, die verwendet werden soll, um die Werte der dynamischen Felder zu berechnen
 label.OptionalApolloWebFormConfiguration.CSS = CSS Datei
-label.OptionalApolloWebFormConfiguration.CSS.help = Eine CSS Style-Sheet Datei speziell für dieses Formular. Sie wird anstelle der Standard CSS Datei verwendet.
+label.OptionalApolloWebFormConfiguration.CSS.help = Eine CSS Style-Sheet Datei speziell fï¿½r dieses Formular. Sie wird anstelle der Standard CSS Datei verwendet.
 label.OptionalApolloWebFormConfiguration.TemplateFile = HTML Template Datei
-label.OptionalApolloWebFormConfiguration.TemplateFile.help = Pfad zu einer speziellen HTML Template Datei für dieses Formular.
+label.OptionalApolloWebFormConfiguration.TemplateFile.help = Pfad zu einer speziellen HTML Template Datei fï¿½r dieses Formular.
 label.OptionalApolloWebFormConfiguration.PropertyFile = Property-Datei
-label.OptionalApolloWebFormConfiguration.PropertyFile.help = Pfad zu einer speziellen Property-Datei für dieses Formular.
+label.OptionalApolloWebFormConfiguration.PropertyFile.help = Pfad zu einer speziellen Property-Datei fï¿½r dieses Formular.
 label.OptionalApolloWebFormConfiguration.ActionClass = Action Klasse
-label.OptionalApolloWebFormConfiguration.ActionClass.help = Die Action Klasse für diese Form, über welche eine Aktion implementiert werden kann, welche nach Speichern/Sendern der Webform Inhalte ausgeführt wird.
+label.OptionalApolloWebFormConfiguration.ActionClass.help = Die Action Klasse fï¿½r diese Form, ï¿½ber welche eine Aktion implementiert werden kann, welche nach Speichern/Sendern der Webform Inhalte ausgefï¿½hrt wird.
 label.OptionalApolloWebFormConfiguration.KeepSession = Erhalte Session
-label.OptionalApolloWebFormConfiguration.KeepSession.help = Wenn aktiviert, kann die Zeit (in Sekunden) angegeben werden, nach der die Session aktualisiert werden soll, während das Formular angezeigt wird.
+label.OptionalApolloWebFormConfiguration.KeepSession.help = Wenn aktiviert, kann die Zeit (in Sekunden) angegeben werden, nach der die Session aktualisiert werden soll, wï¿½hrend das Formular angezeigt wird.
 label.OptionalApolloWebFormConfiguration.TargetUri = Ziel URI
-label.OptionalApolloWebFormConfiguration.TargetUri.help = Nach dem Versenden der E-Mail Bestätigung wird der Benutzer direkt zu dieser internen URI weitergeleitet.
+label.OptionalApolloWebFormConfiguration.TargetUri.help = Nach dem Versenden der E-Mail Bestï¿½tigung wird der Benutzer direkt zu dieser internen URI weitergeleitet.
 label.OptionalApolloWebFormConfiguration.ForwardMode = Forward Modus 
 label.OptionalApolloWebFormConfiguration.ForwardMode.help = Anstatt eines Redirects zu der Ziel URI, wird der Request an die Ziel URI weitergeleitet.
 label.OptionalApolloWebFormConfiguration.InstantRedirect= Sofortige Weiterleitung
 label.OptionalApolloWebFormConfiguration.InstantRedirect.help = Leitet sofort nach dem ersten Abschicken auf die angegebene Ziel URI um.
  
 # Optional confirmation mail nodes
-label.ApolloWebForm.OptionalConfirmationMail= Benutzer Bestätigung
-label.ApolloWebForm.OptionalConfirmationMail.help = Optionen, um eine Bestätigungsmail an den Benutzer, der das Formular ausgefüllt hat, zu schicken.
-label.OptionalApolloWebFormConfirmationMail.ConfirmationMailEnabled = Aktiviere Bestätigungsmail
-label.OptionalApolloWebFormConfirmationMail.ConfirmationMailEnabled.help = Aktiviert das Absenden einer Bestätigungsmail an den Benutzer, der das Formular ausgefüllt hat.
-label.OptionalApolloWebFormConfirmationMail.ConfirmationMailOptional = Wählbare Bestätigungsmail
-label.OptionalApolloWebFormConfirmationMail.ConfirmationMailOptional.help = Das Senden der Bestätigungsmail wird vom Benutzer gesteuert, indem dem Online-Formular automatisch ein Checkboxfeld hinzugefügt wird.
+label.ApolloWebForm.OptionalConfirmationMail= Benutzer Bestï¿½tigung
+label.ApolloWebForm.OptionalConfirmationMail.help = Optionen, um eine Bestï¿½tigungsmail an den Benutzer, der das Formular ausgefï¿½llt hat, zu schicken.
+label.OptionalApolloWebFormConfirmationMail.ConfirmationMailEnabled = Aktiviere Bestï¿½tigungsmail
+label.OptionalApolloWebFormConfirmationMail.ConfirmationMailEnabled.help = Aktiviert das Absenden einer Bestï¿½tigungsmail an den Benutzer, der das Formular ausgefï¿½llt hat.
+label.OptionalApolloWebFormConfirmationMail.ConfirmationMailOptional = Wï¿½hlbare Bestï¿½tigungsmail
+label.OptionalApolloWebFormConfirmationMail.ConfirmationMailOptional.help = Das Senden der Bestï¿½tigungsmail wird vom Benutzer gesteuert, indem dem Online-Formular automatisch ein Checkboxfeld hinzugefï¿½gt wird.
 label.OptionalApolloWebFormConfirmationMail.ConfirmationCheckboxLabel = Beschreibungstext Checkbox
-label.OptionalApolloWebFormConfirmationMail.ConfirmationCheckboxLabel.help = Der Beschreibungstext für das automatisch generierte Checkboxfeld. Wenn keine Eingabe erfolgt, wird ein Standardtext verwendet.
+label.OptionalApolloWebFormConfirmationMail.ConfirmationCheckboxLabel.help = Der Beschreibungstext fï¿½r das automatisch generierte Checkboxfeld. Wenn keine Eingabe erfolgt, wird ein Standardtext verwendet.
 label.OptionalApolloWebFormConfirmationMail.ConfirmationField = E-Mail Eingabefeld
-label.OptionalApolloWebFormConfirmationMail.ConfirmationField.help = Der Beschreibungstext des Eingabefelds, das die E-Mail Adresse enthält, an die die Bestätigungsmail geschickt werden soll. Der Feldtyp sollte <b>E-Mailfeld</b> sein.
-label.OptionalApolloWebFormConfirmationMail.ConfirmationMailSubject = Betreff Bestätigungsmail
-label.OptionalApolloWebFormConfirmationMail.ConfirmationMailSubject.help = Der Betreff der Bestätigungsmail.
-label.OptionalApolloWebFormConfirmationMail.ConfirmationMailText = Text Bestätigungsmail
-label.OptionalApolloWebFormConfirmationMail.ConfirmationMailText.help = Einleitender Text der Bestätigungsmail, es können die Makros <b>%(date)</b> für das Datum und <b>%(formdata)</b> als Platzhalter für die Formularwerte verwendet werden.
-label.OptionalApolloWebFormConfirmationMail.ConfirmationMailFrom = Bestätigungsmail von
-label.OptionalApolloWebFormConfirmationMail.ConfirmationMailFrom.help = Optionale Absenderadresse für die Bestätigungsmail.
-label.OptionalApolloWebFormConfirmationMail.ConfirmationMailFromName = Bestätigungsmail von Name
-label.OptionalApolloWebFormConfirmationMail.ConfirmationMailFromName.help = Optionaler Name, der von E-Mail Programmen als Absender der Bestätigungsmail angezeigt wird.
+label.OptionalApolloWebFormConfirmationMail.ConfirmationField.help = Der Beschreibungstext des Eingabefelds, das die E-Mail Adresse enthï¿½lt, an die die Bestï¿½tigungsmail geschickt werden soll. Der Feldtyp sollte <b>E-Mailfeld</b> sein.
+label.OptionalApolloWebFormConfirmationMail.ConfirmationMailSubject = Betreff Bestï¿½tigungsmail
+label.OptionalApolloWebFormConfirmationMail.ConfirmationMailSubject.help = Der Betreff der Bestï¿½tigungsmail.
+label.OptionalApolloWebFormConfirmationMail.ConfirmationMailText = Text Bestï¿½tigungsmail
+label.OptionalApolloWebFormConfirmationMail.ConfirmationMailText.help = Einleitender Text der Bestï¿½tigungsmail, es kï¿½nnen die Makros <b>%(date)</b> fï¿½r das Datum und <b>%(formdata)</b> als Platzhalter fï¿½r die Formularwerte verwendet werden.
+label.OptionalApolloWebFormConfirmationMail.ConfirmationMailFrom = Bestï¿½tigungsmail von
+label.OptionalApolloWebFormConfirmationMail.ConfirmationMailFrom.help = Optionale Absenderadresse fï¿½r die Bestï¿½tigungsmail.
+label.OptionalApolloWebFormConfirmationMail.ConfirmationMailFromName = Bestï¿½tigungsmail von Name
+label.OptionalApolloWebFormConfirmationMail.ConfirmationMailFromName.help = Optionaler Name, der von E-Mail Programmen als Absender der Bestï¿½tigungsmail angezeigt wird.
 
 # Optional field text nodes
 label.ApolloWebForm.OptionalFieldText = Text zwischen Feldern
@@ -113,26 +113,26 @@ label.OptionalApolloWebFormFieldText.InputField.help = Der Beschreibungstext des
 label.OptionalApolloWebFormFieldText.Column = Text Spalte
 label.OptionalApolloWebFormFieldText.Column.help = Die Spalte, in der der Text angezeigt wird, links, rechts oder beide.
 label.OptionalApolloWebFormFieldText.Text = Text
-label.OptionalApolloWebFormFieldText.Text.help = Dieser Text wird unterhalb des ausgewählten Eingabefelds angezeigt.
+label.OptionalApolloWebFormFieldText.Text.help = Dieser Text wird unterhalb des ausgewï¿½hlten Eingabefelds angezeigt.
 
 # Optional sub field nodes
-label.ApolloWebForm.OptionalSubField = Abhängige Felder
+label.ApolloWebForm.OptionalSubField = Abhï¿½ngige Felder
 label.OptionalApolloWebFormSubField.ParentField = Feld Name
-label.OptionalApolloWebFormSubField.ParentField.help = Der Beschreibungstext des Eingabefelds, von dem die folgenden Felder abhängig sind.
+label.OptionalApolloWebFormSubField.ParentField.help = Der Beschreibungstext des Eingabefelds, von dem die folgenden Felder abhï¿½ngig sind.
 label.OptionalApolloWebFormSubField.Value = Feld Wert
-label.OptionalApolloWebFormSubField.Value.help = Der Wert des Eingabefelds. Die abhängigen Felder werden nur gezeigt, wenn das Feld den eingegebenen Wert hat.
-label.OptionalApolloWebFormSubField.InputField = Abhängiges Feld
-label.OptionalApolloWebFormSubField.InputField.help = Definition eines abhängigen Eingabefelds.
+label.OptionalApolloWebFormSubField.Value.help = Der Wert des Eingabefelds. Die abhï¿½ngigen Felder werden nur gezeigt, wenn das Feld den eingegebenen Wert hat.
+label.OptionalApolloWebFormSubField.InputField = Abhï¿½ngiges Feld
+label.OptionalApolloWebFormSubField.InputField.help = Definition eines abhï¿½ngigen Eingabefelds.
 
 # Optional form release options nodes
-label.ApolloWebForm.OptionalFormRelease = Gültig ab
+label.ApolloWebForm.OptionalFormRelease = Gï¿½ltig ab
 label.OptionalApolloWebFormRelease.Date = Datum
-label.OptionalApolloWebFormRelease.Date.help = Definiert das Datum, an dem das Formular veröffentlicht wird.
+label.OptionalApolloWebFormRelease.Date.help = Definiert das Datum, an dem das Formular verï¿½ffentlicht wird.
 label.OptionalApolloWebFormRelease.Text = Text
-label.OptionalApolloWebFormRelease.Text.help = Der eingegebene Text wird anstelle des Formulars angezeigt, bevor es veröffentlicht wird.
+label.OptionalApolloWebFormRelease.Text.help = Der eingegebene Text wird anstelle des Formulars angezeigt, bevor es verï¿½ffentlicht wird.
 
 # Optional form expiration options nodes
-label.ApolloWebForm.OptionalFormExpiration = Gültig bis
+label.ApolloWebForm.OptionalFormExpiration = Gï¿½ltig bis
 label.OptionalApolloWebFormExpiration.Date = Datum
 label.OptionalApolloWebFormExpiration.Date.help = Definiert das Datum, an dem das Formular abgelaufen ist.
 label.OptionalApolloWebFormExpiration.Text = Text
@@ -147,21 +147,21 @@ label.ApolloWebFormInputField.FieldName.help = Der Name des Formularfelds.
 label.ApolloWebFormInputField.FieldLabel = Beschreibungstext
 label.ApolloWebFormInputField.FieldLabel.help = Der Beschreibungstext des Formularfelds.
 label.ApolloWebFormInputField.FieldDefault = Standardwert
-label.ApolloWebFormInputField.FieldDefault.help = Der voreingestellte Standardwert des Felds oder die Liste angezeigter Optionen für Checkboxen, Radiobuttons und Selectboxen.
+label.ApolloWebFormInputField.FieldDefault.help = Der voreingestellte Standardwert des Felds oder die Liste angezeigter Optionen fï¿½r Checkboxen, Radiobuttons und Selectboxen.
 label.ApolloWebFormInputField.FieldParams = Parameter
-label.ApolloWebFormInputField.FieldParams.help = Parameter für erweiterte Feldkonfigurationen müssen als <b>key=value</b> Paare, getrennt durch <b>|</b> geschrieben werden.
+label.ApolloWebFormInputField.FieldParams.help = Parameter fï¿½r erweiterte Feldkonfigurationen mï¿½ssen als <b>key=value</b> Paare, getrennt durch <b>|</b> geschrieben werden.
 label.ApolloWebFormInputField.FieldMandatory = Pflichtfeld
-label.ApolloWebFormInputField.FieldMandatory.help = Bestimmt, ob das Formularfeld ausgefüllt werden muss.
+label.ApolloWebFormInputField.FieldMandatory.help = Bestimmt, ob das Formularfeld ausgefï¿½llt werden muss.
 label.ApolloWebFormInputField.FieldValidation = Validierung
-label.ApolloWebFormInputField.FieldValidation.help = Regulärer Ausdruck, mit dem der vom Benutzer eingegebene Wert überprüft werden kann.
+label.ApolloWebFormInputField.FieldValidation.help = Regulï¿½rer Ausdruck, mit dem der vom Benutzer eingegebene Wert ï¿½berprï¿½ft werden kann.
 label.ApolloWebFormInputField.FieldErrorMessage = Fehlermeldung
-label.ApolloWebFormInputField.FieldErrorMessage.help = Eine Fehlermeldung die angezeigt wird falls die Validierung des Eingabewertes fehlschlägt.
+label.ApolloWebFormInputField.FieldErrorMessage.help = Eine Fehlermeldung die angezeigt wird falls die Validierung des Eingabewertes fehlschlï¿½gt.
 
 # Input field types
 form.field.type.text = Textfeld
 form.field.type.textarea = Mehrzeiles Textfeld
 form.field.type.checkbox = Checkbox
-form.field.type.privacy = Bestätigungslink
+form.field.type.privacy = Bestï¿½tigungslink
 form.field.type.radio = Radiobuttons
 form.field.type.select = Selectbox 
 form.field.type.hidden = Verstecktes Feld
@@ -172,6 +172,7 @@ form.field.type.table = Tabelle
 form.field.type.password = Passwort Feld
 form.field.type.paging = Neue Seite
 form.field.type.parameter = Parameter Feld
+form.field.type.email_select=Email-Auswahl
 
 # Mail types
 form.email.type.html = HTML E-Mail
@@ -183,31 +184,31 @@ form.column.left = Links
 form.column.right = Rechts
 
 # Form messages
-form.error.message = Beim Auswerten des Formulars sind Fehler aufgetreten. Bitte überprüfen Sie Ihre Eingaben.
-form.error.mandatory = Dies ist ein Pflichtfeld, bitte füllen Sie es aus
-form.error.unique = Ein Eintrag für den eingegebenen Wert existiert bereits
-form.error.validation = Unzulässiger Wert, bitte berichtigen Sie die Eingabe
+form.error.message = Beim Auswerten des Formulars sind Fehler aufgetreten. Bitte ï¿½berprï¿½fen Sie Ihre Eingaben.
+form.error.mandatory = Dies ist ein Pflichtfeld, bitte fï¿½llen Sie es aus
+form.error.unique = Ein Eintrag fï¿½r den eingegebenen Wert existiert bereits
+form.error.validation = Unzulï¿½ssiger Wert, bitte berichtigen Sie die Eingabe
 form.error.mail.headline = Fehler beim Versenden der Formulardaten
-form.error.mail.text = Beim Versuch, die Formulardaten zu versenden, ist ein Fehler aufgetreten. Bitte versuchen Sie es zu einem späteren Zeitpunkt noch einmal.
+form.error.mail.text = Beim Versuch, die Formulardaten zu versenden, ist ein Fehler aufgetreten. Bitte versuchen Sie es zu einem spï¿½teren Zeitpunkt noch einmal.
 form.button.submit = Senden
-form.button.reset = Zurücksetzen
+form.button.reset = Zurï¿½cksetzen
 form.button.downloaddata = Daten herunterladen 
-form.button.checked = Endgültig schicken
+form.button.checked = Endgï¿½ltig schicken
 form.button.correct = Daten korrigieren
 form.message.mandatory = Alle Eingabefelder, die mit einem Stern (*) versehen sind, sind Pflichtfelder.
 form.confirmation.checkbox=Kopie der Formulardaten an die eigene E-Mailadresse senden
-form.confirmation.label = Bestätigung
-form.button.prev = Zurück
+form.confirmation.label = Bestï¿½tigung
+form.button.prev = Zurï¿½ck
 form.button.next = Weiter
-form.html.info.fileuploadname = Ausgewählte Datei: {0}
+form.html.info.fileuploadname = Ausgewï¿½hlte Datei: {0}
 
 # Form configuration error messages
 form.init.error.headline = Das Formular kann nicht angezeigt werden
 form.init.error.description = Wahrscheinlich wurde das Formular noch nicht bearbeitet oder es wurden keine Eingabefelder definiert.
-form.configuration.error.headline = Das Onlineformular enthält folgende Konfigurationsfehler:
-form.configuration.error.emailfield.notfound = Das Eingabefeld, das für die Bestätigungsmail verwendet werden soll, existiert nicht.
-form.configuration.error.emailfield.type = Das Eingabefeld, das für die Bestätigungsmail verwendet werden soll, hat nicht den Typ "E-Mail" Feld.
-form.configuration.error.email.host = Bitte beachten: der Mailhost, wurde noch nicht konfiguriert. Sie müssen dies in der OpenCms Server Konfigurationsdatei opencms-system.xml vornehmen.
+form.configuration.error.headline = Das Onlineformular enthï¿½lt folgende Konfigurationsfehler:
+form.configuration.error.emailfield.notfound = Das Eingabefeld, das fï¿½r die Bestï¿½tigungsmail verwendet werden soll, existiert nicht.
+form.configuration.error.emailfield.type = Das Eingabefeld, das fï¿½r die Bestï¿½tigungsmail verwendet werden soll, hat nicht den Typ "E-Mail" Feld.
+form.configuration.error.email.host = Bitte beachten: der Mailhost, wurde noch nicht konfiguriert. Sie mï¿½ssen dies in der OpenCms Server Konfigurationsdatei opencms-system.xml vornehmen.
 
 # captcha field keys
 label.ApolloWebForm.FormCaptcha = Captcha Feld
@@ -215,41 +216,41 @@ label.ApolloWebForm.FormCaptcha = Captcha Feld
 label.ApolloWebFormCaptcha.FieldLabel = Beschreibungstext
 label.ApolloWebFormCaptcha.FieldLabel.help = Der Beschreibungstext des Captcha Feldes.
 label.ApolloWebFormCaptcha.Preset = Preset
-label.ApolloWebFormCaptcha.Preset.help = Wählen Sie den Verfremdungsgrad des Captcha Bildes.
+label.ApolloWebFormCaptcha.Preset.help = Wï¿½hlen Sie den Verfremdungsgrad des Captcha Bildes.
 label.ApolloWebFormCaptcha.Characters = Zeichen
 label.ApolloWebFormCaptcha.Characters.help = Generierte Captcha Texte werden nur aus diesen Zeichen bestehen. 
 
 # captcha preset keys
 label.CaptchaPreset.Name = Name
-label.CaptchaPreset.Name.help = Wird auf die Titel - Eigenschaft abgebildet und in der Preset - Auswahlliste des XML content editor für Formulare angezeigt. 
+label.CaptchaPreset.Name.help = Wird auf die Titel - Eigenschaft abgebildet und in der Preset - Auswahlliste des XML content editor fï¿½r Formulare angezeigt. 
 label.CaptchaPreset.MathField = Mathematisches Feld
-label.CaptchaPreset.MathField.help = Falls angekreuzt, werden einfache Rechenaufgaben anstelle der Captchas angezeigt. Alle weiteren Einstellungen werden nicht für Maptchas verwendet.
+label.CaptchaPreset.MathField.help = Falls angekreuzt, werden einfache Rechenaufgaben anstelle der Captchas angezeigt. Alle weiteren Einstellungen werden nicht fï¿½r Maptchas verwendet.
 label.CaptchaPreset.Characters = Zeichen
 label.CaptchaPreset.Characters.help = Generierte Captcha Texte werden nur aus diesen Zeichen bestehen. \nEs sei denn, in den Formularen selbst (XML-content editor) werden andere Zeichen definiert. 
 label.CaptchaPreset.ImageWidth = Bildbreite
 label.CaptchaPreset.ImageWidth.help = Die Breite des Captcha Bildes in Pixeln.
-label.CaptchaPreset.ImageHeight = Bildhöhe
-label.CaptchaPreset.ImageHeight.help = Die Höhe des Captcha Bildes in Pixeln.
-label.CaptchaPreset.MinPhraseLength = Min. Länge d. Captcha Begriffs
-label.CaptchaPreset.MinPhraseLength.help = Die minimale Länge des Captcha Begriffs.
-label.CaptchaPreset.MaxPhraseLength = Max. Länge d. Captcha Begriffs
-label.CaptchaPreset.MaxPhraseLength.help = Die maximale Länge des Captcha Begriffs.
-label.CaptchaPreset.MinFontSize = Min. Schriftgröße
-label.CaptchaPreset.MinFontSize.help = Die minimale Fontgröße in Pixeln.
-label.CaptchaPreset.MaxFontSize = Max. Schriftgröße
-label.CaptchaPreset.MaxFontSize.help = Die maximale Fontgröße in Pixeln.
+label.CaptchaPreset.ImageHeight = Bildhï¿½he
+label.CaptchaPreset.ImageHeight.help = Die Hï¿½he des Captcha Bildes in Pixeln.
+label.CaptchaPreset.MinPhraseLength = Min. Lï¿½nge d. Captcha Begriffs
+label.CaptchaPreset.MinPhraseLength.help = Die minimale Lï¿½nge des Captcha Begriffs.
+label.CaptchaPreset.MaxPhraseLength = Max. Lï¿½nge d. Captcha Begriffs
+label.CaptchaPreset.MaxPhraseLength.help = Die maximale Lï¿½nge des Captcha Begriffs.
+label.CaptchaPreset.MinFontSize = Min. Schriftgrï¿½ï¿½e
+label.CaptchaPreset.MinFontSize.help = Die minimale Fontgrï¿½ï¿½e in Pixeln.
+label.CaptchaPreset.MaxFontSize = Max. Schriftgrï¿½ï¿½e
+label.CaptchaPreset.MaxFontSize.help = Die maximale Fontgrï¿½ï¿½e in Pixeln.
 label.CaptchaPreset.FontColor = Schriftfarbe
 label.CaptchaPreset.FontColor.help = Die Schriftfarbe.
 label.CaptchaPreset.BackgroundColor = Hintergrundfarbe
 label.CaptchaPreset.BackgroundColor.help = Die Hintergrundfarbe des Captcha Bildes. Entfernen Sie dieses Feld, um Hintergrundbilder zu verwenden. 
-label.CaptchaPreset.HolesPerGlyph = Löcher pro Zeichen 
-label.CaptchaPreset.HolesPerGlyph.help = Erlaubt die Einstellung der Löcher pro Buchstabe.  
+label.CaptchaPreset.HolesPerGlyph = Lï¿½cher pro Zeichen 
+label.CaptchaPreset.HolesPerGlyph.help = Erlaubt die Einstellung der Lï¿½cher pro Buchstabe.  
 label.CaptchaPreset.FilterAmplitude = Verzerrung
-label.CaptchaPreset.FilterAmplitude.help = Amplitude (Höhe der Welle) des Wasserfilters, der das Wort vertikal verzerrt.  
-label.CaptchaPreset.FilterWaveLength = Wellenlänge der Verzerrung
-label.CaptchaPreset.FilterWaveLength.help = Legt die Länge einer Welle für die Verzerrung des Textes fest.
+label.CaptchaPreset.FilterAmplitude.help = Amplitude (Hï¿½he der Welle) des Wasserfilters, der das Wort vertikal verzerrt.  
+label.CaptchaPreset.FilterWaveLength = Wellenlï¿½nge der Verzerrung
+label.CaptchaPreset.FilterWaveLength.help = Legt die Lï¿½nge einer Welle fï¿½r die Verzerrung des Textes fest.
 
-GUI_FORMCAPTCHA_LABEL_DEFAULT_0 = Bitte übertragen Sie die Zeichenfolge in nebenstehendes Feld. 
+GUI_FORMCAPTCHA_LABEL_DEFAULT_0 = Bitte ï¿½bertragen Sie die Zeichenfolge in nebenstehendes Feld. 
 
 webform.init.newAlkaconWebform	= Neues Webformular
 webform.init.pleaseEdit	= Bitte bearbeiten Sie den Inhalt.

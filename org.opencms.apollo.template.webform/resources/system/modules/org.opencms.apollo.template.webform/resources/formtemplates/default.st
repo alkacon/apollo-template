@@ -250,6 +250,26 @@ $endif$
 $row_end(field=field,formconfig=formconfig)$
 >>
 
+field_email_select(field,formconfig,attributes,errormessage,mandatory) ::= <<
+$! ###### SELECT field ###### !$
+$row_start(field=field)$
+$label(field=field,formconfig=formconfig,errormessage=errormessage,mandatory=mandatory)$
+<label class="select$if(errormessage)$ state-error$endif$">
+	<select name="$field.name$" $if(field.hasSubFields)$ onchange="toggleWebformSubFields(this);"$endif$>
+	$field.items:{
+		<option value="$it.valueHash$" $if(it.selected)$ selected="selected"$endif$>$it.label$</option>
+	}$
+	</select>
+	<i></i>
+</label>
+$if(errormessage)$
+	<div class="note note-error">$errormessage$</div>
+$endif$
+$row_end(field=field,formconfig=formconfig)$
+>>
+
+
+
 
 field_table(field,formconfig,attributes,errormessage,mandatory,cols,rows,rowswithitems,editable) ::= <<
 $! ###### TABLE field ###### !$

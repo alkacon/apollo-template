@@ -2828,7 +2828,7 @@ public class CmsForm {
                     value.append(parameterValues[j]);
                 }
             }
-            field.setValue(value.toString());
+            field.setValue(field.decodeValue(value.toString()));
         }
         return field;
     }

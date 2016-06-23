@@ -63,6 +63,16 @@ public interface I_CmsField {
         String infoKey);
 
     /**
+     * Decodes a field value read from the request.<p>
+     * 
+     * This is only needed if the form of the field value used on the client should be different from that on the server.<p>
+     * 
+     * @param codeValue the (possibly encoded/encrypted) field value from the request 
+     * @return the decoded value 
+     */
+    String decodeValue(String codeValue);
+
+    /**
      * Returns the sub fields for the field depending on the current field value.<p>
      *
      * @return the sub fields for the field depending on the current field value

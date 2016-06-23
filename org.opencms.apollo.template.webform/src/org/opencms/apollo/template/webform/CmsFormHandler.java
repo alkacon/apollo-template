@@ -426,6 +426,9 @@ public class CmsFormHandler extends CmsJspActionElement {
                     result.append("\" />\n");
                     result.append(
                         CmsParameterField.createHiddenFields(getParameterMap(), currentField.getParameters()));
+                } else if (currentField instanceof I_CmsHasHiddenFieldHtml) {
+                    String hiddenFieldHtml = ((I_CmsHasHiddenFieldHtml)currentField).getHiddenFieldHtml();
+                    result.append(hiddenFieldHtml);
                 } else if (CmsStringUtil.isNotEmpty(currentField.getValue())) {
                     // all other fields are converted to a simple hidden field
                     result.append("<input type=\"hidden\" name=\"");
@@ -1105,8 +1108,10 @@ public class CmsFormHandler extends CmsJspActionElement {
                     fValue = CmsFormHandler.getTruncatedFileItemName(fValue);
                 }
                 m_macroResolver.addMacro(field.getLabel(), fValue);
+                m_macroResolver.addMacro("value_" + field.getLabel(), field.getValue());
                 if (!field.getLabel().equals(field.getDbLabel())) {
                     m_macroResolver.addMacro(field.getDbLabel(), fValue);
+                    m_macroResolver.addMacro("value_" + field.getDbLabel(), field.getValue());
                 }
                 if (field instanceof CmsTableField) {
                     Iterator<CmsFieldItem> it = field.getItems().iterator();

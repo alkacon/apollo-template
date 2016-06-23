@@ -170,6 +170,7 @@ form.field.type.table = Table field
 form.field.type.password = Password field
 form.field.type.paging = New page
 form.field.type.parameter = Parameter field
+form.field.type.email_select=Email selection
 
 # Mail types
 form.email.type.html = HTML mail

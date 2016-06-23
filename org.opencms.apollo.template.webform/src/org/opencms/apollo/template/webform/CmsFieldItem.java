@@ -27,7 +27,13 @@
 
 package org.opencms.apollo.template.webform;
 
+import org.opencms.main.CmsLog;
 import org.opencms.util.CmsStringUtil;
+
+import java.security.MessageDigest;
+
+import org.apache.commons.codec.binary.Hex;
+import org.apache.commons.logging.Log;
 
 /**
  * Represents a single input field item object.<p>
@@ -36,6 +42,9 @@ import org.opencms.util.CmsStringUtil;
  * and represents an item for these types.<p>
  */
 public class CmsFieldItem {
+
+    /** Logger instance for this class. */
+    private static final Log LOG = CmsLog.getLog(CmsFieldItem.class);
 
     /** The label of the item in the database. */
     private String m_dbLabel;
@@ -139,6 +148,36 @@ public class CmsFieldItem {
     public String getValue() {
 
         return m_value;
+    }
+
+    /** 
+     * Computes a hash code from the given value.<p>
+     * 
+     * @param value the value 
+     * @return the hash of the value 
+     */
+    public static final String getHash(String value) {
+
+        try {
+            MessageDigest md5 = MessageDigest.getInstance("MD5");
+            md5.update(value.getBytes("UTF-8"));
+            String result = Hex.encodeHexString(md5.digest());
+            return result;
+        } catch (Exception e) {
+            LOG.error("Could not compute hash value", e);
+            return null;
+        }
+
+    }
+
+    /**
+     * Returns a hash code of the value.<p>
+     * 
+     * @return the hash code 
+     */
+    public String getValueHash() {
+
+        return getHash(getValue());
     }
 
     /**
