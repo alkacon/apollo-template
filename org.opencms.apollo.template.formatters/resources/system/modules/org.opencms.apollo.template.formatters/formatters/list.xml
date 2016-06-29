@@ -2,7 +2,7 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Standard List]]></NiceName>
+    <NiceName><![CDATA[List with dynamic loading]]></NiceName>
     <Type><![CDATA[a-list]]></Type>
     <Jsp>
       <link type="WEAK">
@@ -10,7 +10,7 @@
         <uuid>d2619f72-5871-11e5-b803-0242ac11002b</uuid>
       </link>
     </Jsp>
-    <Rank><![CDATA[1000]]></Rank>
+    <Rank><![CDATA[100]]></Rank>
     <Match>
       <Types>
         <ContainerType><![CDATA[element]]></ContainerType>
@@ -32,10 +32,16 @@
       <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[showdate]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showdate)]]></DisplayName>
+      <PropertyName><![CDATA[showexpired]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showexpired)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[noFacets]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.nofacets)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[buttoncolor]]></PropertyName>
@@ -49,36 +55,6 @@
       <DisplayName><![CDATA[%(key.apollo.setting.teaserlength)]]></DisplayName>
       <Widget><![CDATA[string]]></Widget>
       <Default><![CDATA[200]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[showcategoryfiler]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showcategoryfiler)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[showsort]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showsort)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[showexpired]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showexpired)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[usepagination]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.usepagination)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[compactform]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.compactform)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
     </Setting>
   </NewFormatter>
 </NewFormatters>

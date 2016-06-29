@@ -9,7 +9,6 @@
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
 	<cms:formatter var="con" val="value" rdfa="rdfa">
 	
-	
 	<div>${cms.reloadMarker}
 		
 		<%-- ####### Init messages wrapper ################################## --%>
@@ -18,6 +17,7 @@
 		<apollo:init-messages textnew="${textnew}" textedit="${textedit}">
 		
 			<%-- ####### List body ######## --%>
+		
 			<apollo:list-body element="${cms.element}" link="${value.Link}" headline="${value.Headline}" types="${value.TypesToCollect}" />
 			
 			<%-- ####### Javascript for AJAX to fill list body ######## --%>
@@ -25,7 +25,7 @@
 			<c:set var="settings" value="${cms.element.settings}" />
 			<c:set var="innerPageFile">%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/list/list-ajax.jsp:2f117c9d-3dc7-11e6-b70e-0242ac11002b)</c:set>
 			<c:set var="linkInnerPage" value="${innerPageFile}?contentpath=${cms.element.sitePath}&teaserlength=${settings.teaserlength}&buttoncolor=${settings.buttoncolor}" />
-			<c:set var="linkInnerPage" value="${linkInnerPage}&showexpired=${settings.showexpired}&dynamic=true" />
+			<c:set var="linkInnerPage" value="${linkInnerPage}&showexpired=${settings.showexpired}" />
 			
 			<script type="text/javascript">
 				var lock = false;
@@ -38,7 +38,7 @@
 						$("#entrylist_box-${cms.element.id}").empty();
 						$("#pagination_box-${cms.element.id}").empty();
 						
-						$.get("${linkInnerPage}&initialSearch=&".concat(searchStateParameters), 
+						$.get("${linkInnerPage}&initialSearch=" + init + "&".concat(searchStateParameters), 
 								function(resultList) {
 									$(resultList).filter(".list-entry").appendTo('#entrylist_box-${cms.element.id}');
 									$(resultList).filter('#pagination').appendTo('#pagination_box-${cms.element.id}')
@@ -57,49 +57,24 @@
 						$('html, body').animate( { scrollTop : $("#${cms.element.id}-inner").offset().top - 100 }, 1000 );
 					}
 				}
-
-				function appendInnerList(searchStateParameters) {
-					if (!lock) {
-						lock = true;
-						$('.spinner').show();
-						$.get("${linkInnerPage}&hideOptions=true&".concat(searchStateParameters),
-								function(resultList) {
-									$('#pagination').remove();
-									$(resultList).filter(".list-entry").appendTo('#entrylist_box-${cms.element.id}');
-									$(resultList).filter("#pagination").appendTo('#pagination_box-${cms.element.id}');
-									$('.spinner').hide();
-									showEditButtons();
-									lock = false;
-								});
-					}
-				}
 				
 				function initList() {
 					init = true;
-					$(window).scroll(
-						function(event) {
-							var pag = $("#pagination");
-							if (pag.length && pag.data("dynamic") && pag.visible(true)){
-								appendInnerList($('#loadMore').attr('data-load'));
-							}
-						});
 					reloadInnerList("");
 				}
 				
 				function showEmpty(){
 					$("#editbox-${cms.element.id}").show();
-					showEditButtons();
 				}
 				
 				function showEditButtons(){
 					if (typeof opencms != 'undefined' && typeof opencms.reinitializeEditButtons === 'function'){
-						console.log("type: " + typeof opencms.reinitializeEditButtons);
 						opencms.reinitializeEditButtons();
 					} 
 				}
 			</script>
-			
 		</apollo:init-messages>
+			
 	</div>
 	</cms:formatter>
 </cms:bundle>

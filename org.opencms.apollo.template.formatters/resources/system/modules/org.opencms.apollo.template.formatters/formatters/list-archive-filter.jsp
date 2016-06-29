@@ -8,18 +8,22 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
 	<cms:formatter var="content" val="value" rdfa="rdfa">
-		<apollo:list-archive-search content="${content}" usepagesize="true" showexpired="${cms.element.settings.showexpired}" />
+		<c:set var="sortAsc">${value.SortOrder.stringValue eq "asc"}</c:set>
+		
+		<apollo:list-search source="${value.Folder}" types="${value.TypesToCollect}" categories="${content.readCategories}" 
+						count="${value.ItemsPerPage.toInteger}" sortAsc="${sortAsc}" showexpired="${cms.element.settings.showexpired}" filterqueries="${value.FilterQueries}" />
 		<div>
 			<div class="ap-list-filters">
+			
 				<c:if test="${cms.element.settings.showsearch}">
 					<div class="ap-list-filterbox ap-list-filterbox-search ap-list-filterbox-${cms.element.settings.filtercolor}">
-						<form role="form" class="form-inline" action="<cms:link>${cms.requestContext.uri}</cms:link>">
+						<form role="form" class="form-inline" id="queryform" onsubmit="return false;">
 							<div class="input-group">
 								<c:set var="escapedQuery">${fn:replace(search.controller.common.state.query,'"','&quot;')}</c:set>
 								<input type="hidden" name="${search.controller.common.config.lastQueryParam}" value="${escapedQuery}" />
 								<input type="hidden" name="${search.controller.common.config.reloadedParam}" />
 								<span class="input-group-addon"><span class="icon-magnifier"></span></span>
-								<input name="${search.controller.common.config.queryParam}" class="form-control" type="text" value="${escapedQuery}" placeholder="<fmt:message key="apollo.list.message.search" />">
+								<input name="${search.controller.common.config.queryParam}" id="queryinput" class="form-control" type="text" value="${escapedQuery}" placeholder="<fmt:message key="apollo.list.message.search" />">
 							</div>
 						</form>
 					</div>
@@ -27,6 +31,7 @@
 
 				<c:if test="${cms.element.settings.showlabels and not empty fieldFacetResult and cms:getListSize(fieldFacetResult.values) > 0}">
 					<div class="ap-list-filterbox ap-list-filterbox-labels ap-list-filterbox-${cms.element.settings.filtercolor}">
+					
 						<button type="button" class="btn-block btn ap-btn-${cms.element.settings.filtercolor} ap-list-filterbtn-labels" onclick="toggleApListFilter('labels');this.blur();">
 							<span class="pull-left pr-10"><span class="fa fa-tag"></span></span>
 							<span class="pull-left"><fmt:message key="apollo.list.message.labels" /></span>
@@ -56,7 +61,10 @@
 
 									<c:if test="${showLabel}">
 										<li ${selected}>
-											<a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}</cms:link>">${currCat.title}	(${value.count})</a>
+											<a href="javascript:void(0)"
+												onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}'); clearQuery();">
+												${currCat.title}	(${value.count})
+											</a>
 										</li>
 									</c:if>
 								</c:forEach>
@@ -100,7 +108,15 @@
 									</c:set>
 								</c:if>
 								<%-- add month list entry to current year --%>
-								<c:set var="yearHtml">${yearHtml}<li ${selected}><a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}</cms:link>" title="${facetItem.count}"><fmt:formatDate value="${fDate}" pattern="MMM" /></a></li></c:set>
+								<c:set var="yearHtml">
+									${yearHtml}
+									<li ${selected}>
+										<a href="javascript:void(0)"
+												onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}'); clearQuery();" title="${facetItem.count}">
+											<fmt:formatDate value="${fDate}" pattern="MMM" />
+										</a>
+									</li>
+								</c:set>
 								<c:if test="${not empty selected}">
 									<c:set var="yearHtml">${fn:replace(yearHtml, 'style="display:none;"', '')}</c:set>
 									<c:set var="yearHtml">${fn:replace(yearHtml, 'fa-chevron-down', 'fa-chevron-up')}</c:set>
@@ -128,6 +144,18 @@
 					$("#aplist" + fType + "_toggle").toggleClass("fa-chevron-down");
 					$("#aplist" + fType + "_toggle").toggleClass("fa-chevron-up");
 					$("#aplist" + fType + "").slideToggle();
+				}
+				
+				window.onload = function () {
+					$( "#queryform" ).submit(function( event ) {
+						reloadInnerList("${search.stateParameters.resetAllFacetStates}&q=" + $("#queryinput").val());
+					});
+				}
+				
+				function clearQuery(){
+					if(window.jQuery){
+						$("#queryinput").val('');
+					}
 				}
 			</script>
 
