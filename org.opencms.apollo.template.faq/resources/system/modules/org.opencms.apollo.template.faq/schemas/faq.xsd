@@ -1,0 +1,71 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/paragraph.xsd" />
+    <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/nested/availability.xsd" />
+
+	<xsd:element name="ApolloFaqs" type="OpenCmsApolloFaqs"/>
+
+	<xsd:complexType name="OpenCmsApolloFaqs">
+		<xsd:sequence>
+			<xsd:element name="ApolloFaq" type="OpenCmsApolloFaq" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsApolloFaq">
+		<xsd:sequence>
+			<xsd:element name="Question" type="OpenCmsString" />
+            <xsd:element name="Date" type="OpenCmsDateTime" />
+            <xsd:element name="Paragraph" type="OpenCmsApolloParagraph" maxOccurs="5" />
+            <xsd:element name="Category" type="OpenCmsDynamicCategory" />
+            <xsd:element name="Availability" type="OpenCmsApolloAvailability" minOccurs="0" />
+            <xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
+        </xsd:sequence>
+        <xsd:attribute name="language" type="OpenCmsLocale" use="required" />
+    </xsd:complexType>
+
+    <xsd:annotation>
+        <xsd:appinfo>
+            <resourcebundle name="org.opencms.apollo.template.schemas.faq" />
+            <tabs>
+                <tab element="Question" collapse="false" name="General" />
+                <tab element="Availability" collapse="true" name="Availability" />
+            </tabs>
+            <mappings>
+                <mapping element="GalleryTitle" mapto="property:Title" useDefault="true" />
+				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
+                <mapping element="Availability/Release" mapto="attribute:datereleased" />
+                <mapping element="Availability/Expiration" mapto="attribute:dateexpired" />
+            </mappings>
+            <defaults>
+                <default element="Question" value="%(key.apollo.faq.default.Question)" />
+                <default element="Paragraph/Text" value="%(key.apollo.faq.default.Text)" />
+                <default element="Date" value="%(currenttime)" />
+                <default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Question)" resolveMacros="false" />
+            </defaults>
+            <layouts>
+                <layout element="Category" widget="CategoryWidget" configuration="onlyleafs=false" />
+            </layouts>
+            <validationrules>
+                <rule element="Question" regex=".+" type="error" message="%(key.apollo.faq.error.Question)" />
+            </validationrules>
+            <relations>
+                <relation element="Paragraph/Image/Image" invalidate="parent" />
+            </relations>
+            <searchsettings containerPageOnly="false">
+                <searchsetting element="Date" searchcontent="false">
+                    <solrfield targetfield="newsdate" sourcefield="*_dt" />
+                </searchsetting>               
+				<searchsetting element="Category" searchcontent="false" />
+				<searchsetting element="GalleryTitle" searchcontent="false" />
+            </searchsettings>
+		  	<visibilities>
+                <visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
+            </visibilities>
+            <editorchangehandlers>
+   				<editorchangehandler class="org.opencms.ade.contenteditor.CmsEditorChangeHandlerProperty" scope="Paragraph*/Image*/Image" configuration="Copyright|../Copyright" />
+    		</editorchangehandlers>
+        </xsd:appinfo>
+    </xsd:annotation>
+
+</xsd:schema>

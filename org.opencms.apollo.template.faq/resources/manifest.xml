@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<infoproject>Offline</infoproject>
+		<export_version>10</export_version>
+	</info>
+	<module>
+		<name>org.opencms.apollo.template.faq</name>
+		<nicename><![CDATA[Appollo Template FAQ]]></nicename>
+		<group>Apollo Template</group>
+		<class/>
+		<import-site>/</import-site>
+		<export-mode name="reduced"/>
+		<description><![CDATA[The OpenCms 10 Apollo template FAQ extension.]]></description>
+		<version>10.0.0</version>
+		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
+		<authoremail/>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies>
+			<dependency name="org.opencms.apollo.template.basics" version="10.0.0"/>
+		</dependencies>
+		<exportpoints/>
+		<resources>
+			<resource uri="/system/modules/org.opencms.apollo.template.faq/"/>
+			<resource uri="/system/workplace/resources/filetypes/a-faq.png"/>
+			<resource uri="/system/workplace/resources/filetypes/a-faq_big.png"/>
+		</resources>
+		<excluderesources/>
+		<parameters/>
+		<resourcetypes>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-faq" id="467">
+				<param name="schema">/system/modules/org.opencms.apollo.template.faq/schemas/faq.xsd</param>
+			</type>
+		</resourcetypes>
+		<explorertypes>
+			<explorertype name="a-faq" key="fileicon.a-faq" icon="a-faq.png" bigicon="a-faq_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=a-faq" order="10" autosetnavigation="false" autosettitle="false" info="desc.a-faq" key="title.a-faq"/>
+			</explorertype>
+		</explorertypes>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.faq</destination>
+			<type>folder</type>
+			<uuidstructure>9460573e-3c5f-11e6-aee4-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 27 Jun 2016 12:06:29 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.faq/.config</source>
+			<destination>system/modules/org.opencms.apollo.template.faq/.config</destination>
+			<type>module_config</type>
+			<uuidstructure>59b139ff-3c61-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>59b13a00-3c61-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Mon, 27 Jun 2016 12:19:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.faq/formatters</destination>
+			<type>folder</type>
+			<uuidstructure>9468e1c0-3c5f-11e6-aee4-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 27 Jun 2016 12:06:29 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.faq/formatters/faq-complete.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.faq/formatters/faq-complete.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>59a21ec6-3c61-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>59a21ec7-3c61-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Mon, 27 Jun 2016 12:19:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for complete FAQ entry]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.faq/formatters/faq-complete.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.faq/formatters/faq-complete.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>59a4b6d9-3c61-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>59a4b6da-3c61-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Mon, 27 Jun 2016 12:19:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Complete FAQ entry]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-accordion.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-accordion.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>4ec73632-3d13-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>4ec73633-3d13-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Tue, 28 Jun 2016 09:33:01 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for accordion FAQ entry]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-accordion.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-accordion.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>51bb9707-3d13-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>51bb9708-3d13-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Tue, 28 Jun 2016 09:33:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Accordion FAQ entry teaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-compact.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-compact.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>4938aa9b-3d05-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>4938aa9c-3d05-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Tue, 28 Jun 2016 07:52:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for compact FAQ entry]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-compact.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-compact.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>018e42e3-3d05-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>018e42e4-3d05-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Tue, 28 Jun 2016 07:50:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Compact FAQ entry teaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.faq/i18n</destination>
+			<type>folder</type>
+			<uuidstructure>5996ad11-3c61-11e6-aee4-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 27 Jun 2016 12:19:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.faq/i18n/org.opencms.apollo.template.faq.messages</source>
+			<destination>system/modules/org.opencms.apollo.template.faq/i18n/org.opencms.apollo.template.faq.messages</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>59996c33-3c61-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>59996c34-3c61-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Mon, 27 Jun 2016 12:19:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.faq/i18n/org.opencms.apollo.template.schemas.faq</source>
+			<destination>system/modules/org.opencms.apollo.template.faq/i18n/org.opencms.apollo.template.schemas.faq</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>314c6d8b-3c63-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>314c6d8c-3c63-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Mon, 27 Jun 2016 12:32:20 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.faq/schemas</destination>
+			<type>folder</type>
+			<uuidstructure>946ab682-3c5f-11e6-aee4-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 27 Jun 2016 12:06:29 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.faq/schemas/faq.xsd</source>
+			<destination>system/modules/org.opencms.apollo.template.faq/schemas/faq.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>5980b406-3c61-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>5980b407-3c61-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Mon, 27 Jun 2016 12:19:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sample resource type schema]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-faq.png</source>
+			<destination>system/workplace/resources/filetypes/a-faq.png</destination>
+			<type>image</type>
+			<uuidstructure>598b3b59-3c61-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>598b3b5a-3c61-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Mon, 27 Jun 2016 12:19:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-faq_big.png</source>
+			<destination>system/workplace/resources/filetypes/a-faq_big.png</destination>
+			<type>image</type>
+			<uuidstructure>59939fcd-3c61-11e6-aee4-0242ac11002b</uuidstructure>
+			<uuidresource>59939fce-3c61-11e6-aee4-0242ac11002b</uuidresource>
+			<datecreated>Mon, 27 Jun 2016 12:19:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>

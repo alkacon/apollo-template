@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
+  <Bundle language="en">
+    <Message>
+      <Key><![CDATA[desc.a-faq]]></Key>
+      <Value><![CDATA[A single FAQ entry with text, optional image and link.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-faq]]></Key>
+      <Value><![CDATA[FAQ entry]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-faq]]></Key>
+      <Value><![CDATA[FAQ entry]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[desc.a-faq]]></Key>
+      <Value><![CDATA[Ein FAQ Eintrag mit Text, optionalem Bild und Link.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-faq]]></Key>
+      <Value><![CDATA[FAQ Eintrag]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-faq]]></Key>
+      <Value><![CDATA[FAQ Eintrag]]></Value>
+    </Message>
+  </Bundle>
+</XmlVfsBundles>
