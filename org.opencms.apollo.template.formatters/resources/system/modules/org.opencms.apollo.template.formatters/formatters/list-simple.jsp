@@ -14,8 +14,10 @@
 			<c:set var="textnew"><fmt:message key="apollo.list.message.new" /></c:set>
 			<c:set var="textedit"><fmt:message key="apollo.list.message.edit" /></c:set>
 			<apollo:init-messages textnew="${textnew}" textedit="${textedit}">
-					<apollo:list-simple source="${value.Folder}" types="${value.TypesToCollect}" color="${param.buttonColor}" count="${value.ItemsPerPage.toInteger}" 
+			
+					<apollo:list-main source="${value.Folder}" types="${value.TypesToCollect}" color="${param.buttonColor}" count="${value.ItemsPerPage.toInteger}" 
 								showexpired="${cms.element.setting.showexpired.toBoolean}" teaserlength="${cms.element.settings.teaserlength}" />
+								
 			</apollo:init-messages>
 		</div>
 		

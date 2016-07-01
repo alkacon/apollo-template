@@ -19,7 +19,7 @@
 			<ul class="pagination">
 				<li ${pagination.state.currentPage > 1 ? "" : "class='disabled'"}>
 					<a href="javascript:void(0)"
-					onclick='reloadInnerList("${search.stateParameters.setPage['1']}")'
+					onclick='reloadInnerList("${search.stateParameters.setPage['1']}", $(this).parents().filter(".ap-list-content"))'
 				   aria-label='<fmt:message key="pagination.first.title"/>'>
 						<span aria-hidden="true"><fmt:message
 								key="pagination.first" /></span>
@@ -28,7 +28,7 @@
 				<c:set var="previousPage">${pagination.state.currentPage > 1 ? pagination.state.currentPage - 1 : 1}</c:set>
 				<li ${pagination.state.currentPage > 1 ? "" : "class='disabled'"}>
 					<a href="javascript:void(0)"
-					onclick='reloadInnerList("${search.stateParameters.setPage[previousPage]}")'
+					onclick='reloadInnerList("${search.stateParameters.setPage[previousPage]}", $(this).parents().filter(".ap-list-content"))'
 					aria-label='<fmt:message key="pagination.previous.title"/>'>
 						<span aria-hidden="true"><fmt:message
 								key="pagination.previous" /></span>
@@ -39,7 +39,7 @@
 					<c:set var="is">${i}</c:set>
 					<li ${pagination.state.currentPage eq i ? "class='active'" : ""}>
 						<a href="javascript:void(0)"
-						onclick='reloadInnerList("${search.stateParameters.setPage[is]}")'>${is}</a>
+						onclick='reloadInnerList("${search.stateParameters.setPage[is]}", $(this).parents().filter(".ap-list-content"))'>${is}</a>
 					</li>
 				</c:forEach>
 				<c:set var="pages">${search.numPages}</c:set>
@@ -48,7 +48,7 @@
 					${pagination.state.currentPage >= search.numPages ? "class='disabled'" : ""}>
 					<a aria-label='<fmt:message key="pagination.next.title"/>'
 					href="javascript:void(0)"
-					onclick='reloadInnerList("${search.stateParameters.setPage[next]}")'>
+					onclick='reloadInnerList("${search.stateParameters.setPage[next]}", $(this).parents().filter(".ap-list-content"))'>
 						<span aria-hidden="true"><fmt:message
 								key="pagination.next" /></span>
 				</a>
@@ -57,7 +57,7 @@
 					${pagination.state.currentPage >= search.numPages ? "class='disabled'" : ""}>
 					<a aria-label='<fmt:message key="pagination.last.title"/>'
 					href="javascript:void(0)"
-					onclick='reloadInnerList("${search.stateParameters.setPage[pages]}")'>
+					onclick='reloadInnerList("${search.stateParameters.setPage[pages]}", $(this).parents().filter(".ap-list-content"))'>
 						<span aria-hidden="true"><fmt:message
 								key="pagination.last" /></span>
 				</a>

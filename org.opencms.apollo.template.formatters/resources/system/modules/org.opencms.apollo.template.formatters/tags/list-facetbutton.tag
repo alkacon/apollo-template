@@ -7,7 +7,6 @@
 <%@ attribute name="label" type="java.lang.String" required="false" %>
 <%@ attribute name="color" type="java.lang.String" required="false" %>
 <%@ attribute name="deselect" type="java.lang.String" required="false" %>
-<%@ attribute name="function" type="java.lang.String" required="false" %>
 <%@ attribute name="searchconfig" type="java.lang.String" required="false" %>
 <%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="false" %>
 <%@ attribute name="render" type="java.lang.Boolean" required="false" %>
@@ -38,12 +37,6 @@
 	<c:set var="error" value="true" />
 </c:otherwise>
 </c:choose>
-
-<%-- ####### Set function name ######## --%>
-<c:set var="functionName" value="reloadInnerList" />
-<c:if test="${not empty function}">
-	<c:set var="functionName" value="${function}" />
-</c:if>
 
 <%-- ####### Set label for button ######## --%>
 <c:set var="buttonLabel" value="${facetController.config.label}" />
@@ -91,7 +84,7 @@
 				
 			<%-- ##### Default option ##### --%>
 			<li ${cms:getListSize(facetController.state.checkedEntries) == 0?'class="active"' : ""}>
-				<a href="javascript:void(0)" onclick="${functionName}('${search.stateParameters.resetFacetState[categoryFacetField]}')">
+				<a href="javascript:void(0)" onclick="reloadInnerList('${search.stateParameters.resetFacetState[categoryFacetField]}', $(this).parents().filter('.ap-list-content'))">
 					${deselectLabel}</a>
 			</li>${delimiter}
 			
@@ -112,7 +105,7 @@
 				
 				<li ${selected}>
 					<a href="javascript:void(0)"
-					onclick="${functionName}('${search.stateParameters.resetFacetState[categoryFacetField].checkFacetItem[categoryFacetField][value.name]}')">
+					onclick="reloadInnerList('${search.stateParameters.resetFacetState[categoryFacetField].checkFacetItem[categoryFacetField][value.name]}', $(this).parents().filter('.ap-list-content'))">
 						${label} (${value.count})
 					</a>
 				</li>${delimiter}

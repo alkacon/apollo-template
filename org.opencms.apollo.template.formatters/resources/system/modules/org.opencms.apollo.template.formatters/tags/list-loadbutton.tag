@@ -28,7 +28,7 @@
 					aria-label='${arialabel}'
 					id="loadMore"
 					data-load="${search.stateParameters.setPage[next]}"
-					onclick="appendInnerList($(this).attr('data-load'));">
+					onclick="appendInnerList($(this).attr('data-load'), $(this).parents().find('.ap-list-content'));">
 					<span aria-hidden="true">${label}</span>
 				</button>
 			</div>

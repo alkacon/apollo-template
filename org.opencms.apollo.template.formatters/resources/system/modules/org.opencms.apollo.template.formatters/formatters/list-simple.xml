@@ -2,7 +2,7 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Simple list (new)]]></NiceName>
+    <NiceName><![CDATA[Simple list]]></NiceName>
     <Type><![CDATA[a-list]]></Type>
     <Jsp>
       <link type="WEAK">
@@ -10,7 +10,7 @@
         <uuid>fe8cbd59-33cc-11e6-b2da-0242ac11002b</uuid>
       </link>
     </Jsp>
-    <Rank><![CDATA[150]]></Rank>
+    <Rank><![CDATA[1500]]></Rank>
     <Match>
       <Types>
         <ContainerType><![CDATA[element]]></ContainerType>

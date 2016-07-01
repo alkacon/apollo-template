@@ -4,7 +4,6 @@
   description="Generates a facet button for use with AJAX forms."%>
 
 <%@ attribute name="color" type="java.lang.String" required="false" %>
-<%@ attribute name="function" type="java.lang.String" required="false" %>
 <%@ attribute name="searchconfig" type="java.lang.String" required="false" %>
 <%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="false" %>
 <%@ attribute name="render" type="java.lang.Boolean" required="false" %>
@@ -35,13 +34,6 @@
 	<c:set var="error" value="true" />
 </c:otherwise>
 </c:choose>
-
-<%-- ####### Set function name ######## --%>
-<c:set var="functionName" value="reloadInnerList" />
-<c:if test="${not empty function}">
-	<c:set var="functionName" value="${function}" />
-</c:if>
-
 
 <c:set var="buttonColor" value="red" />
 <c:if test="${not empty color}">
@@ -82,7 +74,7 @@
 			<c:forEach var="sortOption" items="${sortController.config.sortOptions}" varStatus="status">
 				<c:set var="selected">${sortController.state.checkSelected[sortOption] ? ' class="active"' : ""}</c:set>
 				<li ${selected}>
-					<a href="javascript:void(0)" onclick="${functionName}('${search.stateParameters.setSortOption[sortOption.paramValue]}')">
+					<a href="javascript:void(0)" onclick="reloadInnerList('${search.stateParameters.setSortOption[sortOption.paramValue]}', $(this).parents().filter('.ap-list-content'))">
 						<c:if test="${fn:contains(sortOption.paramValue, 'asc')}"><fmt:message key="sortorder.asc" /></c:if>
 						<c:if test="${fn:contains(sortOption.paramValue, 'desc')}"><fmt:message key="sortorder.desc" /></c:if>
 					</a>

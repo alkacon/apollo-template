@@ -8,7 +8,7 @@
 <cms:secureparams />
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
-	<c:set var="cssID">${param.cssID}</c:set>
+	TRARA: ${!param.nofacets}
 		
 		<cms:contentload collector="singleFile" param="${param.contentpath}">
 			<cms:contentinfo var="info" />
@@ -16,9 +16,9 @@
 				<cms:contentaccess var="content" />
 				
 				<%-- ####### Simple list with facets ######## --%>
-				<apollo:list-simple source="${content.value.Folder}" types="${content.value.TypesToCollect}" color="${param.buttonColor}"
+				<apollo:list-main source="${content.value.Folder}" types="${content.value.TypesToCollect}" color="${param.buttonColor}"
 									count="${content.value.ItemsPerPage.toInteger}" showexpired="${param.showexpired == 'true'}" 
-									teaserlength="${param.teaserlength}" categories="${content.readCategories}" showfacets="true" />
+									teaserlength="${param.teaserlength}" categories="${content.readCategories}" showfacets="${!param.nofacets}" />
 									
 				<%-- ####### Load pagination (dynamic or normal) ######## --%>
 				<c:set var="label"><fmt:message key="pagination.next"/></c:set>

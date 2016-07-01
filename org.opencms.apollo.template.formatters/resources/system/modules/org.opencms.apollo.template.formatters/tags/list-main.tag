@@ -1,4 +1,4 @@
-<%@ tag display-name="list-simple"
+<%@ tag display-name="list-main"
   trimDirectiveWhitespaces="true" 
   body-content="empty"
   description="Searches for resources and displays a variable amount." %>
@@ -28,7 +28,7 @@
 
 <c:if test="${search.numFound > 0}">
 
-<c:set var="buttonColor" value="red" />
+<c:set var="buttonColor" value="${not empty color ? color : 'red'}" />
 <c:if test="${not empty color}">
 	<c:set var="buttonColor" value="${color}" />
 </c:if>
