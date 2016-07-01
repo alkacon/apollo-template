@@ -8,6 +8,7 @@ module.exports = function(grunt) {
 	oc.loadModule('./org.opencms.apollo.template/font-awesome');
 	oc.loadModule('./org.opencms.apollo.template/unify');
 	oc.loadModule('./org.opencms.apollo.template/scss');
+	oc.loadModule('./org.opencms.apollo.template/js');
 	oc.loadModule('./org.opencms.apollo.template.basics');
 	
 	oc.registerGruntTasks();
