@@ -6,10 +6,11 @@
 <%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false" %>
-<%@ attribute name="showfacets" type="java.lang.Boolean" required="false" %>
+<%@ attribute name="showfacets" type="java.lang.String" required="false" %>
 <%@ attribute name="count" type="java.lang.Integer" required="false" %>
 <%@ attribute name="showexpired" type="java.lang.Boolean" required="false" %>
 <%@ attribute name="color" type="java.lang.String" required="false" %>
+<%@ attribute name="selectcolor" type="java.lang.String" required="false" %>
 <%@ attribute name="teaserlength" type="java.lang.Integer" required="false" %>
 
 <%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" %>
@@ -24,20 +25,13 @@
 
 <%-- ####### Search items ################ --%>
 
-<apollo:list-search source="${source}" types="${types}" count="${count}" showexpired="${showexpired}" />
+<apollo:list-search source="${source}" types="${types}" count="${count}" showexpired="${showexpired}" categories="${categories}" />
 
 <c:if test="${search.numFound > 0}">
 
-<c:set var="buttonColor" value="${not empty color ? color : 'red'}" />
-<c:if test="${not empty color}">
-	<c:set var="buttonColor" value="${color}" />
-</c:if>
-
 <%-- ####### The facet filters ######## --%>
 
-	<c:if test="${showfacets}">
-		<apollo:list-facetrow searchresult="${search}" color="${buttonColor}" />
-	</c:if>
+	<apollo:list-facetrow searchresult="${search}" color="${color}" facets="${showfacets}" />
 
 <%-- ####### Elements of the list ######## --%>
 
@@ -45,8 +39,8 @@
 		<div class="list-entry">
 			<cms:display value="${result.xmlContent.filename}" displayFormatters="${types}" editable="true" create="true" delete="true">
 				<cms:param name="teaserlength" value="${teaserlength}" />
-				<cms:param name="buttoncolor">${buttonColor}</cms:param>
-				<cms:param name="calendarcolor">${buttonColor}</cms:param>
+				<cms:param name="buttoncolor">${color}</cms:param>
+				<cms:param name="calendarcolor">${color}</cms:param>
 				<cms:param name="showexpired">${showexpired}</cms:param>
 				<cms:param name="index">${status.index}</cms:param>
 				<cms:param name="last">${status.last}</cms:param>

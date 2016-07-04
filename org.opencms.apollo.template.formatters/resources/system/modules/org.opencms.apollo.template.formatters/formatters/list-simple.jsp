@@ -16,7 +16,7 @@
 			<apollo:init-messages textnew="${textnew}" textedit="${textedit}">
 			
 					<apollo:list-main source="${value.Folder}" types="${value.TypesToCollect}" color="${param.buttonColor}" count="${value.ItemsPerPage.toInteger}" 
-								showexpired="${cms.element.setting.showexpired.toBoolean}" teaserlength="${cms.element.settings.teaserlength}" />
+								showexpired="${cms.element.setting.showexpired.toBoolean}" teaserlength="${cms.element.settings.teaserlength}" showfacets="none" />
 								
 			</apollo:init-messages>
 		</div>

@@ -71,7 +71,7 @@
 			<div class="btn-group hidden-xs">
 				<button type="button" class="dropdown-toggle btn ap-btn-${buttonColor}" data-toggle="dropdown" 
 								aria-haspopup="true" aria-expanded="false" id="dropdownMenu1" aria-expanded="true">
-					${buttonLabel} &nbsp; <span class="caret"></span>
+					${buttonLabel} &nbsp; <span class="va-middle fa fs-8 fa-chevron-down"></span>
 				</button>
 				
 				<ul class="dropdown-menu dropdown-${buttonColor}">
@@ -84,7 +84,8 @@
 				
 			<%-- ##### Default option ##### --%>
 			<li ${cms:getListSize(facetController.state.checkedEntries) == 0?'class="active"' : ""}>
-				<a href="javascript:void(0)" onclick="reloadInnerList('${search.stateParameters.resetFacetState[categoryFacetField]}', $(this).parents().filter('.ap-list-content'))">
+				<a href="javascript:void(0)" onclick="reloadInnerList('${search.stateParameters.resetFacetState[categoryFacetField]}', 
+																								$('#ap-list-content-' + $(this).parents().filter('.listoptionbox').data('id')))">
 					${deselectLabel}</a>
 			</li>${delimiter}
 			
@@ -105,7 +106,8 @@
 				
 				<li ${selected}>
 					<a href="javascript:void(0)"
-					onclick="reloadInnerList('${search.stateParameters.resetFacetState[categoryFacetField].checkFacetItem[categoryFacetField][value.name]}', $(this).parents().filter('.ap-list-content'))">
+					onclick="reloadInnerList('${search.stateParameters.resetFacetState[categoryFacetField].checkFacetItem[categoryFacetField][value.name]}', 
+																								$('#ap-list-content-' + $(this).parents().filter('.listoptionbox').data('id')))">
 						${label} (${value.count})
 					</a>
 				</li>${delimiter}

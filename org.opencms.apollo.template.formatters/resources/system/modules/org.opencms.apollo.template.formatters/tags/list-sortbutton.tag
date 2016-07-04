@@ -1,4 +1,4 @@
-<%@ tag display-name="list-facetbutton"
+<%@ tag display-name="list-sortbutton"
   trimDirectiveWhitespaces="true" 
   body-content="empty"
   description="Generates a facet button for use with AJAX forms."%>
@@ -60,7 +60,7 @@
 			<div class="btn-group hidden-xs">
 				<button type="button" class="dropdown-toggle btn ap-btn-${buttonColor}" data-toggle="dropdown" 
 								aria-haspopup="true" aria-expanded="false" id="dropdownMenu1" aria-expanded="true">
-					<fmt:message key="sort.options.label" /> &nbsp; <span class="caret"></span>
+					<fmt:message key="sort.options.label" /> &nbsp; <span class="va-middle fa fs-8 fa-chevron-down"></span>
 				</button>
 				
 				<ul class="dropdown-menu dropdown-${buttonColor}">
@@ -74,7 +74,8 @@
 			<c:forEach var="sortOption" items="${sortController.config.sortOptions}" varStatus="status">
 				<c:set var="selected">${sortController.state.checkSelected[sortOption] ? ' class="active"' : ""}</c:set>
 				<li ${selected}>
-					<a href="javascript:void(0)" onclick="reloadInnerList('${search.stateParameters.setSortOption[sortOption.paramValue]}', $(this).parents().filter('.ap-list-content'))">
+					<a href="javascript:void(0)" onclick="reloadInnerList('${search.stateParameters.setSortOption[sortOption.paramValue]}',
+																								$('#ap-list-content-' + $(this).parents().filter('.listoptionbox').data('id')))">
 						<c:if test="${fn:contains(sortOption.paramValue, 'asc')}"><fmt:message key="sortorder.asc" /></c:if>
 						<c:if test="${fn:contains(sortOption.paramValue, 'desc')}"><fmt:message key="sortorder.desc" /></c:if>
 					</a>

@@ -23,17 +23,15 @@
 <%-- ####### The list (AJAX will insert here) ################### --%>
 
 <c:set var="ajaxlink"><cms:link>/system/modules/org.opencms.apollo.template.formatters/elements/list/list-ajax.jsp</cms:link></c:set>
-<div class="ap-list-content" 
-			data-id="${element.id}" 
-			data-ajax="${ajaxlink}" 
-			data-nofacets="${element.settings.noFacets}" 
-			data-teaser="${element.settings.teaserlength}" 
-			data-path="${element.sitePath}" 
-			data-color="${element.settings.buttoncolor}" 
-			data-expired="${element.settings.showexpired}" 
-			data-dynamic="${dynamic ? 'true' : 'false'}">
+<div class="ap-list-content" id="ap-list-content-${element.id}"
+								data-id="${element.id}" 
+								data-ajax="${ajaxlink}"
+								data-teaser="${element.settings.teaserlength}" 
+								data-path="${element.sitePath}" 
+								data-color="${element.settings.buttoncolor}" 
+								data-expired="${element.settings.showexpired}" 
+								data-dynamic="${dynamic ? 'true' : 'false'}">
 							
-	<div id="listoption_box"></div>
 	<div id="entrylist_box"></div>
 	<div id="pagination_box"></div>
 	
