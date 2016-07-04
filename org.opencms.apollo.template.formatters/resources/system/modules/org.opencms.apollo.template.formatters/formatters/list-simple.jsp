@@ -19,6 +19,11 @@
 								showexpired="${cms.element.setting.showexpired.toBoolean}" teaserlength="${cms.element.settings.teaserlength}" showfacets="none" />
 								
 			</apollo:init-messages>
+			
+			<c:if test="${value.Link.exists}">
+				<div class="mv-10"><a class="btn ap-btn-${cms.element.settings.buttoncolor} ap-btn-sm" href="<cms:link>${value.Link.value.URI}</cms:link>">${value.Link.value.Text}</a></div>
+			</c:if>	
+			
 		</div>
 		
 	</cms:formatter>
