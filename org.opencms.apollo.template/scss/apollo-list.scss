@@ -1,17 +1,12 @@
 $filterbox-colors:	$border-colors !default;
 
-@each $color-name, $bg-color, $text-color, $highlight-color in $filterbox-colors {
-    div.ap-list-filterbox-#{""+$color-name} { 
-      border: 1px solid $bg-color;
-    }
-}
-
 .ap-list-filterbox {
 	margin-bottom: 15px;
 	background-color: $white;
 	border: 1px solid transparent;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
 	padding: 15px;
+    border: 1px solid #ddd;
 }
 
 .ap-list-filter-labels-wrapper, .ap-list-filter-archive {

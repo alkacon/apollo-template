@@ -94,3 +94,37 @@ div.ap-btn-xs a.btn,
 	}
 }
 
+@each $color-name, $bg-color, $text-color, $highlight-color in $btn-colors {
+
+	.dropdown-#{""+$color-name} > .active {
+		> a, > a:hover, > a:focus {
+			color: #fff;
+			text-decoration: none;
+			background-color: $bg-color;
+			outline: 0;
+		}
+	}
+
+}
+
+section.btn-group .btn-group:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+@each $color-name, $bg-color, $text-color, $highlight-color in $btn-colors {
+
+	.btn-group-#{""+$color-name} {
+
+		.btn {
+			@include apollo-button($bg-color, $text-color, $highlight-color);
+		}
+	}
+	
+	.btn-group-select-#{""+$color-name} .btn-group .dropdown-menu > .active {
+		> a, > a:hover, > a:focus {
+			background-color: $bg-color;
+		}
+	}
+
+}
