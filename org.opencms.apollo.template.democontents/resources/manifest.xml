@@ -16,7 +16,7 @@ writeProperty '/' 'NavText' 'Overview'
 writeProperty '/' 'template' '/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp'
 writeProperty '/' 'apollo.css.wrapper' 'bg-blue:Blue background|bg-red:Red background|bg-grey-light:Grey background|bl-red-2-solid:Red line left|bl-grey-2-solid:Grey line left'
 writeProperty '/' 'apollo.css.iconbox' 'service-block service-block-default:%(key.apollo.setting.cssclass.lightbox)|service-block service-block-red rounded-2x:%(key.apollo.setting.cssclass.redbox)'
-writeProperty '/' 'apollo.css.icon' 'icon-bg-default fa fa-info:%(key.apollo.setting.iconclass.info)|icon-bg-red fa fa-lightbulb-o:%(key.apollo.setting.iconclass.lightbulb)'
+writeProperty '/' 'apollo.css.icon' 'info:%(key.apollo.setting.iconclass.info)|lightbulb-o:%(key.apollo.setting.iconclass.lightbulb)|link:%(key.apollo.setting.iconclass.link)|tag:%(key.apollo.setting.iconclass.tag)|cloud-download:%(key.apollo.setting.iconclass.download)|file:%(key.apollo.setting.iconclass.file)|file-pdf-o:%(key.apollo.setting.iconclass.pdf)|file-word-o:%(key.apollo.setting.iconclass.word)|file-archive-o:%(key.apollo.setting.iconclass.archive)|check:%(key.apollo.setting.iconclass.check)|angle-double-left :%(key.apollo.setting.iconclass.angleleft)'
 writeProperty '/' 'apollo.title.prefix' 'OpenCms |'
 
 createUser 'Author' 'password' 'Sample author user'
