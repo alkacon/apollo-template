@@ -38,7 +38,7 @@
 						</c:otherwise>
 					</c:choose>
 					<%-- //END create author link --%>
-					<!-- blog header -->
+					<%-- blog header --%>
 					<div class="blog-page">
 						<div class="blog">
 							<div class="hidden-xs pull-right">
@@ -79,72 +79,23 @@
 							</c:if>
 						</div>
 					</div>
-					<!-- //END blog header -->
+					<%-- //END blog header --%>
 
-					<!-- paragraphs -->
-					<c:forEach var="paragraph" items="${content.valueList.Paragraph}"
-						varStatus="status">
+					<%-- paragraphs --%>
+					<c:set var="imgalign"><cms:elementsetting name="imgalign" default="left" /></c:set>
+					<c:forEach var="paragraph" items="${content.valueList.Paragraph}" varStatus="status">
 
-						<div class="paragraph margin-bottom-20">
-
-							<c:set var="imgalign">noimage</c:set>
-							<c:if test="${paragraph.value.Image.exists}">
-								<c:set var="imgalign">
-									<cms:elementsetting name="imgalign" default="left" />
-								</c:set>
-							</c:if>
-
-							<c:if test="${paragraph.value.Headline.isSet}">
-								<div class="headline">
-									<h4 ${paragraph.rdfa.Headline}>${paragraph.value.Headline}</h4>
-								</div>
-							</c:if>
-
-							<c:choose>
-								<c:when test="${imgalign == 'noimage'}">
-									<span ${paragraph.rdfa.Image}></span>
-									<div ${paragraph.rdfa.Text}>${paragraph.value.Text}</div>
-									<c:if test="${paragraph.value.Link.exists}">
-										<p>
-											<a class="btn ap-btn-sm"
-												href="<cms:link>${paragraph.value.Link.value.URI}</cms:link>">${paragraph.value.Link.value.Text}</a>
-										</p>
-									</c:if>
-								</c:when>
-								<c:when test="${imgalign == 'left' or imgalign == 'right'}">
-
-                                    <c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
-									<%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
-
-									<div class="row">
-										<div class="col-md-4 pull-${imgalign}">
-										
-											<apollo:image-kenburn image="${paragraph.value.Image}"
-														setting="${cms.element.setting}"
-														width="400"
-														content="${content}" />
-											
-										</div>
-										<div class="col-md-8">
-											<div ${paragraph.rdfa.Text}>${paragraph.value.Text}</div>
-											<c:if test="${paragraph.value.Link.exists}">
-												<p>
-													<a class="btn ap-btn-sm"
-														href="<cms:link>${paragraph.value.Link.value.URI}</cms:link>">${paragraph.value.Link.value.Text}</a>
-												</p>
-											</c:if>
-										</div>
-									</div>
-								</c:when>
-							</c:choose>
-						</div>
+						<apollo:paragraph 
+							setting="${cms.element.setting}"
+							showimage="true"
+							imgalign="${imgalign}"
+							paragraph="${paragraph}" />
 
 					</c:forEach>
-					<!-- //END paragraphs -->
+					<%-- //END paragraphs --%> 
 
 					<c:if test="${content.isEditable}">
-						<a
-							href="<cms:link>${cms.subSitePath}blog/post-a-new-blog-entry/</cms:link>?fileId=${content.id}">
+						<a href="<cms:link>${cms.subSitePath}blog/post-a-new-blog-entry/</cms:link>?fileId=${content.id}">
 							<button type="button" class="btn btn-default">Edit this
 								blog entry</button>
 						</a>

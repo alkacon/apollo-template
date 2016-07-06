@@ -16,14 +16,14 @@
 
 <%-- ####### Headline ########################################### --%>
 		
-<c:if test="${element.setting.hidetitle.toBoolean}">
+<c:if test="${!element.setting.hidetitle.toBoolean}">
 	<div class="headline headline-md"><h2 ${headline.rdfaAttr}><c:out value="${headline}" escapeXml="false" /></h2></div>
 </c:if>
 
 <%-- ####### The list (AJAX will insert here) ################### --%>
 
 <c:set var="ajaxlink"><cms:link>/system/modules/org.opencms.apollo.template.formatters/elements/list/list-ajax.jsp</cms:link></c:set>
-<div class="ap-list-content" id="ap-list-content-${element.id}"
+<div class="ap-list-content mb-20" id="ap-list-content-${element.id}"
 								data-id="${element.id}" 
 								data-ajax="${ajaxlink}"
 								data-teaser="${element.settings.teaserlength}" 

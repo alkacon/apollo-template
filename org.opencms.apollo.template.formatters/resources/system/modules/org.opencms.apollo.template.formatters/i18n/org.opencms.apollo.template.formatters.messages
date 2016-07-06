@@ -252,7 +252,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass]]></Key>
-      <Value><![CDATA[Icon CSS Klasse(n)]]></Value>
+      <Value><![CDATA[Icon]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.image.effect.none]]></Key>
@@ -368,7 +368,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.description]]></Key>
-      <Value><![CDATA[CSS Klassen für das Icon Element, z.B. 'icon-lg icon-bg-red fa fa-lightbulb-o' setzt die Iconfarbe und Form.]]></Value>
+      <Value><![CDATA[CSS Klasse für das Icon, z.B. 'lightbulb-o' setzt die Icon Form.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.detail.only]]></Key>
@@ -480,7 +480,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.lightbulb]]></Key>
-      <Value><![CDATA[Glï¿½hbirnen Icon für rote Box]]></Value>
+      <Value><![CDATA[Glühbirne]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssshape.borderedround]]></Key>
@@ -648,7 +648,43 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.info]]></Key>
-      <Value><![CDATA[Info Icon für Standard Box]]></Value>
+      <Value><![CDATA[Info]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.download]]></Key>
+      <Value><![CDATA[Download]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.angleleft]]></Key>
+      <Value><![CDATA[Spitze Klammern links]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.archive]]></Key>
+      <Value><![CDATA[Archiv]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.file]]></Key>
+      <Value><![CDATA[Datei]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.link]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.tag]]></Key>
+      <Value><![CDATA[Tag]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.word]]></Key>
+      <Value><![CDATA[Word Datei]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.check]]></Key>
+      <Value><![CDATA[Haken]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.pdf]]></Key>
+      <Value><![CDATA[PDF Datei]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.teaserlength]]></Key>
@@ -1046,7 +1082,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass]]></Key>
-      <Value><![CDATA[Icon CSS Class]]></Value>
+      <Value><![CDATA[Icon]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.image.effect.none]]></Key>
@@ -1166,7 +1202,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.description]]></Key>
-      <Value><![CDATA[CSS class name for the icon  element, e.g. 'icon-lg icon-bg-red fa fa-lightbulb-o' sets the icon color and shape.]]></Value>
+      <Value><![CDATA[Icon class name, e.g. 'lightbulb-o' sets the icon shape.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.detail.only]]></Key>
@@ -1278,7 +1314,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.lightbulb]]></Key>
-      <Value><![CDATA[Lightbulb icon for red box]]></Value>
+      <Value><![CDATA[Lightbulb]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssshape.borderedround]]></Key>
@@ -1438,7 +1474,43 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.info]]></Key>
-      <Value><![CDATA[Info icon for default box]]></Value>
+      <Value><![CDATA[Info]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.angleleft]]></Key>
+      <Value><![CDATA[Angle left]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.archive]]></Key>
+      <Value><![CDATA[Archive]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.file]]></Key>
+      <Value><![CDATA[File]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.link]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.tag]]></Key>
+      <Value><![CDATA[Tag]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.word]]></Key>
+      <Value><![CDATA[Word file]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.check]]></Key>
+      <Value><![CDATA[Check]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.pdf]]></Key>
+      <Value><![CDATA[PDF file]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.download]]></Key>
+      <Value><![CDATA[Download]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.teaserlength]]></Key>

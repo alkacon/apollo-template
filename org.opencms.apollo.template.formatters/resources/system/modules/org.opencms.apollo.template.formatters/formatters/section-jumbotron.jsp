@@ -1,6 +1,7 @@
 <%@page buffer="none" session="false" trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <cms:formatter var="content" val="value" rdfa="rdfa">
 
@@ -13,7 +14,7 @@
 	<p><div ${rdfa.Text}>${value.Text}</div></p>
 	<c:if test="${value.Link.exists and value.Link.value.URI.isSet}">
 		<p>
-			<a class="btn ap-btn-lg" href="<cms:link>${value.Link.value.URI}</cms:link>">${value.Link.value.Text}</a>
+			<apollo:link link="${value.Link}" linkclass="btn ap-btn-lg" settitle="false"/>
 		</p>
 	</c:if>
 </div>

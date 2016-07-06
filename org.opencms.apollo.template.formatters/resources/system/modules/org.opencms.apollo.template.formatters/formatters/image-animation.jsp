@@ -30,9 +30,8 @@
 					<%-- ####### Show link as button if enabled ######## --%>
 					<c:if
 						test="${content.value.Link.isSet and cms.element.setting.ilink.value == 'button'}">
-						<div class="thumbnails thumbnail-style"style="text-align: right; margin-top: 20px;">
-							<a class="btn-more no-hover-effect" style="position: relative;"
-								href="<cms:link>${content.value.Link.value.URI}</cms:link>">${content.value.Link.value.Text}</a>
+						<div class="thumbnails thumbnail-style" style="text-align: right; margin-top: 20px;">
+							<apollo:link link="${content.value.Link}" linkclass="btn-more no-hover-effect" style="position: relative;" settitle="false"/>
 						</div>
 					</c:if>
                 </div>

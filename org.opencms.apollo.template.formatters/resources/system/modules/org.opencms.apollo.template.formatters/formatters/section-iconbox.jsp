@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.schemas.text">
@@ -14,11 +15,11 @@
     		<p><fmt:message key="apollo.text.message.new" /></p>
     	</c:when>
         <c:otherwise>
-            <c:if test="${value.Link.exists}"><a class="no-underline" href="<cms:link>${value.Link.value.URI}</cms:link>"<c:if test="${value.Link.value.Text.isSet}"> title="${value.Link.value.Text}"</c:if>></c:if>
+            <apollo:link link="${value.Link}" linkclass="no-underline" settitle="true">
   			<h2 class="heading-md" ${rdfa.Headline}>${value.Headline}</h2>
   			<div><i class="icon-lg fa fa-${cms.element.setting.iconclass.isSet ? cms.element.setting.iconclass : 'warning' }"></i></div>
   			<div ${rdfa.Text}>${value.Text}</div>
-  			<c:if test="${value.Link.exists}"></a></c:if>
+  			</apollo:link>
         </c:otherwise>
     </c:choose>
 	</div>

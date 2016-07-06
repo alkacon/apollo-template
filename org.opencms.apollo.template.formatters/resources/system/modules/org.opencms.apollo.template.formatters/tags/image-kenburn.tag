@@ -37,7 +37,7 @@
 
 		<%-- ####### Show image (with link button if enabled) ######## --%>
 		<div class="thumbnail-kenburn">
-            <span ${image.rdfa.Image} ${content.imageDnd[image.value.Image.path]}>
+            <span ${image.rdfa.Image} ${image.value.Image.imageDndAttr}>
                 <div class="ap-img-pic ${setting.istyle} ${' '} ${setting.ieffect != 'none' ? setting.ieffect : ''}">
                     <cms:img 
                             src="${imageLink}"

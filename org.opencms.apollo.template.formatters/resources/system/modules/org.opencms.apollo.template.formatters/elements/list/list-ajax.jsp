@@ -15,8 +15,12 @@
 				<cms:contentaccess var="content" />
 				
 				<%-- ####### Simple list with facets ######## --%>
+				<c:set var="itemCount" value="5" />
+				<c:if test="${content.value.ItemsPerPage.isSet}">
+					<c:set var="itemCount" value="${content.value.ItemsPerPage.toInteger}" />
+				</c:if>
 				<apollo:list-main source="${content.value.Folder}" types="${content.value.TypesToCollect}" color="${param.buttoncolor}"
-									count="${content.value.ItemsPerPage.toInteger}" showexpired="${param.showexpired == 'true'}" 
+									count="${itemCount}" showexpired="${param.showexpired == 'true'}" 
 									teaserlength="${param.teaserlength}" categories="${content.readCategories}" showfacets="${param.facets}" />
 									
 				<%-- ####### Load pagination (dynamic or normal) ######## --%>

@@ -15,20 +15,22 @@
 
 <c:set var="search" value="${searchresult}" />
 
-<div id="listOptions" class="row mb-20">
-	<div class="col-xs-12">
-		<section class="btn-group pull-right">
-			<%-- ####### Category filter ######## --%>
-			<c:if test="${empty facets || fn:contains(facets, 'category')}">
-				<c:set var="buttonLabel"><fmt:message key="facet.category.label" /></c:set>
-				<c:set var="noSelection"><fmt:message key="facet.category.none" /></c:set>
-				<apollo:list-facetbutton field="category_exact" label="${buttonLabel}" deselect="${noSelection}" searchresult="${search}" color="${color}" />
-			</c:if>
+<c:if test="${facets != 'none'}">
+	<div id="listOptions" class="row mb-20">
+		<div class="col-xs-12">
+			<section class="btn-group pull-right">
+				<%-- ####### Category filter ######## --%>
+				<c:if test="${empty facets || fn:contains(facets, 'category')}">
+					<c:set var="buttonLabel"><fmt:message key="facet.category.label" /></c:set>
+					<c:set var="noSelection"><fmt:message key="facet.category.none" /></c:set>
+					<apollo:list-facetbutton field="category_exact" label="${buttonLabel}" deselect="${noSelection}" searchresult="${search}" color="${color}" />
+				</c:if>
 
-			<%-- ####### Sort options ######## --%>
-			<c:if test="${empty facets || fn:contains(facets, 'sort')}">
-				<apollo:list-sortbutton searchresult="${search}" color="${color}" />
-			</c:if>
-		</section>
+				<%-- ####### Sort options ######## --%>
+				<c:if test="${empty facets || fn:contains(facets, 'sort')}">
+					<apollo:list-sortbutton searchresult="${search}" color="${color}" />
+				</c:if>
+			</section>
+		</div>
 	</div>
-</div>
+</c:if>

@@ -21,7 +21,7 @@
 		</h3>
 	</div>
 </c:when>
-<c:when test="${cms.edited}">
+<c:when test="${not empty textedit and cms.edited}">
 	<div class="alert">
 		<h3>
 			${textedit}

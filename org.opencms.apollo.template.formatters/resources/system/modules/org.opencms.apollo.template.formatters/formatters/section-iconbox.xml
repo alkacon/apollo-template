@@ -34,7 +34,18 @@
       <DisplayName><![CDATA[%(key.apollo.setting.iconclass)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.iconclass.description)]]></Description>
       <Widget><![CDATA[selectcombo]]></Widget>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.icon)]]></WidgetConfig>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.icon:
+        info:%(key.apollo.setting.iconclass.info)|
+        lightbulb-o:%(key.apollo.setting.iconclass.lightbulb)|
+        link:%(key.apollo.setting.iconclass.link)|
+        tag:%(key.apollo.setting.iconclass.tag)|
+        cloud-download:%(key.apollo.setting.iconclass.download)|
+        file:%(key.apollo.setting.iconclass.file)|
+        file-pdf-o:%(key.apollo.setting.iconclass.pdf)|
+        file-word-o:%(key.apollo.setting.iconclass.word)|
+        file-archive-o:%(key.apollo.setting.iconclass.archive)|
+        check:%(key.apollo.setting.iconclass.check)|
+        angle-double-left:%(key.apollo.setting.iconclass.angleleft))]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

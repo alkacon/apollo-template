@@ -8,7 +8,7 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.messages">
 <cms:formatter var="content" val="value" rdfa="rdfa">
-<apollo:image-vars image="${content.value.Image}">
+<apollo:image-vars image="${value.Image}">
 
 <c:set var="imageBg" value="" />
 <c:if test="${not empty imageLink}">
@@ -21,22 +21,18 @@
 <div class="ap-sq-table">
 <div class="ap-sq-cell">
 
-    <c:if test="${content.value.Headline.isSet}">
-        <h2 ${content.rdfa.Headline}>${content.value.Headline}</h2>
+    <c:if test="${value.Headline.isSet}">
+        <h2 ${rdfa.Headline}>${value.Headline}</h2>
     </c:if>
     
-    <c:if test="${content.value.Text.isSet}">
-        <div <c:if test="${not content.value.Link.exists}">${content.rdfa.Link}</c:if>>
-            <div ${content.rdfa.Text} ${not empty imageLink ? content.imageDnd[image.value.Image.path] : ''}>
-                ${content.value.Text}
+    <c:if test="${value.Text.isSet}">
+        <div <c:if test="${not value.Link.exists}">${rdfa.Link}</c:if>>
+            <div ${rdfa.Text} ${not empty imageLink ? content.imageDnd[image.value.Image.path] : ''}>
+                ${value.Text}
             </div>
-            <c:if test="${content.value.Link.exists}">
-                <p ${content.rdfa.Link}>
-                    <a
-                        class="btn btn-sm" 
-                        href="<cms:link>${content.value.Link.value.URI}</cms:link>">
-                            ${content.value.Link.value.Text}
-                    </a>
+            <c:if test="${value.Link.exists}">
+                <p ${rdfa.Link}>
+                    <apollo:link link="${value.Link}" linkclass="btn btn-sm" settitle="false"/>
                 </p>
             </c:if>
         </div>

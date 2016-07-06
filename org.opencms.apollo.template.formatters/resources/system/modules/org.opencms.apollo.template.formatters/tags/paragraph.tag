@@ -41,8 +41,7 @@
 													
 			<c:if test="${paragraph.value.Link.exists}">
 				<p>
-					<a class="btn ap-btn-sm"
-						href="<cms:link>${paragraph.value.Link.value.URI}</cms:link>">${paragraph.value.Link.value.Text}</a>
+					<apollo:link link="${paragraph.value.Link}" linkclass="btn ap-btn-sm"/>
 				</p>
 			</c:if>
 		</c:when>
@@ -51,13 +50,13 @@
 		<c:when test="${imgalign == 'left' or imgalign == 'right'}">
 
 			<c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
-			<c:if test="${not empty copyright}">
-	<c:set var="copyrightSymbol">(c)</c:set>
-	<c:set var="copyright">${fn:replace(copyright, '&copy;', copyrightSymbol)}</c:set>
-	<c:if test="${not fn:contains(copyright, copyrightSymbol)}">
-		<c:set var="copyright">${copyrightSymbol}${' '}${copyright}</c:set>
-	</c:if>
-</c:if>
+				<c:if test="${not empty copyright}">
+				<c:set var="copyrightSymbol">(c)</c:set>
+				<c:set var="copyright">${fn:replace(copyright, '&copy;', copyrightSymbol)}</c:set>
+				<c:if test="${not fn:contains(copyright, copyrightSymbol)}">
+					<c:set var="copyright">${copyrightSymbol}${' '}${copyright}</c:set>
+				</c:if>
+			</c:if>
 
 			<div class="row">
 				<div class="col-md-4 pull-${imgalign}">
@@ -73,13 +72,42 @@
 					<div ${paragraph.rdfa.Text}>${paragraph.value.Text}</div>
 					<c:if test="${paragraph.value.Link.exists}">
 						<p>
-							<a class="btn ap-btn-sm"
-								href="<cms:link>${paragraph.value.Link.value.URI}</cms:link>">${paragraph.value.Link.value.Text}</a>
+                            <apollo:link link="${paragraph.value.Link}" linkclass="btn ap-btn-sm"/>
 						</p>
 					</c:if>
 				</div>
 			</div>
 		</c:when>
+		
+		<%-- ####### Show paragraph with image in top row ######## --%>
+		<c:when test="${imgalign == 'top'}">
+
+			<c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
+				<c:if test="${not empty copyright}">
+				<c:set var="copyrightSymbol">(c)</c:set>
+				<c:set var="copyright">${fn:replace(copyright, '&copy;', copyrightSymbol)}</c:set>
+				<c:if test="${not fn:contains(copyright, copyrightSymbol)}">
+					<c:set var="copyright">${copyrightSymbol}${' '}${copyright}</c:set>
+				</c:if>
+			</c:if>
+
+			<div class="row">
+				<div class="col-xs-12">
+				
+					<apollo:image-simple setting="${cms.element.setting}" image="${paragraph.value.Image}" content="${content}" />
+
+				</div>
+				<div class="col-xs-12">
+					<div ${paragraph.rdfa.Text}>${paragraph.value.Text}</div>
+					<c:if test="${paragraph.value.Link.exists}">
+						<p>
+                            <apollo:link link="${paragraph.value.Link}" linkclass="btn ap-btn-sm"/>
+						</p>
+					</c:if>
+				</div>
+			</div>
+		</c:when>
+		
 	</c:choose>
 
 </div>
