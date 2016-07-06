@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<infoproject>Offline</infoproject>
+		<export_version>10</export_version>
+	</info>
+	<module>
+		<name>org.opencms.apollo.template.job</name>
+		<nicename><![CDATA[Appollo Template Job]]></nicename>
+		<group>Apollo Template</group>
+		<class/>
+		<import-site>/</import-site>
+		<export-mode name="reduced"/>
+		<description><![CDATA[The OpenCms 10 Apollo template job advertisement extension.]]></description>
+		<version>10.0.0</version>
+		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
+		<authoremail/>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies/>
+		<exportpoints/>
+		<resources>
+			<resource uri="/system/modules/org.opencms.apollo.template.job/"/>
+			<resource uri="/system/workplace/resources/filetypes/a-job.png"/>
+			<resource uri="/system/workplace/resources/filetypes/a-job_big.png"/>
+		</resources>
+		<excluderesources/>
+		<parameters/>
+		<resourcetypes>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-job" id="469">
+				<param name="schema">/system/modules/org.opencms.apollo.template.job/schemas/job.xsd</param>
+			</type>
+		</resourcetypes>
+		<explorertypes>
+			<explorertype name="a-job" key="fileicon.a-job" icon="a-job.png" bigicon="a-job_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=a-job" order="10" autosetnavigation="false" autosettitle="false" info="desc.a-job" key="title.a-job"/>
+			</explorertype>
+		</explorertypes>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.job</destination>
+			<type>folder</type>
+			<uuidstructure>e64557b5-4280-11e6-bdf7-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 05 Jul 2016 07:20:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.job/.config</source>
+			<destination>system/modules/org.opencms.apollo.template.job/.config</destination>
+			<type>module_config</type>
+			<uuidstructure>7318cf70-4288-11e6-bdf7-0242ac11002b</uuidstructure>
+			<uuidresource>7318cf71-4288-11e6-bdf7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 05 Jul 2016 08:14:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.job/formatters</destination>
+			<type>folder</type>
+			<uuidstructure>e64de337-4280-11e6-bdf7-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 05 Jul 2016 07:20:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-compact.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-compact.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>7417964d-42b7-11e6-a4ea-0242ac11002b</uuidstructure>
+			<uuidresource>7417964e-42b7-11e6-a4ea-0242ac11002b</uuidresource>
+			<datecreated>Tue, 05 Jul 2016 13:50:37 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for compact event]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;params]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-compact.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-compact.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>741af1b2-42b7-11e6-a4ea-0242ac11002b</uuidstructure>
+			<uuidresource>741af1b3-42b7-11e6-a4ea-0242ac11002b</uuidresource>
+			<datecreated>Tue, 05 Jul 2016 13:50:37 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Compact Job teaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-elaborate.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-elaborate.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>61613e22-42b7-11e6-a4ea-0242ac11002b</uuidstructure>
+			<uuidresource>61613e23-42b7-11e6-a4ea-0242ac11002b</uuidresource>
+			<datecreated>Tue, 05 Jul 2016 13:50:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for verbose event]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;params]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-elaborate.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-elaborate.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>6166bc67-42b7-11e6-a4ea-0242ac11002b</uuidstructure>
+			<uuidresource>6166bc68-42b7-11e6-a4ea-0242ac11002b</uuidresource>
+			<datecreated>Tue, 05 Jul 2016 13:50:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Elaborate Job teaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.job/formatters/job.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.job/formatters/job.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>8bf3bbd9-41f8-11e6-bdf7-0242ac11002b</uuidstructure>
+			<uuidresource>8bf3bbda-41f8-11e6-bdf7-0242ac11002b</uuidresource>
+			<datecreated>Mon, 04 Jul 2016 15:04:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter for Apollo Job Advertisement]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.job/formatters/job.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.job/formatters/job.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>8bf876cc-41f8-11e6-bdf7-0242ac11002b</uuidstructure>
+			<uuidresource>8bf876cd-41f8-11e6-bdf7-0242ac11002b</uuidresource>
+			<datecreated>Mon, 04 Jul 2016 15:04:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter for Apollo Job Advertisement]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.job/i18n</destination>
+			<type>folder</type>
+			<uuidstructure>39856e25-4288-11e6-bdf7-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 05 Jul 2016 08:12:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.job/i18n/org.opencms.apollo.template.job.messages</source>
+			<destination>system/modules/org.opencms.apollo.template.job/i18n/org.opencms.apollo.template.job.messages</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>39879107-4288-11e6-bdf7-0242ac11002b</uuidstructure>
+			<uuidresource>39879108-4288-11e6-bdf7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 05 Jul 2016 08:12:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.job/i18n/org.opencms.apollo.template.schemas.job</source>
+			<destination>system/modules/org.opencms.apollo.template.job/i18n/org.opencms.apollo.template.schemas.job</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>398d847b-4288-11e6-bdf7-0242ac11002b</uuidstructure>
+			<uuidresource>398d847c-4288-11e6-bdf7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 05 Jul 2016 08:12:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.job/schemas</destination>
+			<type>folder</type>
+			<uuidstructure>e65201e9-4280-11e6-bdf7-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 05 Jul 2016 07:20:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.job/schemas/job.xsd</source>
+			<destination>system/modules/org.opencms.apollo.template.job/schemas/job.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>8bc8db44-41f8-11e6-bdf7-0242ac11002b</uuidstructure>
+			<uuidresource>8bc8db45-41f8-11e6-bdf7-0242ac11002b</uuidresource>
+			<datecreated>Mon, 04 Jul 2016 15:04:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo Job Advertisement schema]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-job.png</source>
+			<destination>system/workplace/resources/filetypes/a-job.png</destination>
+			<type>image</type>
+			<uuidstructure>dd746ff8-41f4-11e6-b24c-0242ac11002b</uuidstructure>
+			<uuidresource>dd746ff9-41f4-11e6-b24c-0242ac11002b</uuidresource>
+			<datecreated>Mon, 04 Jul 2016 14:37:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-job_big.png</source>
+			<destination>system/workplace/resources/filetypes/a-job_big.png</destination>
+			<type>image</type>
+			<uuidstructure>dd77562c-41f4-11e6-b24c-0242ac11002b</uuidstructure>
+			<uuidresource>dd77562d-41f4-11e6-b24c-0242ac11002b</uuidresource>
+			<datecreated>Mon, 04 Jul 2016 14:37:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>

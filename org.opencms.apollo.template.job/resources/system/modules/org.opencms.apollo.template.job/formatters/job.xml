@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Formatter for Apollo Job Advertisement]]></NiceName>
+    <Type><![CDATA[a-job]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.job/formatters/job.jsp]]></target>
+        <uuid>8bf3bbd9-41f8-11e6-bdf7-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[1000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[element]]></ContainerType>
+        <ContainerType><![CDATA[job]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>true</Detail>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[columns]]></PropertyName>
+      <DisplayName><![CDATA[Text in columns]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[titlepos]]></PropertyName>
+      <DisplayName><![CDATA[Title position]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <WidgetConfig><![CDATA[
+		top:Top|
+		bottom:Below introduction
+		]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[buttoncolor]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[red]]></Default>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[btnstyle]]></PropertyName>
+      <DisplayName><![CDATA[Button style]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <WidgetConfig><![CDATA[
+		left:Left aligned|
+		center:Centered|
+		full:Full row
+		]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

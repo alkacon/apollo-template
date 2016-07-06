@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
+  <Bundle language="en">
+    <Message>
+      <Key><![CDATA[label.ApolloFaq.Question]]></Key>
+      <Value><![CDATA[Question]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloFaq.Question.help]]></Key>
+      <Value><![CDATA[The question that will be answered.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.faq.message.new]]></Key>
+      <Value><![CDATA[<strong>New FAQ entry</strong>, please edit the content.]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[label.ApolloFaq.Question]]></Key>
+      <Value><![CDATA[Frage]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloFaq.Question.help]]></Key>
+      <Value><![CDATA[Die Frage, die beantwortet wird.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.faq.message.new]]></Key>
+      <Value><![CDATA[<strong>Neuer FAQ Eintrag</strong>, bitte bearbeiten Sie den Inhalt.]]></Value>
+    </Message>
+  </Bundle>
+</XmlVfsBundles>
