@@ -1,0 +1,21 @@
+.ap-linklist ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+        
+.ap-linklist-boxed li {
+}        
+
+.ap-linklist-boxed li a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	border: 1px solid $grey-light;
+	text-decoration: none;
+}
+
+.ap-linklist li a span {
+	margin-right: 8px; 
+}
