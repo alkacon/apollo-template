@@ -118,6 +118,16 @@ a.no-underline {
   border-bottom: 2px solid $headline-linecolor;
 }
 
+.headline-block .headline {
+	margin-top: 0;
+	
+	> h2 {
+		font-size: 32px;
+		color: $headline-linecolor;
+		border-bottom: none;
+	}
+}
+
 // Borders
 
 @each $radius-name, $radius in $border-radiuses {     
