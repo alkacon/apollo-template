@@ -47,6 +47,9 @@
                 <searchsetting element="Date" searchcontent="false">
                     <solrfield targetfield="newsdate" sourcefield="*_dt" />
                 </searchsetting>               
+                <searchsetting element="Title" searchcontent="false">
+                    <solrfield targetfield="disptitle" sourcefield="*_s" />
+                </searchsetting>               
 				<searchsetting element="Category" searchcontent="false" />
             </searchsettings>
 		</xsd:appinfo>
