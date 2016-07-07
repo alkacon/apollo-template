@@ -3,6 +3,7 @@
   body-content="empty"
   description="Generates a facet button for use with AJAX forms."%>
 
+<%@ attribute name="params" type="java.lang.String" required="false" %>
 <%@ attribute name="color" type="java.lang.String" required="false" %>
 <%@ attribute name="searchconfig" type="java.lang.String" required="false" %>
 <%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="false" %>
@@ -72,14 +73,16 @@
 		<c:set var="items">
 		
 			<c:forEach var="sortOption" items="${sortController.config.sortOptions}" varStatus="status">
-				<c:set var="selected">${sortController.state.checkSelected[sortOption] ? ' class="active"' : ""}</c:set>
-				<li ${selected}>
-					<a href="javascript:void(0)" onclick="reloadInnerList('${search.stateParameters.setSortOption[sortOption.paramValue]}',
-																								$('#ap-list-content-' + $(this).parents().filter('.listoptionbox').data('id')))">
-						<c:if test="${fn:contains(sortOption.paramValue, 'asc')}"><fmt:message key="sortorder.asc" /></c:if>
-						<c:if test="${fn:contains(sortOption.paramValue, 'desc')}"><fmt:message key="sortorder.desc" /></c:if>
-					</a>
-				</li>
+				<c:if test="${empty params || fn:contains(params, sortOption.paramValue)}">
+					<c:set var="selected">${sortController.state.checkSelected[sortOption] ? ' class="active"' : ""}</c:set>
+					<li ${selected}>
+						<a href="javascript:void(0)" onclick="reloadInnerList('${search.stateParameters.setSortOption[sortOption.paramValue]}',
+																									$('#ap-list-content-' + $(this).parents().filter('.listoptionbox').data('id')))">
+							<c:if test="${fn:contains(sortOption.paramValue, 'asc')}"><fmt:message key="sortorder.asc" /></c:if>
+							<c:if test="${fn:contains(sortOption.paramValue, 'desc')}"><fmt:message key="sortorder.desc" /></c:if>
+						</a>
+					</li>
+				</c:if>
 			</c:forEach>
 				
 		</c:set>

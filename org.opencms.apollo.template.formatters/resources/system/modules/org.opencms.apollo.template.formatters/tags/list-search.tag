@@ -101,7 +101,9 @@
 							${sortOptionDesc},
 					  		${sortOptionAsc}
 					  	</c:otherwise>
-					</c:choose>
+					</c:choose>,
+					{ "label" : sorttitle.asc, "paramvalue" : "title_asc", "solrvalue" : "disptitle_${cms.locale}_s asc" },
+					{ "label" : sorttitle.desc, "paramvalue" : "title_desc", "solrvalue" : "disptitle_${cms.locale}_s desc" }
 					],
 
 	"fieldfacets" : [
@@ -113,6 +115,7 @@
 			"order" : "index",
 			"ignoreAllFacetFilters" : true
 		}
+
 	],
 
 	"rangefacets" : [

@@ -30,6 +30,11 @@
 				<c:if test="${empty facets || fn:contains(facets, 'sort')}">
 					<apollo:list-sortbutton searchresult="${search}" color="${color}" />
 				</c:if>
+
+				<%-- ####### Sort options ######## --%>
+				<c:if test="${empty facets || fn:contains(facets, 'sort')}">
+					<apollo:list-sortbutton searchresult="${search}" color="${color}" />
+				</c:if>
 			</section>
 		</div>
 	</div>
