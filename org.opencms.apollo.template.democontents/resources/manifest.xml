@@ -49,9 +49,13 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 		<userinstalled/>
 		<dateinstalled/>
 		<dependencies>
-			<dependency name="org.opencms.apollo.template.formatters" version="10.0.0"/>
-			<dependency name="org.opencms.apollo.template.schemas" version="10.0.0"/>
+			<dependency name="org.opencms.apollo.template.disqus" version="10.0.0"/>
 			<dependency name="org.opencms.apollo.template.extensions" version="10.0.0"/>
+			<dependency name="org.opencms.apollo.template.faq" version="10.0.0"/>
+			<dependency name="org.opencms.apollo.template.formatters" version="10.0.0"/>
+			<dependency name="org.opencms.apollo.template.job" version="10.0.0"/>
+			<dependency name="org.opencms.apollo.template.shariff" version="10.0.0"/>
+			<dependency name="org.opencms.apollo.template.schemas" version="10.0.0"/>
 		</dependencies>
 		<exportpoints/>
 		<resources>
