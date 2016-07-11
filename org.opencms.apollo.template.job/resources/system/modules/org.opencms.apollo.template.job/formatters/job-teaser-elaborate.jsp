@@ -18,7 +18,7 @@
 		<%-- ####### Render Teaser-Text and optional image, if set accordingly ######## --%>
 		<div class="col-xs-12">
 			<h2>
-				<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
+				<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
 			</h2>
 
 			<p>
@@ -40,7 +40,7 @@
 			</c:choose>
 
 			<div class="margin-bottom-10"></div>
-			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>" class="btn ap-btn-${buttonColor}">
+			<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>" class="btn ap-btn-${buttonColor}">
 				<fmt:message key="apollo.list.message.readmore" />
 			</a>
 		</div>

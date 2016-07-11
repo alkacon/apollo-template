@@ -15,16 +15,20 @@
       <Value><![CDATA[read more]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[sort.options.date.label]]></Key>
+      <Value><![CDATA[Sort by date]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[pagination.previous.title]]></Key>
       <Value><![CDATA[Previous page]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[sortorder.desc]]></Key>
-      <Value><![CDATA[Descending]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.list.message.facetsusage]]></Key>
       <Value><![CDATA[For proper initialization the same list has to be inserted with pagination or dynamic loading formatter.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[sortorder.desc]]></Key>
+      <Value><![CDATA[Descending]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.search]]></Key>
@@ -51,6 +55,10 @@
       <Value><![CDATA[Ascending]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[sort.options.title.label]]></Key>
+      <Value><![CDATA[Sort by title]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.list.message.new]]></Key>
       <Value><![CDATA[<strong>New list</strong>, please edit the content!]]></Value>
     </Message>
@@ -67,20 +75,16 @@
       <Value><![CDATA[Create a new entry.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[pagination.next.title]]></Key>
-      <Value><![CDATA[Next page]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.list.message.facets]]></Key>
       <Value><![CDATA[This is the facet-formatter for the list-element:]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.list.message.archive]]></Key>
-      <Value><![CDATA[Archive]]></Value>
+      <Key><![CDATA[pagination.next.title]]></Key>
+      <Value><![CDATA[Next page]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[sort.options.label]]></Key>
-      <Value><![CDATA[Sort by date:]]></Value>
+      <Key><![CDATA[apollo.list.message.archive]]></Key>
+      <Value><![CDATA[Archive]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[facet.category.none]]></Key>
@@ -107,6 +111,10 @@
     <Message>
       <Key><![CDATA[apollo.list.message.readmore]]></Key>
       <Value><![CDATA[Weiterlesen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[sort.options.date.label]]></Key>
+      <Value><![CDATA[Sortierung nach Datum]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[pagination.previous.title]]></Key>
@@ -145,6 +153,10 @@
       <Value><![CDATA[Aufsteigend]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[sort.options.title.label]]></Key>
+      <Value><![CDATA[Sortierung nach Titel]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.list.message.new]]></Key>
       <Value><![CDATA[<strong>Neue Liste</strong>, bitte bearbeiten Sie den Inhalt!]]></Value>
     </Message>
@@ -171,10 +183,6 @@
     <Message>
       <Key><![CDATA[apollo.list.message.archive]]></Key>
       <Value><![CDATA[Archiv]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[sort.options.label]]></Key>
-      <Value><![CDATA[Sortierung nach Datum:]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[facet.category.none]]></Key>

@@ -17,7 +17,7 @@
 		<apollo:init-messages textnew="${textnew}" textedit="${textedit}">
 		
 			<%-- ####### List body (holds data for AJAX and gets inserts of list content) ######## --%>
-			<apollo:list-body element="${cms.element}" link="${value.Link}" headline="${value.Headline}" types="${value.TypesToCollect}" />
+			<apollo:list-body link="${value.Link}" headline="${value.Headline}" types="${value.TypesToCollect}" />
 			
 		</apollo:init-messages>
 			

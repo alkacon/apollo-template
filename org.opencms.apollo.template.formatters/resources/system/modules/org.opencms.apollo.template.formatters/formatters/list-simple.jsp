@@ -10,7 +10,6 @@
 	<cms:formatter var="con" val="value" rdfa="rdfa">
 	
 		<div class="ap-list-content mb-20">
-			${cms.reloadMarker}
 			<c:set var="textnew"><fmt:message key="apollo.list.message.new" /></c:set>
 			<c:set var="textedit"><fmt:message key="apollo.list.message.edit" /></c:set>
 			<apollo:init-messages textnew="${textnew}" textedit="${textedit}">
@@ -30,11 +29,11 @@
 				<apollo:list-main source="${value.Folder}" types="${value.TypesToCollect}" color="${param.buttonColor}" count="${value.ItemsPerPage.toInteger}" 
 							showexpired="${cms.element.setting.showexpired.toBoolean}" teaserlength="${cms.element.settings.teaserlength}" showfacets="none" />
 								
+				<c:if test="${value.Link.exists}">
+					<div class="mv-10"><apollo:link link="${value.Link}" linkclass="btn ap-btn-${cms.element.settings.buttoncolor} ap-btn-sm" settitle="false"/></div>
+				</c:if>	
+				
 			</apollo:init-messages>
-			
-			<c:if test="${value.Link.exists}">
-				<div class="mv-10"><apollo:link link="${value.Link}" linkclass="btn ap-btn-${cms.element.settings.buttoncolor} ap-btn-sm" settitle="false"/></div>
-			</c:if>	
 			
 		</div>
 		

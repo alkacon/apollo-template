@@ -12,6 +12,7 @@
 <%@ attribute name="color" type="java.lang.String" required="false" %>
 <%@ attribute name="selectcolor" type="java.lang.String" required="false" %>
 <%@ attribute name="teaserlength" type="java.lang.Integer" required="false" %>
+<%@ attribute name="path" type="java.lang.String" required="false" %>
 
 <%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" %>
 <%@ variable name-given="searchConfig" scope="AT_END" declare="true" %>
@@ -44,6 +45,7 @@
 				<cms:param name="showexpired">${showexpired}</cms:param>
 				<cms:param name="index">${status.index}</cms:param>
 				<cms:param name="last">${status.last}</cms:param>
+				<cms:param name="pageUri">${path}</cms:param>
 			</cms:display>
 		</div>
 	</c:forEach>

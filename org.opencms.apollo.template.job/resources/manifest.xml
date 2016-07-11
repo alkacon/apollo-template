@@ -273,6 +273,10 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>Title</name>
+					<value><![CDATA[Settings and messages for Apollo Job]]></value>
+				</property>
+				<property>
 					<name>content-encoding</name>
 					<value><![CDATA[ISO-8859-1]]></value>
 				</property>
@@ -293,6 +297,10 @@
 			<datecreated>Tue, 05 Jul 2016 08:12:32 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Field labels for Apollo Job]]></value>
+				</property>
 				<property>
 					<name>content-encoding</name>
 					<value><![CDATA[ISO-8859-1]]></value>

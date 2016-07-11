@@ -24,13 +24,13 @@
     <NestedContainers>false</NestedContainers>
     <Setting>
       <PropertyName><![CDATA[columns]]></PropertyName>
-      <DisplayName><![CDATA[Text in columns]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.job.setting.columns)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[titlepos]]></PropertyName>
-      <DisplayName><![CDATA[Title position]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.job.setting.titlepos)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <WidgetConfig><![CDATA[
 		top:Top|
@@ -46,7 +46,7 @@
     </Setting>
     <Setting>
       <PropertyName><![CDATA[btnstyle]]></PropertyName>
-      <DisplayName><![CDATA[Button style]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.job.setting.buttonstyle)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <WidgetConfig><![CDATA[
 		left:Left aligned|

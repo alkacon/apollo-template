@@ -3,6 +3,7 @@
   body-content="empty"
   description="Generates a facet button for use with AJAX forms."%>
 
+<%@ attribute name="label" type="java.lang.String" required="false" %>
 <%@ attribute name="params" type="java.lang.String" required="false" %>
 <%@ attribute name="color" type="java.lang.String" required="false" %>
 <%@ attribute name="searchconfig" type="java.lang.String" required="false" %>
@@ -61,7 +62,7 @@
 			<div class="btn-group hidden-xs">
 				<button type="button" class="dropdown-toggle btn ap-btn-${buttonColor}" data-toggle="dropdown" 
 								aria-haspopup="true" aria-expanded="false" id="dropdownMenu1" aria-expanded="true">
-					<fmt:message key="sort.options.label" /> &nbsp; <span class="va-middle fa fs-8 fa-chevron-down"></span>
+					${label}&nbsp;<span class="va-middle fa fs-8 fa-chevron-down"></span>
 				</button>
 				
 				<ul class="dropdown-menu dropdown-${buttonColor}">
@@ -78,8 +79,7 @@
 					<li ${selected}>
 						<a href="javascript:void(0)" onclick="reloadInnerList('${search.stateParameters.setSortOption[sortOption.paramValue]}',
 																									$('#ap-list-content-' + $(this).parents().filter('.listoptionbox').data('id')))">
-							<c:if test="${fn:contains(sortOption.paramValue, 'asc')}"><fmt:message key="sortorder.asc" /></c:if>
-							<c:if test="${fn:contains(sortOption.paramValue, 'desc')}"><fmt:message key="sortorder.desc" /></c:if>
+							<fmt:message key="${sortOption.label}" />
 						</a>
 					</li>
 				</c:if>

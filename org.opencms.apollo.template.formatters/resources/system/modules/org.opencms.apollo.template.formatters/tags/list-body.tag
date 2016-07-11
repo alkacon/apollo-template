@@ -3,7 +3,6 @@
   body-content="empty"
   description="Shows a list body to be used with AJAX calls for content."%>
 
-<%@ attribute name="element" type="org.opencms.jsp.util.CmsJspStandardContextBean.CmsContainerElementWrapper" required="true" %>
 <%@ attribute name="headline" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="link" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
@@ -13,6 +12,8 @@
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
+<c:set var="element" value="${cms.element}" />
 
 <%-- ####### Headline ########################################### --%>
 		
@@ -30,6 +31,7 @@
 								data-path="${element.sitePath}" 
 								data-color="${element.settings.buttoncolor}" 
 								data-expired="${element.settings.showexpired}" 
+								data-sitepath="${cms.requestContext.folderUri}" 
 								data-dynamic="${dynamic ? 'true' : 'false'}">
 							
 	<div id="entrylist_box"></div>

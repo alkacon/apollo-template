@@ -21,7 +21,7 @@
 				</c:if>
 				<apollo:list-main source="${content.value.Folder}" types="${content.value.TypesToCollect}" color="${param.buttoncolor}"
 									count="${itemCount}" showexpired="${param.showexpired == 'true'}" 
-									teaserlength="${param.teaserlength}" categories="${content.readCategories}" showfacets="${param.facets}" />
+									teaserlength="${param.teaserlength}" categories="${content.readCategories}" showfacets="${param.facets}" path="${param.sitepath}" />
 									
 				<%-- ####### Load pagination (dynamic or normal) ######## --%>
 				<c:set var="label"><fmt:message key="pagination.next"/></c:set>

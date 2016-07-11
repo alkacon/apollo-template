@@ -8,7 +8,6 @@
 <%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false" %>
 <%@ attribute name="filterqueries" type="java.lang.String" required="false" %>
 <%@ attribute name="count" type="java.lang.Integer" required="false" %>
-<%@ attribute name="sortAsc" type="java.lang.Boolean" required="false" %>
 <%@ attribute name="showexpired" type="java.lang.Boolean" required="false" %>
  
 <%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" %>
@@ -92,18 +91,10 @@
 	"pagenavlength" : 5,
 
 	"sortoptions" : [
-					<c:choose>
-						<c:when test='${sortAsc}'>	
-					  		${sortOptionAsc},	  		
-					  		${sortOptionDesc}
-					  	</c:when>
-						<c:otherwise>
-							${sortOptionDesc},
-					  		${sortOptionAsc}
-					  	</c:otherwise>
-					</c:choose>,
-					{ "label" : sorttitle.asc, "paramvalue" : "title_asc", "solrvalue" : "disptitle_${cms.locale}_s asc" },
-					{ "label" : sorttitle.desc, "paramvalue" : "title_desc", "solrvalue" : "disptitle_${cms.locale}_s desc" }
+						{ "label" : sortorder.asc, "paramvalue" : "asc", "solrvalue" : "newsdate_${cms.locale}_dt asc" },
+						{ "label" : sortorder.desc, "paramvalue" : "desc", "solrvalue" : "newsdate_${cms.locale}_dt desc" },
+						{ "label" : sortorder.asc, "paramvalue" : "title_a", "solrvalue" : "disptitle_${cms.locale}_s asc" },
+						{ "label" : sortorder.desc, "paramvalue" : "title_d", "solrvalue" : "disptitle_${cms.locale}_s desc" }
 					],
 
 	"fieldfacets" : [

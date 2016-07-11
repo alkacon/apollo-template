@@ -1,32 +1,160 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
-  <Bundle language="en">
-    <Message>
-      <Key><![CDATA[label.ApolloFaq.Question]]></Key>
-      <Value><![CDATA[Question]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloFaq.Question.help]]></Key>
-      <Value><![CDATA[The question that will be answered.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.faq.message.new]]></Key>
-      <Value><![CDATA[<strong>New FAQ entry</strong>, please edit the content.]]></Value>
-    </Message>
-  </Bundle>
   <Bundle language="de">
     <Message>
-      <Key><![CDATA[label.ApolloFaq.Question]]></Key>
-      <Value><![CDATA[Frage]]></Value>
+      <Key><![CDATA[label.ApolloJob.Category.help]]></Key>
+      <Value><![CDATA[Eine Kategorie, unter der das Angebot abgelegt ist.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloFaq.Question.help]]></Key>
-      <Value><![CDATA[Die Frage, die beantwortet wird.]]></Value>
+      <Key><![CDATA[label.ApolloJob.EndDate]]></Key>
+      <Value><![CDATA[End-Datum]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Introduction.help]]></Key>
+      <Value><![CDATA[Die Einleitung beschreibt üblicherweise den Arbeitgeber.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Title.help]]></Key>
+      <Value><![CDATA[Der Titel des Jobangebots. Normalerweise der Titel der ausgeschriebenen Position.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.BottomText]]></Key>
+      <Value><![CDATA[Schluss Absatz]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.faq.message.new]]></Key>
-      <Value><![CDATA[<strong>Neuer FAQ Eintrag</strong>, bitte bearbeiten Sie den Inhalt.]]></Value>
+      <Value><![CDATA[<strong>Neuer Job Eintrag</strong>, bitte bearbeiten Sie den Inhalt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Location]]></Key>
+      <Value><![CDATA[Ort]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Date]]></Key>
+      <Value><![CDATA[Start-Datum]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Text]]></Key>
+      <Value><![CDATA[Haupttext]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Location.help]]></Key>
+      <Value><![CDATA[Der Ort, für den die Ausschreibung gilt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Category]]></Key>
+      <Value><![CDATA[Kategorie]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Title]]></Key>
+      <Value><![CDATA[Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.EndDate.help]]></Key>
+      <Value><![CDATA[Das Datum, ab dem die Anzeige nicht mehr angezeigt wird.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Introduction]]></Key>
+      <Value><![CDATA[Einleitung]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.BottomText.help]]></Key>
+      <Value><![CDATA[Text der nach den Hauptblöcken folgt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Text.help]]></Key>
+      <Value><![CDATA[Der Haupttext beschreibt die Eigenschaften des Angebots und die gewünschten Fähigkeiten des Bewerbers. Zwei Felder können per Einstellung nebeneinander gezeigt werden.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Date.help]]></Key>
+      <Value><![CDATA[Das Datum, ab dem das Angebot sichtbar ist.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Link.help]]></Key>
+      <Value><![CDATA[Ein Link, der als Button angezeigt wird.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Link]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="en">
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Category.help]]></Key>
+      <Value><![CDATA[The category under which the offered job is filed.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.EndDate]]></Key>
+      <Value><![CDATA[End Date]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Introduction.help]]></Key>
+      <Value><![CDATA[An introduction text that might give an overview over the company.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Title.help]]></Key>
+      <Value><![CDATA[The title of the job ad. Usually this would be the name of the position.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.BottomText]]></Key>
+      <Value><![CDATA[Closing Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.faq.message.new]]></Key>
+      <Value><![CDATA[<strong>New Job entry</strong>, please edit the content.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Location]]></Key>
+      <Value><![CDATA[Location]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Date]]></Key>
+      <Value><![CDATA[Start Date]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Text]]></Key>
+      <Value><![CDATA[Main Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Location.help]]></Key>
+      <Value><![CDATA[The location at which the job is offered.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Category]]></Key>
+      <Value><![CDATA[Category]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Title]]></Key>
+      <Value><![CDATA[Title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.EndDate.help]]></Key>
+      <Value><![CDATA[The date until which the job ad will be visible.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Introduction]]></Key>
+      <Value><![CDATA[Introduction]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.BottomText.help]]></Key>
+      <Value><![CDATA[A closing text follows the main text blocks.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Text.help]]></Key>
+      <Value><![CDATA[The main text should point out the characteristics of the job and the needed skills of the employee. Two fields can be shown side by side.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Date.help]]></Key>
+      <Value><![CDATA[The date from which on this job ad will be visible.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Link.help]]></Key>
+      <Value><![CDATA[A link that is shown as a button.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloJob.Link]]></Key>
+      <Value><![CDATA[Link]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>
