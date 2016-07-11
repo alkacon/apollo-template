@@ -4,6 +4,7 @@
   description="Shows a load button for dynamic list pagination based on search results."%>
 
 <%@ attribute name="search" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="true" %>
+<%@ attribute name="color" type="java.lang.String" required="false" %>
 <%@ attribute name="label" type="java.lang.String" required="false" %>
 <%@ attribute name="arialabel" type="java.lang.String" required="false" %>
 
@@ -13,6 +14,8 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <c:if test="${search.numFound > 0}">
+
+	<c:set var="buttonColor" value="${empty color ? 'red' : color}" />
 
 	<%-- ####### Show load button if further entries exist ######## --%>
 
@@ -24,7 +27,7 @@
 			<div id="pagination" class="pagination col-xs-12" data-dynamic="true">
 				<c:set var="pages">${search.numPages}</c:set>
 				<button
-					class="btn ap-btn-red col-xs-12 mt-5 mb-20 ${pagination.state.currentPage >= search.numPages ? ' disabled' : ''}"
+					class="btn ap-btn-${buttonColor} col-xs-12 mt-5 mb-20 ${pagination.state.currentPage >= search.numPages ? ' disabled' : ''}"
 					aria-label='${arialabel}'
 					id="loadMore"
 					data-load="${search.stateParameters.setPage[next]}"

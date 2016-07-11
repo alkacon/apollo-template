@@ -29,7 +29,7 @@
 				
 				<c:choose>
 				<c:when test="${param.dynamic}">
-					<apollo:list-loadbutton search="${search}" label="${label}" arialabel="${arialabel}" />
+					<apollo:list-loadbutton search="${search}" label="${label}" arialabel="${arialabel}" color="${param.buttoncolor}" />
 				</c:when>
 				<c:otherwise>
 					<apollo:list-pagination search="${search}" />

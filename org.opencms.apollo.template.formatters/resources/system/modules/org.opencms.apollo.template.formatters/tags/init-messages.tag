@@ -14,7 +14,7 @@
 
 <c:choose>
 <c:when test="${cms.element.inMemoryOnly}">
-	<div class="alert alert-info">
+	<div class="alert alert-info mv-10">
 		<h3>
 			${textnew}
 		</h3>
@@ -22,7 +22,7 @@
 </c:when>
 <c:when test="${not empty textedit and cms.edited}">
 	${cms.reloadMarker}
-	<div class="alert alert-info">
+	<div class="alert alert-info mv-10">
 		<h3>
 			${textedit}
 		</h3>

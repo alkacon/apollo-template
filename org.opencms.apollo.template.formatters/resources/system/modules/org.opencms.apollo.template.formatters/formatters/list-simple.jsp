@@ -26,11 +26,11 @@
 		
 				<%-- ####### List entries ######## --%>
 		
-				<apollo:list-main source="${value.Folder}" types="${value.TypesToCollect}" color="${param.buttonColor}" count="${value.ItemsPerPage.toInteger}" 
+				<apollo:list-main source="${value.Folder}" types="${value.TypesToCollect}" color="${cms.element.settings.buttoncolor}" count="${value.ItemsPerPage.toInteger}" 
 							showexpired="${cms.element.setting.showexpired.toBoolean}" teaserlength="${cms.element.settings.teaserlength}" showfacets="none" />
 								
 				<c:if test="${value.Link.exists}">
-					<div class="mv-10"><apollo:link link="${value.Link}" linkclass="btn ap-btn-${cms.element.settings.buttoncolor} ap-btn-sm" settitle="false"/></div>
+					<div class="bo-grey-light bo-top-1 bo-top-dotted ph-0"><apollo:link link="${value.Link}" linkclass="btn ap-btn-${cms.element.settings.buttoncolor} ap-btn-sm" settitle="false"/></div>
 				</c:if>	
 				
 			</apollo:init-messages>

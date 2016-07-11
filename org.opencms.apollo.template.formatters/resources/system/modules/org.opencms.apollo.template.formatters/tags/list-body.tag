@@ -24,7 +24,7 @@
 <%-- ####### The list (AJAX will insert here) ################### --%>
 
 <c:set var="ajaxlink"><cms:link>/system/modules/org.opencms.apollo.template.formatters/elements/list/list-ajax.jsp</cms:link></c:set>
-<div class="ap-list-content mb-20" id="ap-list-content-${element.id}"
+<div class="ap-list-content pagination-${element.settings.buttoncolor} mb-20" id="ap-list-content-${element.id}"
 								data-id="${element.id}" 
 								data-ajax="${ajaxlink}"
 								data-teaser="${element.settings.teaserlength}" 
