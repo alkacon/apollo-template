@@ -23,8 +23,7 @@
 	<apollo:image-zoom 
 		setting="${cms.element.setting}" 
 		image="${content.value.Image}"
-		headline="${content.value.Headline}" 
-		content="${content}" />
+		headline="${content.value.Headline}" />
 
 	</c:otherwise>
 

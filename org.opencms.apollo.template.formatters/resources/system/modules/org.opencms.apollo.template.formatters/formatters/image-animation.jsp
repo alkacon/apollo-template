@@ -23,8 +23,7 @@
 							image="${content.value.Image}"
 							width="-1"
 							headline="${content.value.Headline}" 
-							link="${content.value.Link}" 
-							content="${content}" />
+							link="${content.value.Link}" />
                     </div>
 					
 					<%-- ####### Show link as button if enabled ######## --%>

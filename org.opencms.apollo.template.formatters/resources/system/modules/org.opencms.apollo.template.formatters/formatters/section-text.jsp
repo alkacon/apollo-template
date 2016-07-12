@@ -6,6 +6,5 @@
 <apollo:text 
     setting="${cms.element.setting}" 
     text="${content.value.Text}" 
-    link="${content.value.Link}" 
-    content="${content}" />
+    link="${content.value.Link}" />
 </cms:formatter>

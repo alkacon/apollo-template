@@ -8,7 +8,6 @@
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="link" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
 <%@ attribute name="headline" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
-<%@ attribute name="content" type="org.opencms.jsp.util.CmsJspContentAccessBean" required="true" %>
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -31,11 +30,22 @@
 			</c:if>
 	>
 </c:if>
-		
+
+<%-- ####### ImageDnD workaround ##################################### --%>
+<%-- ####### image.value.Image.imageDndAttr doesn't work here ######## --%>
+<%-- ################################################################# --%>
+
+<c:if test="${not empty image && image.isSet}">
+	<c:set var="conValue" value="${image.value.Image.contentValue}" />
+	<c:set var="dndData" value="${conValue.document.file.structureId}|${conValue.path}|${conValue.locale}" />
+	<c:set var="imageDnd">data-imagednd="${dndData}"</c:set>
+</c:if>
+
+<%-- ################################################################# --%>
 
 
 	<div class="ap-img-pic">
-		<span ${image.rdfa.Image} ${content.imageDnd[image.value.Image.path]}>
+		<span ${image.value.Image.rdfaAttr} ${imageDnd}>
 			<img
 					src="<cms:link>${imageLink}</cms:link>"
 					class="img-responsive ${setting.ieffect != 'none' ? setting.ieffect : ''}"
@@ -57,7 +67,7 @@
 		<c:if test="${fn:contains(setting.itext.value, 'title')}">
 				<c:choose>
 						<c:when	test="${image.value.Title.isSet}">
-								<div class="ap-img-title"><span ${image.rdfa.Title}>${image.value.Title}</span></div>
+								<div class="ap-img-title"><span ${image.value.Title.rdfaAttr}>${image.value.Title}</span></div>
 						</c:when>
 						<c:when	test="${headline.isSet}">
 								<div class="ap-img-title"><span ${headline.rdfaAttr}>${headline}</span></div>
@@ -65,7 +75,7 @@
 				</c:choose>
 		</c:if>
 		<c:if test="${fn:contains(setting.itext.value, 'desc') && image.value.Description.isSet}">
-				<div class="ap-img-desc"><span ${image.rdfa.Description}>${image.value.Description}</span></div>
+				<div class="ap-img-desc"><span ${image.value.Description.rdfaAttr}>${image.value.Description}</span></div>
 		</c:if>
 		</div>
 	</c:if>
