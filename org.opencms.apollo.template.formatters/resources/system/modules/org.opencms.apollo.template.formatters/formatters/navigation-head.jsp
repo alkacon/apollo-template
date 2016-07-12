@@ -21,9 +21,9 @@
 				<c:set var="logoPath">${value.LogoImage}</c:set>
 				<c:set var="logoSizes"><cms:property name="image.size" file="${logoPath}" default="170x42" /></c:set>
 				
-				<c:if test="${not empty logoPath}">
-					<a class="logo apollo-logo" href="<cms:link>${value.LogoLink}</cms:link>" style="width: ${fn:substringAfter(fn:substringBefore(logoSizes,','), 'w:')}px;height: ${fn:substringAfter(logoSizes,'h:')}px;background-image:url('<cms:link>${logoPath}</cms:link>');"></a>
-				</c:if>
+				<c:if test="${not empty logoPath}"><c:set var="backgroundLogo">background-image:url('<cms:link>${logoPath}</cms:link>');</c:set></c:if>	
+				<c:if test="${not empty value.LogoLink}"><c:set var="logoLink"><cms:link>${value.LogoLink}</cms:link></c:set></c:if>	
+				<a class="logo apollo-logo" href="${logoLink}" style="width: ${fn:substringAfter(fn:substringBefore(logoSizes,','), 'w:')}px;height: ${fn:substringAfter(logoSizes,'h:')}px;${backgroundLogo}"></a>
 				
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target=".navbar-responsive-collapse">
