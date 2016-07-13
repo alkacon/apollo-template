@@ -37,12 +37,20 @@
 <div class="ap-img ${setting.istyle}">
 
 	<div class="ap-img-pic">
-
+		
+		<%-- ####### If scaled image is used, store path to original for usage ######## --%>
+		<c:set var="imagePath"><cms:link>${imageLink}</cms:link></c:set>
+		<c:if test="${fn:contains(imageLink, '?')}">
+			<c:set var="imagePath">
+				<cms:link>${fn:substringBefore(imageLink, '?')}</cms:link>
+			</c:set>
+		</c:if>
+		
 		<a
 			data-gallery="true"
 			class="zoom"
-			data-size="${cms.vfs.property[imageLink]['image.size']}"
-			href="<cms:link>${imageLink}</cms:link>"
+			data-size="${cms.vfs.property[imagePath]['image.size']}"
+			href="${imagePath}"
 			<c:if test="${not empty imageTitleCopyright}">title="${imageTitleCopyright}"</c:if>
 			data-rel="fancybox-button-${cms.element.instanceId}"
 			id="fancyboxzoom${cms.element.instanceId}">
