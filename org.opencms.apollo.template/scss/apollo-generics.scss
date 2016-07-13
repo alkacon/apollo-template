@@ -70,8 +70,8 @@ $border-styles:          (none, solid, dotted, dashed, hidden) !default;
 @each $color-name, $bg-color, $text-color, $highlight-color in $font-colors {
 
     .fc-#{""+$color-name} {
-        color: $color-name;
-        &.a, p, h2, .fa {
+        color: $bg-color;
+        &.a, p, h1, h2, h3, h4, .fa {
             color: $bg-color;      
         }
     }
