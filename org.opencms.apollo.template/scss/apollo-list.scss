@@ -1,4 +1,4 @@
-$filterbox-colors:	$border-colors !default;
+$button-colors:          $primary-colors !default;
 
 .ap-list-filterbox {
 	margin-bottom: 15px;
@@ -48,3 +48,23 @@ $filterbox-colors:	$border-colors !default;
 .ap-list-filter-year li.active a {
 	font-weight: bold;
 } 
+
+
+@each $color-name, $bg-color, $text-color, $highlight-color in $button-colors {
+
+	.ap-list-content.pagination-#{""+$color-name} {
+		.pagination > .active {
+			> a, > span, > a:hover, 
+			> span:hover, > a:focus, > span:focus {
+			  background-color: $bg-color;
+			  border-color: $bg-color;
+			}
+		}
+	
+		.pagination li a:hover {
+		  background: $highlight-color;
+		  border-color: $highlight-color;   
+		}
+	}  
+
+}

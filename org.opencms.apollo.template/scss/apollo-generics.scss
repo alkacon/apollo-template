@@ -146,20 +146,6 @@ a.no-underline {
     }        
 }
 
-@each $color-name, $bg-color, $text-color, $highlight-color in append($border-colors, $border-grey) {
-
-    .bo-#{""+$color-name}  {
-        border-color: $bg-color;      
-    }    
-}
-
-@each $border-style in $border-styles {
-
-    .bo-#{""+$border-style}  {
-        border-style: $border-style;    
-    }        
-}
-
 @each $position in $border-positions {
 
 	@each $line-size in $border-sizes {    
@@ -183,6 +169,20 @@ a.no-underline {
 	        border-#{$position}-style: $border-style;    
 	    }        
 	}
+}
+
+@each $color-name, $bg-color, $text-color, $highlight-color in append($border-colors, $border-grey) {
+
+    .bo-#{""+$color-name}  {
+        border-color: $bg-color;      
+    }    
+}
+
+@each $border-style in $border-styles {
+
+    .bo-#{""+$border-style}  {
+        border-style: $border-style;    
+    }        
 }
 
 // Block display settings

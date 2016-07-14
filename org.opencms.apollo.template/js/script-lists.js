@@ -16,20 +16,21 @@ function reloadInnerList(searchStateParameters, elem) {
 			elem = $('.ap-list-content').first();
 		}
 		elem.find('.spinner').show();
-		elem.find("#entrylist_box").empty();
-		elem.find("#pagination_box").empty();
-		console.log("elem: " + elem.attr("id"));
+		elem.find(".entrylist_box").empty();
+		elem.find(".pagination_box").empty();
+		var listOptionBox = $('#listoption_box-' + elem.data('id'));
+		listOptionBox.find(".listOptions").remove();
 		$.get(buildAjaxLink(elem) + "&".concat(searchStateParameters), 
 				function(resultList) {
-					$(resultList).filter(".list-entry").appendTo(elem.find('#entrylist_box'));
-					$(resultList).filter('#pagination').appendTo(elem.find('#pagination_box'));
-					$('#listoption_box-' + elem.data('id')).html($(resultList).filter("#listOptions"));
+					$(resultList).filter(".list-entry").appendTo(elem.find('.entrylist_box'));
+					$(resultList).filter('.paginationWrapper').appendTo(elem.find('.pagination_box'));
+					$(resultList).filter(".listOptions").appendTo(listOptionBox);
 					if(list_lock && $(resultList).filter(".list-entry").length == 0){
 						showEmpty(elem);
 					}
 					elem.find('.spinner').hide();
-					list_lock[elem.attr("id")] = false;
 					showEditButtons();
+					list_lock[elem.attr("id")] = false;
 				});
 		
 		$('html, body').animate( { scrollTop : elem.offset().top - 100 }, 1000 );
@@ -40,11 +41,12 @@ function appendInnerList(searchStateParameters, elem) {
 	if(typeof list_lock[elem.attr("id")] === "undefined" || !list_lock[elem.attr("id")]){
 		list_lock[elem.attr("id")] = true;
 		elem.find('.spinner').show();
+		console.log("append");
 		$.get(buildAjaxLink(elem) + "&hideOptions=true&".concat(searchStateParameters),
 				function(resultList) {
-					elem.find('#pagination').remove();
-					$(resultList).filter(".list-entry").appendTo(elem.find('#entrylist_box'));
-					$(resultList).filter("#pagination").appendTo(elem.find('#pagination_box'));
+					elem.find('.pagination').remove();
+					$(resultList).filter(".list-entry").appendTo(elem.find('.entrylist_box'));
+					$(resultList).filter(".pagination").appendTo(elem.find('.pagination_box'));
 					elem.find('.spinner').hide();
 					showEditButtons();
 					list_lock[elem.attr("id")] = false;
@@ -73,9 +75,9 @@ function initList() {
 		if(list.data("dynamic") === true){
 			$(window).scroll(
 					function(event) {
-						var pag = list.find("#pagination");
+						var pag = list.find(".pagination");
 						if (pag.length && pag.data("dynamic") && pag.visible(true)){
-							appendInnerList($('#loadMore').attr('data-load'), list);
+							appendInnerList(list.find('.loadMore').attr('data-load'), list);
 						}
 					}
 				);
@@ -84,7 +86,7 @@ function initList() {
 }
 
 function showEmpty(elem){
-	elem.find("#editbox").show();
+	elem.find(".editbox").show();
 }
 
 function showEditButtons(){
