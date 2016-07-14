@@ -39,18 +39,10 @@
 	<div class="ap-img-pic">
 		
 		<%-- ####### If scaled image is used, store path to original for usage ######## --%>
-		<c:set var="imagePath"><cms:link>${imageLink}</cms:link></c:set>
-		<c:if test="${fn:contains(imageLink, '?')}">
-			<c:set var="imagePath">
-				<cms:link>${fn:substringBefore(imageLink, '?')}</cms:link>
-			</c:set>
-		</c:if>
-		
-		<a
-			data-gallery="true"
+		<a 	data-gallery="true"
 			class="zoom"
-			data-size="${cms.vfs.property[imagePath]['image.size']}"
-			href="${imagePath}"
+			data-size="${cms.vfs.property[imageUnscaledLink]['image.size']}"
+			href="<cms:link>${imageUnscaledLink}</cms:link>"
 			<c:if test="${not empty imageTitleCopyright}">title="${imageTitleCopyright}"</c:if>
 			data-rel="fancybox-button-${cms.element.instanceId}"
 			id="fancyboxzoom${cms.element.instanceId}">

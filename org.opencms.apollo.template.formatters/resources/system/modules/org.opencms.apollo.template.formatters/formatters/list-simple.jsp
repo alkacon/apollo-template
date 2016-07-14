@@ -25,10 +25,30 @@
 				</c:if>
 		
 				<%-- ####### List entries ######## --%>
+				
+				<c:set var="itemCount" value="${value.ItemsPerPage.isSet ? value.ItemsPerPage.toInteger : 5}" />
+				<apollo:list-main 
+						source="${value.Folder}" 
+						types="${value.TypesToCollect}" 
+						color="${cms.element.settings.buttoncolor}" 
+						count="${itemCount}" 
+						showexpired="${cms.element.setting.showexpired.toBoolean}" 
+						teaserlength="${cms.element.settings.teaserlength}" 
+						categories="${con.readCategories}" 
+						sort="${con.value.SortOrder}"
+						showfacets="none" />
+
+                <%-- ####### Create and edit new entries if empty result ######## --%>
+                <c:if test="${search.numFound == 0}">
+                    <c:set var="createType">${fn:substringBefore(value.TypesToCollect.stringValue, ':')}</c:set>
+                    <cms:edit createType="${createType}" create="true" >
+                        <div class="alert alert-warning fade in">
+                            <h3><fmt:message key="apollo.list.message.empty" /></h3>
+                            <div><fmt:message key="apollo.list.message.newentry" /></div>
+                        </div>
+                    </cms:edit>
+                </c:if>
 		
-				<apollo:list-main source="${value.Folder}" types="${value.TypesToCollect}" color="${cms.element.settings.buttoncolor}" count="${value.ItemsPerPage.toInteger}" 
-							showexpired="${cms.element.setting.showexpired.toBoolean}" teaserlength="${cms.element.settings.teaserlength}" showfacets="none" />
-								
 				<c:if test="${value.Link.exists}">
 					<div class="bo-grey-light bo-top-1 bo-top-dotted ph-0"><apollo:link link="${value.Link}" linkclass="btn ap-btn-${cms.element.settings.buttoncolor} ap-btn-sm" settitle="false"/></div>
 				</c:if>	

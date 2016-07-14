@@ -6,6 +6,7 @@
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 
 <%@ variable name-given="imageLink" declare="true" %>
+<%@ variable name-given="imageUnscaledLink" declare="true" %>
 <%@ variable name-given="imageCopyright" declare="true" %>
 <%@ variable name-given="imageTitle" declare="true" %>
 <%@ variable name-given="imageTitleCopyright" declare="true" %>
@@ -15,6 +16,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
 <c:set var="imageLink" value="" />
+<c:set var="imageUnscaledLink" value="" />
 <c:set var="imageCopyright" value="" />
 <c:set var="imageTitle" value="" />
 <c:set var="imageTitleCopyright" value="" />
@@ -23,6 +25,11 @@
 <%-- We only initialize the other stuff if the image link is set --%>
 
     <c:set var="imageLink" value="${image.value.Image}" />
+	
+	<c:set var="imageUnscaledLink">${imageLink}</c:set>
+	<c:if test="${fn:contains(imageLink, '?')}">
+		<c:set var="imageUnscaledLink">${fn:substringBefore(imageLink, '?')}</c:set>
+	</c:if>
 
     <%--
         For the copyright, we check if this is set in the content first, 

@@ -5,6 +5,7 @@
 
 <%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
+<%@ attribute name="sort" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
 <%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false" %>
 <%@ attribute name="showfacets" type="java.lang.String" required="false" %>
 <%@ attribute name="count" type="java.lang.Integer" required="false" %>
@@ -26,7 +27,7 @@
 
 <%-- ####### Search items ################ --%>
 
-<apollo:list-search source="${source}" types="${types}" count="${count}" showexpired="${showexpired}" categories="${categories}" />
+<apollo:list-search source="${source}" types="${types}" count="${count}" showexpired="${showexpired}" categories="${categories}" sort="${sort}" />
 
 <c:if test="${search.numFound > 0}">
 
@@ -36,7 +37,7 @@
 
 <%-- ####### Elements of the list ######## --%>
 
-	<c:forEach var="result" items="${search.searchResults}">
+	<c:forEach var="result" items="${search.searchResults}" varStatus="status">
 		<div class="list-entry">
 			<cms:display value="${result.xmlContent.filename}" displayFormatters="${types}" editable="true" create="true" delete="true">
 				<cms:param name="teaserlength" value="${teaserlength}" />
