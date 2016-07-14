@@ -15,7 +15,7 @@
 	<c:set var="pagination" value="${search.controller.pagination}" />
 	<!-- show pagination if it should be given and if it's really necessary -->
 	<c:if test="${not empty pagination && search.numPages > 1}">
-		<div  id="pagination" data-dynamic="false" >
+		<div class="paginationWrapper" data-dynamic="false" >
 			<ul class="pagination">
 				<li ${pagination.state.currentPage > 1 ? "" : "class='disabled'"}>
 					<a href="javascript:void(0)"

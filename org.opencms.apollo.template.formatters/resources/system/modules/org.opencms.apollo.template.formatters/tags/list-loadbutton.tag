@@ -24,12 +24,11 @@
 	<c:if test="${not empty pagination && search.numPages > 1}">
 		<c:set var="next">${ pagination.state.currentPage + 1}</c:set>
 		<c:if test="${search.numPages+1 != next}">
-			<div id="pagination" class="pagination col-xs-12" data-dynamic="true">
+			<div class="paginationWrapper pagination col-xs-12" data-dynamic="true">
 				<c:set var="pages">${search.numPages}</c:set>
 				<button
-					class="btn ap-btn-${buttonColor} col-xs-12 mt-5 mb-20 ${pagination.state.currentPage >= search.numPages ? ' disabled' : ''}"
+					class="loadMore btn ap-btn-${buttonColor} col-xs-12 mt-5 mb-20 ${pagination.state.currentPage >= search.numPages ? ' disabled' : ''}"
 					aria-label='${arialabel}'
-					id="loadMore"
 					data-load="${search.stateParameters.setPage[next]}"
 					onclick="appendInnerList($(this).attr('data-load'), $(this).parents().find('.ap-list-content'));">
 					<span aria-hidden="true">${label}</span>

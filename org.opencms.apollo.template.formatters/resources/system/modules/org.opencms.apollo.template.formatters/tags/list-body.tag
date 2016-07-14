@@ -34,8 +34,8 @@
 								data-sitepath="${cms.requestContext.folderUri}" 
 								data-dynamic="${dynamic ? 'true' : 'false'}">
 							
-	<div id="entrylist_box"></div>
-	<div id="pagination_box"></div>
+	<div class="entrylist_box"></div>
+	<div class="pagination_box"></div>
 	
 	<div class="spinner mv-20" style="display: none; position: initial; transform: none;">
 		<i class="fa fa-spinner"></i>
@@ -44,7 +44,7 @@
 	<%-- ####### Create and edit new entries if empty result ######## --%>
 	
 	<c:set var="createType">${fn:substringBefore(types.stringValue, ':')}</c:set>
-	<div id="editbox" style="display: none;" >
+	<div class="editbox" style="display: none;" >
 		<cms:edit createType="${createType}" create="true" >
 			<div class="alert alert-warning fade in">
 				<h3><fmt:message key="apollo.list.message.empty" /></h3>

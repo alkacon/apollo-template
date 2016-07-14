@@ -16,7 +16,7 @@
 <c:set var="search" value="${searchresult}" />
 
 <c:if test="${facets != 'none'}">
-	<div id="listOptions" class="row mb-20">
+	<div class="listOptions row mb-20">
 		<div class="col-xs-12">
 			<section class="btn-group pull-right">
 				<%-- ####### Category filter ######## --%>

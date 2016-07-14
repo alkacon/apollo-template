@@ -18,7 +18,7 @@
 						data-id="${cms.element.id}" data-facets="${facetsettings}">
 			${cms.reloadMarker}
 			<c:if test="${cms.isEditMode}">
-				<div class="editMessage-${cms.element.id} alert alert-warning">
+				<div class="listOptions editMessage-${cms.element.id} alert alert-warning">
 					<h3>
 						<fmt:message key="apollo.list.message.facets" />&nbsp;${value.Headline}
 					</h3>
