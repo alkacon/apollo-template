@@ -5,6 +5,7 @@
 
 <%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
+<%@ attribute name="sort" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
 <%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false" %>
 <%@ attribute name="filterqueries" type="java.lang.String" required="false" %>
 <%@ attribute name="count" type="java.lang.Integer" required="false" %>
@@ -54,8 +55,36 @@
 			<c:set var="catFilter">${catFilter}&nbsp;</c:set>
 		</c:if>
 	</c:forEach>
-	<c:set var="solrCats">&fq=category:(${catFilter})</c:set>
+	<c:set var="solrCats">&fq=${categoryFacetField}:(${catFilter})</c:set>
 </c:if>
+
+<%-- ################################################################################################################# Sortoptions ######## --%>
+
+<c:set var="sortdateasc">{ "label" : sortorder.asc, "paramvalue" : "asc", "solrvalue" : "newsdate_${cms.locale}_dt asc" }</c:set>
+<c:set var="sortdatedesc">{ "label" : sortorder.desc, "paramvalue" : "desc", "solrvalue" : "newsdate_${cms.locale}_dt desc" }</c:set>
+<c:set var="sorttitleasc">{ "label" : sortorder.asc, "paramvalue" : "title_a", "solrvalue" : "disptitle_${cms.locale}_s asc" }</c:set>
+<c:set var="sorttitledesc">{ "label" : sortorder.desc, "paramvalue" : "title_d", "solrvalue" : "disptitle_${cms.locale}_s desc" }</c:set>
+
+<c:set var="sortoptions" value="${sortdateasc},${sortdatedesc},${sorttitleasc},${sorttitledesc}" />
+<c:choose>
+<c:when test="${not empty sort && fn:contains(sort, 'dateasc')}">
+	<c:set var="firstsortoption" value="${sortdateasc}," />
+	<c:set var="sortoptions" value="${sortdatedesc},${sorttitleasc},${sorttitledesc}" />
+</c:when>
+<c:when test="${not empty sort && fn:contains(sort, 'datedesc')}">
+	<c:set var="firstsortoption" value="${sortdatedesc}," />
+	<c:set var="sortoptions" value="${sortdateasc},${sorttitleasc},${sorttitledesc}" />
+</c:when>
+<c:when test="${not empty sort && fn:contains(sort, 'titleasc')}">
+	<c:set var="firstsortoption" value="${sorttitleasc}," />
+	<c:set var="sortoptions" value="${sortdateasc},${sortdatedesc},${sorttitledesc}" />
+</c:when>
+<c:when test="${not empty sort && fn:contains(sort, 'titledesc')}">
+	<c:set var="firstsortoption" value="${sorttitledesc}," />
+	<c:set var="sortoptions" value="${sortdateasc},${sortdatedesc},${sorttitleasc}" />
+</c:when>
+</c:choose>
+<%-- ################################################################################################################# END Sortoption ######## --%>
 
 <c:set var="solrFilterQue"></c:set>
 <c:if test="${not empty filterqueries}">
@@ -64,8 +93,6 @@
 <c:set var="extraSolrParams">${solrCats}${solrFilterQue}</c:set>
 <c:set var="pageSize">100</c:set>
 <c:if test="${not empty count}"><c:set var="pageSize">${count}</c:set></c:if>
-<c:set var="sortOptionAsc">{ "label" : sortorder.asc, "paramvalue" : "asc", "solrvalue" : "newsdate_${cms.locale}_dt asc" }</c:set>
-<c:set var="sortOptionDesc">{ "label" : sortorder.desc, "paramvalue" : "desc", "solrvalue" : "newsdate_${cms.locale}_dt desc" }</c:set>
 
 
 
@@ -91,10 +118,8 @@
 	"pagenavlength" : 5,
 
 	"sortoptions" : [
-						{ "label" : sortorder.asc, "paramvalue" : "asc", "solrvalue" : "newsdate_${cms.locale}_dt asc" },
-						{ "label" : sortorder.desc, "paramvalue" : "desc", "solrvalue" : "newsdate_${cms.locale}_dt desc" },
-						{ "label" : sortorder.asc, "paramvalue" : "title_a", "solrvalue" : "disptitle_${cms.locale}_s asc" },
-						{ "label" : sortorder.desc, "paramvalue" : "title_d", "solrvalue" : "disptitle_${cms.locale}_s desc" }
+						${firstsortoption}
+						${sortoptions}
 					],
 
 	"fieldfacets" : [
@@ -128,7 +153,6 @@
 <%-- ############################################# --%>
 <%-- ####### Perform search based on JSON ######## --%>
 <%-- ############################################# --%>
-
 <cms:search configString="${searchConfig}" var="searchResultWrapper" addContentInfo="true" />
 
 <c:set var="search" value="${searchResultWrapper}" />
