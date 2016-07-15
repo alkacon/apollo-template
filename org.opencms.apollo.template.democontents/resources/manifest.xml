@@ -10,7 +10,7 @@
 		<nicename><![CDATA[Apollo Template Contents]]></nicename>
 		<group>Apollo Template</group>
 		<class/>
-		<import-script>writeProperty '/' 'Title' 'Demo Site'
+		<import-script><![CDATA[writeProperty '/' 'Title' 'Demo Site'
 writeProperty '/' 'Description' 'The OpenCms demo, brought to you by Alkacon Software.'
 writeProperty '/' 'NavText' 'Overview'
 writeProperty '/' 'template' '/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp'
@@ -38,7 +38,7 @@ addUserToRole 'Demo' 'WORKPLACE_USER'
 
 createUser 'Templator' 'password' 'Sample user with template development permissions'
 addUserToGroup 'Templator' 'Users'
-addUserToRole 'Templator' 'DEVELOPER'</import-script>
+addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 		<import-site>/sites/default/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[The OpenCms 10 Apollo template demo contents.]]></description>
@@ -4340,6 +4340,33 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo/.content/contacts</destination>
+			<type>folder</type>
+			<uuidstructure>1a35d156-49bd-11e6-b9a4-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 14 Jul 2016 12:18:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contacts/ci_00001.xml</source>
+			<destination>apollo-demo/.content/contacts/ci_00001.xml</destination>
+			<type>a-contact</type>
+			<uuidstructure>1a397ad8-49bd-11e6-b9a4-0242ac11002b</uuidstructure>
+			<uuidresource>1a397ad9-49bd-11e6-b9a4-0242ac11002b</uuidresource>
+			<datecreated>Thu, 14 Jul 2016 12:18:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[About: Contact Test]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/contentsections</destination>
 			<type>folder</type>
 			<uuidstructure>cb9592d5-5ad1-11e5-a17e-0242ac11002b</uuidstructure>
@@ -6927,7 +6954,7 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Events: Upcoming Events]]></value>
+					<value><![CDATA[Upcoming Events]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7296,6 +7323,16 @@ addUserToRole 'Templator' 'DEVELOPER'</import-script>
 					<value><![CDATA[Apollo Demo side second level navigation]]></value>
 				</property>
 			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/.content/shariffs</destination>
+			<type>folder</type>
+			<uuidstructure>1cdb3fa2-49ce-11e6-b9a4-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 14 Jul 2016 14:20:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>

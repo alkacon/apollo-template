@@ -5,7 +5,7 @@
     <Headline><![CDATA[YES]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>It's safe&nbsp;to update to OpenCms 10.5!</p>
+      <content><![CDATA[<p>It's safe&nbsp;to <span class="CmCaReT" style="display: none;">�</span>update to OpenCms 10.5!</p>
 <p><sup>As usual :)</sup></p>]]></content>
     </Text>
     <Image>

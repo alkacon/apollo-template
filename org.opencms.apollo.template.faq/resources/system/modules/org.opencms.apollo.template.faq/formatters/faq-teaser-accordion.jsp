@@ -16,7 +16,7 @@
         <div  class="panel-heading">
             <h4 class="panel-title">
                 <a
-                    class="accordion-toggle ${status.first? '':'collapsed'}"
+                    class="accordion-toggle ${cms.element.settings.index == 0 ? '':'collapsed'}"
                     data-toggle="collapse"
                     data-parent="#accordion-${accId}"
                     href="#collapse-${accId}-${cms.element.settings.index}">

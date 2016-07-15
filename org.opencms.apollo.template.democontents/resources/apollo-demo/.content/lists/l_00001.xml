@@ -7,7 +7,7 @@
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <SortOrder><![CDATA[desc]]></SortOrder>
+    <SortOrder><![CDATA[dateasc]]></SortOrder>
     <ItemsPerPage><![CDATA[4]]></ItemsPerPage>
   </ApolloList>
 </ApolloLists>

@@ -169,6 +169,11 @@
 			<properties/>
 		</file>
 		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
 			<source>system/workplace/resources/filetypes/a-disqus.png</source>
 			<destination>system/workplace/resources/filetypes/a-disqus.png</destination>
 			<type>image</type>
