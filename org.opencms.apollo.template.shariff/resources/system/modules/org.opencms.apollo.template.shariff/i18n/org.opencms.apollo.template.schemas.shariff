@@ -19,6 +19,14 @@
       <Value><![CDATA[Kreuzen Sie an, welche Social Media Buttons angezeigt werden sollen.]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[label.ApolloShariff.MailConfig]]></Key>
+      <Value><![CDATA[E-Mail Konfiguration]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariff.MailConfig.help]]></Key>
+      <Value><![CDATA[Zusätzliche Konfigurationseinstellungen für den E-Mail Service.]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.ApolloShariff.Theme]]></Key>
       <Value><![CDATA[Farbthema]]></Value>
     </Message>
@@ -33,6 +41,46 @@
     <Message>
       <Key><![CDATA[label.ApolloShariff.Orientation.help]]></Key>
       <Value><![CDATA[Wählen Sie die Ausrichtung der Social Media Buttons.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoice.Mail]]></Key>
+      <Value><![CDATA[E-Mail]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoice.Mail.help]]></Key>
+      <Value><![CDATA[Konfiguriert das Versenden einer E-Mail.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoice.FormLink]]></Key>
+      <Value><![CDATA[Link auf Kontaktseite]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoice.FormLink.help]]></Key>
+      <Value><![CDATA[Setzt einen Link auf eine Seite mit weiteren Kontaktoptionen.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoiceMail.MailTo]]></Key>
+      <Value><![CDATA[E-Mail Empfänger]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoiceMail.MailTo.help]]></Key>
+      <Value><![CDATA[Die E-Mail Adresse, an die die E-Mail verschickt werden soll.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoiceMail.Subject]]></Key>
+      <Value><![CDATA[Betreff]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoiceMail.Subject.help]]></Key>
+      <Value><![CDATA[Der optionale Betreff der E-Mail.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoiceMail.Body]]></Key>
+      <Value><![CDATA[E-Mail Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoiceMail.Body.help]]></Key>
+      <Value><![CDATA[Der optionale Text der E-Mail.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.shariff.theme.standard]]></Key>
@@ -53,6 +101,10 @@
     <Message>
       <Key><![CDATA[apollo.shariff.orientation.vertical]]></Key>
       <Value><![CDATA[Vertikal]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.shariff.service.mail]]></Key>
+      <Value><![CDATA[E-Mail (benötigt weitere Konfigurationseinstellungen)]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.shariff.message.new]]></Key>
@@ -81,6 +133,14 @@
       <Value><![CDATA[Choose which social media buttons should be shown.]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[label.ApolloShariff.MailConfig]]></Key>
+      <Value><![CDATA[Email configuration]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariff.MailConfig.help]]></Key>
+      <Value><![CDATA[Additional configuration options for the email service.]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.ApolloShariff.Theme]]></Key>
       <Value><![CDATA[Color theme]]></Value>
     </Message>
@@ -95,6 +155,46 @@
     <Message>
       <Key><![CDATA[label.ApolloShariff.Orientation.help]]></Key>
       <Value><![CDATA[Select the social media button orientation.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoice.Mail]]></Key>
+      <Value><![CDATA[Email]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoice.Mail.help]]></Key>
+      <Value><![CDATA[Configures an email to send.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoice.FormLink]]></Key>
+      <Value><![CDATA[Link to contact page]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoice.FormLink.help]]></Key>
+      <Value><![CDATA[Creates a link to a page with additional contact options.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoiceMail.MailTo]]></Key>
+      <Value><![CDATA[Email recipient]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoiceMail.MailTo.help]]></Key>
+      <Value><![CDATA[The email address of the recipient of the email.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoiceMail.Subject]]></Key>
+      <Value><![CDATA[Subject]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoiceMail.Subject.help]]></Key>
+      <Value><![CDATA[The optional email subject.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoiceMail.Body]]></Key>
+      <Value><![CDATA[Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloShariffMailConfigChoiceMail.Body.help]]></Key>
+      <Value><![CDATA[The optional email text.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.shariff.theme.standard]]></Key>
@@ -115,6 +215,10 @@
     <Message>
       <Key><![CDATA[apollo.shariff.orientation.vertical]]></Key>
       <Value><![CDATA[Vertical]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.shariff.service.mail]]></Key>
+      <Value><![CDATA[Email (requires additional configuration)]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.shariff.message.new]]></Key>
