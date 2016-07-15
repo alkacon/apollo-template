@@ -299,50 +299,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.shariff/schemas/nested</destination>
-			<type>folder</type>
-			<uuidstructure>e90134c5-4a78-11e6-b9a4-0242ac11002b</uuidstructure>
-			<datecreated>Fri, 15 Jul 2016 10:43:04 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.shariff/schemas/nested/mailconfigchoice.xsd</source>
-			<destination>system/modules/org.opencms.apollo.template.shariff/schemas/nested/mailconfigchoice.xsd</destination>
-			<type>plain</type>
-			<uuidstructure>f5ca5e77-4a78-11e6-b9a4-0242ac11002b</uuidstructure>
-			<uuidresource>f5ca5e78-4a78-11e6-b9a4-0242ac11002b</uuidresource>
-			<datecreated>Fri, 15 Jul 2016 10:43:26 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Nested XSD for email configuration options]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.shariff/schemas/nested/mailconfigchoicemail.xsd</source>
-			<destination>system/modules/org.opencms.apollo.template.shariff/schemas/nested/mailconfigchoicemail.xsd</destination>
-			<type>plain</type>
-			<uuidstructure>475e7699-4a79-11e6-b9a4-0242ac11002b</uuidstructure>
-			<uuidresource>475e769a-4a79-11e6-b9a4-0242ac11002b</uuidresource>
-			<datecreated>Fri, 15 Jul 2016 10:45:43 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Nested XSD for mailto settings]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>system/workplace</destination>
 			<type>folder</type>
 			<properties/>
