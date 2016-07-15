@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MacroFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/macro_formatter.xsd">
+  <MacroFormatter language="en">
+    <NiceName><![CDATA[Text only]]></NiceName>
+    <Type><![CDATA[a-section]]></Type>
+    <Rank><![CDATA[5800]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[element]]></ContainerType>
+        <ContainerType><![CDATA[section]]></ContainerType>
+      </Types>
+    </Match>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>false</Detail>
+    <Display>false</Display>
+    <Macro><![CDATA[<div class="ap-sec %(settings.wrapperclass)">
+  %(text)
+</div>]]></Macro>
+    <Formatters>
+      <Formatter>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-text.xml]]></target>
+          <uuid>fcab1d1e-eb7d-11e5-854f-0242ac11002b</uuid>
+        </link>
+      </Formatter>
+      <MacroName><![CDATA[text]]></MacroName>
+    </Formatters>
+    <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
+    </Setting>
+  </MacroFormatter>
+</MacroFormatters>
