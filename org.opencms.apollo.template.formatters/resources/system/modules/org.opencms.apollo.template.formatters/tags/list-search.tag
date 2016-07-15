@@ -153,7 +153,6 @@
 <%-- ############################################# --%>
 <%-- ####### Perform search based on JSON ######## --%>
 <%-- ############################################# --%>
-<div style="display:none">TRARA: ${searchConfig}</div>
 <cms:search configString="${searchConfig}" var="searchResultWrapper" addContentInfo="true" />
 
 <c:set var="search" value="${searchResultWrapper}" />
