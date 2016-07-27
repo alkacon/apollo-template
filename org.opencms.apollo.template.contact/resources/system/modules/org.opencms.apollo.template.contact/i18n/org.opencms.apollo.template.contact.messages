@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
+  <Bundle language="en">
+    <Message>
+      <Key><![CDATA[title.a-contact]]></Key>
+      <Value><![CDATA[Contact Information]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-contact]]></Key>
+      <Value><![CDATA[Shows detailed information of a contact person / company.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-contact]]></Key>
+      <Value><![CDATA[Contact Information]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[title.a-contact]]></Key>
+      <Value><![CDATA[Kontakt Information]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-contact]]></Key>
+      <Value><![CDATA[zeigt detaillierte Informationen einer Kontaktperson / Firma an.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-contact]]></Key>
+      <Value><![CDATA[Kontakt Information]]></Value>
+    </Message>
+  </Bundle>
+</XmlVfsBundles>

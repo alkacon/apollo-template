@@ -1,0 +1,29 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+
+	<xsd:element name="ApolloContactDatas" type="OpenCmsApolloContactDatas"/>
+
+	<xsd:complexType name="OpenCmsApolloContactDatas">
+		<xsd:sequence>
+			<xsd:element name="ApolloContactData" type="OpenCmsApolloContactData" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsApolloContactData">
+		<xsd:sequence>
+			<xsd:element name="Address" type="OpenCmsHtml"  minOccurs="0"/>
+			<xsd:element name="Phone" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Mobile" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Fax" type= "OpenCmsString" minOccurs="0" />
+			<xsd:element name="EMail" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="OpenEMail" type="OpenCmsBoolean" minOccurs="0" />
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:appinfo>
+		</xsd:appinfo>
+	</xsd:annotation>  
+</xsd:schema>
