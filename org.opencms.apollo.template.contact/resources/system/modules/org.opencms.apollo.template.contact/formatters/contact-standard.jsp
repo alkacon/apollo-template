@@ -92,9 +92,9 @@ public String obfuscateContactEmail(String email) {
                         </div>
                     </c:if>
                     
-                    <c:if test="${value.Organisation.isSet}"><div class="ap-contact-organisation">${value.Organisation}</div></c:if>
-                    <c:if test="${value.Position.isSet}"><div class="ap-contact-position">${value.Position}</div></c:if>
-                    <c:if test="${value.Description.isSet}"><div class="ap-contact-description">${value.Description}</div></c:if>
+                    <c:if test="${value.Organisation.isSet}"><div class="ap-contact-organisation" ${rdfa.Organisation}>${value.Organisation}</div></c:if>
+                    <c:if test="${value.Position.isSet}"><div class="ap-contact-position" ${rdfa.Position}>${value.Position}</div></c:if>
+                    <c:if test="${value.Description.isSet}"><div class="ap-contact-description" ${rdfa.Description}>${value.Description}</div></c:if>
                     
                     
                     <c:if test="${value.Contact.isSet}">
@@ -107,13 +107,13 @@ public String obfuscateContactEmail(String email) {
                             </c:if> 
                         
                             <c:if test="${value.Contact.value.Phone.isSet}"> 
-                                <div class="ap-contact-phone"><fmt:message key="apollo.contact.phone"/></div><div class="ap-contact-phone-value"><a href="tel:${fn:replace(value.Contact.value.Phone, ' ','')}">${value.Contact.value.Phone}</a></div>
+                                <div class="ap-contact-phone"><fmt:message key="apollo.contact.phone"/></div><div class="ap-contact-phone-value"><a href="tel:${fn:replace(value.Contact.value.Phone, ' ','')}" ${value.Contact.rdfa.Phone}>${value.Contact.value.Phone}</a></div>
                             </c:if>
                             <c:if test="${value.Contact.value.Mobile.isSet}">
-                                <div class="ap-contact-mobile"><fmt:message key="apollo.contact.mobile"/></div><div class="ap-contact-mobile-value"><a href="tel:${fn:replace(value.Contact.value.Mobile, ' ','')}">${value.Contact.value.Mobile}</a></div>
+                                <div class="ap-contact-mobile"><fmt:message key="apollo.contact.mobile"/></div><div class="ap-contact-mobile-value"><a href="tel:${fn:replace(value.Contact.value.Mobile, ' ','')}" ${value.Contact.rdfa.Mobile}>${value.Contact.value.Mobile}</a></div>
                             </c:if>
                             <c:if test="${value.Contact.value.Fax.isSet}">
-                                <div class="ap-contact-fax"><fmt:message key="apollo.contact.fax"/></div><div class="ap-contact-fax-value">${value.Contact.value.Fax}</div>
+                                <div class="ap-contact-fax"><fmt:message key="apollo.contact.fax"/></div><div class="ap-contact-fax-value" ${value.Contact.rdfa.Fax}>${value.Contact.value.Fax}</div>
                             </c:if> 
                         </div>
                     </c:if>
