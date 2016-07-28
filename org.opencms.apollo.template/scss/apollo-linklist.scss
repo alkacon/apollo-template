@@ -19,3 +19,38 @@
 .ap-linklist li a span {
 	margin-right: 8px; 
 }
+
+// header formatted links
+
+.ap-linklist-header .links {
+    padding: 8px 0 0 0;
+    position: relative;
+    z-index: 12;
+}
+
+.ap-linklist-header .links ul {
+    margin: 0;
+}
+
+.ap-linklist-header .links ul li {
+	display: inline;
+    list-style: outside none none;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.ap-linklist-header .links ul li.divider {
+    border-right: 1px solid $grey;
+    font-family: Tahoma;
+    font-size: 8px;
+    margin: 0 9px 0 5px;
+    padding: 0;
+    position: relative;
+    top: -1px;
+}
+
+.ap-linklist-header .links ul li > a, .ap-linklist-header .links ul li > a:hover {
+    color: $grey-dark;
+    font-size: 11px;
+    text-transform: uppercase;
+}
