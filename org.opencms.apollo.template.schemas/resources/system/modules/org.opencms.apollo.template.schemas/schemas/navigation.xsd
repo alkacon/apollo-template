@@ -15,6 +15,7 @@
 			<xsd:element name="Title" type="OpenCmsString" />
 			<xsd:element name="NavStartLevel" type="OpenCmsString" />
 			<xsd:element name="LogoImage" type="OpenCmsVfsFile" />
+            <xsd:element name="LogoFullWidth" type="OpenCmsBoolean" />
 			<xsd:element name="LogoLink" type="OpenCmsVarLink" />
 			<xsd:element name="Header" type="OpenCmsHtml" />
 		</xsd:sequence>
@@ -45,7 +46,8 @@
 			<searchsettings containerPageOnly="true">
 				<searchsetting element="Title" searchcontent="false"/>
 				<searchsetting element="NavStartLevel" searchcontent="false"/>
-				<searchsetting element="LogoLink" searchcontent="false"/>
+				<searchsetting element="LogoFullWidth" searchcontent="false"/>
+                <searchsetting element="LogoLink" searchcontent="false"/>
 				<searchsetting element="Header" searchcontent="false"/>
 			</searchsettings>
 		</xsd:appinfo>

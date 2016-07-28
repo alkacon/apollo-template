@@ -7,24 +7,29 @@
 	<div>
 		<div class="header">
 
-			<div class="container">
-				<c:if test="${not value.Header.isEmpty}">
-					<!--=== Top ===-->
-					<div class="topbar">${value.Header}</div>
-					<!--/top-->
-					<!--=== End Top ===-->
-				</c:if>
-
-			</div>
-			<div class="container">
+			<c:if test="${not value.Header.isEmpty}">
+                <div class="container">
+                    <div class="topbar">${value.Header}</div>
+                </div>
+            </c:if>
+			<div class="container <c:if test="${value.LogoFullWidth == 'true'}">ap-container-fullwidth</c:if>">
 
 				<c:set var="logoPath">${value.LogoImage}</c:set>
-				<c:set var="logoSizes"><cms:property name="image.size" file="${logoPath}" default="170x42" /></c:set>
-				
-				<c:if test="${not empty logoPath}"><c:set var="backgroundLogo">background-image:url('<cms:link>${logoPath}</cms:link>');</c:set></c:if>	
-				<c:if test="${not empty value.LogoLink}"><c:set var="logoLink"><cms:link>${value.LogoLink}</cms:link></c:set></c:if>	
-				<a class="logo apollo-logo" href="${logoLink}" style="width: ${fn:substringAfter(fn:substringBefore(logoSizes,','), 'w:')}px;height: ${fn:substringAfter(logoSizes,'h:')}px;${backgroundLogo}"></a>
-				
+
+                <c:choose>
+                    <c:when test="${value.LogoFullWidth == 'true'}">
+                        <c:if test="${not empty value.LogoLink}"><a class="ap-logo-fullwidth" href="<cms:link>${value.LogoLink}</cms:link>"></c:if>
+                            <img src="<cms:link>${logoPath}</cms:link>" alt="" class="img-responsive" />
+                        <c:if test="${not empty value.LogoLink}"></a></c:if>
+                    </c:when>
+                    <c:otherwise>
+                        <c:set var="logoSizes"><cms:property name="image.size" file="${logoPath}" default="170x42" /></c:set>
+                        <c:if test="${not empty logoPath}"><c:set var="backgroundLogo">background-image:url('<cms:link>${logoPath}</cms:link>');</c:set></c:if>	
+                        <c:if test="${not empty value.LogoLink}"><c:set var="logoLink"><cms:link>${value.LogoLink}</cms:link></c:set></c:if>
+                        <a class="ap-logo" href="${logoLink}" style="width: ${fn:substringAfter(fn:substringBefore(logoSizes,','), 'w:')}px;height: ${fn:substringAfter(logoSizes,'h:')}px;${backgroundLogo}"></a>
+                    </c:otherwise>
+                </c:choose>
+
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target=".navbar-responsive-collapse">
 					<span class="sr-only">Toggle navigation</span> <span
