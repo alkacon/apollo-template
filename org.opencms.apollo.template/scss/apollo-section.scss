@@ -90,6 +90,53 @@ a.ap-img-link {
     margin: 0;
 }
 
+// Section as image link box
+
+.ap-sec-imagebox {
+    overflow: hidden;
+    position: relative;
+}
+
+.ap-sec-imagebox .ap-sec-imagebox-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 15px 10px 0;
+    opacity: 0.7;
+    padding: 4px 8px;
+    z-index: 5;
+}
+
+.ap-sec-imagebox .ap-img .info .copyright {
+    position: absolute;
+    bottom: 10px;
+    right: 2px;
+}
+
+.ap-sec-imagebox .ap-sec-imagebox-title {
+    margin-right: 26px;
+    text-transform: uppercase;
+}
+
+.ap-sec-imagebox .ap-sec-imagebox-icon {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    background-color: $white;
+    padding: 0 3px 3px;
+    border: 1px solid $grey;
+    box-shadow: 0 3px 5px $grey-dark;
+}
+
+.ap-sec-imagebox .ap-sec-imagebox-text {
+    margin-top: 20px;
+}
+
+.ap-sec-imagebox-title, .ap-sec-imagebox-icon, .ap-sec-imagebox-text, .ap-sec-imagebox .ap-img .info .copyright {
+	color: $grey;
+}
+
 // thumbnails
 
 a.thumbnail {
