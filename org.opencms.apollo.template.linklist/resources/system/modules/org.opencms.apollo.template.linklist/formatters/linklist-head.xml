@@ -13,7 +13,7 @@
     <Rank><![CDATA[600]]></Rank>
     <Match>
       <Types>
-        <ContainerType><![CDATA[row]]></ContainerType>
+        <ContainerType><![CDATA[head]]></ContainerType>
         <ContainerType><![CDATA[navigation]]></ContainerType>
       </Types>
     </Match>
