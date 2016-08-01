@@ -185,7 +185,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link list head]]></value>
+					<value><![CDATA[Link list head / foot]]></value>
 				</property>
 				<property>
 					<name>locale</name>

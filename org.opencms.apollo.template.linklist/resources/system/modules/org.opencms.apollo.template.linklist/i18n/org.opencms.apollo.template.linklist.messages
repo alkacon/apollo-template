@@ -14,6 +14,22 @@
       <Key><![CDATA[fileicon.a-linklist]]></Key>
       <Value><![CDATA[Link list]]></Value>
     </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.linkalign]]></Key>
+      <Value><![CDATA[List alignment]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.linkalign.description]]></Key>
+      <Value><![CDATA[Select if the links should be aligned left or right.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.linkalign.left]]></Key>
+      <Value><![CDATA[Left]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.linkalign.right]]></Key>
+      <Value><![CDATA[Right]]></Value>
+    </Message>
   </Bundle>
   <Bundle language="de">
     <Message>
@@ -27,6 +43,22 @@
     <Message>
       <Key><![CDATA[fileicon.a-linklist]]></Key>
       <Value><![CDATA[Link Liste]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.linkalign]]></Key>
+      <Value><![CDATA[Ausrichtung]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.linkalign.description]]></Key>
+      <Value><![CDATA[Legt fest, ob die Link Liste links oder rechts ausgerichtet wird.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.linkalign.left]]></Key>
+      <Value><![CDATA[Links]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.linkalign.right]]></Key>
+      <Value><![CDATA[Rechts]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

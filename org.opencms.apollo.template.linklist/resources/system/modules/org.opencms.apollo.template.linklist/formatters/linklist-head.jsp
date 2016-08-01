@@ -9,7 +9,7 @@
 <cms:bundle basename="org.opencms.apollo.template.schemas.linklist">
 
 <cms:formatter var="content" val="value" rdfa="rdfa">
-	<div class="ap-linklist-header ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "" }">
+	<div class="ap-linklist-hf ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "" }">
 
 		<%-- ####### Init messages wrapper ################################## --%>
 		<c:set var="textnew"><fmt:message key="apollo.linklist.message.new" /></c:set>
@@ -17,19 +17,17 @@
 
         <div class="container">
             <div class="links">
-                <ul class="pull-right">
+                <ul class="pull-${cms.element.setting.linkalign}">
                 <c:forEach var="link" items="${content.valueList.LinkEntry}" varStatus="status">
                     <li><apollo:link link="${link}">${link.value.Text}</apollo:link></li>
                     <c:if test="${not status.last}">
                         <li class="divider"></li>
                     </c:if>
                 </c:forEach>
-                
-                <li>
                 </ul>
             </div>
         </div>
-        
+
 		</apollo:init-messages>
 	</div>	
 </cms:formatter>
