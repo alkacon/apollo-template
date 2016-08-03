@@ -27,7 +27,7 @@
 			<div class="paginationWrapper pagination col-xs-12" data-dynamic="true">
 				<c:set var="pages">${search.numPages}</c:set>
 				<button
-					class="loadMore btn ap-btn-${buttonColor} col-xs-12 mt-5 mb-20 ${pagination.state.currentPage >= search.numPages ? ' disabled' : ''}"
+					class="loadMore btn ap-btn-${buttonColor} animated col-xs-12 mt-5 mb-20 ${pagination.state.currentPage >= search.numPages ? ' disabled' : ''}"
 					aria-label='${arialabel}'
 					data-load="${search.stateParameters.setPage[next]}"
 					onclick="appendInnerList($(this).attr('data-load'), $(this).parents().find('.ap-list-content'));">

@@ -37,8 +37,10 @@
 	<div class="entrylist_box"></div>
 	<div class="pagination_box"></div>
 	
-	<div class="spinner mv-20" style="display: none; position: initial; transform: none;">
-		<i class="fa fa-spinner"></i>
+	<div class="col-xs-12">
+		<div class="spinner animated mv-20" style="display: none; position: initial; transform: none;">
+			<div class="spinnerInnerBox"><i class="fa fa-spinner"></i></div>
+		</div>
 	</div>
 	
 	<%-- ####### Create and edit new entries if empty result ######## --%>
