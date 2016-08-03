@@ -79,13 +79,28 @@ $screen-lg-min: 1200px;
     position: absolute;
     transform: translateY(-50%);
     &, a &  {
-        color: $gray;
+        color: $white;
     }
     
     left: 50%;
     i{
         animation: spinner 1s infinite;
     }
+}
+
+.spinnerInnerBox {
+    position: relative;
+    left: -150%;
+    background-color: black;
+    width: 300%;
+    padding: 100%;
+    border-radius: 12px;
+    line-height: 0;
+    opacity: 0.65;
+}
+
+.spinnerBottom {
+    bottom: 80px;
 }
 
 /* Social color helpers.

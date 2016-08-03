@@ -144,6 +144,9 @@ function openPhotoSwipeGallery(index) {
 function loadImages(page) {	
 	$('#more').removeClass('fadeIn').addClass('fadeOut');
 	$('.spinner').removeClass('bounceOut').addClass('bounceIn');
+	if(page > 1){
+		$('.spinner').addClass('spinnerBottom');
+	}
 
 	$.get($("#galleryData").data("ajax") + "?items=" + $('#galleryData').data('count') + "&page=" 
 			+ page + "&path=\"" + $("#galleryData").data("path") + "\"&title=" 
