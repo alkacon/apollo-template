@@ -15,6 +15,7 @@ function reloadInnerList(searchStateParameters, elem) {
 		if(typeof elem === 'undefined'){
 			elem = $('.ap-list-content').first();
 		}
+		elem.find('.spinner').addClass("bounceIn");
 		elem.find('.spinner').show();
 		elem.find(".entrylist_box").empty();
 		elem.find(".pagination_box").empty();
@@ -40,7 +41,9 @@ function reloadInnerList(searchStateParameters, elem) {
 function appendInnerList(searchStateParameters, elem) {
 	if(typeof list_lock[elem.attr("id")] === "undefined" || !list_lock[elem.attr("id")]){
 		list_lock[elem.attr("id")] = true;
+		elem.find('.spinner').addClass("bounceIn");
 		elem.find('.spinner').show();
+		elem.find('.loadMore').addClass("fadeOut");
 		console.log("append");
 		$.get(buildAjaxLink(elem) + "&hideOptions=true&".concat(searchStateParameters),
 				function(resultList) {
