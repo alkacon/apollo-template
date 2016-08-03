@@ -28,6 +28,20 @@
 			]]></JavascriptInline>
     </HeadIncludeJs>
     <Setting>
+      <PropertyName><![CDATA[showTitle]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showtitle)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showtitle.description)]]></Description>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[autoload]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.autoload)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.autoload.description)]]></Description>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[imagesPerPage]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.imagesperpage)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.imagesperpage.description)]]></Description>
@@ -36,13 +50,6 @@
       <RuleRegex><![CDATA[[0-9]+]]></RuleRegex>
       <RuleType><![CDATA[error]]></RuleType>
       <Error><![CDATA[%(key.apollo.setting.imagesperpage.error)]]></Error>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[showTitle]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showtitle)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.showtitle.description)]]></Description>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[cssClass]]></PropertyName>

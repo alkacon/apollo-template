@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo"%>
 
 <cms:secureparams />
 <fmt:setLocale value="${cms.locale}" />
@@ -44,8 +45,7 @@
 				</c:when>
 				<%-- ####### Show small image in place of calendar ######## --%>
 				<c:when test="${showImageSmall}">
-					<c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
-					<%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
+					<apollo:copyright text="${paragraph.value.Image.value.Copyright}" />
 
 					<c:out value="${imgDivStart}" escapeXml="false" />
 
@@ -63,8 +63,7 @@
 		<div class="col-xs-12 col-sm-${isCompactForm ? '12' : '9'} col-lg-${isCompactForm ? '12' : '10'}">
 
 			<c:if test="${showImageBig}">
-				<c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
-				<%@include file="%(link.strong:/system/modules/org.opencms.apollo.template.formatters/elements/copyright.jsp:fd92c207-89fe-11e5-a24e-0242ac11002b)" %>
+				<apollo:copyright text="${paragraph.value.Image.value.Copyright}" />
 
 				<c:out value="${imgDivStart}" escapeXml="false" />
 
