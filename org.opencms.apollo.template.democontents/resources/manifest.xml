@@ -7500,7 +7500,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Upcoming Events]]></value>
+					<value><![CDATA[Events: Upcoming Events]]></value>
 				</property>
 			</properties>
 			<relations/>
