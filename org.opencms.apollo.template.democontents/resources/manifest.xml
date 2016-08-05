@@ -7981,7 +7981,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10 Promo Slider  ]]></value>
+					<value><![CDATA[Home: OpenCms 10 Promo Slider  ]]></value>
 				</property>
 			</properties>
 			<relations/>
