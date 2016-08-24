@@ -2,74 +2,71 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Release Notes for OpenCms 10 Alpha 2]]></Headline>
+    <Headline><![CDATA[Release Notes for OpenCms 10]]></Headline>
     <Text name="Text0">
       <links>
         <link name="link0" internal="false" type="A">
-          <target><![CDATA[https://github.com/alkacon/opencms-core]]></target>
+          <target><![CDATA[http://www.alkacon.com/contact/]]></target>
         </link>
         <link name="link1" internal="false" type="A">
-          <target><![CDATA[https://github.com/alkacon/opencms-core/pulls]]></target>
+          <target><![CDATA[https://github.com/alkacon/opencms-core]]></target>
         </link>
         <link name="link2" internal="false" type="A">
+          <target><![CDATA[https://github.com/alkacon/opencms-core/pulls]]></target>
+        </link>
+        <link name="link3" internal="false" type="A">
           <target><![CDATA[https://github.com/alkacon/opencms-core/issues]]></target>
           <query><![CDATA[state=open]]></query>
         </link>
       </links>
-      <content><![CDATA[<p>Dezember&nbsp;9, 2015: OpenCms 10 Alpha 2 is available! Try&nbsp;out the forthcoming new features of OpenCms 10 with&nbsp;this second alpha release.</p>
-<p><span class="label label-danger">Please note</span>&nbsp;This alpha&nbsp;version&nbsp;is not feature complete! Some important functionalities are still missing, these will be added in the next beta release. We do not recommend to use this version&nbsp;in productive OpenCms environments.</p>
+      <content><![CDATA[<p>March 23, 2016: OpenCms 10 - X marks the spot. Being the greatest OpenCms update for years, version 10 brings a vastly improved user experience that combines the intuitive "Direct Edit" approach of OpenCms with a new, well integrated Lauchpad app center. OpenCms 10 also ships with the new, responsive Apollo Template. Based on Bootstrap, the Apollo Template is fully customizable without coding.</p>
 <h2>New in OpenCms 10</h2>
 <ul>
-<li><span class="label label-warning">#</span>&nbsp;Modernized the look &amp; feel of the&nbsp;overall&nbsp;user interface&nbsp;</li>
-<li><span class="label label-warning">#</span>&nbsp;Introduced the&nbsp;Launchpad as&nbsp;the central starting place for the user</li>
-<li><span class="label label-warning">#</span>&nbsp;New&nbsp;file explorer with support for column sorting, filtering and large folders</li>
-<li><span class="label label-warning">#</span>&nbsp;Developers can now export and import modules through a SMB network share</li>
-<li><span class="label label-warning">#</span>&nbsp;New Git App allows committing of module content directly from the workplace</li>
-<li><span class="label label-warning">#</span>&nbsp;New &lt;cms:search&gt; tag combines SOLR based&nbsp;resource collection and full text searches</li>
-<li><span class="label label-warning">#</span>&nbsp;Drag and Drop of images directly in the page editor</li>
-<li><span class="label label-warning">#</span>&nbsp;Copy groups allow creation of boiler plate layouts with text /&nbsp;images</li>
-<li><span class="label label-warning">#</span>&nbsp;Reuse groups allow reusing nested&nbsp;container structures&nbsp;on several pages&nbsp;</li>
-<li>Users are identified with an identicon in the toolbar</li>
-<li>Improved the template editor with support for&nbsp;inherited and disabled templates</li>
-<li>New &lt;cms:edit&gt; tag allows editing of arbitary resources based on UID</li>
-<li>Added a reset password option to the login dialog</li>
+<li><span class="label label-warning">#</span> Modernized the look &amp; feel of the overall user interface</li>
+<li><span class="label label-warning">#</span> New ready-to-use responsive Apollo Template based on Bootstrap</li>
+<li><span class="label label-warning">#</span> Introduced the Launchpad as the central app starting place for the user</li>
+<li><span class="label label-warning">#</span> Drag and Drop of images directly in the web page editor</li>
+<li><span class="label label-warning">#</span> New file explorer with support for column sorting, filtering and large folders</li>
+<li><span class="label label-warning">#</span> Developers can now export and import modules through a SMB network share</li>
+<li><span class="label label-warning">#</span> New Git app allows pushing and pulling of module content directly from the workplace</li>
+<li><span class="label label-warning">#</span> New &lt;cms:search&gt; tag combines SOLR based resource collection and full text searches</li>
+<li><span class="label label-warning">#</span> New &lt;cms:display&gt; tag generates the output for a single resource with a selected formatter</li>
+<li><span class="label label-warning">#</span> New &lt;cms:edit&gt; tag allows editing of arbitrary resources based on UID</li>
+<li><span class="label label-warning">#</span> Reuse groups allow reusing nested container structures on several pages</li>
+<li><span class="label label-warning">#</span> Copy groups allow creation of boiler plate layouts with text / images</li>
+<li>Users are identified with an identicon or a personal image in the toolbar</li>
+<li>Improved the template editor with support for inherited and disabled templates</li>
+<li>Added a "reset password" option to the login dialog</li>
 <li>Nested container structures can now be copied using the clipboard</li>
-<li>Support for local configuration change sets based on XSLT&nbsp;</li>
-<li>Modules can be exported with a reduced manifest.xml to avoid merge conflicts</li>
-<li>Optimized resources types, formatters and views in the demo template application</li>
-<li>Updated the responsive demo template based on Bootstrap</li>
+<li>Macro formatters allow to quickly compose new formatters from existing JSP</li>
+<li>Support for system configuration change sets based on XSLT</li>
+<li>Modules are exported with a reduced manifest.xml to avoid merge conflicts</li>
 </ul>
 <p>Items marked with <span class="label label-warning">#</span> are considered important improvements in this version.</p>
-<h2>Improved in OpenCms 10 Alpha 2 over Alpha 1</h2>
+<h2>Improved in OpenCms 10 Final over 10 Beta</h2>
 <ul>
-<li>Copy or move resources with drag and drop in the new explorer.</li>
-<li>Upload files with drag and drop from the local desktop to the new explorer.</li>
-<li>Quick navigation with keyboard shortcuts in the new explorer.</li>
-<li>Added create resource dialog to new explorer.</li>
-<li>Added change resource type dialog to new explorer.</li>
-<li>Added lock/unlock/steal lock dialog to new explorer.</li>
-<li>Added copy to project dialog to new explorer.</li>
-<li>Added publish scheduled dialog to new explorer.</li>
-<li>Added restore deleted dialog to new explorer.</li>
-<li>Added secure/export dialog to new explorer.</li>
-<li>Added resource info dialog to new explorer.</li>
-<li>Added assign categories dialog to new explorer.</li>
-<li>Added gallery dialog to new explorer.</li>
-<li>Added project select dialog to new explorer.</li>
-<li>Nicer default error page used for 404 and 500 server errors.</li>
-<li>Separated several old workplace dialog classes from the core.</li>
-<li>Support for static resource loading from classpath.</li>
-<li>Merged all GWT based modules into a single one to improve page load time.</li>
-<li>Improved workplace error dialog.</li>
-<li>Fixed security issue advisory ID SYSS-2015-063 with XSS in displayresource.jsp.</li>
-<li>Fixed security issue related to commons collections library.</li>
+<li>Added user info dialog and quick launch menu to Page and Sitemap editor toolbar</li>
+<li>Added editor to allow individual customization of the quick launch menu</li>
+<li>Added option to upload a personal image in the user info dialog</li>
+<li>Improved workplace dialog key bindings with 'Enter' and 'Esc' shortcuts</li>
+<li>Improved binary and image file indexing for all configured locales</li>
+<li>Improved error dialog in direct edit view with "Copy to clipboard" function</li>
+<li>Improved site selector paging in the Explorer</li>
+<li>Improved copy/move dialog to preset target folder to current folder</li>
+<li>Fixed issue with role checks and permission for the new workplace apps</li>
+<li>Fixed issue with visibility check in explorer context menu in case of multi selects</li>
+<li>Fixed issue in permission dialog where it was not possible to add role based entries</li>
+<li>Fixed issue in permission dialog where inherited entries where not displayed correctly</li>
+<li>Fixed issue with "Create new" dialog where resources where created to early</li>
+<li>Fixed issue in the Page editor where elements where wrongly marked as new</li>
+<li>Fixed issue with invisible scroll bars in select boxes on Mac OS</li>
 </ul>
 <h2>General OpenCms features</h2>
 <ul>
-<li>The page editor allows WYSIWYG&nbsp;inline editing of web pages&nbsp;and arrangement of content by drag &amp; drop.</li>
+<li>The page editor allows WYSIWYG inline editing of web pages and arrangement of content by drag &amp; drop.</li>
 <li>The form based editor allows editing of structured content in a well defined form mask.</li>
 <li>The sitemap editor allows to create new pages and re-arrange the navigation tree by drag &amp; drop.</li>
-<li>Responsive demo&nbsp;template based on Bootstrap 3.</li>
+<li>Responsive demo template based on Bootstrap 3.</li>
 <li>Content creation for mobile devices with preview and device specific content control.</li>
 <li>Structured contents can be defined using a simple XML schema.</li>
 <li>Easy to use "Online / Offline" workflow, changes must be approved before they become visible.</li>
@@ -89,19 +86,19 @@
 <li>... and many more</li>
 </ul>
 <h3>Backward compatibility</h3>
-<p>OpenCms 10.0.0 Alpha 2&nbsp;is fully backward compatible with all 9.x versions. Templates and other OpenCms developed code from these versions should work "out of the box" with version 10.0.0 Alpha 2.</p>
-<p><span class="label label-danger">Notice for users of Alkacon OCEE</span>&nbsp;OpenCms&nbsp;10.0.0 Alpha 2 will not work with current versions of Alkacon OCEE. There will be an updated OCEE available for the final release of OpenCms 10. The&nbsp;update will be free for Alkacon customers with a valid OCEE update subscription.</p>
+<p>OpenCms 10.0.0 is fully backward compatible with all 9.0 and 9.5 versions. Templates and other OpenCms developed code from these versions should work "out of the box" with version 10.0.0.</p>
+<p><span class="label label-danger">Notice for users of Alkacon OCEE</span> Users of Alkacon OCEE require a new OCEE version for OpenCms 10. The update is free for Alkacon customers with a valid OCEE update subscription. <a href="%(link0)" target="_blank">Please contact Alkacon </a>to receive the new version.</p>
 <h3>Compatibility with Java versions, servlet containers and databases</h3>
-<p>OpenCms&nbsp;10.0.0 Alpha 2 has been written and tested for Java 8&nbsp;and Java 7. We have tested with ORACLEs JDK as well as OpenJDK. OpenCms should run with all compliant JVMs.</p>
-<p>We have tested this release on the Tomcat servlet engine. OpenCms works "out of the box" with Tomcat 8, which we recommend. Others have reported deploying OpenCms successfully on other servlet containers like JBoss, BEA, Websphere, Glassfish and Resin Professional.</p>
-<p>On the database side, we have tested with MySQL, Oracle, PostgreSQL, MS SQL Server, DB2 and HSQLDB.</p>
+<p>OpenCms 10.0.0 has been written and tested for Java 8 and Java 7. We have tested with ORACLEs JDK as well as OpenJDK. OpenCms should run with all compliant JVMs.</p>
+<p>We have tested this release on the Tomcat servlet engine. OpenCms works "out of the box" with Tomcat 8&nbsp;or 7, which we recommend. Others have reported deploying OpenCms successfully on other servlet containers like JBoss, WildFly, WebLogic, WebSphere, GlassFish and Resin.</p>
+<p>On the database side, we have tested with MySQL, MariaDB, Oracle, PostgreSQL, MS SQL Server, DB2 and HSQLDB.</p>
 <h3>Regarding version numbers and build tags</h3>
-<p>The main OpenCms Git repository is available on Github at <a href="%(link0)" target="_blank">github.com/alkacon/opencms-core</a>.</p>
-<p>In case you want to get the most current OpenCms&nbsp;10 development sources from Git, please check out <span class="label label-info">branch_10_0_x</span>. The&nbsp;10.0.0 Alpha 2 release is tagged <span class="label label-info">build_10_0_0_alpha_2</span>.</p>
+<p>The main OpenCms Git repository is available on Github at <a href="%(link1)" target="_blank">github.com/alkacon/opencms-core</a>.</p>
+<p>In case you want to get the most current OpenCms 10.0.0 sources from Git, please check out <span class="label label-info">branch_10_0_x</span>. The 10.0.0 release is tagged <span class="label label-info">build_10_0_0</span>.</p>
 <h3>How you can help</h3>
-<p>Contributions to the OpenCms core development are most welcome. <a href="%(link1)" target="_blank">Please send us your pull requests directly on GitHub.</a></p>
-<p>Please report issues found in OpenCms using <a href="%(link2)" target="_blank">our GitHub issue tracker</a>.</p>
-<p>Thank you for using OpenCms and have fun with OpenCms&nbsp;10 :-)</p>]]></content>
+<p>Contributions to the OpenCms core development are most welcome. <a href="%(link2)" target="_blank">Please send us your pull requests directly on GitHub.</a></p>
+<p>Please report issues found in OpenCms using <a href="%(link3)" target="_blank">our GitHub issue tracker</a>.</p>
+<p>Thank you for using OpenCms and have fun with OpenCms 10 :-)</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

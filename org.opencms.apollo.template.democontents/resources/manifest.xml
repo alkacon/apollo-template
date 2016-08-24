@@ -5107,7 +5107,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms inline has all the features]]></value>
+					<value><![CDATA[OpenCms has all the features]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10091,57 +10091,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<source>release/.content/contentsections/cs_00016.xml</source>
 			<destination>release/.content/contentsections/cs_00016.xml</destination>
 			<type>a-section</type>
-			<uuidstructure>fea6eab6-6291-11e5-bcba-0242ac11002b</uuidstructure>
-			<uuidresource>fea6eab7-6291-11e5-bcba-0242ac11002b</uuidresource>
-			<datecreated>Thu, 24 Sep 2015 07:58:08 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[OpenCms 10 Alpha 1: Release Notes for OpenCms 10 Alpha 1]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>release/.content/contentsections/cs_00017.xml</source>
-			<destination>release/.content/contentsections/cs_00017.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>fea99918-9e5e-11e5-8382-0242ac11002b</uuidstructure>
-			<uuidresource>fea99919-9e5e-11e5-8382-0242ac11002b</uuidresource>
-			<datecreated>Wed, 09 Dec 2015 10:24:14 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[OpenCms 10 Alpha 2: Release Notes for OpenCms 10 Alpha 2]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>release/.content/contentsections/cs_00018.xml</source>
-			<destination>release/.content/contentsections/cs_00018.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>37a67753-da3b-11e5-a941-0242ac11002b</uuidstructure>
-			<uuidresource>37a67754-da3b-11e5-a941-0242ac11002b</uuidresource>
-			<datecreated>Tue, 23 Feb 2016 14:39:17 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[OpenCms 10 Beta: Release Notes for OpenCms 10 Beta]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>release/.content/contentsections/cs_00019.xml</source>
-			<destination>release/.content/contentsections/cs_00019.xml</destination>
-			<type>a-section</type>
 			<uuidstructure>369427f9-db94-11e5-a941-0242ac11002b</uuidstructure>
 			<uuidresource>369427fa-db94-11e5-a941-0242ac11002b</uuidresource>
 			<datecreated>Thu, 25 Feb 2016 07:48:52 GMT</datecreated>
@@ -10156,8 +10105,8 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>release/.content/contentsections/cs_00020.xml</source>
-			<destination>release/.content/contentsections/cs_00020.xml</destination>
+			<source>release/.content/contentsections/cs_00017.xml</source>
+			<destination>release/.content/contentsections/cs_00017.xml</destination>
 			<type>a-section</type>
 			<uuidstructure>58865d5f-f03d-11e5-b20f-0242ac11002b</uuidstructure>
 			<uuidresource>58865d60-f03d-11e5-b20f-0242ac11002b</uuidresource>
@@ -10167,6 +10116,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OpenCms 10.0.0: Release Notes for OpenCms 10]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>release/.content/contentsections/cs_00018.xml</source>
+			<destination>release/.content/contentsections/cs_00018.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>8c3c2e27-69da-11e6-8a39-0242ac11002b</uuidstructure>
+			<uuidresource>8c3c2e28-69da-11e6-8a39-0242ac11002b</uuidresource>
+			<datecreated>Wed, 24 Aug 2016 09:10:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.0.1: Release Notes for OpenCms 10.0.1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10280,126 +10246,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>release/opencms-10.0.0-alpha-1-notes</destination>
-			<type>folder</type>
-			<uuidstructure>4074955a-6217-11e5-bcba-0242ac11002b</uuidstructure>
-			<datecreated>Wed, 23 Sep 2015 17:19:30 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[50.0]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[OpenCms 10 Alpha 1]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[OpenCms 10 Alpha 1]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>release/opencms-10.0.0-alpha-1-notes/index.html</source>
-			<destination>release/opencms-10.0.0-alpha-1-notes/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>4078b40f-6217-11e5-bcba-0242ac11002b</uuidstructure>
-			<uuidresource>4078b410-6217-11e5-bcba-0242ac11002b</uuidresource>
-			<datecreated>Wed, 23 Sep 2015 17:19:31 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[OpenCms 10 Alpha 1]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>release/opencms-10.0.0-alpha-2-notes</destination>
-			<type>folder</type>
-			<uuidstructure>73735638-9e57-11e5-8382-0242ac11002b</uuidstructure>
-			<datecreated>Wed, 09 Dec 2015 09:30:14 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[40.0]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[OpenCms 10 Alpha 2]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[OpenCms 10 Alpha 2]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>release/opencms-10.0.0-alpha-2-notes/index.html</source>
-			<destination>release/opencms-10.0.0-alpha-2-notes/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>737af75d-9e57-11e5-8382-0242ac11002b</uuidstructure>
-			<uuidresource>737af75e-9e57-11e5-8382-0242ac11002b</uuidresource>
-			<datecreated>Wed, 09 Dec 2015 09:30:14 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[OpenCms 10 Alpha 2]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>release/opencms-10.0.0-beta-notes</destination>
-			<type>folder</type>
-			<uuidstructure>df3b45e6-da3a-11e5-a941-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 23 Feb 2016 14:36:49 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[30.0]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[OpenCms 10 Beta]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[OpenCms 10 Beta]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>release/opencms-10.0.0-beta-notes/index.html</source>
-			<destination>release/opencms-10.0.0-beta-notes/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>df50548b-da3a-11e5-a941-0242ac11002b</uuidstructure>
-			<uuidresource>df50548c-da3a-11e5-a941-0242ac11002b</uuidresource>
-			<datecreated>Tue, 23 Feb 2016 14:36:49 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[OpenCms 10 Beta]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>release/opencms-10.0.0-notes</destination>
 			<type>folder</type>
 			<uuidstructure>54e6bda5-f03c-11e5-b20f-0242ac11002b</uuidstructure>
@@ -10434,6 +10280,46 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OpenCms 10.0.0]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>release/opencms-10.0.1-notes</destination>
+			<type>folder</type>
+			<uuidstructure>4915c7e9-69da-11e6-8a39-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 24 Aug 2016 09:08:13 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[10.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[OpenCms 10.0.1]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.0.1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>release/opencms-10.0.1-notes/index.html</source>
+			<destination>release/opencms-10.0.1-notes/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>492446de-69da-11e6-8a39-0242ac11002b</uuidstructure>
+			<uuidresource>492446df-69da-11e6-8a39-0242ac11002b</uuidresource>
+			<datecreated>Wed, 24 Aug 2016 09:08:13 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.0.1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11329,7 +11215,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Lauchpad and Explorer: The Lauchpad and the Explorer]]></value>
+					<value><![CDATA[Step 5: Launchpad and Explorer: The Launchpad and the Explorer]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11346,7 +11232,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Lauchpad and Explorer: Link to Step 6]]></value>
+					<value><![CDATA[Step 5: Launchpad and Explorer: Link to Step 6]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11686,7 +11572,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Lauchpad and Explorer: Lauchpad]]></value>
+					<value><![CDATA[Step 5: Launchpad and Explorer: Launchpad]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -12590,7 +12476,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>tutorial/step-5-lauchpad-and-explorer</destination>
+			<destination>tutorial/step-5-launchpad-and-explorer</destination>
 			<type>folder</type>
 			<uuidstructure>f8fe1cac-6127-11e5-9eef-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 22 Sep 2015 12:46:41 GMT</datecreated>
@@ -12602,11 +12488,11 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Step 5: Lauchpad and Explorer]]></value>
+					<value><![CDATA[Step 5: Launchpad and Explorer]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Lauchpad and Explorer]]></value>
+					<value><![CDATA[Step 5: Launchpad and Explorer]]></value>
 				</property>
 				<property type="shared">
 					<name>Title</name>
@@ -12617,8 +12503,8 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>tutorial/step-5-lauchpad-and-explorer/index.html</source>
-			<destination>tutorial/step-5-lauchpad-and-explorer/index.html</destination>
+			<source>tutorial/step-5-launchpad-and-explorer/index.html</source>
+			<destination>tutorial/step-5-launchpad-and-explorer/index.html</destination>
 			<type>containerpage</type>
 			<uuidstructure>f908cb12-6127-11e5-9eef-0242ac11002b</uuidstructure>
 			<uuidresource>f908cb13-6127-11e5-9eef-0242ac11002b</uuidresource>
@@ -12627,7 +12513,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Lauchpad and Explorer]]></value>
+					<value><![CDATA[Step 5: Launchpad and Explorer]]></value>
 				</property>
 			</properties>
 			<relations/>
