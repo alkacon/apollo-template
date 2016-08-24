@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
+  <Bundle language="en">
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.LinkEntry.help]]></Key>
+      <Value><![CDATA[A single link entry of the sequence.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.Title.help]]></Key>
+      <Value><![CDATA[The title of the link sequence.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.GalleryTitle]]></Key>
+      <Value><![CDATA[Gallery Title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.Text]]></Key>
+      <Value><![CDATA[Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.LinkEntry]]></Key>
+      <Value><![CDATA[Link item]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.Title]]></Key>
+      <Value><![CDATA[Title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.Text.help]]></Key>
+      <Value><![CDATA[The text is shown above the links.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.linksequence.message.new]]></Key>
+      <Value><![CDATA[New link sequence, please edit the content.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.GalleryTitle.help]]></Key>
+      <Value><![CDATA[The gallery title of the link sequence. It is not shown on the page.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.linksequence.default.Title]]></Key>
+      <Value><![CDATA[New link sequence]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.linksequence.error.Title]]></Key>
+      <Value><![CDATA[The title must not be empty.]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.LinkEntry.help]]></Key>
+      <Value><![CDATA[Ein einzelner Link für die Sequenz.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.Title.help]]></Key>
+      <Value><![CDATA[Der Titel der Linksequenz.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.GalleryTitle]]></Key>
+      <Value><![CDATA[Galerie Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.Text]]></Key>
+      <Value><![CDATA[Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.LinkEntry]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.Title]]></Key>
+      <Value><![CDATA[Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.Text.help]]></Key>
+      <Value><![CDATA[Der Text wird oberhalb der Links angezeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.linksequence.message.new]]></Key>
+      <Value><![CDATA[Neue Link Sequenz, bitte bearbeiten Sie den Inhalt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLinkSequence.GalleryTitle.help]]></Key>
+      <Value><![CDATA[Der Galerie Titel der Linksequenz. Er wird nicht auf der Seite angezeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.linksequence.default.Title]]></Key>
+      <Value><![CDATA[Neue Link Sequenz]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.linksequence.error.Title]]></Key>
+      <Value><![CDATA[Der Titel darf nicht leer sein.]]></Value>
+    </Message>
+  </Bundle>
+</XmlVfsBundles>

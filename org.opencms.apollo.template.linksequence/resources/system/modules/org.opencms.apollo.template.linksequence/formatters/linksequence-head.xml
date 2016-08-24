@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Link sequence head / foot]]></NiceName>
+    <Type><![CDATA[a-linksequence]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-head.jsp]]></target>
+        <uuid>0830964f-5499-11e6-958f-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[600]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[foot]]></ContainerType>
+        <ContainerType><![CDATA[head]]></ContainerType>
+        <ContainerType><![CDATA[navigation]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>false</Detail>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[linkalign]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.linkalign)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.linkalign.description)]]></Description>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[right]]></Default>
+      <WidgetConfig><![CDATA[left:%(key.apollo.setting.linkalign.left)|right:%(key.apollo.setting.linkalign.right)]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>
