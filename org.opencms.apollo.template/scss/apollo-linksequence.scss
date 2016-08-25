@@ -1,13 +1,13 @@
-.ap-linklist ul {
+.ap-linksequence ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
         
-.ap-linklist-boxed li {
-}        
+.ap-linksequence-boxed li {
+}
 
-.ap-linklist-boxed li a {
+.ap-linksequence-boxed li a {
 	position: relative;
 	display: block;
 	padding: 10px 15px;
@@ -16,31 +16,31 @@
 	text-decoration: none;
 }
 
-.ap-linklist li a span {
-	margin-right: 8px; 
+.ap-linksequence li a span {
+	margin-right: 8px;
 }
 
 // head / foot formatted links
 
-.ap-linklist-hf .links {
+.ap-linksequence-hf .links {
     padding: 8px 0 0 0;
     position: relative;
     z-index: 12;
 }
 
-.ap-linklist-hf .links ul {
+.ap-linksequence-hf .links ul {
     margin: 0;
     padding-left: 0;
 }
 
-.ap-linklist-hf .links ul li {
+.ap-linksequence-hf .links ul li {
 	display: inline;
     list-style: outside none none;
     padding-bottom: 15px;
     position: relative;
 }
 
-.ap-linklist-hf .links ul li.divider {
+.ap-linksequence-hf .links ul li.divider {
     border-right: 1px solid $grey;
     font-family: Tahoma;
     font-size: 8px;
@@ -50,7 +50,7 @@
     top: -1px;
 }
 
-.ap-linklist-hf .links ul li > a, .ap-linklist-hf .links ul li > a:hover {
+.ap-linksequence-hf .links ul li > a, .ap-linksequence-hf .links ul li > a:hover {
     color: $grey-dark;
     font-size: 11px;
     text-transform: uppercase;
