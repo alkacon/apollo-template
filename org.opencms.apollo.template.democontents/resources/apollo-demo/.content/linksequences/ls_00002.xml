@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloLinkSequences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.linksequence/schemas/linksequence.xsd">
+  <ApolloLinkSequence language="en">
+    <Title><![CDATA[Boxed link sequence]]></Title>
+    <LinkEntry>
+      <Text><![CDATA[OpenCms Website]]></Text>
+      <URI>
+        <link internal="false" type="WEAK">
+          <target><![CDATA[http://www.opencms.org]]></target>
+        </link>
+      </URI>
+      <NewWindow>true</NewWindow>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[OpenCms Days]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/cmsdays/]]></target>
+          <uuid>5811e549-20eb-11e6-93dd-0242ac11002b</uuid>
+        </link>
+      </URI>
+      <NewWindow>true</NewWindow>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Alkacon Software]]></Text>
+      <URI>
+        <link internal="false" type="WEAK">
+          <target><![CDATA[http://www.alkacon.com]]></target>
+        </link>
+      </URI>
+      <NewWindow>true</NewWindow>
+    </LinkEntry>
+  </ApolloLinkSequence>
+</ApolloLinkSequences>

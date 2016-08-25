@@ -6678,6 +6678,40 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/contentsections/cs_00104.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00104.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>f88cacb9-6a9c-11e6-91e2-0242ac11002b</uuidstructure>
+			<uuidresource>f88cacba-6a9c-11e6-91e2-0242ac11002b</uuidresource>
+			<datecreated>Thu, 25 Aug 2016 08:21:49 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Link sequence: The Link sequence element]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00105.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00105.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>aca9a062-6aa3-11e6-91e2-0242ac11002b</uuidstructure>
+			<uuidresource>aca9a063-6aa3-11e6-91e2-0242ac11002b</uuidresource>
+			<datecreated>Thu, 25 Aug 2016 09:09:49 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Link sequence: Different element settings for the links]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/events</destination>
 			<type>folder</type>
 			<uuidstructure>ae8e34f8-5b98-11e5-9eb7-0242ac11002b</uuidstructure>
@@ -7457,6 +7491,50 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OpenCms Demo Search Configuration]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/.content/linksequences</destination>
+			<type>folder</type>
+			<uuidstructure>934b2450-6a03-11e6-91e2-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 24 Aug 2016 14:03:47 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/linksequences/ls_00001.xml</source>
+			<destination>apollo-demo/.content/linksequences/ls_00001.xml</destination>
+			<type>a-linksequence</type>
+			<uuidstructure>a3a889d6-6a9d-11e6-91e2-0242ac11002b</uuidstructure>
+			<uuidresource>a3a889d7-6a9d-11e6-91e2-0242ac11002b</uuidresource>
+			<datecreated>Thu, 25 Aug 2016 08:26:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Link sequence: Standard link sequence]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/linksequences/ls_00002.xml</source>
+			<destination>apollo-demo/.content/linksequences/ls_00002.xml</destination>
+			<type>a-linksequence</type>
+			<uuidstructure>0131d9db-6a9e-11e6-91e2-0242ac11002b</uuidstructure>
+			<uuidresource>0131d9dc-6a9e-11e6-91e2-0242ac11002b</uuidresource>
+			<datecreated>Thu, 25 Aug 2016 08:29:13 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Link sequence: Boxed link sequence]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8919,6 +8997,46 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Layout Row]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/element-pages/link-sequence</destination>
+			<type>folder</type>
+			<uuidstructure>b4724987-6a9c-11e6-91e2-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 25 Aug 2016 08:19:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.98046875]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Link sequence]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Link sequence]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/element-pages/link-sequence/index.html</source>
+			<destination>apollo-demo/element-pages/link-sequence/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>b47fde1c-6a9c-11e6-91e2-0242ac11002b</uuidstructure>
+			<uuidresource>b47fde1d-6a9c-11e6-91e2-0242ac11002b</uuidresource>
+			<datecreated>Thu, 25 Aug 2016 08:19:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Link sequence]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11487,7 +11605,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Lauchpad and Explorer: Explorer context menu]]></value>
+					<value><![CDATA[Step 5: Launchpad and Explorer: Explorer context menu]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11589,7 +11707,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 5: Lauchpad and Explorer: Explorer]]></value>
+					<value><![CDATA[Step 5: Launchpad and Explorer: Explorer]]></value>
 				</property>
 			</properties>
 			<relations/>

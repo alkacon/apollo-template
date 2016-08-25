@@ -9,7 +9,7 @@
 <cms:bundle basename="org.opencms.apollo.template.schemas.linksequence">
 
 <cms:formatter var="content" val="value" rdfa="rdfa">
-	<div class="ap-linklist-hf ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "" }">
+	<div class="ap-linksequence-hf ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "" }">
 
 		<%-- ####### Init messages wrapper ################################## --%>
 		<c:set var="textnew"><fmt:message key="apollo.linksequence.message.new" /></c:set>
