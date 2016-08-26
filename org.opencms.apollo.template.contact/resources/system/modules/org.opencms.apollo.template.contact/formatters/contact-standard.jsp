@@ -25,7 +25,7 @@ public String obfuscateContactEmail(String email) {
 
 <cms:formatter var="content" val="value" rdfa="rdfa">
     
-    <div class="ap-contact ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "" }">
+    <div class="ap-contact ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "mb-20" }">
 
         <c:if test="${value.Contact.isSet and value.Contact.value.EMail.isSet}">
             <c:set var="contactEmail" value="${value.Contact.value.EMail.stringValue}" />
@@ -101,8 +101,8 @@ public String obfuscateContactEmail(String email) {
                         <div class="ap-contact-data">
                         <c:if test="${value.Contact.value.Address.isSet}">
                                 <div class="ap-contact-address">
-                                    <a id="ap-contact-adrlink-${cms.element.id}" href="" onclick="$('#ap-contact-adr-${cms.element.id}').slideDown();$('#ap-contact-adrlink-${cms.element.id}').hide();return false;"><fmt:message key="apollo.contact.showaddress"/></a>
-                                    <div id="ap-contact-adr-${cms.element.id}" style="display: none;" onclick="$('#ap-contact-adr-${cms.element.id}').slideUp();$('#ap-contact-adrlink-${cms.element.id}').show();">${value.Contact.value.Address}</div>
+                                    <a id="ap-contact-adrlink-${cms.element.instanceId}" href="" onclick="$('#ap-contact-adr-${cms.element.instanceId}').slideDown();$('#ap-contact-adrlink-${cms.element.instanceId}').hide();return false;"><fmt:message key="apollo.contact.showaddress"/></a>
+                                    <div id="ap-contact-adr-${cms.element.instanceId}" style="display: none;" onclick="$('#ap-contact-adr-${cms.element.instanceId}').slideUp();$('#ap-contact-adrlink-${cms.element.instanceId}').show();">${value.Contact.value.Address}</div>
                                 </div>
                             </c:if> 
                         
@@ -137,7 +137,7 @@ public String obfuscateContactEmail(String email) {
                         </c:if>
                         
                         <c:if test="${value.Link.isSet}">
-                            <apollo:link link="${value.Link}" linkclass="btn btn-sm" />
+                            <apollo:link link="${value.Link}" linkclass="btn btn-sm mt-5" />
                         </c:if>
                     </div>
                 

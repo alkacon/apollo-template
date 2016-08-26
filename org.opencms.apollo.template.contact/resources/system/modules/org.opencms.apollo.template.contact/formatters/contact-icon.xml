@@ -32,9 +32,16 @@
     </HeadIncludeJs>
     <Setting>
       <PropertyName><![CDATA[hideTitle]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.hideTitle)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.hideHeadline)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[hstyle]]></PropertyName>
@@ -57,13 +64,6 @@
         h3:%(key.apollo.section.header.size.small)|
         h4:%(key.apollo.section.header.size.verysmall)
       ]]></WidgetConfig>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
-      <Widget><![CDATA[selectcombo]]></Widget>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>
