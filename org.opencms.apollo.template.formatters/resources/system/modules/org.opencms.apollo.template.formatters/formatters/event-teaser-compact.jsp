@@ -15,7 +15,7 @@
 		<div class="col-xs-12">
 
 			<h3 class="mb-5">
-				<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
+				<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
 			</h3>
 			<div>
 				<i>
@@ -36,7 +36,7 @@
 					<p class="mb-5">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</p>
 				</c:otherwise>
 			</c:choose>
-			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>"
+			<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>"
 				class="btn ap-btn-xs ap-btn-${buttonColor}">
 				<fmt:message key="apollo.list.message.readmore" />
 			</a>

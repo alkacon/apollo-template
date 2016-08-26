@@ -15,7 +15,7 @@
 		<div class="col-xs-12">
 			<h3 class="mb-5">
 				<a
-					href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
+					href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
 			</h3>
 			<c:set var="showdate"><c:out value="${cms.element.settings.showDate}" default="true" /></c:set>
 			<c:if test="${showdate}">
@@ -40,7 +40,7 @@
 				</c:otherwise>
 			</c:choose>
 			<a
-				href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>"
+				href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>"
 				class="btn ap-btn-xs ap-btn-${buttonColor}"><fmt:message
 					key="apollo.list.message.readmore" /></a>
 		</div>

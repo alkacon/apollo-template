@@ -67,7 +67,7 @@
 
 				<c:out value="${imgDivStart}" escapeXml="false" />
 
-				<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">
+				<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>">
 					<cms:img src="${paragraph.value.Image.value.Image}"
 						width="800" cssclass="img-responsive" scaleColor="transparent" scaleType="0" noDim="true"
 						alt="${paragraph.value.Image.value.Title}${' '}${copyright}"
@@ -76,7 +76,7 @@
 			</c:if>
 
 			<h2>
-				<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
+				<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
 			</h2>
 
 			<c:set var="showdate"><c:out value="${cms.element.settings.showDate}" default="true" /></c:set>
@@ -102,7 +102,7 @@
 			</c:choose>
 
 			<div class="margin-bottom-10"></div>
-			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>" class="btn ap-btn-${buttonColor}">
+			<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>" class="btn ap-btn-${buttonColor}">
 				<fmt:message key="apollo.list.message.readmore" />
 			</a>
 		</div>
