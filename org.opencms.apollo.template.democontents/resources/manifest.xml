@@ -16,7 +16,7 @@ writeProperty '/' 'NavText' 'Overview'
 writeProperty '/' 'template' '/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp'
 writeProperty '/' 'apollo.css.wrapper' 'bg-blue:Blue background|bg-red:Red background|bg-grey-light:Grey background|bl-red-2-solid:Red line left|bl-grey-2-solid:Grey line left'
 writeProperty '/' 'apollo.css.iconbox' 'service-block service-block-default:%(key.apollo.setting.cssclass.lightbox)|service-block service-block-red rounded-2x:%(key.apollo.setting.cssclass.redbox)'
-writeProperty '/' 'apollo.css.icon' 'info:%(key.apollo.setting.iconclass.info)|lightbulb-o:%(key.apollo.setting.iconclass.lightbulb)|link:%(key.apollo.setting.iconclass.link)|tag:%(key.apollo.setting.iconclass.tag)|cloud-download:%(key.apollo.setting.iconclass.download)|file:%(key.apollo.setting.iconclass.file)|file-pdf-o:%(key.apollo.setting.iconclass.pdf)|file-word-o:%(key.apollo.setting.iconclass.word)|file-archive-o:%(key.apollo.setting.iconclass.archive)|check:%(key.apollo.setting.iconclass.check)|angle-double-left :%(key.apollo.setting.iconclass.angleleft)'
+writeProperty '/' 'apollo.css.icon' 'info:%(key.apollo.setting.iconclass.info)|link:%(key.apollo.setting.iconclass.link)|external-link:%(key.apollo.setting.iconclass.linkexternal1)|external-link-square:%(key.apollo.setting.iconclass.linkexternal1)|download:%(key.apollo.setting.iconclass.download1)|cloud-download:%(key.apollo.setting.iconclass.download2)|file-text-o:%(key.apollo.setting.iconclass.document)|file-pdf-o:%(key.apollo.setting.iconclass.pdf)|folder-o:%(key.apollo.setting.iconclass.folder)|globe:%(key.apollo.setting.iconclass.globe)|arrow-right:%(key.apollo.setting.iconclass.arrow)|check:%(key.apollo.setting.iconclass.check)'
 writeProperty '/' 'apollo.title.prefix' 'OpenCms |'
 
 createUser 'Author' 'password' 'Sample author user'
@@ -4896,17 +4896,17 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/contacts/ci_00001.xml</source>
-			<destination>apollo-demo/.content/contacts/ci_00001.xml</destination>
+			<source>apollo-demo/.content/contacts/ci_00002.xml</source>
+			<destination>apollo-demo/.content/contacts/ci_00002.xml</destination>
 			<type>a-contact</type>
-			<uuidstructure>1a397ad8-49bd-11e6-b9a4-0242ac11002b</uuidstructure>
-			<uuidresource>1a397ad9-49bd-11e6-b9a4-0242ac11002b</uuidresource>
-			<datecreated>Thu, 14 Jul 2016 12:18:41 GMT</datecreated>
+			<uuidstructure>520526ee-6b6f-11e6-91e2-0242ac11002b</uuidstructure>
+			<uuidresource>520526ef-6b6f-11e6-91e2-0242ac11002b</uuidresource>
+			<datecreated>Fri, 26 Aug 2016 09:27:34 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[About: Contact Test]]></value>
+					<value><![CDATA[Contact Information: Jay M. Pritchett III]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6688,7 +6688,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link sequence: The Link sequence element]]></value>
+					<value><![CDATA[Link Sequence: The Link Sequence element]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6706,6 +6706,40 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Link sequence: Different element settings for the links]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00106.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00106.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>aa243ac8-6ad8-11e6-91e2-0242ac11002b</uuidstructure>
+			<uuidresource>aa243ac9-6ad8-11e6-91e2-0242ac11002b</uuidresource>
+			<datecreated>Thu, 25 Aug 2016 15:29:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Link Sequence: Link Sequence: Notes for implementation]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00107.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00107.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>209f0b4f-6b6d-11e6-91e2-0242ac11002b</uuidstructure>
+			<uuidresource>209f0b50-6b6d-11e6-91e2-0242ac11002b</uuidresource>
+			<datecreated>Fri, 26 Aug 2016 09:11:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Contact Information: The Contact Information element]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8675,6 +8709,46 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo/element-pages/contact-information</destination>
+			<type>folder</type>
+			<uuidstructure>f2f71ddb-6b6c-11e6-91e2-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 26 Aug 2016 09:10:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.9785156]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Contact Information]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Contact Information]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/element-pages/contact-information/index.html</source>
+			<destination>apollo-demo/element-pages/contact-information/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>f2fd5f70-6b6c-11e6-91e2-0242ac11002b</uuidstructure>
+			<uuidresource>f2fd5f71-6b6c-11e6-91e2-0242ac11002b</uuidresource>
+			<datecreated>Fri, 26 Aug 2016 09:10:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Contact Information]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/element-pages/content-section</destination>
 			<type>folder</type>
 			<uuidstructure>9a4a330e-edb7-11e5-a02c-0242ac11002b</uuidstructure>
@@ -9015,11 +9089,11 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Link sequence]]></value>
+					<value><![CDATA[Link Sequence]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link sequence]]></value>
+					<value><![CDATA[Link Sequence]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9036,7 +9110,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link sequence]]></value>
+					<value><![CDATA[Link Sequence]]></value>
 				</property>
 			</properties>
 			<relations/>

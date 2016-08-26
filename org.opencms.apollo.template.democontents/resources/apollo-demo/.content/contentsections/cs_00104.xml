@@ -2,10 +2,10 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[The Link sequence element]]></Headline>
+    <Headline><![CDATA[The Link Sequence element]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>The <em>Link sequence</em> allows you to create a set of links to other pages or download files. The links can be internal or external and formatted as a simple sequence or boxed links. Additionally, the link sequence can be used in the page head or foot area to generate links.</p>]]></content>
+      <content><![CDATA[<p>The <em>Link Sequence</em> allows you to create a list&nbsp;of links to other pages or download files. The links can be internal or external and formatted as a plain list or&nbsp;with outline boxes. Additionally, the link sequence can be used in the page head or foot area.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>
