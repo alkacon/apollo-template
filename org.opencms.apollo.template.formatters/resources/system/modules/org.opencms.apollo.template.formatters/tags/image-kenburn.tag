@@ -50,15 +50,21 @@
 		<div class="thumbnail-kenburn">
             <span ${image.value.Image.rdfaAttr} ${imageDnd}>
                 <div class="ap-img-pic ${setting.istyle} ${' '} ${setting.ieffect != 'none' ? setting.ieffect : ''}">
-                    <cms:img 
-                            src="${imageLink}"
-                            scaleColor="transparent" 
-                            width="${width}" 
-                            scaleType="0"
-                            cssclass="img-responsive"
-                            alt="${imageTitle}${' '}${imageCopyright}"
-                            title="${imageTitle}${' '}${imageCopyright}"
-                    />
+                    <c:catch var="exception">
+		                <cms:img 
+		                        src="${imageLink}"
+		                        scaleColor="transparent" 
+		                        width="${width}" 
+		                        scaleType="0"
+		                        cssclass="img-responsive"
+		                        alt="${imageTitle}${' '}${imageCopyright}"
+		                        title="${imageTitle}${' '}${imageCopyright}"
+		                />
+		            </c:catch>
+		            
+					<c:if test="${exception != null && cms.isEditMode}">
+						<p>Error displaying image: ${imageLink}</p>
+					</c:if>
                 </div>
             </span>
 			<c:if test="${setting.ilink.value == 'image'}">

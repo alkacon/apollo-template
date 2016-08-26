@@ -319,6 +319,10 @@
       <Value><![CDATA[Relevance]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.hideHeadline]]></Key>
+      <Value><![CDATA[Hide Headline]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.hideTitle]]></Key>
       <Value><![CDATA[Hide title]]></Value>
     </Message>
@@ -842,6 +846,38 @@
       <Key><![CDATA[apollo.setting.detail.view]]></Key>
       <Value><![CDATA[Use first container as detail view]]></Value>
     </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.document]]></Key>
+      <Value><![CDATA[Document]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.linkexternal1]]></Key>
+      <Value><![CDATA[Link external 1]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.linkexternal2]]></Key>
+      <Value><![CDATA[Link external 2]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.globe]]></Key>
+      <Value><![CDATA[Globe]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.arrow]]></Key>
+      <Value><![CDATA[Arrow]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.folder]]></Key>
+      <Value><![CDATA[Folder]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.download1]]></Key>
+      <Value><![CDATA[Download 1]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.download2]]></Key>
+      <Value><![CDATA[Download 2]]></Value>
+    </Message>
   </Bundle>
   <Bundle language="de">
     <Message>
@@ -1073,7 +1109,11 @@
       <Value><![CDATA[Container]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.hidetitle]]></Key>
+      <Key><![CDATA[apollo.setting.hideHeadline]]></Key>
+      <Value><![CDATA[Verstecke Überschrift]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.hideTitle]]></Key>
       <Value><![CDATA[Verstecke Titel]]></Value>
     </Message>
     <Message>
@@ -1699,6 +1739,38 @@
     <Message>
       <Key><![CDATA[apollo.setting.detail.view]]></Key>
       <Value><![CDATA[Verwende ersten Container als Detailansicht]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.document]]></Key>
+      <Value><![CDATA[Dokument]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.linkexternal1]]></Key>
+      <Value><![CDATA[Externer Link 1]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.linkexternal2]]></Key>
+      <Value><![CDATA[Externer Link 2]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.globe]]></Key>
+      <Value><![CDATA[Globus]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.arrow]]></Key>
+      <Value><![CDATA[Pfeil]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.folder]]></Key>
+      <Value><![CDATA[ordner]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.download1]]></Key>
+      <Value><![CDATA[Download 1]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.download2]]></Key>
+      <Value><![CDATA[Download 2]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

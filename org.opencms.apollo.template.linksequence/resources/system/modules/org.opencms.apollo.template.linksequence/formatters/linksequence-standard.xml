@@ -24,9 +24,16 @@
     <NestedContainers>false</NestedContainers>
     <Setting>
       <PropertyName><![CDATA[hideTitle]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.hideTitle)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.hideHeadline)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[hstyle]]></PropertyName>
@@ -57,23 +64,18 @@
       <Widget><![CDATA[selectcombo]]></Widget>
       <WidgetConfig><![CDATA[%(page-property:apollo.css.icon:
         info:%(key.apollo.setting.iconclass.info)|
-        lightbulb-o:%(key.apollo.setting.iconclass.lightbulb)|
         link:%(key.apollo.setting.iconclass.link)|
-        tag:%(key.apollo.setting.iconclass.tag)|
-        cloud-download:%(key.apollo.setting.iconclass.download)|
-        file:%(key.apollo.setting.iconclass.file)|
+        external-link:%(key.apollo.setting.iconclass.linkexternal1)|
+        external-link-square:%(key.apollo.setting.iconclass.linkexternal2)|
+        download:%(key.apollo.setting.iconclass.download1)|
+        cloud-download:%(key.apollo.setting.iconclass.download2)|
+        file-text-o:%(key.apollo.setting.iconclass.document)|
         file-pdf-o:%(key.apollo.setting.iconclass.pdf)|
-        file-word-o:%(key.apollo.setting.iconclass.word)|
-        file-archive-o:%(key.apollo.setting.iconclass.archive)|
-        check:%(key.apollo.setting.iconclass.check)|
-        angle-double-left:%(key.apollo.setting.iconclass.angleleft))]]></WidgetConfig>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
-      <Widget><![CDATA[selectcombo]]></Widget>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
+        folder-o:%(key.apollo.setting.iconclass.folder)|
+        globe:%(key.apollo.setting.iconclass.globe)|
+        arrow-right:%(key.apollo.setting.iconclass.arrow)|
+        check:%(key.apollo.setting.iconclass.check)
+        )]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

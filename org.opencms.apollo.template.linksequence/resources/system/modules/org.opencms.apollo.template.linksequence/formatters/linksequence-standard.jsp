@@ -14,21 +14,21 @@
 		<%-- ####### Init messages wrapper ################################## --%>
 		<c:set var="textnew"><fmt:message key="apollo.linksequence.message.new" /></c:set>
 		<apollo:init-messages textnew="${textnew}" textedit="">
-        
+
         <c:if test="${cms.element.settings.hideTitle ne 'true'}">
             <apollo:headline setting="${cms.element.setting}" headline="${content.value.Title}" />
         </c:if>
-        
+
         <c:if test="${value.Text.isSet}">
             <div ${rdfa.Text}>${value.Text}</div>
         </c:if> 
-		
-        <ul>
+
+        <ul <c:if test="${not cms.element.setting.iconclass.isSet}">class="ap-bullets"</c:if>>
             <c:forEach var="link" items="${content.valueList.LinkEntry}">
                 <li><apollo:link link="${link}"><c:if test="${cms.element.setting.iconclass.isSet}"><span class="fa fa-${cms.element.setting.iconclass}"></span></c:if>${link.value.Text}</apollo:link></li>
             </c:forEach>
         </ul>
-        
+
 		</apollo:init-messages>
 	</div>	
 </cms:formatter>
