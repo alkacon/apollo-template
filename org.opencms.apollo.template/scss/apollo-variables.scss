@@ -102,7 +102,7 @@ $secondary-colors:
 
 // all colors combined
 $all-colors: join($primary-colors, $secondary-colors) !default;     
-$colors:     $all-colors !default;
+// $colors:     $all-colors !default;
 
 $border-colors: 
 (
@@ -113,6 +113,9 @@ $border-colors:
  (cyan,         $cyan,         $text-light,    $blue-cyan),
  (orange,       $orange,       $text-light,    $red-orange),
 ) !default;
+
+// Spaces used for margins and paddings
+$spacers:       (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 500) !default;
 
 // Alert colors
 $color-info:        $blue-light !default;
@@ -132,5 +135,3 @@ $screen-lg-min: 1200px !default;
 $screen-xs-max: ($screen-sm-min - 1) !default;
 $screen-sm-max: ($screen-md-min - 1) !default;
 $screen-md-max: ($screen-lg-min - 1) !default;
-
-$spacers:       (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 500) !default;

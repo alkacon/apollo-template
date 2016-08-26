@@ -24,7 +24,7 @@ $screen-lg-min: 1200px;
 }
 
 //link color
-@each $name, $color in $colors {
+@each $name, $color in $all-colors {
     .lc-#{""+$name}{
         a, &.a{
             color: $color;      
