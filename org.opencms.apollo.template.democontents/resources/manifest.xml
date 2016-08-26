@@ -6712,23 +6712,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/contentsections/cs_00106.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00106.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>aa243ac8-6ad8-11e6-91e2-0242ac11002b</uuidstructure>
-			<uuidresource>aa243ac9-6ad8-11e6-91e2-0242ac11002b</uuidresource>
-			<datecreated>Thu, 25 Aug 2016 15:29:08 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Link Sequence: Link Sequence: Notes for implementation]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>apollo-demo/.content/contentsections/cs_00107.xml</source>
 			<destination>apollo-demo/.content/contentsections/cs_00107.xml</destination>
 			<type>a-section</type>
