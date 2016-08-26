@@ -8,11 +8,11 @@
     </Message>
     <Message>
       <Key><![CDATA[title.a-faq]]></Key>
-      <Value><![CDATA[FAQ entry]]></Value>
+      <Value><![CDATA[FAQ Entry]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[fileicon.a-faq]]></Key>
-      <Value><![CDATA[FAQ entry]]></Value>
+      <Value><![CDATA[FAQ Entry]]></Value>
     </Message>
   </Bundle>
   <Bundle language="de">
