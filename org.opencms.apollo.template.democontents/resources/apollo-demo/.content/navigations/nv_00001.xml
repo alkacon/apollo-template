@@ -10,6 +10,7 @@
         <uuid>71ac2b99-be83-11e5-a9f8-0242ac11002b</uuid>
       </link>
     </LogoImage>
+    <LogoFullWidth>false</LogoFullWidth>
     <LogoLink>
       <link internal="true" type="WEAK">
         <target><![CDATA[/sites/default/overview/]]></target>

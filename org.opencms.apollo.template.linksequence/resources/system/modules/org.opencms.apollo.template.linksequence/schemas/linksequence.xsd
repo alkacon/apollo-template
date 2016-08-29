@@ -37,7 +37,7 @@
                 <rule element="Title" regex=".+" type="error" message="%(key.apollo.linksequence.error.Title)" />
             </validationrules>
             <relations/>
-            <searchsettings containerPageOnly="false">
+            <searchsettings containerPageOnly="true">
 				<searchsetting element="GalleryTitle" searchcontent="false" />
             </searchsettings>
 		  	<visibilities>

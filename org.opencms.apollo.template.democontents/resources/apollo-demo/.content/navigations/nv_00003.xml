@@ -5,6 +5,7 @@
     <Title><![CDATA[Apollo Demo side second level navigation]]></Title>
     <NavStartLevel><![CDATA[2]]></NavStartLevel>
     <LogoImage/>
+    <LogoFullWidth>false</LogoFullWidth>
     <LogoLink>
       <link internal="true" type="WEAK">
         <target><![CDATA[/sites/default/index.html]]></target>

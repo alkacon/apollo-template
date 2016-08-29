@@ -874,6 +874,60 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-teaser.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-teaser.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>bb70715c-6db7-11e6-8c8e-0242ac11002b</uuidstructure>
+			<uuidresource>bb70715d-6db7-11e6-8c8e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 29 Aug 2016 07:10:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image as teaser formatter JSP]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/image-teaser.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/image-teaser.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>bb7a8381-6db7-11e6-8c8e-0242ac11002b</uuidstructure>
+			<uuidresource>bb7a8382-6db7-11e6-8c8e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 29 Aug 2016 07:10:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image as teaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/formatters/jsp-search-formatter.jsp</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/jsp-search-formatter.jsp</destination>
 			<type>jsp</type>

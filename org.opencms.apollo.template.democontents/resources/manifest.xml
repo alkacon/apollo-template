@@ -5685,7 +5685,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English page: English text page]]></value>
+					<value><![CDATA[English text page]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5702,7 +5702,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English page: This box is blue!]]></value>
+					<value><![CDATA[This box is blue!]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6246,7 +6246,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English page: Powerful]]></value>
+					<value><![CDATA[Powerful]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6263,7 +6263,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English page: Intuitive]]></value>
+					<value><![CDATA[Intuitive]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6280,7 +6280,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English page: Responsive]]></value>
+					<value><![CDATA[Responsive]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6297,7 +6297,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English page: Fun]]></value>
+					<value><![CDATA[Fun]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6705,7 +6705,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link sequence: Different element settings for the links]]></value>
+					<value><![CDATA[Link Sequence: Different element settings for the links]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7534,7 +7534,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link sequence: Standard link sequence]]></value>
+					<value><![CDATA[Link Sequence: Standard link sequence]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7551,7 +7551,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link sequence: Boxed link sequence]]></value>
+					<value><![CDATA[Link Sequence: Boxed link sequence]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8076,7 +8076,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Home: OpenCms 10 Promo Slider  ]]></value>
+					<value><![CDATA[OpenCms 10 Promo Slider  ]]></value>
 				</property>
 			</properties>
 			<relations/>
