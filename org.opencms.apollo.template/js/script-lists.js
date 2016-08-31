@@ -33,8 +33,6 @@ function reloadInnerList(searchStateParameters, elem) {
 					showEditButtons();
 					list_lock[elem.attr("id")] = false;
 				});
-		
-		$('html, body').animate( { scrollTop : elem.offset().top - 100 }, 1000 );
 	}
 }
 

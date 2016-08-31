@@ -78,6 +78,7 @@ $screen-lg-min: 1200px;
     font-size: 25px;
     position: absolute;
     transform: translateY(-50%);
+    z-index: 10;
     &, a &  {
         color: $white;
     }
