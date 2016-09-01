@@ -61,6 +61,22 @@
 	
 }
 
+.ap-carousel .carousel-copyright {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	padding: 1px 10px;
+	z-Index: 2;
+	font-size: 12px;
+	line-height: 13px;
+}
+
+.ap-carousel .carousel-caption.carousel-caption-copyright {
+	bottom: 15px;
+}
+
 .list-entry{
 	animation-duration: 1s;	
 	&:nth-child(2n){

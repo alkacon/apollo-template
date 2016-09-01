@@ -145,6 +145,16 @@ a.thumbnail {
     margin-bottom: 15px;
 }
 
+.ap-image-teaser .info {
+	text-align: right;
+	margin-top: -10px;
+}
+
+.ap-image-teaser .info .copyright {
+	font-size: 0.7em;
+	color: $grey;
+}
+
 .thumbnail-style { 
     margin-bottom: 20px; 
     padding: 0;
@@ -175,7 +185,7 @@ a.thumbnail {
 		padding: 7px;
 		
 		&:hover{
-			box-shadow: 0 0 8px #ddd; 
+			box-shadow: 0 0 8px $grey-dark; 
 			-webkit-transition: box-shadow 0.2s ease-in-out;
 			-moz-transition: box-shadow 0.2s ease-in-out;
 			-o-transition: box-shadow 0.2s ease-in-out;
