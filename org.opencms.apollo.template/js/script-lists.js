@@ -3,8 +3,7 @@ $.fn.visible = function(partial) {
 	var $t = $(this), $w = $(window), viewTop = $w.scrollTop(), viewBottom = viewTop
 			+ $w.height(), _top = $t.offset().top, _bottom = _top + $t.height(), compareTop = partial === true ? _bottom
 			: _top, compareBottom = partial === true ? _top : _bottom;
-
-	return ((compareBottom - 500 <= viewBottom) && (compareTop >= viewTop));
+	return ((compareBottom - 100 <= viewBottom) && (compareTop >= viewTop));
 };
 
 var list_lock = new Array();
@@ -15,21 +14,26 @@ function reloadInnerList(searchStateParameters, elem) {
 		if(typeof elem === 'undefined'){
 			elem = $('.ap-list-content').first();
 		}
-		elem.find('.spinner').addClass("bounceIn");
-		elem.find('.spinner').show();
-		elem.find(".entrylist_box").empty();
+		var entryBox = elem.find(".entrylist_box");
+		var spinner = elem.find(".spinner");
+		spinner.hide().removeClass("bounceOut").addClass("bounceIn").show();
+		entryBox.find(".list-entry").each(function(){
+			$(this).remove();
+		});
+		
 		elem.find(".pagination_box").empty();
 		var listOptionBox = $('#listoption_box-' + elem.data('id'));
 		listOptionBox.find(".listOptions").remove();
 		$.get(buildAjaxLink(elem) + "&".concat(searchStateParameters), 
 				function(resultList) {
-					$(resultList).filter(".list-entry").appendTo(elem.find('.entrylist_box'));
+					$(resultList).filter(".list-entry").appendTo(entryBox);
 					$(resultList).filter('.paginationWrapper').appendTo(elem.find('.pagination_box'));
 					$(resultList).filter(".listOptions").appendTo(listOptionBox);
 					if(list_lock && $(resultList).filter(".list-entry").length == 0){
 						showEmpty(elem);
 					}
-					elem.find('.spinner').hide();
+					spinner.removeClass("bounceIn").addClass("bounceOut");
+					entryBox.css("min-height", "0");
 					showEditButtons();
 					list_lock[elem.attr("id")] = false;
 				});
@@ -39,16 +43,17 @@ function reloadInnerList(searchStateParameters, elem) {
 function appendInnerList(searchStateParameters, elem) {
 	if(typeof list_lock[elem.attr("id")] === "undefined" || !list_lock[elem.attr("id")]){
 		list_lock[elem.attr("id")] = true;
-		elem.find('.spinner').addClass("bounceIn");
-		elem.find('.spinner').show();
+		var spinner = elem.find(".spinner");
+		var entryBox = elem.find(".entrylist_box");
+		console.log("test: " + entryBox.height());
+		spinner.hide().removeClass("bounceOut").addClass("bounceIn").css("top", entryBox.height() - 200).show();
 		elem.find('.loadMore').addClass("fadeOut");
-		console.log("append");
 		$.get(buildAjaxLink(elem) + "&hideOptions=true&".concat(searchStateParameters),
 				function(resultList) {
 					elem.find('.pagination').remove();
 					$(resultList).filter(".list-entry").appendTo(elem.find('.entrylist_box'));
 					$(resultList).filter(".pagination").appendTo(elem.find('.pagination_box'));
-					elem.find('.spinner').hide();
+					spinner.removeClass("bounceIn").addClass("bounceOut");
 					showEditButtons();
 					list_lock[elem.attr("id")] = false;
 				});
@@ -77,7 +82,7 @@ function initList() {
 			$(window).scroll(
 					function(event) {
 						var pag = list.find(".pagination");
-						if (pag.length && pag.data("dynamic") && pag.visible(true)){
+						if (pag.length && pag.data("dynamic") && pag.visible(true)){ 
 							appendInnerList(list.find('.loadMore').attr('data-load'), list);
 						}
 					}
