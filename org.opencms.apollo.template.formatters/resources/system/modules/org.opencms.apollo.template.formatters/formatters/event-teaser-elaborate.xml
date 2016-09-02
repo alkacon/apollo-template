@@ -26,14 +26,14 @@
     <Setting>
       <PropertyName><![CDATA[buttoncolor]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
-      <Widget><![CDATA[select]]></Widget>
+      <Widget><![CDATA[selectcombo]]></Widget>
       <Default><![CDATA[red]]></Default>
       <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[calendarcolor]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.calendarcolor)]]></DisplayName>
-      <Widget><![CDATA[select]]></Widget>
+      <Widget><![CDATA[selectcombo]]></Widget>
       <Default><![CDATA[red]]></Default>
       <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
     </Setting>
@@ -51,10 +51,10 @@
     </Setting>
     <Setting>
       <PropertyName><![CDATA[compactform]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.compactform)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.displayoptions)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:%(key.apollo.setting.compactform.showcalendar)|true:%(key.apollo.setting.compactform.hidecalendar)|big:%(key.apollo.setting.compactform.showimagehidecalendar)|small:%(key.apollo.setting.compactform.showsmallimagehidecalendar)]]></WidgetConfig>
+      <WidgetConfig><![CDATA[false:%(key.apollo.setting.displayoption.showcalendar)|true:%(key.apollo.setting.displayoption.hidecalendar)|big:%(key.apollo.setting.displayoption.showimagehidecalendar)|small:%(key.apollo.setting.displayoption.showsmallimagehidecalendar)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

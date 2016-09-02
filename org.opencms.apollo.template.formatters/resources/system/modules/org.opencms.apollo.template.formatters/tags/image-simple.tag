@@ -2,7 +2,7 @@
     display-name="image-simple"
     body-content="empty"
     trimDirectiveWhitespaces="true" 
-    description="Formates a simple image from te given content" %>
+    description="Formats a simple image from the given content" %>
 
 <%@ attribute name="setting" type="java.util.Map" required="true" %>
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
@@ -56,7 +56,7 @@
 	</div>
 		
 	<%-- ####### Show copyright if enabled ######## --%>
-	<c:if test="${fn:contains(setting.itext.value, 'copy') && image.value.Copyright.isSet}">
+	<c:if test="${(fn:contains(setting.itext.value, 'copy') or setting.itext.value == 'true') && image.value.Copyright.isSet}">
 		<div class="info">
 			<p class="copyright"><i>${imageCopyright}</i></p>
 		</div>

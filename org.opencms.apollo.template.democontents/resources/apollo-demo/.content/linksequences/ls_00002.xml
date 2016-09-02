@@ -16,8 +16,7 @@
       <Text><![CDATA[OpenCms Days]]></Text>
       <URI>
         <link internal="true" type="WEAK">
-          <target><![CDATA[/sites/cmsdays/]]></target>
-          <uuid>5811e549-20eb-11e6-93dd-0242ac11002b</uuid>
+          <target><![CDATA[/sites/default/sites/cmsdays/]]></target>
         </link>
       </URI>
       <NewWindow>true</NewWindow>

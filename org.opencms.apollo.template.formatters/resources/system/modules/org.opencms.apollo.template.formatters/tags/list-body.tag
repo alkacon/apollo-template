@@ -6,6 +6,7 @@
 <%@ attribute name="headline" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="link" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
+<%@ attribute name="count" type="java.lang.Integer" required="false" %>
 <%@ attribute name="dynamic" type="java.lang.Boolean" required="false" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -14,6 +15,8 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <c:set var="element" value="${cms.element}" />
+<c:set var="count">${empty count ? 4 : count}</c:set>
+<c:set var="approxElemHeight">150</c:set>
 
 <%-- ####### Headline ########################################### --%>
 		
@@ -34,15 +37,15 @@
 								data-sitepath="${cms.requestContext.folderUri}" 
 								data-dynamic="${dynamic ? 'true' : 'false'}">
 							
-	<div class="entrylist_box"></div>
-	<div class="pagination_box"></div>
-	
-	<div class="col-xs-12">
-		<div class="spinner animated mv-20" style="display: none; position: initial; transform: none;">
-			<div class="spinnerInnerBox"><i class="fa fa-spinner"></i></div>
+	<div class="entrylist_box" style="min-height: ${count * approxElemHeight}px;">
+		<div class="col-xs-12">
+			<div class="spinner animated mv-20" style="display: none; transform: none;">
+				<div class="spinnerInnerBox"><i class="fa fa-spinner"></i></div>
+			</div>
 		</div>
 	</div>
-	
+	<div class="pagination_box" style="min-height: 50px;"></div>
+  
 	<%-- ####### Create and edit new entries if empty result ######## --%>
 	
 	<c:set var="createType">${fn:substringBefore(types.stringValue, ':')}</c:set>

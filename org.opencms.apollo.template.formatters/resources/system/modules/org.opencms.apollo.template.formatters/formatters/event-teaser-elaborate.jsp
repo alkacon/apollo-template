@@ -16,10 +16,10 @@
 		<c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
 		<c:set var="buttonColor" value="${cms.element.settings.buttoncolor}" />
 		<c:set var="calendarColor" value="${cms.element.settings.calendarcolor}" />
-		<c:set var="compactForm" value="${cms.element.settings.compactform}" />
-		<c:set var="showImageBig" value="${paragraph.value.Image.exists && (compactForm == 'big')}" />
-		<c:set var="showImageSmall" value="${paragraph.value.Image.exists && (compactForm == 'small')}" />
-		<c:set var="isCompactForm" value="${cms.element.settings.compactform != 'false' && !showImageSmall}" />
+		<c:set var="displayOption" value="${cms.element.settings.compactform}" />
+		<c:set var="showImageBig" value="${paragraph.value.Image.exists && (displayOption == 'big')}" />
+		<c:set var="showImageSmall" value="${paragraph.value.Image.exists && (displayOption == 'small')}" />
+		<c:set var="isCompactForm" value="${displayOption != 'false' && !showImageSmall}" />
 
 		<%-- ####### Show calendar or image if not compact form ######## --%>
 		<c:if test="${!isCompactForm}">

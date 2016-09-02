@@ -46,5 +46,11 @@
       </JavascriptLink>
       <JavascriptInline><![CDATA[createBanner();]]></JavascriptInline>
     </HeadIncludeJs>
+    <Setting>
+      <PropertyName><![CDATA[showCopy]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.copy)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
   </NewFormatter>
 </NewFormatters>

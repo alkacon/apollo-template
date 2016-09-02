@@ -15,11 +15,12 @@
       <Image>
         <Image>
           <link type="WEAK">
-            <target><![CDATA[/sites/default/.galleries/samples/30.jpg]]></target>
-            <uuid>b4b2b636-4785-11e3-ba23-000c29d28104</uuid>
+            <target><![CDATA[/sites/default/.galleries/office/07.jpg]]></target>
+            <uuid>2f8591d7-7061-11e6-9a42-0242ac11002b</uuid>
           </link>
         </Image>
         <Title><![CDATA[Features]]></Title>
+        <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
       </Image>
     </Paragraph>
     <Category>

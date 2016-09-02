@@ -21,6 +21,7 @@
 				<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
 			</h2>
 
+            <c:if test="${(cms.element.setting.showdate.exists and cms.element.settings.showdate) or cms.element.setting.showdate.isEmpty}">
 			<p>
 				<i>
 					<fmt:formatDate value="${cms:convertDate(content.value.Date)}" dateStyle="LONG" type="DATE" />
@@ -29,6 +30,7 @@
 					</c:if>
 				</i>
 			</p>
+            </c:if>
 
 			<c:choose>
 				<c:when test="${content.value.Teaser.isSet and not empty fn:trim(content.value.Teaser)}">

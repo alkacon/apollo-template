@@ -2,7 +2,7 @@
 
 <ApolloSliders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.extensions/schemas/slider.xsd">
   <ApolloSlider language="en">
-    <Title><![CDATA[OpenCms 10 Promo Slider  ]]></Title>
+    <Title><![CDATA[OpenCms 10.5 Promo Slider  ]]></Title>
     <Duration><![CDATA[6000]]></Duration>
     <Width><![CDATA[900]]></Width>
     <Height><![CDATA[500]]></Height>
@@ -31,7 +31,7 @@
         <Easing><![CDATA[easeOutCubic]]></Easing>
       </Caption>
       <Caption>
-        <Text><![CDATA[OPENCMS 10]]></Text>
+        <Text><![CDATA[OPENCMS 10.5]]></Text>
         <Class><![CDATA[caption mediumthickblackbg blackbgtransparent sfb]]></Class>
         <PosX><![CDATA[180]]></PosX>
         <PosY><![CDATA[200]]></PosY>

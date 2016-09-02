@@ -2556,6 +2556,23 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/tags/list-item-compact.tag</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/tags/list-item-compact.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>c62773e4-7044-11e6-9a42-0242ac11002b</uuidstructure>
+			<uuidresource>c627e915-7044-11e6-9a42-0242ac11002b</uuidresource>
+			<datecreated>Thu, 01 Sep 2016 13:05:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formats a list item in compact form]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/tags/list-loadbutton.tag</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/tags/list-loadbutton.tag</destination>
 			<type>jsp</type>

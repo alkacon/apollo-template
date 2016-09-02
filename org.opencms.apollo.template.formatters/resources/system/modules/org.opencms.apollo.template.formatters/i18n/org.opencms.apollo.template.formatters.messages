@@ -91,7 +91,7 @@
       <Value><![CDATA[Anchor ID]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.showsmallimagehidecalendar]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.showsmallimagehidecalendar]]></Key>
       <Value><![CDATA[Show image in place of calendar sheet]]></Value>
     </Message>
     <Message>
@@ -291,7 +291,7 @@
       <Value><![CDATA[Show archive]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.hidecalendar]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.hidecalendar]]></Key>
       <Value><![CDATA[Hide calendar sheet]]></Value>
     </Message>
     <Message>
@@ -407,7 +407,7 @@
       <Value><![CDATA[Left of text]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.largeimage]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.largeimage]]></Key>
       <Value><![CDATA[Large image]]></Value>
     </Message>
     <Message>
@@ -539,7 +539,7 @@
       <Value><![CDATA[Optional link to be used in the pre-HTML markup.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.showcalendar]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.showcalendar]]></Key>
       <Value><![CDATA[Show calendar sheet]]></Value>
     </Message>
     <Message>
@@ -631,12 +631,12 @@
       <Value><![CDATA[until]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.hideimage]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.hideimage]]></Key>
       <Value><![CDATA[Hide image]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform]]></Key>
-      <Value><![CDATA[Compact form]]></Value>
+      <Key><![CDATA[apollo.setting.displayoptions]]></Key>
+      <Value><![CDATA[Display options]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.layout.box]]></Key>
@@ -655,7 +655,7 @@
       <Value><![CDATA[Show expired and unreleased list items]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.smallimage]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.smallimage]]></Key>
       <Value><![CDATA[Small image left]]></Value>
     </Message>
     <Message>
@@ -727,7 +727,7 @@
       <Value><![CDATA[Hidden on small screens]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.showimagehidecalendar]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.showimagehidecalendar]]></Key>
       <Value><![CDATA[Show image and hide calendar sheet]]></Value>
     </Message>
     <Message>
@@ -878,6 +878,10 @@
       <Key><![CDATA[apollo.setting.iconclass.download2]]></Key>
       <Value><![CDATA[Download 2]]></Value>
     </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.listwrapper.accordion]]></Key>
+      <Value><![CDATA[Wrapper for Accordion like lists]]></Value>
+    </Message>
   </Bundle>
   <Bundle language="de">
     <Message>
@@ -977,7 +981,7 @@
       <Value><![CDATA[Anker ID]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.showsmallimagehidecalendar]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.showsmallimagehidecalendar]]></Key>
       <Value><![CDATA[Zeige Bild anstelle Kalenderblatt]]></Value>
     </Message>
     <Message>
@@ -1181,7 +1185,7 @@
       <Value><![CDATA[Zeige Archiv]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.hidecalendar]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.hidecalendar]]></Key>
       <Value><![CDATA[Verstecke Kalenderblatt]]></Value>
     </Message>
     <Message>
@@ -1289,7 +1293,7 @@
       <Value><![CDATA[Links vom Text]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.largeimage]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.largeimage]]></Key>
       <Value><![CDATA[Großes Bild]]></Value>
     </Message>
     <Message>
@@ -1421,7 +1425,7 @@
       <Value><![CDATA[Optionaler Link, der im Pre-HTML Markup verwendet werden kann.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.showcalendar]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.showcalendar]]></Key>
       <Value><![CDATA[Zeige Kalenderblatt]]></Value>
     </Message>
     <Message>
@@ -1513,11 +1517,11 @@
       <Value><![CDATA[bis]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.hideimage]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.hideimage]]></Key>
       <Value><![CDATA[Verstecke Bild]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform]]></Key>
+      <Key><![CDATA[apollo.setting.displayoptions]]></Key>
       <Value><![CDATA[Kompakte Form]]></Value>
     </Message>
     <Message>
@@ -1549,7 +1553,7 @@
       <Value><![CDATA[Zeige abgelaufene und unveröffentlichte Listeneinträge]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.smallimage]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.smallimage]]></Key>
       <Value><![CDATA[Kleines Bild links]]></Value>
     </Message>
     <Message>
@@ -1621,7 +1625,7 @@
       <Value><![CDATA[Versteckt auf kleinen Bildschirmen]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.compactform.showimagehidecalendar]]></Key>
+      <Key><![CDATA[apollo.setting.displayoption.showimagehidecalendar]]></Key>
       <Value><![CDATA[Zeige Bild und verstecke Kalenderblatt]]></Value>
     </Message>
     <Message>
@@ -1771,6 +1775,10 @@
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.download2]]></Key>
       <Value><![CDATA[Download 2]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.listwrapper.accordion]]></Key>
+      <Value><![CDATA[Wrapper für Akkordion Listen]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

@@ -30,7 +30,7 @@
 				<cms:container
 					name="tab-container${status.count}"
 					type="row"
-					maxElements="2">
+					maxElements="10">
 						<c:set var="msg"><fmt:message key="apollo.tabs.emptycontainer.text"/></c:set>
 						<apollo:container-box
                             label="${msg}"

@@ -73,13 +73,9 @@
     </Setting>
     <Setting>
       <PropertyName><![CDATA[itext]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.label)]]></DisplayName>
-      <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[none]]></Default>
-      <WidgetConfig><![CDATA[
-        none:%(key.apollo.section.image.text.nothing)|
-        copy:%(key.apollo.section.image.text.copy)
-      ]]></WidgetConfig>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.copy)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
     </Setting>
   </NewFormatter>
 </NewFormatters>

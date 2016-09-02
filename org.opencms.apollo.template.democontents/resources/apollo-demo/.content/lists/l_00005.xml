@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/list.xsd">
+  <ApolloList language="en">
+    <Headline><![CDATA[Vacant Jobs]]></Headline>
+    <TypesToCollect>a-job:6166bc67-42b7-11e6-a4ea-0242ac11002b</TypesToCollect>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <SortOrder><![CDATA[datedesc]]></SortOrder>
+    <ItemsPerPage><![CDATA[50]]></ItemsPerPage>
+  </ApolloList>
+</ApolloLists>

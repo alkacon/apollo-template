@@ -15,16 +15,16 @@
 		<c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
 		<c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
 		<c:set var="buttonColor" value="${cms.element.settings.buttoncolor}" />
-		<c:set var="compactForm" value="${cms.element.settings.compactform}" />
-		<c:set var="showImage" value="${paragraph.value.Image.exists && (compactForm != 'true')}" />
+		<c:set var="displayOption" value="${cms.element.settings.compactform}" />
+		<c:set var="showImage" value="${paragraph.value.Image.exists && (displayOption != 'true')}" />
 
 		<c:choose>
-			<c:when test="${paragraph.value.Image.exists && (compactForm == 'false')}">
+			<c:when test="${paragraph.value.Image.exists && (displayOption == 'false')}">
 				<c:set var="imgDivStart"><div class="col-md-4 search-img"></c:set>
 				<c:set var="imgDivCenter"></div><div class="col-md-8"></c:set>
 				<c:set var="imgDivEnd"></div></c:set>
 			</c:when>
-			<c:when test="${paragraph.value.Image.exists && (compactForm == 'big')}">
+			<c:when test="${paragraph.value.Image.exists && (displayOption == 'big')}">
 				<c:set var="imgDivStart"><div class="col-xs-12"><div class="search-img"></c:set>
 				<c:set var="imgDivCenter"></div><div></c:set>
 				<c:set var="imgDivEnd"></div></div></c:set>

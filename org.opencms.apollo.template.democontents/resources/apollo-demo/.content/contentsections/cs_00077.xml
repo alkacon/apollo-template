@@ -10,12 +10,11 @@
     <Image>
       <Image>
         <link type="WEAK">
-          <target><![CDATA[/sites/default/.galleries/samples/20.jpg]]></target>
-          <uuid>cb7ecc6d-4705-11e3-8417-000c29d28104</uuid>
+          <target><![CDATA[/sites/default/.galleries/office/02.jpg]]></target>
+          <uuid>2f670d4d-7061-11e6-9a42-0242ac11002b</uuid>
         </link>
       </Image>
       <Title/>
-      <Copyright><![CDATA[pixabay.com]]></Copyright>
     </Image>
   </ApolloSection>
 </ApolloSections>

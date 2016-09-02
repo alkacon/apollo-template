@@ -3,12 +3,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.schemas.slider">
 <cms:formatter var="content" val="value" rdfa="rdfa">
 
-<div class="margin-bottom-30">
+<div class="ap-carousel mb-30">
 
 	<c:choose>
 		<c:when test="${cms.element.inMemoryOnly}">
@@ -29,33 +30,14 @@
 			<div class="carousel slide carousel-v1" id="myCarousel-${content.file.structureId}">
 				<div class="carousel-inner">
 					<c:forEach var="image" items="${content.valueList.Image}" varStatus="status">
-						<div class="item<c:if test="${status.first}"> active</c:if>">
-
-							<c:set var="copyright" value="" />
-                            <c:choose>
-                               	<c:when test="${image.value.Copyright.isSet}">
-                  					<c:set var="copyright" value="${image.value.Copyright.stringValue}" />
-                  				</c:when>
-                            	<c:otherwise>
-                            		<c:set var="mainimguri">${image.value.Uri}</c:set> 
-                            		<c:if test="${fn:contains(mainimguri, '?')}">
-								    	<c:set var="mainimguri">${fn:substringBefore(mainimguri, '?')}</c:set>  
-								    </c:if>
-                                	<c:set var="copyright"><cms:property name="Copyright" file="${mainimguri}" default="" /></c:set>
-                                </c:otherwise>
-                            </c:choose>
-
-              				<c:if test="${not empty copyright and not fn:startsWith(copyright, '(c)')}">
-              					<c:set var="copyright">${fn:replace(copyright, "&copy;", "")}</c:set>
-                            	<c:set var="copyright">(c) ${copyright}</c:set>
-                            </c:if>
-
+						<apollo:image-vars image="${image}" escapecopyright="false">
+                        <div class="item<c:if test="${status.first}"> active</c:if>">
 							<c:if test="${image.value.Link.isSet}">
 								<a href="<cms:link>${image.value.Link}</cms:link>" ${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?'target="_blank"':''}>
 							</c:if>
-							<cms:img alt="${copyright}" title="${copyright}" src="${image.value.Uri}" scaleType="2" scaleColor="transparent" scaleQuality="75" noDim="true" cssclass="img-responsive"/>
+							<cms:img alt="${image.value.SuperTitle}" title="${image.value.SuperTitle}" src="${image.value.Uri}" scaleType="2" scaleColor="transparent" scaleQuality="75" noDim="true" cssclass="img-responsive"/>
 							<c:if test="${image.value.SuperTitle.isSet || image.value.TitleLine1.isSet || image.value.TitleLine2.isSet}">
-								<div class="carousel-caption" style="background-color: ${bg}; opacity: 0.7; filter: alpha(opacity=70);">
+								<div class="carousel-caption <c:if test="${cms.element.settings.showCopy and not empty imageCopyright}">carousel-caption-copyright</c:if>" style="background-color: ${bg};">
 									<c:if test="${image.value.SuperTitle.isSet}">
 										<h3 style="color: ${txt};" ${image.rdfa.SuperTitle}>${image.value.SuperTitle}</h3>
 									</c:if>
@@ -67,10 +49,16 @@
 									</c:if>
 								</div>
 							</c:if>
+                            <c:if test="${cms.element.settings.showCopy and not empty imageCopyright}">
+								<div class="carousel-copyright" style="background-color: ${bg}; color: ${txt};">
+									<span>${imageCopyright}</span>
+								</div>
+							</c:if>
 							<c:if test="${image.value.Link.isSet}">
 								</a>
 							</c:if>
 						</div>
+                        </apollo:image-vars>
 					</c:forEach>
 				</div>
 				<div class="carousel-arrow">

@@ -74,10 +74,7 @@
 
 					<%-- paragraphs --%>
 					<c:set var="imgalign"><cms:elementsetting name="imgalign" default="left" /></c:set>
-					<c:forEach 
-                        var="paragraph" 
-                        items="${content.valueList.Paragraph}"
-						varStatus="status">
+					<c:forEach var="paragraph" items="${content.valueList.Paragraph}" varStatus="status">
 
 						<apollo:paragraph 
 							setting="${cms.element.setting}"

@@ -4,7 +4,7 @@
   <Bundle language="en">
     <Message>
       <Key><![CDATA[fileicon.a-job]]></Key>
-      <Value><![CDATA[Job Advertisement]]></Value>
+      <Value><![CDATA[Job Offer]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.job.message.inmemory]]></Key>
@@ -16,7 +16,7 @@
     </Message>
     <Message>
       <Key><![CDATA[title.a-job]]></Key>
-      <Value><![CDATA[Job Advertisement]]></Value>
+      <Value><![CDATA[Job Offer]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.job.setting.columns]]></Key>
@@ -28,7 +28,7 @@
     </Message>
     <Message>
       <Key><![CDATA[desc.a-job]]></Key>
-      <Value><![CDATA[Displays information of a job advertisement.]]></Value>
+      <Value><![CDATA[Displays information of a job offer.]]></Value>
     </Message>
   </Bundle>
   <Bundle language="de">

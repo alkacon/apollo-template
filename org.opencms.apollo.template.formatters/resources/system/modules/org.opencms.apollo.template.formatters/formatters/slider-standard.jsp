@@ -3,6 +3,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
+
 <cms:formatter var="content" val="value">
 	<div>
 		<c:choose>
@@ -28,53 +30,43 @@
 					<div class="slider fullwidthbanner">
 						<ul>
 							<c:forEach var="image" items="${content.valueList.Image}" varStatus="status">
-								<c:set var="x">${posX}</c:set>
-								<c:set var="y">${posY}</c:set>
-								<c:if test="${image.value.Position.exists}">
-									<c:set var="pos" value="${image.value.Position}" />
-									<fmt:parseNumber var="x" integerOnly="true" type="number" value="${pos.value.Left}" />
-									<fmt:parseNumber var="y" integerOnly="true" type="number" value="${pos.value.Top}" />
-								</c:if>
-								<c:set var="bg" value="transparent" />
-								<c:if test="${value.TextBackgroundColor.isSet}">
-									<c:set var="bg" value="${value.TextBackgroundColor}" />
-								</c:if>
-								<li style="display: none;" data-masterspeed=" ${value.Delay}"
-									data-transition="fade" data-slotamount="12" <c:if test="${image.value.Link.isSet}">data-link="<cms:link>${image.value.Link}</cms:link>" ${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?' data-target="_blank"':''}</c:if>>
-									<img src="<cms:link>${image.value.Uri}</cms:link>" alt="${image.value.Tooltip}" />
-									<c:if test="${image.value.SuperTitle.isSet || image.value.TitleLine1.isSet || image.value.TitleLine2.isSet}">
-										<div class="hidden-xs caption fade" data-x="${x}"
-											data-y="${y}" data-easing="easeOutBack"
-											style="background-color: ${bg}; color: ${value.TextColor};">
-											<c:if test="${image.value.SuperTitle.isSet}">
-												<h2 style="color: ${value.TextColor};">${image.value.SuperTitle}</h2>
-											</c:if>
-											<c:if test="${image.value.TitleLine1.isSet}">
-												<h3 style="color: ${value.TextColor};">${image.value.TitleLine1}</h3>
-											</c:if>
-											<c:if test="${image.value.TitleLine2.isSet}">
-												<h3 style="color: ${value.TextColor};">${image.value.TitleLine2}</h3>
-											</c:if>
-										</div>
-									</c:if> <c:set var="copyright" value="" />
-                                            <c:choose>
-                                                <c:when test="${image.value.Copyright.isSet}">
-                                					<c:set var="copyright" value="${image.value.Copyright.stringValue}" />
-                                				</c:when>
-                                                <c:otherwise>
-                                                    <c:set var="mainimguri">${image.value.Uri}</c:set> 
-				                            		<c:if test="${fn:contains(mainimguri, '?')}">
-												    	<c:set var="mainimguri">${fn:substringBefore(mainimguri, '?')}</c:set>  
-												    </c:if>
-				                                	<c:set var="copyright"><cms:property name="Copyright" file="${mainimguri}" default="" /></c:set>
-                                                </c:otherwise>
-                                            </c:choose>
-                            
-                            				<c:if test="${not empty copyright and not fn:startsWith(copyright, '&copy;')}">
-                                                <c:set var="copyright">&copy; ${copyright}</c:set>
-										<fmt:parseNumber var="y" integerOnly="true" type="number" value="${value.ImageHeight}" />
-										<div class="caption copyright" data-x="0" data-y="${y-30}">${copyright}</div>
-									</c:if></li>
+								<apollo:image-vars image="${image}" escapecopyright="false">
+                                    <c:set var="x">${posX}</c:set>
+                                    <c:set var="y">${posY}</c:set>
+                                    <c:if test="${image.value.Position.exists}">
+                                        <c:set var="pos" value="${image.value.Position}" />
+                                        <fmt:parseNumber var="x" integerOnly="true" type="number" value="${pos.value.Left}" />
+                                        <fmt:parseNumber var="y" integerOnly="true" type="number" value="${pos.value.Top}" />
+                                    </c:if>
+                                    <c:set var="bg" value="transparent" />
+                                    <c:if test="${value.TextBackgroundColor.isSet}">
+                                        <c:set var="bg" value="${value.TextBackgroundColor}" />
+                                    </c:if>
+                                    <li style="display: none;" data-masterspeed=" ${value.Delay}"
+                                        data-transition="fade" data-slotamount="12" <c:if test="${image.value.Link.isSet}">data-link="<cms:link>${image.value.Link}</cms:link>" ${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?' data-target="_blank"':''}</c:if>>
+                                        <img src="<cms:link>${image.value.Uri}</cms:link>" alt="${image.value.Tooltip}" />
+                                        <c:if test="${image.value.SuperTitle.isSet || image.value.TitleLine1.isSet || image.value.TitleLine2.isSet}">
+                                            <div class="hidden-xs caption fade" data-x="${x}"
+                                                data-y="${y}" data-easing="easeOutBack"
+                                                style="background-color: ${bg}; color: ${value.TextColor};">
+                                                <c:if test="${image.value.SuperTitle.isSet}">
+                                                    <h2 style="color: ${value.TextColor};">${image.value.SuperTitle}</h2>
+                                                </c:if>
+                                                <c:if test="${image.value.TitleLine1.isSet}">
+                                                    <h3 style="color: ${value.TextColor};">${image.value.TitleLine1}</h3>
+                                                </c:if>
+                                                <c:if test="${image.value.TitleLine2.isSet}">
+                                                    <h3 style="color: ${value.TextColor};">${image.value.TitleLine2}</h3>
+                                                </c:if>
+                                            </div>
+                                        </c:if>
+
+                                        <c:if test="${cms.element.settings.showCopy and not empty imageCopyright}">
+                                            <fmt:parseNumber var="y" integerOnly="true" type="number" value="${value.ImageHeight}" />
+                                            <div class="caption copyright" data-x="0" data-y="${y-30}">${imageCopyright}</div>
+                                        </c:if>
+                                    </li>
+                                </apollo:image-vars>
 							</c:forEach>
 						</ul>
 						<c:if test="${value.ShowPlayButton eq 'true'}">

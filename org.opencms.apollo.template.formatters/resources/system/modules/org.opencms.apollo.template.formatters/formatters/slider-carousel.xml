@@ -32,5 +32,11 @@
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showCopy]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.copy)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
   </NewFormatter>
 </NewFormatters>

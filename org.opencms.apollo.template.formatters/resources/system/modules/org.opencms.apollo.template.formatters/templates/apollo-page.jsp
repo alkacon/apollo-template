@@ -70,6 +70,19 @@
   });
 </script>
 
+<c:set var="gaprop"><cms:property name="google.analytics" file="search" default="none" /></c:set>
+<c:if test="${cms.requestContext.currentProject.onlineProject && gaprop != 'none'}">
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-${gaprop}', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+</c:if>
+
 <!--[if lt IE 9]>
   <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/respond.js:164f5662-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
   <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.basics/resources/compatibility/html5shiv.js:163824de-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>

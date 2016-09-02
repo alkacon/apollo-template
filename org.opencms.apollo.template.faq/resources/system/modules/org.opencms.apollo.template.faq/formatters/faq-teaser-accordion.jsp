@@ -12,15 +12,15 @@
 
 <cms:formatter var="content" val="value">
 
-    <div class="ap-faq-panel panel panel-default mb-5">
+    <div class="ap-faq-panel panel panel-default ${cms.element.settings.index == 0 ? '':'mt-5'}">
         <div  class="panel-heading">
             <h4 class="panel-title">
                 <a
                     class="accordion-toggle ${cms.element.settings.index == 0 ? '':'collapsed'}"
+                    data-parent="#list-${cms.element.settings.listid}"
                     data-toggle="collapse"
-                    data-parent="#accordion-${accId}"
                     href="#collapse-${accId}-${cms.element.settings.index}">
-      
+
                     <div class="ap-panel-title">${content.value.Question}</div>
 
                 </a>

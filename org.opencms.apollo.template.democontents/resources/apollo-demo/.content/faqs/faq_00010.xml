@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.faq/schemas/faq.xsd">
+  <ApolloFaq language="en">
+    <Question><![CDATA[Why is a boxing ring square?]]></Question>
+    <Date>1474639200000</Date>
+    <Paragraph>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Phasellus viverra nulla ut metus varius laoreet. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+<p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.&nbsp;</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/samples/56.jpg]]></target>
+            <uuid>4f247fb0-7052-11e6-9a42-0242ac11002b</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
+      </Image>
+      <Link>
+        <Text><![CDATA[Further reading]]></Text>
+        <URI>
+          <link internal="false" type="WEAK">
+            <target><![CDATA[https://en.wikipedia.org/wiki/Boxing_ring]]></target>
+          </link>
+        </URI>
+        <NewWindow>true</NewWindow>
+      </Link>
+    </Paragraph>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <GalleryTitle><![CDATA[%(value:Question)]]></GalleryTitle>
+  </ApolloFaq>
+</ApolloFaqs>

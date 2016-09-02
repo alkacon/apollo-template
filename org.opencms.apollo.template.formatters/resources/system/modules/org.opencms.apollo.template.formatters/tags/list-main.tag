@@ -14,6 +14,8 @@
 <%@ attribute name="selectcolor" type="java.lang.String" required="false" %>
 <%@ attribute name="teaserlength" type="java.lang.Integer" required="false" %>
 <%@ attribute name="path" type="java.lang.String" required="false" %>
+<%@ attribute name="listid" type="java.lang.String" required="false" %>
+<%@ attribute name="wrapitem" type="java.lang.Boolean" required="false" %>
 
 <%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" %>
 <%@ variable name-given="searchConfig" scope="AT_END" declare="true" %>
@@ -24,6 +26,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
+<c:if test="${empty wrapitem}"><c:set var="wrapitem" value="true"/></c:if> 
 
 <%-- ####### Search items ################ --%>
 
@@ -38,7 +41,7 @@
 <%-- ####### Elements of the list ######## --%>
 
 	<c:forEach var="result" items="${search.searchResults}" varStatus="status">
-		<div class="list-entry">
+		<c:if test="${wrapitem}"><div class="list-entry"></c:if> 
 			<cms:display value="${result.xmlContent.filename}" displayFormatters="${types}" editable="true" create="true" delete="true">
 				<cms:param name="teaserlength" value="${teaserlength}" />
 				<cms:param name="buttoncolor">${color}</cms:param>
@@ -47,8 +50,9 @@
 				<cms:param name="index">${status.index}</cms:param>
 				<cms:param name="last">${status.last}</cms:param>
 				<cms:param name="pageUri">${path}</cms:param>
+                <cms:param name="listid">${listid}</cms:param>
 			</cms:display>
-		</div>
+		<c:if test="${wrapitem}"></div></c:if> 
 	</c:forEach>
 	
 </c:if>

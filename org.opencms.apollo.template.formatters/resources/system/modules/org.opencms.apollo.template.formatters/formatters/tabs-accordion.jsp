@@ -39,7 +39,7 @@
                             name="tab-container${status.count}"
                             type="row"
                             tagClass="panel-body ap-panel-body"
-                            maxElements="2">
+                            maxElements="10">
                                 <c:set var="msg"><fmt:message key="apollo.tabs.emptycontainer.text"/></c:set>
                                 <apollo:container-box
                                     label="${msg}"

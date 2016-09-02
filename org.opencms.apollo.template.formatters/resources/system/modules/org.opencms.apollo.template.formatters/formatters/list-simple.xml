@@ -35,6 +35,13 @@
       <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.listwrapper:panel-group:%(key.apollo.setting.listwrapper.accordion))]]></WidgetConfig>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[buttoncolor]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>

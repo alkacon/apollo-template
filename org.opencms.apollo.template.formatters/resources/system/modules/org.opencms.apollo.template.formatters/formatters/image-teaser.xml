@@ -24,5 +24,23 @@
     <Detail>false</Detail>
     <Display>false</Display>
     <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[teaserlength]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.teaserlength)]]></DisplayName>
+      <Widget><![CDATA[string]]></Widget>
+      <Default><![CDATA[200]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showCopy]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.copy)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showShadow]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.shadow)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
   </NewFormatter>
 </NewFormatters>

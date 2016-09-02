@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/list.xsd">
+  <ApolloList language="en">
+    <Headline><![CDATA[Frequently Asked Questions]]></Headline>
+    <TypesToCollect>a-faq:018e42e3-3d05-11e6-aee4-0242ac11002b</TypesToCollect>
+    <Folder>
+      <link type="WEAK">
+        <target><![CDATA[/sites/default/apollo-demo/.content/faqs/]]></target>
+        <uuid>d93298c9-6f4f-11e6-9a42-0242ac11002b</uuid>
+      </link>
+    </Folder>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <SortOrder><![CDATA[titleasc]]></SortOrder>
+    <ItemsPerPage><![CDATA[4]]></ItemsPerPage>
+  </ApolloList>
+</ApolloLists>
