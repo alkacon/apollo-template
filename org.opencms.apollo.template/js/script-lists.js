@@ -21,6 +21,7 @@ function reloadInnerList(searchStateParameters, elem) {
 			$(this).remove();
 		});
 		
+		entryBox.css("min-height", elem.data("minheight"));
 		elem.find(".pagination_box").empty();
 		var listOptionBox = $('#listoption_box-' + elem.data('id'));
 		listOptionBox.find(".listOptions").remove();
