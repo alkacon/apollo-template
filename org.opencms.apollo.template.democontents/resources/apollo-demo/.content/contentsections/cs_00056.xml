@@ -17,5 +17,14 @@
       <Title/>
       <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
     </Image>
+    <Link>
+      <Text><![CDATA[Read more]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/faqs/]]></target>
+          <uuid>e069997b-6082-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
   </ApolloSection>
 </ApolloSections>

@@ -14,7 +14,15 @@
           <uuid>b34d8f62-4705-11e3-8417-000c29d28104</uuid>
         </link>
       </Image>
-      <Title/>
     </Image>
+    <Link>
+      <Text><![CDATA[Read more]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/the-team/]]></target>
+          <uuid>a3023c68-6079-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
   </ApolloSection>
 </ApolloSections>

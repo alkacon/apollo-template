@@ -5578,6 +5578,18 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/blogentries/be_00011.xml</source>
+			<destination>apollo-demo/.content/blogentries/be_00011.xml</destination>
+			<type>a-blog</type>
+			<uuidstructure>18194d5a-732e-11e6-9a42-0242ac11002b</uuidstructure>
+			<uuidresource>18194d5b-732e-11e6-9a42-0242ac11002b</uuidresource>
+			<datecreated>Mon, 05 Sep 2016 06:00:49 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/blogentries/.detailContainers</destination>
 			<type>folder</type>
 			<uuidstructure>76b7ba89-ef5c-11e5-9d65-0242ac11002b</uuidstructure>

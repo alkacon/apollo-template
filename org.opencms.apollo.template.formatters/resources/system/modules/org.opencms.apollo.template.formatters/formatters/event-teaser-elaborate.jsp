@@ -79,7 +79,7 @@
 				<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
 			</h2>
 
-			<c:set var="showdate"><c:out value="${cms.element.settings.showDate}" default="true" /></c:set>
+			<c:set var="showdate"><c:out value="${cms.element.settings.showdate}" default="true" /></c:set>
 			<c:if test="${showdate}">
 				<p>
 					<i>
