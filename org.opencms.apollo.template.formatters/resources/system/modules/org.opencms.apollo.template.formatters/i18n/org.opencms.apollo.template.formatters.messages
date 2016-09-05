@@ -119,6 +119,10 @@
       <Value><![CDATA[read more +]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.link.frontend.more]]></Key>
+      <Value><![CDATA[More]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.section.text.style.plain]]></Key>
       <Value><![CDATA[Plain]]></Value>
     </Message>
@@ -1007,6 +1011,10 @@
     <Message>
       <Key><![CDATA[apollo.image.frontend.readmore]]></Key>
       <Value><![CDATA[mehr lesen +]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.link.frontend.more]]></Key>
+      <Value><![CDATA[Mehr]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.text.style.plain]]></Key>

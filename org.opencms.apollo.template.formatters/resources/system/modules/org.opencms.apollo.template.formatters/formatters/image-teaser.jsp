@@ -28,7 +28,8 @@
             <div class="overflow-hidden">
                 <img src="<cms:link>${imageLink}</cms:link>" alt="${imageTitle}" title="${imageTitle}" class="img-responsive" />
        		</div>
-			<apollo:link link="${value.Link}" linkclass="btn-more hover-effect" />									
+            <c:set var="linktext"><fmt:message key="apollo.link.frontend.more" /></c:set>
+			<apollo:link link="${value.Link}" linkclass="btn-more hover-effect" linktext="${linktext}" />									
 		</div>
 		<c:if test="${cms.element.settings.showCopy and not empty imageCopyright}"> 
             <div class="info">

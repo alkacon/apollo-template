@@ -35,7 +35,8 @@
 								data-color="${element.settings.buttoncolor}" 
 								data-expired="${element.settings.showexpired}" 
 								data-sitepath="${cms.requestContext.folderUri}" 
-								data-dynamic="${dynamic ? 'true' : 'false'}">
+								data-dynamic="${dynamic ? 'true' : 'false'}"
+								data-minheight="${count * approxElemHeight}">
 							
 	<div class="entrylist_box" style="min-height: ${count * approxElemHeight}px;">
 		<div class="col-xs-12">
