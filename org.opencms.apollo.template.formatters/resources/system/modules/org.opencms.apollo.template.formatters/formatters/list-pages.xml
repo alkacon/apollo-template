@@ -35,12 +35,6 @@
       <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[noFacets]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.nofacets)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
-    </Setting>
-    <Setting>
       <PropertyName><![CDATA[buttoncolor]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>
