@@ -180,21 +180,27 @@ a.thumbnail {
             bottom: 0;
         }
     }
+}
 
-&.shadow-border{
-    
-    padding: 0px;
-    transition: padding .3s ease-out;
-    
-    &:hover{
+.shadow-border {
+
+    &:hover {
         box-shadow: 0 0 8px $grey-dark; 
         -webkit-transition: box-shadow 0.2s ease-in-out;
         -moz-transition: box-shadow 0.2s ease-in-out;
         -o-transition: box-shadow 0.2s ease-in-out;
         transition: box-shadow 0.2s ease-in-out;
-        padding: 7px;
-        transition: padding .3s ease-in;
-        }
+    }
+}
+
+.shadow-border-inner {
+
+    transform: scale(1);
+    transition: .3s ease-out;
+
+    &:hover {
+        transform: scale(0.925);
+        transition: .3s ease-in;
     }
 }
 
