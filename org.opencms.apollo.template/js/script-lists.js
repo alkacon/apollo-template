@@ -35,7 +35,7 @@ function reloadInnerList(searchStateParameters, elem) {
 					}
 					spinner.removeClass("bounceIn").addClass("bounceOut");
 					entryBox.css("min-height", "0");
-					showEditButtons();
+					_OpenCmsReinitEditButtons();
 					list_lock[elem.attr("id")] = false;
 				});
 	}
@@ -55,7 +55,7 @@ function appendInnerList(searchStateParameters, elem) {
 					$(resultList).filter(".list-entry").appendTo(elem.find('.entrylist_box'));
 					$(resultList).filter(".pagination").appendTo(elem.find('.pagination_box'));
 					spinner.removeClass("bounceIn").addClass("bounceOut");
-					showEditButtons();
+					_OpenCmsReinitEditButtons();
 					list_lock[elem.attr("id")] = false;
 				});
 	}
@@ -94,12 +94,6 @@ function initList() {
 
 function showEmpty(elem){
 	elem.find(".editbox").show();
-}
-
-function showEditButtons(){
-	if (typeof opencms != 'undefined' && typeof opencms.reinitializeEditButtons === 'function'){
-		opencms.reinitializeEditButtons();
-	} 
 }
 
 $(document).ready(function(){
