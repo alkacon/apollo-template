@@ -181,18 +181,21 @@ a.thumbnail {
         }
     }
 
-	&.shadow-border{
-		padding: 7px;
-		
-		&:hover{
-			box-shadow: 0 0 8px $grey-dark; 
-			-webkit-transition: box-shadow 0.2s ease-in-out;
-			-moz-transition: box-shadow 0.2s ease-in-out;
-			-o-transition: box-shadow 0.2s ease-in-out;
-			transition: box-shadow 0.2s ease-in-out;
-		}
-	}
-
+&.shadow-border{
+    
+    padding: 0px;
+    transition: padding .3s ease-out;
+    
+    &:hover{
+        box-shadow: 0 0 8px $grey-dark; 
+        -webkit-transition: box-shadow 0.2s ease-in-out;
+        -moz-transition: box-shadow 0.2s ease-in-out;
+        -o-transition: box-shadow 0.2s ease-in-out;
+        transition: box-shadow 0.2s ease-in-out;
+        padding: 7px;
+        transition: padding .3s ease-in;
+        }
+    }
 }
 
 // thumbnail effects
