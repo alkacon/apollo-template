@@ -85,8 +85,8 @@ $screen-lg-min: 1200px;
     
     left: 50%;
     i{
-        animation: spinner 1s infinite;
-        animation-timing-function: linear;
+        animation: spinner 700ms infinite;
+        animation-timing-function: steps(4,end);
     }
 }
 
