@@ -10,7 +10,7 @@
 
 <c:set var="titlePos"><cms:elementsetting name="titlepos" default="top" /></c:set>
 
-	<div class="margin-bottom-30">
+	<div class="mb-20">
 		<c:set var="inMemoryMessage"><fmt:message key="apollo.job.message.inmemory" /></c:set>
 		<apollo:init-messages textnew="${inMemoryMessage}">
 			<div class="job-page">
@@ -19,7 +19,7 @@
 					<%-- ####### Title (1st position option) ######## --%>
 					<div class="col-xs-12">
 					<c:if test="${titlePos == 'top'}">
-							<apollo:headline setting="${cms.element.setting}" headline="${content.value.Title}" />
+							<apollo:headline headline="${content.value.Title}"  setting="${cms.element.setting}" />
 					</c:if>
 					</div>
 			
@@ -27,7 +27,7 @@
 					<c:if test="${value.Introduction.isSet}">
 						<div class="col-xs-12">
 							<div class="mb-20">
-								<apollo:paragraph setting="${cms.element.setting}" paragraph="${value.Introduction}" imgalign="top"/>
+								<apollo:paragraph paragraph="${value.Introduction}" imgalign="top"/>
 							</div>
 						</div>
 					</c:if>
@@ -50,16 +50,16 @@
 							<div class="row">
 						</c:if>
 							<div class="col-xs-12 col-sm-6">
-								<apollo:paragraph setting="${cms.element.setting}" paragraph="${text}" />
+								<apollo:paragraph paragraph="${text}" />
 							</div>
-						<c:if test="${status.index % 2 == 1}">
+						<c:if test="${status.index % 2 == 1 or status.last}">
 							</div>
 						</c:if>
 					</c:forEach>
 				</c:when>
 				<c:otherwise>
 					<c:forEach var="text" items="${content.valueList.Text}" varStatus="status">
-						<apollo:paragraph setting="${cms.element.setting}" paragraph="${text}" />
+						<apollo:paragraph paragraph="${text}" />
 					</c:forEach>
 				</c:otherwise>
 				</c:choose>
@@ -69,7 +69,7 @@
 				<c:if test="${value.BottomText.isSet}">
 					<div class="row">
 						<div class="col-xs-12">
-							<apollo:paragraph setting="${cms.element.setting}" paragraph="${value.BottomText}"/>
+							<apollo:paragraph paragraph="${value.BottomText}"/>
 						</div>
 					</div>
 				</c:if>
@@ -79,9 +79,7 @@
 					<c:set var="btnStyle" value="${cms.element.settings.btnstyle}" />
 					<div class="row">
 						<div class="${btnStyle == 'center' ? 'text-center' : ''} col-xs-12">
-							<a href="<cms:link>${value.Link.value.URI}</cms:link>" ${value.Link.value.NewWindow.toBoolean ? 'target="_blank"' : ''}>
-								<div class="btn ap-btn-${cms.element.settings.buttoncolor} ${btnStyle == 'full' ? 'center-block' : ''}">${value.Link.value.Text}</div>
-							</a>
+                            <apollo:link link="${value.Link}" linkclass="btn ap-btn-${cms.element.settings.buttoncolor} ${btnStyle == 'full' ? 'center-block' : ''}" />
 						</div>
 					</div>
 				</c:if>

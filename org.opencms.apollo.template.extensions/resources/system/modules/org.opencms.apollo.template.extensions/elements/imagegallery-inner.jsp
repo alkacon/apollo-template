@@ -9,7 +9,6 @@
 
 	<%-- ####### Build search config JSON ############################################ --%>
 	
-	<c:set var="showTitle">${param.title}</c:set>
 	<c:set var="solrParamType">fq=type:"image"</c:set>
 	<c:set var="solrParamDirs">&fq=parent-folders:${param.path}</c:set>
 	<c:set var="extraSolrParams">${solrParamType}${solrParamDirs}&page=${param.page}&sort=path asc</c:set>
@@ -22,6 +21,6 @@
 
 	<%-- ####### Search and display the images ######################################## --%>
 	
-	<apollo:galleryitems config="${searchConfig}" css="${param.css}" count="${param.items}" page="${param.page}" />
+	<apollo:galleryitems config="${searchConfig}" css="${param.css}" count="${param.items}" page="${param.page}" showtitle="${param.title}" showcopyright="${param.copyright}" />
 	
 </cms:bundle>

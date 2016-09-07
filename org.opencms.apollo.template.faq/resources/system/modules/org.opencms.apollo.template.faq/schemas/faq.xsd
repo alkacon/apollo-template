@@ -16,6 +16,7 @@
 		<xsd:sequence>
 			<xsd:element name="Question" type="OpenCmsString" />
             <xsd:element name="Date" type="OpenCmsDateTime" />
+            <xsd:element name="Order" type="OpenCmsString" minOccurs="0" />            
             <xsd:element name="Paragraph" type="OpenCmsApolloParagraph" maxOccurs="5" />
             <xsd:element name="Category" type="OpenCmsDynamicCategory" />
             <xsd:element name="Availability" type="OpenCmsApolloAvailability" minOccurs="0" />
@@ -47,6 +48,7 @@
                 <layout element="Category" widget="CategoryWidget" configuration="onlyleafs=false" />
             </layouts>
             <validationrules>
+                <rule element="Order" regex="^[-+]?\d+$" type="error" message="%(key.apollo.faq.error.Order)" />
                 <rule element="Question" regex=".+" type="error" message="%(key.apollo.faq.error.Question)" />
             </validationrules>
             <relations>
@@ -58,6 +60,9 @@
                 </searchsetting>               
 				 <searchsetting element="Question" searchcontent="false">
                     <solrfield targetfield="disptitle" sourcefield="*_s" />
+                </searchsetting> 
+                <searchsetting element="Order" searchcontent="false">
+                    <solrfield targetfield="newsorder" sourcefield="*_i" default="0" />
                 </searchsetting> 
 				<searchsetting element="Category" searchcontent="false" />
 				<searchsetting element="GalleryTitle" searchcontent="false" /> 

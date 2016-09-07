@@ -19,6 +19,7 @@
 	<div class="listOptions row mb-20" style="min-height: 36px;">
 		<div class="col-xs-12">
 			<section class="btn-group pull-right">
+            
 				<%-- ####### Category filter ######## --%>
 				<c:if test="${empty facets || fn:contains(facets, 'category')}">
 					<c:set var="buttonLabel"><fmt:message key="facet.category.label" /></c:set>
@@ -26,17 +27,24 @@
 					<apollo:list-facetbutton field="category_exact" label="${buttonLabel}" deselect="${noSelection}" searchresult="${search}" color="${color}" />
 				</c:if>
 
-				<%-- ####### Sort options ######## --%>
+				<%-- ####### Sort by date ######## --%>
 				<c:if test="${empty facets || fn:contains(facets, 'sort_date')}">
 					<c:set var="buttonLabel"><fmt:message key="sort.options.date.label" /></c:set>
 					<apollo:list-sortbutton searchresult="${search}" color="${color}"  label="${buttonLabel}" params="asc+desc" />
 				</c:if>
 
-				<%-- ####### Sort options ######## --%>
+                <%-- ####### Sort by order ######## --%>
+				<c:if test="${empty facets || fn:contains(facets, 'sort_order')}">
+					<c:set var="buttonLabel"><fmt:message key="sort.options.order.label" /></c:set>
+					<apollo:list-sortbutton searchresult="${search}" color="${color}"  label="${buttonLabel}" params="order_a+order_d" />
+				</c:if>    
+                
+				<%-- ####### Sort by title ######## --%>
 				<c:if test="${empty facets || fn:contains(facets, 'sort_title')}">
 					<c:set var="buttonLabel"><fmt:message key="sort.options.title.label" /></c:set>
 					<apollo:list-sortbutton searchresult="${search}" color="${color}"  label="${buttonLabel}" params="title_a+title_d" />
 				</c:if>
+
 			</section>
 		</div>
 	</div>

@@ -90,6 +90,10 @@
       <Key><![CDATA[apollo.blog.message.readmore]]></Key>
       <Value><![CDATA[read more]]></Value>
     </Message>
+    <Message>
+      <Key><![CDATA[apollo.blog.message.by]]></Key>
+      <Value><![CDATA[By]]></Value>
+    </Message>
   </Bundle>
   <Bundle language="de">
     <Message>
@@ -179,6 +183,10 @@
     <Message>
       <Key><![CDATA[apollo.blog.message.readmore]]></Key>
       <Value><![CDATA[Weiter lesen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.blog.message.by]]></Key>
+      <Value><![CDATA[Von]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

@@ -7,11 +7,15 @@
 <%@ attribute name="css" type="java.lang.String" required="true" %>
 <%@ attribute name="count" type="java.lang.String" required="true" %>
 <%@ attribute name="page" type="java.lang.String" required="true" %>
+<%@ attribute name="showtitle" type="java.lang.Boolean" required="false" %>
+<%@ attribute name="showcopyright" type="java.lang.Boolean" required="false" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo"%>
+
+<c:if test="${empty showtitle}"><c:set var="showtitle" value="false" /></c:if>
 
 <cms:search configString="${config}" var="search">
 	<c:choose>
@@ -24,12 +28,14 @@
 					<c:set var="title">${fn:trim(result.fields['Title_dprop_s'])}</c:set>
 					<apollo:copyright text="${fn:trim(result.fields['Copyright_dprop_s'])}" />
 					<c:set var="imagesrc"><cms:link>${image.rootPath}</cms:link></c:set>
+					<c:set var="titleEmpty">${empty title or not showtitle}</c:set>
+					<c:set var="copyEmpty">${empty copyright or not showcopyright}</c:set>
 
 					<div class="${css} comein zoom">
 						<a class="content image-gallery" 
 						   href="${imagesrc}" 
 						   onclick="openGallery(event, ${status.index+count*(page-1)})" 
-						   title="${showTitle ? title : ''}${empty title or not showTitle ? '' : ' '}${copyright}" > 
+						   title="${not titleEmpty ? title : ''}${titleEmpty or copyEmpty  ? '' : ' '}${not copyEmpty ? copyright : ''}"> 
 							<div class="ap-square-section" style="background-image:url('${imagesrc}');">
 								<div class="zoom-overlay">
 									<div class="zoom-icon">

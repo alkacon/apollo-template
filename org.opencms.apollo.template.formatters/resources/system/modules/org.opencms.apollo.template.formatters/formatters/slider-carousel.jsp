@@ -13,7 +13,7 @@
 
 	<c:choose>
 		<c:when test="${cms.element.inMemoryOnly}">
-			<div class="alert"><fmt:message key="apollo.carousel.message.new" /></div>
+			<div class="alert alert-danger"><fmt:message key="apollo.carousel.message.new" /></div>
 		</c:when>
 		<c:otherwise>
 
@@ -27,45 +27,45 @@
 			</c:if>
 			<c:set var="txt">${value.TextColor}</c:set>
 
-			<div class="carousel slide carousel-v1" id="myCarousel-${content.file.structureId}">
+			<div class="carousel slide carousel-v1" id="ap-carousel-${content.file.structureId}">
 				<div class="carousel-inner">
 					<c:forEach var="image" items="${content.valueList.Image}" varStatus="status">
-						<apollo:image-vars image="${image}" escapecopyright="false">
                         <div class="item<c:if test="${status.first}"> active</c:if>">
 							<c:if test="${image.value.Link.isSet}">
 								<a href="<cms:link>${image.value.Link}</cms:link>" ${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?'target="_blank"':''}>
 							</c:if>
-							<cms:img alt="${image.value.SuperTitle}" title="${image.value.SuperTitle}" src="${image.value.Uri}" scaleType="2" scaleColor="transparent" scaleQuality="75" noDim="true" cssclass="img-responsive"/>
-							<c:if test="${image.value.SuperTitle.isSet || image.value.TitleLine1.isSet || image.value.TitleLine2.isSet}">
-								<div class="carousel-caption <c:if test="${cms.element.settings.showCopy and not empty imageCopyright}">carousel-caption-copyright</c:if>" style="background-color: ${bg};">
-									<c:if test="${image.value.SuperTitle.isSet}">
-										<h3 style="color: ${txt};" ${image.rdfa.SuperTitle}>${image.value.SuperTitle}</h3>
-									</c:if>
-									<c:if test="${image.value.TitleLine1.isSet}">
-										<p style="color: ${txt};" ${image.rdfa.TitleLine1}>${image.value.TitleLine1}</p>
-									</c:if>
-									<c:if test="${image.value.TitleLine2.isSet}">
-										<p style="color: ${txt};" ${image.rdfa.TitleLine2}>${image.value.TitleLine2}</p>
-									</c:if>
-								</div>
-							</c:if>
-                            <c:if test="${cms.element.settings.showCopy and not empty imageCopyright}">
-								<div class="carousel-copyright" style="background-color: ${bg}; color: ${txt};">
-									<span>${imageCopyright}</span>
-								</div>
-							</c:if>
+                            <apollo:image-simple image="${image}" setting="${cms.element.setting}" onlyimage="true" title="${image.value.SuperTitle.stringValue}" />
+                            <apollo:image-vars image="${image}" escapecopyright="false">
+                                <c:if test="${image.value.SuperTitle.isSet || image.value.TitleLine1.isSet || image.value.TitleLine2.isSet}">
+                                    <div class="carousel-caption <c:if test="${cms.element.settings.showCopy and not empty imageCopyright}">carousel-caption-copyright</c:if>" style="background-color: ${bg};">
+                                        <c:if test="${image.value.SuperTitle.isSet}">
+                                            <h3 style="color: ${txt};" ${image.rdfa.SuperTitle}>${image.value.SuperTitle}</h3>
+                                        </c:if>
+                                        <c:if test="${image.value.TitleLine1.isSet}">
+                                            <p style="color: ${txt};" ${image.rdfa.TitleLine1}>${image.value.TitleLine1}</p>
+                                        </c:if>
+                                        <c:if test="${image.value.TitleLine2.isSet}">
+                                            <p style="color: ${txt};" ${image.rdfa.TitleLine2}>${image.value.TitleLine2}</p>
+                                        </c:if>
+                                    </div>
+                                </c:if>
+                                <c:if test="${cms.element.settings.showCopy and not empty imageCopyright}">
+                                    <div class="carousel-copyright" style="background-color: ${bg}; color: ${txt};">
+                                        <span>${imageCopyright}</span>
+                                    </div>
+                                </c:if>
+                             </apollo:image-vars>
 							<c:if test="${image.value.Link.isSet}">
 								</a>
 							</c:if>
 						</div>
-                        </apollo:image-vars>
 					</c:forEach>
 				</div>
 				<div class="carousel-arrow">
-					<a data-slide="prev" href="#myCarousel-${content.file.structureId}" class="left carousel-control">
+					<a data-slide="prev" href="#ap-carousel-${content.file.structureId}" class="left carousel-control">
 						<i class="fa fa-angle-left"></i>
 					</a>
-					<a data-slide="next" href="#myCarousel-${content.file.structureId}" class="right carousel-control">
+					<a data-slide="next" href="#ap-carousel-${content.file.structureId}" class="right carousel-control">
 						<i class="fa fa-angle-right"></i>
 					</a>
 				</div>
@@ -73,7 +73,7 @@
 
 			<script type="text/javascript">
 				function createCarousel() {
-					$(".carousel").carousel({
+					$("#ap-carousel-${content.file.structureId}").carousel({
 						interval: ${value.Delay}
 					});	
 				}

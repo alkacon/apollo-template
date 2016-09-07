@@ -64,26 +64,31 @@
 <c:set var="sortdatedesc">{ "label" : sortorder.desc, "paramvalue" : "desc", "solrvalue" : "newsdate_${cms.locale}_dt desc" }</c:set>
 <c:set var="sorttitleasc">{ "label" : sortorder.asc, "paramvalue" : "title_a", "solrvalue" : "disptitle_${cms.locale}_s asc" }</c:set>
 <c:set var="sorttitledesc">{ "label" : sortorder.desc, "paramvalue" : "title_d", "solrvalue" : "disptitle_${cms.locale}_s desc" }</c:set>
+<c:set var="sortorderasc">{ "label" : sortorder.asc, "paramvalue" : "order_a", "solrvalue" : "newsorder_${cms.locale}_i asc" }</c:set>
+<c:set var="sortorderdesc">{ "label" : sortorder.desc, "paramvalue" : "order_d", "solrvalue" : "newsorder_${cms.locale}_i desc" }</c:set>
 
-<c:set var="sortoptions" value="${sortdateasc},${sortdatedesc},${sorttitleasc},${sorttitledesc}" />
 <c:choose>
-<c:when test="${not empty sort && fn:contains(sort, 'dateasc')}">
-	<c:set var="firstsortoption" value="${sortdateasc}," />
-	<c:set var="sortoptions" value="${sortdatedesc},${sorttitleasc},${sorttitledesc}" />
-</c:when>
-<c:when test="${not empty sort && fn:contains(sort, 'datedesc')}">
-	<c:set var="firstsortoption" value="${sortdatedesc}," />
-	<c:set var="sortoptions" value="${sortdateasc},${sorttitleasc},${sorttitledesc}" />
-</c:when>
-<c:when test="${not empty sort && fn:contains(sort, 'titleasc')}">
-	<c:set var="firstsortoption" value="${sorttitleasc}," />
-	<c:set var="sortoptions" value="${sortdateasc},${sortdatedesc},${sorttitledesc}" />
-</c:when>
-<c:when test="${not empty sort && fn:contains(sort, 'titledesc')}">
-	<c:set var="firstsortoption" value="${sorttitledesc}," />
-	<c:set var="sortoptions" value="${sortdateasc},${sortdatedesc},${sorttitleasc}" />
-</c:when>
+    <c:when test="${fn:contains(sort, 'datedesc')}">
+        <c:set var="sortoptions" value="${sortdatedesc},${sortdateasc},${sorttitleasc},${sorttitledesc},${sortorderasc},${sortorderdesc}" />
+    </c:when>
+    <c:when test="$fn:contains(sort, 'titleasc')}">
+        <c:set var="sortoptions" value="${sorttitleasc},${sortdateasc},${sortdatedesc},${sorttitledesc},${sortorderasc},${sortorderdesc}" />
+    </c:when>
+    <c:when test="${fn:contains(sort, 'titledesc')}">
+        <c:set var="sortoptions" value="${sorttitledesc},${sortdateasc},${sortdatedesc},${sorttitleasc},${sortorderasc},${sortorderdesc}" />
+    </c:when>
+    <c:when test="$fn:contains(sort, 'orderasc')}">
+        <c:set var="sortoptions" value="${sortorderasc},${sortdateasc},${sortdatedesc},${sorttitleasc},${sorttitledesc},${sortorderdesc}" />
+    </c:when>
+    <c:when test="${fn:contains(sort, 'orderdesc')}">
+        <c:set var="sortoptions" value="${sortorderdesc},${sortdatedesc},${sortdateasc},${sorttitleasc},${sorttitledesc},${sortorderasc}" />
+    </c:when>
+    <c:otherwise>
+        <%-- ### Default: Sort by date asc ### --%>
+        <c:set var="sortoptions" value="${sortdateasc},${sortdatedesc},${sorttitleasc},${sorttitledesc},${sortorderasc},${sortorderdesc}" />
+    </c:otherwise>        
 </c:choose>
+
 <%-- ################################################################################################################# END Sortoption ######## --%>
 
 <c:set var="solrFilterQue"></c:set>
@@ -117,10 +122,7 @@
 	"pagesize" : ${pageSize},
 	"pagenavlength" : 5,
 
-	"sortoptions" : [
-						${firstsortoption}
-						${sortoptions}
-					],
+	"sortoptions" : [ ${sortoptions} ],
 
 	"fieldfacets" : [
 		{

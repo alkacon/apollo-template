@@ -4,11 +4,12 @@
   <ApolloFaq language="en">
     <Question><![CDATA[Is it true cannibals don't eat clowns because they taste funny?]]></Question>
     <Date>1472713200000</Date>
+    <Order><![CDATA[750]]></Order>
     <Paragraph>
       <Text name="Text0">
         <links/>
         <content><![CDATA[<p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-<p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>]]></content>
+<p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>]]></content>
       </Text>
       <Image>
         <Image>

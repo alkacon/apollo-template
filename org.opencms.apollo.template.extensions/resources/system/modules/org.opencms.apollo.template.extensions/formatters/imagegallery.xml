@@ -35,6 +35,13 @@
       <Default><![CDATA[true]]></Default>
     </Setting>
     <Setting>
+      <PropertyName><![CDATA[showCopyright]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showcopyright)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showcopyright.description)]]></Description>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[autoload]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.autoload)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.autoload.description)]]></Description>

@@ -23,7 +23,7 @@
 
 		<%-- ####### Show calendar or image if not compact form ######## --%>
 		<c:if test="${!isCompactForm}">
-			<a href="<cms:link baseUri="${param.pageUri}">${content.filename}</cms:link>">
+			<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>">
 				<div class="col-sm-3 col-lg-2 hidden-xs">
 				<c:choose>
 				<%-- ####### Show calendar ######## --%>
@@ -45,14 +45,8 @@
 				</c:when>
 				<%-- ####### Show small image in place of calendar ######## --%>
 				<c:when test="${showImageSmall}">
-					<apollo:copyright text="${paragraph.value.Image.value.Copyright}" />
-
 					<c:out value="${imgDivStart}" escapeXml="false" />
-
-					<cms:img src="${paragraph.value.Image.value.Image}"
-						width="300" cssclass="img-responsive" scaleColor="transparent" scaleType="0" noDim="true"
-						alt="${paragraph.value.Image.value.Title}${' '}${copyright}"
-						title="${paragraph.value.Image.value.Title}${' '}${copyright}" />
+					<apollo:image-simple onlyimage="true" setting="${cms.element.settings}" image="${paragraph.value.Image}" />
 				</c:when>
 				</c:choose>
 				</div>
@@ -63,48 +57,22 @@
 		<div class="col-xs-12 col-sm-${isCompactForm ? '12' : '9'} col-lg-${isCompactForm ? '12' : '10'}">
 
 			<c:if test="${showImageBig}">
-				<apollo:copyright text="${paragraph.value.Image.value.Copyright}" />
-
 				<c:out value="${imgDivStart}" escapeXml="false" />
-
-				<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>">
-					<cms:img src="${paragraph.value.Image.value.Image}"
-						width="800" cssclass="img-responsive" scaleColor="transparent" scaleType="0" noDim="true"
-						alt="${paragraph.value.Image.value.Title}${' '}${copyright}"
-						title="${paragraph.value.Image.value.Title}${' '}${copyright}" />
-				</a>
+				<c:set var="imgLink"><cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link></c:set>
+				<a href="${imgLink}"><apollo:image-simple onlyimage="true" setting="${cms.element.settings}" image="${paragraph.value.Image}" /></a>
 			</c:if>
-
-			<h2>
-				<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
-			</h2>
-
-			<c:set var="showdate"><c:out value="${cms.element.settings.showdate}" default="true" /></c:set>
-			<c:if test="${showdate}">
-				<p>
-					<i>
-						<fmt:formatDate value="${cms:convertDate(content.value.Date)}" dateStyle="LONG" timeStyle="SHORT" type="both" />
-						<c:if test="${content.value.EndDate.exists}">
-								-&nbsp;
-								<fmt:formatDate value="${cms:convertDate(content.value.EndDate)}" dateStyle="LONG" timeStyle="SHORT" type="both" />
-						</c:if>
-					</i>
-				</p>
-			</c:if>
-
-			<c:choose>
-				<c:when test="${content.value.Teaser.isSet and not empty fn:trim(content.value.Teaser)}">
-					<p>${content.value.Teaser}</p>
-				</c:when>
-				<c:otherwise>
-					<p>${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</p>
-				</c:otherwise>
-			</c:choose>
-
-			<div class="margin-bottom-10"></div>
-			<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>" class="btn ap-btn-${buttonColor}">
-				<fmt:message key="apollo.list.message.readmore" />
-			</a>
+			
+			<c:set var="text">${content.value.Teaser}</c:set>
+			<c:if test="${empty text}"><c:set var="text">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</c:set></c:if>
+			<c:set var="href"><cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link></c:set>
+			
+			<apollo:teaserbody text="${text}" 
+								title="${content.value.Title}"
+								href="${href}" 
+								date="${content.value.Date}" 
+								enddate="${content.value.EndDate}"
+								color="${buttonColor}" />
+			
 		</div>
 
 </div>

@@ -11,12 +11,21 @@
 	
 		<%-- ####### Build facet settings ######## --%>
 		<c:set var="settings" value="${cms.element.settings}" />
-		<c:set var="facetsettings" value="none${settings.showfacetcategory ? 'category' : ''}${settings.showsorttitle ? 'sort_title' : ''}${settings.showsortdate ? 'sort_date' : ''}" />
+		<c:set var="facetsettings" 
+            value="none 
+                ${settings.showfacetcategory ? 'category' : ''} 
+                ${settings.showsorttitle ? 'sort_title' : ''} 
+                ${settings.showsortorder ? 'sort_order' : ''} 
+                ${settings.showsortdate ? 'sort_date' : ''}" />
+                
 		<%-- ##################################### --%>
 		
-		<div id="listoption_box-${cms.element.id}" class="listoptionbox btn-group-${cms.element.settings.buttoncolor} btn-group-select-${cms.element.settings.selectioncolor}" 
-						data-id="${cms.element.id}" data-facets="${facetsettings}">
+		<div id="listoption_box-${cms.element.id}" 
+            class="listoptionbox btn-group-${cms.element.settings.buttoncolor} btn-group-select-${cms.element.settings.selectioncolor}" 
+			data-id="${cms.element.id}" data-facets="${facetsettings}">
+            
 			${cms.reloadMarker}
+            
 			<c:if test="${cms.isEditMode}">
 				<div class="listOptions editMessage-${cms.element.id} alert alert-warning">
 					<h3>

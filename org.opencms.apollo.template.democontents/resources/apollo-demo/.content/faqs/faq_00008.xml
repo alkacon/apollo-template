@@ -2,8 +2,9 @@
 
 <ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.faq/schemas/faq.xsd">
   <ApolloFaq language="en">
-    <Question><![CDATA[Con is the opposite of pro, does this imply that Congress is the opposite of progress?]]></Question>
+    <Question><![CDATA[What is the Apollo Template?]]></Question>
     <Date>1472718823214</Date>
+    <Order><![CDATA[600]]></Order>
     <Paragraph>
       <Text name="Text0">
         <links/>
@@ -13,8 +14,8 @@
       <Image>
         <Image>
           <link type="WEAK">
-            <target><![CDATA[/sites/default/.galleries/samples/37.jpg]]></target>
-            <uuid>b3850b9a-4785-11e3-ba23-000c29d28104</uuid>
+            <target><![CDATA[/sites/default/.galleries/samples/36.jpg]]></target>
+            <uuid>b70f1bd7-4785-11e3-ba23-000c29d28104</uuid>
           </link>
         </Image>
         <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>

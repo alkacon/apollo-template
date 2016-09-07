@@ -2,24 +2,24 @@
 
 <ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.faq/schemas/faq.xsd">
   <ApolloFaq language="en">
-    <Question><![CDATA[Can I use OpenCms for my website?]]></Question>
+    <Question><![CDATA[Can I use the Apollo Template for my website?]]></Question>
     <Date>1471937400000</Date>
+    <Order><![CDATA[1000]]></Order>
     <Paragraph>
       <Headline><![CDATA[Yes, You Can!]]></Headline>
       <Text name="Text0">
         <links/>
-        <content><![CDATA[<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-<p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
-<p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>]]></content>
+        <content><![CDATA[<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>]]></content>
       </Text>
       <Image>
         <Image>
           <link type="WEAK">
-            <target><![CDATA[/sites/default/.galleries/samples/57.jpg]]></target>
-            <uuid>0825c416-7061-11e6-9a42-0242ac11002b</uuid>
+            <target><![CDATA[/sites/default/.galleries/people/15.jpg]]></target>
+            <uuid>f67db0b0-55f8-11e4-8db5-005056b61161</uuid>
           </link>
         </Image>
-        <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
+        <Copyright><![CDATA[CC0 Public Domain / publicdomainpictures.net]]></Copyright>
       </Image>
     </Paragraph>
     <Category>

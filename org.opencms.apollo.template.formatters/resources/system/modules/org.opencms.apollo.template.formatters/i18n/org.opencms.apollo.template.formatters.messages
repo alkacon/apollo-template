@@ -7,12 +7,20 @@
       <Value><![CDATA[Show category filter]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.iconclass.globe]]></Key>
+      <Value><![CDATA[Globe]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.cssclass.shadowbox]]></Key>
       <Value><![CDATA[Shadow box for image]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.color.orange]]></Key>
       <Value><![CDATA[Orange]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.displayoption.hidecalendar]]></Key>
+      <Value><![CDATA[Hide calendar sheet]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.word]]></Key>
@@ -35,12 +43,16 @@
       <Value><![CDATA[Archive]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.iconclass.document]]></Key>
+      <Value><![CDATA[Document]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.share]]></Key>
       <Value><![CDATA[Share result]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showfacetcategory]]></Key>
-      <Value><![CDATA[Show Category Facet]]></Value>
+      <Value><![CDATA[Show category filter]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showdate]]></Key>
@@ -71,6 +83,10 @@
       <Value><![CDATA[Select CSS classes for the image shape.]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.displayoption.smallimage]]></Key>
+      <Value><![CDATA[Small image left]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.section.image.text.title]]></Key>
       <Value><![CDATA[Show title]]></Value>
     </Message>
@@ -91,8 +107,12 @@
       <Value><![CDATA[Anchor ID]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.displayoption.showsmallimagehidecalendar]]></Key>
-      <Value><![CDATA[Show image in place of calendar sheet]]></Value>
+      <Key><![CDATA[apollo.setting.displayoption.largeimage]]></Key>
+      <Value><![CDATA[Large image]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.listwrapper.accordion]]></Key>
+      <Value><![CDATA[Wrapper for Accordion like lists]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssclass.lightbox]]></Key>
@@ -103,6 +123,10 @@
       <Value><![CDATA[Lead]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.textcolor]]></Key>
+      <Value><![CDATA[Text Color]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.cssclass.orange]]></Key>
       <Value><![CDATA[Orange box with dotted border]]></Value>
     </Message>
@@ -111,16 +135,20 @@
       <Value><![CDATA[Small]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.showsortorder]]></Key>
+      <Value><![CDATA[Sort by order option]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.titlecolor]]></Key>
+      <Value><![CDATA[Title Color]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.section.image.text.titledescriptioncopy]]></Key>
       <Value><![CDATA[Show title, description and copyright]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.image.frontend.readmore]]></Key>
       <Value><![CDATA[read more +]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.link.frontend.more]]></Key>
-      <Value><![CDATA[More]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.text.style.plain]]></Key>
@@ -163,6 +191,10 @@
       <Value><![CDATA[Selection Color]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.hideHeadline]]></Key>
+      <Value><![CDATA[Hide Headline]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.detail.none]]></Key>
       <Value><![CDATA[No special detail page settings (Default)]]></Value>
     </Message>
@@ -181,6 +213,10 @@
     <Message>
       <Key><![CDATA[apollo.section.image.effect.borderedround]]></Key>
       <Value><![CDATA[Bordered and round corners]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.displayoptions]]></Key>
+      <Value><![CDATA[Display options]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.requirereload]]></Key>
@@ -295,10 +331,6 @@
       <Value><![CDATA[Show archive]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.displayoption.hidecalendar]]></Key>
-      <Value><![CDATA[Hide calendar sheet]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.setting.showheadline.description]]></Key>
       <Value><![CDATA[Select how the headline will be shown.]]></Value>
     </Message>
@@ -323,10 +355,6 @@
       <Value><![CDATA[Relevance]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.hideHeadline]]></Key>
-      <Value><![CDATA[Hide Headline]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.setting.hideTitle]]></Key>
       <Value><![CDATA[Hide title]]></Value>
     </Message>
@@ -337,6 +365,10 @@
     <Message>
       <Key><![CDATA[apollo.setting.icon.description]]></Key>
       <Value><![CDATA[Select the displayed icon.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.folder]]></Key>
+      <Value><![CDATA[Folder]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showimgtitle]]></Key>
@@ -375,6 +407,10 @@
       <Value><![CDATA[Purple]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.link.frontend.more]]></Key>
+      <Value><![CDATA[More]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.csshints]]></Key>
       <Value><![CDATA[CSS Hints]]></Value>
     </Message>
@@ -395,6 +431,10 @@
       <Value><![CDATA[Right of text]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.displayoption.showsmallimagehidecalendar]]></Key>
+      <Value><![CDATA[Show image in place of calendar sheet]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.showheadline.top]]></Key>
       <Value><![CDATA[Headline above the image, left aligned]]></Value>
     </Message>
@@ -409,10 +449,6 @@
     <Message>
       <Key><![CDATA[apollo.setting.image.left]]></Key>
       <Value><![CDATA[Left of text]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.displayoption.largeimage]]></Key>
-      <Value><![CDATA[Large image]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.image.effect.shadowbordered]]></Key>
@@ -453,6 +489,10 @@
     <Message>
       <Key><![CDATA[apollo.setting.image.top]]></Key>
       <Value><![CDATA[Top]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.displayoption.showcalendar]]></Key>
+      <Value><![CDATA[Show calendar sheet]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.angleleft]]></Key>
@@ -543,10 +583,6 @@
       <Value><![CDATA[Optional link to be used in the pre-HTML markup.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.displayoption.showcalendar]]></Key>
-      <Value><![CDATA[Show calendar sheet]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.setting.showsearch]]></Key>
       <Value><![CDATA[Show search]]></Value>
     </Message>
@@ -585,14 +621,6 @@
     <Message>
       <Key><![CDATA[apollo.setting.buttoncolor]]></Key>
       <Value><![CDATA[Button Color]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.titlecolor]]></Key>
-      <Value><![CDATA[Title Color]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.textcolor]]></Key>
-      <Value><![CDATA[Text Color]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssclass.roundedshadowbox]]></Key>
@@ -635,16 +663,12 @@
       <Value><![CDATA[until]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.displayoption.hideimage]]></Key>
-      <Value><![CDATA[Hide image]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.displayoptions]]></Key>
-      <Value><![CDATA[Display options]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.setting.layout.box]]></Key>
       <Value><![CDATA[Colored Box]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.displayoption.showimagehidecalendar]]></Key>
+      <Value><![CDATA[Show image and hide calendar sheet]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.star]]></Key>
@@ -655,12 +679,16 @@
       <Value><![CDATA[Show Breadcrumb Navigation]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.showfacets]]></Key>
+      <Value><![CDATA[Show facets]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.showexpired]]></Key>
       <Value><![CDATA[Show expired and unreleased list items]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.displayoption.smallimage]]></Key>
-      <Value><![CDATA[Small image left]]></Value>
+      <Key><![CDATA[apollo.setting.displayoption.hideimage]]></Key>
+      <Value><![CDATA[Hide image]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showtext]]></Key>
@@ -683,6 +711,14 @@
       <Value><![CDATA[Show title and copyright]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.iconclass.download1]]></Key>
+      <Value><![CDATA[Download 1]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.download2]]></Key>
+      <Value><![CDATA[Download 2]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.iconclass.info]]></Key>
       <Value><![CDATA[Info]]></Value>
     </Message>
@@ -692,7 +728,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showsorttitle]]></Key>
-      <Value><![CDATA[Show Title-Sort Facet]]></Value>
+      <Value><![CDATA[Sort by title option]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showelements.image]]></Key>
@@ -731,10 +767,6 @@
       <Value><![CDATA[Hidden on small screens]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.displayoption.showimagehidecalendar]]></Key>
-      <Value><![CDATA[Show image and hide calendar sheet]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.setting.csshints.description]]></Key>
       <Value><![CDATA[Optional CSS classes, usually for child elements.]]></Value>
     </Message>
@@ -749,6 +781,14 @@
     <Message>
       <Key><![CDATA[apollo.setting.color.green]]></Key>
       <Value><![CDATA[Green]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.linkexternal2]]></Key>
+      <Value><![CDATA[Link external 2]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.linkexternal1]]></Key>
+      <Value><![CDATA[Link external 1]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.image.link.none]]></Key>
@@ -811,6 +851,10 @@
       <Value><![CDATA[Shadow]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.iconclass.arrow]]></Key>
+      <Value><![CDATA[Arrow]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.section.header.style.underlined]]></Key>
       <Value><![CDATA[Underlined]]></Value>
     </Message>
@@ -820,7 +864,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showsortdate]]></Key>
-      <Value><![CDATA[Show Date-Sort Facet]]></Value>
+      <Value><![CDATA[Sort by date option]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.image.text.copy]]></Key>
@@ -850,47 +894,15 @@
       <Key><![CDATA[apollo.setting.detail.view]]></Key>
       <Value><![CDATA[Use first container as detail view]]></Value>
     </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.document]]></Key>
-      <Value><![CDATA[Document]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.linkexternal1]]></Key>
-      <Value><![CDATA[Link external 1]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.linkexternal2]]></Key>
-      <Value><![CDATA[Link external 2]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.globe]]></Key>
-      <Value><![CDATA[Globe]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.arrow]]></Key>
-      <Value><![CDATA[Arrow]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.folder]]></Key>
-      <Value><![CDATA[Folder]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.download1]]></Key>
-      <Value><![CDATA[Download 1]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.download2]]></Key>
-      <Value><![CDATA[Download 2]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.listwrapper.accordion]]></Key>
-      <Value><![CDATA[Wrapper for Accordion like lists]]></Value>
-    </Message>
   </Bundle>
   <Bundle language="de">
     <Message>
       <Key><![CDATA[apollo.setting.showcategoryfiler]]></Key>
       <Value><![CDATA[Anzeige Kategoriefilter]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.globe]]></Key>
+      <Value><![CDATA[Globus]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssclass.shadowbox]]></Key>
@@ -899,6 +911,10 @@
     <Message>
       <Key><![CDATA[apollo.setting.color.orange]]></Key>
       <Value><![CDATA[Orange]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.displayoption.hidecalendar]]></Key>
+      <Value><![CDATA[Verstecke Kalenderblatt]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.word]]></Key>
@@ -925,12 +941,16 @@
       <Value><![CDATA[Copyright anzeigen]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.iconclass.document]]></Key>
+      <Value><![CDATA[Dokument]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.share]]></Key>
       <Value><![CDATA[Ergebnis teilen]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showfacetcategory]]></Key>
-      <Value><![CDATA[Kategorie-Facette anzeigen]]></Value>
+      <Value><![CDATA[Kategorie-Filter anzeigen]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showdate]]></Key>
@@ -961,6 +981,10 @@
       <Value><![CDATA[Wählen Sie CSS Klassen für die Bild Form.]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.displayoption.smallimage]]></Key>
+      <Value><![CDATA[Kleines Bild links]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.section.image.text.title]]></Key>
       <Value><![CDATA[Zeige Titel]]></Value>
     </Message>
@@ -985,8 +1009,12 @@
       <Value><![CDATA[Anker ID]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.displayoption.showsmallimagehidecalendar]]></Key>
-      <Value><![CDATA[Zeige Bild anstelle Kalenderblatt]]></Value>
+      <Key><![CDATA[apollo.setting.displayoption.largeimage]]></Key>
+      <Value><![CDATA[Großes Bild]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.listwrapper.accordion]]></Key>
+      <Value><![CDATA[Wrapper für Akkordion Listen]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssclass.lightbox]]></Key>
@@ -997,6 +1025,10 @@
       <Value><![CDATA[Lead]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.textcolor]]></Key>
+      <Value><![CDATA[Text Farbe]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.cssclass.orange]]></Key>
       <Value><![CDATA[Orangene Box mit gestricheltem Rand]]></Value>
     </Message>
@@ -1005,16 +1037,20 @@
       <Value><![CDATA[Klein]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.showsortorder]]></Key>
+      <Value><![CDATA[Ordnung-Sortieroption]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.titlecolor]]></Key>
+      <Value><![CDATA[Titel Farbe]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.section.image.text.titledescriptioncopy]]></Key>
       <Value><![CDATA[Zeige Titel, Beschreibung und Copyright]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.image.frontend.readmore]]></Key>
       <Value><![CDATA[mehr lesen +]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.link.frontend.more]]></Key>
-      <Value><![CDATA[Mehr]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.text.style.plain]]></Key>
@@ -1057,6 +1093,10 @@
       <Value><![CDATA[Auswahl Farbe]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.hideHeadline]]></Key>
+      <Value><![CDATA[Verstecke Überschrift]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.detail.none]]></Key>
       <Value><![CDATA[Keine speziellen Detailseiten Einstellungen (Standard)]]></Value>
     </Message>
@@ -1075,6 +1115,10 @@
     <Message>
       <Key><![CDATA[apollo.section.image.effect.borderedround]]></Key>
       <Value><![CDATA[Gerahmt mit abgerundeten Ecken]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.displayoptions]]></Key>
+      <Value><![CDATA[Kompakte Form]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.requirereload]]></Key>
@@ -1119,14 +1163,6 @@
     <Message>
       <Key><![CDATA[apollo.setting.row.grid]]></Key>
       <Value><![CDATA[Container]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.hideHeadline]]></Key>
-      <Value><![CDATA[Verstecke Überschrift]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.hideTitle]]></Key>
-      <Value><![CDATA[Verstecke Titel]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.file]]></Key>
@@ -1193,10 +1229,6 @@
       <Value><![CDATA[Zeige Archiv]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.displayoption.hidecalendar]]></Key>
-      <Value><![CDATA[Verstecke Kalenderblatt]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.setting.showheadline.description]]></Key>
       <Value><![CDATA[Legt fest, wie die Überschrift dargestellt wird.]]></Value>
     </Message>
@@ -1221,12 +1253,20 @@
       <Value><![CDATA[Relevanz]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.hideTitle]]></Key>
+      <Value><![CDATA[Verstecke Titel]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.section.header.style.label]]></Key>
       <Value><![CDATA[Überschrift Stil]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.description]]></Key>
       <Value><![CDATA[Wählen Sie das anzuzeigende Icon.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.folder]]></Key>
+      <Value><![CDATA[ordner]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showimgtitle]]></Key>
@@ -1265,6 +1305,10 @@
       <Value><![CDATA[Violett]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.link.frontend.more]]></Key>
+      <Value><![CDATA[Mehr]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.csshints]]></Key>
       <Value><![CDATA[CSS Hints]]></Value>
     </Message>
@@ -1285,6 +1329,10 @@
       <Value><![CDATA[Rechts vom Text]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.displayoption.showsmallimagehidecalendar]]></Key>
+      <Value><![CDATA[Zeige Bild anstelle Kalenderblatt]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.showheadline.top]]></Key>
       <Value><![CDATA[Überschrift oberhalb des Bildes, links ausgerichtet]]></Value>
     </Message>
@@ -1299,10 +1347,6 @@
     <Message>
       <Key><![CDATA[apollo.setting.image.left]]></Key>
       <Value><![CDATA[Links vom Text]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.displayoption.largeimage]]></Key>
-      <Value><![CDATA[Großes Bild]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.image.effect.shadowbordered]]></Key>
@@ -1343,6 +1387,10 @@
     <Message>
       <Key><![CDATA[apollo.setting.image.top]]></Key>
       <Value><![CDATA[Oben]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.displayoption.showcalendar]]></Key>
+      <Value><![CDATA[Zeige Kalenderblatt]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.angleleft]]></Key>
@@ -1433,10 +1481,6 @@
       <Value><![CDATA[Optionaler Link, der im Pre-HTML Markup verwendet werden kann.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.displayoption.showcalendar]]></Key>
-      <Value><![CDATA[Zeige Kalenderblatt]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.setting.showsearch]]></Key>
       <Value><![CDATA[Zeige Suche]]></Value>
     </Message>
@@ -1475,14 +1519,6 @@
     <Message>
       <Key><![CDATA[apollo.setting.buttoncolor]]></Key>
       <Value><![CDATA[Button Farbe]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.titlecolor]]></Key>
-      <Value><![CDATA[Titel Farbe]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.textcolor]]></Key>
-      <Value><![CDATA[Text Farbe]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.cssclass.roundedshadowbox]]></Key>
@@ -1525,20 +1561,16 @@
       <Value><![CDATA[bis]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.displayoption.hideimage]]></Key>
-      <Value><![CDATA[Verstecke Bild]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.displayoptions]]></Key>
-      <Value><![CDATA[Kompakte Form]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.setting.showcopyright]]></Key>
       <Value><![CDATA[Copyright Anzeige]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.layout.box]]></Key>
       <Value><![CDATA[Box]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.displayoption.showimagehidecalendar]]></Key>
+      <Value><![CDATA[Zeige Bild und verstecke Kalenderblatt]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.star]]></Key>
@@ -1561,8 +1593,8 @@
       <Value><![CDATA[Zeige abgelaufene und unveröffentlichte Listeneinträge]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.displayoption.smallimage]]></Key>
-      <Value><![CDATA[Kleines Bild links]]></Value>
+      <Key><![CDATA[apollo.setting.displayoption.hideimage]]></Key>
+      <Value><![CDATA[Verstecke Bild]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showtext]]></Key>
@@ -1585,6 +1617,14 @@
       <Value><![CDATA[Zeige Titel und Copyright]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.iconclass.download1]]></Key>
+      <Value><![CDATA[Download 1]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.download2]]></Key>
+      <Value><![CDATA[Download 2]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.setting.iconclass.info]]></Key>
       <Value><![CDATA[Info]]></Value>
     </Message>
@@ -1594,7 +1634,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showsorttitle]]></Key>
-      <Value><![CDATA[Titel-Sortierungsfacette anzeigen]]></Value>
+      <Value><![CDATA[Titel-Sortieroption]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showelements.image]]></Key>
@@ -1633,10 +1673,6 @@
       <Value><![CDATA[Versteckt auf kleinen Bildschirmen]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.setting.displayoption.showimagehidecalendar]]></Key>
-      <Value><![CDATA[Zeige Bild und verstecke Kalenderblatt]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.setting.csshints.description]]></Key>
       <Value><![CDATA[Optionale CSS Klassen, die meist für Kind Elemente benutzt werden.]]></Value>
     </Message>
@@ -1651,6 +1687,14 @@
     <Message>
       <Key><![CDATA[apollo.setting.color.green]]></Key>
       <Value><![CDATA[Grün]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.linkexternal2]]></Key>
+      <Value><![CDATA[Externer Link 2]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.setting.iconclass.linkexternal1]]></Key>
+      <Value><![CDATA[Externer Link 1]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.image.link.none]]></Key>
@@ -1713,6 +1757,10 @@
       <Value><![CDATA[Schatten]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.setting.iconclass.arrow]]></Key>
+      <Value><![CDATA[Pfeil]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.section.header.style.underlined]]></Key>
       <Value><![CDATA[Unterstrichen]]></Value>
     </Message>
@@ -1722,7 +1770,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.showsortdate]]></Key>
-      <Value><![CDATA[Datum-Sortierungsfacette anzeigen]]></Value>
+      <Value><![CDATA[Datum-Sortieroption]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.image.text.copy]]></Key>
@@ -1751,42 +1799,6 @@
     <Message>
       <Key><![CDATA[apollo.setting.detail.view]]></Key>
       <Value><![CDATA[Verwende ersten Container als Detailansicht]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.document]]></Key>
-      <Value><![CDATA[Dokument]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.linkexternal1]]></Key>
-      <Value><![CDATA[Externer Link 1]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.linkexternal2]]></Key>
-      <Value><![CDATA[Externer Link 2]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.globe]]></Key>
-      <Value><![CDATA[Globus]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.arrow]]></Key>
-      <Value><![CDATA[Pfeil]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.folder]]></Key>
-      <Value><![CDATA[ordner]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.download1]]></Key>
-      <Value><![CDATA[Download 1]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.iconclass.download2]]></Key>
-      <Value><![CDATA[Download 2]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.setting.listwrapper.accordion]]></Key>
-      <Value><![CDATA[Wrapper für Akkordion Listen]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

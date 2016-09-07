@@ -27,7 +27,7 @@
     
     <c:if test="${value.Text.isSet}">
         <div <c:if test="${not value.Link.exists}">${rdfa.Link}</c:if>>
-            <div ${rdfa.Text} ${not empty imageLink ? content.imageDnd[image.value.Image.path] : ''}>
+            <div ${rdfa.Text} ${not empty imageLink ? content.imageDnd[value.Image.value.Image.path] : ''}>
                 ${value.Text}
             </div>
             <c:if test="${value.Link.exists}">

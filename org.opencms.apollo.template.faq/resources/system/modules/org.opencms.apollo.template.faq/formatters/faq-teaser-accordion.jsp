@@ -33,9 +33,9 @@
             <div class="panel-body ap-panel-body">
                 <c:forEach var="paragraph" items="${content.valueList.Paragraph}" varStatus="status">
                     <apollo:paragraph 
-                        setting="${cms.element.setting}"
                         showimage="true"
-                        imgalign="${imgalign}"
+                        headline="inline"
+                        headlinestyle="ap-faq-header"
                         paragraph="${paragraph}" />
                 </c:forEach>
             </div>

@@ -7,6 +7,18 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.extensions.imagegallery">
     <cms:formatter var="content">
+	
+    <%-- ################################################################################################################## --%>
+    <%-- #######           How it works	                          ######################################################### --%>
+    <%-- ################################################################################################################## --%>
+    <%-- #                                                                                                                # --%>
+    <%-- # The div#links-container starts empty and is filled by AJAX-Request. Through inline script in the               # --%>
+    <%-- # imagegallery.xml the Javascript procedure is started, which uses the information from data-attributes          # --%>
+    <%-- # provided by generated content of the <apollo:gallerydata> tag. The AJAX-Request is recieved by                 # --%>
+    <%-- # imagegallery-inner.jsp which uses the <apollo:galleryitems> tag to render the images into the list.            # --%>
+    <%-- #                                                                                                                # --%>
+    <%-- ################################################################################################################## --%>
+	
     
     <%-- ################################################################################################################## --%>
     <%-- #######           Search config and AJAX-Link            ######################################################### --%>

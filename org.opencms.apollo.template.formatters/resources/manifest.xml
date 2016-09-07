@@ -288,8 +288,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/blog-complete.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/blog-complete.jsp</destination>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/blog-detail.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/blog-detail.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>fd062e7e-57c6-11e5-a989-0242ac11002b</uuidstructure>
 			<uuidresource>fd062e7f-57c6-11e5-a989-0242ac11002b</uuidresource>
@@ -298,7 +298,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for complete blog article]]></value>
+					<value><![CDATA[Formatter JSP for detailed blog article]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -313,8 +313,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/blog-complete.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/blog-complete.xml</destination>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/blog-detail.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/blog-detail.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>fd0a7441-57c6-11e5-a989-0242ac11002b</uuidstructure>
 			<uuidresource>fd0a7442-57c6-11e5-a989-0242ac11002b</uuidresource>
@@ -323,7 +323,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Complete Blog Article]]></value>
+					<value><![CDATA[Detailed Blog Article]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -496,8 +496,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/event-complete.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/event-complete.jsp</destination>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/event-detail.jsp</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/event-detail.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>d2d07c06-5b83-11e5-ab03-0242ac11002b</uuidstructure>
 			<uuidresource>d2d07c07-5b83-11e5-ab03-0242ac11002b</uuidresource>
@@ -506,7 +506,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for event]]></value>
+					<value><![CDATA[Formatter JSP for detailed event]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -521,8 +521,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.formatters/formatters/event-complete.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/event-complete.xml</destination>
+			<source>system/modules/org.opencms.apollo.template.formatters/formatters/event-detail.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/formatters/event-detail.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>d2d5d339-5b83-11e5-ab03-0242ac11002b</uuidstructure>
 			<uuidresource>d2d5d33a-5b83-11e5-ab03-0242ac11002b</uuidresource>
@@ -531,7 +531,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Complete Event]]></value>
+					<value><![CDATA[Detailed Event]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -614,7 +614,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for verbose event]]></value>
+					<value><![CDATA[Formatter JSP for elaborate event]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -2277,6 +2277,27 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/tags/categorylist.tag</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/tags/categorylist.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>aa51c2fe-74e0-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>aa51c2ff-74e0-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Wed, 07 Sep 2016 09:51:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Category list tag]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo.template.formatters/tags/container-box.tag</source>
 			<destination>system/modules/org.opencms.apollo.template.formatters/tags/container-box.tag</destination>
 			<type>jsp</type>
@@ -2366,6 +2387,18 @@
 					<value><![CDATA[false]]></value>
 				</property>
 			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/tags/image-kenburn-new.tag</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/tags/image-kenburn-new.tag</destination>
+			<type>plain</type>
+			<uuidstructure>639a9c12-74dd-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>639a9c13-74dd-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Wed, 07 Sep 2016 09:28:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
@@ -2669,6 +2702,23 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Paragraph display tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.formatters/tags/teaserbody.tag</source>
+			<destination>system/modules/org.opencms.apollo.template.formatters/tags/teaserbody.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>da3ba0ba-742d-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>da3ba0bb-742d-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Tue, 06 Sep 2016 12:31:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Teaser body tag]]></value>
 				</property>
 			</properties>
 			<relations/>

@@ -51,6 +51,10 @@
       <Value><![CDATA[Headline]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.list.value.orderasc]]></Key>
+      <Value><![CDATA[Order ascending]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.ApolloList.GalleryTitle]]></Key>
       <Value><![CDATA[Gallery Title]]></Value>
     </Message>
@@ -107,6 +111,10 @@
       <Value><![CDATA[Hide headline]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.list.value.orderdesc]]></Key>
+      <Value><![CDATA[Order decending]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.ApolloList.Headline.help]]></Key>
       <Value><![CDATA[The headline of the list, can be hidden by using an element setting.]]></Value>
     </Message>
@@ -115,12 +123,12 @@
       <Value><![CDATA[Items per page]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloList.SortOrder]]></Key>
-      <Value><![CDATA[Sort order]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.list.value.titleasc]]></Key>
       <Value><![CDATA[Title ascending]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloList.SortOrder]]></Key>
+      <Value><![CDATA[Sort order]]></Value>
     </Message>
   </Bundle>
   <Bundle language="de">
@@ -171,6 +179,10 @@
     <Message>
       <Key><![CDATA[label.ApolloList.Headline]]></Key>
       <Value><![CDATA[Überschrift]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.list.value.orderasc]]></Key>
+      <Value><![CDATA[Ordnung aufsteigend]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.GalleryTitle]]></Key>
@@ -227,6 +239,10 @@
     <Message>
       <Key><![CDATA[apollo.list.setting.hidetitle]]></Key>
       <Value><![CDATA[Verberge Überschrift]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.list.value.orderdesc]]></Key>
+      <Value><![CDATA[Ordnung absteigend]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.Headline.help]]></Key>

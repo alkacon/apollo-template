@@ -30,7 +30,7 @@
       <PropertyName><![CDATA[hidetitle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.hidetitle)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
+      <Default><![CDATA[true]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showCopy]]></PropertyName>

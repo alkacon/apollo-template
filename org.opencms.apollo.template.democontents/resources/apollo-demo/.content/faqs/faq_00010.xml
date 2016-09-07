@@ -2,22 +2,24 @@
 
 <ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.faq/schemas/faq.xsd">
   <ApolloFaq language="en">
-    <Question><![CDATA[Why is a boxing ring square?]]></Question>
+    <Question><![CDATA[Is is safe to update to OpenCms 10.5?]]></Question>
     <Date>1474639200000</Date>
+    <Order><![CDATA[500]]></Order>
     <Paragraph>
+      <Headline><![CDATA[Yes! It is safe to update!]]></Headline>
       <Text name="Text0">
         <links/>
-        <content><![CDATA[<p>Phasellus viverra nulla ut metus varius laoreet. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-<p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.&nbsp;</p>]]></content>
+        <content><![CDATA[<p>As usual ;)</p>
+<p>Phasellus viverra nulla ut metus varius laoreet. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>]]></content>
       </Text>
       <Image>
         <Image>
           <link type="WEAK">
-            <target><![CDATA[/sites/default/.galleries/samples/56.jpg]]></target>
-            <uuid>4f247fb0-7052-11e6-9a42-0242ac11002b</uuid>
+            <target><![CDATA[/sites/default/.galleries/people/19.jpg]]></target>
+            <uuid>2b1b9de9-590b-11e4-903d-005056b61161</uuid>
           </link>
         </Image>
-        <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
+        <Copyright><![CDATA[CC0 Public Domain / publicdomainpictures.net]]></Copyright>
       </Image>
       <Link>
         <Text><![CDATA[Further reading]]></Text>

@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo"%>
 
 <cms:secureparams />
 <fmt:setLocale value="${cms.locale}" />
@@ -17,34 +18,17 @@
 		
 		<%-- ####### Render Teaser-Text and optional image, if set accordingly ######## --%>
 		<div class="col-xs-12">
-			<h2>
-				<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>">${content.value.Title}</a>
-			</h2>
-
-            <c:if test="${(cms.element.setting.showdate.exists and cms.element.settings.showdate) or cms.element.setting.showdate.isEmpty}">
-			<p>
-				<i>
-					<fmt:formatDate value="${cms:convertDate(content.value.Date)}" dateStyle="LONG" type="DATE" />
-					<c:if test="${content.value.Location.isSet}">
-						- ${content.value.Location}
-					</c:if>
-				</i>
-			</p>
-            </c:if>
-
-			<c:choose>
-				<c:when test="${content.value.Teaser.isSet and not empty fn:trim(content.value.Teaser)}">
-					<p>${content.value.Teaser}</p>
-				</c:when>
-				<c:otherwise>
-					<p>${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</p>
-				</c:otherwise>
-			</c:choose>
-
-			<div class="margin-bottom-10"></div>
-			<a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>" class="btn ap-btn-${buttonColor}">
-				<fmt:message key="apollo.list.message.readmore" />
-			</a>
+			
+			<c:set var="href"><cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link></c:set>
+			<c:set var="text">${content.value.Teaser}</c:set>
+			<c:if test="${empty text}"><c:set var="text">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</c:set></c:if>
+			
+			<apollo:teaserbody text="${text}" 
+								title="${content.value.Title}"
+								href="${href}" 
+								date="${content.value.Date}" 
+								color="${buttonColor}" />
+			
 		</div>
 
 </div>

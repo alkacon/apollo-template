@@ -2,11 +2,11 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Formatter for Apollo Job Advertisement]]></NiceName>
+    <NiceName><![CDATA[Detailed Job Offer]]></NiceName>
     <Type><![CDATA[a-job]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.job/formatters/job.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.job/formatters/job-detail.jsp]]></target>
         <uuid>8bf3bbd9-41f8-11e6-bdf7-0242ac11002b</uuid>
       </link>
     </Jsp>

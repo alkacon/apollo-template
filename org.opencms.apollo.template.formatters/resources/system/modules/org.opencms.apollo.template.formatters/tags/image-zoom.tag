@@ -43,7 +43,7 @@
 			class="zoom"
 			data-size="${cms.vfs.property[imageUnscaledLink]['image.size']}"
 			href="<cms:link>${imageUnscaledLink}</cms:link>"
-			<c:if test="${not empty imageTitleCopyright}">title="${imageTitleCopyright}"</c:if>
+			<c:if test="${not empty imageTitleCopyright}">title="${imageTitleCopyright}" data-title="${imageTitleCopyright}"</c:if>
 			data-rel="fancybox-button-${cms.element.instanceId}"
 			id="fancyboxzoom${cms.element.instanceId}">
 			

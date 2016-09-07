@@ -77,7 +77,6 @@
 					<c:forEach var="paragraph" items="${content.valueList.Paragraph}" varStatus="status">
 
 						<apollo:paragraph 
-							setting="${cms.element.setting}"
 							showimage="true"
 							imgalign="${imgalign}"
 							paragraph="${paragraph}" />

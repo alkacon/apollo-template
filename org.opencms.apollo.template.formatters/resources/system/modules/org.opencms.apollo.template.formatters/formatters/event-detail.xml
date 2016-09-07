@@ -2,11 +2,11 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Complete Event]]></NiceName>
+    <NiceName><![CDATA[Detailed Event]]></NiceName>
     <Type><![CDATA[a-event]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/event-complete.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/event-detail.jsp]]></target>
         <uuid>d2d07c06-5b83-11e5-ab03-0242ac11002b</uuid>
       </link>
     </Jsp>

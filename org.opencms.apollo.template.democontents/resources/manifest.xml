@@ -92,6 +92,51 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>.categories/faq</destination>
+			<type>folder</type>
+			<uuidstructure>4ef0bf1b-737f-11e6-ace3-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 05 Sep 2016 15:42:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[FAQ]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>.categories/faq/opencms</destination>
+			<type>folder</type>
+			<uuidstructure>5eb5005e-737f-11e6-ace3-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 05 Sep 2016 15:42:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms questions]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>.categories/faq/silly</destination>
+			<type>folder</type>
+			<uuidstructure>67e5e821-737f-11e6-ace3-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 05 Sep 2016 15:42:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Silly questions]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>.categories/location</destination>
 			<type>folder</type>
 			<uuidstructure>da3592ce-7193-11e0-87bc-000c2972a6a4</uuidstructure>
@@ -3302,6 +3347,40 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>.galleries/people/37.jpg</source>
+			<destination>.galleries/people/37.jpg</destination>
+			<type>image</type>
+			<uuidstructure>9e006b7c-7442-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>9e006b7d-7442-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Tue, 06 Sep 2016 15:00:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1024,h:768]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.galleries/people/38.jpg</source>
+			<destination>.galleries/people/38.jpg</destination>
+			<type>image</type>
+			<uuidstructure>eeaf2cc3-7442-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>eeaf2cc4-7442-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Tue, 06 Sep 2016 15:02:30 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:768,h:1024]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>.galleries/samples</destination>
 			<type>imagegallery</type>
 			<uuidstructure>959d764a-4705-11e3-8417-000c29d28104</uuidstructure>
@@ -5578,18 +5657,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/blogentries/be_00011.xml</source>
-			<destination>apollo-demo/.content/blogentries/be_00011.xml</destination>
-			<type>a-blog</type>
-			<uuidstructure>18194d5a-732e-11e6-9a42-0242ac11002b</uuidstructure>
-			<uuidresource>18194d5b-732e-11e6-9a42-0242ac11002b</uuidresource>
-			<datecreated>Mon, 05 Sep 2016 06:00:49 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>apollo-demo/.content/blogentries/.detailContainers</destination>
 			<type>folder</type>
 			<uuidstructure>76b7ba89-ef5c-11e5-9d65-0242ac11002b</uuidstructure>
@@ -6071,40 +6138,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/contentsections/cs_00023.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00023.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>cfdd89a5-6084-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>cfdd89a6-6084-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 17:18:44 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: FAQ text 1]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/contentsections/cs_00024.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00024.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>00d97238-6087-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>00d97239-6087-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 17:34:25 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: YES]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>apollo-demo/.content/contentsections/cs_00025.xml</source>
 			<destination>apollo-demo/.content/contentsections/cs_00025.xml</destination>
 			<type>a-section</type>
@@ -6115,7 +6148,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: Top questions]]></value>
+					<value><![CDATA[Top questions]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6778,7 +6811,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Introduction to the team: VP of Operations]]></value>
+					<value><![CDATA[VP of Operations]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6812,7 +6845,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Consultant]]></value>
+					<value><![CDATA[Introduction to the team: Consultant]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6881,57 +6914,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Frequently asked questions: FAQ]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/contentsections/cs_00071.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00071.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>8e218413-a896-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>8e218414-a896-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 10:27:08 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: Click 'Add content']]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/contentsections/cs_00072.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00072.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>bf507559-a896-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>bf50755a-a896-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 10:28:31 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: Select 'Move to page']]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/contentsections/cs_00073.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00073.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>e636581f-a896-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>e6365820-a896-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 10:29:36 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: Drag and drop the element]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7016,7 +6998,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Powerful]]></value>
+					<value><![CDATA[Website demo contents: Powerful]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7067,7 +7049,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Fun]]></value>
+					<value><![CDATA[Website demo contents: Fun]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7203,7 +7185,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Image elements: Telescope image]]></value>
+					<value><![CDATA[Telescope image]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7414,23 +7396,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/contentsections/cs_00102.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00102.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>cb58dac7-f061-11e5-b20f-0242ac11002b</uuidstructure>
-			<uuidresource>cb58dac8-f061-11e5-b20f-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Mar 2016 19:10:51 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: It's a ready-to-use Template for OpenCms]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>apollo-demo/.content/contentsections/cs_00103.xml</source>
 			<destination>apollo-demo/.content/contentsections/cs_00103.xml</destination>
 			<type>a-section</type>
@@ -7492,7 +7457,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Job Offering: The Job Offer element]]></value>
+					<value><![CDATA[Job Offer: The Job Offer element]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8204,7 +8169,18 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[Do androids dream of electric sheep?]]></value>
 				</property>
 			</properties>
-			<relations/>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>67e5e821-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/silly/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -8218,10 +8194,21 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Is OpenCms open source or open sauce?]]></value>
+					<value><![CDATA[Website demo contents: Is OpenCms open source or open sauce?]]></value>
 				</property>
 			</properties>
-			<relations/>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>5eb5005e-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/opencms/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -8235,10 +8222,21 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Website demo contents: Can I use OpenCms for my website?]]></value>
+					<value><![CDATA[Website demo contents: Can I use the Apollo Template for my website?]]></value>
 				</property>
 			</properties>
-			<relations/>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>5eb5005e-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/opencms/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -8255,7 +8253,18 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[Is it true cannibals don't eat clowns because they taste funny?]]></value>
 				</property>
 			</properties>
-			<relations/>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>67e5e821-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/silly/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -8272,7 +8281,18 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[If a fork is made of gold is it still considered as silverware?]]></value>
 				</property>
 			</properties>
-			<relations/>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>67e5e821-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/silly/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -8289,7 +8309,18 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[How do you know when you have run out of invisible ink? ]]></value>
 				</property>
 			</properties>
-			<relations/>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>67e5e821-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/silly/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -8306,7 +8337,18 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[When you eat pasta and antipasta, will you still be hungry ?]]></value>
 				</property>
 			</properties>
-			<relations/>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>67e5e821-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/silly/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -8320,10 +8362,21 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Con is the opposite of pro, does this imply that Congress is the opposite of progress?]]></value>
+					<value><![CDATA[What is the Apollo Template?]]></value>
 				</property>
 			</properties>
-			<relations/>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>5eb5005e-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/opencms/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -8340,7 +8393,18 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[What happens if you find a penguin in the freezer?]]></value>
 				</property>
 			</properties>
-			<relations/>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>67e5e821-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/silly/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -8354,10 +8418,49 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Why is a boxing ring square?]]></value>
+					<value><![CDATA[Is is safe to update to OpenCms 10.5?]]></value>
 				</property>
 			</properties>
-			<relations/>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>5eb5005e-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/opencms/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/faqs/faq_00011.xml</source>
+			<destination>apollo-demo/.content/faqs/faq_00011.xml</destination>
+			<type>a-faq</type>
+			<uuidstructure>1d2538e9-7382-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>1d2538ea-7382-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Mon, 05 Sep 2016 16:02:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[How comes software this great is free?]]></value>
+				</property>
+			</properties>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>5eb5005e-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/opencms/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -8882,6 +8985,62 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/lists/l_00008.xml</source>
+			<destination>apollo-demo/.content/lists/l_00008.xml</destination>
+			<type>a-list</type>
+			<uuidstructure>23a8e199-737f-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>23a8e19a-737f-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Mon, 05 Sep 2016 15:40:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[FAQ OpenCms Questions]]></value>
+				</property>
+			</properties>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>5eb5005e-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/opencms/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/lists/l_00009.xml</source>
+			<destination>apollo-demo/.content/lists/l_00009.xml</destination>
+			<type>a-list</type>
+			<uuidstructure>39f435ef-7381-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>39f435f0-7381-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Mon, 05 Sep 2016 15:55:54 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[FAQ Silly Questions]]></value>
+				</property>
+			</properties>
+			<relations>
+				<relation>
+					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>67e5e821-737f-11e6-ace3-0242ac11002b</id>
+					<path>/.categories/faq/silly/</path>
+					<type>CATEGORY</type>
+				</relation>
+			</relations>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/maps</destination>
 			<type>folder</type>
 			<uuidstructure>03073309-5afc-11e5-90c1-0242ac11002b</uuidstructure>
@@ -9305,7 +9464,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Simple Slider: Simple slider]]></value>
+					<value><![CDATA[Simple slider]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9339,23 +9498,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/tabs/t_00001.xml</source>
-			<destination>apollo-demo/.content/tabs/t_00001.xml</destination>
-			<type>a-tabs</type>
-			<uuidstructure>8b07026f-6084-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>8b070270-6084-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 17:16:48 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: Popular topics]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>apollo-demo/.content/tabs/t_00002.xml</source>
 			<destination>apollo-demo/.content/tabs/t_00002.xml</destination>
 			<type>a-tabs</type>
@@ -9384,6 +9526,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Tabs / Accordion: Accordion demo content]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/tabs/t_00004.xml</source>
+			<destination>apollo-demo/.content/tabs/t_00004.xml</destination>
+			<type>a-tabs</type>
+			<uuidstructure>973fc159-737e-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>973fc15a-737e-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Mon, 05 Sep 2016 15:37:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Frequently asked questions: FAQ Tab]]></value>
 				</property>
 			</properties>
 			<relations/>
