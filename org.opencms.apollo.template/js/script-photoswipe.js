@@ -16,7 +16,8 @@ $(document).ready(
 						var item = {
 							src : $(this).attr('href'),
 							w : size[0].split(':')[1],
-							h : size[1].split(':')[1]
+							h : size[1].split(':')[1],
+							title: $(this).attr('data-title')
 						};
 						items.push(item);
 					}
@@ -122,7 +123,8 @@ function openPhotoSwipeGallery(index) {
 				var item = {
 					src : $(this).attr('data-src'),
 					w : size[0].split(':')[1],
-					h : size[1].split(':')[1]
+					h : size[1].split(':')[1],
+					title: $(this).attr('data-title')
 				};
 				items.push(item);
 			}
@@ -136,7 +138,9 @@ function openPhotoSwipeGallery(index) {
            showHideOpacity: true,
            getThumbBoundsFn: false,
            showAnimationDuration: 0,
-           index: index
+           index: index,
+           closeEl: true,
+           counterEl: true
     };
 	new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options).init();
 }		
@@ -150,7 +154,8 @@ function loadImages(page) {
 
 	$.get($("#galleryData").data("ajax") + "?items=" + $('#galleryData').data('count') + "&page=" 
 			+ page + "&path=\"" + $("#galleryData").data("path") + "\"&title=" 
-			+ $("#galleryData").data("showtitle") + "&css=" + $("#galleryData").data("css"),
+			+ $("#galleryData").data("showtitle") + "&copyright=" 
+			+ $("#galleryData").data("showcopyright") + "&css=" + $("#galleryData").data("css"),
 	function(images) {
 		if (images.length == 0) {
 			$('#more').remove();
