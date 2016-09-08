@@ -39,6 +39,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-simple.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages"/>
 			<resource uri="/system/modules/org.opencms.apollo/elements/list/list-ajax.jsp"/>
 		</resources>
 		<excluderesources/>
@@ -321,249 +322,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo/formatters</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-archive-filter.jsp</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-archive-filter.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>1dde2909-2704-11e6-9192-0242ac11002b</uuidstructure>
-			<uuidresource>1dde290a-2704-11e6-9192-0242ac11002b</uuidresource>
-			<datecreated>Tue, 31 May 2016 07:48:51 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Formatter JSP for archive list filters]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-archive-filter.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-archive-filter.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>448925ad-2704-11e6-9192-0242ac11002b</uuidstructure>
-			<uuidresource>448925ae-2704-11e6-9192-0242ac11002b</uuidresource>
-			<datecreated>Tue, 31 May 2016 07:49:56 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Archive list filters]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-facets.jsp</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-facets.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>de7ed78f-41cb-11e6-b24c-0242ac11002b</uuidstructure>
-			<uuidresource>de7ed790-41cb-11e6-b24c-0242ac11002b</uuidresource>
-			<datecreated>Mon, 04 Jul 2016 09:44:14 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Formatter JSP for archive list filters]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-facets.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-facets.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>de8c9333-41cb-11e6-b24c-0242ac11002b</uuidstructure>
-			<uuidresource>de8c9334-41cb-11e6-b24c-0242ac11002b</uuidresource>
-			<datecreated>Mon, 04 Jul 2016 09:44:14 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[List Facets]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-pages.jsp</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-pages.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>005152fb-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
-			<uuidresource>005152fc-3dc5-11e6-b70e-0242ac11002b</uuidresource>
-			<datecreated>Wed, 29 Jun 2016 06:45:00 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[List with pagination]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-pages.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-pages.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>008497fe-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
-			<uuidresource>008497ff-3dc5-11e6-b70e-0242ac11002b</uuidresource>
-			<datecreated>Wed, 29 Jun 2016 06:45:00 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[List with pagination]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-scrolling.jsp</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-scrolling.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>d2619f72-5871-11e5-b803-0242ac11002b</uuidstructure>
-			<uuidresource>d2619f73-5871-11e5-b803-0242ac11002b</uuidresource>
-			<datecreated>Fri, 11 Sep 2015 10:42:38 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Formatter JSP for Lists]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-scrolling.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-scrolling.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>d268a456-5871-11e5-b803-0242ac11002b</uuidstructure>
-			<uuidresource>d268a457-5871-11e5-b803-0242ac11002b</uuidresource>
-			<datecreated>Fri, 11 Sep 2015 10:42:38 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[List with dynamic loading]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-simple.jsp</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-simple.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>fe8cbd59-33cc-11e6-b2da-0242ac11002b</uuidstructure>
-			<uuidresource>fe8cbd5a-33cc-11e6-b2da-0242ac11002b</uuidresource>
-			<datecreated>Thu, 16 Jun 2016 14:17:01 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Formatter JSP for simple lists]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-simple.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-simple.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>fe96815d-33cc-11e6-b2da-0242ac11002b</uuidstructure>
-			<uuidresource>fe96815e-33cc-11e6-b2da-0242ac11002b</uuidresource>
-			<datecreated>Thu, 16 Jun 2016 14:17:01 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Simple list]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>system/modules/org.opencms.apollo/i18n</destination>
 			<type>folder</type>
 			<properties/>
@@ -601,6 +359,27 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Localization for settings]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>d98d6090-75aa-11e6-805e-0242ac11002b</uuidstructure>
+			<uuidresource>d98d6091-75aa-11e6-805e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 09:58:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
 				</property>
 				<property>
 					<name>search.exclude</name>
