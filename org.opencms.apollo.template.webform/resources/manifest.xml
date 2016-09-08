@@ -20,7 +20,6 @@
 		<userinstalled/>
 		<dateinstalled/>
 		<dependencies>
-			<dependency name="org.opencms.apollo.template.basics" version="10.0.0"/>
 		</dependencies>
 		<exportpoints>
 			<exportpoint uri="/system/modules/org.opencms.apollo.template.webform/classes/" destination="WEB-INF/classes/"/>
