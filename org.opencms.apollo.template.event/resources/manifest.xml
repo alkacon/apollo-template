@@ -31,9 +31,9 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/event-teaser-compact.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/event-teaser-elaborate.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/event-teaser-elaborate.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/schemas/event.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.event"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.event.messages"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/event.xsd"/>
 		</resources>
 		<excluderesources/>
 		<parameters/>
@@ -100,6 +100,173 @@
 			<properties/>
 		</file>
 		<file>
+			<destination>system/modules/org.opencms.apollo/formatters</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/event-detail.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/event-detail.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>d2d07c06-5b83-11e5-ab03-0242ac11002b</uuidstructure>
+			<uuidresource>d2d07c07-5b83-11e5-ab03-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 08:29:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for detailed event]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/event-detail.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/event-detail.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>d2d5d339-5b83-11e5-ab03-0242ac11002b</uuidstructure>
+			<uuidresource>d2d5d33a-5b83-11e5-ab03-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 08:29:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Detailed Event]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/event-teaser-compact.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/event-teaser-compact.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>aa2326f2-d71a-11e5-b10a-0242ac11002b</uuidstructure>
+			<uuidresource>aa2326f3-d71a-11e5-b10a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 19 Feb 2016 15:08:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for compact event]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;params]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/event-teaser-compact.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/event-teaser-compact.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>d60fa8bc-d71a-11e5-b10a-0242ac11002b</uuidstructure>
+			<uuidresource>d60fa8bd-d71a-11e5-b10a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 19 Feb 2016 15:09:56 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Compact Event teaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/event-teaser-elaborate.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/event-teaser-elaborate.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>fe8e9df9-c5b5-11e5-a73e-0242ac11002b</uuidstructure>
+			<uuidresource>fe8e9dfa-c5b5-11e5-a73e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 28 Jan 2016 11:55:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for elaborate event]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;params]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/event-teaser-elaborate.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/event-teaser-elaborate.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>194e26bc-c5b6-11e5-a73e-0242ac11002b</uuidstructure>
+			<uuidresource>194e26bd-c5b6-11e5-a73e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 28 Jan 2016 11:56:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Elaborate Event teaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>system/modules/org.opencms.apollo/i18n</destination>
 			<type>folder</type>
 			<properties/>
@@ -137,6 +304,28 @@
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/schemas</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/event.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/event.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>d2aa083b-5b83-11e5-ab03-0242ac11002b</uuidstructure>
+			<uuidresource>d2aa083c-5b83-11e5-ab03-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 08:29:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[XSD for an event]]></value>
 				</property>
 			</properties>
 			<relations/>
