@@ -41,7 +41,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-linksequence" id="468">
-				<param name="schema">/system/modules/org.opencms.apollo.template.linksequence/schemas/linksequence.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/linksequence.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

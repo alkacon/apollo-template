@@ -40,7 +40,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-contact" id="470">
-				<param name="schema">/system/modules/org.opencms.apollo.template.contact/schemas/contact.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/contact.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

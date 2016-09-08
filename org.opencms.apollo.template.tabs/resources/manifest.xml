@@ -37,7 +37,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-tabs" id="455">
-				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/tabs.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/tabs.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

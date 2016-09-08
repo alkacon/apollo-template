@@ -43,7 +43,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-blog" id="459">
-				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/blog.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/blog.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

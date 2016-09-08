@@ -35,7 +35,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-sitemap" id="462">
-				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/sitemap.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/sitemap.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

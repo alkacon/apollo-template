@@ -42,7 +42,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-shariff" id="466">
-				<param name="schema">/system/modules/org.opencms.apollo.template.shariff/schemas/shariff.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/shariff.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

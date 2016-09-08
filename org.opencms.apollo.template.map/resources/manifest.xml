@@ -37,7 +37,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-map" id="461">
-				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/map.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/map.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

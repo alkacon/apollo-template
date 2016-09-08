@@ -39,7 +39,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-faq" id="467">
-				<param name="schema">/system/modules/org.opencms.apollo.template.faq/schemas/faq.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/faq.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

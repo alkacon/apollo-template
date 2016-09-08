@@ -39,7 +39,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-navigation" id="451">
-				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/navigation.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/navigation.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

@@ -78,10 +78,10 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-templaterow" id="450">
-				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/templaterow.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/templaterow.xsd</param>
 			</type>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-section" id="464">
-				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/section.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/section.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

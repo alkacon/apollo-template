@@ -46,7 +46,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-list" id="460">
-				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/list.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/list.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

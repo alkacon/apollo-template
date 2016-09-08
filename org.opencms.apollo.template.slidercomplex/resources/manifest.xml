@@ -37,7 +37,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-sliderextended" id="454">
-				<param name="schema">/system/modules/org.opencms.apollo.template.extensions/schemas/slider.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/slidercomplex.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

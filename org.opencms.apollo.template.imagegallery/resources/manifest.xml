@@ -36,7 +36,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-imagegallery" id="463">
-				<param name="schema">/system/modules/org.opencms.apollo.template.extensions/schemas/imagegallery.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/imagegallery.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>

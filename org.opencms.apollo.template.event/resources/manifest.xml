@@ -39,7 +39,7 @@
 		<parameters/>
 		<resourcetypes>
 			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-event" id="458">
-				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/event.xsd</param>
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/event.xsd</param>
 			</type>
 		</resourcetypes>
 		<explorertypes>
