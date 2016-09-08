@@ -55,7 +55,6 @@
 			<resource uri="/system/modules/org.opencms.apollo/functions/opencms-info.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/opencms-info.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.jsp-search-formatter"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.messages"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.layout.messages"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.login"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.row"/>
@@ -1401,27 +1400,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.messages</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.messages</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>3c3865cf-515f-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>3c3865d0-515f-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 10:41:57 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Localization for settings]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.layout.messages</source>
 			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.layout.messages</destination>
 			<type>xmlvfsbundle</type>
@@ -1430,6 +1408,10 @@
 			<datecreated>Thu, 08 Sep 2016 07:05:04 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

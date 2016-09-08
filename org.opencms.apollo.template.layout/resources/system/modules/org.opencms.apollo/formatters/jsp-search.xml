@@ -6,7 +6,7 @@
     <Type><![CDATA[jsp-search]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/jsp-search-formatter.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/jsp-search.jsp]]></target>
         <uuid>5e1b9b1c-5baf-11e5-8f8e-0242ac11002b</uuid>
       </link>
     </Jsp>
