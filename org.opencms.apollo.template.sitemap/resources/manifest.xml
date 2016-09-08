@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<infoproject>Offline</infoproject>
+		<export_version>10</export_version>
+	</info>
+	<module>
+		<name>org.opencms.apollo.template.sitemap</name>
+		<nicename><![CDATA[Apollo Template Sitemap]]></nicename>
+		<group>Apollo Template</group>
+		<class/>
+		<import-site>/</import-site>
+		<export-mode name="reduced"/>
+		<description><![CDATA[The OpenCms 10 Apollo template sitemap extension.]]></description>
+		<version>10.5.0</version>
+		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
+		<authoremail/>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies/>
+		<exportpoints/>
+		<resources>
+			<resource uri="/system/modules/org.opencms.apollo.template.sitemap/"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/sitemap.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/sitemap.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.sitemap"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.sitemap.messages"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/sitemap.xsd"/>
+			<resource uri="/system/workplace/resources/filetypes/a-sitemap.png"/>
+			<resource uri="/system/workplace/resources/filetypes/a-sitemap_big.png"/>
+		</resources>
+		<excluderesources/>
+		<parameters/>
+		<resourcetypes>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-sitemap" id="462">
+				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/sitemap.xsd</param>
+			</type>
+		</resourcetypes>
+		<explorertypes>
+			<explorertype name="a-sitemap" key="fileicon.a-sitemap" icon="a-sitemap.png" bigicon="a-sitemap_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=a-sitemap" order="10" autosetnavigation="false" autosettitle="false" info="desc.a-sitemap" key="title.a-sitemap"/>
+			</explorertype>
+		</explorertypes>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.sitemap</destination>
+			<type>folder</type>
+			<uuidstructure>2ffa872f-75a5-11e6-af22-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 09:18:21 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.sitemap/.config</source>
+			<destination>system/modules/org.opencms.apollo.template.sitemap/.config</destination>
+			<type>module_config</type>
+			<uuidstructure>d7d91397-75a5-11e6-af22-0242ac11002b</uuidstructure>
+			<uuidresource>d7d91398-75a5-11e6-af22-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 09:23:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/formatters</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/sitemap.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/sitemap.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>101be7c7-73e4-11e5-9a42-15b01ffdc6a6</uuidstructure>
+			<uuidresource>101be7c8-73e4-11e5-9a42-15b01ffdc6a6</uuidresource>
+			<datecreated>Fri, 16 Oct 2015 08:58:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for sitemap]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[uri;container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/sitemap.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/sitemap.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>1023affa-73e4-11e5-9a42-15b01ffdc6a6</uuidstructure>
+			<uuidresource>1023affb-73e4-11e5-9a42-15b01ffdc6a6</uuidresource>
+			<datecreated>Fri, 16 Oct 2015 08:58:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Standard Sitemap]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/i18n</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.sitemap</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.sitemap</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>608fb6c7-765f-11e5-aeab-15b01ffdc6a6</uuidstructure>
+			<uuidresource>608fb6c8-765f-11e5-aeab-15b01ffdc6a6</uuidresource>
+			<datecreated>Mon, 19 Oct 2015 12:46:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.sitemap.messages</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.sitemap.messages</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>6c55e214-75a5-11e6-af22-0242ac11002b</uuidstructure>
+			<uuidresource>6c560925-75a5-11e6-af22-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 09:20:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/schemas</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/sitemap.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/sitemap.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>4d254391-75a5-11e6-af22-0242ac11002b</uuidstructure>
+			<uuidresource>4d254392-75a5-11e6-af22-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 09:19:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[XSD for a sitemap]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-sitemap.png</source>
+			<destination>system/workplace/resources/filetypes/a-sitemap.png</destination>
+			<type>image</type>
+			<uuidstructure>9f3ce924-766d-11e5-aeab-15b01ffdc6a6</uuidstructure>
+			<uuidresource>9f3ce925-766d-11e5-aeab-15b01ffdc6a6</uuidresource>
+			<datecreated>Mon, 19 Oct 2015 14:28:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-sitemap_big.png</source>
+			<destination>system/workplace/resources/filetypes/a-sitemap_big.png</destination>
+			<type>image</type>
+			<uuidstructure>9f479787-766d-11e5-aeab-15b01ffdc6a6</uuidstructure>
+			<uuidresource>9f479788-766d-11e5-aeab-15b01ffdc6a6</uuidresource>
+			<datecreated>Mon, 19 Oct 2015 14:28:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>

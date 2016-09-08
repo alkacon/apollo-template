@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloNavigations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/navigation.xsd">
+<ApolloNavigations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/navigation.xsd">
   <ApolloNavigation language="en">
     <Title><![CDATA[Apollo Demo main navigation]]></Title>
     <NavStartLevel><![CDATA[0]]></NavStartLevel>
     <LogoImage>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.basics/resources/img/logo/logo_opencms_170x42.png]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.theme.unify/resources/img/logo/logo_opencms_170x42.png]]></target>
         <uuid>71ac2b99-be83-11e5-a9f8-0242ac11002b</uuid>
       </link>
     </LogoImage>

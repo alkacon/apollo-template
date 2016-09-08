@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/list.xsd">
+<ApolloLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/list.xsd">
   <ApolloList language="en">
     <Headline><![CDATA[FAQ OpenCms Questions]]></Headline>
     <TypesToCollect>a-faq:51bb9707-3d13-11e6-aee4-0242ac11002b</TypesToCollect>

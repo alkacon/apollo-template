@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/list.xsd">
+<ApolloLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/list.xsd">
   <ApolloList language="en">
     <Headline><![CDATA[Compact Blog List]]></Headline>
     <TypesToCollect>a-blog:da8fa924-d64a-11e5-9ef3-0242ac11002b</TypesToCollect>

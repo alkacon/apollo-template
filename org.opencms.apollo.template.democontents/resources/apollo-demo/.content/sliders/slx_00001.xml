@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloSliders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.extensions/schemas/slider.xsd">
+<ApolloSliders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/slidercomplex.xsd">
   <ApolloSlider language="en">
     <Title><![CDATA[OpenCms 10.5 Promo Slider  ]]></Title>
     <Duration><![CDATA[6000]]></Duration>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<infoproject>Offline</infoproject>
+		<export_version>10</export_version>
+	</info>
+	<module>
+		<name>org.opencms.apollo.template.blog</name>
+		<nicename><![CDATA[Apollo Template Blog]]></nicename>
+		<group>Apollo Template</group>
+		<class/>
+		<import-site>/</import-site>
+		<export-mode name="reduced"/>
+		<description><![CDATA[The OpenCms 10 Apollo template blog extension.]]></description>
+		<version>10.5.0</version>
+		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
+		<authoremail/>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies/>
+		<exportpoints/>
+		<resources>
+			<resource uri="/system/modules/org.opencms.apollo.template.blog/"/>
+			<resource uri="/system/workplace/resources/filetypes/a-blog.png"/>
+			<resource uri="/system/workplace/resources/filetypes/a-blog_big.png"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/blog-detail.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/blog-detail.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/blog-teaser-compact.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/blog-teaser-compact.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/blog-teaser-elaborate.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/blog-teaser-elaborate.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/blog_ugc-form.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/blog_ugc-form.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/blog.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/pages/blog-pdf.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/resources/js/ugc/ugc-blog.js"/>
+		</resources>
+		<excluderesources/>
+		<parameters/>
+		<resourcetypes>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-blog" id="459">
+				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/blog.xsd</param>
+			</type>
+		</resourcetypes>
+		<explorertypes>
+			<explorertype name="a-blog" key="fileicon.a-blog" icon="a-blog.png" bigicon="a-blog_big.png" reference="xmlcontent">
+				<newresource page="a-menu" uri="newresource_xmlcontent.jsp?newresourcetype=a-blog" order="80" autosetnavigation="false" autosettitle="false" info="desc.a-blog" key="title.a-blog"/>
+			</explorertype>
+		</explorertypes>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.blog</destination>
+			<type>folder</type>
+			<uuidstructure>45cb6aff-7593-11e6-861e-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 07:10:07 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.blog/.config</source>
+			<destination>system/modules/org.opencms.apollo.template.blog/.config</destination>
+			<type>module_config</type>
+			<uuidstructure>b1b49f6f-7595-11e6-861e-0242ac11002b</uuidstructure>
+			<uuidresource>b1b49f70-7595-11e6-861e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 07:27:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/formatters</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/blog-detail.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/blog-detail.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>fd062e7e-57c6-11e5-a989-0242ac11002b</uuidstructure>
+			<uuidresource>fd062e7f-57c6-11e5-a989-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 14:19:46 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for detailed blog article]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/blog-detail.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/blog-detail.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>fd0a7441-57c6-11e5-a989-0242ac11002b</uuidstructure>
+			<uuidresource>fd0a7442-57c6-11e5-a989-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 14:19:46 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Detailed Blog Article]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/blog-teaser-compact.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/blog-teaser-compact.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>8ed4e94e-d64a-11e5-9ef3-0242ac11002b</uuidstructure>
+			<uuidresource>8ed4e94f-d64a-11e5-9ef3-0242ac11002b</uuidresource>
+			<datecreated>Thu, 18 Feb 2016 14:19:01 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for compact blog article teaser]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;params]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+				<property>
+					<name>list.type</name>
+					<value><![CDATA[a-blog]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/blog-teaser-compact.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/blog-teaser-compact.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>da8fa924-d64a-11e5-9ef3-0242ac11002b</uuidstructure>
+			<uuidresource>da8fa925-d64a-11e5-9ef3-0242ac11002b</uuidresource>
+			<datecreated>Thu, 18 Feb 2016 14:21:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Compact Blog Article teaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/blog-teaser-elaborate.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/blog-teaser-elaborate.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>a3851db8-c663-11e5-a73e-0242ac11002b</uuidstructure>
+			<uuidresource>a3851db9-c663-11e5-a73e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 29 Jan 2016 08:38:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for elaborate blog article teaser]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;params]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+				<property>
+					<name>list.type</name>
+					<value><![CDATA[a-blog]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/blog-teaser-elaborate.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/blog-teaser-elaborate.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>532e6791-c663-11e5-a73e-0242ac11002b</uuidstructure>
+			<uuidresource>532e6792-c663-11e5-a73e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 29 Jan 2016 08:36:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Elaborate Blog Article teaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/blog_ugc-form.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/blog_ugc-form.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>d386b894-57ca-11e5-a989-0242ac11002b</uuidstructure>
+			<uuidresource>d386b895-57ca-11e5-a989-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 14:47:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for blog UGC form]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/blog_ugc-form.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/blog_ugc-form.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>d38a6218-57ca-11e5-a989-0242ac11002b</uuidstructure>
+			<uuidresource>d38a6219-57ca-11e5-a989-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 14:47:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Blog UGC form formatter]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/pages</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/pages/blog-pdf.jsp</source>
+			<destination>system/modules/org.opencms.apollo/pages/blog-pdf.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>ca595340-57ca-11e5-a989-0242ac11002b</uuidstructure>
+			<uuidresource>ca595341-57ca-11e5-a989-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 14:46:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[PDF-Template for blog entries]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/resources</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/resources/js</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/resources/js/ugc</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/resources/js/ugc/ugc-blog.js</source>
+			<destination>system/modules/org.opencms.apollo/resources/js/ugc/ugc-blog.js</destination>
+			<type>plain</type>
+			<uuidstructure>430ae385-57cc-11e5-a989-0242ac11002b</uuidstructure>
+			<uuidresource>430ae386-57cc-11e5-a989-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 14:57:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/schemas</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/blog.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/blog.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>fcec16c3-57c6-11e5-a989-0242ac11002b</uuidstructure>
+			<uuidresource>fcec16c4-57c6-11e5-a989-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 14:19:46 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[XSD for a blog article]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-blog.png</source>
+			<destination>system/workplace/resources/filetypes/a-blog.png</destination>
+			<type>image</type>
+			<uuidstructure>fcf3b7e6-57c6-11e5-a989-0242ac11002b</uuidstructure>
+			<uuidresource>c2e4056a-57c7-11e5-a989-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 14:25:18 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-blog_big.png</source>
+			<destination>system/workplace/resources/filetypes/a-blog_big.png</destination>
+			<type>image</type>
+			<uuidstructure>fcf7af8a-57c6-11e5-a989-0242ac11002b</uuidstructure>
+			<uuidresource>caa35bcf-57c7-11e5-a989-0242ac11002b</uuidresource>
+			<datecreated>Thu, 10 Sep 2015 14:25:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>

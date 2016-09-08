@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
+  <Bundle language="en">
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Title]]></Key>
+      <Value><![CDATA[Title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Title.help]]></Key>
+      <Value><![CDATA[The image rotator title.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Delay]]></Key>
+      <Value><![CDATA[Delay]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Delay.help]]></Key>
+      <Value><![CDATA[The time to the nex image rotation.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowTimer]]></Key>
+      <Value><![CDATA[Show Timeline]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowTimer.help]]></Key>
+      <Value><![CDATA[If checked, the timeline until the next image is shown.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowNumbers]]></Key>
+      <Value><![CDATA[Show Numbers]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowNumbers.help]]></Key>
+      <Value><![CDATA[If checked, clickable numbers are shown for the images.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowNavButtons]]></Key>
+      <Value><![CDATA[Show Navigation]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowNavButtons.help]]></Key>
+      <Value><![CDATA[If checked, navigation buttons are shown.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowPlayButton]]></Key>
+      <Value><![CDATA[Show Play Button]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowPlayButton.help]]></Key>
+      <Value><![CDATA[If checked, a button to start and stop the slider is shown.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.TextColor]]></Key>
+      <Value><![CDATA[Text Color]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.TextColor.help]]></Key>
+      <Value><![CDATA[The text color of the  text box.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.TextBackgroundColor]]></Key>
+      <Value><![CDATA[Text Background Color]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.TextBackgroundColor.help]]></Key>
+      <Value><![CDATA[The optional background color of the text box. If not background color is activated, the color will be set to transparent.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Position]]></Key>
+      <Value><![CDATA[Text Box Position]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Position.help]]></Key>
+      <Value><![CDATA[The default position of the text box. This value can be overridden for individual slides.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ImageHeight]]></Key>
+      <Value><![CDATA[Image Height]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ImageHeight.help]]></Key>
+      <Value><![CDATA[The height of the images, the width is calculated automatically.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Image]]></Key>
+      <Value><![CDATA[Image]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Image.help]]></Key>
+      <Value><![CDATA[The image selected here will be used for the rotator.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Uri]]></Key>
+      <Value><![CDATA[Path]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Uri.help]]></Key>
+      <Value><![CDATA[The absolute image path in the OpenCms file system.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Link]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Link.help]]></Key>
+      <Value><![CDATA[Optional link that is opened when clicking the image. <i>Please note:</i> Eternal links have to start with <b>http://</b>.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.NewWin]]></Key>
+      <Value><![CDATA[Open link in new window]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.NewWin.help]]></Key>
+      <Value><![CDATA[If checked, the link will be opened in a new browser window.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.SuperTitle]]></Key>
+      <Value><![CDATA[Text Title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.SuperTitle.help]]></Key>
+      <Value><![CDATA[The title of the text box that is shown with the image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.TitleLine1]]></Key>
+      <Value><![CDATA[Text Line 1]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.TitleLine1.help]]></Key>
+      <Value><![CDATA[The first line of the text box.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.TitleLine2]]></Key>
+      <Value><![CDATA[Text Line 2]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.TitleLine2.help]]></Key>
+      <Value><![CDATA[The second line of the text box.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Copyright]]></Key>
+      <Value><![CDATA[Copyright]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Copyright.help]]></Key>
+      <Value><![CDATA[The Copyright information is optional and is displayed in the lower left corner of the image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Position]]></Key>
+      <Value><![CDATA[Position Textbox]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Position.help]]></Key>
+      <Value><![CDATA[Optional position of the text box inside the image, if the standard position is not suited.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImageTextPosition.Top]]></Key>
+      <Value><![CDATA[Margin top]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImageTextPosition.Top.help]]></Key>
+      <Value><![CDATA[Margin to the top image border in pixels.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImageTextPosition.Left]]></Key>
+      <Value><![CDATA[Margin left]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImageTextPosition.Left.help]]></Key>
+      <Value><![CDATA[Margin to the left image border in pixels.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.TabConfig]]></Key>
+      <Value><![CDATA[Configuration]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.TabImages]]></Key>
+      <Value><![CDATA[Images]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.slider.delay.sec]]></Key>
+      <Value><![CDATA[Second]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.slider.delay.secs]]></Key>
+      <Value><![CDATA[Seconds]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.carousel.message.new]]></Key>
+      <Value><![CDATA[New carousel, please edit the content.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.slider.message.new]]></Key>
+      <Value><![CDATA[New slider, please edit the content.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.slider.message.edited]]></Key>
+      <Value><![CDATA[The slider was changed, the page is reloaded.]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Title]]></Key>
+      <Value><![CDATA[Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Title.help]]></Key>
+      <Value><![CDATA[Der Titel des Bildrotators.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Delay]]></Key>
+      <Value><![CDATA[Verzögerung]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Delay.help]]></Key>
+      <Value><![CDATA[Die Zeit bis zum nächsten Bildwechsel.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowTimer]]></Key>
+      <Value><![CDATA[Zeige Zeitleiste]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowTimer.help]]></Key>
+      <Value><![CDATA[Wenn angekreuzt, wird die Zeitleiste bis zum nächsten Bildwechsel angezeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowNumbers]]></Key>
+      <Value><![CDATA[Zeige Bildnummern]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowNumbers.help]]></Key>
+      <Value><![CDATA[Wenn angekreuzt, werden für die Bilder klickbare Nummern angezeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowNavButtons]]></Key>
+      <Value><![CDATA[Zeige Navigation]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowNavButtons.help]]></Key>
+      <Value><![CDATA[Wenn angekreuzt, werden Navigationsicons angezeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowPlayButton]]></Key>
+      <Value><![CDATA[Zeige Abspielbutton]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ShowPlayButton.help]]></Key>
+      <Value><![CDATA[Wenn angekreuzt, wird ein Button zum Abspielen und Anhalten des Bildwechsels gezeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.TextColor]]></Key>
+      <Value><![CDATA[Text Farbe]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.TextColor.help]]></Key>
+      <Value><![CDATA[Die Textfarbe der Textbox.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.TextBackgroundColor]]></Key>
+      <Value><![CDATA[Text Hintergrundfarbe]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.TextBackgroundColor.help]]></Key>
+      <Value><![CDATA[Die optionale Hintergrundfarbe der Textbox. Bei nicht aktivierter Hintergrundfarbe wird diese auf transparent gesetzt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Position]]></Key>
+      <Value><![CDATA[Textbox Position]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Position.help]]></Key>
+      <Value><![CDATA[Die Standardposition der Textbox innerhalb des Bildes. Kann für einzelne Bilder überschrieben werden.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ImageHeight]]></Key>
+      <Value><![CDATA[Bildhöhe]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.ImageHeight.help]]></Key>
+      <Value><![CDATA[Die Höhe der Bilder, die Breite wird automatisch berechnet.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Image]]></Key>
+      <Value><![CDATA[Bild]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.Image.help]]></Key>
+      <Value><![CDATA[Das hier ausgewählte Bild wird für den Rotator verwendet.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Uri]]></Key>
+      <Value><![CDATA[Pfad]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Uri.help]]></Key>
+      <Value><![CDATA[Der absolute Pfad des Bildes im OpenCms Dateisystem.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Link]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Link.help]]></Key>
+      <Value><![CDATA[Optionaler Link, der bei Klick auf das Bild geöffnet wird. <i>Beachten Sie:</i> Bei externen Links bitte mit <b>http://</b> Präfix eingeben.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.NewWin]]></Key>
+      <Value><![CDATA[Öffne Link in neuem Fenster]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.NewWin.help]]></Key>
+      <Value><![CDATA[Wenn angekreuzt, wird der Link in einem neuen Browserfenster geöffnet.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.SuperTitle]]></Key>
+      <Value><![CDATA[Text Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.SuperTitle.help]]></Key>
+      <Value><![CDATA[Der Titel der Textbox, die im Bild gezeigt wird.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.TitleLine1]]></Key>
+      <Value><![CDATA[Text Zeile 1]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.TitleLine1.help]]></Key>
+      <Value><![CDATA[Die erste Textzeile der Textbox.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.TitleLine2]]></Key>
+      <Value><![CDATA[Text Zeile 2]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.TitleLine2.help]]></Key>
+      <Value><![CDATA[Die zweite Textzeile der Textbox.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Copyright]]></Key>
+      <Value><![CDATA[Copyright]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Copyright.help]]></Key>
+      <Value><![CDATA[Die Copyright Information zu dem Bild ist optional und wird unten links eingeblendet.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Position]]></Key>
+      <Value><![CDATA[Box Position]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImage.Position.help]]></Key>
+      <Value><![CDATA[Optionale Position der Textbox innerhalb des Bildes, falls die Standardposition nicht gewünscht wird.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImageTextPosition.Top]]></Key>
+      <Value><![CDATA[Abstand oben]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImageTextPosition.Top.help]]></Key>
+      <Value><![CDATA[Abstand zum oberen Bildrand in Pixeln.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImageTextPosition.Left]]></Key>
+      <Value><![CDATA[Abstand links]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSliderImageTextPosition.Left.help]]></Key>
+      <Value><![CDATA[Abstand zum linken Bildrand in Pixeln.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.TabConfig]]></Key>
+      <Value><![CDATA[Konfiguration]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSlider.TabImages]]></Key>
+      <Value><![CDATA[Bilder]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.slider.delay.sec]]></Key>
+      <Value><![CDATA[Sekunde]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.slider.delay.secs]]></Key>
+      <Value><![CDATA[Sekunden]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.carousel.message.new]]></Key>
+      <Value><![CDATA[Neues Karussell, bitte bearbeiten Sie den Inhalt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.slider.message.new]]></Key>
+      <Value><![CDATA[Neuer Slider, bitte bearbeiten Sie den Inhalt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.slider.message.edited]]></Key>
+      <Value><![CDATA[Der Slider wurde bearbeitet, die Seite wird neu geladen.]]></Value>
+    </Message>
+  </Bundle>
+</XmlVfsBundles>

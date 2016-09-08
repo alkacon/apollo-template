@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloContacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.contact/schemas/contact.xsd">
+<ApolloContacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/contact.xsd">
   <ApolloContact language="en">
     <Title><![CDATA[Jay M. Pritchett III]]></Title>
     <Name>

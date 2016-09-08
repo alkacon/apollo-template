@@ -20,7 +20,7 @@
     <Formatters>
       <Formatter>
         <link type="WEAK">
-          <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-text.xml]]></target>
+          <target><![CDATA[/system/modules/org.opencms.apollo/formatters/section-text.xml]]></target>
           <uuid>fcab1d1e-eb7d-11e5-854f-0242ac11002b</uuid>
         </link>
       </Formatter>

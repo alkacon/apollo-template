@@ -13,7 +13,7 @@
 		<import-script><![CDATA[writeProperty '/' 'Title' 'Demo Site'
 writeProperty '/' 'Description' 'The OpenCms demo, brought to you by Alkacon Software.'
 writeProperty '/' 'NavText' 'Overview'
-writeProperty '/' 'template' '/system/modules/org.opencms.apollo.template.formatters/templates/apollo-page.jsp'
+writeProperty '/' 'template' '/system/modules/org.opencms.apollo/templates/apollo-page.jsp'
 writeProperty '/' 'apollo.css.wrapper' 'bg-blue:Blue background|bg-red:Red background|bg-grey-light:Grey background|bl-red-2-solid:Red line left|bl-grey-2-solid:Grey line left'
 writeProperty '/' 'apollo.css.iconbox' 'service-block service-block-default:%(key.apollo.setting.cssclass.lightbox)|service-block service-block-red rounded-2x:%(key.apollo.setting.cssclass.redbox)'
 writeProperty '/' 'apollo.css.icon' 'info:%(key.apollo.setting.iconclass.info)|link:%(key.apollo.setting.iconclass.link)|external-link:%(key.apollo.setting.iconclass.linkexternal1)|external-link-square:%(key.apollo.setting.iconclass.linkexternal1)|download:%(key.apollo.setting.iconclass.download1)|cloud-download:%(key.apollo.setting.iconclass.download2)|file-text-o:%(key.apollo.setting.iconclass.document)|file-pdf-o:%(key.apollo.setting.iconclass.pdf)|folder-o:%(key.apollo.setting.iconclass.folder)|globe:%(key.apollo.setting.iconclass.globe)|arrow-right:%(key.apollo.setting.iconclass.arrow)|check:%(key.apollo.setting.iconclass.check)'
@@ -42,7 +42,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 		<import-site>/sites/default/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[The OpenCms 10 Apollo template demo contents.]]></description>
-		<version>10.0.0</version>
+		<version>10.5.0</version>
 		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
 		<authoremail/>
 		<datecreated/>
@@ -50,12 +50,9 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 		<dateinstalled/>
 		<dependencies>
 			<dependency name="org.opencms.apollo.template.disqus" version="10.0.0"/>
-			<dependency name="org.opencms.apollo.template.extensions" version="10.0.0"/>
 			<dependency name="org.opencms.apollo.template.faq" version="10.0.0"/>
-			<dependency name="org.opencms.apollo.template.formatters" version="10.0.0"/>
 			<dependency name="org.opencms.apollo.template.job" version="10.0.0"/>
 			<dependency name="org.opencms.apollo.template.shariff" version="10.0.0"/>
-			<dependency name="org.opencms.apollo.template.schemas" version="10.0.0"/>
 		</dependencies>
 		<exportpoints/>
 		<resources>
@@ -7372,7 +7369,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: Yes, You Can!]]></value>
+					<value><![CDATA[Yes, You Can!]]></value>
 				</property>
 			</properties>
 			<relations/>

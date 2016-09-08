@@ -15,7 +15,7 @@
         </Uri>
         <Formatter>
           <link type="STRONG">
-            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/layoutrow.jsp]]></target>
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/layoutrow.jsp]]></target>
             <uuid>d652a05d-523d-11e5-9495-0242ac11002b</uuid>
           </link>
         </Formatter>
@@ -46,7 +46,7 @@
         </Uri>
         <Formatter>
           <link type="STRONG">
-            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/slider-carousel.jsp]]></target>
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/slider-carousel.jsp]]></target>
             <uuid>ca17b0c1-c4d0-11e5-9ca7-0242ac11002b</uuid>
           </link>
         </Formatter>

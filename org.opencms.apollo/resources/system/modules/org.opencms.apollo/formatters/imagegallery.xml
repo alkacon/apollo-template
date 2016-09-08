@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Image Gallery from a given folder]]></NiceName>
+    <Type><![CDATA[a-imagegallery]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.extensions/formatters/imagegallery.jsp]]></target>
+        <uuid>68958b5e-8f73-11e5-9ae7-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[1000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[imagegallery]]></ContainerType>
+        <ContainerType><![CDATA[element]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>true</Detail>
+    <NestedContainers>false</NestedContainers>
+    <HeadIncludeJs>
+      <JavascriptInline><![CDATA[
+				initImageGallery();
+			]]></JavascriptInline>
+    </HeadIncludeJs>
+    <Setting>
+      <PropertyName><![CDATA[showTitle]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showtitle)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showtitle.description)]]></Description>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showCopyright]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showcopyright)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showcopyright.description)]]></Description>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[autoload]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.autoload)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.autoload.description)]]></Description>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[imagesPerPage]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.imagesperpage)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.imagesperpage.description)]]></Description>
+      <Widget><![CDATA[string]]></Widget>
+      <Default><![CDATA[12]]></Default>
+      <RuleRegex><![CDATA[[0-9]+]]></RuleRegex>
+      <RuleType><![CDATA[error]]></RuleType>
+      <Error><![CDATA[%(key.apollo.setting.imagesperpage.error)]]></Error>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[cssClass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.imagecss)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.imagecss.description)]]></Description>
+      <Widget><![CDATA[string]]></Widget>
+      <Default><![CDATA[ap-square square-sm-6 square-md-4 square-lg-3 square-m-2]]></Default>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

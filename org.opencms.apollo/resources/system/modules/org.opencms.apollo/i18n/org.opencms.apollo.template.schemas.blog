@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
+  <Bundle language="en">
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Title]]></Key>
+      <Value><![CDATA[Title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Title.help]]></Key>
+      <Value><![CDATA[The title of the blog article.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.blog.default.Title]]></Key>
+      <Value><![CDATA[New blog article]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Date]]></Key>
+      <Value><![CDATA[Date]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Date.help]]></Key>
+      <Value><![CDATA[The date of the blog article.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Paragraph]]></Key>
+      <Value><![CDATA[Paragraph]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Paragraph.help]]></Key>
+      <Value><![CDATA[The paragraphs of the blog article.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Category]]></Key>
+      <Value><![CDATA[Categories]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Category.help]]></Key>
+      <Value><![CDATA[Assigns categories to the blog article.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.AuthorTab]]></Key>
+      <Value><![CDATA[Author]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Author]]></Key>
+      <Value><![CDATA[Author]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Author.help]]></Key>
+      <Value><![CDATA[The creator of this blog article.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.AuthorMail]]></Key>
+      <Value><![CDATA[Email]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.AuthorMail.help]]></Key>
+      <Value><![CDATA[The email address of the blog article creator.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Availability]]></Key>
+      <Value><![CDATA[Availability]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Availability.help]]></Key>
+      <Value><![CDATA[The availability of the blog article.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.General]]></Key>
+      <Value><![CDATA[General]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.GalleryTitle]]></Key>
+      <Value><![CDATA[Gallery Title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.GalleryTitle.help]]></Key>
+      <Value><![CDATA[The gallery title of the blog article. It is not shown on the page.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.blog.default.Text]]></Key>
+      <Value><![CDATA[Please edit the blog article text.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.blog.message.edit]]></Key>
+      <Value><![CDATA[<strong>New blog article</strong>, please edit the content.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.blog.message.readmore]]></Key>
+      <Value><![CDATA[read more]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.blog.message.by]]></Key>
+      <Value><![CDATA[By]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Title]]></Key>
+      <Value><![CDATA[Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Title.help]]></Key>
+      <Value><![CDATA[Der Titel des Blog-Artikels.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.blog.default.Title]]></Key>
+      <Value><![CDATA[Neuer Blog-Artikel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Date]]></Key>
+      <Value><![CDATA[Datum]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Date.help]]></Key>
+      <Value><![CDATA[Das Datum des Blog-Artikels.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Paragraph]]></Key>
+      <Value><![CDATA[Absatz]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Paragraph.help]]></Key>
+      <Value><![CDATA[Die Absätze des Blog-Artikels.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Category]]></Key>
+      <Value><![CDATA[Kategorien]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Category.help]]></Key>
+      <Value><![CDATA[Ordnet dem Blog-Artikel Kategorien zu.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.AuthorTab]]></Key>
+      <Value><![CDATA[Autor]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Author]]></Key>
+      <Value><![CDATA[Autor]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Author.help]]></Key>
+      <Value><![CDATA[Der Verfasser des Blog-Artikels.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.AuthorMail]]></Key>
+      <Value><![CDATA[E-Mail]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.AuthorMail.help]]></Key>
+      <Value><![CDATA[Die E-Mail Adresse des Verfassers.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Availability]]></Key>
+      <Value><![CDATA[Gültigkeit]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.Availability.help]]></Key>
+      <Value><![CDATA[Die Gültigkeit des Blog-Artikels.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.General]]></Key>
+      <Value><![CDATA[Allgemein]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.GalleryTitle]]></Key>
+      <Value><![CDATA[Galerie Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloBlog.GalleryTitle.help]]></Key>
+      <Value><![CDATA[Der Titel des Blog-Artikels für die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.blog.default.Text]]></Key>
+      <Value><![CDATA[Bitte bearbeiten Sie den Blogtext.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.blog.message.edit]]></Key>
+      <Value><![CDATA[<strong>Neuer Blog-Artikel</strong>, bitte bearbeiten Sie den Inhalt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.blog.message.readmore]]></Key>
+      <Value><![CDATA[Weiter lesen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.blog.message.by]]></Key>
+      <Value><![CDATA[Von]]></Value>
+    </Message>
+  </Bundle>
+</XmlVfsBundles>

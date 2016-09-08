@@ -1,0 +1,65 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/rowcolumn.xsd"/>
+
+	<xsd:element name="ApolloTemplateRows" type="OpenCmsApolloTemplateRows"/>
+
+	<xsd:complexType name="OpenCmsApolloTemplateRows">
+		<xsd:sequence>
+			<xsd:element name="ApolloTemplateRow" type="OpenCmsApolloTemplateRow" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsApolloTemplateRow">
+		<xsd:sequence>
+			<xsd:element name="Title" type="OpenCmsString" />
+			<xsd:element name="PreMarkup" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="PostMarkup" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Container" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Defaults" type="OpenCmsApolloRowColumn" minOccurs="0" />
+			<xsd:element name="Column" type="OpenCmsApolloRowColumn" maxOccurs="12" />
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="org.opencms.apollo.template.schemas.row"/>
+			<mappings>
+				<mapping element="Title" mapto="property:Title" />
+				<mapping element="Title" mapto="urlName" />
+			</mappings>
+			<defaults>
+				<default element="Title" value="%(key.apollo.row.default.Title)" />
+				<default element="Defaults/Count" value="50" />
+				<default element="Defaults/Editors" value="ROLE.AUTHOR" />
+				<default element="Defaults/Grid" value="col-xs-12" />
+				<default element="Column/Count" value="50" />
+				<default element="Column/Editors" value="ROLE.AUTHOR" />
+				<default element="Column/Grid" value="col-xs-12" />
+			</defaults>
+			<layouts>
+				<layout element="PreMarkup" widget="TextareaWidget" configuration="5" />
+				<layout element="PostMarkup" widget="TextareaWidget" configuration="5" />
+			</layouts>
+			<validationrules/>
+			<searchsettings containerPageOnly="true">
+				<searchsetting element="Title" searchcontent="false" />
+				<searchsetting element="PreMarkup" searchcontent="false" />
+				<searchsetting element="PostMarkup" searchcontent="false" />
+				<searchsetting element="Container" searchcontent="false" />
+				<searchsetting element="Defaults" searchcontent="false" />
+				<searchsetting element="Column" searchcontent="false" />
+			</searchsettings>
+			<synchronizations>
+					<synchronization element="PreMarkup" />
+					<synchronization element="PostMarkup" />
+					<synchronization element="Container" />
+					<synchronization element="Defaults" />
+					<synchronization element="Column" />
+			</synchronizations>
+		</xsd:appinfo>
+	</xsd:annotation>
+
+</xsd:schema>

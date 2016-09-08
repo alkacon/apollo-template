@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Elaborate Blog Article teaser]]></NiceName>
+    <Type><![CDATA[a-blog]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/blog-teaser-elaborate.jsp]]></target>
+        <uuid>a3851db8-c663-11e5-a73e-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[1000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[element]]></ContainerType>
+        <ContainerType><![CDATA[blog]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>false</Detail>
+    <Display>true</Display>
+    <NestedContainers>false</NestedContainers>
+    <HeadIncludeCss/>
+    <Setting>
+      <PropertyName><![CDATA[buttoncolor]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[red]]></Default>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[teaserlength]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.teaserlength)]]></DisplayName>
+      <Widget><![CDATA[string]]></Widget>
+      <Default><![CDATA[200]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showdate]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showdate)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[compactform]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.displayoptions)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[false]]></Default>
+      <WidgetConfig><![CDATA[false:%(key.apollo.setting.displayoption.smallimage)|true:%(key.apollo.setting.displayoption.hideimage)|big:%(key.apollo.setting.displayoption.largeimage)]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

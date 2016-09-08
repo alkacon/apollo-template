@@ -1,0 +1,26 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/mailconfigchoicemail.xsd"/>
+		
+	<xsd:element name="ApolloShariffMailConfigChoices" type="OpenCmsApolloShariffMailConfigChoices"/>
+	
+	<xsd:complexType name="OpenCmsApolloShariffMailConfigChoices">
+		<xsd:sequence>
+			<xsd:element name="ApolloShariffMailConfigChoice" type="OpenCmsApolloShariffMailConfigChoice" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsApolloShariffMailConfigChoice">
+		<xsd:choice minOccurs="0" maxOccurs="1">
+			<xsd:element name="Mail" type="OpenCmsApolloShariffMailConfigChoiceMail" minOccurs="0" />
+			<xsd:element name="FormLink" type="OpenCmsVarLink" minOccurs="0" />
+		</xsd:choice>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:appinfo>
+		</xsd:appinfo>
+	</xsd:annotation>  
+</xsd:schema>

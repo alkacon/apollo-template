@@ -13,7 +13,7 @@
 		<import-site>/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[The OpenCms 10 Apollo template link sequence extension.]]></description>
-		<version>10.0.0</version>
+		<version>10.5.0</version>
 		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
 		<authoremail/>
 		<datecreated/>
@@ -27,6 +27,15 @@
 			<resource uri="/system/modules/org.opencms.apollo.template.linksequence/"/>
 			<resource uri="/system/workplace/resources/filetypes/a-linksequence.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-linksequence_big.png"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/linksequence-boxed.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/linksequence-boxed.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/linksequence-head.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/linksequence-head.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/linksequence-standard.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/linksequence-standard.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.linksequence.messages"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.linksequence"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/linksequence.xsd"/>
 		</resources>
 		<excluderesources/>
 		<parameters/>
@@ -88,18 +97,18 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/formatters</destination>
+			<destination>system/modules/org.opencms.apollo</destination>
 			<type>folder</type>
-			<uuidstructure>9cca241a-3f77-11e6-b24c-0242ac11002b</uuidstructure>
-			<datecreated>Fri, 01 Jul 2016 10:36:04 GMT</datecreated>
-			<flags>0</flags>
 			<properties/>
-			<relations/>
-			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-boxed.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-boxed.jsp</destination>
+			<destination>system/modules/org.opencms.apollo/formatters</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/linksequence-boxed.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/linksequence-boxed.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>ac44c2a7-42b5-11e6-a4ea-0242ac11002b</uuidstructure>
 			<uuidresource>ac44c2a8-42b5-11e6-a4ea-0242ac11002b</uuidresource>
@@ -123,8 +132,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-boxed.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-boxed.xml</destination>
+			<source>system/modules/org.opencms.apollo/formatters/linksequence-boxed.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/linksequence-boxed.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>969ffd1a-42b5-11e6-a4ea-0242ac11002b</uuidstructure>
 			<uuidresource>969ffd1b-42b5-11e6-a4ea-0242ac11002b</uuidresource>
@@ -152,8 +161,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-head.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-head.jsp</destination>
+			<source>system/modules/org.opencms.apollo/formatters/linksequence-head.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/linksequence-head.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>0830964f-5499-11e6-958f-0242ac11002b</uuidstructure>
 			<uuidresource>08309650-5499-11e6-958f-0242ac11002b</uuidresource>
@@ -177,8 +186,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-head.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-head.xml</destination>
+			<source>system/modules/org.opencms.apollo/formatters/linksequence-head.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/linksequence-head.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>1ffcc519-5498-11e6-958f-0242ac11002b</uuidstructure>
 			<uuidresource>1ffcc51a-5498-11e6-958f-0242ac11002b</uuidresource>
@@ -206,8 +215,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-standard.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-standard.jsp</destination>
+			<source>system/modules/org.opencms.apollo/formatters/linksequence-standard.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/linksequence-standard.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>44771945-3f78-11e6-b24c-0242ac11002b</uuidstructure>
 			<uuidresource>44771946-3f78-11e6-b24c-0242ac11002b</uuidresource>
@@ -231,8 +240,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-standard.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-standard.xml</destination>
+			<source>system/modules/org.opencms.apollo/formatters/linksequence-standard.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/linksequence-standard.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>447a74a8-3f78-11e6-b24c-0242ac11002b</uuidstructure>
 			<uuidresource>447a74a9-3f78-11e6-b24c-0242ac11002b</uuidresource>
@@ -260,18 +269,13 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/i18n</destination>
+			<destination>system/modules/org.opencms.apollo/i18n</destination>
 			<type>folder</type>
-			<uuidstructure>c791d4ee-3f77-11e6-b24c-0242ac11002b</uuidstructure>
-			<datecreated>Fri, 01 Jul 2016 10:37:16 GMT</datecreated>
-			<flags>0</flags>
 			<properties/>
-			<relations/>
-			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.linksequence/i18n/org.opencms.apollo.template.linksequence.messages</source>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/i18n/org.opencms.apollo.template.linksequence.messages</destination>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.linksequence.messages</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.linksequence.messages</destination>
 			<type>xmlvfsbundle</type>
 			<uuidstructure>4469abc2-3f78-11e6-b24c-0242ac11002b</uuidstructure>
 			<uuidresource>4469abc3-3f78-11e6-b24c-0242ac11002b</uuidresource>
@@ -291,8 +295,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.linksequence/i18n/org.opencms.apollo.template.schemas.linksequence</source>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/i18n/org.opencms.apollo.template.schemas.linksequence</destination>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.linksequence</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.linksequence</destination>
 			<type>xmlvfsbundle</type>
 			<uuidstructure>e2e47b9c-3f8a-11e6-b24c-0242ac11002b</uuidstructure>
 			<uuidresource>e2e47b9d-3f8a-11e6-b24c-0242ac11002b</uuidresource>
@@ -312,18 +316,13 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/schemas</destination>
+			<destination>system/modules/org.opencms.apollo/schemas</destination>
 			<type>folder</type>
-			<uuidstructure>9ccc951c-3f77-11e6-b24c-0242ac11002b</uuidstructure>
-			<datecreated>Fri, 01 Jul 2016 10:36:04 GMT</datecreated>
-			<flags>0</flags>
 			<properties/>
-			<relations/>
-			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.linksequence/schemas/linksequence.xsd</source>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/schemas/linksequence.xsd</destination>
+			<source>system/modules/org.opencms.apollo/schemas/linksequence.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/linksequence.xsd</destination>
 			<type>plain</type>
 			<uuidstructure>44329627-3f78-11e6-b24c-0242ac11002b</uuidstructure>
 			<uuidresource>44329628-3f78-11e6-b24c-0242ac11002b</uuidresource>
@@ -333,33 +332,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[XSD for a link list]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/tags</destination>
-			<type>folder</type>
-			<uuidstructure>7d9d4521-7377-11e6-ace3-0242ac11002b</uuidstructure>
-			<datecreated>Mon, 05 Sep 2016 14:46:12 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.linksequence/tags/linksequence.tag</source>
-			<destination>system/modules/org.opencms.apollo.template.linksequence/tags/linksequence.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>bf62bbc6-7377-11e6-ace3-0242ac11002b</uuidstructure>
-			<uuidresource>bf62bbc7-7377-11e6-ace3-0242ac11002b</uuidresource>
-			<datecreated>Mon, 05 Sep 2016 14:48:03 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Link sequence tag]]></value>
 				</property>
 			</properties>
 			<relations/>

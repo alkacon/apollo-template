@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/list.xsd">
+<ApolloLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/list.xsd">
   <ApolloList language="en">
     <Headline><![CDATA[Compact Event List]]></Headline>
     <TypesToCollect>a-event:d60fa8bc-d71a-11e5-b10a-0242ac11002b</TypesToCollect>

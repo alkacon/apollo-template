@@ -13,7 +13,7 @@
 		<import-site>/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[The OpenCms 10 Apollo template job advertisement extension.]]></description>
-		<version>10.0.0</version>
+		<version>10.5.0</version>
 		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
 		<authoremail/>
 		<datecreated/>
@@ -25,6 +25,15 @@
 			<resource uri="/system/modules/org.opencms.apollo.template.job/"/>
 			<resource uri="/system/workplace/resources/filetypes/a-job.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-job_big.png"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/job-detail.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/job-detail.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/job-teaser-compact.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/job-teaser-compact.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/job-teaser-elaborate.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/job-teaser-elaborate.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/job.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.job"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.job.messages"/>
 		</resources>
 		<excluderesources/>
 		<parameters/>
@@ -86,18 +95,18 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.job/formatters</destination>
+			<destination>system/modules/org.opencms.apollo</destination>
 			<type>folder</type>
-			<uuidstructure>e64de337-4280-11e6-bdf7-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 05 Jul 2016 07:20:06 GMT</datecreated>
-			<flags>0</flags>
 			<properties/>
-			<relations/>
-			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.job/formatters/job-detail.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.job/formatters/job-detail.jsp</destination>
+			<destination>system/modules/org.opencms.apollo/formatters</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/job-detail.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/job-detail.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>8bf3bbd9-41f8-11e6-bdf7-0242ac11002b</uuidstructure>
 			<uuidresource>8bf3bbda-41f8-11e6-bdf7-0242ac11002b</uuidresource>
@@ -117,8 +126,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.job/formatters/job-detail.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.job/formatters/job-detail.xml</destination>
+			<source>system/modules/org.opencms.apollo/formatters/job-detail.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/job-detail.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>8bf876cc-41f8-11e6-bdf7-0242ac11002b</uuidstructure>
 			<uuidresource>8bf876cd-41f8-11e6-bdf7-0242ac11002b</uuidresource>
@@ -146,8 +155,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-compact.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-compact.jsp</destination>
+			<source>system/modules/org.opencms.apollo/formatters/job-teaser-compact.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/job-teaser-compact.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>7417964d-42b7-11e6-a4ea-0242ac11002b</uuidstructure>
 			<uuidresource>7417964e-42b7-11e6-a4ea-0242ac11002b</uuidresource>
@@ -171,8 +180,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-compact.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-compact.xml</destination>
+			<source>system/modules/org.opencms.apollo/formatters/job-teaser-compact.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/job-teaser-compact.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>741af1b2-42b7-11e6-a4ea-0242ac11002b</uuidstructure>
 			<uuidresource>741af1b3-42b7-11e6-a4ea-0242ac11002b</uuidresource>
@@ -200,8 +209,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-elaborate.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-elaborate.jsp</destination>
+			<source>system/modules/org.opencms.apollo/formatters/job-teaser-elaborate.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/job-teaser-elaborate.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>61613e22-42b7-11e6-a4ea-0242ac11002b</uuidstructure>
 			<uuidresource>61613e23-42b7-11e6-a4ea-0242ac11002b</uuidresource>
@@ -225,8 +234,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-elaborate.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.job/formatters/job-teaser-elaborate.xml</destination>
+			<source>system/modules/org.opencms.apollo/formatters/job-teaser-elaborate.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/job-teaser-elaborate.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>6166bc67-42b7-11e6-a4ea-0242ac11002b</uuidstructure>
 			<uuidresource>6166bc68-42b7-11e6-a4ea-0242ac11002b</uuidresource>
@@ -254,18 +263,13 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.job/i18n</destination>
+			<destination>system/modules/org.opencms.apollo/i18n</destination>
 			<type>folder</type>
-			<uuidstructure>39856e25-4288-11e6-bdf7-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 05 Jul 2016 08:12:32 GMT</datecreated>
-			<flags>0</flags>
 			<properties/>
-			<relations/>
-			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.job/i18n/org.opencms.apollo.template.job.messages</source>
-			<destination>system/modules/org.opencms.apollo.template.job/i18n/org.opencms.apollo.template.job.messages</destination>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.job.messages</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.job.messages</destination>
 			<type>xmlvfsbundle</type>
 			<uuidstructure>39879107-4288-11e6-bdf7-0242ac11002b</uuidstructure>
 			<uuidresource>39879108-4288-11e6-bdf7-0242ac11002b</uuidresource>
@@ -289,8 +293,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.job/i18n/org.opencms.apollo.template.schemas.job</source>
-			<destination>system/modules/org.opencms.apollo.template.job/i18n/org.opencms.apollo.template.schemas.job</destination>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.job</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.job</destination>
 			<type>xmlvfsbundle</type>
 			<uuidstructure>398d847b-4288-11e6-bdf7-0242ac11002b</uuidstructure>
 			<uuidresource>398d847c-4288-11e6-bdf7-0242ac11002b</uuidresource>
@@ -314,18 +318,13 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.job/schemas</destination>
+			<destination>system/modules/org.opencms.apollo/schemas</destination>
 			<type>folder</type>
-			<uuidstructure>e65201e9-4280-11e6-bdf7-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 05 Jul 2016 07:20:06 GMT</datecreated>
-			<flags>0</flags>
 			<properties/>
-			<relations/>
-			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.job/schemas/job.xsd</source>
-			<destination>system/modules/org.opencms.apollo.template.job/schemas/job.xsd</destination>
+			<source>system/modules/org.opencms.apollo/schemas/job.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/job.xsd</destination>
 			<type>plain</type>
 			<uuidstructure>8bc8db44-41f8-11e6-bdf7-0242ac11002b</uuidstructure>
 			<uuidresource>8bc8db45-41f8-11e6-bdf7-0242ac11002b</uuidresource>
@@ -334,7 +333,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Job Advertisement schema]]></value>
+					<value><![CDATA[XSD for job offer]]></value>
 				</property>
 			</properties>
 			<relations/>

@@ -13,17 +13,24 @@
 		<import-site>/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[The OpenCms 10 Apollo template FAQ extension.]]></description>
-		<version>10.0.0</version>
+		<version>10.5.0</version>
 		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
 		<authoremail/>
 		<datecreated/>
 		<userinstalled/>
 		<dateinstalled/>
-		<dependencies>
-			<dependency name="org.opencms.apollo.template.basics" version="10.0.0"/>
-		</dependencies>
+		<dependencies/>
 		<exportpoints/>
 		<resources>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/faq-detail.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/faq-detail.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/faq-teaser-accordion.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/faq-teaser-accordion.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/faq-teaser-compact.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/faq-teaser-compact.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.faq.messages"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.faq"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/faq.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo.template.faq/"/>
 			<resource uri="/system/workplace/resources/filetypes/a-faq.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-faq_big.png"/>
@@ -88,18 +95,18 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.faq/formatters</destination>
+			<destination>system/modules/org.opencms.apollo</destination>
 			<type>folder</type>
-			<uuidstructure>9468e1c0-3c5f-11e6-aee4-0242ac11002b</uuidstructure>
-			<datecreated>Mon, 27 Jun 2016 12:06:29 GMT</datecreated>
-			<flags>0</flags>
 			<properties/>
-			<relations/>
-			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.faq/formatters/faq-complete.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.faq/formatters/faq-complete.jsp</destination>
+			<destination>system/modules/org.opencms.apollo/formatters</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/faq-detail.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/faq-detail.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>59a21ec6-3c61-11e6-aee4-0242ac11002b</uuidstructure>
 			<uuidresource>59a21ec7-3c61-11e6-aee4-0242ac11002b</uuidresource>
@@ -108,7 +115,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for complete FAQ entry]]></value>
+					<value><![CDATA[Formatter JSP for detailed FAQ entry]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -123,8 +130,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.faq/formatters/faq-complete.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.faq/formatters/faq-complete.xml</destination>
+			<source>system/modules/org.opencms.apollo/formatters/faq-detail.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/faq-detail.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>59a4b6d9-3c61-11e6-aee4-0242ac11002b</uuidstructure>
 			<uuidresource>59a4b6da-3c61-11e6-aee4-0242ac11002b</uuidresource>
@@ -133,7 +140,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Complete FAQ entry]]></value>
+					<value><![CDATA[Detailed FAQ entry]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -152,8 +159,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-accordion.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-accordion.jsp</destination>
+			<source>system/modules/org.opencms.apollo/formatters/faq-teaser-accordion.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/faq-teaser-accordion.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>4ec73632-3d13-11e6-aee4-0242ac11002b</uuidstructure>
 			<uuidresource>4ec73633-3d13-11e6-aee4-0242ac11002b</uuidresource>
@@ -177,8 +184,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-accordion.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-accordion.xml</destination>
+			<source>system/modules/org.opencms.apollo/formatters/faq-teaser-accordion.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/faq-teaser-accordion.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>51bb9707-3d13-11e6-aee4-0242ac11002b</uuidstructure>
 			<uuidresource>51bb9708-3d13-11e6-aee4-0242ac11002b</uuidresource>
@@ -206,8 +213,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-compact.jsp</source>
-			<destination>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-compact.jsp</destination>
+			<source>system/modules/org.opencms.apollo/formatters/faq-teaser-compact.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/faq-teaser-compact.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>4938aa9b-3d05-11e6-aee4-0242ac11002b</uuidstructure>
 			<uuidresource>4938aa9c-3d05-11e6-aee4-0242ac11002b</uuidresource>
@@ -231,8 +238,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-compact.xml</source>
-			<destination>system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-compact.xml</destination>
+			<source>system/modules/org.opencms.apollo/formatters/faq-teaser-compact.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/faq-teaser-compact.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>018e42e3-3d05-11e6-aee4-0242ac11002b</uuidstructure>
 			<uuidresource>018e42e4-3d05-11e6-aee4-0242ac11002b</uuidresource>
@@ -260,18 +267,13 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.faq/i18n</destination>
+			<destination>system/modules/org.opencms.apollo/i18n</destination>
 			<type>folder</type>
-			<uuidstructure>5996ad11-3c61-11e6-aee4-0242ac11002b</uuidstructure>
-			<datecreated>Mon, 27 Jun 2016 12:19:09 GMT</datecreated>
-			<flags>0</flags>
 			<properties/>
-			<relations/>
-			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.faq/i18n/org.opencms.apollo.template.faq.messages</source>
-			<destination>system/modules/org.opencms.apollo.template.faq/i18n/org.opencms.apollo.template.faq.messages</destination>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.faq.messages</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.faq.messages</destination>
 			<type>xmlvfsbundle</type>
 			<uuidstructure>59996c33-3c61-11e6-aee4-0242ac11002b</uuidstructure>
 			<uuidresource>59996c34-3c61-11e6-aee4-0242ac11002b</uuidresource>
@@ -291,8 +293,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.faq/i18n/org.opencms.apollo.template.schemas.faq</source>
-			<destination>system/modules/org.opencms.apollo.template.faq/i18n/org.opencms.apollo.template.schemas.faq</destination>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.faq</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.faq</destination>
 			<type>xmlvfsbundle</type>
 			<uuidstructure>314c6d8b-3c63-11e6-aee4-0242ac11002b</uuidstructure>
 			<uuidresource>314c6d8c-3c63-11e6-aee4-0242ac11002b</uuidresource>
@@ -312,18 +314,13 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.faq/schemas</destination>
+			<destination>system/modules/org.opencms.apollo/schemas</destination>
 			<type>folder</type>
-			<uuidstructure>946ab682-3c5f-11e6-aee4-0242ac11002b</uuidstructure>
-			<datecreated>Mon, 27 Jun 2016 12:06:29 GMT</datecreated>
-			<flags>0</flags>
 			<properties/>
-			<relations/>
-			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.faq/schemas/faq.xsd</source>
-			<destination>system/modules/org.opencms.apollo.template.faq/schemas/faq.xsd</destination>
+			<source>system/modules/org.opencms.apollo/schemas/faq.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/faq.xsd</destination>
 			<type>plain</type>
 			<uuidstructure>5980b406-3c61-11e6-aee4-0242ac11002b</uuidstructure>
 			<uuidresource>5980b407-3c61-11e6-aee4-0242ac11002b</uuidresource>
@@ -332,7 +329,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Sample resource type schema]]></value>
+					<value><![CDATA[XSD for FAQ]]></value>
 				</property>
 			</properties>
 			<relations/>

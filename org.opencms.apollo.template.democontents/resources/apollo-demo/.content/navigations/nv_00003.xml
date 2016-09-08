@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloNavigations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/navigation.xsd">
+<ApolloNavigations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/navigation.xsd">
   <ApolloNavigation language="en">
     <Title><![CDATA[Apollo Demo side second level navigation]]></Title>
     <NavStartLevel><![CDATA[2]]></NavStartLevel>

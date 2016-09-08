@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloTabs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.schemas/schemas/tabs.xsd">
+<ApolloTabs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/tabs.xsd">
   <ApolloTab language="en">
     <Title><![CDATA[Tab content demo]]></Title>
     <Label><![CDATA[Any number of tabs]]></Label>

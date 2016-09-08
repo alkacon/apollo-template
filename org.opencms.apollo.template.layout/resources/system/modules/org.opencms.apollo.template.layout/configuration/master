@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SitemapMasterConfigurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/sitemap_master_config.xsd">
+  <SitemapMasterConfiguration language="en">
+    <DiscardTypes>true</DiscardTypes>
+    <ResourceType>
+      <TypeName><![CDATA[a-templaterow]]></TypeName>
+      <Disabled><![CDATA[false]]></Disabled>
+    </ResourceType>
+    <ResourceType>
+      <TypeName><![CDATA[a-section]]></TypeName>
+      <Disabled><![CDATA[false]]></Disabled>
+    </ResourceType>
+    <ResourceType>
+      <TypeName><![CDATA[a-blog]]></TypeName>
+      <Disabled><![CDATA[false]]></Disabled>
+    </ResourceType>
+    <ResourceType>
+      <TypeName><![CDATA[a-event]]></TypeName>
+      <Disabled><![CDATA[false]]></Disabled>
+    </ResourceType>
+    <ResourceType>
+      <TypeName><![CDATA[a-list]]></TypeName>
+      <Disabled><![CDATA[false]]></Disabled>
+    </ResourceType>
+    <ResourceType>
+      <TypeName><![CDATA[a-tabs]]></TypeName>
+      <Disabled><![CDATA[false]]></Disabled>
+    </ResourceType>
+    <ResourceType>
+      <TypeName><![CDATA[a-map]]></TypeName>
+      <Disabled><![CDATA[false]]></Disabled>
+    </ResourceType>
+    <ResourceType>
+      <TypeName><![CDATA[a-flexible]]></TypeName>
+      <Disabled><![CDATA[false]]></Disabled>
+    </ResourceType>
+    <ResourceType>
+      <TypeName><![CDATA[a-slider]]></TypeName>
+      <Disabled><![CDATA[false]]></Disabled>
+    </ResourceType>
+    <ResourceType>
+      <TypeName><![CDATA[a-navigation]]></TypeName>
+      <Disabled><![CDATA[false]]></Disabled>
+    </ResourceType>
+    <ResourceType>
+      <TypeName><![CDATA[modelgroup]]></TypeName>
+      <Disabled><![CDATA[false]]></Disabled>
+    </ResourceType>
+    <ResourceType>
+      <TypeName><![CDATA[jsp-search]]></TypeName>
+      <Disabled><![CDATA[false]]></Disabled>
+    </ResourceType>
+  </SitemapMasterConfiguration>
+</SitemapMasterConfigurations>

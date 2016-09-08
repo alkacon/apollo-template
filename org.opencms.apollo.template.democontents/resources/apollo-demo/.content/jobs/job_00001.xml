@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloJobs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.job/schemas/job.xsd">
+<ApolloJobs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/job.xsd">
   <ApolloJob language="en">
     <Title><![CDATA[Overly Friendly Manager (m/f)]]></Title>
     <Date>1467963055223</Date>

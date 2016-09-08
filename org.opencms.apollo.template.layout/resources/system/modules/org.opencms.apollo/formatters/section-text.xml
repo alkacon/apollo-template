@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Text only (direct)]]></NiceName>
+    <Type><![CDATA[a-section]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-text.jsp]]></target>
+        <uuid>fca41839-eb7d-11e5-854f-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[5400]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[element]]></ContainerType>
+        <ContainerType><![CDATA[section]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>false</AutoEnabled>
+    <Detail>false</Detail>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[tstyle]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.text.style.label)]]></DisplayName>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[ap-plain]]></Default>
+      <WidgetConfig><![CDATA[
+        ap-plain:%(key.apollo.section.text.style.plain)|
+        lead:%(key.apollo.section.text.style.lead)
+      ]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloJobs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.job/schemas/job.xsd">
+<ApolloJobs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/job.xsd">
   <ApolloJob language="de">
     <Title><![CDATA[System-Administrator (m/w)]]></Title>
     <Date>1467971160000</Date>
@@ -64,7 +64,7 @@
       <URI>
         <link internal="true" type="WEAK">
           <target><![CDATA[/sites/default/]]></target>
-          <uuid>be501f28-733d-11e6-bbf0-0242ac11002b</uuid>
+          <uuid>a060c83e-74f7-11e6-a4ae-0242ac11002b</uuid>
         </link>
       </URI>
     </Link>

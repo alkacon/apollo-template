@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[title.a-sitemap]]></Key>
+      <Value><![CDATA[Neue Sitemap]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-sitemap]]></Key>
+      <Value><![CDATA[Erzeugt eine Sitemap Übersicht der aktuellen Subsite.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-sitemap]]></Key>
+      <Value><![CDATA[Sitemap]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="en">
+    <Message>
+      <Key><![CDATA[fileicon.a-sitemap]]></Key>
+      <Value><![CDATA[Sitemap]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-sitemap]]></Key>
+      <Value><![CDATA[Creates a sitemap overview of the subsite.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-sitemap]]></Key>
+      <Value><![CDATA[New Sitemap]]></Value>
+    </Message>
+  </Bundle>
+</XmlVfsBundles>

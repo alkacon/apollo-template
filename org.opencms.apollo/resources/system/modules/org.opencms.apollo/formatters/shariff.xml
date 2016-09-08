@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Shariff Social media]]></NiceName>
+    <Type><![CDATA[a-shariff]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo.template.shariff/formatters/shariff.jsp]]></target>
+        <uuid>79ca6b02-0d12-11e6-8fbd-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[1000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[element]]></ContainerType>
+        <ContainerType><![CDATA[shariff]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>false</Detail>
+    <NestedContainers>false</NestedContainers>
+    <HeadIncludeCss>
+      <CssLink>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.shariff/resources/shariff.min.css]]></target>
+          <uuid>5295c904-1cf2-11e6-8fbd-0242ac11002b</uuid>
+        </link>
+      </CssLink>
+      <CssLink>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.shariff/resources/shariff-extensions.css]]></target>
+          <uuid>b48be453-4a73-11e6-b9a4-0242ac11002b</uuid>
+        </link>
+      </CssLink>
+    </HeadIncludeCss>
+    <HeadIncludeJs>
+      <JavascriptLink>
+        <link type="WEAK">
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.shariff/resources/shariff.min.js]]></target>
+          <uuid>5298d647-1cf2-11e6-8fbd-0242ac11002b</uuid>
+        </link>
+      </JavascriptLink>
+    </HeadIncludeJs>
+    <Setting>
+      <PropertyName><![CDATA[hidetitle]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.hidetitle)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

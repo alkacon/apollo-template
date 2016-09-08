@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<infoproject>Offline</infoproject>
+		<export_version>10</export_version>
+	</info>
+	<module>
+		<name>org.opencms.apollo.template.flexible</name>
+		<nicename><![CDATA[Apollo Template Flexible]]></nicename>
+		<group>Apollo Template</group>
+		<class/>
+		<import-site>/</import-site>
+		<export-mode name="reduced"/>
+		<description><![CDATA[The OpenCms 10 Apollo template flexible content extension.]]></description>
+		<version>10.5.0</version>
+		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
+		<authoremail/>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies/>
+		<exportpoints/>
+		<resources>
+			<resource uri="/system/modules/org.opencms.apollo.template.flexible/"/>
+			<resource uri="/system/workplace/resources/filetypes/a-flexible.png"/>
+			<resource uri="/system/workplace/resources/filetypes/a-flexible_big.png"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/flexible.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/flexible.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.flexible"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/flexible.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.flexible.messages"/>
+		</resources>
+		<excluderesources/>
+		<parameters/>
+		<resourcetypes>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-flexible" id="453">
+				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/flexible.xsd</param>
+			</type>
+		</resourcetypes>
+		<explorertypes>
+			<explorertype name="a-flexible" key="fileicon.a-flexible" icon="a-flexible.png" bigicon="a-flexible_big.png" reference="xmlcontent">
+				<newresource page="a-menu" uri="newresource_xmlcontent.jsp?newresourcetype=a-flexible" order="20" autosetnavigation="false" autosettitle="false" info="desc.a-flexible" key="title.a-flexible"/>
+			</explorertype>
+		</explorertypes>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.flexible</destination>
+			<type>folder</type>
+			<uuidstructure>8e3d3183-75a4-11e6-af22-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 09:13:50 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.flexible/.config</source>
+			<destination>system/modules/org.opencms.apollo.template.flexible/.config</destination>
+			<type>module_config</type>
+			<uuidstructure>e497362a-75a4-11e6-af22-0242ac11002b</uuidstructure>
+			<uuidresource>e497362b-75a4-11e6-af22-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 09:16:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/formatters</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/flexible.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/flexible.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>9c98ef7c-560d-11e5-b868-0242ac11002b</uuidstructure>
+			<uuidresource>9c98ef7d-560d-11e5-b868-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 09:40:16 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for flexible content]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/flexible.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/flexible.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>9c9d5c4f-560d-11e5-b868-0242ac11002b</uuidstructure>
+			<uuidresource>9c9d5c50-560d-11e5-b868-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 09:40:16 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Flexible content]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/i18n</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.flexible.messages</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.flexible.messages</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>8235231d-75a6-11e6-af22-0242ac11002b</uuidstructure>
+			<uuidresource>8235231e-75a6-11e6-af22-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 09:27:49 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.flexible</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.flexible</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>50bb5d35-5610-11e5-b868-0242ac11002b</uuidstructure>
+			<uuidresource>50bb5d36-5610-11e5-b868-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 09:59:37 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/schemas</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/flexible.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/flexible.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>9c72c9cf-560d-11e5-b868-0242ac11002b</uuidstructure>
+			<uuidresource>9c72c9d0-560d-11e5-b868-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 09:40:16 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[XSD for a flexible element]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-flexible.png</source>
+			<destination>system/workplace/resources/filetypes/a-flexible.png</destination>
+			<type>image</type>
+			<uuidstructure>9c862ac2-560d-11e5-b868-0242ac11002b</uuidstructure>
+			<uuidresource>c1194408-560d-11e5-b868-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 09:41:17 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-flexible_big.png</source>
+			<destination>system/workplace/resources/filetypes/a-flexible_big.png</destination>
+			<type>image</type>
+			<uuidstructure>9c8a9796-560d-11e5-b868-0242ac11002b</uuidstructure>
+			<uuidresource>c98925bd-560d-11e5-b868-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 09:41:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>

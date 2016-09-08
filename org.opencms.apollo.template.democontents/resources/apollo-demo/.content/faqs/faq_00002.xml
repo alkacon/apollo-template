@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo.template.faq/schemas/faq.xsd">
+<ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/faq.xsd">
   <ApolloFaq language="en">
     <Question><![CDATA[Is OpenCms open source or open sauce?]]></Question>
     <Date>1471937400000</Date>

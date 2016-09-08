@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<infoproject>Offline</infoproject>
+		<export_version>10</export_version>
+	</info>
+	<module>
+		<name>org.opencms.apollo.template.event</name>
+		<nicename><![CDATA[Apollo Template Event]]></nicename>
+		<group>Apollo Template</group>
+		<class/>
+		<import-site>/</import-site>
+		<export-mode name="reduced"/>
+		<description><![CDATA[The OpenCms 10 Apollo template event extension.]]></description>
+		<version>10.5.0</version>
+		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
+		<authoremail/>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies/>
+		<exportpoints/>
+		<resources>
+			<resource uri="/system/modules/org.opencms.apollo.template.event/"/>
+			<resource uri="/system/workplace/resources/filetypes/a-event.png"/>
+			<resource uri="/system/workplace/resources/filetypes/a-event_big.png"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/event-detail.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/event-detail.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/event-teaser-compact.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/event-teaser-compact.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/event-teaser-elaborate.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/event-teaser-elaborate.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/event.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.event"/>
+		</resources>
+		<excluderesources/>
+		<parameters/>
+		<resourcetypes>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-event" id="458">
+				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/event.xsd</param>
+			</type>
+		</resourcetypes>
+		<explorertypes>
+			<explorertype name="a-event" key="fileicon.a-event" icon="a-event.png" bigicon="a-event_big.png" reference="xmlcontent">
+				<newresource page="a-menu" uri="newresource_xmlcontent.jsp?newresourcetype=a-event" order="70" autosetnavigation="false" autosettitle="false" info="desc.a-event" key="title.a-event"/>
+			</explorertype>
+		</explorertypes>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.event</destination>
+			<type>folder</type>
+			<uuidstructure>b146c7e2-759d-11e6-af22-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 08:24:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.event/.config</source>
+			<destination>system/modules/org.opencms.apollo.template.event/.config</destination>
+			<type>module_config</type>
+			<uuidstructure>5552fa57-759f-11e6-af22-0242ac11002b</uuidstructure>
+			<uuidresource>5552fa58-759f-11e6-af22-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 08:36:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/formatters</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/event-detail.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/event-detail.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>d2d07c06-5b83-11e5-ab03-0242ac11002b</uuidstructure>
+			<uuidresource>d2d07c07-5b83-11e5-ab03-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 08:29:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for detailed event]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/event-detail.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/event-detail.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>d2d5d339-5b83-11e5-ab03-0242ac11002b</uuidstructure>
+			<uuidresource>d2d5d33a-5b83-11e5-ab03-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 08:29:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Detailed Event]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/event-teaser-compact.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/event-teaser-compact.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>aa2326f2-d71a-11e5-b10a-0242ac11002b</uuidstructure>
+			<uuidresource>aa2326f3-d71a-11e5-b10a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 19 Feb 2016 15:08:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for compact event]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;params]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/event-teaser-compact.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/event-teaser-compact.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>d60fa8bc-d71a-11e5-b10a-0242ac11002b</uuidstructure>
+			<uuidresource>d60fa8bd-d71a-11e5-b10a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 19 Feb 2016 15:09:56 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Compact Event teaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/event-teaser-elaborate.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/event-teaser-elaborate.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>fe8e9df9-c5b5-11e5-a73e-0242ac11002b</uuidstructure>
+			<uuidresource>fe8e9dfa-c5b5-11e5-a73e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 28 Jan 2016 11:55:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for elaborate event]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale;params]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/event-teaser-elaborate.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/event-teaser-elaborate.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>194e26bc-c5b6-11e5-a73e-0242ac11002b</uuidstructure>
+			<uuidresource>194e26bd-c5b6-11e5-a73e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 28 Jan 2016 11:56:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Elaborate Event teaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/i18n</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.event</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.event</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>2787d7f9-5b85-11e5-9eb7-0242ac11002b</uuidstructure>
+			<uuidresource>2787d7fa-5b85-11e5-9eb7-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 08:38:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/schemas</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/event.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/event.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>d2aa083b-5b83-11e5-ab03-0242ac11002b</uuidstructure>
+			<uuidresource>d2aa083c-5b83-11e5-ab03-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 08:29:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[XSD for an event]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-event.png</source>
+			<destination>system/workplace/resources/filetypes/a-event.png</destination>
+			<type>image</type>
+			<uuidstructure>d2b579ee-5b83-11e5-ab03-0242ac11002b</uuidstructure>
+			<uuidresource>d2b579ef-5b83-11e5-ab03-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 08:29:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-event_big.png</source>
+			<destination>system/workplace/resources/filetypes/a-event_big.png</destination>
+			<type>image</type>
+			<uuidstructure>d2b9bfb2-5b83-11e5-ab03-0242ac11002b</uuidstructure>
+			<uuidresource>d2b9bfb3-5b83-11e5-ab03-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 08:29:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>

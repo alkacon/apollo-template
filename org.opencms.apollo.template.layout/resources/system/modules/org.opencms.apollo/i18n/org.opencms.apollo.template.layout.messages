@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
+  <Bundle language="en">
+    <Message>
+      <Key><![CDATA[desc.a-templaterow]]></Key>
+      <Value><![CDATA[Creates flexible row layouts that can be combined and nested.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.NewWindow]]></Key>
+      <Value><![CDATA[Open in new window]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.URI.help]]></Key>
+      <Value><![CDATA[The link target.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Image.help]]></Key>
+      <Value><![CDATA[The image path in OpenCms.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.Text.help]]></Key>
+      <Value><![CDATA[The display text for the link.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Description.help]]></Key>
+      <Value><![CDATA[Optional description of the image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.URI]]></Key>
+      <Value><![CDATA[Target]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Title]]></Key>
+      <Value><![CDATA[Title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Text.help]]></Key>
+      <Value><![CDATA[The paragraph text.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-templaterow]]></Key>
+      <Value><![CDATA[New Layout Row]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-menu]]></Key>
+      <Value><![CDATA[Apollo Template]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Headline.help]]></Key>
+      <Value><![CDATA[The optional headline of the paragraph.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.NewWindow.help]]></Key>
+      <Value><![CDATA[If checked, the link is opened in a new browser window.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Description]]></Key>
+      <Value><![CDATA[Description]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Link]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Image]]></Key>
+      <Value><![CDATA[Image Path]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Copyright]]></Key>
+      <Value><![CDATA[Copyright]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-section]]></Key>
+      <Value><![CDATA[A generic content for texts, images and / or links.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Copyright.help]]></Key>
+      <Value><![CDATA[Optional copyright information of the image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.Text]]></Key>
+      <Value><![CDATA[Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Image]]></Key>
+      <Value><![CDATA[Image]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Text]]></Key>
+      <Value><![CDATA[Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-section]]></Key>
+      <Value><![CDATA[New Content Section]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Link.help]]></Key>
+      <Value><![CDATA[Optional link for the paragraph. External links have to start with <i>http://</i>.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Title.help]]></Key>
+      <Value><![CDATA[The title of the image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Image.help]]></Key>
+      <Value><![CDATA[An optional image for the paragraph.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-section]]></Key>
+      <Value><![CDATA[Content Section]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-menu]]></Key>
+      <Value><![CDATA[Contains all content types belonging to the Apollo Template.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-menu]]></Key>
+      <Value><![CDATA[New Apollo Template]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-templaterow]]></Key>
+      <Value><![CDATA[Layout Row]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Headline]]></Key>
+      <Value><![CDATA[Headline]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[desc.a-templaterow]]></Key>
+      <Value><![CDATA[Erzeugt flexible Zeilenlayouts die kombiniert und verschachtelt werden können.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.NewWindow]]></Key>
+      <Value><![CDATA[In neuem Fenster öffnen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.URI.help]]></Key>
+      <Value><![CDATA[Der Ziel des Links.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Image.help]]></Key>
+      <Value><![CDATA[Der Pfad zum Bild in OpenCms.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.Text.help]]></Key>
+      <Value><![CDATA[Der Anzeigetext für den Link.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Description.help]]></Key>
+      <Value><![CDATA[Optionale Beschreibung des Bildes.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.URI]]></Key>
+      <Value><![CDATA[Ziel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Title]]></Key>
+      <Value><![CDATA[Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Text.help]]></Key>
+      <Value><![CDATA[Der Absatztext.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-templaterow]]></Key>
+      <Value><![CDATA[Neue Layout-Zeile]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-menu]]></Key>
+      <Value><![CDATA[Apollo Template]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Headline.help]]></Key>
+      <Value><![CDATA[Die optionale Überschrift des Absatzes.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.NewWindow.help]]></Key>
+      <Value><![CDATA[Wenn angekreuzt, wird der Link in einem neuen Browserfenster geöffnet.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Description]]></Key>
+      <Value><![CDATA[Beschreibung]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Link]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Image]]></Key>
+      <Value><![CDATA[Bildpfad]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Copyright]]></Key>
+      <Value><![CDATA[Copyright]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-section]]></Key>
+      <Value><![CDATA[Ein allgemeiner Inhalt für Texte, Bilder und / oder Links.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Copyright.help]]></Key>
+      <Value><![CDATA[Optionale Copyright Information des Bildes.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloLink.Text]]></Key>
+      <Value><![CDATA[Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Image]]></Key>
+      <Value><![CDATA[Bild]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Text]]></Key>
+      <Value><![CDATA[Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-section]]></Key>
+      <Value><![CDATA[Neuer Inhalts-Abschnitt]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Link.help]]></Key>
+      <Value><![CDATA[Optionaler Link. Externe Links müssen mit <i>http://</i> beginnen.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNestedImage.Title.help]]></Key>
+      <Value><![CDATA[Der Titel des Bilds.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Image.help]]></Key>
+      <Value><![CDATA[Ein optionales Bild für den Absatz.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-section]]></Key>
+      <Value><![CDATA[Inhalts-Abschnitt]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-menu]]></Key>
+      <Value><![CDATA[Enthält alle Inhaltstypen für das Apollo Template.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-menu]]></Key>
+      <Value><![CDATA[Neues Apollo Template]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-templaterow]]></Key>
+      <Value><![CDATA[Layout-Zeile]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParagraph.Headline]]></Key>
+      <Value><![CDATA[Überschrift]]></Value>
+    </Message>
+  </Bundle>
+</XmlVfsBundles>

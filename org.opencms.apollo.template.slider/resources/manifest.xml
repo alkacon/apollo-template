@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<infoproject>Offline</infoproject>
+		<export_version>10</export_version>
+	</info>
+	<module>
+		<name>org.opencms.apollo.template.slider</name>
+		<nicename><![CDATA[Apollo Template Slider]]></nicename>
+		<group>Apollo Template</group>
+		<class/>
+		<import-site>/</import-site>
+		<export-mode name="reduced"/>
+		<description><![CDATA[The OpenCms 10 Apollo template slider extension.]]></description>
+		<version>10.5.0</version>
+		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
+		<authoremail/>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies/>
+		<exportpoints/>
+		<resources>
+			<resource uri="/system/modules/org.opencms.apollo.template.slider/"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/slider-standard.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/slider-standard.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/slider-carousel.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/slider-carousel.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.slider"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.slider.messages"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/slider.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/slider-image-textposition.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/slider-image.xsd"/>
+			<resource uri="/system/workplace/resources/filetypes/a-slider.png"/>
+			<resource uri="/system/workplace/resources/filetypes/a-slider_big.png"/>
+		</resources>
+		<excluderesources/>
+		<parameters/>
+		<resourcetypes>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-slider" id="456">
+				<param name="schema">/system/modules/org.opencms.apollo.template.schemas/schemas/slider.xsd</param>
+			</type>
+		</resourcetypes>
+		<explorertypes>
+			<explorertype name="a-slider" key="fileicon.a-slider" icon="a-slider.png" bigicon="a-slider_big.png" reference="xmlcontent">
+				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=a-slider" order="10" autosetnavigation="false" autosettitle="false" info="desc.a-slider" key="title.a-slider"/>
+			</explorertype>
+		</explorertypes>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.slider</destination>
+			<type>folder</type>
+			<uuidstructure>e5ded88b-75a1-11e6-af22-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 08:54:48 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.slider/.config</source>
+			<destination>system/modules/org.opencms.apollo.template.slider/.config</destination>
+			<type>module_config</type>
+			<uuidstructure>f67aca5e-75a3-11e6-af22-0242ac11002b</uuidstructure>
+			<uuidresource>f67aca5f-75a3-11e6-af22-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 09:09:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/formatters</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/slider-carousel.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/slider-carousel.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>ca17b0c1-c4d0-11e5-9ca7-0242ac11002b</uuidstructure>
+			<uuidresource>ca17b0c2-c4d0-11e5-9ca7-0242ac11002b</uuidresource>
+			<datecreated>Wed, 27 Jan 2016 08:34:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for simple-slider carousel]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/slider-carousel.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/slider-carousel.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>f3d2faa7-c4d0-11e5-9ca7-0242ac11002b</uuidstructure>
+			<uuidresource>f3d2faa8-c4d0-11e5-9ca7-0242ac11002b</uuidresource>
+			<datecreated>Wed, 27 Jan 2016 08:35:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Carousel]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/slider-standard.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/slider-standard.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>b741cb4c-73c2-11e5-92dc-15b01ffdc6a6</uuidstructure>
+			<uuidresource>b741cb4d-73c2-11e5-92dc-15b01ffdc6a6</uuidresource>
+			<datecreated>Fri, 16 Oct 2015 04:59:44 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for simple-slider slider]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/slider-standard.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/slider-standard.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>b7496c6f-73c2-11e5-92dc-15b01ffdc6a6</uuidstructure>
+			<uuidresource>b7496c70-73c2-11e5-92dc-15b01ffdc6a6</uuidresource>
+			<datecreated>Fri, 16 Oct 2015 04:59:44 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Slider]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/i18n</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.slider</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.slider</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>50bb11f5-73da-11e5-9a42-15b01ffdc6a6</uuidstructure>
+			<uuidresource>50bb11f6-73da-11e5-9a42-15b01ffdc6a6</uuidresource>
+			<datecreated>Fri, 16 Oct 2015 07:48:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.slider.messages</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.slider.messages</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>7ac9994b-75a3-11e6-af22-0242ac11002b</uuidstructure>
+			<uuidresource>7ac9994c-75a3-11e6-af22-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 09:06:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/schemas</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/schemas/nested</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/slider-image-textposition.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/slider-image-textposition.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>eae8dd8e-75a2-11e6-af22-0242ac11002b</uuidstructure>
+			<uuidresource>eae8dd8f-75a2-11e6-af22-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 09:02:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for a slider image text position]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/slider-image.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/slider-image.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>eae29bfc-75a2-11e6-af22-0242ac11002b</uuidstructure>
+			<uuidresource>eae29bfd-75a2-11e6-af22-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 09:02:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for a slider image]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/slider.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/slider.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>dca596f9-75a2-11e6-af22-0242ac11002b</uuidstructure>
+			<uuidresource>dca596fa-75a2-11e6-af22-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 09:01:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[XSD for a slider]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-slider.png</source>
+			<destination>system/workplace/resources/filetypes/a-slider.png</destination>
+			<type>image</type>
+			<uuidstructure>313ff50f-dae1-11e5-a941-0242ac11002b</uuidstructure>
+			<uuidresource>313ff510-dae1-11e5-a941-0242ac11002b</uuidresource>
+			<datecreated>Wed, 24 Feb 2016 10:27:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-slider_big.png</source>
+			<destination>system/workplace/resources/filetypes/a-slider_big.png</destination>
+			<type>image</type>
+			<uuidstructure>31428d23-dae1-11e5-a941-0242ac11002b</uuidstructure>
+			<uuidresource>31428d24-dae1-11e5-a941-0242ac11002b</uuidresource>
+			<datecreated>Wed, 24 Feb 2016 10:27:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>
