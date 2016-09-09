@@ -147,7 +147,6 @@ a.thumbnail {
 
 .ap-image-teaser .info {
 	text-align: right;
-	margin-top: -10px;
 }
 
 .ap-image-teaser .info .copyright {
@@ -191,17 +190,17 @@ a.thumbnail {
         -o-transition: box-shadow 0.2s ease-in-out;
         transition: box-shadow 0.2s ease-in-out;
     }
+
+    &:hover .shadow-border-inner {
+        transform: scale(0.925);
+        transition: .3s ease-in;        
+    }
 }
 
 .shadow-border-inner {
 
     transform: scale(1);
     transition: .3s ease-out;
-
-    &:hover {
-        transform: scale(0.925);
-        transition: .3s ease-in;
-    }
 }
 
 // thumbnail effects
@@ -235,11 +234,11 @@ a.thumbnail {
     margin-bottom: 0;
 }
 
-.overflow-hidden{
+.overflow-hidden {
     overflow: hidden;
 }
 
-.overflow-fix{  
+.overflow-fix {  
     // fix for images showing through masks with overflow-hidden during transition.
     // see http://stackoverflow.com/a/27935035
     position: relative;

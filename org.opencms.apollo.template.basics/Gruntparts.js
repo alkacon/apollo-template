@@ -17,7 +17,7 @@ exports.templates = [
 	'style-red'
 ];
 
-exports.deployTarget = process.env.OCMOUNT + '/system/modules/org.opencms.apollo.template.basics/resources/';
+exports.deployTarget = process.env.OCMOUNT + '/system/modules/org.opencms.apollo.template.theme.unify/resources/';
 
 exports.sassSrc = [
 	mf + 'scss/*.scss', 
