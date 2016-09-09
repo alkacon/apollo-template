@@ -27,10 +27,16 @@
 
 // head / foot formatted links
 
+.ap-linksequence-hf .container {
+	position: relative;
+}
+
 .ap-linksequence-hf .links {
-    padding: 8px 0 0 0;
-    position: relative;
-    z-index: 12;
+    padding: 8px 30px 0 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 114;
 }
 
 .ap-linksequence-hf .links ul {
