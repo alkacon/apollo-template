@@ -11,18 +11,13 @@
 	<cms:formatter var="content" val="value" rdfa="rdfa">
 
 		<div class="ap-faq-complete mb-20">
-			<c:choose>
-				<c:when test="${cms.element.inMemoryOnly}">
-					<div class="alert">
-						<fmt:message key="apollo.faq.message.new" />
-					</div>
-				</c:when>
-				<c:otherwise>
+			<c:set var="textnew"><fmt:message key="apollo.faq.message.new" /></c:set>
+			<apollo:init-messages textnew="${textnew}">
 					<!-- FAQ header -->
 					<div class="blog-page">
                         <div class="row">
                             <div class="col-xs-12">
-                                <apollo:headline setting="${cms.element.setting}" headline="${content.value.Question}" />
+                                <apollo:headline headline="${content.value.Question}" />
                             </div>
                             
                             <div class="col-xs-12 col-sm-6">
@@ -61,8 +56,7 @@
 
 					</c:forEach>
 					<%-- //END paragraphs --%>
-				</c:otherwise>
-			</c:choose>
+			</apollo:init-messages>
 		</div>
 	</cms:formatter>
 </cms:bundle> 

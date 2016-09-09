@@ -3,7 +3,5 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <cms:formatter var="content">
-<apollo:headline 
-    setting="${cms.element.setting}" 
-    headline="${content.value.Headline}" />
+<apollo:headline headline="${content.value.Headline}" />
 </cms:formatter>

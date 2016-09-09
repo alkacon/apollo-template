@@ -6,7 +6,7 @@
     <Description><![CDATA[Ermöglicht Kommentare für Seiten und Artikel mit Hilfe der Disqus Kommentarfunktion.]]></Description>
     <FunctionProvider>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.disqus/functions/disqus.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/functions/disqus.jsp]]></target>
         <uuid>1d12162c-0c45-11e6-bbac-0242ac11002b</uuid>
       </link>
     </FunctionProvider>
@@ -47,7 +47,7 @@
     <Description><![CDATA[With this function, pages and articles can be commented using the Disqus service.]]></Description>
     <FunctionProvider>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.disqus/functions/disqus.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/functions/disqus.jsp]]></target>
         <uuid>1d12162c-0c45-11e6-bbac-0242ac11002b</uuid>
       </link>
     </FunctionProvider>

@@ -5,8 +5,12 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 <cms:secureparams />
+<fmt:setLocale value="${cms.locale}" />
+<cms:bundle basename="org.opencms.apollo.template.schemas.event">
 
 <cms:formatter var="content" val="value">
+	<c:set var="inMemoryMessage"><fmt:message key="apollo.event.message.edit" /></c:set>
+	<apollo:init-messages textnew="${inMemoryMessage}">
 
     <apollo:list-item-compact
         date="${value.Date}"
@@ -14,10 +18,10 @@
         enddate="${value.EndDate}"
         filename="${content.filename}"
         headline="${value.Title}"
-        settings="${cms.element.settings}"
         text="${content.valueList.Paragraph['0'].value.Text}"
         teaser="${value.Teaser}"
         trimteaser="true"
     />
-
+	
+	</apollo:init-messages>
 </cms:formatter>

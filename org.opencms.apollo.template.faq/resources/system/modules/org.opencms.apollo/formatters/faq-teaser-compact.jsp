@@ -13,7 +13,6 @@
     <apollo:list-item-compact
         filename="${content.filename}"
         headline="${value.Question}"
-        settings="${cms.element.settings}"
         text="${content.valueList.Paragraph['0'].value.Text}"
     />
 

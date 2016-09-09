@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="de">
@@ -48,7 +48,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloNavigation.Header.help]]></Key>
-      <Value><![CDATA[HTML Code für den Kopf der Seiten.]]></Value>
+      <Value><![CDATA[HTML Code fï¿½r den Kopf der Seiten.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloNavigation.TabGeneral]]></Key>
@@ -80,7 +80,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.navigation.navstartlevel.5]]></Key>
-      <Value><![CDATA[5 - Fünfte Ebene]]></Value>
+      <Value><![CDATA[5 - Fï¿½nfte Ebene]]></Value>
     </Message>
   </Bundle>
   <Bundle language="en">

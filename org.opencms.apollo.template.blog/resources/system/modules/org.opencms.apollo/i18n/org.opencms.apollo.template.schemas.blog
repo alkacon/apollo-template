@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -122,7 +122,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Paragraph.help]]></Key>
-      <Value><![CDATA[Die Absätze des Blog-Artikels.]]></Value>
+      <Value><![CDATA[Die Absï¿½tze des Blog-Artikels.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Category]]></Key>
@@ -154,11 +154,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Availability]]></Key>
-      <Value><![CDATA[Gültigkeit]]></Value>
+      <Value><![CDATA[Gï¿½ltigkeit]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.Availability.help]]></Key>
-      <Value><![CDATA[Die Gültigkeit des Blog-Artikels.]]></Value>
+      <Value><![CDATA[Die Gï¿½ltigkeit des Blog-Artikels.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.General]]></Key>
@@ -170,7 +170,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloBlog.GalleryTitle.help]]></Key>
-      <Value><![CDATA[Der Titel des Blog-Artikels für die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
+      <Value><![CDATA[Der Titel des Blog-Artikels fï¿½r die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.blog.default.Text]]></Key>

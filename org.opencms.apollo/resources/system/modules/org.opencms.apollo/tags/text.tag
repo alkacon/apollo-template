@@ -4,7 +4,6 @@
     trimDirectiveWhitespaces="true" 
     description="Formats a text with optional link from the given content" %>
 
-<%@ attribute name="setting" type="java.util.Map" required="true" %>
 <%@ attribute name="text" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="link" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 
@@ -13,7 +12,7 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>  
 
 <c:if test="${text.isSet || link.exists}">
-    <div class="${setting.tstyle}" <c:if test="${not link.exists}">${link.rdfaAttr}</c:if>>    
+    <div class="${cms.element.settings.tstyle}" <c:if test="${not link.exists}">${link.rdfaAttr}</c:if>>    
     <c:if test="${text.isSet}">
             <div ${text.rdfaAttr}>
                 ${text}

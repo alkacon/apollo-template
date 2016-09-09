@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloContacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/contact.xsd">
+  <ApolloContact language="en">
+    <Name>
+      <FirstName><![CDATA[Mitchell]]></FirstName>
+      <LastName><![CDATA[Pritchett]]></LastName>
+      <Suffix><![CDATA[M.A.]]></Suffix>
+    </Name>
+    <Organisation><![CDATA[Hectic Hackers Inc.]]></Organisation>
+    <Position><![CDATA[Designer]]></Position>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/people/11.jpg]]></target>
+          <uuid>af315050-4705-11e3-8417-000c29d28104</uuid>
+        </link>
+      </Image>
+    </Image>
+    <Contact>
+      <Address>
+        <StreetAddress><![CDATA[Friesenstr. 64-66]]></StreetAddress>
+        <PostalCode><![CDATA[50670]]></PostalCode>
+        <Locality><![CDATA[Cologne]]></Locality>
+      </Address>
+      <Mobile><![CDATA[+49 (170) 123-4567]]></Mobile>
+      <EMail><![CDATA[mitchell.pritchett@example.org]]></EMail>
+      <OpenEMail>false</OpenEMail>
+    </Contact>
+  </ApolloContact>
+</ApolloContacts>

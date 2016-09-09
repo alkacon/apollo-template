@@ -23,7 +23,7 @@
     <apollo:init-messages textnew="${textnew}" textedit="">
 
     <c:if test="${cms.element.settings.hideTitle ne 'true'}">
-        <apollo:headline setting="${cms.element.setting}" headline="${title}" />
+        <apollo:headline headline="${title}" />
     </c:if>
 
     <c:if test="${value.Text.isSet}">

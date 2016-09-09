@@ -13,15 +13,9 @@
 		<c:if test="${empty cms.element.parent}"><div class="row"></c:if><div class="headline"><h2 ${rdfa.Title}>${value.Title}</h2></div><c:if test="${empty cms.element.parent}"></div></c:if>
 	</c:if>
 
-<c:choose>
-	<c:when test="${cms.element.inMemoryOnly}">
-		<c:if test="${empty cms.element.parent}"><div class="row"></c:if><div class="alert"><fmt:message key="apollo.slider.message.new" /></div><c:if test="${empty cms.element.parent}"></div></c:if>
-	</c:when>
-	<c:when test="${cms.edited}">
-		<c:if test="${empty cms.element.parent}"><div class="row"></c:if><div class="alert"><fmt:message key="apollo.slider.message.edit" /></div><c:if test="${empty cms.element.parent}"></div></c:if>
-		${cms.enableReload}
-	</c:when>
-	<c:otherwise>
+<c:set var="textnew"><fmt:message key="apollo.slider.message.new" /></c:set>
+<c:set var="textedit"><fmt:message key="apollo.slider.message.edited" /></c:set>
+<apollo:init-messages textnew="${textnew}" textedit="${textedit}">
 
 <div class="fullwidthbanner-container" style="overflow: hidden;"><!--=== Slider ===-->
 
@@ -102,8 +96,8 @@
 	</script>
 
 <!--=== End Slider ===--></div>
-	</c:otherwise>
-</c:choose>
+
+</apollo:init-messages>
 
 </div>
 </cms:formatter>

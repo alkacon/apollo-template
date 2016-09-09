@@ -19,7 +19,9 @@
 		<datecreated/>
 		<userinstalled/>
 		<dateinstalled/>
-		<dependencies/>
+		<dependencies>
+			<dependency name="org.opencms.apollo.template.layout" version="10.5.0"/>
+		</dependencies>
 		<exportpoints>
 			<exportpoint uri="/system/modules/org.opencms.apollo.template.linksequence/tags/" destination="WEB-INF/tags/apollo/"/>
 		</exportpoints>

@@ -4,7 +4,6 @@
 
 <cms:formatter var="content">
 <apollo:image-simple 
-    setting="${cms.element.setting}" 
     image="${content.value.Image}"
     headline="${content.value.Headline}" 
     link="${content.value.Link}" />

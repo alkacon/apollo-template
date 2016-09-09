@@ -1,5 +1,10 @@
-<%@page trimDirectiveWhitespaces="true" buffer="none" session="false" taglibs="c,cms,fmt,fn" %>
-<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>	
+<%@page trimDirectiveWhitespaces="true" buffer="none" session="false" %>
+
+<%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.schemas.blog">

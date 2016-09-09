@@ -5,8 +5,8 @@
     <Title><![CDATA[Image gallery]]></Title>
     <ImageFolder>
       <link type="WEAK">
-        <target><![CDATA[/sites/default/.galleries/people/]]></target>
-        <uuid>71ae8c67-4705-11e3-8417-000c29d28104</uuid>
+        <target><![CDATA[/sites/default/.galleries/samples/]]></target>
+        <uuid>959d764a-4705-11e3-8417-000c29d28104</uuid>
       </link>
     </ImageFolder>
   </ApolloImageGallery>

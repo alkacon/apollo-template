@@ -37,6 +37,12 @@
       <Default><![CDATA[true]]></Default>
     </Setting>
     <Setting>
+      <PropertyName><![CDATA[showKenburn]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.kenburn)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[showShadow]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.section.image.effect.shadow)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>

@@ -4,7 +4,6 @@
     trimDirectiveWhitespaces="true" 
     description="Formats a simple image from the given content" %>
 
-<%@ attribute name="setting" type="java.util.Map" required="false" %>
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="link" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
 <%@ attribute name="headline" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
@@ -22,13 +21,10 @@
 <c:set var="istyle"></c:set>
 <c:set var="itext">none</c:set>
 <c:set var="ilink">none</c:set>
-<c:if test="${not empty setting}">
-    <c:if test="${not empty setting.ieffect}"><c:set var="ieffect">${setting.ieffect}</c:set></c:if>
-    <c:if test="${not empty setting.istyle}"><c:set var="istyle">${setting.istyle}</c:set></c:if>
-    <c:if test="${not empty setting.itext}"><c:set var="itext">${setting.itext}</c:set></c:if>
-    <c:if test="${not empty setting.ilink}"><c:set var="ilink">${setting.ilink}</c:set></c:if>
-</c:if>
-
+<c:set var="ieffect">${cms.element.settings.ieffect}</c:set>
+<c:set var="istyle">${cms.element.settings.istyle}</c:set>
+<c:set var="itext">${cms.element.settings.itext}</c:set>
+<c:set var="ilink">${cms.element.settings.ilink}</c:set>
 
 <c:if test="${image.isSet}">
     <c:if test="${empty onlyimage}"><c:set var="onlyimage" value="false" /></c:if>

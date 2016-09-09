@@ -35,12 +35,22 @@
     
     <div <c:if test="${shadowanimation}">class="shadow-border-inner"</c:if>>
 
-        <div class="ap-img-pic ${imagestyle} ${image.imageDndAttr}">
+	    <%-- ####### ImageDnD workaround ##################################### --%>
+	    <%-- ####### image.value.Image.imageDndAttr doesn't work here ######## --%>
+	    <%-- ################################################################# --%>
+	
+	    <c:if test="${not empty image && image.isSet}">
+	        <c:set var="conValue" value="${image.value.Image.contentValue}" />
+	        <c:set var="dndData" value="${conValue.document.file.structureId}|${conValue.path}|${conValue.locale}" />
+	        <c:set var="imageDnd">data-imagednd="${dndData}"</c:set>
+	    </c:if>
+
+        <div class="ap-img-pic" <c:out value="${imageDnd}" escapeXml="false" />>
             <cms:img 
                 src="${imageLink}"
                 scaleColor="transparent"
                 scaleType="0"
-                cssclass="img-responsive"
+                cssclass="img-responsive ${imagestyle}"
                 alt="${imageTitleCopyright}"
                 title="${imageTitleCopyright}"
             />

@@ -4,7 +4,6 @@
 
 <cms:formatter var="content">
 <apollo:text 
-    setting="${cms.element.setting}" 
     text="${content.value.Text}" 
     link="${content.value.Link}" />
 </cms:formatter>

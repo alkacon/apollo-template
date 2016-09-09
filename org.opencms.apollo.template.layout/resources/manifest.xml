@@ -19,7 +19,9 @@
 		<datecreated/>
 		<userinstalled/>
 		<dateinstalled/>
-		<dependencies/>
+		<dependencies>
+			<dependency name="org.opencms.apollo.template.theme.unify" version="10.5.0"/>
+		</dependencies>
 		<exportpoints>
 			<exportpoint uri="/system/modules/org.opencms.apollo/tags/" destination="WEB-INF/tags/apollo/"/>
 		</exportpoints>
@@ -549,6 +551,27 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Link sequence tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/obfuscate-email.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/obfuscate-email.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>f213d846-768a-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>f213d847-768a-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 12:43:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Obfuscates an Email address]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
 				</property>
 			</properties>
 			<relations/>

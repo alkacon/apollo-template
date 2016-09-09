@@ -450,6 +450,40 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo/formatters/contact-onecol.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/contact-onecol.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>b7431558-7665-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>b7431559-7665-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 08:16:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/contact-onecol.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/contact-onecol.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>c15fe3bb-7665-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>c15fe3bc-7665-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 08:16:48 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[One Column Contact Information ]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo/formatters/contact-standard.jsp</source>
 			<destination>system/modules/org.opencms.apollo/formatters/contact-standard.jsp</destination>
 			<type>jsp</type>
@@ -4105,6 +4139,18 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/address.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/address.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>58c9bdce-767b-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>58c9bdcf-767b-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 10:51:22 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo/schemas/nested/availability.xsd</source>
 			<destination>system/modules/org.opencms.apollo/schemas/nested/availability.xsd</destination>
 			<type>plain</type>
@@ -4609,6 +4655,27 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Link sequence tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/obfuscate-email.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/obfuscate-email.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>f213d846-768a-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>f213d847-768a-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 12:43:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Obfuscates an Email address]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
 				</property>
 			</properties>
 			<relations/>

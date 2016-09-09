@@ -6,7 +6,7 @@
     <Type><![CDATA[a-faq]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.faq/formatters/faq-teaser-accordion.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/faq-teaser-accordion.jsp]]></target>
         <uuid>4ec73632-3d13-11e6-aee4-0242ac11002b</uuid>
       </link>
     </Jsp>

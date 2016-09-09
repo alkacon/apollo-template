@@ -4,7 +4,6 @@
     trimDirectiveWhitespaces="true"
     description="Formates an image with a Ken Burns effect" %>
 
-<%@ attribute name="setting" type="java.util.Map" required="true" %>
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="width" type="java.lang.Integer" required="true" %>
 <%@ attribute name="link" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
@@ -24,9 +23,9 @@
 
 <c:if test="${not empty imageLink}">
 
-<div class="ap-img ${setting.istyle}">
+<div class="ap-img ${cms.element.settings.istyle}">
 
-    <c:if test="${link.isSet && setting.ilink.value != 'none'}">
+    <c:if test="${link.isSet && cms.element.settings.ilink != 'none'}">
         <a href="<cms:link>${link.value.URI}</cms:link>"
             <c:if test="${link.value.Text.isSet}">
             title="${link.value.Text}"
@@ -49,7 +48,7 @@
     <%-- ####### Show image (with link button if enabled) ######## --%>
     <div class="thumbnail-kenburn">
         <span ${image.value.Image.rdfaAttr} ${imageDnd}>
-            <div class="ap-img-pic ${setting.istyle} ${' '} ${setting.ieffect != 'none' ? setting.ieffect : ''}">
+            <div class="ap-img-pic ${cms.element.settings.istyle} ${' '} ${cms.element.settings.ieffect != 'none' ? cms.element.settings.ieffect : ''}">
                 <c:catch var="exception">
                     <cms:img
                         src="${imageLink}"
@@ -67,7 +66,7 @@
                 </c:if>
             </div>
         </span>
-        <c:if test="${setting.ilink.value == 'image'}">
+        <c:if test="${cms.element.settings.ilink == 'image'}">
             <a class="btn-more hover-effect"
                     href="<cms:link>${link.value.URI}</cms:link>"
                     <c:if test="${link.value.Text.isSet}">
@@ -77,16 +76,16 @@
     </div>
 
     <%-- ####### Show copyright if enabled ######## --%>
-    <c:if test="${fn:contains(setting.itext.value, 'copy') && image.value.Copyright.isSet}">
+    <c:if test="${fn:contains(cms.element.settings.itext, 'copy') && image.value.Copyright.isSet}">
         <div class="info">
             <p class="copyright"><i>${imageCopyright}</i></p>
         </div>
     </c:if>
 
     <%-- ####### Show title and/or headline if enabled ######## --%>
-    <c:if test="${setting.itext.value != 'none'}">
+    <c:if test="${cms.element.settings.itext != 'none'}">
         <div class="ap-img-txt">
-        <c:if test="${fn:contains(setting.itext.value, 'title')}">
+        <c:if test="${fn:contains(cms.element.settings.itext, 'title')}">
             <c:choose>
                 <c:when test="${image.value.Title.isSet}">
                     <div class="ap-img-title"><span ${image.value.Title.rdfaAttr}>${image.value.Title}</span></div>
@@ -96,13 +95,13 @@
                 </c:when>
             </c:choose>
         </c:if>
-        <c:if test="${fn:contains(setting.itext.value, 'desc') && image.value.Description.isSet}">
+        <c:if test="${fn:contains(cms.element.settings.itext, 'desc') && image.value.Description.isSet}">
                 <div class="ap-img-desc"><span ${image.value.Description.rdfaAttr}>${image.value.Description}</span></div>
         </c:if>
         </div>
     </c:if>
 
-    <c:if test="${link.isSet && setting.ilink.value != 'none'}">
+    <c:if test="${link.isSet && cms.element.settings.ilink != 'none'}">
             </a>
     </c:if>
 

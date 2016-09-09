@@ -97,6 +97,7 @@
 
 <%-- End of use case 1: Create container box --%>
 </c:when>
+
 <c:when test="${(boxType == 'model-start') && cms.modelGroupElement }">
 <%-- Use case 2: Model box start --%>
 
@@ -116,10 +117,11 @@
       </div>
     </div>
   </div>
-  <%-- Last div is deliberately not closed --%>
+  <%-- Last div is deliberately not closed, it has to be closed by using "model-end" (see below) --%>
 
 <%-- End of use case 2: Model box start --%>
 </c:when>
+
 <c:when test="${(boxType == 'model-end') && cms.modelGroupElement }">
 <%-- Use case 3: Model box end --%>
 

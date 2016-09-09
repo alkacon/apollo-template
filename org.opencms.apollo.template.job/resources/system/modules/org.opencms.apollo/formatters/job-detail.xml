@@ -6,7 +6,7 @@
     <Type><![CDATA[a-job]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.job/formatters/job-detail.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/job-detail.jsp]]></target>
         <uuid>8bf3bbd9-41f8-11e6-bdf7-0242ac11002b</uuid>
       </link>
     </Jsp>

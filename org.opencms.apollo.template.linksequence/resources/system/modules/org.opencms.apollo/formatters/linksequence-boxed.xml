@@ -6,7 +6,7 @@
     <Type><![CDATA[a-linksequence]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.linksequence/formatters/linksequence-boxed.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/linksequence-boxed.jsp]]></target>
         <uuid>ac44c2a7-42b5-11e6-a4ea-0242ac11002b</uuid>
       </link>
     </Jsp>

@@ -14,7 +14,7 @@
         </Uri>
         <Formatter>
           <link type="STRONG">
-            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/layoutrow.jsp]]></target>
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/layoutrow.jsp]]></target>
             <uuid>d652a05d-523d-11e5-9495-0242ac11002b</uuid>
           </link>
         </Formatter>
@@ -87,14 +87,14 @@
         </Uri>
         <Formatter>
           <link type="STRONG">
-            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/flexible.jsp]]></target>
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/flexible.jsp]]></target>
             <uuid>9c98ef7c-560d-11e5-b868-0242ac11002b</uuid>
           </link>
         </Formatter>
         <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[6ff882f0-f1b5-11e5-a937-0242ac11002b]]></String>
+            <String><![CDATA[f08f72fb-7676-11e6-af54-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>

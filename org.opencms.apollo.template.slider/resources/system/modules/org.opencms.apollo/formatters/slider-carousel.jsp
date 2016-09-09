@@ -11,11 +11,8 @@
 
 <div class="ap-carousel mb-30">
 
-	<c:choose>
-		<c:when test="${cms.element.inMemoryOnly}">
-			<div class="alert alert-danger"><fmt:message key="apollo.carousel.message.new" /></div>
-		</c:when>
-		<c:otherwise>
+<c:set var="textnew"><fmt:message key="apollo.carousel.message.new" /></c:set>
+<apollo:init-messages textnew="${textnew}">
 
 			<c:if test="${not cms.element.settings.hidetitle}">
 				<div class="headline"><h2 ${rdfa.Title}>${value.Title}</h2></div>
@@ -34,7 +31,7 @@
 							<c:if test="${image.value.Link.isSet}">
 								<a href="<cms:link>${image.value.Link}</cms:link>" ${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?'target="_blank"':''}>
 							</c:if>
-                            <apollo:image-simple image="${image}" setting="${cms.element.setting}" onlyimage="true" title="${image.value.SuperTitle.stringValue}" />
+                            <apollo:image-simple image="${image}" onlyimage="true" title="${image.value.SuperTitle.stringValue}" />
                             <apollo:image-vars image="${image}" escapecopyright="false">
                                 <c:if test="${image.value.SuperTitle.isSet || image.value.TitleLine1.isSet || image.value.TitleLine2.isSet}">
                                     <div class="carousel-caption <c:if test="${cms.element.settings.showCopy and not empty imageCopyright}">carousel-caption-copyright</c:if>" style="background-color: ${bg};">
@@ -79,8 +76,8 @@
 				}
 			</script>
 
-		</c:otherwise>
-	</c:choose>
+</apollo:init-messages>
+
 </div>
 
 </cms:formatter>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloContacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/contact.xsd">
+  <ApolloContact language="en">
+    <Name>
+      <FirstName><![CDATA[Pepper]]></FirstName>
+      <LastName><![CDATA[Saltzman]]></LastName>
+    </Name>
+    <Organisation><![CDATA[Locial Loop Ltd.]]></Organisation>
+    <Position><![CDATA[Analyst]]></Position>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/people/29.jpg]]></target>
+          <uuid>4c93cf54-6365-11e5-81df-0242ac11002b</uuid>
+        </link>
+      </Image>
+    </Image>
+    <Contact>
+      <Address>
+        <StreetAddress><![CDATA[Friesenstr. 64-66]]></StreetAddress>
+        <PostalCode><![CDATA[50670]]></PostalCode>
+        <Locality><![CDATA[Cologne]]></Locality>
+      </Address>
+      <Phone><![CDATA[+49 (221) 123-4567]]></Phone>
+      <Mobile><![CDATA[+49 (170) 123-4567]]></Mobile>
+      <EMail><![CDATA[pepper.saltzman@example.org]]></EMail>
+      <OpenEMail>false</OpenEMail>
+    </Contact>
+  </ApolloContact>
+</ApolloContacts>

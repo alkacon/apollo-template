@@ -17,7 +17,7 @@
                 <div class="blog-page">
                     <div class="row">
                         <div class="col-xs-12">
-                            <apollo:headline setting="${cms.element.setting}" headline="${content.value.Title}" />
+                            <apollo:headline headline="${content.value.Title}" />
                         </div>
                         
                         <div class="col-xs-12 col-sm-6">

@@ -14,7 +14,7 @@
         </Uri>
         <Formatter>
           <link type="STRONG">
-            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/layoutrow.jsp]]></target>
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/layoutrow.jsp]]></target>
             <uuid>d652a05d-523d-11e5-9495-0242ac11002b</uuid>
           </link>
         </Formatter>
@@ -34,6 +34,12 @@
           <Name><![CDATA[use_as_copy_model]]></Name>
           <Value>
             <String><![CDATA[false]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[grid]]></Name>
+          <Value>
+            <String><![CDATA[row,head]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -70,8 +76,34 @@
     </Containers>
     <Containers>
       <Name><![CDATA[79d0739f-605c-11e5-9199-0242ac11002b-c1]]></Name>
-      <Type><![CDATA[segment]]></Type>
+      <Type><![CDATA[row,head]]></Type>
       <ParentInstanceId><![CDATA[79d0739f-605c-11e5-9199-0242ac11002b]]></ParentInstanceId>
+      <Elements>
+        <Uri>
+          <link type="STRONG">
+            <target><![CDATA[/sites/default/apollo-demo/.content/linksequences/ls_00003.xml]]></target>
+            <uuid>4adb1d3e-766f-11e6-af54-0242ac11002b</uuid>
+          </link>
+        </Uri>
+        <Formatter>
+          <link type="STRONG">
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/linksequence-head.jsp]]></target>
+            <uuid>0830964f-5499-11e6-958f-0242ac11002b</uuid>
+          </link>
+        </Formatter>
+        <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[f08f72f9-7676-11e6-af54-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#79d0739f-605c-11e5-9199-0242ac11002b-c1]]></Name>
+          <Value>
+            <String><![CDATA[1ffcc519-5498-11e6-958f-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+      </Elements>
       <Elements>
         <Uri>
           <link type="STRONG">
@@ -81,14 +113,14 @@
         </Uri>
         <Formatter>
           <link type="STRONG">
-            <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/navigation-head.jsp]]></target>
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/navigation-head.jsp]]></target>
             <uuid>bff6dd61-5605-11e5-b868-0242ac11002b</uuid>
           </link>
         </Formatter>
         <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[6ff882ef-f1b5-11e5-a937-0242ac11002b]]></String>
+            <String><![CDATA[f08f72fa-7676-11e6-af54-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>

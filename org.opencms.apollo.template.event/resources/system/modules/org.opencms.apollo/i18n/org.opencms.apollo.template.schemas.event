@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -150,7 +150,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Paragraph.help]]></Key>
-      <Value><![CDATA[Die Absätze der Veranstaltung.]]></Value>
+      <Value><![CDATA[Die Absï¿½tze der Veranstaltung.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Category]]></Key>
@@ -178,11 +178,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Availability]]></Key>
-      <Value><![CDATA[Gültigkeit]]></Value>
+      <Value><![CDATA[Gï¿½ltigkeit]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Availability.help]]></Key>
-      <Value><![CDATA[Die Gültigkeit der Veranstaltung.]]></Value>
+      <Value><![CDATA[Die Gï¿½ltigkeit der Veranstaltung.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.GalleryTitle]]></Key>
@@ -190,7 +190,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.GalleryTitle.help]]></Key>
-      <Value><![CDATA[Der Titel der Veranstaltung für die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
+      <Value><![CDATA[Der Titel der Veranstaltung fï¿½r die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.TabGeneral]]></Key>
@@ -202,7 +202,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.TabAvailability]]></Key>
-      <Value><![CDATA[Gültigkeit]]></Value>
+      <Value><![CDATA[Gï¿½ltigkeit]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.event.default.Title]]></Key>

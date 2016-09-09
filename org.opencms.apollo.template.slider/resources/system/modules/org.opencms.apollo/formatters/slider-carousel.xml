@@ -6,7 +6,7 @@
     <Type><![CDATA[a-slider]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/slider-carousel.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/slider-carousel.jsp]]></target>
         <uuid>ca17b0c1-c4d0-11e5-9ca7-0242ac11002b</uuid>
       </link>
     </Jsp>

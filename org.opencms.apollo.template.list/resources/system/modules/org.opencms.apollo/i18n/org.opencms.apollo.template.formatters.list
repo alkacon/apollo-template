@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -150,7 +150,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.facets]]></Key>
-      <Value><![CDATA[Dies ist der Facet-Formatter für die Liste:]]></Value>
+      <Value><![CDATA[Dies ist der Facet-Formatter fï¿½r die Liste:]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.archive]]></Key>
@@ -166,7 +166,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.empty]]></Key>
-      <Value><![CDATA[Derzeit sind keine Einträge vorhanden.]]></Value>
+      <Value><![CDATA[Derzeit sind keine Eintrï¿½ge vorhanden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.edit]]></Key>
@@ -194,7 +194,7 @@
     </Message>
     <Message>
       <Key><![CDATA[pagination.next.title]]></Key>
-      <Value><![CDATA[Nächste Seite]]></Value>
+      <Value><![CDATA[Nï¿½chste Seite]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[pagination.last]]></Key>

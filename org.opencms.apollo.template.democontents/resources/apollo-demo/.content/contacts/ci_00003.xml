@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloContacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/contact.xsd">
+  <ApolloContact language="en">
+    <Name>
+      <FirstName><![CDATA[Cameron]]></FirstName>
+      <LastName><![CDATA[Tucker]]></LastName>
+    </Name>
+    <Organisation><![CDATA[Cascading Styles LLC]]></Organisation>
+    <Position><![CDATA[VP of Operations]]></Position>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/people/34.jpg]]></target>
+          <uuid>3ee12573-7061-11e6-9a42-0242ac11002b</uuid>
+        </link>
+      </Image>
+    </Image>
+    <Link>
+      <Text><![CDATA[Team overview]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/the-team/]]></target>
+          <uuid>a3023c68-6079-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
+    <Contact>
+      <Address>
+        <StreetAddress><![CDATA[Am Hof 12]]></StreetAddress>
+        <PostalCode><![CDATA[50667]]></PostalCode>
+        <Locality><![CDATA[Cologne]]></Locality>
+      </Address>
+      <Phone><![CDATA[+49 (221) 123-4567]]></Phone>
+      <Mobile><![CDATA[+49 (170) 123-4567]]></Mobile>
+      <EMail><![CDATA[cameron.tucker@example.org]]></EMail>
+    </Contact>
+  </ApolloContact>
+</ApolloContacts>

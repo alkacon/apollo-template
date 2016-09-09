@@ -38,7 +38,7 @@ public String obfuscateContactEmail(String email) {
 		<apollo:init-messages textnew="${textnew}" textedit="${textedit}">
             
             <c:if test="${cms.element.settings.hideTitle ne 'true'}">
-                <apollo:headline setting="${cms.element.setting}" headline="${value.Title}" />
+                <apollo:headline headline="${value.Title}" />
             </c:if>
             
             <div class="row">
@@ -47,7 +47,7 @@ public String obfuscateContactEmail(String email) {
                 <c:if test="${value.Image.isSet}">
                     <c:set var="imagePresent" value="true" />
                     <div class="ap-contact-image col-xs-4 col-sm-3">
-                        <apollo:image-simple setting="${cms.element.setting}" image="${value.Image}" link="${value.Link}" />
+                        <apollo:image-simple image="${value.Image}" link="${value.Link}" />
                     </div>
                 </c:if>
                 

@@ -49,10 +49,25 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 		<userinstalled/>
 		<dateinstalled/>
 		<dependencies>
-			<dependency name="org.opencms.apollo.template.disqus" version="10.0.0"/>
-			<dependency name="org.opencms.apollo.template.faq" version="10.0.0"/>
-			<dependency name="org.opencms.apollo.template.job" version="10.0.0"/>
-			<dependency name="org.opencms.apollo.template.shariff" version="10.0.0"/>
+			<dependency name="org.opencms.apollo.template.blog" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.contact" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.disqus" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.event" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.faq" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.flexible" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.imagegallery" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.job" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.layout" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.linksequence" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.list" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.map" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.navigation" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.shariff" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.sitemap" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.slider" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.slidercomplex" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.tabs" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.webform" version="10.5.0"/>
 		</dependencies>
 		<exportpoints/>
 		<resources>
@@ -5730,6 +5745,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/contacts/ci_00001.xml</source>
+			<destination>apollo-demo/.content/contacts/ci_00001.xml</destination>
+			<type>a-contact</type>
+			<uuidstructure>b423822e-7686-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>b423822f-7686-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 12:12:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Critical Coders Corp. -  Claire   Dunphy   [Director HR]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>apollo-demo/.content/contacts/ci_00002.xml</source>
 			<destination>apollo-demo/.content/contacts/ci_00002.xml</destination>
 			<type>a-contact</type>
@@ -5740,7 +5772,109 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Contact Information: Jay M. Pritchett III]]></value>
+					<value><![CDATA[Markup Brewers Inc. - Dr. Jake M.  Pritchett III  Ph. D. [CEO]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contacts/ci_00003.xml</source>
+			<destination>apollo-demo/.content/contacts/ci_00003.xml</destination>
+			<type>a-contact</type>
+			<uuidstructure>ba14f663-7686-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>ba14f664-7686-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 12:12:50 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Cascading Styles LLC -  Cameron   Tucker   [VP of Operations]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contacts/ci_00004.xml</source>
+			<destination>apollo-demo/.content/contacts/ci_00004.xml</destination>
+			<type>a-contact</type>
+			<uuidstructure>cee5f12a-7686-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>cee5f12b-7686-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 12:13:25 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Recursive Iterators Union -  Manuel B.  Delgado   [Team Manager]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contacts/ci_00005.xml</source>
+			<destination>apollo-demo/.content/contacts/ci_00005.xml</destination>
+			<type>a-contact</type>
+			<uuidstructure>597aa9b9-769e-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>597aa9ba-769e-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 15:01:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Clueless Advisors PLC -  Haley S.  Dunphy   [Consultant]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contacts/ci_00006.xml</source>
+			<destination>apollo-demo/.content/contacts/ci_00006.xml</destination>
+			<type>a-contact</type>
+			<uuidstructure>5d7fde4e-769e-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>5d7fde4f-769e-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 15:02:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Hectic Hackers Inc. -  Mitchell   Pritchett  M.A. [Designer]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contacts/ci_00007.xml</source>
+			<destination>apollo-demo/.content/contacts/ci_00007.xml</destination>
+			<type>a-contact</type>
+			<uuidstructure>6b7700b4-769e-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>6b7700b5-769e-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 15:02:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Short Cuts LLP -  Lily   Tucker-Pritchett   [Marketing]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contacts/ci_00008.xml</source>
+			<destination>apollo-demo/.content/contacts/ci_00008.xml</destination>
+			<type>a-contact</type>
+			<uuidstructure>70caae49-769e-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>70caae4a-769e-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 15:02:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Locial Loop Ltd. -  Pepper   Saltzman   [Analyst]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6764,40 +6898,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/contentsections/cs_00062.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00062.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>2af46831-a887-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>2af46832-a887-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 08:36:59 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Introduction to the team: Message from the CEO]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/contentsections/cs_00063.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00063.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>86db79e7-a887-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>86db79e8-a887-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 08:39:34 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Introduction to the team: Director, HR]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>apollo-demo/.content/contentsections/cs_00064.xml</source>
 			<destination>apollo-demo/.content/contentsections/cs_00064.xml</destination>
 			<type>a-section</type>
@@ -6808,41 +6908,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[VP of Operations]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/contentsections/cs_00065.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00065.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>f0e94985-a887-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>f0e94986-a887-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 08:42:32 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Introduction to the team: Team Manager]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/contentsections/cs_00066.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00066.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>436caa0d-a890-11e5-b3e7-0242ac11002b</uuidstructure>
-			<uuidresource>436caa0e-a890-11e5-b3e7-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Dec 2015 09:42:06 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Introduction to the team: Consultant]]></value>
+					<value><![CDATA[Testimonial A]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6859,7 +6925,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Designer]]></value>
+					<value><![CDATA[Testimonial C]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6876,7 +6942,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Marketing]]></value>
+					<value><![CDATA[Testimonial D]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6893,7 +6959,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Analyst]]></value>
+					<value><![CDATA[Testimonial B]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8847,6 +8913,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Link Sequence: Boxed link sequence]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/linksequences/ls_00003.xml</source>
+			<destination>apollo-demo/.content/linksequences/ls_00003.xml</destination>
+			<type>a-linksequence</type>
+			<uuidstructure>4adb1d3e-766f-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>4adb1d3f-766f-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 09:25:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Head links]]></value>
 				</property>
 			</properties>
 			<relations/>

@@ -7,9 +7,13 @@
 
 <cms:secureparams />
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.formatters.list">
+
 
 <cms:formatter var="content" val="value">
+
+<cms:bundle basename="org.opencms.apollo.template.schemas.blog">
+<c:set var="inMemoryMessage"><fmt:message key="apollo.blog.message.edit" /></c:set>
+<apollo:init-messages textnew="${inMemoryMessage}">
 
 	<div class="row ap-sec">
 		<c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
@@ -40,7 +44,7 @@
 			<c:out value="${imgDivStart}" escapeXml="false" />
 			
 			<c:set var="imgLink"><cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link></c:set>
-			<a href="${imgLink}"><apollo:image-simple onlyimage="true" setting="${cms.element.settings}" image="${paragraph.value.Image}" /></a>
+			<a href="${imgLink}"><apollo:image-simple onlyimage="true" image="${paragraph.value.Image}" /></a>
 		</c:if>
 
 		<c:out value="${imgDivCenter}" escapeXml="false" />
@@ -49,15 +53,19 @@
 			<c:set var="text">${content.value.Teaser}</c:set>
 			<c:if test="${empty text}"><c:set var="text">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</c:set></c:if>
 
+			<c:set var="buttonText"><fmt:message key="apollo.blog.message.readmore" /></c:set>
 			<apollo:teaserbody text="${text}" 
 								title="${content.value.Title}"
 								href="${href}" 
 								date="${content.value.Date}" 
-								color="${buttonColor}" />
+								color="${buttonColor}"
+								btntext="${buttonText}"/>
 
 		<c:out value="${imgDivEnd}" escapeXml="false" />
 
 	</div>
+	
+</apollo:init-messages>
 
-</cms:formatter>
 </cms:bundle>
+</cms:formatter>

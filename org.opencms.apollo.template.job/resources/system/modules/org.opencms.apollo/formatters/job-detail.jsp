@@ -19,7 +19,7 @@
 					<%-- ####### Title (1st position option) ######## --%>
 					<div class="col-xs-12">
 					<c:if test="${titlePos == 'top'}">
-							<apollo:headline headline="${content.value.Title}"  setting="${cms.element.setting}" />
+							<apollo:headline headline="${content.value.Title}" />
 					</c:if>
 					</div>
 			
@@ -36,7 +36,7 @@
 				<%-- ####### Title (2nd position option) ######## --%>
 				<c:if test="${titlePos == 'bottom'}">
 					<div class="col-xs-12 headline-block">
-						<apollo:headline setting="${cms.element.setting}" headline="${content.value.Title}" />
+						<apollo:headline headline="${content.value.Title}" />
 					</div>
 				</c:if>
 					

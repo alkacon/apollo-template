@@ -19,7 +19,6 @@
                 <div>
                     <div class="thumbnails thumbnail-style thumbnail-kenburn ${cms.element.setting.shadowborder.value ? 'shadow-border' : ''}">
             <apollo:image-kenburn 
-              setting="${cms.element.setting}"
               image="${content.value.Image}"
               width="-1"
               headline="${content.value.Headline}"

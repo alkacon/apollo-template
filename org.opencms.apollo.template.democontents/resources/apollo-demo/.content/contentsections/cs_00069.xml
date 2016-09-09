@@ -2,18 +2,19 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Analyst]]></Headline>
+    <Headline><![CDATA[We are so good!]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Pepper Saltzman</p>]]></content>
+      <content><![CDATA[<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.&nbsp;Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.&nbsp;</p>]]></content>
     </Text>
     <Image>
       <Image>
         <link type="WEAK">
-          <target><![CDATA[/sites/default/.galleries/people/29.jpg]]></target>
-          <uuid>4c93cf54-6365-11e5-81df-0242ac11002b</uuid>
+          <target><![CDATA[/sites/default/.galleries/people/31.jpg]]></target>
+          <uuid>a2aea824-6365-11e5-81df-0242ac11002b</uuid>
         </link>
       </Image>
     </Image>
+    <GalleryTitle><![CDATA[Testimonial B]]></GalleryTitle>
   </ApolloSection>
 </ApolloSections>

@@ -22,8 +22,7 @@
 
     <div class="ap-sec-imagebox %(settings.wrapperclass)">
         <apollo:link link="${value.Link}" linkclass="">
-            <apollo:image-simple 
-            setting="${cms.element.setting}"
+            <apollo:image-simple
             image="${content.value.Image}"
             headline="${content.value.Headline}" />
             <div class="ap-sec-imagebox-overlay">

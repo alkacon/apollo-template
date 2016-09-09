@@ -2,18 +2,19 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Marketing]]></Headline>
+    <Headline><![CDATA[Works out of the box]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Lily Tucker-Pritchett</p>]]></content>
+      <content><![CDATA[<p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.&nbsp;Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.&nbsp;</p>]]></content>
     </Text>
     <Image>
       <Image>
         <link type="WEAK">
-          <target><![CDATA[/sites/default/.galleries/people/28.jpg]]></target>
-          <uuid>d51a14ca-635e-11e5-81df-0242ac11002b</uuid>
+          <target><![CDATA[/sites/default/.galleries/people/12.jpg]]></target>
+          <uuid>af827d93-4705-11e3-8417-000c29d28104</uuid>
         </link>
       </Image>
     </Image>
+    <GalleryTitle><![CDATA[Testimonial D]]></GalleryTitle>
   </ApolloSection>
 </ApolloSections>

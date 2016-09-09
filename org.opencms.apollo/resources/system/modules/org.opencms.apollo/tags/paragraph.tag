@@ -65,7 +65,6 @@
 
                 <div class="col-md-4 pull-${imgalign}">
                     <apollo:image-kenburn 
-                        setting="${cms.element.setting}"
                         image="${paragraph.value.Image}"
                         width="400" />
                 </div>
@@ -105,7 +104,7 @@
             <div class="row">
 
                 <div class="col-xs-12">
-                    <apollo:image-simple setting="${cms.element.setting}" image="${paragraph.value.Image}" />
+                    <apollo:image-simple image="${paragraph.value.Image}" />
                 </div>
 
                 <div class="col-xs-12">

@@ -2,14 +2,14 @@
 
 <ApolloContacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/contact.xsd">
   <ApolloContact language="en">
-    <Title><![CDATA[Jay M. Pritchett III]]></Title>
     <Name>
-      <FirstName><![CDATA[Jay]]></FirstName>
+      <Title><![CDATA[Dr.]]></Title>
+      <FirstName><![CDATA[Jake]]></FirstName>
       <MiddleName><![CDATA[M.]]></MiddleName>
-      <LastName><![CDATA[Pritchett]]></LastName>
-      <Suffix><![CDATA[III]]></Suffix>
+      <LastName><![CDATA[Pritchett III]]></LastName>
+      <Suffix><![CDATA[Ph. D.]]></Suffix>
     </Name>
-    <Organisation><![CDATA[Damage Inc.]]></Organisation>
+    <Organisation><![CDATA[Markup Brewers Inc.]]></Organisation>
     <Position><![CDATA[CEO]]></Position>
     <Image>
       <Image>
@@ -18,8 +18,6 @@
           <uuid>c390791b-6365-11e5-81df-0242ac11002b</uuid>
         </link>
       </Image>
-      <Title><![CDATA[Jay M. Pritchett III]]></Title>
-      <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
     </Image>
     <Link>
       <Text><![CDATA[Team overview]]></Text>
@@ -31,13 +29,14 @@
       </URI>
     </Link>
     <Contact>
-      <Address name="Address0">
-        <links/>
-        <content><![CDATA[<p>799 E DRAGRAM SUITE 5A<br />TUCSON AZ 85705<br />USA</p>]]></content>
+      <Address>
+        <StreetAddress><![CDATA[Friesenstr. 64-66]]></StreetAddress>
+        <PostalCode><![CDATA[50670]]></PostalCode>
+        <Locality><![CDATA[Cologne]]></Locality>
       </Address>
-      <Phone><![CDATA[+1-555-754-3010]]></Phone>
-      <Mobile><![CDATA[+1-555-923-9840]]></Mobile>
-      <EMail><![CDATA[jay.pritchett@example.org]]></EMail>
+      <Fax><![CDATA[+49 (221) 123-4567]]></Fax>
+      <EMail><![CDATA[jake.m.pritchett@example.org]]></EMail>
+      <OpenEMail>false</OpenEMail>
     </Contact>
   </ApolloContact>
 </ApolloContacts>

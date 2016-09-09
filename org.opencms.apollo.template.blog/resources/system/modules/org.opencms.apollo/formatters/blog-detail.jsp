@@ -43,7 +43,7 @@
                             </a>
                         </div>
 
-                        <apollo:headline setting="${cms.element.setting}" headline="${content.value.Title}" />
+                        <apollo:headline headline="${content.value.Title}" />
 
                         <div class="visible-xs margin-bottom-20">
                             <a class="btn ap-btn-red"
