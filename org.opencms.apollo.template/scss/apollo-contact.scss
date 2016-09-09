@@ -1,9 +1,46 @@
-.ap-contact .fa {
-	padding-right: 5px;
-	width: 20px;
+.ap-contact {
+    
+    .title, 
+    .org, 
+    .note, 
+    .street-address, 
+    .ap-contact-city, 
+    .ap-contact-street,
+    .ap-contact-phone,
+    .ap-contact-mobie,
+    .ap-contact-fax {
+        // nothing so far
+    }
+    
+    &.ap-contact-onecol {
+        
+        .fn {
+            margin-bottom: 4px;
+        }
+
+        .title {
+            font-style: italic;
+            margin-bottom: 4px;            
+        }
+    }
+    
+    .fa {
+	   padding-right: 5px;
+	   width: 20px;
+	}
+
+    &.ap-contact-muticol {
+        
+        .ap-contact-phone, 
+        .ap-contact-mobile, 
+        .ap-contact-fax, 
+        .ap-contact-email-label {
+            float: left;
+            padding-right: 5px;
+        }
+    }
+
 }
 
-.ap-contact-phone, .ap-contact-mobile, .ap-contact-fax, .ap-contact-email-label {
-	float: left;
-	padding-right: 5px;
-}
+
+
