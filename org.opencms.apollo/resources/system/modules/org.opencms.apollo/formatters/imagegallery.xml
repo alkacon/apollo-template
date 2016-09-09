@@ -6,7 +6,7 @@
     <Type><![CDATA[a-imagegallery]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.extensions/formatters/imagegallery.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/imagegallery.jsp]]></target>
         <uuid>68958b5e-8f73-11e5-9ae7-0242ac11002b</uuid>
       </link>
     </Jsp>

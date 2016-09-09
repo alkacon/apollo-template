@@ -14,7 +14,6 @@
         enddate="${value.EndDate}"
         filename="${content.filename}"
         headline="${value.Title}"
-        settings="${cms.element.settings}"
         text="${content.valueList.Paragraph['0'].value.Text}"
         teaser="${value.Teaser}"
         trimteaser="true"

@@ -6,7 +6,7 @@
     <Type><![CDATA[ugc_config]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/blog_ugc-form.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/blog_ugc-form.jsp]]></target>
         <uuid>d386b894-57ca-11e5-a989-0242ac11002b</uuid>
       </link>
     </Jsp>
@@ -72,7 +72,7 @@
       </JavascriptLink>
       <JavascriptLink>
         <link type="WEAK">
-          <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/resources/js/ugc/ugc-blog.js]]></target>
+          <target><![CDATA[/system/modules/org.opencms.apollo/resources/js/ugc/ugc-blog.js]]></target>
           <uuid>430ae385-57cc-11e5-a989-0242ac11002b</uuid>
         </link>
       </JavascriptLink>

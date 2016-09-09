@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="de">
@@ -16,7 +16,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloTab.GalleryTitle.help]]></Key>
-      <Value><![CDATA[Der Titel des Reiters für die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
+      <Value><![CDATA[Der Titel des Reiters fï¿½r die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloTab.Label]]></Key>
@@ -24,7 +24,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloTab.Label.help]]></Key>
-      <Value><![CDATA[Bitte geben Sie einen Namen für den Reiter ein. Verwenden Sie Templatezeilen, um Inhalte in den Reiter ziehen zu können.]]></Value>
+      <Value><![CDATA[Bitte geben Sie einen Namen fï¿½r den Reiter ein. Verwenden Sie Templatezeilen, um Inhalte in den Reiter ziehen zu kï¿½nnen.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.tabs.default.Title]]></Key>
@@ -36,7 +36,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.tabs.default.Headline]]></Key>
-      <Value><![CDATA[Überschrift]]></Value>
+      <Value><![CDATA[ï¿½berschrift]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.tabs.default.Text]]></Key>

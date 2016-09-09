@@ -8,7 +8,7 @@
     <Type><![CDATA[a-event]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-image.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/section-image.jsp]]></target>
         <uuid>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuid>
       </link>
     </Jsp>

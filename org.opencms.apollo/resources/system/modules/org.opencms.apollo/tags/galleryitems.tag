@@ -12,6 +12,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo"%>
 
@@ -36,13 +37,13 @@
 						   href="${imagesrc}" 
 						   onclick="openGallery(event, ${status.index+count*(page-1)})" 
 						   title="${not titleEmpty ? title : ''}${titleEmpty or copyEmpty  ? '' : ' '}${not copyEmpty ? copyright : ''}"> 
-							<div class="ap-square-section" style="background-image:url('${imagesrc}');">
-								<div class="zoom-overlay">
-									<div class="zoom-icon">
+							<span class="ap-square-section" style="background-image:url('${imagesrc}');">
+								<span class="zoom-overlay">
+									<span class="zoom-icon">
 										<i class="fa fa-search"></i>
-									</div>
-								</div>
-							</div>
+									</span>
+								</span>
+							</span>
 						</a>
 					</div>
 				</c:forEach>
@@ -55,7 +56,10 @@
 			</c:if>
 		</c:when>
 		<c:otherwise>
-			<fmt:message key="website.imagegallery.message.empty" />
+            <fmt:setLocale value="${cms.locale}" />
+            <cms:bundle basename="org.opencms.apollo.template.schemas.imagegallery">
+                <fmt:message key="apollo.imagegallery.message.empty" />
+            </cms:bundle>
 		</c:otherwise>
 	</c:choose>
 </cms:search>

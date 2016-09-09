@@ -7,12 +7,12 @@
 	</info>
 	<module>
 		<name>org.opencms.apollo</name>
-		<nicename><![CDATA[Apollo Template Main]]></nicename>
+		<nicename><![CDATA[Apollo Template Collection]]></nicename>
 		<group>Apollo Template</group>
 		<class/>
 		<import-site>/</import-site>
 		<export-mode name="reduced"/>
-		<description><![CDATA[The OpenCms 10 Apollo template main module is the base for all other Apollo modules.]]></description>
+		<description><![CDATA[The OpenCms 10 Apollo template collection module contains formatters, localization, schemas and tags for all Apollo type modules.]]></description>
 		<version>10.5.0</version>
 		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
 		<authoremail/>
@@ -41,8 +41,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo</destination>
 			<type>folder</type>
-			<uuidstructure>0174abd9-74fd-11e6-a6f0-0242ac11002b</uuidstructure>
-			<datecreated>Wed, 07 Sep 2016 13:14:28 GMT</datecreated>
+			<uuidstructure>830d7db3-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -51,8 +51,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/elements</destination>
 			<type>folder</type>
-			<uuidstructure>960feca2-8f80-11e5-a6ad-0242ac11002b</uuidstructure>
-			<datecreated>Fri, 20 Nov 2015 12:16:54 GMT</datecreated>
+			<uuidstructure>832b17ee-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -149,8 +149,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/elements/list</destination>
 			<type>folder</type>
-			<uuidstructure>468effb2-7700-11e5-904d-15b01ffdc6a6</uuidstructure>
-			<datecreated>Tue, 20 Oct 2015 07:57:57 GMT</datecreated>
+			<uuidstructure>9129db02-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:43:12 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -180,8 +180,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/formatters</destination>
 			<type>folder</type>
-			<uuidstructure>048850e7-4425-11e6-a8b1-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 07 Jul 2016 09:27:26 GMT</datecreated>
+			<uuidstructure>832fd2e2-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -2672,8 +2672,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/functions</destination>
 			<type>folder</type>
-			<uuidstructure>a30bfd0a-0c44-11e6-bbac-0242ac11002b</uuidstructure>
-			<datecreated>Wed, 27 Apr 2016 06:52:41 GMT</datecreated>
+			<uuidstructure>8358de06-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -2837,8 +2837,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/i18n</destination>
 			<type>folder</type>
-			<uuidstructure>4b7c881b-4425-11e6-a8b1-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 07 Jul 2016 09:29:25 GMT</datecreated>
+			<uuidstructure>8360cd51-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -3034,27 +3034,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.messages</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.messages</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>3c3865cf-515f-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>3c3865d0-515f-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 10:41:57 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Localization for settings]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imagegallery.messages</source>
 			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imagegallery.messages</destination>
 			<type>xmlvfsbundle</type>
@@ -3109,6 +3088,10 @@
 			<datecreated>Thu, 08 Sep 2016 07:05:04 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -3362,23 +3345,6 @@
 					<name>content-encoding</name>
 					<value><![CDATA[ISO-8859-1]]></value>
 				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>bb3179bd-57bf-11e5-a989-0242ac11002b</uuidstructure>
-			<uuidresource>bb3179be-57bf-11e5-a989-0242ac11002b</uuidresource>
-			<datecreated>Thu, 10 Sep 2015 13:27:49 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -3665,8 +3631,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/pages</destination>
 			<type>folder</type>
-			<uuidstructure>9bca2568-515e-11e5-abeb-0242ac11002b</uuidstructure>
-			<datecreated>Wed, 02 Sep 2015 10:37:28 GMT</datecreated>
+			<uuidstructure>8624f64a-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:42:53 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -3696,8 +3662,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/resources</destination>
 			<type>folder</type>
-			<uuidstructure>1ccda2c4-4ff1-11e6-958f-0242ac11002b</uuidstructure>
-			<datecreated>Fri, 22 Jul 2016 09:46:07 GMT</datecreated>
+			<uuidstructure>8627b56e-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:42:53 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -3715,27 +3681,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Descramble functions for email addresses]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/resources/default.png</source>
-			<destination>system/modules/org.opencms.apollo/resources/default.png</destination>
-			<type>image</type>
-			<uuidstructure>59b52296-ecef-11e5-af37-0242ac11002b</uuidstructure>
-			<uuidresource>59b52297-ecef-11e5-af37-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Mar 2016 09:54:05 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Default placeholder image]]></value>
-				</property>
-				<property type="shared">
-					<name>image.size</name>
-					<value><![CDATA[w:640,h:480]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -3804,8 +3749,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/resources/js</destination>
 			<type>folder</type>
-			<uuidstructure>3853a9e1-57cc-11e5-a989-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 10 Sep 2015 14:57:13 GMT</datecreated>
+			<uuidstructure>86289fd0-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:42:53 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -3814,8 +3759,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/resources/js/ugc</destination>
 			<type>folder</type>
-			<uuidstructure>43005c33-57cc-11e5-a989-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 10 Sep 2015 14:57:31 GMT</datecreated>
+			<uuidstructure>8629b142-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:42:53 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -3836,8 +3781,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/schemas</destination>
 			<type>folder</type>
-			<uuidstructure>0489fe99-4425-11e6-a8b1-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 07 Jul 2016 09:27:26 GMT</datecreated>
+			<uuidstructure>836958da-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -4152,8 +4097,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/schemas/nested</destination>
 			<type>folder</type>
-			<uuidstructure>c9c6b28e-4430-11e6-a8b1-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 07 Jul 2016 10:51:41 GMT</datecreated>
+			<uuidstructure>836ba2cd-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -4727,8 +4672,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/templates</destination>
 			<type>folder</type>
-			<uuidstructure>e64171cf-759e-11e6-af22-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 08:33:20 GMT</datecreated>
+			<uuidstructure>8374a385-75d2-11e6-be35-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 14:42:49 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>

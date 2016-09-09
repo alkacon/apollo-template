@@ -9,8 +9,15 @@
 <%@ attribute name="shadowanimation" type="java.lang.Boolean" required="false" %>
 <%@ attribute name="imageanimation" type="java.lang.Boolean" required="false" %>
 
+<%@ variable name-given="imageLink" declare="true" %>
+<%@ variable name-given="imageUnscaledLink" declare="true" %>
+<%@ variable name-given="imageCopyright" declare="true" %>
+<%@ variable name-given="imageTitle" declare="true" %>
+<%@ variable name-given="imageTitleCopyright" declare="true" %>
+
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <c:if test="${image.isSet}">
@@ -52,10 +59,14 @@
 </c:if>
 
 <c:if test="${empty imagefound}">
+	<fmt:setLocale value="${cms.locale}" />
+	<cms:bundle basename="org.opencms.apollo.template.formatters.messages">
+    
     <div class="alert">
         <fmt:message key="no.image" />
     </div>
 
+	</cms:bundle>
     <%-- ####### JSP body inserted here ######## --%>
     <jsp:doBody/>
     <%-- ####### JSP body inserted here ######## --%>

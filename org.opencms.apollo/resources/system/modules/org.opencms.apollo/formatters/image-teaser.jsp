@@ -15,7 +15,7 @@
         image="${value.Image}"
         divstyle="thumbnail-style"
         shadowanimation="${cms.element.setting.showShadow.value}"
-        imageanimation="false"
+        imageanimation="${cms.element.setting.showKenburn.value}"
     >
 
     <div class="thumbnail-kenburn">
@@ -23,11 +23,12 @@
         <apollo:link link="${value.Link}" linkclass="btn-more hover-effect" linktext="${linktext}" />
     </div>
     
-    <c:if test="${cms.element.settings.showCopy and not empty imageCopyright}">
-        <div class="info">
-            <p class="copyright"><i>${imageCopyright}</i></p>
-        </div>
-    </c:if>
+    <c:if test="${cms.element.setting.showCopy.value and not empty imageCopyright}">
+       	<div class="info">
+           	<p class="copyright"><i>${imageCopyright}</i></p>
+       	</div>
+   	</c:if>
+
     <div class="caption">
         <h3>
             <apollo:link link="${value.Link}">

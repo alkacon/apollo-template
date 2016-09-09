@@ -6,7 +6,7 @@
     <Type><![CDATA[a-sliderextended]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.extensions/formatters/slider-complex.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/slider-complex.jsp]]></target>
         <uuid>9e325ab7-56ce-11e5-bfd9-0242ac11002b</uuid>
       </link>
     </Jsp>
@@ -26,7 +26,7 @@
     <HeadIncludeCss>
       <CssLink>
         <link type="WEAK">
-          <target><![CDATA[/system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/css/settings.css]]></target>
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/css/settings.css]]></target>
           <uuid>66da3603-7ccb-11e5-8038-0242ac11002b</uuid>
         </link>
       </CssLink>
@@ -34,13 +34,13 @@
     <HeadIncludeJs>
       <JavascriptLink>
         <link type="WEAK">
-          <target><![CDATA[/system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js]]></target>
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js]]></target>
           <uuid>678ae88a-7ccb-11e5-8038-0242ac11002b</uuid>
         </link>
       </JavascriptLink>
       <JavascriptLink>
         <link type="WEAK">
-          <target><![CDATA[/system/modules/org.opencms.apollo.template.basics/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js]]></target>
+          <target><![CDATA[/system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js]]></target>
           <uuid>67806138-7ccb-11e5-8038-0242ac11002b</uuid>
         </link>
       </JavascriptLink>

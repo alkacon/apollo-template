@@ -6,7 +6,7 @@
     <Description><![CDATA[Provides information about the OpenCms version and the login URL.]]></Description>
     <FunctionProvider>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/elements/opencms-info.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/functions/opencms-info.jsp]]></target>
         <uuid>4a9ba033-6063-11e5-9199-0242ac11002b</uuid>
       </link>
     </FunctionProvider>

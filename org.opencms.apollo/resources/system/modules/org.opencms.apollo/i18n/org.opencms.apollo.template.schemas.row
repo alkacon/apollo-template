@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -154,7 +154,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloTemplateRow.Title.help]]></Key>
-      <Value><![CDATA[Der Titel für diese Zeile.]]></Value>
+      <Value><![CDATA[Der Titel fï¿½r diese Zeile.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloTemplateRow.Column]]></Key>
@@ -194,7 +194,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloRowColumn.Editors.help]]></Key>
-      <Value><![CDATA[Stellt die Benutzer ein, die diese Spalte bearbeiten können.]]></Value>
+      <Value><![CDATA[Stellt die Benutzer ein, die diese Spalte bearbeiten kï¿½nnen.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloRowColumn.EmptyText]]></Key>
@@ -202,7 +202,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloRowColumn.EmptyText.help]]></Key>
-      <Value><![CDATA[Dieser Text wird angezeigt, wenn diese Spalte keine Inhaltselemente enthält.]]></Value>
+      <Value><![CDATA[Dieser Text wird angezeigt, wenn diese Spalte keine Inhaltselemente enthï¿½lt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloRowColumn.Grid]]></Key>
@@ -218,7 +218,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloRowColumn.Modifier.help]]></Key>
-      <Value><![CDATA[Optionale CSS Klasse, die z.B. zum Ändern der Reihenfolge der Spalte verwendet werden kann. Die Verwendung muss in den Elementeinstellungen aktiviert werden.]]></Value>
+      <Value><![CDATA[Optionale CSS Klasse, die z.B. zum ï¿½ndern der Reihenfolge der Spalte verwendet werden kann. Die Verwendung muss in den Elementeinstellungen aktiviert werden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.row.default.Title]]></Key>
@@ -274,11 +274,11 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.row.for]]></Key>
-      <Value><![CDATA[Für:]]></Value>
+      <Value><![CDATA[Fï¿½r:]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.row.detailonly]]></Key>
-      <Value><![CDATA[Nur für Detailseiten]]></Value>
+      <Value><![CDATA[Nur fï¿½r Detailseiten]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.row.detailview]]></Key>

@@ -6,7 +6,7 @@
     <Type><![CDATA[a-section]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo.template.formatters/formatters/section-iconbox.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/section-iconbox.jsp]]></target>
         <uuid>34e3840f-eaaf-11e5-99f8-0242ac11002b</uuid>
       </link>
     </Jsp>

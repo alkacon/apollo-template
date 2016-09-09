@@ -15,7 +15,6 @@
         filename="${content.filename}"
         headline="${value.Title}"
         location="${value.Location}"
-        settings="${cms.element.settings}"
         text="${content.valueList.Text['0'].value.Text}"
         teaser="${value.Introduction.value.Text}"
         trimteaser="true"
