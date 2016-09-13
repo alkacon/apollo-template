@@ -54,6 +54,9 @@ function appendInnerList(searchStateParameters, elem) {
 					elem.find('.pagination').remove();
 					$(resultList).filter(".list-entry").appendTo(elem.find('.entrylist_box'));
 					$(resultList).filter(".pagination").appendTo(elem.find('.pagination_box'));
+					if($(resultList).filter(".pagination").length == 0){
+						elem.find('.pagination_box').css("min-height","0");
+					}
 					spinner.removeClass("bounceIn").addClass("bounceOut");
 					_OpenCmsReinitEditButtons();
 					list_lock[elem.attr("id")] = false;
