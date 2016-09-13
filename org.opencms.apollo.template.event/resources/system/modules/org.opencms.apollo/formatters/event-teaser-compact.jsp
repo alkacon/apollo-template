@@ -25,3 +25,4 @@
 	
 	</apollo:init-messages>
 </cms:formatter>
+</cms:bundle>
