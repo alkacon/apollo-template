@@ -67,7 +67,7 @@ function appendInnerList(searchStateParameters, elem) {
 function buildAjaxLink(elem){
 	var params = "?contentpath=" + elem.data("path") + "&teaserlength=" + elem.data("teaser") 
 						+ "&buttoncolor=" + elem.data("color") + "&showexpired=" + elem.data("expired")
-						+ "&sitepath=" + elem.data("sitepath");
+						+ "&sitepath=" + elem.data("sitepath") + "&showdate=" + elem.data("showdate");
 	var facets = $("#listoption_box-" + elem.data("id"));
 	if(facets.length != 0){
 		params = params + "&facets=" + facets.data("facets");

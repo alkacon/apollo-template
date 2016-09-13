@@ -6,6 +6,7 @@
 		.ap-event-cal {
 			transform: scale(1) rotate(0);
 			transition: 1s all;
+			min-width: 90px;
 		}
 
 		&:hover .ap-event-cal {
