@@ -57,7 +57,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<dependency name="org.opencms.apollo.template.flexible" version="10.5.0"/>
 			<dependency name="org.opencms.apollo.template.imagegallery" version="10.5.0"/>
 			<dependency name="org.opencms.apollo.template.job" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.layout" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.core" version="10.5.0"/>
 			<dependency name="org.opencms.apollo.template.linksequence" version="10.5.0"/>
 			<dependency name="org.opencms.apollo.template.list" version="10.5.0"/>
 			<dependency name="org.opencms.apollo.template.map" version="10.5.0"/>

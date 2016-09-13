@@ -1,0 +1,1778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<infoproject>Offline</infoproject>
+		<export_version>10</export_version>
+	</info>
+	<module>
+		<name>org.opencms.apollo.template.core</name>
+		<nicename><![CDATA[Apollo Template Core]]></nicename>
+		<group>Apollo Template</group>
+		<class/>
+		<import-site>/</import-site>
+		<export-mode name="reduced"/>
+		<description><![CDATA[The OpenCms 10 Apollo template core module contains the main template and essential resource types.]]></description>
+		<version>10.5.0</version>
+		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
+		<authoremail/>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies>
+			<dependency name="org.opencms.apollo.template.theme.unify" version="10.5.0"/>
+		</dependencies>
+		<exportpoints>
+			<exportpoint uri="/system/modules/org.opencms.apollo/tags/" destination="WEB-INF/tags/apollo/"/>
+		</exportpoints>
+		<resources>
+			<resource uri="/system/modules/org.opencms.apollo.template.core/"/>
+			<resource uri="/system/modules/org.opencms.apollo/elements/generate-random-content.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/image-animation.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/image-animation.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/image-enlarge.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/image-enlarge.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/image-link-box.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/image-link-box.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/image-teaser.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/image-teaser.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/jsp-search.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/jsp-search.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/layoutrow.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/layoutrow.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/section-headline.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/section-headline.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/section-iconbox.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/section-iconbox.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/section-image.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/section-image.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/section-jumbotron.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/section-jumbotron.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/section-text.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/section-text.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/section-tile.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/section-tile.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/functions/login.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/functions/login.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/functions/opencms-info.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/functions/opencms-info.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.jsp-search-formatter"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.core.messages"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.login"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.row"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.section"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/layoutrow.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/section.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/availability.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/image.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/link.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/paragraph.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/rowcolumn.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/categorylist.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/contact.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/container-box.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/copyright.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/gallerydata.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/galleryitems.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/headline.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/image-kenburn-new.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/image-kenburn.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/image-simple.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/image-vars.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/image-zoom.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/init-messages.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/link.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/linksequence.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/obfuscate-email.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/paragraph.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/teaserbody.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/text.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/templates/apollo-page.jsp"/>
+			<resource uri="/system/workplace/resources/filetypes/a-section.png"/>
+			<resource uri="/system/workplace/resources/filetypes/a-section_big.png"/>
+			<resource uri="/system/workplace/resources/filetypes/a-templaterow.png"/>
+			<resource uri="/system/workplace/resources/filetypes/a-templaterow_big.png"/>
+		</resources>
+		<excluderesources/>
+		<parameters/>
+		<resourcetypes>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-templaterow" id="450">
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/layoutrow.xsd</param>
+			</type>
+			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-section" id="464">
+				<param name="schema">/system/modules/org.opencms.apollo/schemas/section.xsd</param>
+			</type>
+		</resourcetypes>
+		<explorertypes>
+			<explorertype name="a-menu" key="fileicon.a-menu" icon="a-menu.png" reference="xmlcontent">
+				<newresource uri="newresource.jsp?page=a-menu" order="12" autosetnavigation="false" autosettitle="false" info="desc.a-menu"/>
+			</explorertype>
+			<explorertype name="a-templaterow" key="fileicon.a-templaterow" icon="a-templaterow.png" bigicon="a-templaterow_big.png" reference="xmlcontent">
+				<newresource page="a-menu" uri="newresource_xmlcontent.jsp?newresourcetype=a-templaterow" order="10" autosetnavigation="false" autosettitle="false" info="desc.a-templaterow" key="title.a-templaterow"/>
+			</explorertype>
+			<explorertype name="a-section" key="fileicon.a-section" icon="a-section.png" bigicon="a-section_big.png" reference="xmlcontent">
+				<newresource page="a-menu" uri="newresource_xmlcontent.jsp?newresourcetype=a-section" order="10" autosetnavigation="false" autosettitle="false" info="desc.a-section" key="title.a-section"/>
+			</explorertype>
+		</explorertypes>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.core</destination>
+			<type>folder</type>
+			<uuidstructure>fb3227d1-758f-11e6-861e-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 08 Sep 2016 06:46:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.core/.config</source>
+			<destination>system/modules/org.opencms.apollo.template.core/.config</destination>
+			<type>module_config</type>
+			<uuidstructure>403e7319-7595-11e6-861e-0242ac11002b</uuidstructure>
+			<uuidresource>403e731a-7595-11e6-861e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 07:24:16 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.core/configuration</destination>
+			<type>folder</type>
+			<uuidstructure>869bdbb5-5dd0-11e5-96ab-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 18 Sep 2015 06:43:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.core/configuration/master</source>
+			<destination>system/modules/org.opencms.apollo.template.core/configuration/master</destination>
+			<type>sitemap_master_config</type>
+			<uuidstructure>9884d829-5dd8-11e5-96ab-0242ac11002b</uuidstructure>
+			<uuidresource>9884d82a-5dd8-11e5-96ab-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Sep 2015 07:40:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.core/elementviews</destination>
+			<type>folder</type>
+			<uuidstructure>26ab994a-5241-11e5-9495-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 03 Sep 2015 13:39:07 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.core/elementviews/template.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.core/elementviews/template.xml</destination>
+			<type>elementview</type>
+			<uuidstructure>32419a2c-5241-11e5-9495-0242ac11002b</uuidstructure>
+			<uuidresource>32419a2d-5241-11e5-9495-0242ac11002b</uuidresource>
+			<datecreated>Thu, 03 Sep 2015 13:39:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Template]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[true]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>OVERWRITE_ALL</uuidprincipal>
+					<flags>256</flags>
+					<permissionset>
+						<allowed>0</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+				<accessentry>
+					<uuidprincipal>ROLE.EDITOR</uuidprincipal>
+					<flags>512</flags>
+					<permissionset>
+						<allowed>5</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.core/models</destination>
+			<type>folder</type>
+			<uuidstructure>9dcb119c-ecf2-11e5-af37-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 18 Mar 2016 10:17:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.template.core/models/section</destination>
+			<type>folder</type>
+			<uuidstructure>abc456de-ecf2-11e5-af37-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 18 Mar 2016 10:17:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.core/models/section/cs_00001.xml</source>
+			<destination>system/modules/org.opencms.apollo.template.core/models/section/cs_00001.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>ca156ad0-ecf2-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>ca156ad1-ecf2-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Mar 2016 10:18:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Sample text with image for direct editing]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Default placeholder text]]></value>
+				</property>
+				<property>
+					<name>element.model</name>
+					<value><![CDATA[true]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/elements</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/elements/generate-random-content.jsp</source>
+			<destination>system/modules/org.opencms.apollo/elements/generate-random-content.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>61017cab-6775-11e5-891f-0242ac11002b</uuidstructure>
+			<uuidresource>61017cac-6775-11e5-891f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 30 Sep 2015 13:15:54 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Generates a number of resources with random title]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/formatters</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/image-animation.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/image-animation.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>cb40276e-5c7b-11e5-96ab-0242ac11002b</uuidstructure>
+			<uuidresource>cb40276f-5c7b-11e5-96ab-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Sep 2015 14:04:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image with animation formatter JSP]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/image-animation.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/image-animation.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>cb455793-5c7b-11e5-96ab-0242ac11002b</uuidstructure>
+			<uuidresource>cb455794-5c7b-11e5-96ab-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Sep 2015 14:04:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image only with animation effect]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/image-enlarge.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/image-enlarge.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>ce88186c-5bb2-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>ce88186d-5bb2-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 14:05:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image with zoom formatter JSP]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/image-enlarge.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/image-enlarge.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>18c11a42-5bb3-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>18c11a43-5bb3-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 14:07:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image only with zoom option]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/image-link-box.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/image-link-box.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>29ee38a6-5563-11e6-958f-0242ac11002b</uuidstructure>
+			<uuidresource>29ee38a7-5563-11e6-958f-0242ac11002b</uuidresource>
+			<datecreated>Fri, 29 Jul 2016 08:05:07 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image as link box formatter JSP]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/image-link-box.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/image-link-box.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>259e1860-5563-11e6-958f-0242ac11002b</uuidstructure>
+			<uuidresource>259e1861-5563-11e6-958f-0242ac11002b</uuidresource>
+			<datecreated>Fri, 29 Jul 2016 08:05:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image as link box]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/image-teaser.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/image-teaser.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>bb70715c-6db7-11e6-8c8e-0242ac11002b</uuidstructure>
+			<uuidresource>bb70715d-6db7-11e6-8c8e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 29 Aug 2016 07:10:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image as teaser formatter JSP]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/image-teaser.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/image-teaser.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>bb7a8381-6db7-11e6-8c8e-0242ac11002b</uuidstructure>
+			<uuidresource>bb7a8382-6db7-11e6-8c8e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 29 Aug 2016 07:10:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image as teaser]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/jsp-search.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/jsp-search.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>5e1b9b1c-5baf-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>5e1b9b1d-5baf-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 13:40:46 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for search]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/jsp-search.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/jsp-search.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>5e144816-5baf-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>5e144817-5baf-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 13:40:46 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Standard Search]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/layoutrow.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/layoutrow.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>d652a05d-523d-11e5-9495-0242ac11002b</uuidstructure>
+			<uuidresource>d652a05e-523d-11e5-9495-0242ac11002b</uuidresource>
+			<datecreated>Thu, 03 Sep 2015 13:15:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for Layout Row]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[uri;container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/layoutrow.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/layoutrow.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>d65670f0-523d-11e5-9495-0242ac11002b</uuidstructure>
+			<uuidresource>d65670f1-523d-11e5-9495-0242ac11002b</uuidresource>
+			<datecreated>Thu, 03 Sep 2015 13:15:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Standard Layout Row]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/section-headline.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/section-headline.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>2616d23e-eb7c-11e5-854f-0242ac11002b</uuidstructure>
+			<uuidresource>2616d23f-eb7c-11e5-854f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 13:36:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for content section headline only]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/section-headline.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/section-headline.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>261ffa03-eb7c-11e5-854f-0242ac11002b</uuidstructure>
+			<uuidresource>261ffa04-eb7c-11e5-854f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 13:36:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline only (direct)]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/section-iconbox.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/section-iconbox.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>34e3840f-eaaf-11e5-99f8-0242ac11002b</uuidstructure>
+			<uuidresource>34e38410-eaaf-11e5-99f8-0242ac11002b</uuidresource>
+			<datecreated>Wed, 09 Sep 2015 14:12:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for content section as icon box]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/section-iconbox.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/section-iconbox.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>34e11309-eaaf-11e5-99f8-0242ac11002b</uuidstructure>
+			<uuidresource>34e1130a-eaaf-11e5-99f8-0242ac11002b</uuidresource>
+			<datecreated>Wed, 09 Sep 2015 14:12:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Icon Box layout]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/section-image.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/section-image.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>1106ba60-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 15:40:18 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for content section image only]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/section-image.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/section-image.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>3677fe85-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 15:41:21 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image only (direct)]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/section-jumbotron.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/section-jumbotron.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>34e7efea-eaaf-11e5-99f8-0242ac11002b</uuidstructure>
+			<uuidresource>34e7efeb-eaaf-11e5-99f8-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 07:46:18 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for content section as jumbotron]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/section-jumbotron.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/section-jumbotron.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>34e5cd04-eaaf-11e5-99f8-0242ac11002b</uuidstructure>
+			<uuidresource>34e5cd05-eaaf-11e5-99f8-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 07:46:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Jumbotron layout]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/section-text.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/section-text.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>fca41839-eb7d-11e5-854f-0242ac11002b</uuidstructure>
+			<uuidresource>fca4183a-eb7d-11e5-854f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 13:50:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for content section text only]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/section-text.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/section-text.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>fcab1d1e-eb7d-11e5-854f-0242ac11002b</uuidstructure>
+			<uuidresource>fcab1d1f-eb7d-11e5-854f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Mar 2016 13:50:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Text only (direct)]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/section-tile.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/section-tile.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>852a429b-1ce0-11e6-b998-0242ac11002b</uuidstructure>
+			<uuidresource>852a429c-1ce0-11e6-b998-0242ac11002b</uuidresource>
+			<datecreated>Wed, 18 May 2016 10:08:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for content section as tile or square]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/section-tile.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/section-tile.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>20b3c3df-1ce1-11e6-b998-0242ac11002b</uuidstructure>
+			<uuidresource>20b3c3e0-1ce1-11e6-b998-0242ac11002b</uuidresource>
+			<datecreated>Wed, 18 May 2016 10:13:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Section as square tile]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/functions</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/functions/login.jsp</source>
+			<destination>system/modules/org.opencms.apollo/functions/login.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>2e7c3a29-6063-11e5-9199-0242ac11002b</uuidstructure>
+			<uuidresource>2e7c3a2a-6063-11e5-9199-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Sep 2015 13:18:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Login element]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/functions/login.xml</source>
+			<destination>system/modules/org.opencms.apollo/functions/login.xml</destination>
+			<type>function</type>
+			<uuidstructure>38741b6d-6063-11e5-9199-0242ac11002b</uuidstructure>
+			<uuidresource>38741b6e-6063-11e5-9199-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Sep 2015 13:18:16 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Provides a login form functionality.]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Login form]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/functions/opencms-info.jsp</source>
+			<destination>system/modules/org.opencms.apollo/functions/opencms-info.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>4a9ba033-6063-11e5-9199-0242ac11002b</uuidstructure>
+			<uuidresource>4a9ba034-6063-11e5-9199-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Sep 2015 13:18:47 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms Information element]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;user]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/functions/opencms-info.xml</source>
+			<destination>system/modules/org.opencms.apollo/functions/opencms-info.xml</destination>
+			<type>function</type>
+			<uuidstructure>40dbbec1-6063-11e5-9199-0242ac11002b</uuidstructure>
+			<uuidresource>40dbbec2-6063-11e5-9199-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Sep 2015 13:18:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Provides information about the OpenCms version and the login URL.]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms Info]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/i18n</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.core.messages</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.core.messages</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>9144aa54-7592-11e6-861e-0242ac11002b</uuidstructure>
+			<uuidresource>9144aa55-7592-11e6-861e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 07:05:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.jsp-search-formatter</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.jsp-search-formatter</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>16392199-5bb1-11e5-8f8e-0242ac11002b</uuidstructure>
+			<uuidresource>1639219a-5bb1-11e5-8f8e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 15 Sep 2015 13:53:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Message bundle used in the default formatter for the search form.]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.login</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.login</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>16f9526a-6134-11e5-bcba-0242ac11002b</uuidstructure>
+			<uuidresource>16f9526b-6134-11e5-bcba-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Sep 2015 14:13:25 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.row</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.row</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>34ee3907-5240-11e5-9495-0242ac11002b</uuidstructure>
+			<uuidresource>34ee3908-5240-11e5-9495-0242ac11002b</uuidresource>
+			<datecreated>Thu, 03 Sep 2015 13:32:22 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.section</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.section</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>44b45c49-557a-11e5-8d6b-0242ac11002b</uuidstructure>
+			<uuidresource>44b45c4a-557a-11e5-8d6b-0242ac11002b</uuidresource>
+			<datecreated>Mon, 07 Sep 2015 16:05:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/schemas</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/layoutrow.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/layoutrow.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>9be1aaee-759a-11e6-861e-0242ac11002b</uuidstructure>
+			<uuidresource>9be1aaef-759a-11e6-861e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 08:02:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[XSD for a layout row]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/schemas/nested</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/availability.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/availability.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>7a137af2-7596-11e6-861e-0242ac11002b</uuidstructure>
+			<uuidresource>7a137af3-7596-11e6-861e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 07:33:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for availabilty settings]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/image.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/image.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>a6d73215-7590-11e6-861e-0242ac11002b</uuidstructure>
+			<uuidresource>a6d73216-7590-11e6-861e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 06:51:21 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for an image]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/link.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/link.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>7eeaead7-7510-11e6-afc1-0242ac11002b</uuidstructure>
+			<uuidresource>7eeaead8-7510-11e6-afc1-0242ac11002b</uuidresource>
+			<datecreated>Wed, 07 Sep 2016 15:33:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for a link]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/paragraph.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/paragraph.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>ee2ea6ca-7510-11e6-afc1-0242ac11002b</uuidstructure>
+			<uuidresource>ee2ea6cb-7510-11e6-afc1-0242ac11002b</uuidresource>
+			<datecreated>Wed, 07 Sep 2016 15:37:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for a paragraph]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/rowcolumn.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/rowcolumn.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>6ea1d8c9-759b-11e6-861e-0242ac11002b</uuidstructure>
+			<uuidresource>6ea1d8ca-759b-11e6-861e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 08:08:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for a template row column]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/section.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/section.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>7771c880-5578-11e5-8d6b-0242ac11002b</uuidstructure>
+			<uuidresource>7771c881-5578-11e5-8d6b-0242ac11002b</uuidresource>
+			<datecreated>Mon, 07 Sep 2015 15:52:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[XSD for a content section]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/tags</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/categorylist.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/categorylist.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>aa51c2fe-74e0-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>aa51c2ff-74e0-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Wed, 07 Sep 2016 09:51:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Category list tag]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/contact.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/contact.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>56a920cd-78bf-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>56a920ce-78bf-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Mon, 12 Sep 2016 08:03:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Shows contact information in hCard microformat]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/container-box.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/container-box.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>53d77972-d661-11e5-b10a-0242ac11002b</uuidstructure>
+			<uuidresource>53d77973-d661-11e5-b10a-0242ac11002b</uuidresource>
+			<datecreated>Thu, 18 Feb 2016 17:02:01 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Container box tag]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/copyright.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/copyright.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>bd9ec393-5946-11e6-958f-0242ac11002b</uuidstructure>
+			<uuidresource>bd9ec394-5946-11e6-958f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 03 Aug 2016 06:51:44 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Copyright tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/gallerydata.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/gallerydata.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>15e48a28-58b6-11e6-958f-0242ac11002b</uuidstructure>
+			<uuidresource>15e48a29-58b6-11e6-958f-0242ac11002b</uuidresource>
+			<datecreated>Tue, 02 Aug 2016 13:36:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image-Gallery tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/galleryitems.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/galleryitems.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>0531d024-595d-11e6-958f-0242ac11002b</uuidstructure>
+			<uuidresource>0531d025-595d-11e6-958f-0242ac11002b</uuidresource>
+			<datecreated>Wed, 03 Aug 2016 09:31:13 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Gallery items search and display tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/headline.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/headline.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>6f381bec-21a4-11e6-b129-0242ac11002b</uuidstructure>
+			<uuidresource>6f381bed-21a4-11e6-b129-0242ac11002b</uuidresource>
+			<datecreated>Tue, 24 May 2016 11:41:20 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Headline formatting tag]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/image-kenburn-new.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/image-kenburn-new.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>639a9c12-74dd-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>639a9c13-74dd-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Wed, 07 Sep 2016 09:28:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA["Ken Burns" effect image formatting tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/image-kenburn.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/image-kenburn.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>91442471-21c3-11e6-b129-0242ac11002b</uuidstructure>
+			<uuidresource>91442472-21c3-11e6-b129-0242ac11002b</uuidresource>
+			<datecreated>Tue, 24 May 2016 15:24:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA["Ken Burns" effect image formatting tag]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/image-simple.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/image-simple.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>5cfd5f5c-21a8-11e6-b129-0242ac11002b</uuidstructure>
+			<uuidresource>5cfd5f5d-21a8-11e6-b129-0242ac11002b</uuidresource>
+			<datecreated>Tue, 24 May 2016 12:09:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Simple image formatting tag]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/image-vars.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/image-vars.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>d595a379-ecfe-11e5-af37-0242ac11002b</uuidstructure>
+			<uuidresource>d595a37a-ecfe-11e5-af37-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Mar 2016 11:44:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image variable access tag]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/image-zoom.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/image-zoom.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>af4fd7f8-3157-11e6-be98-0242ac11002b</uuidstructure>
+			<uuidresource>af4fd7f9-3157-11e6-be98-0242ac11002b</uuidresource>
+			<datecreated>Mon, 13 Jun 2016 11:12:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image enlarge tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/init-messages.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/init-messages.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>6ba4c1f6-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
+			<uuidresource>6ba4c1f7-3dc5-11e6-b70e-0242ac11002b</uuidresource>
+			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tag inserting InMemoryOnly and EditContent messages]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/link.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/link.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>27b8c3ad-4291-11e6-a4ea-0242ac11002b</uuidstructure>
+			<uuidresource>27b8c3ae-4291-11e6-a4ea-0242ac11002b</uuidresource>
+			<datecreated>Tue, 05 Jul 2016 09:16:28 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Link display tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/linksequence.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/linksequence.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>bf62bbc6-7377-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>bf62bbc7-7377-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Mon, 05 Sep 2016 14:48:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Link sequence tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/obfuscate-email.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/obfuscate-email.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>f213d846-768a-11e6-af54-0242ac11002b</uuidstructure>
+			<uuidresource>f213d847-768a-11e6-af54-0242ac11002b</uuidresource>
+			<datecreated>Fri, 09 Sep 2016 12:43:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Obfuscates an Email address]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/paragraph.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/paragraph.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>70e47785-2967-11e6-8c7a-0242ac11002b</uuidstructure>
+			<uuidresource>70e47786-2967-11e6-8c7a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 03 Jun 2016 08:44:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Paragraph display tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/teaserbody.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/teaserbody.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>da3ba0ba-742d-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>da3ba0bb-742d-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Tue, 06 Sep 2016 12:31:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Teaser body tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/text.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/text.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>69100a50-21a8-11e6-b129-0242ac11002b</uuidstructure>
+			<uuidresource>69100a51-21a8-11e6-b129-0242ac11002b</uuidresource>
+			<datecreated>Tue, 24 May 2016 12:09:48 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Text formatting tag]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/templates</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/templates/apollo-page.jsp</source>
+			<destination>system/modules/org.opencms.apollo/templates/apollo-page.jsp</destination>
+			<type>containerpage_template</type>
+			<uuidstructure>e6436da1-759e-11e6-af22-0242ac11002b</uuidstructure>
+			<uuidresource>e6436da2-759e-11e6-af22-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 08:33:20 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo Page]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[uri;locale]]></value>
+				</property>
+				<property>
+					<name>template</name>
+					<value><![CDATA[/system/modules/org.opencms.apollo.template.basics/resources/css/style-editor.css]]></value>
+				</property>
+				<property>
+					<name>template.provider</name>
+					<value><![CDATA[provider=org.opencms.loader.CmsDefaultTemplateContextProvider,template=%(templatepath)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/filetypes</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-section.png</source>
+			<destination>system/workplace/resources/filetypes/a-section.png</destination>
+			<type>image</type>
+			<uuidstructure>7795cb43-5578-11e5-8d6b-0242ac11002b</uuidstructure>
+			<uuidresource>97b51f30-55fb-11e5-8d6b-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 07:31:17 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-section_big.png</source>
+			<destination>system/workplace/resources/filetypes/a-section_big.png</destination>
+			<type>image</type>
+			<uuidstructure>779a5f27-5578-11e5-8d6b-0242ac11002b</uuidstructure>
+			<uuidresource>a25b8ff5-55fb-11e5-8d6b-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 07:31:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-templaterow.png</source>
+			<destination>system/workplace/resources/filetypes/a-templaterow.png</destination>
+			<type>image</type>
+			<uuidstructure>d63d438e-523d-11e5-9495-0242ac11002b</uuidstructure>
+			<uuidresource>f4c7b72e-523d-11e5-9495-0242ac11002b</uuidresource>
+			<datecreated>Thu, 03 Sep 2015 13:16:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:16,h:16]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/filetypes/a-templaterow_big.png</source>
+			<destination>system/workplace/resources/filetypes/a-templaterow_big.png</destination>
+			<type>image</type>
+			<uuidstructure>d6416242-523d-11e5-9495-0242ac11002b</uuidstructure>
+			<uuidresource>02c34663-523e-11e5-9495-0242ac11002b</uuidresource>
+			<datecreated>Thu, 03 Sep 2015 13:16:39 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:24,h:24]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>

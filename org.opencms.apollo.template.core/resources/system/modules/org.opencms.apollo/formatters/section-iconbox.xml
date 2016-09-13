@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Icon Box layout]]></NiceName>
+    <Type><![CDATA[a-section]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/section-iconbox.jsp]]></target>
+        <uuid>34e3840f-eaaf-11e5-99f8-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[5000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[element]]></ContainerType>
+        <ContainerType><![CDATA[section]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>true</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>false</Detail>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.iconbox)]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[iconclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.iconclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.iconclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.icon:
+        info:%(key.apollo.setting.iconclass.info)|
+        lightbulb-o:%(key.apollo.setting.iconclass.lightbulb)|
+        link:%(key.apollo.setting.iconclass.link)|
+        tag:%(key.apollo.setting.iconclass.tag)|
+        cloud-download:%(key.apollo.setting.iconclass.download)|
+        file:%(key.apollo.setting.iconclass.file)|
+        file-pdf-o:%(key.apollo.setting.iconclass.pdf)|
+        file-word-o:%(key.apollo.setting.iconclass.word)|
+        file-archive-o:%(key.apollo.setting.iconclass.archive)|
+        check:%(key.apollo.setting.iconclass.check)|
+        angle-double-left:%(key.apollo.setting.iconclass.angleleft))]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

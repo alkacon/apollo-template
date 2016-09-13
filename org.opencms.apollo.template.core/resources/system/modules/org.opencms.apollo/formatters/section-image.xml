@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Image only (direct)]]></NiceName>
+    <Type><![CDATA[a-section]]></Type>
+    <Type><![CDATA[a-blog]]></Type>
+    <Type><![CDATA[a-event]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/section-image.jsp]]></target>
+        <uuid>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[5500]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[element]]></ContainerType>
+        <ContainerType><![CDATA[section]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>false</SearchContent>
+    <AutoEnabled>false</AutoEnabled>
+    <Detail>false</Detail>
+    <Display>false</Display>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[istyle]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.style.label)]]></DisplayName>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[ap-img-v0]]></Default>
+      <WidgetConfig><![CDATA[
+        ap-img-v0:%(key.apollo.section.image.style.plain)|
+        ap-img-v1:%(key.apollo.section.image.style.boldtitle)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[ieffect]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[none]]></Default>
+      <WidgetConfig><![CDATA[
+        none:%(key.apollo.section.image.effect.none)|
+        ap-shadow:%(key.apollo.section.image.effect.shadow)|    
+        bo-radius-10:%(key.apollo.section.image.effect.roundcorners)|
+        bo-radius-50p:%(key.apollo.section.image.effect.vignette)|
+        bo-1 bo-grey-lightest p-3:%(key.apollo.section.image.effect.bordered)|
+        bo-1 bo-grey-lightest p-3 bo-radius-10:%(key.apollo.section.image.effect.borderedround)|
+        bo-1 bo-grey-lightest p-3 bo-radius-50p:%(key.apollo.section.image.effect.borderedvignette)|
+        ap-shadow bo-radius-10:%(key.apollo.section.image.effect.shadowround)|
+        ap-shadow bo-1 bo-grey-lightest p-3:%(key.apollo.section.image.effect.shadowbordered)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[itext]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.label)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[none]]></Default>
+      <WidgetConfig><![CDATA[
+        none:%(key.apollo.section.image.text.nothing)|
+        title:%(key.apollo.section.image.text.title)|
+        desc:%(key.apollo.section.image.text.description)|
+        copy:%(key.apollo.section.image.text.copy)|
+        title-desc:%(key.apollo.section.image.text.titledescription)|
+        title-copy:%(key.apollo.section.image.text.titlecopy)|
+        desc-copy:%(key.apollo.section.image.text.descriptioncopy)|
+        title-desc-copy:%(key.apollo.section.image.text.titledescriptioncopy)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[ilink]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.link.label)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[none]]></Default>
+      <WidgetConfig><![CDATA[
+        none:%(key.apollo.section.image.link.none)|
+        all:%(key.apollo.section.image.link.all)
+      ]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

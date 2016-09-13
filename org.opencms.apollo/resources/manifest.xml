@@ -2867,6 +2867,27 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.core.messages</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.core.messages</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>9144aa54-7592-11e6-861e-0242ac11002b</uuidstructure>
+			<uuidresource>9144aa55-7592-11e6-861e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 08 Sep 2016 07:05:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.event.messages</source>
 			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.event.messages</destination>
 			<type>xmlvfsbundle</type>
@@ -3047,27 +3068,6 @@
 					<name>Title</name>
 					<value><![CDATA[Settings and messages for Apollo Job]]></value>
 				</property>
-				<property>
-					<name>content-encoding</name>
-					<value><![CDATA[ISO-8859-1]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.layout.messages</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.layout.messages</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>9144aa54-7592-11e6-861e-0242ac11002b</uuidstructure>
-			<uuidresource>9144aa55-7592-11e6-861e-0242ac11002b</uuidresource>
-			<datecreated>Thu, 08 Sep 2016 07:05:04 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
 				<property>
 					<name>content-encoding</name>
 					<value><![CDATA[ISO-8859-1]]></value>
