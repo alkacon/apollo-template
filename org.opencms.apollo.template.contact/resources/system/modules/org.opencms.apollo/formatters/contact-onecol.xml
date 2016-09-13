@@ -45,43 +45,49 @@
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showShadow]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.effect.shadow)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.animatedshadow)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>
     <Setting>
+      <PropertyName><![CDATA[showIcons]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showicons)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[showOrganisation]]></PropertyName>
-      <DisplayName><![CDATA[showOrganisation]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showorganisation)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showDescription]]></PropertyName>
-      <DisplayName><![CDATA[showDescription]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showdescription)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showAddress]]></PropertyName>
-      <DisplayName><![CDATA[showAddress]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showaddress)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showPhone]]></PropertyName>
-      <DisplayName><![CDATA[showPhone]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showphone)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showEmail]]></PropertyName>
-      <DisplayName><![CDATA[showEmail]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showemail)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showLink]]></PropertyName>
-      <DisplayName><![CDATA[showLink]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showlink)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>

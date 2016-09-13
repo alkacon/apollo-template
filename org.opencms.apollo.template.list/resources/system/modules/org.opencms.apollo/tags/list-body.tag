@@ -33,6 +33,7 @@
 								data-teaser="${element.settings.teaserlength}" 
 								data-path="${element.sitePath}" 
 								data-color="${element.settings.buttoncolor}" 
+								data-showdate="${element.settings.showdate}"
 								data-expired="${element.settings.showexpired}" 
 								data-sitepath="${cms.requestContext.folderUri}" 
 								data-dynamic="${dynamic ? 'true' : 'false'}"

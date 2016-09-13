@@ -1,10 +1,19 @@
 <%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
+<fmt:setLocale value="${cms.locale}" />
+
+<cms:bundle basename="org.opencms.apollo.template.schemas.navigation">
 <cms:formatter var="content" val="value" rdfa="rdfa">
 	<div>
+	
+		<c:set var="inMemoryMessage"><fmt:message key="apollo.navigation.message.new" /></c:set>
+		<apollo:init-messages textnew="${inMemoryMessage}" />
+		
 		<div class="header">
 
 			<c:if test="${not value.Header.isEmpty}">
@@ -74,3 +83,4 @@
 
 	</div>
 </cms:formatter>
+</cms:bundle>

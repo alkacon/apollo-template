@@ -39,6 +39,7 @@
 						categories="${con.readCategories}" 
 						sort="${con.value.SortOrder}"
 						showfacets="none"
+						showdate="${cms.element.settings.showdate}"
                         listid="${cms.element.instanceId}"
                         wrapitem="${wrapItem}" />
 

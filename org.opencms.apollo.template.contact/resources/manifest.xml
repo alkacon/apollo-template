@@ -24,8 +24,6 @@
 		</dependencies>
 		<exportpoints/>
 		<resources>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-icon.jsp"/>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-icon.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-onecol.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-onecol.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-standard.jsp"/>
@@ -109,60 +107,6 @@
 			<destination>system/modules/org.opencms.apollo/formatters</destination>
 			<type>folder</type>
 			<properties/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/contact-icon.jsp</source>
-			<destination>system/modules/org.opencms.apollo/formatters/contact-icon.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>840e5559-53d5-11e6-958f-0242ac11002b</uuidstructure>
-			<uuidresource>840e555a-53d5-11e6-958f-0242ac11002b</uuidresource>
-			<datecreated>Wed, 27 Jul 2016 08:38:39 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Formatter JSP for icon contact info]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[container-element;locale]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/contact-icon.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/contact-icon.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>78befa63-53d5-11e6-958f-0242ac11002b</uuidstructure>
-			<uuidresource>78befa64-53d5-11e6-958f-0242ac11002b</uuidresource>
-			<datecreated>Wed, 27 Jul 2016 08:38:20 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Icon Contact Information ]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
 		</file>
 		<file>
 			<source>system/modules/org.opencms.apollo/formatters/contact-onecol.jsp</source>

@@ -1,129 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
-  <Bundle language="de">
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.Title]]></Key>
-      <Value><![CDATA[Titel]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.Title.help]]></Key>
-      <Value><![CDATA[Der Titel wird nicht angezeigt. Er dient zum Auffinden des Elements in den Galerien.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.NavStartLevel]]></Key>
-      <Value><![CDATA[Navigation Start Ebene]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.NavStartLevel.help]]></Key>
-      <Value><![CDATA[Setzt die Ordnerebene, von der aus die Navigation beginnen soll.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.LogoImage]]></Key>
-      <Value><![CDATA[Logo Bild]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.LogoImage.help]]></Key>
-      <Value><![CDATA[Das Logo Bild im Seitenkopf.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.LogoFullWidth]]></Key>
-      <Value><![CDATA[Logo auf voller Breite anzeigen]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.LogoFullWidth.help]]></Key>
-      <Value><![CDATA[Wenn angekreuzt, wird das Logo Bild auf voller Breite oberhalb der Navigation angezeigt.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.LogoLink]]></Key>
-      <Value><![CDATA[Logo Link]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.LogoLink.help]]></Key>
-      <Value><![CDATA[Das Link Ziel bei Klick auf das Logo im Seitenkopf.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.Header]]></Key>
-      <Value><![CDATA[Kopf HTML]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.Header.help]]></Key>
-      <Value><![CDATA[HTML Code f�r den Kopf der Seiten.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.TabGeneral]]></Key>
-      <Value><![CDATA[Allgemeine Einstellungen]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.TabHeader]]></Key>
-      <Value><![CDATA[Seitenkopf]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.navigation.navstartlevel.0]]></Key>
-      <Value><![CDATA[0 - Wurzelebene]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.navigation.navstartlevel.1]]></Key>
-      <Value><![CDATA[1 - Erste Ebene]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.navigation.navstartlevel.2]]></Key>
-      <Value><![CDATA[2 - Zweite Ebene]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.navigation.navstartlevel.3]]></Key>
-      <Value><![CDATA[3 - Dritte Ebene]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.navigation.navstartlevel.4]]></Key>
-      <Value><![CDATA[4 - Vierte Ebene]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.navigation.navstartlevel.5]]></Key>
-      <Value><![CDATA[5 - F�nfte Ebene]]></Value>
-    </Message>
-  </Bundle>
   <Bundle language="en">
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.Title]]></Key>
-      <Value><![CDATA[Title]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.Title.help]]></Key>
-      <Value><![CDATA[The title is not shown. It is used to find the element in the galleries.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.NavStartLevel]]></Key>
-      <Value><![CDATA[Navigation Start Level]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.NavStartLevel.help]]></Key>
-      <Value><![CDATA[Choose the folder level where the navigation should start from.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.LogoImage]]></Key>
-      <Value><![CDATA[Logo Image]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.LogoImage.help]]></Key>
-      <Value><![CDATA[The header logo image to show.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.LogoFullWidth]]></Key>
-      <Value><![CDATA[Show logo with full width]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.LogoFullWidth.help]]></Key>
-      <Value><![CDATA[If checked, the logo image is shown with full width above the navigation.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.LogoLink]]></Key>
-      <Value><![CDATA[Logo Link]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloNavigation.LogoLink.help]]></Key>
-      <Value><![CDATA[The link target when clicking on the header logo image.]]></Value>
-    </Message>
     <Message>
       <Key><![CDATA[label.ApolloNavigation.Header]]></Key>
       <Value><![CDATA[Header HTML]]></Value>
@@ -133,36 +11,166 @@
       <Value><![CDATA[HTML code for the header of the pages.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloNavigation.TabGeneral]]></Key>
-      <Value><![CDATA[General Settings]]></Value>
+      <Key><![CDATA[label.ApolloNavigation.LogoLink]]></Key>
+      <Value><![CDATA[Logo Link]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloNavigation.TabHeader]]></Key>
-      <Value><![CDATA[Page Header]]></Value>
+      <Key><![CDATA[apollo.navigation.message.new]]></Key>
+      <Value><![CDATA[New navigation element, please edit if needed.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.navigation.navstartlevel.0]]></Key>
-      <Value><![CDATA[0 - Root Level]]></Value>
+      <Key><![CDATA[apollo.navigation.navstartlevel.5]]></Key>
+      <Value><![CDATA[5 - Fifth Level]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.navigation.navstartlevel.1]]></Key>
-      <Value><![CDATA[1 - First Level]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.navigation.navstartlevel.2]]></Key>
-      <Value><![CDATA[2 - Second Level]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.navigation.navstartlevel.3]]></Key>
-      <Value><![CDATA[3 - Third Level]]></Value>
+      <Key><![CDATA[label.ApolloNavigation.NavStartLevel.help]]></Key>
+      <Value><![CDATA[Choose the folder level where the navigation should start from.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.navigation.navstartlevel.4]]></Key>
       <Value><![CDATA[4 - Fourth Level]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[label.ApolloNavigation.NavStartLevel]]></Key>
+      <Value><![CDATA[Navigation Start Level]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.TabGeneral]]></Key>
+      <Value><![CDATA[General Settings]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.Title.help]]></Key>
+      <Value><![CDATA[The title is not shown. It is used to find the element in the galleries.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.1]]></Key>
+      <Value><![CDATA[1 - First Level]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.0]]></Key>
+      <Value><![CDATA[0 - Root Level]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.3]]></Key>
+      <Value><![CDATA[3 - Third Level]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.2]]></Key>
+      <Value><![CDATA[2 - Second Level]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.LogoFullWidth]]></Key>
+      <Value><![CDATA[Show logo with full width]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.LogoLink.help]]></Key>
+      <Value><![CDATA[The link target when clicking on the header logo image.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.Title]]></Key>
+      <Value><![CDATA[Title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.LogoFullWidth.help]]></Key>
+      <Value><![CDATA[If checked, the logo image is shown with full width above the navigation.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.LogoImage.help]]></Key>
+      <Value><![CDATA[The header logo image to show.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.LogoImage]]></Key>
+      <Value><![CDATA[Logo Image]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.TabHeader]]></Key>
+      <Value><![CDATA[Page Header]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.Header]]></Key>
+      <Value><![CDATA[Kopf HTML]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.Header.help]]></Key>
+      <Value><![CDATA[HTML Code f�r den Kopf der Seiten.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.LogoLink]]></Key>
+      <Value><![CDATA[Logo Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.navigation.message.new]]></Key>
+      <Value><![CDATA[Neues Navigations-Element. Bitte anpassen, falls gewünscht.]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.navigation.navstartlevel.5]]></Key>
-      <Value><![CDATA[5 - Fifth Level]]></Value>
+      <Value><![CDATA[5 - F�nfte Ebene]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.NavStartLevel.help]]></Key>
+      <Value><![CDATA[Setzt die Ordnerebene, von der aus die Navigation beginnen soll.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.4]]></Key>
+      <Value><![CDATA[4 - Vierte Ebene]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.NavStartLevel]]></Key>
+      <Value><![CDATA[Navigation Start Ebene]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.TabGeneral]]></Key>
+      <Value><![CDATA[Allgemeine Einstellungen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.Title.help]]></Key>
+      <Value><![CDATA[Der Titel wird nicht angezeigt. Er dient zum Auffinden des Elements in den Galerien.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.1]]></Key>
+      <Value><![CDATA[1 - Erste Ebene]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.0]]></Key>
+      <Value><![CDATA[0 - Wurzelebene]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.3]]></Key>
+      <Value><![CDATA[3 - Dritte Ebene]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.navigation.navstartlevel.2]]></Key>
+      <Value><![CDATA[2 - Zweite Ebene]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.LogoFullWidth]]></Key>
+      <Value><![CDATA[Logo auf voller Breite anzeigen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.LogoLink.help]]></Key>
+      <Value><![CDATA[Das Link Ziel bei Klick auf das Logo im Seitenkopf.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.Title]]></Key>
+      <Value><![CDATA[Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.LogoFullWidth.help]]></Key>
+      <Value><![CDATA[Wenn angekreuzt, wird das Logo Bild auf voller Breite oberhalb der Navigation angezeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.LogoImage.help]]></Key>
+      <Value><![CDATA[Das Logo Bild im Seitenkopf.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.LogoImage]]></Key>
+      <Value><![CDATA[Logo Bild]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloNavigation.TabHeader]]></Key>
+      <Value><![CDATA[Seitenkopf]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

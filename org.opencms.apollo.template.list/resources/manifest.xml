@@ -44,6 +44,16 @@
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages"/>
 			<resource uri="/system/modules/org.opencms.apollo/elements/list/list-ajax.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/list.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/list-body.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/list-archive-search.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/list-facetbutton.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/list-facetrow.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/list-item-compact.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/list-loadbutton.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/list-main.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/list-pagination.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/list-search.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/list-sortbutton.tag"/>
 		</resources>
 		<excluderesources/>
 		<parameters/>
@@ -99,190 +109,6 @@
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo.template.list/tags</destination>
-			<type>folder</type>
-			<uuidstructure>c91c3639-750e-11e6-afc1-0242ac11002b</uuidstructure>
-			<datecreated>Wed, 07 Sep 2016 15:21:44 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.list/tags/list-archive-search.tag</source>
-			<destination>system/modules/org.opencms.apollo.template.list/tags/list-archive-search.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>ac1d6de4-26fd-11e6-9192-0242ac11002b</uuidstructure>
-			<uuidresource>ac1d6de5-26fd-11e6-9192-0242ac11002b</uuidresource>
-			<datecreated>Tue, 31 May 2016 07:02:43 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[List archive search tag]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.list/tags/list-body.tag</source>
-			<destination>system/modules/org.opencms.apollo.template.list/tags/list-body.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>6babc6d8-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
-			<uuidresource>6babc6d9-3dc5-11e6-b70e-0242ac11002b</uuidresource>
-			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[List body tag for AJAX lists]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.list/tags/list-facetbutton.tag</source>
-			<destination>system/modules/org.opencms.apollo.template.list/tags/list-facetbutton.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>6bb27d9a-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
-			<uuidresource>6bb27d9b-3dc5-11e6-b70e-0242ac11002b</uuidresource>
-			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Facet button tag for AJAX lists]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.list/tags/list-facetrow.tag</source>
-			<destination>system/modules/org.opencms.apollo.template.list/tags/list-facetrow.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>6bb95b6c-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
-			<uuidresource>6bb95b6d-3dc5-11e6-b70e-0242ac11002b</uuidresource>
-			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Facet and sort button tag for AJAX lists]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.list/tags/list-item-compact.tag</source>
-			<destination>system/modules/org.opencms.apollo.template.list/tags/list-item-compact.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>c62773e4-7044-11e6-9a42-0242ac11002b</uuidstructure>
-			<uuidresource>c627e915-7044-11e6-9a42-0242ac11002b</uuidresource>
-			<datecreated>Thu, 01 Sep 2016 13:05:36 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Formats a list item in compact form]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.list/tags/list-loadbutton.tag</source>
-			<destination>system/modules/org.opencms.apollo.template.list/tags/list-loadbutton.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>6bc0122e-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
-			<uuidresource>6bc0122f-3dc5-11e6-b70e-0242ac11002b</uuidresource>
-			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Dynamic loading button for AJAX lists]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.list/tags/list-main.tag</source>
-			<destination>system/modules/org.opencms.apollo.template.list/tags/list-main.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>6bd261b2-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
-			<uuidresource>6bd261b3-3dc5-11e6-b70e-0242ac11002b</uuidresource>
-			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Search and display list tag]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.list/tags/list-pagination.tag</source>
-			<destination>system/modules/org.opencms.apollo.template.list/tags/list-pagination.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>6bc73e20-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
-			<uuidresource>6bc73e21-3dc5-11e6-b70e-0242ac11002b</uuidresource>
-			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Pagination row tag for AJAX lists]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.list/tags/list-search.tag</source>
-			<destination>system/modules/org.opencms.apollo.template.list/tags/list-search.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>6432ffcb-345f-11e6-b2da-0242ac11002b</uuidstructure>
-			<uuidresource>6432ffcc-345f-11e6-b2da-0242ac11002b</uuidresource>
-			<datecreated>Fri, 17 Jun 2016 07:44:58 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Solr search tag for AJAX lists]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.list/tags/list-sortbutton.tag</source>
-			<destination>system/modules/org.opencms.apollo.template.list/tags/list-sortbutton.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>6b9c8494-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
-			<uuidresource>6b9c8495-3dc5-11e6-b70e-0242ac11002b</uuidresource>
-			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Sort button tag for AJAX lists]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -652,6 +478,185 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[XSD for a list]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/tags</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/list-archive-search.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/list-archive-search.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>ac1d6de4-26fd-11e6-9192-0242ac11002b</uuidstructure>
+			<uuidresource>ac1d6de5-26fd-11e6-9192-0242ac11002b</uuidresource>
+			<datecreated>Tue, 31 May 2016 07:02:43 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[List archive search tag]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/list-body.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/list-body.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>6babc6d8-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
+			<uuidresource>6babc6d9-3dc5-11e6-b70e-0242ac11002b</uuidresource>
+			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[List body tag for AJAX lists]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/list-facetbutton.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/list-facetbutton.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>6bb27d9a-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
+			<uuidresource>6bb27d9b-3dc5-11e6-b70e-0242ac11002b</uuidresource>
+			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Facet button tag for AJAX lists]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/list-facetrow.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/list-facetrow.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>6bb95b6c-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
+			<uuidresource>6bb95b6d-3dc5-11e6-b70e-0242ac11002b</uuidresource>
+			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Facet and sort button tag for AJAX lists]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/list-item-compact.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/list-item-compact.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>c62773e4-7044-11e6-9a42-0242ac11002b</uuidstructure>
+			<uuidresource>c627e915-7044-11e6-9a42-0242ac11002b</uuidresource>
+			<datecreated>Thu, 01 Sep 2016 13:05:36 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formats a list item in compact form]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/list-loadbutton.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/list-loadbutton.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>6bc0122e-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
+			<uuidresource>6bc0122f-3dc5-11e6-b70e-0242ac11002b</uuidresource>
+			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Dynamic loading button for AJAX lists]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/list-main.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/list-main.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>6bd261b2-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
+			<uuidresource>6bd261b3-3dc5-11e6-b70e-0242ac11002b</uuidresource>
+			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Search and display list tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/list-pagination.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/list-pagination.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>6bc73e20-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
+			<uuidresource>6bc73e21-3dc5-11e6-b70e-0242ac11002b</uuidresource>
+			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Pagination row tag for AJAX lists]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/list-search.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/list-search.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>6432ffcb-345f-11e6-b2da-0242ac11002b</uuidstructure>
+			<uuidresource>6432ffcc-345f-11e6-b2da-0242ac11002b</uuidresource>
+			<datecreated>Fri, 17 Jun 2016 07:44:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Solr search tag for AJAX lists]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/list-sortbutton.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/list-sortbutton.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>6b9c8494-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
+			<uuidresource>6b9c8495-3dc5-11e6-b70e-0242ac11002b</uuidresource>
+			<datecreated>Wed, 29 Jun 2016 06:48:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sort button tag for AJAX lists]]></value>
 				</property>
 			</properties>
 			<relations/>

@@ -29,6 +29,13 @@
       <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
+      <PropertyName><![CDATA[showdate]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showdate)]]></DisplayName>
+      <Description><![CDATA[If enabled, formatters that support showing dates will display them, otherwise not.]]></Description>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[showexpired]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.showexpired)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>

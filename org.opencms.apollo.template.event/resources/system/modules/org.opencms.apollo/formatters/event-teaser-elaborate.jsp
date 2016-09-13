@@ -19,6 +19,7 @@
 			<c:set var="buttonColor" value="${cms.element.settings.buttoncolor}" />
 			<c:set var="calendarColor" value="${cms.element.settings.calendarcolor}" />
 			<c:set var="displayOption" value="${cms.element.settings.compactform}" />
+            <c:set var="showDate" value="${cms.element.settings.showdate}" />
 			<c:set var="showImageBig" value="${paragraph.value.Image.exists && (displayOption == 'big')}" />
 			<c:set var="showImageSmall" value="${paragraph.value.Image.exists && (displayOption == 'small')}" />
 			<c:set var="isCompactForm" value="${displayOption != 'false' && !showImageSmall}" />
@@ -65,17 +66,21 @@
 				</c:if>
 
 				<c:set var="text">${content.value.Teaser}</c:set>
-				<c:if test="${empty text}"><c:set var="text">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</c:set></c:if>
+				<c:if test="${empty text}"><c:set var="text">${paragraph.value.Text}</c:set></c:if>
 				<c:set var="href"><cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link></c:set>
 
 				<c:set var="buttonText"><fmt:message key="apollo.event.message.readmore" /></c:set>
-				<apollo:teaserbody text="${text}" 
-									title="${content.value.Title}"
-									href="${href}" 
-									date="${content.value.Date}" 
-									enddate="${content.value.EndDate}"
-									color="${buttonColor}"
-									btntext="${buttonText}"/>
+				<apollo:teaserbody 
+                    text="${text}"
+                    textlength="${teaserLength}"
+                    title="${content.value.Title}"
+                    href="${href}" 
+                    date="${content.value.Date}" 
+                    enddate="${content.value.EndDate}"
+                    showdate="${showDate}"
+                    color="${buttonColor}"
+                    btntext="${buttonText}"
+                />
 
 			</div>
 

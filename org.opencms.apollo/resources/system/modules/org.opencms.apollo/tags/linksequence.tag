@@ -13,14 +13,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>  
-
-<fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.linksequence">
+	
 
 <div class="ap-linksequence <c:out value="${wrapperclass} ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : 'mb-20'}" />">
-
-    <c:set var="textnew"><fmt:message key="apollo.linksequence.message.new" /></c:set>
-    <apollo:init-messages textnew="${textnew}" textedit="">
 
     <c:if test="${cms.element.settings.hideTitle ne 'true'}">
         <apollo:headline headline="${title}" />
@@ -43,7 +38,4 @@
         </c:forEach>
     </ul>
 
-    </apollo:init-messages>
 </div>	
-
-</cms:bundle>

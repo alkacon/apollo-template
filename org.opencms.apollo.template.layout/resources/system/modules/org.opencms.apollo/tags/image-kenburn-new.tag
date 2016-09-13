@@ -70,10 +70,10 @@
 
 <c:if test="${empty imagefound}">
 	<fmt:setLocale value="${cms.locale}" />
-	<cms:bundle basename="org.opencms.apollo.template.formatters.messages">
+	<cms:bundle basename="org.opencms.apollo.template.schemas.section">
     
     <div class="alert">
-        <fmt:message key="no.image" />
+        <fmt:message key="apollo.section.message.noimage" />
     </div>
 
 	</cms:bundle>

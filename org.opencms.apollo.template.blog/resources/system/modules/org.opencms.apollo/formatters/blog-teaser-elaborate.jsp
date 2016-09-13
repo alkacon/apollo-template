@@ -20,6 +20,7 @@
 		<c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
 		<c:set var="buttonColor" value="${cms.element.settings.buttoncolor}" />
 		<c:set var="displayOption" value="${cms.element.settings.compactform}" />
+        <c:set var="showDate" value="${cms.element.settings.showdate}" />
 		<c:set var="showImage" value="${paragraph.value.Image.exists && (displayOption != 'true')}" />
 
 		<c:choose>
@@ -54,12 +55,16 @@
 			<c:if test="${empty text}"><c:set var="text">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</c:set></c:if>
 
 			<c:set var="buttonText"><fmt:message key="apollo.blog.message.readmore" /></c:set>
-			<apollo:teaserbody text="${text}" 
-								title="${content.value.Title}"
-								href="${href}" 
-								date="${content.value.Date}" 
-								color="${buttonColor}"
-								btntext="${buttonText}"/>
+			<apollo:teaserbody
+                text="${text}"
+                textlength="${teaserLength}"
+                title="${content.value.Title}"
+                href="${href}" 
+                date="${content.value.Date}"
+                showdate="${showDate}"                
+                color="${buttonColor}"
+                btntext="${buttonText}"
+            />
 
 		<c:out value="${imgDivEnd}" escapeXml="false" />
 

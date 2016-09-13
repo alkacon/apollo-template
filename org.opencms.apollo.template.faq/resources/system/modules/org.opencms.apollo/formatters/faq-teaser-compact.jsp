@@ -6,15 +6,18 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 <cms:secureparams />
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.formatters.list">
+<cms:bundle basename="org.opencms.apollo.template.schemas.faq">
 
 <cms:formatter var="content" val="value">
 
-    <apollo:list-item-compact
-        filename="${content.filename}"
-        headline="${value.Question}"
-        text="${content.valueList.Paragraph['0'].value.Text}"
-    />
+	<c:set var="inMemoryMessage"><fmt:message key="apollo.faq.message.new" /></c:set>
+	<apollo:init-messages textnew="${inMemoryMessage}">
+		<apollo:list-item-compact
+			filename="${content.filename}"
+			headline="${value.Question}"
+			text="${content.valueList.Paragraph['0'].value.Text}"
+		/>
+	</apollo:init-messages>
 
 </cms:formatter>
 

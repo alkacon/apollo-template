@@ -6,11 +6,14 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>	
 <cms:secureparams />
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.formatters.list">
+<cms:bundle basename="org.opencms.apollo.template.schemas.faq">
 
 <c:set var="accId">${cms.element.instanceId}</c:set>
 
 <cms:formatter var="content" val="value">
+
+	<c:set var="inMemoryMessage"><fmt:message key="apollo.faq.message.new" /></c:set>
+	<apollo:init-messages textnew="${inMemoryMessage}">
 
     <div class="ap-faq-panel panel panel-default ${cms.element.settings.index == 0 ? '':'mt-5'}">
         <div  class="panel-heading">
@@ -41,6 +44,8 @@
             </div>
         </div>
     </div>
+	
+	</apollo:init-messages>
 
 </cms:formatter>
 

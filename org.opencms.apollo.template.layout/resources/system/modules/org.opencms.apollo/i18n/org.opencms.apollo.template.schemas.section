@@ -3,40 +3,16 @@
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
     <Message>
-      <Key><![CDATA[label.ApolloSection.GalleryTitle]]></Key>
-      <Value><![CDATA[Gallery Title]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloSection.GalleryTitle.help]]></Key>
-      <Value><![CDATA[The gallery title of the content section. It is not shown on the page.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloSection.Headline]]></Key>
-      <Value><![CDATA[Headline]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloSection.Headline.help]]></Key>
-      <Value><![CDATA[The optional headline of the content section.]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[label.ApolloSection.Text]]></Key>
       <Value><![CDATA[Text]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloSection.Text.help]]></Key>
-      <Value><![CDATA[The paragraph text.]]></Value>
+      <Key><![CDATA[apollo.section.default.Text]]></Key>
+      <Value><![CDATA[Please edit this content section.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloSection.Image]]></Key>
-      <Value><![CDATA[Image]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloSection.Image.help]]></Key>
-      <Value><![CDATA[An image that can be shown with the content section.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloSection.Link]]></Key>
-      <Value><![CDATA[Link]]></Value>
+      <Key><![CDATA[apollo.section.message.noimage]]></Key>
+      <Value><![CDATA[No image given, please edit content.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSection.Link.help]]></Key>
@@ -47,50 +23,58 @@
       <Value><![CDATA[New content section]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.section.default.Text]]></Key>
-      <Value><![CDATA[Please edit this content section.]]></Value>
+      <Key><![CDATA[apollo.section.message.more]]></Key>
+      <Value><![CDATA[More]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.Text.help]]></Key>
+      <Value><![CDATA[The paragraph text.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.Image.help]]></Key>
+      <Value><![CDATA[An image that can be shown with the content section.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.Link]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.Headline]]></Key>
+      <Value><![CDATA[Headline]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.GalleryTitle.help]]></Key>
+      <Value><![CDATA[The gallery title of the content section. It is not shown on the page.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.message.new]]></Key>
       <Value><![CDATA[New content section element, please edit it.]]></Value>
     </Message>
-  </Bundle>
-  <Bundle language="de">
     <Message>
       <Key><![CDATA[label.ApolloSection.GalleryTitle]]></Key>
-      <Value><![CDATA[Galerie Titel]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloSection.GalleryTitle.help]]></Key>
-      <Value><![CDATA[Der Titel des Inhalts-Abschnitts f�r die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloSection.Headline]]></Key>
-      <Value><![CDATA[�berschrift]]></Value>
+      <Value><![CDATA[Gallery Title]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSection.Headline.help]]></Key>
-      <Value><![CDATA[Die optionale �berschrift des Inhalts-Abschnitts.]]></Value>
+      <Value><![CDATA[The optional headline of the content section.]]></Value>
     </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.Image]]></Key>
+      <Value><![CDATA[Image]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
     <Message>
       <Key><![CDATA[label.ApolloSection.Text]]></Key>
       <Value><![CDATA[Text]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloSection.Text.help]]></Key>
-      <Value><![CDATA[Der Absatztext.]]></Value>
+      <Key><![CDATA[apollo.section.default.Text]]></Key>
+      <Value><![CDATA[Bitte bearbeiten Sie diesen Inhalts-Abschnitt.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloSection.Image]]></Key>
-      <Value><![CDATA[Bild]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloSection.Image.help]]></Key>
-      <Value><![CDATA[Ein Bild, das mit dem Inhalts-Abschnitt angezeigt werden kann.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloSection.Link]]></Key>
-      <Value><![CDATA[Link]]></Value>
+      <Key><![CDATA[apollo.section.message.noimage]]></Key>
+      <Value><![CDATA[Kein Bild angegeben, bitte editieren.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloSection.Link.help]]></Key>
@@ -101,12 +85,44 @@
       <Value><![CDATA[Neuer Inhalts-Abschnitt]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.section.default.Text]]></Key>
-      <Value><![CDATA[Bitte bearbeiten Sie diesen Inhalts-Abschnitt.]]></Value>
+      <Key><![CDATA[apollo.section.message.more]]></Key>
+      <Value><![CDATA[Mehr]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.Text.help]]></Key>
+      <Value><![CDATA[Der Absatztext.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.Image.help]]></Key>
+      <Value><![CDATA[Ein Bild, das mit dem Inhalts-Abschnitt angezeigt werden kann.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.Link]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.Headline]]></Key>
+      <Value><![CDATA[�berschrift]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.GalleryTitle.help]]></Key>
+      <Value><![CDATA[Der Titel des Inhalts-Abschnitts f�r die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.message.new]]></Key>
       <Value><![CDATA[Neues Inhalts-Abschnitt Element, bitte bearbeiten Sie es.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.GalleryTitle]]></Key>
+      <Value><![CDATA[Galerie Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.Headline.help]]></Key>
+      <Value><![CDATA[Die optionale �berschrift des Inhalts-Abschnitts.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloSection.Image]]></Key>
+      <Value><![CDATA[Bild]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

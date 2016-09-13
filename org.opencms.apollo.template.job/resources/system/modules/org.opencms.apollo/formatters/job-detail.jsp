@@ -8,7 +8,11 @@
 <fmt:setLocale value="${cms.locale}"/>
 <cms:bundle basename="org.opencms.apollo.template.job.messages">
 
-<c:set var="titlePos"><cms:elementsetting name="titlepos" default="top" /></c:set>
+<c:set var="propTitlePos"><cms:property file="search" name="apollo.job.detail.title" /></c:set>
+<c:set var="propColumns"><cms:property file="search" name="apollo.job.detail.columns" /></c:set>
+<c:if test="${empty propColumns}">
+	<c:set var="titlePos"><cms:elementsetting name="titlepos" default="top" /></c:set>
+</c:if>
 
 	<div class="mb-20">
 		<c:set var="inMemoryMessage"><fmt:message key="apollo.job.message.inmemory" /></c:set>
@@ -18,7 +22,7 @@
 				
 					<%-- ####### Title (1st position option) ######## --%>
 					<div class="col-xs-12">
-					<c:if test="${titlePos == 'top'}">
+					<c:if test="${titlePos == 'top' || propTitlePos == 'top' || propTitlePos == 'both'}">
 							<apollo:headline headline="${content.value.Title}" />
 					</c:if>
 					</div>
@@ -34,7 +38,7 @@
 				
 				
 				<%-- ####### Title (2nd position option) ######## --%>
-				<c:if test="${titlePos == 'bottom'}">
+				<c:if test="${titlePos == 'bottom' || propTitlePos == 'center' || propTitlePos == 'both'}">
 					<div class="col-xs-12 headline-block">
 						<apollo:headline headline="${content.value.Title}" />
 					</div>
@@ -44,7 +48,7 @@
 				
 				<%-- ####### TEXT BLOCKS (with optional bootstrap)######## --%>
 				<c:choose>
-				<c:when test="${cms.element.settings.columns}">
+				<c:when test="${cms.element.settings.columns || propColumns}">
 					<c:forEach var="text" items="${content.valueList.Text}" varStatus="status">
 						<c:if test="${status.index % 2 == 0}">
 							<div class="row">

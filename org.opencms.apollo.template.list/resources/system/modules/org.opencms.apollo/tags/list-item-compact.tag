@@ -33,7 +33,7 @@
         <h3 class="mb-5">
             <a href="<cms:link baseUri="${cms.element.settings.pageUri}">${filename}</cms:link>">${headline}</a>
         </h3>
-        <c:set var="showdate"><c:out value="${cms.element.settings.showDate}" default="true" /></c:set>
+        <c:set var="showdate"><c:out value="${cms.element.settings.showdate}" default="true" /></c:set>
         <c:if test="${showdate and not empty date}">
             <div class="entry-date">
                 <i><fmt:formatDate value="${cms:convertDate(date)}" dateStyle="LONG" timeStyle="SHORT" type="${datetype}" />
@@ -69,7 +69,7 @@
 
         <a href="<cms:link baseUri="${cms.element.settings.pageUri}">${filename}</cms:link>" class="btn ap-btn-xs ap-btn-${buttonColor}">
 		<c:choose>
-		<c:when test="{not empty btntext}">
+		<c:when test="${not empty btntext}">
 			${btntext}
 		</c:when>
 		<c:otherwise>

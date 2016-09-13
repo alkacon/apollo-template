@@ -8,6 +8,7 @@
 <%@ attribute name="sort" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
 <%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false" %>
 <%@ attribute name="showfacets" type="java.lang.String" required="false" %>
+<%@ attribute name="showdate" type="java.lang.String" required="false" %>
 <%@ attribute name="count" type="java.lang.Integer" required="false" %>
 <%@ attribute name="showexpired" type="java.lang.Boolean" required="false" %>
 <%@ attribute name="color" type="java.lang.String" required="false" %>
@@ -50,7 +51,8 @@
 				<cms:param name="index">${status.index}</cms:param>
 				<cms:param name="last">${status.last}</cms:param>
 				<cms:param name="pageUri">${path}</cms:param>
-                <cms:param name="listid">${listid}</cms:param>
+				<cms:param name="showdate">${showdate}</cms:param>
+				<cms:param name="listid">${listid}</cms:param>
 			</cms:display>
 		<c:if test="${wrapitem}"></div></c:if> 
 	</c:forEach>

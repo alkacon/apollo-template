@@ -10,7 +10,7 @@
         <uuid>4b87abb0-4425-11e6-a8b1-0242ac11002b</uuid>
       </link>
     </Jsp>
-    <Rank><![CDATA[1000]]></Rank>
+    <Rank><![CDATA[900]]></Rank>
     <Match>
       <Types>
         <ContainerType><![CDATA[element]]></ContainerType>
@@ -31,12 +31,6 @@
       </JavascriptLink>
     </HeadIncludeJs>
     <Setting>
-      <PropertyName><![CDATA[hideTitle]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.hideHeadline)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
-    </Setting>
-    <Setting>
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
@@ -44,26 +38,58 @@
       <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[hstyle]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.header.style.label)]]></DisplayName>
-      <Widget><![CDATA[selectcombo]]></Widget>
-      <Default><![CDATA[headline]]></Default>
-      <WidgetConfig><![CDATA[
-        headline:%(key.apollo.section.header.style.underlined)|
-        ap-plain:%(key.apollo.section.header.style.plain)
-      ]]></WidgetConfig>
+      <PropertyName><![CDATA[showKenburn]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.kenburn)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[hsize]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.header.size.label)]]></DisplayName>
-      <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[h2]]></Default>
-      <WidgetConfig><![CDATA[
-        h1:%(key.apollo.section.header.size.large)|
-        h2:%(key.apollo.section.header.size.normal)|
-        h3:%(key.apollo.section.header.size.small)|
-        h4:%(key.apollo.section.header.size.verysmall)
-      ]]></WidgetConfig>
+      <PropertyName><![CDATA[showShadow]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.animatedshadow)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showIcons]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showicons)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showOrganisation]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showorganisation)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showDescription]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showdescription)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showAddress]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showaddress)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showPhone]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showphone)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showEmail]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showemail)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showLink]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showlink)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
     </Setting>
   </NewFormatter>
 </NewFormatters>

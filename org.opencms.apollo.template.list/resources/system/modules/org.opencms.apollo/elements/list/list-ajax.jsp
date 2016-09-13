@@ -29,6 +29,7 @@
 							sort="${content.value.SortOrder}"
 							categories="${content.readCategories}" 
 							showfacets="${param.facets}" 
+							showdate="${param.showdate}"
 							path="${param.sitepath}" />
 									
 				<%-- ####### Load pagination (dynamic or normal) ######## --%>
