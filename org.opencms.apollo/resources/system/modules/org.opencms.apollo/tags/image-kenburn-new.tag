@@ -39,13 +39,15 @@
 	    <%-- ####### image.value.Image.imageDndAttr doesn't work here ######## --%>
 	    <%-- ################################################################# --%>
 	
+	<%--
 	    <c:if test="${not empty image && image.isSet}">
 	        <c:set var="conValue" value="${image.value.Image.contentValue}" />
 	        <c:set var="dndData" value="${conValue.document.file.structureId}|${conValue.path}|${conValue.locale}" />
-	        <c:set var="imageDnd">data-imagednd="${dndData}"</c:set>
+	        <c:set var="imageDnd">data-imagednd="${"</c:set>
 	    </c:if>
-
-        <div class="ap-img-pic" <c:out value="${imageDnd}" escapeXml="false" />>
+	--%>
+	
+        <div class="ap-img-pic" ${image.value.Image.imageDndAttr}>
             <cms:img 
                 src="${imageLink}"
                 scaleColor="transparent"

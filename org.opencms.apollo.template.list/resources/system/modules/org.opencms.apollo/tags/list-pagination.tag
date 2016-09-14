@@ -19,7 +19,7 @@
 			<ul class="pagination">
 				<li ${pagination.state.currentPage > 1 ? "" : "class='disabled'"}>
 					<a href="javascript:void(0)"
-					onclick='reloadInnerList("${search.stateParameters.setPage['1']}", $(this).parents().filter(".ap-list-content"))'
+					onclick="reloadInnerList(&quot;${search.stateParameters.setPage['1']}&quot;, $(this).parents().filter(&quot;.ap-list-content&quot;))"
 				   aria-label='<fmt:message key="pagination.first.title"/>'>
 						<span aria-hidden="true"><fmt:message
 								key="pagination.first" /></span>

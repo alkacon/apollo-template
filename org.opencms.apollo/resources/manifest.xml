@@ -41,8 +41,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo</destination>
 			<type>folder</type>
-			<uuidstructure>830d7db3-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
+			<uuidstructure>710655ec-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:35 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -51,8 +51,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/elements</destination>
 			<type>folder</type>
-			<uuidstructure>832b17ee-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
+			<uuidstructure>7107404e-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:35 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -149,8 +149,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/elements/list</destination>
 			<type>folder</type>
-			<uuidstructure>9129db02-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:43:12 GMT</datecreated>
+			<uuidstructure>7f03b97e-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:58 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -180,8 +180,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/formatters</destination>
 			<type>folder</type>
-			<uuidstructure>832fd2e2-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
+			<uuidstructure>7109ff72-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:35 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -2652,8 +2652,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/functions</destination>
 			<type>folder</type>
-			<uuidstructure>8358de06-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
+			<uuidstructure>71326f56-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:35 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -2817,8 +2817,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/i18n</destination>
 			<type>folder</type>
-			<uuidstructure>8360cd51-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
+			<uuidstructure>71397341-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:35 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -3611,8 +3611,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/pages</destination>
 			<type>folder</type>
-			<uuidstructure>8624f64a-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:42:53 GMT</datecreated>
+			<uuidstructure>745f1d4c-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:40 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -3642,8 +3642,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/resources</destination>
 			<type>folder</type>
-			<uuidstructure>8627b56e-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:42:53 GMT</datecreated>
+			<uuidstructure>7461b560-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:40 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -3729,8 +3729,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/resources/js</destination>
 			<type>folder</type>
-			<uuidstructure>86289fd0-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:42:53 GMT</datecreated>
+			<uuidstructure>74629fc2-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:40 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -3739,8 +3739,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/resources/js/ugc</destination>
 			<type>folder</type>
-			<uuidstructure>8629b142-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:42:53 GMT</datecreated>
+			<uuidstructure>7463b134-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:40 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -3761,8 +3761,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/schemas</destination>
 			<type>folder</type>
-			<uuidstructure>836958da-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
+			<uuidstructure>7141628a-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:35 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -4077,8 +4077,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/schemas/nested</destination>
 			<type>folder</type>
-			<uuidstructure>836ba2cd-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:42:48 GMT</datecreated>
+			<uuidstructure>7143ac7d-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:35 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -4337,8 +4337,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/tags</destination>
 			<type>folder</type>
-			<uuidstructure>534ed022-d65b-11e5-b10a-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 18 Feb 2016 16:19:03 GMT</datecreated>
+			<uuidstructure>71518f35-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:35 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
@@ -4880,8 +4880,8 @@
 		<file>
 			<destination>system/modules/org.opencms.apollo/templates</destination>
 			<type>folder</type>
-			<uuidstructure>8374a385-75d2-11e6-be35-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 08 Sep 2016 14:42:49 GMT</datecreated>
+			<uuidstructure>716c6a53-7a58-11e6-a80b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Sep 2016 08:51:36 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>

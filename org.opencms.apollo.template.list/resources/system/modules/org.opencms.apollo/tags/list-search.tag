@@ -142,7 +142,7 @@
 			"name" : "${rangeFacetField}",
 			"label" : "Date",
 			"start" : "NOW/YEAR-20YEARS",
-			"end" : "NOW/MONTH",
+			"end" : "NOW/MONTH+2YEARS",
 			"gap" : "+1MONTHS",
 			"mincount" : 1,
 			"ignoreAllFacetFilters" : true

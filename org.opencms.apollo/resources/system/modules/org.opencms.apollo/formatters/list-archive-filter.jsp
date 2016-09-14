@@ -8,12 +8,11 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
 	<cms:formatter var="content" val="value" rdfa="rdfa">
-		<c:set var="sortAsc">${value.SortOrder.stringValue eq "asc"}</c:set>
-		
-		<apollo:list-search source="${value.Folder}" types="${value.TypesToCollect}" categories="${content.readCategories}" 
-						count="${value.ItemsPerPage.toInteger}" sortAsc="${sortAsc}" showexpired="${cms.element.settings.showexpired}" filterqueries="${value.FilterQueries}" />
+
+        <apollo:list-search source="${value.Folder}" types="${value.TypesToCollect}" categories="${content.readCategories}" 
+						count="${value.ItemsPerPage.toInteger}" sort="${value.SortOrder}" showexpired="${cms.element.settings.showexpired}" filterqueries="${value.FilterQueries}" />
 		<div>
-			<div class="ap-list-filters">
+			<div class="ap-list-filters" data-id="${cms.element.id}">
 			
 				<c:if test="${cms.element.settings.showsearch}">
 					<div class="ap-list-filterbox ap-list-filterbox-search ap-list-filterbox-${cms.element.settings.filtercolor}">
@@ -62,7 +61,8 @@
 									<c:if test="${showLabel}">
 										<li ${selected}>
 											<a href="javascript:void(0)"
-												onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}'); clearQuery();">
+												onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}', 
+												$('#ap-list-content-' + $(this).parents('.ap-list-filters').data('id'))); clearQuery();">
 												${currCat.title}	(${value.count})
 											</a>
 										</li>
@@ -112,7 +112,8 @@
 									${yearHtml}
 									<li ${selected}>
 										<a href="javascript:void(0)"
-												onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}'); clearQuery();" title="${facetItem.count}">
+												onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}', 
+												$('#ap-list-content-' + $(this).parents('.ap-list-filters').data('id'))); clearQuery();" title="${facetItem.count}">
 											<fmt:formatDate value="${fDate}" pattern="MMM" />
 										</a>
 									</li>
@@ -148,7 +149,7 @@
 				
 				window.onload = function () {
 					$( "#queryform" ).submit(function( event ) {
-						reloadInnerList("${search.stateParameters.resetAllFacetStates}&q=" + $("#queryinput").val());
+						reloadInnerList("${search.stateParameters.resetAllFacetStates}&q=" + $("#queryinput").val(), $('#ap-list-content-' + $(this).parents('.ap-list-filters').data('id')));
 					});
 				}
 				
