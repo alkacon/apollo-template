@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
+  <NewFormatter language="en">
+    <NiceName><![CDATA[Image with animation effect (new)]]></NiceName>
+    <Type><![CDATA[a-section]]></Type>
+    <Jsp>
+      <link type="WEAK">
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/image-animated.jsp]]></target>
+        <uuid>780d94de-7b43-11e6-95f6-0242ac11002b</uuid>
+      </link>
+    </Jsp>
+    <Rank><![CDATA[20000]]></Rank>
+    <Match>
+      <Types>
+        <ContainerType><![CDATA[element]]></ContainerType>
+        <ContainerType><![CDATA[section]]></ContainerType>
+        <ContainerType><![CDATA[image-animated]]></ContainerType>
+      </Types>
+    </Match>
+    <Preview>false</Preview>
+    <SearchContent>false</SearchContent>
+    <AutoEnabled>true</AutoEnabled>
+    <Detail>false</Detail>
+    <Display>false</Display>
+    <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[showCopy]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.copy)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showKenburn]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.kenburn)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showShadow]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.shadow)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[ilink]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.link.label)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showlink.description)]]></Description>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[false]]></Default>
+      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showlink.false)|image:%(key.apollo.setting.showlink.image)]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[itext]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.label)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[none]]></Default>
+      <WidgetConfig><![CDATA[
+        none:%(key.apollo.section.image.text.nothing)|
+        title:%(key.apollo.section.image.text.title)
+      ]]></WidgetConfig>
+    </Setting>
+  </NewFormatter>
+</NewFormatters>

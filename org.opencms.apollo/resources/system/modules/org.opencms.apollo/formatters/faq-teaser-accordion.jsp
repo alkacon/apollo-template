@@ -24,7 +24,7 @@
                     data-toggle="collapse"
                     href="#collapse-${accId}-${cms.element.settings.index}">
 
-                    <div class="ap-panel-title">${content.value.Question}</div>
+                    <span class="ap-panel-title">${content.value.Question}</span>
 
                 </a>
             </h4>

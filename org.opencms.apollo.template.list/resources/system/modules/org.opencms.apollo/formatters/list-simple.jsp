@@ -56,7 +56,7 @@
                 </div>
 		
 				<c:if test="${value.Link.exists}">
-					<div class="bo-grey-light bo-top-1 bo-top-dotted ph-0"><apollo:link link="${value.Link}" linkclass="btn ap-btn-${cms.element.settings.buttoncolor} ap-btn-sm" settitle="false"/></div>
+					<div class="bo-grey-light bo-top-1 bo-top-dotted ph-0"><apollo:link link="${value.Link}" cssclass="btn ap-btn-${cms.element.settings.buttoncolor} ap-btn-sm" settitle="false"/></div>
 				</c:if>	
 
 			</apollo:init-messages>

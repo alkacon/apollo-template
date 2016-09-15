@@ -16,17 +16,26 @@
           <query><![CDATA[state=open]]></query>
         </link>
       </links>
-      <content><![CDATA[<p>September&nbsp;xx, 2016: OpenCms 10.5 Beta</p>
+      <content><![CDATA[<p>September 16, 2016: Please note: this is a pre-release of the OpenCms 10.5 Beta that has been especially built for the OpenCms Days 2016 workshops. The release notes below are subject to change, the final draft will be released with the OpenCms 10.5 Beta.</p>
 <h2>New in OpenCms 10.5</h2>
 <ul>
-<li><span class="label label-warning">#</span>&nbsp;Very important</li>
-<li>Not so important</li>
+<li><span class="label label-warning">#</span>&nbsp;Enhanced change password dialog with password security indicator</li>
+<li>Added edit user data dialog</li>
+<li>Added confirm user data dialog</li>
+<li>Improved support of ultra HD&nbsp;screens by using font icons</li>
+<li>Added message&nbsp;bundle editor</li>
+<li>Added localization support tools</li>
+<li>Added copy page dialog</li>
+<li>Added new project management tool</li>
+<li>Added step through views short cut to page editor</li>
+<li>Extended macro formatters for better handling of new contents</li>
+<li>Added keyboard short cuts to content editor</li>
+<li>Added offline preview mode to page editor</li>
+<li>Transferred edit JSP permission from 'Template developer' role to 'VFS resource manager' role</li>
+<li>Unified toolbar appearance and context menus</li>
+<li>Added copyright column to explorer view</li>
 </ul>
 <p>Items marked with <span class="label label-warning">#</span> are considered important improvements in this version.</p>
-<h2>Improved in OpenCms 10.5</h2>
-<ul>
-<li>Bla</li>
-</ul>
 <h2>General OpenCms features</h2>
 <ul>
 <li>The page editor allows WYSIWYG inline editing of web pages and arrangement of content by drag &amp; drop.</li>

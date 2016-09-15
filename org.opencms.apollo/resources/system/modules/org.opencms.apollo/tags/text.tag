@@ -17,10 +17,10 @@
             <div ${text.rdfaAttr}>
                 ${text}
             </div>
-    </c:if>        
+    </c:if>
     <c:if test="${link.exists}">
             <p ${link.rdfaAttr}>
-                <apollo:link link="${link}" linkclass="btn btn-sm" settitle="false"/>
+                <apollo:link link="${link}" cssclass="btn btn-sm" settitle="false"/>
             </p>
     </c:if>
     </div>

@@ -42,7 +42,7 @@
 <%-- ####### Elements of the list ######## --%>
 
 	<c:forEach var="result" items="${search.searchResults}" varStatus="status">
-		<c:if test="${wrapitem}"><div class="list-entry"></c:if> 
+		<c:if test="${wrapitem}"><c:out value='<div class="list-entry">' escapeXml='false' /></c:if> 
 			<cms:display value="${result.xmlContent.filename}" displayFormatters="${types}" editable="true" create="true" delete="true">
 				<cms:param name="teaserlength" value="${teaserlength}" />
 				<cms:param name="buttoncolor">${color}</cms:param>
@@ -54,7 +54,7 @@
 				<cms:param name="showdate">${showdate}</cms:param>
 				<cms:param name="listid">${listid}</cms:param>
 			</cms:display>
-		<c:if test="${wrapitem}"></div></c:if> 
+		<c:if test="${wrapitem}"><c:out value='</div>' escapeXml='false' /></c:if> 
 	</c:forEach>
 	
 </c:if>

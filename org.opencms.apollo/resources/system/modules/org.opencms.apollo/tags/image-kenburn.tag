@@ -25,29 +25,11 @@
 
 <div class="ap-img ${cms.element.settings.istyle}">
 
-    <c:if test="${link.isSet && cms.element.settings.ilink != 'none'}">
-        <a href="<cms:link>${link.value.URI}</cms:link>"
-            <c:if test="${link.value.Text.isSet}">
-            title="${link.value.Text}"
-            </c:if>
-        >
-    </c:if>
-
-    <%-- ####### ImageDnD workaround ##################################### --%>
-    <%-- ####### image.value.Image.imageDndAttr doesn't work here ######## --%>
-    <%-- ################################################################# --%>
-
-    <c:if test="${not empty image && image.isSet}">
-        <c:set var="conValue" value="${image.value.Image.contentValue}" />
-        <c:set var="dndData" value="${conValue.document.file.structureId}|${conValue.path}|${conValue.locale}" />
-        <c:set var="imageDnd">data-imagednd="${dndData}"</c:set>
-    </c:if>
-
-    <%-- ################################################################# --%>
+    <apollo:link link="${link}" test="${cms.element.settings.ilink == 'image'}">
 
     <%-- ####### Show image (with link button if enabled) ######## --%>
     <div class="thumbnail-kenburn">
-        <span ${image.value.Image.rdfaAttr} ${imageDnd}>
+        <div ${image.value.Image.rdfaAttr} ${image.value.Image.imageDndAttr}>
             <div class="ap-img-pic ${cms.element.settings.istyle} ${' '} ${cms.element.settings.ieffect != 'none' ? cms.element.settings.ieffect : ''}">
                 <c:catch var="exception">
                     <cms:img
@@ -65,14 +47,10 @@
                     <p>Error displaying image: ${imageLink}</p>
                 </c:if>
             </div>
-        </span>
-        <c:if test="${cms.element.settings.ilink == 'image'}">
-            <a class="btn-more hover-effect"
-                    href="<cms:link>${link.value.URI}</cms:link>"
-                    <c:if test="${link.value.Text.isSet}">
-                        title="${link.value.Text}"
-                    </c:if>>${link.value.Text}</a>
-        </c:if>
+        </div>
+
+        <apollo:link link="${link}" cssclass="btn-more hover-effect" test="${cms.element.settings.ilink == 'image'}" />
+
     </div>
 
     <%-- ####### Show copyright if enabled ######## --%>
@@ -101,10 +79,8 @@
         </div>
     </c:if>
 
-    <c:if test="${link.isSet && cms.element.settings.ilink != 'none'}">
-            </a>
-    </c:if>
-
+    </apollo:link>
+    
 </div>
 
 </c:if>

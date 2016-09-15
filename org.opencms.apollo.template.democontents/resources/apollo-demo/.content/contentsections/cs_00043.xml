@@ -12,7 +12,7 @@
       </links>
       <content><![CDATA[<p>OpenCms 10.5 comes with a rewritten power-user backoffice called the Workplace.&nbsp;</p>
 <p>With improved inline editing options such as <strong>drag &amp; drop for images</strong> it's easier than ever for content manager to create great looking websites with OpenCms.</p>
-<p>Check out the <a href="%(link0)">Tutorial</a> for a quick intro&nbsp;about the use of the new editing features.</p>]]></content>
+<p>Check out the <a href="%(link0)">tutorial</a> for a quick intro&nbsp;about the use of the new editing features.</p>]]></content>
     </Text>
     <Image>
       <Image>
@@ -24,5 +24,14 @@
       <Title/>
       <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
     </Image>
+    <Link>
+      <Text><![CDATA[More information]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/]]></target>
+          <uuid>e46f947b-6100-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
   </ApolloSection>
 </ApolloSections>

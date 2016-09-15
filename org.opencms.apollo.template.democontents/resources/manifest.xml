@@ -6627,7 +6627,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English text page]]></value>
+					<value><![CDATA[English page: English text page]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6644,7 +6644,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[This box is blue!]]></value>
+					<value><![CDATA[English page: This box is blue!]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7069,7 +7069,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Website demo contents: Powerful]]></value>
+					<value><![CDATA[Powerful]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7086,7 +7086,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Intuitive]]></value>
+					<value><![CDATA[English page: Intuitive]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7103,7 +7103,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Responsive]]></value>
+					<value><![CDATA[English page: Responsive]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7120,7 +7120,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Website demo contents: Fun]]></value>
+					<value><![CDATA[Fun]]></value>
 				</property>
 			</properties>
 			<relations/>

@@ -862,6 +862,48 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo/formatters/image-animated.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/image-animated.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>780d94de-7b43-11e6-95f6-0242ac11002b</uuidstructure>
+			<uuidresource>780d94df-7b43-11e6-95f6-0242ac11002b</uuidresource>
+			<datecreated>Thu, 15 Sep 2016 12:53:58 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image with animation effect formatter JSP]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/image-animated.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/image-animated.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>832d2d41-7b43-11e6-95f6-0242ac11002b</uuidstructure>
+			<uuidresource>832d2d42-7b43-11e6-95f6-0242ac11002b</uuidresource>
+			<datecreated>Thu, 15 Sep 2016 12:54:17 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image with animation effect (new)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo/formatters/image-animation.jsp</source>
 			<destination>system/modules/org.opencms.apollo/formatters/image-animation.jsp</destination>
 			<type>jsp</type>

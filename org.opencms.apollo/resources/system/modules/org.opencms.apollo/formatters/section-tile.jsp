@@ -34,7 +34,7 @@
 					</div>
 					<c:if test="${value.Link.exists}">
 						<p ${rdfa.Link}>
-							<apollo:link link="${value.Link}" linkclass="btn btn-sm" settitle="false"/>
+							<apollo:link link="${value.Link}" cssclass="btn btn-sm" settitle="false"/>
 						</p>
 					</c:if>
 				</div>

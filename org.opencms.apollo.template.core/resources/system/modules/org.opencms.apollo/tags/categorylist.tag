@@ -12,11 +12,11 @@
 
 <c:if test="${not categories.isEmpty}">
     <c:if test="${showbigicon}">
-    <div class="row">
+    <c:out value='<div class="row">' escapeXml='false' /> 
         <div class="col-xs-1 col-sm-2">
             <i class="icon-custom icon-sm icon-color-u fa fa-tag"></i>                                
         </div>
-        <div class="col-xs-11 col-sm-10">
+        <c:out value='<div class="col-xs-11 col-sm-10">' escapeXml='false' /> 
     </c:if>
             <ul class="list-unstyled list-inline blog-tags">
                 <li>
@@ -29,7 +29,7 @@
                 </li>
             </ul>
     <c:if test="${showbigicon}">
-        </div>
-    </div>
+        <c:out value='</div>' escapeXml='false' /> 
+    <c:out value='</div>' escapeXml='false' /> 
     </c:if>
 </c:if>

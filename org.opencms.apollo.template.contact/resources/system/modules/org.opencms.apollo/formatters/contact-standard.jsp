@@ -10,7 +10,7 @@
 
 <cms:formatter var="content" val="value" rdfa="rdfa">
 
-    <div class="ap-contact ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "mb-20" }">
+    <div class="ap-contact ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : 'mb-20' }">
 
         <%-- ####### Init messages wrapper ################################## --%>
 		<c:set var="textnew"><fmt:message key="apollo.contact.message.new" /></c:set>

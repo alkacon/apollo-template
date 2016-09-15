@@ -68,13 +68,13 @@
 	
 		<%-- ################################################################################################################# HEAD ######## --%>
 		<c:set var="head">
-			<div class="btn-group hidden-xs">
+			<c:out value='<div class="btn-group hidden-xs">' escapeXml='false' />
 				<button type="button" class="dropdown-toggle btn ap-btn-${buttonColor}" data-toggle="dropdown" 
 								aria-haspopup="true" aria-expanded="false" id="dropdownMenu1" aria-expanded="true">
 					${buttonLabel} &nbsp; <span class="va-middle fa fs-8 fa-chevron-down"></span>
 				</button>
 				
-				<ul class="dropdown-menu dropdown-${buttonColor}">
+				<c:out value='<ul class="dropdown-menu dropdown-${buttonColor}">' escapeXml='false' />
 		</c:set>	
 
 		<c:set var="delimiter" value="|" />
@@ -117,9 +117,9 @@
 					
 		<%-- ################################################################################################################# FOOT ######## --%>
 		<c:set var="foot">
-				</ul>
-				
-			</div>	
+				<c:out value='</ul>' escapeXml='false' />
+
+			<c:out value='</div>' escapeXml='false' />	
 		</c:set>
 	</c:if>
 	

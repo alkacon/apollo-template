@@ -25,19 +25,19 @@
 
 		<c:choose>
 			<c:when test="${paragraph.value.Image.exists && (displayOption == 'false')}">
-				<c:set var="imgDivStart"><div class="col-md-4 search-img"></c:set>
-				<c:set var="imgDivCenter"></div><div class="col-md-8"></c:set>
-				<c:set var="imgDivEnd"></div></c:set>
+				<c:set var='imgDivStart' value='<div class="col-md-4 search-img">' />
+				<c:set var='imgDivCenter' value='</div><div class="col-md-8">' />
+				<c:set var='imgDivEnd' value='</div>' />
 			</c:when>
 			<c:when test="${paragraph.value.Image.exists && (displayOption == 'big')}">
-				<c:set var="imgDivStart"><div class="col-xs-12"><div class="search-img"></c:set>
-				<c:set var="imgDivCenter"></div><div></c:set>
-				<c:set var="imgDivEnd"></div></div></c:set>
+				<c:set var='imgDivStart' value='<div class="col-xs-12"><div class="search-img">' />
+				<c:set var='imgDivCenter' value='</div><div>' />
+				<c:set var='imgDivEnd' value='</div></div>' />
 			</c:when>
 			<c:otherwise>
-				<c:set var="imgDivStart"></c:set>
-				<c:set var="imgDivCenter"><div class="col-xs-12"></c:set>
-				<c:set var="imgDivEnd"></div></c:set>
+				<c:set var='imgDivStart' value='' />
+				<c:set var='imgDivCenter' value='<div class="col-xs-12">' />
+				<c:set var='imgDivEnd' value='</div>' />
 			</c:otherwise>
 		</c:choose>
 
@@ -55,7 +55,8 @@
 			<c:if test="${empty text}"><c:set var="text">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</c:set></c:if>
 
 			<c:set var="buttonText"><fmt:message key="apollo.blog.message.readmore" /></c:set>
-			<apollo:teaserbody
+			
+            <apollo:teaserbody
                 text="${text}"
                 textlength="${teaserLength}"
                 title="${content.value.Title}"

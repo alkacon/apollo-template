@@ -68,7 +68,7 @@
                 </div>                  
                 <c:if test="${paragraph.value.Link.exists}">
                     <button type="button">
-                        <a href="<cms:link>${paragraph.value.Link.value.URI}</cms:link>">${paragraph.value.Link.value.Text}</a>
+                    	<a href="<cms:link>${paragraph.value.Link.value.URI}</cms:link>">${paragraph.value.Link.value.Text}</a>
                     </button>
                 </c:if>
             </c:when>

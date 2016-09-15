@@ -11,7 +11,10 @@
         </div>
         <div class="float-col">
             <h2 class="heading-lg">
-                You have installed <span style="white-space: nowrap;">OpenCms ${cms.systemInfo.versionNumber}
+                You have installed 
+                <span style="white-space: nowrap;">
+                    OpenCms ${cms.systemInfo.versionNumber}
+                </span>
             </h2>
         </div>
     </div>
@@ -22,7 +25,7 @@
         <span style="white-space: nowrap;">${item.value.niceName}: ${item.value.value}</span>
     </c:forEach>
     </p>
-    
+
     <p>
         Running on 
         <cms:info property="java.vm.vendor" /> 

@@ -9,7 +9,7 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.map">
 
-<div class="ap-map ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : "" }">
+<div class="ap-map ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
 <cms:formatter var="map" val="value" rdfa="rdfa">
 	
 	<c:if test="${!cms.element.inMemoryOnly}">
@@ -36,7 +36,9 @@
 			<c:set var="mapw"></c:set>
 		</c:if>
 		<c:set var="maph">height: ${maph};</c:set>
-		<c:set var="elemid" value="${cms.element.id}"/><%
+		<c:set var="elemid" value="${cms.element.id}"/>
+		
+		<%
 				  CmsUUID id = (CmsUUID)pageContext.getAttribute("elemid");
 				  int hc = id.hashCode();
 				  String suffix = "" + hc;
@@ -247,7 +249,7 @@
 	<c:if test="${cms.element.settings.hidetitle ne 'true'}"><h1 ${rdfa.Headline}>${value.Headline}</h1></c:if>
 	<c:if test="${value.Text.isSet}"><div class="ap-maptext" ${rdfa.Text}>${value.Text}</div></c:if>
 
-	<div id="apmap${cms.element.id}" class="ap-mapcontent ${cms.element.setting.wrapperclass.isSet ? "" : "mb-20" }" style="${mapw}${maph}"></div>
+	<div id="apmap${cms.element.id}" class="ap-mapcontent ${cms.element.setting.wrapperclass.isSet ? '' : 'mb-20' }" style="${mapw}${maph}"></div>
 	<c:if test="${not empty usedMarkers || (value.ShowMarkers.exists && value.ShowMarkers != 'true')}">
 		<div class="ap-mapmarkerbuttons mb-20">
 			<c:choose>

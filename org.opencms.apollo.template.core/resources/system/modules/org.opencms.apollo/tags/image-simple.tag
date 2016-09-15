@@ -50,28 +50,13 @@
                     </c:when>
                     <c:otherwise>
                         <div class="ap-img ${istyle}">
-                        <c:if test="${link.isSet && ilink != 'none'}">
-                            <a class="ap-img-link" href="<cms:link>${link.value.URI}</cms:link>"
-                                <c:if test="${link.value.Text.isSet}">
-                                    title="${link.value.Text}"
-                                </c:if>
-                            >
-                        </c:if>
 
-                        <%-- ####### ImageDnD workaround ##################################### --%>
-                        <%-- ####### image.value.Image.imageDndAttr doesn't work here ######## --%>
-                        <%-- ################################################################# --%>
-
-                        <c:if test="${not empty image && image.isSet}">
-                            <c:set var="conValue" value="${image.value.Image.contentValue}" />
-                            <c:set var="dndData" value="${conValue.document.file.structureId}|${conValue.path}|${conValue.locale}" />
-                            <c:set var="imageDnd">data-imagednd="${dndData}"</c:set>
-                        </c:if>
+                        <apollo:link link="${link}" test="${ilink != 'none'}">
 
                         <%-- ################################################################# --%>
 
                             <div class="ap-img-pic">
-                                <span ${image.value.Image.rdfaAttr} ${imageDnd}>
+                                <span ${image.value.Image.rdfaAttr} ${image.value.Image.imageDndAttr}>
                                     <img
                                             src="<cms:link>${imageLink}</cms:link>"
                                             class="img-responsive ${ieffect != 'none' ? ieffect : ''}"
@@ -106,9 +91,7 @@
                                 </div>
                             </c:if>
 
-                        <c:if test="${link.isSet && ilink != 'none'}">
-                            </a>
-                        </c:if>
+                       	</apollo:link>
                         </div>
                     </c:otherwise>
                 </c:choose>

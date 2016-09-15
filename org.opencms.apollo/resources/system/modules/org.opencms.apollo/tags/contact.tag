@@ -31,10 +31,10 @@
 <%-- #### Contact exposed in hCard microformat, see http://microformats.org/wiki/hcard #### --%>
 
     <c:if test="${cols > 1}">
-        <div class="row">
+        <c:out value='<div class="row">' escapeXml='false' />	
         <c:choose>
             <c:when test="${image.isSet}">
-                <div class="ap-contact-image col-xs-4 col-sm-3">
+                <c:out value='<div class="ap-contact-image col-xs-4 col-sm-3">' escapeXml='false' />	
                 <c:choose>
                     <c:when test="${(cols > 2) and ((not empty link and link.isSet) or (data.isSet and data.value.EMail.isSet))}">
                         <c:set var="col2Present" value="true" />
@@ -72,14 +72,13 @@
     >
 
     <c:if test="${(cols > 1) and image.isSet}">
-        </div></div><%-- these close the two <div> tags opened in the image tag --%>
-        </div>
+        <c:out value='</div></div></div>' escapeXml='false' />	
     </c:if>
 
     <c:if test="${cols < 2 and not empty link and link.isSet and cms.element.setting.showLink.value}">
         <div class="thumbnail-kenburn">
             <c:set var="linktext"><fmt:message key="apollo.link.frontend.more" /></c:set>
-            <apollo:link link="${link}" linkclass="btn-more hover-effect" linktext="${linktext}" />
+            <apollo:link link="${link}" cssclass="btn-more hover-effect" linktext="${linktext}" />
         </div>
     </c:if>
 
@@ -169,8 +168,7 @@
             </c:if> 
 
             <c:if test="${col2Present}">
-                </div>
-                <div class="${col2Classes} ap-contact-links">
+                <c:out value='</div><div class="${col2Classes} ap-contact-links">' escapeXml='false' />
             </c:if>
 
             <c:if test="${cms.element.setting.showEmail.value and data.value.EMail.isSet}">
@@ -194,7 +192,7 @@
             </c:if>
 
             <c:if test="${cols > 1 and not empty link and link.isSet and cms.element.setting.showLink.value}">
-                    <apollo:link link="${link}" linkclass="btn btn-sm mt-5" />
+                    <apollo:link link="${link}" cssclass="btn btn-sm mt-5" />
             </c:if>
 
         </c:if>
@@ -202,9 +200,9 @@
     </div>
 
     <c:if test="${cols > 1}">
-        </div>
+        <c:out value='</div>' escapeXml='false' />	
         <c:if test="${image.isSet}">
-            <div><div> <%-- these open the two <div> tags closed in the image tag --%>
+            <c:out value='<div><div>' escapeXml='false' />	
         </c:if>
     </c:if>
 

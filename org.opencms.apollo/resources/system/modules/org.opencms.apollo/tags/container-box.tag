@@ -106,7 +106,7 @@
   <c:set var="modelTitle">${cms.element.setting.model_group_title}</c:set>
 </c:if>
 
-<div class="oc-modelinfo">
+<c:out value='<div class="oc-modelinfo">' escapeXml='false' />	
 
   <div class="row">
     <div class="col-xs-12">
@@ -125,7 +125,7 @@
 <c:when test="${(boxType == 'model-end') && cms.modelGroupElement }">
 <%-- Use case 3: Model box end --%>
 
-</div>
+<c:out value='</div>' escapeXml='false' />
 
 <%-- End of use case 3: Model box end --%>
 </c:when>

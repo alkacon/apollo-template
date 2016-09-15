@@ -8,12 +8,12 @@
 <cms:bundle basename="org.opencms.apollo.template.schemas.section">
 
 <cms:formatter var="content">
-	<c:set var="textnew"><fmt:message key="apollo.section.message.new" /></c:set>
-	<apollo:init-messages textnew="${textnew}">
-		<apollo:image-simple 
-			image="${content.value.Image}"
-			headline="${content.value.Headline}" 
-			link="${content.value.Link}" />
-	</apollo:init-messages>
+    <c:set var="textnew"><fmt:message key="apollo.section.message.new" /></c:set>
+    <apollo:init-messages textnew="${textnew}">
+        <apollo:image-simple 
+            image="${content.value.Image}"
+            headline="${content.value.Headline}" 
+            link="${content.value.Link}" />
+    </apollo:init-messages>
 </cms:formatter>
 </cms:bundle>
