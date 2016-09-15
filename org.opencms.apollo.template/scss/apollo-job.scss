@@ -1,0 +1,26 @@
+$headline-linecolor:     $main-theme !default;
+
+.ap-job{
+
+    &.ap-job-detail {
+    	margin-bottom: 20px;
+    	
+    	.ap-job-headline-block .headline {
+    	
+           margin-top: 0;
+    	
+    	   h2 {
+               font-size: 32px;
+               color: $headline-linecolor;
+               border-bottom: none;
+    	   }
+    	}
+    	
+        .ap-job-intro {
+            margin-bottom: 20px;
+        }
+    	
+    }
+    
+    
+}
