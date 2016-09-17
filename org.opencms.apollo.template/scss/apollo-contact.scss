@@ -11,35 +11,35 @@
     .ap-contact-fax {
         // nothing so far
     }
-    
+
+    &.ap-contact-threecol,
     &.ap-contact-onecol {
-        
+
+        margin-bottom: 20px;
+
         .fn {
             margin-bottom: 4px;
         }
 
         .title {
             font-style: italic;
-            margin-bottom: 4px;            
+            margin-bottom: 4px;
         }
     }
-    
-    .fa {
-	   padding-right: 5px;
-	   width: 20px;
-	}
 
-    &.ap-contact-muticol {
-        
-        .ap-contact-phone, 
-        .ap-contact-mobile, 
-        .ap-contact-fax, 
-        .ap-contact-email-label {
-            float: left;
+    .ap-tablerow {
+        display: table-row;
+
+        span {
             padding-right: 5px;
+            display: table-cell;
         }
     }
 
+    .fa {
+       padding-right: 5px;
+       width: 20px;
+    }
 }
 
 

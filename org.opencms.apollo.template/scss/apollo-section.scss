@@ -133,7 +133,13 @@ a.ap-img-link {
     margin-top: 20px;
 }
 
-.ap-sec-imagebox-title, .ap-sec-imagebox-icon, .ap-sec-imagebox-text, .ap-sec-imagebox .ap-img .info .copyright {
+.ap-sec-imagebox-title, 
+.ap-sec-imagebox-icon, 
+.ap-sec-imagebox-text,
+.ap-sec-imagebox
+.ap-img 
+.info 
+.copyright {
 	color: $grey;
 }
 
@@ -145,14 +151,87 @@ a.thumbnail {
     margin-bottom: 15px;
 }
 
-.ap-image-teaser .info {
-	text-align: right;
+.ap-section-animated {
+
+    .copyright {
+        text-align: right;
+        font-size: 0.7em;
+        color: $grey;
+    }
+
+    .link {
+        position: relative;
+    }
+
+    h3.subtitle {
+
+        a {
+            color: $text-headers;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: $main-theme !important;
+        }
+    }
+
+    a.btn-animated {
+        right: -10px;
+        bottom: 10px;
+        position: absolute;
+        display: inline-block; 
+    }
+
+    &:hover a.btn-animated {
+        right: 10px;
+    }
 }
 
-.ap-image-teaser .info .copyright {
-	font-size: 0.7em;
-	color: $grey;
+.ap-image-animated {
+
+    // Shadow animation
+    &.ap-shadow-animation {
+
+        &:hover {
+            box-shadow: 0 0 8px $grey-dark; 
+            -webkit-transition: box-shadow 0.2s ease-in-out;
+            transition: box-shadow 0.2s ease-in-out;
+        }
+
+        &:hover .ap-shadow-animation-inner {
+            transform: scale(0.925);
+            transition: .3s ease-in;
+        }
+    }
+
+    .ap-shadow-animation-inner {
+        transform: scale(1);
+        transition: .3s ease-out;
+    }
+
+    // Ken Burns animation
+    &.ap-kenburns-animation {
+        position: relative;
+
+        img {
+            left: 10px;
+            margin-left: -10px;
+            position: relative;
+            -webkit-transition: all 1.0s ease-in-out;
+            transition: all 1.0s ease-in-out;
+        }
+
+        .ap-kenburns-animation-inner {
+            overflow: hidden;
+        }
+
+        &:hover img {
+           -webkit-transform: scale(1.25) rotate(2deg);
+           transform: scale(1.25) rotate(2deg);
+        }
+    }
 }
+
 
 .thumbnail-style { 
     margin-bottom: 20px; 
@@ -181,27 +260,7 @@ a.thumbnail {
     }
 }
 
-.shadow-border {
 
-    &:hover {
-        box-shadow: 0 0 8px $grey-dark; 
-        -webkit-transition: box-shadow 0.2s ease-in-out;
-        -moz-transition: box-shadow 0.2s ease-in-out;
-        -o-transition: box-shadow 0.2s ease-in-out;
-        transition: box-shadow 0.2s ease-in-out;
-    }
-
-    &:hover .shadow-border-inner {
-        transform: scale(0.925);
-        transition: .3s ease-in;        
-    }
-}
-
-.shadow-border-inner {
-
-    transform: scale(1);
-    transition: .3s ease-out;
-}
 
 // thumbnail effects
 
