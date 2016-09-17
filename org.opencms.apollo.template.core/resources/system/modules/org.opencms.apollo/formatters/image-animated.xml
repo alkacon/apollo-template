@@ -25,30 +25,23 @@
     <Display>false</Display>
     <NestedContainers>false</NestedContainers>
     <Setting>
-      <PropertyName><![CDATA[showCopy]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.copy)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
+      <PropertyName><![CDATA[cssclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[showKenburn]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.effect.kenburn)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[showShadow]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.effect.shadow)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[ilink]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.link.label)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.showlink.description)]]></Description>
+      <PropertyName><![CDATA[ieffect]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showlink.false)|image:%(key.apollo.setting.showlink.image)]]></WidgetConfig>
+      <Default><![CDATA[none]]></Default>
+      <WidgetConfig><![CDATA[
+        none:%(key.apollo.section.image.effect.none)|
+        shadow:%(key.apollo.section.image.effect.animatedshadow)|
+        kenburn:%(key.apollo.section.image.effect.kenburn)|
+        shadow-kenburn:%(key.apollo.section.image.effect.shadowkenburn)
+      ]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[itext]]></PropertyName>
@@ -57,8 +50,18 @@
       <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
         none:%(key.apollo.section.image.text.nothing)|
-        title:%(key.apollo.section.image.text.title)
+        copy:%(key.apollo.section.image.text.copy)|
+        title:%(key.apollo.section.image.text.title)|
+        title-copy:%(key.apollo.section.image.text.titlecopy)
       ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[ilink]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.link.label)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showlink.description)]]></Description>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[false]]></Default>
+      <WidgetConfig><![CDATA[false:%(key.apollo.setting.showlink.false)|image:%(key.apollo.setting.showlink.image)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

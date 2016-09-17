@@ -1,23 +1,28 @@
 <%@ tag
-    display-name="image-kenburn"
+    display-name="image-animated"
     trimDirectiveWhitespaces="true"
-    description="Formates an image with a Ken Burns and / or shadow animation effect." %>
+    description="Formates an image with an options Ken Burns and / or shadow animation effect." %>
     <%-- See https://en.wikipedia.org/wiki/Ken_Burns" --%>
 
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The image to format. Must be a generic Apollo nested image content."%>
 
-<%@ attribute name="imagestyle" type="java.lang.String" required="false" 
-    description="CSS class added directly to the generated image tag."%>
-
-<%@ attribute name="divstyle" type="java.lang.String" required="false" 
+<%@ attribute name="cssclass" type="java.lang.String" required="false" 
     description="CSS class added to the div tag sourrounding the image."%>
+
+<%@ attribute name="cssimage" type="java.lang.String" required="false" 
+    description="CSS class added directly to the generated image tag."%>
 
 <%@ attribute name="shadowanimation" type="java.lang.Boolean" required="false"
     description="If 'true' insert classes that generate a shadow zoom effect."%>
 
-<%@ attribute name="imageanimation" type="java.lang.Boolean" required="false" 
+<%@ attribute name="kenburnsanimation" type="java.lang.Boolean" required="false" 
     description="If 'true' insert classes that generate the 'Ken Burns' animation."%>
+
+<%@ attribute name="test" type="java.lang.String" required="false"
+    description="Can be used to defer the decision to actually create the markup around the body to the calling element.
+    If not set or 'true', the markup from this tag is generated around the body of the tag.
+    Otherwise everything is ignored and just the body of the tag is returned. "%>
 
 <%-- ####### These variables are actually set in the apollo:image-vars tag included ####### --%>
 <%@ variable name-given="imageLink" declare="true" %>
@@ -34,23 +39,20 @@
 <c:if test="${image.isSet}">
 <apollo:image-vars image="${image}">
 
-<c:if test="${not empty imageLink}">
+<c:if test="${(not empty imageLink) and (empty test or test)}">
 <c:set var="imagefound">true</c:set>
 
 <%-- ####### Animated image ####### --%>
 
-<div class="thumbnails
-    <c:if test='${imageanimation}'> thumbnail-kenburn</c:if>
-    <c:if test='${shadowanimation}'> shadow-border</c:if> 
+<div class="ap-image-animated
+    <c:if test='${kenburnsanimation}'> ap-kenburns-animation</c:if>
+    <c:if test='${shadowanimation}'> ap-shadow-animation</c:if> 
     <c:out value=' ${divstyle}'/>">
 
-    <div <c:if test="${shadowanimation}">class="shadow-border-inner"</c:if>>
-
-        <div class="ap-img-pic" ${image.value.Image.imageDndAttr}>
+    <div <c:if test="${shadowanimation}">class="ap-shadow-animation-inner"</c:if>>
+        <div  ${image.value.Image.imageDndAttr} <c:if test="${kenburnsanimation}">class="ap-kenburns-animation-inner"</c:if>>
             <cms:img 
                 src="${imageLink}"
-                scaleColor="transparent"
-                scaleType="0"
                 cssclass="img-responsive ${imagestyle}"
                 alt="${imageTitleCopyright}"
                 title="${imageTitleCopyright}"
@@ -71,12 +73,14 @@
 
 <c:if test="${empty imagefound}">
 
-    <fmt:setLocale value="${cms.locale}" />
-    <cms:bundle basename="org.opencms.apollo.template.schemas.section">
-        <div class="alert">
-            <fmt:message key="apollo.section.message.noimage" />
-        </div>
-    </cms:bundle>
+    <c:if test="${empty test or test}">
+        <fmt:setLocale value="${cms.locale}" />
+        <cms:bundle basename="org.opencms.apollo.template.schemas.section">
+            <div class="alert">
+                <fmt:message key="apollo.section.message.noimage" />
+            </div>
+        </cms:bundle>
+    </c:if>
 
     <%-- ####### JSP body inserted here ######## --%>
     <jsp:doBody/>

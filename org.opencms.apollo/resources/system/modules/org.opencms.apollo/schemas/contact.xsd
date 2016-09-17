@@ -1,58 +1,58 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
-	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+    <xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
     <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/image.xsd"/>
     <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/link.xsd"/>
     <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/contact-name.xsd"/>
     <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/contact-data.xsd"/>
-    
-	<xsd:element name="ApolloContacts" type="OpenCmsApolloContacts"/>
 
-	<xsd:complexType name="OpenCmsApolloContacts">
-		<xsd:sequence>
-			<xsd:element name="ApolloContact" type="OpenCmsApolloContact" minOccurs="0" maxOccurs="unbounded"/>
-		</xsd:sequence>
-	</xsd:complexType>
+    <xsd:element name="ApolloContacts" type="OpenCmsApolloContacts"/>
 
-	<xsd:complexType name="OpenCmsApolloContact">
-		<xsd:sequence>
-			<xsd:element name="Name" type="OpenCmsApolloContactName" minOccurs="0" />
-			<xsd:element name="Organisation" type="OpenCmsString" />
-			<xsd:element name="Position" type="OpenCmsString" />
-			<xsd:element name="Description" type="OpenCmsHtml" minOccurs="0" />
-			<xsd:element name="Image" type="OpenCmsApolloNestedImage" minOccurs="0" />
-			<xsd:element name="Link" type="OpenCmsApolloLink" minOccurs="0" />
-			<xsd:element name="Contact" type="OpenCmsApolloContactData" />
+    <xsd:complexType name="OpenCmsApolloContacts">
+        <xsd:sequence>
+            <xsd:element name="ApolloContact" type="OpenCmsApolloContact" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="OpenCmsApolloContact">
+        <xsd:sequence>
+            <xsd:element name="Name" type="OpenCmsApolloContactName" minOccurs="0" />
+            <xsd:element name="Organization" type="OpenCmsString" />
+            <xsd:element name="Position" type="OpenCmsString" />
+            <xsd:element name="Description" type="OpenCmsHtml" minOccurs="0" />
+            <xsd:element name="Image" type="OpenCmsApolloNestedImage" minOccurs="0" />
+            <xsd:element name="Link" type="OpenCmsApolloLink" minOccurs="0" />
+            <xsd:element name="Contact" type="OpenCmsApolloContactData" />
             <xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
-		</xsd:sequence>
-		<xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
-	</xsd:complexType>
+        </xsd:sequence>
+        <xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
+    </xsd:complexType>
 
-	<xsd:annotation>
-		<xsd:appinfo>
-			<resourcebundle name="org.opencms.apollo.template.schemas.contact" />
-			<mappings>
+    <xsd:annotation>
+        <xsd:appinfo>
+            <resourcebundle name="org.opencms.apollo.template.schemas.contact" />
+            <mappings>
                 <mapping element="GalleryTitle" mapto="property:Title" useDefault="true" />
-				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
-			</mappings>
+                <mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
+            </mappings>
             <defaults>
                 <default element="GalleryTitle" value="%(value:Organisation)%(no_prefix: - )%(value:Name/Title) %(value:Name/FirstName) %(value:Name/MiddleName)  %(value:Name/LastName)  %(value:Name/Suffix) [%(value:Position)]" resolveMacros="false" />
             </defaults>
-			<tabs>
-				<tab element="Name" collapse="false" name="NameTab" />
-				<tab element="Contact" collapse="false" name="ContactTab" />
-			</tabs>			
-			<searchsettings containerPageOnly="false">
-				<searchsetting element="GalleryTitle" searchcontent="false" />
+            <tabs>
+                <tab element="Name" collapse="false" name="NameTab" />
+                <tab element="Contact" collapse="false" name="ContactTab" />
+            </tabs>
+            <searchsettings containerPageOnly="false">
+                <searchsetting element="GalleryTitle" searchcontent="false" />
             </searchsettings>
-		  	<visibilities>
+              <visibilities>
                 <visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
             </visibilities>
             <editorchangehandlers>
-   				<editorchangehandler 
-   					class="org.opencms.ade.contenteditor.CmsEditorChangeHandlerProperty" 
-   					scope="Image*/Image" configuration="Copyright|../Copyright" />
-    		</editorchangehandlers> 
-		</xsd:appinfo>
-	</xsd:annotation>  
+                   <editorchangehandler
+                       class="org.opencms.ade.contenteditor.CmsEditorChangeHandlerProperty" 
+                       scope="Image*/Image" configuration="Copyright|../Copyright" />
+            </editorchangehandlers> 
+        </xsd:appinfo>
+    </xsd:annotation>  
 </xsd:schema>

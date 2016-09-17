@@ -1,9 +1,8 @@
-<%@page 
-	buffer="none" 
-	session="false" 
-	import="java.nio.charset.Charset"
-	trimDirectiveWhitespaces="true"%>
-	
+<%@page
+    buffer="none"
+    session="false"
+    trimDirectiveWhitespaces="true"%>
+
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -15,27 +14,36 @@
 <cms:formatter var="content" val="value">
 
 <%-- #### Contact exposed in hCard microformat, see http://microformats.org/wiki/hcard #### --%>
+<c:set var="textnew"><fmt:message key="apollo.contact.message.new" /></c:set>
+<apollo:init-messages textnew="${textnew}">
 
-<div class="ap-contact ap-contact-onecol vcard">
+<div class="ap-contact ap-contact-onecol ap-section-animated vcard">
 
-	<%-- ####### Init messages wrapper ################################## --%>
-	<c:set var="textnew"><fmt:message key="apollo.contact.message.new" /></c:set>
-	<apollo:init-messages textnew="${textnew}">
+    <c:set var="fragments">
+        image 
+        name 
+        ${cms.element.setting.labels.value}
+        <c:if test="${cms.element.setting.effect.value != 'none'}">${cms.element.setting.effect.value}</c:if>
+        <c:if test="${cms.element.setting.link.value != 'false'}">${cms.element.setting.link.value}</c:if>
+        <c:if test="${cms.element.setting.showOrganization.value}">organization</c:if>
+        <c:if test="${cms.element.setting.showDescription.value}">description</c:if>
+        <c:if test="${cms.element.setting.showAddress.value}">address</c:if>
+        <c:if test="${cms.element.setting.showPhone.value}">phone</c:if>
+        <c:if test="${cms.element.setting.showEmail.value}">email</c:if>
+    </c:set>
 
-		<apollo:contact
-			image="${value.Image}"
-			link="${value.Link}"
-			name="${value.Name}"
-            position="${value.Position}"
-            organisation="${value.Organisation}"
-            description="${value.Description}"
-            data="${value.Contact}"
-            cols="1"
-		/>
-
-	</apollo:init-messages>
-
+    <apollo:contact
+        image="${value.Image}"
+        link="${value.Link}"
+        name="${value.Name}"
+        position="${value.Position}"
+        organization="${value.Organization}"
+        description="${value.Description}"
+        data="${value.Contact}"
+        fragments="${fragments}" />
 </div>
+
+</apollo:init-messages>
 
 </cms:formatter>
 </cms:bundle>

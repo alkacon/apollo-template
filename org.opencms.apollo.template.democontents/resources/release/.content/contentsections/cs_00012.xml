@@ -2,7 +2,7 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[OpenCms 10 Server installation]]></Headline>
+    <Headline><![CDATA[OpenCms 10.5 Server installation]]></Headline>
     <Text name="Text0">
       <links>
         <link name="link0" internal="false" type="A">
@@ -73,7 +73,7 @@
 <h2><a id="a1" name="a1"></a>Install the Java SDK, version 7 or newer</h2>
 <p>Install the Java JDK, version 7 or newer (from Oracle&nbsp;<code><a title="External link, opens in new window" href="%(link10)" target="_blank">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></code>). For details on how to install these components on your operating system, see the documentation that comes with them. You must install the Java&nbsp;<em>JDK</em>&nbsp;(Java Development Kit), not the&nbsp;<em>JRE</em>&nbsp;(Java Runtime Environment) that is also available from Oracle. The JRE is&nbsp;<em>not</em>&nbsp;sufficient to run OpenCms!</p>
 <h2><a id="a2" name="a2"></a>Install Tomcat</h2>
-<p>OpenCms requires a Servlet 2.4 / JSP 2.0 standards compliant container. This release was tested with Tomcat 6.0.x. and Tomcat 7.0.x.</p>
+<p>OpenCms requires a Servlet 2.4 / JSP 2.0 standards compliant container. This release was tested with Tomcat 7.0.x. and Tomcat 8.0.x.</p>
 <p>Install Tomcat from&nbsp;<code><a title="External link, opens in new window" href="%(link11)" target="_blank">http://tomcat.apache.org</a>&nbsp;</code>into a folder of your choice. This is the&nbsp;<code>CATALINA_HOME</code>&nbsp;folder. Don't forget to set the environment variables&nbsp;<code>CATALINA_HOME</code>&nbsp;and&nbsp;<code>JAVA_HOME</code>.</p>
 <p>Test the installation by running Tomcat in standalone mode and check the examples. Note: Tomcat uses port 8080 in standalone mode. If you wish, you can combine the servlet-engine with a webserver like the Apache Web Server&nbsp;<code><a title="External link,
 opens in new window" href="%(link12)" target="_blank">http://httpd.apache.org</a></code>. Please see the documentation available with the webserver on how to combine it with your servlet environment.</p>

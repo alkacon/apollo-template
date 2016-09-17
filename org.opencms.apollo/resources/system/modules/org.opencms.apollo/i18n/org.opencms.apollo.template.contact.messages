@@ -3,28 +3,40 @@
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
     <Message>
+      <Key><![CDATA[apollo.contact.setting.showorganization]]></Key>
+      <Value><![CDATA[Show organization]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.setting.labels.texticons]]></Key>
+      <Value><![CDATA[Use icons and text for labels]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.setting.labels.text]]></Key>
+      <Value><![CDATA[Use text for labels]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[title.a-contact]]></Key>
       <Value><![CDATA[Contact Information]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.setting.labels]]></Key>
+      <Value><![CDATA[Label style]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.setting.showemail]]></Key>
+      <Value><![CDATA[Show email address]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[desc.a-contact]]></Key>
       <Value><![CDATA[Shows detailed information of a contact person / company.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[fileicon.a-contact]]></Key>
-      <Value><![CDATA[Contact Information]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.setting.showicons]]></Key>
-      <Value><![CDATA[Show icons as data labels]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.setting.showorganisation]]></Key>
-      <Value><![CDATA[Show organization]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.contact.setting.showdescription]]></Key>
       <Value><![CDATA[Show description]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.setting.showlink]]></Key>
+      <Value><![CDATA[Show link]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.contact.setting.showaddress]]></Key>
@@ -35,38 +47,50 @@
       <Value><![CDATA[Show phone]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.contact.setting.showemail]]></Key>
-      <Value><![CDATA[Show email address]]></Value>
+      <Key><![CDATA[fileicon.a-contact]]></Key>
+      <Value><![CDATA[Contact Information]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.contact.setting.showlink]]></Key>
-      <Value><![CDATA[Show link]]></Value>
+      <Key><![CDATA[apollo.contact.setting.labels.icons]]></Key>
+      <Value><![CDATA[Use icons for labels]]></Value>
     </Message>
   </Bundle>
   <Bundle language="de">
     <Message>
+      <Key><![CDATA[apollo.contact.setting.showorganization]]></Key>
+      <Value><![CDATA[Zeige Organisation]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.setting.labels.texticons]]></Key>
+      <Value><![CDATA[Verwende Icons und Text als Labels]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.setting.labels.text]]></Key>
+      <Value><![CDATA[Verwende Text als Labels]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[title.a-contact]]></Key>
       <Value><![CDATA[Kontakt Information]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.setting.labels]]></Key>
+      <Value><![CDATA[Stil der Labels]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.setting.showemail]]></Key>
+      <Value><![CDATA[Zeige E-Mail Adresse]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[desc.a-contact]]></Key>
       <Value><![CDATA[Zeigt detaillierte Informationen einer Kontaktperson / Firma an.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[fileicon.a-contact]]></Key>
-      <Value><![CDATA[Kontakt Information]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.setting.showicons]]></Key>
-      <Value><![CDATA[Zeige Icons als Labels]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.setting.showorganisation]]></Key>
-      <Value><![CDATA[Zeige Organisation]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.contact.setting.showdescription]]></Key>
       <Value><![CDATA[Zeige Beschreibung]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.setting.showlink]]></Key>
+      <Value><![CDATA[Zeige Link]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.contact.setting.showaddress]]></Key>
@@ -77,12 +101,12 @@
       <Value><![CDATA[Zeige Telefonnummer]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.contact.setting.showemail]]></Key>
-      <Value><![CDATA[Zeige E-Mail Adresse]]></Value>
+      <Key><![CDATA[fileicon.a-contact]]></Key>
+      <Value><![CDATA[Kontakt Information]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.contact.setting.showlink]]></Key>
-      <Value><![CDATA[Zeige Link]]></Value>
+      <Key><![CDATA[apollo.contact.setting.labels.icons]]></Key>
+      <Value><![CDATA[Verwende Icons als Labels]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

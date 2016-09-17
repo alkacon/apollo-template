@@ -9,8 +9,12 @@
       <LastName><![CDATA[Pritchett III]]></LastName>
       <Suffix><![CDATA[Ph. D.]]></Suffix>
     </Name>
-    <Organisation><![CDATA[Markup Brewers Inc.]]></Organisation>
+    <Organization><![CDATA[Markup Brewers Inc.]]></Organization>
     <Position><![CDATA[CEO]]></Position>
+    <Description name="Description0">
+      <links/>
+      <content><![CDATA[<p>The boss of bosses!</p>]]></content>
+    </Description>
     <Image>
       <Image>
         <link type="WEAK">

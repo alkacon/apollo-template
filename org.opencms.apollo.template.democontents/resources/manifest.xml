@@ -5763,7 +5763,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Critical Coders Corp. -  Claire   Dunphy   [Director HR]]]></value>
+					<value><![CDATA[ Claire   Dunphy   [Director HR]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5780,7 +5780,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Markup Brewers Inc. - Dr. Jake M.  Pritchett III  Ph. D. [CEO]]]></value>
+					<value><![CDATA[Dr. Jake M.  Pritchett III  Ph. D. [CEO]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5797,7 +5797,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Cascading Styles LLC -  Cameron   Tucker   [VP of Operations]]]></value>
+					<value><![CDATA[ Cameron   Tucker   [VP of Operations]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5814,7 +5814,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Recursive Iterators Union -  Manuel B.  Delgado   [Team Manager]]]></value>
+					<value><![CDATA[ Manuel B.  Delgado   [Team Manager]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5831,7 +5831,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Clueless Advisors PLC -  Haley S.  Dunphy   [Consultant]]]></value>
+					<value><![CDATA[ Haley S.  Dunphy   [Consultant]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5848,7 +5848,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Hectic Hackers Inc. -  Mitchell   Pritchett  M.A. [Designer]]]></value>
+					<value><![CDATA[ Mitchell   Pritchett  M.A. [Designer]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5865,7 +5865,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Short Cuts LLP -  Lily   Tucker-Pritchett   [Marketing]]]></value>
+					<value><![CDATA[ Lily   Tucker-Pritchett   [Marketing]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5882,7 +5882,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Locial Loop Ltd. -  Pepper   Saltzman   [Analyst]]]></value>
+					<value><![CDATA[ Pepper   Saltzman   [Analyst]]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11786,7 +11786,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Installation: OpenCms 10 Server installation]]></value>
+					<value><![CDATA[Installation: OpenCms 10.5 Server installation]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -12858,7 +12858,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Login to OpenCms: Welcome to the OpenCms 10.0 tutorial]]></value>
+					<value><![CDATA[Login to OpenCms: Welcome to the OpenCms 10.5 tutorial]]></value>
 				</property>
 			</properties>
 			<relations/>

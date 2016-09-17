@@ -26,8 +26,8 @@
 		<resources>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-onecol.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-onecol.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-standard.jsp"/>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-standard.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-threecol.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-threecol.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.contact.messages"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.contact"/>
 			<resource uri="/system/modules/org.opencms.apollo/resources/contact-mailfunctions.js"/>
@@ -117,6 +117,14 @@
 			<datecreated>Fri, 09 Sep 2016 08:16:31 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Contact in one column formatter]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
@@ -136,15 +144,15 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[One Column Contact Information ]]></value>
+					<value><![CDATA[Contact in one coulumn]]></value>
 				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/formatters/contact-standard.jsp</source>
-			<destination>system/modules/org.opencms.apollo/formatters/contact-standard.jsp</destination>
+			<source>system/modules/org.opencms.apollo/formatters/contact-threecol.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/contact-threecol.jsp</destination>
 			<type>jsp</type>
 			<uuidstructure>4b87abb0-4425-11e6-a8b1-0242ac11002b</uuidstructure>
 			<uuidresource>4b87abb1-4425-11e6-a8b1-0242ac11002b</uuidresource>
@@ -153,7 +161,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for standard contact info]]></value>
+					<value><![CDATA[Contact in three columns formatter]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -168,8 +176,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/formatters/contact-standard.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/contact-standard.xml</destination>
+			<source>system/modules/org.opencms.apollo/formatters/contact-threecol.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/contact-threecol.xml</destination>
 			<type>formatter_config</type>
 			<uuidstructure>4b8d7813-4425-11e6-a8b1-0242ac11002b</uuidstructure>
 			<uuidresource>4b8d7814-4425-11e6-a8b1-0242ac11002b</uuidresource>
@@ -178,7 +186,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Standard Contact Information ]]></value>
+					<value><![CDATA[Contact in three columns ]]></value>
 				</property>
 				<property>
 					<name>locale</name>

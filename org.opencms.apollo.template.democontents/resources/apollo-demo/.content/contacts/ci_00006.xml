@@ -7,7 +7,7 @@
       <LastName><![CDATA[Pritchett]]></LastName>
       <Suffix><![CDATA[M.A.]]></Suffix>
     </Name>
-    <Organisation><![CDATA[Hectic Hackers Inc.]]></Organisation>
+    <Organization><![CDATA[Hectic Hackers Inc.]]></Organization>
     <Position><![CDATA[Designer]]></Position>
     <Image>
       <Image>
@@ -25,7 +25,7 @@
       </Address>
       <Mobile><![CDATA[+49 (170) 123-4567]]></Mobile>
       <EMail><![CDATA[mitchell.pritchett@example.org]]></EMail>
-      <OpenEMail>false</OpenEMail>
+      <OpenEMail>true</OpenEMail>
     </Contact>
   </ApolloContact>
 </ApolloContacts>

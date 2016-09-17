@@ -2,11 +2,11 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Standard Contact Information ]]></NiceName>
+    <NiceName><![CDATA[Contact in three columns ]]></NiceName>
     <Type><![CDATA[a-contact]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/contact-standard.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/contact-threecol.jsp]]></target>
         <uuid>4b87abb0-4425-11e6-a8b1-0242ac11002b</uuid>
       </link>
     </Jsp>
@@ -15,6 +15,7 @@
       <Types>
         <ContainerType><![CDATA[element]]></ContainerType>
         <ContainerType><![CDATA[contact]]></ContainerType>
+        <ContainerType><![CDATA[contact-threecol]]></ContainerType>
       </Types>
     </Match>
     <Preview>false</Preview>
@@ -38,26 +39,42 @@
       <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[showKenburn]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.effect.kenburn)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
+      <PropertyName><![CDATA[effect]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[none]]></Default>
+      <WidgetConfig><![CDATA[
+        none:%(key.apollo.section.image.effect.none)|
+        effect-shadow:%(key.apollo.section.image.effect.animatedshadow)|
+        effect-kenburns:%(key.apollo.section.image.effect.kenburn)|
+        effect-shadow-effect-kenburns:%(key.apollo.section.image.effect.shadowkenburn)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[link]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showlink)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
+      <WidgetConfig><![CDATA[
+        false:%(key.apollo.setting.showlink.false)|
+        animated-link:%(key.apollo.setting.showlink.image)|
+        static-link:%(key.apollo.setting.showlink.button)
+      ]]></WidgetConfig>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[showShadow]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.effect.animatedshadow)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
+      <PropertyName><![CDATA[labels]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.labels)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[text]]></Default>
+      <WidgetConfig><![CDATA[
+        label-text:%(key.apollo.contact.setting.labels.text)|
+        label-icon:%(key.apollo.contact.setting.labels.icons)|
+        label-text-label-icon:%(key.apollo.contact.setting.labels.texticons)
+      ]]></WidgetConfig>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[showIcons]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.contact.setting.showicons)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[showOrganisation]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.contact.setting.showorganisation)]]></DisplayName>
+      <PropertyName><![CDATA[showOrganization]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showorganization)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>
@@ -82,12 +99,6 @@
     <Setting>
       <PropertyName><![CDATA[showEmail]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.contact.setting.showemail)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[showLink]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.contact.setting.showlink)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>

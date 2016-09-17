@@ -77,13 +77,13 @@
 			<resource uri="/system/modules/org.opencms.apollo/tags/gallerydata.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/galleryitems.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/headline.tag"/>
-			<resource uri="/system/modules/org.opencms.apollo/tags/image-kenburn-new.tag"/>
-			<resource uri="/system/modules/org.opencms.apollo/tags/image-kenburn.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-simple.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-vars.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-zoom.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/init-messages.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/link.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/tag.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/icon-prefix.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/linksequence.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/obfuscate-email.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/paragraph.tag"/>
@@ -1478,34 +1478,17 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/tags/image-kenburn-new.tag</source>
-			<destination>system/modules/org.opencms.apollo/tags/image-kenburn-new.tag</destination>
+			<source>system/modules/org.opencms.apollo/tags/icon-prefix.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/icon-prefix.tag</destination>
 			<type>jsp</type>
-			<uuidstructure>639a9c12-74dd-11e6-ace3-0242ac11002b</uuidstructure>
-			<uuidresource>639a9c13-74dd-11e6-ace3-0242ac11002b</uuidresource>
-			<datecreated>Wed, 07 Sep 2016 09:28:08 GMT</datecreated>
+			<uuidstructure>611ffd8e-7cb5-11e6-95f6-0242ac11002b</uuidstructure>
+			<uuidresource>611ffd8f-7cb5-11e6-95f6-0242ac11002b</uuidresource>
+			<datecreated>Sat, 17 Sep 2016 09:01:54 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA["Ken Burns" effect image formatting tag]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/tags/image-kenburn.tag</source>
-			<destination>system/modules/org.opencms.apollo/tags/image-kenburn.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>91442471-21c3-11e6-b129-0242ac11002b</uuidstructure>
-			<uuidresource>91442472-21c3-11e6-b129-0242ac11002b</uuidresource>
-			<datecreated>Tue, 24 May 2016 15:24:12 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA["Ken Burns" effect image formatting tag]]></value>
+					<value><![CDATA[Icon or text prefix display tag]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>
@@ -1658,6 +1641,23 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Paragraph display tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/tag.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/tag.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>3a97ad5c-7cc1-11e6-95f6-0242ac11002b</uuidstructure>
+			<uuidresource>3a97ad5d-7cc1-11e6-95f6-0242ac11002b</uuidresource>
+			<datecreated>Sat, 17 Sep 2016 10:26:43 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
 				</property>
 			</properties>
 			<relations/>

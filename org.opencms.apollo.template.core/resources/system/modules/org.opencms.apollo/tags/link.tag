@@ -22,9 +22,9 @@
     description="CSS inline styles added to the generated link tag"%>
 
 <%@ attribute name="test" type="java.lang.String" required="false"
-    description="Can be used to defer the decision to actually create the link around the body to the calling element.
-    If not set or 'true', the link tags are generated around the body of the tag.
-    Otherwise the link is ignored and just the body of the tag is returned. "%>
+    description="Can be used to defer the decision to actually create the markup around the body to the calling element.
+    If not set or 'true', the markup from this tag is generated around the body of the tag.
+    Otherwise everything is ignored and just the body of the tag is returned. "%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
@@ -35,7 +35,7 @@
 <jsp:doBody var="bodyVal" />
 
 <c:choose>
-    <c:when test="${link.isSet and link.value.URI.isSet and (empty createlink or createlink)}">
+    <c:when test="${link.isSet and link.value.URI.isSet and (empty test or test)}">
         <a href="<cms:link>${link.value.URI}</cms:link>"
             <c:if test="${not empty cssclass}">${' '}class="${cssclass}"</c:if>
             <c:if test="${not empty style}">${' '}style="${style}"</c:if>
