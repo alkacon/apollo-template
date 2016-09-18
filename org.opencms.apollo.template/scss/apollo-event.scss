@@ -1,0 +1,59 @@
+
+/* Event calendar */
+
+.ap-event {
+
+    &:hover .date {
+        transform: scale(1.075);
+        box-shadow: 5px 5px 10px -4px $grey-dark;
+    }
+
+    a.link {
+        color: $text-dark;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .date {
+        transform: scale(1);
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+
+        min-width: 90px;
+        border: 1px solid $gray-light;
+        box-shadow:  4px 4px 6px 0 $grey;
+        text-align: center; 
+        background: #fafafa;
+
+        &:before {
+            display: block;
+            content: '';
+            margin: 0 10%;
+        }
+
+        .day, 
+        .monthYear {
+            padding: 10px;
+        }
+
+        h3 {
+            font-weight: bolder;
+        }
+    }
+
+    @each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+
+        .date-#{""+$type-name} {
+
+            &:before {
+                border-top: 20px solid $bg-color;
+            }
+
+            h3 {
+                color: $bg-color;
+            }
+        }
+    }
+}

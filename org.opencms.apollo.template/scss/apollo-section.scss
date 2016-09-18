@@ -4,40 +4,58 @@
 .ap-sec,
 .ap-section {
 
-	margin-bottom: 20px;
+    margin-bottom: 20px;
+
+    h3.subtitle {
+
+        a {
+            color: $text-headers;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: $main-theme !important;
+        }
+    }
+
+    .copyright {
+        text-align: right;
+        font-size: 0.7em;
+        color: $grey;
+    }
 }
 
 .ap-iconbox {
 
-	text-align: center;
-	margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 // Styles for image section variations
 // Plain style
 .ap-img {
 
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 
-	.ap-img-pic {
-	}
-	
-	a {
-	
-    	color: $text-dark;
-    	
-		&:hover, &:active, &:focus {
-        	color: $text-dark;
-        	text-decoration: none;
-      	}
-      	.ap-img-desc {
-			color: $main-theme;
-			&:hover, &:active, &:focus {
-	        	text-decoration: underline;
-	        }
-		}
-	}	
-	
+    .ap-img-pic {
+    }
+    
+    a {
+    
+        color: $text-dark;
+        
+        &:hover, &:active, &:focus {
+            color: $text-dark;
+            text-decoration: none;
+          }
+          .ap-img-desc {
+            color: $main-theme;
+            &:hover, &:active, &:focus {
+                text-decoration: underline;
+            }
+        }
+    }    
+    
     .info {
         text-align: right;
         .copyright {
@@ -46,40 +64,40 @@
         }
     }
 
-	// Image section style "Bold headline, centered"
+    // Image section style "Bold headline, centered"
     &.ap-img-v1 {
-		.ap-img-title {
-			text-align: center;
-			font-weight: 700;
-		}
-		.ap-img-desc {
-			margin-top: 5px;
-		}
+        .ap-img-title {
+            text-align: center;
+            font-weight: 700;
+        }
+        .ap-img-desc {
+            margin-top: 5px;
+        }
     }
 }
 
 .ap-img-txt {
-	.ap-img-title {
-		margin-top: 10px;
-	}
-	.ap-img-desc {
-		margin-top: 5px;
-	}			
+    .ap-img-title {
+        margin-top: 10px;
+    }
+    .ap-img-desc {
+        margin-top: 5px;
+    }            
 }
 
 a.ap-img-link {
-	color: $text-dark;
+    color: $text-dark;
 
-	&:hover, &:active, &:focus {
-		color: $text-dark;
-		text-decoration: none;
-	}
-	.ap-img-desc {
-		color: $main-theme;
-		&:hover, &:active, &:focus {
-			text-decoration: underline;
-		}
-	}
+    &:hover, &:active, &:focus {
+        color: $text-dark;
+        text-decoration: none;
+    }
+    .ap-img-desc {
+        color: $main-theme;
+        &:hover, &:active, &:focus {
+            text-decoration: underline;
+        }
+    }
 }
 
 .ap-tile .ap-sec,
@@ -140,157 +158,7 @@ a.ap-img-link {
 .ap-img 
 .info 
 .copyright {
-	color: $grey;
-}
-
-// thumbnails
-
-a.thumbnail {
-    padding: 0;
-    border: none;
-    margin-bottom: 15px;
-}
-
-.ap-section-animated {
-
-    .copyright {
-        text-align: right;
-        font-size: 0.7em;
-        color: $grey;
-    }
-
-    .link {
-        position: relative;
-    }
-
-    h3.subtitle {
-
-        a {
-            color: $text-headers;
-        }
-
-        a:hover {
-            text-decoration: none;
-            color: $main-theme !important;
-        }
-    }
-
-    a.btn-animated {
-        right: -10px;
-        bottom: 10px;
-        position: absolute;
-        display: inline-block; 
-    }
-
-    &:hover a.btn-animated {
-        right: 10px;
-    }
-}
-
-.ap-image-animated {
-
-    // Shadow animation
-    &.ap-shadow-animation {
-
-        &:hover {
-            box-shadow: 0 0 8px $grey-dark; 
-            -webkit-transition: box-shadow 0.2s ease-in-out;
-            transition: box-shadow 0.2s ease-in-out;
-        }
-
-        &:hover .ap-shadow-animation-inner {
-            transform: scale(0.925);
-            transition: .3s ease-in;
-        }
-    }
-
-    .ap-shadow-animation-inner {
-        transform: scale(1);
-        transition: .3s ease-out;
-    }
-
-    // Ken Burns animation
-    &.ap-kenburns-animation {
-        position: relative;
-
-        img {
-            left: 10px;
-            margin-left: -10px;
-            position: relative;
-            -webkit-transition: all 1.0s ease-in-out;
-            transition: all 1.0s ease-in-out;
-        }
-
-        .ap-kenburns-animation-inner {
-            overflow: hidden;
-        }
-
-        &:hover img {
-           -webkit-transform: scale(1.25) rotate(2deg);
-           transform: scale(1.25) rotate(2deg);
-        }
-    }
-}
-
-
-.thumbnail-style { 
-    margin-bottom: 20px; 
-    padding: 0;
-    &:hover{
-        box-shadow: none;
-
-        a.btn-more:hover {
-            color: $white;
-        }
-
-        a.btn-more.no-hover-effect {
-            color: $white;
-            right: 0px;
-        }
-
-    }
-
-    a.btn-more {
-        z-index: 20;
-
-        &.no-hover-effect {
-            right: 0;
-            bottom: 0;
-        }
-    }
-}
-
-
-
-// thumbnail effects
-
-.thumbnail-kenburn {
-    position: relative;
-
-    img {
-        left: 10px;
-        margin-left: -10px;
-        position: relative;
-       -webkit-transition: all 0.8s ease-in-out;
-       -moz-transition: all 0.8s ease-in-out;
-       -o-transition: all 0.8s ease-in-out;
-       -ms-transition: all 0.8s ease-in-out;
-       transition: all 0.8s ease-in-out;
-    }
-}
-
-.thumbnail-kenburn:hover img {
-   -webkit-transform: scale(1.2) rotate(2deg);
-   -moz-transform: scale(1.2) rotate(2deg);
-   -o-transform: scale(1.2) rotate(2deg);
-   -ms-transform: scale(1.2) rotate(2deg);
-   transform: scale(1.2) rotate(2deg);
-}
-
-// overriding .ap-img margin-bottom
-.thumbnail-kenburn .ap-img-pic {
-    overflow: hidden;
-    margin-bottom: 0;
+    color: $grey;
 }
 
 .overflow-hidden {

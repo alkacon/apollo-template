@@ -1,7 +1,5 @@
 /**
- *
  * Callbacks to update the OpenCms edito points when the screen element change. 
- *
  */
  
 function _OpenCmsReinitEditButtons(){

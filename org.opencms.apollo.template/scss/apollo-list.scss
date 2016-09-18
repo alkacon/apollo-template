@@ -1,70 +1,70 @@
 $button-colors:          $primary-colors !default;
 
 .ap-list-filterbox {
-	margin-bottom: 15px;
-	background-color: $white;
-	border: 1px solid transparent;
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-	padding: 15px;
+    margin-bottom: 15px;
+    background-color: $white;
+    border: 1px solid transparent;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+    padding: 15px;
     border: 1px solid #ddd;
 }
 
 .ap-list-filter-labels-wrapper, .ap-list-filter-archive {
-	display: none;
+    display: none;
 }
 
 .ap-list-filter-labels {
-	margin-top: 0;
-	padding-left: 0;
-	list-style: outside none none;
+    margin-top: 0;
+    padding-left: 0;
+    list-style: outside none none;
 }
 
 .ap-list-filter-labels li.active a {
-	font-weight: bold;
+    font-weight: bold;
 } 
 
 .ap-list-filter-labels-wrapper hr {
-	margin: 20px 0 10px 0;
+    margin: 20px 0 10px 0;
 }
 
 .ap-list-filterbtn-year {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 .ap-list-filter-year {
-	margin-top: 10px;
-	margin-left: -5px;
-	padding-left: 0;
-	list-style: outside none none;
+    margin-top: 10px;
+    margin-left: -5px;
+    padding-left: 0;
+    list-style: outside none none;
 }
 
 .ap-list-filter-year > li {
-	display: inline-block;
-	padding-right: 5px;
-	padding-left: 5px;
-	font-size: 12px;
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 12px;
 }
 
 .ap-list-filter-year li.active a {
-	font-weight: bold;
+    font-weight: bold;
 } 
 
 
 @each $color-name, $bg-color, $text-color, $highlight-color in $button-colors {
 
-	.ap-list-content.pagination-#{""+$color-name} {
-		.pagination > .active {
-			> a, > span, > a:hover, 
-			> span:hover, > a:focus, > span:focus {
-			  background-color: $bg-color;
-			  border-color: $bg-color;
-			}
-		}
-	
-		.pagination li a:hover {
-		  background: $highlight-color;
-		  border-color: $highlight-color;   
-		}
-	}  
+    .ap-list-content.pagination-#{""+$color-name} {
+        .pagination > .active {
+            > a, > span, > a:hover, 
+            > span:hover, > a:focus, > span:focus {
+              background-color: $bg-color;
+              border-color: $bg-color;
+            }
+        }
+    
+        .pagination li a:hover {
+          background: $highlight-color;
+          border-color: $highlight-color;   
+        }
+    }  
 
 }
