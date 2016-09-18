@@ -3700,23 +3700,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/resources/contact-mailfunctions.js</source>
-			<destination>system/modules/org.opencms.apollo/resources/contact-mailfunctions.js</destination>
-			<type>plain</type>
-			<uuidstructure>30ca5d96-4ff1-11e6-958f-0242ac11002b</uuidstructure>
-			<uuidresource>30ca5d97-4ff1-11e6-958f-0242ac11002b</uuidresource>
-			<datecreated>Fri, 22 Jul 2016 09:46:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Descramble functions for email addresses]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo/resources/shariff-extensions.css</source>
 			<destination>system/modules/org.opencms.apollo/resources/shariff-extensions.css</destination>
 			<type>plain</type>
@@ -4198,6 +4181,23 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/email.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/email.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>7287a613-7d8a-11e6-95f6-0242ac11002b</uuidstructure>
+			<uuidresource>7287a614-7d8a-11e6-95f6-0242ac11002b</uuidresource>
+			<datecreated>Sun, 18 Sep 2016 10:27:06 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for a link]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo/schemas/nested/image.xsd</source>
 			<destination>system/modules/org.opencms.apollo/schemas/nested/image.xsd</destination>
 			<type>plain</type>
@@ -4469,6 +4469,27 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Copyright tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/email.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/email.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>6f0d530d-7d92-11e6-95f6-0242ac11002b</uuidstructure>
+			<uuidresource>6f0d530e-7d92-11e6-95f6-0242ac11002b</uuidresource>
+			<datecreated>Sun, 18 Sep 2016 11:24:16 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Email address display tag with support for obfuscation]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -4852,8 +4873,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/tags/obfuscate-email.tag</source>
-			<destination>system/modules/org.opencms.apollo/tags/obfuscate-email.tag</destination>
+			<source>system/modules/org.opencms.apollo/tags/obfuscate.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/obfuscate.tag</destination>
 			<type>jsp</type>
 			<uuidstructure>f213d846-768a-11e6-af54-0242ac11002b</uuidstructure>
 			<uuidresource>f213d847-768a-11e6-af54-0242ac11002b</uuidresource>
@@ -4862,7 +4883,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Obfuscates an Email address]]></value>
+					<value><![CDATA[Obfuscates a String that can be revealed by JavaScript]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>

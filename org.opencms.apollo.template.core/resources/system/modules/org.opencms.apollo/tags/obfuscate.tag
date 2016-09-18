@@ -1,9 +1,11 @@
 <%@ tag 
-    display-name="obfuscate-email"
+    display-name="obfuscate"
     body-content="empty"
-    trimDirectiveWhitespaces="true" 
-	import="java.nio.charset.Charset"    
-    description="Obfuscates an Email (or any other String) that can be revelad by JavaScript" %>
+    trimDirectiveWhitespaces="true"
+	import="java.nio.charset.Charset"
+    description="
+        Obfuscates an Email address (or any other String).
+        The Sting that can be revelad using the JavaScript function 'unobfuscateString()'." %>
 
 <%@ attribute name="text" type="java.lang.String" required="true" %>
 
@@ -12,10 +14,10 @@
 
 <%!
 // Java method to obfuscate the Email.
-// The obfucated email will be revealed with JavaScript on the page.
+// The obfucated email can be revealed using the JavaScript function 'unobfuscateString()'.
 public String obfuscateContactEmail(String email) {
     StringBuilder encoded = new StringBuilder(email.length() * 6);
-    // reverse the input
+    // sort the input in reverse order
     email = new StringBuffer(email).reverse().toString();
     byte[] bytes = email.getBytes(Charset.forName("UTF-8"));
     for (int j = 0; j < bytes.length; j++) {

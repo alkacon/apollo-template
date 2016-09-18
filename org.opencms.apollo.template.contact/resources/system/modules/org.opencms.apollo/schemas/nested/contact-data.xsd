@@ -1,26 +1,26 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
-	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
-    <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/address.xsd"/>	
+    <xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd" />
+    <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/address.xsd" />
+    <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/email.xsd" />
 
-	<xsd:element name="ApolloContactDatas" type="OpenCmsApolloContactDatas"/>
+    <xsd:element name="ApolloContactDatas" type="OpenCmsApolloContactDatas" />
 
-	<xsd:complexType name="OpenCmsApolloContactDatas">
-		<xsd:sequence>
-			<xsd:element name="ApolloContactData" type="OpenCmsApolloContactData" minOccurs="0" maxOccurs="unbounded"/>
-		</xsd:sequence>
-	</xsd:complexType>
+    <xsd:complexType name="OpenCmsApolloContactDatas">
+        <xsd:sequence>
+            <xsd:element name="ApolloContactData" type="OpenCmsApolloContactData" minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
 
-	<xsd:complexType name="OpenCmsApolloContactData">
-		<xsd:sequence>
-			<xsd:element name="Address" type="OpenCmsApolloAddress" minOccurs="0"/>
-			<xsd:element name="Phone" type="OpenCmsString" minOccurs="0" />
-			<xsd:element name="Mobile" type="OpenCmsString" minOccurs="0" />
-			<xsd:element name="Fax" type= "OpenCmsString" minOccurs="0" />
-			<xsd:element name="EMail" type="OpenCmsString" minOccurs="0" />
-			<xsd:element name="OpenEMail" type="OpenCmsBoolean" minOccurs="0" />
-		</xsd:sequence>
-		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
-	</xsd:complexType>
-	
+    <xsd:complexType name="OpenCmsApolloContactData">
+        <xsd:sequence>
+            <xsd:element name="Address" type="OpenCmsApolloAddress" minOccurs="0" />
+            <xsd:element name="Phone" type="OpenCmsString" minOccurs="0" />
+            <xsd:element name="Mobile" type="OpenCmsString" minOccurs="0" />
+            <xsd:element name="Fax" type="OpenCmsString" minOccurs="0" />
+            <xsd:element name="Email" type="OpenCmsApolloEmail" minOccurs="0" />
+        </xsd:sequence>
+        <xsd:attribute name="language" type="OpenCmsLocale" use="optional" />
+    </xsd:complexType>
+
 </xsd:schema>

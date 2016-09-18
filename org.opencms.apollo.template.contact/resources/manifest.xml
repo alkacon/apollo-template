@@ -30,7 +30,6 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-threecol.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.contact.messages"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.contact"/>
-			<resource uri="/system/modules/org.opencms.apollo/resources/contact-mailfunctions.js"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/contact.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/address.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/contact-data.xsd"/>
@@ -246,28 +245,6 @@
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo/resources</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/resources/contact-mailfunctions.js</source>
-			<destination>system/modules/org.opencms.apollo/resources/contact-mailfunctions.js</destination>
-			<type>plain</type>
-			<uuidstructure>30ca5d96-4ff1-11e6-958f-0242ac11002b</uuidstructure>
-			<uuidresource>30ca5d97-4ff1-11e6-958f-0242ac11002b</uuidresource>
-			<datecreated>Fri, 22 Jul 2016 09:46:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Descramble functions for email addresses]]></value>
 				</property>
 			</properties>
 			<relations/>

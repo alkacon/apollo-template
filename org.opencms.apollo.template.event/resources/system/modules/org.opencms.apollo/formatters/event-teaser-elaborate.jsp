@@ -26,34 +26,34 @@
 
             <%-- ####### Show calendar or image if not compact form ######## --%>
             <c:if test="${!isCompactForm}">
-                <a href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>" >
-                    <div class="col-sm-3 col-lg-2 hidden-xs">
-                    <c:choose>
-                    <%-- ####### Show calendar ######## --%>
-                    <c:when test="${!showImageSmall}">
-                        <div class="date-${calendarColor} ap-event-cal">
-                            <div class="day">
-                                <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-                                    pattern="EEEE" type="date" />
+                <span class="col-sm-3 col-lg-2 hidden-xs">
+                    <a class="link" href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>" >
+                        <c:choose>
+                        <%-- ####### Show calendar ######## --%>
+                        <c:when test="${not showImageSmall}">
+                            <div class="date date-${calendarColor}">
+                                <div class="day">
+                                    <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
+                                        pattern="EEEE" type="date" />
+                                </div>
+                                <h3>
+                                    <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
+                                        pattern="dd" type="date" />
+                                </h3>
+                                <div class="monthYear">
+                                    <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
+                                        pattern="MMM yyyy" type="date" />
+                                </div>
                             </div>
-                            <h3>
-                                <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-                                    pattern="dd" type="date" />
-                            </h3>
-                            <div class="monthYear">
-                                <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-                                    pattern="MMM yyyy" type="date" />
-                            </div>
-                        </div>
-                    </c:when>
-                    <%-- ####### Show small image in place of calendar ######## --%>
-                    <c:when test="${showImageSmall}">
-                        <c:out value="${imgDivStart}" escapeXml="false" />
-                        <apollo:image-simple onlyimage="true" image="${paragraph.value.Image}" />
-                    </c:when>
-                    </c:choose>
-                    </div>
-                </a>
+                        </c:when>
+                        <%-- ####### Show small image in place of calendar ######## --%>
+                        <c:when test="${showImageSmall}">
+                            <c:out value="${imgDivStart}" escapeXml="false" />
+                            <apollo:image-simple onlyimage="true" image="${paragraph.value.Image}" />
+                        </c:when>
+                        </c:choose>
+                    </a>
+                </span>
             </c:if>
 
             <%-- ####### Render Teaser-Text and optional image, if set accordingly ######## --%>

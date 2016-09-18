@@ -13,43 +13,42 @@
 <c:set var="inMemoryMessage"><fmt:message key="apollo.section.message.new" /></c:set>
 <apollo:init-messages textnew="${inMemoryMessage}">
 
-    <div class="ap-image-teaser">
+    <div class="ap-section ap-image-teaser">
 
         <apollo:image-animated
             image="${value.Image}"
+            cssclass="ap-button-animation"
             shadowanimation="${cms.element.setting.showShadow.value}"
             kenburnsanimation="${cms.element.setting.showKenburn.value}">
 
-            <div class="thumbnail-kenburn">
-                <c:set var="linktext"><fmt:message key="apollo.section.message.more" /></c:set>
-                <apollo:link link="${value.Link}" cssclass="btn-more hover-effect" linktext="${linktext}" />
-            </div>
-
-            <c:if test="${cms.element.setting.showCopy.value and not empty imageCopyright}">
-                <div class="info">
-                    <p class="copyright"><i>${imageCopyright}</i></p>
+            <c:if test="${content.value.Link.isSet}">
+                <div class="button-place-box">
+                    <apollo:link 
+                        link="${value.Link}" 
+                        cssclass="btn btn-xs button-box" />
                 </div>
             </c:if>
 
-            <div class="caption">
-                <h3>
-                    <apollo:link link="${value.Link}">
-                        ${value.Headline}
-                    </apollo:link>
-                </h3>
-            </div>
+            <c:if test="${cms.element.setting.showCopy.value and not empty imageCopyright}">
+                <div class="copyright">
+                    <i>${imageCopyright}</i>
+                </div>
+            </c:if>
+
+            <h3 class="subtitle">
+                <apollo:link link="${value.Link}">
+                    ${not empty imageTitle ? imageTitle : value.Headline}
+                </apollo:link>
+            </h3>
 
             <c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
-            <c:choose>
-                <c:when test="${teaserLength > 0}">
-                    <p>
-                        ${cms:trimToSize(cms:stripHtml(value.Text), teaserLength)}
-                    </p>
-                </c:when>
-                <c:otherwise>
-                    ${value.Text}
-                </c:otherwise>
-            </c:choose>
+            <c:set var="teaserText" value="${teaserLength > 0 ? cms:trimToSize(cms:stripHtml(value.Text), teaserLength) : value.Text}" />
+
+            <c:if test="${not empty fn:trim(teaserText)}">
+                <div class="text">
+                    ${teaserText}
+                </div>
+            </c:if>
 
         </apollo:image-animated>
     </div>

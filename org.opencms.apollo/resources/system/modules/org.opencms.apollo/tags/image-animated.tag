@@ -8,7 +8,7 @@
     description="The image to format. Must be a generic Apollo nested image content."%>
 
 <%@ attribute name="cssclass" type="java.lang.String" required="false" 
-    description="CSS class added to the div tag sourrounding the image."%>
+    description="CSS class added to the div tag surrounding the image."%>
 
 <%@ attribute name="cssimage" type="java.lang.String" required="false" 
     description="CSS class added directly to the generated image tag."%>
@@ -44,16 +44,16 @@
 
 <%-- ####### Animated image ####### --%>
 
-<div class="ap-image-animated
+<div class="ap-image
     <c:if test='${kenburnsanimation}'> ap-kenburns-animation</c:if>
     <c:if test='${shadowanimation}'> ap-shadow-animation</c:if> 
-    <c:out value=' ${divstyle}'/>">
+    <c:out value=' ${cssclass}'/>">
 
-    <div <c:if test="${shadowanimation}">class="ap-shadow-animation-inner"</c:if>>
-        <div  ${image.value.Image.imageDndAttr} <c:if test="${kenburnsanimation}">class="ap-kenburns-animation-inner"</c:if>>
+    <div <c:if test="${shadowanimation}">class="shadow-box"</c:if>>
+        <div  ${image.value.Image.imageDndAttr} <c:if test="${kenburnsanimation}">class="kenburns-limit-box"</c:if>>
             <cms:img 
                 src="${imageLink}"
-                cssclass="img-responsive ${imagestyle}"
+                cssclass="img-responsive ${imagestyle} ${kenburnsanimation ? ' kenburns-box' : ''}"
                 alt="${imageTitleCopyright}"
                 title="${imageTitleCopyright}"
             />

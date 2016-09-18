@@ -12,9 +12,9 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
 <c:if test="${not empty text}">
-	<c:set var="copyrightSymbol">(c)</c:set>
-	<c:set var="copyright">${fn:replace(text, '&copy;', copyrightSymbol)}</c:set>
-	<c:if test="${not fn:contains(copyright, copyrightSymbol)}">
-		<c:set var="copyright">${copyrightSymbol}${' '}${copyright}</c:set>
-	</c:if>
+    <c:set var="copyrightSymbol">(c)</c:set>
+    <c:set var="copyright">${fn:replace(text, '&copy;', copyrightSymbol)}</c:set>
+    <c:if test="${not fn:contains(copyright, copyrightSymbol)}">
+        <c:set var="copyright">${copyrightSymbol}${' '}${copyright}</c:set>
+    </c:if>
 </c:if>

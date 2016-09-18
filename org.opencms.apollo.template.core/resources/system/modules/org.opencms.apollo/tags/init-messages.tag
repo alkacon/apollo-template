@@ -12,23 +12,24 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
 <c:choose>
-	<c:when test="${cms.element.inMemoryOnly}">
-		<div class="alert alert-info mv-10">
-			<h3>
-				${textnew}
-			</h3>
-		</div>
-	</c:when>
-	<c:when test="${not empty textedit and cms.edited}">
-		${cms.reloadMarker}
-		<div class="alert alert-info mv-10">
-			<h3>
-				${textedit}
-			</h3>
-		</div>
-	</c:when>
-	<c:otherwise>
-		<jsp:doBody var="bodyVal" />
-		${bodyVal}
-	</c:otherwise>
+    <c:when test="${cms.element.inMemoryOnly}">
+        <div class="alert alert-info mv-10">
+            <h3>
+                ${textnew}
+            </h3>
+        </div>
+    </c:when>
+    <c:when test="${not empty textedit and cms.edited}">
+        ${cms.reloadMarker}
+        <div class="alert alert-info mv-10">
+            <h3>
+                ${textedit}
+            </h3>
+        </div>
+    </c:when>
+    <c:otherwise>
+        <%-- ####### JSP body inserted here ######## --%>
+        <jsp:doBody/>
+        <%-- ####### /JSP body inserted here ######## --%>
+    </c:otherwise>
 </c:choose>

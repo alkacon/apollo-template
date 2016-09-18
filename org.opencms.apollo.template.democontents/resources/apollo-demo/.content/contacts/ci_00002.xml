@@ -13,7 +13,7 @@
     <Position><![CDATA[CEO]]></Position>
     <Description name="Description0">
       <links/>
-      <content><![CDATA[<p>The boss of bosses!</p>]]></content>
+      <content><![CDATA[<p class="p1">Jake is a&nbsp;business leader who creates a vision, articulates the vision, and relentlessly drives it to completion.</p>]]></content>
     </Description>
     <Image>
       <Image>
@@ -38,9 +38,12 @@
         <PostalCode><![CDATA[50670]]></PostalCode>
         <Locality><![CDATA[Cologne]]></Locality>
       </Address>
-      <Fax><![CDATA[+49 (221) 123-4567]]></Fax>
-      <EMail><![CDATA[jake.m.pritchett@example.org]]></EMail>
-      <OpenEMail>false</OpenEMail>
+      <Phone><![CDATA[+49 (221) 123-4567]]></Phone>
+      <Mobile><![CDATA[+49 (176) 123-4567]]></Mobile>
+      <Email>
+        <Email><![CDATA[jake.m.pritchett@example.org]]></Email>
+        <ObfuscateEmail>true</ObfuscateEmail>
+      </Email>
     </Contact>
   </ApolloContact>
 </ApolloContacts>

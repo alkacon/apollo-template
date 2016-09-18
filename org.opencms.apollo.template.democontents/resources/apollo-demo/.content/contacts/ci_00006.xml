@@ -9,6 +9,10 @@
     </Name>
     <Organization><![CDATA[Hectic Hackers Inc.]]></Organization>
     <Position><![CDATA[Designer]]></Position>
+    <Description name="Description0">
+      <links/>
+      <content><![CDATA[<p>Good design is making something intelligible and memorable. Great design is making something memorable and meaningful.</p>]]></content>
+    </Description>
     <Image>
       <Image>
         <link type="WEAK">
@@ -17,15 +21,27 @@
         </link>
       </Image>
     </Image>
+    <Link>
+      <Text/>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/the-team/]]></target>
+          <uuid>a3023c68-6079-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
     <Contact>
       <Address>
         <StreetAddress><![CDATA[Friesenstr. 64-66]]></StreetAddress>
         <PostalCode><![CDATA[50670]]></PostalCode>
         <Locality><![CDATA[Cologne]]></Locality>
       </Address>
+      <Phone><![CDATA[+49 (221) 123-4567]]></Phone>
       <Mobile><![CDATA[+49 (170) 123-4567]]></Mobile>
-      <EMail><![CDATA[mitchell.pritchett@example.org]]></EMail>
-      <OpenEMail>true</OpenEMail>
+      <Email>
+        <Email><![CDATA[mitchell.pritchett@example.org]]></Email>
+        <ObfuscateEmail>false</ObfuscateEmail>
+      </Email>
     </Contact>
   </ApolloContact>
 </ApolloContacts>

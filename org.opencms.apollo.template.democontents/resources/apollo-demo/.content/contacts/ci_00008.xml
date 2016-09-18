@@ -24,8 +24,10 @@
       </Address>
       <Phone><![CDATA[+49 (221) 123-4567]]></Phone>
       <Mobile><![CDATA[+49 (170) 123-4567]]></Mobile>
-      <EMail><![CDATA[pepper.saltzman@example.org]]></EMail>
-      <OpenEMail>false</OpenEMail>
+      <Email>
+        <Email><![CDATA[p.saltzman@example.org]]></Email>
+        <ObfuscateEmail>false</ObfuscateEmail>
+      </Email>
     </Contact>
   </ApolloContact>
 </ApolloContacts>

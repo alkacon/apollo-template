@@ -17,7 +17,7 @@
 <c:set var="textnew"><fmt:message key="apollo.contact.message.new" /></c:set>
 <apollo:init-messages textnew="${textnew}">
 
-<div class="ap-contact ap-contact-onecol ap-section-animated vcard">
+<div class="ap-contact ap-contact-onecol vcard">
 
     <c:set var="fragments">
         image 

@@ -1,272 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
-  <Bundle language="de">
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Title]]></Key>
-      <Value><![CDATA[Titel]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Title.help]]></Key>
-      <Value><![CDATA[Der Titel der Kontakt Information.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Name]]></Key>
-      <Value><![CDATA[Name]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Name.help]]></Key>
-      <Value><![CDATA[Der optionale vollständige Name der Kontaktperson.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Organisation]]></Key>
-      <Value><![CDATA[Organisation / Unternehmen]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Organisation.help]]></Key>
-      <Value><![CDATA[Der name der Organisation oder des Unternehmens.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Position]]></Key>
-      <Value><![CDATA[Position]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Position.help]]></Key>
-      <Value><![CDATA[Die Position oder Stellenbezeichnung der Kontaktperson.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Description]]></Key>
-      <Value><![CDATA[Beschreibung]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Description.help]]></Key>
-      <Value><![CDATA[Zusätzliche Beschreibung der Kontakt Information.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Image]]></Key>
-      <Value><![CDATA[Bild]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Image.help]]></Key>
-      <Value><![CDATA[Ein Bild des Kontakts.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Link]]></Key>
-      <Value><![CDATA[Link]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Link.help]]></Key>
-      <Value><![CDATA[Ein optionaler Link, z.B. zu einem Kontaktformular oder weiterführenden Informationen.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Contact]]></Key>
-      <Value><![CDATA[Kontaktdaten]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.Contact.help]]></Key>
-      <Value><![CDATA[Zusätzliche Kontaktdaten wie z.B. Adresse, Telefonnummern.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.GalleryTitle]]></Key>
-      <Value><![CDATA[Galerie Titel]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.GalleryTitle.help]]></Key>
-      <Value><![CDATA[Der Galerie Titel wird nicht angezeigt. Er dient zur besseren Auffindbarkeit des Inhalts in den Galerien.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.NameTab]]></Key>
-      <Value><![CDATA[Profil]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContact.ContactTab]]></Key>
-      <Value><![CDATA[Kontakt Information]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactName.Title]]></Key>
-      <Value><![CDATA[Titel]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactName.Title.help]]></Key>
-      <Value><![CDATA[Der optionale Titel der Kontaktperson.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactName.FirstName]]></Key>
-      <Value><![CDATA[Vorname]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactName.FirstName.help]]></Key>
-      <Value><![CDATA[Der Vorname der Kontaktperson.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactName.MiddleName]]></Key>
-      <Value><![CDATA[Mittelname(n)]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactName.MiddleName.help]]></Key>
-      <Value><![CDATA[Falls vorhanden, bitte weitere Vornamen der Kontaktperson eintragen.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactName.LastName]]></Key>
-      <Value><![CDATA[Nachname]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactName.LastName.help]]></Key>
-      <Value><![CDATA[Der Nachname der Kontaktperson.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactName.Suffix]]></Key>
-      <Value><![CDATA[Anhang]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactName.Suffix.help]]></Key>
-      <Value><![CDATA[Der optionale Anhang der Kontaktperson.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.Address]]></Key>
-      <Value><![CDATA[Adresse]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.Address.help]]></Key>
-      <Value><![CDATA[Die vollständige Adressinformation.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.Phone]]></Key>
-      <Value><![CDATA[Telefonnummer]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.Phone.help]]></Key>
-      <Value><![CDATA[Die Telefonnummer des Kontakts.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.Mobile]]></Key>
-      <Value><![CDATA[Mobilnummer]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.Mobile.help]]></Key>
-      <Value><![CDATA[Die Mobiltelefonnummer des Kontakts.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.Fax]]></Key>
-      <Value><![CDATA[Fax]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.Fax.help]]></Key>
-      <Value><![CDATA[Die Faxnummer des Kontakts.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.EMail]]></Key>
-      <Value><![CDATA[E-Mail]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.EMail.help]]></Key>
-      <Value><![CDATA[Die E-Mail Adresse des Kontakts.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.OpenEMail]]></Key>
-      <Value><![CDATA[E-Mail Adresse offen im Klartext anzeigen]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.OpenEMail.help]]></Key>
-      <Value><![CDATA[Wenn angekreuzt, wird die E-Mail Adresse offen angezeigt, anderenfalls verschlüsselt.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.StreetAddress]]></Key>
-      <Value><![CDATA[Straße]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.StreetAddress.help]]></Key>
-      <Value><![CDATA[Die Straße der Adresse.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.ExtendedAddress]]></Key>
-      <Value><![CDATA[Erweiterte Adresse]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.ExtendedAddress.help]]></Key>
-      <Value><![CDATA[Dies kann für zusätzliche Informationen benutzt werden, z.B. Raumnummer, Gebäude.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.PostalCode]]></Key>
-      <Value><![CDATA[Postleitzahl]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.PostalCode.help]]></Key>
-      <Value><![CDATA[Die postleitzahl der Adresse.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Locality]]></Key>
-      <Value><![CDATA[Stadt]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Locality.help]]></Key>
-      <Value><![CDATA[Der Name der Stadt der Adresse.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Region]]></Key>
-      <Value><![CDATA[Region]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Region.help]]></Key>
-      <Value><![CDATA[optionaler Name der Region.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Country]]></Key>
-      <Value><![CDATA[Land]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Country.help]]></Key>
-      <Value><![CDATA[Der optionale Name des Landes.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.default.Title]]></Key>
-      <Value><![CDATA[Neue Kontaktinformation]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.error.Title]]></Key>
-      <Value><![CDATA[Bitte geben Sie einen Titel ein.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.error.firstname]]></Key>
-      <Value><![CDATA[Der Vorname muss ausgefüllt werden.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.error.lastname]]></Key>
-      <Value><![CDATA[Der Nachname muss ausgefüllt werden.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.message.new]]></Key>
-      <Value><![CDATA[<strong>Neue Kontaktinformation</strong>, bitte bearbeiten Sie den Inhalt.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.message.edit]]></Key>
-      <Value><![CDATA[Die Kontaktinformation wurde bearbeitet, die Seite wird neu geladen.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.showaddress]]></Key>
-      <Value><![CDATA[Zeige Adresse]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.phone]]></Key>
-      <Value><![CDATA[Telefon:]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.mobile]]></Key>
-      <Value><![CDATA[Mobil:]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.fax]]></Key>
-      <Value><![CDATA[Fax:]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.openemail]]></Key>
-      <Value><![CDATA[E-Mail:]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[apollo.contact.email]]></Key>
-      <Value><![CDATA[E-Mail]]></Value>
-    </Message>
-  </Bundle>
   <Bundle language="en">
     <Message>
       <Key><![CDATA[label.ApolloContactName.Suffix]]></Key>
@@ -283,6 +17,10 @@
     <Message>
       <Key><![CDATA[label.ApolloContact.GalleryTitle]]></Key>
       <Value><![CDATA[Gallery Title]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEmail.ObfuscateEmail.help]]></Key>
+      <Value><![CDATA[If checked the email address is shown obfuscated on the website.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContact.Title.help]]></Key>
@@ -302,11 +40,15 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactData.Mobile]]></Key>
-      <Value><![CDATA[Mobile / Cell phone]]></Value>
+      <Value><![CDATA[Mobile number]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactName.Title.help]]></Key>
       <Value><![CDATA[The optional title of the contact person.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEmail.Email]]></Key>
+      <Value><![CDATA[Email]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactData.Fax.help]]></Key>
@@ -319,10 +61,6 @@
     <Message>
       <Key><![CDATA[label.ApolloContact.Name]]></Key>
       <Value><![CDATA[Name]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.OpenEMail.help]]></Key>
-      <Value><![CDATA[If checked, the email address is shown as clear text otherwise it is scrambled.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.contact.mobile]]></Key>
@@ -349,10 +87,6 @@
       <Value><![CDATA[The gallery title is not shown. It is used to find the content in the galleries.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloContactData.EMail]]></Key>
-      <Value><![CDATA[Email]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.contact.error.lastname]]></Key>
       <Value><![CDATA[The last name has to be provided.]]></Value>
     </Message>
@@ -365,6 +99,10 @@
       <Value><![CDATA[The name of the organisation or company.]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.contact.obfuscatedemail]]></Key>
+      <Value><![CDATA[Click to show email]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.ApolloAddress.PostalCode.help]]></Key>
       <Value><![CDATA[The postal code of the address.]]></Value>
     </Message>
@@ -375,10 +113,6 @@
     <Message>
       <Key><![CDATA[label.ApolloContact.Position]]></Key>
       <Value><![CDATA[Position]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.EMail.help]]></Key>
-      <Value><![CDATA[The email address of the contact.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContact.Image.help]]></Key>
@@ -410,7 +144,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactData.Mobile.help]]></Key>
-      <Value><![CDATA[The cell phone number of the contact.]]></Value>
+      <Value><![CDATA[The mobile / cell phone number of the contact.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactName.MiddleName.help]]></Key>
@@ -418,11 +152,11 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.contact.email]]></Key>
-      <Value><![CDATA[Email]]></Value>
+      <Value><![CDATA[Email:]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactData.Phone]]></Key>
-      <Value><![CDATA[Telephone number]]></Value>
+      <Value><![CDATA[Phone number]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.contact.error.Title]]></Key>
@@ -447,6 +181,14 @@
     <Message>
       <Key><![CDATA[apollo.contact.default.Title]]></Key>
       <Value><![CDATA[New contact information]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEmail.ObfuscateEmail]]></Key>
+      <Value><![CDATA[Obfuscate]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEmail.Email.help]]></Key>
+      <Value><![CDATA[The email address of the contact.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloAddress.StreetAddress.help]]></Key>
@@ -501,14 +243,6 @@
       <Value><![CDATA[Address]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.contact.openemail]]></Key>
-      <Value><![CDATA[Email:]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloContactData.OpenEMail]]></Key>
-      <Value><![CDATA[Display the email address as clear text]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[label.ApolloContact.Image]]></Key>
       <Value><![CDATA[Image]]></Value>
     </Message>
@@ -530,7 +264,273 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactData.Phone.help]]></Key>
-      <Value><![CDATA[The telephone number of the contact.]]></Value>
+      <Value><![CDATA[The default phone number of the contact.]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[label.ApolloContactName.Suffix]]></Key>
+      <Value><![CDATA[Anhang]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactName.LastName.help]]></Key>
+      <Value><![CDATA[Der Nachname der Kontaktperson.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.StreetAddress]]></Key>
+      <Value><![CDATA[Straße]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.GalleryTitle]]></Key>
+      <Value><![CDATA[Galerie Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEmail.ObfuscateEmail.help]]></Key>
+      <Value><![CDATA[Wenn angekreuzt, wird die E-Mail Adresse verschleiert auf der Webseite angezeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Title.help]]></Key>
+      <Value><![CDATA[Der Titel der Kontakt Information.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Region.help]]></Key>
+      <Value><![CDATA[optionaler Name der Region.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Title]]></Key>
+      <Value><![CDATA[Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactName.FirstName.help]]></Key>
+      <Value><![CDATA[Der Vorname der Kontaktperson.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactData.Mobile]]></Key>
+      <Value><![CDATA[Mobilnummer]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactName.Title.help]]></Key>
+      <Value><![CDATA[Der optionale Titel der Kontaktperson.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEmail.Email]]></Key>
+      <Value><![CDATA[E-Mail]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactData.Fax.help]]></Key>
+      <Value><![CDATA[Die Faxnummer des Kontakts.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.fax]]></Key>
+      <Value><![CDATA[Fax:]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Name]]></Key>
+      <Value><![CDATA[Name]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.mobile]]></Key>
+      <Value><![CDATA[Mobil:]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Contact]]></Key>
+      <Value><![CDATA[Kontaktdaten]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Description.help]]></Key>
+      <Value><![CDATA[Zusätzliche Beschreibung der Kontakt Information.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Link.help]]></Key>
+      <Value><![CDATA[Ein optionaler Link, z.B. zu einem Kontaktformular oder weiterführenden Informationen.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Contact.help]]></Key>
+      <Value><![CDATA[Zusätzliche Kontaktdaten wie z.B. Adresse, Telefonnummern.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.GalleryTitle.help]]></Key>
+      <Value><![CDATA[Der Galerie Titel wird nicht angezeigt. Er dient zur besseren Auffindbarkeit des Inhalts in den Galerien.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.error.lastname]]></Key>
+      <Value><![CDATA[Der Nachname muss ausgefüllt werden.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.ContactTab]]></Key>
+      <Value><![CDATA[Kontakt Information]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Organisation.help]]></Key>
+      <Value><![CDATA[Der name der Organisation oder des Unternehmens.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.obfuscatedemail]]></Key>
+      <Value><![CDATA[Klick zum E-Mail anzeigen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.PostalCode.help]]></Key>
+      <Value><![CDATA[Die postleitzahl der Adresse.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Position.help]]></Key>
+      <Value><![CDATA[Die Position oder Stellenbezeichnung der Kontaktperson.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Position]]></Key>
+      <Value><![CDATA[Position]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Image.help]]></Key>
+      <Value><![CDATA[Ein Bild des Kontakts.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Name.help]]></Key>
+      <Value><![CDATA[Der optionale vollständige Name der Kontaktperson.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Country.help]]></Key>
+      <Value><![CDATA[Der optionale Name des Landes.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Region]]></Key>
+      <Value><![CDATA[Region]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactName.Suffix.help]]></Key>
+      <Value><![CDATA[Der optionale Anhang der Kontaktperson.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.showaddress]]></Key>
+      <Value><![CDATA[Zeige Adresse]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactName.LastName]]></Key>
+      <Value><![CDATA[Nachname]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactData.Mobile.help]]></Key>
+      <Value><![CDATA[Die Mobilnummer des Kontakts.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactName.MiddleName.help]]></Key>
+      <Value><![CDATA[Falls vorhanden, bitte weitere Vornamen der Kontaktperson eintragen.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.email]]></Key>
+      <Value><![CDATA[E-Mail:]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactData.Phone]]></Key>
+      <Value><![CDATA[Telefonnummer]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.error.Title]]></Key>
+      <Value><![CDATA[Bitte geben Sie einen Titel ein.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.ExtendedAddress]]></Key>
+      <Value><![CDATA[Erweiterte Adresse]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Link]]></Key>
+      <Value><![CDATA[Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Locality]]></Key>
+      <Value><![CDATA[Stadt]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactData.Address.help]]></Key>
+      <Value><![CDATA[Die vollständige Adressinformation.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.default.Title]]></Key>
+      <Value><![CDATA[Neue Kontaktinformation]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEmail.ObfuscateEmail]]></Key>
+      <Value><![CDATA[Verschleiern]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEmail.Email.help]]></Key>
+      <Value><![CDATA[Die E-Mail Adresse des Kontakts.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.StreetAddress.help]]></Key>
+      <Value><![CDATA[Die Straße der Adresse.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactName.Title]]></Key>
+      <Value><![CDATA[Titel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Locality.help]]></Key>
+      <Value><![CDATA[Der Name der Stadt der Adresse.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.error.firstname]]></Key>
+      <Value><![CDATA[Der Vorname muss ausgefüllt werden.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Country]]></Key>
+      <Value><![CDATA[Land]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactData.Fax]]></Key>
+      <Value><![CDATA[Faxnummer]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Description]]></Key>
+      <Value><![CDATA[Beschreibung]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.ExtendedAddress.help]]></Key>
+      <Value><![CDATA[Dies kann für zusätzliche Informationen benutzt werden, z.B. Raumnummer, Gebäude.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.NameTab]]></Key>
+      <Value><![CDATA[Profil]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactName.MiddleName]]></Key>
+      <Value><![CDATA[Mittelname(n)]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.message.edit]]></Key>
+      <Value><![CDATA[Die Kontaktinformation wurde bearbeitet, die Seite wird neu geladen.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Organisation]]></Key>
+      <Value><![CDATA[Organisation / Unternehmen]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactData.Address]]></Key>
+      <Value><![CDATA[Adresse]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContact.Image]]></Key>
+      <Value><![CDATA[Bild]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.message.new]]></Key>
+      <Value><![CDATA[<strong>Neue Kontaktinformation</strong>, bitte bearbeiten Sie den Inhalt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactName.FirstName]]></Key>
+      <Value><![CDATA[Vorname]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.contact.phone]]></Key>
+      <Value><![CDATA[Telefon:]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.PostalCode]]></Key>
+      <Value><![CDATA[Postleitzahl]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloContactData.Phone.help]]></Key>
+      <Value><![CDATA[Die Telefonnummer des Kontakts.]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

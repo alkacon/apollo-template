@@ -51,8 +51,12 @@
 
 <c:set var="labels">
     <c:if test="${fn:contains(fragments, 'label-text')}">text</c:if>
-    <c:if test="${fn:contains(fragments, 'label-icon')}">icon</c:if>
+    <c:if test="${fn:contains(fragments, 'label-icon')}">
+        icon
+        <c:set var="showicons">true</c:set>
+    </c:if>
 </c:set>
+<c:set var="animatedlink" value="${link.isSet and fn:contains(fragments, 'animated-link')}" />
 
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.schemas.contact">
@@ -62,16 +66,17 @@
 <apollo:image-animated
     test="${fn:contains(fragments, 'image')}"
     image="${image}"
+    cssclass="${animatedlink ? 'ap-button-animation' : ''}"
     cssimage="photo"
     kenburnsanimation="${fn:contains(fragments, 'effect-kenburns')}"
     shadowanimation="${fn:contains(fragments, 'effect-shadow')}"
     >
 
-    <c:if test="${link.isSet and fn:contains(fragments, 'animated-link')}">
-        <div class="link">
+    <c:if test="${animatedlink}">
+        <div class="button-place-box">
             <apollo:link 
                 link="${link}"
-                cssclass="btn btn-xs btn-animated" />
+                cssclass="btn btn-xs button-box" />
         </div>
     </c:if>
 
@@ -94,16 +99,29 @@
 
     <c:if test="${fn:contains(fragments, 'address') and data.isSet}">
         <div class="ap-contact-address">
-            <c:if test="${icons}">
-                <a id="ap-contact-adrlink-${cms.element.instanceId}"
-                    href="" 
-                    onclick="$('#ap-contact-adr-${cms.element.instanceId}').slideDown();$('#ap-contact-adrlink-${cms.element.instanceId}').hide();return false;">
-                        <i class="fa fa-map-marker"></i>
-                        <fmt:message key="apollo.contact.showaddress"/>
-                </a>
+            <c:if test="${showicons}">
+                <div id="ap-contact-adrlink-${cms.element.instanceId}">
+                    <apollo:icon-prefix icon="home" fragments="icon text" >
+                        <jsp:attribute name="text">
+                            <a  href=""
+                                onclick="
+                                    $('#ap-contact-adr-${cms.element.instanceId}').slideDown();
+                                    $('#ap-contact-adrlink-${cms.element.instanceId}').hide();
+                                    return false;">
+                                <fmt:message key="apollo.contact.showaddress"/>
+                            </a>
+                        </jsp:attribute>
+                        <jsp:attribute name="icontitle"><fmt:message key="apollo.contact.showaddress"/></jsp:attribute>
+                    </apollo:icon-prefix>
+                </div>
             </c:if>
             <c:if test="${data.value.Address.isSet}">
-                <div class="adr"<c:if test="${icons}">id="ap-contact-adr-${cms.element.instanceId}" style="display: none;" onclick="$('#ap-contact-adr-${cms.element.instanceId}').slideUp();$('#ap-contact-adrlink-${cms.element.instanceId}').slideDown();"</c:if>>
+                <div class="adr"
+                    <c:if test="${showicons}">
+                        id="ap-contact-adr-${cms.element.instanceId}" 
+                        style="display: none;" 
+                        onclick="$('#ap-contact-adr-${cms.element.instanceId}').slideUp();$('#ap-contact-adrlink-${cms.element.instanceId}').slideDown();"
+                    </c:if>>
                     <div class="street-address"> ${data.value.Address.value.StreetAddress}</div>
                     <c:if test="${data.value.Address.value.ExtendedAddress.isSet}">
                         <div class="extended-address"> ${data.value.Address.value.ExtendedAddress}</div>
@@ -126,7 +144,7 @@
     </c:if>
 
     <c:set var="showphone" value="${fn:contains(fragments, 'phone') and data.isSet}"/>
-    <c:set var="showemail" value="${fn:contains(fragments, 'email') and data.isSet and data.value.EMail.isSet}"/>
+    <c:set var="showemail" value="${fn:contains(fragments, 'email') and data.isSet and data.value.Email.isSet and data.value.Email.value.Email.isSet}"/>
 
     <apollo:tag test="${showphone or showemail}">div class="ap-contact-data"</apollo:tag>
 
@@ -159,7 +177,7 @@
             <div class="ap-contact-fax ap-tablerow">
                 <apollo:icon-prefix icon="fax" fragments="${labels}">
                     <jsp:attribute name="text"><fmt:message key="apollo.contact.fax"/></jsp:attribute>
-                </apollo:icon-prefix>                
+                </apollo:icon-prefix>
                 <span class="ap-contact-value">
                     <a href="tel:${fn:replace(data.value.Fax, ' ','')}" ${data.rdfa.Fax}>
                         <span class="tel">${data.value.Fax}</span>
@@ -171,43 +189,12 @@
 
     <c:if test="${showemail}">
         <div class="ap-contact-email ap-tablerow">
-            <c:choose>
-                <c:when test="${data.value.OpenEMail.isSet and data.value.OpenEMail == 'true'}">
-                    <apollo:icon-prefix icon="at" fragments="${labels}" >
-                        <jsp:attribute name="text"><fmt:message key="apollo.contact.openemail"/></jsp:attribute>
-                    </apollo:icon-prefix>
-                    <a class="ap-contact-value" href="mailto:${data.value.EMail}" title="${data.value.EMail}">
-                        <span class="email">${data.value.EMail}</span>
-                    </a>
-                </c:when>
-                <c:otherwise>
-                    <c:set var="emaillink">
-                        <a class="ap-contact-email-obfuscated" 
-                            href="javascript:descrambleContactEmail('<apollo:obfuscate-email text="${data.value.EMail}"/>');" 
-                            id="apcontactemail${cms.element.id}" 
-                            title="<fmt:message key='apollo.contact.email'/>">
-                            <span><fmt:message key="apollo.contact.email"/></span>
-                        </a>
-                    </c:set>
-                    <c:choose>
-                        <c:when test="${fn:contains(labels, 'text') and fn:contains(labels, 'icon')}">
-                            <apollo:icon-prefix icon="at" fragments="icon text" >
-                                <jsp:attribute name="text"><c:out value="${emaillink}" escapeXml="false" /></jsp:attribute>
-                                <jsp:attribute name="icontitle"><fmt:message key="apollo.contact.email"/></jsp:attribute>
-                            </apollo:icon-prefix>
-                        </c:when>
-                        <c:when test="${fn:contains(labels, 'icon')}">
-                            <apollo:icon-prefix icon="at" fragments="${labels}" >
-                                <jsp:attribute name="text"><fmt:message key="apollo.contact.email"/></jsp:attribute>
-                            </apollo:icon-prefix>
-                            <c:out value="${emaillink}" escapeXml="false" />                        
-                        </c:when>
-                        <c:otherwise>
-                            <c:out value="${emaillink}" escapeXml="false" />
-                        </c:otherwise>
-                    </c:choose>
-                </c:otherwise>
-            </c:choose>
+            <apollo:icon-prefix icon="at" fragments="${labels}" >
+                <jsp:attribute name="text"><fmt:message key="apollo.contact.email"/></jsp:attribute>
+            </apollo:icon-prefix>
+            <apollo:email email="${data.value.Email}" cssclass="ap-contact-value">
+                <jsp:attribute name="placeholder"><fmt:message key="apollo.contact.obfuscatedemail"/></jsp:attribute>
+            </apollo:email>
         </div>
     </c:if>
 

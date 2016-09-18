@@ -23,14 +23,7 @@
     <AutoEnabled>true</AutoEnabled>
     <Detail>true</Detail>
     <NestedContainers>false</NestedContainers>
-    <HeadIncludeJs>
-      <JavascriptLink>
-        <link type="WEAK">
-          <target><![CDATA[/system/modules/org.opencms.apollo/resources/contact-mailfunctions.js]]></target>
-          <uuid>30ca5d96-4ff1-11e6-958f-0242ac11002b</uuid>
-        </link>
-      </JavascriptLink>
-    </HeadIncludeJs>
+    <HeadIncludeJs/>
     <Setting>
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
@@ -65,7 +58,7 @@
       <PropertyName><![CDATA[labels]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.contact.setting.labels)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[text]]></Default>
+      <Default><![CDATA[label-text]]></Default>
       <WidgetConfig><![CDATA[
         label-text:%(key.apollo.contact.setting.labels.text)|
         label-icon:%(key.apollo.contact.setting.labels.icons)|

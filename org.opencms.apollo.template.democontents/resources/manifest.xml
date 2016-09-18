@@ -3264,7 +3264,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Copyright</name>
-					<value><![CDATA[CC0 Public Domain / Pixabay.com]]></value>
+					<value><![CDATA[CC0 Public Domain / Wikimedia Commons]]></value>
 				</property>
 				<property type="shared">
 					<name>image.size</name>

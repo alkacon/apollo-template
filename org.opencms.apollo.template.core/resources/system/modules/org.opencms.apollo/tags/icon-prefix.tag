@@ -19,14 +19,6 @@
     text: Show the text.
     ]" %>
 
-<%@ attribute name="attributes" required="false" fragment="true"
-    description="Optional attributes to add to the generated SPAN element." %>
-
-<%@ attribute name="test" type="java.lang.String" required="false"
-    description="Can be used to defer the decision to actually create the markup around the body to the calling element.
-    If not set or 'true', the markup from this tag is generated around the body of the tag.
-    Otherwise everything is ignored and just the body of the tag is returned. "%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 

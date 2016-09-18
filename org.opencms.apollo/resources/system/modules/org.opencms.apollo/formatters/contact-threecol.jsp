@@ -37,7 +37,7 @@
     </c:set>
 
     <div class="row">
-        <div class="col-sm-4 ap-section-animated">
+        <div class="col-sm-4">
             <apollo:contact
                 image="${value.Image}"
                 link="${value.Link}"

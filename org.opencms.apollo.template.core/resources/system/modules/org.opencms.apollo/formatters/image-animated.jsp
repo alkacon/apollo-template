@@ -16,18 +16,19 @@
 <c:set var="inMemoryMessage"><fmt:message key="apollo.section.message.new" /></c:set>
 <apollo:init-messages textnew="${inMemoryMessage}">
 
-<div class="ap-section-animated ${cms.element.setting.cssclass.value}">
+<div class="ap-section ${cms.element.setting.cssclass.value}">
 
     <apollo:image-animated
         image="${value.Image}"
+        cssclass="ap-button-animation"
         shadowanimation="${fn:contains(cms.element.setting.ieffect.value, 'shadow')}"
         kenburnsanimation="${fn:contains(cms.element.setting.ieffect.value, 'kenburn')}">
 
         <c:if test="${content.value.Link.isSet and cms.element.setting.ilink.value == 'image'}">
-            <div class="link">
+            <div class="button-place-box">
                 <apollo:link 
                     link="${value.Link}" 
-                    cssclass="btn btn-xs btn-animated" />
+                    cssclass="btn btn-xs button-box" />
             </div>
         </c:if>
 

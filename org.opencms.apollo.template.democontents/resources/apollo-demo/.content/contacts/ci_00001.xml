@@ -33,7 +33,10 @@
       </Address>
       <Phone><![CDATA[+49 (211) 123-4567]]></Phone>
       <Mobile><![CDATA[+49 (160) 123-4567]]></Mobile>
-      <EMail><![CDATA[claire.dunphy@example.org]]></EMail>
+      <Email>
+        <Email><![CDATA[claire.dunphy@example.org]]></Email>
+        <ObfuscateEmail>true</ObfuscateEmail>
+      </Email>
     </Contact>
   </ApolloContact>
 </ApolloContacts>
