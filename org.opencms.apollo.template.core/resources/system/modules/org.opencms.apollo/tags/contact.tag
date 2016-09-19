@@ -80,24 +80,33 @@
         </div>
     </c:if>
 
-    <c:if test="${fn:contains(fragments, 'name')}">
-        <c:if test="${name.isSet}">
-            <h3 class="fn n">
-                <c:if test="${name.value.Title.isSet}"><span class="honorific-prefix">${name.value.Title} </span></c:if>
-                <span class="given-name"> ${name.value.FirstName}</span>
-                <c:if test="${name.value.MiddleName.isSet}"><span class="additional-name"> ${name.value.MiddleName}</span></c:if>
-                <span class="family-name"> ${name.value.LastName}</span>
-                <c:if test="${name.value.Suffix.isSet}"><span class="honorific-suffix"> ${name.value.Suffix}</span></c:if>
-            </h3>
-        </c:if>
+    <c:set var="showname" value="${fn:contains(fragments, 'name') and name.isSet}"/>
+    <c:set var="showorganization" value="${fn:contains(fragments, 'organization') and organization.isSet}"/>
+    <c:set var="showdescription" value="${fn:contains(fragments, 'description') and description.isSet}"/>
+    <c:set var="showaddress" value="${fn:contains(fragments, 'address') and data.isSet and data.value.Address.isSet}"/>
+    <c:set var="showphone" value="${fn:contains(fragments, 'phone') and data.isSet}"/>
+    <c:set var="showemail" value="${fn:contains(fragments, 'email') and data.isSet and data.value.Email.isSet and data.value.Email.value.Email.isSet}"/>
+    <c:set var="showstaticbutton" value="${fn:contains(fragments, 'static-link') and link.isSet}"/>
+
+    <c:if test="${showname or showorganization or showdescription or showaddress or showphone or showemail or showstaticbutton}">
+    <div class="text-below-image">
+
+    <c:if test="${showname}">
+        <h3 class="fn n">
+            <c:if test="${name.value.Title.isSet}"><span class="honorific-prefix">${name.value.Title} </span></c:if>
+            <span class="given-name"> ${name.value.FirstName}</span>
+            <c:if test="${name.value.MiddleName.isSet}"><span class="additional-name"> ${name.value.MiddleName}</span></c:if>
+            <span class="family-name"> ${name.value.LastName}</span>
+            <c:if test="${name.value.Suffix.isSet}"><span class="honorific-suffix"> ${name.value.Suffix}</span></c:if>
+        </h3>
 
         <c:if test="${position.isSet}"><h4 class="title" ${position.rdfaAttr}>${position}</h4></c:if>
     </c:if>
 
-    <c:if test="${fn:contains(fragments, 'organization') and organization.isSet}"><div class="org" ${organization.rdfaAttr}>${organization}</div></c:if>
-    <c:if test="${fn:contains(fragments, 'description') and description.isSet}"><div class="note" ${description.rdfaAttr}>${description}</div></c:if>
+    <c:if test="${showorganization}"><div class="org" ${organization.rdfaAttr}>${organization}</div></c:if>
+    <c:if test="${showdescription}"><div class="note" ${description.rdfaAttr}>${description}</div></c:if>
 
-    <c:if test="${fn:contains(fragments, 'address') and data.isSet}">
+    <c:if test="${showaddress}">
         <div class="ap-contact-address">
             <c:if test="${showicons}">
                 <div id="ap-contact-adrlink-${cms.element.instanceId}">
@@ -115,38 +124,31 @@
                     </apollo:icon-prefix>
                 </div>
             </c:if>
-            <c:if test="${data.value.Address.isSet}">
-                <div class="adr"
-                    <c:if test="${showicons}">
-                        id="ap-contact-adr-${cms.element.instanceId}" 
-                        style="display: none;" 
-                        onclick="$('#ap-contact-adr-${cms.element.instanceId}').slideUp();$('#ap-contact-adrlink-${cms.element.instanceId}').slideDown();"
-                    </c:if>>
-                    <div class="street-address"> ${data.value.Address.value.StreetAddress}</div>
-                    <c:if test="${data.value.Address.value.ExtendedAddress.isSet}">
-                        <div class="extended-address"> ${data.value.Address.value.ExtendedAddress}</div>
-                    </c:if>
-                    <div class="ap-contact-city">
-                        <span class="locality"> ${data.value.Address.value.PostalCode}</span>
-                        <span class="region"> ${data.value.Address.value.Locality}</span>
-                    </div>
-                    <div class="ap-contact-street">
-                        <c:if test="${data.value.Address.value.Region.isSet}">
-                            <span class="postal-code"> ${data.value.Address.value.Region}</span>
-                        </c:if>
-                        <c:if test="${data.value.Address.value.Country.isSet}">
-                            <span class="country-name"> ${data.value.Address.value.Country}</span>
-                        </c:if>
-                    </div>
+            <div class="adr"
+                <c:if test="${showicons}">
+                    id="ap-contact-adr-${cms.element.instanceId}" 
+                    style="display: none;" 
+                    onclick="$('#ap-contact-adr-${cms.element.instanceId}').slideUp();$('#ap-contact-adrlink-${cms.element.instanceId}').slideDown();"
+                </c:if>>
+                <div class="street-address"> ${data.value.Address.value.StreetAddress}</div>
+                <c:if test="${data.value.Address.value.ExtendedAddress.isSet}">
+                    <div class="extended-address"> ${data.value.Address.value.ExtendedAddress}</div>
+                </c:if>
+                <div class="ap-contact-city">
+                    <span class="locality"> ${data.value.Address.value.PostalCode}</span>
+                    <span class="region"> ${data.value.Address.value.Locality}</span>
                 </div>
-            </c:if>
+                <div class="ap-contact-street">
+                    <c:if test="${data.value.Address.value.Region.isSet}">
+                        <span class="postal-code"> ${data.value.Address.value.Region}</span>
+                    </c:if>
+                    <c:if test="${data.value.Address.value.Country.isSet}">
+                        <span class="country-name"> ${data.value.Address.value.Country}</span>
+                    </c:if>
+                </div>
+            </div>
         </div>
     </c:if>
-
-    <c:set var="showphone" value="${fn:contains(fragments, 'phone') and data.isSet}"/>
-    <c:set var="showemail" value="${fn:contains(fragments, 'email') and data.isSet and data.value.Email.isSet and data.value.Email.value.Email.isSet}"/>
-
-    <apollo:tag test="${showphone or showemail}">div class="ap-contact-data"</apollo:tag>
 
     <c:if test="${showphone}">
         <c:if test="${data.value.Phone.isSet}"> 
@@ -198,10 +200,11 @@
         </div>
     </c:if>
 
-    <apollo:tag test="${showphone or showemail}">/div</apollo:tag>
+    <c:if test="${showstaticbutton}">
+        <apollo:link link="${link}" cssclass="btn btn-sm button-static" />
+    </c:if>
 
-    <c:if test="${fn:contains(fragments, 'static-link')}">
-        <apollo:link link="${link}" cssclass="btn btn-sm mt-10" />
+    </div>
     </c:if>
 
 </apollo:image-animated>

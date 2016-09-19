@@ -46,10 +46,10 @@
 
 <div class="ap-image
     <c:if test='${kenburnsanimation}'> ap-kenburns-animation</c:if>
-    <c:if test='${shadowanimation}'> ap-shadow-animation</c:if> 
+    <c:if test='${shadowanimation}'> ap-raise-animation</c:if> 
     <c:out value=' ${cssclass}'/>">
 
-    <div <c:if test="${shadowanimation}">class="shadow-box"</c:if>>
+    <div <c:if test="${shadowanimation}">class="animated-box"</c:if>>
         <div  ${image.value.Image.imageDndAttr} <c:if test="${kenburnsanimation}">class="kenburns-limit-box"</c:if>>
             <cms:img 
                 src="${imageLink}"

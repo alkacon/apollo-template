@@ -34,17 +34,19 @@
 
         <c:if test="${fn:contains(cms.element.setting.itext.value, 'copy') and not empty imageCopyright}">
             <div class="copyright">
-                <i>${imageCopyright}</i>
+                <div>${imageCopyright}</div>
             </div>
         </c:if>
 
-        <c:if test="${fn:contains(cms.element.setting.itext.value, 'title')}">
-            <h3 class="subtitle">
-                <apollo:link link="${value.Link}">
-                    ${not empty imageTitle ? imageTitle : value.Headline}
-                </apollo:link>
-            </h3>
-        </c:if>
+        <div class="text-below-image"><div>
+            <c:if test="${fn:contains(cms.element.setting.itext.value, 'title')}">
+                <h3 class="subtitle">
+                    <apollo:link link="${value.Link}">
+                        ${not empty imageTitle ? imageTitle : value.Headline}
+                    </apollo:link>
+                </h3>
+            </c:if>
+        </div></div>
 
     </apollo:image-animated>
 </div>

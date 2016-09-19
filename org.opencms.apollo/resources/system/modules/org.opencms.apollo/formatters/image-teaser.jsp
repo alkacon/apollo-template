@@ -13,28 +13,29 @@
 <c:set var="inMemoryMessage"><fmt:message key="apollo.section.message.new" /></c:set>
 <apollo:init-messages textnew="${inMemoryMessage}">
 
-    <div class="ap-section ap-image-teaser">
+<div class="ap-section">
 
-        <apollo:image-animated
-            image="${value.Image}"
-            cssclass="ap-button-animation"
-            shadowanimation="${cms.element.setting.showShadow.value}"
-            kenburnsanimation="${cms.element.setting.showKenburn.value}">
+    <apollo:image-animated
+        image="${value.Image}"
+        cssclass="ap-button-animation"
+        shadowanimation="${cms.element.setting.showShadow.value}"
+        kenburnsanimation="${cms.element.setting.showKenburn.value}">
 
-            <c:if test="${content.value.Link.isSet}">
-                <div class="button-place-box">
-                    <apollo:link 
-                        link="${value.Link}" 
-                        cssclass="btn btn-xs button-box" />
-                </div>
-            </c:if>
+        <c:if test="${content.value.Link.isSet}">
+            <div class="button-place-box">
+                <apollo:link 
+                    link="${value.Link}" 
+                    cssclass="btn btn-xs button-box" />
+            </div>
+        </c:if>
 
-            <c:if test="${cms.element.setting.showCopy.value and not empty imageCopyright}">
-                <div class="copyright">
-                    <i>${imageCopyright}</i>
-                </div>
-            </c:if>
+        <c:if test="${cms.element.setting.showCopy.value and not empty imageCopyright}">
+            <div class="copyright">
+                <div>${imageCopyright}</div>
+            </div>
+        </c:if>
 
+        <div class="text-below-image">
             <h3 class="subtitle">
                 <apollo:link link="${value.Link}">
                     ${not empty imageTitle ? imageTitle : value.Headline}
@@ -49,9 +50,10 @@
                     ${teaserText}
                 </div>
             </c:if>
+        </div>
 
-        </apollo:image-animated>
-    </div>
+    </apollo:image-animated>
+</div>
 
 </apollo:init-messages>
 

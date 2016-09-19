@@ -13,7 +13,7 @@
     <c:set var="inMemoryMessage"><fmt:message key="apollo.event.message.edit" /></c:set>
     <apollo:init-messages textnew="${inMemoryMessage}">
 
-        <div class="row ap-sec ap-event">
+        <div class="row ap-sec ap-event ap-raise-animation">
             <c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
             <c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
             <c:set var="buttonColor" value="${cms.element.settings.buttoncolor}" />
@@ -31,7 +31,7 @@
                         <c:choose>
                         <%-- ####### Show calendar ######## --%>
                         <c:when test="${not showImageSmall}">
-                            <div class="date date-${calendarColor}">
+                            <div class="date date-${calendarColor} animated-box">
                                 <div class="day">
                                     <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
                                         pattern="EEEE" type="date" />
