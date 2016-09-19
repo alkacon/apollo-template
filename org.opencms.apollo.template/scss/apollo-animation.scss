@@ -1,16 +1,147 @@
 /**
-Button animation effect.
-HTML structure:
+ * Variables for more variation in animation curves.
+ * Values taken from: http://http://easings.net/
+ **/
 
-<div class="ap-button-animation">      <-- Effect trigger box
-    <div classs="button-place-box">    <-- Place marker box
-        <div class="button-box">       <-- Animated box, should be the only element inside the place box
-            ...
-        </div>
-    </div>
-    Other content
-</div>
-**/
+$easeInQuad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$easeOutQuad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$easeInCubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+// Mixin for the shadow boxes
+@mixin animated-box-reset {
+
+    .animated-box {
+        box-shadow: none;
+        -webkit-transition: all 0.4s $easeOutQuad;
+        transition: all 0.4s $easeOutQuad;
+        z-index: 5;
+    }
+}
+
+/**
+ * Shadow animation effect.
+ * HTML structure:
+ * 
+ * <div class="ap-shadow-animation">      <-- Effect trigger box
+ *     <div classs="animated-box">        <-- Animated box
+ *         ...
+ *     </div>
+ *     Other content
+ * </div>
+ * 
+ * This effect does two animations at once.
+ * The effect trigger box gets the shadow, and the animated box is shrunk.
+ **/
+.ap-shadow-animation {
+
+    // Apply shadow effect to the surrounding box on hover
+    &:hover {
+        box-shadow: 0 0 10px 1px $grey; 
+    }
+
+    // Reverse the shadow effect on the surrounding box if no hover
+    -webkit-transition: box-shadow 0.35s $easeInQuad;
+    transition: box-shadow 0.35s $easeInQuad;
+
+    // Shrink the inner box on hover 
+    &:hover .animated-box {
+        -webkit-transform: scale(0.925);
+        transform: scale(0.925);
+    }
+
+    // Reverse the effect to the animated box if no hover
+    @include animated-box-reset;
+}
+
+
+/**
+ * Shadow inset animation effect ('sunken shadow').
+ * HTML structure:
+ * 
+ * <div class="ap-inset-animation">      <-- Effect trigger box
+ *     <div classs="animated-box">       <-- Animated box
+ *         ...
+ *     </div>
+ *     Other content
+ * </div>
+ * 
+ * This effect does two animations at once.
+ * The effect trigger box gets the inset shadow, and the animated box is shrunk.
+ **/
+.ap-inset-animation {
+
+    // Apply inset shadow effect to the surrounding box on hover
+    &:hover {
+        box-shadow: 0 0 10px 1px $grey inset; 
+    }
+
+    // Reverse the shadow effect on the surrounding box if no hover
+    -webkit-transition: box-shadow 0.35s $easeInQuad;
+    transition: box-shadow 0.35s $easeInQuad;
+
+    // Shrink the inner box on hover 
+    &:hover .animated-box {
+        -webkit-transform: scale(0.925);
+        transform: scale(0.925);
+    }
+
+    // Reverse the effect to the animated box if no hover
+    @include animated-box-reset;
+}
+
+
+/**
+ * Raise box effect.
+ * HTML structure:
+ * 
+ * <div class="ap-raise-animation">      <-- Effect trigger box
+ *     <div classs="animated-box">       <-- Animated box
+ *         ...
+ *     </div>
+ *     Other content
+ * </div>
+ **/
+.ap-raise-animation {
+
+    // Apply the raise effect to the animated box on hover 
+    &:hover .animated-box {
+        -webkit-transform: scale(1.075);
+        transform: scale(1.075);
+        box-shadow: 5px 5px 8px -1px rgba(0,0,0,0.4);
+    }
+
+    // Animated text gets a slight border
+    &:hover .text-below-image {
+        border-left: 1px solid $gray-light;
+        padding-left: 5px;
+    }
+
+    // Reverse effect for animated text
+    .text-below-image {
+        border: 0 solid $white;
+        -webkit-transition: padding 0.4s $easeOutQuad;
+        transition: padding 0.4s $easeOutQuad;
+    }
+
+    // Reverse the effect to the animated box if no hover
+    @include animated-box-reset;
+}
+
+
+/**
+ * Button animation effect.
+ * HTML structure:
+ * 
+ * <div class="ap-button-animation">      <-- Effect trigger box
+ *     <div classs="button-place-box">    <-- Place marker box
+ *         <div class="button-box">       <-- Animated box, should be the only element inside the place box
+ *             ...
+ *         </div>
+ *     </div>
+ *     Other content
+ * </div>
+ **/
 .ap-button-animation {
 
    // Apply button effect on hover over the trigger box
@@ -20,74 +151,35 @@ HTML structure:
 
     // The button is placed in relation to the place-box
     .button-box {
-        right: -10px;
         bottom: 10px;
         position: absolute;
         display: inline-block; 
-        -webkit-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
+
+        right: -10px;
+        -webkit-transition: right 0.4s $easeOutQuad;
+        transition: right 0.4s $easeOutQuad;
     }
 
     // Marks the position for absolute button placement
     .button-place-box {
-        position: relative;       
+        position: relative;
     }
 }
 
 
 /**
-Shadow animation effect.
-HTML structure:
-
-<div class="ap-shadow-animation">      <-- Effect trigger box
-    <div classs="shadow-box">          <-- Animated box
-        ...
-    </div>
-    Other content
-</div>
-
-This effect does two animations at once.
-The effect trigger box gets the shadow, and the animated box is shrunk.
-**/
-.ap-shadow-animation {
-
-    // Apply shadow effect to the surrounding box on hover
-    &:hover {
-        box-shadow: 0 0 10px 1px $grey-dark; 
-    }
-
-    // Reverse the shadow effect on the surrounding box if no hover
-    box-shadow: 0 0 0 0 $grey-dark;
-    -webkit-transition: box-shadow 0.35s ease-in-out;
-    transition: box-shadow 0.35s ease-in-out;
-
-    // Shrink the inner box on hover 
-    &:hover .shadow-box {
-        -webkit-transform: scale(0.925);
-        transform: scale(0.925);
-    }
-
-    // Reverse the shrink effect to the inner box if no hover
-    .shadow-box {
-        -webkit-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
-    }
-}
-
-
-/**
-Ken Burns animation effect.
-HTML structure:
-
-<div class="ap-kenburns-animation">    <-- Effect trigger box
-    <div classs="kenburns-limit-box">  <-- Efect limitation box
-        <div class="kenburns-bos">     <-- Animated box, should be directly in limitation box
-            ...
-        </div>
-    </div>
-    Other content
-</div>
-**/
+ * Ken Burns animation effect.
+ * HTML structure:
+ * 
+ * <div class="ap-kenburns-animation">    <-- Effect trigger box
+ *     <div classs="kenburns-limit-box">  <-- Efect limitation box
+ *         <div class="kenburns-bos">     <-- Animated box, should be directly in limitation box
+ *             ...
+ *         </div>
+ *     </div>
+ *     Other content
+ * </div>
+ **/
 .ap-kenburns-animation {
 
     // Apply the Ken Burn effect to the animated box on hover 
@@ -98,8 +190,8 @@ HTML structure:
 
     // Reverse all effects to the animated box if no hover
     .kenburns-box {
-        -webkit-transition: all 1.0s ease-in-out;
-        transition: all 1.0s ease-in-out;
+        -webkit-transition: -webkit-transform 1.0s $easeOutQuad;
+        transition: transform 1.0s $easeOutQuad;
     }
 
     // Limits the effect to the borders of this box
@@ -107,3 +199,4 @@ HTML structure:
         overflow: hidden;
     }
 }
+

@@ -1,5 +1,5 @@
 .ap-contact {
-    
+
     .title, 
     .org, 
     .note, 
@@ -18,7 +18,9 @@
         margin-bottom: 20px;
 
         .fn {
-            margin-bottom: 4px;
+            padding-top: 5px;
+            margin-top: 0px;
+            margin-bottom: 4px;            
         }
 
         .title {
@@ -41,7 +43,8 @@
        width: 20px;
     }
 
+    .text-below-image .button-static {
+        margin: 5px 0px;
+    }
 }
-
-
 

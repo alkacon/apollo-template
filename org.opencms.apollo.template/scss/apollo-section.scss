@@ -16,12 +16,22 @@
             text-decoration: none;
             color: $main-theme !important;
         }
+
+        margin-top: 0;
+        padding-top: 5px;
     }
 
     .copyright {
-        text-align: right;
-        font-size: 0.7em;
-        color: $grey;
+        position: relative;
+
+        div {
+            padding: 2px 5px;
+            font-size: 0.7em;
+            background: rgba(255, 255, 255, 0.6);
+            color: black;
+            position: absolute;
+            bottom: 0;
+        }
     }
 }
 
@@ -39,11 +49,11 @@
 
     .ap-img-pic {
     }
-    
+
     a {
-    
+
         color: $text-dark;
-        
+
         &:hover, &:active, &:focus {
             color: $text-dark;
             text-decoration: none;

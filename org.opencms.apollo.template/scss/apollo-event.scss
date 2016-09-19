@@ -3,11 +3,6 @@
 
 .ap-event {
 
-    &:hover .date {
-        transform: scale(1.075);
-        box-shadow: 5px 5px 10px -4px $grey-dark;
-    }
-
     a.link {
         color: $text-dark;
     }
@@ -17,15 +12,10 @@
     }
 
     .date {
-        transform: scale(1);
-        -webkit-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
-
         min-width: 90px;
         border: 1px solid $gray-light;
-        box-shadow:  4px 4px 6px 0 $grey;
         text-align: center; 
-        background: #fafafa;
+        background: $gray-lighter;
 
         &:before {
             display: block;
