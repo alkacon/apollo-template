@@ -79,6 +79,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/tags/galleryitems.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/headline.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-simple.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/image-animated.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-vars.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-zoom.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/init-messages.tag"/>
@@ -1533,6 +1534,23 @@
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/image-animated.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/image-animated.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>639a9c12-74dd-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>639a9c13-74dd-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Wed, 07 Sep 2016 09:28:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Animated image formatting tag]]></value>
 				</property>
 			</properties>
 			<relations/>
