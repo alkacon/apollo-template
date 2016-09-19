@@ -11,12 +11,10 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 // Mixin for the shadow boxes
 @mixin animated-box-reset {
 
-    .animated-box {
-        box-shadow: none;
-        -webkit-transition: all 0.4s $easeOutQuad;
-        transition: all 0.4s $easeOutQuad;
-        z-index: 5;
-    }
+    box-shadow: none;
+    -webkit-transition: all 0.4s $easeOutQuad;
+     transition: all 0.4s $easeOutQuad;
+     z-index: 5;
 }
 
 /**
@@ -45,13 +43,15 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: box-shadow 0.35s $easeInQuad;
 
     // Shrink the inner box on hover 
-    &:hover .animated-box {
+    &:hover .animated-box .text-box {
         -webkit-transform: scale(0.925);
         transform: scale(0.925);
     }
 
     // Reverse the effect to the animated box if no hover
-    @include animated-box-reset;
+    .animated-box .text-box {
+        @include animated-box-reset;
+    }
 }
 
 
@@ -87,7 +87,9 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
 
     // Reverse the effect to the animated box if no hover
-    @include animated-box-reset;
+    .animated-box {
+        @include animated-box-reset;
+    }
 }
 
 
@@ -112,20 +114,22 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
 
     // Animated text gets a slight border
-    &:hover .text-below-image {
+    &:hover .text-box {
         border-left: 1px solid $gray-light;
         padding-left: 5px;
     }
 
     // Reverse effect for animated text
-    .text-below-image {
+    .text-box {
         border: 0 solid $white;
-        -webkit-transition: padding 0.4s $easeOutQuad;
-        transition: padding 0.4s $easeOutQuad;
+        -webkit-transition: padding 0.4s $easeInQuad;
+        transition: padding 0.4s $easeInQuad;
     }
 
     // Reverse the effect to the animated box if no hover
-    @include animated-box-reset;
+    .animated-box {
+        @include animated-box-reset;
+    }
 }
 
 
@@ -134,10 +138,8 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
  * HTML structure:
  * 
  * <div class="ap-button-animation">      <-- Effect trigger box
- *     <div classs="button-place-box">    <-- Place marker box
- *         <div class="button-box">       <-- Animated box, should be the only element inside the place box
- *             ...
- *         </div>
+ *     <div classs="button-box">          <-- Place marker box
+ *         <a href="..."></a>             <-- Animated link button
  *     </div>
  *     Other content
  * </div>
@@ -145,12 +147,12 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 .ap-button-animation {
 
    // Apply button effect on hover over the trigger box
-    &:hover .button-box {
+    &:hover .button-box a {
         right: 10px;
     }
 
     // The button is placed in relation to the place-box
-    .button-box {
+    .button-box a {
         bottom: 10px;
         position: absolute;
         display: inline-block; 
@@ -161,7 +163,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
 
     // Marks the position for absolute button placement
-    .button-place-box {
+    .button-box {
         position: relative;
     }
 }
@@ -172,8 +174,8 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
  * HTML structure:
  * 
  * <div class="ap-kenburns-animation">    <-- Effect trigger box
- *     <div classs="kenburns-limit-box">  <-- Efect limitation box
- *         <div class="kenburns-bos">     <-- Animated box, should be directly in limitation box
+ *     <div classs="image-outer-box">     <-- Efect limitation box
+ *         <div class="image-inner-box">  <-- Animated box, should be directly in limitation box
  *             ...
  *         </div>
  *     </div>
@@ -183,19 +185,19 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 .ap-kenburns-animation {
 
     // Apply the Ken Burn effect to the animated box on hover 
-    &:hover .kenburns-box {
+    &:hover .image-inner-box {
        -webkit-transform: scale(1.25) rotate(2deg);
        transform: scale(1.25) rotate(2deg);
     }
 
     // Reverse all effects to the animated box if no hover
-    .kenburns-box {
+    .image-inner-box {
         -webkit-transition: -webkit-transform 1.0s $easeOutQuad;
         transition: transform 1.0s $easeOutQuad;
     }
 
     // Limits the effect to the borders of this box
-    .kenburns-limit-box {
+    .image-outer-box {
         overflow: hidden;
     }
 }
