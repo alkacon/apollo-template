@@ -13,12 +13,6 @@
 <%@ attribute name="cssimage" type="java.lang.String" required="false" 
     description="CSS class added directly to the generated image tag."%>
 
-<%@ attribute name="shadowanimation" type="java.lang.Boolean" required="false"
-    description="If 'true' insert classes that generate a shadow zoom effect."%>
-
-<%@ attribute name="kenburnsanimation" type="java.lang.Boolean" required="false" 
-    description="If 'true' insert classes that generate the 'Ken Burns' animation."%>
-
 <%@ attribute name="test" type="java.lang.String" required="false"
     description="Can be used to defer the decision to actually create the markup around the body to the calling element.
     If not set or 'true', the markup from this tag is generated around the body of the tag.
@@ -44,16 +38,13 @@
 
 <%-- ####### Animated image ####### --%>
 
-<div class="ap-image
-    <c:if test='${kenburnsanimation}'> ap-kenburns-animation</c:if>
-    <c:if test='${shadowanimation}'> ap-raise-animation</c:if> 
-    <c:out value=' ${cssclass}'/>">
+<div class="ap-image ${cssclass}">
 
-    <div <c:if test="${shadowanimation}">class="animated-box"</c:if>>
-        <div  ${image.value.Image.imageDndAttr} <c:if test="${kenburnsanimation}">class="kenburns-limit-box"</c:if>>
+    <div class="animated-box">
+        <div  ${image.value.Image.imageDndAttr} class="image-outer-box">
             <cms:img 
                 src="${imageLink}"
-                cssclass="img-responsive ${imagestyle} ${kenburnsanimation ? ' kenburns-box' : ''}"
+                cssclass="img-responsive image-inner-box ${imagestyle}}"
                 alt="${imageTitleCopyright}"
                 title="${imageTitleCopyright}"
             />

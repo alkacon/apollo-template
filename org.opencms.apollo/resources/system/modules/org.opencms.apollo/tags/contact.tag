@@ -66,17 +66,19 @@
 <apollo:image-animated
     test="${fn:contains(fragments, 'image')}"
     image="${image}"
-    cssclass="${animatedlink ? 'ap-button-animation' : ''}"
+    cssclass="
+        ${animatedlink ? 'ap-button-animation' : ''}
+        ${fn:contains(fragments, 'effect-kenburns') ? ' ap-kenburns-animation' : ''}
+        ${fn:contains(fragments, 'effect-shadow') ? ' ap-raise-animation' : ''}"
+
     cssimage="photo"
-    kenburnsanimation="${fn:contains(fragments, 'effect-kenburns')}"
-    shadowanimation="${fn:contains(fragments, 'effect-shadow')}"
     >
 
     <c:if test="${animatedlink}">
-        <div class="button-place-box">
+        <div class="button-box">
             <apollo:link 
                 link="${link}"
-                cssclass="btn btn-xs button-box" />
+                cssclass="btn btn-xs" />
         </div>
     </c:if>
 
@@ -89,7 +91,7 @@
     <c:set var="showstaticbutton" value="${fn:contains(fragments, 'static-link') and link.isSet}"/>
 
     <c:if test="${showname or showorganization or showdescription or showaddress or showphone or showemail or showstaticbutton}">
-    <div class="text-below-image">
+    <div class="text-box">
 
     <c:if test="${showname}">
         <h3 class="fn n">

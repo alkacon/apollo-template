@@ -31,8 +31,8 @@
     <Formatters>
       <Formatter>
         <link type="WEAK">
-          <target><![CDATA[/system/modules/org.opencms.apollo/formatters/image-animation.xml]]></target>
-          <uuid>cb455793-5c7b-11e5-96ab-0242ac11002b</uuid>
+          <target><![CDATA[/system/modules/org.opencms.apollo/formatters/image-animated.xml]]></target>
+          <uuid>832d2d41-7b43-11e6-95f6-0242ac11002b</uuid>
         </link>
       </Formatter>
       <MacroName><![CDATA[imageanim]]></MacroName>

@@ -1473,40 +1473,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>.formatters/section-image-animation-with-head.xml</source>
-			<destination>.formatters/section-image-animation-with-head.xml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>7f085698-32de-11e6-b2da-0242ac11002b</uuidstructure>
-			<uuidresource>7f085699-32de-11e6-b2da-0242ac11002b</uuidresource>
-			<datecreated>Wed, 15 Jun 2016 09:49:47 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Image animation with headline]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.formatters/section-image-animation-with-text.xml</source>
-			<destination>.formatters/section-image-animation-with-text.xml</destination>
-			<type>macro_formatter</type>
-			<uuidstructure>57433015-32e1-11e6-b2da-0242ac11002b</uuidstructure>
-			<uuidresource>57433016-32e1-11e6-b2da-0242ac11002b</uuidresource>
-			<datecreated>Wed, 15 Jun 2016 10:10:09 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Image animation with text]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>.formatters/section-image-only.xml</source>
 			<destination>.formatters/section-image-only.xml</destination>
 			<type>macro_formatter</type>
