@@ -66,7 +66,7 @@
                 <div class="col-md-4 pull-${imgalign}">
                     <apollo:image-animated
                         image="${paragraph.value.Image}"
-                        kenburnsanimation="true" />
+                        cssclass="ap-kenburns-animation" />
                 </div>
 
                 <div class="col-md-8">
