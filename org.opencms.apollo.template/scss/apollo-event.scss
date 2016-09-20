@@ -33,6 +33,12 @@
         }
     }
 
+    // Calendar shhets get a slightly different raise effect
+    &:hover .animated-box {
+        box-shadow: 5px 5px 8px -1px $dropshadow;
+    }
+
+
     @each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
 
         .date-#{""+$type-name} {
