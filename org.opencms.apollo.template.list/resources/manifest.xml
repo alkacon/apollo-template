@@ -42,6 +42,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list"/>
 			<resource uri="/system/modules/org.opencms.apollo/elements/list/list-ajax.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/list.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-body.tag"/>
@@ -456,6 +457,23 @@
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list</destination>
+			<type>xmlvfsbundle</type>
+			<uuidstructure>1a5e04ec-7f02-11e6-95f6-0242ac11002b</uuidstructure>
+			<uuidresource>1a5e04ed-7f02-11e6-95f6-0242ac11002b</uuidresource>
+			<datecreated>Tue, 20 Sep 2016 07:16:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
 				</property>
 			</properties>
 			<relations/>

@@ -39,8 +39,8 @@
       <WidgetConfig><![CDATA[
         none:%(key.apollo.section.image.effect.none)|
         effect-shadow:%(key.apollo.section.image.effect.animatedshadow)|
-        effect-kenburns:%(key.apollo.section.image.effect.kenburn)|
-        effect-shadow-effect-kenburns:%(key.apollo.section.image.effect.shadowkenburn)
+        effect-kenburns:%(key.apollo.section.image.effect.kenburns)|
+        effect-shadow-effect-kenburns:%(key.apollo.section.image.effect.shadow-kenburns)
       ]]></WidgetConfig>
     </Setting>
     <Setting>
