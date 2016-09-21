@@ -30,6 +30,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/asset-imgur-formatter-config.xml "/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/imgursection.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages "/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/image-animated-imgur.tag"/>
 		</resources>
 		<excluderesources/>
 		<parameters/>
@@ -214,6 +215,23 @@
 					<value><![CDATA[Sample resource type schema]]></value>
 				</property>
 			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/tags</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/image-animated-imgur.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/image-animated-imgur.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>92995728-7f2c-11e6-bbb8-0242ac11002b</uuidstructure>
+			<uuidresource>92995729-7f2c-11e6-bbb8-0242ac11002b</uuidresource>
+			<datecreated>Tue, 20 Sep 2016 12:20:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
