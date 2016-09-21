@@ -35,6 +35,10 @@
       <Value><![CDATA[New link sequence, please edit the content.]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.linksequence.message.languages]]></Key>
+      <Value><![CDATA[Languages]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.ApolloLinkSequence.GalleryTitle.help]]></Key>
       <Value><![CDATA[The gallery title of the link sequence. It is not shown on the page.]]></Value>
     </Message>
@@ -79,6 +83,10 @@
     <Message>
       <Key><![CDATA[apollo.linksequence.message.new]]></Key>
       <Value><![CDATA[Neue Link Sequenz, bitte bearbeiten Sie den Inhalt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.linksequence.message.languages]]></Key>
+      <Value><![CDATA[Sprachen]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloLinkSequence.GalleryTitle.help]]></Key>
