@@ -38,6 +38,12 @@
       ]]></WidgetConfig>
     </Setting>
     <Setting>
+      <PropertyName><![CDATA[usetitle]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.imgursection.usetitle)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[showlink]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.section.image.text.showlink)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>

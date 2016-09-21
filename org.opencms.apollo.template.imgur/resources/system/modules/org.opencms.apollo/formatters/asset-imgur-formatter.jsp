@@ -17,9 +17,10 @@
 <apollo:init-messages textnew="${inMemoryMessage}">
 
 <div class="ap-section ${cms.element.setting.cssclass.value}">
+	<c:set var="usetitle" value="${cms.element.settings.usetitle}" />
     <c:set var="showlink" value="${cms.element.setting.showlink.value}"/>
     <c:set var="showsubitle" value="${cms.element.setting.showsubtitle.value}"/>
-    <c:set var="showtext" value="${cms.element.setting.showtext.value and value.Item.isSet}"/>
+    <c:set var="showtext" value="${cms.element.setting.showtext.value}"/>
 	
     <apollo:image-animated-imgur
         image="${value.Item}"
@@ -38,17 +39,33 @@
             <div class="text-box">
 
                 <c:if test="${showsubitle}">
-                    <h3 class="subtitle">
-                        <a href="${value.Item.value.Data}">
-							${value.Item.value.Title}
-                        </a>
-                    </h3>
+					<c:choose>
+						<c:when test="${not usetitle}">
+							<h3 class="subtitle">
+								${value.Title}
+							</h3>
+						</c:when>
+						<c:otherwise>
+							<h3 class="subtitle">
+								${value.Item.value.Title}
+							</h3>
+						</c:otherwise>
+					</c:choose>
                 </c:if>
 
                 <c:if test="${showtext}">
-                    <div class="text">
-                        ${value.Item.value.Description}
-                    </div>
+					<c:choose>
+						<c:when test="${value.Text.isSet}">
+							<div class="text">
+								${value.Text}
+							</div>
+						</c:when>
+						<c:otherwise>
+							<div class="text">
+								${value.Item.value.Description}
+							</div>
+						</c:otherwise>
+					</c:choose>
                 </c:if>
             </div>
         </c:if>
