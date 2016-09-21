@@ -17,28 +17,20 @@
 <apollo:init-messages textnew="${inMemoryMessage}">
 
 <div class="ap-section ${cms.element.setting.cssclass.value}">
-
-    <c:set var="showlink" value="${cms.element.setting.showlink.value and value.Link.isSet and value.Link.value.URI.isSet}"/>
-    <c:set var="showsubitle" value="${cms.element.setting.showsubtitle.value and (value.Headline.isSet or not empty imageTitle)}"/>
-    <c:set var="showtext" value="${cms.element.setting.showtext.value and value.Text.isSet}"/>
-
-    <apollo:image-animated
-        image="${value.Image}"
+    <c:set var="showlink" value="${cms.element.setting.showlink.value}"/>
+    <c:set var="showsubitle" value="${cms.element.setting.showsubtitle.value}"/>
+    <c:set var="showtext" value="${cms.element.setting.showtext.value and value.Item.isSet}"/>
+	
+    <apollo:image-animated-imgur
+        image="${value.Item}"
         cssclass="
             ${showlink ? 'ap-button-animation ' : ''}
             ${cms.element.setting.ieffect.value != 'none' ? cms.element.setting.ieffect.value : ''}">
 
         <c:if test="${showlink}">
             <div class="button-box">
-                <apollo:link 
-                    link="${value.Link}" 
-                    cssclass="btn btn-xs" />
-            </div>
-        </c:if>
-
-        <c:if test="${cms.element.setting.showcopyright.value and not empty imageCopyright}">
-            <div class="copyright">
-                <div>${imageCopyright}</div>
+				<c:set var="linktext"><fmt:message key="apollo.imgursection.message.link" /></c:set>
+				<a href="${value.Item.value.Data}" class="btn btn-xs">${linktext}</a>
             </div>
         </c:if>
 
@@ -47,21 +39,21 @@
 
                 <c:if test="${showsubitle}">
                     <h3 class="subtitle">
-                        <apollo:link link="${value.Link}">
-                            ${not empty imageTitle ? imageTitle : value.Headline}
-                        </apollo:link>
+                        <a href="${value.Item.value.Data}">
+							${value.Item.value.Title}
+                        </a>
                     </h3>
                 </c:if>
 
                 <c:if test="${showtext}">
                     <div class="text">
-                        ${value.Text}
+                        ${value.Item.value.Description}
                     </div>
                 </c:if>
             </div>
         </c:if>
 
-    </apollo:image-animated>
+    </apollo:image-animated-imgur>
 </div>
 
 </apollo:init-messages>
