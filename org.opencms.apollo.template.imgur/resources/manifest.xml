@@ -1,269 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <export>
-	<info>
-		<infoproject>Offline</infoproject>
-		<export_version>10</export_version>
-	</info>
-	<module>
-		<name>org.opencms.apollo.template.imgur</name>
-		<nicename><![CDATA[Apollo Template Imgur]]></nicename>
-		<group>Apollo Template</group>
-		<class/>
-		<export-mode name="reduced"/>
-		<description><![CDATA[The OpenCms 10 Apollo template imgur module contains the imgur section type.]]></description>
-		<version>10.5.0</version>
-		<authorname><![CDATA[Alkacon Software GmbH & Co. KG]]></authorname>
-		<authoremail/>
-		<datecreated/>
-		<userinstalled/>
-		<dateinstalled/>
-		<dependencies/>
-		<exportpoints>
-			<exportpoint uri="/system/modules/org.opencms.apollo.template.imgur/lib/" destination="WEB-INF/lib/"/>
-		</exportpoints>
-		<resources>
-			<resource uri="/system/modules/org.opencms.apollo.template.imgur/"/>
-			<resource uri="/system/workplace/resources/filetypes/a-imgursection.png"/>
-			<resource uri="/system/workplace/resources/filetypes/a-imgursection_big.png"/>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/asset-imgur-formatter.jsp "/>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/asset-imgur-formatter-config.xml "/>
-			<resource uri="/system/modules/org.opencms.apollo/schemas/imgursection.xsd"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages "/>
-			<resource uri="/system/modules/org.opencms.apollo/tags/image-animated-imgur.tag"/>
-		</resources>
-		<excluderesources/>
-		<parameters/>
-		<resourcetypes>
-			<type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-imgursection" id="20296">
-				<param name="schema">/system/modules/org.opencms.apollo/schemas/imgursection.xsd</param>
-			</type>
-		</resourcetypes>
-		<explorertypes>
-			<explorertype name="a-imgursection" key="fileicon.a-imgursection" icon="a-imgursection.png" bigicon="a-imgursection_big.png" reference="xmlcontent">
-				<newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=a-imgursection" order="10" autosetnavigation="false" autosettitle="false" info="desc.a-imgursection" key="title.a-imgursection"/>
-			</explorertype>
-		</explorertypes>
-	</module>
-	<files>
-		<file>
-			<destination>system</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<destination>system/modules</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo.template.imgur</destination>
-			<type>folder</type>
-			<uuidstructure>88796c88-7f0d-11e6-95f6-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 20 Sep 2016 08:37:58 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.imgur/.config</source>
-			<destination>system/modules/org.opencms.apollo.template.imgur/.config</destination>
-			<type>module_config</type>
-			<uuidstructure>3aa32975-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
-			<uuidresource>3aa32976-7f0e-11e6-95f6-0242ac11002b</uuidresource>
-			<datecreated>Tue, 20 Sep 2016 08:42:57 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo/formatters</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/asset-imgur-formatter-config.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/asset-imgur-formatter-config.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>3a9a9def-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
-			<uuidresource>3a9a9df0-7f0e-11e6-95f6-0242ac11002b</uuidresource>
-			<datecreated>Tue, 20 Sep 2016 08:42:57 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Asset Connections > Imgur]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/asset-imgur-formatter.jsp</source>
-			<destination>system/modules/org.opencms.apollo/formatters/asset-imgur-formatter.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>3a9805dc-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
-			<uuidresource>3a9805dd-7f0e-11e6-95f6-0242ac11002b</uuidresource>
-			<datecreated>Tue, 20 Sep 2016 08:42:57 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo/i18n</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>3a8fc879-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
-			<uuidresource>3a8fc87a-7f0e-11e6-95f6-0242ac11002b</uuidresource>
-			<datecreated>Tue, 20 Sep 2016 08:42:57 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo/schemas</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/schemas/imgursection.xsd</source>
-			<destination>system/modules/org.opencms.apollo/schemas/imgursection.xsd</destination>
-			<type>plain</type>
-			<uuidstructure>3a6f973c-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
-			<uuidresource>3a6f973d-7f0e-11e6-95f6-0242ac11002b</uuidresource>
-			<datecreated>Tue, 20 Sep 2016 08:42:56 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Sample resource type schema]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo/tags</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/tags/image-animated-imgur.tag</source>
-			<destination>system/modules/org.opencms.apollo/tags/image-animated-imgur.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>92995728-7f2c-11e6-bbb8-0242ac11002b</uuidstructure>
-			<uuidresource>92995729-7f2c-11e6-bbb8-0242ac11002b</uuidresource>
-			<datecreated>Tue, 20 Sep 2016 12:20:09 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/workplace</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<destination>system/workplace/resources</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<destination>system/workplace/resources/filetypes</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<source>system/workplace/resources/filetypes/a-imgursection.png</source>
-			<destination>system/workplace/resources/filetypes/a-imgursection.png</destination>
-			<type>image</type>
-			<uuidstructure>3a7ba52f-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
-			<uuidresource>3a7ba530-7f0e-11e6-95f6-0242ac11002b</uuidresource>
-			<datecreated>Tue, 20 Sep 2016 08:42:56 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[sample-icon]]></value>
-				</property>
-				<property type="shared">
-					<name>image.size</name>
-					<value><![CDATA[w:16,h:16]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/workplace/resources/filetypes/a-imgursection_big.png</source>
-			<destination>system/workplace/resources/filetypes/a-imgursection_big.png</destination>
-			<type>image</type>
-			<uuidstructure>3a88eaa3-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
-			<uuidresource>3a88eaa4-7f0e-11e6-95f6-0242ac11002b</uuidresource>
-			<datecreated>Tue, 20 Sep 2016 08:42:56 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[sample-icon_big]]></value>
-				</property>
-				<property type="shared">
-					<name>image.size</name>
-					<value><![CDATA[w:24,h:24]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-	</files>
+    <info>
+        <infoproject>Offline</infoproject>
+        <export_version>10</export_version>
+    </info>
+    <module>
+        <name>org.opencms.apollo.template.imgur</name>
+        <nicename><![CDATA[Apollo Template Imgur]]></nicename>
+        <group>Apollo Template</group>
+        <class/>
+        <export-mode name="reduced"/>
+        <description><![CDATA[The OpenCms 10 Apollo template imgur module contains the imgur section type.]]></description>
+        <version>10.5.0</version>
+        <authorname><![CDATA[Alkacon Software GmbH & Co. KG]]></authorname>
+        <authoremail/>
+        <datecreated/>
+        <userinstalled/>
+        <dateinstalled/>
+        <dependencies/>
+        <exportpoints>
+            <exportpoint uri="/system/modules/org.opencms.apollo.template.imgur/lib/" destination="WEB-INF/lib/"/>
+        </exportpoints>
+        <resources>
+            <resource uri="/system/modules/org.opencms.apollo.template.imgur/"/>
+            <resource uri="/system/workplace/resources/filetypes/a-imgursection.png"/>
+            <resource uri="/system/workplace/resources/filetypes/a-imgursection_big.png"/>
+            <resource uri="/system/modules/org.opencms.apollo/formatters/asset-imgur-formatter.jsp "/>
+            <resource uri="/system/modules/org.opencms.apollo/formatters/asset-imgur-formatter-config.xml "/>
+            <resource uri="/system/modules/org.opencms.apollo/schemas/imgursection.xsd"/>
+            <resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages "/>
+            <resource uri="/system/modules/org.opencms.apollo/tags/image-animated-imgur.tag"/>
+        </resources>
+        <excluderesources/>
+        <parameters/>
+        <resourcetypes>
+            <type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="a-imgursection" id="20296">
+                <param name="schema">/system/modules/org.opencms.apollo/schemas/imgursection.xsd</param>
+            </type>
+        </resourcetypes>
+        <explorertypes>
+            <explorertype name="a-imgursection" key="fileicon.a-imgursection" icon="a-imgursection.png" bigicon="a-imgursection_big.png" reference="xmlcontent">
+                <newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=a-imgursection" order="10" autosetnavigation="false" autosettitle="false" info="desc.a-imgursection" key="title.a-imgursection"/>
+            </explorertype>
+        </explorertypes>
+    </module>
+    <files>
+        <file>
+            <destination>system</destination>
+            <type>folder</type>
+            <properties/>
+        </file>
+        <file>
+            <destination>system/modules</destination>
+            <type>folder</type>
+            <properties/>
+        </file>
+        <file>
+            <destination>system/modules/org.opencms.apollo.template.imgur</destination>
+            <type>folder</type>
+            <uuidstructure>88796c88-7f0d-11e6-95f6-0242ac11002b</uuidstructure>
+            <datecreated>Tue, 20 Sep 2016 08:37:58 GMT</datecreated>
+            <flags>0</flags>
+            <properties/>
+            <relations/>
+            <accesscontrol/>
+        </file>
+        <file>
+            <source>system/modules/org.opencms.apollo.template.imgur/.config</source>
+            <destination>system/modules/org.opencms.apollo.template.imgur/.config</destination>
+            <type>module_config</type>
+            <uuidstructure>3aa32975-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
+            <uuidresource>3aa32976-7f0e-11e6-95f6-0242ac11002b</uuidresource>
+            <datecreated>Tue, 20 Sep 2016 08:42:57 GMT</datecreated>
+            <flags>0</flags>
+            <properties>
+                <property>
+                    <name>locale</name>
+                    <value><![CDATA[en]]></value>
+                </property>
+                <property>
+                    <name>locale-available</name>
+                    <value><![CDATA[en]]></value>
+                </property>
+                <property>
+                    <name>search.exclude</name>
+                    <value><![CDATA[all]]></value>
+                </property>
+            </properties>
+            <relations/>
+            <accesscontrol/>
+        </file>
+        <file>
+            <destination>system/modules/org.opencms.apollo</destination>
+            <type>folder</type>
+            <properties/>
+        </file>
+        <file>
+            <destination>system/modules/org.opencms.apollo/formatters</destination>
+            <type>folder</type>
+            <properties/>
+        </file>
+        <file>
+            <source>system/modules/org.opencms.apollo/formatters/asset-imgur-formatter-config.xml</source>
+            <destination>system/modules/org.opencms.apollo/formatters/asset-imgur-formatter-config.xml</destination>
+            <type>formatter_config</type>
+            <uuidstructure>3a9a9def-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
+            <uuidresource>3a9a9df0-7f0e-11e6-95f6-0242ac11002b</uuidresource>
+            <datecreated>Tue, 20 Sep 2016 08:42:57 GMT</datecreated>
+            <flags>0</flags>
+            <properties>
+                <property>
+                    <name>Title</name>
+                    <value><![CDATA[Asset Connections > Imgur]]></value>
+                </property>
+                <property>
+                    <name>locale</name>
+                    <value><![CDATA[en]]></value>
+                </property>
+                <property>
+                    <name>locale-available</name>
+                    <value><![CDATA[en]]></value>
+                </property>
+                <property>
+                    <name>search.exclude</name>
+                    <value><![CDATA[all]]></value>
+                </property>
+            </properties>
+            <relations/>
+            <accesscontrol/>
+        </file>
+        <file>
+            <source>system/modules/org.opencms.apollo/formatters/asset-imgur-formatter.jsp</source>
+            <destination>system/modules/org.opencms.apollo/formatters/asset-imgur-formatter.jsp</destination>
+            <type>jsp</type>
+            <uuidstructure>3a9805dc-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
+            <uuidresource>3a9805dd-7f0e-11e6-95f6-0242ac11002b</uuidresource>
+            <datecreated>Tue, 20 Sep 2016 08:42:57 GMT</datecreated>
+            <flags>0</flags>
+            <properties>
+                <property type="shared">
+                    <name>export</name>
+                    <value><![CDATA[false]]></value>
+                </property>
+            </properties>
+            <relations/>
+            <accesscontrol/>
+        </file>
+        <file>
+            <destination>system/modules/org.opencms.apollo/i18n</destination>
+            <type>folder</type>
+            <properties/>
+        </file>
+        <file>
+            <source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages</source>
+            <destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages</destination>
+            <type>xmlvfsbundle</type>
+            <uuidstructure>3a8fc879-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
+            <uuidresource>3a8fc87a-7f0e-11e6-95f6-0242ac11002b</uuidresource>
+            <datecreated>Tue, 20 Sep 2016 08:42:57 GMT</datecreated>
+            <flags>0</flags>
+            <properties>
+                <property>
+                    <name>search.exclude</name>
+                    <value><![CDATA[all]]></value>
+                </property>
+            </properties>
+            <relations/>
+            <accesscontrol/>
+        </file>
+        <file>
+            <destination>system/modules/org.opencms.apollo/schemas</destination>
+            <type>folder</type>
+            <properties/>
+        </file>
+        <file>
+            <source>system/modules/org.opencms.apollo/schemas/imgursection.xsd</source>
+            <destination>system/modules/org.opencms.apollo/schemas/imgursection.xsd</destination>
+            <type>plain</type>
+            <uuidstructure>3a6f973c-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
+            <uuidresource>3a6f973d-7f0e-11e6-95f6-0242ac11002b</uuidresource>
+            <datecreated>Tue, 20 Sep 2016 08:42:56 GMT</datecreated>
+            <flags>0</flags>
+            <properties>
+                <property>
+                    <name>Title</name>
+                    <value><![CDATA[Sample resource type schema]]></value>
+                </property>
+            </properties>
+            <relations/>
+            <accesscontrol/>
+        </file>
+        <file>
+            <destination>system/modules/org.opencms.apollo/tags</destination>
+            <type>folder</type>
+            <properties/>
+        </file>
+        <file>
+            <source>system/modules/org.opencms.apollo/tags/image-animated-imgur.tag</source>
+            <destination>system/modules/org.opencms.apollo/tags/image-animated-imgur.tag</destination>
+            <type>jsp</type>
+            <uuidstructure>92995728-7f2c-11e6-bbb8-0242ac11002b</uuidstructure>
+            <uuidresource>92995729-7f2c-11e6-bbb8-0242ac11002b</uuidresource>
+            <datecreated>Tue, 20 Sep 2016 12:20:09 GMT</datecreated>
+            <flags>0</flags>
+            <properties/>
+            <relations/>
+            <accesscontrol/>
+        </file>
+        <file>
+            <destination>system/workplace</destination>
+            <type>folder</type>
+            <properties/>
+        </file>
+        <file>
+            <destination>system/workplace/resources</destination>
+            <type>folder</type>
+            <properties/>
+        </file>
+        <file>
+            <destination>system/workplace/resources/filetypes</destination>
+            <type>folder</type>
+            <properties/>
+        </file>
+        <file>
+            <source>system/workplace/resources/filetypes/a-imgursection.png</source>
+            <destination>system/workplace/resources/filetypes/a-imgursection.png</destination>
+            <type>image</type>
+            <uuidstructure>3a7ba52f-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
+            <uuidresource>3a7ba530-7f0e-11e6-95f6-0242ac11002b</uuidresource>
+            <datecreated>Tue, 20 Sep 2016 08:42:56 GMT</datecreated>
+            <flags>0</flags>
+            <properties>
+                <property>
+                    <name>Title</name>
+                    <value><![CDATA[sample-icon]]></value>
+                </property>
+                <property type="shared">
+                    <name>image.size</name>
+                    <value><![CDATA[w:16,h:16]]></value>
+                </property>
+            </properties>
+            <relations/>
+            <accesscontrol/>
+        </file>
+        <file>
+            <source>system/workplace/resources/filetypes/a-imgursection_big.png</source>
+            <destination>system/workplace/resources/filetypes/a-imgursection_big.png</destination>
+            <type>image</type>
+            <uuidstructure>3a88eaa3-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
+            <uuidresource>3a88eaa4-7f0e-11e6-95f6-0242ac11002b</uuidresource>
+            <datecreated>Tue, 20 Sep 2016 08:42:56 GMT</datecreated>
+            <flags>0</flags>
+            <properties>
+                <property>
+                    <name>Title</name>
+                    <value><![CDATA[sample-icon_big]]></value>
+                </property>
+                <property type="shared">
+                    <name>image.size</name>
+                    <value><![CDATA[w:24,h:24]]></value>
+                </property>
+            </properties>
+            <relations/>
+            <accesscontrol/>
+        </file>
+    </files>
 </export>
