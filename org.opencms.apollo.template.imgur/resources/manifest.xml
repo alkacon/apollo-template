@@ -109,7 +109,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Imgur Section]]></value>
+					<value><![CDATA[Asset Connections > Imgur]]></value>
 				</property>
 				<property>
 					<name>locale</name>

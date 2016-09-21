@@ -3,16 +3,110 @@
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
     <Message>
+      <Key><![CDATA[apollo.section.image.text.showtext]]></Key>
+      <Value><![CDATA[Show text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imgursection.message.link]]></Key>
+      <Value><![CDATA[Go to gallery]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[desc.a-imgursection]]></Key>
       <Value><![CDATA[A content section with special imgur image widget.]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.section.image.text.showsubtitle]]></Key>
+      <Value><![CDATA[Show subtitle]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[fileicon.a-imgursection]]></Key>
-      <Value><![CDATA[Imgur Section]]></Value>
+      <Value><![CDATA[Asset Connections > Imgur]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[title.a-imgursection]]></Key>
-      <Value><![CDATA[Imgur Section]]></Value>
+      <Value><![CDATA[Asset Connections > Imgur]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.showlink]]></Key>
+      <Value><![CDATA[Show link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.inset-kenburns]]></Key>
+      <Value><![CDATA[Rotating image and shadow inside]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.raise]]></Key>
+      <Value><![CDATA[Raised effect]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.kenburns]]></Key>
+      <Value><![CDATA[Rotating image]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.inset]]></Key>
+      <Value><![CDATA[Shadow inside]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.raise-kenburns]]></Key>
+      <Value><![CDATA[Rotating image and raised effect]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.shadow-kenburns]]></Key>
+      <Value><![CDATA[Rotating image and shadow outside]]></Value>
+    </Message>
+  </Bundle>
+  <Bundle language="de">
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.showtext]]></Key>
+      <Value><![CDATA[Zeige Text]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.imgursection.message.link]]></Key>
+      <Value><![CDATA[Zur Gallerie]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[desc.a-imgursection]]></Key>
+      <Value><![CDATA[Eine Content-Section, die ein Imgur Bild und weitere Informationen anzeigt.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.showsubtitle]]></Key>
+      <Value><![CDATA[Zeige Untertitel]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[fileicon.a-imgursection]]></Key>
+      <Value><![CDATA[Asset Connections > Imgur]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[title.a-imgursection]]></Key>
+      <Value><![CDATA[Asset Connections > Imgur]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.text.showlink]]></Key>
+      <Value><![CDATA[Zeige Link]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.inset-kenburns]]></Key>
+      <Value><![CDATA[Rotating image and shadow inside]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.raise]]></Key>
+      <Value><![CDATA[Raised effect]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.kenburns]]></Key>
+      <Value><![CDATA[Rotating image]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.inset]]></Key>
+      <Value><![CDATA[Shadow inside]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.raise-kenburns]]></Key>
+      <Value><![CDATA[Rotating image and raised effect]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.image.effect.shadow-kenburns]]></Key>
+      <Value><![CDATA[Rotating image and shadow outside]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>

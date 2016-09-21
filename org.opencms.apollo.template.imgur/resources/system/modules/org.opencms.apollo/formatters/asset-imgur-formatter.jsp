@@ -10,7 +10,7 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.section">
+<cms:bundle basename="org.opencms.apollo.template.imgur.messages">
 <cms:formatter var="content" val="value" rdfa="rdfa">
 
 <c:set var="inMemoryMessage"><fmt:message key="apollo.section.message.new" /></c:set>
