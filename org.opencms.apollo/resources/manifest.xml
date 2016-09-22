@@ -4170,6 +4170,23 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/dataview.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/dataview.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>fb178ebe-809b-11e6-95f6-0242ac11002b</uuidstructure>
+			<uuidresource>fb178ebf-809b-11e6-95f6-0242ac11002b</uuidresource>
+			<datecreated>Thu, 22 Sep 2016 08:10:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for dataview]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo/schemas/nested/email.xsd</source>
 			<destination>system/modules/org.opencms.apollo/schemas/nested/email.xsd</destination>
 			<type>plain</type>
