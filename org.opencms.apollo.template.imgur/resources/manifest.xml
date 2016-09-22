@@ -32,6 +32,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/asset-imgur-formatter.jsp "/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/asset-imgur-formatter-config.xml "/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/imgursection.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/dataview.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages "/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-animated-imgur.tag"/>
 		</resources>
@@ -189,6 +190,28 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Sample resource type schema]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/schemas/nested</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/dataview.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/dataview.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>fb178ebe-809b-11e6-95f6-0242ac11002b</uuidstructure>
+			<uuidresource>fb178ebf-809b-11e6-95f6-0242ac11002b</uuidresource>
+			<datecreated>Thu, 22 Sep 2016 08:10:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for dataview]]></value>
 				</property>
 			</properties>
 			<relations/>
