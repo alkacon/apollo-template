@@ -45,14 +45,14 @@ $dropshadow: rgba(0, 0, 0, 0.3) !default;
     transition: box-shadow 0.35s $easeInQuad;
 
     // Shrink the inner box on hover 
-    &:hover.animated-box .text-box 
+    &:hover.animated-box .text-box,
     &:hover .animated-box .text-box {
         -webkit-transform: scale(0.925);
         transform: scale(0.925);
     }
 
     // Reverse the effect to the animated box if no hover
-    &.animated-box .text-box 
+    &.animated-box .text-box,
     .animated-box .text-box {
         @include animated-box-reset;
     }
