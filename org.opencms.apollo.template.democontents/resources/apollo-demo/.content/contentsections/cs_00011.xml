@@ -17,11 +17,11 @@
       </Image>
     </Image>
     <Link>
-      <Text><![CDATA[Link text]]></Text>
+      <Text><![CDATA[Anleitung]]></Text>
       <URI>
         <link internal="true" type="WEAK">
-          <target><![CDATA[/sites/default/]]></target>
-          <uuid>e8b05182-80d4-11e6-9c34-0242ac11002b</uuid>
+          <target><![CDATA[/sites/default/tutorial/]]></target>
+          <uuid>e46f947b-6100-11e5-9eef-0242ac11002b</uuid>
         </link>
       </URI>
     </Link>
@@ -42,11 +42,11 @@
       </Image>
     </Image>
     <Link>
-      <Text><![CDATA[Link text]]></Text>
+      <Text><![CDATA[Tutorial]]></Text>
       <URI>
         <link internal="true" type="WEAK">
-          <target><![CDATA[/sites/default/]]></target>
-          <uuid>e8b05182-80d4-11e6-9c34-0242ac11002b</uuid>
+          <target><![CDATA[/sites/default/tutorial/]]></target>
+          <uuid>e46f947b-6100-11e5-9eef-0242ac11002b</uuid>
         </link>
       </URI>
     </Link>
