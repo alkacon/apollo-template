@@ -7,7 +7,7 @@
 	</info>
 	<module>
 		<name>org.opencms.apollo.template.faq</name>
-		<nicename><![CDATA[Appollo Template FAQ]]></nicename>
+		<nicename><![CDATA[Apollo Template FAQ]]></nicename>
 		<group>Apollo Template</group>
 		<class/>
 		<import-site>/</import-site>

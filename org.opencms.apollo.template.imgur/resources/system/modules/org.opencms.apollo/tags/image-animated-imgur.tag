@@ -46,6 +46,9 @@
 				<div class="image-outer-box">
 					<img src="${imageLink}" class="img-responsive image-inner-box" >
 				</div>
+				<div class="info">
+					<p class="copyright"><i>Courtesy of Imgur</i></p>
+				</div>
 
 				<%-- ####### JSP body inserted here ######## --%>
 				<jsp:doBody/>

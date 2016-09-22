@@ -19,7 +19,7 @@
             <div class="links">
                 <ul class="pull-${cms.element.setting.linkalign}">
 
-               <c:if test="${fn:contains(cms.container.type, 'head') or fn:contains(cms.container.type, 'navigation') or fn:contains(cms.container.type, 'segment')}">
+                <c:if test="${fn:contains(cms.container.type, 'head') or fn:contains(cms.container.type, 'navigation') or fn:contains(cms.container.type, 'segment')}">
 	                <c:set var="langlinks" value="" />
 	                <c:set var="showlang" value="false" />
 	                <c:forEach var="locentry" items="${cms.localeResource}">

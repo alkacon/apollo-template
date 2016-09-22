@@ -94,7 +94,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloFaq.Order.help]]></Key>
-      <Value><![CDATA[Kann zum sortieren von Listen verwendet werden. Wird nicht angezeigt.]]></Value>
+      <Value><![CDATA[Kann zum Sortieren von Listen verwendet werden. Wird nicht angezeigt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.faq.error.Question]]></Key>

@@ -10,6 +10,7 @@
 		<nicename><![CDATA[Apollo Template Imgur]]></nicename>
 		<group>Apollo Template</group>
 		<class/>
+		<import-site>/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[The OpenCms 10 Apollo template imgur module contains the imgur section type.]]></description>
 		<version>10.5.0</version>
@@ -18,7 +19,9 @@
 		<datecreated/>
 		<userinstalled/>
 		<dateinstalled/>
-		<dependencies/>
+		<dependencies>
+			<dependency name="org.opencms.apollo.template.core" version="10.5.0"/>
+		</dependencies>
 		<exportpoints>
 			<exportpoint uri="/system/modules/org.opencms.apollo.template.imgur/lib/" destination="WEB-INF/lib/"/>
 		</exportpoints>
@@ -31,7 +34,6 @@
 			<resource uri="/system/modules/org.opencms.apollo/schemas/imgursection.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages "/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-animated-imgur.tag"/>
-			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/dataview.xsd"/>
 		</resources>
 		<excluderesources/>
 		<parameters/>
@@ -187,28 +189,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Sample resource type schema]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo/schemas/nested</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/schemas/nested/dataview.xsd</source>
-			<destination>system/modules/org.opencms.apollo/schemas/nested/dataview.xsd</destination>
-			<type>plain</type>
-			<uuidstructure>9d72c63a-8012-11e6-a82c-0242ac11002b</uuidstructure>
-			<uuidresource>9d72c63b-8012-11e6-a82c-0242ac11002b</uuidresource>
-			<datecreated>Wed, 21 Sep 2016 15:46:52 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Nested XSD for dataview]]></value>
 				</property>
 			</properties>
 			<relations/>

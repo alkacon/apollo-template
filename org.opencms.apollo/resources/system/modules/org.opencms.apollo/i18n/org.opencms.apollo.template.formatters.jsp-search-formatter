@@ -142,7 +142,7 @@
     </Message>
     <Message>
       <Key><![CDATA[pagination.previous.title]]></Key>
-      <Value><![CDATA[Zur�ck]]></Value>
+      <Value><![CDATA[Zurück]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[pagination.next]]></Key>
@@ -170,7 +170,7 @@
     </Message>
     <Message>
       <Key><![CDATA[search.failed_0]]></Key>
-      <Value><![CDATA[Die Suche ist gescheitert. Wahrscheinlich war die endg�ltige Suchanfrage fehlerhaft.]]></Value>
+      <Value><![CDATA[Die Suche ist gescheitert. Wahrscheinlich war die endgültige Suchanfrage fehlerhaft.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[query.compare_2]]></Key>

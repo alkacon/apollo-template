@@ -50,7 +50,7 @@
     </Message>
     <Message>
       <Key><![CDATA[inMemoryMessage]]></Key>
-      <Value><![CDATA[<strong>Neues Job-Element</strong> Bitte Editor öffnen, um Inhalt zu bearbeiten.]]></Value>
+      <Value><![CDATA[<strong>Neues Job-Element</strong> Bitte den Editor öffnen, um das Inhalt zu bearbeiten.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.job.setting.titlepos]]></Key>

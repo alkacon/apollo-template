@@ -86,7 +86,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.linksequence.message.languages]]></Key>
-      <Value><![CDATA[Sprachen]]></Value>
+      <Value><![CDATA[Sprache]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloLinkSequence.GalleryTitle.help]]></Key>

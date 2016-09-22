@@ -94,7 +94,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloNavigation.Header.help]]></Key>
-      <Value><![CDATA[HTML Code f�r den Kopf der Seiten.]]></Value>
+      <Value><![CDATA[HTML Code für den Kopf der Seiten.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloNavigation.LogoLink]]></Key>
@@ -106,7 +106,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.navigation.navstartlevel.5]]></Key>
-      <Value><![CDATA[5 - F�nfte Ebene]]></Value>
+      <Value><![CDATA[5 - Fünfte Ebene]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloNavigation.NavStartLevel.help]]></Key>

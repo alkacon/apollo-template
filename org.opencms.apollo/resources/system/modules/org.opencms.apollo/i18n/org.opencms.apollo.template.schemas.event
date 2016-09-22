@@ -150,7 +150,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Paragraph.help]]></Key>
-      <Value><![CDATA[Die Abs�tze der Veranstaltung.]]></Value>
+      <Value><![CDATA[Die Absätze der Veranstaltung.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Category]]></Key>
@@ -178,11 +178,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Availability]]></Key>
-      <Value><![CDATA[G�ltigkeit]]></Value>
+      <Value><![CDATA[Gültigkeit]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Availability.help]]></Key>
-      <Value><![CDATA[Die G�ltigkeit der Veranstaltung.]]></Value>
+      <Value><![CDATA[Die Gültigkeit der Veranstaltung.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.GalleryTitle]]></Key>
@@ -190,7 +190,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.GalleryTitle.help]]></Key>
-      <Value><![CDATA[Der Titel der Veranstaltung f�r die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
+      <Value><![CDATA[Der Titel der Veranstaltung für die Galerie. Er wird nicht auf der Seite angezeigt.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.TabGeneral]]></Key>
@@ -202,7 +202,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.TabAvailability]]></Key>
-      <Value><![CDATA[G�ltigkeit]]></Value>
+      <Value><![CDATA[Gültigkeit]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.event.default.Title]]></Key>

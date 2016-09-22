@@ -68,6 +68,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<dependency name="org.opencms.apollo.template.slidercomplex" version="10.5.0"/>
 			<dependency name="org.opencms.apollo.template.tabs" version="10.5.0"/>
 			<dependency name="org.opencms.apollo.template.webform" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.imgur" version="10.5.0"/>
 		</dependencies>
 		<exportpoints/>
 		<resources>
@@ -6243,6 +6244,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/contentsections/cs_00023.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00023.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>689e292b-800b-11e6-95f6-0242ac11002b</uuidstructure>
+			<uuidresource>689e292c-800b-11e6-95f6-0242ac11002b</uuidresource>
+			<datecreated>Wed, 21 Sep 2016 14:55:16 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Asset Connections | Imgur example: The Asset Connections]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>apollo-demo/.content/contentsections/cs_00025.xml</source>
 			<destination>apollo-demo/.content/contentsections/cs_00025.xml</destination>
 			<type>a-section</type>
@@ -8710,6 +8728,50 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo/.content/imgur-sections</destination>
+			<type>folder</type>
+			<uuidstructure>ef373614-800a-11e6-95f6-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 21 Sep 2016 14:51:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/imgur-sections/imgur_00001.xml</source>
+			<destination>apollo-demo/.content/imgur-sections/imgur_00001.xml</destination>
+			<type>a-imgursection</type>
+			<uuidstructure>5d0896d9-8003-11e6-8928-0242ac11002b</uuidstructure>
+			<uuidresource>5d0896da-8003-11e6-8928-0242ac11002b</uuidresource>
+			<datecreated>Wed, 21 Sep 2016 13:57:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Your title here]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/imgur-sections/imgur_00002.xml</source>
+			<destination>apollo-demo/.content/imgur-sections/imgur_00002.xml</destination>
+			<type>a-imgursection</type>
+			<uuidstructure>ac681bc5-8003-11e6-8928-0242ac11002b</uuidstructure>
+			<uuidresource>ac681bc6-8003-11e6-8928-0242ac11002b</uuidresource>
+			<datecreated>Wed, 21 Sep 2016 13:59:54 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[A beautiful cat]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/jobs</destination>
 			<type>folder</type>
 			<uuidstructure>43fffc00-6ebe-11e6-9a42-0242ac11002b</uuidstructure>
@@ -10105,6 +10167,50 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property type="shared">
 					<name>template-elements</name>
 					<value><![CDATA[/system/modules/org.opencms.ade.sitemap/pages/redirect-detail.jsp]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/element-pages/asset-connections</destination>
+			<type>folder</type>
+			<uuidstructure>04edb86e-7ff2-11e6-ae09-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 21 Sep 2016 11:53:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[14.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Asset Connections | Imgur example]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Asset Connections | Imgur example]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[page]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/element-pages/asset-connections/index.html</source>
+			<destination>apollo-demo/element-pages/asset-connections/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>04f7f1a4-7ff2-11e6-ae09-0242ac11002b</uuidstructure>
+			<uuidresource>04f7f1a5-7ff2-11e6-ae09-0242ac11002b</uuidresource>
+			<datecreated>Wed, 21 Sep 2016 11:53:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Asset Connections | Imgur example]]></value>
 				</property>
 			</properties>
 			<relations/>
