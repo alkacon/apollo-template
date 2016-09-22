@@ -1,17 +1,20 @@
 <%@page buffer="none" session="false" trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
+<fmt:setLocale value="${cms.locale}" />
+<cms:bundle basename="org.opencms.apollo.template.core.messages">
 
 <div class="bg-grey-light mb-10 ph-30 pv-20 ">
-   
+
     <div class="float-row">
         <div class="float-col">
             <i class="icon icon-3x fa fa-info-circle"></i>
         </div>
         <div class="float-col">
             <h2 class="heading-lg">
-                You have installed 
+                <fmt:message key="apollo.info.installed" /> 
                 <span style="white-space: nowrap;">
                     OpenCms ${cms.systemInfo.versionNumber}
                 </span>
@@ -27,11 +30,12 @@
     </p>
 
     <p>
-        Running on 
+        <fmt:message key="apollo.info.running" />${' '} 
         <cms:info property="java.vm.vendor" /> 
-        <cms:info property="java.vm.name" /> with
+        <cms:info property="java.vm.name" />${' '}<fmt:message key="apollo.info.with" />${' '}
         <cms:info property="os.name" /> 
         <cms:info property="os.version" />
     </p>
 
 </div>
+</cms:bundle>
