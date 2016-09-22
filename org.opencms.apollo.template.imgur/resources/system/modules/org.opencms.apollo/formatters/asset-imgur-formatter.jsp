@@ -21,7 +21,7 @@
     <c:set var="showlink" value="${cms.element.setting.showlink.value}"/>
     <c:set var="showsubitle" value="${cms.element.setting.showsubtitle.value}"/>
     <c:set var="showtext" value="${cms.element.setting.showtext.value}"/>
-	
+
     <apollo:image-animated-imgur
         image="${value.Item}"
         cssclass="
@@ -30,8 +30,7 @@
 
         <c:if test="${showlink}">
             <div class="button-box">
-				<c:set var="linktext"><fmt:message key="apollo.imgursection.message.link" /></c:set>
-				<a href="${value.Item.value.Data}" class="btn btn-xs">${linktext}</a>
+				<a href="${value.Item.value.Data}" class="btn btn-xs" target="imgur"><fmt:message key="apollo.imgursection.message.link" /></a>
             </div>
         </c:if>
 
@@ -56,7 +55,7 @@
                 <c:if test="${showtext}">
 					<c:choose>
 						<c:when test="${value.Text.isSet}">
-							<div class="text">
+							<div class="text" ${value.Text.rdfaAttr}>
 								${value.Text}
 							</div>
 						</c:when>

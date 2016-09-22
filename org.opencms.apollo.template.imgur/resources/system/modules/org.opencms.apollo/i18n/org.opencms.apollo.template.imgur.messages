@@ -36,7 +36,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.imgursection.message.link]]></Key>
-      <Value><![CDATA[Go to gallery]]></Value>
+      <Value><![CDATA[Show on Imgur]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.image.effect.kenburns]]></Key>
@@ -94,7 +94,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.imgursection.message.link]]></Key>
-      <Value><![CDATA[Zur Gallerie]]></Value>
+      <Value><![CDATA[Auf Imgur anzeigen]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.section.image.effect.kenburns]]></Key>

@@ -165,6 +165,10 @@
 			<datecreated>Tue, 20 Sep 2016 08:42:57 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter for Asset Connection Imgur example]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
@@ -252,7 +256,12 @@
 			<uuidresource>92995729-7f2c-11e6-bbb8-0242ac11002b</uuidresource>
 			<datecreated>Tue, 20 Sep 2016 12:20:09 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Asset Connection Imgur example display tag]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>

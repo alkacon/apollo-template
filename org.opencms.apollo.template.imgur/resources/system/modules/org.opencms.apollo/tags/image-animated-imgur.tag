@@ -7,10 +7,10 @@
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The image to format. Must be a generic Apollo nested image content."%>
 
-<%@ attribute name="cssclass" type="java.lang.String" required="false" 
+<%@ attribute name="cssclass" type="java.lang.String" required="false"
     description="CSS class added to the div tag surrounding the image."%>
 
-<%@ attribute name="cssimage" type="java.lang.String" required="false" 
+<%@ attribute name="cssimage" type="java.lang.String" required="false"
     description="CSS class added directly to the generated image tag."%>
 
 <%@ attribute name="test" type="java.lang.String" required="false"
@@ -46,8 +46,9 @@
 				<div class="image-outer-box">
 					<img src="${imageLink}" class="img-responsive image-inner-box" >
 				</div>
-				<div class="info">
-					<p class="copyright"><i>Courtesy of Imgur</i></p>
+
+				<div class="copyright">
+					<div>Courtesy of Imgur</div>
 				</div>
 
 				<%-- ####### JSP body inserted here ######## --%>
