@@ -58,6 +58,10 @@
       <Key><![CDATA[apollo.section.image.effect.raise-kenburns]]></Key>
       <Value><![CDATA[Rotating image and raised effect]]></Value>
     </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.message.new]]></Key>
+      <Value><![CDATA[New Asset Connections element, please edit.]]></Value>
+    </Message>
   </Bundle>
   <Bundle language="de">
     <Message>
@@ -115,6 +119,10 @@
     <Message>
       <Key><![CDATA[apollo.section.image.effect.raise-kenburns]]></Key>
       <Value><![CDATA[Rotating image and raised effect]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.section.message.new]]></Key>
+      <Value><![CDATA[Neues Asset-Connections Element, bitte editieren.]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>
