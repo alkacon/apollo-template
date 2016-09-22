@@ -8,4 +8,11 @@
       <content><![CDATA[<p>Powerful, Bootstrap 3 based <strong>Apollo Template</strong>.</p>]]></content>
     </Text>
   </ApolloSection>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Responsiv]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Mächtiges <strong>Apollo Template</strong>, basierend auf&nbsp;Bootstrap 3.</p>]]></content>
+    </Text>
+  </ApolloSection>
 </ApolloSections>

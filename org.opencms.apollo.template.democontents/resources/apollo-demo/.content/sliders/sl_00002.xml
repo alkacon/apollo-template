@@ -55,4 +55,58 @@
       <TitleLine2/>
     </Image>
   </ApolloSlider>
+  <ApolloSlider language="de">
+    <Title><![CDATA[4 Technicals]]></Title>
+    <Delay><![CDATA[5000]]></Delay>
+    <ShowTimer>false</ShowTimer>
+    <ShowNumbers>false</ShowNumbers>
+    <ShowNavButtons>false</ShowNavButtons>
+    <ShowPlayButton>false</ShowPlayButton>
+    <TextColor>#FFFFFF</TextColor>
+    <ImageHeight><![CDATA[277]]></ImageHeight>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/48.jpg]]></target>
+          <uuid>8ac494fd-635f-11e5-81df-0242ac11002b</uuid>
+        </link>
+      </Uri>
+      <SuperTitle/>
+      <TitleLine1><![CDATA[Einfach und Intuitiv]]></TitleLine1>
+      <TitleLine2/>
+    </Image>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/09.jpg]]></target>
+          <uuid>c56a66cc-4705-11e3-8417-000c29d28104</uuid>
+        </link>
+      </Uri>
+      <SuperTitle/>
+      <TitleLine1><![CDATA[Fantastische Funktionen]]></TitleLine1>
+      <TitleLine2/>
+    </Image>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/45.jpg]]></target>
+          <uuid>1d7778d8-635f-11e5-81df-0242ac11002b</uuid>
+        </link>
+      </Uri>
+      <SuperTitle/>
+      <TitleLine1><![CDATA[Einfach zu bedienen]]></TitleLine1>
+      <TitleLine2/>
+    </Image>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/34.jpg]]></target>
+          <uuid>d5ae01bb-4785-11e3-ba23-000c29d28104</uuid>
+        </link>
+      </Uri>
+      <SuperTitle/>
+      <TitleLine1><![CDATA[Totale Kontrolle]]></TitleLine1>
+      <TitleLine2/>
+    </Image>
+  </ApolloSlider>
 </ApolloSliders>

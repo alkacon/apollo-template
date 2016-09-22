@@ -8,4 +8,11 @@
       <content><![CDATA[<p>Create dynamic, multicolumn page layouts.</p>]]></content>
     </Text>
   </ApolloSection>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Layout-Raster]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Erstellen Sie dynamische&nbsp;Layouts mit vielen Spalten.</p>]]></content>
+    </Text>
+  </ApolloSection>
 </ApolloSections>

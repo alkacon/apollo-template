@@ -2,7 +2,7 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Greatly enhanced Workplace]]></Headline>
+    <Headline><![CDATA[Easy to use Workplace]]></Headline>
     <Text name="Text0">
       <links>
         <link name="link0" internal="true" type="A">
@@ -12,7 +12,7 @@
       </links>
       <content><![CDATA[<p>OpenCms 10.5 comes with a rewritten power-user backoffice called the Workplace.&nbsp;</p>
 <p>With improved inline editing options such as <strong>drag &amp; drop for images</strong> it's easier than ever for content manager to create great looking websites with OpenCms.</p>
-<p>Check out the <a href="%(link0)">tutorial</a> for a quick intro&nbsp;about the use of the new editing features.</p>]]></content>
+<p>Check out the <a href="%(link0)">tutorial</a> for a quick intro&nbsp;about the use of the&nbsp;editing features.</p>]]></content>
     </Text>
     <Image>
       <Image>
@@ -24,6 +24,37 @@
     </Image>
     <Link>
       <Text><![CDATA[More information]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/]]></target>
+          <uuid>e46f947b-6100-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
+  </ApolloSection>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Einfache Benutzeroberfläche]]></Headline>
+    <Text name="Text0">
+      <links>
+        <link name="link0" internal="true" type="A">
+          <target><![CDATA[/sites/default/tutorial/]]></target>
+          <uuid>e46f947b-6100-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </links>
+      <content><![CDATA[<p>OpenCms 10.5 bringt mit der vollständig überarbeiteten "Workplace" ein mächtiges Werkzeug für Power-User mit.</p>
+<p>Durch direkt in der Seite zu ändernden Text, sowie <strong>"Drag &amp; Drop"</strong> für Bilder, ist es für Benutzer einfacher den je großartige Webseiten mit OpenCms zu erstellen.</p>
+<p>Sehen Sie sich das&nbsp;<a href="%(link0)">Tutorial</a> an um mehr über die Bearbeitungs-Funktionen von OpenCms zu erfahren.&nbsp;</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/57.jpg]]></target>
+          <uuid>0825c416-7061-11e6-9a42-0242ac11002b</uuid>
+        </link>
+      </Image>
+    </Image>
+    <Link>
+      <Text><![CDATA[Mehr Informationen]]></Text>
       <URI>
         <link internal="true" type="WEAK">
           <target><![CDATA[/sites/default/tutorial/]]></target>

@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
-  <ApolloSection language="en">
-    <Headline><![CDATA[New options for developers]]></Headline>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Tolle Möglichkeiten für Entwickler]]></Headline>
     <Text name="Text0">
       <links>
         <link name="link0" internal="false" type="A">
           <target><![CDATA[http://documentation.opencms.org/central/]]></target>
         </link>
       </links>
-      <content><![CDATA[<p style="box-sizing: border-box; margin: 0px 0px 10px; color: #555555; border-radius: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">OpenCms 10.5 brings new features for developers such as list generation based on&nbsp;SOLR and with dynamic selection of formatters.&nbsp;<strong>Macro formatters</strong> allow you to quickly define multiple&nbsp;output variations for your content elements.</p>
+      <content><![CDATA[<p style="box-sizing: border-box; margin: 0px 0px 10px; color: #555555; border-radius: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">OpenCms 10.5 gibt Entwicklern umfangreiche Möglichkeiten, fantastische Webseiten zu erstellen. Mit der Integration von SOLR, CMIS sowie einer mächtigen Template-API ist nichts unmöglich.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: #555555; border-radius: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Die <strong>Integration von Git</strong> ermöglicht es, geänderte Module oder Inhalte direkt&nbsp;von OpenCms einchecken zu lassen.&nbsp;</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: #555555; border-radius: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Sehen Sie siche die <a href="%(link0)">OpenCms Dokumentation</a>&nbsp;für Entwickler&nbsp;an um&nbsp;alle Details zu erfahren.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/people/36.jpg]]></target>
+          <uuid>3eedf6b7-7061-11e6-9a42-0242ac11002b</uuid>
+        </link>
+      </Image>
+      <Title/>
+    </Image>
+  </ApolloSection>
+  <ApolloSection language="en">
+    <Headline><![CDATA[Great options for developers]]></Headline>
+    <Text name="Text0">
+      <links>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[http://documentation.opencms.org/central/]]></target>
+        </link>
+      </links>
+      <content><![CDATA[<p style="box-sizing: border-box; margin: 0px 0px 10px; color: #555555; border-radius: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">OpenCms 10.5 offers extensive eatures for developers to create great websites. With the integration of SOLR, CMIS and a powerful Template-API, nothing is impossble.&nbsp;</p>
 <p style="box-sizing: border-box; margin: 0px 0px 10px; color: #555555; border-radius: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">The <strong>Git integration</strong>&nbsp;app available from the new Launchpad enables you to easily&nbsp;push or pull changed module content without leaving OpenCms.</p>
 <p style="box-sizing: border-box; margin: 0px 0px 10px; color: #555555; border-radius: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 20.8px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Check the updated&nbsp;<a href="%(link0)">OpenCms Documentation</a> for more info about the new developer features.&nbsp;</p>]]></content>
     </Text>

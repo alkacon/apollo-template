@@ -5112,6 +5112,56 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo-de/mehrsprachig</destination>
+			<type>folder</type>
+			<uuidstructure>05c5a2d4-80d0-11e6-82ef-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 22 Sep 2016 14:22:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[31.25]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Mehrsprachig]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Mehrsprachig]]></value>
+				</property>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[page]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo-de/mehrsprachig/index.html</source>
+			<destination>apollo-demo-de/mehrsprachig/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>05c79eaa-80d0-11e6-82ef-0242ac11002b</uuidstructure>
+			<uuidresource>05c79eab-80d0-11e6-82ef-0242ac11002b</uuidresource>
+			<datecreated>Thu, 22 Sep 2016 14:22:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Mehrsprachig]]></value>
+				</property>
+			</properties>
+			<relations>
+				<relation>
+					<id>4a21bb94-610a-11e5-9eef-0242ac11002b</id>
+					<path>/apollo-demo/multi-language/index.html</path>
+					<type>LOCALE_VARIANT</type>
+				</relation>
+			</relations>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo-de/start</destination>
 			<type>folder</type>
 			<uuidstructure>bd9e5ee2-80b4-11e6-9607-0242ac11002b</uuidstructure>
@@ -6933,7 +6983,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Home: Greatly enhanced Workplace]]></value>
+					<value><![CDATA[Home: Easy to use Workplace]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6950,7 +7000,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Home: New options for developers]]></value>
+					<value><![CDATA[Home: Great options for developers]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11475,25 +11525,25 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 		<file>
 			<destination>apollo-demo/multi-language</destination>
 			<type>folder</type>
-			<uuidstructure>2b9d899b-610a-11e5-9eef-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 22 Sep 2015 09:13:21 GMT</datecreated>
+			<uuidstructure>4a1d75ce-610a-11e5-9eef-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 22 Sep 2015 09:14:12 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>NavPos</name>
-					<value><![CDATA[738.54297]]></value>
+					<value><![CDATA[736.5918]]></value>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Multi language]]></value>
+					<value><![CDATA[Multi-Language]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Multi language]]></value>
+					<value><![CDATA[Multi-Language]]></value>
 				</property>
-				<property>
-					<name>default-file</name>
-					<value><![CDATA[##navigation_level_folder##]]></value>
+				<property type="shared">
+					<name>Title</name>
+					<value><![CDATA[page]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11502,62 +11552,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 		<file>
 			<source>apollo-demo/multi-language/index.html</source>
 			<destination>apollo-demo/multi-language/index.html</destination>
-			<type>htmlredirect</type>
-			<uuidstructure>2ba15a31-610a-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>2ba15a32-610a-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 09:13:21 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[page]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-				<property type="shared">
-					<name>template-elements</name>
-					<value><![CDATA[/system/modules/org.opencms.ade.sitemap/pages/redirect-detail.jsp]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>apollo-demo/multi-language/english</destination>
-			<type>folder</type>
-			<uuidstructure>4a1d75ce-610a-11e5-9eef-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 22 Sep 2015 09:14:12 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[1.0]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[English page]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[English page]]></value>
-				</property>
-				<property type="shared">
-					<name>Title</name>
-					<value><![CDATA[page]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/multi-language/english/index.html</source>
-			<destination>apollo-demo/multi-language/english/index.html</destination>
 			<type>containerpage</type>
 			<uuidstructure>4a21bb94-610a-11e5-9eef-0242ac11002b</uuidstructure>
 			<uuidresource>4a21bb95-610a-11e5-9eef-0242ac11002b</uuidresource>
@@ -11566,54 +11560,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English page]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>apollo-demo/multi-language/german</destination>
-			<type>folder</type>
-			<uuidstructure>989cccc5-610d-11e5-9eef-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 22 Sep 2015 09:37:52 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[2.0]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[Deutsche Seite]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Deutsche Seite]]></value>
-				</property>
-				<property type="shared">
-					<name>Title</name>
-					<value><![CDATA[page]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[de]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>apollo-demo/multi-language/german/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>98a187bb-610d-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>4a21bb95-610a-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 09:14:12 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Deutsche Seite]]></value>
+					<value><![CDATA[Multi-Language]]></value>
 				</property>
 			</properties>
 			<relations/>

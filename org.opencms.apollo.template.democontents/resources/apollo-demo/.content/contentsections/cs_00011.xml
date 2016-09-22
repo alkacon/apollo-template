@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
+  <ApolloSection language="de">
+    <Headline><![CDATA[OpenCms has all the features]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore&nbsp;magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/people/14.jpg]]></target>
+          <uuid>f676369c-55f8-11e4-8db5-005056b61161</uuid>
+        </link>
+      </Image>
+    </Image>
+    <Link>
+      <Text><![CDATA[Link text]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/]]></target>
+          <uuid>39bb2bef-80c1-11e6-89da-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
+  </ApolloSection>
   <ApolloSection language="en">
     <Headline><![CDATA[OpenCms has all the features]]></Headline>
     <Text name="Text0">
@@ -15,9 +40,6 @@
           <uuid>f676369c-55f8-11e4-8db5-005056b61161</uuid>
         </link>
       </Image>
-      <Title><![CDATA[This is the image title]]></Title>
-      <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
-      <Description><![CDATA[This is the image description]]></Description>
     </Image>
     <Link>
       <Text><![CDATA[Link text]]></Text>
