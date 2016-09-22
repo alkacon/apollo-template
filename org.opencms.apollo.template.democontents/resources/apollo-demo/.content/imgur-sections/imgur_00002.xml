@@ -4,14 +4,10 @@
   <ApolloImgur language="en">
     <Title><![CDATA[A beautiful cat]]></Title>
     <Item>
-      <Id><![CDATA[http://i.imgur.com/5ltMRTM.jpg]]></Id>
-      <Title><![CDATA[Mlem]]></Title>
-      <Description><![CDATA[#cute #cat #cats]]></Description>
-      <Data><![CDATA[http://imgur.com/gallery/Tko6d]]></Data>
+      <Id><![CDATA[http://i.imgur.com/3pjcfH4.gif]]></Id>
+      <Title><![CDATA[Bananya]]></Title>
+      <Description><![CDATA[I know this is a repost of sorts but I can't seem to find this gif super easily. Welp found it and its back up for those of you who have been lookin for it.]]></Description>
+      <Data><![CDATA[http://imgur.com/gallery/3pjcfH4]]></Data>
     </Item>
-    <Text name="Text0">
-      <links/>
-      <content><![CDATA[<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&nbsp;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>]]></content>
-    </Text>
   </ApolloImgur>
 </ApolloImgurs>

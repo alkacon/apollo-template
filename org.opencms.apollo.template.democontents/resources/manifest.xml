@@ -81,6 +81,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<resource uri="/release/"/>
 			<resource uri="/tutorial/"/>
 			<resource uri="/apollo-demo/"/>
+			<resource uri="/apollo-demo-de/"/>
 			<resource uri="/index.html"/>
 			<resource uri="/robots.txt"/>
 			<resource uri="/sitemap.xml"/>
@@ -4956,6 +4957,349 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo-de</destination>
+			<type>subsitemap</type>
+			<uuidstructure>eb6c6720-80b3-11e6-9607-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 22 Sep 2016 11:01:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Die fantastische OpenCms Apollo Demo Seite, präsentiert von Alkacon Software.]]></value>
+				</property>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.24625]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Deutsche Seite]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Deutsche Seite]]></value>
+				</property>
+				<property>
+					<name>default-file</name>
+					<value><![CDATA[##navigation_level_folder##]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[de]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo-de/index.html</source>
+			<destination>apollo-demo-de/index.html</destination>
+			<type>htmlredirect</type>
+			<uuidstructure>29e02f5d-80b6-11e6-9607-0242ac11002b</uuidstructure>
+			<uuidresource>29e02f5e-80b6-11e6-9607-0242ac11002b</uuidresource>
+			<datecreated>Thu, 22 Sep 2016 11:17:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Redirect for navigation level]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+				<property type="shared">
+					<name>template-elements</name>
+					<value><![CDATA[/system/modules/org.opencms.ade.sitemap/pages/redirect-detail.jsp]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo-de/.content</destination>
+			<type>content_folder</type>
+			<uuidstructure>fa545224-80b3-11e6-9607-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 22 Sep 2016 11:01:56 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo-de/.content/.config</source>
+			<destination>apollo-demo-de/.content/.config</destination>
+			<type>sitemap_config</type>
+			<uuidstructure>fa54ee66-80b3-11e6-9607-0242ac11002b</uuidstructure>
+			<uuidresource>fa54ee67-80b3-11e6-9607-0242ac11002b</uuidresource>
+			<datecreated>Thu, 22 Sep 2016 11:01:56 GMT</datecreated>
+			<flags>512</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sitemap configuration file]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo-de/fragen</destination>
+			<type>folder</type>
+			<uuidstructure>f25ba71a-80b4-11e6-9607-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 22 Sep 2016 11:08:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[20.25]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Fragen?]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Fragen?]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo-de/fragen/index.html</source>
+			<destination>apollo-demo-de/fragen/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>f25d06af-80b4-11e6-9607-0242ac11002b</uuidstructure>
+			<uuidresource>f25d06b0-80b4-11e6-9607-0242ac11002b</uuidresource>
+			<datecreated>Thu, 22 Sep 2016 11:08:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Häufig gestellte Fragen]]></value>
+				</property>
+			</properties>
+			<relations>
+				<relation>
+					<id>e070ec80-6082-11e5-9eef-0242ac11002b</id>
+					<path>/apollo-demo/faqs/index.html</path>
+					<type>LOCALE_VARIANT</type>
+				</relation>
+			</relations>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo-de/start</destination>
+			<type>folder</type>
+			<uuidstructure>bd9e5ee2-80b4-11e6-9607-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 22 Sep 2016 11:07:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.25]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Startseite]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Startseite]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo-de/start/index.html</source>
+			<destination>apollo-demo-de/start/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>bd9f9767-80b4-11e6-9607-0242ac11002b</uuidstructure>
+			<uuidresource>bd9f9768-80b4-11e6-9607-0242ac11002b</uuidresource>
+			<datecreated>Thu, 22 Sep 2016 11:07:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Startseite]]></value>
+				</property>
+			</properties>
+			<relations>
+				<relation>
+					<id>d5474916-5c61-11e5-96ab-0242ac11002b</id>
+					<path>/apollo-demo/home/index.html</path>
+					<type>LOCALE_VARIANT</type>
+				</relation>
+			</relations>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo-de/tagebuch</destination>
+			<type>folder</type>
+			<uuidstructure>5f7512d5-80b6-11e6-9607-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 22 Sep 2016 11:19:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[21.25]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Tagebuch]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Internet-Tagebuch]]></value>
+				</property>
+				<property>
+					<name>default-file</name>
+					<value><![CDATA[##navigation_level_folder##]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo-de/tagebuch/index.html</source>
+			<destination>apollo-demo-de/tagebuch/index.html</destination>
+			<type>htmlredirect</type>
+			<uuidstructure>5f76e79b-80b6-11e6-9607-0242ac11002b</uuidstructure>
+			<uuidresource>5f76e79c-80b6-11e6-9607-0242ac11002b</uuidresource>
+			<datecreated>Thu, 22 Sep 2016 11:19:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[page]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+				<property type="shared">
+					<name>template-elements</name>
+					<value><![CDATA[/system/modules/org.opencms.ade.sitemap/pages/redirect-detail.jsp]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo-de/tagebuch/eintraege</destination>
+			<type>folder</type>
+			<uuidstructure>9849b801-80b6-11e6-9607-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 22 Sep 2016 11:20:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[1.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Einträge]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Einträge]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo-de/tagebuch/eintraege/index.html</source>
+			<destination>apollo-demo-de/tagebuch/eintraege/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>984b1796-80b6-11e6-9607-0242ac11002b</uuidstructure>
+			<uuidresource>984b1797-80b6-11e6-9607-0242ac11002b</uuidresource>
+			<datecreated>Thu, 22 Sep 2016 11:20:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Internet-Tagebuch-Einträge]]></value>
+				</property>
+			</properties>
+			<relations>
+				<relation>
+					<id>a2314aef-5c70-11e5-96ab-0242ac11002b</id>
+					<path>/apollo-demo/blog/blog-entries/index.html</path>
+					<type>LOCALE_VARIANT</type>
+				</relation>
+			</relations>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo-de/ueber_uns</destination>
+			<type>folder</type>
+			<uuidstructure>e2816ccd-80b4-11e6-9607-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 22 Sep 2016 11:08:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[10.25]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Über uns]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Über uns]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo-de/ueber_uns/index.html</source>
+			<destination>apollo-demo-de/ueber_uns/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>e282a552-80b4-11e6-9607-0242ac11002b</uuidstructure>
+			<uuidresource>e282a553-80b4-11e6-9607-0242ac11002b</uuidresource>
+			<datecreated>Thu, 22 Sep 2016 11:08:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Über uns]]></value>
+				</property>
+			</properties>
+			<relations>
+				<relation>
+					<id>2ed28e95-6071-11e5-9eef-0242ac11002b</id>
+					<path>/apollo-demo/about/index.html</path>
+					<type>LOCALE_VARIANT</type>
+				</relation>
+			</relations>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo</destination>
 			<type>subsitemap</type>
 			<uuidstructure>acb43685-5224-11e5-9495-0242ac11002b</uuidstructure>
@@ -6254,7 +6598,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Asset Connections | Imgur example: The Asset Connections]]></value>
+					<value><![CDATA[Asset Connections | Imgur example: Asset Connection / Imgur example]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8748,7 +9092,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Your title here]]></value>
+					<value><![CDATA[Imgur cat example]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10025,6 +10369,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[en]]></value>
 				</property>
 				<property>
+					<name>locale.notranslation</name>
+					<value><![CDATA[de]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -10173,7 +10521,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>apollo-demo/element-pages/asset-connections</destination>
+			<destination>apollo-demo/element-pages/asset-connection</destination>
 			<type>folder</type>
 			<uuidstructure>04edb86e-7ff2-11e6-ae09-0242ac11002b</uuidstructure>
 			<datecreated>Wed, 21 Sep 2016 11:53:32 GMT</datecreated>
@@ -10185,11 +10533,11 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Asset Connections | Imgur example]]></value>
+					<value><![CDATA[Asset Connection]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Asset Connections | Imgur example]]></value>
+					<value><![CDATA[Asset Connection]]></value>
 				</property>
 				<property type="shared">
 					<name>Title</name>
@@ -10200,8 +10548,8 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/element-pages/asset-connections/index.html</source>
-			<destination>apollo-demo/element-pages/asset-connections/index.html</destination>
+			<source>apollo-demo/element-pages/asset-connection/index.html</source>
+			<destination>apollo-demo/element-pages/asset-connection/index.html</destination>
 			<type>containerpage</type>
 			<uuidstructure>04f7f1a4-7ff2-11e6-ae09-0242ac11002b</uuidstructure>
 			<uuidresource>04f7f1a5-7ff2-11e6-ae09-0242ac11002b</uuidresource>
@@ -10210,7 +10558,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Asset Connections | Imgur example]]></value>
+					<value><![CDATA[Asset Connection]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11378,6 +11726,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Introduction to the team]]></value>
+				</property>
+				<property>
+					<name>locale.notranslation</name>
+					<value><![CDATA[de]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14488,7 +14840,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Redirect to overview page]]></value>
+					<value><![CDATA[Link to: /overview/]]></value>
 				</property>
 				<property>
 					<name>locale-available</name>

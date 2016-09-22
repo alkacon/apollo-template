@@ -2,16 +2,18 @@
 
 <ApolloImgurs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/imgursection.xsd">
   <ApolloImgur language="en">
-    <Title><![CDATA[Your title here]]></Title>
+    <Title><![CDATA[Imgur cat example]]></Title>
     <Item>
-      <Id><![CDATA[http://i.imgur.com/GWmJlc2.jpg]]></Id>
-      <Title><![CDATA[Campers best friend...]]></Title>
-      <Description><![CDATA[Campers best friend...]]></Description>
-      <Data><![CDATA[http://imgur.com/gallery/GWmJlc2]]></Data>
+      <Id><![CDATA[http://i.imgur.com/jvIzRWR.gif]]></Id>
+      <Title><![CDATA[Gimme dat]]></Title>
+      <Description><![CDATA[#cat]]></Description>
+      <Data><![CDATA[http://imgur.com/gallery/jvIzRWR]]></Data>
     </Item>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.&nbsp;</p>]]></content>
+      <content><![CDATA[<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
+<p>Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>]]></content>
     </Text>
   </ApolloImgur>
 </ApolloImgurs>

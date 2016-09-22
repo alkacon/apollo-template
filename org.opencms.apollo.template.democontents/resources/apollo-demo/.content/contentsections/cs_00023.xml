@@ -2,10 +2,14 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[The Asset Connections]]></Headline>
+    <Headline><![CDATA[Asset Connection / Imgur example]]></Headline>
     <Text name="Text0">
-      <links/>
-      <content><![CDATA[<p>In order to demonstrate the use cases of the asset Connections, a new Imgur-Element was created using this feature.</p>]]></content>
+      <links>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[http://imgur.com]]></target>
+        </link>
+      </links>
+      <content><![CDATA[<p>This page demonstrates the integration of external data using the "Asset Connetion" feature added in OpenCms 10.5. It uses an example element where content managers can grab&nbsp;images from <a href="%(link0)">imgur.com</a>, the best place to share and enjoy the most awesome images on the Internet.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>
