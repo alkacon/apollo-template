@@ -5210,7 +5210,13 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[/system/modules/org.opencms.ade.sitemap/pages/redirect-detail.jsp]]></value>
 				</property>
 			</properties>
-			<relations/>
+			<relations>
+				<relation>
+					<id>db194649-5c6f-11e5-96ab-0242ac11002b</id>
+					<path>/apollo-demo/blog/index.html</path>
+					<type>LOCALE_VARIANT</type>
+				</relation>
+			</relations>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -10373,10 +10379,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>locale-available</name>
 					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale.notranslation</name>
-					<value><![CDATA[de]]></value>
 				</property>
 				<property>
 					<name>search.exclude</name>
