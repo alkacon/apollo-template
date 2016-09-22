@@ -96,6 +96,28 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>system/modules/org.opencms.apollo.template.imgur/lib</destination>
+			<type>folder</type>
+			<uuidstructure>e257249d-7fec-11e6-8936-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 21 Sep 2016 11:16:46 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.imgur/lib/org.opencms.apollo.template.imgur.jar</source>
+			<destination>system/modules/org.opencms.apollo.template.imgur/lib/org.opencms.apollo.template.imgur.jar</destination>
+			<type>binary</type>
+			<uuidstructure>fc5706e0-7fec-11e6-8936-0242ac11002b</uuidstructure>
+			<uuidresource>fc5706e1-7fec-11e6-8936-0242ac11002b</uuidresource>
+			<datecreated>Wed, 21 Sep 2016 11:17:30 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>system/modules/org.opencms.apollo</destination>
 			<type>folder</type>
 			<properties/>
