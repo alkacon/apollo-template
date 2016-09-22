@@ -1,0 +1,47 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/org.opencms.dataview.example/schemas/nested.xsd" />
+    <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/image.xsd" />
+    <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/link.xsd" />
+
+	<xsd:element name="ApolloImgurs" type="OpenCmsApolloImgurs"/>
+
+	<xsd:complexType name="OpenCmsApolloImgurs">
+		<xsd:sequence>
+			<xsd:element name="ApolloImgur" type="OpenCmsApolloImgur" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="OpenCmsApolloImgur">
+		<xsd:sequence>
+			<xsd:element name="Title" type="OpenCmsString" />
+			<xsd:element name="Item" type="OpenCmsDataviewItem" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="Text" type="OpenCmsHtml" minOccurs="0" />
+            <!-- <xsd:element name="Image" type="OpenCmsApolloNestedImage" minOccurs="0" /> -->
+        </xsd:sequence>
+        <xsd:attribute name="language" type="OpenCmsLocale" use="required" />
+    </xsd:complexType>
+    <xsd:annotation>
+        <xsd:appinfo>
+            <resourcebundle name="org.opencms.apollo.template.schemas.section" />
+            <mappings>
+                <mapping element="Title" mapto="property:Title" useDefault="true" />
+                <mapping element="Title" mapto="urlName" useDefault="true" />
+            </mappings>
+            <defaults>
+                <default element="Title" value="Your title here" />
+            </defaults>
+            <!-- Modelfolder disabled on purpuse, use copy models instead
+                <modelfolder uri="/system/modules/org.opencms.apollo.template.schemas/models/section/" />
+            -->
+            <layouts>
+				<layout element="Item" widget="org.opencms.widgets.CmsDataViewWidget" configuration="{class: 'org.opencms.apollo.template.imgur.CmsImgurDataView', multiselect: true, preview: true, config: '5e0552daca1b0c9'} }"/>
+                <layout element="Text" widget="HtmlWidget" configuration="height:400px,link,anchor,source,downloadgallery,formatselect" />
+            </layouts>
+            <validationrules />
+            <searchsettings containerPageOnly="true">
+            </searchsettings>
+        </xsd:appinfo>
+    </xsd:annotation>
+</xsd:schema>

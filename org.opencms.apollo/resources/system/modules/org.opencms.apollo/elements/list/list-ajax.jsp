@@ -30,7 +30,8 @@
 							categories="${content.readCategories}" 
 							showfacets="${param.facets}" 
 							showdate="${param.showdate}"
-							path="${param.sitepath}" />
+							path="${param.sitepath}"
+							locale="${param.loc}"/>
 									
 				<%-- ####### Load pagination (dynamic or normal) ######## --%>
 				<c:set var="label"><fmt:message key="pagination.next"/></c:set>

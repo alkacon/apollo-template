@@ -17,6 +17,7 @@
 <%@ attribute name="path" type="java.lang.String" required="false" %>
 <%@ attribute name="listid" type="java.lang.String" required="false" %>
 <%@ attribute name="wrapitem" type="java.lang.Boolean" required="false" %>
+<%@ attribute name="locale" type="java.lang.String" required="false" %>
 
 <%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" %>
 <%@ variable name-given="searchConfig" scope="AT_END" declare="true" %>
@@ -26,6 +27,8 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
+
+<fmt:setLocale value="${locale}" />
 
 <c:if test="${empty wrapitem}"><c:set var="wrapitem" value="true"/></c:if> 
 

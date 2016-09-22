@@ -37,7 +37,8 @@
 								data-expired="${element.settings.showexpired}" 
 								data-sitepath="${cms.requestContext.folderUri}" 
 								data-dynamic="${dynamic ? 'true' : 'false'}"
-								data-minheight="${count * approxElemHeight}">
+								data-minheight="${count * approxElemHeight}"
+								data-locale="${cms.locale}">
 							
 	<div class="entrylist_box" style="min-height: ${count * approxElemHeight}px;">
 		<div class="col-xs-12">
