@@ -8,4 +8,11 @@
       <content><![CDATA[<p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>]]></content>
     </Text>
   </ApolloSection>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Was ist das Apollo Template?]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>]]></content>
+    </Text>
+  </ApolloSection>
 </ApolloSections>

@@ -5017,7 +5017,13 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[/system/modules/org.opencms.ade.sitemap/pages/redirect-detail.jsp]]></value>
 				</property>
 			</properties>
-			<relations/>
+			<relations>
+				<relation>
+					<id>13fe4743-5c62-11e5-96ab-0242ac11002b</id>
+					<path>/apollo-demo/index.html</path>
+					<type>LOCALE_VARIANT</type>
+				</relation>
+			</relations>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -6598,7 +6604,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Asset Connections | Imgur example: Asset Connection / Imgur example]]></value>
+					<value><![CDATA[Asset Connection: Asset Connection / Imgur example]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10529,7 +10535,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>NavPos</name>
-					<value><![CDATA[14.0]]></value>
+					<value><![CDATA[0.578125]]></value>
 				</property>
 				<property>
 					<name>NavText</name>

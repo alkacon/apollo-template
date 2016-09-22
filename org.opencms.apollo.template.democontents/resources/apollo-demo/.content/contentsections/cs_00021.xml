@@ -8,4 +8,11 @@
       <content><![CDATA[<p>Vivamus elementum semper nisi. Aenean vulputate eleifend sit amet tellus.</p>]]></content>
     </Text>
   </ApolloSection>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Funktionen von OpenCms?]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Vivamus elementum semper nisi. Aenean vulputate eleifend sit amet tellus.</p>]]></content>
+    </Text>
+  </ApolloSection>
 </ApolloSections>
