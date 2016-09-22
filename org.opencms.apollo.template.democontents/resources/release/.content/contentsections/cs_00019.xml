@@ -16,15 +16,14 @@
           <query><![CDATA[state=open]]></query>
         </link>
       </links>
-      <content><![CDATA[<p>September xx, 2016: OpenCms 10.5 Beta provides a first&nbsp;impression of&nbsp;OpenCms 10.5. This will be the only&nbsp;pre-release version before OpenCms 10.5.0 is published, which is expected by the end of November.</p>
+      <content><![CDATA[<p>September 26, 2016: OpenCms 10.5 Beta provides a first&nbsp;impression of&nbsp;OpenCms 10.5. Try out this&nbsp;pre-release version before OpenCms 10.5.0 is published, which is expected by the end of November.</p>
 <p><span class="label label-danger">Please note</span> This beta version is considered mostly feature complete! Many&nbsp;important functionalities&nbsp;are in place, yet some improvements&nbsp;need to be made&nbsp;for the final release. If you plan to upgrade to OpenCms 10.5 when it's released, we recommend to use this beta for testing your templates for the new version.</p>
 <h2>New in OpenCms 10.5</h2>
 <ul>
 <li><span class="label label-warning">#</span>&nbsp;Localization: Compare localized subsites side-by-side.</li>
 <li><span class="label label-warning">#</span>&nbsp;Localization:&nbsp;Copy pages from one language to another, including content.</li>
+<li><span class="label label-warning">#</span>&nbsp;Localization: Connect the same page in different&nbsp;languages using locale relations.</li>
 <li><span class="label label-warning">#</span>&nbsp;Localization:&nbsp;Message bundle translator.</li>
-<li><span class="label label-warning">#</span>&nbsp;Localization: Connect the same page in different&nbsp;languages using locale relations.</li>
-<li><span class="label label-warning">#</span>&nbsp;Localization: Connect the same page in different&nbsp;languages using locale relations.</li>
 <li><span class="label label-warning">#</span>&nbsp;Localization:&nbsp;Support for localized properties.</li>
 <li><span class="label label-warning">#</span>&nbsp;Asset Connection: Data view&nbsp;widget API&nbsp;allows to natively integrate external&nbsp;assets in the content editor.&nbsp;</li>
 <li><span class="label label-warning">#</span>&nbsp;Asset Connection: Support for using external&nbsp;assets in templates through EL functions.&nbsp;</li>
@@ -42,7 +41,7 @@
 <li>Keyboard shortcuts: Added "save" and "save and exit" to content editor (Ctrl-S, Ctrl-Shift-S).</li>
 <li>Keyboard shortcuts: Added option to show "copy or reuse" dialog after drag &amp; drop (Ctrl +&nbsp;mouse up).</li>
 <li>Page editor now "remembers" the last formatter set&nbsp;for a content type as default.&nbsp;</li>
-<li>Added optional "Show copyright" column to the Explorer.</li>
+<li>Added optional "Copyright" and "Cache" columns to the Explorer.</li>
 <li>Categories attached to contents are now by default stored in the&nbsp;relation engine, not the XML.</li>
 <li>Added JSP EL functions to read categories from a resource.</li>
 <li>Added JSP EL functions to read locale relations for a page.</li>

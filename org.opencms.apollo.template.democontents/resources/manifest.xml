@@ -5002,7 +5002,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Redirect for navigation level]]></value>
+					<value><![CDATA[Redirect zur ersten Seite in der Navigation]]></value>
 				</property>
 				<property>
 					<name>locale-available</name>
@@ -5245,7 +5245,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[page]]></value>
+					<value><![CDATA[Redirect zur ersten Seite in der Navigation]]></value>
 				</property>
 				<property>
 					<name>locale-available</name>
@@ -5419,7 +5419,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Redirect for navigation level]]></value>
+					<value><![CDATA[Redirect to first page in navigation]]></value>
 				</property>
 				<property>
 					<name>locale-available</name>
@@ -7017,7 +7017,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English page: English text page]]></value>
+					<value><![CDATA[Multi-Language: English text page]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7034,7 +7034,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English page: This box is blue!]]></value>
+					<value><![CDATA[Multi-Language: This box is blue!]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7476,7 +7476,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English page: Intuitive]]></value>
+					<value><![CDATA[Multi-Language: Intuitive]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7493,7 +7493,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[English page: Responsive]]></value>
+					<value><![CDATA[Multi-Language: Responsive]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10424,7 +10424,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[page]]></value>
+					<value><![CDATA[Redirect to first page in navigation]]></value>
 				</property>
 				<property>
 					<name>locale-available</name>
@@ -10560,7 +10560,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[page]]></value>
+					<value><![CDATA[Redirect to first page in navigation]]></value>
 				</property>
 				<property>
 					<name>locale-available</name>
@@ -11904,7 +11904,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Redirect to current release notes]]></value>
+					<value><![CDATA[Redirect to first page in navigation]]></value>
 				</property>
 				<property>
 					<name>search.exclude</name>
@@ -12285,23 +12285,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OpenCms 10.5 Beta: Release Notes for OpenCms 10.5 Beta]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>release/.content/contentsections/cs_00020.xml</source>
-			<destination>release/.content/contentsections/cs_00020.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>f3380de6-7f10-11e6-95f6-0242ac11002b</uuidstructure>
-			<uuidresource>f3380de7-7f10-11e6-95f6-0242ac11002b</uuidresource>
-			<datecreated>Tue, 20 Sep 2016 09:02:25 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[OpenCms 10.5 Beta: OpenCms Days 2016 release note information]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -13140,7 +13123,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Redirect for navigation level]]></value>
+					<value><![CDATA[Redirect to first page in navigation]]></value>
 				</property>
 				<property>
 					<name>locale-available</name>
