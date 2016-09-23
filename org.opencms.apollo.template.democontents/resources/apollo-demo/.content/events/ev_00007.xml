@@ -45,11 +45,11 @@
         </Image>
       </Image>
       <Link>
-        <Text><![CDATA[Link 2]]></Text>
+        <Text><![CDATA[Release notes]]></Text>
         <URI>
           <link internal="true" type="WEAK">
-            <target><![CDATA[/sites/default/]]></target>
-            <uuid>0ce6562d-80d5-11e6-bbb3-0242ac11002b</uuid>
+            <target><![CDATA[/sites/default/release/]]></target>
+            <uuid>b7e67102-6049-11e5-9199-0242ac11002b</uuid>
           </link>
         </URI>
       </Link>
