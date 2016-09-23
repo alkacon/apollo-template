@@ -82,6 +82,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<resource uri="/tutorial/"/>
 			<resource uri="/apollo-demo/"/>
 			<resource uri="/apollo-demo-de/"/>
+			<resource uri="/apollo-demo-es/"/>
 			<resource uri="/index.html"/>
 			<resource uri="/robots.txt"/>
 			<resource uri="/sitemap.xml"/>
@@ -5359,6 +5360,149 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<type>LOCALE_VARIANT</type>
 				</relation>
 			</relations>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo-es</destination>
+			<type>subsitemap</type>
+			<uuidstructure>a1016444-8192-11e6-9494-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 23 Sep 2016 13:35:44 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Un sitio de demostración de plantillas avanzadas OpenCms Apollo, traído a usted por Alkacon Software.]]></value>
+				</property>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.309375]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Español]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Español]]></value>
+				</property>
+				<property>
+					<name>default-file</name>
+					<value><![CDATA[##navigation_level_folder##]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[es]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo-es/index.html</source>
+			<destination>apollo-demo-es/index.html</destination>
+			<type>htmlredirect</type>
+			<uuidstructure>5048e9ab-8193-11e6-9494-0242ac11002b</uuidstructure>
+			<uuidresource>5048e9ac-8193-11e6-9494-0242ac11002b</uuidresource>
+			<datecreated>Fri, 23 Sep 2016 13:40:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Redirect to first page in navigation]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+				<property type="shared">
+					<name>template-elements</name>
+					<value><![CDATA[/system/modules/org.opencms.ade.sitemap/pages/redirect-detail.jsp]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo-es/.content</destination>
+			<type>content_folder</type>
+			<uuidstructure>e949280d-8193-11e6-9494-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 23 Sep 2016 13:44:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo-es/.content/.config</source>
+			<destination>apollo-demo-es/.content/.config</destination>
+			<type>sitemap_config</type>
+			<uuidstructure>e94a126f-8193-11e6-9494-0242ac11002b</uuidstructure>
+			<uuidresource>e94a1270-8193-11e6-9494-0242ac11002b</uuidresource>
+			<datecreated>Fri, 23 Sep 2016 13:44:55 GMT</datecreated>
+			<flags>512</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sitemap configuration file]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo-es/casa</destination>
+			<type>folder</type>
+			<uuidstructure>72f408f2-8193-11e6-9494-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 23 Sep 2016 13:41:37 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[1]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Casa]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Página Principal]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo-es/casa/index.html</source>
+			<destination>apollo-demo-es/casa/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>7e9617c4-8193-11e6-9494-0242ac11002b</uuidstructure>
+			<uuidresource>7e9617c5-8193-11e6-9494-0242ac11002b</uuidresource>
+			<datecreated>Fri, 23 Sep 2016 13:41:56 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Startseite]]></value>
+				</property>
+			</properties>
+			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
