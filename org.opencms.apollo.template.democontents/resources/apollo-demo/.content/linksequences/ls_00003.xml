@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloLinkSequences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/linksequence.xsd">
+  <ApolloLinkSequence language="de">
+    <Title><![CDATA[Head links]]></Title>
+    <LinkEntry>
+      <Text><![CDATA[Suche]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/search/]]></target>
+          <uuid>4eef4bfc-5c5c-11e5-96ab-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Anmelden]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/login/]]></target>
+          <uuid>d87f4764-58f1-11e4-903d-005056b61161</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+  </ApolloLinkSequence>
   <ApolloLinkSequence language="en">
     <Title><![CDATA[Head links]]></Title>
     <LinkEntry>
@@ -22,10 +43,10 @@
       </URI>
     </LinkEntry>
   </ApolloLinkSequence>
-  <ApolloLinkSequence language="de">
+  <ApolloLinkSequence language="es">
     <Title><![CDATA[Head links]]></Title>
     <LinkEntry>
-      <Text><![CDATA[Suche]]></Text>
+      <Text><![CDATA[Buscar]]></Text>
       <URI>
         <link internal="true" type="WEAK">
           <target><![CDATA[/sites/default/apollo-demo/search/]]></target>
@@ -34,7 +55,7 @@
       </URI>
     </LinkEntry>
     <LinkEntry>
-      <Text><![CDATA[Anmelden]]></Text>
+      <Text><![CDATA[Iniciar sesión]]></Text>
       <URI>
         <link internal="true" type="WEAK">
           <target><![CDATA[/sites/default/login/]]></target>
