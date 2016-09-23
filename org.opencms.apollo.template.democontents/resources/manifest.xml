@@ -4973,11 +4973,11 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Deutsche Seite]]></value>
+					<value><![CDATA[Deutsch]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Deutsche Seite]]></value>
+					<value><![CDATA[Deutsche Demo]]></value>
 				</property>
 				<property>
 					<name>default-file</name>
@@ -5382,11 +5382,11 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Demo Website]]></value>
+					<value><![CDATA[English]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Demo Website]]></value>
+					<value><![CDATA[English Demo]]></value>
 				</property>
 				<property>
 					<name>apollo.theme</name>
