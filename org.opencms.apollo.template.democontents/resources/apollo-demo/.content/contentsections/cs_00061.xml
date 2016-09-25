@@ -16,19 +16,4 @@
       </Image>
     </Image>
   </ApolloSection>
-  <ApolloSection language="de">
-    <Headline><![CDATA[Architektur]]></Headline>
-    <Text name="Text0">
-      <links/>
-      <content><![CDATA[<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>]]></content>
-    </Text>
-    <Image>
-      <Image>
-        <link type="WEAK">
-          <target><![CDATA[/sites/default/.galleries/samples/05.jpg]]></target>
-          <uuid>c2581db0-4705-11e3-8417-000c29d28104</uuid>
-        </link>
-      </Image>
-    </Image>
-  </ApolloSection>
 </ApolloSections>
