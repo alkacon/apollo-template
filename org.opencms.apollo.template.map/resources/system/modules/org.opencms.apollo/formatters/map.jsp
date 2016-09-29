@@ -48,9 +48,15 @@
 				  pageContext.setAttribute("varsuffix", suffix);
 		%>
 
+		<c:set var="mapkey"><cms:property name="google.apikey" file="search" default="" /></c:set>
+        <c:set var="mapkeyparam" value="" />
+        <c:if test="${not empty mapkey}">
+            <c:set var="mapkeyparam">&amp;key=${mapkey}</c:set>
+        </c:if>
+
 		<%-- include Maps JS --%>
 		<c:if test="${empty mapscript}">
-			<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&amp;language=${locale}"></script>
+            <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&amp;language=${locale}${mapkeyparam}"></script>
 			<c:set var="mapscript" scope="request" value="loaded"/>
 		</c:if>
 		<script type="text/javascript">
@@ -164,6 +170,16 @@
 
 			}
 
+            // checks if the map is displayed correctly and shows an alert if not
+			function checkMap${varsuffix}() {
+				if (document.getElementsByClassName("gm-style").length == 0 && document.getElementsByClassName("gm-err-container").length == 0) {
+					setTimeout("checkMap${varsuffix}();", 1000);
+					
+				} else if (document.getElementsByClassName("gm-err-container").length > 0) {
+                    alert("<fmt:message key="apollo.map.message.error.key" />");
+                }
+			}
+
 			// tries to geocode the given map coordinate
 			function geoCodeCoords${varsuffix}(mIndex) {
 				geocoder${varsuffix}.geocode({'latLng': mapMarkerLatLng${varsuffix}[mIndex] }, function(results, status) {
@@ -271,7 +287,10 @@
 </cms:formatter>
 <script type="text/javascript">
 	// show map after loading
-	showApolloMap${varsuffix}();	                               
+	showApolloMap${varsuffix}();
+    <c:if test="${cms.isEditMode and empty mapkey}">
+	   setTimeout("checkMap${varsuffix}();", 1500);
+	</c:if>    
 </script>
 </div>
 </cms:bundle>
