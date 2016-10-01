@@ -64,6 +64,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/availability.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/image.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/link.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/parameter.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/email.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/paragraph.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/rowcolumn.xsd"/>
@@ -1206,6 +1207,23 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Nested XSD for a paragraph]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/parameter.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/parameter.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>5a88979a-8652-11e6-a02a-0242ac11002b</uuidstructure>
+			<uuidresource>5a88979b-8652-11e6-a02a-0242ac11002b</uuidresource>
+			<datecreated>Thu, 29 Sep 2016 14:38:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for a parameter (key, value)]]></value>
 				</property>
 			</properties>
 			<relations/>

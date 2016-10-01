@@ -8,6 +8,10 @@
       <!--Categories are read dynamically-->
     </Category>
     <SortOrder><![CDATA[dateasc]]></SortOrder>
-    <ItemsPerPage><![CDATA[5]]></ItemsPerPage>
+    <ItemsPerPage><![CDATA[2]]></ItemsPerPage>
+    <Parameters>
+      <Key><![CDATA[showdate]]></Key>
+      <Value><![CDATA[false]]></Value>
+    </Parameters>
   </ApolloList>
 </ApolloLists>

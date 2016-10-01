@@ -33,6 +33,8 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-archive-filter.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-facets.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-facets.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/list-simpler.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/list-simpler.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-pages.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-pages.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-scrolling.jsp"/>
@@ -52,6 +54,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-item-compact.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-loadbutton.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-main.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/list-main-new.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-pagination.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-search.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-sortbutton.tag"/>
@@ -395,6 +398,56 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo/formatters/list-simpler.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/list-simpler.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>4929c021-864f-11e6-a02a-0242ac11002b</uuidstructure>
+			<uuidresource>4929c022-864f-11e6-a02a-0242ac11002b</uuidresource>
+			<datecreated>Thu, 29 Sep 2016 14:16:16 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for simple lists]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/list-simpler.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/list-simpler.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>52055bf5-864f-11e6-a02a-0242ac11002b</uuidstructure>
+			<uuidresource>52055bf6-864f-11e6-a02a-0242ac11002b</uuidresource>
+			<datecreated>Thu, 29 Sep 2016 14:16:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[New Simpler list]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>system/modules/org.opencms.apollo/i18n</destination>
 			<type>folder</type>
 			<properties/>
@@ -607,6 +660,23 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Dynamic loading button for AJAX lists]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/list-main-new.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/list-main-new.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>8e7dc5a3-8658-11e6-a02a-0242ac11002b</uuidstructure>
+			<uuidresource>8e7dc5a4-8658-11e6-a02a-0242ac11002b</uuidresource>
+			<datecreated>Thu, 29 Sep 2016 15:22:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Search and display list tag]]></value>
 				</property>
 			</properties>
 			<relations/>
