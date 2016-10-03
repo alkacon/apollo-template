@@ -9,11 +9,9 @@
 <%@ attribute name="count" type="java.lang.Integer" required="false" %>
 <%@ attribute name="listid" type="java.lang.String" required="false" %>
 <%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false" %>
-<%@ attribute name="showexpired" type="java.lang.Boolean" required="false" %>
-<%@ attribute name="parameters" type="java.util.Map" required="false" %>
+<%@ attribute name="formatterSettings" type="java.util.Map" required="false" %>
 
 <%@ attribute name="showfacets" type="java.lang.String" required="false" %>
-
 <%@ attribute name="path" type="java.lang.String" required="false" %>
 <%@ attribute name="locale" type="java.lang.String" required="false" %>
 
@@ -36,8 +34,8 @@
     sort="${sort}"
     count="${count}"
     categories="${categories}"
-    showexpired="${showexpired}"
-    />
+    showexpired="${formatterSettings.showExpired}"
+/>
 
 <c:if test="${search.numFound > 0}">
 
@@ -50,6 +48,8 @@
         />
     </c:if>
 
+    <c:set target="${formatterSettings}" property="cssWrapper" value="list-entry ${formatterSettings.cssWrapper}" />
+
     <%-- ####### Elements of the list ######## --%>
     <c:forEach var="result" items="${search.searchResults}" varStatus="status">
         <cms:display 
@@ -60,17 +60,11 @@
             delete="true"
             >
 
-            <c:forEach var="parameter" items="${parameters}">
+            <c:forEach var="parameter" items="${formatterSettings}">
                  <cms:param name="${parameter.key}" value="${parameter.value}" />
             </c:forEach>
 
-            <cms:param name="showexpired">${showexpired}</cms:param>
-
             <cms:param name="listid">${listid}</cms:param>
-
-            <cms:param name="buttoncolor">${color}</cms:param>
-            <cms:param name="calendarcolor">${color}</cms:param>
-
             <cms:param name="index">${status.index}</cms:param>
             <cms:param name="last">${status.last}</cms:param>
             <cms:param name="pageUri">${path}</cms:param>

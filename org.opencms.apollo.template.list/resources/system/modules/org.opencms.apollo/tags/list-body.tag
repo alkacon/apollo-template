@@ -27,18 +27,20 @@
 <%-- ####### The list (AJAX will insert here) ################### --%>
 
 <c:set var="ajaxlink"><cms:link>/system/modules/org.opencms.apollo/elements/list/list-ajax.jsp</cms:link></c:set>
-<div class="ap-list-content pagination-${element.settings.buttoncolor} mb-20" id="ap-list-content-${element.id}"
-								data-id="${element.id}" 
-								data-ajax="${ajaxlink}"
-								data-teaser="${element.settings.teaserlength}" 
-								data-path="${element.sitePath}" 
-								data-color="${element.settings.buttoncolor}" 
-								data-showdate="${element.settings.showdate}"
-								data-expired="${element.settings.showexpired}" 
-								data-sitepath="${cms.requestContext.folderUri}" 
-								data-dynamic="${dynamic ? 'true' : 'false'}"
-								data-minheight="${count * approxElemHeight}"
-								data-locale="${cms.locale}">
+<div 
+    class="ap-list-content pagination-${element.settings.buttoncolor} mb-20" 
+    id="ap-list-content-${element.id}"
+	data-id="${element.id}" 
+	data-ajax="${ajaxlink}"
+	data-teaser="${element.settings.teaserlength}" 
+	data-path="${element.sitePath}" 
+	data-color="${element.settings.buttoncolor}" 
+	data-showdate="${element.settings.showdate}"
+	data-expired="${element.settings.showexpired}" 
+	data-sitepath="${cms.requestContext.folderUri}" 
+	data-dynamic="${dynamic ? 'true' : 'false'}"
+	data-minheight="${count * approxElemHeight}"
+	data-locale="${cms.locale}">
 							
 	<div class="entrylist_box" style="min-height: ${count * approxElemHeight}px;">
 		<div class="col-xs-12">

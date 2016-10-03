@@ -12,7 +12,7 @@
   </ApolloList>
   <ApolloList language="en">
     <Headline><![CDATA[Latest entries from the Blog]]></Headline>
-    <TypesToCollect>a-blog:532e6791-c663-11e5-a73e-0242ac11002b</TypesToCollect>
+    <TypesToCollect>a-blog:da8fa924-d64a-11e5-9ef3-0242ac11002b</TypesToCollect>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
@@ -20,15 +20,15 @@
     <ItemsPerPage><![CDATA[2]]></ItemsPerPage>
     <Parameters>
       <Key><![CDATA[teaserlength]]></Key>
-      <Value><![CDATA[500]]></Value>
+      <Value><![CDATA[75]]></Value>
     </Parameters>
     <Parameters>
       <Key><![CDATA[showdate]]></Key>
-      <Value><![CDATA[false]]></Value>
+      <Value><![CDATA[true]]></Value>
     </Parameters>
     <Parameters>
       <Key><![CDATA[csswrapper]]></Key>
-      <Value><![CDATA[bg-cyan]]></Value>
+      <Value><![CDATA[bg-blue]]></Value>
     </Parameters>
     <Parameters>
       <Key><![CDATA[showexpired]]></Key>

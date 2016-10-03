@@ -15,10 +15,6 @@
     </Category>
     <SortOrder><![CDATA[orderdesc]]></SortOrder>
     <ItemsPerPage><![CDATA[3]]></ItemsPerPage>
-    <Parameters>
-      <Key><![CDATA[csswrapper]]></Key>
-      <Value><![CDATA[panel-group]]></Value>
-    </Parameters>
     <GalleryTitle><![CDATA[%(value:Headline)]]></GalleryTitle>
   </ApolloList>
 </ApolloLists>

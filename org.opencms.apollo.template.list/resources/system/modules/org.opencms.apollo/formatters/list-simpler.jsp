@@ -23,22 +23,22 @@
                     </div>
                 </c:if>
 
-                <jsp:useBean id="parameters" class="java.util.HashMap" />
-                <c:forEach var="parameter" items="${con.valueList.Parameters}">
-                    <c:set target="${parameters}" property="${parameter.value.Key.stringValue}" value="${parameter.value.Value.stringValue}"/>
-                </c:forEach>
+                <apollo:formatter-settings 
+                    type="${con.value.TypesToCollect}" 
+                    parameters="${con.valueList.Parameters}"
+                    online="${cms.isOnlineProject}" 
+                />
 
-                <%--
-                <div>
-                    <c:forEach var="parameter" items="${paramMap}">
-                        <h2>${parameter.key}=${parameter.value}</h2>
-                    </c:forEach>
-                </div>
+                <%--  
+                <h3>Formatter settings:</h3>
+                <c:forEach var="setting" items="${formatterSettings}">
+                    <div>${setting.key}=${setting.value}</div>
+                </c:forEach>
                 --%>
 
-                <c:set var="wrapperclass" value="${parameters.csswrapper}" />
+                <c:set var="listWrapper" value="${formatterSettings.listWrapper}" />
 
-                <div ${not empty wrapperclass ? 'class="'.concat(wrapperclass).concat('"')  : '' } id="list-${cms.element.instanceId}">
+                <div ${not empty listWrapper ? 'class="'.concat(listWrapper).concat('"')  : '' } id="list-${cms.element.instanceId}">
 
                     <%-- ####### List entries ######## --%>
                     <apollo:list-main-new 
@@ -48,8 +48,7 @@
                         count="${con.value.ItemsPerPage.isSet ? con.value.ItemsPerPage.toInteger : 5}" 
                         listid="${cms.element.instanceId}"
                         categories="${con.readCategories}" 
-                        showexpired="${true eq cms.element.settings.showexpired}"
-                        parameters="${parameters}"
+                        formatterSettings="${formatterSettings}"
                     />
 
                     <%-- ####### Create and edit new entries if empty result ######## --%>
@@ -69,7 +68,7 @@
                     <div class="bo-grey-light bo-top-1 bo-top-dotted ph-0">
                         <apollo:link link="${con.value.Link}" cssclass="btn ap-btn-${cms.element.settings.buttoncolor} ap-btn-sm" settitle="false"/>
                     </div>
-                </c:if>    
+                </c:if>
 
             </apollo:init-messages>
 
