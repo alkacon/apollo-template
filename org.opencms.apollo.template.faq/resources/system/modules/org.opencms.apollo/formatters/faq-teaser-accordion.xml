@@ -23,5 +23,20 @@
     <Detail>false</Detail>
     <Display>true</Display>
     <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[listWrapper]]></PropertyName>
+      <Widget/>
+      <Default><![CDATA[panel-group]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showExpired]]></PropertyName>
+      <Widget/>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[listEntryWrapper]]></PropertyName>
+      <Widget/>
+      <Default/>
+    </Setting>
   </NewFormatter>
 </NewFormatters>

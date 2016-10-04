@@ -13,51 +13,44 @@
     <c:set var="inMemoryMessage"><fmt:message key="apollo.event.message.edit" /></c:set>
     <apollo:init-messages textnew="${inMemoryMessage}">
 
-        <div class="row ap-sec ap-event ap-raise-animation">
+        <div class="row ap-sec ap-event ap-raise-animation ${cms.element.settings.cssWrapper}">
             <c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
             <c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
-            <c:set var="buttonColor" value="${cms.element.settings.buttoncolor}" />
-            <c:set var="calendarColor" value="${cms.element.settings.calendarcolor}" />
-            <c:set var="displayOption" value="${cms.element.settings.compactform}" />
             <c:set var="showDate" value="${cms.element.settings.showdate}" />
             <c:set var="showImageBig" value="${paragraph.value.Image.exists && (displayOption == 'big')}" />
             <c:set var="showImageSmall" value="${paragraph.value.Image.exists && (displayOption == 'small')}" />
-            <c:set var="isCompactForm" value="${displayOption != 'false' && !showImageSmall}" />
 
-            <%-- ####### Show calendar or image if not compact form ######## --%>
-            <c:if test="${!isCompactForm}">
-                <span class="col-sm-3 col-lg-2 hidden-xs">
-                    <a class="link" href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>" >
-                        <c:choose>
-                        <%-- ####### Show calendar ######## --%>
-                        <c:when test="${not showImageSmall}">
-                            <div class="date date-${calendarColor} animated-box">
-                                <div class="day">
-                                    <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-                                        pattern="EEEE" type="date" />
-                                </div>
-                                <h3>
-                                    <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-                                        pattern="dd" type="date" />
-                                </h3>
-                                <div class="monthYear">
-                                    <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-                                        pattern="MMM yyyy" type="date" />
-                                </div>
+            <span class="col-sm-3 col-lg-2 hidden-xs">
+                <a class="link" href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>" >
+                    <c:choose>
+                    <%-- ####### Show calendar ######## --%>
+                    <c:when test="${not showImageSmall}">
+                        <div class="date animated-box">
+                            <div class="day">
+                                <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
+                                    pattern="EEEE" type="date" />
                             </div>
-                        </c:when>
-                        <%-- ####### Show small image in place of calendar ######## --%>
-                        <c:when test="${showImageSmall}">
-                            <c:out value="${imgDivStart}" escapeXml="false" />
-                            <apollo:image-simple onlyimage="true" image="${paragraph.value.Image}" />
-                        </c:when>
-                        </c:choose>
-                    </a>
-                </span>
-            </c:if>
+                            <h3>
+                                <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
+                                    pattern="dd" type="date" />
+                            </h3>
+                            <div class="monthYear">
+                                <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
+                                    pattern="MMM yyyy" type="date" />
+                            </div>
+                        </div>
+                    </c:when>
+                    <%-- ####### Show small image in place of calendar ######## --%>
+                    <c:when test="${showImageSmall}">
+                        <c:out value="${imgDivStart}" escapeXml="false" />
+                        <apollo:image-simple onlyimage="true" image="${paragraph.value.Image}" />
+                    </c:when>
+                    </c:choose>
+                </a>
+            </span>
 
             <%-- ####### Render Teaser-Text and optional image, if set accordingly ######## --%>
-            <div class="col-xs-12 col-sm-${isCompactForm ? '12' : '9'} col-lg-${isCompactForm ? '12' : '10'}">
+            <div class="col-xs-12 col-sm-9 col-lg-10">
 
                 <c:if test="${showImageBig}">
                     <c:out value="${imgDivStart}" escapeXml="false" />
@@ -78,7 +71,7 @@
                     date="${content.value.Date}" 
                     enddate="${content.value.EndDate}"
                     showdate="${showDate}"
-                    color="${buttonColor}"
+                    color=""
                     btntext="${buttonText}"
                 />
 

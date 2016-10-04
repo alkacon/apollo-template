@@ -4,8 +4,15 @@
   <ApolloSection language="en">
     <Headline><![CDATA[OpenCms has all the features]]></Headline>
     <Text name="Text0">
-      <links/>
-      <content><![CDATA[<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore&nbsp;magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      <links>
+        <link name="link0" internal="true" type="A">
+          <target><![CDATA[/sites/default/apollo-demo-de/start/]]></target>
+          <uuid>bd9e5ee2-80b4-11e6-9607-0242ac11002b</uuid>
+          <anchor><![CDATA[anchor]]></anchor>
+          <query><![CDATA[a=b]]></query>
+        </link>
+      </links>
+      <content><![CDATA[<p><a href="%(link0)">Lorem ipsum dolor</a> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore&nbsp;magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>]]></content>
     </Text>
     <Image>

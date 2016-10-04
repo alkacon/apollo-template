@@ -47,14 +47,7 @@
       <PropertyName><![CDATA[showdate]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.showdate)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[compactform]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.displayoptions)]]></DisplayName>
-      <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:%(key.apollo.setting.displayoption.showcalendar)|true:%(key.apollo.setting.displayoption.hidecalendar)|big:%(key.apollo.setting.displayoption.showimagehidecalendar)|small:%(key.apollo.setting.displayoption.showsmallimagehidecalendar)]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>
