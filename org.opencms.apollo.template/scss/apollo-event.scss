@@ -21,6 +21,7 @@
             display: block;
             content: '';
             margin: 0 10%;
+            border-top: 20px solid $main-theme;
         }
 
         .day, 
@@ -30,6 +31,7 @@
 
         h3 {
             font-weight: bolder;
+            color: $main-theme;
         }
     }
 
@@ -38,12 +40,11 @@
         box-shadow: 5px 5px 8px -1px $dropshadow;
     }
 
-
     @each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
 
-        .date-#{""+$type-name} {
+        &.date-#{""+$type-name} {
 
-            &:before {
+            .date:before {
                 border-top: 20px solid $bg-color;
             }
 
