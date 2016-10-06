@@ -3,6 +3,8 @@
 
 .ap-event {
 
+    margin-bottom: 20px;
+
     a.link {
         color: $text-dark;
     }
@@ -11,17 +13,23 @@
         text-decoration: none;
     }
 
-    .date {
+    .teaser-body {
+        .teaser-date {
+            font-style: italic;
+        }
+    }
+
+    .calendar-sheet {
         min-width: 90px;
         border: 1px solid $gray-light;
         text-align: center; 
         background: $gray-lighter;
 
         &:before {
+            border-top: 20px solid $main-theme;
             display: block;
             content: '';
             margin: 0 10%;
-            border-top: 20px solid $main-theme;
         }
 
         .day, 
@@ -30,25 +38,34 @@
         }
 
         h3 {
-            font-weight: bolder;
             color: $main-theme;
+            font-weight: bolder;
         }
     }
 
     // Calendar shhets get a slightly different raise effect
-    &:hover .animated-box {
+    &.ap-raise-animation:hover .animated-box {
         box-shadow: 5px 5px 8px -1px $dropshadow;
     }
+}
+
+.ap-event {
 
     @each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
 
-        &.date-#{""+$type-name} {
+        &.ap-color-#{""+$type-name} {
 
-            .date:before {
-                border-top: 20px solid $bg-color;
+            .calendar-sheet {
+                &:before {
+                    border-top: 20px solid $bg-color;
+                }
+
+                h3 {
+                    color: $bg-color;
+                }
             }
 
-            h3 {
+            .teaser-head {
                 color: $bg-color;
             }
         }

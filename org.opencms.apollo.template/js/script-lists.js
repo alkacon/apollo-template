@@ -18,9 +18,9 @@ function reloadInnerList(searchStateParameters, elem) {
     if(typeof list_lock[elem.attr("id")] === "undefined" || !list_lock[elem.attr("id")]){
         list_lock[elem.attr("id")] = true;
         if(typeof elem === 'undefined'){
-            elem = $('.ap-list-content').first();
+            elem = $('.ap-list-entries').first();
         }
-        var entryBox = elem.find(".entrylist_box");
+        var entryBox = elem.find(".ap-list-box");
         var spinner = elem.find(".spinner");
         spinner.hide().removeClass("bounceOut").addClass("bounceIn").show();
         entryBox.find(".list-entry").each(function(){
@@ -28,13 +28,13 @@ function reloadInnerList(searchStateParameters, elem) {
         });
 
         entryBox.css("min-height", elem.data("minheight"));
-        elem.find(".pagination_box").empty();
+        elem.find(".ap-list-pagination").empty();
         var listOptionBox = $('#listoption_box-' + elem.data('id'));
         listOptionBox.find(".listOptions").remove();
         $.get(buildAjaxLink(elem) + "&".concat(searchStateParameters), 
                 function(resultList) {
                     $(resultList).filter(".list-entry").appendTo(entryBox);
-                    $(resultList).filter('.paginationWrapper').appendTo(elem.find('.pagination_box'));
+                    $(resultList).filter('.paginationWrapper').appendTo(elem.find('.ap-list-pagination'));
                     $(resultList).filter(".listOptions").appendTo(listOptionBox);
                     if(list_lock && $(resultList).filter(".list-entry").length == 0){
                         showEmpty(elem);
@@ -51,17 +51,17 @@ function appendInnerList(searchStateParameters, elem) {
     if(typeof list_lock[elem.attr("id")] === "undefined" || !list_lock[elem.attr("id")]){
         list_lock[elem.attr("id")] = true;
         var spinner = elem.find(".spinner");
-        var entryBox = elem.find(".entrylist_box");
+        var entryBox = elem.find(".ap-list-box");
         console.log("test: " + entryBox.height());
         spinner.hide().removeClass("bounceOut").addClass("bounceIn").css("top", entryBox.height() - 200).show();
         elem.find('.loadMore').addClass("fadeOut");
         $.get(buildAjaxLink(elem) + "&hideOptions=true&".concat(searchStateParameters),
                 function(resultList) {
                     elem.find('.pagination').remove();
-                    $(resultList).filter(".list-entry").appendTo(elem.find('.entrylist_box'));
-                    $(resultList).filter(".pagination").appendTo(elem.find('.pagination_box'));
+                    $(resultList).filter(".list-entry").appendTo(elem.find('.ap-list-box'));
+                    $(resultList).filter(".pagination").appendTo(elem.find('.ap-list-pagination'));
                     if($(resultList).filter(".pagination").length == 0){
-                        elem.find('.pagination_box').css("min-height","0");
+                        elem.find('.ap-list-pagination').css("min-height","0");
                     }
                     spinner.removeClass("bounceIn").addClass("bounceOut");
                     _OpenCmsReinitEditButtons();
@@ -72,11 +72,8 @@ function appendInnerList(searchStateParameters, elem) {
 
 function buildAjaxLink(elem){
     var params = "?contentpath=" + elem.data("path") 
-        + "&teaserlength=" + elem.data("teaser") 
-        + "&buttoncolor=" + elem.data("color") 
-        + "&showexpired=" + elem.data("expired")
-        + "&sitepath=" + elem.data("sitepath") 
-        + "&showdate=" + elem.data("showdate")
+        + "&id=" + elem.data("id")
+        + "&sitepath=" + elem.data("sitepath")
         + "&__locale=" + elem.data("locale");
 
     var facets = $("#listoption_box-" + elem.data("id"));
@@ -90,7 +87,7 @@ function buildAjaxLink(elem){
 }
 
 function initList() {
-    $(".ap-list-content").each(function(){
+    $(".ap-list-entries").each(function(){
         reloadInnerList("", $(this));
         var list = $(this);
         if(list.data("dynamic") === true){

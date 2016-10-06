@@ -5,7 +5,10 @@
 function _OpenCmsReinitEditButtons(){
     if (typeof opencms != 'undefined' && typeof opencms.reinitializeEditButtons === 'function'){
         opencms.reinitializeEditButtons();
-    } 
+    } else {
+        // console.warn("OpenCms edit button re-init function not available!");
+        // console.trace()
+    }
 } 
  
 // Bootsrap collabsibles, e.g. accordion
