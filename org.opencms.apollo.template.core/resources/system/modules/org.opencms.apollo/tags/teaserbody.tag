@@ -6,7 +6,6 @@
 <%@ attribute name="title" type="java.lang.String" required="true" %>
 <%@ attribute name="text" type="java.lang.String" required="true" %>
 <%@ attribute name="href" type="java.lang.String" required="true" %>
-<%@ attribute name="color" type="java.lang.String" required="true" %>
 
 <%@ attribute name="btntext" type="java.lang.String" required="false" %>
 <%@ attribute name="date" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
@@ -20,24 +19,22 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <h2>
-	<a href="<cms:link>${href}</cms:link>">${title}</a>
+    <a class="teaser-head" href="<cms:link>${href}</cms:link>">${title}</a>
 </h2>
 
 <c:set var="showdate"><c:out value="${showdate}" default="true" /></c:set>
 <c:if test="${not empty date && showdate}">
-	<p>
-		<i>
-			<fmt:formatDate value="${cms:convertDate(date)}" dateStyle="LONG" timeStyle="SHORT" type="both" />
-			<c:if test="${not empty enddate && enddate.exists}">
-				-&nbsp;
-				<fmt:formatDate value="${cms:convertDate(enddate)}" dateStyle="LONG" timeStyle="SHORT" type="both" />
-			</c:if>
-		</i>
-	</p>
+    <p class="teaser-date">
+        <fmt:formatDate value="${cms:convertDate(date)}" dateStyle="LONG" timeStyle="SHORT" type="both" />
+        <c:if test="${not empty enddate && enddate.exists}">
+            -&nbsp;
+            <fmt:formatDate value="${cms:convertDate(enddate)}" dateStyle="LONG" timeStyle="SHORT" type="both" />
+        </c:if>
+    </p>
 </c:if>
 
 <c:if test="${empty textlength}"><c:set var="textlength" value="-1" /></c:if>
-<p class="mb-10">
+<p class="teaser-text">
     <c:choose>
         <c:when test="${textlength > 0}">
             ${cms:trimToSize(cms:stripHtml(text), textlength)}
@@ -47,15 +44,14 @@
         </c:otherwise>
     </c:choose>
 </p>
-	
 
-<a href="<cms:link>${href}</cms:link>" class="btn ap-btn-${color}">
-	<c:choose>
-	<c:when test="${not empty btntext}">
-		${btntext}
-	</c:when>
-	<c:otherwise>
-		<fmt:message key="apollo.list.message.readmore" />
-	</c:otherwise>
-	</c:choose>
+<a href="<cms:link>${href}</cms:link>" class="btn">
+    <c:choose>
+        <c:when test="${not empty btntext}">
+            ${btntext}
+        </c:when>
+        <c:otherwise>
+            <fmt:message key="apollo.list.message.readmore" />
+        </c:otherwise>
+    </c:choose>
 </a>

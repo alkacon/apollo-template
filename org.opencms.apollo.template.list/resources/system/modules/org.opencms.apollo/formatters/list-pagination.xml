@@ -2,15 +2,15 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[New Simpler list]]></NiceName>
+    <NiceName><![CDATA[List with pagination]]></NiceName>
     <Type><![CDATA[a-list]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/list-simpler.jsp]]></target>
-        <uuid>4929c021-864f-11e6-a02a-0242ac11002b</uuid>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/list-dynamic.jsp]]></target>
+        <uuid>d2619f72-5871-11e5-b803-0242ac11002b</uuid>
       </link>
     </Jsp>
-    <Rank><![CDATA[2000]]></Rank>
+    <Rank><![CDATA[100]]></Rank>
     <Match>
       <Types>
         <ContainerType><![CDATA[element]]></ContainerType>
@@ -23,16 +23,15 @@
     <Detail>false</Detail>
     <NestedContainers>false</NestedContainers>
     <Setting>
-      <PropertyName><![CDATA[hidetitle]]></PropertyName>
+      <PropertyName><![CDATA[hideTitle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.hidetitle)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
+      <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[showexpired]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showexpired)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
+      <PropertyName><![CDATA[listOption]]></PropertyName>
+      <Widget><![CDATA[hidden]]></Widget>
+      <Default><![CDATA[pagination]]></Default>
     </Setting>
   </NewFormatter>
 </NewFormatters>

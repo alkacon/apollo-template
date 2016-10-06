@@ -2,7 +2,7 @@
 
 <ApolloLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/list.xsd">
   <ApolloList language="en">
-    <Headline><![CDATA[Frequently Asked Questions]]></Headline>
+    <Headline><![CDATA[Frequently Asked Questions in compact form]]></Headline>
     <TypesToCollect>a-faq:018e42e3-3d05-11e6-aee4-0242ac11002b</TypesToCollect>
     <Folder>
       <link type="WEAK">
