@@ -15,6 +15,10 @@
     </Category>
     <SortOrder><![CDATA[orderdesc]]></SortOrder>
     <ItemsPerPage><![CDATA[50]]></ItemsPerPage>
+    <Parameters>
+      <Key><![CDATA[cssWrapper]]></Key>
+      <Value><![CDATA[color-orange]]></Value>
+    </Parameters>
     <GalleryTitle><![CDATA[FAQ Silly Questions]]></GalleryTitle>
   </ApolloList>
 </ApolloLists>

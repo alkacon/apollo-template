@@ -10,22 +10,51 @@
 <cms:bundle basename="org.opencms.apollo.template.schemas.event">
 
 <cms:formatter var="content" val="value">
-    <c:set var="inMemoryMessage"><fmt:message key="apollo.event.message.edit" /></c:set>
-    <apollo:init-messages textnew="${inMemoryMessage}">
+<c:set var="inMemoryMessage"><fmt:message key="apollo.event.message.edit" /></c:set>
+<apollo:init-messages textnew="${inMemoryMessage}">
 
-        <div class="row ap-sec ap-event ap-raise-animation ${cms.element.settings.cssWrapper}">
-            <c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
-            <c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
-            <c:set var="showDate" value="${cms.element.settings.showdate}" />
-            <c:set var="showImageBig" value="${paragraph.value.Image.exists && (displayOption == 'big')}" />
-            <c:set var="showImageSmall" value="${paragraph.value.Image.exists && (displayOption == 'small')}" />
+    <c:set var="paragraph" value="${content.valueList.Paragraph['0']}" />
+    <c:set var="teaserLength" value="${cms.element.settings.teaserLength}" />
+    <c:set var="showDate" value="${cms.element.settings.showDate}" />
+    <c:set var="baseUri" value="${cms.element.settings.pageUri}" />
 
-            <span class="col-sm-3 col-lg-2 hidden-xs">
-                <a class="link" href="<cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link>" >
-                    <c:choose>
-                    <%-- ####### Show calendar ######## --%>
-                    <c:when test="${not showImageSmall}">
-                        <div class="date animated-box">
+    <c:set var="showImageLarge" value="${paragraph.value.Image.exists and (cms.element.settings.displayOption == 'largeImage')}" />
+    <c:set var="showImageSmall" value="${paragraph.value.Image.exists and (cms.element.settings.displayOption == 'smallImage')}" />
+    <c:set var="showCalendar" value="${cms.element.settings.displayOption == 'showCalendar'}" />
+
+    <c:choose>
+        <c:when test="${showImageSmall}">
+            <c:set var='divStart' value='<div class="col-sm-4 hidden-xs teaser-visual">' />
+            <c:set var='divCenter' value='</div><div class="col-sm-8 teaser-body">' />
+            <c:set var='divEnd' value='</div>' />
+            <c:set var="animationClass" value="ap-kenburns-animation " />
+        </c:when>
+        <c:when test="${showCalendar}">
+            <c:set var='divStart' value='<div class="col-sm-3 col-lg-2 hidden-xs teaser-visual">' />
+            <c:set var='divCenter' value='</div><div class="col-sm-9 col-lg-10 teaser-body">' />
+            <c:set var='divEnd' value='</div>' />
+            <c:set var="animationClass" value="ap-raise-animation " />
+        </c:when>
+        <c:otherwise>
+            <c:set var='divStart' value='' />
+            <c:set var='divCenter' value='<div class="col-xs-12 teaser-body">' />
+            <c:set var='divEnd' value='</div>' />
+        </c:otherwise>
+    </c:choose>
+
+    <div class="row ap-event ap-teaser ${animationClass} ${cms.element.settings.cssWrapper}">
+
+        <c:if test="${showImageSmall or showCalendar}">
+            <c:out value="${divStart}" escapeXml="false" />
+            <a class="link" href="<cms:link baseUri="${baseUri}">${content.filename}</cms:link>" >
+                <c:choose>
+                    <%-- ####### Show small image ######## --%>
+                    <c:when test="${showImageSmall}">
+                        <apollo:image-animated image="${paragraph.value.Image}" />
+                    </c:when>
+                    <%-- ####### Show calendar sheet ######## --%>
+                    <c:otherwise>
+                        <div class="calendar-sheet animated-box">
                             <div class="day">
                                 <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
                                     pattern="EEEE" type="date" />
@@ -39,45 +68,38 @@
                                     pattern="MMM yyyy" type="date" />
                             </div>
                         </div>
-                    </c:when>
-                    <%-- ####### Show small image in place of calendar ######## --%>
-                    <c:when test="${showImageSmall}">
-                        <c:out value="${imgDivStart}" escapeXml="false" />
-                        <apollo:image-simple onlyimage="true" image="${paragraph.value.Image}" />
-                    </c:when>
-                    </c:choose>
-                </a>
-            </span>
+                    </c:otherwise>
+                </c:choose>
+            </a>
+        </c:if>
 
-            <%-- ####### Render Teaser-Text and optional image, if set accordingly ######## --%>
-            <div class="col-xs-12 col-sm-9 col-lg-10">
+        <c:out value="${divCenter}" escapeXml="false" />
 
-                <c:if test="${showImageBig}">
-                    <c:out value="${imgDivStart}" escapeXml="false" />
-                    <c:set var="imgLink"><cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link></c:set>
-                    <a href="${imgLink}"><apollo:image-simple onlyimage="true" image="${paragraph.value.Image}" /></a>
-                </c:if>
+            <c:if test="${showImageLarge}">
+                <c:set var="imgLink"><cms:link baseUri="${baseUri}">${content.filename}</cms:link></c:set>
+                <a href="${imgLink}" class="event-image"><apollo:image-animated image="${paragraph.value.Image}" /></a>
+            </c:if>
 
-                <c:set var="text">${content.value.Teaser}</c:set>
-                <c:if test="${empty text}"><c:set var="text">${paragraph.value.Text}</c:set></c:if>
-                <c:set var="href"><cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link></c:set>
+            <c:set var="text">${content.value.Teaser}</c:set>
+            <c:if test="${empty text}"><c:set var="text">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</c:set></c:if>
+            <c:set var="href"><cms:link baseUri="${baseUri}">${content.filename}</cms:link></c:set>
+            <c:set var="buttonText"><fmt:message key="apollo.event.message.readmore" /></c:set>
 
-                <c:set var="buttonText"><fmt:message key="apollo.event.message.readmore" /></c:set>
-                <apollo:teaserbody 
-                    text="${text}"
-                    textlength="${teaserLength}"
-                    title="${content.value.Title}"
-                    href="${href}" 
-                    date="${content.value.Date}" 
-                    enddate="${content.value.EndDate}"
-                    showdate="${showDate}"
-                    color=""
-                    btntext="${buttonText}"
-                />
+            <apollo:teaserbody 
+                text="${text}"
+                textlength="${teaserLength}"
+                title="${content.value.Title}"
+                href="${href}" 
+                date="${content.value.Date}" 
+                enddate="${content.value.EndDate}"
+                showdate="${showDate}"
+                btntext="${buttonText}"
+            />
 
-            </div>
+        <c:out value="${divEnd}" escapeXml="false" />
 
-        </div>
-    </apollo:init-messages>
+    </div>
+
+</apollo:init-messages>
 </cms:formatter>
 </cms:bundle>
