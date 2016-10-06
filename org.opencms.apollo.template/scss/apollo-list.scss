@@ -49,10 +49,58 @@ $button-colors:          $primary-colors !default;
     font-weight: bold;
 } 
 
+// compact list items
+.ap-compact {
+    
+    color: $text-dark;
 
-@each $color-name, $bg-color, $text-color, $highlight-color in $button-colors {
+    .teaser-date {
+        font-style: italic;
+    }
 
-    .ap-list-content.pagination-#{""+$color-name} {
+    .teaser-head {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .teaser-text {
+        margin-bottom: 5px;
+    }
+
+    .btn.teaser-btn {
+        font-size: 12px;
+        padding: round($btn-padding * 0.25) round($btn-padding * 1.25);
+        min-width: 0;
+    }
+
+    a:hover {
+        color: $main-theme-hover;
+        text-decoration: none;
+    }
+}
+
+// coloring of teaser elements, shared also with event and other list formatters 
+@each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+
+    .color-#{""+$type-name} {
+
+        // teaser headlines
+        h3.teaser-head,
+        .teaser-head {
+            color: $bg-color;
+        }
+
+        a {
+            color: $bg-color;
+        }
+
+        .ap-teaser a:hover,
+        a:hover {
+            color: $highlight-color;
+            text-decoration: none;
+        }
+
+        // pagaination element
         .pagination > .active {
             > a, > span, > a:hover, 
             > span:hover, > a:focus, > span:focus {
@@ -60,11 +108,10 @@ $button-colors:          $primary-colors !default;
               border-color: $bg-color;
             }
         }
-    
-        .pagination li a:hover {
-          background: $highlight-color;
-          border-color: $highlight-color;   
-        }
-    }  
 
+        .pagination li a:hover {
+            background: $highlight-color;
+            border-color: $highlight-color;   
+        }
+    }
 }

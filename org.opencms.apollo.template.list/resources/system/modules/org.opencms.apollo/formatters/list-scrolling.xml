@@ -2,11 +2,11 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[List with dynamic loading]]></NiceName>
+    <NiceName><![CDATA[List with loading while scolling]]></NiceName>
     <Type><![CDATA[a-list]]></Type>
     <Jsp>
       <link type="WEAK">
-        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/list-scrolling.jsp]]></target>
+        <target><![CDATA[/system/modules/org.opencms.apollo/formatters/list-dynamic.jsp]]></target>
         <uuid>d2619f72-5871-11e5-b803-0242ac11002b</uuid>
       </link>
     </Jsp>
@@ -23,36 +23,15 @@
     <Detail>false</Detail>
     <NestedContainers>false</NestedContainers>
     <Setting>
-      <PropertyName><![CDATA[hidetitle]]></PropertyName>
+      <PropertyName><![CDATA[hideTitle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.hidetitle)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[showdate]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showdate)]]></DisplayName>
-      <Description><![CDATA[If enabled, formatters that support showing dates will display them, otherwise not.]]></Description>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[showexpired]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.showexpired)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[buttoncolor]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
-      <Widget><![CDATA[selectcombo]]></Widget>
-      <Default><![CDATA[red]]></Default>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[teaserlength]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.teaserlength)]]></DisplayName>
-      <Widget><![CDATA[string]]></Widget>
-      <Default><![CDATA[200]]></Default>
+      <PropertyName><![CDATA[listOption]]></PropertyName>
+      <Widget><![CDATA[hidden]]></Widget>
+      <Default><![CDATA[scrolling]]></Default>
     </Setting>
   </NewFormatter>
 </NewFormatters>

@@ -9,5 +9,21 @@
     </Category>
     <SortOrder><![CDATA[dateasc]]></SortOrder>
     <ItemsPerPage><![CDATA[5]]></ItemsPerPage>
+    <Parameters>
+      <Key><![CDATA[displayOption]]></Key>
+      <Value><![CDATA[showCalendar]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[showDate]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[cssWrapper]]></Key>
+      <Value/>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[listWrapper]]></Key>
+      <Value><![CDATA[color-orange]]></Value>
+    </Parameters>
   </ApolloList>
 </ApolloLists>

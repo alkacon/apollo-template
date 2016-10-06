@@ -18,22 +18,22 @@ $btn-colors:            $primary-colors !default;
     color:$text-color !important;
     border-color:  $highlight-color;
 
-	&:hover,
-	&:focus,
-	&:active,
-	&.active,
-	.open .dropdown-toggle & {
-	    color:$text-color !important;
-	    background-color: $highlight-color;
-	    border-color: $highlight-color;
-	}
-	
-	&.disabled,
-	&[disabled], 
-	fieldset[disabled] & {
-	    background-color: $highlight-color;
-	    border-color: $highlight-color;
-	}
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    .open .dropdown-toggle & {
+        color:$text-color !important;
+        background-color: $highlight-color;
+        border-color: $highlight-color;
+    }
+    
+    &.disabled,
+    &[disabled], 
+    fieldset[disabled] & {
+        background-color: $highlight-color;
+        border-color: $highlight-color;
+    }
 }
 
 .btn {
@@ -83,27 +83,28 @@ div.ap-btn-xs a.btn,
 }
 
 .btn-default  {
-	@include apollo-button($btn-default, $text-light, $btn-default-active);
+    @include apollo-button($btn-default, $text-light, $btn-default-active);
 }
 
 @each $color-name, $bg-color, $text-color, $highlight-color in $btn-colors {
 
-	div.ap-btn-#{""+$color-name} a.btn,
+    div.color-#{""+$color-name} a.btn,
+    div.ap-btn-#{""+$color-name} a.btn,
     .btn.ap-btn-#{""+$color-name}  {
-		@include apollo-button($bg-color, $text-color, $highlight-color);
-	}
+        @include apollo-button($bg-color, $text-color, $highlight-color);
+    }
 }
 
 @each $color-name, $bg-color, $text-color, $highlight-color in $btn-colors {
 
-	.dropdown-#{""+$color-name} > .active {
-		> a, > a:hover, > a:focus {
-			color: #fff;
-			text-decoration: none;
-			background-color: $bg-color;
-			outline: 0;
-		}
-	}
+    .dropdown-#{""+$color-name} > .active {
+        > a, > a:hover, > a:focus {
+            color: #fff;
+            text-decoration: none;
+            background-color: $bg-color;
+            outline: 0;
+        }
+    }
 
 }
 
@@ -114,17 +115,16 @@ section.btn-group .btn-group:not(:last-child) {
 
 @each $color-name, $bg-color, $text-color, $highlight-color in $btn-colors {
 
-	.btn-group-#{""+$color-name} {
+    .btn-group-#{""+$color-name} {
 
-		.btn {
-			@include apollo-button($bg-color, $text-color, $highlight-color);
-		}
-	}
-	
-	.btn-group-select-#{""+$color-name} .btn-group .dropdown-menu > .active {
-		> a, > a:hover, > a:focus {
-			background-color: $bg-color;
-		}
-	}
+        .btn {
+            @include apollo-button($bg-color, $text-color, $highlight-color);
+        }
+    }
 
+    .btn-group-select-#{""+$color-name} .btn-group .dropdown-menu > .active {
+        > a, > a:hover, > a:focus {
+            background-color: $bg-color;
+        }
+    }
 }

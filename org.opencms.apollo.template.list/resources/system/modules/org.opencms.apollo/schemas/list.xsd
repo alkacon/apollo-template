@@ -2,6 +2,7 @@
 	elementFormDefault="qualified">
 
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd" />
+	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/parameter.xsd" />
 	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/link.xsd" />
 
 	<xsd:element name="ApolloLists" type="OpenCmsApolloLists" />
@@ -20,6 +21,7 @@
 			<xsd:element name="Category" type="OpenCmsDynamicCategory" />
 			<xsd:element name="SortOrder" type="OpenCmsString" />
 			<xsd:element name="ItemsPerPage" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Parameters" type="OpenCmsApolloParameter" minOccurs="0" maxOccurs="unbounded" />
 			<xsd:element name="FilterQueries" type="OpenCmsString" minOccurs="0" />
 			<xsd:element name="Link" type="OpenCmsApolloLink" minOccurs="0" />
 			<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />

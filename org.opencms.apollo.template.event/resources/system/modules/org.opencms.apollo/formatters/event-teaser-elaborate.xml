@@ -23,38 +23,36 @@
     <Detail>false</Detail>
     <Display>true</Display>
     <NestedContainers>false</NestedContainers>
+    <HeadIncludeCss/>
     <Setting>
-      <PropertyName><![CDATA[buttoncolor]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
-      <Widget><![CDATA[selectcombo]]></Widget>
-      <Default><![CDATA[red]]></Default>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
+      <PropertyName><![CDATA[cssWrapper]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[string]]></Widget>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[calendarcolor]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.calendarcolor)]]></DisplayName>
-      <Widget><![CDATA[selectcombo]]></Widget>
-      <Default><![CDATA[red]]></Default>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[teaserlength]]></PropertyName>
+      <PropertyName><![CDATA[teaserLength]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.teaserlength)]]></DisplayName>
       <Widget><![CDATA[string]]></Widget>
       <Default><![CDATA[200]]></Default>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[showdate]]></PropertyName>
+      <PropertyName><![CDATA[showDate]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.showdate)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
+      <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[compactform]]></PropertyName>
+      <PropertyName><![CDATA[displayOption]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.displayoptions)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[false]]></Default>
-      <WidgetConfig><![CDATA[false:%(key.apollo.setting.displayoption.showcalendar)|true:%(key.apollo.setting.displayoption.hidecalendar)|big:%(key.apollo.setting.displayoption.showimagehidecalendar)|small:%(key.apollo.setting.displayoption.showsmallimagehidecalendar)]]></WidgetConfig>
+      <Default><![CDATA[showCalendar]]></Default>
+      <WidgetConfig><![CDATA[showCalendar:%(key.apollo.setting.displayoption.showcalendar)|hideCalendar:%(key.apollo.setting.displayoption.hidecalendar)|largeImage:%(key.apollo.setting.displayoption.showimagehidecalendar)|smallImage:%(key.apollo.setting.displayoption.showsmallimagehidecalendar)]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showExpired]]></PropertyName>
+      <Widget><![CDATA[hidden]]></Widget>
+      <Default><![CDATA[true]]></Default>
     </Setting>
   </NewFormatter>
 </NewFormatters>

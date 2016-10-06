@@ -14,7 +14,7 @@
       <!--Categories are read dynamically-->
     </Category>
     <SortOrder><![CDATA[orderdesc]]></SortOrder>
-    <ItemsPerPage><![CDATA[50]]></ItemsPerPage>
+    <ItemsPerPage><![CDATA[5]]></ItemsPerPage>
     <GalleryTitle><![CDATA[%(value:Headline)]]></GalleryTitle>
   </ApolloList>
 </ApolloLists>

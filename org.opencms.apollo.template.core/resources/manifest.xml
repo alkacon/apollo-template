@@ -52,6 +52,8 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/section-tile.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/login.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/login.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/functions/tester.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/functions/tester.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/opencms-info.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/opencms-info.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.jsp-search-formatter"/>
@@ -64,6 +66,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/availability.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/image.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/link.xsd"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/parameter.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/email.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/paragraph.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/rowcolumn.xsd"/>
@@ -72,6 +75,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/tags/container-box.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/copyright.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/gallerydata.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/formatter-settings.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/galleryitems.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/headline.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-simple.tag"/>
@@ -1002,6 +1006,52 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo/functions/tester.jsp</source>
+			<destination>system/modules/org.opencms.apollo/functions/tester.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>c2e6a139-88f8-11e6-84b3-0242ac11002b</uuidstructure>
+			<uuidresource>c2e6a13a-88f8-11e6-84b3-0242ac11002b</uuidresource>
+			<datecreated>Sun, 02 Oct 2016 23:34:28 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms Function Tester JSP]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;user]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/functions/tester.xml</source>
+			<destination>system/modules/org.opencms.apollo/functions/tester.xml</destination>
+			<type>function</type>
+			<uuidstructure>b70873c5-88f8-11e6-84b3-0242ac11002b</uuidstructure>
+			<uuidresource>b70873c6-88f8-11e6-84b3-0242ac11002b</uuidresource>
+			<datecreated>Sun, 02 Oct 2016 23:34:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[For testing of OpenCms Apollo Tags.]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms Function Tester]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>system/modules/org.opencms.apollo/i18n</destination>
 			<type>folder</type>
 			<properties/>
@@ -1212,6 +1262,23 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/parameter.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/parameter.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>5a88979a-8652-11e6-a02a-0242ac11002b</uuidstructure>
+			<uuidresource>5a88979b-8652-11e6-a02a-0242ac11002b</uuidresource>
+			<datecreated>Thu, 29 Sep 2016 14:38:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for a parameter (key, value)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo/schemas/nested/rowcolumn.xsd</source>
 			<destination>system/modules/org.opencms.apollo/schemas/nested/rowcolumn.xsd</destination>
 			<type>plain</type>
@@ -1342,6 +1409,27 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Email address display tag with support for obfuscation]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/formatter-settings.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/formatter-settings.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>9f903169-88f9-11e6-84b3-0242ac11002b</uuidstructure>
+			<uuidresource>9f90316a-88f9-11e6-84b3-0242ac11002b</uuidresource>
+			<datecreated>Sun, 02 Oct 2016 23:40:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Reads default settings for a formatter]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>

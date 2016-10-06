@@ -82,6 +82,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<resource uri="/tutorial/"/>
 			<resource uri="/apollo-demo/"/>
 			<resource uri="/apollo-demo-de/"/>
+			<resource uri="/apollo-demo-es/"/>
 			<resource uri="/index.html"/>
 			<resource uri="/robots.txt"/>
 			<resource uri="/sitemap.xml"/>
@@ -4968,16 +4969,20 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[Die fantastische OpenCms Apollo Demo Seite, präsentiert von Alkacon Software.]]></value>
 				</property>
 				<property>
+					<name>NavInfo</name>
+					<value><![CDATA[ignoreInDefaultNav]]></value>
+				</property>
+				<property>
 					<name>NavPos</name>
 					<value><![CDATA[0.24625]]></value>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Deutsche Seite]]></value>
+					<value><![CDATA[Deutsch]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Deutsche Seite]]></value>
+					<value><![CDATA[Deutsche Apollo Demo]]></value>
 				</property>
 				<property>
 					<name>default-file</name>
@@ -4986,6 +4991,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>locale</name>
 					<value><![CDATA[de]]></value>
+				</property>
+				<property>
+					<name>search.subsite</name>
+					<value><![CDATA[Deutsche Apollo Demo]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -5382,11 +5391,11 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Demo Website]]></value>
+					<value><![CDATA[Apollo Demo]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Demo Website]]></value>
+					<value><![CDATA[English Apollo Demo]]></value>
 				</property>
 				<property>
 					<name>apollo.theme</name>
@@ -5402,7 +5411,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>search.subsite</name>
-					<value><![CDATA[Apollo Demo]]></value>
+					<value><![CDATA[English Apollo Demo]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6667,6 +6676,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/contentsections/cs_00024.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00024.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>10943a7a-8b90-11e6-bc4e-0242ac11002b</uuidstructure>
+			<uuidresource>10943a7b-8b90-11e6-bc4e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 06 Oct 2016 06:42:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Element pages]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>apollo-demo/.content/contentsections/cs_00025.xml</source>
 			<destination>apollo-demo/.content/contentsections/cs_00025.xml</destination>
 			<type>a-section</type>
@@ -7290,6 +7316,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[About: Architecture]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00062.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00062.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>109b3f60-8b90-11e6-bc4e-0242ac11002b</uuidstructure>
+			<uuidresource>109b3f61-8b90-11e6-bc4e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 06 Oct 2016 06:42:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[List: The List element]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9398,7 +9441,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog List: Latest entries from the Blog]]></value>
+					<value><![CDATA[Latest entries from the Blog]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9415,7 +9458,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Events: Upcoming Events]]></value>
+					<value><![CDATA[Upcoming Events]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9432,7 +9475,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog Article: Compact Blog List]]></value>
+					<value><![CDATA[Compact Blog List]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9466,7 +9509,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Job Offer: Vacant Jobs]]></value>
+					<value><![CDATA[Vacant Jobs]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9483,7 +9526,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[FAQ Entry: Frequently Asked Questions]]></value>
+					<value><![CDATA[FAQ Entry: Frequently Asked Questions in compact form]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11153,6 +11196,46 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Link Sequence]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/element-pages/list</destination>
+			<type>folder</type>
+			<uuidstructure>108d83b2-8b90-11e6-bc4e-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 06 Oct 2016 06:42:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.58984375]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[List]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[List]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/element-pages/list/index.html</source>
+			<destination>apollo-demo/element-pages/list/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>108fa697-8b90-11e6-bc4e-0242ac11002b</uuidstructure>
+			<uuidresource>108fa698-8b90-11e6-bc4e-0242ac11002b</uuidresource>
+			<datecreated>Thu, 06 Oct 2016 06:42:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[List]]></value>
 				</property>
 			</properties>
 			<relations/>

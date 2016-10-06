@@ -23,5 +23,26 @@
     <Detail>false</Detail>
     <Display>true</Display>
     <NestedContainers>false</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[cssWrapper]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[string]]></Widget>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[listWrapper]]></PropertyName>
+      <Widget><![CDATA[hidden]]></Widget>
+      <Default><![CDATA[panel-group]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showExpired]]></PropertyName>
+      <Widget><![CDATA[hidden]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[supportedLists]]></PropertyName>
+      <Widget><![CDATA[hidden]]></Widget>
+      <Default><![CDATA[static]]></Default>
+    </Setting>
   </NewFormatter>
 </NewFormatters>

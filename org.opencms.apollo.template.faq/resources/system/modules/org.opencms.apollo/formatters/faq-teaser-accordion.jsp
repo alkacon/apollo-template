@@ -11,12 +11,11 @@
 <c:set var="accId">${cms.element.instanceId}</c:set>
 
 <cms:formatter var="content" val="value">
+<c:set var="inMemoryMessage"><fmt:message key="apollo.faq.message.new" /></c:set>
+<apollo:init-messages textnew="${inMemoryMessage}">
 
-	<c:set var="inMemoryMessage"><fmt:message key="apollo.faq.message.new" /></c:set>
-	<apollo:init-messages textnew="${inMemoryMessage}">
-
-    <div class="ap-faq-panel panel panel-default ${cms.element.settings.index == 0 ? '':'mt-5'}">
-        <div  class="panel-heading">
+    <div class="ap-panel ${cms.element.settings.cssWrapper} panel panel-default">
+        <div class="panel-heading">
             <h4 class="panel-title">
                 <a
                     class="accordion-toggle ${cms.element.settings.index == 0 ? '':'collapsed'}"
@@ -24,11 +23,11 @@
                     data-toggle="collapse"
                     href="#collapse-${accId}-${cms.element.settings.index}">
 
-                    <span class="ap-panel-title">${content.value.Question}</span>
-
+                    <div class="ap-panel-title">${content.value.Question}</div>
                 </a>
             </h4>
         </div>
+
         <div
             id="collapse-${accId}-${cms.element.settings.index}"
             class="panel-collapse collapse ${cms.element.settings.index == 0 ? 'in' : ''}"
@@ -43,10 +42,9 @@
                 </c:forEach>
             </div>
         </div>
+
     </div>
-	
-	</apollo:init-messages>
 
+</apollo:init-messages>
 </cms:formatter>
-
 </cms:bundle> 

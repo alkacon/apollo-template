@@ -3,21 +3,32 @@
 
 .ap-event {
 
+    color: $text-dark;
+    margin-bottom: 20px;
+
     a.link {
         color: $text-dark;
     }
 
     a:hover {
+        color: $main-theme-hover;
         text-decoration: none;
     }
 
-    .date {
+    .teaser-body {
+        .teaser-date {
+            font-style: italic;
+        }
+    }
+
+    .calendar-sheet {
         min-width: 90px;
         border: 1px solid $gray-light;
         text-align: center; 
         background: $gray-lighter;
 
         &:before {
+            border-top: 20px solid $main-theme;
             display: block;
             content: '';
             margin: 0 10%;
@@ -29,20 +40,24 @@
         }
 
         h3 {
+            color: $main-theme;
             font-weight: bolder;
         }
     }
 
     // Calendar shhets get a slightly different raise effect
-    &:hover .animated-box {
+    &.ap-raise-animation:hover .animated-box {
         box-shadow: 5px 5px 8px -1px $dropshadow;
     }
+}
 
+// Coloring for events
+// NOTE: apollo-list-scss containes coloring classes also used by event
+@each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
 
-    @each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+    .color-#{""+$type-name} {
 
-        .date-#{""+$type-name} {
-
+        .calendar-sheet {
             &:before {
                 border-top: 20px solid $bg-color;
             }
