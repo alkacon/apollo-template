@@ -19,13 +19,15 @@
 @import '../../org.opencms.apollo.template/scss/apollo-button.scss';
 @import '../../org.opencms.apollo.template/scss/apollo-contact.scss';
 @import '../../org.opencms.apollo.template/scss/apollo-linksequence.scss';
-@import '../../org.opencms.apollo.template/scss/apollo-list.scss';
 @import '../../org.opencms.apollo.template/scss/apollo-section.scss';
 @import '../../org.opencms.apollo.template/scss/apollo-tabs.scss';
 @import '../../org.opencms.apollo.template/scss/apollo-tiles.scss';
 @import '../../org.opencms.apollo.template/scss/apollo-event.scss';
 @import '../../org.opencms.apollo.template/scss/apollo-blog.scss';
 @import '../../org.opencms.apollo.template/scss/apollo-job.scss';
+
+// list must come late because some CSS rules rely on being higher order then others
+@import '../../org.opencms.apollo.template/scss/apollo-list.scss';
 
 // general generic styles (just before generics)
 @import 'general';

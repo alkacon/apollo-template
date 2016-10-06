@@ -77,14 +77,44 @@ $panel-active-bg:       $main-theme !default;
 
 // Panels:
 
-.ap-panel-section {
+.ap-panel {
 
   margin-bottom: 20px;
+
+    @each $type-name, $bg-color, $text-color, $highlight-color in $panel-colors {
+
+        &.color-#{""+$type-name} {
+
+            .panel-heading h4.panel-title a.accordion-toggle.collapsed:hover,
+            .panel-heading h4.panel-title a:hover {
+
+                color: $text-color;
+                background: $highlight-color;
+            }
+
+            .panel-heading h4.panel-title a,
+            .panel-heading h4.panel-title a.accordion-toggle.collapsed {
+
+                color: $text-color;
+                background: $bg-color;
+            }
+        }
+    }
 }
 
 .ap-panel-body .ap-section  {
 
     margin-bottom: 0;
+}
+
+// fix Bootstrap CSS rule wich don't work if ADE is enables
+.panel-group .panel+.panel {
+
+    margin-top: 0;
+}
+.panel-group .panel {
+
+    margin-bottom: 5px;
 }
 
 .panel,
@@ -118,7 +148,7 @@ $panel-active-bg:       $main-theme !default;
 .panel-heading h4.panel-title a.accordion-toggle.collapsed {
 
     color: $text-dark;
-//     background: $panel-collapsed-bg;
+    background: $panel-collapsed-bg;
     transition: all .2s ease-in-out;    
 }
 
@@ -136,6 +166,7 @@ $panel-active-bg:       $main-theme !default;
     background: inherit;
 }
 
+
 @each $color-name, $bg-color, $text-color, $highlight-color in $panel-colors {
 
     div.ap-tab-#{""+$color-name} div.panel-heading {
@@ -150,11 +181,4 @@ $panel-active-bg:       $main-theme !default;
         color:  $text-color; 
         background: $highlight-color; 
     }
-
-    div.ap-panel-#{""+$color-name} .panel-heading h4.panel-title a.accordion-toggle.collapsed:hover,
-    div.ap-panel-#{""+$color-name} .panel-heading h4.panel-title a:hover {
-
-        color:  $text-color; 
-        background: $bg-color; 
-    }    
 }

@@ -79,7 +79,7 @@ $primary-colors:
  (red-dark,                      $red-dark,         $text-light,    $red),
  (red-darker,                    $red-darker,       $text-light,    $red-dark),
  (orange-light,                  $orange-light,     $text-dark,     $orange),
- (orange,                        $orange,           $text-light,    $red-orange),
+ (orange,                        $orange,           $text-light,    $red),
  (orange-dark,                   $orange-dark,      $text-light,    $orange),
  (orange-darker,                 $orange-darker,    $text-light,    $orange-dark),
  (blue-cyan,                     $blue-cyan,        $text-light,    $cyan),
@@ -112,7 +112,7 @@ $border-colors:
  (blue,         $blue,         $text-light,    $blue-light),
  (red,          $red,          $text-light,    $red-light),
  (cyan,         $cyan,         $text-light,    $blue-cyan),
- (orange,       $orange,       $text-light,    $red-orange),
+ (orange,       $orange,       $text-light,    $red),
 ) !default;
 
 // Spaces used for margins and paddings

@@ -255,3 +255,12 @@ a.no-underline {
         margin-bottom: #{$space}px;
     }
 }
+
+// overwrite some of the unify CSS settings we don't catch otherwise
+p, 
+li,
+li a,
+label { 
+   color: $text-dark;
+}
+

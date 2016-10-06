@@ -3,6 +3,7 @@
 
 .ap-event {
 
+    color: $text-dark;
     margin-bottom: 20px;
 
     a.link {
@@ -10,6 +11,7 @@
     }
 
     a:hover {
+        color: $main-theme-hover;
         text-decoration: none;
     }
 
@@ -49,23 +51,18 @@
     }
 }
 
-.ap-event {
+// Coloring for events
+// NOTE: apollo-list-scss containes coloring classes also used by event
+@each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
 
-    @each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+    .color-#{""+$type-name} {
 
-        &.ap-color-#{""+$type-name} {
-
-            .calendar-sheet {
-                &:before {
-                    border-top: 20px solid $bg-color;
-                }
-
-                h3 {
-                    color: $bg-color;
-                }
+        .calendar-sheet {
+            &:before {
+                border-top: 20px solid $bg-color;
             }
 
-            .teaser-head {
+            h3 {
                 color: $bg-color;
             }
         }
