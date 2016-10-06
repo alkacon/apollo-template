@@ -48,11 +48,11 @@
     </Parameters>
     <Parameters>
       <Key><![CDATA[cssWrapper]]></Key>
-      <Value><![CDATA[ap-color-cyan ap-btn-cyan]]></Value>
+      <Value/>
     </Parameters>
     <Parameters>
       <Key><![CDATA[listWrapper]]></Key>
-      <Value><![CDATA[ap-color-cyan]]></Value>
+      <Value><![CDATA[color-cyan]]></Value>
     </Parameters>
     <Parameters>
       <Key><![CDATA[showExpired]]></Key>

@@ -9475,7 +9475,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog Article: Compact Blog List]]></value>
+					<value><![CDATA[Compact Blog List]]></value>
 				</property>
 			</properties>
 			<relations/>

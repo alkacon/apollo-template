@@ -19,11 +19,11 @@
     </Parameters>
     <Parameters>
       <Key><![CDATA[cssWrapper]]></Key>
-      <Value><![CDATA[ap-btn-orange ap-color-orange]]></Value>
+      <Value/>
     </Parameters>
     <Parameters>
       <Key><![CDATA[listWrapper]]></Key>
-      <Value><![CDATA[ap-color-orange]]></Value>
+      <Value><![CDATA[color-orange]]></Value>
     </Parameters>
   </ApolloList>
 </ApolloLists>

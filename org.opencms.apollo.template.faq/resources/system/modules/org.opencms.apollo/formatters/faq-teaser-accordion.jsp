@@ -14,7 +14,7 @@
 <c:set var="inMemoryMessage"><fmt:message key="apollo.faq.message.new" /></c:set>
 <apollo:init-messages textnew="${inMemoryMessage}">
 
-    <div class="ap-faq-panel ${cms.element.settings.cssWrapper} panel panel-default  ${cms.element.settings.index == 0 ? '':'mt-5'}">
+    <div class="ap-panel ${cms.element.settings.cssWrapper} panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
                 <a
@@ -23,7 +23,7 @@
                     data-toggle="collapse"
                     href="#collapse-${accId}-${cms.element.settings.index}">
 
-                    <span class="ap-panel-title">${content.value.Question}</span>
+                    <div class="ap-panel-title">${content.value.Question}</div>
                 </a>
             </h4>
         </div>

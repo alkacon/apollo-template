@@ -35,7 +35,6 @@
                         href="${href}" 
                         date="${content.value.Date}"
                         showdate="${showDate}"
-                        color="${buttonColor}"
                     />
 				</cms:bundle>
 
