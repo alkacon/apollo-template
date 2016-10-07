@@ -44,7 +44,7 @@
 <c:if test="${search.numFound > 0}">
 
     <%-- ####### The facet filters ######## --%>
-    <c:if test="not empty showfacets">
+    <c:if test="${not empty showfacets}">
         <apollo:list-facetrow 
             searchresult="${search}" 
             color="${color}" 

@@ -51,8 +51,8 @@
                     <%-- ####### The list content will be inserted here with AJAX ####### --%>
                     <div 
                         class="ap-list-entries ${formatterSettings.listWrapper}" 
-                        id="list-${cms.element.instanceId}"
-                        data-id="${cms.element.instanceId}" 
+                        id="list-${cms.element.id}"
+                        data-id="${cms.element.id}" 
                         data-ajax="${ajaxlink}"
                         data-teaser="${cms.element.settings.teaserlength}" 
                         data-path="${cms.element.sitePath}" 
@@ -63,7 +63,7 @@
 
                         <div 
                             class="ap-list-box" 
-                            id="list-${cms.element.instanceId}" 
+                            id="list-${cms.element.id}" 
                             style="min-height: ${count * approxElemHeight}px;">
 
                             <div class="col-xs-12">
