@@ -30,9 +30,9 @@ function reloadInnerList(searchStateParameters, elem) {
         entryBox.css("min-height", elem.data("minheight"));
         elem.find(".ap-list-pagination").empty();
         var listOptionBox = $('#listoption_box-' + elem.data('id'));
-        listOptionBox.find(".listOptions").remove();
         $.get(buildAjaxLink(elem) + "&".concat(searchStateParameters), 
                 function(resultList) {
+            		listOptionBox.find(".listOptions").remove();
                     $(resultList).filter(".list-entry").appendTo(entryBox);
                     $(resultList).filter('.paginationWrapper').appendTo(elem.find('.ap-list-pagination'));
                     $(resultList).filter(".listOptions").appendTo(listOptionBox);

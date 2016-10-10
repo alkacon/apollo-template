@@ -51,6 +51,10 @@
       <Value><![CDATA[This is the facet-formatter for the list-element:]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[pagination.loadmore]]></Key>
+      <Value><![CDATA[load more]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.list.message.archive]]></Key>
       <Value><![CDATA[Archive]]></Value>
     </Message>
@@ -113,24 +117,24 @@
       <Value><![CDATA[Vorherige Seite]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[sortorder.desc]]></Key>
-      <Value><![CDATA[Absteigend]]></Value>
+      <Key><![CDATA[apollo.list.message.facetsusage]]></Key>
+      <Value><![CDATA[Zur korrekten Initialisierung der Facetten muss die gleiche Liste mit dem Pagination- oder Dynamic-Loading-Formatter ebenfalls auf der Seite verwendet werden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[sort.options.order.label]]></Key>
       <Value><![CDATA[Sortieren nach Ordnung]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.list.message.facetsusage]]></Key>
-      <Value><![CDATA[Zur korrekten Initialisierung der Facetten muss die gleiche Liste mit dem Pagination- oder Dynamic-Loading-Formatter ebenfalls auf der Seite verwendet werden.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[pagination.first.title]]></Key>
-      <Value><![CDATA[Erste Seite]]></Value>
+      <Key><![CDATA[sortorder.desc]]></Key>
+      <Value><![CDATA[Absteigend]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.search]]></Key>
       <Value><![CDATA[Suche]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[pagination.first.title]]></Key>
+      <Value><![CDATA[Erste Seite]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[facet.category.label]]></Key>
@@ -153,6 +157,10 @@
       <Value><![CDATA[Dies ist der Facet-Formatter für die Liste:]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[pagination.loadmore]]></Key>
+      <Value><![CDATA[Weitere Einträge]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.list.message.archive]]></Key>
       <Value><![CDATA[Archiv]]></Value>
     </Message>
@@ -161,16 +169,16 @@
       <Value><![CDATA[Alle Kategorien]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[sort.options.date.label]]></Key>
-      <Value><![CDATA[Sortieren nach Datum]]></Value>
+      <Key><![CDATA[apollo.list.message.edit]]></Key>
+      <Value><![CDATA[Die Listenkonfiguration wurde bearbeitet. Seite wird neu geladen.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.empty]]></Key>
       <Value><![CDATA[Derzeit sind keine Einträge vorhanden.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[apollo.list.message.edit]]></Key>
-      <Value><![CDATA[Die Listenkonfiguration wurde bearbeitet. Seite wird neu geladen.]]></Value>
+      <Key><![CDATA[sort.options.date.label]]></Key>
+      <Value><![CDATA[Sortieren nach Datum]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[pagination.previous]]></Key>
