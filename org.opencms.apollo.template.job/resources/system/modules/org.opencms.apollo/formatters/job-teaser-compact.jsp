@@ -9,20 +9,19 @@
 
 <cms:bundle basename="org.opencms.apollo.template.job.messages">
 <cms:formatter var="content" val="value">
-	
-	<c:set var="inMemoryMessage"><fmt:message key="apollo.job.message.inmemory" /></c:set>
-	<apollo:init-messages textnew="${inMemoryMessage}">
-		<apollo:list-item-compact
-			date="${value.Date}"
-			datetype="date"
-			filename="${content.filename}"
-			headline="${value.Title}"
-			location="${value.Location}"
-			text="${content.valueList.Text['0'].value.Text}"
-			teaser="${value.Introduction.value.Text}"
-			trimteaser="true"
-		/>
-	</apollo:init-messages>		
+    
+    <c:set var="inMemoryMessage"><fmt:message key="apollo.job.message.inmemory" /></c:set>
+    <apollo:init-messages textnew="${inMemoryMessage}">
+        <apollo:list-item-compact
+            date="${value.Date}"
+            datetype="date"
+            filename="${content.filename}"
+            headline="${value.Title}"
+            location="${value.Location}"
+            text="${content.valueList.Text['0'].value.Text}"
+            teaser="${value.Introduction.value.Text}"
+        />
+    </apollo:init-messages>     
 
 </cms:formatter>
 </cms:bundle>

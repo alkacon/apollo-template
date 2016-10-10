@@ -14,7 +14,6 @@
 <%@ attribute name="datetype" type="java.lang.String" required="false" %>
 
 <%@ attribute name="location" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
-<%@ attribute name="trimteaser" type="java.lang.Boolean" required="false" %>
 <%@ attribute name="btntext" type="java.lang.String" required="false" %>
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

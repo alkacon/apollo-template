@@ -24,11 +24,10 @@
     <Display>true</Display>
     <NestedContainers>false</NestedContainers>
     <Setting>
-      <PropertyName><![CDATA[buttoncolor]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
-      <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[red]]></Default>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
+      <PropertyName><![CDATA[cssWrapper]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[string]]></Widget>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[teaserlength]]></PropertyName>

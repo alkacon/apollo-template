@@ -9,25 +9,24 @@
 <fmt:setLocale value="${cms.locale}" />
 
 <cms:formatter var="content" val="value">
-	<cms:bundle basename="org.opencms.apollo.template.job.messages">
-		<c:set var="inMemoryMessage"><fmt:message key="apollo.job.message.inmemory" /></c:set>
-	</cms:bundle>
-	<apollo:init-messages textnew="${inMemoryMessage}">
+    <cms:bundle basename="org.opencms.apollo.template.job.messages">
+        <c:set var="inMemoryMessage"><fmt:message key="apollo.job.message.inmemory" /></c:set>
+    </cms:bundle>
+    <apollo:init-messages textnew="${inMemoryMessage}">
 
-		<div class="row ap-sec ap-event">
-			<c:set var="paragraph" value="${content.valueList.Introduction['0']}" />
-			<c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
-			<c:set var="buttonColor" value="${cms.element.settings.buttoncolor}" />
+        <div class="row ap-event ${cms.element.settings.cssWrapper}">
+            <c:set var="paragraph" value="${content.valueList.Introduction['0']}" />
+            <c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
             <c:set var="showDate" value="${cms.element.settings.showdate}" />
 
-			<%-- ####### Render Teaser-Text and optional image, if set accordingly ######## --%>
-			<div class="col-xs-12">
+            <%-- ####### Render Teaser-Text and optional image, if set accordingly ######## --%>
+            <div class="col-xs-12">
 
-				<c:set var="href"><cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link></c:set>
-				<c:set var="text">${content.value.Teaser}</c:set>
-				<c:if test="${empty text}"><c:set var="text">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</c:set></c:if>
+                <c:set var="href"><cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link></c:set>
+                <c:set var="text">${content.value.Teaser}</c:set>
+                <c:if test="${empty text}"><c:set var="text">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</c:set></c:if>
 
-				<cms:bundle basename="org.opencms.apollo.template.formatters.list">
+                <cms:bundle basename="org.opencms.apollo.template.formatters.list">
                     <apollo:teaserbody
                         text="${text}" 
                         textlength="${teaserLength}"
@@ -36,10 +35,10 @@
                         date="${content.value.Date}"
                         showdate="${showDate}"
                     />
-				</cms:bundle>
+                </cms:bundle>
 
-			</div>
+            </div>
 
-		</div>
-	</apollo:init-messages>		
+        </div>
+    </apollo:init-messages>     
 </cms:formatter>
