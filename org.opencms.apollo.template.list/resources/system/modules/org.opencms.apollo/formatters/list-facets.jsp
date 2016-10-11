@@ -9,6 +9,12 @@
 <cms:bundle basename="org.opencms.apollo.template.formatters.list">
     <cms:formatter var="content" val="value" rdfa="rdfa">
     
+        <apollo:formatter-settings 
+            type="${content.value.TypesToCollect}" 
+            parameters="${content.valueList.Parameters}"
+            online="${cms.isOnlineProject}" 
+        />
+    
         <%-- ####### Build facet settings ######## --%>
         <c:set var="settings" value="${cms.element.settings}" />
         <c:set var="facetsettings" 
@@ -21,7 +27,7 @@
         <%-- ##################################### --%>
         
         <div id="listoption_box-${cms.element.id}" 
-            class="listoptionbox" 
+            class="listoptionbox ${formatterSettings.listWrapper}" 
             data-id="${cms.element.id}" 
             data-facets="${facetsettings}">
             
