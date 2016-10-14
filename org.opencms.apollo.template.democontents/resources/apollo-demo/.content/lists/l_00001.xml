@@ -58,5 +58,13 @@
       <Key><![CDATA[showExpired]]></Key>
       <Value><![CDATA[true]]></Value>
     </Parameters>
+    <Parameters>
+      <Key><![CDATA[filterWrapper]]></Key>
+      <Value><![CDATA[color-cyan bg-grey-lighter]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[archiveWrapper]]></Key>
+      <Value><![CDATA[color-blue]]></Value>
+    </Parameters>
   </ApolloList>
 </ApolloLists>

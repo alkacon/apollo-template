@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[List archive filter element]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>The <em>List Archive filter</em>&nbsp;provides powerful search and filtering mechanisms.&nbsp;It comes with search field, category filter and archive list. If you do not need one of those features, you can simple deactivate it in the settings.</p>
+<p>Adding it to a page&nbsp;is as easy as dropping another list element instance on the site and choosing the corresponding formatter for it to appear. Instantly ready to use!</p>]]></content>
+    </Text>
+  </ApolloSection>
+</ApolloSections>

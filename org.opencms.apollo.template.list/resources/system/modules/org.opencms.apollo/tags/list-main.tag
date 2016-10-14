@@ -60,6 +60,7 @@
                 value="${result.xmlContent.filename}"
                 displayFormatters="${types}"
                 editable="true"
+				creationSiteMap="${pageUri}"
                 create="true"
                 delete="true"
                 >
