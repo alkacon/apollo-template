@@ -59,6 +59,10 @@
       <Value><![CDATA[Archive]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[apollo.list.message.edited]]></Key>
+      <Value><![CDATA[The list has been edited. Changes will be visible after reloading.]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[facet.category.none]]></Key>
       <Value><![CDATA[All categories]]></Value>
     </Message>
@@ -163,6 +167,10 @@
     <Message>
       <Key><![CDATA[apollo.list.message.archive]]></Key>
       <Value><![CDATA[Archiv]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[apollo.list.message.edited]]></Key>
+      <Value><![CDATA[Die Liste wurde bearbeitet. Änderungen sind nach dem Neuladen sichtbar.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[facet.category.none]]></Key>

@@ -37,6 +37,9 @@
                             </form>
                         </div>
                     </c:if>
+                    
+                    <c:set var="catDisplay">${formatterSettings.catPreopened ? 'style="display:block;"' : ''}</c:set>
+                    <c:set var="archiveDisplay">${formatterSettings.archivePreopened ? 'style="display:block;"' : ''}</c:set>
 
                     <c:if test="${cms.element.settings.showlabels and not empty fieldFacetResult and cms:getListSize(fieldFacetResult.values) > 0}">
                         <div class="ap-list-filterbox ap-list-filterbox-labels">
@@ -47,35 +50,39 @@
                                 <span id="aplistlabels_toggle" class="fa fa-chevron-down pull-right"></span>
                             </button>
 
-                            <div id="aplistlabels" class="ap-list-filter-labels-wrapper">
+                            <div id="aplistlabels" class="ap-list-filter-labels-wrapper" ${catDisplay}>
                                 <hr>
                                 <ul class="ap-list-filter-labels">
                                     <c:forEach var="value" items="${fieldFacetResult.values}">
                                         <c:set var="selected">${fieldFacetController.state.isChecked[value.name] ? ' class="active"' : ""}</c:set>
                                         <c:set var="itemName">${value.name}</c:set>
                                         <c:set var="currCat" value="${cms.readCategory[itemName]}" />
-                                        <c:set var="showLabel" value="false" />
-                                        <c:choose>
-                                            <c:when test="${not empty categoryPaths}">
-                                                <c:forTokens var="testCat" items="${categoryPaths}" delims=",">
-                                                    <c:if test="${fn:startsWith(currCat.path, testCat)}">
-                                                        <c:set var="showLabel" value="true" />
-                                                    </c:if> 
-                                                </c:forTokens>
-                                            </c:when>
-                                            <c:otherwise>
-                                                <c:set var="showLabel" value="true" />  
-                                            </c:otherwise>
-                                        </c:choose>
+                                        <c:set var="catFilters" value=",${fn:replace(formatterSettings.catfilters,' ','')}," />
+                                        <c:set var="currCatTitle" value=",${fn:replace(currCat.title,' ','')}," />
+                                        <c:if test="${!fn:contains(catFilters, currCatTitle)}">
+                                            <c:set var="showLabel" value="false" />
+                                            <c:choose>
+                                                <c:when test="${not empty categoryPaths}">
+                                                    <c:forTokens var="testCat" items="${categoryPaths}" delims=",">
+                                                        <c:if test="${fn:startsWith(currCat.path, testCat)}">
+                                                            <c:set var="showLabel" value="true" />
+                                                        </c:if> 
+                                                    </c:forTokens>
+                                                </c:when>
+                                                <c:otherwise>
+                                                    <c:set var="showLabel" value="true" />  
+                                                </c:otherwise>
+                                            </c:choose>
 
-                                        <c:if test="${showLabel}">
-                                            <li ${selected}>
-                                                <a href="javascript:void(0)"
-                                                    onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}', 
-                                                    $('#list-' + $(this).parents('.ap-list-filters').data('id'))); clearQuery();">
-                                                    ${currCat.title}    (${value.count})
-                                                </a>
-                                            </li>
+                                            <c:if test="${showLabel}">
+                                                <li ${selected}>
+                                                    <a href="javascript:void(0)"
+                                                        onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}', 
+                                                        $('#list-' + $(this).parents('.ap-list-filters').data('id'))); clearQuery();">
+                                                        ${currCat.title}    (${value.count})
+                                                    </a>
+                                                </li>
+                                            </c:if>
                                         </c:if>
                                     </c:forEach>
                                 </ul>
@@ -91,7 +98,7 @@
                                 <span id="aplistarchive_toggle" class="fa fa-chevron-down pull-right"></span>
                             </button>
 
-                            <div id="aplistarchive" class="ap-list-filter-archive">
+                            <div id="aplistarchive" class="ap-list-filter-archive"  ${archiveDisplay}>
 
                                 <c:set var="archiveHtml" value="" />
                                 <c:set var="yearHtml" value="" />
