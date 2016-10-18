@@ -21,7 +21,7 @@
 
             <apollo:list-search source="${value.Folder}" types="${value.TypesToCollect}" categories="${content.readCategories}" 
                             count="${value.ItemsPerPage.toInteger}" sort="${value.SortOrder}" showexpired="${cms.element.settings.showexpired}" filterqueries="${value.FilterQueries}" />
-            <div>
+            <div class="${formatterSettings.listWrapper}">
                 <div class="ap-list-filters ${formatterSettings.filterWrapper}" data-id="${cms.element.id}">
 
                     <c:if test="${cms.element.settings.showsearch}">

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -158,11 +158,11 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.facets]]></Key>
-      <Value><![CDATA[Dies ist der Facet-Formatter fÃ¼r die Liste:]]></Value>
+      <Value><![CDATA[Dies ist der Facetten-Formatter für die Liste:]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[pagination.loadmore]]></Key>
-      <Value><![CDATA[Weitere EintrÃ¤ge]]></Value>
+      <Value><![CDATA[Weitere Einträge]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.archive]]></Key>
@@ -170,7 +170,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.edited]]></Key>
-      <Value><![CDATA[Die Liste wurde bearbeitet. Ã„nderungen sind nach dem Neuladen sichtbar.]]></Value>
+      <Value><![CDATA[Die Liste wurde bearbeitet. Ä„nderungen sind nach dem Neuladen sichtbar.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[facet.category.none]]></Key>
@@ -178,11 +178,11 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.edit]]></Key>
-      <Value><![CDATA[Die Listenkonfiguration wurde bearbeitet. Seite wird neu geladen.]]></Value>
+      <Value><![CDATA[Die Listenkonfiguration wurde bearbeitet. Die Seite wird neu geladen.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.message.empty]]></Key>
-      <Value><![CDATA[Derzeit sind keine EintrÃ¤ge vorhanden.]]></Value>
+      <Value><![CDATA[Derzeit sind keine Einträge vorhanden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[sort.options.date.label]]></Key>
@@ -210,7 +210,7 @@
     </Message>
     <Message>
       <Key><![CDATA[pagination.next.title]]></Key>
-      <Value><![CDATA[NÃ¤chste Seite]]></Value>
+      <Value><![CDATA[Nächste Seite]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[pagination.last]]></Key>

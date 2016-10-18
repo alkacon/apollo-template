@@ -385,6 +385,10 @@
 					<value><![CDATA[Message keys used in the list formatter]]></value>
 				</property>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -404,6 +408,10 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Localization for settings]]></value>
+				</property>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
 				</property>
 				<property>
 					<name>search.exclude</name>
