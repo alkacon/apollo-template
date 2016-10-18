@@ -134,5 +134,40 @@ $button-colors:          $primary-colors !default;
                 border-color: $highlight-color;  
             }
         }
+        
+        // archive menu
+        div &.ap-list-filters, .ap-list-filters {
+    
+            .fa {
+                color: $text-color;
+            }
+            
+            a {
+                color: inherit;
+            }
+        
+            button {
+                background: $bg-color;
+                border-color: $bg-color;  
+                color: $text-color;
+                
+                &:hover, &:focus {
+                    background: $highlight-color;
+                    border-color: $highlight-color;  
+                }
+            }
+        }
+        
+        &.ap-list-filterbox {
+            
+            .ap-list-filter-archive {
+                button {
+                    background: $bg-color;
+                    border-color: $bg-color;  
+                    color: $text-color;
+                }
+            }
+        }
+            
     }
 }
