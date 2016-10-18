@@ -75,7 +75,7 @@
                         <div class="ap-list-pagination" style="min-height: 50px;"></div>
 
                         <%-- ####### Create and edit new entries if empty result ######## --%>
-                        <c:set var="createType">${fn:substringBefore(value.TypesToCollect.stringValue, ':')}</c:set>
+                        <c:set var="createType">${fn:substringBefore(con.value.TypesToCollect.stringValue, ':')}</c:set>
                         <div class="editbox" style="display: none;" >
                             <cms:edit createType="${createType}" create="true" >
                                 <div class="alert alert-warning fade in">

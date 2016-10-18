@@ -38,7 +38,7 @@
     sort="${sort}"
     count="${count}"
     categories="${categories}"
-    showexpired="${formatterSettings.showExpired}"
+    showexpired="${formatterSettings.showExpired == 'false'}"
 />
 
 <c:if test="${search.numFound > 0}">
