@@ -47,14 +47,6 @@
       <Value><![CDATA[true]]></Value>
     </Parameters>
     <Parameters>
-      <Key><![CDATA[cssWrapper]]></Key>
-      <Value/>
-    </Parameters>
-    <Parameters>
-      <Key><![CDATA[listWrapper]]></Key>
-      <Value><![CDATA[color-cyan]]></Value>
-    </Parameters>
-    <Parameters>
       <Key><![CDATA[showExpired]]></Key>
       <Value><![CDATA[true]]></Value>
     </Parameters>
@@ -63,8 +55,24 @@
       <Value><![CDATA[color-cyan bg-grey-lighter]]></Value>
     </Parameters>
     <Parameters>
+      <Key><![CDATA[listWrapper]]></Key>
+      <Value><![CDATA[color-cyan]]></Value>
+    </Parameters>
+    <Parameters>
       <Key><![CDATA[archiveWrapper]]></Key>
-      <Value><![CDATA[color-blue]]></Value>
+      <Value><![CDATA[color-grey]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[catPreopened]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[archivePreopened]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[catfilters]]></Key>
+      <Value><![CDATA[Priority / Importance, Topic]]></Value>
     </Parameters>
   </ApolloList>
 </ApolloLists>

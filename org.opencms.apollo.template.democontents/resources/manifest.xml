@@ -6686,7 +6686,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[List: Element pages]]></value>
+					<value><![CDATA[Element pages]]></value>
 				</property>
 			</properties>
 			<relations/>
