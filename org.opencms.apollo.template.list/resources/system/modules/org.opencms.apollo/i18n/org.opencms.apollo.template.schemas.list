@@ -51,6 +51,10 @@
       <Value><![CDATA[Headline]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[label.ApolloList.ItemsPerPageentry]]></Key>
+      <Value><![CDATA[Items per page]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.list.value.orderasc]]></Key>
       <Value><![CDATA[Order ascending]]></Value>
     </Message>
@@ -59,8 +63,16 @@
       <Value><![CDATA[Gallery Title]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[label.ApolloParameter.Key]]></Key>
+      <Value><![CDATA[Key]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.ApolloList.ItemsPerPage.help]]></Key>
       <Value><![CDATA[Sets the number of items that are shown per page.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParameter.Value]]></Key>
+      <Value><![CDATA[Value]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.value.asc]]></Key>
@@ -99,6 +111,10 @@
       <Value><![CDATA[Title descending]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[label.ApolloList.Parameters.help]]></Key>
+      <Value><![CDATA[An entry for the parameter map that can be used in the list formatter.]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.ApolloList.TypesToCollect]]></Key>
       <Value><![CDATA[List type]]></Value>
     </Message>
@@ -111,16 +127,16 @@
       <Value><![CDATA[Hide headline]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[label.ApolloList.Parameters]]></Key>
+      <Value><![CDATA[Parameter]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[apollo.list.value.orderdesc]]></Key>
       <Value><![CDATA[Order descending]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloList.Headline.help]]></Key>
       <Value><![CDATA[The headline of the list, can be hidden by using an element setting.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloList.ItemsPerPage]]></Key>
-      <Value><![CDATA[Items per page]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.value.titleasc]]></Key>
@@ -189,8 +205,16 @@
       <Value><![CDATA[Galerie Titel]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[label.ApolloParameter.Key]]></Key>
+      <Value><![CDATA[Schlüssel]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.ApolloList.ItemsPerPage.help]]></Key>
       <Value><![CDATA[Legt die Anzahl der angezeigten Elemente pro Seite fest.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloParameter.Value]]></Key>
+      <Value><![CDATA[Wert]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.value.asc]]></Key>
@@ -229,6 +253,10 @@
       <Value><![CDATA[Titel absteigend]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[label.ApolloList.Parameters.help]]></Key>
+      <Value><![CDATA[Ein Eintrag in der Parameter-Map, der im List-Formatter verwendet werden kann.]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.ApolloList.TypesToCollect]]></Key>
       <Value><![CDATA[Listentyp]]></Value>
     </Message>
@@ -239,6 +267,10 @@
     <Message>
       <Key><![CDATA[apollo.list.setting.hidetitle]]></Key>
       <Value><![CDATA[Verberge Überschrift]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloList.Parameters]]></Key>
+      <Value><![CDATA[Parameter]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.list.value.orderdesc]]></Key>
