@@ -114,7 +114,7 @@
 	"ignoreReleaseDate" : true,
 </c:if>
 
-	"querymodifier" : "content_en:%(query) OR content_de:%(query) OR spell:%(query) OR Title_prop:%(query)",
+	"querymodifier" : "content_${cms.locale}:%(query) OR Title_prop:%(query)",
 	"escapequerychars" : true,
 	
 	"extrasolrparams" : "fq=parent-folders:\"${folder}\"&fq=-type:image&fq=type:${resType}${fn:replace(extraSolrParams,'"','\\"')}",
