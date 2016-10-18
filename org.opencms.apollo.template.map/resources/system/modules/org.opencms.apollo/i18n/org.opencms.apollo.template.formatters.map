@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -74,7 +74,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.map.message.error.key]]></Key>
-      <Value><![CDATA[Die Karte kann wegen eines fehlenden Google API SchlÃ¼ssels nicht angezeigt werden.\nBitte setzen Sie den SchlÃ¼ssel in der Eigenschaft 'google.apikey'.]]></Value>
+      <Value><![CDATA[Die Karte kann wegen eines fehlenden Google API Schlüssels nicht angezeigt werden.\nBitte setzen Sie den Schlüssel in der Eigenschaft 'google.apikey'.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.map.message.new]]></Key>

@@ -294,7 +294,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloAddress.Region.help]]></Key>
-      <Value><![CDATA[optionaler Name der Region.]]></Value>
+      <Value><![CDATA[Optionaler Name der Region.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContact.Title]]></Key>
@@ -362,7 +362,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContact.Organisation.help]]></Key>
-      <Value><![CDATA[Der name der Organisation oder des Unternehmens.]]></Value>
+      <Value><![CDATA[Der Name der Organisation oder des Unternehmens.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.contact.obfuscatedemail]]></Key>

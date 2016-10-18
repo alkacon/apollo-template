@@ -1078,7 +1078,7 @@
   <Bundle language="de">
     <Message>
       <Key><![CDATA[apollo.info.installed]]></Key>
-      <Value><![CDATA[Installiert is]]></Value>
+      <Value><![CDATA[Installiert ist]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.info.running]]></Key>
@@ -1530,7 +1530,7 @@
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.iconclass.folder]]></Key>
-      <Value><![CDATA[ordner]]></Value>
+      <Value><![CDATA[Ordner]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[apollo.setting.icon.description]]></Key>

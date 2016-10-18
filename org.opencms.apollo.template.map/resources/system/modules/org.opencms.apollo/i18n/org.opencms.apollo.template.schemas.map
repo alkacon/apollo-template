@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
   <Bundle language="en">
@@ -106,11 +106,11 @@
   <Bundle language="de">
     <Message>
       <Key><![CDATA[label.ApolloMap.Headline]]></Key>
-      <Value><![CDATA[Überschrift]]></Value>
+      <Value><![CDATA[ܜberschrift]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMap.Headline.help]]></Key>
-      <Value><![CDATA[Die Überschrift oberhalb der Karte.]]></Value>
+      <Value><![CDATA[Die ܜberschrift oberhalb der Karte.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMap.Text]]></Key>
@@ -122,11 +122,11 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMap.MapSize]]></Key>
-      <Value><![CDATA[Kartengröße]]></Value>
+      <Value><![CDATA[Kartengr�ߟe]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMap.MapSize.help]]></Key>
-      <Value><![CDATA[Die Größe der Karte in Pixeln, das Format ist &quot;Breite x Höhe&quot;. Prozent Notation (%) kann auch verwendet werden, z.B. &quot;100%x400&quot;.]]></Value>
+      <Value><![CDATA[Die Gr��e der Karte in Pixeln, das Format ist &quot;Breite x H�he&quot;. Prozent Notation (%) kann auch verwendet werden, z.B. &quot;100%x400&quot;.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMap.MapType]]></Key>
@@ -178,7 +178,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMapCoord.Address.help]]></Key>
-      <Value><![CDATA[Die optionale Adresse für die Koordinaten. Wenn die Adresse nicht von Google ermittelt werden soll, kann hier die Adresse manuell eingegeben werden.]]></Value>
+      <Value><![CDATA[Die optionale Adresse f�r die Koordinaten. Wenn die Adresse nicht von Google ermittelt werden soll, kann hier die Adresse manuell eingegeben werden.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMapCoord.MarkerGroup]]></Key>
@@ -186,7 +186,7 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMapCoord.MarkerGroup.help]]></Key>
-      <Value><![CDATA[Der optionale Name der Marker Gruppe. Diese Option kann zur Gruppierung von Koordinaten benutzt werden. Benutzen Sie den gleichen Gruppennamen für alle Koordinaten einer Gruppe.]]></Value>
+      <Value><![CDATA[Der optionale Name der Marker Gruppe. Diese Option kann zur Gruppierung von Koordinaten benutzt werden. Benutzen Sie den gleichen Gruppennamen f�r alle Koordinaten einer Gruppe.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloMapCoord.Coord]]></Key>
