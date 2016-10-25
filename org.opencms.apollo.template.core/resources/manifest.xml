@@ -875,6 +875,10 @@
 					<name>Title</name>
 					<value><![CDATA[Formatter JSP for content section as tile or square]]></value>
 				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>

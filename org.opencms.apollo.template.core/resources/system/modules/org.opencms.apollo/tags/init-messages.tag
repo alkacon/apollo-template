@@ -20,8 +20,8 @@
         </div>
     </c:when>
     <c:when test="${not empty textedit and cms.edited}">
-        ${cms.reloadMarker}
         <div class="alert alert-info mv-10">
+            ${cms.reloadMarker}
             <h3>
                 ${textedit}
             </h3>
