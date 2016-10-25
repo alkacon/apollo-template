@@ -162,6 +162,10 @@
 					<name>Title</name>
 					<value><![CDATA[Formatter JSP for archive list filters]]></value>
 				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
@@ -212,6 +216,10 @@
 					<name>Title</name>
 					<value><![CDATA[Formatter JSP for dynamic lists (scrolling or pagination)]]></value>
 				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
@@ -232,6 +240,10 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Formatter JSP for archive list filters]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>
@@ -328,6 +340,10 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Formatter JSP for simple lists]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>
