@@ -78,7 +78,7 @@
                                                 <li ${selected}>
                                                     <a href="javascript:void(0)"
                                                         onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}', 
-                                                        $('#list-' + $(this).parents('.ap-list-filters').data('id'))); clearQuery();">
+                                                        $('#list-' + $(this).parents('.ap-list-filters').data('id'))); archiveHighlight($(this)); clearQuery();">
                                                         ${currCat.title}    (${value.count})
                                                     </a>
                                                 </li>
@@ -130,7 +130,7 @@
                                         <li ${selected}>
                                             <a href="javascript:void(0)"
                                                     onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}', 
-                                                    $('#list-' + $(this).parents('.ap-list-filters').data('id'))); clearQuery();" title="${facetItem.count}">
+                                                    $('#list-' + $(this).parents('.ap-list-filters').data('id'))); archiveHighlight($(this)); clearQuery();" title="${facetItem.count}">
                                                 <fmt:formatDate value="${fDate}" pattern="MMM" />
                                             </a>
                                         </li>
@@ -178,7 +178,7 @@
                 </script>
 
             </div>
-	    </apollo:init-messages>	
+        </apollo:init-messages> 
     </cms:formatter>
 
 </cms:bundle>
