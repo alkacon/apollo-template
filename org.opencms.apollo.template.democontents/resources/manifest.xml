@@ -9167,6 +9167,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/flexiblecontents/fc_00005.xml</source>
+			<destination>apollo-demo/.content/flexiblecontents/fc_00005.xml</destination>
+			<type>a-flexible</type>
+			<uuidstructure>cc522f5d-9a83-11e6-85c4-0242ac11002b</uuidstructure>
+			<uuidresource>cc522f5e-9a83-11e6-85c4-0242ac11002b</uuidresource>
+			<datecreated>Tue, 25 Oct 2016 07:22:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Job Offer: Horizontal divider]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/imagegalleries</destination>
 			<type>folder</type>
 			<uuidstructure>54d1593b-8f80-11e5-a6ad-0242ac11002b</uuidstructure>

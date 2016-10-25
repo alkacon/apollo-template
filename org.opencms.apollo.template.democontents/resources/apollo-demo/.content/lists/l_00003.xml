@@ -10,12 +10,16 @@
     <SortOrder><![CDATA[datedesc]]></SortOrder>
     <ItemsPerPage><![CDATA[2]]></ItemsPerPage>
     <Parameters>
-      <Key><![CDATA[cssWrapper]]></Key>
+      <Key><![CDATA[listWrapper]]></Key>
       <Value><![CDATA[color-blue]]></Value>
     </Parameters>
     <Parameters>
       <Key><![CDATA[teaserLength]]></Key>
       <Value><![CDATA[100]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key/>
+      <Value/>
     </Parameters>
   </ApolloList>
 </ApolloLists>
