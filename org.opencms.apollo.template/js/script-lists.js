@@ -104,6 +104,11 @@ function initList() {
     });
 }
 
+function archiveHighlight(elem){
+	$(".ap-list-filters li.active").removeClass("active");
+	elem.parent().addClass("active");
+}
+
 function showEmpty(elem){
     elem.find(".editbox").show();
 }

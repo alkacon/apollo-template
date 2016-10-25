@@ -148,6 +148,7 @@ $button-colors:          $primary-colors !default;
             
             a {
                 color: inherit;
+                text-decoration: inherit;
             }
         
             button {
@@ -170,6 +171,10 @@ $button-colors:          $primary-colors !default;
                     border-color: $bg-color;  
                     color: $text-color;
                 }
+            }
+            
+            li.active {
+                font-weight: bold;
             }
         }
             
