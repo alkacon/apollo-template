@@ -53,6 +53,10 @@ $button-colors:          $primary-colors !default;
 .ap-compact {
     
     color: $text-dark;
+    
+    &.ap-teaser {
+        margin-bottom: 10px;
+    }
 
     .teaser-date {
         font-style: italic;
