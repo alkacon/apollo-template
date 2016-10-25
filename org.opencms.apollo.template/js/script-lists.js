@@ -14,7 +14,14 @@ $.fn.visible = function(partial) {
 
 var list_lock = new Array();
 
-function reloadInnerList(searchStateParameters, elem) {
+function reloadInnerList(searchStateParameters, elem, resetArchive) {
+	if(arguments.length == 3 && resetArchive){
+		archiveRemoveHighlight();
+	}
+	doReloadInnerList(searchStateParameters, elem);
+}
+
+function doReloadInnerList(searchStateParameters, elem) {
     if(typeof list_lock[elem.attr("id")] === "undefined" || !list_lock[elem.attr("id")]){
         list_lock[elem.attr("id")] = true;
         if(typeof elem === 'undefined'){
@@ -105,8 +112,12 @@ function initList() {
 }
 
 function archiveHighlight(elem){
-	$(".ap-list-filters li.active").removeClass("active");
+	archiveRemoveHighlight();
 	elem.parent().addClass("active");
+}
+
+function archiveRemoveHighlight(){
+	$(".ap-list-filters li.active").removeClass("active");
 }
 
 function showEmpty(elem){
