@@ -85,7 +85,7 @@
 			<%-- ##### Default option ##### --%>
 			<li ${cms:getListSize(facetController.state.checkedEntries) == 0?'class="active"' : ""}>
 				<a href="javascript:void(0)" onclick="reloadInnerList('${search.stateParameters.resetFacetState[categoryFacetField]}', 
-																								$('#list-' + $(this).parents().filter('.listoptionbox').data('id')))">
+																								$('#list-' + $(this).parents().filter('.listoptionbox').data('id')), true)">
 					${deselectLabel}</a>
 			</li>${delimiter}
 			
@@ -107,7 +107,7 @@
 				<li ${selected}>
 					<a href="javascript:void(0)"
 					onclick="reloadInnerList('${search.stateParameters.resetFacetState[categoryFacetField].checkFacetItem[categoryFacetField][value.name]}', 
-																								$('#list-' + $(this).parents().filter('.listoptionbox').data('id')))">
+																								$('#list-' + $(this).parents().filter('.listoptionbox').data('id')), true)">
 						${label} (${value.count})
 					</a>
 				</li>${delimiter}
