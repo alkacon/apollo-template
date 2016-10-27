@@ -16,6 +16,7 @@
 
 <%@ attribute name="showfacets" type="java.lang.String" required="false" %>
 <%@ attribute name="pageUri" type="java.lang.String" required="false" %>
+<%@ attribute name="subsite" type="java.lang.String" required="false" %>
 
 <%@ attribute name="ajaxCall" type="java.lang.Boolean" required="false" %>
 
@@ -34,6 +35,7 @@
 
 <apollo:list-search
     source="${source}"
+    subsite="${subsite}"
     types="${types}"
     sort="${sort}"
     count="${count}"
@@ -60,7 +62,7 @@
                 value="${result.xmlContent.filename}"
                 displayFormatters="${types}"
                 editable="true"
-				creationSiteMap="${pageUri}"
+                creationSiteMap="${pageUri}"
                 create="true"
                 delete="true"
                 >

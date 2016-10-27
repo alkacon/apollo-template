@@ -6,6 +6,7 @@
 <%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
 <%@ attribute name="sort" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
+<%@ attribute name="subsite" type="java.lang.String" required="false" %>
 <%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false" %>
 <%@ attribute name="filterqueries" type="java.lang.String" required="false" %>
 <%@ attribute name="count" type="java.lang.Integer" required="false" %>
@@ -38,6 +39,7 @@
 	</c:when>
 	<c:otherwise>
 		<c:set var="folder">${cms.requestContext.siteRoot}${cms.subSitePath}</c:set>
+		<c:set var="folder">${empty subsite ? folder : subsite}</c:set>
 	</c:otherwise>
 </c:choose>
 <c:set var="folderpath" value="${folder}" />

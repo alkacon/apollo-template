@@ -57,6 +57,7 @@
                         data-teaser="${cms.element.settings.teaserlength}" 
                         data-path="${cms.element.sitePath}" 
                         data-sitepath="${cms.requestContext.folderUri}"
+                        data-subsite="${cms.requestContext.siteRoot}${cms.subSitePath}"
                         data-dynamic="${cms.element.settings.listOption == 'scrolling' ? 'true' : 'false'}"
                         data-minheight="${count * approxElemHeight}"
                         data-locale="${cms.locale}">

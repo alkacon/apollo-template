@@ -1,4 +1,4 @@
-<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
+<%@page buffer="none" session="false" trimDirectiveWhitespaces="true" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
@@ -37,6 +37,7 @@
 
             showfacets="${param.facets}"
             pageUri="${param.sitepath}"
+            subsite="${param.subsite}"
         />
 
         <%-- ####### Load pagination (dynamic or normal) ######## --%>
