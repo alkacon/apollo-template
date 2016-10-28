@@ -81,6 +81,7 @@ function buildAjaxLink(elem){
     var params = "?contentpath=" + elem.data("path") 
         + "&id=" + elem.data("id")
         + "&sitepath=" + elem.data("sitepath")
+        + "&subsite=" + elem.data("subsite")
         + "&__locale=" + elem.data("locale");
 
     var facets = $("#listoption_box-" + elem.data("id"));
