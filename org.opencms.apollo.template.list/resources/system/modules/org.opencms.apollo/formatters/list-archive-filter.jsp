@@ -53,13 +53,14 @@
                             <div id="aplistlabels" class="ap-list-filter-labels-wrapper" ${catDisplay}>
                                 <hr>
                                 <ul class="ap-list-filter-labels">
+                                    <c:set var="catFilters" value=",${fn:replace(formatterSettings.catfilters,' ','')}," />
+                                    <c:set var="blacklistFilter" value="${fn:startsWith(catFilters,',whitelist') ? 'false' : 'true'}" />
                                     <c:forEach var="value" items="${fieldFacetResult.values}">
                                         <c:set var="selected">${fieldFacetController.state.isChecked[value.name] ? ' class="active"' : ""}</c:set>
                                         <c:set var="itemName">${value.name}</c:set>
                                         <c:set var="currCat" value="${cms.readCategory[itemName]}" />
-                                        <c:set var="catFilters" value=",${fn:replace(formatterSettings.catfilters,' ','')}," />
                                         <c:set var="currCatTitle" value=",${fn:replace(currCat.title,' ','')}," />
-                                        <c:if test="${!fn:contains(catFilters, currCatTitle)}">
+                                        <c:if test="${blacklistFilter != fn:contains(catFilters, currCatTitle)}">
                                             <c:set var="showLabel" value="false" />
                                             <c:choose>
                                                 <c:when test="${not empty categoryPaths}">
