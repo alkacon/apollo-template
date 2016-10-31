@@ -251,19 +251,21 @@
 							<!-- show pagination if it should be given and if it's really necessary -->
 							<c:if test="${not empty pagination && search.numPages > 1}">
 								<ul class="pagination">
-									<li ${pagination.state.currentPage > 1 ? "" : "class='disabled'"}>
-										<a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage['1']}</cms:link>"
-										   aria-label='<fmt:message key="pagination.first.title"/>'>
-											<span aria-hidden="true"><fmt:message key="pagination.first"/></span>
-										</a>
-									</li>
-									<c:set var="previousPage">${pagination.state.currentPage > 1 ? pagination.state.currentPage - 1 : 1}</c:set>
-									<li ${pagination.state.currentPage > 1 ? "" : "class='disabled'"}>
-										<a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage[previousPage]}</cms:link>"
-										   aria-label='<fmt:message key="pagination.previous.title"/>'>
-										   <span aria-hidden="true"><fmt:message key="pagination.previous"/></span>
-										</a>
-									</li>
+									<c:if test="${pagination.state.currentPage > 1}">
+										<li>
+											<a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage['1']}</cms:link>"
+											   aria-label='<fmt:message key="pagination.first.title"/>'>
+												<span aria-hidden="true"><fmt:message key="pagination.first"/></span>
+											</a>
+										</li>
+										<c:set var="previousPage">${pagination.state.currentPage > 1 ? pagination.state.currentPage - 1 : 1}</c:set>
+										<li>
+											<a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage[previousPage]}</cms:link>"
+											   aria-label='<fmt:message key="pagination.previous.title"/>'>
+											   <span aria-hidden="true"><fmt:message key="pagination.previous"/></span>
+											</a>
+										</li>
+									</c:if>
 									<c:forEach var="i" begin="${search.pageNavFirst}"
 										end="${search.pageNavLast}">
 										<c:set var="is">${i}</c:set>
@@ -272,17 +274,19 @@
 									</c:forEach>
 									<c:set var="pages">${search.numPages}</c:set>
 									<c:set var="next">${pagination.state.currentPage < search.numPages ? pagination.state.currentPage + 1 : pagination.state.currentPage}</c:set>
-									<li	${pagination.state.currentPage >= search.numPages ? "class='disabled'" : ""}>
-										<a aria-label='<fmt:message key="pagination.next.title"/>'
-										   href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage[next]}</cms:link>">
-											<span aria-hidden="true"><fmt:message key="pagination.next"/></span>
-										</a>
-									</li>
-									<li	${pagination.state.currentPage >= search.numPages ? "class='disabled'" : ""}>
-										<a aria-label='<fmt:message key="pagination.last.title"/>' href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage[pages]}</cms:link>">
-											<span aria-hidden="true"><fmt:message key="pagination.last"/></span>
-										</a>
-									</li>
+									<c:if test="${pagination.state.currentPage < pages}">
+										<li>
+											<a aria-label='<fmt:message key="pagination.next.title"/>'
+											   href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage[next]}</cms:link>">
+												<span aria-hidden="true"><fmt:message key="pagination.next"/></span>
+											</a>
+										</li>
+										<li>
+											<a aria-label='<fmt:message key="pagination.last.title"/>' href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage[pages]}</cms:link>">
+												<span aria-hidden="true"><fmt:message key="pagination.last"/></span>
+											</a>
+										</li>
+									</c:if>
 								</ul>
 							</c:if>
 						</c:otherwise>
