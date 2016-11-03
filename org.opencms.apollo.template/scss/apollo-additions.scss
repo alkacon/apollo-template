@@ -2,3 +2,19 @@
 body > div[class*=wrapper] {
     background-color: transparent;    
 }
+
+.header .mega-menu {
+    div.dropdown-menu {
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+    
+    div.dropdown-megamenu {
+        padding: 15px 15px 0 15px;
+    }
+    
+    li a {
+        border-bottom: 0;
+    }
+}
