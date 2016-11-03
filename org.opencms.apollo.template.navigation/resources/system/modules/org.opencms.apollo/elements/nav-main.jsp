@@ -3,6 +3,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<c:set var="MENU_XML" value="megamenu.menu" />
 <c:set var="pathparts" value="${fn:split(cms.requestContext.folderUri, '/')}" />
 <c:set var="navStartLevel">${param.startlevel}</c:set>
 <c:set var="navStartFolder" value="/" />
@@ -65,8 +66,21 @@
         </c:if>
       </c:forEach>
     </c:if>
-
-<li ${listClass}><%--
+    
+    <c:set var="megamenuAttr" value="" />
+    <c:if test="${parentItem}">
+        <%-- ###### Check for megamenu ######--%>
+        
+        <c:if test="${elem.navigationLevel}">
+            <%-- ###### Path correction needed if navLevel ######--%>
+            <c:set var="menuPath" value="${fn:replace(elem.resourceName, elem.fileName, '')}" />
+        </c:if>
+        <c:set var="megamenuPath"><cms:link>${menuPath}${MENU_XML}</cms:link></c:set>
+        <c:if test="${cms.vfs.existsXml[megamenuPath]}">
+            <c:set var="megamenuAttr" value="data-menu='${megamenuPath}'" />
+        </c:if>
+    </c:if>
+<li ${listClass} ${megamenuAttr}><%--
 --%><a href="<cms:link>${elem.resourceName}</cms:link>" <%--
 --%><c:if test="${parentItem and nextElemDeeper}"> class="dropdown-toggle" data-toggle="dropdown"</c:if>><%--
 --%>${elem.navText}</a>
