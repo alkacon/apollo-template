@@ -5,23 +5,6 @@ function initMegamenu(){
 	  var menu = menus.eq(i);
 	  insertMenu(menu.data("menu"), menu);
 	}
-	
-	initMegamenuEditing();
-}
-
-function initMegamenuEditing(){
-	var container = $(".container").eq(0);
-	var content = container.html();
-	var menu = $("<div></div>").addClass("dropdown-menu").addClass("dropdown-megamenu");
-	menu.append(content);
-	var listitem = $("<li></li>").addClass("dropdown").append(menu);
-	var list = $("<ul></ul>").addClass("nav").addClass("navbar-nav").append(listitem);
-	var megamenu = $("<div></div>").addClass("mega-menu").append(list);
-	var wrapper = $("<div></div>").addClass("header")
-					.append(megamenu);
-	container.empty();
-	container.append(wrapper);
-	
 }
 
 function insertMenu(path, navElem){

@@ -18,7 +18,16 @@ body > div[class*=wrapper] {
         border-bottom: 0;
     }
 }
+    
+#megamenu-editor .container {
 
-#page-complete-megamenu .dropdown-menu.dropdown-megamenu {
+    .header .mega-menu .container {
+        width: inherit;
+    }
+    
+    padding: 0;
+}
+
+#megamenu-editor .dropdown-menu.dropdown-megamenu {
     display: inherit;
 }
