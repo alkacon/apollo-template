@@ -2,8 +2,12 @@
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
-<c:set var="MENU_XML" value="megamenu.menu" />
+
+<apollo:megamenu mode="none" />
+<c:set var="MENU_XML" value="${megamenuFilename}" />
+
 <c:set var="pathparts" value="${fn:split(cms.requestContext.folderUri, '/')}" />
 <c:set var="navStartLevel">${param.startlevel}</c:set>
 <c:set var="navStartFolder" value="/" />

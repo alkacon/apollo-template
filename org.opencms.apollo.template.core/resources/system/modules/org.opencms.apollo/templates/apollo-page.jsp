@@ -5,13 +5,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
-<c:set var="MENU_XML" value="megamenu.menu" />
 <fmt:setLocale value="${cms.locale}" />
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-<c:if test="${empty param.ajaxreq}">
+<apollo:megamenu mode="skipTemplatePart" >
   <c:set var="titleprefix"><cms:property name="apollo.title.prefix" file="search" default="" /></c:set>
   <title>${titleprefix}${not empty titleprefix ? ' ':''}${cms.title}</title>
 
@@ -43,26 +42,25 @@
   </head>
   <body>
   <div class="wrapper">
-</c:if>
+</apollo:megamenu>
 
 <c:if test="${cms.isEditMode}">
   <!--=== Placeholder for OpenCms toolbar in edit mode ===-->
   <div style="background: #fff; height: 52px;">&nbsp;</div>
 </c:if>
 
-<c:set var="showMegamenu">${fn:endsWith(cms.requestContext.uri, MENU_XML)}</c:set>
-<c:set var="containerSuffix">${showMegamenu ? "-megamenu" : ""}</c:set>
-
-<cms:container name="page-complete${containerSuffix}" type="area" width="1200" maxElements="50" editableby="ROLE.DEVELOPER" tagClass="${showMegamenu ? 'mt-20' : ''}">
-  <cms:bundle basename="org.opencms.apollo.template.formatters.messages">
-    <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
-  </cms:bundle>
-  <apollo:container-box label="${message}" boxType="container-box" type="area" role="ROLE.DEVELOPER" />
-</cms:container>
+<apollo:megamenu mode="wrapContainer">
+  <cms:container name="page-complete${containerSuffix}" type="area" width="1200" maxElements="50" editableby="ROLE.DEVELOPER">
+    <cms:bundle basename="org.opencms.apollo.template.formatters.messages">
+      <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
+    </cms:bundle>
+    <apollo:container-box label="${message}" boxType="container-box" type="area" role="ROLE.DEVELOPER" />
+  </cms:container>
+</apollo:megamenu>
 
 </div><!--/wrapper-->
 
-<c:if test="${empty param.ajaxreq}">
+<apollo:megamenu mode="skipTemplatePart">
   <%-- JavaScript files placed at the end of the document so the pages load faster --%>
   <cms:headincludes type="javascript" defaults="%(link.weak:/system/modules/org.opencms.apollo.template.theme.unify/resources/js/scripts-all.min.js:0fc90357-5155-11e5-abeb-0242ac11002b)" />
   <script type="text/javascript">
@@ -97,7 +95,7 @@
   <![endif]-->
   <c:set var="afoot"><cms:property name="apollo.template.foot" file="search" default="" /></c:set>
   <c:if test="${not empty afoot}"><cms:include file="${afoot}" /></c:if>
-</c:if>
+</apollo:megamenu>
 
 </body>
 </html>

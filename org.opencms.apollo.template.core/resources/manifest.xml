@@ -83,6 +83,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-vars.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-zoom.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/init-messages.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/megamenu.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/link.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/tag.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/icon-prefix.tag"/>
@@ -1657,6 +1658,23 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Link sequence tag]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/megamenu.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/megamenu.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>254aba35-a270-11e6-bdc0-0242ac11002b</uuidstructure>
+			<uuidresource>254aba36-a270-11e6-bdc0-0242ac11002b</uuidresource>
+			<datecreated>Fri, 04 Nov 2016 09:22:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[A body-tag for special megamenu requirements in the template]]></value>
 				</property>
 			</properties>
 			<relations/>
