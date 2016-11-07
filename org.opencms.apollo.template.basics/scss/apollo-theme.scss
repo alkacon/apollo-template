@@ -1923,30 +1923,6 @@ ul.sidebar-nav-v1 {
     position: relative;
 }
 
-/* spinner animation ----------------------------------------------------------------------------- */
-@keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.spinner{
-    width: 25px;
-    margin: 5px auto;
-    height: auto;
-    font-size: 25px;
-    i{
-        animation: spinner 1s infinite;
-    }
-}
-
 /* Header logo.
 ----------------------------------------------------------------------------- */
 
