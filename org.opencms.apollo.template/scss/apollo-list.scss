@@ -180,3 +180,66 @@ $button-colors:          $primary-colors !default;
             
     }
 }
+
+// List and Image gallery spinner animation
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner{
+    width: 30px;
+    height: auto;
+    font-size: 30px;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 1000;
+    &, a &  {
+        color: $white;
+    }
+    
+    left: 50%;
+    i {
+        animation: spinner 700ms infinite;
+        animation-timing-function: steps(4, end);
+    }
+}
+
+.spinnerInnerBox {
+    position: relative;
+    left: -150%;
+    background-color: black;
+    width: 300%;
+    padding: 100%;
+    border-radius: 12px;
+    line-height: 0;
+    opacity: 0.65;
+}
+
+.spinnerBottom {
+    bottom: 80px;
+}
+
+
+//Image gallery image enter animation
+.comein {
+    transform: translateY(120px);
+    animation: come-in 0.8s ease forwards;
+    &:nth-child(even) {
+        transform: translateY(150px);        
+        animation-duration: 1.0s; /* So they look staggered */
+    }
+}
+
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
