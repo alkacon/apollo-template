@@ -10,7 +10,7 @@ function initMegamenu(){
 function insertMenu(path, navElem){
   $.ajax({
     method: "POST",
-    url: path + "?__disableDirectEdit=true&megamenu=true&ajaxreq=true"
+    url: path + "?__disableDirectEdit=true&ajaxreq=true"
   })
   .done(function (content){
     var dropdown = $("<div></div>").addClass("dropdown-menu").addClass("dropdown-megamenu");
