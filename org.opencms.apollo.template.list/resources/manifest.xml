@@ -503,27 +503,6 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/tags/list-archive-search.tag</source>
-			<destination>system/modules/org.opencms.apollo/tags/list-archive-search.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>ac1d6de4-26fd-11e6-9192-0242ac11002b</uuidstructure>
-			<uuidresource>ac1d6de5-26fd-11e6-9192-0242ac11002b</uuidresource>
-			<datecreated>Tue, 31 May 2016 07:02:43 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[List archive search tag]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo/tags/list-facetbutton.tag</source>
 			<destination>system/modules/org.opencms.apollo/tags/list-facetbutton.tag</destination>
 			<type>jsp</type>
