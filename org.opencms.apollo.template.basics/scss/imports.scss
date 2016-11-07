@@ -5,10 +5,7 @@
 //
 
 // theme based styles
-@import 'unify-theme';
-
-// import the modified and additional styles
-@import 'modifications';
+@import 'apollo-theme';
 
 // import the Apollo styles 
 @import '../../org.opencms.apollo.template/scss/container-markers.scss';
@@ -28,8 +25,5 @@
 
 // list must come late because some CSS rules rely on being higher order then others
 @import '../../org.opencms.apollo.template/scss/apollo-list.scss';
-
-// general generic styles (just before generics)
-@import 'general';
 
 @import '../../org.opencms.apollo.template/scss/apollo-generics.scss';
