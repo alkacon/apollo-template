@@ -1,9 +1,9 @@
 $('.dropdown').click(function() {
-	if ($(this).hasClass('active')) {
-		$(this).removeClass('active');
+	if ($(this).hasClass('ap-open')) {
+		$(this).removeClass('ap-open');
 	} else {
-		$('.dropdown.active').removeClass('active');
-		$(this).addClass('active');
+		$('.dropdown.ap-open').removeClass('ap-open');
+		$(this).addClass('ap-open');
 		$('html, body').animate({
 			scrollTop : $(this).offset().top - 100
 		}, 1000);

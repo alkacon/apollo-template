@@ -28,7 +28,7 @@
 
 <c:if test="${wrapContainer}">
     <div id="megamenu-editor">
-		<div class="container">
+    <div class="container">
             <div class="ap-panel  panel panel-default">
                 <div class="panel-heading">
                     <h2 class="panel-title">
@@ -36,23 +36,23 @@
                     </h2>
                 </div>
             </div>
-			<div class="header">
-				<div class="mega-menu">
-					<ul class="nav navbar-nav">
-					 <li class="dropdown">
-						<div class="dropdown-menu dropdown-megamenu">
+      <div class="ap-header">
+        <div class="mega-menu">
+          <ul class="nav navbar-nav">
+           <li class="dropdown">
+            <div class="dropdown-menu dropdown-megamenu">
 </c:if>
 
 <c:if test="${(empty skipTemplatePart || not skipTemplatePart)}">
-	<jsp:doBody/>
+  <jsp:doBody/>
 </c:if>
 
 <c:if test="${wrapContainer}">
-						</div>
-					 </li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+            </div>
+           </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </c:if>
