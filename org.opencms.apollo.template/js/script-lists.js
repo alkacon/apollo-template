@@ -83,6 +83,7 @@ function buildAjaxLink(elem){
         + "&sitepath=" + elem.data("sitepath")
         + "&subsite=" + elem.data("subsite")
         + "&__locale=" + elem.data("locale");
+    	+ "&__loc=" + elem.data("locale");
 
     var facets = $("#listoption_box-" + elem.data("id"));
     if(facets.length != 0){
