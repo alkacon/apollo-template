@@ -37,62 +37,64 @@
     description="Result Map[String,String] filled with the display formatter default settings,
     merged with the parameters from the list configuration." %>
 
-<%!
-// read the formatter bean for the given UUID
-public I_CmsFormatterBean getFormatterBean(CmsUUID structureId, boolean isOnline) {
-    return OpenCms
-	    .getADEManager()
-        .getCachedFormatters(isOnline)
-        .getFormatters()
-        .get(structureId);
-}
+<c:if test="${not cms.element.inMemoryOnly}">
+    <%!
+    // read the formatter bean for the given UUID
+    public I_CmsFormatterBean getFormatterBean(CmsUUID structureId, boolean isOnline) {
+        return OpenCms
+            .getADEManager()
+            .getCachedFormatters(isOnline)
+            .getFormatters()
+            .get(structureId);
+    }
 
-// merge the default display formatter settings with the parameters
-@SuppressWarnings("unchecked")
-public Map<String, String> getFormatterSettings(
-        String types,
-        Object parameters,
-        boolean isOnline) {
-    Map<String, String> result = null;
-    // get the UUID from the types String
-    int p = types.indexOf(':');
-    String t = types;
-    // also support direct UUID without typename: prefix for testing
-    if (p > 0) {
-        t = types.substring(p+1);
-    }
-    CmsUUID uid = new CmsUUID(t);
-    // read the formatter configuration
-    I_CmsFormatterBean fb = getFormatterBean(uid, isOnline);
-    if (fb != null) {
-        // iterate all default settings values from the formatter
-        result = new HashMap<String, String>();
-        for (Map.Entry<String,CmsXmlContentProperty> prop:fb.getSettings().entrySet()) {
-            result.put(
-                prop.getKey(), 
-                prop.getValue().getDefault());
+    // merge the default display formatter settings with the parameters
+    @SuppressWarnings("unchecked")
+    public Map<String, String> getFormatterSettings(
+            String types,
+            Object parameters,
+            boolean isOnline) {
+        Map<String, String> result = null;
+        // get the UUID from the types String
+        int p = types.indexOf(':');
+        String t = types;
+        // also support direct UUID without typename: prefix for testing
+        if (p > 0) {
+            t = types.substring(p+1);
         }
-    }
-    if (parameters != null) {
-        List<CmsJspContentAccessValueWrapper> list = (List<CmsJspContentAccessValueWrapper>)parameters;
-        // merge the parameters from the list configuration over the default settings
-        for (CmsJspContentAccessValueWrapper para: list) {
-            result.put(
-                para.getValue().get("Key").getStringValue(), 
-                para.getValue().get("Value").getStringValue());
+        CmsUUID uid = new CmsUUID(t);
+        // read the formatter configuration
+        I_CmsFormatterBean fb = getFormatterBean(uid, isOnline);
+        if (fb != null) {
+            // iterate all default settings values from the formatter
+            result = new HashMap<String, String>();
+            for (Map.Entry<String,CmsXmlContentProperty> prop:fb.getSettings().entrySet()) {
+                result.put(
+                    prop.getKey(), 
+                    prop.getValue().getDefault());
+            }
         }
+        if (parameters != null) {
+            List<CmsJspContentAccessValueWrapper> list = (List<CmsJspContentAccessValueWrapper>)parameters;
+            // merge the parameters from the list configuration over the default settings
+            for (CmsJspContentAccessValueWrapper para: list) {
+                result.put(
+                    para.getValue().get("Key").getStringValue(), 
+                    para.getValue().get("Value").getStringValue());
+            }
+        }
+        return result;
     }
-    return result;
-}
-%><%
-    getJspContext().setAttribute("formatterSettings",
-        getFormatterSettings(
-            // the display formatter type 
-            (String)getJspContext().getAttribute("type"),
-            // the parameters from the list configuration
-            getJspContext().getAttribute("parameters"),
-            // indicates if we are in the Online project (true) or not (false)
-            ((Boolean)getJspContext().getAttribute("online")).booleanValue()
-        ) 
-    );
-%>
+    %><%
+        getJspContext().setAttribute("formatterSettings",
+            getFormatterSettings(
+                // the display formatter type 
+                (String)getJspContext().getAttribute("type"),
+                // the parameters from the list configuration
+                getJspContext().getAttribute("parameters"),
+                // indicates if we are in the Online project (true) or not (false)
+                ((Boolean)getJspContext().getAttribute("online")).booleanValue()
+            ) 
+        );
+    %>
+</c:if>
