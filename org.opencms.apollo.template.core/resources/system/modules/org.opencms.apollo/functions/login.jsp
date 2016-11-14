@@ -46,11 +46,11 @@
 			<h2><fmt:message key="apollo.login.title.loggedoff" /></h2>
 			<p><fmt:message key="apollo.login.message.loggedoff" /></p>
 		</div>
-		<div class="input-group margin-bottom-20">
+		<div class="input-group mb-20">
 			<span class="input-group-addon"><i class="icon-user"></i></span>
 			<input class="form-control" type="text" name="name" placeholder="<fmt:message key="apollo.login.label.username" />"/>
 		</div>
-		<div class="input-group margin-bottom-20">
+		<div class="input-group mb-20">
 			<span class="input-group-addon"><i class="icon-lock"></i></span>
 			<input class="form-control" type="password" name="password" placeholder="<fmt:message key="apollo.login.label.password" />">
 		</div>
@@ -64,7 +64,7 @@
 			<h2><fmt:message key="apollo.login.title.loggedin" /></h2>
 			<p><fmt:message key="apollo.login.message.loggedin" /></p>
 		</div>
-		<div class="input-group margin-bottom-20">
+		<div class="input-group mb-20">
 			<span class="input-group-addon"><i class="icon-user"></i></span>
 			<input class="form-control" type="text" name="name" placeholder="${cms.requestContext.currentUser.name}"/>
 		</div>

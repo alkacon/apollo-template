@@ -25,7 +25,7 @@
 
 
 <%-- ####### Render paragraph ######## --%>
-<div class="paragraph margin-bottom-20">
+<div class="paragraph mb-20">
 
     <c:if test="${headline == 'top' or empty headline}">
         <%-- ####### Show headline on top ######## --%>
