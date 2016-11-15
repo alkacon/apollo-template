@@ -3,7 +3,7 @@
 <AlkaconContainerPages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.containerpage/schemas/container_page.xsd">
   <AlkaconContainerPage language="en">
     <Containers>
-      <Name><![CDATA[base_container]]></Name>
+      <Name><![CDATA[page-complete]]></Name>
       <Type><![CDATA[base_container]]></Type>
       <Elements>
         <Uri>
@@ -19,21 +19,15 @@
           </link>
         </Formatter>
         <Properties>
-          <Name><![CDATA[detail]]></Name>
+          <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[none]]></String>
+            <String><![CDATA[26cbcc48-ed43-11e5-a02c-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[model_group_title]]></Name>
+          <Name><![CDATA[model_group_state]]></Name>
           <Value>
-            <String><![CDATA[Mainsection grid 3-9 with left navigation]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#page-complete]]></Name>
-          <Value>
-            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
+            <String><![CDATA[isModelGroup]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -43,27 +37,33 @@
           </Value>
         </Properties>
         <Properties>
+          <Name><![CDATA[model_group_title]]></Name>
+          <Value>
+            <String><![CDATA[Mainsection grid 3-9 with left navigation]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[detail]]></Name>
+          <Value>
+            <String><![CDATA[none]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#page-complete]]></Name>
+          <Value>
+            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
           <Name><![CDATA[model_group_id]]></Name>
           <Value>
             <String><![CDATA[6fb25d7e-ed43-11e5-a02c-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[element_instance_id]]></Name>
-          <Value>
-            <String><![CDATA[26cbcc48-ed43-11e5-a02c-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[model_group_description]]></Name>
           <Value>
             <String><![CDATA[For creating page layouts]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[model_group_state]]></Name>
-          <Value>
-            <String><![CDATA[isModelGroup]]></String>
           </Value>
         </Properties>
       </Elements>
@@ -86,6 +86,18 @@
           </link>
         </Formatter>
         <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[bc48c577-ef61-11e5-9d65-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[model_group_state]]></Name>
+          <Value>
+            <String><![CDATA[noGroup]]></String>
+          </Value>
+        </Properties>
+        <Properties>
           <Name><![CDATA[detail]]></Name>
           <Value>
             <String><![CDATA[none]]></String>
@@ -101,18 +113,6 @@
           <Name><![CDATA[formatterSettings#bc48c576-ef61-11e5-9d65-0242ac11002b-g1]]></Name>
           <Value>
             <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[element_instance_id]]></Name>
-          <Value>
-            <String><![CDATA[bc48c577-ef61-11e5-9d65-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[model_group_state]]></Name>
-          <Value>
-            <String><![CDATA[noGroup]]></String>
           </Value>
         </Properties>
       </Elements>
@@ -135,9 +135,15 @@
           </link>
         </Formatter>
         <Properties>
-          <Name><![CDATA[detail]]></Name>
+          <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[none]]></String>
+            <String><![CDATA[bc48c576-ef61-11e5-9d65-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[model_group_state]]></Name>
+          <Value>
+            <String><![CDATA[noGroup]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -159,15 +165,9 @@
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[element_instance_id]]></Name>
+          <Name><![CDATA[detail]]></Name>
           <Value>
-            <String><![CDATA[bc48c576-ef61-11e5-9d65-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[model_group_state]]></Name>
-          <Value>
-            <String><![CDATA[noGroup]]></String>
+            <String><![CDATA[none]]></String>
           </Value>
         </Properties>
       </Elements>
@@ -221,15 +221,15 @@
           </link>
         </Formatter>
         <Properties>
-          <Name><![CDATA[formatterSettings#bc48c577-ef61-11e5-9d65-0242ac11002b-g1]]></Name>
-          <Value>
-            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
             <String><![CDATA[bc48c578-ef61-11e5-9d65-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#bc48c577-ef61-11e5-9d65-0242ac11002b-g1]]></Name>
+          <Value>
+            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
           </Value>
         </Properties>
       </Elements>
@@ -252,24 +252,6 @@
           </link>
         </Formatter>
         <Properties>
-          <Name><![CDATA[detail]]></Name>
-          <Value>
-            <String><![CDATA[none]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#bc48c577-ef61-11e5-9d65-0242ac11002b-g2]]></Name>
-          <Value>
-            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[use_as_copy_model]]></Name>
-          <Value>
-            <String><![CDATA[false]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
             <String><![CDATA[bc48c57a-ef61-11e5-9d65-0242ac11002b]]></String>
@@ -279,6 +261,24 @@
           <Name><![CDATA[model_group_state]]></Name>
           <Value>
             <String><![CDATA[noGroup]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[detail]]></Name>
+          <Value>
+            <String><![CDATA[none]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[use_as_copy_model]]></Name>
+          <Value>
+            <String><![CDATA[false]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#bc48c577-ef61-11e5-9d65-0242ac11002b-g2]]></Name>
+          <Value>
+            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
           </Value>
         </Properties>
       </Elements>

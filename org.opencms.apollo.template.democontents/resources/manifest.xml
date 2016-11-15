@@ -801,6 +801,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[Mainsection grid 3-9 with left navigation]]></value>
 				</property>
 				<property>
+					<name>modelgroup.base</name>
+					<value><![CDATA[2db2879c-562d-11e5-bfd9-0242ac11002b]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[true]]></value>
 				</property>
@@ -9109,7 +9113,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Full Demo Footer]]></value>
+					<value><![CDATA[Apollo Demo Footer: Full Demo Footer]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9779,8 +9783,8 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/modelgroup/modelgroup-00001.xml</source>
-			<destination>apollo-demo/.content/modelgroup/modelgroup-00001.xml</destination>
+			<source>apollo-demo/.content/modelgroup/modelgroup-00001.html</source>
+			<destination>apollo-demo/.content/modelgroup/modelgroup-00001.html</destination>
 			<type>modelgroup</type>
 			<uuidstructure>5ff5275f-5637-11e5-bfd9-0242ac11002b</uuidstructure>
 			<uuidresource>5ff52760-5637-11e5-bfd9-0242ac11002b</uuidresource>
@@ -9804,6 +9808,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[Apollo Demo Footer]]></value>
 				</property>
 				<property>
+					<name>modelgroup.base</name>
+					<value><![CDATA[13f27815-562e-11e5-bfd9-0242ac11002b]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[true]]></value>
 				</property>
@@ -9812,8 +9820,8 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/modelgroup/modelgroup-00002.xml</source>
-			<destination>apollo-demo/.content/modelgroup/modelgroup-00002.xml</destination>
+			<source>apollo-demo/.content/modelgroup/modelgroup-00002.html</source>
+			<destination>apollo-demo/.content/modelgroup/modelgroup-00002.html</destination>
 			<type>modelgroup</type>
 			<uuidstructure>b146c2e4-5638-11e5-bfd9-0242ac11002b</uuidstructure>
 			<uuidresource>b146c2e5-5638-11e5-bfd9-0242ac11002b</uuidresource>
@@ -9837,6 +9845,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[Apollo Demo Header]]></value>
 				</property>
 				<property>
+					<name>modelgroup.base</name>
+					<value><![CDATA[78b6a0d1-5638-11e5-bfd9-0242ac11002b]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[true]]></value>
 				</property>
@@ -9845,8 +9857,8 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/modelgroup/modelgroup-00007.xml</source>
-			<destination>apollo-demo/.content/modelgroup/modelgroup-00007.xml</destination>
+			<source>apollo-demo/.content/modelgroup/modelgroup-00007.html</source>
+			<destination>apollo-demo/.content/modelgroup/modelgroup-00007.html</destination>
 			<type>modelgroup</type>
 			<uuidstructure>97d43a67-604b-11e5-9199-0242ac11002b</uuidstructure>
 			<uuidresource>97d43a68-604b-11e5-9199-0242ac11002b</uuidresource>
@@ -9870,6 +9882,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[Apollo Release Notes Footer]]></value>
 				</property>
 				<property>
+					<name>modelgroup.base</name>
+					<value><![CDATA[13f27815-562e-11e5-bfd9-0242ac11002b]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[true]]></value>
 				</property>
@@ -9878,8 +9894,8 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/modelgroup/modelgroup-00008.xml</source>
-			<destination>apollo-demo/.content/modelgroup/modelgroup-00008.xml</destination>
+			<source>apollo-demo/.content/modelgroup/modelgroup-00008.html</source>
+			<destination>apollo-demo/.content/modelgroup/modelgroup-00008.html</destination>
 			<type>modelgroup</type>
 			<uuidstructure>91809980-605c-11e5-9199-0242ac11002b</uuidstructure>
 			<uuidresource>91809981-605c-11e5-9199-0242ac11002b</uuidresource>
@@ -9901,6 +9917,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property type="shared">
 					<name>Title</name>
 					<value><![CDATA[Apollo Release Notes Header]]></value>
+				</property>
+				<property>
+					<name>modelgroup.base</name>
+					<value><![CDATA[78b6a0d1-5638-11e5-bfd9-0242ac11002b]]></value>
 				</property>
 				<property>
 					<name>search.exclude</name>
