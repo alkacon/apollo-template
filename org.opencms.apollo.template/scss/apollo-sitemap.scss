@@ -1,0 +1,77 @@
+/* apollo-sitemap.scss */
+
+/* Sitemap.
+----------------------------------------------------------------------------- */
+
+.sitemap{
+    ul, li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding: 5px;
+        background: transparent;
+    }
+    ul>ul{
+        li {
+            background: $main-theme;
+            padding: 10px;
+            color: $text-light;
+            font-weight: bold;
+            font-size: 1em; 
+            line-height: 1;
+            &.parent{
+                cursor: pointer;    
+            }
+            a{          
+                color: $text-light;
+                width: 100%;
+                display: block;
+                height: 100%;
+            }
+            span{
+                float: left;
+            }
+            i{
+                transform: rotate(-90deg);
+                transition: transform 1s;
+                float: right;   
+                &.open{
+                    transform: rotate(0);
+                    transition: transform 1s;
+                }
+            }
+        }
+        &>ul li {
+            padding: 5px 10px;
+            margin: 0;
+            background: $main-theme-additional;
+            color: $text-dark;
+            font-weight: normal;
+            &:hover{
+                background: $main-theme;
+                color: $text-light;
+                a{
+                    color: $text-light;         
+                    text-decoration: none;  
+                }
+            }
+            a{          
+                color: $text-dark;  
+            }           
+        }   
+    }
+}
+
+@each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+
+    .sitemap-#{""+$type-name}{
+        ul>ul{
+            li {
+                background: $bg-color; 
+            }
+            &>ul li {
+                background: lighten($bg-color, 50%);      
+            }   
+        }
+    }    
+}

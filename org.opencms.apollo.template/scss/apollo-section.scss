@@ -181,3 +181,10 @@ a.ap-img-link {
     position: relative;
     z-index: 10;
 }
+
+/* Jumbotron headline.
+----------------------------------------------------------------------------- */
+
+.jumbotron h1, .jumbotron .h1 {
+  line-height: 1.0;
+}

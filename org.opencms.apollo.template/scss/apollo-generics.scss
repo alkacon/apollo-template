@@ -110,7 +110,7 @@ a.no-underline {
   border-bottom: $headline-bottom;
 }
 
-.headline h2, border
+.headline h2,
 .headline h3, 
 .headline h4 {
   display: inline-block;
@@ -219,9 +219,9 @@ a.no-underline {
         padding-left: #{$space}px;
         padding-right: #{$space}px;
     }
-	.pl-#{$space} {
-	    padding-left: #{$space}px;
-	}
+		.pl-#{$space} {
+		    padding-left: #{$space}px;
+		}
     .pr-#{$space} {
         padding-right: #{$space}px;
     }
@@ -248,19 +248,18 @@ a.no-underline {
     .mr-#{$space} {
         margin-right: #{$space}px;
     }       
-	.mt-#{$space} {
-	    margin-top: #{$space}px;
-	}    	
+		.mt-#{$space} {
+		    margin-top: #{$space}px;
+		}    	
     .mb-#{$space} {
         margin-bottom: #{$space}px;
     }
 }
 
-// overwrite some of the unify CSS settings we don't catch otherwise
-p, 
-li,
-li a,
-label { 
-   color: $text-dark;
+.clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
 }
-

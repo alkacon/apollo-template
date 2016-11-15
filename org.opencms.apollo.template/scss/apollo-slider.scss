@@ -1,0 +1,176 @@
+/* apollo-slider.scss */
+
+/* Slider (Play/Pause Button, caption, copyright).
+----------------------------------------------------------------------------- */
+
+.slider{
+	.control{
+	 margin: -40px 20px;
+	 position: relative;
+	 z-index:999;
+	 opacity: 0;
+	 transition: opacity 1s;
+	}
+  &:hover>.control{    
+   opacity: 1;
+   transition: opacity 1s;
+  }
+  .caption{
+	  opacity: 0.7;
+	  padding: 2px 10px 8px 10px !important;   
+	  h2,  h3 {
+	   margin: 0;
+	   padding: 6px 0 0 0;
+	   line-height: 1.1;
+	  }   
+	  h2 {
+	      font-size: 20px;
+	      font-weight: 400;
+	  }
+	  h3 {
+	   font-size: 15px;
+	   font-weight: 400;
+	  }
+	  &.copyright {
+	   color: $white;
+	   font-size: 10px !important;
+	   font-style: italic;
+	  }
+  }
+}
+
+.slider.revslider-initialised.tp-simpleresponsive {
+  position: relative;
+}
+
+.caption{
+  font-family: "Open Sans", sans-serif !important;
+}
+
+/* Slider additional styles.
+----------------------------------------------------------------------------- */
+
+.tp-caption.mediumthickblackbg, .tp-caption.mediumthickgreybg,  .tp-caption.mediumthickwhitebg {
+    font-size:36px;
+    line-height:36px;
+    font-weight:800;
+    font-family:"Open Sans";
+    text-decoration:none;
+    text-shadow:none;
+    border-width: 0px none $white;
+    padding: 0 4px;
+}
+
+.tp-caption.mediumthickblackbg {
+    color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+}
+
+.tp-caption.mediumthickgreybg {
+    color:rgb(255, 255, 255);
+    background-color:rgb(128, 128, 128);
+}
+
+.tp-caption.blackbgtransparent {
+    background-color:rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:7px;
+}
+
+.tp-caption.mediumthickwhitebg {
+    color:rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+}
+
+/* Carousel
+------------------------------------*/
+
+.ap-carousel .carousel-caption {
+    padding: 2px 10px 8px 10px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.ap-carousel {
+  .carousel-caption p {
+    font-size: 15px;
+  }
+  .carousel-copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding: 1px 10px;
+    z-Index: 2;
+    font-size: 10px;
+    font-style: italic;
+    text-align: center;
+    line-height: 11px;
+    opacity: 0.7;
+    filter: alpha(opacity = 70);
+    span {
+      opacity: 0.6;
+      filter: alpha(opacity = 60);
+    }
+  }
+  .carousel-caption {
+    &.carousel-caption-copyright {
+      bottom: 13px;
+    }
+    padding: 2px 10px 8px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    p {
+      color: #fff;
+      margin-bottom: 0;
+    }
+  }
+  .carousel-arrow a {
+    &.carousel-control {
+      opacity: 1;
+      font-size: 30px;
+      height: inherit;
+      width: inherit;
+      background: none;
+      text-shadow: none;
+      position: inherit;
+      &:hover {
+			  color: $main-theme;
+			}
+    }
+    i {
+      top: 50%;
+      opacity: 0.6;
+      background: #000;
+      margin-top: -18px;
+      padding: 2px 12px;
+      position: absolute;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    &.left i {
+      left: 0;
+    }
+    &.right i {
+      right: 0;
+    }
+  }
+}
+
+.carousel-caption h3, .ap-carousel .carousel-caption p {
+    color: $white;
+    line-height: 1.1;
+    margin: 0;
+    padding: 6px 0 0 0;
+}
+
+.carousel-caption h3 {
+    font-size: 20px;
+    color: $white;
+    line-height: 1.1;
+}

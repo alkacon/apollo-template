@@ -1,0 +1,30 @@
+/* apollo-layoutrow.scss */
+
+
+/*Badges and Labels
+------------------------------------*/
+.badge {
+  border-radius: 0;
+}
+
+/*Labels*/
+span.label {
+  font-size: 11px;
+  font-weight: 400;
+  padding: 4px 7px;
+}
+
+/*Badges*/
+span.badge {
+  color: #fff;
+  font-weight: 400;
+  padding: 4px 7px;  
+}
+
+span.badge-dark-blue {
+  background: #4765a0;
+}
+
+.rounded { 
+	border-radius: 4px !important; 
+}

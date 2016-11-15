@@ -16,15 +16,21 @@ $nav-sub-color-hover: $nav-text !default;
 $nav-sub-bg-active: $nav-bg !default;
 $nav-sub-color-active: $nav-text !default;
 
+$search-icon: #aaa;
+$search-bg: #fcfcfc;
+$search-shadow: #ddd;
+
+$languages: #f0f0f0;
+
 /* Headers Default
 ------------------------------------*/
 
 .ap-header {
 
   z-index: 99;
-  background: #fff;
+  background: $white;
   position: relative;
-  border-bottom: solid 2px #eee;
+  border-bottom: solid 2px $nav-bg;
   
   > .container {
     display: table;
@@ -38,7 +44,7 @@ $nav-sub-color-active: $nav-text !default;
     }
   
     > li > .search {
-      color: #aaa;
+      color: $search-icon;
       cursor: pointer;
       min-width: 35px;
       font-size: 15px;
@@ -54,9 +60,9 @@ $nav-sub-color-active: $nav-text !default;
       display: none;
       padding: 14px; 
       position: absolute;
-      background: #fcfcfc; 
-      border-top: solid 2px #eee;
-      box-shadow: 0 1px 3px #ddd; 
+      background: $search-bg; 
+      border-top: solid 2px $nav-bg;
+      box-shadow: 0 1px 3px $search-shadow; 
     
       form {
         margin: 0;  
@@ -74,11 +80,10 @@ $nav-sub-color-active: $nav-text !default;
       > li > {
         .search:hover {
           background:  $main-theme;
-          color: #fff !important;
+          color: $white !important;
         }
       
         .search {
-          color: #999;
           width: 35px;
           height: 34px;
           line-height: 12px;
@@ -155,18 +160,18 @@ $nav-sub-color-active: $nav-text !default;
   
     .mega-menu-fullwidth ul.dropdown-menu,
     .dropdown-menu li a {
-        background-color: $nav-sub-bg;
-        color: $nav-sub-color;
+      background-color: $nav-sub-bg;
+      color: $nav-sub-color;
     }
     
     .dropdown-menu li a:hover {
-        background-color: $nav-sub-bg-hover !important;
-        color: $nav-sub-color-hover;
+	    background-color: $nav-sub-bg-hover !important;
+	    color: $nav-sub-color-hover;
     }
     
     .dropdown-menu li.active > a {
-        background-color: $nav-sub-bg-active !important;
-        color: $nav-sub-color-active;
+      background-color: $nav-sub-bg-active !important;
+      color: $nav-sub-color-active;
     }
 
     @media (min-width: 768px){
@@ -183,9 +188,9 @@ $nav-sub-color-active: $nav-text !default;
         float: none;
         
         > a {
-          font-size: 14px;
-          padding: 9px 10px;
-          border-bottom: solid 1px #eee;
+	        font-size: 14px;
+	        padding: 9px 10px;
+	        border-bottom: solid 1px #eee;
         }
         
         a {
@@ -207,7 +212,7 @@ $nav-sub-color-active: $nav-text !default;
       
       .ap-open .dropdown-menu {
         .dropdown-header, >li>a {
-            padding: 5px 15px 5px 25px;
+          padding: 5px 15px 5px 25px;
         }
       }
       
@@ -372,6 +377,10 @@ $nav-sub-color-active: $nav-text !default;
   
   /*Navbar Menu*/
   
+  .dropdown-menu, .navbar-toggle {
+    border-radius: 0;
+  }
+  
   @media (min-width: 992px) {
     .dropdown-menu {
       border: none;
@@ -470,6 +479,7 @@ $nav-sub-color-active: $nav-text !default;
     border-bottom-color: $nav-main-color;
     border-top: solid 2px $nav-main-color-active;
     border-top-color: $nav-main-color-active;
+    padding: 0;
   }
   
   /* Header logo.
@@ -547,7 +557,7 @@ $nav-sub-color-active: $nav-text !default;
       list-style: none;
       min-width: 100px;
       position: absolute;
-      background: #f0f0f0;
+      background: $languages;
       
       li:hover & {
         display: block;
@@ -561,7 +571,7 @@ $nav-sub-color-active: $nav-text !default;
         content: " "; 
         display: block; 
         position: absolute;
-        border-bottom: 6px solid #f0f0f0; 
+        border-bottom: 6px solid $languages; 
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
         border-left-style: inset; /*FF fixes*/
@@ -610,14 +620,60 @@ $nav-sub-color-active: $nav-text !default;
   
 }
 
+.nav-tabs > li > a {
+  border-radius: 0;
+}
+
 
 /* Breadcrumb
 ------------------------------------*/
-.breadcrumb li.active,
-.breadcrumb li a:hover {
-    color:$main-theme;
+
+.breadcrumbs {
+  overflow: hidden;
+  padding: 10px 0 6px;
+  border-bottom: solid 1px #eee;
+  background: url(../img/patterns/breadcrumbs.png) repeat;
 }
 
+.breadcrumbs h1 {
+  color: #666;
+  font-size: 22px;
+  margin-top: 8px;
+}
+
+.breadcrumb { 
+  top: 10px;
+  padding-right: 0;
+  background: none;
+  position: relative;
+}
+
+.breadcrumb a {
+  color: #777;
+}
+
+.breadcrumb li.active,
+.breadcrumb li a:hover {
+  color:$main-theme;
+  text-decoration: none;
+}
+
+@media (max-width: 550px) {
+  .breadcrumbs h1.pull-left,
+  .breadcrumbs ul.pull-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .breadcrumbs h1.pull-left {
+    margin-bottom: 0;
+  }
+
+  .breadcrumbs .breadcrumb {
+    top: 0;
+    margin-bottom: 10px;
+  }
+}
 
 /* Megamenu
 ------------------------------------*/
