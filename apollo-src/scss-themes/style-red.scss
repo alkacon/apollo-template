@@ -1,0 +1,14 @@
+/*
+ * Alkacon Apollo CSS - RED theme
+ */
+
+// import the Apollo variables (default colors etc.)
+@import '../scss/apollo-variables.scss';
+
+// Main theme colors
+$main-theme: $red;
+$main-theme-hover: $red-light;
+$main-theme-additional: $red-lighter;
+
+// Import the other files
+@import 'imports';

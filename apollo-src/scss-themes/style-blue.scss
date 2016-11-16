@@ -1,0 +1,14 @@
+/*
+ * Alkacon Apollo CSS - BLUE theme
+ */
+ 
+// import the Apollo variables (default colors etc.)
+@import '../scss/apollo-variables.scss';
+
+// Main theme colors
+$main-theme: $blue;
+$main-theme-hover: $blue-light;
+$main-theme-additional: $blue-lighter;
+
+// Import the other files
+@import 'imports';
