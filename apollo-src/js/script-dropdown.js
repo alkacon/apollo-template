@@ -4,8 +4,10 @@ $('.dropdown').click(function() {
 	} else {
 		$('.dropdown.ap-open').removeClass('ap-open');
 		$(this).addClass('ap-open');
-		$('html, body').animate({
-			scrollTop : $(this).offset().top - 100
-		}, 1000);
+		if(window.innerWidth < 992){
+			$('html, body').animate({
+				scrollTop : $(this).offset().top - 100
+			}, 1000);
+		}
 	}
 });
