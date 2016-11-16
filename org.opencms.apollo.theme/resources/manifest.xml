@@ -6,13 +6,13 @@
 		<export_version>10</export_version>
 	</info>
 	<module>
-		<name>org.opencms.apollo.template.theme.unify</name>
-		<nicename><![CDATA[Apollo Template Theme Unify]]></nicename>
+		<name>org.opencms.apollo.theme</name>
+		<nicename><![CDATA[Apollo Template Default Theme]]></nicename>
 		<group>Apollo Template</group>
 		<class/>
 		<import-site>/</import-site>
 		<export-mode name="reduced"/>
-		<description><![CDATA[Contains the necessary components used by the Unify theme.]]></description>
+		<description><![CDATA[Contains the default Apollo CSS, JavaScript and resources.]]></description>
 		<version>10.5.0</version>
 		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
 		<authoremail/>
@@ -25,7 +25,7 @@
 		</dependencies>
 		<exportpoints/>
 		<resources>
-			<resource uri="/system/modules/org.opencms.apollo.template.theme.unify/"/>
+			<resource uri="/system/modules/org.opencms.apollo.theme/"/>
 		</resources>
 		<excluderesources/>
 		<parameters/>
@@ -42,7 +42,7 @@
 			<properties/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify</destination>
+			<destination>system/modules/org.opencms.apollo.theme</destination>
 			<type>folder</type>
 			<uuidstructure>96f41b8b-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<datecreated>Wed, 02 Sep 2015 08:35:39 GMT</datecreated>
@@ -52,7 +52,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources</destination>
 			<type>folder</type>
 			<uuidstructure>9700c5bd-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<datecreated>Wed, 02 Sep 2015 08:35:39 GMT</datecreated>
@@ -67,7 +67,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css</destination>
 			<type>folder</type>
 			<uuidstructure>cf505ca3-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<datecreated>Wed, 02 Sep 2015 08:37:13 GMT</datecreated>
@@ -77,8 +77,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/default-skin.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/default-skin.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/default-skin.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/default-skin.png</destination>
 			<type>image</type>
 			<uuidstructure>5edbbd18-ed4a-11e5-a02c-0242ac11002b</uuidstructure>
 			<uuidresource>5edbbd19-ed4a-11e5-a02c-0242ac11002b</uuidresource>
@@ -94,8 +94,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/default-skin.svg</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/default-skin.svg</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/default-skin.svg</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/default-skin.svg</destination>
 			<type>plain</type>
 			<uuidstructure>9e8d6ef3-ed4a-11e5-a02c-0242ac11002b</uuidstructure>
 			<uuidresource>9e8d6ef4-ed4a-11e5-a02c-0242ac11002b</uuidresource>
@@ -106,8 +106,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/preloader.gif</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/preloader.gif</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/preloader.gif</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/preloader.gif</destination>
 			<type>image</type>
 			<uuidstructure>47156b15-8f80-11e5-a6ad-0242ac11002b</uuidstructure>
 			<uuidresource>47156b16-8f80-11e5-a6ad-0242ac11002b</uuidresource>
@@ -123,8 +123,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/style-blue.min.css</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/style-blue.min.css</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/style-blue.min.css</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/style-blue.min.css</destination>
 			<type>plain</type>
 			<uuidstructure>a1ca069f-ed26-11e5-a0c5-0242ac11002b</uuidstructure>
 			<uuidresource>a1ca06a0-ed26-11e5-a0c5-0242ac11002b</uuidresource>
@@ -135,8 +135,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/style-blue.min.css.map</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/style-blue.min.css.map</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/style-blue.min.css.map</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/style-blue.min.css.map</destination>
 			<type>plain</type>
 			<uuidstructure>aa27afdc-0c85-11e6-b01b-0242ac11002b</uuidstructure>
 			<uuidresource>aa27afdd-0c85-11e6-b01b-0242ac11002b</uuidresource>
@@ -147,8 +147,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/style-editor.css</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/style-editor.css</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/style-editor.css</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/style-editor.css</destination>
 			<type>plain</type>
 			<uuidstructure>f946a7c8-5157-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>f946a7c9-5157-11e5-abeb-0242ac11002b</uuidresource>
@@ -159,8 +159,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/style-red.min.css</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/style-red.min.css</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/style-red.min.css</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/style-red.min.css</destination>
 			<type>plain</type>
 			<uuidstructure>a1be94eb-ed26-11e5-a0c5-0242ac11002b</uuidstructure>
 			<uuidresource>a1be94ec-ed26-11e5-a0c5-0242ac11002b</uuidresource>
@@ -171,8 +171,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/style-red.min.css.map</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/style-red.min.css.map</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/style-red.min.css.map</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/style-red.min.css.map</destination>
 			<type>plain</type>
 			<uuidstructure>aa38c6de-0c85-11e6-b01b-0242ac11002b</uuidstructure>
 			<uuidresource>aa38c6df-0c85-11e6-b01b-0242ac11002b</uuidresource>
@@ -183,7 +183,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/fonts</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/fonts</destination>
 			<type>folder</type>
 			<uuidstructure>d536d455-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
@@ -193,8 +193,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/fonts/Simple-Line-Icons.dev.svg</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/fonts/Simple-Line-Icons.dev.svg</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.dev.svg</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.dev.svg</destination>
 			<type>plain</type>
 			<uuidstructure>d53b6837-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>d53b6838-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -205,8 +205,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/fonts/Simple-Line-Icons.eot</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/fonts/Simple-Line-Icons.eot</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.eot</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.eot</destination>
 			<type>plain</type>
 			<uuidstructure>d547eb59-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>d547eb5a-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -217,8 +217,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/fonts/Simple-Line-Icons.svg</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/fonts/Simple-Line-Icons.svg</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.svg</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.svg</destination>
 			<type>plain</type>
 			<uuidstructure>d553ab2b-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>d553ab2c-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -229,8 +229,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/fonts/Simple-Line-Icons.ttf</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/fonts/Simple-Line-Icons.ttf</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.ttf</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.ttf</destination>
 			<type>plain</type>
 			<uuidstructure>d5613fbd-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>d5613fbe-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -241,8 +241,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/css/fonts/Simple-Line-Icons.woff</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/css/fonts/Simple-Line-Icons.woff</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.woff</destination>
 			<type>plain</type>
 			<uuidstructure>d56b9fff-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>d56ba000-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -253,7 +253,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts</destination>
 			<type>folder</type>
 			<uuidstructure>cd80a57b-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<datecreated>Wed, 02 Sep 2015 08:37:10 GMT</datecreated>
@@ -263,8 +263,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/fontawesome-webfont.eot</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/fontawesome-webfont.eot</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/fontawesome-webfont.eot</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/fontawesome-webfont.eot</destination>
 			<type>plain</type>
 			<uuidstructure>cd87f87d-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cd87f87e-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -275,8 +275,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/fontawesome-webfont.svg</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/fontawesome-webfont.svg</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/fontawesome-webfont.svg</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/fontawesome-webfont.svg</destination>
 			<type>plain</type>
 			<uuidstructure>cd927fcf-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cd927fd0-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -287,8 +287,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/fontawesome-webfont.ttf</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/fontawesome-webfont.ttf</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/fontawesome-webfont.ttf</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/fontawesome-webfont.ttf</destination>
 			<type>plain</type>
 			<uuidstructure>cd9d7c51-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cd9d7c52-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -299,8 +299,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/fontawesome-webfont.woff</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/fontawesome-webfont.woff</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/fontawesome-webfont.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/fontawesome-webfont.woff</destination>
 			<type>plain</type>
 			<uuidstructure>cda655f3-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cda655f4-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -311,8 +311,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/fontawesome-webfont.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/fontawesome-webfont.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/fontawesome-webfont.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/fontawesome-webfont.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>cdaeba65-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cdaeba66-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -323,8 +323,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/FontAwesome.otf</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/FontAwesome.otf</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/FontAwesome.otf</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/FontAwesome.otf</destination>
 			<type>plain</type>
 			<uuidstructure>cdb80937-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cdb80938-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -335,8 +335,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-cyrillic-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-cyrillic-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-cyrillic-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-cyrillic-ext.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>cdc2dea9-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cdc2deaa-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -347,8 +347,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-cyrillic.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-cyrillic.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-cyrillic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-cyrillic.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>cdcc2d7b-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cdcc2d7c-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -359,8 +359,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-greek-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-greek-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-greek-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-greek-ext.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>cdd57c4d-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cdd57c4e-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -371,8 +371,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-greek.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-greek.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-greek.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-greek.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>cdde55ef-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cdde55f0-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -383,8 +383,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-latin-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-latin-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-latin-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-latin-ext.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>cde61e21-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cde61e22-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -395,8 +395,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-latin.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-latin.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-latin.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-latin.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>cdeed0b3-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cdeed0b4-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -407,8 +407,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-vietnamese.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-300-vietnamese.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-vietnamese.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-vietnamese.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>cdf9a625-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>cdf9a626-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -419,8 +419,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-cyrillic-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-cyrillic-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-cyrillic-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-cyrillic-ext.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce067767-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce067768-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -431,8 +431,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-cyrillic.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-cyrillic.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-cyrillic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-cyrillic.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce10d7a9-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce10d7aa-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -443,8 +443,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-greek-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-greek-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-greek-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-greek-ext.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce1ee16b-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce1ee16c-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -455,8 +455,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-greek.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-greek.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-greek.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-greek.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce2f0e0d-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce2f0e0e-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -467,8 +467,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-latin-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-latin-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-latin-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-latin-ext.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce3a319f-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce3a31a0-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -479,8 +479,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-latin.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-latin.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-latin.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-latin.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce450711-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce450712-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -491,8 +491,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-vietnamese.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-400-vietnamese.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-vietnamese.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-vietnamese.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce4f8e63-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce4f8e64-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -503,8 +503,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-cyrillic-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-cyrillic-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-cyrillic-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-cyrillic-ext.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce59c795-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce59c796-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -515,8 +515,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-cyrillic.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-cyrillic.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-cyrillic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-cyrillic.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce66e6f7-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce66e6f8-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -527,8 +527,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-greek-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-greek-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-greek-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-greek-ext.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce747b89-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce747b8a-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -539,8 +539,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-greek.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-greek.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-greek.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-greek.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce8125bb-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce8125bc-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -551,8 +551,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-latin-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-latin-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-latin-ext.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-latin-ext.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce8ae9bd-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce8ae9be-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -563,8 +563,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-latin.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-latin.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-latin.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-latin.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce96345f-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce963460-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -575,8 +575,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-vietnamese.woff2</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/fonts/opensans-600-vietnamese.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-vietnamese.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-vietnamese.woff2</destination>
 			<type>plain</type>
 			<uuidstructure>ce9faa41-514d-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>ce9faa42-514d-11e5-abeb-0242ac11002b</uuidresource>
@@ -587,7 +587,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/img</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/img</destination>
 			<type>folder</type>
 			<uuidstructure>0bed04ea-5159-11e5-abeb-0242ac11002b</uuidstructure>
 			<datecreated>Wed, 02 Sep 2015 09:57:39 GMT</datecreated>
@@ -597,8 +597,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/img/favicon_120.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/img/favicon_120.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/img/favicon_120.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/img/favicon_120.png</destination>
 			<type>image</type>
 			<uuidstructure>0c514573-5159-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>0c514574-5159-11e5-abeb-0242ac11002b</uuidresource>
@@ -614,8 +614,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/img/favicon_16.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/img/favicon_16.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/img/favicon_16.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/img/favicon_16.png</destination>
 			<type>image</type>
 			<uuidstructure>0c536856-5159-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>0c536857-5159-11e5-abeb-0242ac11002b</uuidresource>
@@ -631,8 +631,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/img/favicon_32.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/img/favicon_32.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/img/favicon_32.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/img/favicon_32.png</destination>
 			<type>image</type>
 			<uuidstructure>0c556429-5159-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>0c55642a-5159-11e5-abeb-0242ac11002b</uuidresource>
@@ -648,7 +648,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/img/logo</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/img/logo</destination>
 			<type>folder</type>
 			<uuidstructure>0c3cd2f7-5159-11e5-abeb-0242ac11002b</uuidstructure>
 			<datecreated>Wed, 02 Sep 2015 09:57:40 GMT</datecreated>
@@ -658,8 +658,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/img/logo/logo_alkacon_png24.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/img/logo/logo_alkacon_png24.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/img/logo/logo_alkacon_png24.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/img/logo/logo_alkacon_png24.png</destination>
 			<type>image</type>
 			<uuidstructure>0c3e5999-5159-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>0c3e599a-5159-11e5-abeb-0242ac11002b</uuidresource>
@@ -675,8 +675,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/img/logo/logo_opencms_170x42.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/img/logo/logo_opencms_170x42.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/img/logo/logo_opencms_170x42.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/img/logo/logo_opencms_170x42.png</destination>
 			<type>image</type>
 			<uuidstructure>71ac2b99-be83-11e5-a9f8-0242ac11002b</uuidstructure>
 			<uuidresource>71ac2b9a-be83-11e5-a9f8-0242ac11002b</uuidresource>
@@ -692,8 +692,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/img/logo/logo_opencms_png24.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/img/logo/logo_opencms_png24.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/img/logo/logo_opencms_png24.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/img/logo/logo_opencms_png24.png</destination>
 			<type>image</type>
 			<uuidstructure>0c407c7c-5159-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>0c407c7d-5159-11e5-abeb-0242ac11002b</uuidresource>
@@ -709,7 +709,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/img/patterns</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/img/patterns</destination>
 			<type>folder</type>
 			<uuidstructure>e56a0647-9430-11e5-8382-0242ac11002b</uuidstructure>
 			<datecreated>Thu, 26 Nov 2015 11:29:03 GMT</datecreated>
@@ -719,8 +719,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/img/patterns/breadcrumbs.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/img/patterns/breadcrumbs.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/img/patterns/breadcrumbs.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/img/patterns/breadcrumbs.png</destination>
 			<type>image</type>
 			<uuidstructure>e6eed189-9430-11e5-8382-0242ac11002b</uuidstructure>
 			<uuidresource>e6eed18a-9430-11e5-8382-0242ac11002b</uuidresource>
@@ -736,7 +736,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/js</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/js</destination>
 			<type>folder</type>
 			<uuidstructure>04129411-5153-11e5-abeb-0242ac11002b</uuidstructure>
 			<datecreated>Wed, 02 Sep 2015 09:14:29 GMT</datecreated>
@@ -746,8 +746,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/js/scripts-all.min.js</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/js/scripts-all.min.js</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/js/scripts-all.min.js</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/js/scripts-all.min.js</destination>
 			<type>plain</type>
 			<uuidstructure>0fc90357-5155-11e5-abeb-0242ac11002b</uuidstructure>
 			<uuidresource>0fc90358-5155-11e5-abeb-0242ac11002b</uuidresource>
@@ -758,8 +758,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/js/scripts-all.min.js.map</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/js/scripts-all.min.js.map</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/js/scripts-all.min.js.map</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/js/scripts-all.min.js.map</destination>
 			<type>plain</type>
 			<uuidstructure>aa439c50-0c85-11e6-b01b-0242ac11002b</uuidstructure>
 			<uuidresource>aa439c51-0c85-11e6-b01b-0242ac11002b</uuidresource>
@@ -770,7 +770,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify</destination>
 			<type>folder</type>
 			<uuidstructure>4d9761ac-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 27 Oct 2015 16:53:52 GMT</datecreated>
@@ -780,7 +780,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins</destination>
 			<type>folder</type>
 			<uuidstructure>6509e252-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
@@ -790,7 +790,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider</destination>
 			<type>folder</type>
 			<uuidstructure>650fd5c4-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
@@ -800,7 +800,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin</destination>
 			<type>folder</type>
 			<uuidstructure>6513f476-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
@@ -810,7 +810,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets</destination>
 			<type>folder</type>
 			<uuidstructure>651c58e8-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
@@ -820,8 +820,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_large_right.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_large_right.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_large_right.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_large_right.png</destination>
 			<type>image</type>
 			<uuidstructure>6532ee2d-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>6532ee2e-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -837,8 +837,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left.png</destination>
 			<type>image</type>
 			<uuidstructure>65445350-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65445351-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -854,8 +854,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left2.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left2.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left2.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left2.png</destination>
 			<type>image</type>
 			<uuidstructure>654c90b3-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>654c90b4-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -871,8 +871,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right.png</destination>
 			<type>image</type>
 			<uuidstructure>6553bca6-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>6553bca7-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -888,8 +888,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right2.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right2.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right2.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right2.png</destination>
 			<type>image</type>
 			<uuidstructure>655bd2f9-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>655bd2fa-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -905,8 +905,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowleft.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowleft.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowleft.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowleft.png</destination>
 			<type>image</type>
 			<uuidstructure>65634d0c-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65634d0d-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -922,8 +922,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowright.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowright.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowright.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowright.png</destination>
 			<type>image</type>
 			<uuidstructure>656d381f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>656d3820-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -939,8 +939,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrows.psd</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrows.psd</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrows.psd</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrows.psd</destination>
 			<type>plain</type>
 			<uuidstructure>65785bb2-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65785bb3-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -951,8 +951,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/black50.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/black50.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/black50.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/black50.png</destination>
 			<type>image</type>
 			<uuidstructure>65804af4-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65804af5-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -968,8 +968,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/boxed_bgtile.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/boxed_bgtile.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/boxed_bgtile.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/boxed_bgtile.png</destination>
 			<type>image</type>
 			<uuidstructure>658a3607-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>658a3608-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -985,8 +985,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet.png</destination>
 			<type>image</type>
 			<uuidstructure>6599ed7a-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>6599ed7b-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1002,8 +1002,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet_boxed.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet_boxed.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet_boxed.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet_boxed.png</destination>
 			<type>image</type>
 			<uuidstructure>65abeedd-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65abeede-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1019,8 +1019,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.png</destination>
 			<type>image</type>
 			<uuidstructure>65b3b710-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65b3b711-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1036,8 +1036,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.psd</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.psd</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.psd</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.psd</destination>
 			<type>plain</type>
 			<uuidstructure>65bdc933-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65bdc934-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1048,8 +1048,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets2.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets2.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets2.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets2.png</destination>
 			<type>image</type>
 			<uuidstructure>65c7b445-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65c7b446-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1065,8 +1065,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/coloredbg.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/coloredbg.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/coloredbg.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/coloredbg.png</destination>
 			<type>image</type>
 			<uuidstructure>65ce9218-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65ce9219-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1082,8 +1082,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/grain.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/grain.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/grain.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/grain.png</destination>
 			<type>image</type>
 			<uuidstructure>65d744ab-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65d744ac-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1099,8 +1099,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile.png</destination>
 			<type>image</type>
 			<uuidstructure>65df0cde-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65df0cdf-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1116,8 +1116,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3.png</destination>
 			<type>image</type>
 			<uuidstructure>65eb68f1-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65eb68f2-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1133,8 +1133,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3_white.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3_white.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3_white.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3_white.png</destination>
 			<type>image</type>
 			<uuidstructure>65f44294-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65f44295-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1150,8 +1150,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_white.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_white.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_white.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_white.png</destination>
 			<type>image</type>
 			<uuidstructure>65fbbca7-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>65fbbca8-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1167,8 +1167,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_left.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_left.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_left.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_left.png</destination>
 			<type>image</type>
 			<uuidstructure>660643fa-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>660643fb-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1184,8 +1184,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_right.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_right.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_right.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_right.png</destination>
 			<type>image</type>
 			<uuidstructure>6615fb6d-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>6615fb6e-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1201,8 +1201,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader.gif</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader.gif</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader.gif</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader.gif</destination>
 			<type>image</type>
 			<uuidstructure>66240530-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>66240531-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1218,8 +1218,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader2.gif</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader2.gif</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader2.gif</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader2.gif</destination>
 			<type>image</type>
 			<uuidstructure>66347ff3-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>6634a704-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1235,8 +1235,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots.png</destination>
 			<type>image</type>
 			<uuidstructure>66412a26-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>66412a27-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1252,8 +1252,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots_bgtile.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots_bgtile.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots_bgtile.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots_bgtile.png</destination>
 			<type>image</type>
 			<uuidstructure>664a2ad9-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>664a2ada-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1269,8 +1269,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow1.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow1.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow1.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow1.png</destination>
 			<type>image</type>
 			<uuidstructure>6653c7cc-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>6653c7cd-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1286,8 +1286,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow2.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow2.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow2.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow2.png</destination>
 			<type>image</type>
 			<uuidstructure>665f397f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>665f3980-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1303,8 +1303,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow3.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow3.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow3.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow3.png</destination>
 			<type>image</type>
 			<uuidstructure>6668af62-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>6668af63-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1320,8 +1320,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_arrows.psd</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_arrows.psd</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_arrows.psd</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_arrows.psd</destination>
 			<type>plain</type>
 			<uuidstructure>66707795-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>66707796-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1332,8 +1332,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left.png</destination>
 			<type>image</type>
 			<uuidstructure>66790317-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>66790318-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1349,8 +1349,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left_boxed.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left_boxed.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left_boxed.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left_boxed.png</destination>
 			<type>image</type>
 			<uuidstructure>6680f25a-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>6680f25b-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1366,8 +1366,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right.png</destination>
 			<type>image</type>
 			<uuidstructure>668e11bd-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>668e11be-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1383,8 +1383,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right_boxed.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right_boxed.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right_boxed.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right_boxed.png</destination>
 			<type>image</type>
 			<uuidstructure>669823e0-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>669823e1-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1400,8 +1400,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/timer.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/timer.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/timer.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/timer.png</destination>
 			<type>image</type>
 			<uuidstructure>669fec13-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>669fec14-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1417,8 +1417,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/timerdot.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/timerdot.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/timerdot.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/timerdot.png</destination>
 			<type>image</type>
 			<uuidstructure>66a93ae6-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>66a93ae7-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1434,8 +1434,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/transparent.jpg</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/transparent.jpg</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/transparent.jpg</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/transparent.jpg</destination>
 			<type>image</type>
 			<uuidstructure>66b19f59-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>66b19f5a-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1451,8 +1451,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/white50.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/assets/white50.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/white50.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/white50.png</destination>
 			<type>image</type>
 			<uuidstructure>66bce9fc-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>66bce9fd-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1468,7 +1468,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/css</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/css</destination>
 			<type>folder</type>
 			<uuidstructure>66c7985f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
@@ -1478,8 +1478,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/css/settings-ie8.css</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/css/settings-ie8.css</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/css/settings-ie8.css</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/css/settings-ie8.css</destination>
 			<type>plain</type>
 			<uuidstructure>66ce0101-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>66ce0102-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1490,8 +1490,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/css/settings.css</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/css/settings.css</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/css/settings.css</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/css/settings.css</destination>
 			<type>plain</type>
 			<uuidstructure>66da3603-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>66da3604-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1502,7 +1502,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/font</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font</destination>
 			<type>folder</type>
 			<uuidstructure>66e580a5-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
@@ -1512,8 +1512,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.eot</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.eot</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.eot</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.eot</destination>
 			<type>plain</type>
 			<uuidstructure>66ec3767-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>66ec3768-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1524,8 +1524,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.svg</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.svg</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.svg</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.svg</destination>
 			<type>plain</type>
 			<uuidstructure>66f58639-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>66f5863a-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1536,8 +1536,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.ttf</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.ttf</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.ttf</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.ttf</destination>
 			<type>plain</type>
 			<uuidstructure>66fdc39b-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>66fdc39c-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1548,8 +1548,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.woff</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.woff</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.woff</destination>
 			<type>plain</type>
 			<uuidstructure>6707aead-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>6707aeae-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1560,7 +1560,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/images</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images</destination>
 			<type>folder</type>
 			<uuidstructure>6712ab2f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
@@ -1570,8 +1570,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside.png</destination>
 			<type>image</type>
 			<uuidstructure>673af3b9-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>673af3ba-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1587,8 +1587,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside_white.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside_white.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside_white.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside_white.png</destination>
 			<type>image</type>
 			<uuidstructure>674af94c-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>674af94d-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1604,8 +1604,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_testimonial.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_testimonial.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_testimonial.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_testimonial.png</destination>
 			<type>image</type>
 			<uuidstructure>6759512f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>67595130-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1621,7 +1621,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient</destination>
 			<type>folder</type>
 			<uuidstructure>671a2541-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
@@ -1631,8 +1631,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g30.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g30.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g30.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g30.png</destination>
 			<type>image</type>
 			<uuidstructure>6721ed73-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>6721ed74-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1648,8 +1648,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g40.png</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g40.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g40.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g40.png</destination>
 			<type>image</type>
 			<uuidstructure>672ee5c6-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>672ee5c7-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1665,7 +1665,7 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/js</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js</destination>
 			<type>folder</type>
 			<uuidstructure>67675af2-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
@@ -1675,8 +1675,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.enablelog.js</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.enablelog.js</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.enablelog.js</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.enablelog.js</destination>
 			<type>plain</type>
 			<uuidstructure>676cb224-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>676cb225-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1687,8 +1687,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.js</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.js</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.js</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.js</destination>
 			<type>plain</type>
 			<uuidstructure>6775d9e6-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>6775d9e7-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1699,8 +1699,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js</destination>
 			<type>plain</type>
 			<uuidstructure>67806138-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>67806139-7ccb-11e5-8038-0242ac11002b</uuidresource>
@@ -1711,8 +1711,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js</source>
-			<destination>system/modules/org.opencms.apollo.template.theme.unify/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js</destination>
 			<type>plain</type>
 			<uuidstructure>678ae88a-7ccb-11e5-8038-0242ac11002b</uuidstructure>
 			<uuidresource>678ae88b-7ccb-11e5-8038-0242ac11002b</uuidresource>

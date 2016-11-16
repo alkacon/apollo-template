@@ -185,7 +185,7 @@
 <title>OpenCms | Random content generator</title>
 
 <c:set var="colortheme"><cms:property name="apollo.theme" file="search" default="red" /></c:set>
-<c:if test="${not fn:startsWith(colortheme, '/')}"><c:set var="colortheme">/system/modules/org.opencms.apollo.template.theme.unify/resources/css/style-${colortheme}.min.css</c:set></c:if>
+<c:if test="${not fn:startsWith(colortheme, '/')}"><c:set var="colortheme">/system/modules/org.opencms.apollo.theme/resources/css/style-${colortheme}.min.css</c:set></c:if>
 <link rel="stylesheet" href="<cms:link>${colortheme}</cms:link>" />
 
 <style>
@@ -231,7 +231,7 @@
         </div>
     </div>
 
-    <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.theme.unify/resources/js/scripts-all.min.js:0fc90357-5155-11e5-abeb-0242ac11002b)</cms:link>"></script>
+    <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.theme/resources/js/scripts-all.min.js:0fc90357-5155-11e5-abeb-0242ac11002b)</cms:link>"></script>
     <script type="text/javascript">
         $("form")
                 .submit(

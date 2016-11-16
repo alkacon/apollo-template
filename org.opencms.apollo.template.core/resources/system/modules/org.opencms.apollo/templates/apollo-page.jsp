@@ -24,7 +24,7 @@
 
   <c:set var="faviconPath">${cms.subSitePath}favicon.png</c:set>
   <c:if test="${not cms.vfs.existsResource[faviconPath]}">
-    <c:set var="faviconPath">/system/modules/org.opencms.apollo.template.theme.unify/resources/img/favicon_120.png</c:set>
+    <c:set var="faviconPath">/system/modules/org.opencms.apollo.theme/resources/img/favicon_120.png</c:set>
   </c:if>
   <link rel="apple-touch-icon" href="<cms:link>${faviconPath}</cms:link>" />
   <link rel="icon" href="<cms:link>${faviconPath}</cms:link>" type="image/png" />
@@ -33,7 +33,7 @@
   <cms:headincludes type="css" />
 
   <c:set var="colortheme"><cms:property name="apollo.theme" file="search" default="red" /></c:set>
-  <c:if test="${not fn:startsWith(colortheme, '/')}"><c:set var="colortheme">/system/modules/org.opencms.apollo.template.theme.unify/resources/css/style-${colortheme}.min.css</c:set></c:if>
+  <c:if test="${not fn:startsWith(colortheme, '/')}"><c:set var="colortheme">/system/modules/org.opencms.apollo.theme/resources/css/style-${colortheme}.min.css</c:set></c:if>
   <link rel="stylesheet" href="<cms:link>${colortheme}</cms:link>" />
 
   <c:set var="ahead"><cms:property name="apollo.template.head" file="search" default="" /></c:set>
@@ -62,7 +62,7 @@
 
 <apollo:megamenu mode="skipTemplatePart">
   <%-- JavaScript files placed at the end of the document so the pages load faster --%>
-  <cms:headincludes type="javascript" defaults="%(link.weak:/system/modules/org.opencms.apollo.template.theme.unify/resources/js/scripts-all.min.js:0fc90357-5155-11e5-abeb-0242ac11002b)" />
+  <cms:headincludes type="javascript" defaults="%(link.weak:/system/modules/org.opencms.apollo.theme/resources/js/scripts-all.min.js:0fc90357-5155-11e5-abeb-0242ac11002b)" />
   <script type="text/javascript">
     jQuery(document).ready(function() {
       App.init();
@@ -88,11 +88,6 @@
       </script>
   </c:if>
 
-  <!--[if lt IE 9]>
-    <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.theme.unify/resources/compatibility/respond.js:164f5662-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
-    <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.theme.unify/resources/compatibility/html5shiv.js:163824de-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
-    <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.template.theme.unify/resources/compatibility/placeholder-IE-fixes.js:16423700-515b-11e5-abeb-0242ac11002b)</cms:link>"></script>
-  <![endif]-->
   <c:set var="afoot"><cms:property name="apollo.template.foot" file="search" default="" /></c:set>
   <c:if test="${not empty afoot}"><cms:include file="${afoot}" /></c:if>
 </apollo:megamenu>
