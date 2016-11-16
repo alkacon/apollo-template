@@ -183,76 +183,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.theme/resources/css/fonts</destination>
-			<type>folder</type>
-			<uuidstructure>d536d455-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.dev.svg</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.dev.svg</destination>
-			<type>plain</type>
-			<uuidstructure>d53b6837-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>d53b6838-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.eot</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.eot</destination>
-			<type>plain</type>
-			<uuidstructure>d547eb59-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>d547eb5a-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.svg</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.svg</destination>
-			<type>plain</type>
-			<uuidstructure>d553ab2b-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>d553ab2c-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.ttf</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.ttf</destination>
-			<type>plain</type>
-			<uuidstructure>d5613fbd-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>d5613fbe-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.woff</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/css/fonts/Simple-Line-Icons.woff</destination>
-			<type>plain</type>
-			<uuidstructure>d56b9fff-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>d56ba000-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>system/modules/org.opencms.apollo.theme/resources/fonts</destination>
 			<type>folder</type>
 			<uuidstructure>cd80a57b-514d-11e5-abeb-0242ac11002b</uuidstructure>
@@ -587,6 +517,66 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/Simple-Line-Icons.dev.svg</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/Simple-Line-Icons.dev.svg</destination>
+			<type>plain</type>
+			<uuidstructure>d53b6837-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>d53b6838-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/Simple-Line-Icons.eot</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/Simple-Line-Icons.eot</destination>
+			<type>plain</type>
+			<uuidstructure>d547eb59-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>d547eb5a-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/Simple-Line-Icons.svg</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/Simple-Line-Icons.svg</destination>
+			<type>plain</type>
+			<uuidstructure>d553ab2b-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>d553ab2c-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/Simple-Line-Icons.ttf</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/Simple-Line-Icons.ttf</destination>
+			<type>plain</type>
+			<uuidstructure>d5613fbd-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>d5613fbe-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/Simple-Line-Icons.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/Simple-Line-Icons.woff</destination>
+			<type>plain</type>
+			<uuidstructure>d56b9fff-514d-11e5-abeb-0242ac11002b</uuidstructure>
+			<uuidresource>d56ba000-514d-11e5-abeb-0242ac11002b</uuidresource>
+			<datecreated>Wed, 02 Sep 2015 08:37:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>system/modules/org.opencms.apollo.theme/resources/img</destination>
 			<type>folder</type>
 			<uuidstructure>0bed04ea-5159-11e5-abeb-0242ac11002b</uuidstructure>
@@ -709,33 +699,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.theme/resources/img/patterns</destination>
-			<type>folder</type>
-			<uuidstructure>e56a0647-9430-11e5-8382-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 26 Nov 2015 11:29:03 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/img/patterns/breadcrumbs.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/img/patterns/breadcrumbs.png</destination>
-			<type>image</type>
-			<uuidstructure>e6eed189-9430-11e5-8382-0242ac11002b</uuidstructure>
-			<uuidresource>e6eed18a-9430-11e5-8382-0242ac11002b</uuidresource>
-			<datecreated>Thu, 26 Nov 2015 11:29:05 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property type="shared">
-					<name>image.size</name>
-					<value><![CDATA[w:200,h:200]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>system/modules/org.opencms.apollo.theme/resources/js</destination>
 			<type>folder</type>
 			<uuidstructure>04129411-5153-11e5-abeb-0242ac11002b</uuidstructure>
@@ -770,62 +733,52 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins</destination>
 			<type>folder</type>
-			<uuidstructure>4d9761ac-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 27 Oct 2015 16:53:52 GMT</datecreated>
+			<uuidstructure>5e111084-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider</destination>
 			<type>folder</type>
-			<uuidstructure>6509e252-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e14ba06-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin</destination>
 			<type>folder</type>
-			<uuidstructure>650fd5c4-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e16dce8-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets</destination>
 			<type>folder</type>
-			<uuidstructure>6513f476-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e1974fa-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets</destination>
-			<type>folder</type>
-			<uuidstructure>651c58e8-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_large_right.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_large_right.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrow_large_right.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrow_large_right.png</destination>
 			<type>image</type>
-			<uuidstructure>6532ee2d-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>6532ee2e-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e1b97dc-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e1b97dd-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -837,12 +790,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrow_left.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrow_left.png</destination>
 			<type>image</type>
-			<uuidstructure>65445350-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65445351-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e1e2fef-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e1e2ff0-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -854,12 +807,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left2.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_left2.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrow_left2.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrow_left2.png</destination>
 			<type>image</type>
-			<uuidstructure>654c90b3-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>654c90b4-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e20c802-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e20c803-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -871,12 +824,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrow_right.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrow_right.png</destination>
 			<type>image</type>
-			<uuidstructure>6553bca6-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>6553bca7-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e236015-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e236016-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -888,12 +841,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right2.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrow_right2.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrow_right2.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrow_right2.png</destination>
 			<type>image</type>
-			<uuidstructure>655bd2f9-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>655bd2fa-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e25d118-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e25d119-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -905,12 +858,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowleft.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowleft.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrowleft.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrowleft.png</destination>
 			<type>image</type>
-			<uuidstructure>65634d0c-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65634d0d-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e28692b-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e28692c-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -922,12 +875,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowright.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrowright.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrowright.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrowright.png</destination>
 			<type>image</type>
-			<uuidstructure>656d381f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>656d3820-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e2b4f5e-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e2b4f5f-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -939,24 +892,24 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrows.psd</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/arrows.psd</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrows.psd</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/arrows.psd</destination>
 			<type>plain</type>
-			<uuidstructure>65785bb2-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65785bb3-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e2e0d81-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e2e0d82-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/black50.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/black50.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/black50.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/black50.png</destination>
 			<type>image</type>
-			<uuidstructure>65804af4-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65804af5-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e30a593-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e30a594-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -968,12 +921,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/boxed_bgtile.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/boxed_bgtile.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/boxed_bgtile.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/boxed_bgtile.png</destination>
 			<type>image</type>
-			<uuidstructure>658a3607-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>658a3608-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e331696-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e331697-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -985,12 +938,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/bullet.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/bullet.png</destination>
 			<type>image</type>
-			<uuidstructure>6599ed7a-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>6599ed7b-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:32 GMT</datecreated>
+			<uuidstructure>5e35aea9-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e35aeaa-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1002,12 +955,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet_boxed.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullet_boxed.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/bullet_boxed.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/bullet_boxed.png</destination>
 			<type>image</type>
-			<uuidstructure>65abeedd-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65abeede-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e381fac-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e381fad-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1019,12 +972,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/bullets.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/bullets.png</destination>
 			<type>image</type>
-			<uuidstructure>65b3b710-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65b3b711-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e3ab7bf-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e3ab7c0-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1036,24 +989,24 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.psd</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets.psd</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/bullets.psd</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/bullets.psd</destination>
 			<type>plain</type>
-			<uuidstructure>65bdc933-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65bdc934-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e3d4fd2-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e3d4fd3-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets2.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/bullets2.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/bullets2.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/bullets2.png</destination>
 			<type>image</type>
-			<uuidstructure>65c7b445-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65c7b446-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e3fc0d4-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e3fc0d5-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1065,12 +1018,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/coloredbg.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/coloredbg.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/coloredbg.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/coloredbg.png</destination>
 			<type>image</type>
-			<uuidstructure>65ce9218-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65ce9219-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e4231d7-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e4231d8-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1082,12 +1035,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/grain.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/grain.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/grain.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/grain.png</destination>
 			<type>image</type>
-			<uuidstructure>65d744ab-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65d744ac-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e44c9ea-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e44c9eb-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1099,12 +1052,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/gridtile.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/gridtile.png</destination>
 			<type>image</type>
-			<uuidstructure>65df0cde-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65df0cdf-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e47890d-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e47890e-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1116,12 +1069,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3.png</destination>
 			<type>image</type>
-			<uuidstructure>65eb68f1-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65eb68f2-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e49fa10-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e49fa11-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1133,12 +1086,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3_white.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3_white.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3_white.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/gridtile_3x3_white.png</destination>
 			<type>image</type>
-			<uuidstructure>65f44294-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65f44295-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e4c9223-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e4c9224-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1150,12 +1103,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_white.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/gridtile_white.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/gridtile_white.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/gridtile_white.png</destination>
 			<type>image</type>
-			<uuidstructure>65fbbca7-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>65fbbca8-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e4f7856-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e4f7857-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1167,12 +1120,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_left.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_left.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/large_left.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/large_left.png</destination>
 			<type>image</type>
-			<uuidstructure>660643fa-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>660643fb-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e521069-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e52106a-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1184,12 +1137,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_right.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/large_right.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/large_right.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/large_right.png</destination>
 			<type>image</type>
-			<uuidstructure>6615fb6d-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>6615fb6e-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e54a87c-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e54a87d-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1201,12 +1154,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader.gif</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader.gif</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/loader.gif</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/loader.gif</destination>
 			<type>image</type>
-			<uuidstructure>66240530-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>66240531-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e57197f-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e571980-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1218,12 +1171,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader2.gif</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/loader2.gif</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/loader2.gif</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/loader2.gif</destination>
 			<type>image</type>
-			<uuidstructure>66347ff3-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>6634a704-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:33 GMT</datecreated>
+			<uuidstructure>5e59b192-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e59b193-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1235,12 +1188,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/navigdots.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/navigdots.png</destination>
 			<type>image</type>
-			<uuidstructure>66412a26-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>66412a27-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e5c70b5-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e5c70b6-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1252,12 +1205,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots_bgtile.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/navigdots_bgtile.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/navigdots_bgtile.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/navigdots_bgtile.png</destination>
 			<type>image</type>
-			<uuidstructure>664a2ad9-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>664a2ada-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e5f08c8-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e5f08c9-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1269,12 +1222,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow1.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow1.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/shadow1.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/shadow1.png</destination>
 			<type>image</type>
-			<uuidstructure>6653c7cc-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>6653c7cd-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e6179cb-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e6179cc-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1286,12 +1239,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow2.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow2.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/shadow2.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/shadow2.png</destination>
 			<type>image</type>
-			<uuidstructure>665f397f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>665f3980-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e63eace-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e63eacf-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1303,12 +1256,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow3.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/shadow3.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/shadow3.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/shadow3.png</destination>
 			<type>image</type>
-			<uuidstructure>6668af62-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>6668af63-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e6682e1-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e6682e2-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1320,24 +1273,24 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_arrows.psd</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_arrows.psd</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/small_arrows.psd</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/small_arrows.psd</destination>
 			<type>plain</type>
-			<uuidstructure>66707795-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>66707796-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e6b16c4-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e6b16c5-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/small_left.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/small_left.png</destination>
 			<type>image</type>
-			<uuidstructure>66790317-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>66790318-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e6f0e66-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e6f0e67-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1349,12 +1302,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left_boxed.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_left_boxed.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/small_left_boxed.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/small_left_boxed.png</destination>
 			<type>image</type>
-			<uuidstructure>6680f25a-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>6680f25b-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e7242b9-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e7242ba-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1366,12 +1319,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/small_right.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/small_right.png</destination>
 			<type>image</type>
-			<uuidstructure>668e11bd-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>668e11be-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e7501dc-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e7501dd-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1383,12 +1336,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right_boxed.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/small_right_boxed.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/small_right_boxed.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/small_right_boxed.png</destination>
 			<type>image</type>
-			<uuidstructure>669823e0-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>669823e1-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e7799ef-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e7799f0-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1400,12 +1353,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/timer.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/timer.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/timer.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/timer.png</destination>
 			<type>image</type>
-			<uuidstructure>669fec13-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>669fec14-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e7a8022-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e7a8023-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1417,12 +1370,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/timerdot.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/timerdot.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/timerdot.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/timerdot.png</destination>
 			<type>image</type>
-			<uuidstructure>66a93ae6-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>66a93ae7-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e7d8d65-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e7d8d66-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1434,12 +1387,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/transparent.jpg</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/transparent.jpg</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/transparent.jpg</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/transparent.jpg</destination>
 			<type>image</type>
-			<uuidstructure>66b19f59-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>66b19f5a-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e809aa8-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e809aa9-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1451,12 +1404,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/white50.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/assets/white50.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/white50.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/assets/white50.png</destination>
 			<type>image</type>
-			<uuidstructure>66bce9fc-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>66bce9fd-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e8332bb-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e8332bc-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1468,114 +1421,114 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/css</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/css</destination>
 			<type>folder</type>
-			<uuidstructure>66c7985f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e85f1de-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/css/settings-ie8.css</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/css/settings-ie8.css</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/css/settings-ie8.css</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/css/settings-ie8.css</destination>
 			<type>plain</type>
-			<uuidstructure>66ce0101-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>66ce0102-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:34 GMT</datecreated>
+			<uuidstructure>5e883bd0-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e883bd1-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/css/settings.css</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/css/settings.css</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/css/settings.css</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/css/settings.css</destination>
 			<type>plain</type>
-			<uuidstructure>66da3603-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>66da3604-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5e8afaf2-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e8afaf3-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/font</destination>
 			<type>folder</type>
-			<uuidstructure>66e580a5-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5e8dba14-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.eot</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.eot</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/font/revicons.eot</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/font/revicons.eot</destination>
 			<type>plain</type>
-			<uuidstructure>66ec3767-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>66ec3768-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5e8fdcf6-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e8fdcf7-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.svg</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.svg</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/font/revicons.svg</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/font/revicons.svg</destination>
 			<type>plain</type>
-			<uuidstructure>66f58639-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>66f5863a-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5e924df8-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e924df9-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.ttf</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.ttf</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/font/revicons.ttf</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/font/revicons.ttf</destination>
 			<type>plain</type>
-			<uuidstructure>66fdc39b-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>66fdc39c-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5e94befa-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e94befb-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.woff</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/font/revicons.woff</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/font/revicons.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/font/revicons.woff</destination>
 			<type>plain</type>
-			<uuidstructure>6707aead-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>6707aeae-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5e972ffc-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e972ffd-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/images</destination>
 			<type>folder</type>
-			<uuidstructure>6712ab2f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5e99a0fe-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/images/decor_inside.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/images/decor_inside.png</destination>
 			<type>image</type>
-			<uuidstructure>673af3b9-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>673af3ba-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5ea42858-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5ea42859-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1587,12 +1540,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside_white.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_inside_white.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/images/decor_inside_white.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/images/decor_inside_white.png</destination>
 			<type>image</type>
-			<uuidstructure>674af94c-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>674af94d-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5ea6c06b-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5ea6c06c-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1604,12 +1557,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_testimonial.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/decor_testimonial.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/images/decor_testimonial.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/images/decor_testimonial.png</destination>
 			<type>image</type>
-			<uuidstructure>6759512f-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>67595130-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5ea97f8e-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5ea97f8f-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1621,22 +1574,22 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/images/gradient</destination>
 			<type>folder</type>
-			<uuidstructure>671a2541-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5e9beaf0-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g30.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g30.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/images/gradient/g30.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/images/gradient/g30.png</destination>
 			<type>image</type>
-			<uuidstructure>6721ed73-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>6721ed74-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5e9e34e2-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5e9e34e3-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1648,12 +1601,12 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g40.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/images/gradient/g40.png</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/images/gradient/g40.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/images/gradient/g40.png</destination>
 			<type>image</type>
-			<uuidstructure>672ee5c6-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>672ee5c7-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5ea14225-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5ea14226-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property type="shared">
@@ -1665,58 +1618,58 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js</destination>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/js</destination>
 			<type>folder</type>
-			<uuidstructure>67675af2-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 27 Oct 2015 16:54:35 GMT</datecreated>
+			<uuidstructure>5eac17a1-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.enablelog.js</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.enablelog.js</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.enablelog.js</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.enablelog.js</destination>
 			<type>plain</type>
-			<uuidstructure>676cb224-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>676cb225-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:36 GMT</datecreated>
+			<uuidstructure>5eae88a3-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5eae88a4-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.js</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.js</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.js</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.js</destination>
 			<type>plain</type>
-			<uuidstructure>6775d9e6-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>6775d9e7-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:36 GMT</datecreated>
+			<uuidstructure>5eb120b5-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5eb120b6-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js</destination>
 			<type>plain</type>
-			<uuidstructure>67806138-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>67806139-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:36 GMT</datecreated>
+			<uuidstructure>5eb4a327-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5eb4a328-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js</destination>
 			<type>plain</type>
-			<uuidstructure>678ae88a-7ccb-11e5-8038-0242ac11002b</uuidstructure>
-			<uuidresource>678ae88b-7ccb-11e5-8038-0242ac11002b</uuidresource>
-			<datecreated>Tue, 27 Oct 2015 16:54:36 GMT</datecreated>
+			<uuidstructure>5eb7b069-ac01-11e6-b64d-0242ac11002b</uuidstructure>
+			<uuidresource>5eb7b06a-ac01-11e6-b64d-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 13:34:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
 			<relations/>
