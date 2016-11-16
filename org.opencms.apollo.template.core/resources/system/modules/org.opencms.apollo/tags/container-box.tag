@@ -1,7 +1,8 @@
 <%@tag display-name="container-box"
   body-content="empty"
   trimDirectiveWhitespaces="true"
-  description="Generates box HTML for layout rows" %>
+  description="Generates box HTML for layout rows"  
+  import="org.opencms.jsp.util.CmsJspStandardContextBean, org.opencms.xml.containerpage.CmsContainerBean, java.lang.String" %>
 
 <%@attribute name="label" type="java.lang.String" required="true" %>
 <%@attribute name="boxType" type="java.lang.String" required="true" %>
@@ -53,6 +54,20 @@
   </c:if>
 </c:if>
 
+<c:set var="context" value="${cms}" scope="request" />
+<% 
+    CmsJspStandardContextBean contextBean = (CmsJspStandardContextBean)request.getAttribute("context"); 
+    String parentType = "Template Container";
+    CmsContainerBean container = contextBean.getContainer();
+    if(container != null){
+      container = contextBean.getParentContainers().get(container.getParentInstanceId());
+      if(container != null){
+        parentType = container.getType();
+      }
+    }
+    request.setAttribute("parentType", parentType);
+%>
+
 <div class="oc-container-${variant}${(empty cms.container.type) ? ' mh-20' : ''}">
   <h1>
     <c:choose>
@@ -80,7 +95,7 @@
     <c:if test="${not empty cms.container.type}">
       <small>
         <fmt:message key="apollo.row.in"/>${' '}
-        ${fn:toUpperCase(fn:substring(cms.container.type, 0, 1))}${fn:substring(cms.container.type, 1, -1)}
+        ${fn:toUpperCase(fn:substring(parentType, 0, 1))}${fn:substring(parentType, 1, -1)}
         ${' - '}
         <fmt:message key="apollo.row.for"/>${' '}
         ${fn:toUpperCase(fn:substring(type, 0, 1))}${fn:substring(type, 1, -1)}

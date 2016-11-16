@@ -1,4 +1,4 @@
-<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
+<%@page buffer="none" session="false" trimDirectiveWhitespaces="true" %>
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -102,7 +102,7 @@
           detailonly="${detailOnly}"
           editableby="${role}"
           param="${role}">
-
+          
           <apollo:container-box
             label="${content.value.Title}${column.value.Name.isSet ? ' - '.concat(column.value.Name) : ''}"
             boxType="container-box"

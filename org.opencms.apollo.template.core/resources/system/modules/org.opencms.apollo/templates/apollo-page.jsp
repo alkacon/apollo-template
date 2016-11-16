@@ -51,7 +51,7 @@
 
 <apollo:megamenu mode="wrapContainer">
   <cms:container name="page-complete${containerSuffix}" type="area" width="1200" maxElements="50" editableby="ROLE.DEVELOPER">
-    <cms:bundle basename="org.opencms.apollo.template.formatters.messages">
+    <cms:bundle basename="org.opencms.apollo.template.core.messages">
       <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
     </cms:bundle>
     <apollo:container-box label="${message}" boxType="container-box" type="area" role="ROLE.DEVELOPER" />
