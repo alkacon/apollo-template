@@ -32,12 +32,21 @@
   <cms:enable-ade />
   <cms:headincludes type="css" />
 
-  <c:set var="colortheme"><cms:property name="apollo.theme" file="search" default="red" /></c:set>
-  <c:if test="${not fn:startsWith(colortheme, '/')}"><c:set var="colortheme">/system/modules/org.opencms.apollo.theme/resources/css/style-${colortheme}.min.css</c:set></c:if>
-  <link rel="stylesheet" href="<cms:link>${colortheme}</cms:link>" />
-
-  <c:set var="ahead"><cms:property name="apollo.template.head" file="search" default="" /></c:set>
-  <c:if test="${not empty ahead}"><cms:include file="${ahead}" /></c:if>
+  <c:set var="theme"><cms:property name="apollo.theme" file="search" default="red" /></c:set>
+  <c:choose>
+	  <c:when test="${fn:endsWith(theme, 'ap-includes.jsp')}">
+	      <cms:include file="${theme}" />
+	  </c:when>
+	  <c:otherwise>
+          <c:if test="${not fn:startsWith(theme, '/')}">
+		     <c:set var="theme">/system/modules/org.opencms.apollo.theme/resources/css/style-${theme}.min.css</c:set>
+		  </c:if>
+  	      <link rel="stylesheet" href="<cms:link>${theme}</cms:link>" />	  
+	  </c:otherwise>
+  </c:choose>
+  
+  <c:set var="extraHead"><cms:property name="apollo.template.head" file="search" default="" /></c:set>
+  <c:if test="${not empty extraHead}"><cms:include file="${extraHead}" /></c:if>
 
   </head>
   <body>

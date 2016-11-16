@@ -77,52 +77,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/css/default-skin.png</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/css/default-skin.png</destination>
-			<type>image</type>
-			<uuidstructure>5edbbd18-ed4a-11e5-a02c-0242ac11002b</uuidstructure>
-			<uuidresource>5edbbd19-ed4a-11e5-a02c-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Mar 2016 20:45:37 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property type="shared">
-					<name>image.size</name>
-					<value><![CDATA[w:264,h:88]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/css/default-skin.svg</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/css/default-skin.svg</destination>
-			<type>plain</type>
-			<uuidstructure>9e8d6ef3-ed4a-11e5-a02c-0242ac11002b</uuidstructure>
-			<uuidresource>9e8d6ef4-ed4a-11e5-a02c-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Mar 2016 20:47:24 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/css/preloader.gif</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/css/preloader.gif</destination>
-			<type>image</type>
-			<uuidstructure>47156b15-8f80-11e5-a6ad-0242ac11002b</uuidstructure>
-			<uuidresource>47156b16-8f80-11e5-a6ad-0242ac11002b</uuidresource>
-			<datecreated>Fri, 20 Nov 2015 12:14:41 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property type="shared">
-					<name>image.size</name>
-					<value><![CDATA[w:20,h:20]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.theme/resources/css/style-blue.min.css</source>
 			<destination>system/modules/org.opencms.apollo.theme/resources/css/style-blue.min.css</destination>
 			<type>plain</type>
@@ -739,6 +693,72 @@
 			<datecreated>Wed, 16 Nov 2016 13:34:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/photoswipe</destination>
+			<type>folder</type>
+			<uuidstructure>c83c4cbc-ac1e-11e6-844b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Nov 2016 17:04:48 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/photoswipe/default-skin</destination>
+			<type>folder</type>
+			<uuidstructure>c83ebdbe-ac1e-11e6-844b-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 16 Nov 2016 17:04:48 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/photoswipe/default-skin/default-skin.png</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/photoswipe/default-skin/default-skin.png</destination>
+			<type>image</type>
+			<uuidstructure>c84155d0-ac1e-11e6-844b-0242ac11002b</uuidstructure>
+			<uuidresource>c84155d1-ac1e-11e6-844b-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 17:04:49 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:264,h:88]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/photoswipe/default-skin/default-skin.svg</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/photoswipe/default-skin/default-skin.svg</destination>
+			<type>plain</type>
+			<uuidstructure>c8472233-ac1e-11e6-844b-0242ac11002b</uuidstructure>
+			<uuidresource>c8472234-ac1e-11e6-844b-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 17:04:49 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/plugins/photoswipe/default-skin/preloader.gif</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/plugins/photoswipe/default-skin/preloader.gif</destination>
+			<type>image</type>
+			<uuidstructure>c8499335-ac1e-11e6-844b-0242ac11002b</uuidstructure>
+			<uuidresource>c8499336-ac1e-11e6-844b-0242ac11002b</uuidresource>
+			<datecreated>Wed, 16 Nov 2016 17:04:49 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:20,h:20]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
