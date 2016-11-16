@@ -282,7 +282,7 @@ _gruntRegisterTasks = function() {
 	]);
 	
 	grunt.registerTask('template', [ 
-		'sass',
+		'sass:template',
 		'cssmin:template',
 	]);
 	
