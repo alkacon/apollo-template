@@ -1,0 +1,13 @@
+$red: #ff0000;
+$red-light: #ff4444;
+$red-lighter: #ff8888;
+
+@import '../scss/apollo-variables.scss';
+
+// Main theme colors
+$main-theme: $red;
+$main-theme-hover: $red-light;
+$main-theme-additional: $red-lighter;
+
+// Import the other files
+@import '../scss/apollo-linksequence.scss';

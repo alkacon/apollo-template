@@ -60,6 +60,12 @@ $text-dark: #444 !default;
 $text-headers: #555 !default;
 $text-paragraphs: #555 !default;
 
+// Drop shadow color for effects
+$dropshadow: rgba(0, 0, 0, 0.3) !default;
+
+// Button padding
+$btn-padding: 8px !default;
+
 // these are all colors that make sense as highlight color, e.g. in a button background
 $primary-colors:
 (
