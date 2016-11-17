@@ -47,7 +47,7 @@
 <div class="col-md-4 md-margin-bottom-40">
 <!-- About -->
 <div class="headline"><h3>Über OpenCms</h3></div>
-<p class="margin-bottom-25">OpenCms von Alkacon Software ist ein professionelles, einfach anzuwendendes Website Content Management System. OpenCms hilft Anwendern weltweit, fantastische Webseiten schnell und einfach zu erstellen.</p>
+<p class="mb-25">OpenCms von Alkacon Software ist ein professionelles, einfach anzuwendendes Website Content Management System. OpenCms hilft Anwendern weltweit, fantastische Webseiten schnell und einfach zu erstellen.</p>
 <div class="headline"><h3>Mehr Informationen</h3></div>
 <dl>
 <dt><a href="%(link0)">OpenCms Dokumentation</a></dt>
@@ -62,10 +62,10 @@
 <div class="headline"><h3>Die OpenCms-Mailingliste</h3></div>
 <p>Die opencms-dev Mailingliste ist der Ort für alle Fragen, Kommentare und Vorschläge zu OpenCms und das Hauptforum für die OpenCms-Community. Abonnieren Sie die Liste indem Sie das folgende Formular ausfüllen.</p>
 <form class="form-horizontal" method="post" action="http://lists.opencms.org/mailman/subscribe/opencms-dev">
-<div class="margin-bottom-10"><input type="text" name="email" placeholder="E-Mail Adresse" class="form-control input-sm"/></div>
-<div class="margin-bottom-10"><input type="password" name="pw" placeholder="Passwort auswählen" class="form-control input-sm"/></div>
-<div class="margin-bottom-10"><input type="password" name="pw-conf" placeholder="Passwort bestätigen" class="form-control input-sm"/></div>
-<div class="margin-bottom-10">
+<div class="mb-10"><input type="text" name="email" placeholder="E-Mail Adresse" class="form-control input-sm"/></div>
+<div class="mb-10"><input type="password" name="pw" placeholder="Passwort auswählen" class="form-control input-sm"/></div>
+<div class="mb-10"><input type="password" name="pw-conf" placeholder="Passwort bestätigen" class="form-control input-sm"/></div>
+<div class="mb-10">
 <button type="submit" class="btn-u">Abonnieren</button>
 </div>
 <div><p>Verbindung zum Internet für das Abo erforderlich.</p></div>

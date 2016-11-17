@@ -25,7 +25,7 @@
       <content><![CDATA[<div class="ap-header">
 
 <div class="container">
-  <div class="topbar margin-bottom-20">
+  <div class="topbar mb-20">
     <ul class="loginbar pull-right">
       <li><a href="%(link0)">Demo Website</a></li>
       <li class="topbar-devider"></li>
