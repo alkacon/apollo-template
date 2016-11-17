@@ -27,6 +27,11 @@
 
 // head / foot formatted links
 
+.ap-linksequence-hf{
+	position: absolute !important;
+	width: 100%;
+}
+
 .ap-linksequence-hf .container {
     position: relative;
 }
