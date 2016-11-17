@@ -118,20 +118,65 @@ $sq-padding: 20 !default;
     }
 }
 
-@include make-ap-square(xs);        
-@include make-ap-tile(xs);        
+// Fixed with columns
+// I know that this is not what Bootstrap is about, but hey who cares ;)
 
-@media (min-width: $screen-sm-min){    
-    @include make-ap-square(sm);    
-    @include make-ap-tile(sm);
+$fix-cols: (0, 50, 100, 150, 200, 250) !default;
+$sizes: ("xs", "sm", "md", "lg") !default;
+$gutter: 15 !default; // this should match the bootstrap gutter used
+
+// fixed with column base instance
+@each $i in $fix-cols { 
+    @each $size in $sizes {
+        .fixcol-#{$size}-#{$i},
+        .fixcol-#{$size}-#{$i}-rest { 
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding-right: #{$gutter}px;
+            padding-left: #{$gutter}px;
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+} 
+
+// creates a fixed with column
+@mixin make-fixcol($size)   { 
+    @each $i in $fix-cols { 
+        // the fixed with column
+        .fixcol-#{$size}-#{$i} { 
+            // add the gutter so that the column pixel size is what the class says
+            width: calc(#{$i}px + 2 * #{$gutter}px); 
+        }
+        // if fixed size ($i) is 0 we use the default 100%, otherwise the gutter would be substracted
+        @if ($i > 0) { 
+            // the rest of the column
+            .fixcol-#{$size}-#{$i}-rest {
+                width: calc(100% - (#{$i}px + 2 * #{$gutter}px));
+            }
+        }
+    }
 }
 
-@media (min-width: $screen-md-min){    
+@include make-ap-square(xs);
+@include make-ap-tile(xs);
+@include make-fixcol(xs);
+
+@media (min-width: $screen-sm-min){
+    @include make-ap-square(sm);
+    @include make-ap-tile(sm);
+    @include make-fixcol(sm);
+}
+
+@media (min-width: $screen-md-min){
     @include make-ap-square(md);
     @include make-ap-tile(md);
+    @include make-fixcol(md);
 }
 
-@media (min-width: $screen-lg-min){    
+@media (min-width: $screen-lg-min){
     @include make-ap-square(lg);
     @include make-ap-tile(lg);
+    @include make-fixcol(lg);
 }
