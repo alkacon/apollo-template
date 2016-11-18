@@ -1,64 +1,20 @@
-/*Apollo Footer SCSS
-------------------------------------*/
 
-.footer-default {
-  .footer {
-    color: #dadada;
-    background: #585f69;
-    padding: 20px 0 30px;
-    p, a {
-      font-size: 14px;
-    }
-    p {
-      color: #dadada;
-    }
-    a {
-      color: $main-theme;
-      &:hover {
-        color: $main-theme-hover;
-	      -webkit-transition: all 0.4s ease-in-out;
-	      -moz-transition: all 0.4s ease-in-out;
-	      -o-transition: all 0.4s ease-in-out;
-	      transition: all 0.4s ease-in-out;
-      }
-    }
-    h3 {
-      color: #e4e4e4;
-      background: none;
-      text-shadow: none;
-    }
-  }
-  .copyright {
-    font-size: 12px;
-    padding: 11px 0 7px;
-    background-color: #ddd;
-    border-top: 1px solid #777;
-    p {
-      margin-top: 12px;
-      color: #333;
-    }
-    a img {
-	    margin-top: 5px;
-    }
-  }
-}
+// Apollo Footer 
 
 .footer {
-	a, a:hover {
-    color: $main-theme;
-  }
-}
-
-/*Social Icons*/
-.social-icons {
-  margin-top: 5px;
-  padding: 0;
-  
-  li {
-	  margin: 0; 
-	  
-	  a {
-		  margin: 0 3px;
-		}
-	}
+    padding-top: 20px;
+    background: $grey-darker;
+    color: $text-light;
+    p, div,
+    h1, h2, h3, h4 {
+        color: $grey-light;
+    }
+    &.light {
+        background: $grey-light;
+        color: $text-light;
+        p, div,
+        h1, h2, h3, h4 {
+            color: $grey-darker;
+        }
+    }
 }

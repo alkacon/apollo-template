@@ -64,7 +64,7 @@ $sq-padding: 20 !default;
         height: calc(100% - #{$m * 2}px);
         width:  calc(100% - #{$m * 2}px);
         margin: #{$m}px;
-    }        
+    }
 }
 
 .ap-sq-square { 
@@ -121,24 +121,28 @@ $sq-padding: 20 !default;
 // Fixed with columns
 // I know that this is not what Bootstrap is about, but hey who cares ;)
 
-$fix-cols: (0, 50, 100, 150, 200, 250) !default;
+$fix-cols: (50, 100, 150, 200, 250) !default;
 $sizes: ("xs", "sm", "md", "lg") !default;
 $gutter: 15 !default; // this should match the bootstrap gutter used
+
+.fixcol { 
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: #{$gutter}px;
+    padding-left: #{$gutter}px;
+    width: 100%;
+}
 
 // fixed with column base instance
 @each $i in $fix-cols { 
     @each $size in $sizes {
         .fixcol-#{$size}-#{$i},
-        .fixcol-#{$size}-#{$i}-rest { 
-            float: left;
-            position: relative;
-            min-height: 1px;
-            padding-right: #{$gutter}px;
-            padding-left: #{$gutter}px;
-            width: 100%;
-        }
+        .fixcol-#{$size}-#{$i}-rest {
+            @extend .fixcol;
+        } 
     }
-} 
+}
 
 // creates a fixed with column
 @mixin make-fixcol($size)   { 

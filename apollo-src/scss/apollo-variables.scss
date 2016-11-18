@@ -25,8 +25,8 @@ $red-dark:          darken($red, 9%) !default;
 $red-darker:        darken($red, 21%) !default;
 
 $orange:            $alkacon-orange !default;
-$orange-light:      lighten($orange, 15%) !default;
-$orange-lighter:    lighten($orange, 30%) !default;
+$orange-light:      adjust-hue($orange, 10deg) !default;
+$orange-lighter:    adjust-hue($orange, 20deg) !default;
 $orange-dark:       darken($orange, 8%) !default;
 $orange-darker:     darken($orange, 16%) !default;
 
@@ -34,7 +34,7 @@ $grey:              $alkacon-grey !default;
 $grey-lighter:      lighten($grey, 29%) !default;
 $grey-light:        lighten($grey, 21%) !default;  
 $grey-dark:         darken($grey, 15%) !default;
-$grey-darker:       darken($grey, 35%) !default;
+$grey-darker:       darken($grey, 30%) !default;
 
 $gray:              $grey !default;
 $gray-lighter:      $grey-lighter !default;
@@ -86,7 +86,7 @@ $primary-colors:
  (red-dark,                      $red-dark,         $text-light,    $red),
  (red-darker,                    $red-darker,       $text-light,    $red-dark),
  (orange-light,                  $orange-light,     $text-dark,     $orange),
- (orange,                        $orange,           $text-light,    $red),
+ (orange,                        $orange,           $text-light,    $orange-light),
  (orange-dark,                   $orange-dark,      $text-light,    $orange),
  (orange-darker,                 $orange-darker,    $text-light,    $orange-dark),
  (blue-cyan,                     $blue-cyan,        $text-light,    $cyan),

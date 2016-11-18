@@ -2,7 +2,7 @@
 // Apollo buttons
 
 $btn-default:           $main-theme !default;
-$btn-default-active:    lighten($btn-default, 10%) !default;
+$btn-default-active:    $main-theme-hover !default;
 $btn-text:              $text-light !default;
 $btn-dark-text:         $text-dark !default;
 $btn-text-transform:    none !default;
