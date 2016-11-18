@@ -11,10 +11,6 @@
       <Value><![CDATA[The last name of the contact person.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloAddress.StreetAddress]]></Key>
-      <Value><![CDATA[Street]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[label.ApolloContact.GalleryTitle]]></Key>
       <Value><![CDATA[Gallery Title]]></Value>
     </Message>
@@ -25,10 +21,6 @@
     <Message>
       <Key><![CDATA[label.ApolloContact.Title.help]]></Key>
       <Value><![CDATA[The title of the contact information.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Region.help]]></Key>
-      <Value><![CDATA[The optional name of the region.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContact.Title]]></Key>
@@ -103,10 +95,6 @@
       <Value><![CDATA[Click to show email]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloAddress.PostalCode.help]]></Key>
-      <Value><![CDATA[The postal code of the address.]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[label.ApolloContact.Position.help]]></Key>
       <Value><![CDATA[The position or job title of the contact person.]]></Value>
     </Message>
@@ -121,14 +109,6 @@
     <Message>
       <Key><![CDATA[label.ApolloContact.Name.help]]></Key>
       <Value><![CDATA[The optional full name of the contact person.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Country.help]]></Key>
-      <Value><![CDATA[The optional name of the country.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Region]]></Key>
-      <Value><![CDATA[Region]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactName.Suffix.help]]></Key>
@@ -163,16 +143,8 @@
       <Value><![CDATA[Please enter a title.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloAddress.ExtendedAddress]]></Key>
-      <Value><![CDATA[Extended address]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[label.ApolloContact.Link]]></Key>
       <Value><![CDATA[Link]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Locality]]></Key>
-      <Value><![CDATA[City / Locality]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactData.Address.help]]></Key>
@@ -191,24 +163,12 @@
       <Value><![CDATA[The email address of the contact.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloAddress.StreetAddress.help]]></Key>
-      <Value><![CDATA[The street address.]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[label.ApolloContactName.Title]]></Key>
       <Value><![CDATA[Title]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloAddress.Locality.help]]></Key>
-      <Value><![CDATA[The city name of the address.]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.contact.error.firstname]]></Key>
       <Value><![CDATA[The first name has to be provided.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Country]]></Key>
-      <Value><![CDATA[Country]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactData.Fax]]></Key>
@@ -217,10 +177,6 @@
     <Message>
       <Key><![CDATA[label.ApolloContact.Description]]></Key>
       <Value><![CDATA[Description]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.ExtendedAddress.help]]></Key>
-      <Value><![CDATA[This can be used for extended address information, e.g room number, building.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContact.NameTab]]></Key>
@@ -259,10 +215,6 @@
       <Value><![CDATA[Phone:]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloAddress.PostalCode]]></Key>
-      <Value><![CDATA[Postal code]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[label.ApolloContactData.Phone.help]]></Key>
       <Value><![CDATA[The default phone number of the contact.]]></Value>
     </Message>
@@ -277,10 +229,6 @@
       <Value><![CDATA[Der Nachname der Kontaktperson.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloAddress.StreetAddress]]></Key>
-      <Value><![CDATA[Straße]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[label.ApolloContact.GalleryTitle]]></Key>
       <Value><![CDATA[Galerie Titel]]></Value>
     </Message>
@@ -291,10 +239,6 @@
     <Message>
       <Key><![CDATA[label.ApolloContact.Title.help]]></Key>
       <Value><![CDATA[Der Titel der Kontakt Information.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Region.help]]></Key>
-      <Value><![CDATA[Optionaler Name der Region.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContact.Title]]></Key>
@@ -369,10 +313,6 @@
       <Value><![CDATA[Klick zum E-Mail anzeigen]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloAddress.PostalCode.help]]></Key>
-      <Value><![CDATA[Die postleitzahl der Adresse.]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[label.ApolloContact.Position.help]]></Key>
       <Value><![CDATA[Die Position oder Stellenbezeichnung der Kontaktperson.]]></Value>
     </Message>
@@ -387,14 +327,6 @@
     <Message>
       <Key><![CDATA[label.ApolloContact.Name.help]]></Key>
       <Value><![CDATA[Der optionale vollständige Name der Kontaktperson.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Country.help]]></Key>
-      <Value><![CDATA[Der optionale Name des Landes.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Region]]></Key>
-      <Value><![CDATA[Region]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactName.Suffix.help]]></Key>
@@ -429,16 +361,8 @@
       <Value><![CDATA[Bitte geben Sie einen Titel ein.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloAddress.ExtendedAddress]]></Key>
-      <Value><![CDATA[Erweiterte Adresse]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[label.ApolloContact.Link]]></Key>
       <Value><![CDATA[Link]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Locality]]></Key>
-      <Value><![CDATA[Stadt]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactData.Address.help]]></Key>
@@ -457,24 +381,12 @@
       <Value><![CDATA[Die E-Mail Adresse des Kontakts.]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloAddress.StreetAddress.help]]></Key>
-      <Value><![CDATA[Die Straße der Adresse.]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[label.ApolloContactName.Title]]></Key>
       <Value><![CDATA[Titel]]></Value>
     </Message>
     <Message>
-      <Key><![CDATA[label.ApolloAddress.Locality.help]]></Key>
-      <Value><![CDATA[Der Name der Stadt der Adresse.]]></Value>
-    </Message>
-    <Message>
       <Key><![CDATA[apollo.contact.error.firstname]]></Key>
       <Value><![CDATA[Der Vorname muss ausgefüllt werden.]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.Country]]></Key>
-      <Value><![CDATA[Land]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactData.Fax]]></Key>
@@ -483,10 +395,6 @@
     <Message>
       <Key><![CDATA[label.ApolloContact.Description]]></Key>
       <Value><![CDATA[Beschreibung]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.ExtendedAddress.help]]></Key>
-      <Value><![CDATA[Dies kann für zusätzliche Informationen benutzt werden, z.B. Raumnummer, Gebäude.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContact.NameTab]]></Key>
@@ -523,10 +431,6 @@
     <Message>
       <Key><![CDATA[apollo.contact.phone]]></Key>
       <Value><![CDATA[Telefon:]]></Value>
-    </Message>
-    <Message>
-      <Key><![CDATA[label.ApolloAddress.PostalCode]]></Key>
-      <Value><![CDATA[Postleitzahl]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloContactData.Phone.help]]></Key>

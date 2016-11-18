@@ -2,6 +2,7 @@
 
     <xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd" />
     <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/paragraph.xsd" />
+	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/address.xsd" />
     <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/availability.xsd" />
 
     <xsd:element name="ApolloEvents" type="OpenCmsApolloEvents" />
@@ -17,11 +18,13 @@
             <xsd:element name="Title" type="OpenCmsString" />
             <xsd:element name="Date" type="OpenCmsDateTime" />
 			<xsd:element name="EndDate" type="OpenCmsDateTime" minOccurs="0" />
+			<xsd:element name="Type" type="OpenCmsString" minOccurs="0" />
             <xsd:element name="Teaser" type="OpenCmsString" minOccurs="0" />
             <xsd:element name="Paragraph" type="OpenCmsApolloParagraph" maxOccurs="5" />
             <xsd:element name="Category" type="OpenCmsDynamicCategory" />
 			<xsd:element name="Location" type="OpenCmsString" minOccurs="0" />
 			<xsd:element name="Address" type="OpenCmsHtml" minOccurs="0" />
+			<xsd:element name="AddressDetails" type="OpenCmsApolloAddress" minOccurs="0" />
             <xsd:element name="Availability" type="OpenCmsApolloAvailability" minOccurs="0" />
             <xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
         </xsd:sequence>
@@ -62,11 +65,21 @@
             </relations>
             <searchsettings containerPageOnly="false">
                 <searchsetting element="Date" searchcontent="false">
+					<solrfield targetfield="event-date" sourcefield="*_dt" />
                     <solrfield targetfield="newsdate" sourcefield="*_dt" />
                 </searchsetting>            
                 <searchsetting element="Title" searchcontent="false">
                     <solrfield targetfield="disptitle" sourcefield="*_s" />
-                </searchsetting> 
+                </searchsetting>
+				<searchsetting element="Type">
+					<solrfield targetfield="event-type" sourcefield="*_s" />
+				</searchsetting>
+				<searchsetting element="Location">
+					<solrfield targetfield="event-location" sourcefield="*_s" />
+				</searchsetting>
+				<searchsetting element="AddressDetails/Locality">
+					<solrfield targetfield="event-locality" sourcefield="*_s" />
+				</searchsetting>
             </searchsettings>
 		  	<visibilities>
                 <visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />

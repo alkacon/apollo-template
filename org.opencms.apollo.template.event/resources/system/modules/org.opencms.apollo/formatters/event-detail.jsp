@@ -50,7 +50,7 @@
 
                         </div>
                         
-                        <c:if test="${value.Location.isSet or value.Address.isSet}">
+                        <c:if test="${value.Location.isSet or value.Address.isSet or value.AddressDetails.isSet}">
                             <div class="col-xs-1">
                                 <i class="icon-custom icon-sm icon-color-u fa fa-map-marker"></i>
                             </div>
@@ -60,6 +60,26 @@
                                 </c:if>
                                 <c:if test="${value.Address.isSet}">
                                     <div ${rdfa.Address}>${value.Address}</div>
+                                </c:if>
+								<c:if test="${value.AddressDetails.isSet}">
+                                    <div class="adress">
+										<div class="street"> ${value.AddressDetails.value.StreetAddress}</div>
+										<c:if test="${value.AddressDetails.value.ExtendedAddress.isSet}">
+											<div class="extended"> ${value.AddressDetails.value.ExtendedAddress}</div>
+										</c:if>
+										<div class="ap-contact-city">
+											<span class="code"> ${value.AddressDetails.value.PostalCode}</span>
+											<span class="region"> ${value.AddressDetails.value.Locality}</span>
+										</div>
+										<div class="ap-contact-region">
+											<c:if test="${value.AddressDetails.value.Region.isSet}">
+												<span class="region"> ${value.AddressDetails.value.Region}</span>
+											</c:if>
+											<c:if test="${value.AddressDetails.value.Country.isSet}">
+												<span class="country"> ${value.AddressDetails.value.Country}</span>
+											</c:if>
+										</div>
+									</div>
                                 </c:if>
                             </div>
                         </c:if> 

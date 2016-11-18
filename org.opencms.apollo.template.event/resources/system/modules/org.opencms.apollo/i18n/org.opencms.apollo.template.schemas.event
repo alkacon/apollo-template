@@ -27,6 +27,14 @@
       <Value><![CDATA[The optional end date of the event.]]></Value>
     </Message>
     <Message>
+      <Key><![CDATA[label.ApolloEvent.Type]]></Key>
+      <Value><![CDATA[Type]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEvent.Type.help]]></Key>
+      <Value><![CDATA[The type of the event.]]></Value>
+    </Message>
+    <Message>
       <Key><![CDATA[label.ApolloEvent.Teaser]]></Key>
       <Value><![CDATA[Teaser]]></Value>
     </Message>
@@ -60,11 +68,19 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Address]]></Key>
-      <Value><![CDATA[Address]]></Value>
+      <Value><![CDATA[Address Text]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Address.help]]></Key>
-      <Value><![CDATA[The address of the event.]]></Value>
+      <Value><![CDATA[The address text of the event.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEvent.AddressDetails]]></Key>
+      <Value><![CDATA[Address Details]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEvent.AddressDetails.help]]></Key>
+      <Value><![CDATA[The detailed address information of the event.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Availability]]></Key>
@@ -170,11 +186,19 @@
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Address]]></Key>
-      <Value><![CDATA[Adresse]]></Value>
+      <Value><![CDATA[Adresstext]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Address.help]]></Key>
-      <Value><![CDATA[Die genaue Adresse der Veranstaltung.]]></Value>
+      <Value><![CDATA[Der Adresstext der Veranstaltung.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEvent.AddressDetails]]></Key>
+      <Value><![CDATA[Adresse Details]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloEvent.AddressDetails.help]]></Key>
+      <Value><![CDATA[Die genauen Adressinformationen der Veranstaltung.]]></Value>
     </Message>
     <Message>
       <Key><![CDATA[label.ApolloEvent.Availability]]></Key>

@@ -1074,6 +1074,50 @@
       <Key><![CDATA[apollo.setting.detail.view]]></Key>
       <Value><![CDATA[Use first container as detail view]]></Value>
     </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.StreetAddress]]></Key>
+      <Value><![CDATA[Street]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Region.help]]></Key>
+      <Value><![CDATA[The optional name of the region.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.PostalCode.help]]></Key>
+      <Value><![CDATA[The postal code of the address.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Country.help]]></Key>
+      <Value><![CDATA[The optional name of the country.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Region]]></Key>
+      <Value><![CDATA[Region]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.ExtendedAddress]]></Key>
+      <Value><![CDATA[Extended address]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Locality]]></Key>
+      <Value><![CDATA[City / Locality]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.StreetAddress.help]]></Key>
+      <Value><![CDATA[The street address.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Locality.help]]></Key>
+      <Value><![CDATA[The city name of the address.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Country]]></Key>
+      <Value><![CDATA[Country]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.ExtendedAddress.help]]></Key>
+      <Value><![CDATA[This can be used for extended address information, e.g room number, building.]]></Value>
+    </Message>
   </Bundle>
   <Bundle language="de">
     <Message>
@@ -2163,6 +2207,54 @@
     <Message>
       <Key><![CDATA[apollo.setting.detail.view]]></Key>
       <Value><![CDATA[Verwende ersten Container als Detailansicht]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.StreetAddress]]></Key>
+      <Value><![CDATA[Straße]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Region.help]]></Key>
+      <Value><![CDATA[Optionaler Name der Region.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.PostalCode.help]]></Key>
+      <Value><![CDATA[Die Postleitzahl der Adresse.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Country.help]]></Key>
+      <Value><![CDATA[Der optionale Name des Landes.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Region]]></Key>
+      <Value><![CDATA[Region]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.ExtendedAddress]]></Key>
+      <Value><![CDATA[Erweiterte Adresse]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Locality]]></Key>
+      <Value><![CDATA[Stadt]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.StreetAddress.help]]></Key>
+      <Value><![CDATA[Die Straße der Adresse.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Locality.help]]></Key>
+      <Value><![CDATA[Der Name der Stadt der Adresse.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.Country]]></Key>
+      <Value><![CDATA[Land]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.ExtendedAddress.help]]></Key>
+      <Value><![CDATA[Dies kann für zusätzliche Informationen benutzt werden, z.B. Raumnummer, Gebäude.]]></Value>
+    </Message>
+    <Message>
+      <Key><![CDATA[label.ApolloAddress.PostalCode]]></Key>
+      <Value><![CDATA[Postleitzahl]]></Value>
     </Message>
   </Bundle>
 </XmlVfsBundles>
