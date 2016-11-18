@@ -1,0 +1,3 @@
+apollo.disqus.message.notset=The Disqus site name is not configured in the property "apollo.disqus" or element settings.
+apollo.disqus.message.edited=The Disqus element has been edited, the page will reload.
+apollo.disqus.message.comments=Comments

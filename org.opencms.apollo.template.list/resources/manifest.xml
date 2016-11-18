@@ -38,13 +38,16 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-scrolling.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-simple.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-simple.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list_de"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list_en"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages_de"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages_en"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages_de"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages_en"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list_de"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/elements/list-ajax.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/list.xsd"/>
-			<resource uri="/system/modules/org.opencms.apollo/tags/list-archive-search.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-facetbutton.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-facetrow.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-item-compact.tag"/>
@@ -388,22 +391,14 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>bf88905f-5c82-11e5-96ab-0242ac11002b</uuidstructure>
-			<uuidresource>bf889060-5c82-11e5-96ab-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Sep 2015 14:53:53 GMT</datecreated>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages_de</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages_de</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>cb467755-ada9-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>cb467756-ada9-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:12:25 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Message keys used in the list formatter]]></value>
-				</property>
-				<property>
-					<name>content-encoding</name>
-					<value><![CDATA[ISO-8859-1]]></value>
-				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -413,22 +408,14 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>3f8520ac-750e-11e6-afc1-0242ac11002b</uuidstructure>
-			<uuidresource>3f8520ad-750e-11e6-afc1-0242ac11002b</uuidresource>
-			<datecreated>Wed, 07 Sep 2016 15:17:53 GMT</datecreated>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages_en</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages_en</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>cb484c18-ada9-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>cb484c19-ada9-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:12:25 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Localization for settings]]></value>
-				</property>
-				<property>
-					<name>content-encoding</name>
-					<value><![CDATA[ISO-8859-1]]></value>
-				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -438,18 +425,14 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>d98d6090-75aa-11e6-805e-0242ac11002b</uuidstructure>
-			<uuidresource>d98d6091-75aa-11e6-805e-0242ac11002b</uuidresource>
-			<datecreated>Thu, 08 Sep 2016 09:58:53 GMT</datecreated>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list_de</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list_de</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>c202a4ce-ada9-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>c202a4cf-ada9-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:12:09 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
-				<property>
-					<name>content-encoding</name>
-					<value><![CDATA[ISO-8859-1]]></value>
-				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -459,17 +442,85 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>1a5e04ec-7f02-11e6-95f6-0242ac11002b</uuidstructure>
-			<uuidresource>1a5e04ed-7f02-11e6-95f6-0242ac11002b</uuidresource>
-			<datecreated>Tue, 20 Sep 2016 07:16:09 GMT</datecreated>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list_en</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list_en</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>c2045181-ada9-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>c2045182-ada9-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:12:09 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
-					<name>content-encoding</name>
-					<value><![CDATA[ISO-8859-1]]></value>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages_de</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages_de</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>e4dfa8af-ada9-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>e4dfa8b0-ada9-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:13:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages_en</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages_en</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>e4e15662-ada9-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>e4e15663-ada9-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:13:08 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list_de</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list_de</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>180e3ad3-adaa-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>180e3ad4-adaa-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:14:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list_en</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list_en</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>181036a6-adaa-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>181036a7-adaa-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:14:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
 				</property>
 			</properties>
 			<relations/>

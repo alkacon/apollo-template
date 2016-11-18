@@ -1,0 +1,12 @@
+label.ApolloLinkSequence.LinkEntry.help=Ein einzelner Link für die Sequenz.
+label.ApolloLinkSequence.GalleryTitle=Galerie Titel
+label.ApolloLinkSequence.GalleryTitle.help=Der Galerie Titel der Linksequenz. Er wird nicht auf der Seite angezeigt.
+apollo.linksequence.error.Title=Der Titel darf nicht leer sein.
+label.ApolloLinkSequence.Title.help=Der Titel der Linksequenz.
+apollo.linksequence.message.new=Neue Link Sequenz, bitte bearbeiten Sie den Inhalt.
+label.ApolloLinkSequence.Text=Text
+label.ApolloLinkSequence.Text.help=Der Text wird oberhalb der Links angezeigt.
+label.ApolloLinkSequence.Title=Titel
+apollo.linksequence.message.languages=Sprache
+label.ApolloLinkSequence.LinkEntry=Link
+apollo.linksequence.default.Title=Neue Link Sequenz

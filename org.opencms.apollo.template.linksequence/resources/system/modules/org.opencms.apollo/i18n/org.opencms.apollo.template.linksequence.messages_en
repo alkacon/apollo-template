@@ -1,0 +1,8 @@
+apollo.setting.linkalign.left=Left
+title.a-linksequence=Link Sequence
+fileicon.a-linksequence=Link Sequence
+apollo.setting.linkalign.right=Right
+apollo.setting.cssclass.linksasblock=Generate links with margin
+apollo.setting.linkalign=Link alignment
+apollo.setting.linkalign.description=Select if the links should be aligned left or right.
+desc.a-linksequence=A link Sequence provides links to other pages or download files as list.

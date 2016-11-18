@@ -1,0 +1,8 @@
+apollo.setting.linkalign.left=Links
+title.a-linksequence=Link Sequenz
+fileicon.a-linksequence=Link Sequenz
+apollo.setting.linkalign.right=Rechts
+apollo.setting.cssclass.linksasblock=Erzeuge Links mit Abstand
+apollo.setting.linkalign=Ausrichtung
+apollo.setting.linkalign.description=Legt fest, ob die Link Sequenz links oder rechts ausgerichtet wird.
+desc.a-linksequence=Eine Link Sequenz erzeugt Links auf andere Seiten oder Dateien als Liste.

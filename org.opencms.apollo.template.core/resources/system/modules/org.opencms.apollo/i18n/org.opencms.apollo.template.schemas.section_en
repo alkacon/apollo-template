@@ -1,0 +1,15 @@
+label.ApolloSection.Text=Text
+apollo.section.default.Text=Please edit this content section.
+apollo.section.message.noimage=No image given, please edit content.
+label.ApolloSection.Link.help=A link pointing to further information, can also be an external link (starting with <b>http://</b>).
+apollo.section.default.Headline=New content section
+apollo.section.message.more=More
+label.ApolloSection.Text.help=The paragraph text.
+label.ApolloSection.Image.help=An image that can be shown with the content section.
+label.ApolloSection.Link=Link
+label.ApolloSection.Headline=Headline
+label.ApolloSection.GalleryTitle.help=The gallery title of the content section. It is not shown on the page.
+apollo.section.message.new=New content section element, please edit it.
+label.ApolloSection.GalleryTitle=Gallery Title
+label.ApolloSection.Headline.help=The optional headline of the content section.
+label.ApolloSection.Image=Image

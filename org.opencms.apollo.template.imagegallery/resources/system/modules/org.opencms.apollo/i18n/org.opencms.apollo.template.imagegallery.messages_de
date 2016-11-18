@@ -1,0 +1,12 @@
+apollo.setting.showtitle.description=Legt fest, ob der Titel der einzelnen Bilder angezeigt werden soll.
+apollo.setting.autoload.help=Wenn aktiv und der Button angeklickt wurde, werden weitere Bilder automatisch nachgeladen.
+apollo.setting.imagecss=Bild CSS Klasse
+apollo.setting.imagecss.description=CSS Klasse(n) für die <div> Bilder Elemente.
+apollo.setting.showtitle=Zeige Bildtitel
+fileicon.a-imagegallery=Bildergalerie
+apollo.setting.imagesperpage.error=Bitte nur Zahlen eingeben.
+title.a-imagegallery=Neue Bildergalerie
+apollo.setting.autoload=Automatisch laden
+apollo.setting.imagesperpage=Bilder pro Seite
+apollo.setting.imagesperpage.description=Legt fest, wieviele Bilder nachgeladen werden.
+desc.a-imagegallery=Erzeugt eine Bildergalerie von Bildern in einem Ordner.

@@ -1,0 +1,15 @@
+label.ApolloSitemap.MaximumDepth.help=Optionale maximale Tiefe, die die Sitemap haben soll.
+label.ApolloSitemap.SitemapOpenedPerDefault=Erste Stufe geöffnet
+label.ApolloSitemap.ShowFrom=Sitemap Start Pfad
+label.ApolloSitemap.IncludeSubSiteMaps.help=Wenn angekreuzt, werden Untersitemaps mit angezeigt.
+label.ApolloSitemap.ShowFrom.help=Der Pfad, ab welchem die Sitemap erstellt werden soll.
+label.ApolloSitemap.Text=Text
+apollo.sitemap.message.edited=Die Sitemap wurde bearbeitet, die Seite wird neu geladen.
+label.ApolloSitemap.Title=Titel
+label.ApolloSitemap.Title.help=Der Titel der Sitemap. Er kann mit einer Einstellung versteckt werden.
+label.ApolloSitemap.SubFoldersOpenedPerDefault.help=Wenn angekreuzt, werden alle Einträge der Sitemap sofort angezeigt.
+label.ApolloSitemap.IncludeSubSiteMaps=Inklusive Subsitemaps
+label.ApolloSitemap.MaximumDepth=Maximale Tiefe
+label.ApolloSitemap.Text.help=Der Text wird oberhalb der Sitemap angezeigt. Er kann mit einer Einstellung ausgeblendet werden.
+label.ApolloSitemap.SubFoldersOpenedPerDefault=Alle Stufen geöffnet
+label.ApolloSitemap.SitemapOpenedPerDefault.help=Wenn angekreuzt, wird die erste Stufe der Sitemap sofort angezeigt.

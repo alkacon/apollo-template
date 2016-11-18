@@ -27,7 +27,8 @@
 			<resource uri="/system/modules/org.opencms.apollo/functions/disqus-load.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/disqus.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/disqus.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus_de"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus_en"/>
 			<resource uri="/system/workplace/resources/filetypes/a-disqus.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-disqus_big.png"/>
 		</resources>
@@ -128,18 +129,31 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>25d1986e-0b9e-11e6-b009-0242ac11002b</uuidstructure>
-			<uuidresource>25d1986f-0b9e-11e6-b009-0242ac11002b</uuidresource>
-			<datecreated>Tue, 26 Apr 2016 11:00:54 GMT</datecreated>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus_de</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus_de</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>fce23472-ada9-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>fce23473-ada9-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:13:48 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
-					<name>content-encoding</name>
-					<value><![CDATA[ISO-8859-1]]></value>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
 				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus_en</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus_en</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>fce40935-ada9-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>fce40936-ada9-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:13:48 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

@@ -1,0 +1,11 @@
+apollo.imagegallery.message.more=More images
+label.ApolloImageGallery.ImageFolder.help=The folder which contains the images.
+apollo.imagegallery.message.prev=Previous
+label.ApolloImageGallery.Title.help=The title of the image gallery.
+apollo.imagegallery.message.next=Next
+label.ApolloImageGallery.Title=Title
+apollo.imagegallery.message.edit=The content has been edited, the page will reload.
+apollo.imagegallery.message.new=New image gallery, please edit the content.
+apollo.imagegallery.message.empty=No images found.
+label.ApolloImageGallery.ImageFolder=Image Folder
+apollo.imagegallery.default.Title=New image gallery

@@ -1,0 +1,9 @@
+apollo.setting.showtitle.description=Legt fest, ob der Titel der einzelnen Bilder angezeigt werden soll.
+apollo.setting.imagecss=Bild CSS Klasse
+apollo.setting.imagecss.description=CSS Klasse(n) für die <div> Bilder Elemente.
+apollo.setting.showtitle=Zeige Bildtitel
+apollo.setting.showcopyright=Zeige Copyright
+title.a-sliderextended=Neuer komplexer Slider
+fileicon.a-sliderextended=Komplexer Slider
+apollo.setting.showcopyright.description=Wenn angekreuzt, wird die Copyright Information der Bilder angezeigt.
+desc.a-sliderextended=Ermöglicht das Erstellen komplexer Animationen mit aufwendigen Effekten.

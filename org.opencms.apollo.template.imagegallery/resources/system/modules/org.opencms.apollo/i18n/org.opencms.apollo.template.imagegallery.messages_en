@@ -1,0 +1,14 @@
+apollo.setting.showtitle.description=If checked, the title of each image will be shown.
+apollo.setting.autoload.help=If enabled and load-button is clicked, more images are loaded automatically when scrolling near bottom.
+apollo.setting.imagecss=Image wrapper CSS class
+apollo.setting.showcopyright=Show image copyright
+fileicon.a-imagegallery=Image Gallery
+apollo.setting.imagesperpage=Images per page
+apollo.setting.showcopyright.description=If checked, the copyright text of each image will be shown.
+apollo.setting.imagesperpage.description=Sets the number of images that will be loaded.
+desc.a-imagegallery=Creates an image gallery from a given folder.
+apollo.setting.imagecss.description=CSS class name for the images <div> elements.
+apollo.setting.showtitle=Show image title
+apollo.setting.imagesperpage.error=Please enter only numbers.
+title.a-imagegallery=Image Gallery
+apollo.setting.autoload=Enable autoload

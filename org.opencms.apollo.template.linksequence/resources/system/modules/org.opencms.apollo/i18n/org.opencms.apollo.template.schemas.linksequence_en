@@ -1,0 +1,12 @@
+label.ApolloLinkSequence.GalleryTitle=Gallery Title
+label.ApolloLinkSequence.LinkEntry.help=A single link entry of the sequence.
+apollo.linksequence.error.Title=The title must not be empty.
+label.ApolloLinkSequence.GalleryTitle.help=The gallery title of the link sequence. It is not shown on the page.
+apollo.linksequence.message.new=New link sequence, please edit the content.
+label.ApolloLinkSequence.Title.help=The title of the link sequence.
+label.ApolloLinkSequence.Text=Text
+label.ApolloLinkSequence.Text.help=The text is shown above the links.
+apollo.linksequence.message.languages=Languages
+label.ApolloLinkSequence.Title=Title
+apollo.linksequence.default.Title=New link sequence
+label.ApolloLinkSequence.LinkEntry=Link item

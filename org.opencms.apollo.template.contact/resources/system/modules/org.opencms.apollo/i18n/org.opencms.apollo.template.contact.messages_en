@@ -1,0 +1,13 @@
+apollo.contact.setting.showorganization=Show organization
+apollo.contact.setting.labels.texticons=Use icons and text for labels
+apollo.contact.setting.labels.text=Use text for labels
+title.a-contact=Contact Information
+apollo.contact.setting.labels=Label style
+apollo.contact.setting.showemail=Show email address
+desc.a-contact=Shows detailed information of a contact person / company.
+apollo.contact.setting.showdescription=Show description
+apollo.contact.setting.showlink=Show link
+apollo.contact.setting.showaddress=Show address
+apollo.contact.setting.showphone=Show phone
+fileicon.a-contact=Contact Information
+apollo.contact.setting.labels.icons=Use icons for labels

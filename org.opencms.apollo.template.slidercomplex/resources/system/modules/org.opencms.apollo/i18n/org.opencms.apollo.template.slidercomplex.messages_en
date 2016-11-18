@@ -1,0 +1,9 @@
+apollo.setting.showtitle.description=If checked, the title of each image will be shown.
+apollo.setting.imagecss=Image wrapper CSS class
+apollo.setting.imagecss.description=CSS class name for the images <div> elements.
+apollo.setting.showtitle=Show image title
+apollo.setting.showcopyright=Show image copyright
+title.a-sliderextended=New Complex Slider
+fileicon.a-sliderextended=Complex Slider
+apollo.setting.showcopyright.description=If checked, the copyright text of each image will be shown.
+desc.a-sliderextended=Allows to create complex animations with advanced effects.

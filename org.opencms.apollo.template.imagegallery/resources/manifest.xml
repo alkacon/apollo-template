@@ -29,8 +29,10 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/imagegallery.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/imagegallery.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/imagegallery.xsd"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imagegallery.messages"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.imagegallery"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imagegallery.messages_de"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imagegallery.messages_en"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.imagegallery_de"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.imagegallery_en"/>
 			<resource uri="/system/workplace/resources/filetypes/a-imagegallery.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-imagegallery_big.png"/>
 		</resources>
@@ -181,18 +183,14 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imagegallery.messages</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imagegallery.messages</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>53a04860-7508-11e6-940e-0242ac11002b</uuidstructure>
-			<uuidresource>53a04861-7508-11e6-940e-0242ac11002b</uuidresource>
-			<datecreated>Wed, 07 Sep 2016 14:35:30 GMT</datecreated>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imagegallery.messages_de</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imagegallery.messages_de</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>d5e212b3-ada9-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>d5e212b4-ada9-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:12:43 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
-				<property>
-					<name>content-encoding</name>
-					<value><![CDATA[ISO-8859-1]]></value>
-				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -202,17 +200,51 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.imagegallery</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.imagegallery</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>f389e17e-8faa-11e5-aada-0242ac11002b</uuidstructure>
-			<uuidresource>f389e17f-8faa-11e5-aada-0242ac11002b</uuidresource>
-			<datecreated>Fri, 20 Nov 2015 17:20:09 GMT</datecreated>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imagegallery.messages_en</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imagegallery.messages_en</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>d5e40e86-ada9-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>d5e40e87-ada9-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:12:43 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
-					<name>content-encoding</name>
-					<value><![CDATA[ISO-8859-1]]></value>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.imagegallery_de</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.imagegallery_de</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>0b72147e-adaa-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>0b72147f-adaa-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:14:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.imagegallery_en</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.imagegallery_en</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>0b73c231-adaa-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>0b73c232-adaa-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:14:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
 				</property>
 			</properties>
 			<relations/>
