@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Release notes footer content]]></Headline>
+    <Text name="Text0">
+      <links>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[http://www.opencms.org/]]></target>
+        </link>
+        <link name="link1" internal="false" type="A">
+          <target><![CDATA[http://www.alkacon.com/]]></target>
+        </link>
+      </links>
+      <content><![CDATA[<p>Built with <a href="%(link0)">OpenCms - The Open Source CMS</a> from <a href="%(link1)">Alkacon Software - The OpenCms Experts</a><br />Alkacon and the OpenCms logo are registered trademarks owned by Alkacon Software.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/.galleries/tutorial-images/alkacon_logo.png]]></target>
+          <uuid>36f7f7bb-6101-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </Image>
+      <Title><![CDATA[Alkacon Software]]></Title>
+    </Image>
+  </ApolloSection>
+</ApolloSections>

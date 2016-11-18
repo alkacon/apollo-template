@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/flexible.xsd">
+  <ApolloFlexibleElement language="en">
+    <Title><![CDATA[Footer Alkacon Image]]></Title>
+    <Code name="Code0">
+      <links>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[http://www.alkacon.com]]></target>
+        </link>
+        <link name="link1" internal="true" type="IMG">
+          <target><![CDATA[/sites/default/tutorial/.galleries/tutorial-images/alkacon_logo.png]]></target>
+          <uuid>36f7f7bb-6101-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </links>
+      <content><![CDATA[<a href="%(link0)">
+<img class="pull-right mb-20" src="%(link1)" alt="Alkacon Software">
+</a>]]></content>
+    </Code>
+  </ApolloFlexibleElement>
+</ApolloFlexibleElements>

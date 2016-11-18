@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Contact us]]></Headline>
+    <Text name="Text0">
+      <links>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[http://www.alkacon.com/contact]]></target>
+        </link>
+      </links>
+      <content><![CDATA[<p>Alkacon Software GmbH &amp; Co. KG<br />An der Wachsfabrik 13<br />50996 Cologne, Germany<br />Phone: +49 2236 / 3826 - 0<br /><a href="%(link0)">Send us an email</a></p>]]></content>
+    </Text>
+  </ApolloSection>
+</ApolloSections>

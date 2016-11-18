@@ -1035,6 +1035,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>.content/templaterows/tr_00012.xml</source>
+			<destination>.content/templaterows/tr_00012.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>6bb3181b-adaf-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>6bb3181c-adaf-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:52:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Segment [For Footer]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>.formatters</destination>
 			<type>folder</type>
 			<uuidstructure>eb523bdb-ee99-11e5-a02c-0242ac11002b</uuidstructure>
@@ -7377,6 +7394,40 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/contentsections/cs_00065.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00065.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>024e336f-ada4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>024e3370-ada4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 15:31:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo Demo Footer: Contact us]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00066.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00066.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>23e6d143-ada4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>23e6d144-ada4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 15:31:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo Demo Footer: About OpenCms]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>apollo-demo/.content/contentsections/cs_00067.xml</source>
 			<destination>apollo-demo/.content/contentsections/cs_00067.xml</destination>
 			<type>a-section</type>
@@ -7439,6 +7490,40 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Frequently asked questions: FAQ]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00071.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00071.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>31662b97-ada4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>31662b98-ada4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 15:32:19 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo Demo Footer: More information]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00072.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00072.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>30bde162-ada8-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>30bde163-ada8-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 16:00:56 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo Release Notes Footer: Release notes footer content]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9103,40 +9188,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/flexiblecontents/fc_00001.xml</source>
-			<destination>apollo-demo/.content/flexiblecontents/fc_00001.xml</destination>
-			<type>a-flexible</type>
-			<uuidstructure>3013294d-562c-11e5-bfd9-0242ac11002b</uuidstructure>
-			<uuidresource>3013294e-562c-11e5-bfd9-0242ac11002b</uuidresource>
-			<datecreated>Tue, 08 Sep 2015 13:19:08 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Apollo Demo Footer: Full Demo Footer]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/flexiblecontents/fc_00002.xml</source>
-			<destination>apollo-demo/.content/flexiblecontents/fc_00002.xml</destination>
-			<type>a-flexible</type>
-			<uuidstructure>b306f75f-604b-11e5-9199-0242ac11002b</uuidstructure>
-			<uuidresource>b306f760-604b-11e5-9199-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 10:29:54 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Tutorial / Release notes footer]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>apollo-demo/.content/flexiblecontents/fc_00003.xml</source>
 			<destination>apollo-demo/.content/flexiblecontents/fc_00003.xml</destination>
 			<type>a-flexible</type>
@@ -9182,6 +9233,57 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Job Offer: Horizontal divider]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/flexiblecontents/fc_00006.xml</source>
+			<destination>apollo-demo/.content/flexiblecontents/fc_00006.xml</destination>
+			<type>a-flexible</type>
+			<uuidstructure>c82dfb79-ada3-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>c82dfb7a-ada3-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 15:29:23 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo Demo Footer: Stay connected]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/flexiblecontents/fc_00007.xml</source>
+			<destination>apollo-demo/.content/flexiblecontents/fc_00007.xml</destination>
+			<type>a-flexible</type>
+			<uuidstructure>5cedd10d-ada4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>5cedd10e-ada4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 15:33:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo Demo Footer: The OpenCms Mailing List]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/flexiblecontents/fc_00008.xml</source>
+			<destination>apollo-demo/.content/flexiblecontents/fc_00008.xml</destination>
+			<type>a-flexible</type>
+			<uuidstructure>27f02708-adb3-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>27f02709-adb3-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 17:19:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo Release Notes Footer: Footer Alkacon Image]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9793,7 +9895,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Description</name>
-					<value><![CDATA[Generates the default page footer.]]></value>
+					<value><![CDATA[Generates the full demo page footer.]]></value>
 				</property>
 				<property type="shared">
 					<name>Description</name>
@@ -9801,7 +9903,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Demo Footer]]></value>
+					<value><![CDATA[Apollo Full Demo Footer]]></value>
 				</property>
 				<property type="shared">
 					<name>Title</name>
@@ -9867,7 +9969,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Description</name>
-					<value><![CDATA[Generates the footer for release notes.]]></value>
+					<value><![CDATA[Generates the reduced footer for the release notes and tour.]]></value>
 				</property>
 				<property type="shared">
 					<name>Description</name>
@@ -9875,7 +9977,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Release Notes Footer]]></value>
+					<value><![CDATA[Apollo Reduced Demo Footer]]></value>
 				</property>
 				<property type="shared">
 					<name>Title</name>
@@ -10376,6 +10478,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Row 2 Cols (4 - 4) [Narrow / push - pull]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/templaterows/tr_00013.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00013.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>85b07f71-ada3-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>85b07f72-ada3-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Fri, 18 Nov 2016 15:27:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Row 3 Cols (4 - 4 - 4) [Hide center SM]]]></value>
 				</property>
 			</properties>
 			<relations/>
