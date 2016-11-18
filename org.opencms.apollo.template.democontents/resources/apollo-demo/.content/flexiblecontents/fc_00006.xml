@@ -1,105 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/flexible.xsd">
-  <ApolloFlexibleElement language="de">
-    <Title><![CDATA[Full Demo Footer]]></Title>
-    <Code name="Code0">
-      <links>
-        <link name="link0" internal="false" type="A">
-          <target><![CDATA[http://documentation.opencms.org/central/]]></target>
-        </link>
-        <link name="link1" internal="false" type="A">
-          <target><![CDATA[http://www.alkacon.com/de/products/]]></target>
-        </link>
-        <link name="link2" internal="false" type="A">
-          <target><![CDATA[http://www.alkacon.com/contact]]></target>
-        </link>
-        <link name="link3" internal="false" type="A">
-          <target><![CDATA[http://www.opencms.org/en/home/rss-news.xml]]></target>
-        </link>
-        <link name="link4" internal="false" type="A">
-          <target><![CDATA[http://github.com/alkacon]]></target>
-        </link>
-        <link name="link5" internal="false" type="A">
-          <target><![CDATA[https://twitter.com/OpenCms]]></target>
-        </link>
-        <link name="link6" internal="false" type="A">
-          <target><![CDATA[http://www.facebook.com/opencms]]></target>
-        </link>
-        <link name="link7" internal="false" type="A">
-          <target><![CDATA[https://google.com/+opencms]]></target>
-        </link>
-        <link name="link8" internal="false" type="A">
-          <target><![CDATA[https://www.xing.com/net/pri17d83bx/opencmsusergroup]]></target>
-        </link>
-        <link name="link9" internal="false" type="A">
-          <target><![CDATA[http://www.youtube.com/alkacon]]></target>
-        </link>
-        <link name="link10" internal="false" type="A">
-          <target><![CDATA[http://slideshare.net/AlkaconOpenCms/presentations]]></target>
-        </link>
-      </links>
-      <content><![CDATA[<!--=== Footer ===-->
-<div class="footer">
-<div class="container">
-<div class="row">
-
-<div class="col-md-4 md-margin-bottom-40">
-<!-- About -->
-<div class="headline"><h3>Über OpenCms</h3></div>
-<p class="mb-25">OpenCms von Alkacon Software ist ein professionelles, einfach anzuwendendes Website Content Management System. OpenCms hilft Anwendern weltweit, fantastische Webseiten schnell und einfach zu erstellen.</p>
-<div class="headline"><h3>Mehr Informationen</h3></div>
-<dl>
-<dt><a href="%(link0)">OpenCms Dokumentation</a></dt>
-<dd>Tutorials and Anleitungen für OpenCms.</dd>
-<dt><a href="%(link1)">OpenCms Leistungen von Alkacon Software</a></dt>
-<dd>Wir von Alkacon sind voll auf OpenCms spezialisiert und bieten unsere Kunden Service, Support und Zusatzprodukte für OpenCms an.</dd>
-</dl>
-</div>
-			
-<div class="hidden-xs hidden-sm col-md-4 md-margin-bottom-40">
-<!-- Mailing List -->
-<div class="headline"><h3>Die OpenCms-Mailingliste</h3></div>
-<p>Die opencms-dev Mailingliste ist der Ort für alle Fragen, Kommentare und Vorschläge zu OpenCms und das Hauptforum für die OpenCms-Community. Abonnieren Sie die Liste indem Sie das folgende Formular ausfüllen.</p>
-<form class="form-horizontal" method="post" action="http://lists.opencms.org/mailman/subscribe/opencms-dev">
-<div class="mb-10"><input type="text" name="email" placeholder="E-Mail Adresse" class="form-control input-sm"/></div>
-<div class="mb-10"><input type="password" name="pw" placeholder="Passwort auswählen" class="form-control input-sm"/></div>
-<div class="mb-10"><input type="password" name="pw-conf" placeholder="Passwort bestätigen" class="form-control input-sm"/></div>
-<div class="mb-10">
-<button type="submit" class="btn-u">Abonnieren</button>
-</div>
-<div><p>Verbindung zum Internet für das Abo erforderlich.</p></div>
-</form>							
-</div>
-
-<div class="col-md-4">
-<div class="headline"><h3>Kontakt</h3></div>
-<address>
-Alkacon Software GmbH<br />
-An der Wachsfabrik 13<br />
-50996 Köln<br />
-Phone: +49 2236 / 3826 - 0<br />
-<a href="%(link2)">Senden Sie uns eine Nachricht</a>
-</address>
-<div class="headline"><h3>In den sozialen Medien</h3></div>
-<ul class="social-icons">
-<li><a href="%(link3)" data-original-title="Feed" class="social_rss" title="RSS Feed"></a></li>
-<li><a href="%(link4)" data-original-title="GitHub" class="social_github" title="GitHub"></a></li>
-<li><a href="%(link5)" data-original-title="Twitter" class="social_twitter" title="Twitter"></a></li>
-<li><a href="%(link6)" data-original-title="Facebook" class="social_facebook" title="Facebook"></a></li>
-<li><a href="%(link7)" data-original-title="Goole Plus" class="social_googleplus" title="Google+"></a></li>
-<li><a href="%(link8)" data-original-title="Xing" class="social_xing" title="Xing"></a></li>
-<li><a href="%(link9)" data-original-title="Youtube" class="social_youtube" title="YouTube"></a></li>
-<li><a href="%(link10)" data-original-title="SlideShare" class="social_slideshare" title="SlideShare"></a></li>
-</ul>
-</div>
-
-</div><!--/row-->	
-</div><!--/container-->	
-</div><!--/footer-->	
-<!--=== End Footer ===-->]]></content>
-    </Code>
-  </ApolloFlexibleElement>
   <ApolloFlexibleElement language="en">
     <Title><![CDATA[Stay connected]]></Title>
     <Code name="Code0">
@@ -138,6 +39,49 @@ Phone: +49 2236 / 3826 - 0<br />
     <li class="slideshare"><a target="_blank" title="OpenCms on SlideShare" href="%(link4)"><i class="fa fa-slideshare"></i></a></li>
     <li class="youtube"><a target="_blank" title="OpenCms on YouTube" href="%(link5)"><i class="fa fa-youtube"></i></a></li>
     <li class="github"><a target="_blank" title="OpenCms source code on GitHub" href="%(link6)"><i class="fa fa-github"></i></a></li>
+    <li class="rss"><a target="_blank" title="OpenCms RSS News Feed" href="%(link7)"><i class="fa fa-rss"></i></a></li>
+</ul>
+</div>]]></content>
+    </Code>
+  </ApolloFlexibleElement>
+  <ApolloFlexibleElement language="de">
+    <Title><![CDATA[In den sozialen Medien]]></Title>
+    <Code name="Code0">
+      <links>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[http://facebook.com/opencms/]]></target>
+        </link>
+        <link name="link1" internal="false" type="A">
+          <target><![CDATA[http://twitter.com/alkaconopencms/]]></target>
+        </link>
+        <link name="link2" internal="false" type="A">
+          <target><![CDATA[https://plus.google.com/+opencms]]></target>
+        </link>
+        <link name="link3" internal="false" type="A">
+          <target><![CDATA[https://www.xing.com/communities/groups/opencms-usergroup-7901-1054980]]></target>
+        </link>
+        <link name="link4" internal="false" type="A">
+          <target><![CDATA[http://www.slideshare.com/AlkaconOpenCms]]></target>
+        </link>
+        <link name="link5" internal="false" type="A">
+          <target><![CDATA[http://www.youtube.com/alkacon]]></target>
+        </link>
+        <link name="link6" internal="false" type="A">
+          <target><![CDATA[http://www.github.com/alkacon/opencms-core]]></target>
+        </link>
+        <link name="link7" internal="false" type="A">
+          <target><![CDATA[http://www.opencms.org/en/home/rss-news.xml]]></target>
+        </link>
+      </links>
+      <content><![CDATA[<div>
+<ul class="social-links">
+    <li class="facebook"><a target="_blank" title="OpenCms auf Facebook" href="%(link0)"><i class="fa fa-facebook"></i></a></li>
+    <li class="twitter"><a target="_blank" title="OpenCms auf Twitter" href="%(link1)"><i class="fa fa-twitter"></i></a></li>
+    <li class="googleplus"><a target="_blank" title="OpenCms auf Google+" href="%(link2)"><i class="fa fa-google-plus"></i></a></li>
+    <li class="xing"><a target="_blank" title="OpenCms auf Xing" href="%(link3)"><i class="fa fa-xing"></i></a></li>
+    <li class="slideshare"><a target="_blank" title="OpenCms auf SlideShare" href="%(link4)"><i class="fa fa-slideshare"></i></a></li>
+    <li class="youtube"><a target="_blank" title="OpenCms auf YouTube" href="%(link5)"><i class="fa fa-youtube"></i></a></li>
+    <li class="github"><a target="_blank" title="OpenCms Quellcode auf GitHub" href="%(link6)"><i class="fa fa-github"></i></a></li>
     <li class="rss"><a target="_blank" title="OpenCms RSS News Feed" href="%(link7)"><i class="fa fa-rss"></i></a></li>
 </ul>
 </div>]]></content>
