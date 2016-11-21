@@ -48,8 +48,10 @@ $panel-active-bg:       $main-theme !default;
 
 .ap-tab .nav-tabs > li > a { 
 
-  border: none;
+  font-family: $font-header;
+  font-weight: $font-header-weight;
   color: $text-dark;
+  border: none;
   text-transform: $tab-text-transform;
   border-radius: 0;
   transition: all .2s ease-in-out;
@@ -138,6 +140,8 @@ $panel-active-bg:       $main-theme !default;
 
 .panel-heading h4.panel-title {
 
+    font-family: $font-header;
+    font-weight: $font-header-weight;
     font-size: 14px;
     font-weight: normal;
     line-height: 25px;

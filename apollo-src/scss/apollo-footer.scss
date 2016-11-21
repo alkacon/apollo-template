@@ -11,10 +11,10 @@
     }
     &.light {
         background: $grey-light;
-        color: $text-light;
+        color: $grey-dark;
         p, div,
         h1, h2, h3, h4 {
-            color: $grey-darker;
+            color: $grey-dark;
         }
     }
 }

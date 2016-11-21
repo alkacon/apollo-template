@@ -95,10 +95,13 @@ $button-colors:          $primary-colors !default;
 
 
 
-/*Navigation
+/* Pagination
 ------------------------------------*/ 
 
-/*Pegination*/
+$pagination-text: $grey !default;
+$pagination-border: $grey-light !default;
+
+
 .pagination > li:first-child > a, 
 .pagination > li:first-child > span,
 .pagination > li:last-child > a,
@@ -106,7 +109,6 @@ $button-colors:          $primary-colors !default;
   border-radius: 0;
 }
 
-/* Pagination */
 .pagination > .active > a, 
 .pagination > .active > span, 
 .pagination > .active > a:hover, 
@@ -118,12 +120,13 @@ $button-colors:          $primary-colors !default;
 }
 
 .pagination li a {
-  color: #777;
+  color: $pagination-text;
+  border-color: $pagination-border;
   padding: 5px 15px;
 }
 
 .pagination li a:hover {
-  color: $white;
+  color: $text-light;
   background: $main-theme-hover;
   border-color: $main-theme-hover;   
 }
@@ -158,18 +161,18 @@ $button-colors:          $primary-colors !default;
                   border-color: $bg-color;
                 }
             }
-            
+
             li a:hover {
                 background: $highlight-color;
                 border-color: $highlight-color;   
             }
-            
+
             & > button {
                 background-color: $bg-color;
                 border-color: $bg-color;
             }
         }
-        
+
         // facet row
         .listOptions {
             .btn, .dropdown-menu > .active > a {
@@ -177,39 +180,39 @@ $button-colors:          $primary-colors !default;
                 border-color: $bg-color;  
                 color: $text-color;
             }
-            
+
             button:hover, button:focus {
                 background: $highlight-color;
                 border-color: $highlight-color;  
             }
         }
-        
+
         // archive menu
         div &.ap-list-filters, .ap-list-filters {
-    
+
             .fa {
                 color: $text-color;
             }
-            
+
             a {
                 color: inherit;
                 text-decoration: none;
             }
-        
+
             button {
                 background: $bg-color;
                 border-color: $bg-color;  
                 color: $text-color;
-                
+
                 &:hover, &:focus {
                     background: $highlight-color;
                     border-color: $highlight-color;  
                 }
             }
         }
-        
+
         &.ap-list-filterbox {
-            
+
             .ap-list-filter-archive {
                 button {
                     background: $bg-color;
@@ -217,78 +220,13 @@ $button-colors:          $primary-colors !default;
                     color: $text-color;
                 }
             }
-            
+
             li.active {
                 font-weight: bold;
             }
         }
-            
     }
 }
-
-// List and Image gallery spinner animation
-@keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.spinner{
-    width: 30px;
-    height: auto;
-    font-size: 30px;
-    position: absolute;
-    transform: translateY(-50%);
-    z-index: 1000;
-    &, a &  {
-        color: $white;
-    }
-    
-    left: 50%;
-    i {
-        animation: spinner 700ms infinite;
-        animation-timing-function: steps(4, end);
-    }
-}
-
-.spinnerInnerBox {
-    position: relative;
-    left: -150%;
-    background-color: black;
-    width: 300%;
-    padding: 100%;
-    border-radius: 12px;
-    line-height: 0;
-    opacity: 0.65;
-}
-
-.spinnerBottom {
-    bottom: 80px;
-}
-
-
-//Image gallery image enter animation
-.comein {
-    transform: translateY(120px);
-    animation: come-in 0.8s ease forwards;
-    &:nth-child(even) {
-        transform: translateY(150px);        
-        animation-duration: 1.0s; /* So they look staggered */
-    }
-}
-
-
-@keyframes come-in {
-  to { transform: translateY(0); }
-}
-
 
 /*Button Groups*/
 

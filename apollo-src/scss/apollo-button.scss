@@ -98,7 +98,7 @@ div.ap-btn-xs a.btn,
 
     .dropdown-#{""+$color-name} > .active {
         > a, > a:hover, > a:focus {
-            color: #fff;
+            color: $text-color;
             text-decoration: none;
             background-color: $bg-color;
             outline: 0;

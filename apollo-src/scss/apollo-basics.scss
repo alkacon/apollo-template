@@ -3,25 +3,106 @@
 /* Basic CSS selectors that can define the default look of various elements 
 -----------------------------------------------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+$page-background: $white !default;
+
+$font-header: "Raleway", sans-serif !default; 
+$font-header-weight: 500 !default;
+
+$font-header-size: 24px !default;
+$font-header-step: round($font-header-size / 6) !default;
+
+$font-content: "Open Sans", sans-serif !default; 
+$font-content-size: 13px !default;
+
+$h1-size: $font-header-size + $font-header-step !default;
+$h1-heig: round($h1-size * 1.25) !default;
+$h2-size: $font-header-size !default;
+$h2-heig: round($h2-size * 1.25) !default;
+$h3-size: $font-header-size - $font-header-step !default;
+$h3-heig: round($h3-size * 1.25) !default;
+$h4-size: $font-header-size - $font-header-step - round($font-header-step / 2) !default;
+$h4-heig: round($h4-size * 1.25) !default;
+$h5-size: $h4-size !default;
+$h5-heig: round($h5-size * 1.25) !default;
+$h6-size: $h4-size !default;
+$h6-heig: round($h6-size * 1.25) !default;
+
 * {
   border-radius: 0;
 }
 
 body {
-  font-size: 13px;
-  line-height: 1.6;
+  font-family: $font-content;  
+  color: $text-content;
+  font-size: $font-content-size;
+  line-height: 1.5;
+  background-color: $grey-light;
 }
 
-body > div[class*=wrapper] {
-  background-color: transparent;    
+.wrapper {
+  background-color: $page-background;
 }
 
-p, 
-li,
-li a,
-label { 
-   color: $text-paragraphs;
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: $font-header;
+  font-weight: $font-header-weight;
+  color: $text-header;
+  margin-top: 5px;
+  text-shadow: none; 
 }
+
+h1, .h1 {
+  font-size: $h1-size;
+  line-height: $h1-heig;
+}
+h2, .h2 {
+  font-size: $h2-size;
+  line-height: $h2-heig;
+}
+h3, .h3 {
+  font-size: $h3-size;
+  line-height: $h3-heig;
+}
+h4, .h4 {
+  font-size: $h4-size;
+  line-height: $h4-heig;
+}
+h5, .h5 {
+  font-size: $h5-size;
+  line-height: $h5-heig;
+}
+h6, .h6 {
+  font-size: $h6-size;
+  line-height: $h6-heig;
+}
+
+/* Headline with underline effect */
+
+$headline-linecolor:     $main-theme !default;
+$headline-bottom:        1px dotted $grey-light !default; 
+
+.headline {
+  display: block;
+  margin: 10px 0 25px 0;
+  border-bottom: $headline-bottom;
+}
+
+.headline h2,
+.headline h3, 
+.headline h4 {
+  display: inline-block;
+  margin: 0 0 -2px 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid $headline-linecolor;
+}
+
 
 a {
     &,
@@ -51,40 +132,9 @@ button:hover {
    outline: 0 !important;
 }
 
-h1 {
-  font-size: 28px;
-  line-height: 35px;
-}
-h2 {
-  font-size: 24px;
-  line-height: 33px;
-}
-h3 {
-  font-size: 20px;
-  line-height: 27px;
-}
-h4 {
-  line-height: 25px;
-}
-h5 {
-  line-height: 20px;
-}
-h6 {
-  line-height: 18px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: $text-headers;
-  margin-top: 5px;
-  text-shadow: none; 
-  font-weight: normal; 
-  font-family: "Open Sans", Arial, sans-serif;
-} 
-
 hr { 
     margin: 30px 0px; 
 }
 
-.wrapper {
-  background: #fff;
-}
+
+

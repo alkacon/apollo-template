@@ -56,9 +56,9 @@ $red-cyan:          mix($red, $cyan) !default;
 
 // Text colors 
 $text-light: #fff !default;
-$text-dark: #444 !default;
-$text-headers: #555 !default;
-$text-paragraphs: #555 !default;
+$text-dark: #555 !default;
+$text-header: $text-dark !default;
+$text-content: $text-dark !default;
 
 // Drop shadow color for effects
 $dropshadow: rgba(0, 0, 0, 0.3) !default;

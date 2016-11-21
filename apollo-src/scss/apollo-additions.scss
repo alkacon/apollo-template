@@ -1,16 +1,23 @@
-/*Back To Top
-------------------------------------*/
+/**
+ * "Back to top" icon on the lower right of display.
+ */
 #topcontrol {
-  color: #fff;
+  color: $text-light;
+  background: $text-dark;
   z-index: 99;
   width: 30px;
   height: 30px;
   font-size: 20px;
-  background: #222;
   position: relative;
   right: 14px !important;
   bottom: 11px !important;
   border-radius: 3px !important;
+}
+
+#topcontrol:hover {
+  background-color: $main-theme;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #topcontrol:after {
@@ -20,91 +27,6 @@
   position: absolute;
   text-align: center;
   font-family: FontAwesome;
-}
-
-#topcontrol:hover {
-  color: $white;
-  background-color: $alkacon-red;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-/*Block Headline*/
-.headline {
-  display: block;
-  margin: 10px 0 25px 0;
-  border-bottom: 1px dotted #e4e9f0;
-}
-
-.headline h2 {
-  font-size: 22px;
-}
-
-.headline h2, 
-.headline h3, 
-.headline h4 {
-  margin: 0 0 -2px 0;
-  padding-bottom: 5px;
-  display: inline-block;
-  border-bottom: 2px solid #72c02c;
-}
-
-/*Headline v2
-------------------------------------*/
-.headline-v2 {
-  display: block;
-  background: #fff;
-  padding: 1px 10px;
-  margin: 0 0 20px 0;
-  border-left: 2px solid #000;
-}
-
-.headline-v2 h2 {
-  margin: 3px 0;
-  font-size: 20px;
-  font-weight: 200;
-}
-
-/*Heading Sizes
-------------------------------------*/
-h2.heading-md {
-  font-size: 20px;
-  line-height: 24px;
-}
-
-h2.heading-sm,
-h3.heading-md {
-  font-size: 18px;
-  line-height: 24px;
-}
-
-h3.heading-md {
-  line-height: 22px;
-}
-
-h3.heading-sm {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-h2.heading-xs {
-  font-size: 16px;
-  line-height: 22px;
-}
-
-h3.heading-xs {
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.headline-md {
-  margin-bottom: 15px;
-}
-
-.headline-md h2 {
-  font-size: 21px;
 }
 
 /*Forms
@@ -247,4 +169,38 @@ span.badge-light {
     top: -9px; 
     left: 4px; 
     position: relative
+}
+
+
+
+/* Badges and Labels
+------------------------------------*/
+.badge {
+  border-radius: 0;
+}
+
+/*Labels*/
+span.label {
+  font-size: 11px;
+  font-weight: 400;
+  padding: 4px 7px;
+}
+
+/*Badges*/
+span.badge {
+  color: #fff;
+  font-weight: 400;
+  padding: 4px 7px;  
+}
+
+span.badge-dark-blue {
+  background: $blue;
+}
+
+span.badge-orange {
+  background: $orange;
+}
+
+.rounded { 
+    border-radius: 4px !important; 
 }

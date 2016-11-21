@@ -9,6 +9,18 @@ $social-links-margin:     4px !default;
 $social-links-size-half:  $social-links-size / 2 !default;
 $social-links-box-height: $social-links-size * 2 !default;
 
+
+// Social network colors
+$color-facebook:    #3b5998 !default;
+$color-googleplus:  #dd4b39 !default;
+$color-youtube:     #b31217 !default;
+$color-twitter:     #55acee !default;
+$color-linkedin:    #0976b4 !default;
+$color-github:      #777777 !default;
+$color-slideshare:  #e98325 !default;
+$color-xing:        #126567 !default;
+$color-rss:         #ee802f !default;
+
 .social-links {
   list-style: none;
   font-size: 0px;
@@ -39,17 +51,6 @@ $social-links-box-height: $social-links-size * 2 !default;
     }
   }
 }
-
-// Fixed social colors
-$color-facebook:    #3b5998 !default;
-$color-googleplus:  #dd4b39 !default;
-$color-youtube:     #b31217 !default;
-$color-twitter:     #55acee !default;
-$color-linkedin:    #0976b4 !default;
-$color-github:      #777777 !default;
-$color-slideshare:  #e98325 !default;
-$color-xing:        #126567 !default;
-$color-rss:         #ee802f !default;
 
 // Map to generate the social icon styles with
 $social-links:

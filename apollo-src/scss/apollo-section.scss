@@ -9,7 +9,7 @@
     h3.subtitle {
 
         a {
-            color: $text-headers;
+            color: $text-header;
         }
 
         a:hover {
@@ -52,10 +52,10 @@
 
     a {
 
-        color: $text-dark;
+        color: $text-content;
 
         &:hover, &:active, &:focus {
-            color: $text-dark;
+            color: $text-content;
             text-decoration: none;
           }
           .ap-img-desc {
@@ -96,10 +96,10 @@
 }
 
 a.ap-img-link {
-    color: $text-dark;
+    color: $text-content;
 
     &:hover, &:active, &:focus {
-        color: $text-dark;
+        color: $text-content;
         text-decoration: none;
     }
     .ap-img-desc {
