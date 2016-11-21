@@ -1,24 +1,42 @@
+label.ApolloTemplateRow.Container.help=A comma-separated list containing the types of the containers the row can be placed in.
 label.ApolloRowColumn.EmptyText=Empty Text
 apollo.row.columns.col=column
 apollo.row.in=In:
 apollo.row.detailview=DETAIL VIEW
 label.ApolloRowColumn.Editors=Editable by
+label.ApolloRowColumn.PreMarkup.help=The HTML rendered directly before the &lt;cms:container&gt;-tag of the container exposed for the column.
 label.ApolloRowColumn.Name=Container Name
 label.ApolloTemplateRow.Title.help=The title of the row.
 apollo.row.default.Title=New layout row
+label.ApolloRowColumn.PostMarkup=Post Markup
+label.ApolloTemplateRow.PostMarkup.help=The HTML rendered after any other output of the formatter is rendered. No macros are allowed.<br />\n\
+	Typically, tags opened via the pre markup are closed here.
 apollo.row.columns.hidden=Hidden
+label.ApolloRowColumn.PostMarkup.help=The HTML rendered directly after the &lt;cms:container&gt;-tag of the container exposed for the column.
 label.ApolloRowColumn.Editors.help=Sets the users that can edit elements in this column.
+label.ApolloTemplateRow.Defaults.help=Set a default configuration for columns that is used by each of the defined columns, except the configured values are explictly overwritten for the specific column.
 apollo.row.for=For:
-label.ApolloRowColumn.Type.help=The type of the container that is created in this column.
+label.ApolloRowColumn.Type.help=The type(s) of the container that is created in this column. Can be a comma-separated list.
 apollo.row.blocked=BLOCKED
 apollo.row.detailonly=Only for detail pages
 label.ApolloRowColumn.Grid=Grid Class
 label.ApolloRowColumn.Count.help=The maximum count of elements that can be placed in the container.
+label.ApolloRowColumn.PreMarkup=Pre Markup
 label.ApolloTemplateRow.Title=Title
 apollo.row.columns.cols=columns
-label.ApolloRowColumn.Type=Container Type
+label.ApolloRowColumn.Type=Container Types
+label.ApolloTemplateRow.Defaults=Default Column Definition
 apollo.row.restricted=Restricted
+label.ApolloTemplateRow.PreMarkup=Pre Markup
 label.ApolloRowColumn.Count=Maximum Elements
+label.ApolloTemplateRow.PreMarkup.help=The HTML rendered before any other output of the formatter is rendered. Can contain macros $(param) and $(link).<br />\n\
+	<ul>\n\
+	<li>$(param) is directly substituted by the value of the element setting "Param".</li>\n\
+	<li>$(link) is substituted by the value of the element setting "Link" if this value does not start with "#". In that case, the $(link)-macro is just removed and the value of the element setting "Link" is added as anchor directly after the pre markup.</li>\n\
+	</ul>\n\
+	Example for a pre markup: &lt;div class="row $(param)"&gt;\n\
+	
+label.ApolloTemplateRow.Container=Matching Container Types
 label.ApolloTemplateRow.Column=Column
 apollo.row.columns.editor.editor=Editor
 apollo.row.headline.detailonlycontainer=Please note: This Layout Row is only shown on type detail pages.
@@ -28,7 +46,8 @@ label.ApolloTemplateRow.Column.help=The definition of a single column of the row
 apollo.row.columns.editor.elementauthor=Element Author
 apollo.row.columns.editor.developer=Template Developer
 label.ApolloRowColumn.Name.help=The name of the container that is created in this column.
-label.ApolloRowColumn.Grid.help=CSS class to create the Bootstrap grid system.
+label.ApolloRowColumn.Grid.help=CSS class to create the Bootstrap grid system. Added to the &lt;div&gt; rendered by the &lt;cms:container&gt;-tag.
+label.ApolloTemplateRow.PostMarkup=Post Markup
 apollo.row.detailcontainer=Detail Container
 label.ApolloRowColumn.EmptyText.help=This text is shown if the column does not have any content elements.
 apollo.row.headline.emptycontainer=Empty Container

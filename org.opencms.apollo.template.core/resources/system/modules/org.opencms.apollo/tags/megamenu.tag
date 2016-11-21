@@ -7,6 +7,7 @@
 <%@ attribute name="mode" type="java.lang.String" required="true" %>
 
 <%@ variable name-given="containerSuffix" scope="AT_END" declare="true" %>
+<%@ variable name-given="containerTypes" scope="AT_END" declare="true" %>
 <%@ variable name-given="megamenuFilename" scope="AT_END" declare="true" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -22,6 +23,7 @@
 <c:set var="megamenuFilename">mega.menu</c:set>
 <c:set var="isMegaMenuRequest">${fn:endsWith(cms.requestContext.uri, megamenuFilename)}</c:set>
 <c:set var="containerSuffix">${isMegaMenuRequest ? "-megamenu" : ""}</c:set>
+<c:set var="containerTypes">${isMegaMenuRequest ? ",row" : ""}</c:set>
 
 <c:if test="${mode == 'wrapContainer' && !cms.isOnlineProject && cms.isEditMode && isMegaMenuRequest && !param.ajaxreq}"><c:set var="wrapContainer" value="true" /></c:if>
 <c:if test="${mode == 'skipTemplatePart' && param.ajaxreq}"><c:set var="skipTemplatePart" value="true" /></c:if>

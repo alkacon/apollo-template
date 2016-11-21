@@ -12,7 +12,8 @@
 
 <apollo:megamenu mode="skipTemplatePart" >
   <c:set var="titleprefix"><cms:property name="apollo.title.prefix" file="search" default="" /></c:set>
-  <title>${titleprefix}${not empty titleprefix ? ' ':''}${cms.title}</title>
+  <c:set var="titlesuffix"><cms:property name="apollo.title.suffix" file="search" default="" /></c:set>
+  <title>${titleprefix}${not empty titleprefix ? ' ':''}${cms.title}${not empty titlesuffix ? ' ':''}${titlesuffix}</title>
 
   <meta charset="${cms.requestContext.encoding}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,7 +60,7 @@
 </c:if>
 
 <apollo:megamenu mode="wrapContainer">
-  <cms:container name="page-complete${containerSuffix}" type="area" width="1200" maxElements="50" editableby="ROLE.DEVELOPER">
+  <cms:container name="page-complete${containerSuffix}" type="area${containerTypes}" width="1200" maxElements="50" editableby="ROLE.DEVELOPER">
     <cms:bundle basename="org.opencms.apollo.template.core.messages">
       <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
     </cms:bundle>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloBlogs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/blog.xsd">
+  <ApolloBlog language="en">
+    <Title><![CDATA[OpenCms is modular]]></Title>
+    <Date>1479726300000</Date>
+    <Teaser><![CDATA[Virtute laoreet nusquam nec an, falli harum habemus ea mea. Quo ei cibo probatus. Impedit copiosae nominati ut pri, tation equidem mnesarchum per id, mea ei odio option partiendo.]]></Teaser>
+    <Paragraph>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Virtute laoreet nusquam nec an, falli harum habemus ea mea. Quo ei cibo probatus. Impedit copiosae nominati ut pri, tation equidem mnesarchum per id, mea ei odio option partiendo. Cu feugiat legendos mei. Eum ludus possim patrioque eu, no vis duis inermis, usu elit vocent cotidieque an. At nam animal aliquip sapientem.</p>
+<p>Dicam eligendi probatus ut eam. Ei legere posidonium sed. Tritani gubergren conceptam eu has. An iudico denique sea, duo solum dolores te, mel cu viderer persequeris. Usu altera voluptatum ei, ei unum nonumy interpretaris mel.&nbsp;Mea eu dolores dissentias. Quem postea diceret an pri. Has nisl diceret in.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/samples/19.jpg]]></target>
+            <uuid>cadff45a-4705-11e3-8417-000c29d28104</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
+      </Image>
+    </Paragraph>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <Author><![CDATA[Admin]]></Author>
+  </ApolloBlog>
+</ApolloBlogs>

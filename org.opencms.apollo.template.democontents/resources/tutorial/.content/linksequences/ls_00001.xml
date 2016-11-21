@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloLinkSequences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/linksequence.xsd">
+  <ApolloLinkSequence language="en">
+    <Title><![CDATA[Tutorial pages]]></Title>
+    <LinkEntry>
+      <Text><![CDATA[Login to OpenCms]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/login-to-opencms/]]></target>
+          <uuid>745ef95a-6105-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Step 1: Modify a page]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/step-1-modify-a-page/]]></target>
+          <uuid>5ceb673f-6105-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Step 2: Edit content]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/step-2-edit-content/]]></target>
+          <uuid>0040a202-6128-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Step 3: Fun with Formatters]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/step-3-fun-with-formatters/]]></target>
+          <uuid>82f11fdf-f048-11e5-b20f-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Step 4: Work with the Sitemap]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/step-4-work-with-the-sitemap/]]></target>
+          <uuid>fb838f17-6127-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Step 5: Launchpad and Explorer]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/step-5-launchpad-and-explorer/]]></target>
+          <uuid>f8fe1cac-6127-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Step 6: Publish your changes]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/step-6-publish-your-changes/]]></target>
+          <uuid>f3d66111-6127-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Start exploring OpenCms]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/start-exploring-opencms/]]></target>
+          <uuid>f0e47136-6127-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+  </ApolloLinkSequence>
+</ApolloLinkSequences>

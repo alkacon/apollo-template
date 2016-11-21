@@ -41,5 +41,17 @@
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>
+    <Setting>
+      <PropertyName><![CDATA[displayOption]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.displayoptions)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[hideImage]]></Default>
+      <WidgetConfig><![CDATA[smallImage:%(key.apollo.setting.displayoption.smallimage)|hideImage:%(key.apollo.setting.displayoption.hideimage)|largeImage:%(key.apollo.setting.displayoption.largeimage)]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showExpired]]></PropertyName>
+      <Widget><![CDATA[hidden]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
   </NewFormatter>
 </NewFormatters>

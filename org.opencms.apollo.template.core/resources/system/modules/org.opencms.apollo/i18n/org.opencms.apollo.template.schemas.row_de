@@ -1,36 +1,55 @@
+label.ApolloTemplateRow.Container.help=Eine komma-separierte Liste der Typen von Containern, in die die Zeile eingefügt werden kann.
 label.ApolloRowColumn.EmptyText=Text leere Spalte
 apollo.row.columns.col=Spalte
 apollo.row.in=In:
 label.ApolloRowColumn.Editors=Bearbeitbar von
 apollo.row.detailview=DETAILANSICHT
+label.ApolloRowColumn.PreMarkup.help=HTML, welches direkt vor dem für die Spalte gerendertem &lt;cms:container&gt;-Tag eingefügt wird.
 label.ApolloRowColumn.Name=Container Name
 label.ApolloTemplateRow.Title.help=Der Titel für diese Zeile.
+label.ApolloRowColumn.PostMarkup=Post-Markup
+label.ApolloTemplateRow.PostMarkup.help=HTML, welches direkt nach der restlichen Ausgabe des Formatters ausgegeben wird.<br />\n\
+	Typischer Weise werden Tags die im Pre-Markup geöffnet wurden wieder geschlossen.
 apollo.row.default.Title=Neue Layout-Zeile
+label.ApolloRowColumn.PostMarkup.help=HTML, welches direkt nach dem für die Spalte gerendertem &lt;cms:container&gt;-Tag eingefügt wird.
 apollo.row.columns.hidden=Versteckt
 label.ApolloRowColumn.Editors.help=Stellt die Benutzer ein, die diese Spalte bearbeiten können.
+label.ApolloTemplateRow.Defaults.help=Setzt eine Standard-Spaltendefinition, die von allen definierten Spalten genutzt wird. Werte die direkt an definierten Spalten gesetzt sind überschreiben den jeweiligen Standardwert für die Spalte.
 label.ApolloRowColumn.Type.help=Der Typ des Containers, der in dieser Spalte erzeugt wird.
 apollo.row.for=Für:
+apollo.row.blocked=GESPERRT
 label.ApolloRowColumn.Grid=Grid Klasse
 apollo.row.detailonly=Nur für Detailseiten
-apollo.row.blocked=GESPERRT
-label.ApolloTemplateRow.Title=Titel
+label.ApolloRowColumn.PreMarkup=Pre-Markup
 label.ApolloRowColumn.Count.help=Die maximale Anzahl von Elementen, die der Container enthalten kann.
+label.ApolloTemplateRow.Title=Titel
+label.ApolloTemplateRow.Defaults=Standard-Spaltendefinition
 label.ApolloRowColumn.Type=Container Typ
 apollo.row.columns.cols=Spalten
+label.ApolloTemplateRow.PreMarkup=Pre-Markup
 apollo.row.restricted=Begrenzt
-label.ApolloRowColumn.Count=Anzahl Elemente
+label.ApolloTemplateRow.PreMarkup.help=HTML, welches vor allen anderen Ausgaben des Formatters gerendert wird. Es können die Makros $(param) und $(link) genutzt werden.<br />\n\
+	<ul>\n\
+	<li>$(param) wird direkt durch den Wert der Element-Einstellung "Param" ersetzt</li>\n\
+	<li>$(link) wird durch den Wert des Element-Einstellung "Link" ersetzt, falls dieser nicht mit "#" beginnt. In diesem fall, wird das $(link)-Makro entfernt und ein Anker direkt nach dem Pre-Markup gerendert.</li>\n\
+	</ul>\n\
+	Beispiel für ein Pre-Markup: &lt;div class="row $(param)"&gt; 
+label.ApolloRowColumn.Count=Anzahl Elemente\n\
+	
+label.ApolloTemplateRow.Container=Passende Containertypen
 label.ApolloTemplateRow.Column=Spalte
 apollo.row.columns.editor.editor=Redakteur
 apollo.row.headline.detailonlycontainer=Zur Info: Diese Layout-Zeile wird nur auf Typen Detailseiten angezeigt.
-apollo.row.columns.notset=Nicht gesetzt
 apollo.layoutrow.default.Title=Neue Layoutzeile
+apollo.row.columns.notset=Nicht gesetzt
 label.ApolloTemplateRow.Column.help=Die Definition einer Spalte der Zeile.
 apollo.row.columns.editor.elementauthor=Element Autor
 label.ApolloRowColumn.Name.help=Der Name des Containers, der in dieser Spalte erzeugt wird.
 apollo.row.columns.editor.developer=Template Entwickler
 label.ApolloRowColumn.Grid.help=CSS Klasse zur Definition des Bootstrap Grid Systems.
-label.ApolloRowColumn.EmptyText.help=Dieser Text wird angezeigt, wenn diese Spalte keine Inhaltselemente enthÃ¤lt.
+label.ApolloTemplateRow.PostMarkup=Post-Markup
 apollo.row.detailcontainer=Detail-Container
+label.ApolloRowColumn.EmptyText.help=Dieser Text wird angezeigt, wenn diese Spalte keine Inhaltselemente enthÃ¤lt.
 apollo.row.headline.emptycontainer=Leerer Container
 label.ApolloRowColumn.Modifier=Modifier Klasse
 label.ApolloRowColumn.Modifier.help=Optionale CSS Klasse, die z.B. zum Ändern der Reihenfolge der Spalte verwendet werden kann. Die Verwendung muss in den Elementeinstellungen aktiviert werden.

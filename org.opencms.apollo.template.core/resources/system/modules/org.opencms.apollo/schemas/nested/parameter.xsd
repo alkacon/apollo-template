@@ -21,7 +21,15 @@
 	<xsd:annotation>
 		<xsd:appinfo>
 			<layouts>
-				<layout element="Key" widget="StringWidget" display="column" />
+				<layout element="Key" widget="ComboWidget" configuration="archiveWrapper:%(key.apollo.parameter.archivewrapper)|
+					archivePreopened:%(key.apollo.parameter.archivepreopened)|
+					catfilters:%(key.apollo.parameter.catfilters)|
+					catPreopened:%(key.apollo.parameter.catpreopened)|
+					filterWrapper:%(key.apollo.parameter.filterwrapper)|
+					listWrapper:%(key.apollo.parameter.listwrapper)|
+					showDate:%(key.apollo.parameter.showdate)|
+					showExpired:%(key.apollo.parameter.showexpired)|
+					teaserLength:%(key.apollo.parameter.teaserlength)" display="column" />
 				<layout element="Value" widget="StringWidget" display="column" />
 			</layouts>
 		</xsd:appinfo>

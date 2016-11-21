@@ -13,7 +13,7 @@
             <i class="icon icon-3x fa fa-info-circle"></i>
         </div>
         <div class="float-col">
-            <h2 class="heading-lg">
+            <h2>
                 <fmt:message key="apollo.info.installed" /> 
                 <span style="white-space: nowrap;">
                     OpenCms ${cms.systemInfo.versionNumber}

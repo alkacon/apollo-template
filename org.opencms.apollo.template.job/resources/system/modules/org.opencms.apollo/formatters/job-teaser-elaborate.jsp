@@ -14,13 +14,41 @@
     </cms:bundle>
     <apollo:init-messages textnew="${inMemoryMessage}">
 
-        <div class="row ap-event ${cms.element.settings.cssWrapper}">
+        <c:set var="showImageLarge" value="${value.Introduction.value.Image.exists && (cms.element.settings.displayOption == 'largeImage')}" />
+		<c:set var="showImageSmall" value="${value.Introduction.value.Image.exists && (cms.element.settings.displayOption == 'smallImage')}" />
+
+		<c:choose>
+			<c:when test="${showImageSmall}">
+				<c:set var='divStart' value='<div class="col-sm-4 hidden-xs teaser-visual">' />
+				<c:set var='divCenter' value='</div><div class="col-sm-8 teaser-body">' />
+				<c:set var='divEnd' value='</div>' />
+				<c:set var="animationClass" value="ap-kenburns-animation " />
+			</c:when>
+			<c:when test="${showImageLarge}">
+				<c:set var='divStart' value='<div class="col-xs-12 teaser-visual">' />
+				<c:set var='divCenter' value='</div><div class="col-xs-12 teaser-body">' />
+				<c:set var='divEnd' value='</div>' />
+			</c:when>
+			<c:otherwise>
+				<c:set var='divStart' value='' />
+				<c:set var='divCenter' value='<div class="col-xs-12 teaser-body">' />
+				<c:set var='divEnd' value='</div>' />
+			</c:otherwise>
+		</c:choose>
+
+		<div class="row ap-event ${animationClass} ${cms.element.settings.cssWrapper}">
             <c:set var="paragraph" value="${content.valueList.Introduction['0']}" />
             <c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
             <c:set var="showDate" value="${cms.element.settings.showdate}" />
 
-            <%-- ####### Render Teaser-Text and optional image, if set accordingly ######## --%>
-            <div class="col-xs-12">
+            <c:if test="${showImageSmall or showImageLarge}">
+				<c:out value="${divStart}" escapeXml="false" />
+
+				<c:set var="imgLink"><cms:link baseUri="${baseUri}">${content.filename}</cms:link></c:set>
+				<a href="${imgLink}"><apollo:image-animated image="${value.Introduction.value.Image}" /></a>
+			</c:if>
+
+			<c:out value="${divCenter}" escapeXml="false" />
 
                 <c:set var="href"><cms:link baseUri="${cms.element.settings.pageUri}">${content.filename}</cms:link></c:set>
                 <c:set var="text">${content.value.Teaser}</c:set>
@@ -37,7 +65,7 @@
                     />
                 </cms:bundle>
 
-            </div>
+            <c:out value="${divEnd}" escapeXml="false" />
 
         </div>
     </apollo:init-messages>     

@@ -17,7 +17,7 @@
 
             <%-- ####### Headline ######## --%>
             <c:if test="${not cms.element.settings.hideTitle && con.value.Headline.isSet}">
-                <div class="headline headline-md">
+                <div class="headline">
                     <h2 ${rdfa.Headline}>
                         <c:out value="${con.value.Headline}" escapeXml="false" />
                     </h2>

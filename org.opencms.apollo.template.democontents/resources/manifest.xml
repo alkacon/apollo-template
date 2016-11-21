@@ -6080,6 +6080,176 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/blogentries/be_00011.xml</source>
+			<destination>apollo-demo/.content/blogentries/be_00011.xml</destination>
+			<type>a-blog</type>
+			<uuidstructure>20339e59-afd4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>20339e5a-afd4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 10:20:28 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is reliable]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/be_00012.xml</source>
+			<destination>apollo-demo/.content/blogentries/be_00012.xml</destination>
+			<type>a-blog</type>
+			<uuidstructure>fa297fad-afd4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>fa297fae-afd4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 10:26:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms lets you be creative]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/be_00013.xml</source>
+			<destination>apollo-demo/.content/blogentries/be_00013.xml</destination>
+			<type>a-blog</type>
+			<uuidstructure>ad0bb815-afd5-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>ad0bb816-afd5-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 10:31:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is open source]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/be_00014.xml</source>
+			<destination>apollo-demo/.content/blogentries/be_00014.xml</destination>
+			<type>a-blog</type>
+			<uuidstructure>da15c2aa-afd6-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>da15c2ab-afd6-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 10:39:59 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is amazing]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/be_00015.xml</source>
+			<destination>apollo-demo/.content/blogentries/be_00015.xml</destination>
+			<type>a-blog</type>
+			<uuidstructure>907b7c82-afd7-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>907b7c83-afd7-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 10:45:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms saves you time]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/be_00016.xml</source>
+			<destination>apollo-demo/.content/blogentries/be_00016.xml</destination>
+			<type>a-blog</type>
+			<uuidstructure>a2d5237a-afd9-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>a2d5237b-afd9-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 10:59:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is for you]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/be_00017.xml</source>
+			<destination>apollo-demo/.content/blogentries/be_00017.xml</destination>
+			<type>a-blog</type>
+			<uuidstructure>5ee86b10-afda-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>5ee86b11-afda-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 11:05:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is modular]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/be_00018.xml</source>
+			<destination>apollo-demo/.content/blogentries/be_00018.xml</destination>
+			<type>a-blog</type>
+			<uuidstructure>822b1941-afdb-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>822b1942-afdb-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 11:13:19 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is customizable]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/be_00019.xml</source>
+			<destination>apollo-demo/.content/blogentries/be_00019.xml</destination>
+			<type>a-blog</type>
+			<uuidstructure>6b04c7ec-afdc-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>6b04c7ed-afdc-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 11:19:50 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms makes editing effortless]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/be_00020.xml</source>
+			<destination>apollo-demo/.content/blogentries/be_00020.xml</destination>
+			<type>a-blog</type>
+			<uuidstructure>f44c9218-afe1-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>f44c9219-afe1-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 11:59:28 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is the choice]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/blogentries/.detailContainers</destination>
 			<type>folder</type>
 			<uuidstructure>76b7ba89-ef5c-11e5-9d65-0242ac11002b</uuidstructure>
@@ -6114,7 +6284,12 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<uuidresource>76be4a3d-ef5c-11e5-9d65-0242ac11002b</uuidresource>
 			<datecreated>Mon, 21 Mar 2016 12:00:11 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is powerful [Detail]]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
@@ -10104,6 +10279,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/shariffs/sh_00001.xml</source>
+			<destination>apollo-demo/.content/shariffs/sh_00001.xml</destination>
+			<type>a-shariff</type>
+			<uuidstructure>c6ebfd93-affd-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>c6ebfd94-affd-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 15:18:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Blog List: Social media (Shariff and Disqus comments)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/sitemaps</destination>
 			<type>folder</type>
 			<uuidstructure>7a38129a-f016-11e5-b20f-0242ac11002b</uuidstructure>
@@ -13438,6 +13630,18 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>tutorial/mega.menu</source>
+			<destination>tutorial/mega.menu</destination>
+			<type>containerpage</type>
+			<uuidstructure>a6531bd9-afd8-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>a6531bda-afd8-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 10:52:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>tutorial/.content</destination>
 			<type>content_folder</type>
 			<uuidstructure>8c4d0ec7-6101-11e5-9eef-0242ac11002b</uuidstructure>
@@ -14220,6 +14424,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>tutorial/.content/contentsections/cs_00042.xml</source>
+			<destination>tutorial/.content/contentsections/cs_00042.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>8be91bf3-afda-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>8be91bf4-afda-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 11:06:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tutorial: Work with OpenCms!]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>tutorial/.content/flexiblecontents</destination>
 			<type>folder</type>
 			<uuidstructure>3e41c85d-6104-11e5-9eef-0242ac11002b</uuidstructure>
@@ -14241,6 +14462,33 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Header for tutorial]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>tutorial/.content/linksequences</destination>
+			<type>folder</type>
+			<uuidstructure>361245ec-afd9-11e6-a18e-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 21 Nov 2016 10:56:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>tutorial/.content/linksequences/ls_00001.xml</source>
+			<destination>tutorial/.content/linksequences/ls_00001.xml</destination>
+			<type>a-linksequence</type>
+			<uuidstructure>36174efe-afd9-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>36174eff-afd9-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 10:56:53 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tutorial: Tutorial pages]]></value>
 				</property>
 			</properties>
 			<relations/>

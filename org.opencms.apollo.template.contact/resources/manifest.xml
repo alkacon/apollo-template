@@ -313,7 +313,12 @@
 			<uuidresource>58c9bdcf-767b-11e6-af54-0242ac11002b</uuidresource>
 			<datecreated>Fri, 09 Sep 2016 10:51:22 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Nested XSD for address information]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>

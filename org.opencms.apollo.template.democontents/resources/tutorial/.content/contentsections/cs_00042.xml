@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Work with OpenCms!]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>The&nbsp;tutorial covers the basic editing tasks&nbsp;in OpenCms like modifying contents or pages and formatting the output.</p>
+<p>It introduces the OpenCms sitemap editor to create or manage pages and the OpenCms launchpad for other tasks.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/office/21.jpg]]></target>
+          <uuid>2fd97e53-7061-11e6-9a42-0242ac11002b</uuid>
+          <query><![CDATA[__scale=h:768,w:910,cx:0,cy:0,ch:768,cw:910]]></query>
+        </link>
+      </Image>
+      <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
+    </Image>
+    <Link>
+      <Text><![CDATA[Start with the tutorial now!]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/]]></target>
+          <uuid>e46f947b-6100-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
+  </ApolloSection>
+</ApolloSections>

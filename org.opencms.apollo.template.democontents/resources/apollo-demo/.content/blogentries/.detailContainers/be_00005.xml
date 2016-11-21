@@ -4,7 +4,7 @@
   <AlkaconContainerPage language="en">
     <Containers>
       <Name><![CDATA[dc3f5c03-ec40-11e5-8519-0242ac11002b-c1]]></Name>
-      <Type><![CDATA[container]]></Type>
+      <Type><![CDATA[row]]></Type>
       <ParentInstanceId><![CDATA[dc3f5c03-ec40-11e5-8519-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
@@ -35,7 +35,7 @@
     </Containers>
     <Containers>
       <Name><![CDATA[5df38e66-ef6b-11e5-9b44-0242ac11002b-c1]]></Name>
-      <Type><![CDATA[default]]></Type>
+      <Type><![CDATA[element]]></Type>
       <ParentInstanceId><![CDATA[5df38e66-ef6b-11e5-9b44-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
@@ -51,18 +51,6 @@
           </link>
         </Formatter>
         <Properties>
-          <Name><![CDATA[formatterSettings#5df38e66-ef6b-11e5-9b44-0242ac11002b-c1]]></Name>
-          <Value>
-            <String><![CDATA[549e54ad-ec1c-11e5-854f-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[hsize]]></Name>
-          <Value>
-            <String><![CDATA[h2]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[tstyle]]></Name>
           <Value>
             <String><![CDATA[ap-plain]]></String>
@@ -75,9 +63,21 @@
           </Value>
         </Properties>
         <Properties>
+          <Name><![CDATA[formatterSettings#5df38e66-ef6b-11e5-9b44-0242ac11002b-c1]]></Name>
+          <Value>
+            <String><![CDATA[549e54ad-ec1c-11e5-854f-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
           <Name><![CDATA[hstyle]]></Name>
           <Value>
             <String><![CDATA[headline]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[hsize]]></Name>
+          <Value>
+            <String><![CDATA[h2]]></String>
           </Value>
         </Properties>
       </Elements>
