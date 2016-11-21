@@ -219,254 +219,750 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-cyrillic-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-cyrillic-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-300.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-300.woff</destination>
 			<type>plain</type>
-			<uuidstructure>cdc2dea9-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>cdc2deaa-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>571ef694-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>571ef695-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-300]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-cyrillic.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-cyrillic.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-300.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-300.woff2</destination>
 			<type>plain</type>
-			<uuidstructure>cdcc2d7b-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>cdcc2d7c-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>57214087-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>57214088-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-300]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-greek-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-greek-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-300italic.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-300italic.woff</destination>
 			<type>plain</type>
-			<uuidstructure>cdd57c4d-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>cdd57c4e-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>57255f3a-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>57255f3b-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-300italic]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-greek.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-greek.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-300italic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-300italic.woff2</destination>
 			<type>plain</type>
-			<uuidstructure>cdde55ef-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>cdde55f0-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>5728456e-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>5728456f-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-300italic]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-latin-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-latin-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-600.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-600.woff</destination>
 			<type>plain</type>
-			<uuidstructure>cde61e21-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>cde61e22-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>572a8f61-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>572a8f62-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-600]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-latin.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-latin.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-600.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-600.woff2</destination>
 			<type>plain</type>
-			<uuidstructure>cdeed0b3-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>cdeed0b4-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>572d4e84-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>572d4e85-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-600]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-vietnamese.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-300-vietnamese.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-600italic.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-600italic.woff</destination>
 			<type>plain</type>
-			<uuidstructure>cdf9a625-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>cdf9a626-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>57311f17-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>57311f18-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-600italic]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-cyrillic-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-cyrillic-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-600italic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-600italic.woff2</destination>
 			<type>plain</type>
-			<uuidstructure>ce067767-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce067768-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>5733b72a-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>5733b72b-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-600italic]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-cyrillic.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-cyrillic.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-700.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-700.woff</destination>
 			<type>plain</type>
-			<uuidstructure>ce10d7a9-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce10d7aa-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>57364f3d-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>57364f3e-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-700]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-greek-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-greek-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-700.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-700.woff2</destination>
 			<type>plain</type>
-			<uuidstructure>ce1ee16b-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce1ee16c-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>57389930-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>57389931-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-700]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-greek.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-greek.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-700italic.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-700italic.woff</destination>
 			<type>plain</type>
-			<uuidstructure>ce2f0e0d-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce2f0e0e-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>573a6df3-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>573a6df4-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-700italic]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-latin-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-latin-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-700italic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-700italic.woff2</destination>
 			<type>plain</type>
-			<uuidstructure>ce3a319f-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce3a31a0-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>573c42b6-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>573c42b7-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-700italic]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-latin.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-latin.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-800.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-800.woff</destination>
 			<type>plain</type>
-			<uuidstructure>ce450711-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce450712-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:11 GMT</datecreated>
+			<uuidstructure>573e1779-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>573e177a-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-800]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-vietnamese.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-400-vietnamese.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-800.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-800.woff2</destination>
 			<type>plain</type>
-			<uuidstructure>ce4f8e63-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce4f8e64-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<uuidstructure>5740616c-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>5740616d-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-800]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-cyrillic-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-cyrillic-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-800italic.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-800italic.woff</destination>
 			<type>plain</type>
-			<uuidstructure>ce59c795-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce59c796-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<uuidstructure>5742844f-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>57428450-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-800italic]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-cyrillic.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-cyrillic.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-800italic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-800italic.woff2</destination>
 			<type>plain</type>
-			<uuidstructure>ce66e6f7-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce66e6f8-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<uuidstructure>57451c62-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>57451c63-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-800italic]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-greek-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-greek-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-italic.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-italic.woff</destination>
 			<type>plain</type>
-			<uuidstructure>ce747b89-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce747b8a-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<uuidstructure>5747db85-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>5747db86-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-italic]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-greek.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-greek.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-italic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-italic.woff2</destination>
 			<type>plain</type>
-			<uuidstructure>ce8125bb-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce8125bc-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<uuidstructure>574ae8c8-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>574ae8c9-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-italic]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-latin-ext.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-latin-ext.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-regular.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-regular.woff</destination>
 			<type>plain</type>
-			<uuidstructure>ce8ae9bd-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce8ae9be-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<uuidstructure>574ce49b-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>574ce49c-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-regular]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-latin.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-latin.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-regular.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/open-sans-v13-latin_latin-ext-regular.woff2</destination>
 			<type>plain</type>
-			<uuidstructure>ce96345f-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce963460-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<uuidstructure>5750b530-afe4-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>5750b531-afe4-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 12:16:33 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[open-sans-v13-latin_latin-ext-regular]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-vietnamese.woff2</source>
-			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/opensans-600-vietnamese.woff2</destination>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-300.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-300.woff</destination>
 			<type>plain</type>
-			<uuidstructure>ce9faa41-514d-11e5-abeb-0242ac11002b</uuidstructure>
-			<uuidresource>ce9faa42-514d-11e5-abeb-0242ac11002b</uuidresource>
-			<datecreated>Wed, 02 Sep 2015 08:37:12 GMT</datecreated>
+			<uuidstructure>37ff0384-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>37ff0385-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-300]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-300.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-300.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>38051e07-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>38051e08-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-300]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-300italic.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-300italic.woff</destination>
+			<type>plain</type>
+			<uuidstructure>3806f2ca-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>3806f2cb-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-300italic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-300italic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-300italic.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>380915ad-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>380915ae-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-300italic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-500.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-500.woff</destination>
+			<type>plain</type>
+			<uuidstructure>380aea70-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>380aea71-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-500]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-500.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-500.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>380cbf33-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>380cbf34-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-500]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-500italic.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-500italic.woff</destination>
+			<type>plain</type>
+			<uuidstructure>380e6ce6-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>380e6ce7-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-500italic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-500italic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-500italic.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>381041a9-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>381041aa-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-500italic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-600.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-600.woff</destination>
+			<type>plain</type>
+			<uuidstructure>38128b9c-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>38128b9d-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-600]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-600.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-600.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>38165c2f-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>38165c30-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-600]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-600italic.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-600italic.woff</destination>
+			<type>plain</type>
+			<uuidstructure>381830f2-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>381830f3-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-600italic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-600italic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-600italic.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>381aa1f5-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>381aa1f6-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-600italic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-700.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-700.woff</destination>
+			<type>plain</type>
+			<uuidstructure>381c76b8-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>381c76b9-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-700]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-700.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-700.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>381e246b-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>381e246c-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-700]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-700italic.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-700italic.woff</destination>
+			<type>plain</type>
+			<uuidstructure>381fd21e-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>381fd21f-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-700italic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-700italic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-700italic.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>38217fd1-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>38217fd2-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-700italic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-800.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-800.woff</destination>
+			<type>plain</type>
+			<uuidstructure>38232d84-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>38232d85-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-800]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-800.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-800.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>3824db37-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>3824db38-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-800]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-800italic.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-800italic.woff</destination>
+			<type>plain</type>
+			<uuidstructure>382688ea-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>382688eb-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-800italic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-800italic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-800italic.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>3828369d-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>3828369e-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-800italic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-italic.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-italic.woff</destination>
+			<type>plain</type>
+			<uuidstructure>3829e450-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>3829e451-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-italic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-italic.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-italic.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>382b9203-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>382b9204-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-italic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-regular.woff</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-regular.woff</destination>
+			<type>plain</type>
+			<uuidstructure>382d18a6-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>382d18a7-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-regular]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-regular.woff2</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/fonts/raleway-v11-latin_latin-ext-regular.woff2</destination>
+			<type>plain</type>
+			<uuidstructure>382ec659-aff0-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>382ec65a-aff0-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Nov 2016 13:41:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[raleway-v11-latin_latin-ext-regular]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
