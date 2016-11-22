@@ -6277,6 +6277,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/blogentries/.detailContainers/be_00003.xml</source>
+			<destination>apollo-demo/.content/blogentries/.detailContainers/be_00003.xml</destination>
+			<type>containerpage</type>
+			<uuidstructure>2aa5e164-b0a7-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>2aa5e165-b0a7-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Nov 2016 11:31:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is the tool [Detail]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>apollo-demo/.content/blogentries/.detailContainers/be_00005.xml</source>
 			<destination>apollo-demo/.content/blogentries/.detailContainers/be_00005.xml</destination>
 			<type>containerpage</type>
@@ -7545,7 +7562,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog Archive: List archive filter element]]></value>
+					<value><![CDATA[%(page_title): List with facet row and archive filter element]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10851,6 +10868,50 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo/blog/article</destination>
+			<type>folder</type>
+			<uuidstructure>5d9e3597-b08f-11e6-a18e-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 22 Nov 2016 08:40:47 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavInfo</name>
+					<value><![CDATA[ignoreInDefaultNav]]></value>
+				</property>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[1.5]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Blog article]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Blog article]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/blog/article/index.html</source>
+			<destination>apollo-demo/blog/article/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>5da4ec5c-b08f-11e6-a18e-0242ac11002b</uuidstructure>
+			<uuidresource>5da4ec5d-b08f-11e6-a18e-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Nov 2016 08:40:47 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Blog article]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/blog/blog-entries</destination>
 			<type>folder</type>
 			<uuidstructure>a22b306a-5c70-11e5-96ab-0242ac11002b</uuidstructure>
@@ -11025,46 +11086,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Asset Connection]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>apollo-demo/element-pages/blog-archive</destination>
-			<type>folder</type>
-			<uuidstructure>3bdd25c6-91f6-11e6-a059-0242ac11002b</uuidstructure>
-			<datecreated>Fri, 14 Oct 2016 10:09:03 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[0.5703125]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[Blog Archive]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Blog Archive]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/element-pages/blog-archive/index.html</source>
-			<destination>apollo-demo/element-pages/blog-archive/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>3be2a40b-91f6-11e6-a059-0242ac11002b</uuidstructure>
-			<uuidresource>3be2a40c-91f6-11e6-a059-0242ac11002b</uuidresource>
-			<datecreated>Fri, 14 Oct 2016 10:09:03 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Blog Archive]]></value>
 				</property>
 			</properties>
 			<relations/>

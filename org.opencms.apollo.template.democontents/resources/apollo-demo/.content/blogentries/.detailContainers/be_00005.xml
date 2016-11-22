@@ -3,9 +3,9 @@
 <AlkaconContainerPages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.containerpage/schemas/container_page.xsd">
   <AlkaconContainerPage language="en">
     <Containers>
-      <Name><![CDATA[dc3f5c03-ec40-11e5-8519-0242ac11002b-c1]]></Name>
+      <Name><![CDATA[e79c4771-b0a5-11e6-a18e-0242ac11002b-c1]]></Name>
       <Type><![CDATA[row]]></Type>
-      <ParentInstanceId><![CDATA[dc3f5c03-ec40-11e5-8519-0242ac11002b]]></ParentInstanceId>
+      <ParentInstanceId><![CDATA[e79c4771-b0a5-11e6-a18e-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
           <link type="STRONG">
@@ -19,14 +19,15 @@
             <uuid>d652a05d-523d-11e5-9495-0242ac11002b</uuid>
           </link>
         </Formatter>
+        <CreateNew>true</CreateNew>
         <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[5df38e66-ef6b-11e5-9b44-0242ac11002b]]></String>
+            <String><![CDATA[99a4c1c6-b0a6-11e6-a18e-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[formatterSettings#dc3f5c03-ec40-11e5-8519-0242ac11002b-c1]]></Name>
+          <Name><![CDATA[formatterSettings#e79c4771-b0a5-11e6-a18e-0242ac11002b-c1]]></Name>
           <Value>
             <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
           </Value>
@@ -34,9 +35,9 @@
       </Elements>
     </Containers>
     <Containers>
-      <Name><![CDATA[5df38e66-ef6b-11e5-9b44-0242ac11002b-c1]]></Name>
+      <Name><![CDATA[99a4c1c6-b0a6-11e6-a18e-0242ac11002b-c1]]></Name>
       <Type><![CDATA[element]]></Type>
-      <ParentInstanceId><![CDATA[5df38e66-ef6b-11e5-9b44-0242ac11002b]]></ParentInstanceId>
+      <ParentInstanceId><![CDATA[99a4c1c6-b0a6-11e6-a18e-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
           <link type="STRONG">
@@ -50,6 +51,7 @@
             <uuid>549e54ad-ec1c-11e5-854f-0242ac11002b</uuid>
           </link>
         </Formatter>
+        <CreateNew>true</CreateNew>
         <Properties>
           <Name><![CDATA[tstyle]]></Name>
           <Value>
@@ -59,13 +61,7 @@
         <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[76851398-ef6b-11e5-9b44-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#5df38e66-ef6b-11e5-9b44-0242ac11002b-c1]]></Name>
-          <Value>
-            <String><![CDATA[549e54ad-ec1c-11e5-854f-0242ac11002b]]></String>
+            <String><![CDATA[e7fce8f4-b0a6-11e6-a18e-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -78,6 +74,12 @@
           <Name><![CDATA[hsize]]></Name>
           <Value>
             <String><![CDATA[h2]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#99a4c1c6-b0a6-11e6-a18e-0242ac11002b-c1]]></Name>
+          <Value>
+            <String><![CDATA[549e54ad-ec1c-11e5-854f-0242ac11002b]]></String>
           </Value>
         </Properties>
       </Elements>

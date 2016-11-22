@@ -47,7 +47,7 @@
     <Setting>
       <PropertyName><![CDATA[grid]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.row.grid)]]></DisplayName>
-      <Description><![CDATA[Overrides container grid settings]]></Description>
+      <Description><![CDATA[%(key.apollo.setting.row.grid.description)]]></Description>
       <Widget><![CDATA[string]]></Widget>
     </Setting>
     <Setting>

@@ -68,28 +68,28 @@
     request.setAttribute("parentType", parentType);
 %>
 
-<div class="oc-container-${variant}${(empty cms.container.type) ? ' mh-20' : ''}">
-  <h1>
+<div class="oc-container oc-container-${variant}${(empty cms.container.type) ? ' mh-20' : ''}">
+  <div class="oc-container-head">
     <c:choose>
       <c:when test="${boxType == 'detail-placeholder'}">
         <fmt:message key="apollo.row.detailcontainer"/>
-        <div class="oc-label-special"><fmt:message key="apollo.row.blocked"/></div>
-        <div class="oc-label-detailonly"><fmt:message key="apollo.row.detailonly"/></div>
+        <div class="oc-label oc-label-special"><fmt:message key="apollo.row.blocked"/></div>
+        <div class="oc-label oc-label-detailonly"><fmt:message key="apollo.row.detailonly"/></div>
       </c:when>
       <c:otherwise>
         <fmt:message key="apollo.row.headline.emptycontainer"/>
-        <div class="oc-label-${fn:toLowerCase(role)}">${fn:toUpperCase(role)}</div>
+        <div class="oc-label oc-label-${fn:toLowerCase(role)}">${fn:toUpperCase(role)}</div>
         <c:choose>
           <c:when test="${detailView == 'true'}">
-            <div class="oc-label-detail"><fmt:message key="apollo.row.detailview"/></div>
+            <div class="oc-label oc-label-detail"><fmt:message key="apollo.row.detailview"/></div>
           </c:when>
           <c:when test="${cms.detailRequest && (cms.element.setting.detail == 'only')}">
-            <div class="oc-label-detail"><fmt:message key="apollo.row.detailonly"/></div>
+            <div class="oc-label oc-label-detail"><fmt:message key="apollo.row.detailonly"/></div>
           </c:when>
         </c:choose>
       </c:otherwise>
     </c:choose>
-  </h1>
+  </div>
   <p class="oc-container-text">
     ${label}<br>
     <c:if test="${not empty cms.container.type}">
@@ -126,7 +126,10 @@
   <div class="row">
     <div class="col-xs-12">
       <div class="alert alert-info" role="alert">
-        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <button type="button" class="close" data-dismiss="alert">
+			<span aria-hidden="true">&times;</span>
+			<span class="sr-only">Close</span>
+		</button>
         <strong>Model:</strong> <em>${modelTitle}</em><br>
         <strong>Description:</strong> ${cms.element.setting.model_group_description}
       </div>

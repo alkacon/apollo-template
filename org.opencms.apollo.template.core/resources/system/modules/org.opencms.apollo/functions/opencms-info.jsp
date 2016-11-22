@@ -10,7 +10,7 @@
 
     <div class="float-row">
         <div class="float-col">
-            <i class="icon icon-3x fa fa-info-circle"></i>
+            <i class="icon fs-36 fa fa-info-circle"></i>
         </div>
         <div class="float-col">
             <h2>

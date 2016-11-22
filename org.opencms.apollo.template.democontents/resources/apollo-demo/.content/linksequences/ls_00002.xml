@@ -15,8 +15,8 @@
     <LinkEntry>
       <Text><![CDATA[OpenCms Days]]></Text>
       <URI>
-        <link internal="true" type="WEAK">
-          <target><![CDATA[/sites/default/sites/cmsdays/]]></target>
+        <link internal="false" type="WEAK">
+          <target><![CDATA[http://www.opencms-days.org]]></target>
         </link>
       </URI>
       <NewWindow>true</NewWindow>

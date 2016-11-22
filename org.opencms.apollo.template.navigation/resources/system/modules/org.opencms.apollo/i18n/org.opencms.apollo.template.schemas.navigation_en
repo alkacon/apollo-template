@@ -1,5 +1,6 @@
+label.ApolloNavigation.NavFolder.help=The folder to start the navigation from. This overrides the navigation start level setting.
 label.ApolloNavigation.Header=Header HTML
-label.ApolloNavigation.Header.help=HTML code for the header of the pages.
+label.ApolloNavigation.Header.help=Optional HTML code for the header of the pages.
 label.ApolloNavigation.LogoLink=Logo Link
 apollo.navigation.message.new=New navigation element, please edit if needed.
 apollo.navigation.navstartlevel.5=5 - Fifth Level
@@ -14,6 +15,7 @@ apollo.navigation.navstartlevel.3=3 - Third Level
 apollo.navigation.navstartlevel.2=2 - Second Level
 label.ApolloNavigation.LogoFullWidth=Show logo with full width
 label.ApolloNavigation.LogoLink.help=The link target when clicking on the header logo image.
+label.ApolloNavigation.NavFolder=Navigation Folder
 label.ApolloNavigation.Title=Title
 label.ApolloNavigation.LogoFullWidth.help=If checked, the logo image is shown with full width above the navigation.
 label.ApolloNavigation.LogoImage.help=The header logo image to show.

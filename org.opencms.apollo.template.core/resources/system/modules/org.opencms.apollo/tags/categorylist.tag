@@ -11,25 +11,29 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <c:if test="${not categories.isEmpty}">
+
     <c:if test="${showbigicon}">
     <c:out value='<div class="row">' escapeXml='false' /> 
         <div class="col-xs-1 col-sm-2">
-            <i class="icon-custom icon-sm icon-color-u fa fa-tag"></i>                                
+            <i class="icon-detail fa fa-tag"></i>                                
         </div>
         <c:out value='<div class="col-xs-11 col-sm-10">' escapeXml='false' /> 
     </c:if>
-            <ul class="list-unstyled list-inline blog-tags">
-                <li>
-                    <c:if test="${not showbigicon}"><i class="fa fa-tag"></i>${' '}</c:if>
-                    <c:forEach var="category" items="${categories.leafItems}" varStatus="status">
-                        <span class="label rounded label-light">
-                            ${category.title}
-                        </span>
-                    </c:forEach>
-                </li>
-            </ul>
+	
+	<ul class="list-unstyled list-inline blog-tags">
+		<li>
+			<c:if test="${not showbigicon}"><i class="fa fa-tag"></i>${' '}</c:if>
+			<c:forEach var="category" items="${categories.leafItems}" varStatus="status">
+				<span class="badge badge-grey-light mv-2">
+					<i class="fa fa-tag"></i>
+					${category.title}
+				</span>
+			</c:forEach>
+		</li>
+	</ul>
+			
     <c:if test="${showbigicon}">
         <c:out value='</div>' escapeXml='false' /> 
-    <c:out value='</div>' escapeXml='false' /> 
+    	<c:out value='</div>' escapeXml='false' /> 
     </c:if>
 </c:if>

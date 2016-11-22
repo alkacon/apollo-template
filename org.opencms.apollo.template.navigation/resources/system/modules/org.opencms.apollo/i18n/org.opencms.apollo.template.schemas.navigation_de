@@ -1,5 +1,6 @@
+label.ApolloNavigation.NavFolder.help=Der Ordner, von dem aus die Navigation beginnen soll. Dieser Wert überschreibt die Start Ebenen Einstellung.
 label.ApolloNavigation.Header=Kopf HTML
-label.ApolloNavigation.Header.help=HTML Code für den Kopf der Seiten.
+label.ApolloNavigation.Header.help=Optionaler HTML Code für den Kopf der Seiten.
 label.ApolloNavigation.LogoLink=Logo Link
 apollo.navigation.message.new=Neues Navigations-Element. Bitte anpassen, falls gewünscht.
 apollo.navigation.navstartlevel.5=5 - Fünfte Ebene
@@ -14,6 +15,7 @@ apollo.navigation.navstartlevel.3=3 - Dritte Ebene
 apollo.navigation.navstartlevel.2=2 - Zweite Ebene
 label.ApolloNavigation.LogoFullWidth=Logo auf voller Breite anzeigen
 label.ApolloNavigation.LogoLink.help=Das Link Ziel bei Klick auf das Logo im Seitenkopf.
+label.ApolloNavigation.NavFolder=Navigationsordner
 label.ApolloNavigation.Title=Titel
 label.ApolloNavigation.LogoFullWidth.help=Wenn angekreuzt, wird das Logo Bild auf voller Breite oberhalb der Navigation angezeigt.
 label.ApolloNavigation.LogoImage.help=Das Logo Bild im Seitenkopf.

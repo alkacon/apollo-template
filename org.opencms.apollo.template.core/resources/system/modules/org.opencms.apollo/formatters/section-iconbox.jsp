@@ -16,7 +16,7 @@
         <apollo:init-messages textnew="${textnew}">
             <apollo:link link="${value.Link}" cssclass="no-underline" settitle="true">
                 <h3 ${rdfa.Headline}>${value.Headline}</h3>
-                <div><i class="icon-lg fa fa-${cms.element.setting.iconclass.isSet ? cms.element.setting.iconclass : 'warning' }"></i></div>
+                <div><i class="icon-box fa fa-${cms.element.setting.iconclass.isSet ? cms.element.setting.iconclass : 'warning' }"></i></div>
                 <div ${rdfa.Text}>${value.Text}</div>
             </apollo:link>
         </apollo:init-messages>

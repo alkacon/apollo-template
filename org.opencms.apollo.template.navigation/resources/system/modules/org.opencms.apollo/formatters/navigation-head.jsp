@@ -67,7 +67,7 @@
           <h1 class="pull-left">
             ${cms.title}
             <c:if test="${cms.isEditMode}">
-              <span class="badge badge-dark-blue rounded superscript">${cms.requestContext.currentUser.name}</span>
+              <span class="badge badge-user">${cms.requestContext.currentUser.name}</span>
             </c:if>
           </h1>
           <cms:include

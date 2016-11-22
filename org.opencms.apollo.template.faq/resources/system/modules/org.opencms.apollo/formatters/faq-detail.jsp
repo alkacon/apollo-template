@@ -24,7 +24,7 @@
                             
                                 <div class="row">
                                 <div class="col-xs-1 col-sm-2">
-                                    <i class="icon-custom icon-sm icon-color-u fa fa-calendar"></i>                                
+                                    <i class="icon-detail fa fa-calendar"></i>                                
                                 </div>
                                 <div class="col-xs-11 col-sm-10">
                                     <h5>
