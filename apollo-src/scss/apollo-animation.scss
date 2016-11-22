@@ -259,8 +259,9 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     bottom: 80px;
 }
 
+
 /**
- * Image gallery image enter animation.
+ * Image gallery image enter animation. 
  */
 .comein {
     transform: translateY(120px);
@@ -276,4 +277,54 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     to { transform: translateY(0); }
 }
 
+
+/**
+ * Zoom overlay effect used by image gallery. 
+ */
+$zoom-bg:  rgba($black, 0.5) !default;
+$zoom-fg:  $text-light !default;
+
+
+.zoom:hover .zoom-overlay .zoom-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.zoom-overlay {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.zoom-overlay .zoom-icon {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 100;
+    background-color: $zoom-bg;
+    &:before {
+        background: transparent;
+    }
+    &:after {
+        background: transparent;
+    }
+}
+
+.zoom-overlay .zoom-icon i {  
+    // trick to position the element in the center of the surrounding div
+    // see http://stackoverflow.com/questions/5703552/css-center-text-horizontal-and-vertical-inside-a-div-block
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+    font-size: 30px;
+    color: $zoom-fg;
+}
 

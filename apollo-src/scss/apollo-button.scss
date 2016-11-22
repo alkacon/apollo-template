@@ -41,16 +41,15 @@ $btn-colors:            $primary-colors !default;
     line-height: 1.42857143;
     min-width: $btn-min-width; // was 160
     text-align: center;
+    box-shadow: none; 
     border: $btn-border-style;
     border-radius: $btn-border-radius;
     text-transform: $btn-text-transform;
     margin: 0;
     -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    
+
     @include apollo-button($btn-default, $text-light, $btn-default-active);
 }
 

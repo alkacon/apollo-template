@@ -18,7 +18,7 @@ $oc-col-special2:      #ff264a !default; // $red-light
 $oc-col-text:          #ffffff !default; // white
 $oc-col-border:        #a8adb4 !default; // $grey
 
-// OpenCms roles and their matching colors  
+// Apollo container types
 $oc-container-types:
 (
  (area, $oc-col-area),        
@@ -29,6 +29,7 @@ $oc-container-types:
  (special, $oc-col-special1),
 ) !default;
 
+// OpenCms roles and their matching colors  
 $oc-container-labels:
 (
  (developer, $oc-col-developer),         
@@ -39,28 +40,31 @@ $oc-container-labels:
  (special, $oc-col-special2),
 ) !default; 
 
-%oc-container-type {
+.oc-container {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    text-align: center;   
+    text-align: center;
     overflow: hidden; 
     white-space: normal;
     border-radius: 10px;  
     -webkit-border-radius: 10px;
-    
-    h1 {
+
+    .oc-container-head  {
         font-size: 22px;
         font-weight: 400;
         margin: 5px;
-    }  
-    p {
+    }
+
+    .oc-container-text {
         margin: 5px;
-        font-size: 14px;        
-    } 
+        font-size: 14px;
+        color: darken($oc-col-border, 15%);
+        line-height: 1.2;
+    }
 }
 
-%oc-container-label {
+.oc-label {
     display: inline;
     font-size: 12px;
     font-weight: 400;
@@ -70,35 +74,29 @@ $oc-container-labels:
     margin-left: 5px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
-    white-space: nowrap;  
-    color: $oc-col-text;             
+    white-space: nowrap;
+    color: $oc-col-text;
 } 
+
 
 @each $type-name, $bg-color in $oc-container-types {
     .oc-container-#{""+$type-name} {
-        @extend %oc-container-type;        
-        background-color: rgba($bg-color, 0.75);      
+        background-color: rgba($bg-color, 0.75);
     }
 }
 
 @each $role-name, $label-color in $oc-container-labels {      
     .oc-label-#{""+$role-name} {
-        @extend %oc-container-label;  
-        background-color: $label-color;        
-    }  
+        background-color: $label-color;
+    }
 }
 
 .oc-modelinfo {
-    border: 2px solid $oc-col-border;  
+    border: 2px solid $oc-col-border;
     padding: 4px;
     margin-bottom: 10px;
-}
 
-.oc-modelinfo .alert {
-    margin: 0 0 10px 0;   
-}
-
-.oc-container-text {
-    color: darken($oc-col-border, 15%);
-    line-height: 1.2;
+    .alert {
+        margin: 0 0 10px 0;
+    }
 }

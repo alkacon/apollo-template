@@ -740,6 +740,30 @@ ul.sidebar-nav-v1 {
   color: $main-theme;
 }
 
+/*Sidebar List */
+
+.list-group-item:first-child,
+.list-group-item:last-child {
+  border-radius: 0;
+}
+
+.list-toggle:after {
+    top: 7px;
+    right: 10px;
+    color: #777;
+    font-size: 14px;
+    content: "\f105";
+    position: absolute;
+    font-weight: normal;
+    display: inline-block;
+    font-family: FontAwesome;
+}
+
+.list-toggle.active:after {
+  color: #fff;
+  content: "\f107";
+}
+
 
 /* Breadcrumb
 ------------------------------------*/

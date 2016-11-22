@@ -1,6 +1,43 @@
-/**
- * "Back to top" icon on the lower right of display.
- */
+/* Extend Bootstrap forms, adjustment corners and colors */
+.form-control {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.input-group-addon {
+    border-radius: 0;
+    color: $text-dark;
+    background: $white;
+}
+
+/* Extend Bootstrap alert, removes the round corners. */
+.alert {
+    border-radius: 0;
+}
+
+/* Extend Bootstrap label, style used in the Release notes. */
+span.label {
+    font-size: 11px;
+    font-weight: 400;
+    padding: 4px 7px;
+    border-radius: 0;
+}
+
+/* Special badge used for indicating the current user */
+span.badge-user {
+    color: $text-light;
+    background: $text-dark;
+    font-family: $font-content;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 3px 7px;
+    top: -9px;
+    left: 4px;
+    position: relative;
+    border-radius: 4px; 
+}
+
+/*  "Back to top" icon on the lower right of display. */
 #topcontrol {
   color: $text-light;
   background: $text-dark;
@@ -29,178 +66,23 @@
   font-family: FontAwesome;
 }
 
-/*Forms
-------------------------------------*/
-
-.form-control {
-  box-shadow: none;
-  border-radius: 0;
-}
-
-.btn { 
-	box-shadow: none; 
-  border-radius: 0px; 
-}
-
-
-
-/*Font Awesome Icon Styles*/
-i.icon-custom {
-  color: #555;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  line-height: 40px;
-  margin-bottom: 5px;
-  text-align: center;
-  display: inline-block;   
-  border: solid 1px #555;
-}
-
-i.icon-sm {
-   width: 35px;
-   height: 35px;
-   font-size: 16px;
-   line-height: 35px;
-}
-
-i.icon-md {
-   width: 55px;
-   height: 55px;
-   font-size: 22px;
-   line-height: 55px;
-}
-
-i.icon-lg {
-  width: 60px;
-  height: 60px;
-  font-size: 31px;
-  line-height: 60px;
-  margin-bottom: 10px;
-}
-
-i.icon-2x {
-  font-size: 30px;
-}
-i.icon-3x {
-  font-size: 40px;
-}
-i.icon-4x {
-  font-size: 50px;
-}
-
-/*Sidebar Menu
-------------------------------------*/
-
-.list-group-item:first-child,
-.list-group-item:last-child {
-  border-radius: 0;
-}
-
-/*Forms
-------------------------------------*/
-
-.input-group-addon {
-  border-radius: 0;
-}
-
-/*Form Icons*/
-.input-group-addon {
-  color: #b3b3b3;
-  font-size: 14px;
-  background: #fff;
-}
-
-.alert {
-    border-radius: 0;
-}
-
-/*Panels (Portlets)
-------------------------------------*/
-.panel,
-.panel-heading,
-.panel-group .panel {
-  border-radius: 0;
-}
-
-.panel-heading {
-  color: #fff;  
-  padding: 5px 15px;
-}
-
-.label {
-  border-radius: 0;
-}
-
-span.label-light,
-span.badge-light {
-  color: #777;
-  background: #ecf0f1;
-}
-
-
-/*Sidebar List Toggle*/
-
-.list-toggle:after {
-    top: 7px;
-    right: 10px;
-    color: #777;
-    font-size: 14px;
-    content: "\f105";
-    position: absolute;
-    font-weight: normal;
+/* Font Awesome Icon Styles */
+i.icon-detail {
+    color: $main-theme;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 5px;
+    text-align: center;
     display: inline-block;
-    font-family: FontAwesome;
+    border: solid 1px $main-theme;
 }
 
-.list-toggle.active:after {
-  color: #fff;
-  content: "\f107";
-}
-
-.content {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.rounded { border-radius: 4px !important;}
-
-.superscript {
-    top: -9px; 
-    left: 4px; 
-    position: relative
-}
-
-
-
-/* Badges and Labels
-------------------------------------*/
-.badge {
-  border-radius: 0;
-}
-
-/*Labels*/
-span.label {
-  font-size: 11px;
-  font-weight: 400;
-  padding: 4px 7px;
-}
-
-/*Badges*/
-span.badge {
-  color: #fff;
-  font-weight: 400;
-  padding: 4px 7px;  
-}
-
-span.badge-dark-blue {
-  background: $blue;
-}
-
-span.badge-orange {
-  background: $orange;
-}
-
-.rounded { 
-    border-radius: 4px !important; 
+i.icon-box {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    line-height: 60px;
+    margin-bottom: 10px;
 }

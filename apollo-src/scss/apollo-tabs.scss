@@ -109,7 +109,7 @@ $panel-active-bg:       $main-theme !default;
     margin-bottom: 0;
 }
 
-// fix Bootstrap CSS rule wich don't work if ADE is enables
+// fix Bootstrap CSS rule wich don't work if ADE is enabled
 .panel-group .panel+.panel {
 
     margin-top: 0;
@@ -129,6 +129,11 @@ $panel-active-bg:       $main-theme !default;
 .panel {
 
     border-color: $panel-border-color;
+}
+
+.panel-heading {
+    color: $text-light;
+    padding: 5px 15px;
 }
 
 .panel-default > .panel-heading {

@@ -12,7 +12,7 @@ $line-heights:           (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
 $border-default-color:   $main-theme !default;
 $border-colors:          $primary-colors !default;
 $border-sizes:           (1, 2) !default;
-$border-radiuses:        ((0, 0px), (2, 2px), (5, 5px), (10, 10px), (15, 15px), (20, 20px), (30, 30px), (25p, 25%), (50p, 50%)) !default;
+$border-radiuses:        ((0, 0px), (2, 2px),  (4, 4px), (5, 5px), (10, 10px), (15, 15px), (20, 20px), (30, 30px), (25p, 25%), (50p, 50%)) !default;
 $border-positions:       (bottom, top, left, right) !default;
 $border-styles:          (none, solid, dotted, dashed, hidden) !default;
 
@@ -153,7 +153,27 @@ a.no-underline {
 
     .bo-#{""+$border-style}  {
         border-style: $border-style;    
-    }        
+    }
+}
+
+// Badges (overwrite the Bootstrap defaults)
+
+.badge {
+    border-radius: 4px !important; 
+}
+
+span.badge {
+    color: $text-light;
+    font-weight: 400;
+    padding: 4px 7px;
+}
+
+@each $color-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+
+    span.badge-#{""+$color-name} {
+        color: $text-color;
+        background: $bg-color;
+    }
 }
 
 // Block display settings
