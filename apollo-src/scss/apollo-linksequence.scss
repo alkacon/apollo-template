@@ -8,9 +8,6 @@
     list-style-type: disc;
     padding: inherit;
 }
-        
-.ap-linksequence-boxed li {
-}
 
 .ap-linksequence-boxed li a {
     position: relative;
@@ -27,109 +24,99 @@
 
 // head / foot formatted links
 
-.ap-linksequence-hf{
-	position: absolute !important;
-	width: 100%;
-}
+.ap-linksequence-hf {
 
-.ap-linksequence-hf .container {
-    position: relative;
-}
-
-.ap-linksequence-hf .links {
-    padding: 8px 30px 0 0;
-    position: absolute;
-    top: 0;
     width: 100%;
-    z-index: 114;
-}
+    min-height: 25px;
 
-.ap-linksequence-hf.linksasblock .links {
-    padding: 8px 0 0 0;
-    position: relative;
-}
+    &.linksasblock .links {
+        padding: 8px 0 0 0;
+    }
 
-.ap-linksequence-hf .links ul {
-    margin: 0;
-    padding-left: 0;
-}
+    .links ul {
+        margin: 0;
+        padding-left: 0;
 
-.ap-linksequence-hf .links ul li {
-    display: inline;
-    list-style: outside none none;
-    padding-bottom: 15px;
-    position: relative;
-}
+        li {
+            display: inline;
+            list-style: outside none none;
+            padding-bottom: 15px;
+            position: relative;
+        }
+    
+        li.divider {
+            border-right: 1px solid $grey;
+            font-family: Tahoma;
+            font-size: 8px;
+            margin: 0 9px 0 5px;
+            padding: 0;
+            position: relative;
+            top: -1px;
+        }
+    
+        li > a, 
+        li > a:hover {
+            color: $grey-dark;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+    }
 
-.ap-linksequence-hf .links ul li.divider {
-    border-right: 1px solid $grey;
-    font-family: Tahoma;
-    font-size: 8px;
-    margin: 0 9px 0 5px;
-    padding: 0;
-    position: relative;
-    top: -1px;
-}
+    // languages
+    ul.languages {
+        top: 25px;
+        left: -5px;
+        display: none;
+        padding: 4px 0;
+        padding-left: 0; 
+        list-style: none;
+        min-width: 100px;
+        position: absolute;
+        background: $grey-light;
+        z-index: 101;
 
-.ap-linksequence-hf .links ul li > a, .ap-linksequence-hf .links ul li > a:hover {
-    color: $grey-dark;
-    font-size: 11px;
-    text-transform: uppercase;
-}
+        &:after {
+            top: -4px;
+            width: 0; 
+            height: 0;
+            left: 8px;
+            content: " "; 
+            display: block; 
+            position: absolute;
+            border-bottom: 6px solid $grey-light;   
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-left-style: inset; /*FF fixes*/
+            border-right-style: inset; /*FF fixes*/
+        }
 
-// languages
-.ap-linksequence-hf ul.languages {
-    top: 25px;
-    left: -5px;
-    display: none;
-    padding: 4px 0;
-    padding-left: 0; 
-    list-style: none;
-    min-width: 100px;
-    position: absolute;
-    background: $grey-light;
-}
+        li a {
+            color: $grey-darker;
+            display: block;
+            font-size: 10px;
+            padding: 2px 12px;
+            margin-bottom: 1px;
+            text-transform: uppercase; 
+        }
 
-.ap-linksequence-hf li:hover ul.languages {
-    display: block;
-}
+        li.active a i {
+            color: $grey-dark;
+            float: right;
+            margin-top: 2px;
+        }
 
-.ap-linksequence-hf ul.languages:after {
-    top: -4px;
-    width: 0; 
-    height: 0;
-    left: 8px;
-    content: " "; 
-    display: block; 
-    position: absolute;
-    border-bottom: 6px solid $grey-light;   
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-left-style: inset; /*FF fixes*/
-    border-right-style: inset; /*FF fixes*/
-}
+        li a:hover, 
+        li.active a {
+            background: $grey-lighter;
+        }
 
-.ap-linksequence-hf ul.languages li a {
-    color: $grey-darker;
-    display: block;
-    font-size: 10px;
-    padding: 2px 12px;
-    margin-bottom: 1px;
-    text-transform: uppercase; 
-}
+        li a:hover {
+            text-decoration: none;
+            font-size: 10px; 
+        }
+    }
 
-.ap-linksequence-hf ul.languages li.active a i {
-    color: $grey-dark;
-    float: right;
-    margin-top: 2px;
-}
-
-.ap-linksequence-hf ul.languages li a:hover, 
-.ap-linksequence-hf ul.languages li.active a {
-    background: $grey-lighter;
-}
-
-.ap-linksequence-hf ul.languages li a:hover {
-    text-decoration: none;
-    font-size: 10px; 
+    li:hover ul.languages {
+        display: block;
+    }
 }
