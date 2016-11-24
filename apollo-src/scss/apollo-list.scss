@@ -190,7 +190,7 @@ $pagination-border: $grey-light !default;
         // archive menu
         div &.ap-list-filters, .ap-list-filters {
 
-            .fa {
+            .fa.ap-fa-label {
                 color: $text-color;
             }
 
