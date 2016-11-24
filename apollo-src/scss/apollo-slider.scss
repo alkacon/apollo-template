@@ -39,6 +39,10 @@
   }
 }
 
+.slider.fullwidthbanner {
+	z-index: 0; /* prevents overlapping of timeline and main navigation */
+}
+
 .slider.revslider-initialised.tp-simpleresponsive {
   position: relative;
 }
