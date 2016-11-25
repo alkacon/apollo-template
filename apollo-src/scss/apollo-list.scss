@@ -9,8 +9,15 @@ $button-colors:          $primary-colors !default;
     border: 1px solid #ddd;
 }
 
-.ap-list-filter-labels-wrapper, .ap-list-filter-archive {
+.ap-list-filter-labels-wrapper, 
+.ap-list-filter-archive {
     display: none;
+}
+
+.ap-list-filterbox-search {
+    .input {
+        margin: 0;
+    }
 }
 
 .ap-list-filter-labels {
@@ -19,12 +26,29 @@ $button-colors:          $primary-colors !default;
     list-style: outside none none;
 }
 
-.ap-list-filter-labels li.active a {
-    font-weight: bold;
-} 
+.ap-list-filter-labels-wrapper {
+    span.badge {
+        margin-top: 2px;
+    }
 
-.ap-list-filter-labels-wrapper hr {
-    margin: 14px 0 10px 0;
+    .active span.badge {
+        font-weight: bold;
+    } 
+}
+
+
+.ap-list-filter-labels-wrapper {
+    & ul {
+        margin-top: 13px;
+        margin-bottom: 0;
+    }
+}
+
+.ap-list-filter-archive {
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 .ap-list-filterbtn-year {
@@ -33,21 +57,22 @@ $button-colors:          $primary-colors !default;
 
 .ap-list-filter-year {
     margin-top: 10px;
-    margin-left: -5px;
     padding-left: 0;
     list-style: outside none none;
-}
 
-.ap-list-filter-year > li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
-    font-size: 12px;
-}
+    & > li {
+        display: inline-block;
+        padding-top: 5px;
+        width: 16.666666%;
+        padding-bottom: 5px;
+        font-size: 12px;
+        text-align: center;
+    }
 
-.ap-list-filter-year li.active a {
-    font-weight: bold;
-} 
+    & li.active a {
+        font-weight: bold;
+    }
+}
 
 // compact list items
 .ap-compact {
@@ -82,18 +107,6 @@ $button-colors:          $primary-colors !default;
         text-decoration: none;
     }
 }
-
-/** Removable
-.list-entry{
-    animation-duration: 1s; 
-    &:nth-child(2n){
-        animation-duration: 2s;
-    }
-} **/
-
-// pagaination element default styling
-
-
 
 /* Pagination
 ------------------------------------*/ 
@@ -204,25 +217,53 @@ $pagination-border: $grey-light !default;
                 border-color: $bg-color;  
                 color: $text-color;
 
-                &:hover, &:focus {
+                &:hover, 
+                &:focus {
                     background: $highlight-color;
                     border-color: $highlight-color;  
                 }
             }
         }
 
-        &.ap-list-filterbox {
+        &.ap-list-filter-labels-wrapper {
+            span.badge {
+                color: $text-color;
+                background: $bg-color;
+                &:hover,
+                &:focus {
+                    background: $highlight-color;
+                    border-color: $highlight-color;  
+                    color: $text-color !important;
+                } 
+            }
+        }
 
+        &.ap-list-filterbox {
             .ap-list-filter-archive {
                 button {
                     background: $bg-color;
                     border-color: $bg-color;  
-                    color: $text-color;
+                    color: $text-color !important;
+                    &:hover,
+                    &:focus {
+                        background: $highlight-color;
+                        border-color: $highlight-color;  
+                        color: $text-color !important;
+                    } 
                 }
             }
 
             li.active {
                 font-weight: bold;
+            }
+
+            .ap-list-filter-year {
+                & > li:hover,
+                & > li:focus {
+                    background: $highlight-color;
+                    border-color: $highlight-color;  
+                    color: $text-color !important;
+                }
             }
         }
     }
