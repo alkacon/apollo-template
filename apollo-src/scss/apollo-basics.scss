@@ -107,11 +107,11 @@ $headline-bottom:        1px dotted $grey-light !default;
 
 a {
     &,
-    &:focus, 
     &:active {
         color: $main-theme;
         outline: 0 !important;
     }
+    &:focus, 
     &:hover {
         color: $main-theme-hover;
         outline: 0 !important;

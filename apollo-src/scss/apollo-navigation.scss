@@ -2,16 +2,26 @@
 /* Variables
 ------------------------------------*/
 
-$nav-theme:          $main-theme !default;
-$nav-text:           $grey-darker !default; 
-$nav-text-hover:     $nav-text !default;
-$nav-bg:             $white !default;
-$nav-border:         $grey-light !default;
+$nav-theme:          $blue-dark !default; // used for 1st level text and big colored border above / below menus
+$nav-text:           $green !default; // standard text color of the nav menu entries
+$nav-text-hover:     $orange-darker !default; // hover text color of the nav menu entries
+$nav-bg:             $blue-lighter !default; // standard background of the nav menu entries
+$nav-bg-hover:       $orange !default;  // hover background of the nav menu entries
+$nav-active:         $blue-lighter !default; // the currently active / selected nav entry (text)
+$nav-active-bg:      $cyan !default; // the currently active / selected nav entry (background)
+$nav-border:         $red-light !default;
+
+// colors for the "nav-toggle" 
+// this is the button displayed on small screens to show / hide the navigation
+$nav-toggle:         $main-theme !default;
+$nav-toggle-text:    $white !default;
+$nav-toggle-hover:   $blue !default;
 
 
 
-$nav-main-color: $main-theme !default;
-$nav-active-color: $text-light !default;
+
+
+$nav-active-color: $orange !default;
 
 $nav-beadcrump-bg: $grey-lighter !default;
 $search-bg: $nav-border !default;
@@ -59,16 +69,16 @@ $nav-sub-color-active: $nav-text !default;
     }
 
     &.editor {
+        // used by head navigation formatter in the model group editor
         border-top: solid 1px $nav-border;
-        border-bottom: solid 2px $nav-border;
         margin-top: 0px;
     }
 }
 
 .head-nopull {
-    // css wrapper to prevent pulling the nav above the head-bg
-    .head-navbar {
-        @media (min-width: 992px) {
+    // optional css wrapper to prevent pulling the nav above the head-bg
+    @media (min-width: 992px) {
+        .head-navbar {
             margin-top: 0;
         }
     }
@@ -99,16 +109,15 @@ $nav-sub-color-active: $nav-text !default;
 
     border: none;
     border-radius: 0;
-    background:  $main-theme;
+    background:  $nav-toggle;
     padding: 2px 8px 2px 8px;
-    color: $nav-active-color;
+    color: $nav-toggle-text;
     z-index: 100;
     position: relative;
     float: right;
 
-    &:hover, 
-    &:focus {
-        background:  $main-theme-hover;
+    &:hover {
+        background:  $nav-toggle-hover;
     }
 }
 /* end of navbar-toggle */
@@ -117,7 +126,7 @@ $nav-sub-color-active: $nav-text !default;
 .head-bg {
     @media (max-width: 991px) {
     // remove the margins from the row for small screens
-    // this way the head becomes the same size as the navbar below, 
+    // this way the head becomes the same size as the navbar, 
     // which also has the margins removed.
         .col-xs-12,
         .row {
@@ -133,197 +142,112 @@ $nav-sub-color-active: $nav-text !default;
     }
 }
 
-.head-navbar .dropdown-submenu { 
-    position: relative; 
-}
-
-.dropdown > a:after,
-.dropdown-submenu > a:after {
-    top: 8px;
-    right: 9px;
-    font-size: 11px;
-    content: "\f105";
-    position: absolute;
-    font-weight: normal;
-    display: inline-block;
-    font-family: FontAwesome;
-}
-
-.dropdown > a:after {
-    top: 9px;
-    right: 15px;
-    content: "\f107";
-}
-
-.dropdown-submenu > .dropdown-menu { 
-    top: 3px; 
-    left: 100%; 
-    margin-top: -5px; 
-    margin-left: 0px; 
-}
-
-.dropdown-submenu:hover > .dropdown-menu {
-    display: block;
-}
-
 #searchContentHeader > span > button {
     padding-top: 6px;
     padding-bottom: 6px;
 }
-
-.nav {
-
-    > li > .search:hover {
-        border-bottom-color: $nav-text-hover;
-        color: $nav-text-hover;
-    }
-
-    > li > .search {
-        color: $nav-text;
-        cursor: pointer;
-        min-width: 35px;
-        font-size: 15px;
-        text-align: center;
-        padding: 11px 0 12px;
-        display: inline-block;
-        border-bottom: solid 2px transparent;
-    }
-
-    .search-open {
-        right: 0; 
-        top: 40px; 
-        display: none;
-        padding: 14px; 
-        position: absolute;
-        background: $search-bg; 
-        border-top: solid 2px $nav-border;
-        z-index: 100;
-
-        form {
-            margin: 0;  
-        }
-    }
-
-    @media (min-width: 992px) {
-        > li > .search {
-            bottom: -2px;
-            position: relative;
-        }
-
-        .open > a,
-        .open > a:hover,
-        .open > a:focus {
-            background-color: transparent;
-            border-color: transparent;
-        }
-    }
-
-    @media (max-width: 991px) {
-        > li > {
-            .search:hover {
-                background:  $main-theme;
-                color: $white !important;
-            }
-
-            .search {
-                width: 35px;
-                height: 34px;
-                line-height: 12px;
-                margin: 5px 10px 0;
-                border-bottom: none;
-            }
-        }
-
-        .search-open {
-            top: 5px;
-            padding: 0;
-            left: 48px;
-            border-top: none;
-            box-shadow: none;
-            background: none; 
-            margin-right: 10px;
-        }
-        .open > a,
-        .open > a:hover,
-        .open > a:focus {
-            color: $nav-text;
-            border-color: $nav-border;
-        }
-    }
-}
-/* end of .nav */
 
 .navbar-collapse {
     position: relative;
     border-top: 0;
 }
 
+/* 
+  The basic "nav" navigation structure looks like this:
+
+  <ul class="navbar-nav">
+      <li class="dropdown">
+
+          <a>Top level entry</a>
+          <ul class="dropdown-menu">
+              <li>
+                    <a>Sub menu entry</a>
+              </li>
+          </ul>
+
+      </li>
+  </ul>
+
+*/
+
 .navbar-nav {
 
     > .active > a {
-        color: $nav-theme; // same color as the border
+        // the top level menu entry that belongs to the currently opened page
+        color: $nav-theme;
         border-bottom-color: $nav-theme;
 
-        &:hover{
-            color: $nav-text-hover; // in case hover color is different
-            border-bottom-color: $nav-theme;
+        &:hover {
+            color: $nav-text-hover;
         }
     }
 
+    // top level nav elements 
     > li {
         transition: all 1s;
 
-        > a {
-            color:  $nav-text;
-            font-size: 15px;
-            font-weight: 400;
-            text-transform: uppercase;
-
-            &:hover {
-                color: $nav-text-hover;
-            }
-        }
-
         &:hover > a {
             color: $nav-text-hover;
+            border-bottom-color: $nav-theme;
+        }
+
+        > a {
+            color:  $nav-text;
+            background: none;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 400;
+            position: relative;
+            bottom: -2px;
+            border-bottom: solid 2px transparent;
+            padding: 9px 30px 9px 20px;
         }
 
         > .search {
-            background: transparent;
-            border-bottom-color: transparent;
+            color: $nav-text;
+            background: none;
+            cursor: pointer;
+            font-size: 15px;
+            min-width: 35px;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            bottom: -2px;
+            border-bottom: solid 2px transparent;
+            padding: 11px 0 12px;
 
+            &:focus,
             &:hover {
-                background: transparent;
-                border-bottom-color: $nav-text-hover;
                 color: $nav-text-hover;
+                border-bottom-color: $nav-theme;
             }
         }
     }
 
-    .mega-menu-fullwidth ul.dropdown-menu,
-    .dropdown-menu li a {
-        background-color: $nav-bg;
-        color: $nav-sub-color;
-    }
+    @media (min-width: 992px) {
+        float: right;
 
-    .dropdown-menu li a:hover {
-        background-color: $nav-sub-bg-hover !important;
-        color: $nav-sub-color-hover;
-    }
-
-    .dropdown-menu li.active > a {
-        background-color: $nav-sub-bg-active !important;
-        color: $nav-sub-color-active;
-
-        &:hover,
-        &:focus {
-            color: $nav-sub-color-hover;
+        li.dropdown:hover > .dropdown-menu {
+            // this displays the submenus on hover
+            display: block;
+        } 
+        > .dropdown .dropdown-menu {
+            border-top: solid 2px $nav-theme;
+            border-bottom: solid 2px $nav-theme;
         }
-    }
+        .open > .dropdown-menu {
+            // change this to "block" in oder to activate clickable submenues
+            display: none;
+        }
 
-    @media (min-width: 768px){
-        .form-inline .input-group .form-control {
-            width: auto;
+        .open > a {
+            color: $nav-text-hover;
+            background-color: transparent;
+            border-color: transparent;
+        }
+        .open > a:hover,
+        .open > a:focus {
+            color: $nav-theme;
         }
     }
 
@@ -331,79 +255,284 @@ $nav-sub-color-active: $nav-text !default;
         margin: 0;
         float: none !important;
 
+        > .dropdown .dropdown-menu {
+            -webkit-transition: all 3s;
+            transition: all 0.5s ease-in-out;
+
+            max-height: 0;
+            display: block;
+            overflow: hidden;
+        }
+        > .dropdown.open .dropdown-menu {
+            max-height: 5000px;
+        }
+
+        .open > a,
+        .open > a:hover,
+        .open > a:focus {
+            color: $nav-text;
+            border-color: $nav-border;
+        }
+
+        > .active > a {
+            // the top level menu entry that belongs to the currently opened page
+            color: $nav-bg !important;
+            background:  $nav-theme;
+            border-color: $nav-border;
+
+            &:hover {
+                color: $nav-text-hover !important;
+                background:  $nav-bg-hover;
+                border-color: $nav-bg-hover;
+            }
+        }
+
         > li {
-            float: none;
+            float: none; // required to overwrite bootstrap default
 
             > a {
+                background: $nav-bg;
                 font-size: 14px;
                 padding: 9px 10px;
+                border-bottom: solid 1px $nav-border;
             }
 
-            a {
+            &:hover > a {
+                color: $nav-text-hover;
+                background:  $nav-bg-hover;
                 border-bottom: solid 1px $nav-border;
             }
         }
 
-        & > {
-            .active > a,
-            .active > a:hover,
-            .active > a:focus {
-                background:  $main-theme;
-                color: $nav-active-color !important;
-            }
-            .active > a, 
-            li.dropdown > a:focus {
-                border-color: $nav-sub-bg-hover;
-            }
-        }
-
-        .ap-open .dropdown-menu {
-
-            .dropdown-header, 
-            > li > a {
-                padding: 5px 15px 5px 25px;
-            }
-        }
-
+        #searchContentHeader,
         #searchButtonHeader {
+            // hide the search function on the small screen version
             display: none;
         }
     }
 
-    @media (min-width: 992px) {
-        float: right;
 
-        & > {
-            li > a:hover,
-            .active > a {
-                position: relative;
-            }
-
-            li > a,
-            li > a:focus {
-                bottom: -2px;
-                border-bottom: solid 2px transparent;
-                padding: 9px 30px 9px 20px;
-            }
-
-            li > a,
-            li > a:hover,
-            li > a:focus, 
-            .active > a, 
-            .active > a:hover, 
-            .active > a:focus {
-                background: none;
-            }
-            li.dropdown:hover > .dropdown-menu {
-                display: block;
-            } 
+    @media (min-width: 768px){
+        .form-inline .input-group .form-control {
+            width: auto;
         }
-    } 
+    }
+
+    .search-open {
+        // css for open search box-shadow
+        // must stay in the css structure here - javascript apparently expects this
+        right: 0; 
+        top: 40px; 
+        display: none;
+        padding: 14px; 
+        position: absolute;
+        background: $nav-bg; 
+        border-top: solid 2px $nav-theme;
+        border-bottom: solid 2px $nav-theme;
+        z-index: 100;
+
+        form {
+            margin: 0;  
+        }
+    }
+
 }
-/* end of navbar-nav */
+/* end nav */
 
 
-.mega-menu .dropdown, .mega-menu .nav {
+
+.dropdown-menu {
+    border: none;
+    border-radius: 0;
+
+    > li {
+        > a {
+            border-bottom: 1px solid $nav-border;
+            background-color: $nav-bg;
+            color: $nav-sub-color;
+            padding: 5px 25px;
+
+            &:focus,
+            &:hover {
+                background-color: $nav-bg-hover;
+                color: $nav-text-hover;
+            }
+        }
+
+        &.focus > a,
+        &.active > a {
+            background-color: $nav-active-bg;
+            color: $nav-active;
+
+            &:focus,
+            &:hover {
+                color: $nav-sub-color-hover;
+            }
+        }
+    }
+
+    .ap-linksequence-boxed {
+       li > a {
+            border-bottom: 1px solid $nav-border;
+            background-color: $nav-bg;
+            color: $nav-sub-color;
+            padding: 5px 25px;
+            margin: 0;
+
+            &:focus,
+            &:hover {
+                background-color: $nav-bg-hover;
+                color: $nav-text-hover;
+            }
+        }
+    }
+
+    .dropdown-submenu { 
+        position: relative; 
+
+        > .dropdown-menu {
+            top: 3px; 
+            left: 100%; 
+            margin-top: -5px; 
+            margin-left: 0px; 
+        }
+
+        &:hover > .dropdown-menu {
+            // this displays the sub menus on hover
+            display: block;
+        }
+    }
+
+    // add caret labels to menus that have submenus
+    .dropdown > a:after,
+    .dropdown-submenu > a:after {
+        top: 8px;
+        right: 9px;
+        font-size: 11px;
+        content: "\f105";
+        position: absolute;
+        font-weight: normal;
+        display: inline-block;
+        font-family: FontAwesome;
+    }
+    .dropdown > a:after {
+        top: 9px;
+        right: 15px;
+        content: "\f107";
+    }
+
+    @media (min-width: 992px) {
+        min-width: 200px;
+        z-index: 9999 !important;
+
+        li a {
+            font-size: 13px;
+            font-weight: 400;
+            padding: 6px 15px;
+        }
+
+        > li a {
+            border-bottom: solid 1px $nav-border;
+        }
+    }
+
+    @media (max-width: 991px) {
+        position: static;
+        box-shadow: none;
+        float: none;
+        width: auto;
+
+        .open {
+            // this displays the menu if clicked
+            display: block;
+        }
+
+        .dropdown-submenu {
+
+            > .dropdown-menu {
+                display: block; // always display the submenus on the small screens
+                margin-top: 0px;
+                margin-left: 15px;
+                border-left: 0;
+                border-right: 0;
+            }
+
+            // this overwrites a bootstrap default
+            > a:after {
+                content: "\f107";
+            }
+        }
+
+        &.pull-right {
+            float: none !important;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+        overflow-y: auto !important;
+    }
+
+    > .container {
+        margin-bottom: 0;
+    }
+
+    .navbar-collapse {
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 992px) {
+    .mega-menu {
+        div.dropdown-menu {
+            width: 100%;
+            position: absolute;
+            left: 0;
+        }
+
+        div.dropdown-megamenu {
+            padding: 15px 15px 0 15px;
+        }
+    }
+}
+
+.mega-menu-fullwidth ul.dropdown-menu {
+    border-color: $nav-border;
+    background-color: $nav-bg;
+    color: $nav-sub-color;
+}
+
+
+
+.mega-menu .dropdown, 
+.mega-menu .nav {
     position: static;
 }
 
@@ -430,114 +559,6 @@ $nav-sub-color-active: $nav-text !default;
     .nav > li > .dropdown-menu:after,
     .nav > li > .dropdown-menu:before {
         display: none;
-    }
-}
-
-@media (min-width: 992px) {
-    .open > .dropdown-menu {
-        display: none;
-    }
-
-    .mega-menu {
-        div.dropdown-menu {
-            width: 100%;
-            position: absolute;
-            left: 0;
-        }
-
-        div.dropdown-megamenu {
-            padding: 15px 15px 0 15px;
-        }
-    }
-
-    .dropdown-menu {
-        min-width: 200px;
-        border-radius: 0;
-        z-index: 9999 !important;
-
-        li a {
-            font-size: 13px;
-            font-weight: 400;
-            padding: 6px 15px;
-        }
-
-        > li a {
-            border-bottom: solid 1px $nav-border;
-        }
-    }
-}
-
-
-@media (max-width: 991px) {
-
-    .open .dropdown-menu {
-        display: none;
-    }
-
-    .ap-open .dropdown-menu {
-        border: 0;
-        left: 0;
-        float: none;
-        width: auto;
-        margin-top: 0;
-        position: static;
-        background-color: transparent;
-        display: block;
-        transition: all 1s;
-    }
-
-    .dropdown-menu {
-        box-shadow: none;
-    }
-
-    .navbar-header {
-        float: none;
-    }
-
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-
-    .navbar-collapse.collapse.in {
-        display: block !important;
-      overflow-y: auto !important;
-    }
-
-    .dropdown-menu.pull-right {
-      float: none !important;
-    }
-
-    > .container {
-      margin-bottom: 0;
-    }
-
-    .navbar-collapse {
-        margin-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-        .container {
-            padding-left: 0;
-            padding-right: 0;
-        }
-    }
-
-    .dropdown-submenu > a:after {
-        content: " ";
-    }
-
-    .dropdown-submenu > .dropdown-menu {  
-        display: block;
-        margin-left: 15px;
-        border-left: 0;
-        border-right: 0;
-    }
-
-    .ap-linksequence-boxed {
-        li a {
-            padding: 5px 15px 5px 25px;
-            border-right: 0;
-            border-left: 0;
-        }
     }
 }
 
