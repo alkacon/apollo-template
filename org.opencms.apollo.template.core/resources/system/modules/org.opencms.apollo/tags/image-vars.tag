@@ -3,8 +3,8 @@
     trimDirectiveWhitespaces="true" 
     description="Provides quick access to image values from XML"%>
 
-<%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
-<%@ attribute name="escapecopyright" type="java.lang.Boolean" required="false" %>
+<%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" description="The image to format. Must be a generic Apollo nested image content." %>
+<%@ attribute name="escapecopyright" type="java.lang.Boolean" required="false" description="If true, the image copyright text is secaped for usage in HTML attributes." %>
 
 <%@ variable name-given="imageLink" declare="true" %>
 <%@ variable name-given="imageUnscaledLink" declare="true" %>

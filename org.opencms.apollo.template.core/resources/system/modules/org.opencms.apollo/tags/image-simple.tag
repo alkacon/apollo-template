@@ -4,12 +4,12 @@
     trimDirectiveWhitespaces="true" 
     description="Formats a simple image from the given content" %>
 
-<%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
-<%@ attribute name="link" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
-<%@ attribute name="headline" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
-<%@ attribute name="onlyimage" type="java.lang.Boolean" required="false" %>
-<%@ attribute name="title" type="java.lang.String" required="false" %>
-<%@ attribute name="width" type="java.lang.String" required="false" %>
+<%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" description="The image to format. Must be a generic Apollo nested image content." %>
+<%@ attribute name="link" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" description="The link to use for the image. Must be a generic Apollo nested link content." %>
+<%@ attribute name="headline" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" description="The headline to use as image title if the image title is not set." %>
+<%@ attribute name="onlyimage" type="java.lang.Boolean" required="false" description="If set to true, only the image without surrounding HTML will be shown." %>
+<%@ attribute name="title" type="java.lang.String" required="false" description="The title to use for the image." %>
+<%@ attribute name="width" type="java.lang.String" required="false" description="The optional image width to use, will be added as attribute to the image tag." %>
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>

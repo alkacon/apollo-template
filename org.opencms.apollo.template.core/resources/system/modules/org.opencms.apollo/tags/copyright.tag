@@ -3,7 +3,7 @@
   body-content="empty"
   description="Formats a copyright text."%>
 
-<%@ attribute name="text" type="java.lang.String" required="true" %>
+<%@ attribute name="text" type="java.lang.String" required="true" description="The copyright text to format. Prepends a '(c)' if not already present." %>
 
 <%@ variable name-given="copyright" scope="AT_END" declare="true" %>
 

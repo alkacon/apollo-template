@@ -6892,7 +6892,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[List: Element pages]]></value>
+					<value><![CDATA[Element pages]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7555,7 +7555,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog List: List with facet row and archive filter element]]></value>
+					<value><![CDATA[Blog Archive: List with facet row and archive filter element]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7708,7 +7708,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Reduced Demo Footer: Release notes footer content]]></value>
+					<value><![CDATA[Apollo Tutorial Footer: Release notes footer content]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8354,7 +8354,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Property offer: Price]]></value>
+					<value><![CDATA[Real Estate: Price]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8371,7 +8371,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Property offer: Rooms]]></value>
+					<value><![CDATA[Real Estate: Rooms]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8388,7 +8388,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Property offer: Space]]></value>
+					<value><![CDATA[Real Estate: Space]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8405,7 +8405,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Property offer: Plot]]></value>
+					<value><![CDATA[Real Estate: Plot]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8423,6 +8423,227 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Blog List: Our Blog]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00115.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00115.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>a4d7a946-b2f4-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>a4d7a947-b2f4-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 09:50:48 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design: Your home - Your style]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00116.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00116.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>e414793a-b2f4-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>e414793b-b2f4-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 09:52:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design: HomeDesign Top Left]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00117.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00117.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>35c3ba7d-b2f5-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>35c3ba7e-b2f5-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 09:54:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design: HomeDesign Top Right]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00118.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00118.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>46c8ea10-b2f6-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>46c8ea11-b2f6-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 10:02:30 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design: Tools of the trade]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00119.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00119.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>eb3f1e23-b2f6-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>eb3f1e24-b2f6-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 10:07:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design: Jugendstil for beginners]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00120.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00120.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>7d60c928-b2f7-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>7d60c929-b2f7-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 10:11:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design: Treasures from the attic]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00121.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00121.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>60974a99-b2f8-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>60974a9a-b2f8-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 10:17:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design Latest articles]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00122.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00122.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>61460bca-b2f9-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>61460bcb-b2f9-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 10:24:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design - Houseplants bring life to your rooms]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00123.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00123.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>d350e19c-b2fa-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>d350e19d-b2fa-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 10:35:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design: What a child's room needs]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00124.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00124.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>7bd8b04d-b2fc-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>7bd8b04e-b2fc-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 10:46:56 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design: Spotlight article]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00125.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00125.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>e36f18a1-b316-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>e36f18a2-b316-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 13:55:56 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design - (value:Headline)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00126.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00126.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>9bf3659c-b31a-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>9bf3659d-b31a-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 14:22:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Photography: Photography main image]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00127.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00127.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>91fc5c3d-b31c-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>91fc5c3e-b31c-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 14:36:37 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design - (value:Headline)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9509,6 +9730,40 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/flexiblecontents/fc_00001.xml</source>
+			<destination>apollo-demo/.content/flexiblecontents/fc_00001.xml</destination>
+			<type>a-flexible</type>
+			<uuidstructure>856780f8-b305-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>856780f9-b305-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 11:51:37 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design: Colored Spacer Blue]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/flexiblecontents/fc_00002.xml</source>
+			<destination>apollo-demo/.content/flexiblecontents/fc_00002.xml</destination>
+			<type>a-flexible</type>
+			<uuidstructure>21f55324-b306-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>21f55325-b306-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 11:56:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design: Colored Spacer Orange]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>apollo-demo/.content/flexiblecontents/fc_00003.xml</source>
 			<destination>apollo-demo/.content/flexiblecontents/fc_00003.xml</destination>
 			<type>a-flexible</type>
@@ -9604,7 +9859,24 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Reduced Demo Footer: Footer Alkacon Image]]></value>
+					<value><![CDATA[Apollo Tutorial Footer: Footer Alkacon Image]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/flexiblecontents/fc_00009.xml</source>
+			<destination>apollo-demo/.content/flexiblecontents/fc_00009.xml</destination>
+			<type>a-flexible</type>
+			<uuidstructure>bafa023c-b324-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>bafa023d-b324-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 15:35:01 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design - Colored Spacer Gray]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9693,6 +9965,40 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[A beautiful cat]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/imgur-sections/imgur_00003.xml</source>
+			<destination>apollo-demo/.content/imgur-sections/imgur_00003.xml</destination>
+			<type>a-imgursection</type>
+			<uuidstructure>6ca29c1c-b315-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>6ca29c1d-b315-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 13:45:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Your title here]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/imgur-sections/imgur_00004.xml</source>
+			<destination>apollo-demo/.content/imgur-sections/imgur_00004.xml</destination>
+			<type>a-imgursection</type>
+			<uuidstructure>1458ea94-b317-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>1458ea95-b317-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 13:57:18 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[HomeDesign Imgur 2]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9909,7 +10215,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Release Notes Header: Tutorial Head Navigation Links]]></value>
+					<value><![CDATA[Apollo Tutorial Header: Tutorial Head Navigation Links]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9927,6 +10233,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Real Estate: Property offer page navigation]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/linksequences/ls_00006.xml</source>
+			<destination>apollo-demo/.content/linksequences/ls_00006.xml</destination>
+			<type>a-linksequence</type>
+			<uuidstructure>e39dff4e-b31b-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>e39dff4f-b31b-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 14:31:44 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design - (value:Title)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10629,6 +10952,40 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Simple slider]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/sliders/sl_00004.xml</source>
+			<destination>apollo-demo/.content/sliders/sl_00004.xml</destination>
+			<type>a-slider</type>
+			<uuidstructure>8b651d8f-b2f5-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>8b651d90-b2f5-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 09:57:15 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design: Design your home Slider 1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/sliders/sl_00005.xml</source>
+			<destination>apollo-demo/.content/sliders/sl_00005.xml</destination>
+			<type>a-slider</type>
+			<uuidstructure>1d864e8d-b2fd-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>1d864e8e-b2fd-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 10:51:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design: Home Design Slider 2]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -12260,6 +12617,50 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo/home-design</destination>
+			<type>folder</type>
+			<uuidstructure>ae92020a-b2f3-11e6-b319-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 25 Nov 2016 09:43:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[695.6172]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Home Design]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/home-design/index.html</source>
+			<destination>apollo-demo/home-design/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>ae9a8d8f-b2f3-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>ae9a8d90-b2f3-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 09:43:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Home Design]]></value>
+				</property>
+				<property>
+					<name>apollo.theme</name>
+					<value><![CDATA[blue]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/home</destination>
 			<type>folder</type>
 			<uuidstructure>d53f32c1-5c61-11e5-96ab-0242ac11002b</uuidstructure>
@@ -12418,6 +12819,46 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[A selection of clients]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/photography</destination>
+			<type>folder</type>
+			<uuidstructure>589414fa-b31a-11e6-b319-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 25 Nov 2016 14:20:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[717.0801]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Photography]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Photography]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/photography/index.html</source>
+			<destination>apollo-demo/photography/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>5899933f-b31a-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>58999340-b31a-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 14:20:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Photography]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14830,7 +15271,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Header for tutorial]]></value>
+					<value><![CDATA[Apollo template: Tutorial page: Header for tutorial]]></value>
 				</property>
 			</properties>
 			<relations/>

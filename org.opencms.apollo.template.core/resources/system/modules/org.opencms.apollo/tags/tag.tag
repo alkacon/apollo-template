@@ -1,7 +1,7 @@
 <%@ tag 
     display-name="tag"
     trimDirectiveWhitespaces="true" 
-    description="Outputs the body content as a HTML tag. Can be used to avoid paser errores in IDEs." %>
+    description="Outputs the body content as a HTML tag. Can be used to avoid parser errors in IDEs." %>
 
 <%@ attribute name="test" type="java.lang.String" required="false"
     description="Can be used to defer the decision to actually create the markup around the body to the calling element.

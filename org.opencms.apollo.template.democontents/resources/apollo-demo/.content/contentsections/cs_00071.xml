@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
-  <ApolloSection language="en">
-    <Headline><![CDATA[More information]]></Headline>
-    <Text name="Text0">
-      <links>
-        <link name="link0" internal="false" type="A">
-          <target><![CDATA[http://documentation.opencms.org/central/]]></target>
-        </link>
-        <link name="link1" internal="false" type="A">
-          <target><![CDATA[http://www.alkacon.com/en/products/]]></target>
-        </link>
-      </links>
-      <content><![CDATA[<p><a href="%(link0)">OpenCms Dokumentation Central<br /></a>Tutorials and HowTos for OpenCms.</p>
-<p><a href="%(link1)">OpenCms Services by Alkacon Software<br /></a>Alkacon Software's focus area is to develop OpenCms extensions as well as provide professional support and outsourcing services for OpenCms projects.</p>]]></content>
-    </Text>
-  </ApolloSection>
   <ApolloSection language="de">
     <Headline><![CDATA[Mehr Informationen]]></Headline>
     <Text name="Text0">
@@ -29,6 +14,21 @@
       </links>
       <content><![CDATA[<p><a href="%(link0)">OpenCms Dokumentation<br /></a>Tutorials and Anleitungen für OpenCms.</p>
 <p><a href="%(link1)">OpenCms Leistungen von Alkacon Software<br /></a>Wir von Alkacon sind voll auf OpenCms spezialisiert und bieten unseren Kunden Service, Support und Zusatzprodukte für OpenCms an.</p>]]></content>
+    </Text>
+  </ApolloSection>
+  <ApolloSection language="en">
+    <Headline><![CDATA[More information]]></Headline>
+    <Text name="Text0">
+      <links>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[http://documentation.opencms.org/central/]]></target>
+        </link>
+        <link name="link1" internal="false" type="A">
+          <target><![CDATA[http://www.alkacon.com/en/products/]]></target>
+        </link>
+      </links>
+      <content><![CDATA[<p><a href="%(link0)">OpenCms Documentation Central<br /></a>Tutorials and HowTos for OpenCms.</p>
+<p><a href="%(link1)">OpenCms Services by Alkacon Software<br /></a>Alkacon Software's focus area is to develop OpenCms extensions as well as provide professional support and outsourcing services for OpenCms projects.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

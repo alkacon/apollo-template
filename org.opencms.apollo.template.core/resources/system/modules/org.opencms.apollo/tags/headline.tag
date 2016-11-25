@@ -2,9 +2,9 @@
     display-name="headline"
     body-content="empty"
     trimDirectiveWhitespaces="true" 
-    description="Formates a headline from te given content" %>
+    description="Formats a headline from the given content" %>
 
-<%@ attribute name="headline" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
+<%@ attribute name="headline" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" description="The headline to format." %>
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  

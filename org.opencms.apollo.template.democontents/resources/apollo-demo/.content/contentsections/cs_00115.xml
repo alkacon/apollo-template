@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Your home - Your style]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Your home is where your heart is. Because of that we help you to style your home to your hearts content by giving you ideas and inspiration. Ever felt that you need more colors in your life? We have exactly what you need. Do you want&nbsp;to give visitors something to look at that shows your personality? Our decoration experts know how to do it.</p>]]></content>
+    </Text>
+  </ApolloSection>
+</ApolloSections>

@@ -4,17 +4,17 @@
     trimDirectiveWhitespaces="true" 
     description="Formats a compact list item from the given content" %>
 
-<%@ attribute name="filename" type="java.lang.String" required="true" %>
-<%@ attribute name="headline" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
-<%@ attribute name="text" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
-<%@ attribute name="teaser" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
+<%@ attribute name="filename" type="java.lang.String" required="true" description="The file name of the list item entry." %>
+<%@ attribute name="headline" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" description="The headline to use." %>
+<%@ attribute name="text" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" description="The text to show as teaser if the teaser text is not given." %>
+<%@ attribute name="teaser" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" description="The teaser text to show." %>
 
-<%@ attribute name="date" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
-<%@ attribute name="enddate" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
-<%@ attribute name="datetype" type="java.lang.String" required="false" %>
+<%@ attribute name="date" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" description="The start date to format for the item." %>
+<%@ attribute name="enddate" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" description="The end date to format for the item." %>
+<%@ attribute name="datetype" type="java.lang.String" required="false" description="The date type to use to format the start and end date." %>
 
-<%@ attribute name="location" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
-<%@ attribute name="btntext" type="java.lang.String" required="false" %>
+<%@ attribute name="location" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" description="The location to format together with the date information." %>
+<%@ attribute name="btntext" type="java.lang.String" required="false" description="The button text for the link to the detail page. If not set, a default text is used." %>
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>

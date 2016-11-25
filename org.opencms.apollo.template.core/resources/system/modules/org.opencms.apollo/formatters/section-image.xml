@@ -43,8 +43,13 @@
     <Setting>
       <PropertyName><![CDATA[showlink]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.section.image.text.showlink)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
+      <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
+      <WidgetConfig><![CDATA[
+        false:%(key.apollo.section.image.link.none)|
+        image:%(key.apollo.section.image.link.imagedirectly)|
+        true:%(key.apollo.section.image.link.textoverlay)
+      ]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showcopyright]]></PropertyName>

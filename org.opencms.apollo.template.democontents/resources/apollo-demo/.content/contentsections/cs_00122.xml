@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Houseplants bring life to your rooms]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Lorem ipsum dolor sit amet, in cum discere perpetua, cum oblique hendrerit ei. Ex vide clita dignissim est, duis reprehendunt has ex. Duo oportere sapientem ea, ut vis omnes posidonium. Albucius nominati perpetua ad vel, novum accumsan sea ut. Te mea impetus suscipit repudiandae, ornatus debitis hendrerit sit ex. Eius adversarium te pro, sea no eros oblique corpora. Labore tacimates ei sed, nam facer tempor ea.</p>
+<p>Tale fastidii qui ea, consequat vituperatoribus vix ne, cu everti apeirian sea. His aeterno deleniti ut, ex eos civibus efficiendi, an populo everti vix. Pri at essent hendrerit torquatos, id mazim sanctus fastidii pro. Indoctum concludaturque an quo.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/slider/p5.jpg]]></target>
+          <uuid>44edb2d9-2457-11e3-adc8-000c297c001d</uuid>
+        </link>
+      </Image>
+      <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
+    </Image>
+    <Link>
+      <Text><![CDATA[Read more]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/home-design/]]></target>
+          <uuid>ae92020a-b2f3-11e6-b319-0242ac11002b</uuid>
+          <anchor><![CDATA[]]></anchor>
+        </link>
+      </URI>
+    </Link>
+    <GalleryTitle><![CDATA[%(page_title) - %(value:Headline)]]></GalleryTitle>
+  </ApolloSection>
+</ApolloSections>

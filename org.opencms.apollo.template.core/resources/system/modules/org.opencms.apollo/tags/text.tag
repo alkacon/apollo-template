@@ -4,8 +4,8 @@
     trimDirectiveWhitespaces="true" 
     description="Formats a text with optional link from the given content" %>
 
-<%@ attribute name="text" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
-<%@ attribute name="link" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
+<%@ attribute name="text" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" description="The text to format." %>
+<%@ attribute name="link" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" description="The link to show below the text. Must be a generic Apollo nested link content." %>
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

@@ -4,7 +4,8 @@
     trimDirectiveWhitespaces="true" 
     description="Shows the standard message boxes when a new element is used." %>
 
-<%@ attribute name="mode" type="java.lang.String" required="true" %>
+<%@ attribute name="mode" type="java.lang.String" required="true" 
+	description="Supported values are 'wrapContainer' and 'skipTemplatePart'."%>
 
 <%@ variable name-given="containerSuffix" scope="AT_END" declare="true" %>
 <%@ variable name-given="containerTypes" scope="AT_END" declare="true" %>
@@ -13,12 +14,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-
-<%-- ######## ------------------------------------ ######## --%>
-<%-- ######## Supported values for attribute mode: ######## --%>
-<%-- ######## - wrapContainer                      ######## --%>
-<%-- ######## - skipTemplatePart                   ######## --%>
-<%-- ######## ------------------------------------ ######## --%>
 
 <c:set var="megamenuFilename">mega.menu</c:set>
 <c:set var="isMegaMenuRequest">${fn:endsWith(cms.requestContext.uri, megamenuFilename)}</c:set>

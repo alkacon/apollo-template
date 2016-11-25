@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSliders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/slider.xsd">
+  <ApolloSlider language="en">
+    <Title><![CDATA[Home Design Slider 2]]></Title>
+    <Delay><![CDATA[8000]]></Delay>
+    <ShowTimer>false</ShowTimer>
+    <ShowNumbers>false</ShowNumbers>
+    <ShowNavButtons>true</ShowNavButtons>
+    <ShowPlayButton>false</ShowPlayButton>
+    <TextColor>#FFFFFF</TextColor>
+    <TextBackgroundColor>#EFD100</TextBackgroundColor>
+    <ImageHeight><![CDATA[250]]></ImageHeight>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/office/05.jpg]]></target>
+          <uuid>2f77d633-7061-11e6-9a42-0242ac11002b</uuid>
+        </link>
+      </Uri>
+      <SuperTitle><![CDATA[Living Colors]]></SuperTitle>
+      <TitleLine1><![CDATA[Spice up your living room with our schemes]]></TitleLine1>
+      <TitleLine2/>
+    </Image>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/office/12.jpg]]></target>
+          <uuid>2fa37a21-7061-11e6-9a42-0242ac11002b</uuid>
+        </link>
+      </Uri>
+      <SuperTitle><![CDATA[Room optimization]]></SuperTitle>
+      <TitleLine1><![CDATA[How to make the most of the space you have]]></TitleLine1>
+      <TitleLine2/>
+      <Position>
+        <Top><![CDATA[50]]></Top>
+        <Left><![CDATA[620]]></Left>
+      </Position>
+    </Image>
+    <Image>
+      <Uri>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/office/11.jpg]]></target>
+          <uuid>2f9dadbf-7061-11e6-9a42-0242ac11002b</uuid>
+        </link>
+      </Uri>
+      <SuperTitle><![CDATA[Technology design]]></SuperTitle>
+      <TitleLine1><![CDATA[How to find the products that fit into your home]]></TitleLine1>
+      <TitleLine2/>
+    </Image>
+  </ApolloSlider>
+</ApolloSliders>

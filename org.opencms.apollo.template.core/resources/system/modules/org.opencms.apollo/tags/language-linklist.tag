@@ -13,6 +13,7 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <c:set var="langlinks" value="" />
+<c:set var="showlinks" value="false" />
 <c:forEach var="locentry" items="${cms.localeResource}">
 	<c:set var="tempLocale" scope="request">${locentry.key}</c:set>
 	<c:set var="localeName">
@@ -26,16 +27,24 @@
 	<c:choose>
 		<c:when test="${empty locentry.value}">
 			<c:set var="subsiteLink">${cms.vfs.localeResource[cms.subSitePath][locentry.key].link}</c:set>
-			<c:set var="langlinks">${langlinks}<li><a href="<cms:link>${subsiteLink}</cms:link>">${localeName}</a></li></c:set>   
+			<c:set var="langlinks">${langlinks}<li><a href="<cms:link>${subsiteLink}</cms:link>">${localeName}</a></li></c:set>
+			<c:if test="${not empty subsiteLink}">
+				<c:set var="showlinks" value="true" />
+			</c:if>
+			
 		</c:when>
 		<c:when test="${locentry.key == cms.locale}">
 			<c:set var="langlinks">${langlinks}<li class="active"><a href="#">${localeName}${' '}<i class="fa fa-check"></i></a></li></c:set>    
 		</c:when>
 		<c:otherwise>
+			<c:set var="showlinks" value="true" />
 			<c:set var="langlinks">${langlinks}<li><a href="<cms:link>${locentry.value.link}</cms:link>">${localeName}</a></li></c:set>   
 		</c:otherwise>
 	</c:choose>
 </c:forEach>
-<ul class="languages hoverSelectorBlock">
-	<c:out value="${langlinks}" escapeXml="false" />
-</ul>
+
+<c:if test="${showlinks}">
+	<ul class="languages hoverSelectorBlock">
+		<c:out value="${langlinks}" escapeXml="false" />
+	</ul>
+</c:if>

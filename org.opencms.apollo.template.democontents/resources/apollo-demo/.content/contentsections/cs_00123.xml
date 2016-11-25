@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[What a child's room needs]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Mea ea altera facete. Deleniti rationibus nec ei, eruditi definitionem eu his. No pro periculis forensibus, cu est omittam suscipit gubergren, ludus fastidii adversarium vis ei. Paulo laoreet feugait id eos. Est velit libris in, vel oratio verterem cotidieque id, tamquam nominati cotidieque eos te.&nbsp;Ipsum scripserit ne sed.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/slider/p1.jpg]]></target>
+          <uuid>44c8777d-2457-11e3-adc8-000c297c001d</uuid>
+        </link>
+      </Image>
+      <Copyright><![CDATA[CC0 Public Domain / David Niblack /  imagebase.net]]></Copyright>
+    </Image>
+    <Link>
+      <Text><![CDATA[Read more]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/home-design/]]></target>
+          <uuid>ae92020a-b2f3-11e6-b319-0242ac11002b</uuid>
+          <anchor><![CDATA[]]></anchor>
+        </link>
+      </URI>
+    </Link>
+  </ApolloSection>
+</ApolloSections>

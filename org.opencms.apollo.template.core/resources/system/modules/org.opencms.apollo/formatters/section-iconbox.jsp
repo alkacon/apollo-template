@@ -6,11 +6,11 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.text">
+<cms:bundle basename="org.opencms.apollo.template.schemas.section">
 <cms:formatter var="content" val="value" rdfa="rdfa">
 
 <div class="ap-iconbox ${cms.element.parent.setting.cssHints.isSet ? cms.element.parent.setting.cssHints : '' }${' '}${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }" ${rdfa.Link}>
-    <c:set var="textnew"><fmt:message key="apollo.text.message.new" /></c:set>
+    <c:set var="textnew"><fmt:message key="apollo.section.message.new" /></c:set>
 
     <div class="text-box">
         <apollo:init-messages textnew="${textnew}">

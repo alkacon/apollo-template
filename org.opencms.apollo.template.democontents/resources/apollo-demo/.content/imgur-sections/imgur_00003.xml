@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloImgurs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/imgursection.xsd">
+  <ApolloImgur language="en">
+    <Title><![CDATA[Your title here]]></Title>
+    <Item>
+      <Id><![CDATA[http://i.imgur.com/7aq6Sjj.jpg]]></Id>
+      <Title><![CDATA[Googled "small apartment ideas" for decorating my new, very small, apartment. I suppose I should try "my shed of an apartment" instead.]]></Title>
+      <Description><![CDATA[Seriously though! WHO would consider this a small apartment?! Im talkin hope I find enough room for my packages of ramen noodle small here! 
+
+And this wasnt the only one! Go ahead, type in "small apartment ideas" and youll be like...welp...my place sucks. lol 
+]]></Description>
+      <Data><![CDATA[http://imgur.com/gallery/7aq6Sjj]]></Data>
+    </Item>
+  </ApolloImgur>
+</ApolloImgurs>

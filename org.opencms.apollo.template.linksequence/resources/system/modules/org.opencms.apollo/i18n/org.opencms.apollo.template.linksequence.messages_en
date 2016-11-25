@@ -18,5 +18,5 @@ label.ApolloLinkSequence.GalleryTitle=Gallery Title
 label.ApolloLinkSequence.Title.help=The title of the link sequence.
 fileicon.a-linksequence=Link Sequence
 apollo.setting.cssclass.linksasblock=Generate links with margin
-apollo.linksequence.message.languages=Languages
+apollo.linksequence.message.languages=Language
 apollo.linksequence.default.Title=New link sequence

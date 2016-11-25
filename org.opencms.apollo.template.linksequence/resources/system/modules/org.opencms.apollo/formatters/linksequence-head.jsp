@@ -18,12 +18,17 @@
 				<ul class="pull-${cms.element.setting.linkalign}">
 
 					<c:if test="${cms.element.settings.showLanguageLinks}">
-						<li class="hoverSelector">
-							<i class="fa fa-globe"></i>
-							<a><fmt:message key="apollo.linksequence.message.languages" /></a>
+						<c:set var="langLinks">
 							<apollo:language-linklist />
-						</li>
-						<li class="divider"></li>
+						</c:set>
+						<c:if test="${not empty langLinks}">
+							<li class="hoverSelector">
+								<i class="fa fa-globe"></i>
+								<a><fmt:message key="apollo.linksequence.message.languages" /></a>
+								${langLinks}
+							</li>
+							<li class="divider"></li>
+						</c:if>
 					</c:if>
 
 					<c:forEach var="link" items="${content.valueList.LinkEntry}" varStatus="status">

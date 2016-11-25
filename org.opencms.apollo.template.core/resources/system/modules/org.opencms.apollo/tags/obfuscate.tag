@@ -7,7 +7,7 @@
         Obfuscates an Email address (or any other String).
         The Sting that can be revelad using the JavaScript function 'unobfuscateString()'." %>
 
-<%@ attribute name="text" type="java.lang.String" required="true" %>
+<%@ attribute name="text" type="java.lang.String" required="true" desciption="The String to obfuscate." %>
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

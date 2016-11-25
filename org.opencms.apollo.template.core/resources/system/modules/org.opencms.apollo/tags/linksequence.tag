@@ -4,10 +4,10 @@
     trimDirectiveWhitespaces="true" 
     description="Formats a link sequence" %>
 
-<%@ attribute name="wrapperclass" type="java.lang.String" required="false" %>
-<%@ attribute name="linkclass" type="java.lang.String" required="false" %>
-<%@ attribute name="title" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
-<%@ attribute name="links" type="java.util.List" required="true" %>
+<%@ attribute name="wrapperclass" type="java.lang.String" required="false" description="CSS class added to the div tag surrounding the link sequence." %>
+<%@ attribute name="linkclass" type="java.lang.String" required="false" description="CSS class added to the ul tag surrounding the link entries." %>
+<%@ attribute name="title" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" description="The title of the link sequence." %>
+<%@ attribute name="links" type="java.util.List" required="true" description="The link entries as list. The list can contain objects of the type CmsJspContentAccessValueWrapper or CmsJspNavElement." %>
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

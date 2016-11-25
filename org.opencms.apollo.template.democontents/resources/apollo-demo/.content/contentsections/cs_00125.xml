@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Imgur picks]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[Please edit this content section.]]></content>
+    </Text>
+    <GalleryTitle><![CDATA[%(page_title) - (value:Headline)]]></GalleryTitle>
+  </ApolloSection>
+</ApolloSections>

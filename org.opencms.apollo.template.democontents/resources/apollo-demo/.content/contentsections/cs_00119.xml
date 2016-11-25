@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[Jugendstil for beginners]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Something not everybody has but everybody likes.&nbsp;Ut esse invenire pri, offendit signiferumque est cu. Mel ridens vocibus qualisque ei, nec no nihil quaerendum. Homero animal mei ex, nusquam elaboraret per ea. Mei id case vivendo, voluptaria reprimique eu eum.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/slider/p6.jpg]]></target>
+          <uuid>1552ecde-58f7-11e4-903d-005056b61161</uuid>
+        </link>
+      </Image>
+      <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
+    </Image>
+    <Link>
+      <Text><![CDATA[Read more]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/home-design/]]></target>
+          <uuid>ae92020a-b2f3-11e6-b319-0242ac11002b</uuid>
+          <anchor><![CDATA[]]></anchor>
+        </link>
+      </URI>
+    </Link>
+  </ApolloSection>
+</ApolloSections>
