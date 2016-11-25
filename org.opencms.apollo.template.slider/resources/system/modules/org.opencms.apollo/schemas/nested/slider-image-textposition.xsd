@@ -20,7 +20,7 @@
 
 	<xsd:annotation>
 		<xsd:appinfo>
-			<resourcebundle name="org.opencms.apollo.template.schemas.slider" />
+			<resourcebundle name="org.opencms.apollo.template.slider.messages" />
 			<defaults />
 			<mappings />
 		</xsd:appinfo>

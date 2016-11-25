@@ -27,8 +27,6 @@
 			<resource uri="/system/modules/org.opencms.apollo.template.map/"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/map.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/map.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.map_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.map_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.map.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.map.messages_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.map_de"/>
@@ -167,40 +165,6 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.map_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.map_de</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>d205c2dc-ada9-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>d205c2dd-ada9-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:12:36 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.map_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.map_en</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>d207708f-ada9-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>d2077090-ada9-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:12:36 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.map.messages_de</source>
 			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.map.messages_de</destination>
 			<type>propertyvfsbundle</type>
@@ -209,6 +173,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:13:21 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -227,6 +199,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -244,6 +224,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -260,6 +248,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:16:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

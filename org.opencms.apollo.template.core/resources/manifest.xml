@@ -28,12 +28,8 @@
 		<resources>
 			<resource uri="/system/modules/org.opencms.apollo.template.core/"/>
 			<resource uri="/system/modules/org.opencms.apollo/elements/generate-random-content.jsp"/>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/image-animated.jsp"/>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/image-animated.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/image-enlarge.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/image-enlarge.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/image-link-box.jsp"/>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/image-link-box.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/jsp-search.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/jsp-search.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/layoutrow.jsp"/>
@@ -89,6 +85,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-zoom.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/init-messages.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/megamenu.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/language-linklist.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/link.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/tag.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/icon-prefix.tag"/>
@@ -345,48 +342,6 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/formatters/image-animated.jsp</source>
-			<destination>system/modules/org.opencms.apollo/formatters/image-animated.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>780d94de-7b43-11e6-95f6-0242ac11002b</uuidstructure>
-			<uuidresource>780d94df-7b43-11e6-95f6-0242ac11002b</uuidresource>
-			<datecreated>Thu, 15 Sep 2016 12:53:58 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Image with animation effect formatter JSP]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[container-element;locale]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/image-animated.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/image-animated.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>832d2d41-7b43-11e6-95f6-0242ac11002b</uuidstructure>
-			<uuidresource>832d2d42-7b43-11e6-95f6-0242ac11002b</uuidresource>
-			<datecreated>Thu, 15 Sep 2016 12:54:17 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Image with animation effect]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo/formatters/image-enlarge.jsp</source>
 			<destination>system/modules/org.opencms.apollo/formatters/image-enlarge.jsp</destination>
 			<type>jsp</type>
@@ -423,60 +378,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Image with zoom option]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/image-link-box.jsp</source>
-			<destination>system/modules/org.opencms.apollo/formatters/image-link-box.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>29ee38a6-5563-11e6-958f-0242ac11002b</uuidstructure>
-			<uuidresource>29ee38a7-5563-11e6-958f-0242ac11002b</uuidresource>
-			<datecreated>Fri, 29 Jul 2016 08:05:07 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Image as link box formatter JSP]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[container-element;locale]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/image-link-box.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/image-link-box.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>259e1860-5563-11e6-958f-0242ac11002b</uuidstructure>
-			<uuidresource>259e1861-5563-11e6-958f-0242ac11002b</uuidresource>
-			<datecreated>Fri, 29 Jul 2016 08:05:00 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Image as link box]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -710,14 +611,14 @@
 			<source>system/modules/org.opencms.apollo/formatters/section-image.jsp</source>
 			<destination>system/modules/org.opencms.apollo/formatters/section-image.jsp</destination>
 			<type>jsp</type>
-			<uuidstructure>1106ba5f-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
-			<uuidresource>1106ba60-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
-			<datecreated>Tue, 15 Sep 2015 15:40:18 GMT</datecreated>
+			<uuidstructure>780d94de-7b43-11e6-95f6-0242ac11002b</uuidstructure>
+			<uuidresource>780d94df-7b43-11e6-95f6-0242ac11002b</uuidresource>
+			<datecreated>Thu, 15 Sep 2016 12:53:58 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for content section image only]]></value>
+					<value><![CDATA[Image with animation effect formatter JSP]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -735,26 +636,14 @@
 			<source>system/modules/org.opencms.apollo/formatters/section-image.xml</source>
 			<destination>system/modules/org.opencms.apollo/formatters/section-image.xml</destination>
 			<type>formatter_config</type>
-			<uuidstructure>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuidstructure>
-			<uuidresource>3677fe85-5bc0-11e5-8f8e-0242ac11002b</uuidresource>
-			<datecreated>Tue, 15 Sep 2015 15:41:21 GMT</datecreated>
+			<uuidstructure>832d2d41-7b43-11e6-95f6-0242ac11002b</uuidstructure>
+			<uuidresource>832d2d42-7b43-11e6-95f6-0242ac11002b</uuidresource>
+			<datecreated>Thu, 15 Sep 2016 12:54:17 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Image only (direct)]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
+					<value><![CDATA[Image with animation effect]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -1076,6 +965,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -1092,6 +989,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:11:28 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -1110,6 +1015,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -1126,6 +1039,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:12:01 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -1144,6 +1065,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -1160,6 +1089,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:15:07 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -1178,6 +1115,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -1194,6 +1139,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:16:03 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -1212,6 +1165,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -1228,6 +1189,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:15:57 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -1690,6 +1659,23 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Tag inserting InMemoryOnly and EditContent messages]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/language-linklist.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/language-linklist.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>59fd3f47-b252-11e6-ade4-0242ac11002b</uuidstructure>
+			<uuidresource>59fd3f48-b252-11e6-ade4-0242ac11002b</uuidresource>
+			<datecreated>Thu, 24 Nov 2016 14:29:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Link display tag]]></value>
 				</property>
 			</properties>
 			<relations/>

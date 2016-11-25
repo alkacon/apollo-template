@@ -1,8 +1,0 @@
-label.ApolloFlexibleElement.Code=Code
-apollo.flexible.message.changed=Der Inhalt wurde geändert, die Seite wird jetzt neu geladen.
-label.ApolloFlexibleElement.Title=Titel
-label.ApolloFlexibleElement.GalleryTitle.help=Der Titel des flexiblen Inhalts für die Galerie. Er wird nicht auf der Seite angezeigt.
-label.ApolloFlexibleElement.GalleryTitle=Galerie Titel
-label.ApolloFlexibleElement.Code.help=Hiermit kann HTML-Code oder JavaScript eingebettet werden.
-apollo.flexible.message.edit=<strong>Neuer flexibler Inhalt</strong>, bitte bearbeiten Sie den Inhalt.
-label.ApolloFlexibleElement.Title.help=Der Titel des flexiblen Inhalts. Er kann mit Hilfe einer Einstellung ausgeblendet werden.

@@ -5,7 +5,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.imagegallery">
+<cms:bundle basename="org.opencms.apollo.template.imagegallery.messages">
     <cms:formatter var="content">
 	
     <%-- ################################################################################################################## --%>

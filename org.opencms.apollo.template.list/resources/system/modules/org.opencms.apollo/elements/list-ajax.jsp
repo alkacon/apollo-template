@@ -9,7 +9,7 @@
 <cms:secureparams />
 
 <fmt:setLocale value="${param.loc}" />
-<cms:bundle basename="org.opencms.apollo.template.formatters.list">
+<cms:bundle basename="org.opencms.apollo.template.list.messages">
 
     <c:set var="con" value="${cms.vfs.readXml[param.contentpath]}" />
     <c:if test="${not empty con}">

@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
-  <ApolloTemplateRow language="en">
-    <Title><![CDATA[Area - Head]]></Title>
-    <PreMarkup><![CDATA[<div class="$(param)">]]></PreMarkup>
-    <PostMarkup><![CDATA[</div>]]></PostMarkup>
-    <Container><![CDATA[area]]></Container>
-    <Column>
-      <Name><![CDATA[c1]]></Name>
-      <Type><![CDATA[segment]]></Type>
-      <Count><![CDATA[5]]></Count>
-      <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
-    </Column>
-  </ApolloTemplateRow>
   <ApolloTemplateRow language="de">
     <Title><![CDATA[Area - Kopfbereich]]></Title>
-    <PreMarkup><![CDATA[<div class="$(param)">]]></PreMarkup>
-    <PostMarkup><![CDATA[</div>]]></PostMarkup>
     <Container><![CDATA[area]]></Container>
     <Column>
       <Name><![CDATA[c1]]></Name>
-      <Type><![CDATA[segment]]></Type>
+      <Type><![CDATA[head]]></Type>
       <Count><![CDATA[5]]></Count>
       <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
+      <Grid><![CDATA[area-head]]></Grid>
+    </Column>
+  </ApolloTemplateRow>
+  <ApolloTemplateRow language="en">
+    <Title><![CDATA[Area - Head]]></Title>
+    <Container><![CDATA[area]]></Container>
+    <Column>
+      <Name><![CDATA[c1]]></Name>
+      <Type><![CDATA[head]]></Type>
+      <Count><![CDATA[5]]></Count>
+      <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
+      <Grid><![CDATA[area-head]]></Grid>
     </Column>
   </ApolloTemplateRow>
 </ApolloTemplateRows>

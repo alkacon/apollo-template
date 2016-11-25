@@ -23,7 +23,7 @@
 
     <xsd:annotation>
         <xsd:appinfo>
-            <resourcebundle name="org.opencms.apollo.template.schemas.contact" />
+            <resourcebundle name="org.opencms.apollo.template.contact.messages" />
             <validationrules>
                 <rule element="FirstName" regex=".+" type="error" message="%(key.apollo.contact.error.firstname)" />
                 <rule element="LastName" regex=".+" type="error" message="%(key.apollo.contact.error.lastname)" />

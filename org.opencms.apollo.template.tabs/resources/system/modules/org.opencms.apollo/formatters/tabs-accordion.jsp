@@ -6,7 +6,7 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>	
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.tabs">
+<cms:bundle basename="org.opencms.apollo.template.tabs.messages">
 <cms:formatter var="content" val="value" rdfa="rdfa">
 
 	<c:set var="textnew"><fmt:message key="apollo.tabs.message.new" /></c:set>

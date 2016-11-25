@@ -21,7 +21,7 @@
 
 	<xsd:annotation>
 		<xsd:appinfo>
-			<resourcebundle name="org.opencms.apollo.template.schemas.tabs"/>
+			<resourcebundle name="org.opencms.apollo.template.tabs.messages"/>
 			<mappings>
 				<mapping element="GalleryTitle" mapto="property:Title" useDefault="true" />
 				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />

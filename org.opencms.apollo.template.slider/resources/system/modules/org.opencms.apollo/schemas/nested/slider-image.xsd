@@ -29,7 +29,7 @@
 
 	<xsd:annotation>
 		<xsd:appinfo>
-			<resourcebundle name="org.opencms.apollo.template.schemas.slider" />
+			<resourcebundle name="org.opencms.apollo.template.slider.messages" />
 			<layouts>
 				<layout element="Uri" widget="ImageGalleryWidget"
 					configuration="{type: 'gallery', useformat:true, formatvalues : ['original','693x277','893x277','?x277'], formatnames : 'original:Originalbild|standard:Standard|fullwidth:Volle Breite|fixedheight:Feste Hoehe'}" />

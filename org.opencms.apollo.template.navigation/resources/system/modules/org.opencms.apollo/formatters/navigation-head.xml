@@ -13,15 +13,20 @@
     <Rank><![CDATA[900]]></Rank>
     <Match>
       <Types>
-        <ContainerType><![CDATA[row]]></ContainerType>
-        <ContainerType><![CDATA[navigation]]></ContainerType>
+        <ContainerType><![CDATA[head]]></ContainerType>
       </Types>
     </Match>
     <Preview>false</Preview>
     <SearchContent>false</SearchContent>
     <AutoEnabled>true</AutoEnabled>
     <Detail>false</Detail>
-    <NestedContainers>false</NestedContainers>
+    <NestedContainers>true</NestedContainers>
+    <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[string]]></Widget>
+    </Setting>
     <Setting>
       <PropertyName><![CDATA[showbreadcrumb]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.showbreadcrumb)]]></DisplayName>

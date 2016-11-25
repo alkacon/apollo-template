@@ -3,65 +3,40 @@
 <AlkaconContainerPages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.containerpage/schemas/container_page.xsd">
   <AlkaconContainerPage language="en">
     <Containers>
-      <Name><![CDATA[f6094c4c-afd8-11e6-a18e-0242ac11002b-c2]]></Name>
-      <Type><![CDATA[element]]></Type>
-      <ParentInstanceId><![CDATA[f6094c4c-afd8-11e6-a18e-0242ac11002b]]></ParentInstanceId>
+      <Name><![CDATA[page-complete-megamenu]]></Name>
+      <Type><![CDATA[area,row]]></Type>
       <Elements>
         <Uri>
           <link type="STRONG">
-            <target><![CDATA[/sites/default/tutorial/.content/linksequences/ls_00001.xml]]></target>
-            <uuid>36174efe-afd9-11e6-a18e-0242ac11002b</uuid>
+            <target><![CDATA[/sites/default/tutorial/.content/templaterows/tr_00001.xml]]></target>
+            <uuid>7c7a4418-b264-11e6-ade4-0242ac11002b</uuid>
           </link>
         </Uri>
         <Formatter>
           <link type="STRONG">
-            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/linksequence-boxed.jsp]]></target>
-            <uuid>ac44c2a7-42b5-11e6-a4ea-0242ac11002b</uuid>
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/layoutrow.jsp]]></target>
+            <uuid>d652a05d-523d-11e5-9495-0242ac11002b</uuid>
           </link>
         </Formatter>
         <CreateNew>true</CreateNew>
         <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[338643db-afd9-11e6-a18e-0242ac11002b]]></String>
+            <String><![CDATA[798965b7-b264-11e6-ade4-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[wrapperclass]]></Name>
+          <Name><![CDATA[formatterSettings#page-complete-megamenu]]></Name>
           <Value>
-            <String><![CDATA[bo-left-grey bo-left-solid bo-left-2 bo-right-grey bo-right-solid bo-right-2]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[hideTitle]]></Name>
-          <Value>
-            <String><![CDATA[true]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[hsize]]></Name>
-          <Value>
-            <String><![CDATA[h2]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#f6094c4c-afd8-11e6-a18e-0242ac11002b-c2]]></Name>
-          <Value>
-            <String><![CDATA[969ffd1a-42b5-11e6-a4ea-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[hstyle]]></Name>
-          <Value>
-            <String><![CDATA[headline]]></String>
+            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
           </Value>
         </Properties>
       </Elements>
     </Containers>
     <Containers>
-      <Name><![CDATA[f6094c4c-afd8-11e6-a18e-0242ac11002b-c1]]></Name>
+      <Name><![CDATA[798965b7-b264-11e6-ade4-0242ac11002b-c1]]></Name>
       <Type><![CDATA[element]]></Type>
-      <ParentInstanceId><![CDATA[f6094c4c-afd8-11e6-a18e-0242ac11002b]]></ParentInstanceId>
+      <ParentInstanceId><![CDATA[798965b7-b264-11e6-ade4-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
           <link type="STRONG">
@@ -91,13 +66,7 @@
         <Properties>
           <Name><![CDATA[wrapperclass]]></Name>
           <Value>
-            <String><![CDATA[bg-grey-lighter]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#f6094c4c-afd8-11e6-a18e-0242ac11002b-c1]]></Name>
-          <Value>
-            <String><![CDATA[549e54ad-ec1c-11e5-854f-0242ac11002b]]></String>
+            <String><![CDATA[bg-grey-lighter mb-0]]></String>
           </Value>
         </Properties>
         <Properties>
@@ -112,43 +81,68 @@
             <String><![CDATA[headline]]></String>
           </Value>
         </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#798965b7-b264-11e6-ade4-0242ac11002b-c1]]></Name>
+          <Value>
+            <String><![CDATA[549e54ad-ec1c-11e5-854f-0242ac11002b]]></String>
+          </Value>
+        </Properties>
       </Elements>
     </Containers>
     <Containers>
-      <Name><![CDATA[page-complete-megamenu]]></Name>
-      <Type><![CDATA[area,row]]></Type>
+      <Name><![CDATA[798965b7-b264-11e6-ade4-0242ac11002b-c2]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <ParentInstanceId><![CDATA[798965b7-b264-11e6-ade4-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
           <link type="STRONG">
-            <target><![CDATA[/sites/default/apollo-demo/.content/templaterows/tr_00009.xml]]></target>
-            <uuid>222a42b9-56cc-11e5-bfd9-0242ac11002b</uuid>
+            <target><![CDATA[/sites/default/tutorial/.content/navigations/nv_00001.xml]]></target>
+            <uuid>4f93f827-b0c2-11e6-ade4-0242ac11002b</uuid>
           </link>
         </Uri>
         <Formatter>
           <link type="STRONG">
-            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/layoutrow.jsp]]></target>
-            <uuid>d652a05d-523d-11e5-9495-0242ac11002b</uuid>
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/navigation-folder.jsp]]></target>
+            <uuid>9787d6a4-b0c0-11e6-ade4-0242ac11002b</uuid>
           </link>
         </Formatter>
         <CreateNew>true</CreateNew>
         <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
-            <String><![CDATA[f6094c4c-afd8-11e6-a18e-0242ac11002b]]></String>
+            <String><![CDATA[454878a4-b0c2-11e6-ade4-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[formatterSettings#page-complete-megamenu]]></Name>
+          <Name><![CDATA[formatterSettings#798965b7-b264-11e6-ade4-0242ac11002b-c2]]></Name>
           <Value>
-            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
+            <String><![CDATA[bcd28000-b0c0-11e6-ade4-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[hstyle]]></Name>
+          <Value>
+            <String><![CDATA[headline]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[hideTitle]]></Name>
+          <Value>
+            <String><![CDATA[true]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[hsize]]></Name>
+          <Value>
+            <String><![CDATA[h2]]></String>
           </Value>
         </Properties>
       </Elements>
     </Containers>
     <Containers>
-      <Name><![CDATA[f6094c4c-afd8-11e6-a18e-0242ac11002b-c3]]></Name>
+      <Name><![CDATA[798965b7-b264-11e6-ade4-0242ac11002b-c3]]></Name>
       <Type><![CDATA[element]]></Type>
-      <ParentInstanceId><![CDATA[f6094c4c-afd8-11e6-a18e-0242ac11002b]]></ParentInstanceId>
+      <ParentInstanceId><![CDATA[798965b7-b264-11e6-ade4-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
           <link type="STRONG">
@@ -158,8 +152,8 @@
         </Uri>
         <Formatter>
           <link type="STRONG">
-            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/image-animated.jsp]]></target>
-            <uuid>780d94de-7b43-11e6-95f6-0242ac11002b</uuid>
+            <target><![CDATA[/sites/default/.formatters/section-image-only.xml]]></target>
+            <uuid>e41c23a6-eec7-11e5-a02c-0242ac11002b</uuid>
           </link>
         </Formatter>
         <CreateNew>true</CreateNew>
@@ -182,15 +176,15 @@
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[formatterSettings#f6094c4c-afd8-11e6-a18e-0242ac11002b-c3]]></Name>
-          <Value>
-            <String><![CDATA[832d2d41-7b43-11e6-95f6-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[showsubtitle]]></Name>
           <Value>
             <String><![CDATA[false]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#798965b7-b264-11e6-ade4-0242ac11002b-c3]]></Name>
+          <Value>
+            <String><![CDATA[e41c23a6-eec7-11e5-a02c-0242ac11002b]]></String>
           </Value>
         </Properties>
         <Properties>

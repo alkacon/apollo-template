@@ -6,15 +6,15 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.event">
+<cms:bundle basename="org.opencms.apollo.template.event.messages">
 
 	<cms:formatter var="content" val="value" rdfa="rdfa">
 
-		<div class="mb-20">
+		<div class="ap-event-page mb-20">
 			<c:set var="inMemoryMessage"><fmt:message key="apollo.event.message.edit" /></c:set>
             <apollo:init-messages textnew="${inMemoryMessage}">
-                <!-- blog header -->
-                <div class="blog-page">
+                <%-- event header --%>
+                <div class="ap-event-header">
                     <div class="row">
                         <div class="col-xs-12">
                             <apollo:headline headline="${content.value.Title}" />
@@ -86,7 +86,7 @@
                                 
                     </div>                       
                 </div>
-                <%-- //END blog header --%>
+                <%-- //END event header --%>
 
                 <%-- paragraphs --%>
                 <c:set var="imgalign"><cms:elementsetting name="imgalign" default="left" /></c:set>

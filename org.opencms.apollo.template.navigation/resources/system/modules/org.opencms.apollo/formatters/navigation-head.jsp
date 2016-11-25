@@ -7,78 +7,75 @@
 
 <fmt:setLocale value="${cms.locale}" />
 
-<cms:bundle basename="org.opencms.apollo.template.schemas.navigation">
+<cms:bundle basename="org.opencms.apollo.template.navigation.messages">
 <cms:formatter var="content" val="value" rdfa="rdfa">
-  <div>
-  
+  <div class="ap-header">
+
     <c:set var="inMemoryMessage"><fmt:message key="apollo.navigation.message.new" /></c:set>
     <apollo:init-messages textnew="${inMemoryMessage}" />
+    <c:set var="parent_role" value="${cms.container.param}" />
+
+    <div class="head ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
     
-    <div class="ap-header">
+        <div class="head-bg">
+            <cms:container 
+                name="head-bg" 
+                type="segment"
+                width="1200"
+                maxElements="50"
+                editableby="${parent_role}"
+                param="${parent_role}">
 
-      <c:if test="${not value.Header.isEmpty}">
-                <div class="container">
-                    <div class="topbar">${value.Header}</div>
-                </div>
-            </c:if>
-      <div class="container <c:if test="${value.LogoFullWidth == 'true'}">ap-container-fullwidth</c:if>">
+                <c:if test="${cms.modelGroupPage}">
+                    <cms:bundle basename="org.opencms.apollo.template.core.messages">
+                        <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
+                    </cms:bundle>
+                    <apollo:container-box 
+                        label="${message}" 
+                        boxType="container-box" 
+                        type="segment" 
+                        role="ROLE.DEVELOPER" 
+                    />
+                </c:if>
+            </cms:container>
+        </div>
 
-        <c:set var="logoPath">${value.LogoImage}</c:set>
+        <div class="container head-toggle">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle navigation</span> 
+                <span class="fa fa-bars"></span>
+            </button>
+        </div>
 
-                <c:choose>
-                    <c:when test="${value.LogoFullWidth == 'true'}">
-                        <c:if test="${not empty value.LogoLink}"><a class="ap-logo-fullwidth" href="<cms:link>${value.LogoLink}</cms:link>"></c:if>
-                            <img src="<cms:link>${logoPath}</cms:link>" alt="" class="img-responsive" />
-                        <c:if test="${not empty value.LogoLink}"></a></c:if>
-                    </c:when>
-                    <c:otherwise>
-                        <c:set var="logoSizes"><cms:property name="image.size" file="${logoPath}" default="170x42" /></c:set>
-                        <c:if test="${not empty logoPath}"><c:set var="backgroundLogo">background-image:url('<cms:link>${logoPath}</cms:link>');</c:set></c:if> 
-                        <c:if test="${not empty value.LogoLink}"><c:set var="logoLink"><cms:link>${value.LogoLink}</cms:link></c:set></c:if>
-                        <a class="ap-logo" href="${logoLink}" style="width: ${fn:substringAfter(fn:substringBefore(logoSizes,','), 'w:')}px;height: ${fn:substringAfter(logoSizes,'h:')}px;${backgroundLogo}"></a>
-                    </c:otherwise>
-                </c:choose>
-
-        <button type="button" class="navbar-toggle" data-toggle="collapse"
-          data-target=".navbar-responsive-collapse">
-          <span class="sr-only">Toggle navigation</span> <span
-            class="fa fa-bars"></span>
-        </button>
-
-      </div>
-      <!--/end container-->
-
-      <!-- Menu -->
-      <cms:include
-        file="%(link.weak:/system/modules/org.opencms.apollo/elements/nav-main.jsp:f94e9fdc-5606-11e5-b868-0242ac11002b)">
-        <cms:param name="startlevel">${value.NavStartLevel}</cms:param>
-      </cms:include>
-
+        <div class="head-navbar${cms.modelGroupPage and cms.isEditMode ? ' editor' : ''}">
+            <cms:include file="%(link.weak:/system/modules/org.opencms.apollo/elements/nav-main.jsp:f94e9fdc-5606-11e5-b868-0242ac11002b)">
+                <cms:param name="startlevel">${value.NavStartLevel}</cms:param>
+            </cms:include>
+        </div>
     </div>
-    <!--/header -->
+
 
     <c:set var="showbreadcrumb">
-      <c:out value="${cms.element.settings.showbreadcrumb}" default="true" />
+        <c:out value="${cms.element.settings.showbreadcrumb}" default="true" />
     </c:set>
     <c:if test="${showbreadcrumb == 'true'}">
-      <!--=== Breadcrumbs ===-->
-      <div class="breadcrumbs">
+    <div class="breadcrumbs">
         <div class="container">
-          <h1 class="pull-left">
-            ${cms.title}
-            <c:if test="${cms.isEditMode}">
-              <span class="badge badge-user">${cms.requestContext.currentUser.name}</span>
-            </c:if>
-          </h1>
-          <cms:include
-            file="%(link.weak:/system/modules/org.opencms.apollo/elements/nav-breadcrumb.jsp:f93dafe7-5606-11e5-b868-0242ac11002b)">
-            <cms:param name="startlevel">${value.NavStartLevel}</cms:param>
-          </cms:include>
+
+            <h1 class="pull-left">
+                ${cms.title}
+                    <c:if test="${cms.isEditMode}">
+                        <span class="badge badge-user">${cms.requestContext.currentUser.name}</span>
+                    </c:if>
+            </h1>
+
+            <cms:include file="%(link.weak:/system/modules/org.opencms.apollo/elements/nav-breadcrumb.jsp:f93dafe7-5606-11e5-b868-0242ac11002b)">
+                <cms:param name="startlevel">${value.NavStartLevel}</cms:param>
+            </cms:include>
+
         </div>
-        <!--/container-->
-      </div>
-      <!--/breadcrumbs-->
-      <!--=== End Breadcrumbs ===-->
+    </div>
+
     </c:if>
 
   </div>

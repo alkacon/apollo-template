@@ -25,7 +25,7 @@
 
 	<xsd:annotation>
 		<xsd:appinfo>
-			<resourcebundle name="org.opencms.apollo.template.schemas.slidercomplex"/>
+			<resourcebundle name="org.opencms.apollo.template.slidercomplex.messages"/>
 			<mappings>
 				<mapping element="GalleryTitle" mapto="property:Title" useDefault="true" />
 				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />

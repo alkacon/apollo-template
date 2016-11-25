@@ -1,3 +1,13 @@
-title.a-map=Neue Karte
-desc.a-map=Generiert eine Karte mit Markern.
+apollo.map.message.button.show=Zeige
+apollo.map.message.button.hidemarkers=Verstecke Marker
+apollo.map.message.new=<strong>Neue Karte</strong>, bitte bearbeiten Sie den Inhalt!
 fileicon.a-map=Karte
+apollo.map.message.route.button=Zeige Route
+apollo.map.message.start=Bitte geben Sie Ihre Start Adresse ein.
+apollo.map.message.button.showallmarkers=Zeige alle Marker
+desc.a-map=Generiert eine Karte mit Markern.
+title.a-map=Neue Karte
+apollo.map.message.edit=Die Karte wurde bearbeitet. Die Seite wird neu geladen.
+apollo.map.message.error.key=Die Karte kann wegen eines fehlenden Google API Schlüssels nicht angezeigt werden. Bitte setzen Sie den Schlüssel in der Eigenschaft 'google.apikey'.
+apollo.map.message.button.showmarkers=Zeige Marker
+apollo.map.message.route=Zeige Route zu diesem Ort:

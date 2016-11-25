@@ -14,7 +14,7 @@
     <Match>
       <Types>
         <ContainerType><![CDATA[foot]]></ContainerType>
-        <ContainerType><![CDATA[head]]></ContainerType>
+        <ContainerType><![CDATA[element]]></ContainerType>
         <ContainerType><![CDATA[navigation]]></ContainerType>
       </Types>
     </Match>
@@ -37,6 +37,13 @@
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[right]]></Default>
       <WidgetConfig><![CDATA[left:%(key.apollo.setting.linkalign.left)|right:%(key.apollo.setting.linkalign.right)]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showLanguageLinks]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showLanguageLinks)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.showLanguageLinks.description)]]></Description>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
     </Setting>
   </NewFormatter>
 </NewFormatters>

@@ -10,7 +10,7 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.contact">
+<cms:bundle basename="org.opencms.apollo.template.contact.messages">
 <cms:formatter var="content" val="value">
 
 <%-- #### Contact exposed in hCard microformat, see http://microformats.org/wiki/hcard #### --%>

@@ -26,8 +26,6 @@
 		<resources>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/slider-complex.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/slider-complex.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.slidercomplex_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.slidercomplex_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.slidercomplex.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.slidercomplex.messages_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/slidercomplex.xsd"/>
@@ -166,40 +164,6 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.slidercomplex_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.slidercomplex_de</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>3886269b-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>3886269c-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:15:28 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.slidercomplex_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.slidercomplex_en</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>3887fb5e-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>3887fb5f-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:15:28 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.slidercomplex.messages_de</source>
 			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.slidercomplex.messages_de</destination>
 			<type>propertyvfsbundle</type>
@@ -208,6 +172,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:14:49 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -225,6 +197,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:14:49 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

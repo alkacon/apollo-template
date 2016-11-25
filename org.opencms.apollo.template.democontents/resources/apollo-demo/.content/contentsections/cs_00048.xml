@@ -5,7 +5,7 @@
     <Headline><![CDATA[Using the Content Section for text snippets]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>This page demonstrates repeated use of the same<em> Content&nbsp;Section<strong>&nbsp;</strong></em>element for <em>Text</em>&nbsp;or <em>Headline</em> only display. Different syles are applied through the individual element settings.</p>]]></content>
+      <content><![CDATA[<p>This page demonstrates repeated use of the same<em> Content&nbsp;Section<strong>&nbsp;</strong></em>element for <em>Text</em>&nbsp;or <em>Headline</em> only display. Different styles are applied through the individual element settings.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

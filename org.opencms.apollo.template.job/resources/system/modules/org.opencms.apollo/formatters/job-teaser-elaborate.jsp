@@ -54,7 +54,7 @@
                 <c:set var="text">${content.value.Teaser}</c:set>
                 <c:if test="${empty text}"><c:set var="text">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</c:set></c:if>
 
-                <cms:bundle basename="org.opencms.apollo.template.formatters.list">
+                <cms:bundle basename="org.opencms.apollo.template.list.messages">
                     <apollo:teaserbody
                         text="${text}" 
                         textlength="${teaserLength}"

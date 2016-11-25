@@ -19,7 +19,8 @@
 
 <cms:navigation type="forSite" resource="${navStartFolder}" startLevel="${navStartLevel}" endLevel="${navStartLevel + 3}" var="nav"/>
 <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
-  <div class="container mt-10">
+  <div class="container">
+
   <ul class="nav navbar-nav">
 
   <c:set var="oldLevel" value="" />

@@ -44,7 +44,6 @@
   <c:if test="${(not empty grid)}">
     <c:set var="gridParts" value="${fn:split(grid, ':')}" />
   </c:if>
-
   <c:forEach var="column" items="${content.valueList.Column}" varStatus="loop">
 
     <c:set var="detailView" value="${((loop.count == 1) and (cms.element.setting.detail == 'view')) ? 'true' : 'false' }" />
@@ -102,7 +101,7 @@
           detailonly="${detailOnly}"
           editableby="${role}"
           param="${role}">
-          
+
           <apollo:container-box
             label="${content.value.Title}${column.value.Name.isSet ? ' - '.concat(column.value.Name) : ''}"
             boxType="container-box"

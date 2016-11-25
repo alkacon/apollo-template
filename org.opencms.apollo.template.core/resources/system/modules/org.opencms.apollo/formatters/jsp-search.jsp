@@ -34,12 +34,16 @@
 	<c:set var="controllers" value="${search.controller}" />
 	<%-- short cut to access the controller for common search settings --%>
 	<c:set var="common" value="${controllers.common}" />
-	<div>
+	<div class="ap-search">
+		<%-- Uncomment the following div for debugging --%>
+		<%-- <div>
+			${search.finalQuery}
+		</div> --%>
 		<!-- The search form -->
-		<!-- search action: link to the current page -->
+		<%-- search action: link to the current page --%>
 		<form id="default-formatter-search-form" role="form" class="form-horizontal"
 			action="<cms:link>${cms.requestContext.uri}</cms:link>">
-			<!-- important: send this hidden field to have proper resetting of checked facet values and pagination -->
+			<%-- important: send this hidden field to have proper resetting of checked facet values and pagination --%>
 			<c:set var="escapedQuery">${fn:replace(common.state.query,'"','&quot;')}</c:set>
 			<input type="hidden" name="${common.config.lastQueryParam}"
 				value="${escapedQuery}" />
@@ -48,40 +52,40 @@
 			<c:set var="hasSortOptions" value="${cms:getListSize(controllers.sorting.config.sortOptions) > 0}" />
 			<c:set var="colWidthInput" value="${hasSortOptions?4:12}" />
 			<div class="row">
-				<div class="col-lg-${colWidthInput} col-md-${colWidthInput} col-sm-${colWidthInput} col-xs-12">
+				<div class="col-lg-${colWidthInput} col-md-${colWidthInput} col-sm-${colWidthInput} col-xs-12  ap-searchquerycol">
 					<div class="input-group">
 						<input name="${common.config.queryParam}" class="form-control"
 							type="text" autocomplete="off" placeholder='<fmt:message key="form.enterquery" />'
 							value="${escapedQuery}" /> <span class="input-group-btn">
-							<button class="btn" type="submit"><fmt:message key="button.submit" /></button>
+							<button class="btn ap-btn lh-13" type="submit"><fmt:message key="button.submit" /></button>
 						</span>
 					</div>
 				</div>
 				<c:if test="${hasSortOptions}">
 					<c:set var="sort" value="${controllers.sorting}" />
-					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 ap-searchsortcol">
 						<div class="input-group">
-							<!-- Display select box with sort options where the currently chosen option is selected -->
+							<%-- Display select box with sort options where the currently chosen option is selected --%>
 							<select name="${sort.config.sortParam}" class="form-control" onchange="submitSearchForm()">
 								<c:forEach var="option" items="${sort.config.sortOptions}">
 									<option value="${option.paramValue}"
 										${sort.state.checkSelected[option]?"selected":""}>${option.label}</option>
 								</c:forEach>
 							</select>
-							<!-- Another button to send the form - just to improve handling -->
+							<%-- Another button to send the form - just to improve handling --%>
 							<span class="input-group-btn">
-								<button class="btn" type="submit"><fmt:message key="button.sort"/></button>
+								<button class="btn lh-13" type="submit"><fmt:message key="button.sort"/></button>
 							</span>
 						</div>
 					</div>
 				</c:if>
 			</div>
-			<div class="row" style="margin-top: 20px;">
+			<div class="row mt-20">
 				<c:set var="hasFacets" value="${(cms:getListSize(search.fieldFacets) > 0) or (not empty search.facetQuery)}" />
 				<c:if test="${hasFacets}">
-					<!-- Facets -->
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-						<!-- Query facet -->
+					<%-- Facets --%>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ap-searchfacetcol">
+						<%-- Query facet --%>
 						<c:if test="${(not empty controllers.queryFacet) and (not empty search.facetQuery)}">
 							<c:set var="facetController" value="${controllers.queryFacet}" />
 							<div class="panel panel-default">
@@ -110,7 +114,9 @@
 								value="${fieldFacetControllers.fieldFacetController[facet.name]}" />
 							<c:if test="${cms:getListSize(facet.values) > 0}">
 								<div class="panel panel-default">
-									<div class="panel-heading">${facetController.config.label}</div>
+                                    <c:set var="flabel"><fmt:message key="search.facet.${fn:toLowerCase(facetController.config.label)}" /></c:set>
+                                    <c:if test="${fn:contains(flabel, '???')}"><c:set var="flabel">${facetController.config.label}</c:set></c:if>
+									<div class="panel-heading">${flabel}</div>
 									<div class="panel-body">
 										<c:forEach var="facetItem" items="${facet.values}">
 											<c:choose>
@@ -146,19 +152,21 @@
 												</label>
 											</div>
 										</c:forEach>
-										<%-- Show option to show more facet entries --%>
-										<c:if test="${not empty facetController.config.limit && cms:getListSize(facet.values) ge facetController.config.limit}">
-											<c:choose>
-											<c:when test="${facetController.state.useLimit}">
-												<a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.addIgnoreFacetLimit[facet.name]}</cms:link>">Show more</a>
-											</c:when>
-											<c:otherwise>
-												<a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.removeIgnoreFacetLimit[facet.name]}</cms:link>">Show less</a>
-												<input type="hidden" name="${facetController.config.ignoreMaxParamKey}" />
-											</c:otherwise>
-											</c:choose>
-										</c:if>
-									</div>
+                                    </div>
+                                    <%-- Show option to show more facet entries --%>
+                                    <c:if test="${not empty facetController.config.limit && cms:getListSize(facet.values) ge facetController.config.limit}">
+                                        <div class="panel-footer">
+                                        <c:choose>
+                                        <c:when test="${facetController.state.useLimit}">
+                                            <a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.addIgnoreFacetLimit[facet.name]}</cms:link>"><fmt:message key="search.facet.link.more" /></a>
+                                        </c:when>
+                                        <c:otherwise>
+                                            <a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.removeIgnoreFacetLimit[facet.name]}</cms:link>"><fmt:message key="search.facet.link.less" /></a>
+                                            <input type="hidden" name="${facetController.config.ignoreMaxParamKey}" />
+                                        </c:otherwise>
+                                        </c:choose>
+                                        </div>
+                                    </c:if>
 								</div>
 							</c:if>
 						</c:forEach>
@@ -166,7 +174,7 @@
 				</c:if>
 			<!-- Search results -->
 				<c:set var="colWidthResults" value="${hasFacets?8:12}" />
-				<div class="col-lg-${colWidthResults} col-md-${colWidthResults} col-sm-${colWidthResults} col-xs-12">
+				<div class="col-lg-${colWidthResults} col-md-${colWidthResults} col-sm-${colWidthResults} col-xs-12 ap-searchresultcol">
 					<c:choose>
 						<c:when test="${not empty search.exception}">
 							<h3><fmt:message key="search.failed_0" /></h3>
@@ -222,15 +230,20 @@
 								</small>
 							</h3>
 							<hr />
-							<!-- show search results -->
+							<%-- show search results --%>
 							<c:if test="${not empty search.highlighting and not empty common.state.query}">
 								<%! CmsHtmlConverter htmlConverter = new CmsHtmlConverter(); %>
 							</c:if>
 							<c:forEach var="searchResult" items="${search.searchResults}">
-								<div>
-									<a href='<cms:link>${searchResult.fields["path"]}</cms:link>'>${searchResult.fields["Title_prop"]}</a>
+								<div class=" ap-searchresultlist">
+									<c:set var="localizedTitleField">title_${cms.locale}_s</c:set>
+									<c:set var="title">${searchResult.fields[localizedTitleField]}</c:set>
+									<c:if test="${empty title}">
+									<c:set var="title">${searchResult.fields["Title_prop"]}</c:set>
+									</c:if>
+									<h5><a href='<cms:link>${searchResult.fields["path"]}</cms:link>'>${title}</a></h5>
 									<p>
-										<!-- if highlighting is returned - show it; otherwise show content_en (up to 250 characters) -->
+										<%-- if highlighting is returned - show it; otherwise show content_en (up to 250 characters) --%>
 										<c:choose>
 											<c:when test="${not empty search.highlighting and not empty common.state.query}">
 												<%-- To avoid destroying the HTML, if the highlighted snippet contains unbalanced tag, use the htmlConverter for cleaning the HTML. --%>
@@ -240,7 +253,8 @@
 												</c:if>
 											</c:when>
 											<c:otherwise>
-												${cms:trimToSize(fn:escapeXml(searchResult.fields["content_en"]),250)}
+												<c:set var="localeContentField">content_${cms.locale}</c:set>
+												${cms:trimToSize(fn:escapeXml(searchResult.fields[localeContentField]),250)}
 											</c:otherwise>
 										</c:choose>
 									</p>
@@ -248,7 +262,7 @@
 								<hr />
 							</c:forEach>
 							<c:set var="pagination" value="${controllers.pagination}" />					
-							<!-- show pagination if it should be given and if it's really necessary -->
+							<%-- show pagination if it should be given and if it's really necessary --%>
 							<c:if test="${not empty pagination && search.numPages > 1}">
 								<ul class="pagination">
 									<c:if test="${pagination.state.currentPage > 1}">

@@ -23,7 +23,7 @@
 
 	<xsd:annotation>
 		<xsd:appinfo>
-            <resourcebundle name="org.opencms.apollo.template.schemas.linksequence" />
+            <resourcebundle name="org.opencms.apollo.template.linksequence.messages" />
 			<mappings>
                 <mapping element="GalleryTitle" mapto="property:Title" useDefault="true" />
 				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />

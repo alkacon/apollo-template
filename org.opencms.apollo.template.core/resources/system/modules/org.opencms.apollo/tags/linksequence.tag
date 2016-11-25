@@ -12,10 +12,11 @@
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>  
 	
 
-<div class="ap-linksequence <c:out value="${wrapperclass} ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : 'mb-20'}" />">
+<div class="ap-linksequence <c:out value="${wrapperclass} ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : ''}" />">
 
     <c:if test="${cms.element.settings.hideTitle ne 'true'}">
         <apollo:headline headline="${title}" />
@@ -26,14 +27,33 @@
     </c:if> 
 
     <ul <c:if test="${(not empty linkclass) && (not cms.element.setting.iconclass.isSet)}">class="${linkclass}"</c:if>>
-        <c:forEach var="link" items="${links}">
+        <c:set var="listtype" value="xml" />
+		<c:forEach var="link" items="${links}" varStatus="status">
+			<c:if test="${status.first}">
+				<c:if test="${fn:contains(link.getClass().name, 'CmsJspNavElement')}">
+					<c:set var="listtype" value="nav" />
+				</c:if>
+			</c:if>
             <li>
-                <apollo:link link="${link}">
-                    <c:if test="${cms.element.setting.iconclass.isSet}">
-                        <span class="fa fa-${cms.element.setting.iconclass}"></span>
-                    </c:if>
-                    ${link.value.Text}
-                </apollo:link>
+				<c:choose>
+					<c:when test="${listtype == 'nav'}">
+						<a href="<cms:link>${link.resourceName}</cms:link>">
+							<c:if test="${cms.element.setting.iconclass.isSet}">
+								<span class="fa fa-${cms.element.setting.iconclass}"></span>
+							</c:if>
+							${link.navText}
+						</a>
+					</c:when>
+					<c:otherwise>
+						<apollo:link link="${link}">
+							<c:if test="${cms.element.setting.iconclass.isSet}">
+								<span class="fa fa-${cms.element.setting.iconclass}"></span>
+							</c:if>
+							${link.value.Text}
+						</apollo:link>
+					</c:otherwise>
+				</c:choose>
+                
             </li>
         </c:forEach>
     </ul>

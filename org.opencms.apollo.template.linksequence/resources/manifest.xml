@@ -37,8 +37,6 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/linksequence-standard.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.linksequence.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.linksequence.messages_en"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.linksequence_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.linksequence_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/linksequence.xsd"/>
 		</resources>
 		<excluderesources/>
@@ -287,6 +285,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -304,39 +310,13 @@
 			<flags>0</flags>
 			<properties>
 				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
 				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.linksequence_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.linksequence_de</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>1306b16c-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>1306b16d-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:14:25 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
 				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.linksequence_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.linksequence_en</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>1309708f-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>13097090-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:14:25 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

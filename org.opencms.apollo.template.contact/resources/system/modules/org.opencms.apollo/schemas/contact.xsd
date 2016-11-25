@@ -30,7 +30,7 @@
 
     <xsd:annotation>
         <xsd:appinfo>
-            <resourcebundle name="org.opencms.apollo.template.schemas.contact" />
+            <resourcebundle name="org.opencms.apollo.template.contact.messages" />
             <mappings>
                 <mapping element="GalleryTitle" mapto="property:Title" useDefault="true" />
                 <mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
@@ -48,7 +48,7 @@
                 <tab element="Name" collapse="false" name="NameTab" />
                 <tab element="Contact" collapse="false" name="ContactTab" />
             </tabs>
-            <searchsettings containerPageOnly="false">
+            <searchsettings containerPageOnly="true">
                 <searchsetting element="GalleryTitle" searchcontent="false" />
             </searchsettings>
             <visibilities>

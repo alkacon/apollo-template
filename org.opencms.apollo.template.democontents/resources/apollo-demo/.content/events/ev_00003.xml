@@ -3,8 +3,8 @@
 <ApolloEvents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/event.xsd">
   <ApolloEvent language="en">
     <Title><![CDATA[Pre-Release Poster Party]]></Title>
-    <Date>1470207600000</Date>
-    <EndDate>1470236400000</EndDate>
+    <Date>1478160000000</Date>
+    <EndDate>1478188800000</EndDate>
     <Paragraph>
       <Text name="Text0">
         <links/>

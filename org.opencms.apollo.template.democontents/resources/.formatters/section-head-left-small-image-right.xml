@@ -36,7 +36,7 @@
       <Formatter>
         <link type="WEAK">
           <target><![CDATA[/system/modules/org.opencms.apollo/formatters/section-image.xml]]></target>
-          <uuid>3677fe84-5bc0-11e5-8f8e-0242ac11002b</uuid>
+          <uuid>832d2d41-7b43-11e6-95f6-0242ac11002b</uuid>
         </link>
       </Formatter>
       <MacroName><![CDATA[image]]></MacroName>

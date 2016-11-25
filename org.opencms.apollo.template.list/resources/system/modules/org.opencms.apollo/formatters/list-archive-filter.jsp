@@ -6,7 +6,7 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.formatters.list">
+<cms:bundle basename="org.opencms.apollo.template.list.messages">
     <cms:formatter var="content" val="value" rdfa="rdfa">
     
         <c:set var="inMemoryMessage"><fmt:message key="apollo.list.message.inmemory" /></c:set>
@@ -19,25 +19,32 @@
                 online="${cms.isOnlineProject}" 
             />
 
-            <apollo:list-search source="${value.Folder}" types="${value.TypesToCollect}" categories="${content.readCategories}" 
-                            count="${value.ItemsPerPage.toInteger}" sort="${value.SortOrder}" showexpired="${cms.element.settings.showexpired}" filterqueries="${value.FilterQueries}" />
+            <apollo:list-search 
+                source="${value.Folder}" 
+                types="${value.TypesToCollect}" 
+                categories="${content.readCategories}" 
+                count="${value.ItemsPerPage.toInteger}" 
+                sort="${value.SortOrder}" 
+                showexpired="${cms.element.settings.showexpired}" 
+                filterqueries="${value.FilterQueries}" />
+
             <div class="${formatterSettings.listWrapper}">
                 <div class="ap-list-filters ${formatterSettings.filterWrapper}" data-id="${cms.element.id}">
 
                     <c:if test="${cms.element.settings.showsearch}">
                         <div class="ap-list-filterbox ap-list-filterbox-search">
-                            <form role="form" class="form-inline" id="queryform" onsubmit="return false;">
-                                <div class="input-group">
+                            <form role="form" class="sky-form bo-none" id="queryform" onsubmit="return false;">
                                     <c:set var="escapedQuery">${fn:replace(search.controller.common.state.query,'"','&quot;')}</c:set>
                                     <input type="hidden" name="${search.controller.common.config.lastQueryParam}" value="${escapedQuery}" />
                                     <input type="hidden" name="${search.controller.common.config.reloadedParam}" />
-                                    <span class="input-group-addon"><span class="icon-magnifier"></span></span>
-                                    <input name="${search.controller.common.config.queryParam}" id="queryinput" class="form-control" type="text" value="${escapedQuery}" placeholder="<fmt:message key="apollo.list.message.search" />">
-                                </div>
+                                    <label class="input">
+                                        <i class="icon-prepend fa fa-search"></i>
+                                        <input name="${search.controller.common.config.queryParam}" id="queryinput" class="" type="text" value="${escapedQuery}" placeholder="<fmt:message key="apollo.list.message.search" />">
+                                    </label>
                             </form>
                         </div>
                     </c:if>
-                    
+
                     <c:set var="catDisplay">${formatterSettings.catPreopened ? 'style="display:block;"' : ''}</c:set>
                     <c:set var="archiveDisplay">${formatterSettings.archivePreopened ? 'style="display:block;"' : ''}</c:set>
 
@@ -45,13 +52,12 @@
                         <div class="ap-list-filterbox ap-list-filterbox-labels">
 
                             <button type="button" class="btn-block btn ap-list-filterbtn-labels" onclick="toggleApListFilter('labels');this.blur();">
-                                <span class="pull-left pr-10"><span class="fa fa-tag"></span></span>
+                                <span class="pull-left pr-10"><span class="fa fa-tag ap-fa-label"></span></span>
                                 <span class="pull-left"><fmt:message key="apollo.list.message.labels" /></span>
-                                <span id="aplistlabels_toggle" class="fa fa-chevron-down pull-right"></span>
+                                <span id="aplistlabels_toggle" class="fa fa-chevron-down ap-fa-label pull-right"></span>
                             </button>
 
-                            <div id="aplistlabels" class="ap-list-filter-labels-wrapper" ${catDisplay}>
-                                <hr>
+                            <div id="aplistlabels" class="${formatterSettings.archiveWrapper} ap-list-filter-labels-wrapper" ${catDisplay}>
                                 <ul class="ap-list-filter-labels">
                                     <c:set var="catFilters" value=",${fn:replace(formatterSettings.catfilters,' ','')}," />
                                     <c:set var="blacklistFilter" value="${fn:startsWith(catFilters,',whitelist') ? 'false' : 'true'}" />
@@ -80,7 +86,7 @@
                                                     <a href="javascript:void(0)"
                                                         onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}', 
                                                         $('#list-' + $(this).parents('.ap-list-filters').data('id'))); archiveHighlight($(this)); clearQuery();">
-                                                        ${currCat.title}    (${value.count})
+                                                        <span class="badge"><i class="fa fa-tag"></i> ${currCat.title} (${value.count})</span>
                                                     </a>
                                                 </li>
                                             </c:if>
@@ -93,10 +99,11 @@
 
                     <c:if test="${cms.element.settings.showarchive and not empty rangeFacet and cms:getListSize(rangeFacet.counts) > 0}">
                         <div class="ap-list-filterbox ap-list-filterbox-archive ${formatterSettings.archiveWrapper}">
+
                             <button type="button" class="btn-block btn ap-list-filterbtn-archive" onclick="toggleApListFilter('archive');this.blur();">
-                                <span class="pull-left pr-10"><span class="fa fa-archive"></span></span>
+                                <span class="pull-left pr-10"><span class="fa fa-archive ap-fa-label"></span></span>
                                 <span class="pull-left"><fmt:message key="apollo.list.message.archive" /></span>
-                                <span id="aplistarchive_toggle" class="fa fa-chevron-down pull-right"></span>
+                                <span id="aplistarchive_toggle" class="fa fa-chevron-down ap-fa-label pull-right"></span>
                             </button>
 
                             <div id="aplistarchive" class="ap-list-filter-archive"  ${archiveDisplay}>
@@ -143,6 +150,7 @@
                                     </c:if>
                                     <c:set var="prevYear" value="${currYear}" />
                                 </c:forEach>
+
                                 <%-- close month list of last year, remove style attribute, replace chevron and add it to archive HTML --%>
                                 <c:if test="${not monthSelected}">
                                     <c:set var="yearHtml">${fn:replace(yearHtml, 'style="display:none;"', '')}</c:set>

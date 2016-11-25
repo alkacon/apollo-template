@@ -6,7 +6,7 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>	
 <cms:secureparams />
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.faq">
+<cms:bundle basename="org.opencms.apollo.template.faq.messages">
 
 <c:set var="accId">${cms.element.instanceId}</c:set>
 

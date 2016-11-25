@@ -6,7 +6,7 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 <cms:formatter var="content" val="value" rdfa="rdfa">
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.shariff">
+<cms:bundle basename="org.opencms.apollo.template.shariff.messages">
 	<div class="ap-shariff ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : 'mb-20' }">
 		<c:set var="textnew"><fmt:message key="apollo.shariff.message.new" /></c:set>
 		<c:set var="textedit"><fmt:message key="apollo.shariff.message.edited" /></c:set>

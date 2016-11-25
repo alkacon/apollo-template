@@ -34,7 +34,7 @@
 
 	<xsd:annotation>
 		<xsd:appinfo>
-			<resourcebundle name="org.opencms.apollo.template.schemas.slider" />
+			<resourcebundle name="org.opencms.apollo.template.slider.messages" />
 			<layouts>
 				<layout element="Delay" widget="SelectorWidget" configuration="1000:1 %(key.apollo.slider.delay.sec)|2000:2 %(key.apollo.slider.delay.secs)|3000:3 %(key.apollo.slider.delay.secs)|5000:5 %(key.apollo.slider.delay.secs)|8000:8 %(key.apollo.slider.delay.secs)|10000:10 %(key.apollo.slider.delay.secs)|15000:15 %(key.apollo.slider.delay.secs)" />
 			</layouts>

@@ -9,7 +9,7 @@ label.ApolloRowColumn.Name=Container Name
 label.ApolloTemplateRow.Title.help=The title of the row.
 apollo.row.default.Title=New layout row
 label.ApolloRowColumn.PostMarkup=Post Markup
-label.ApolloTemplateRow.PostMarkup.help=The HTML rendered after any other output of the formatter is rendered. No macros are allowed.<br />\n\
+label.ApolloTemplateRow.PostMarkup.help=The HTML rendered after any other output of the formatter is rendered. No macros are allowed.\n\
 	Typically, tags opened via the pre markup are closed here.
 apollo.row.columns.hidden=Hidden
 label.ApolloRowColumn.PostMarkup.help=The HTML rendered directly after the &lt;cms:container&gt;-tag of the container exposed for the column.
@@ -29,11 +29,11 @@ label.ApolloTemplateRow.Defaults=Default Column Definition
 apollo.row.restricted=Restricted
 label.ApolloTemplateRow.PreMarkup=Pre Markup
 label.ApolloRowColumn.Count=Maximum Elements
-label.ApolloTemplateRow.PreMarkup.help=The HTML rendered before any other output of the formatter is rendered. Can contain macros $(param) and $(link).<br />\n\
-	<ul>\n\
-	<li>$(param) is directly substituted by the value of the element setting "Param".</li>\n\
-	<li>$(link) is substituted by the value of the element setting "Link" if this value does not start with "#". In that case, the $(link)-macro is just removed and the value of the element setting "Link" is added as anchor directly after the pre markup.</li>\n\
-	</ul>\n\
+label.ApolloTemplateRow.PreMarkup.help=The HTML rendered before any other output of the formatter is rendered. Can contain macros $(param) and $(link).\n\
+	\n\
+	$(param) is directly substituted by the value of the element setting "Param".\n\
+	$(link) is substituted by the value of the element setting "Link" if this value does not start with "#". In that case, the $(link)-macro is just removed and the value of the element setting "Link" is added as anchor directly after the pre markup.\n\
+	\n\
 	Example for a pre markup: &lt;div class="row $(param)"&gt;\n\
 	
 label.ApolloTemplateRow.Container=Matching Container Types

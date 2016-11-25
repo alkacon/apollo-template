@@ -6,7 +6,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.sitemap">
+<cms:bundle basename="org.opencms.apollo.template.sitemap.messages">
     <cms:formatter var="content" val="value" rdfa="rdfa">
         <div class="sitemap ${cms.element.setting.color.isEmpty ? '' : 'sitemap-'.concat(cms.element.setting.color) }">
             <c:if test="${cms.element.settings.hideTitle ne 'true'}">

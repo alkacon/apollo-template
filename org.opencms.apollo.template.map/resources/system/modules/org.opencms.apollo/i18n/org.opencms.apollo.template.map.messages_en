@@ -1,3 +1,13 @@
+apollo.map.message.button.show=Show
+apollo.map.message.button.hidemarkers=Hide markers
+apollo.map.message.new=<strong>New map</strong>, please edit the content!
+fileicon.a-map=Location Map
+apollo.map.message.route.button=Show route
+apollo.map.message.start=Please enter your start address.
+apollo.map.message.button.showallmarkers=Show all markers
 desc.a-map=Generates a location map.
 title.a-map=New Location Map
-fileicon.a-map=Location Map
+apollo.map.message.edit=The map configuration has changed. The page will be reloaded.
+apollo.map.message.error.key=The map cannot be shown because of a missing Google API key. Please specifiy the key in the property 'google.apikey'.
+apollo.map.message.button.showmarkers=Show markers
+apollo.map.message.route=Show route to this location:

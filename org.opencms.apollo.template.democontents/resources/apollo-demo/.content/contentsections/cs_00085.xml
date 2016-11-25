@@ -5,7 +5,7 @@
     <Headline><![CDATA[Sample Headlines]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Headlins are also created with the <em>Content Section</em> Element. Settings for the headline are "Style" and "Size", Style&nbsp;can be&nbsp;either U<em>nderlined</em> or P<em>lain </em>and is also custom editable. Four different sizes are offered, corrosponding to HTML elements h1 to h4.</p>]]></content>
+      <content><![CDATA[<p>Headlins are also created with the <em>Content Section</em> Element. Settings for the headline are "Style" and "Size", Style&nbsp;can be&nbsp;either U<em>nderlined</em> or P<em>lain </em>and is also custom editable. Four different sizes are offered, corresponding to HTML elements h1 to h4.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

@@ -21,7 +21,7 @@
 
 	<xsd:annotation>
 		<xsd:appinfo>
-			<resourcebundle name="org.opencms.apollo.template.schemas.flexible"/>
+			<resourcebundle name="org.opencms.apollo.template.flexible.messages"/>
 			<layouts>
 				<layout element="Code" widget="TextareaWidget" configuration="12" />
 			</layouts>

@@ -28,7 +28,7 @@
         </link>
       </links>
       <content><![CDATA[<p><a href="%(link0)">OpenCms Dokumentation<br /></a>Tutorials and Anleitungen für OpenCms.</p>
-<p><a href="%(link1)">OpenCms Leistungen von Alkacon Software<br /></a>Wir von Alkacon sind voll auf OpenCms spezialisiert und bieten unsere Kunden Service, Support und Zusatzprodukte für OpenCms an.</p>]]></content>
+<p><a href="%(link1)">OpenCms Leistungen von Alkacon Software<br /></a>Wir von Alkacon sind voll auf OpenCms spezialisiert und bieten unseren Kunden Service, Support und Zusatzprodukte für OpenCms an.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

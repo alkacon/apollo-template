@@ -34,8 +34,6 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/job-teaser-elaborate.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/job-teaser-elaborate.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/job.xsd"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.job_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.job_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.job.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.job.messages_en"/>
 		</resources>
@@ -285,6 +283,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -302,39 +308,13 @@
 			<flags>0</flags>
 			<properties>
 				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
 				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.job_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.job_de</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>0f85a0f5-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>0f85a0f6-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:14:19 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
 				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.job_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.job_en</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>0f874ea8-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>0f874ea9-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:14:19 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

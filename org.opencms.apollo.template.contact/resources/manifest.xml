@@ -30,8 +30,6 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-threecol.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.contact.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.contact.messages_en"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.contact_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.contact_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/contact.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/address.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/contact-data.xsd"/>
@@ -220,6 +218,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -237,39 +243,13 @@
 			<flags>0</flags>
 			<properties>
 				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
 				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.contact_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.contact_de</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>f7f4c2bb-ada9-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>f7f4c2bc-ada9-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:13:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
 				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.contact_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.contact_en</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>f7f70cae-ada9-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>f7f70caf-ada9-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:13:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

@@ -37,8 +37,6 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/blog_ugc-form.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/pages/blog-pdf.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/resources/js/ugc/ugc-blog.js"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.blog_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.blog_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.blog.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.blog.messages_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/blog.xsd"/>
@@ -335,6 +333,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -352,39 +358,13 @@
 			<flags>0</flags>
 			<properties>
 				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
 				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.blog_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.blog_de</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>f4140614-ada9-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>f4140615-ada9-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:13:33 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
 				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.blog_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.blog_en</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>f4173a67-ada9-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>f4173a68-ada9-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:13:33 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

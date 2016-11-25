@@ -2,7 +2,7 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Modify the conent of a page]]></Headline>
+    <Headline><![CDATA[Modify the content of a page]]></Headline>
     <Text name="Text0">
       <links/>
       <content><![CDATA[<p>If you are logged in you will see the OpenCms editor toolbar on top of the&nbsp;screen.&nbsp;The toolbar allows you to directly edit the page you are currently viewing.</p>

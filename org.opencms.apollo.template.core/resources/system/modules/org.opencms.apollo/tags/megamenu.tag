@@ -25,12 +25,13 @@
 <c:set var="containerSuffix">${isMegaMenuRequest ? "-megamenu" : ""}</c:set>
 <c:set var="containerTypes">${isMegaMenuRequest ? ",row" : ""}</c:set>
 
-<c:if test="${mode == 'wrapContainer' && !cms.isOnlineProject && cms.isEditMode && isMegaMenuRequest && !param.ajaxreq}"><c:set var="wrapContainer" value="true" /></c:if>
+<c:if test="${mode == 'wrapContainer' && !cms.isOnlineProject && isMegaMenuRequest && !param.ajaxreq}"><c:set var="wrapContainer" value="true" /></c:if>
 <c:if test="${mode == 'skipTemplatePart' && param.ajaxreq}"><c:set var="skipTemplatePart" value="true" /></c:if>
 
 <c:if test="${wrapContainer}">
     <div id="megamenu-editor">
     <div class="container">
+        <c:if test="${cms.isEditMode}"><c:set var="wrapContainer" value="true" />
             <div class="ap-panel  panel panel-default">
                 <div class="panel-heading">
                     <h2 class="panel-title">
@@ -38,6 +39,7 @@
                     </h2>
                 </div>
             </div>
+        </c:if>
       <div class="ap-header">
         <div class="mega-menu">
           <ul class="nav navbar-nav">

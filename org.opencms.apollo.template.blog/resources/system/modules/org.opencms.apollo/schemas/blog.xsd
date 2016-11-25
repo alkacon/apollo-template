@@ -29,7 +29,7 @@
 
     <xsd:annotation>
         <xsd:appinfo>
-            <resourcebundle name="org.opencms.apollo.template.schemas.blog" />
+            <resourcebundle name="org.opencms.apollo.template.blog.messages" />
             <tabs>
                 <tab element="Title" collapse="false" name="General" />
                 <tab element="Author" collapse="false" name="AuthorTab" />

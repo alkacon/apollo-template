@@ -29,8 +29,6 @@
 			<resource uri="/system/workplace/resources/filetypes/a-shariff_big.png"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/shariff.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/shariff.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.shariff_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.shariff_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.shariff.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.shariff.messages_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/resources/shariff-extensions.css"/>
@@ -171,40 +169,6 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.shariff_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.shariff_de</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>452903b0-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>452903b1-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:15:49 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.shariff_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.shariff_en</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>452b9bc3-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>452b9bc4-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:15:49 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.shariff.messages_de</source>
 			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.shariff.messages_de</destination>
 			<type>propertyvfsbundle</type>
@@ -213,6 +177,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:15:17 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -230,6 +202,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:15:17 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

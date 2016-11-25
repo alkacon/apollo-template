@@ -3,8 +3,8 @@
 <ApolloEvents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/event.xsd">
   <ApolloEvent language="en">
     <Title><![CDATA[Mixed Meeting of Important People]]></Title>
-    <Date>1488096000000</Date>
-    <EndDate>1488124800000</EndDate>
+    <Date>1495954800000</Date>
+    <EndDate>1495983600000</EndDate>
     <Paragraph>
       <Text name="Text0">
         <links/>

@@ -5,7 +5,7 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.flexible">
+<cms:bundle basename="org.opencms.apollo.template.flexible.messages">
 
 <cms:formatter var="content" val="value" rdfa="rdfa">
 	<div<c:if test="${not empty cms.element.settings.cssClass}"> class="${cms.element.settings.cssClass}"</c:if>>

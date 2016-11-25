@@ -31,8 +31,6 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/tabs-accordion.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/tabs-standard.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/tabs-standard.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.tabs_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.tabs_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.tabs.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.tabs.messages_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/tabs.xsd"/>
@@ -220,40 +218,6 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.tabs_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.tabs_de</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>3517dad4-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>3517dad5-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:15:22 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.tabs_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.tabs_en</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>351bf987-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>351bf988-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:15:22 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.tabs.messages_de</source>
 			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.tabs.messages_de</destination>
 			<type>propertyvfsbundle</type>
@@ -262,6 +226,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:14:42 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -279,6 +251,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:14:42 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

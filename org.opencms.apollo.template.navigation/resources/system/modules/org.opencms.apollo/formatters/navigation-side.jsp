@@ -7,7 +7,7 @@
 
 <fmt:setLocale value="${cms.locale}" />
 
-<cms:bundle basename="org.opencms.apollo.template.schemas.navigation">
+<cms:bundle basename="org.opencms.apollo.template.navigation.messages">
 <cms:formatter var="content" val="value" rdfa="rdfa">
 	
 	<div

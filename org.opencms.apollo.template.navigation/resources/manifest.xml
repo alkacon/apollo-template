@@ -27,14 +27,14 @@
 			<resource uri="/system/modules/org.opencms.apollo.template.navigation/"/>
 			<resource uri="/system/modules/org.opencms.apollo/elements/nav-breadcrumb.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/elements/nav-main.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-folder.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-folder.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-head.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-head.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-side.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-side.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.navigation.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.navigation.messages_en"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.navigation_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.navigation_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/navigation.xsd"/>
 			<resource uri="/system/workplace/resources/filetypes/a-navigation.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-navigation_big.png"/>
@@ -164,6 +164,60 @@
 			<properties/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo/formatters/navigation-folder.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/navigation-folder.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>9787d6a4-b0c0-11e6-ade4-0242ac11002b</uuidstructure>
+			<uuidresource>9787d6a5-b0c0-11e6-ade4-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Nov 2016 14:33:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter JSP for folder navigation]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;uri;user]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/navigation-folder.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/navigation-folder.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>bcd28000-b0c0-11e6-ade4-0242ac11002b</uuidstructure>
+			<uuidresource>bcd28001-b0c0-11e6-ade4-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Nov 2016 14:34:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Folder navigation]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>system/modules/org.opencms.apollo/formatters/navigation-head.jsp</source>
 			<destination>system/modules/org.opencms.apollo/formatters/navigation-head.jsp</destination>
 			<type>jsp</type>
@@ -286,6 +340,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -303,39 +365,13 @@
 			<flags>0</flags>
 			<properties>
 				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
 				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.navigation_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.navigation_de</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>513df8a5-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>513df8a6-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:16:10 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
 				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.navigation_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.navigation_en</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>513fa658-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>513fa659-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:16:10 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

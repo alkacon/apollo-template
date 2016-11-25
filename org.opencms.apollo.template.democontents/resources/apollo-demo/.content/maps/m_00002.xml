@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/map.xsd">
+  <ApolloMap language="en">
+    <Headline><![CDATA[Location]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content/>
+    </Text>
+    <MapSize><![CDATA[100%x400]]></MapSize>
+    <MapType><![CDATA[ROADMAP]]></MapType>
+    <MapZoom><![CDATA[14]]></MapZoom>
+    <Route>false</Route>
+    <ShowMarkers>true</ShowMarkers>
+    <MapCoord>
+      <Caption/>
+      <Coord><![CDATA[{"lat":50.8704,"lng":6.998180000000048,"zoom":14,"type":"roadmap","mode":"dynamic","address":"An der Wachsfabrik 13, 50996 Köln, Germany"}]]></Coord>
+    </MapCoord>
+  </ApolloMap>
+</ApolloMaps>

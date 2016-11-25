@@ -4,68 +4,61 @@
   <JspSearchConfig language="de">
     <Title><![CDATA[OpenCms Demo Suchkonfiguration]]></Title>
     <SearchForEmptyQuery>true</SearchForEmptyQuery>
-    <QueryModifier><![CDATA[content_en:%(query) OR content_de:%(query) OR spell:%(query) OR Title_prop:%(query)]]></QueryModifier>
+    <QueryModifier><![CDATA[{!type=edismax qf="content_de spell Title_prop"}%(query)]]></QueryModifier>
     <EscapeQueryCharacters>true</EscapeQueryCharacters>
-    <ExtraSolrParams><![CDATA[fq=parent-folders:"/sites/default/"]]></ExtraSolrParams>
+    <ExtraSolrParams><![CDATA[fq=parent-folders:"/sites/default/"&fq=-type:image&fq=con_locales:de&fq=-(type:containerpage AND -locale_prop:de)]]></ExtraSolrParams>
     <PageSize><![CDATA[10]]></PageSize>
     <PageNavLength><![CDATA[5]]></PageNavLength>
     <SortOption>
       <SolrValue><![CDATA[score desc]]></SolrValue>
       <ParamValue><![CDATA[score desc]]></ParamValue>
-      <Label><![CDATA[Sort by: Relevance]]></Label>
+      <Label><![CDATA[Sortieren nach: Relevanz]]></Label>
     </SortOption>
     <SortOption>
       <SolrValue><![CDATA[lastmodified desc]]></SolrValue>
       <ParamValue><![CDATA[lastmodified desc]]></ParamValue>
-      <Label><![CDATA[Sort by: Modified desc]]></Label>
+      <Label><![CDATA[Sortieren nach: Letzte Änderung absteigend]]></Label>
     </SortOption>
     <SortOption>
       <SolrValue><![CDATA[lastmodified asc]]></SolrValue>
       <ParamValue><![CDATA[lastmodified asc]]></ParamValue>
-      <Label><![CDATA[Sort by: Modified asc]]></Label>
+      <Label><![CDATA[Sortieren nach: Letzte Änderung aufsteigend]]></Label>
     </SortOption>
     <SortOption>
       <SolrValue><![CDATA[created desc]]></SolrValue>
       <ParamValue><![CDATA[created desc]]></ParamValue>
-      <Label><![CDATA[Sort by: Created desc]]></Label>
+      <Label><![CDATA[Sortieren nach: Erstellungsdatum absteigend]]></Label>
     </SortOption>
     <SortOption>
       <SolrValue><![CDATA[created asc]]></SolrValue>
       <ParamValue><![CDATA[created asc]]></ParamValue>
-      <Label><![CDATA[Sort by: Created asc]]></Label>
+      <Label><![CDATA[Sortieren nach: Erstellungsdatum aufsteigend]]></Label>
     </SortOption>
     <SortOption>
       <SolrValue><![CDATA[Title_exact asc]]></SolrValue>
       <ParamValue><![CDATA[Title_exact asc]]></ParamValue>
-      <Label><![CDATA[Sort by: Title asc]]></Label>
+      <Label><![CDATA[Sortieren nach: Titel absteigend]]></Label>
     </SortOption>
     <SortOption>
       <SolrValue><![CDATA[Title_exact desc]]></SolrValue>
       <ParamValue><![CDATA[Title_exact desc]]></ParamValue>
-      <Label><![CDATA[Sort by: Title desc]]></Label>
+      <Label><![CDATA[Sortieren nach: Titel aufsteigend]]></Label>
     </SortOption>
     <FieldFacet>
-      <Field><![CDATA[search.subsite_exact]]></Field>
-      <Label><![CDATA[Unterseite]]></Label>
-      <MinCount><![CDATA[1]]></MinCount>
-      <Limit><![CDATA[5]]></Limit>
-      <Order><![CDATA[index]]></Order>
-    </FieldFacet>
-    <FieldFacet>
       <Field><![CDATA[type]]></Field>
-      <Label><![CDATA[Typ]]></Label>
+      <Label><![CDATA[Type]]></Label>
       <MinCount><![CDATA[1]]></MinCount>
       <Limit><![CDATA[5]]></Limit>
     </FieldFacet>
     <FieldFacet>
       <Field><![CDATA[category_exact]]></Field>
-      <Label><![CDATA[Kategorie]]></Label>
+      <Label><![CDATA[Category]]></Label>
       <MinCount><![CDATA[1]]></MinCount>
       <Limit><![CDATA[5]]></Limit>
       <Order><![CDATA[index]]></Order>
     </FieldFacet>
     <Highlighting>
-      <Field><![CDATA[content_de content_en]]></Field>
+      <Field><![CDATA[content_de]]></Field>
       <FragSize><![CDATA[250]]></FragSize>
       <AlternateField><![CDATA[content]]></AlternateField>
       <MaxAlternateFieldLength><![CDATA[250]]></MaxAlternateFieldLength>
@@ -81,9 +74,9 @@
   <JspSearchConfig language="en">
     <Title><![CDATA[OpenCms Demo Search Configuration]]></Title>
     <SearchForEmptyQuery>true</SearchForEmptyQuery>
-    <QueryModifier><![CDATA[content_en:%(query) OR content_de:%(query) OR spell:%(query) OR Title_prop:%(query)]]></QueryModifier>
+    <QueryModifier><![CDATA[{!type=edismax qf="content_en spell Title_prop"}%(query)]]></QueryModifier>
     <EscapeQueryCharacters>true</EscapeQueryCharacters>
-    <ExtraSolrParams><![CDATA[fq=parent-folders:"/sites/default/"&fq=-type:image]]></ExtraSolrParams>
+    <ExtraSolrParams><![CDATA[fq=parent-folders:"/sites/default/"&fq=-type:image&fq=con_locales:en&fq=-(type:containerpage AND (-locale_prop:en OR locale_prop:*))]]></ExtraSolrParams>
     <PageSize><![CDATA[10]]></PageSize>
     <PageNavLength><![CDATA[5]]></PageNavLength>
     <SortOption>

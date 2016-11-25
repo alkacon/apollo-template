@@ -25,7 +25,7 @@
 <c:set var="teaserLength" value="${cms.element.settings.teaserLength}" />
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.formatters.list">
+<cms:bundle basename="org.opencms.apollo.template.list.messages">
 
 <div class="ap-compact ap-teaser ${cms.element.settings.cssWrapper}">
 

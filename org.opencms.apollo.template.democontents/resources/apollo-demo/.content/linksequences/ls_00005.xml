@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloLinkSequences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/linksequence.xsd">
+  <ApolloLinkSequence language="en">
+    <Title><![CDATA[Property offer page navigation]]></Title>
+    <LinkEntry>
+      <Text><![CDATA[Description]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/real-estate/]]></target>
+          <uuid>fe98d448-b238-11e6-ade4-0242ac11002b</uuid>
+          <anchor><![CDATA[Description]]></anchor>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Property Images]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/real-estate/]]></target>
+          <uuid>fe98d448-b238-11e6-ade4-0242ac11002b</uuid>
+          <anchor><![CDATA[MoreImages]]></anchor>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Location]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/real-estate/]]></target>
+          <uuid>fe98d448-b238-11e6-ade4-0242ac11002b</uuid>
+          <anchor><![CDATA[Location]]></anchor>
+        </link>
+      </URI>
+    </LinkEntry>
+  </ApolloLinkSequence>
+</ApolloLinkSequences>

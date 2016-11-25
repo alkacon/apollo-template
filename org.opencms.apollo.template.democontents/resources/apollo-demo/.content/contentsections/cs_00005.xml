@@ -12,7 +12,7 @@
     <Headline><![CDATA[Direktes Bearbeiten]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Einfach in die Seite klicken um Text darin zu ändern.</p>]]></content>
+      <content><![CDATA[<p>Einfach in die Seite klicken, um Text darin zu ändern.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

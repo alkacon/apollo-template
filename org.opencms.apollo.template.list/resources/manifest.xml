@@ -38,10 +38,6 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-scrolling.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-simple.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-simple.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list_en"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.list_de"/>
@@ -391,74 +387,6 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages_de</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>cb467755-ada9-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>cb467756-ada9-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:12:25 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list.messages_en</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>cb484c18-ada9-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>cb484c19-ada9-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:12:25 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list_de</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>c202a4ce-ada9-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>c202a4cf-ada9-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:12:09 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.list_en</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>c2045181-ada9-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>c2045182-ada9-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:12:09 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages_de</source>
 			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages_de</destination>
 			<type>propertyvfsbundle</type>
@@ -467,6 +395,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:13:08 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -485,6 +421,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -502,6 +446,14 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
 				</property>
@@ -518,6 +470,14 @@
 			<datecreated>Fri, 18 Nov 2016 16:14:34 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>

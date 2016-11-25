@@ -5,7 +5,7 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.slider">
+<cms:bundle basename="org.opencms.apollo.template.slider.messages">
 
 <cms:formatter var="content" val="value" rdfa="rdfa">
 <div>

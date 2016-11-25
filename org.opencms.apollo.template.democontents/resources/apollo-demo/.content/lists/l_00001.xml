@@ -37,7 +37,7 @@
       <!--Categories are read dynamically-->
     </Category>
     <SortOrder><![CDATA[datedesc]]></SortOrder>
-    <ItemsPerPage><![CDATA[5]]></ItemsPerPage>
+    <ItemsPerPage><![CDATA[4]]></ItemsPerPage>
     <Parameters>
       <Key><![CDATA[teaserLength]]></Key>
       <Value><![CDATA[200]]></Value>
@@ -60,7 +60,7 @@
     </Parameters>
     <Parameters>
       <Key><![CDATA[archiveWrapper]]></Key>
-      <Value><![CDATA[color-grey]]></Value>
+      <Value><![CDATA[color-grey-light]]></Value>
     </Parameters>
     <Parameters>
       <Key><![CDATA[catPreopened]]></Key>

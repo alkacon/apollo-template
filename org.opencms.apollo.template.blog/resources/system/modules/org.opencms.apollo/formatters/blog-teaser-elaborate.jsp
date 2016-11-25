@@ -7,7 +7,7 @@
 
 <cms:secureparams />
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.blog">
+<cms:bundle basename="org.opencms.apollo.template.blog.messages">
 
 <cms:formatter var="content" val="value">
 <c:set var="inMemoryMessage"><fmt:message key="apollo.blog.message.edit" /></c:set>

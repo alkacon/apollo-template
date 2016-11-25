@@ -59,7 +59,7 @@
 <c:set var="animatedlink" value="${link.isSet and fn:contains(fragments, 'animated-link')}" />
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.contact">
+<cms:bundle basename="org.opencms.apollo.template.contact.messages">
 
 <%-- #### Contact exposed in hCard microformat, see http://microformats.org/wiki/hcard #### --%>
 

@@ -33,7 +33,7 @@
 
     <xsd:annotation>
         <xsd:appinfo>
-            <resourcebundle name="org.opencms.apollo.template.schemas.event" />
+            <resourcebundle name="org.opencms.apollo.template.event.messages" />
             <tabs>
                 <tab element="Title" collapse="false" name="TabGeneral" />
 				<tab element="Location" collapse="false" name="TabLocation" />

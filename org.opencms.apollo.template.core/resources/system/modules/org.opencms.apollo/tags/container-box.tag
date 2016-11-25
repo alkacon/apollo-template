@@ -20,8 +20,8 @@
 <cms:bundle basename="org.opencms.apollo.template.schemas.row">
 
 <c:choose>
-<c:when test="${cms.isOnlineProject}">
-<%-- Never generate any of output in online project --%>
+<c:when test="${cms.isOnlineProject or not cms.isEditMode}">
+<%-- Never generate any output in the online project --%>
 </c:when>
 <c:when test="${(boxType == 'container-box') || (boxType == 'detail-placeholder')}">
 <%-- Use case 1: Create container or detail container placeholder box --%>
@@ -121,15 +121,15 @@
   <c:set var="modelTitle">${cms.element.setting.model_group_title}</c:set>
 </c:if>
 
-<c:out value='<div class="oc-modelinfo">' escapeXml='false' />	
+<c:out value='<div class="oc-modelinfo">' escapeXml='false' />    
 
   <div class="row">
     <div class="col-xs-12">
       <div class="alert alert-info" role="alert">
         <button type="button" class="close" data-dismiss="alert">
-			<span aria-hidden="true">&times;</span>
-			<span class="sr-only">Close</span>
-		</button>
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+        </button>
         <strong>Model:</strong> <em>${modelTitle}</em><br>
         <strong>Description:</strong> ${cms.element.setting.model_group_description}
       </div>

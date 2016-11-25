@@ -1,3 +1,16 @@
+apollo.tabs.default.Headline=Überschrift
+apollo.tabs.default.Label=Name
+apollo.tabs.default.Title=Neuer Reiter
+label.ApolloTab.Label.help=Bitte geben Sie einen Namen für den Reiter ein. Verwenden Sie Templatezeilen, um Inhalte in den Reiter ziehen zu können.
+label.ApolloTab.Label=Reiter Name
+label.ApolloTab.Title.help=Der Titel wird oberhalb der Reiter angezeigt.
 desc.a-tabs=Erzeugt mehrere Reiter, kann auch als Akkordion dargestellt werden.
+label.ApolloTab.GalleryTitle=Galerie Titel
+apollo.tabs.message.new=Neues Reiter-Element, bitte bearbeiten Sie es.
 fileicon.a-tabs=Reiter / Akkordion
+apollo.tabs.emptycontainer.headline=Leerer Reiter
+apollo.tabs.default.Text=Bitte bearbeiten Sie diesen Reiter.
+apollo.tabs.emptycontainer.text=Bitte ziehen Sie eine Templatezeile in den Reiter.
+label.ApolloTab.Title=Titel
+label.ApolloTab.GalleryTitle.help=Der Titel des Reiters für die Galerie. Er wird nicht auf der Seite angezeigt.
 title.a-tabs=Neuer Reiter / Akkordion

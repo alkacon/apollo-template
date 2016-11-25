@@ -25,7 +25,7 @@
 
 	<xsd:annotation>
 		<xsd:appinfo>
-			<resourcebundle name="org.opencms.apollo.template.schemas.slidercomplex"/>
+			<resourcebundle name="org.opencms.apollo.template.slidercomplex.messages"/>
 			<layouts>
 				<layout element="Effect" widget="SelectorWidget" configuration="boxslide|boxfade|flyin|slotzoom-horizontal|slotslide-horizontal|slotfade-horizontal|slotzoom-vertical|slotslide-vertical|slotfade-vertical|papercut|curtain-1|curtain-2|curtain-3|3dcurtain-vertical|slideleft|slideright|slideup|slidedown|fade*" />
 				<layout element="Delay" widget="SelectorWidget" configuration="0|100|200|300*|600|900|1200|1500" />

@@ -1,7 +1,7 @@
 label.ApolloMap.Route=Route
 label.ApolloMap.MapSize=Kartengröße
-label.ApolloMap.ShowMarkers.help=Wenn angekreuzt, werden Marker sofort in der Karte angezeigt.
 label.ApolloMap.General=Einstellungen
+label.ApolloMap.ShowMarkers.help=Wenn angekreuzt, werden Marker sofort in der Karte angezeigt.
 label.ApolloMap.ShowMarkers=Zeige Marker
 label.ApolloMapCoord.MarkerGroup=Marker Gruppe
 label.ApolloMap.Text=Text
@@ -20,6 +20,6 @@ label.ApolloMap.Points=Koordinaten
 label.ApolloMapCoord.Coord.help=Die exakten Koordinaten des anzuzeigenden Punktes.
 label.ApolloMapCoord.Caption=Beschriftung
 label.ApolloMap.Text.help=Der Text wird mit der Karte angezeigt.
-label.ApolloMapCoord.MarkerGroup.help=Der optionale Name der Marker Gruppe. Diese Option kann zur Gruppierung von Koordinaten benutzt werden. Benutzen Sie den gleichen Gruppennamen für alle Koordinaten einer Gruppe.
 label.ApolloMapCoord.Coord=Koordinaten
+label.ApolloMapCoord.MarkerGroup.help=Der optionale Name der Marker Gruppe. Diese Option kann zur Gruppierung von Koordinaten benutzt werden. Benutzen Sie den gleichen Gruppennamen für alle Koordinaten einer Gruppe.
 label.ApolloMapCoord.Address=Adresse

@@ -35,15 +35,15 @@
 
   <c:set var="theme"><cms:property name="apollo.theme" file="search" default="red" /></c:set>
   <c:choose>
-	  <c:when test="${fn:endsWith(theme, 'ap-includes.jsp')}">
-	      <cms:include file="${theme}" />
-	  </c:when>
-	  <c:otherwise>
+      <c:when test="${fn:endsWith(theme, 'ap-includes.jsp')}">
+          <cms:include file="${theme}" />
+      </c:when>
+      <c:otherwise>
           <c:if test="${not fn:startsWith(theme, '/')}">
-		     <c:set var="theme">/system/modules/org.opencms.apollo.theme/resources/css/style-${theme}.min.css</c:set>
-		  </c:if>
-  	      <link rel="stylesheet" href="<cms:link>${theme}</cms:link>" />	  
-	  </c:otherwise>
+             <c:set var="theme">/system/modules/org.opencms.apollo.theme/resources/css/style-${theme}.min.css</c:set>
+          </c:if>
+            <link rel="stylesheet" href="<cms:link>${theme}</cms:link>" />      
+      </c:otherwise>
   </c:choose>
   
   <c:set var="extraHead"><cms:property name="apollo.template.head" file="search" default="" /></c:set>
@@ -51,7 +51,7 @@
 
   </head>
   <body>
-  <div class="wrapper">
+  <div class="page">
 </apollo:megamenu>
 
 <c:if test="${cms.isEditMode}">
@@ -60,12 +60,24 @@
 </c:if>
 
 <apollo:megamenu mode="wrapContainer">
-  <cms:container name="page-complete${containerSuffix}" type="area${containerTypes}" width="1200" maxElements="50" editableby="ROLE.DEVELOPER">
-    <cms:bundle basename="org.opencms.apollo.template.core.messages">
-      <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
-    </cms:bundle>
-    <apollo:container-box label="${message}" boxType="container-box" type="area" role="ROLE.DEVELOPER" />
-  </cms:container>
+    <%-- Values containerSuffix and containerTypes are defined by the mega menu tag --%>
+    <cms:container 
+        name="page-complete${containerSuffix}" 
+        type="area${containerTypes}" 
+        width="1200" 
+        maxElements="50" 
+        editableby="ROLE.DEVELOPER">
+
+        <cms:bundle basename="org.opencms.apollo.template.core.messages">
+            <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
+        </cms:bundle>
+        <apollo:container-box 
+            label="${message}" 
+            boxType="container-box" 
+            type="area" 
+            role="ROLE.DEVELOPER" 
+        />
+    </cms:container>
 </apollo:megamenu>
 
 </div><!--/wrapper-->

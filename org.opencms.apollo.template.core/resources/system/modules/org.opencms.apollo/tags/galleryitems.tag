@@ -57,7 +57,7 @@
 		</c:when>
 		<c:otherwise>
             <fmt:setLocale value="${cms.locale}" />
-            <cms:bundle basename="org.opencms.apollo.template.schemas.imagegallery">
+            <cms:bundle basename="org.opencms.apollo.template.imagegallery.messages">
                 <fmt:message key="apollo.imagegallery.message.empty" />
             </cms:bundle>
 		</c:otherwise>

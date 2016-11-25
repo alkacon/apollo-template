@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
+  <ApolloTemplateRow language="de">
+    <Title><![CDATA[Row 3 Spalten (4 - 4 - 4)]]></Title>
+    <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
+    <PostMarkup><![CDATA[</div>]]></PostMarkup>
+    <Container><![CDATA[row]]></Container>
+    <Column>
+      <Name><![CDATA[c1]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <Count><![CDATA[50]]></Count>
+      <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
+      <Grid><![CDATA[col-md-4 hidden-xs]]></Grid>
+    </Column>
+    <Column>
+      <Name><![CDATA[c2]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <Count><![CDATA[50]]></Count>
+      <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
+      <Grid><![CDATA[col-md-4]]></Grid>
+    </Column>
+    <Column>
+      <Name><![CDATA[c3]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <Count><![CDATA[50]]></Count>
+      <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
+      <Grid><![CDATA[col-md-4 hidden-xs hidden-sm]]></Grid>
+    </Column>
+  </ApolloTemplateRow>
+  <ApolloTemplateRow language="en">
+    <Title><![CDATA[Row 3 Cols (4 - 4 - 4) [Hide left XS / right SM]]]></Title>
+    <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
+    <PostMarkup><![CDATA[</div>]]></PostMarkup>
+    <Container><![CDATA[row]]></Container>
+    <Column>
+      <Name><![CDATA[c1]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <Count><![CDATA[50]]></Count>
+      <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
+      <Grid><![CDATA[col-md-4 hidden-xs]]></Grid>
+    </Column>
+    <Column>
+      <Name><![CDATA[c2]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <Count><![CDATA[50]]></Count>
+      <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
+      <Grid><![CDATA[col-md-4]]></Grid>
+    </Column>
+    <Column>
+      <Name><![CDATA[c3]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <Count><![CDATA[50]]></Count>
+      <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
+      <Grid><![CDATA[col-md-4 hidden-xs hidden-sm]]></Grid>
+    </Column>
+  </ApolloTemplateRow>
+</ApolloTemplateRows>

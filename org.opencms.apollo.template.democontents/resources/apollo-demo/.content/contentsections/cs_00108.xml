@@ -5,7 +5,7 @@
     <Headline><![CDATA[The FAQ Entry element]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>The <em>FAQ Entry</em> is a specialized content for creating contents for frequently asked questions. It can contain a questions and several paragraphs with images. The <em>FAQ Entry</em> is similar to the <em>Blog Article.</em>&nbsp;Compared to the much simpler&nbsp;<em>Content Section&nbsp;</em>the&nbsp;<em>FAQ Entry</em> is&nbsp;a semantic entity.</p>
+      <content><![CDATA[<p>The <em>FAQ Entry</em> is a specialized content for creating contents for frequently asked questions. It can contain a question and several paragraphs with images. The <em>FAQ Entry</em> is similar to the <em>Blog Article.</em>&nbsp;Compared to the much simpler&nbsp;<em>Content Section&nbsp;</em>the&nbsp;<em>FAQ Entry</em> is&nbsp;a semantic entity.</p>
 <p>The&nbsp;full content of a&nbsp;<em>FAQ Entry</em> is usually displayed on a&nbsp;<em>Detail page </em>that is accessed&nbsp;through a<em> List </em>like the one below.</p>]]></content>
     </Text>
     <Image>

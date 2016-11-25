@@ -27,7 +27,7 @@
 
     <xsd:annotation>
         <xsd:appinfo>
-            <resourcebundle name="org.opencms.apollo.template.schemas.faq" />
+            <resourcebundle name="org.opencms.apollo.template.faq.messages" />
             <tabs>
                 <tab element="Question" collapse="false" name="General" />
                 <tab element="Availability" collapse="true" name="Availability" />

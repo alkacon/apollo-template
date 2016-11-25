@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloLinkSequences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/linksequence.xsd">
+  <ApolloLinkSequence language="de">
+    <Title><![CDATA[Head links]]></Title>
+    <LinkEntry>
+      <Text><![CDATA[Suche]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/search/]]></target>
+          <uuid>4eef4bfc-5c5c-11e5-96ab-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Anmelden]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/login/]]></target>
+          <uuid>d87f4764-58f1-11e4-903d-005056b61161</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+  </ApolloLinkSequence>
+  <ApolloLinkSequence language="es">
+    <Title><![CDATA[Head links]]></Title>
+    <LinkEntry>
+      <Text><![CDATA[Buscar]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/search/]]></target>
+          <uuid>4eef4bfc-5c5c-11e5-96ab-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[Iniciar sesión]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/login/]]></target>
+          <uuid>d87f4764-58f1-11e4-903d-005056b61161</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+  </ApolloLinkSequence>
+  <ApolloLinkSequence language="en">
+    <Title><![CDATA[Tutorial Head Navigation Links]]></Title>
+    <LinkEntry>
+      <Text><![CDATA[DEMO WEBSITE]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/]]></target>
+          <uuid>acb43685-5224-11e5-9495-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[RELEASE NOTES]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/release/]]></target>
+          <uuid>b7e67102-6049-11e5-9199-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+    <LinkEntry>
+      <Text><![CDATA[SEARCH]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/search/]]></target>
+          <uuid>4eef4bfc-5c5c-11e5-96ab-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </LinkEntry>
+  </ApolloLinkSequence>
+</ApolloLinkSequences>

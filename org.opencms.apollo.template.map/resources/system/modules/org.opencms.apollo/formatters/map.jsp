@@ -7,7 +7,7 @@
 
 <c:set var="locale" value="${cms.locale}" />
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.formatters.map">
+<cms:bundle basename="org.opencms.apollo.template.map.messages">
 
 <div class="ap-map ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
 <cms:formatter var="map" val="value" rdfa="rdfa">

@@ -7,7 +7,7 @@
       <LastName><![CDATA[Tucker]]></LastName>
     </Name>
     <Organization><![CDATA[Cascading Styles LLC]]></Organization>
-    <Position><![CDATA[VP of Operations]]></Position>
+    <Position><![CDATA[Director Customer Relations]]></Position>
     <Image>
       <Image>
         <link type="WEAK">
@@ -17,7 +17,7 @@
       </Image>
     </Image>
     <Link>
-      <Text><![CDATA[Team overview]]></Text>
+      <Text><![CDATA[More about us]]></Text>
       <URI>
         <link internal="true" type="WEAK">
           <target><![CDATA[/sites/default/apollo-demo/the-team/]]></target>
@@ -30,6 +30,7 @@
         <StreetAddress><![CDATA[Am Hof 12]]></StreetAddress>
         <PostalCode><![CDATA[50667]]></PostalCode>
         <Locality><![CDATA[Cologne]]></Locality>
+        <Country><![CDATA[Germany]]></Country>
       </Address>
       <Phone><![CDATA[+49 (221) 123-4567]]></Phone>
       <Mobile><![CDATA[+49 (170) 123-4567]]></Mobile>
