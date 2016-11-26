@@ -2,21 +2,20 @@
 /* Variables
 ------------------------------------*/
 
-$nav-theme:          $blue-dark !default; // used for 1st level text and big colored border above / below menus
-$nav-text:           $green !default; // standard text color of the nav menu entries
-$nav-text-hover:     $orange-darker !default; // hover text color of the nav menu entries
-$nav-bg:             $blue-lighter !default; // standard background of the nav menu entries
-$nav-bg-hover:       $orange !default;  // hover background of the nav menu entries
-$nav-active:         $blue-lighter !default; // the currently active / selected nav entry (text)
-$nav-active-bg:      $cyan !default; // the currently active / selected nav entry (background)
-$nav-border:         $red-light !default;
+$nav-theme:          $main-theme !default; // used for 1st level text and big colored border above / below menus
+$nav-text:           $gray-darker !default; // standard text color of the nav menu entries
+$nav-text-hover:     $nav-theme !default; // hover text color of the nav menu entries
+$nav-bg:             $white !default; // standard background of the nav menu entries
+$nav-bg-hover:       $grey-light !default;  // hover background of the nav menu entries
+$nav-active:         $nav-text !default; // the currently active / selected nav entry (text)
+$nav-active-bg:      $grey-light !default; // the currently active / selected nav entry (background)
+$nav-border:         $grey !default;
 
 // colors for the "nav-toggle" 
 // this is the button displayed on small screens to show / hide the navigation
-$nav-toggle:         $main-theme !default;
+$nav-toggle:         $nav-theme !default;
 $nav-toggle-text:    $white !default;
 $nav-toggle-hover:   $blue !default;
-
 
 
 
@@ -53,12 +52,6 @@ $nav-sub-color-active: $nav-text !default;
     z-index: 99;
     background: $white;
     position: relative;
-
-    .dropdown-menu {
-        border-bottom: solid 2px $nav-theme;
-        border-top: solid 2px $nav-theme;
-        padding: 0;
-    }
 
 .head-navbar {
     border-bottom: solid 2px $nav-border;
@@ -152,8 +145,34 @@ $nav-sub-color-active: $nav-text !default;
     border-top: 0;
 }
 
+@media (max-width: 991px) {
+    
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+        overflow-y: auto !important;
+    }
+
+    .navbar-collapse {
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
 /* 
-  The basic "nav" navigation structure looks like this:
+  The basic "navbar" navigation HTML structure looks like this:
 
   <ul class="navbar-nav">
       <li class="dropdown">
@@ -234,6 +253,13 @@ $nav-sub-color-active: $nav-text !default;
         > .dropdown .dropdown-menu {
             border-top: solid 2px $nav-theme;
             border-bottom: solid 2px $nav-theme;
+
+            > li {
+                &:last-child > a {
+                    // remove the border of the last list element 
+                    border-bottom: none;
+                }
+            }
         }
         .open > .dropdown-menu {
             // change this to "block" in oder to activate clickable submenues
@@ -245,8 +271,7 @@ $nav-sub-color-active: $nav-text !default;
             background-color: transparent;
             border-color: transparent;
         }
-        .open > a:hover,
-        .open > a:focus {
+        .open > a:hover {
             color: $nav-theme;
         }
     }
@@ -255,7 +280,14 @@ $nav-sub-color-active: $nav-text !default;
         margin: 0;
         float: none !important;
 
+        > .dropdown {
+             // we need a padding of one on the first elements in the small screen, 
+             // otherwise there will be a scrollbar with 2px right
+            padding: 0 1px 0 0;
+        }
+
         > .dropdown .dropdown-menu {
+            // downslide transition effect
             -webkit-transition: all 3s;
             transition: all 0.5s ease-in-out;
 
@@ -263,25 +295,34 @@ $nav-sub-color-active: $nav-text !default;
             display: block;
             overflow: hidden;
         }
+
         > .dropdown.open .dropdown-menu {
+            // downslide transition effect
             max-height: 5000px;
         }
 
         .open > a,
-        .open > a:hover,
-        .open > a:focus {
+        .open > a:hover {
             color: $nav-text;
             border-color: $nav-border;
         }
 
+        > li.dropdown.open {
+            &:nth-last-child(2) > a,
+            &:last-child > a {
+                // add the border of the last 2 list elements if open
+                border-bottom: 1px solid $nav-border;
+            }
+        }
+
         > .active > a {
             // the top level menu entry that belongs to the currently opened page
-            color: $nav-bg !important;
+            color: $nav-bg;
             background:  $nav-theme;
             border-color: $nav-border;
 
             &:hover {
-                color: $nav-text-hover !important;
+                color: $nav-text-hover;
                 background:  $nav-bg-hover;
                 border-color: $nav-bg-hover;
             }
@@ -294,6 +335,7 @@ $nav-sub-color-active: $nav-text !default;
                 background: $nav-bg;
                 font-size: 14px;
                 padding: 9px 10px;
+                bottom: 0px;
                 border-bottom: solid 1px $nav-border;
             }
 
@@ -301,6 +343,14 @@ $nav-sub-color-active: $nav-text !default;
                 color: $nav-text-hover;
                 background:  $nav-bg-hover;
                 border-bottom: solid 1px $nav-border;
+            }
+
+            &:nth-last-child(2) > a,
+            &:last-child > a {
+                // remove the border of the last 2 list elements 
+                // there is a border for the navbar below
+                // the last element is the search hidden in small screens
+                border-bottom: none;
             }
         }
 
@@ -339,10 +389,9 @@ $nav-sub-color-active: $nav-text !default;
 }
 /* end nav */
 
-
-
 .dropdown-menu {
     border: none;
+    padding: 0; // see special padding required on first level above
     border-radius: 0;
 
     > li {
@@ -367,22 +416,6 @@ $nav-sub-color-active: $nav-text !default;
             &:focus,
             &:hover {
                 color: $nav-sub-color-hover;
-            }
-        }
-    }
-
-    .ap-linksequence-boxed {
-       li > a {
-            border-bottom: 1px solid $nav-border;
-            background-color: $nav-bg;
-            color: $nav-sub-color;
-            padding: 5px 25px;
-            margin: 0;
-
-            &:focus,
-            &:hover {
-                background-color: $nav-bg-hover;
-                color: $nav-text-hover;
             }
         }
     }
@@ -470,102 +503,106 @@ $nav-sub-color-active: $nav-text !default;
 }
 
 
+}
+// end of ap-header
 
 
 
+/* Megamenu
+------------------------------------*/
 
-
-
-@media (max-width: 991px) {
-
-    .navbar-header {
-        float: none;
-    }
-
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-
-    .navbar-collapse.collapse.in {
-        display: block !important;
-        overflow-y: auto !important;
-    }
-
-    > .container {
-        margin-bottom: 0;
-    }
-
-    .navbar-collapse {
-        margin-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-        .container {
-            padding-left: 0;
-            padding-right: 0;
+#megamenu-editor {
+    .container {
+        .ap-header .mega-menu .container {
+            width: inherit;
         }
+    
+        padding: 0;
+    }
+
+    .dropdown .dropdown-menu {
+        // we need to reverse any effect set by the default menu
+        // for example the max-height transition effect set above
+        max-height: none;
+        display: block;
+        overflow: visible;
     }
 }
 
+.mega-menu {
+    
+    .dropdown {
+        position: static;
+    }
 
+    .container {
+        position: relative;
+    }
 
+    .dropdown-menu {
+        left: auto;
+    }
 
-@media (min-width: 992px) {
-    .mega-menu {
+    .dropdown-megamenu .ap-sec {
+        // remove the default bottom margin for apollo sections in mega-menu
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 992px) {
         div.dropdown-menu {
             width: 100%;
             position: absolute;
             left: 0;
         }
 
-        div.dropdown-megamenu {
-            padding: 15px 15px 0 15px;
+        .dropdown-megamenu {
+            padding: 15px;
+        }
+    }
+
+    .ap-linksequence-boxed {
+        // special nav like formatting for link sequence in mega menu
+        li > a {
+            border: 1px solid $nav-border;
+            border-top: none;
+            background-color: $nav-bg;
+            color: $nav-sub-color;
+            padding: 5px 25px;
+            margin: 0;
+
+            &:focus,
+            &:hover {
+                background-color: $nav-bg-hover;
+                color: $nav-text-hover;
+            }
+        }
+
+        li:first-child > a {
+            border-top: 1px solid $nav-border;
+        }
+
+        @media (max-width: 991px) {
+            li > a {
+                border-right: none;
+                border-left: none;
+            }
         }
     }
 }
 
-.mega-menu-fullwidth ul.dropdown-menu {
-    border-color: $nav-border;
-    background-color: $nav-bg;
-    color: $nav-sub-color;
-}
 
 
 
-.mega-menu .dropdown, 
-.mega-menu .nav {
-    position: static;
-}
-
-.mega-menu .container {
-    position: relative;
-}
-
-.mega-menu .dropdown-menu {
-    left: auto;
-
-    > li {
-        display: block;
-    }
-
-    .dropdown-submenu .dropdown-menu {
-        left: 100%;
-    }
-
-    .nav, 
-    .dropdown {
-        position: static;
-    }
-
-    .nav > li > .dropdown-menu:after,
-    .nav > li > .dropdown-menu:before {
-        display: none;
-    }
-}
 
 
 
-}
-// end of ap-header
+
+
+
+
+
+
+
 
 
 /* Breadcrumb
@@ -614,24 +651,6 @@ $nav-sub-color-active: $nav-text !default;
     }
   }
 }
-
-/* Megamenu
-------------------------------------*/
-
-#megamenu-editor .container {
-    .ap-header .mega-menu .container {
-        width: inherit;
-    }
-    
-    padding: 0;
-}
-
-#megamenu-editor .dropdown-megamenu {
-    display: inherit;
-}
-
-
-
 
 
 
