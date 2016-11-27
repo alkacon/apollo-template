@@ -80,7 +80,7 @@
     </cms:container>
 </apollo:megamenu>
 
-</div><!--/wrapper-->
+</div>
 
 <apollo:megamenu mode="skipTemplatePart">
   <%-- JavaScript files placed at the end of the document so the pages load faster --%>

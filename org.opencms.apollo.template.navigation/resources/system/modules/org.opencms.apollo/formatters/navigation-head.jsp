@@ -48,10 +48,13 @@
         </div>
 
         <div class="head-navbar${cms.modelGroupPage and cms.isEditMode ? ' editor' : ''}">
-            <cms:include file="%(link.weak:/system/modules/org.opencms.apollo/elements/nav-main.jsp:f94e9fdc-5606-11e5-b868-0242ac11002b)">
-                <cms:param name="startlevel">${value.NavStartLevel}</cms:param>
-            </cms:include>
+            <apollo:nav-main 
+                folderUri="${cms.requestContext.folderUri}" 
+                pageUri="${cms.requestContext.uri}" 
+                startlevel="${value.NavStartLevel}" 
+            />
         </div>
+
     </div>
 
 
@@ -64,14 +67,11 @@
 
             <h1 class="pull-left">
                 ${cms.title}
-                    <c:if test="${cms.isEditMode}">
-                        <span class="badge badge-user">${cms.requestContext.currentUser.name}</span>
-                    </c:if>
+				<c:if test="${cms.isEditMode}">
+					<span class="badge badge-user">${cms.requestContext.currentUser.name}</span>
+				</c:if>
             </h1>
-
-            <cms:include file="%(link.weak:/system/modules/org.opencms.apollo/elements/nav-breadcrumb.jsp:f93dafe7-5606-11e5-b868-0242ac11002b)">
-                <cms:param name="startlevel">${value.NavStartLevel}</cms:param>
-            </cms:include>
+            <apollo:nav-breadcrumb startlevel="${value.NavStartLevel}" />
 
         </div>
     </div>

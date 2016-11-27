@@ -25,8 +25,8 @@
 		<exportpoints/>
 		<resources>
 			<resource uri="/system/modules/org.opencms.apollo.template.navigation/"/>
-			<resource uri="/system/modules/org.opencms.apollo/elements/nav-breadcrumb.jsp"/>
-			<resource uri="/system/modules/org.opencms.apollo/elements/nav-main.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/nav-breadcrumb.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/nav-main.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-folder.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-folder.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-head.jsp"/>
@@ -102,61 +102,6 @@
 			<destination>system/modules/org.opencms.apollo</destination>
 			<type>folder</type>
 			<properties/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo/elements</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/elements/nav-breadcrumb.jsp</source>
-			<destination>system/modules/org.opencms.apollo/elements/nav-breadcrumb.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>f93dafe7-5606-11e5-b868-0242ac11002b</uuidstructure>
-			<uuidresource>f93dafe8-5606-11e5-b868-0242ac11002b</uuidresource>
-			<datecreated>Tue, 08 Sep 2015 08:52:45 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Breadcrumb navigation]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[uri;user;params=(startlevel)]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/elements/nav-main.jsp</source>
-			<destination>system/modules/org.opencms.apollo/elements/nav-main.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>f94e9fdc-5606-11e5-b868-0242ac11002b</uuidstructure>
-			<uuidresource>f94e9fdd-5606-11e5-b868-0242ac11002b</uuidresource>
-			<datecreated>Tue, 08 Sep 2015 08:52:45 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Main navigation]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[uri;user;params=(startlevel)]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
 		</file>
 		<file>
 			<destination>system/modules/org.opencms.apollo/formatters</destination>
@@ -397,6 +342,45 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[XSD for a navigation]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/tags</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/nav-breadcrumb.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/nav-breadcrumb.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>5498be21-b492-11e6-aa85-0242ac11002b</uuidstructure>
+			<uuidresource>5498be22-b492-11e6-aa85-0242ac11002b</uuidresource>
+			<datecreated>Sun, 27 Nov 2016 11:12:05 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/nav-main.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/nav-main.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>bfe177c5-b495-11e6-aa85-0242ac11002b</uuidstructure>
+			<uuidresource>bfe177c6-b495-11e6-aa85-0242ac11002b</uuidresource>
+			<datecreated>Sun, 27 Nov 2016 11:36:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
 				</property>
 			</properties>
 			<relations/>

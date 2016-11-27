@@ -2,12 +2,13 @@
     display-name="obfuscate"
     body-content="empty"
     trimDirectiveWhitespaces="true"
-	import="java.nio.charset.Charset"
+    import="java.nio.charset.Charset"
     description="
         Obfuscates an Email address (or any other String).
         The Sting that can be revelad using the JavaScript function 'unobfuscateString()'." %>
 
-<%@ attribute name="text" type="java.lang.String" required="true" desciption="The String to obfuscate." %>
+<%@ attribute name="text" type="java.lang.String" required="true" 
+    description="The String to obfuscate." %>
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
