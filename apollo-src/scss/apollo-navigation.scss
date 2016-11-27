@@ -2,14 +2,18 @@
 /* Variables
 ------------------------------------*/
 
-$nav-theme:          $main-theme !default; // used for 1st level text and big colored border above / below menus
-$nav-text:           $gray-darker !default; // standard text color of the nav menu entries
-$nav-text-hover:     $nav-theme !default; // hover text color of the nav menu entries
-$nav-bg:             $white !default; // standard background of the nav menu entries
-$nav-bg-hover:       $grey-light !default;  // hover background of the nav menu entries
-$nav-active:         $nav-text !default; // the currently active / selected nav entry (text)
-$nav-active-bg:      $grey-light !default; // the currently active / selected nav entry (background)
-$nav-border:         $grey !default;
+$nav-theme:         $main-theme !default; // used for 1st level text and big colored border above / below menus
+$nav-text:          $gray-darker !default; // standard text color of the nav menu entries
+$nav-text-hover:    $nav-theme !default; // hover text color of the nav menu entries
+$nav-bg:            $white !default; // standard background of the nav menu entries
+$nav-bg-hover:      $grey-light !default;  // hover background of the nav menu entries
+$nav-active:        $nav-text !default; // the currently active / selected nav entry (text)
+$nav-active-bg:     $grey-light !default; // the currently active / selected nav entry (background)
+$nav-border:        $grey !default;
+
+$nav-header-bg:     $white !default;
+$nav-beadcrump-bg:  $grey-lighter !default;
+
 
 // colors for the "nav-toggle" 
 // this is the button displayed on small screens to show / hide the navigation
@@ -19,12 +23,8 @@ $nav-toggle-hover:   $blue !default;
 
 
 
-
 $nav-active-color: $orange !default;
-
-$nav-beadcrump-bg: $grey-lighter !default;
 $search-bg: $nav-border !default;
- 
 $nav-main-color-active: $main-theme !default;
 
 $nav-main-bg: $white !default;
@@ -47,147 +47,141 @@ $nav-sub-bg-active: $nav-border !default;
 $nav-sub-color-active: $nav-text !default;
 
 
+/* The Apollo header
+------------------------------------*/
+
 .ap-header {
-
     z-index: 99;
-    background: $white;
+    background: $nav-header-bg;
     position: relative;
-
-.head-navbar {
-    border-bottom: solid 2px $nav-border;
-
-    @media (min-width: 992px) {
-        // pull the nav above the head-bg by default
-        margin-top: -40px;
-    }
-
-    &.editor {
-        // used by head navigation formatter in the model group editor
-        border-top: solid 1px $nav-border;
-        margin-top: 0px;
-    }
-}
-
-.head-nopull {
-    // optional css wrapper to prevent pulling the nav above the head-bg
-    @media (min-width: 992px) {
-        .head-navbar {
-            margin-top: 0;
-        }
-    }
-}
-
-/* navbar-toggle */
-.navbar-toggle {
-
-    @media (min-width: 992px) {
-        display: none;
-    }
-
-    @media (max-width: 991px) {
-        margin: -40px 0 6px 0;
-        display: block;
-    }
-
-    .fa {
-        font-size: 28px;
-    }
-
-    @media (max-width: 480px) {
-        margin: -30px 0 6px 0;
-        .fa {
-            font-size: 14px;
-        }
-    }
-
-    border: none;
-    border-radius: 0;
-    background:  $nav-toggle;
-    padding: 2px 8px 2px 8px;
-    color: $nav-toggle-text;
-    z-index: 100;
-    position: relative;
-    float: right;
-
-    &:hover {
-        background:  $nav-toggle-hover;
-    }
-}
-/* end of navbar-toggle */
-
-
-.head-bg {
-    @media (max-width: 991px) {
-    // remove the margins from the row for small screens
-    // this way the head becomes the same size as the navbar, 
-    // which also has the margins removed.
-        .col-xs-12,
-        .row {
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        .col-xs-12,
-        .container {
-            padding-left: 0;
-            padding-right: 0;
-        }
-    }
-}
-
-#searchContentHeader > span > button {
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-.navbar-collapse {
-    position: relative;
-    border-top: 0;
-}
-
-@media (max-width: 991px) {
-    
-    .navbar-header {
-        float: none;
-    }
-
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-
-    .navbar-collapse.collapse.in {
-        display: block !important;
-        overflow-y: auto !important;
-    }
 
     .navbar-collapse {
-        margin-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-        .container {
+        position: relative;
+        border-top: 0;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        .navbar-header {
+            float: none;
+        }
+
+        .navbar-collapse {
+            margin-top: 0;
             padding-left: 0;
             padding-right: 0;
+            
+            .container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            &.collapse {
+                display: none !important;
+            }
+
+            &.collapse.in {
+                display: block !important;
+                overflow-y: auto !important;
+            }
         }
     }
-}
 
-/* 
-  The basic "navbar" navigation HTML structure looks like this:
 
-  <ul class="navbar-nav">
-      <li class="dropdown">
+/* Head background container
+------------------------------------*/
 
-          <a>Top level entry</a>
-          <ul class="dropdown-menu">
-              <li>
-                    <a>Sub menu entry</a>
-              </li>
-          </ul>
+    .head-bg {
+        @media (max-width: $screen-sm-max) {
+            // remove the margins from the row for small screens
+            // this way the head becomes the same size as the navbar, 
+            // which also has the margins removed.
+            .col-xs-12,
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+            }
 
-      </li>
-  </ul>
+            .col-xs-12,
+            .container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
 
-*/
+
+/* Head navbar container, the nav will be pulled over the head-bg
+------------------------------------*/
+
+    .head-navbar {
+        border-bottom: solid 2px $nav-border;
+
+        @media (min-width: $screen-md-min) {
+            // pull the nav above the head-bg by default
+            margin-top: -40px;
+        }
+
+        &.editor {
+            // used by head navigation formatter in the model group editor
+            border-top: solid 1px $nav-border;
+            margin-top: 0px;
+        }
+    }
+
+    .head-nopull {
+        // optional css wrapper to prevent pulling the nav above the head-bg
+        @media (min-width: $screen-md-min) {
+            .head-navbar {
+                margin-top: 0;
+            }
+        }
+    }
+
+
+/* The button used to show / hide the nav on small screens
+------------------------------------*/
+
+    .navbar-toggle {
+
+        @media (min-width: $screen-md-min) {
+            display: none;
+        }
+
+        @media (max-width: $screen-sm-max) {
+            margin: -40px 0 6px 0;
+            display: block;
+        }
+
+        .fa {
+            font-size: 28px;
+        }
+
+        @media (max-width: round($screen-sm-max /2)) {
+            // on very small screens use a smaller button
+            // otherwise the button quickly becomes larger than the head itself
+            margin: -30px 0 6px 0;
+            .fa {
+                font-size: 14px;
+            }
+        }
+
+        border: none;
+        border-radius: 0;
+        background:  $nav-toggle;
+        padding: 2px 8px 2px 8px;
+        color: $nav-toggle-text;
+        z-index: 100;
+        position: relative;
+        float: right;
+
+        &:hover {
+            background:  $nav-toggle-hover;
+        }
+    }
+
+
+/* Responsive navbar
+------------------------------------*/
 
 .navbar-nav {
 
@@ -243,7 +237,7 @@ $nav-sub-color-active: $nav-text !default;
         }
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: $screen-md-min) {
         float: right;
 
         li.dropdown:hover > .dropdown-menu {
@@ -276,7 +270,7 @@ $nav-sub-color-active: $nav-text !default;
         }
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: $screen-sm-max) {
         margin: 0;
         float: none !important;
 
@@ -361,8 +355,13 @@ $nav-sub-color-active: $nav-text !default;
         }
     }
 
+    #searchContentHeader > span > button {
+        // improve some spacing on the search button
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
 
-    @media (min-width: 768px){
+    @media (min-width: $screen-sm-min){
         .form-inline .input-group .form-control {
             width: auto;
         }
@@ -387,7 +386,10 @@ $nav-sub-color-active: $nav-text !default;
     }
 
 }
-/* end nav */
+
+
+/* Dropdown menus
+------------------------------------*/
 
 .dropdown-menu {
     border: none;
@@ -454,7 +456,7 @@ $nav-sub-color-active: $nav-text !default;
         content: "\f107";
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: $screen-md-min) {
         min-width: 200px;
         z-index: 9999 !important;
 
@@ -469,7 +471,7 @@ $nav-sub-color-active: $nav-text !default;
         }
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: $screen-sm-max) {
         position: static;
         box-shadow: none;
         float: none;
@@ -501,6 +503,8 @@ $nav-sub-color-active: $nav-text !default;
         }
     }
 }
+
+
 
 
 }
@@ -548,7 +552,7 @@ $nav-sub-color-active: $nav-text !default;
         margin-bottom: 0;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: $screen-md-min) {
         div.dropdown-menu {
             width: 100%;
             position: absolute;
@@ -581,7 +585,7 @@ $nav-sub-color-active: $nav-text !default;
             border-top: 1px solid $nav-border;
         }
 
-        @media (max-width: 991px) {
+        @media (max-width: $screen-md-min) {
             li > a {
                 border-right: none;
                 border-left: none;
@@ -591,65 +595,104 @@ $nav-sub-color-active: $nav-text !default;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Breadcrumb
+/* Breadcrumbs
 ------------------------------------*/
 
 .breadcrumbs {
-  overflow: hidden;
-  padding: 10px 0 6px;
-  border-bottom: solid 1px $grey-lighter;
-  background: $nav-beadcrump-bg;
-  h1 {
-    color: $nav-text;
-    font-size: 22px;
-    margin-top: 8px;
-  }
-}
+    overflow: hidden;
+    padding: 10px 0 6px;
+    border-bottom: solid 1px $nav-border;
+    background: $nav-beadcrump-bg;
 
-.breadcrumb {
-  top: 10px;
-  padding-right: 0;
-  background: none;
-  position: relative;
-  a {
-    color: #777;
-  }
-  li {
-    &.active, a:hover {
-      color: $main-theme;
-      text-decoration: none;
+    h1 {
+      color: $nav-text;
+      font-size: 22px;
+      margin-top: 8px;
     }
-  }
-}
 
-@media (max-width: 550px) {
-  .breadcrumbs {
-    h1.pull-left, ul.pull-right {
-      width: 100%;
-      text-align: center;
-    }
-    h1.pull-left {
-      margin-bottom: 0;
-    }
     .breadcrumb {
-      top: 0;
-      margin-bottom: 10px;
+        top: 10px;
+        padding-right: 0;
+        background: none;
+        position: relative;
+        a {
+            color: $nav-text;
+        }
+        li {
+            &.active, 
+            a:hover {
+                color: $nav-text-hover;
+                text-decoration: none;
+            }
+        }
     }
-  }
+
+    .badge-user {
+        // Special badge used for indicating the current user */
+        color: $nav-bg;
+        background: $nav-text;
+        font-family: $font-content;
+        font-weight: 400;
+        font-size: 12px;
+        padding: 3px 7px;
+        top: -9px;
+        left: 4px;
+        position: relative;
+        border-radius: 4px; 
+    }
+
+    @media (max-width: round($screen-sm-max)) {
+        // Hide breadcrumps on small screens
+        .breadcrumb {
+            display: none;
+        }
+    }
+
+    @media (max-width: round($screen-md-min / 2)) {
+        // Headline is centered on very small screens
+        h1.pull-left, 
+        ul.pull-right {
+            width: 100%;
+            text-align: center;
+        }
+
+        h1.pull-left {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/* "Back to top" icon on the lower right of display.
+------------------------------------*/
+
+#topcontrol {
+  color: $text-light;
+  background: $text-dark;
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  position: relative;
+  right: 14px !important;
+  bottom: 11px !important;
+  border-radius: 3px !important;
+}
+
+#topcontrol:hover {
+  background-color: $main-theme;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#topcontrol:after {
+  top: -2px;
+  left: 8.5px;
+  content: "\f106";
+  position: absolute;
+  text-align: center;
+  font-family: FontAwesome;
 }
 
 
@@ -658,128 +701,165 @@ $nav-sub-color-active: $nav-text !default;
 
 
 
-/*Sidebar Menu v1*/
 
-.sidebar-nav-v1 {
-  li {
-    padding: 0;
-    a {
-      display: block;
-      padding: 8px 30px 8px 10px;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-  > li.active {
-    background: #717984;
-    &:hover {
-      background: #717984;
-      border-color: #ddd;
-    }
-    border-color: #ddd;
-    &:focus {
-      border-color: #ddd;
-    }
-    > a {
-      color: #fff;
-    }
-  }
-}
 
-ul.sidebar-nav-v1 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sidebar navigation
+------------------------------------*/
+
+.sidebar-nav {
     li {
-        background-color: $nav-left-bg;
-        a, &.list-toggle:after {
+        background-color: $nav-bg;
+        padding: 0;
+
+        a {
+            display: block;
+            padding: 8px 30px 8px 10px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    li {
+        ul {
+            padding: 0;
+            list-style: none;
+            background: #f8f8f8;
+        }
+
+        &.active ul a {
+            background: #f8f8f8;
+        }
+
+        ul a {
+            color: #555;
+            font-size: 12px;
+            border-top: solid 1px #ddd;
+            padding: 6px 30px 6px 17px;
+        }
+    }
+
+    .list-toggle {
+        
+        &:after {
+            top: 7px;
+            right: 10px;
+            color: #777;
+            font-size: 14px;
+            content: "\f105";
+            position: absolute;
+            font-weight: normal;
+            display: inline-block;
+            font-family: FontAwesome;
+        }
+
+        &.active:after {
+          color: #fff;
+          content: "\f107";
+        }
+    }
+
+    li {
+        a, 
+        &.list-toggle:after {
           color: $nav-left-color;             
         }
-        a, &.active ul a{
-        background-color: $nav-left-bg;
-        &.active, &:hover{
-        background: $nav-left-bg-hover;
-        color: $nav-left-color-hover;
-        transition: all 0.5s;
+
+        a, 
+        &.active ul a{
+            background-color: $nav-left-bg;
+
+            &.active, &:hover{
+                background: $nav-left-bg-hover;
+                color: $nav-left-color-hover;
+                transition: all 0.5s;
+            }
         }
-        }
+
         //First level
-        a.accordion-toggle, .list-group-item.active{
-        background-color: $nav-left-bg-active;
-        border: none;
-        color: $nav-left-color-active;
-        transition: all 0.5s;               
-        &:hover{
-        background: $nav-left-bg-hover;
-        color: $nav-left-color-hover;
-        transition: all 0.5s;
-        }
-        a{
-          background: $white;
-        }
+        a.accordion-toggle, 
+        .list-group-item.active {
+            background-color: $nav-left-bg-active;
+            border: none;
+            color: $nav-left-color-active;
+            transition: all 0.5s;
+                       
+            &:hover {
+                background: $nav-left-bg-hover;
+                color: $nav-left-color-hover;
+                transition: all 0.5s;
+            }
+
+            a {
+              background: $white;
+            }
+
+            //Second and further level
+            a.accordion-toggle, .active a {
+                background-color: $main-theme;
+                color: set-text-color($main-theme);  
+            
+                &:hover{
+                   background-color: $main-theme-hover;
+                   color: set-text-color($main-theme-hover);
+                   transition: all 0.5s;
+                }                   
+            }   
                 
-        //Second and further level
-        a.accordion-toggle, .active a{
-        background-color: $main-theme;
-        color: set-text-color($main-theme);                 
-        &:hover{
-           background-color: $main-theme-hover;
-           color: set-text-color($main-theme-hover);
-           transition: all 0.5s;
-        }                   
+            &.collapsed{
+                background-color: $nav-left-bg;
+                color: $nav-left-color;
+            }
         }       
-        &.collapsed{
-        background-color: $nav-left-bg;
-        color: $nav-left-color;
+    }
+
+    ul li:hover a,
+    ul li.active a {
+
+      color: $main-theme;
+    }
+
+    > li.active {
+        background: #717984;
+        border-color: #ddd;
+
+        &:hover {
+            background: #717984;
+            border-color: #ddd;
         }
-        }       
+
+        &:focus {
+            border-color: #ddd;
+        }
+
+        > a {
+            color: #fff;
+        }
     }
 }
 
-/*Sidebar Sub Navigation*/
-
-.sidebar-nav-v1 li {
-  ul {
-    padding: 0;
-    list-style: none;
-    background: #f8f8f8;
-  }
-  &.active ul a {
-    background: #f8f8f8;
-  }
-  ul a {
-    color: #555;
-    font-size: 12px;
-    border-top: solid 1px #ddd;
-    padding: 6px 30px 6px 17px;
-  }
-}
-
-/* Sidebar Sub Navigation
-------------------------------------*/
-.sidebar-nav-v1 ul li:hover a,
-.sidebar-nav-v1 ul li.active a {
-  color: $main-theme;
-}
-
-/*Sidebar List */
-
-.list-group-item:first-child,
-.list-group-item:last-child {
-  border-radius: 0;
-}
-
-.list-toggle:after {
-    top: 7px;
-    right: 10px;
-    color: #777;
-    font-size: 14px;
-    content: "\f105";
-    position: absolute;
-    font-weight: normal;
-    display: inline-block;
-    font-family: FontAwesome;
-}
-
-.list-toggle.active:after {
-  color: #fff;
-  content: "\f107";
-}

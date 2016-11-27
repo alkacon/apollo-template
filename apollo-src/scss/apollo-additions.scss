@@ -23,49 +23,6 @@ span.label {
     border-radius: 0;
 }
 
-/* Special badge used for indicating the current user */
-span.badge-user {
-    color: $text-light;
-    background: $text-dark;
-    font-family: $font-content;
-    font-weight: 400;
-    font-size: 12px;
-    padding: 3px 7px;
-    top: -9px;
-    left: 4px;
-    position: relative;
-    border-radius: 4px; 
-}
-
-/*  "Back to top" icon on the lower right of display. */
-#topcontrol {
-  color: $text-light;
-  background: $text-dark;
-  z-index: 99;
-  width: 30px;
-  height: 30px;
-  font-size: 20px;
-  position: relative;
-  right: 14px !important;
-  bottom: 11px !important;
-  border-radius: 3px !important;
-}
-
-#topcontrol:hover {
-  background-color: $main-theme;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-#topcontrol:after {
-  top: -2px;
-  left: 8.5px;
-  content: "\f106";
-  position: absolute;
-  text-align: center;
-  font-family: FontAwesome;
-}
-
 /* Font Awesome Icon Styles */
 i.icon-detail {
     color: $main-theme;
