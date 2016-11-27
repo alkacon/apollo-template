@@ -2,49 +2,21 @@
 /* Variables
 ------------------------------------*/
 
-$nav-theme:         $main-theme !default; // used for 1st level text and big colored border above / below menus
-$nav-text:          $gray-darker !default; // standard text color of the nav menu entries
-$nav-text-hover:    $nav-theme !default; // hover text color of the nav menu entries
-$nav-bg:            $white !default; // standard background of the nav menu entries
-$nav-bg-hover:      $grey-light !default;  // hover background of the nav menu entries
-$nav-active:        $nav-text !default; // the currently active / selected nav entry (text)
-$nav-active-bg:     $grey-light !default; // the currently active / selected nav entry (background)
-$nav-border:        $grey !default;
+$nav-theme:         $main-theme !default;   // used for 1st level text and big colored border above / below menus
+$nav-text:          $gray-darker !default;  // standard text color of the nav menu entries
+$nav-text-hover:    $nav-theme !default;    // hover text color of the nav menu entries
+$nav-bg:            $white !default;        // standard background of the nav menu entries
+$nav-bg-hover:      $grey-light !default;   // hover background of the nav menu entries
+$nav-active:        $nav-text !default;     // the currently active / selected nav entry (text)
+$nav-active-bg:     $grey-light !default;   // the currently active / selected nav entry (background)
+$nav-border:        $grey !default;         // the border color for the navigation
 
-$nav-header-bg:     $white !default;
-$nav-beadcrump-bg:  $grey-lighter !default;
+$nav-header-bg:     $nav-bg !default;       // background of the main header
+$nav-beadcrump-bg:  $grey-lighter !default; // background of the breadcrumps
 
-
-// colors for the "nav-toggle" 
-// this is the button displayed on small screens to show / hide the navigation
-$nav-toggle:         $nav-theme !default;
-$nav-toggle-text:    $white !default;
-$nav-toggle-hover:   $blue !default;
-
-
-
-$nav-active-color: $orange !default;
-$search-bg: $nav-border !default;
-$nav-main-color-active: $main-theme !default;
-
-$nav-main-bg: $white !default;
-$nav-main-color: $main-theme !default;
-$nav-main-bg-hover: $white !default;
-$nav-main-bg-active: $white !default;
-$nav-main-color-active: $main-theme !default;
-
-$nav-left-bg: $white !default;
-$nav-left-color: $nav-text !default;
-$nav-left-bg-hover: $white !default;
-$nav-left-color-hover: $nav-text-hover !default;
-$nav-left-bg-active: $nav-text !default;
-$nav-left-color-active: $white !default;
-
-$nav-sub-color: $nav-text !default;
-$nav-sub-bg-hover: $nav-border !default;
-$nav-sub-color-hover: $nav-text-hover !default;
-$nav-sub-bg-active: $nav-border !default;
-$nav-sub-color-active: $nav-text !default;
+$nav-toggle:         $nav-theme !default;   // colors for the "nav-toggle" 
+$nav-toggle-text:    $white !default;       // this is the button displayed on small screens to 
+$nav-toggle-hover:   $blue !default;        // show / hide the navigation
 
 
 /* The Apollo header
@@ -400,7 +372,7 @@ $nav-sub-color-active: $nav-text !default;
         > a {
             border-bottom: 1px solid $nav-border;
             background-color: $nav-bg;
-            color: $nav-sub-color;
+            color: $nav-text;
             padding: 5px 25px;
 
             &:focus,
@@ -417,7 +389,7 @@ $nav-sub-color-active: $nav-text !default;
 
             &:focus,
             &:hover {
-                color: $nav-sub-color-hover;
+                color: $nav-text-hover;
             }
         }
     }
@@ -570,7 +542,7 @@ $nav-sub-color-active: $nav-text !default;
             border: 1px solid $nav-border;
             border-top: none;
             background-color: $nav-bg;
-            color: $nav-sub-color;
+            color: $nav-text;
             padding: 5px 25px;
             margin: 0;
 
@@ -696,71 +668,59 @@ $nav-sub-color-active: $nav-text !default;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Sidebar navigation
 ------------------------------------*/
 
 .sidebar-nav {
+
+    li.active,
     li {
-        background-color: $nav-bg;
+        font-size: 13px;
         padding: 0;
+        border-color: $nav-border;
+        background: $nav-bg;
 
         a {
+            color: $nav-text;
             display: block;
-            padding: 8px 30px 8px 10px;
+            padding: 6px 20px 6px 10px;
+
+            &:focus {
+                color: $nav-text;
+            }
 
             &:hover {
+                color: $nav-text-hover;
+                background: $nav-bg-hover;
                 text-decoration: none;
             }
         }
-    }
 
-    li {
         ul {
             padding: 0;
             list-style: none;
-            background: #f8f8f8;
+
+            li.active a,
+            li a {
+                border-color: $nav-border;
+                border-top-style: solid;          
+                border-top-width: 1px; 
+                padding-left: 20px;
+            }
         }
 
-        &.active ul a {
-            background: #f8f8f8;
+        &:first-child,
+        &:last-child{
+            border-radius: 0;
         }
+    }
 
-        ul a {
-            color: #555;
-            font-size: 12px;
-            border-top: solid 1px #ddd;
-            padding: 6px 30px 6px 17px;
+    li.active {
+        background: $nav-active-bg;
+         
+        &:hover {
+            border-color: $nav-border;
+            background: $nav-bg-hover;
         }
     }
 
@@ -769,7 +729,7 @@ $nav-sub-color-active: $nav-text !default;
         &:after {
             top: 7px;
             right: 10px;
-            color: #777;
+            color: $nav-text;
             font-size: 14px;
             content: "\f105";
             position: absolute;
@@ -779,86 +739,8 @@ $nav-sub-color-active: $nav-text !default;
         }
 
         &.active:after {
-          color: #fff;
-          content: "\f107";
-        }
-    }
-
-    li {
-        a, 
-        &.list-toggle:after {
-          color: $nav-left-color;             
-        }
-
-        a, 
-        &.active ul a{
-            background-color: $nav-left-bg;
-
-            &.active, &:hover{
-                background: $nav-left-bg-hover;
-                color: $nav-left-color-hover;
-                transition: all 0.5s;
-            }
-        }
-
-        //First level
-        a.accordion-toggle, 
-        .list-group-item.active {
-            background-color: $nav-left-bg-active;
-            border: none;
-            color: $nav-left-color-active;
-            transition: all 0.5s;
-                       
-            &:hover {
-                background: $nav-left-bg-hover;
-                color: $nav-left-color-hover;
-                transition: all 0.5s;
-            }
-
-            a {
-              background: $white;
-            }
-
-            //Second and further level
-            a.accordion-toggle, .active a {
-                background-color: $main-theme;
-                color: set-text-color($main-theme);  
-            
-                &:hover{
-                   background-color: $main-theme-hover;
-                   color: set-text-color($main-theme-hover);
-                   transition: all 0.5s;
-                }                   
-            }   
-                
-            &.collapsed{
-                background-color: $nav-left-bg;
-                color: $nav-left-color;
-            }
-        }       
-    }
-
-    ul li:hover a,
-    ul li.active a {
-
-      color: $main-theme;
-    }
-
-    > li.active {
-        background: #717984;
-        border-color: #ddd;
-
-        &:hover {
-            background: #717984;
-            border-color: #ddd;
-        }
-
-        &:focus {
-            border-color: #ddd;
-        }
-
-        > a {
-            color: #fff;
+              color: $nav-text;
+              content: "\f107";
         }
     }
 }
