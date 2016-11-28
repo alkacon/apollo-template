@@ -9,15 +9,16 @@ $nav-bg:            $white !default;        // standard background of the nav me
 $nav-bg-hover:      $grey-light !default;   // hover background of the nav menu entries
 $nav-active:        $nav-text !default;     // the currently active / selected nav entry (text)
 $nav-active-bg:     $grey-light !default;   // the currently active / selected nav entry (background)
-$nav-border:        $grey !default;         // the border color for the navigation
+$nav-border:        $grey-light !default;         // the border color for the navigation
 
 $nav-header-bg:     $nav-bg !default;       // background of the main header
 $nav-beadcrump-bg:  $grey-lighter !default; // background of the breadcrumps
 
-$nav-toggle:         $nav-theme !default;   // colors for the "nav-toggle" 
-$nav-toggle-text:    $white !default;       // this is the button displayed on small screens to 
-$nav-toggle-hover:   $blue !default;        // show / hide the navigation
+$nav-toggle:        $nav-theme !default;    // colors for the "nav-toggle" 
+$nav-toggle-text:   $white !default;        // this is the button displayed on small screens to 
+$nav-toggle-hover:  $blue !default;         // show / hide the navigation
 
+$nav-shadow:        $dropshadow !default;   // The shadow effect used
 
 /* The Apollo header
 ------------------------------------*/
@@ -351,6 +352,8 @@ $nav-toggle-hover:   $blue !default;        // show / hide the navigation
         border-top: solid 2px $nav-theme;
         border-bottom: solid 2px $nav-theme;
         z-index: 100;
+        -webkit-box-shadow: 0 6px 12px $nav-shadow;
+        box-shadow: 0 6px 12px $nav-shadow;
 
         form {
             margin: 0;  
@@ -441,6 +444,9 @@ $nav-toggle-hover:   $blue !default;        // show / hide the navigation
         > li a {
             border-bottom: solid 1px $nav-border;
         }
+
+        -webkit-box-shadow: 0 6px 12px $nav-shadow;
+        box-shadow: 0 6px 12px $nav-shadow;
     }
 
     @media (max-width: $screen-sm-max) {
@@ -613,7 +619,7 @@ $nav-toggle-hover:   $blue !default;        // show / hide the navigation
         border-radius: 4px; 
     }
 
-    @media (max-width: round($screen-sm-max)) {
+    @media (max-width: $screen-sm-max) {
         // Hide breadcrumps on small screens
         .breadcrumb {
             display: none;
@@ -672,13 +678,26 @@ $nav-toggle-hover:   $blue !default;        // show / hide the navigation
 ------------------------------------*/
 
 .sidebar-nav {
+    border: 1px solid $nav-border;
+
+    > li.active,
+    > li {
+        &:first-child {
+            // remove top border from the very first element
+            border-top: none;
+        }
+    }
 
     li.active,
     li {
+        background: $nav-bg;
+        border-top: 1px solid $nav-border;
+        border-bottom: none; // remove all boostrap default borders
+        border-left: none;   // remove all boostrap default borders
+        border-right: none;  // remove all boostrap default borders
+        margin-bottom: 0;    // remove boostrap default margin
         font-size: 13px;
         padding: 0;
-        border-color: $nav-border;
-        background: $nav-bg;
 
         a {
             color: $nav-text;
@@ -700,12 +719,10 @@ $nav-toggle-hover:   $blue !default;        // show / hide the navigation
             padding: 0;
             list-style: none;
 
-            li.active a,
-            li a {
-                border-color: $nav-border;
-                border-top-style: solid;          
-                border-top-width: 1px; 
-                padding-left: 20px;
+            li.active,
+            li {
+                border: none;
+                border-top: 1px solid $nav-border;
             }
         }
 
@@ -713,9 +730,43 @@ $nav-toggle-hover:   $blue !default;        // show / hide the navigation
         &:last-child{
             border-radius: 0;
         }
+
+
+        > ul {
+            // add padding for 2nd level
+            li.active a,
+            li a {
+                padding-left: 20px;
+            }
+        }
+
+        > ul > li.list-group-item > ul {
+            // add padding for 3rd level
+            li.active a,
+            li a {
+                padding-left: 40px;
+            }
+        }
+
+        > ul > li.list-group-item > ul > li.list-group-item > ul {
+            // add padding for 4th level
+            li.active a,
+            li a {
+                padding-left: 60px;
+            }
+        }
     }
 
     li.active {
+        // override boostrap default highlighting
+        &:hover {
+            border-color: $nav-border;
+            background: $nav-bg;
+        }
+    }
+
+    li.currentpage {
+        // highlight the current page
         background: $nav-active-bg;
          
         &:hover {
@@ -725,7 +776,7 @@ $nav-toggle-hover:   $blue !default;        // show / hide the navigation
     }
 
     .list-toggle {
-        
+
         &:after {
             top: 7px;
             right: 10px;
@@ -736,12 +787,23 @@ $nav-toggle-hover:   $blue !default;        // show / hide the navigation
             font-weight: normal;
             display: inline-block;
             font-family: FontAwesome;
+            pointer-events: none;
         }
 
         &.active:after {
-              color: $nav-text;
-              content: "\f107";
+            pointer-events: none;
+            color: $nav-text;
+            content: "\f107";
         }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        // remove bootstap gutter on small screens
+        // we expect to be in "fill width" mode here 
+        margin-left: -15px;
+        margin-right: -15px;
+        border-left: none;
+        border-right: none;
     }
 }
 
