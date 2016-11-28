@@ -31,6 +31,9 @@
       <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
         none:%(key.apollo.section.image.effect.none)|
+        ap-shadow:%(key.apollo.section.image.effect.shadownoanim)| 
+        bo-1 bo-grey-lightest p-3:%(key.apollo.section.image.effect.bordered)|
+        ap-shadow bo-1 bo-grey-lightest p-3:%(key.apollo.section.image.effect.shadowbordered)|
         ap-shadow-animation:%(key.apollo.section.image.effect.shadow)|
         ap-inset-animation:%(key.apollo.section.image.effect.inset)|
         ap-raise-animation:%(key.apollo.section.image.effect.raise)|

@@ -7,18 +7,24 @@
 <%@ attribute name="mode" type="java.lang.String" required="true" 
 	description="Supported values are 'wrapContainer' and 'skipTemplatePart'."%>
 
-<%@ variable name-given="containerSuffix" scope="AT_END" declare="true" %>
-<%@ variable name-given="containerTypes" scope="AT_END" declare="true" %>
-<%@ variable name-given="megamenuFilename" scope="AT_END" declare="true" %>
+<%@ variable name-given="containerName" scope="NESTED" declare="true" 
+	description="The name of the main template container. This variable gets exported to requestScope." %>
+<%@ variable name-given="containerTypes" scope="NESTED" declare="true"
+	description="The types of the main template container. This variable gets exported to requestScope." %>
+<%@ variable name-given="megamenuFilename" scope="NESTED" declare="true"
+	description="The name of the megamenu file. This variable gets exported to requestScope." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
+<c:set var="templateContainerName" value="${requestScope.containerName}" />
+<c:set var="templateContainerTypes" value="${requestScope.containerTypes}" />
+
 <c:set var="megamenuFilename">mega.menu</c:set>
 <c:set var="isMegaMenuRequest">${fn:endsWith(cms.requestContext.uri, megamenuFilename)}</c:set>
-<c:set var="containerSuffix">${isMegaMenuRequest ? "-megamenu" : ""}</c:set>
-<c:set var="containerTypes">${isMegaMenuRequest ? ",row" : ""}</c:set>
+<c:set var="containerName">${templateContainerName}${isMegaMenuRequest ? "-megamenu" : ""}</c:set>
+<c:set var="containerTypes">${templateContainerTypes}${isMegaMenuRequest ? ",row" : ""}</c:set>
 
 <c:if test="${mode == 'wrapContainer' && !cms.isOnlineProject && isMegaMenuRequest && !param.ajaxreq}"><c:set var="wrapContainer" value="true" /></c:if>
 <c:if test="${mode == 'skipTemplatePart' && param.ajaxreq}"><c:set var="skipTemplatePart" value="true" /></c:if>
@@ -55,3 +61,7 @@
     </div>
   </div>
 </c:if>
+
+<c:set var="megamenuFilename" scope="request" >${megamenuFilename}</c:set>
+<c:set var="containerName" scope="request" >${containerName}</c:set>
+<c:set var="containerTypes" scope="request" >${containerTypes}</c:set>

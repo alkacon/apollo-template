@@ -30,8 +30,8 @@
             <c:set var="animationClass" value="ap-kenburns-animation " />
         </c:when>
         <c:when test="${showCalendar}">
-            <c:set var='divStart' value='<div class="col-sm-3 col-lg-2 hidden-xs teaser-visual">' />
-            <c:set var='divCenter' value='</div><div class="col-sm-9 col-lg-10 teaser-body">' />
+            <c:set var='divStart' value='<div class="fixcol-sm-125 hidden-xs teaser-visual">' />
+            <c:set var='divCenter' value='</div><div class="col-xs-12 fixcol-sm-125-rest teaser-body">' />
             <c:set var='divEnd' value='</div>' />
             <c:set var="animationClass" value="ap-raise-animation " />
         </c:when>
@@ -61,7 +61,7 @@
                             </div>
                             <h3>
                                 <fmt:formatDate value="${cms:convertDate(content.value.Date)}"
-                                    pattern="dd" type="date" />
+                                    pattern="d" type="date" />
                             </h3>
                             <div class="monthYear">
                                 <fmt:formatDate value="${cms:convertDate(content.value.Date)}"

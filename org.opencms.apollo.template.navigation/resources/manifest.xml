@@ -26,7 +26,7 @@
 		<resources>
 			<resource uri="/system/modules/org.opencms.apollo.template.navigation/"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/nav-breadcrumb.tag"/>
-			<resource uri="/system/modules/org.opencms.apollo/tags/nav-main.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/nav-head.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-folder.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-folder.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-head.jsp"/>
@@ -361,6 +361,10 @@
 			<datecreated>Sun, 27 Nov 2016 11:12:05 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Creates the breadcrump navigation]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
@@ -370,14 +374,18 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/tags/nav-main.tag</source>
-			<destination>system/modules/org.opencms.apollo/tags/nav-main.tag</destination>
+			<source>system/modules/org.opencms.apollo/tags/nav-head.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/nav-head.tag</destination>
 			<type>jsp</type>
 			<uuidstructure>bfe177c5-b495-11e6-aa85-0242ac11002b</uuidstructure>
 			<uuidresource>bfe177c6-b495-11e6-aa85-0242ac11002b</uuidresource>
 			<datecreated>Sun, 27 Nov 2016 11:36:34 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Creates the head navigation]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>

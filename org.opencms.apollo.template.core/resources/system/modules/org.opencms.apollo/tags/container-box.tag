@@ -4,12 +4,22 @@
   description="Generates box HTML for layout rows"  
   import="org.opencms.jsp.util.CmsJspStandardContextBean, org.opencms.xml.containerpage.CmsContainerBean, java.lang.String" %>
 
-<%@attribute name="label" type="java.lang.String" required="true" %>
-<%@attribute name="boxType" type="java.lang.String" required="true" %>
-
-<%@attribute name="role" type="java.lang.String" required="false" %>
-<%@attribute name="type" type="java.lang.String" required="false" %>
-<%@attribute name="detailView" type="java.lang.String" required="false" %>
+<%@attribute name="label" type="java.lang.String" required="true" 
+		description="Usually the name of the element or the group."%>
+<%@attribute name="boxType" type="java.lang.String" required="true" 
+		description="Determines to type of box to render. 
+		Possible values are [
+		container-box: Render a standard container placeholder.
+		detail-placeholder: Render a detailpage specific placeholder.
+		model-start: Renders the opening part of a model placeholder box.
+		model-end: Renders the closing part of a model placeholder box.
+		]"%>
+<%@attribute name="role" type="java.lang.String" required="false" 
+		description="The role of the user. Used for displaying in the box." %>
+<%@attribute name="type" type="java.lang.String" required="false" 
+		description="The type of elements the container takes." %>
+<%@attribute name="detailView" type="java.lang.String" required="false" 
+		description="A boolean that indicates if this is a detail container." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

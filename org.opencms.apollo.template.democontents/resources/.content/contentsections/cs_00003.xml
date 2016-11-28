@@ -2,10 +2,10 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[Apollo Demo Website]]></Headline>
+    <Headline><![CDATA[Apollo Demo]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Example responsive website using the ready-to-use <strong>Apollo Template</strong> based on Bootstrap.</p>]]></content>
+      <content><![CDATA[<p>Example responsive website build with&nbsp;the&nbsp;<strong>Apollo Template</strong> based on Bootstrap.</p>]]></content>
     </Text>
     <Link>
       <Text><![CDATA[Demo Website]]></Text>

@@ -4,8 +4,10 @@
     trimDirectiveWhitespaces="true" 
     description="Formats categories of the content as unordered list" %>
 
-<%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="true" %>
-<%@ attribute name="showbigicon" type="java.lang.Boolean" required="true" %>
+<%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="true" 
+	description="The categories to be listed." %>
+<%@ attribute name="showbigicon" type="java.lang.Boolean" required="true" 
+	description="If true, a big icon is shown in front of the row, small otherwise." %>
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

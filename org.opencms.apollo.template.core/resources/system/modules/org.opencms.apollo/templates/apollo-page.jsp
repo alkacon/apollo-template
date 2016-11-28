@@ -10,6 +10,9 @@
 <html lang="en">
 <head>
 
+<c:set var="containerName" value="page-complete" scope="request" /> <%-- Standard container name (can be modified by megamenu) --%>
+<c:set var="containerTypes" value="area" scope="request" /> <%-- Standard container types (can be modified by megamenu) --%>
+
 <apollo:megamenu mode="skipTemplatePart" >
   <c:set var="titleprefix"><cms:property name="apollo.title.prefix" file="search" default="" /></c:set>
   <c:set var="titlesuffix"><cms:property name="apollo.title.suffix" file="search" default="" /></c:set>
@@ -60,10 +63,10 @@
 </c:if>
 
 <apollo:megamenu mode="wrapContainer">
-    <%-- Values containerSuffix and containerTypes are defined by the mega menu tag --%>
+    <%-- Values containerName and containerTypes are defined by the mega menu tag --%>
     <cms:container 
-        name="page-complete${containerSuffix}" 
-        type="area${containerTypes}" 
+        name="${requestScope.containerName}" 
+        type="${requestScope.containerTypes}" 
         width="1200" 
         maxElements="50" 
         editableby="ROLE.DEVELOPER">

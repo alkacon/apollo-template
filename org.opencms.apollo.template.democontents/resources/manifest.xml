@@ -664,7 +664,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Demo Website]]></value>
+					<value><![CDATA[Apollo Demo]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -739,29 +739,46 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>.content/contentsections/cs_00008.xml</source>
+			<destination>.content/contentsections/cs_00008.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>86890f63-b54c-11e6-ab4e-0242ac11002b</uuidstructure>
+			<uuidresource>86890f64-b54c-11e6-ab4e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 28 Nov 2016 09:24:56 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Footer (c) Alkacon Software GmbH & Co. KG]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/contentsections/cs_00009.xml</source>
+			<destination>.content/contentsections/cs_00009.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>435c4b6d-b54d-11e6-ab4e-0242ac11002b</uuidstructure>
+			<uuidresource>435c4b6e-b54d-11e6-ab4e-0242ac11002b</uuidresource>
+			<datecreated>Mon, 28 Nov 2016 09:30:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Footer Built with OpenCms 10.5]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>.content/flexiblecontents</destination>
 			<type>folder</type>
 			<uuidstructure>35114bc1-60f8-11e5-9eef-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 22 Sep 2015 07:04:46 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/flexiblecontents/fc_00001.xml</source>
-			<destination>.content/flexiblecontents/fc_00001.xml</destination>
-			<type>a-flexible</type>
-			<uuidstructure>3512d263-60f8-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>3512d264-60f8-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 07:04:46 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Footer for welcome page]]></value>
-				</property>
-			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
@@ -9866,23 +9883,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/flexiblecontents/fc_00009.xml</source>
-			<destination>apollo-demo/.content/flexiblecontents/fc_00009.xml</destination>
-			<type>a-flexible</type>
-			<uuidstructure>bafa023c-b324-11e6-b319-0242ac11002b</uuidstructure>
-			<uuidresource>bafa023d-b324-11e6-b319-0242ac11002b</uuidresource>
-			<datecreated>Fri, 25 Nov 2016 15:35:01 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Home Design - Colored Spacer Gray]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>apollo-demo/.content/imagegalleries</destination>
 			<type>folder</type>
 			<uuidstructure>54d1593b-8f80-11e5-a6ad-0242ac11002b</uuidstructure>
@@ -12545,7 +12545,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>NavPos</name>
-					<value><![CDATA[703.4219]]></value>
+					<value><![CDATA[691.71484]]></value>
 				</property>
 				<property>
 					<name>NavText</name>
@@ -12625,7 +12625,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>NavPos</name>
-					<value><![CDATA[695.6172]]></value>
+					<value><![CDATA[735.1284]]></value>
 				</property>
 				<property>
 					<name>NavText</name>
@@ -12651,10 +12651,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Home Design]]></value>
-				</property>
-				<property>
-					<name>apollo.theme</name>
-					<value><![CDATA[blue]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -12709,7 +12705,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>NavPos</name>
-					<value><![CDATA[711.22656]]></value>
+					<value><![CDATA[693.666]]></value>
 				</property>
 				<property>
 					<name>NavText</name>
@@ -12825,46 +12821,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>apollo-demo/photography</destination>
-			<type>folder</type>
-			<uuidstructure>589414fa-b31a-11e6-b319-0242ac11002b</uuidstructure>
-			<datecreated>Fri, 25 Nov 2016 14:20:41 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[717.0801]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[Photography]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Photography]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/photography/index.html</source>
-			<destination>apollo-demo/photography/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>5899933f-b31a-11e6-b319-0242ac11002b</uuidstructure>
-			<uuidresource>58999340-b31a-11e6-b319-0242ac11002b</uuidresource>
-			<datecreated>Fri, 25 Nov 2016 14:20:41 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Photography]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>apollo-demo/real-estate</destination>
 			<type>folder</type>
 			<uuidstructure>fe98d448-b238-11e6-ade4-0242ac11002b</uuidstructure>
@@ -12873,7 +12829,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>NavPos</name>
-					<value><![CDATA[680.0078]]></value>
+					<value><![CDATA[735.6162]]></value>
 				</property>
 				<property>
 					<name>NavText</name>
@@ -15382,7 +15338,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:150,h:49]]></value>
+					<value><![CDATA[w:300,h:98]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -15399,7 +15355,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:400,h:100]]></value>
+					<value><![CDATA[w:400,h:97]]></value>
 				</property>
 			</properties>
 			<relations/>

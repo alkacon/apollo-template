@@ -1,7 +1,7 @@
 <%@ tag
-    display-name="nav-main"
+    display-name="nav-head"
     trimDirectiveWhitespaces="true"
-    description="Generates the main navigation." %>
+    description="Generates the head navigation." %>
 
 <%@ attribute name="startlevel" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" 
     description="The start level of the navigation."%>

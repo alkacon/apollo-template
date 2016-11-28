@@ -25,14 +25,11 @@
     <Display>false</Display>
     <NestedContainers>false</NestedContainers>
     <Setting>
-      <PropertyName><![CDATA[istyle]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.style.label)]]></DisplayName>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
       <Widget><![CDATA[selectcombo]]></Widget>
-      <Default><![CDATA[ap-img-v0]]></Default>
-      <WidgetConfig><![CDATA[
-        ap-img-v0:%(key.apollo.section.image.style.plain)|
-        ap-img-v1:%(key.apollo.section.image.style.boldtitle)
-      ]]></WidgetConfig>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[ieffect]]></PropertyName>
@@ -41,7 +38,7 @@
       <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
         none:%(key.apollo.section.image.effect.none)|
-        ap-shadow:%(key.apollo.section.image.effect.shadow)|    
+        ap-shadow:%(key.apollo.section.image.effect.shadownoanim)|    
         bo-radius-10:%(key.apollo.section.image.effect.roundcorners)|
         bo-radius-50p:%(key.apollo.section.image.effect.vignette)|
         bo-1 bo-grey-lightest p-3:%(key.apollo.section.image.effect.bordered)|
@@ -52,20 +49,22 @@
       ]]></WidgetConfig>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[itext]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.label)]]></DisplayName>
-      <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[none]]></Default>
-      <WidgetConfig><![CDATA[
-        none:%(key.apollo.section.image.text.nothing)|
-        title:%(key.apollo.section.image.text.title)|
-        desc:%(key.apollo.section.image.text.description)|
-        copy:%(key.apollo.section.image.text.copy)|
-        title-desc:%(key.apollo.section.image.text.titledescription)|
-        title-copy:%(key.apollo.section.image.text.titlecopy)|
-        desc-copy:%(key.apollo.section.image.text.descriptioncopy)|
-        title-desc-copy:%(key.apollo.section.image.text.titledescriptioncopy)
-      ]]></WidgetConfig>
+      <PropertyName><![CDATA[showcopyright]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.showcopyright)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showsubtitle]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.showsubtitle)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showtext]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.showtext)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
     </Setting>
   </NewFormatter>
 </NewFormatters>

@@ -48,7 +48,7 @@
         </div>
 
         <div class="head-navbar${cms.modelGroupPage and cms.isEditMode ? ' editor' : ''}">
-            <apollo:nav-main 
+            <apollo:nav-head
                 folderUri="${cms.requestContext.folderUri}" 
                 pageUri="${cms.requestContext.uri}" 
                 startlevel="${value.NavStartLevel}" 
