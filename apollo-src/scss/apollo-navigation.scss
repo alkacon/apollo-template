@@ -63,7 +63,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 /* Head background container
 ------------------------------------*/
 
-    .head-bg {
+    .head-container {
         @media (max-width: $screen-sm-max) {
             // remove the margins from the row for small screens
             // this way the head becomes the same size as the navbar, 
@@ -83,22 +83,21 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     }
 
 
-/* Head navbar container, the nav will be pulled over the head-bg
+/* Head navbar container, the nav will be pulled over the head container / content
 ------------------------------------*/
 
     .head-navbar {
         border-bottom: solid 2px $nav-border;
+        pointer-events: none;
 
         @media (min-width: $screen-md-min) {
-            // pull the nav above the head-bg by default
+            // pull the nav above the head by default
             margin-top: -40px;
         }
+    }
 
-        &.editor {
-            // used by head navigation formatter in the model group editor
-            border-top: solid 1px $nav-border;
-            margin-top: 0px;
-        }
+    .head-inline {
+
     }
 
     .head-nopull {
@@ -107,6 +106,15 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             .head-navbar {
                 margin-top: 0;
             }
+        }
+    }
+
+    .editor {
+        .head-inline,
+        .head-navbar {
+            // used by head navigation formatter in the model group editor
+            border-top: solid 1px $nav-border;
+            margin-top: 0px;
         }
     }
 
@@ -157,6 +165,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 ------------------------------------*/
 
 .navbar-nav {
+    pointer-events: all;
 
     > .active > a {
         // the top level menu entry that belongs to the currently opened page
@@ -186,7 +195,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             position: relative;
             bottom: -2px;
             border-bottom: solid 2px transparent;
-            padding: 9px 30px 9px 20px;
+            padding: 9px 20px 9px 20px;
         }
 
         > .search {
