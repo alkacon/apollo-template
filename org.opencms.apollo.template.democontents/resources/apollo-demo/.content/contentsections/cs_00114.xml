@@ -8,4 +8,11 @@
       <content><![CDATA[<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>]]></content>
     </Text>
   </ApolloSection>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Unser Tagebuch]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Na gut normalerweise würde das in Deutsch auch Blog genannt. Aber hier geht es ja um die Demonstration der Übersetzung ;)</p>]]></content>
+    </Text>
+  </ApolloSection>
 </ApolloSections>

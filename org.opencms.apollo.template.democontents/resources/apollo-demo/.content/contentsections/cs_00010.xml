@@ -18,4 +18,21 @@
       <Copyright><![CDATA[pixabay.com]]></Copyright>
     </Image>
   </ApolloSection>
+  <ApolloSection language="de">
+    <Headline><![CDATA[OpenCms kann es einfach!]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/04.jpg]]></target>
+          <uuid>c18da1bd-4705-11e3-8417-000c29d28104</uuid>
+        </link>
+      </Image>
+      <Title><![CDATA[Building]]></Title>
+      <Copyright><![CDATA[pixabay.com]]></Copyright>
+    </Image>
+  </ApolloSection>
 </ApolloSections>

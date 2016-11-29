@@ -4,17 +4,7 @@
   <ApolloNavigation language="en">
     <Title><![CDATA[Apollo Demo side second level navigation]]></Title>
     <NavStartLevel><![CDATA[2]]></NavStartLevel>
-    <LogoImage/>
-    <LogoFullWidth>false</LogoFullWidth>
-    <LogoLink>
-      <link internal="true" type="WEAK">
-        <target><![CDATA[/sites/default/index.html]]></target>
-        <uuid>37a44795-5ab9-11e4-955d-005056b61161</uuid>
-      </link>
-    </LogoLink>
-    <Header name="Header0">
-      <links/>
-      <content/>
-    </Header>
+    <Container>true</Container>
+    <PullNavUp>true</PullNavUp>
   </ApolloNavigation>
 </ApolloNavigations>

@@ -33,6 +33,7 @@
         resource="${startFolder}"
         startLevel="${rootlevel}" 
         endLevel="${rootlevel + 3}"
+        locale="${cms.locale}"
         var="nav" />
 
     <c:set var="navItems" value="${nav.items}" />

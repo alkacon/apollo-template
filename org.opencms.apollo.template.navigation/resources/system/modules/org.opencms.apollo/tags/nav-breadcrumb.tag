@@ -12,7 +12,13 @@
 
 <c:set var="slevel" value="${startlevel.toInteger < 1 ? 1 : startlevel.toInteger}" />
 
-<cms:navigation type="breadCrumb" startLevel="${slevel}" endLevel="-1" var="nav" param="true" />
+<cms:navigation 
+	type="breadCrumb" 
+	startLevel="${slevel}" 
+	endLevel="-1"
+	locale="${cms.locale}"
+	var="nav"
+	param="true" />
 
 <ul class="pull-right breadcrumb">
     <c:forEach items="${nav.items}" var="navElem" varStatus="status">

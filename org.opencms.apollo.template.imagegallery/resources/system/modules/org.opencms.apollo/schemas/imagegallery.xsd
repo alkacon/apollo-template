@@ -29,7 +29,7 @@
 				<default element="Title" value="%(key.apollo.imagegallery.default.Title)" />
 			</defaults>
 			<layouts>
-				<layout element="ImageFolder" widget="VfsFileWidget" configuration="{selectabletypes: 'folder'}}" />
+				<layout element="ImageFolder" widget="VfsFileWidget" configuration="{galleryselect}" />
 			</layouts>
 			<relations />
 			<searchsettings containerPageOnly="true" />

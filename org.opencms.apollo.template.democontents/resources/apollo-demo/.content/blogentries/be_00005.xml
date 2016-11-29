@@ -3,7 +3,7 @@
 <ApolloBlogs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/blog.xsd">
   <ApolloBlog language="de">
     <Title><![CDATA[OpenCms ist mächtig]]></Title>
-    <Date>1456862400000</Date>
+    <Date>1496516400000</Date>
     <Teaser><![CDATA[Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. ]]></Teaser>
     <Paragraph>
       <Text name="Text0">

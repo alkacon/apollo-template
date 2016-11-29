@@ -3,12 +3,18 @@
   body-content="empty"
   description="Searches for images and displays the results with provided searchconfig."%>
 
-<%@ attribute name="config" type="java.lang.String" required="true" %>
-<%@ attribute name="css" type="java.lang.String" required="true" %>
-<%@ attribute name="count" type="java.lang.String" required="true" %>
-<%@ attribute name="page" type="java.lang.String" required="true" %>
-<%@ attribute name="showtitle" type="java.lang.Boolean" required="false" %>
-<%@ attribute name="showcopyright" type="java.lang.Boolean" required="false" %>
+<%@ attribute name="config" type="java.lang.String" required="true" 
+		description="The search configuration string used by the cms:search tag." %>
+<%@ attribute name="css" type="java.lang.String" required="true" 
+		description="Class attributes used in the wrapper of each image in the gallery." %>
+<%@ attribute name="count" type="java.lang.String" required="true" 
+		description="The number of each images loaded with each request." %>
+<%@ attribute name="page" type="java.lang.String" required="true" 
+		description="Used to calculate the offset defining the starting point in the sequence of images." %>
+<%@ attribute name="showtitle" type="java.lang.Boolean" required="false" 
+		description="Determines if the image title will be shown as tooltip and in the gallery-overlay." %>
+<%@ attribute name="showcopyright" type="java.lang.Boolean" required="false" 
+		description="Determines if the copyright text will be shown as tooltip and in the gallery-overlay." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

@@ -6,4 +6,9 @@
     <Label><![CDATA[OpenCms questions]]></Label>
     <Label><![CDATA[Silly questions]]></Label>
   </ApolloTab>
+  <ApolloTab language="de">
+    <Title><![CDATA[FAQ Tab]]></Title>
+    <Label><![CDATA[OpenCms Fragen]]></Label>
+    <Label><![CDATA[Alberne Fragen]]></Label>
+  </ApolloTab>
 </ApolloTabs>

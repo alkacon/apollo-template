@@ -26,4 +26,29 @@
       <!--Categories are read dynamically-->
     </Category>
   </ApolloFaq>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Was ist das Apollo Template?]]></Question>
+    <Date>1472718823214</Date>
+    <Order><![CDATA[600]]></Order>
+    <Paragraph>
+      <Headline><![CDATA[Es ist ein responsives Template für Webseiten basierend auf Bootstrap!]]></Headline>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/samples/36.jpg]]></target>
+            <uuid>b70f1bd7-4785-11e3-ba23-000c29d28104</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
+      </Image>
+    </Paragraph>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+  </ApolloFaq>
 </ApolloFaqs>

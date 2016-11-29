@@ -17,4 +17,20 @@
       </Image>
     </Image>
   </ApolloSection>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Maschine]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p>&nbsp;</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/samples/30.jpg]]></target>
+          <uuid>b4b2b636-4785-11e3-ba23-000c29d28104</uuid>
+        </link>
+      </Image>
+    </Image>
+  </ApolloSection>
 </ApolloSections>

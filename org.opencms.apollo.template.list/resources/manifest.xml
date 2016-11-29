@@ -133,7 +133,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Dynamic loading list ajax element]]></value>
+					<value><![CDATA[Ajax element for dynamic list loading]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>

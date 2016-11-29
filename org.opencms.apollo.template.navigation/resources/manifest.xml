@@ -38,6 +38,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/schemas/navigation.xsd"/>
 			<resource uri="/system/workplace/resources/filetypes/a-navigation.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-navigation_big.png"/>
+			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/navchoiceinline.xsd"/>
 		</resources>
 		<excluderesources/>
 		<parameters/>
@@ -123,7 +124,7 @@
 				</property>
 				<property>
 					<name>cache</name>
-					<value><![CDATA[container-element;uri;user]]></value>
+					<value><![CDATA[container-element;locale;uri;user]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>
@@ -177,7 +178,7 @@
 				</property>
 				<property>
 					<name>cache</name>
-					<value><![CDATA[container-element;uri;user]]></value>
+					<value><![CDATA[container-element;locale;uri;user]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>
@@ -231,7 +232,7 @@
 				</property>
 				<property>
 					<name>cache</name>
-					<value><![CDATA[container-element;uri;user]]></value>
+					<value><![CDATA[container-element;locale;uri;user]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>
@@ -344,6 +345,23 @@
 					<value><![CDATA[XSD for a navigation]]></value>
 				</property>
 			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/schemas/nested</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/schemas/nested/navchoiceinline.xsd</source>
+			<destination>system/modules/org.opencms.apollo/schemas/nested/navchoiceinline.xsd</destination>
+			<type>plain</type>
+			<uuidstructure>99bf3ca9-b629-11e6-bed3-0242ac11002b</uuidstructure>
+			<uuidresource>99bf3caa-b629-11e6-bed3-0242ac11002b</uuidresource>
+			<datecreated>Tue, 29 Nov 2016 11:47:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>

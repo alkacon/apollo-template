@@ -36,7 +36,7 @@
           pagesize: 500 }
     </c:set>
     <c:set var="ajaxLink">
-        <cms:link>%(link.strong:/system/modules/org.opencms.apollo/elements/imagegallery-inner.jsp:9bb25674-8f80-11e5-a6ad-0242ac11002b)</cms:link>
+        <cms:link>%(link.strong:/system/modules/org.opencms.apollo/elements/imagegallery-ajax.jsp:9bb25674-8f80-11e5-a6ad-0242ac11002b)</cms:link>
     </c:set>
     
     <%-- ################################################################################################################## --%>

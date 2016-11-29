@@ -3,15 +3,23 @@
   body-content="empty"
   description="Generates a facet button for use with AJAX forms."%>
 
-<%@ attribute name="field" type="java.lang.String" required="true" %>
-<%@ attribute name="label" type="java.lang.String" required="false" %>
-<%@ attribute name="color" type="java.lang.String" required="false" %>
-<%@ attribute name="deselect" type="java.lang.String" required="false" %>
-<%@ attribute name="searchconfig" type="java.lang.String" required="false" %>
-<%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="false" %>
-<%@ attribute name="render" type="java.lang.Boolean" required="false" %>
+<%@ attribute name="field" type="java.lang.String" required="true" 
+		description="The name of the solr index field that will be used." %>
+<%@ attribute name="label" type="java.lang.String" required="false" 
+		description="The label that the button will show." %>
+<%@ attribute name="color" type="java.lang.String" required="false" 
+	description="The color of the button." %>
+<%@ attribute name="deselect" type="java.lang.String" required="false" 
+		description="The text on the deselection entry in the list." %>
+<%@ attribute name="searchconfig" type="java.lang.String" required="false" 
+		description="The configuration string for the search tag." %>
+<%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="false" 
+		description="The result of a previous search tag usage." %>
+<%@ attribute name="render" type="java.lang.Boolean" required="false" 
+		description="This boolean decides if the list items will be rendered directly or used through the listItems variable." %>
 
-<%@ variable name-given="listItems" scope="AT_END" declare="true" %>
+<%@ variable name-given="listItems" scope="AT_END" declare="true" 
+		description="Stores the resulting list items which can be used for custom facet lists." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

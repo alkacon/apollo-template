@@ -4990,16 +4990,16 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[Die fantastische OpenCms Apollo Demo Seite, präsentiert von Alkacon Software.]]></value>
 				</property>
 				<property>
-					<name>NavInfo</name>
-					<value><![CDATA[ignoreInDefaultNav]]></value>
-				</property>
-				<property>
 					<name>NavPos</name>
 					<value><![CDATA[0.24625]]></value>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Deutsch]]></value>
+					<value><![CDATA[DE]]></value>
+				</property>
+				<property>
+					<name>NavText_de</name>
+					<value><![CDATA[Apollo Demo DE]]></value>
 				</property>
 				<property>
 					<name>Title</name>
@@ -5346,6 +5346,52 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo-de/tagebuch/blog-entries</destination>
+			<type>folder</type>
+			<uuidstructure>52bc526d-b649-11e6-bed3-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 29 Nov 2016 15:34:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.5]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Blog List]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Blog List]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo-de/tagebuch/blog-entries/index.html</source>
+			<destination>apollo-demo-de/tagebuch/blog-entries/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>52beea82-b649-11e6-bed3-0242ac11002b</uuidstructure>
+			<uuidresource>52beea83-b649-11e6-bed3-0242ac11002b</uuidresource>
+			<datecreated>Tue, 29 Nov 2016 15:34:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Blog List]]></value>
+				</property>
+			</properties>
+			<relations>
+				<relation>
+					<id>a2314aef-5c70-11e5-96ab-0242ac11002b</id>
+					<path>/apollo-demo/blog/blog-entries/index.html</path>
+					<type>LOCALE_VARIANT</type>
+				</relation>
+			</relations>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo-de/tagebuch/eintraege</destination>
 			<type>folder</type>
 			<uuidstructure>9849b801-80b6-11e6-9607-0242ac11002b</uuidstructure>
@@ -5382,13 +5428,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<value><![CDATA[Internet-Tagebuch-Einträge]]></value>
 				</property>
 			</properties>
-			<relations>
-				<relation>
-					<id>a2314aef-5c70-11e5-96ab-0242ac11002b</id>
-					<path>/apollo-demo/blog/blog-entries/index.html</path>
-					<type>LOCALE_VARIANT</type>
-				</relation>
-			</relations>
+			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -5458,7 +5498,11 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[Apollo Demo]]></value>
+					<value><![CDATA[Apollo Demo EN]]></value>
+				</property>
+				<property>
+					<name>NavText_de</name>
+					<value><![CDATA[EN]]></value>
 				</property>
 				<property>
 					<name>Title</name>
@@ -6507,18 +6551,14 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<source>apollo-demo/.content/contentsections/cs_00001.xml</source>
 			<destination>apollo-demo/.content/contentsections/cs_00001.xml</destination>
 			<type>a-section</type>
-			<uuidstructure>3c98f51f-5c59-11e5-96ab-0242ac11002b</uuidstructure>
-			<uuidresource>3c98f520-5c59-11e5-96ab-0242ac11002b</uuidresource>
-			<datecreated>Wed, 16 Sep 2015 09:56:44 GMT</datecreated>
+			<uuidstructure>91fc5c3d-b31c-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>91fc5c3e-b31c-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 14:36:37 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[! Default placeholder text]]></value>
-				</property>
-				<property>
-					<name>element.model</name>
-					<value><![CDATA[true]]></value>
+					<value><![CDATA[Home Design - More articles]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8194,14 +8234,14 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<source>apollo-demo/.content/contentsections/cs_00100.xml</source>
 			<destination>apollo-demo/.content/contentsections/cs_00100.xml</destination>
 			<type>a-section</type>
-			<uuidstructure>59519200-f061-11e5-b20f-0242ac11002b</uuidstructure>
-			<uuidresource>59519201-f061-11e5-b20f-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Mar 2016 19:07:40 GMT</datecreated>
+			<uuidstructure>e36f18a1-b316-11e6-b319-0242ac11002b</uuidstructure>
+			<uuidresource>e36f18a2-b316-11e6-b319-0242ac11002b</uuidresource>
+			<datecreated>Fri, 25 Nov 2016 13:55:56 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Yes, You Can!]]></value>
+					<value><![CDATA[Home Design - Imgur picks]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8610,57 +8650,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Home Design: Spotlight article]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/contentsections/cs_00125.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00125.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>e36f18a1-b316-11e6-b319-0242ac11002b</uuidstructure>
-			<uuidresource>e36f18a2-b316-11e6-b319-0242ac11002b</uuidresource>
-			<datecreated>Fri, 25 Nov 2016 13:55:56 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Home Design - (value:Headline)]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/contentsections/cs_00126.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00126.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>9bf3659c-b31a-11e6-b319-0242ac11002b</uuidstructure>
-			<uuidresource>9bf3659d-b31a-11e6-b319-0242ac11002b</uuidresource>
-			<datecreated>Fri, 25 Nov 2016 14:22:34 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Photography: Photography main image]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/contentsections/cs_00127.xml</source>
-			<destination>apollo-demo/.content/contentsections/cs_00127.xml</destination>
-			<type>a-section</type>
-			<uuidstructure>91fc5c3d-b31c-11e6-b319-0242ac11002b</uuidstructure>
-			<uuidresource>91fc5c3e-b31c-11e6-b319-0242ac11002b</uuidresource>
-			<datecreated>Fri, 25 Nov 2016 14:36:37 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Home Design - (value:Headline)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9465,34 +9454,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/faqs/faq_00006.xml</source>
-			<destination>apollo-demo/.content/faqs/faq_00006.xml</destination>
-			<type>a-faq</type>
-			<uuidstructure>c458ae7d-701c-11e6-9a42-0242ac11002b</uuidstructure>
-			<uuidresource>c458ae7e-701c-11e6-9a42-0242ac11002b</uuidresource>
-			<datecreated>Thu, 01 Sep 2016 08:19:13 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[How do you know when you have run out of invisible ink? ]]></value>
-				</property>
-			</properties>
-			<relations>
-				<relation>
-					<id>4ef0bf1b-737f-11e6-ace3-0242ac11002b</id>
-					<path>/.categories/faq/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>67e5e821-737f-11e6-ace3-0242ac11002b</id>
-					<path>/.categories/faq/silly/</path>
-					<type>CATEGORY</type>
-				</relation>
-			</relations>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>apollo-demo/.content/faqs/faq_00007.xml</source>
 			<destination>apollo-demo/.content/faqs/faq_00007.xml</destination>
 			<type>a-faq</type>
@@ -9893,23 +9854,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/imagegalleries/imggal-00001.xml</source>
-			<destination>apollo-demo/.content/imagegalleries/imggal-00001.xml</destination>
-			<type>a-imagegallery</type>
-			<uuidstructure>54d502bd-8f80-11e5-a6ad-0242ac11002b</uuidstructure>
-			<uuidresource>54d502be-8f80-11e5-a6ad-0242ac11002b</uuidresource>
-			<datecreated>Fri, 20 Nov 2015 12:15:04 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Image gallery]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>apollo-demo/.content/imagegalleries/imggal_00001.xml</source>
 			<destination>apollo-demo/.content/imagegalleries/imggal_00001.xml</destination>
 			<type>a-imagegallery</type>
@@ -9921,6 +9865,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[More Images]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/imagegalleries/imggal_00002.xml</source>
+			<destination>apollo-demo/.content/imagegalleries/imggal_00002.xml</destination>
+			<type>a-imagegallery</type>
+			<uuidstructure>54d502bd-8f80-11e5-a6ad-0242ac11002b</uuidstructure>
+			<uuidresource>54d502be-8f80-11e5-a6ad-0242ac11002b</uuidresource>
+			<datecreated>Fri, 20 Nov 2015 12:15:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image gallery]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10782,6 +10743,35 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/modelgroup/modelgroup-00006.html</source>
+			<destination>apollo-demo/.content/modelgroup/modelgroup-00006.html</destination>
+			<type>modelgroup</type>
+			<uuidstructure>07167d1d-b628-11e6-bed3-0242ac11002b</uuidstructure>
+			<uuidresource>07167d1e-b628-11e6-bed3-0242ac11002b</uuidresource>
+			<datecreated>Tue, 29 Nov 2016 11:36:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[test grouop]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[TEST Group]]></value>
+				</property>
+				<property>
+					<name>modelgroup.base</name>
+					<value><![CDATA[78b6a0d1-5638-11e5-bfd9-0242ac11002b]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[true]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/navigations</destination>
 			<type>folder</type>
 			<uuidstructure>fe480c7d-5638-11e5-bfd9-0242ac11002b</uuidstructure>
@@ -10837,6 +10827,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Apollo Demo side second level navigation]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/navigations/nv_00004.xml</source>
+			<destination>apollo-demo/.content/navigations/nv_00004.xml</destination>
+			<type>a-navigation</type>
+			<uuidstructure>11f3a00e-b626-11e6-bed3-0242ac11002b</uuidstructure>
+			<uuidresource>11f3a00f-b626-11e6-bed3-0242ac11002b</uuidresource>
+			<datecreated>Tue, 29 Nov 2016 11:22:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo Demo main navigation AK TEST]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11019,6 +11026,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/tabs/t_00001.xml</source>
+			<destination>apollo-demo/.content/tabs/t_00001.xml</destination>
+			<type>a-tabs</type>
+			<uuidstructure>973fc159-737e-11e6-ace3-0242ac11002b</uuidstructure>
+			<uuidresource>973fc15a-737e-11e6-ace3-0242ac11002b</uuidresource>
+			<datecreated>Mon, 05 Sep 2016 15:37:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Frequently asked questions: FAQ Tab]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>apollo-demo/.content/tabs/t_00002.xml</source>
 			<destination>apollo-demo/.content/tabs/t_00002.xml</destination>
 			<type>a-tabs</type>
@@ -11047,23 +11071,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Tabs / Accordion: Accordion demo content]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/tabs/t_00004.xml</source>
-			<destination>apollo-demo/.content/tabs/t_00004.xml</destination>
-			<type>a-tabs</type>
-			<uuidstructure>973fc159-737e-11e6-ace3-0242ac11002b</uuidstructure>
-			<uuidresource>973fc15a-737e-11e6-ace3-0242ac11002b</uuidresource>
-			<datecreated>Mon, 05 Sep 2016 15:37:02 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Frequently asked questions: FAQ Tab]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -12652,6 +12659,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<name>Title</name>
 					<value><![CDATA[Home Design]]></value>
 				</property>
+				<property>
+					<name>apollo.theme</name>
+					<value><![CDATA[blue]]></value>
+				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
@@ -13538,7 +13549,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.5 Beta: Release Notes for OpenCms 10.5 Beta]]></value>
+					<value><![CDATA[OpenCms 10.5.0: Release Notes for OpenCms 10.5]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -13732,7 +13743,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>release/opencms-10.5-beta-notes</destination>
+			<destination>release/opencms-10.5.0-notes</destination>
 			<type>folder</type>
 			<uuidstructure>75cbc29e-7993-11e6-af54-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 13 Sep 2016 09:21:32 GMT</datecreated>
@@ -13744,19 +13755,19 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[OpenCms 10.5 Beta]]></value>
+					<value><![CDATA[OpenCms 10.5.0]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.5 Beta]]></value>
+					<value><![CDATA[OpenCms 10.5.0]]></value>
 				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>release/opencms-10.5-beta-notes/index.html</source>
-			<destination>release/opencms-10.5-beta-notes/index.html</destination>
+			<source>release/opencms-10.5.0-notes/index.html</source>
+			<destination>release/opencms-10.5.0-notes/index.html</destination>
 			<type>containerpage</type>
 			<uuidstructure>75deae63-7993-11e6-af54-0242ac11002b</uuidstructure>
 			<uuidresource>75deae64-7993-11e6-af54-0242ac11002b</uuidresource>
@@ -13765,7 +13776,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.5 Beta]]></value>
+					<value><![CDATA[OpenCms 10.5.0]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -15336,6 +15347,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:14 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[Trademark of  Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:300,h:98]]></value>
@@ -15353,6 +15368,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[Trademark of  Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:400,h:97]]></value>
@@ -15370,6 +15389,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15387,6 +15410,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15404,6 +15431,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15421,6 +15452,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15438,6 +15473,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15455,6 +15494,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15472,6 +15515,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15489,6 +15536,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15506,6 +15557,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15523,6 +15578,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15540,6 +15599,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15557,6 +15620,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15574,6 +15641,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15591,6 +15662,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15608,6 +15683,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15625,6 +15704,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15642,6 +15725,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15659,6 +15746,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15676,6 +15767,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Sep 2015 08:09:15 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15693,6 +15788,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Mar 2016 17:42:06 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15710,6 +15809,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Mar 2016 17:42:06 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15727,6 +15830,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Mar 2016 17:42:06 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>
@@ -15744,6 +15851,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<datecreated>Tue, 22 Mar 2016 17:42:06 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>Copyright</name>
+					<value><![CDATA[CC BY-NC-SA / Alkacon Software - http://alkacon.com]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:800,h:600]]></value>

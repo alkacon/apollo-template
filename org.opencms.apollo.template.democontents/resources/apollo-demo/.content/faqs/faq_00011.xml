@@ -26,4 +26,29 @@
       <!--Categories are read dynamically-->
     </Category>
   </ApolloFaq>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Warum ist diese phantastische Software kostenfrei?]]></Question>
+    <Date>1472801400000</Date>
+    <Order><![CDATA[800]]></Order>
+    <Paragraph>
+      <Headline><![CDATA[Weil Open Source einfach besser ist!]]></Headline>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+<p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/samples/57.jpg]]></target>
+            <uuid>0825c416-7061-11e6-9a42-0242ac11002b</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
+      </Image>
+    </Paragraph>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+  </ApolloFaq>
 </ApolloFaqs>

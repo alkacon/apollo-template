@@ -26,4 +26,29 @@
       <!--Categories are read dynamically-->
     </Category>
   </ApolloFaq>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Kann ich das Apollo Template für meine Website verwenden?]]></Question>
+    <Date>1471937400000</Date>
+    <Order><![CDATA[1000]]></Order>
+    <Paragraph>
+      <Headline><![CDATA[Auf jeden Fall!]]></Headline>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/people/15.jpg]]></target>
+            <uuid>f67db0b0-55f8-11e4-8db5-005056b61161</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / publicdomainpictures.net]]></Copyright>
+      </Image>
+    </Paragraph>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+  </ApolloFaq>
 </ApolloFaqs>

@@ -6,11 +6,11 @@
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" description="The image to format. Must be a generic Apollo nested image content." %>
 <%@ attribute name="escapecopyright" type="java.lang.Boolean" required="false" description="If true, the image copyright text is secaped for usage in HTML attributes." %>
 
-<%@ variable name-given="imageLink" declare="true" %>
-<%@ variable name-given="imageUnscaledLink" declare="true" %>
-<%@ variable name-given="imageCopyright" declare="true" %>
-<%@ variable name-given="imageTitle" declare="true" %>
-<%@ variable name-given="imageTitleCopyright" declare="true" %>
+<%@ variable name-given="imageLink" declare="true" description="The exported link to the image." %>
+<%@ variable name-given="imageUnscaledLink" declare="true" description="The exported link to the unscaled image." %>
+<%@ variable name-given="imageCopyright" declare="true" description="The exported copyright text." %>
+<%@ variable name-given="imageTitle" declare="true" description="The exported title of the image." %>
+<%@ variable name-given="imageTitleCopyright" declare="true" description="The exported combination of title and copyright." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

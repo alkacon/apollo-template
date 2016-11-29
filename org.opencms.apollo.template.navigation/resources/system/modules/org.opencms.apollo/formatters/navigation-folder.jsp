@@ -30,7 +30,11 @@
 			</c:otherwise>
 		</c:choose>
 
-		<cms:navigation type="forFolder" resource="${navStartFolder}" var="nav" />
+		<cms:navigation 
+            type="forFolder" 
+            resource="${navStartFolder}" 
+            locale="${cms.locale}"
+            var="nav" />
 
 		<apollo:linksequence 
 				wrapperclass="ap-linksequence-boxed ap-navfolder" 

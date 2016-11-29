@@ -3,9 +3,19 @@
   body-content="empty"
   description="Generates facet and sorting buttons for use with AJAX forms."%>
 
-<%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="true" %>
-<%@ attribute name="facets" type="java.lang.String" required="false" %>
-<%@ attribute name="color" type="java.lang.String" required="false" %>
+<%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="true" 
+		description="The result of a previous usage of the cms:search tag." %>
+<%@ attribute name="facets" type="java.lang.String" required="false" 
+		description="A string containing keywords that configure which filters will be shown. Multiple keyword can be used.
+		Possible keywords are: [
+		none,
+		category,
+		sort_date,
+		sort_order,
+		sort_title
+		]" %>
+<%@ attribute name="color" type="java.lang.String" required="false" 
+		description="The color of the buttons." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

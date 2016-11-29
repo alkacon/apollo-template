@@ -4,8 +4,10 @@
     trimDirectiveWhitespaces="true" 
     description="Shows the standard message boxes when a new element is used." %>
 
-<%@ attribute name="textnew" type="java.lang.String" required="true" %>
-<%@ attribute name="textedit" type="java.lang.String" required="false" %>
+<%@ attribute name="textnew" type="java.lang.String" required="true" 
+		description="The text that is shown when a new element is created on a page." %>
+<%@ attribute name="textedit" type="java.lang.String" required="false" 
+		description="The text that is shown when an element was edited. Can be left blank to not have the element reload after edit." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

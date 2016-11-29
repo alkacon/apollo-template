@@ -26,4 +26,29 @@
       <!--Categories are read dynamically-->
     </Category>
   </ApolloFaq>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Ist OpenCms open source oder öfter süß?]]></Question>
+    <Date>1471937400000</Date>
+    <Order><![CDATA[900]]></Order>
+    <Paragraph>
+      <Headline><![CDATA[Es ist open source!]]></Headline>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/people/14.jpg]]></target>
+            <uuid>f676369c-55f8-11e4-8db5-005056b61161</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / publicdomainpictures.net]]></Copyright>
+      </Image>
+    </Paragraph>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+  </ApolloFaq>
 </ApolloFaqs>

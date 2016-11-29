@@ -36,4 +36,39 @@
     </Category>
     <GalleryTitle><![CDATA[%(value:Question)]]></GalleryTitle>
   </ApolloFaq>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Kann ich problemlos auf OpenCms 10.5 updaten?]]></Question>
+    <Date>1474639200000</Date>
+    <Order><![CDATA[500]]></Order>
+    <Paragraph>
+      <Headline><![CDATA[Ja! Das Update ist einfach!]]></Headline>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Wie immer ;)</p>
+<p>Phasellus viverra nulla ut metus varius laoreet. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/people/19.jpg]]></target>
+            <uuid>2b1b9de9-590b-11e4-903d-005056b61161</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / publicdomainpictures.net]]></Copyright>
+      </Image>
+      <Link>
+        <Text><![CDATA[Further reading]]></Text>
+        <URI>
+          <link internal="false" type="WEAK">
+            <target><![CDATA[https://en.wikipedia.org/wiki/Boxing_ring]]></target>
+          </link>
+        </URI>
+        <NewWindow>true</NewWindow>
+      </Link>
+    </Paragraph>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <GalleryTitle><![CDATA[%(value:Question)]]></GalleryTitle>
+  </ApolloFaq>
 </ApolloFaqs>

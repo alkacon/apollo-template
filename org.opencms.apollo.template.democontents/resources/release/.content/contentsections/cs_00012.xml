@@ -62,7 +62,7 @@
 <p>In case you don't want to go through the full installation procedure for a test drive, you can also use our read-to-run Docker image available from the Docker Hub at <a href="%(link2)">https://hub.docker.com/r/alkacon/opencms-docker</a>.</p>
 <p>All installation parts are described as single steps. After completing each step you are strongly advised to verify the success of your work.</p>
 <ul>
-<li><a href="%(link3)">Install the Java SDK, version 6 or newer</a></li>
+<li><a href="%(link3)">Install the Java SDK, version 7 or newer</a></li>
 <li><a href="%(link4)">Install Tomcat</a></li>
 <li><a href="%(link5)">Install MySQL</a></li>
 <li><a href="%(link6)">Deploy the&nbsp;<code>opencms.war</code>&nbsp;file</a></li>

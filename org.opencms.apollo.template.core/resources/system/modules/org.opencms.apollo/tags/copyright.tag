@@ -5,7 +5,7 @@
 
 <%@ attribute name="text" type="java.lang.String" required="true" description="The copyright text to format. Prepends a '(c)' if not already present." %>
 
-<%@ variable name-given="copyright" scope="AT_END" declare="true" %>
+<%@ variable name-given="copyright" scope="AT_END" declare="true" description="The formatted copyright text that is exported to page." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

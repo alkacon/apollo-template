@@ -34,7 +34,8 @@
     type="forSite" 
     resource="${navStartFolder}" 
     startLevel="${navStartLevel}" 
-    endLevel="${navStartLevel + 3}" 
+    endLevel="${navStartLevel + 3}"
+    locale="${cms.locale}"
     var="nav"/>
 
 <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
@@ -108,10 +109,14 @@
     </c:if>
 
     <li ${listClass} ${megamenuAttr}>
+
+    <a href="<cms:link>${elem.resourceName}</cms:link>">${elem.navText}</a>
+    <%--
     <a href="<cms:link>${elem.resourceName}</cms:link>"
         <c:if test="${parentItem and nextElemDeeper}"> class="dropdown-toggle" data-toggle="dropdown"</c:if>
     >${elem.navText}</a>
-
+    --%>
+ 
     <c:set var="oldLevel" value="${currentLevel}" />
 </c:forEach>
 

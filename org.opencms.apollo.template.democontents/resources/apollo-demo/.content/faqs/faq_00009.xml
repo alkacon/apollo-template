@@ -26,4 +26,29 @@
       <!--Categories are read dynamically-->
     </Category>
   </ApolloFaq>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Was passiert wenn man einen Pinguin im Kühlschrank findet?]]></Question>
+    <Date>1473687000000</Date>
+    <Order><![CDATA[450]]></Order>
+    <Paragraph>
+      <Headline><![CDATA[Don't turn the freezer off. Call a zoo!]]></Headline>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+<p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/samples/55.jpg]]></target>
+            <uuid>e4175e8b-7050-11e6-9a42-0242ac11002b</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
+      </Image>
+    </Paragraph>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+  </ApolloFaq>
 </ApolloFaqs>

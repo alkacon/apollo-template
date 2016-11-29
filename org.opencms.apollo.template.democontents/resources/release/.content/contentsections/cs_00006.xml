@@ -34,7 +34,7 @@
 <li>New "Attribute information" dialog for all content items on a page, gallery and sitemap.</li>
 <li>New and improved dialog for assigning or selecting content categories.</li>
 <li>New Log file tool in the OpenCms Administration allows to switch on/off log channels on the fly.</li>
-<li>Usage of nice looking scroll bars in most of the new onscreen dialogs.</li>
+<li>Usage of nice looking&nbsp;scroll bars in most of the new onscreen&nbsp;dialogs.</li>
 <li>... and many more!</li>
 </ul>
 <h2>Features of OpenCms in general</h2>
@@ -59,18 +59,18 @@
 <h2>Backward compatibility</h2>
 <p>We recommend everyone who uses OpenCms to update to this 8.5.0 release.</p>
 <p>OpenCms 8.5.0 is fully backward compatible to all prior 8.x and 7.x versions. Templates and other OpenCms developed code from these versions should work "out of the box" with version 8.5.0.</p>
-<p><strong>Notice for users of Alkacon OCEE:</strong> OpenCms version 8.5.0 requires Alkacon OCEE version 3.5.0 or later. In case you want to update your OpenCms installation to 8.5.0, please make sure you update Alkacon OCEE to 3.5.0 or later first!</p>
+<p><strong>Notice for users of Alkacon OCEE:</strong>&nbsp;OpenCms version 8.5.0 requires Alkacon OCEE version 3.5.0 or later. In case you want to update your OpenCms installation to 8.5.0, please make sure you update Alkacon OCEE to 3.5.0 or later first!</p>
 <h2>Compatibility with Java versions, Servlet containers and Databases</h2>
 <p>OpenCms 8.5.0 has been written and tested for Java 5, 6 and 7. We have tested only with ORACLEs version of the JDK. However, OpenCms has no dependencies to sun.* packages so it should in theory run with all compliant JVMs.</p>
 <p>We have tested this release on the Tomcat servlet engine. OpenCms works "out of the box" with Tomcat 7, which we recommend. Others have reported deploying OpenCms successfully on other servlet containers like JBoss, BEA, Websphere, Glassfish and Resin Professional.</p>
 <p>On the database side, we have tested with MySQL, Oracle, PostgreSQL, MS SQL Server, DB2 and HSQLDB. The automatic update wizard for OpenCms 8 supports MySQL, Oracle and PostgreSQL.</p>
 <h2>Regarding version numbers and build tags</h2>
 <p>In case you want to check out OpenCms from Git, please keep the following in mind: The tag numbers for all OpenCms 8.5 final releases are "build_8_5_x", so the 8.5.0 release is tagged "build_8_5_0".</p>
-<p>The main OpenCms Git repository is available on Github at <a href="%(link0)">github.com/alkacon/opencms-core</a>.</p>
+<p>The main OpenCms Git repository is available on Github at&nbsp;<a href="%(link0)">github.com/alkacon/opencms-core</a>.</p>
 <h2>How you can help</h2>
 <p>Contributions to the OpenCms core development are most welcome. Please send us your pull requests directly on GitHub.</p>
-<p>Please use our Bugzilla to report bugs in this release: <a href="%(link1)">http://bugzilla.opencms.org/</a></p>
-<p> </p>
+<p>Please use our Bugzilla to report bugs in this release:&nbsp;<a href="%(link1)">http://bugzilla.opencms.org/</a></p>
+<p>&nbsp;</p>
 <p>Thank you for using OpenCms and have fun with OpenCms 8.5 :-)</p>]]></content>
     </Text>
   </ApolloSection>

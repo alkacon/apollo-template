@@ -17,4 +17,20 @@
       </URI>
     </Link>
   </ApolloSection>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Über OpenCms]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>OpenCms ist großartig. Einfach zu benutzen. Es macht Spass damit zu arbeiten. Trotzdem mit vielen mächtigen Funktionen versehen. Das verwendungsfertige Apollo-Template ist auch gleich mit dabei.</p>]]></content>
+    </Text>
+    <Link>
+      <Text><![CDATA[Mehr erfahren]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/home/]]></target>
+          <uuid>d53f32c1-5c61-11e5-96ab-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
+  </ApolloSection>
 </ApolloSections>

@@ -3,17 +3,26 @@
   body-content="empty"
   description="Triggers the archive search with the given filters"%>
 
-<%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
-<%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" %>
-<%@ attribute name="sort" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" %>
-<%@ attribute name="subsite" type="java.lang.String" required="false" %>
-<%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false" %>
+<%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" 
+		description="The directory (including subdirectories) from which the elements are read." %>
+<%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" 
+		description="The type of elements, that will be used." %>
+<%@ attribute name="sort" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"
+		description="The sorting field from the XML content." %>
+<%@ attribute name="subsite" type="java.lang.String" required="false"
+		description="The subsite the current request comes from. Is needed for AJAX requests because of a then differing context." %>
+<%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false"   
+		description="The categories field from the XML content." %>
 <%@ attribute name="filterqueries" type="java.lang.String" required="false" %>
-<%@ attribute name="count" type="java.lang.Integer" required="false" %>
-<%@ attribute name="showexpired" type="java.lang.Boolean" required="false" %>
+<%@ attribute name="count" type="java.lang.Integer" required="false" 
+		description="The amount of elements per page." %>
+<%@ attribute name="showexpired" type="java.lang.Boolean" required="false" 
+		description="Determines if expired elements will be shown when editing the page." %>
  
-<%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" %>
-<%@ variable name-given="searchConfig" scope="AT_END" declare="true" %>
+<%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" 
+		description="The results of the search" %>
+<%@ variable name-given="searchConfig" scope="AT_END" declare="true"
+		description="The configuration string that was used in the search." %>
 
 <%@ variable name-given="categoryPaths" scope="AT_END" declare="true" %>
 <%@ variable name-given="categoryFacetField" scope="AT_END" declare="true" %>

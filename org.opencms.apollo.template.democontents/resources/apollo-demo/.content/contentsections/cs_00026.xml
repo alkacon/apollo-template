@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
-  <ApolloSection language="en">
-    <Headline><![CDATA[Professional support is available!]]></Headline>
-    <Text name="Text0">
-      <links>
-        <link name="link0" internal="false" type="A">
-          <target><![CDATA[http://www.alkacon.com/]]></target>
-        </link>
-        <link name="link1" internal="false" type="A">
-          <target><![CDATA[http://www.alkacon.com/contact/]]></target>
-        </link>
-      </links>
-      <content><![CDATA[<p><strong>Please contact</strong><br /><a href="%(link0)">Alkacon Software GmbH</a><br />An der Wachsfabrik 13 <br />50996 Köln (Cologne), Germany</p>
-<p><a href="%(link1)">Contact Information</a></p>]]></content>
-    </Text>
-  </ApolloSection>
   <ApolloSection language="de">
     <Headline><![CDATA[Professionelle Hilfe ist verfügbar!]]></Headline>
     <Text name="Text0">
@@ -27,8 +12,23 @@
           <target><![CDATA[http://www.alkacon.com/contact/]]></target>
         </link>
       </links>
-      <content><![CDATA[<p><strong>Unsere Adresse:</strong><br /><a href="%(link0)">Alkacon Software GmbH</a><br />An der Wachsfabrik 13 <br />50996 Köln</p>
+      <content><![CDATA[<p><strong>Unsere Adresse:</strong><br /><a href="%(link0)">Alkacon Software GmbH &amp; Co. KG</a>&nbsp;<br />An der Wachsfabrik 13 <br />50996 Köln</p>
 <p><a href="%(link1)">Zum Kontaktformular</a></p>]]></content>
+    </Text>
+  </ApolloSection>
+  <ApolloSection language="en">
+    <Headline><![CDATA[Professional support is available!]]></Headline>
+    <Text name="Text0">
+      <links>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[http://www.alkacon.com/]]></target>
+        </link>
+        <link name="link1" internal="false" type="A">
+          <target><![CDATA[http://www.alkacon.com/contact/]]></target>
+        </link>
+      </links>
+      <content><![CDATA[<p><strong>Please contact</strong><br /><a href="%(link0)">Alkacon Software GmbH &amp; Co. KG</a><br />An der Wachsfabrik 13 <br />50996 Köln (Cologne), Germany</p>
+<p><a href="%(link1)">Contact Information</a></p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

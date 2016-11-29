@@ -3,9 +3,12 @@
   body-content="empty"
   description="Shows a load button for dynamic list pagination based on search results."%>
 
-<%@ attribute name="search" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="true" %>
-<%@ attribute name="label" type="java.lang.String" required="false" %>
-<%@ attribute name="arialabel" type="java.lang.String" required="false" %>
+<%@ attribute name="search" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="true" 
+		description="The result of a previous search using the cms:search tag." %>
+<%@ attribute name="label" type="java.lang.String" required="false" 
+		description="The text shown on the load button." %>
+<%@ attribute name="arialabel" type="java.lang.String" required="false" 
+		description="The text used for the ARIA label of the button." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

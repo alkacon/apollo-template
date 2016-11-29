@@ -3,14 +3,20 @@
   body-content="empty"
   description="Generates a facet button for use with AJAX forms."%>
 
-<%@ attribute name="label" type="java.lang.String" required="false" %>
+<%@ attribute name="label" type="java.lang.String" required="false" 
+		description="The label that is used for the button." %>
 <%@ attribute name="params" type="java.lang.String" required="false" %>
-<%@ attribute name="color" type="java.lang.String" required="false" %>
-<%@ attribute name="searchconfig" type="java.lang.String" required="false" %>
-<%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="false" %>
-<%@ attribute name="render" type="java.lang.Boolean" required="false" %>
+<%@ attribute name="color" type="java.lang.String" required="false" 
+		description="The color of the button." %>
+<%@ attribute name="searchconfig" type="java.lang.String" required="false" 
+		description="The configuration string that was used by the cms:search tag." %>
+<%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="false" 
+		description="The results of the search performed by the cms:search tag." %>
+<%@ attribute name="render" type="java.lang.Boolean" required="false" 
+		description="Determines if the content should be rendered or given as a list of items in the listItems variable." %>
 
-<%@ variable name-given="listItems" scope="AT_END" declare="true" %>
+<%@ variable name-given="listItems" scope="AT_END" declare="true" 
+		description="The items of the button stored in a list." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
