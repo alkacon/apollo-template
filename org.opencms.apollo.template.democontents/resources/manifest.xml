@@ -10833,23 +10833,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/navigations/nv_00004.xml</source>
-			<destination>apollo-demo/.content/navigations/nv_00004.xml</destination>
-			<type>a-navigation</type>
-			<uuidstructure>11f3a00e-b626-11e6-bed3-0242ac11002b</uuidstructure>
-			<uuidresource>11f3a00f-b626-11e6-bed3-0242ac11002b</uuidresource>
-			<datecreated>Tue, 29 Nov 2016 11:22:10 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Apollo Demo main navigation AK TEST]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>apollo-demo/.content/shariffs</destination>
 			<type>folder</type>
 			<uuidstructure>1cdb3fa2-49ce-11e6-b9a4-0242ac11002b</uuidstructure>
