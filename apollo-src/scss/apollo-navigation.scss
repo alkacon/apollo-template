@@ -686,6 +686,10 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 /* Sidebar navigation
 ------------------------------------*/
 
+.ap-sidebar-nav {
+    margin-bottom: 20px;
+}
+
 .sidebar-nav {
     border: 1px solid $nav-border;
 

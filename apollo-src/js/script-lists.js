@@ -39,10 +39,10 @@ function doReloadInnerList(searchStateParameters, elem) {
         var listOptionBox = $('#listoption_box-' + elem.data('id'));
         $.get(buildAjaxLink(elem) + "&".concat(searchStateParameters), 
                 function(resultList) {
-            		listOptionBox.find(".listOptions").remove();
+            		listOptionBox.find(".list-options").remove();
                     $(resultList).filter(".list-entry").appendTo(entryBox);
                     $(resultList).filter('.paginationWrapper').appendTo(elem.find('.ap-list-pagination'));
-                    $(resultList).filter(".listOptions").appendTo(listOptionBox);
+                    $(resultList).filter(".list-options").appendTo(listOptionBox);
                     if(list_lock && $(resultList).filter(".list-entry").length == 0){
                         showEmpty(elem);
                     }

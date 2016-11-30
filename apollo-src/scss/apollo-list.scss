@@ -144,6 +144,20 @@ $pagination-border: $grey-light !default;
   border-color: $main-theme-hover;   
 }
 
+// facet row
+.list-option {
+    min-height: 36px;
+    margin-bottom: 20px;
+
+    .dropdown-menu {
+        border-radius: 0;
+
+        .divider {
+            margin: 5px 0;
+        }
+    }
+}
+
 // coloring of teaser elements, shared also with event and other list formatters 
 @each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
 
@@ -168,8 +182,11 @@ $pagination-border: $grey-light !default;
         // pagaination element
         .pagination {
             & > .active {
-                > a, > span, > a:hover, 
-                > span:hover, > a:focus, > span:focus {
+                > a, > span, 
+                > a:hover, 
+                > span:hover, 
+                > a:focus, 
+                > span:focus {
                   background-color: $bg-color;
                   border-color: $bg-color;
                 }
@@ -187,8 +204,10 @@ $pagination-border: $grey-light !default;
         }
 
         // facet row
-        .listOptions {
-            .btn, .dropdown-menu > .active > a {
+        .list-options {
+
+            .btn, 
+            .dropdown-menu > .active > a {
                 background: $bg-color;
                 border-color: $bg-color;  
                 color: $text-color;
@@ -201,8 +220,8 @@ $pagination-border: $grey-light !default;
         }
 
         // archive menu
-        div &.ap-list-filters, .ap-list-filters {
-
+        div &.ap-list-filters, 
+        .ap-list-filters {
             .fa.ap-fa-label {
                 color: $text-color;
             }
