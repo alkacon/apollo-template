@@ -1,15 +1,15 @@
 
 var modules = {};
 
-var templates = [];
+var themes = [];
 var sassSrc = [];
 var cssSrc = [];
 var jsSrc = [];
 var resources = [];
 
-var templateSassSrc = [];
-var templateCssSrc = [];
-var templateConcatTasks = [];
+var themeSassSrc = [];
+var themeCssSrc = [];
+var themeConcatTasks = [];
 
 var grunt;
 var deployTarget;
@@ -35,12 +35,12 @@ exports.initGrunt = function(_grunt, _buildDir) {
     _gruntLoadNpmTasks();
 }
 
-_getModuleTemplates = function(envname, templates) {
+_getModuleThemes = function(envname, themes) {
     console.log('Value of env ' + envname + ': ' + process.env[envname]);
     if (grunt.option('useenv') && process.env[envname]) {
         return [ process.env[envname] ];
     } 
-    return templates;
+    return themes;
 };
 
 exports.loadModule = function(moduleName) {
@@ -68,8 +68,8 @@ exports.loadModule = function(moduleName) {
         if (m.resources) {
             resources = resources.concat(m.resources);
         }
-        if (m.templates) {
-            templates = templates.concat(_getModuleTemplates(m.envname, m.templates));
+        if (m.themes) {
+            themes = themes.concat(_getModuleThemes(m.envname, m.themes));
         }
         if (m.deployTarget) {
             exports.deployTarget = deployTarget = m.deployTarget;
@@ -116,7 +116,7 @@ _gruntInitConfig = function() {
             
         clean : {
             all : [ buildDir + '**' ],
-            template : {
+            theme : {
                 files : [ {
                     expand : true,
                     src : [ '*.css', '*.css.map' ],
@@ -167,7 +167,7 @@ _gruntInitConfig = function() {
         },
         
         sass : {
-            template : {
+            theme : {
                 options : {
                     sourcemap : 'auto',
                     lineNumbers : false,
@@ -176,7 +176,7 @@ _gruntInitConfig = function() {
                 files : [ {
                     expand : true,
                     cwd : moduleDir,
-                    src : oc.templateSassSrc(),
+                    src : oc.themeSassSrc(),
                     dest : buildDir + '01_processed',
                     ext : '.css',
                     flatten: true
@@ -191,7 +191,7 @@ _gruntInitConfig = function() {
                 files : [ {
                     expand : true,
                     cwd : moduleDir,
-                    src : oc.templateSassSrc(),
+                    src : oc.themeSassSrc(),
                     dest : buildDir + '03_final/csscheck',
                     ext : '.css',
                     flatten: true
@@ -200,7 +200,7 @@ _gruntInitConfig = function() {
         },
 
         concat : {
-            template : {
+            theme : {
                 options: {
                     sourceMap: true,
                     sourceMapStyle: 'embed',
@@ -227,13 +227,13 @@ _gruntInitConfig = function() {
             //   If we use different src / dest folders the path information 
             //   to the original source maps gets lost in the cssmin task. 
             //   The workaround is to write to the 'moduleDir' folder, in which case the relative path information 
-            //   remains intact. We clean up later in separate 'copy:save' and 'clean:template' tasks.
+            //   remains intact. We clean up later in separate 'copy:save' and 'clean:theme' tasks.
             //
-            template : {
+            theme : {
                 files : [{
                     expand : true,
                     cwd : buildDir + '01_processed',
-                    src : oc.templateCssSrc(),
+                    src : oc.themeCssSrc(),
                     dest : moduleDir,
                     ext : '.min.css'
                 }]
@@ -274,7 +274,7 @@ _gruntInitConfig = function() {
             },
             scss : {
                 files : [ oc.sassSrc() ],
-                tasks : [ 'copy:restore', 'template', 'combine', 'deploy' ],
+                tasks : [ 'copy:restore', 'theme', 'combine', 'deploy' ],
             },    
             pluginCss : {
                 files : [ oc.cssSrc() ],
@@ -296,7 +296,7 @@ _gruntRegisterTasks = function() {
 
     grunt.registerTask('default', [ 
         'clean',
-        'template',
+        'theme',
         'pluginCss',
         'combine',
         'pluginJs',
@@ -310,9 +310,9 @@ _gruntRegisterTasks = function() {
         'deploy',
     ]);
     
-    grunt.registerTask('template', [ 
-        'sass:template',
-        'cssmin:template',
+    grunt.registerTask('theme', [ 
+        'sass:theme',
+        'cssmin:theme',
     ]);
     
     grunt.registerTask('plugins', [ 
@@ -329,9 +329,9 @@ _gruntRegisterTasks = function() {
     ]);
     
     grunt.registerTask('combine',
-        oc.templateConcatTasks().concat(
+        oc.themeConcatTasks().concat(
         'copy:save', 
-        'clean:template'
+        'clean:theme'
     ));
     
     grunt.registerTask('deploy', function() {
@@ -350,8 +350,8 @@ _showImports = function() {
     
     console.log('\nLoaded path elements from OpenCms modules');
 
-    console.log('- Templates');
-    for (var i in templates) { console.log("    " + templates[i]) };
+    console.log('- Themes');
+    for (var i in themes) { console.log("    " + themes[i]) };
     
     console.log('\n- Sass');
     for (var i in sassSrc) { console.log("    " + sassSrc[i]) };
@@ -385,23 +385,23 @@ exports.resources = function () {
     return resources;
 }
 
-exports.templateSassSrc = function () {
-    for (i=0; i<templates.length; i++) {
-        templateSassSrc[i] = '**/' + templates[i] + '.scss';
+exports.themeSassSrc = function () {
+    for (i=0; i<themes.length; i++) {
+        themeSassSrc[i] = '**/' + themes[i] + '.scss';
     }
-    return templateSassSrc;
+    return themeSassSrc;
 }
 
-exports.templateCssSrc = function () {
-    for (i=0; i<templates.length; i++) {
-        templateCssSrc[i] = templates[i] + '.css';
+exports.themeCssSrc = function () {
+    for (i=0; i<themes.length; i++) {
+        themeCssSrc[i] = themes[i] + '.css';
     }
-    return templateCssSrc;
+    return themeCssSrc;
 }
 
-exports.templateConcatTasks = function () {
-    for (i=0; i<templates.length; i++) {
-        templateConcatTasks[i] = 'concat:template:' + templates[i];
+exports.themeConcatTasks = function () {
+    for (i=0; i<themes.length; i++) {
+        themeConcatTasks[i] = 'concat:theme:' + themes[i];
     }
-    return templateConcatTasks;
+    return themeConcatTasks;
 }

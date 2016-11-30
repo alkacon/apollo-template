@@ -4,9 +4,9 @@
 // Common import file
 //
 
-@import '../scss/container-markers.scss';
-
+@import '../scss/apollo-variables.scss';
 @import '../scss/apollo-fonts.scss';
+@import '../scss/apollo-containers.scss';
 @import '../scss/apollo-basics.scss';
 @import '../scss/apollo-animation.scss';
 @import '../scss/apollo-additions.scss';
@@ -24,6 +24,5 @@
 @import '../scss/apollo-event.scss';
 @import '../scss/apollo-blog.scss';
 @import '../scss/apollo-job.scss';
-@import '../scss/apollo-list.scss'; // must come late because some CSS rules rely on being higher order 
-
-@import '../scss/apollo-generics.scss';
+@import '../scss/apollo-list.scss'; // must come late because CSS rules rely on being higher order 
+@import '../scss/apollo-generics.scss';  // must come last because CSS rules rely on being higher order 

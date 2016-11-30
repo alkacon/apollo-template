@@ -6,9 +6,9 @@
 @import '../scss/apollo-variables.scss';
 
 // Main theme colors
-$main-theme: $red;
-$main-theme-hover: $red-light;
-$main-theme-additional: $red-lighter;
+$main-theme: #b31b34; // dark red
+$main-theme-hover: #ff264a; // light red
+$main-theme-additional: lighten($main-theme-hover, 37%); // lighter red
 
 // Import the other files
 @import 'imports';

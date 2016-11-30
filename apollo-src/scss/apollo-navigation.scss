@@ -3,7 +3,7 @@
 ------------------------------------*/
 
 $nav-theme:         $main-theme !default;   // used for 1st level text and big colored border above / below menus
-$nav-text:          $gray-darker !default;  // standard text color of the nav menu entries
+$nav-text:          $grey-dark !default;  // standard text color of the nav menu entries
 $nav-text-hover:    $nav-theme !default;    // hover text color of the nav menu entries
 $nav-bg:            $white !default;        // standard background of the nav menu entries
 $nav-bg-hover:      $grey-light !default;   // hover background of the nav menu entries
@@ -179,6 +179,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
     // top level nav elements 
     > li {
+        position: static;
         transition: all 1s;
 
         &:hover > a {
@@ -196,6 +197,15 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             bottom: -2px;
             border-bottom: solid 2px transparent;
             padding: 9px 20px 9px 20px;
+
+            &:after {
+                content: "\f107";
+                position: absolute;
+                top: 11px;
+                right: 4px;
+                display: inline-block;
+                font-family: FontAwesome;
+            }
         }
 
         > .search {
@@ -226,6 +236,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             // this displays the submenus on hover
             display: block;
         } 
+
         > .dropdown .dropdown-menu {
             border-top: solid 2px $nav-theme;
             border-bottom: solid 2px $nav-theme;
@@ -291,28 +302,44 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             }
         }
 
-        > .active > a {
-            // the top level menu entry that belongs to the currently opened page
-            color: $nav-bg;
-            background:  $nav-theme;
-            border-color: $nav-border;
-
-            &:hover {
-                color: $nav-text-hover;
-                background:  $nav-bg-hover;
-                border-color: $nav-bg-hover;
-            }
-        }
-
         > li {
             float: none; // required to overwrite bootstrap default
 
             > a {
+                // a top level menu entry 
                 background: $nav-bg;
                 font-size: 14px;
                 padding: 9px 10px;
                 bottom: 0px;
                 border-bottom: solid 1px $nav-border;
+
+                &:after {
+                    content: "\f105";
+                    top: 9px;
+                    right: 10px;
+                }
+            }
+
+            &.active > a {
+                // the top level menu entry that belongs to the currently opened page
+                color: $nav-bg;
+                background:  $nav-theme;
+                border-color: $nav-border;
+
+                &:hover {
+                    color: $nav-text-hover;
+                    background:  $nav-bg-hover;
+                    border-color: $nav-bg-hover;
+                }
+            }
+
+            &.open > a {
+                // the top level menu entry currently open
+                &:after {
+                    content: "\f107";
+                    top: 9px;
+                    right: 10px;
+                }
             }
 
             &:hover > a {

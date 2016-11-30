@@ -40,11 +40,11 @@ $if(submitbutton)$
 
 		$hiddenfields$
 		$if(prevbutton)$
-			<input type="submit" value="$prevbutton$" name="back" class="formbutton btn btn-gray prevbutton" />
+			<input type="submit" value="$prevbutton$" name="back" class="formbutton btn btn-grey prevbutton" />
 		$endif$
 		<input type="submit" value="$submitbutton$" class="formbutton btn btn-default submitbutton" />  
 		$if(resetbutton)$
-			&nbsp;<input type="reset" value="$resetbutton$" class="formbutton btn btn-gray resetbutton" />
+			&nbsp;<input type="reset" value="$resetbutton$" class="formbutton btn btn-grey resetbutton" />
 		$endif$
 
 $endif$

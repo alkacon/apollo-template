@@ -3,7 +3,6 @@
 
 $bg-colors:              $all-colors !default;
 $font-colors:            $primary-colors !default;
-$border-grey:            (grey-lightest, #eee, #eee, #eee);
 
 $margins-paddings:       $spacers !default;
 $font-sizes:             (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 26, 28, 30, 36, 48, 72) !default;
@@ -142,7 +141,7 @@ a.no-underline {
 	}
 }
 
-@each $color-name, $bg-color, $text-color, $highlight-color in append($border-colors, $border-grey) {
+@each $color-name, $bg-color, $text-color, $highlight-color in $border-colors {
 
     .bo-#{""+$color-name}  {
         border-color: $bg-color;      
