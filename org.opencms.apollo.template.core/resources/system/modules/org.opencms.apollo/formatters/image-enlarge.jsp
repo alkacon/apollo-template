@@ -19,42 +19,42 @@
                     </div>
                 </c:when>
                 <c:otherwise>
-				
-					<c:set var="showsubtitle" value="${cms.element.setting.showsubtitle.value and (value.Headline.isSet or not empty imageTitle)}"/>
-					<c:set var="showtext" value="${cms.element.setting.showtext.value and value.Text.isSet}"/>
-				
-					<div class="ap-sec ${cms.element.settings.wrapperclass}">
-					
-						<apollo:image-zoom 
-							image="${content.value.Image}"
-							headline="${content.value.Headline}" />
 
-						<c:if test="${cms.element.setting.showcopyright.value and not empty imageCopyright}">
-							<div class="copyright">
-								<div>${imageCopyright}</div>
-							</div>
-						</c:if>
-							
-						<c:if test="${showsubtitle or showtext}">
-							<div class="text-box">
+                    <c:set var="showsubtitle" value="${cms.element.setting.showsubtitle.value and (value.Headline.isSet or not empty imageTitle)}"/>
+                    <c:set var="showtext" value="${cms.element.setting.showtext.value and value.Text.isSet}"/>
 
-								<c:if test="${showsubtitle}">
-									<h3 class="subtitle">
-										<apollo:link link="${value.Link}">
-											${not empty imageTitle ? imageTitle : value.Headline}
-										</apollo:link>
-									</h3>
-								</c:if>
+                    <div class="ap-sec ap-image-zoom ${cms.element.settings.wrapperclass}">
 
-								<c:if test="${showtext}">
-									<div class="text">
-										${value.Text}
-									</div>
-								</c:if>
-							</div>
-						</c:if>
+                        <apollo:image-zoom 
+                            image="${content.value.Image}"
+                            headline="${content.value.Headline}" />
 
-					</div>
+                        <c:if test="${cms.element.setting.showcopyright.value and not empty imageCopyright}">
+                            <div class="copyright">
+                                <div>${imageCopyright}</div>
+                            </div>
+                        </c:if>
+
+                        <c:if test="${showsubtitle or showtext}">
+                            <div class="text-box">
+
+                                <c:if test="${showsubtitle}">
+                                    <h3 class="subtitle">
+                                        <apollo:link link="${value.Link}">
+                                            ${not empty imageTitle ? imageTitle : value.Headline}
+                                        </apollo:link>
+                                    </h3>
+                                </c:if>
+
+                                <c:if test="${showtext}">
+                                    <div class="text">
+                                        ${value.Text}
+                                    </div>
+                                </c:if>
+                            </div>
+                        </c:if>
+
+                    </div>
                 </c:otherwise>
             </c:choose>
         </apollo:image-vars>

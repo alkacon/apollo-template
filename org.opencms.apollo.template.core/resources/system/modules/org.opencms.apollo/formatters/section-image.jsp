@@ -16,7 +16,7 @@
 <c:set var="inMemoryMessage"><fmt:message key="apollo.section.message.new" /></c:set>
 <apollo:init-messages textnew="${inMemoryMessage}">
 
-<div>
+<div class="ap-image-section">
 
     <c:set var="showlinkimage" value="${cms.element.setting.showlink.value == 'image' and value.Link.isSet and value.Link.value.URI.isSet}"/>
     <c:set var="showlinktext" value="${cms.element.setting.showlink.value and value.Link.isSet and value.Link.value.URI.isSet}"/>
