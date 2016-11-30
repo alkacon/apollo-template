@@ -102,9 +102,10 @@
             <%-- ###### Path correction needed if navLevel ###### --%>
             <c:set var="menuPath" value="${fn:replace(elem.resourceName, elem.fileName, '')}" />
         </c:if>
-        <c:set var="megamenuPath"><cms:link>${menuPath}${MENU_XML}</cms:link></c:set>
+        <c:set var="megamenuPath">${menuPath}${MENU_XML}</c:set>
+        <c:set var="megamenuUri"><cms:link>${megamenuPath}</cms:link></c:set>
         <c:if test="${cms.vfs.existsXml[megamenuPath]}">
-            <c:set var="megamenuAttr" value="data-menu='${megamenuPath}'" />
+            <c:set var="megamenuAttr" value="data-menu='${megamenuUri}'" />
         </c:if>
     </c:if>
 

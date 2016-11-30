@@ -27,7 +27,7 @@
 	<c:choose>
 		<c:when test="${empty locentry.value}">
 			<c:set var="subsiteLink">${cms.vfs.localeResource[cms.subSitePath][locentry.key].link}</c:set>
-			<c:set var="langlinks">${langlinks}<li><a href="<cms:link>${subsiteLink}</cms:link>">${localeName}</a></li></c:set>
+			<c:set var="langlinks">${langlinks}<li><a href="${subsiteLink}">${localeName}</a></li></c:set>
 			<c:if test="${not empty subsiteLink}">
 				<c:set var="showlinks" value="true" />
 			</c:if>
@@ -38,7 +38,7 @@
 		</c:when>
 		<c:otherwise>
 			<c:set var="showlinks" value="true" />
-			<c:set var="langlinks">${langlinks}<li><a href="<cms:link>${locentry.value.link}</cms:link>">${localeName}</a></li></c:set>   
+			<c:set var="langlinks">${langlinks}<li><a href="${locentry.value.link}">${localeName}</a></li></c:set>   
 		</c:otherwise>
 	</c:choose>
 </c:forEach>
