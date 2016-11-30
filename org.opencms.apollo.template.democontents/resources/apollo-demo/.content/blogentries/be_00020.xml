@@ -2,7 +2,7 @@
 
 <ApolloBlogs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/blog.xsd">
   <ApolloBlog language="en">
-    <Title><![CDATA[OpenCms is the choice]]></Title>
+    <Title><![CDATA[OpenCms is the first choice]]></Title>
     <Date>1502470740000</Date>
     <Teaser><![CDATA[Eum id quot sanctus. Sed accusamus reprehendunt in, et has illud postulant consequuntur. No duo corrumpit sadipscing. At aliquip oportere suscipiantur eam, vis wisi harum essent no, et duo admodum periculis. Quodsi omittam oporteat mel no.
 ]]></Teaser>
@@ -25,6 +25,32 @@
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Admin]]></Author>
+    <Author><![CDATA[Cameron Tucker]]></Author>
+  </ApolloBlog>
+  <ApolloBlog language="de">
+    <Title><![CDATA[OpenCms ist die erste Wahl]]></Title>
+    <Date>1502470740000</Date>
+    <Teaser><![CDATA[Eum id quot sanctus. Sed accusamus reprehendunt in, et has illud postulant consequuntur. No duo corrumpit sadipscing. At aliquip oportere suscipiantur eam, vis wisi harum essent no, et duo admodum periculis. Quodsi omittam oporteat mel no.
+]]></Teaser>
+    <Paragraph>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Eum id quot sanctus. Sed accusamus reprehendunt in, et has illud postulant consequuntur. No duo corrumpit sadipscing. At aliquip oportere suscipiantur eam, vis wisi harum essent no, et duo admodum periculis. Quodsi omittam oporteat mel no.</p>
+<p>Eu causae laoreet placerat mea, in porro utinam accusata vim. Honestatis interpretaris ut qui. Has numquam volumus invidunt et, sensibus sapientem pri te. Cu per pericula comprehensam, expetenda laboramus his ei. Porro dolorem omittantur ad nec, eu dicunt aliquam graecis vix, nec ne congue expetendis.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/samples/47.jpg]]></target>
+            <uuid>6e5adea6-635f-11e5-81df-0242ac11002b</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
+      </Image>
+    </Paragraph>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <Author><![CDATA[Cameron Tucker]]></Author>
   </ApolloBlog>
 </ApolloBlogs>

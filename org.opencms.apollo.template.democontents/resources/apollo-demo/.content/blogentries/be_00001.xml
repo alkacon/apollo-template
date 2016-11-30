@@ -24,6 +24,9 @@
       <!--Categories are read dynamically-->
     </Category>
     <Author><![CDATA[Jay Pritchett]]></Author>
+    <Availability>
+      <Release>1483376400000</Release>
+    </Availability>
   </ApolloBlog>
   <ApolloBlog language="en">
     <Title><![CDATA[OpenCms is intuitive]]></Title>
@@ -48,5 +51,8 @@
       <!--Categories are read dynamically-->
     </Category>
     <Author><![CDATA[Jay Pritchett]]></Author>
+    <Availability>
+      <Release>1483376400000</Release>
+    </Availability>
   </ApolloBlog>
 </ApolloBlogs>

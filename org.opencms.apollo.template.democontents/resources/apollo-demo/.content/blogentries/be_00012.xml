@@ -27,4 +27,30 @@
     </Category>
     <Author><![CDATA[Admin]]></Author>
   </ApolloBlog>
+  <ApolloBlog language="de">
+    <Title><![CDATA[OpenCms lässt Dich kreativ sein]]></Title>
+    <Date>1499873160000</Date>
+    <Teaser><![CDATA[Diam periculis ius no, cum ex consul minimum, eam id elitr lucilius. Has perfecto salutatus ea, no nam suas iudico, ex has quot nominati. Ut labore assueverit sed.]]></Teaser>
+    <Paragraph>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Diam periculis ius no, cum ex consul minimum, eam id elitr lucilius. Has perfecto salutatus ea, no nam suas iudico, ex has quot nominati. Ut labore assueverit sed.</p>
+<p>Pri tota simul ea, pri aliquam albucius id. Ut vel iriure malorum elaboraret, duo esse vero tempor et. Et nostro sententiae efficiendi pri, ad his efficiendi neglegentur. Qui in affert albucius, vis no eros erat lorem, molestiae conclusionemque cum ne. Ad cum wisi mnesarchum, ex mea inani vitae instructior.</p>
+<p>Cetero legimus te qui, in laoreet accusam quo, has fabellas definiebas ex.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/office/05.jpg]]></target>
+            <uuid>2f77d633-7061-11e6-9a42-0242ac11002b</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
+      </Image>
+    </Paragraph>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <Author><![CDATA[Admin]]></Author>
+  </ApolloBlog>
 </ApolloBlogs>

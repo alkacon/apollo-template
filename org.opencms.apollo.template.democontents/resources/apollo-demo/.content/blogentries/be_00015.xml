@@ -25,6 +25,32 @@
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Admin]]></Author>
+    <Author><![CDATA[Cameron Tucker]]></Author>
+  </ApolloBlog>
+  <ApolloBlog language="de">
+    <Title><![CDATA[OpenCms spart Dir Zeit]]></Title>
+    <Date>1491293700000</Date>
+    <Teaser><![CDATA[Sit sonet omnesque abiquot tantere torquatos in. Tollit reprehendunt est et, urbanitas rationibus dissentiunt sea at.]]></Teaser>
+    <Paragraph>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Sit sonet omnesque abiquot tantere torquatos in. Tollit reprehendunt est et, urbanitas rationibus dissentiunt sea at. Sed vocent habemus quaerendum et, fastidii legendos an sit, at mea velit dictas. Causae oblique no mei, cu scaevola scribentur his.</p>
+<p>Omnesque volutpat intellegam ex sea, quaeque ponderum te eos. In eius nominavi epicurei cum. Id pri audire argumentum.</p>
+<p>Purto propriae elaboraret cum ne. Ut viderer prompta saperet usu. Ne vel falli legere inciderint. Laoreet dissentias philosophia cu duo, ut sea adhuc minim elitr.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/office/24.jpg]]></target>
+            <uuid>2fec4309-7061-11e6-9a42-0242ac11002b</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
+      </Image>
+    </Paragraph>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <Author><![CDATA[Cameron Tucker]]></Author>
   </ApolloBlog>
 </ApolloBlogs>

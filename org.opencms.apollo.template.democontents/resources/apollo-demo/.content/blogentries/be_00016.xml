@@ -25,6 +25,32 @@
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Admin]]></Author>
+    <Author><![CDATA[Jay Pritchett]]></Author>
+  </ApolloBlog>
+  <ApolloBlog language="de">
+    <Title><![CDATA[OpenCms ist für Dich]]></Title>
+    <Date>1506172200000</Date>
+    <Teaser><![CDATA[Eros mollis explicari ad has. Option detracto conceptam sed in, id regione consequat ius. Cu dictas equidem mel. Duo sapientem repudiandae ex, cu mea alia commodo salutatus, ei nec inermis invenire repudiare.]]></Teaser>
+    <Paragraph>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Eros mollis explicari ad has. Option detracto conceptam sed in, id regione consequat ius. Cu dictas equidem mel. Duo sapientem repudiandae ex, cu mea alia commodo salutatus, ei nec inermis invenire repudiare. Quem impetus mei te. Ex esse iudico mei, vel hinc elaboraret dissentiet ne. Eos causae vocent contentiones eu.</p>
+<p>Probo recteque delicatissimi eu mei. Vis dico wisi id, meis repudiare laboramus in has.&nbsp;</p>
+<p>No feugiat maiorum neglegentur nec, porro mediocritatem per eu, eu vel dicam graecis volumus. Partiendo intellegebat per id, esse viderer duo no. Ea vitae saperet nec, simul appellantur conclusionemque at vim.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/people/25.jpg]]></target>
+            <uuid>44e71a53-635e-11e5-81df-0242ac11002b</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
+      </Image>
+    </Paragraph>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <Author><![CDATA[Jay Pritchett]]></Author>
   </ApolloBlog>
 </ApolloBlogs>

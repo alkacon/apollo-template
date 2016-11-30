@@ -2,11 +2,17 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[More articles]]></Headline>
+    <Headline><![CDATA[Our Blog]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>These might also be interesting for you...</p>]]></content>
+      <content><![CDATA[<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>]]></content>
     </Text>
-    <GalleryTitle><![CDATA[%(page_title) - %(value:Headline)]]></GalleryTitle>
+  </ApolloSection>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Unser Tagebuch]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Na gut normalerweise würde das in Deutsch auch Blog genannt. Aber hier geht es ja um die Demonstration der Übersetzung ;)</p>]]></content>
+    </Text>
   </ApolloSection>
 </ApolloSections>

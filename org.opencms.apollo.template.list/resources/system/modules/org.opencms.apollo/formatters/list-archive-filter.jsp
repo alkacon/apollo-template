@@ -145,7 +145,7 @@
                                     </c:set>
                                     <c:if test="${not empty selected}">
                                         <c:set var="yearHtml">${fn:replace(yearHtml, 'style="display:none;"', '')}</c:set>
-                                        <c:set var="yearHtml">${fn:replace(yearHtml, 'fa-chevron-down', 'fa-chevron-up')}</c:set>
+                                        <c:set var="yearHtml">${fn:replace(yearHtml, 'fa-chevron-down', 'fa-chevron-right ')}</c:set>
                                         <c:set var="monthSelected" value="true" />
                                     </c:if>
                                     <c:set var="prevYear" value="${currYear}" />
@@ -154,7 +154,7 @@
                                 <%-- close month list of last year, remove style attribute, replace chevron and add it to archive HTML --%>
                                 <c:if test="${not monthSelected}">
                                     <c:set var="yearHtml">${fn:replace(yearHtml, 'style="display:none;"', '')}</c:set>
-                                    <c:set var="yearHtml">${fn:replace(yearHtml, 'fa-chevron-down', 'fa-chevron-up')}</c:set>
+                                    <c:set var="yearHtml">${fn:replace(yearHtml, 'fa-chevron-down', 'fa-chevron-right ')}</c:set>
                                 </c:if>
                                 <c:set var="archiveHtml">${yearHtml}</ul>${archiveHtml}</c:set>
 
@@ -169,7 +169,7 @@
                 <script type="text/javascript">
                     function toggleApListFilter(fType) {
                         $("#aplist" + fType + "_toggle").toggleClass("fa-chevron-down");
-                        $("#aplist" + fType + "_toggle").toggleClass("fa-chevron-up");
+                        $("#aplist" + fType + "_toggle").toggleClass("fa-chevron-right ");
                         $("#aplist" + fType + "").slideToggle();
                     }
 

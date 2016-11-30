@@ -72,11 +72,11 @@
 							function toggleComments() {
 								if (disqus_open) {
 									$("#disqus_toggle").toggleClass("fa-chevron-down", true);
-									$("#disqus_toggle").toggleClass("fa-chevron-up", false);
+									$("#disqus_toggle").toggleClass("fa-chevron-right", false);
 									$("#disqus_thread").slideUp();
 								} else {
 									$("#disqus_toggle").toggleClass("fa-chevron-down", false);
-									$("#disqus_toggle").toggleClass("fa-chevron-up", true);
+									$("#disqus_toggle").toggleClass("fa-chevron-right", true);
 									if (!disqus_loaded) {
 										$("#disqus_thread").show();
 										disqus_loaded = true;
