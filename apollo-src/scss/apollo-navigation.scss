@@ -199,10 +199,11 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             padding: 9px 20px 9px 20px;
 
             &:after {
+                font-size: 12px;
                 content: "\f107";
                 position: absolute;
                 top: 11px;
-                right: 4px;
+                right: 6px;
                 display: inline-block;
                 font-family: FontAwesome;
             }
