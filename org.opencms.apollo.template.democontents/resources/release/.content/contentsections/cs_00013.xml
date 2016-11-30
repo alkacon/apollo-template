@@ -18,7 +18,7 @@
           <target><![CDATA[mailto:opencms-dev@opencms.org]]></target>
         </link>
       </links>
-      <content><![CDATA[<p>The <strong>opencms-dev</strong> mailing list is the place for all questions, comments and suggestions for OpenCms and the main forum of the OpenCms community. Use this list for simple "first time" user questions as well as for specialized comments, questions and/or feedback regarding OpenCms. The OpenCms core development team from <a href="%(link0)">Alkacon Software GmbH</a> and several other experienced OpenCms users and developers are regularly answering questions on this list.</p>
+      <content><![CDATA[<p>The <strong>opencms-dev</strong> mailing list is the place for all questions, comments and suggestions for OpenCms and the main forum of the OpenCms community. Use this list for simple "first time" user questions as well as for specialized comments, questions and/or feedback regarding OpenCms. The OpenCms core development team from <a href="%(link0)">Alkacon Software</a> and several other experienced OpenCms users and developers are regularly answering questions on this list.</p>
 <p>Participation on the <strong>opencms-dev</strong> mailing list is of course voluntary. In case you have a question where you really need an answer, there are professional support options available for OpenCms as well. Please see the <a href="%(link1)">Support</a> section on the opencms.org website for details.</p>
 <h4>Archives of the OpenCms mailing list</h4>
 <p>Before you post a new question to the mailing list, you should check out the <a href="%(link2)">mailing list archives</a> on the opencms.org website to see if your question has already been answered.</p>

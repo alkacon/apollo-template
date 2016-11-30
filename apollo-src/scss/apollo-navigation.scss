@@ -1,9 +1,27 @@
+/*
+ * This program is part of the OpenCms Apollo Template.
+ *
+ * Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
 /* Variables
 ------------------------------------*/
 
 $nav-theme:         $main-theme !default;   // used for 1st level text and big colored border above / below menus
-$nav-text:          $grey-dark !default;  // standard text color of the nav menu entries
+$nav-text:          $grey-darker !default;  // standard text color of the nav menu entries
 $nav-text-hover:    $nav-theme !default;    // hover text color of the nav menu entries
 $nav-bg:            $white !default;        // standard background of the nav menu entries
 $nav-bg-hover:      $grey-light !default;   // hover background of the nav menu entries
@@ -14,9 +32,9 @@ $nav-border:        $grey-light !default;         // the border color for the na
 $nav-header-bg:     $nav-bg !default;       // background of the main header
 $nav-beadcrump-bg:  $grey-lighter !default; // background of the breadcrumps
 
-$nav-toggle:        $nav-theme !default;    // colors for the "nav-toggle" 
-$nav-toggle-text:   $white !default;        // this is the button displayed on small screens to 
-$nav-toggle-hover:  $blue !default;         // show / hide the navigation
+$nav-toggle:        $nav-theme !default;                // colors for the "nav-toggle" button 
+$nav-toggle-text:   $white !default;                    // this is the button displayed on small screens to 
+$nav-toggle-hover:  $main-theme-complementary !default; // show / hide the navigation
 
 $nav-shadow:        $dropshadow !default;   // The shadow effect used
 

@@ -1,77 +1,118 @@
-/* apollo-sitemap.scss */
+/*
+ * This program is part of the OpenCms Apollo Template.
+ *
+ * Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
 /* Sitemap.
 ----------------------------------------------------------------------------- */
 
-.sitemap{
-    ul, li{
+.sitemap {
+    ul, 
+    li {
         margin: 0;
         padding: 0;
         list-style: none;
         padding: 5px;
         background: transparent;
     }
-    ul>ul{
+
+    ul > ul{
+
         li {
+            color: get-text-color($main-theme);
             background: $main-theme;
             padding: 10px;
-            color: $text-light;
             font-weight: bold;
             font-size: 1em; 
             line-height: 1;
             &.parent{
-                cursor: pointer;    
+                cursor: pointer;
             }
-            a{          
-                color: $text-light;
+
+            a {
+                color: get-text-color($main-theme);
                 width: 100%;
                 display: block;
                 height: 100%;
             }
-            span{
+
+            span {
                 float: left;
             }
+
             i{
                 transform: rotate(-90deg);
                 transition: transform 1s;
-                float: right;   
+                float: right;
+
                 &.open{
                     transform: rotate(0);
                     transition: transform 1s;
                 }
             }
         }
-        &>ul li {
+
+        & > ul li {
+            color: get-text-color($main-theme-complementary);
+            background: $main-theme-complementary;
             padding: 5px 10px;
             margin: 0;
-            background: $main-theme-additional;
-            color: $text-dark;
             font-weight: normal;
-            &:hover{
+
+            a {
+                color: get-text-color($main-theme-complementary);
+            }
+
+            &:hover {
                 background: $main-theme;
-                color: $text-light;
-                a{
-                    color: $text-light;         
-                    text-decoration: none;  
+                color: get-text-color($main-theme);
+
+                a {
+                    color: get-text-color($main-theme);
+                    text-decoration: none;
                 }
             }
-            a{          
-                color: $text-dark;  
-            }           
-        }   
+        }
     }
 }
 
 @each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
 
-    .sitemap-#{""+$type-name}{
-        ul>ul{
+    .sitemap-#{""+$type-name} {
+
+        ul > ul {
+
             li {
+                color: get-text-color($bg-color);
                 background: $bg-color; 
+
+                a {
+                    color: get-text-color($bg-color);
+                }
             }
-            &>ul li {
-                background: lighten($bg-color, 50%);      
-            }   
+
+            & > ul li {
+                color: get-text-color(lighten($bg-color, 50%));
+                background: lighten($bg-color, 50%);
+
+                a {
+                    color: get-text-color(lighten($bg-color, 50%));
+                }
+            }
         }
-    }    
+    }
 }

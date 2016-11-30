@@ -8,7 +8,7 @@
 // Main theme colors
 $main-theme: #b31b34; // dark red
 $main-theme-hover: #ff264a; // light red
-$main-theme-additional: lighten($main-theme-hover, 37%); // lighter red
+$main-theme-complementary: #144382; // dark blue
 
 // Import the other files
 @import 'imports';

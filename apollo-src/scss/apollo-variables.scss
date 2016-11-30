@@ -1,3 +1,22 @@
+/*
+ * This program is part of the OpenCms Apollo Template.
+ *
+ * Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 // Main colors
 
 $alkacon-red:       #b31b34 !default;
@@ -60,23 +79,23 @@ $btn-padding: 8px !default;
 $primary-colors:
 (
  // name                         // bg-color        // text-color    // highlight-color
- (white,                         $white,            $text-dark,     $red-light),
+ (white,                       $white,            $text-dark,     $red-light),
  (grey-lighter,                  $grey-lighter,     $text-dark,     $grey-light),
  (grey-light,                    $grey-light,       $text-dark,     $grey-lighter),
- (grey,                          $grey,             $text-light,    $grey-light),
+ (grey,                        $grey,             $text-light,    $grey-light),
  (grey-dark,                     $grey-dark,        $text-light,    $grey),
  (grey-darker,                   $grey-darker,      $text-light,    $grey-dark),
  (blue-light,                    $blue-light,       $text-light,    $blue),
- (blue,                          $blue,             $text-light,    $blue-light),
+ (blue,                        $blue,             $text-light,    $blue-light),
  (blue-dark,                     $blue-dark,        $text-light,    $blue),
  (blue-darker,                   $blue-darker,      $text-light,    $blue-dark),
- (cyan,                          $cyan,             $text-light,    $blue-cyan),
+ (cyan,                        $cyan,             $text-light,    $blue-cyan),
  (red-light,                     $red-light,        $text-light,    $red),
- (red,                           $red,              $text-light,    $red-light),
+ (red,                         $red,              $text-light,    $red-light),
  (red-dark,                      $red-dark,         $text-light,    $red),
  (red-darker,                    $red-darker,       $text-light,    $red-dark),
  (orange-light,                  $orange-light,     $text-dark,     $orange),
- (orange,                        $orange,           $text-light,    $orange-light),
+ (orange,                      $orange,           $text-light,    $orange-light),
  (orange-dark,                   $orange-dark,      $text-light,    $orange),
  (orange-darker,                 $orange-darker,    $text-light,    $orange-dark),
  (blue-cyan,                     $blue-cyan,        $text-light,    $cyan),
@@ -86,15 +105,15 @@ $primary-colors:
 // complimentary colors not suitable for highlighting  
 $secondary-colors:
 (
- (blue-lighter, $blue-lighter, $text-dark,     $blue-light),
- (red-lighter,  $red-lighter,  $text-dark,     $red-light),
- (orange-lighter,$orange-lighter,$text-dark,   $orange-light),
- (violet,       $violet,       $text-light,    $red),
- (brown,        $brown,        $text-light,    $orange),
- (red-orange,   $red-orange,   $text-light,    $orange),
- (red-cyan,     $red-cyan,     $text-light,    $red),
- (green,        $green,        $text-light,    $orange),
- (yellow,       $yellow,       $text-light,    $red-orange),
+ (blue-lighter,   $blue-lighter,   $text-dark,     $blue-light),
+ (red-lighter,    $red-lighter,    $text-dark,     $red-light),
+ (orange-lighter, $orange-lighter, $text-dark,     $orange-light),
+ (violet,       $violet,         $text-light,    $red),
+ (brown,        $brown,          $text-light,    $orange),
+ (red-orange,     $red-orange,     $text-light,    $orange),
+ (red-cyan,       $red-cyan,       $text-light,    $red),
+ (green,        $green,          $text-light,    $orange),
+ (yellow,       $yellow,         $text-light,    $red-orange),
 ) !default; 
 
 // all colors combined
@@ -103,8 +122,8 @@ $all-colors: join($primary-colors, $secondary-colors) !default;
 
 $border-colors: 
 (
- (grey-lightest, $grey-lightest, $text-dark,     $grey-lighter),
- (grey-light,    $grey-light,    $text-dark,     $grey-lighter), 
+ (grey-lightest,   $grey-lightest, $text-dark,     $grey-lighter),
+ (grey-light,      $grey-light,    $text-dark,     $grey-lighter), 
  (grey,          $grey,          $text-light,    $grey-light),
  (blue,          $blue,          $text-light,    $blue-light),
  (red,           $red,           $text-light,    $red-light),
@@ -133,3 +152,13 @@ $screen-lg-min: 1200px !default;
 $screen-xs-max: ($screen-sm-min - 1) !default;
 $screen-sm-max: ($screen-md-min - 1) !default;
 $screen-md-max: ($screen-lg-min - 1) !default;
+
+// function to calculate the best color for text based on the background
+
+@function get-text-color($color) {
+    @if (lightness($color) > 69) { // 58 orange, 69 grey to use light text
+        @return $text-dark; // light backgorund, dark text
+    } @else {
+        @return $text-light; // dark background, light text
+    }
+}
