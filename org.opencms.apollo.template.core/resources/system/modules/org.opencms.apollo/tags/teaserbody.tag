@@ -19,7 +19,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <h2>
-    <a class="teaser-head" href="<cms:link>${href}</cms:link>">${title}</a>
+    <a class="teaser-head" href="${href}">${title}</a>
 </h2>
 
 <c:set var="showdate"><c:out value="${showdate}" default="true" /></c:set>
@@ -45,7 +45,7 @@
     </c:choose>
 </p>
 
-<a href="<cms:link>${href}</cms:link>" class="btn">
+<a href="${href}" class="btn">
     <c:choose>
         <c:when test="${not empty btntext}">
             ${btntext}
