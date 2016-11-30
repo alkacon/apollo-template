@@ -65,13 +65,13 @@
     
         <%-- ################################################################################################################# HEAD ######## --%>
         <c:set var="head">
-            <c:out value='<div class="btn-group hidden-xs">' escapeXml='false' />
+            <c:out value='<div class="list-option btn-group">' escapeXml='false' />
                 <button type="button" class="dropdown-toggle btn ap-btn-${buttonColor}" data-toggle="dropdown" 
                                 aria-haspopup="true" aria-expanded="false" id="dropdownMenu1" aria-expanded="true">
                     ${label}&nbsp;<span class="va-middle fa fs-8 fa-chevron-down"></span>
                 </button>
                 
-                <c:out value='<ul class="dropdown-menu dropdown-${buttonColor}">' escapeXml='false' />   
+                <c:out value='<ul class="list-optionlist dropdown-menu dropdown-${buttonColor}">' escapeXml='false' />   
         </c:set>    
 
         <c:set var="delimiter" value="|" />
@@ -84,7 +84,7 @@
                     <c:set var="selected">${sortController.state.checkSelected[sortOption] ? ' class="active"' : ""}</c:set>
                     <li ${selected}>
                         <a href="javascript:void(0)" onclick="reloadInnerList('${search.stateParameters.setSortOption[sortOption.paramValue]}',
-                             		$('#list-' + $(this).parents().filter('.listoptionbox').data('id')))">
+                            $('#list-' + $(this).parents().filter('.ap-list-options').data('id')))">
                             <fmt:message key="${sortOption.label}" />
                         </a>
                     </li>

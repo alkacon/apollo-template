@@ -110,12 +110,9 @@
 
     <li ${listClass} ${megamenuAttr}>
 
-    <a href="<cms:link>${elem.resourceName}</cms:link>">${elem.navText}</a>
-    <%--
     <a href="<cms:link>${elem.resourceName}</cms:link>"
         <c:if test="${parentItem and nextElemDeeper}"> class="dropdown-toggle" data-toggle="dropdown"</c:if>
     >${elem.navText}</a>
-    --%>
  
     <c:set var="oldLevel" value="${currentLevel}" />
 </c:forEach>

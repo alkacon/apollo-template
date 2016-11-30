@@ -26,15 +26,15 @@
                 
         <%-- ##################################### --%>
         
-        <div id="listoption_box-${cms.element.id}" 
-            class="listoptionbox ${formatterSettings.listWrapper}" 
+        <div class="ap-list-options ${formatterSettings.listWrapper}" 
+            id="listoption_box-${cms.element.id}" 
             data-id="${cms.element.id}" 
             data-facets="${facetsettings}">
             
             ${cms.reloadMarker}
             
             <c:if test="${cms.isEditMode}">
-                <div class="listOptions editMessage-${cms.element.id} alert alert-warning">
+                <div class="list-options editMessage-${cms.element.id} alert alert-warning">
                     <h3>
                         <fmt:message key="apollo.list.message.facets" />&nbsp;${value.Headline}
                     </h3>

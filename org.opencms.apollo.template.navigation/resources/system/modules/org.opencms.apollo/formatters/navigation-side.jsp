@@ -11,7 +11,7 @@
 <cms:bundle basename="org.opencms.apollo.template.navigation.messages">
 <cms:formatter var="content" val="value" rdfa="rdfa">
 
-<div>
+<div class="ap-sidebar-nav ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
 
     <c:set var="inMemoryMessage"><fmt:message key="apollo.navigation.message.new" /></c:set>
     <apollo:init-messages textnew="${inMemoryMessage}" />
@@ -39,7 +39,7 @@
     <c:set var="navItems" value="${nav.items}" />
     <c:set var="navLength" value="${fn:length(navItems) - 1}" />
 
-    <ul class="list-group sidebar-nav">
+    <ul class="sidebar-nav list-group">
     <c:forEach var="i" begin="0" end="${navLength}" >
 
         <c:set var="navElem" value="${navItems[i]}" />
