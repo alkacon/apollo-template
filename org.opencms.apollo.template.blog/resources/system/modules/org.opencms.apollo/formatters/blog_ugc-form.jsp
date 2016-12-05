@@ -1,7 +1,12 @@
-<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
+<%@page buffer="none" session="false" trimDirectiveWhitespaces="true" %>
+<%@page import="java.lang.String"%>
+<%@page import="org.opencms.file.CmsResource"%>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
+
+<c:set var="backlink" value="${cms.typeDetailPage['a-blog']}" />
+<% pageContext.setAttribute("backlink", CmsResource.getParentFolder((String)pageContext.getAttribute("backlink"))); %>
 
 <cms:formatter var="content">
 	<c:set var="textnew"><h2>New form element has been created</h2><h3>Please edit the form configuration</h3></c:set>
@@ -14,7 +19,7 @@
 				configPath="${content.filename}" />
 			<div id="postFormLoading" style="display: none"></div>
 			<form id="ugcForm" ugc-id="${ugcId}"
-				back-link="${cms.typeDetailPage['a-blog']}" method="post"
+				back-link="${backlink}" method="post"
 				role="form">
 
 				<div class="form-group">
