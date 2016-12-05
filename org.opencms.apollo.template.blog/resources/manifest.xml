@@ -21,6 +21,7 @@
 		<dateinstalled/>
 		<dependencies>
 			<dependency name="org.opencms.apollo.template.core" version="10.5.0"/>
+			<dependency name="org.opencms.ugc" version="10.5.0"/>
 		</dependencies>
 		<exportpoints/>
 		<resources>
