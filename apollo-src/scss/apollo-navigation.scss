@@ -739,7 +739,6 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 .sidebar-nav {
     border: 1px solid $nav-border;
 
-    > li.active,
     > li {
         &:first-child {
             // remove top border from the very first element
@@ -747,7 +746,6 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         }
     }
 
-    li.active,
     li {
         background: $nav-bg;
         border-top: 1px solid $nav-border;
@@ -778,7 +776,6 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             padding: 0;
             list-style: none;
 
-            li.active,
             li {
                 border: none;
                 border-top: 1px solid $nav-border;
@@ -793,34 +790,30 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
         > ul {
             // add padding for 2nd level
-            li.active a,
             li a {
                 padding-left: 20px;
             }
-        }
 
-        > ul > li.list-group-item > ul {
-            // add padding for 3rd level
-            li.active a,
-            li a {
-                padding-left: 40px;
+            > li > ul {
+                // add padding for 3rd level
+                li a {
+                    padding-left: 30px;
+                }
+
+                > li > ul {
+                    // add padding for 4th level
+                    li a {
+                        padding-left: 40px;
+                    }
+
+                    > li > ul {
+                        // add padding for 5th level
+                        li a {
+                            padding-left: 50px;
+                        }
+                    }
+                }
             }
-        }
-
-        > ul > li.list-group-item > ul > li.list-group-item > ul {
-            // add padding for 4th level
-            li.active a,
-            li a {
-                padding-left: 60px;
-            }
-        }
-    }
-
-    li.active {
-        // override boostrap default highlighting
-        &:hover {
-            border-color: $nav-border;
-            background: $nav-bg;
         }
     }
 
@@ -834,14 +827,14 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         }
     }
 
-    .list-toggle {
+    .nav-toggle {
 
         &:after {
             top: 7px;
             right: 10px;
             color: $nav-text;
             font-size: 14px;
-            content: "\f105";
+            content: "\f107";
             position: absolute;
             font-weight: normal;
             display: inline-block;
@@ -849,16 +842,14 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             pointer-events: none;
         }
 
-        &.active:after {
-            pointer-events: none;
-            color: $nav-text;
-            content: "\f107";
+        &.collapsed:after {
+            content: "\f105";
         }
     }
 
     @media (max-width: $screen-xs-max) {
         // remove bootstap gutter on small screens
-        // we expect to be in "fill width" mode here 
+        // we expect to be in "full width" mode here 
         margin-left: -15px;
         margin-right: -15px;
         border-left: none;

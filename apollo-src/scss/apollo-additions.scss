@@ -18,6 +18,8 @@
  */
 
 /* Extend Bootstrap forms, adjustment corners and colors */
+.input-group .form-control,
+select.form-control,
 .form-control {
     box-shadow: none;
     border-radius: 0;
