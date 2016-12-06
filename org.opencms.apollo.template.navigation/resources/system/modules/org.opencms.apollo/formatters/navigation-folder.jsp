@@ -10,36 +10,22 @@
 <cms:bundle basename="org.opencms.apollo.template.navigation.messages">
 <cms:formatter var="content" val="value" rdfa="rdfa">
 
-	<c:set var="inMemoryMessage"><fmt:message key="apollo.navigation.message.new" /></c:set>
-	<apollo:init-messages textnew="${inMemoryMessage}" />
+    <c:set var="inMemoryMessage"><fmt:message key="apollo.navigation.message.new" /></c:set>
+    <apollo:init-messages textnew="${inMemoryMessage}" />
 
-		<c:choose>
-			<c:when test="${value.NavFolder.isSet}">
-				<c:set var="navStartFolder">${value.NavFolder}/</c:set>
-			</c:when>
-			<c:otherwise>
-				<c:set var="pathparts" value="${fn:split(cms.requestContext.folderUri, '/')}" />
-				<c:set var="navStartLevel">${value.NavStartLevel.stringValue}</c:set>
-				<c:set var="navStartFolder" value="/" />
-				<c:set var="lastItem" value="" />
-				<c:forEach var="folderName" items="${pathparts}" varStatus="status">
-					<c:if test="${status.count <= navStartLevel}">
-						<c:set var="navStartFolder">${navStartFolder}${folderName}/</c:set>
-					</c:if>
-				</c:forEach>
-			</c:otherwise>
-		</c:choose>
+    <apollo:nav-items
+        type="forFolder"
+        content="${content}"
+        currentPageFolder="${cms.requestContext.folderUri}" 
+        currentPageUri="${cms.requestContext.uri}" 
+        var="nav">
 
-		<cms:navigation 
-            type="forFolder" 
-            resource="${navStartFolder}" 
-            locale="${cms.locale}"
-            var="nav" />
+        <apollo:linksequence 
+            wrapperclass="ap-linksequence-boxed ap-navfolder" 
+            title="${value.Title}" 
+            links="${nav.items}" /> 
 
-		<apollo:linksequence 
-				wrapperclass="ap-linksequence-boxed ap-navfolder" 
-				title="${value.Title}" 
-				links="${nav.items}" /> 
+    </apollo:nav-items>
 
 </cms:formatter>
 </cms:bundle>

@@ -16,76 +16,74 @@
     <c:set var="inMemoryMessage"><fmt:message key="apollo.navigation.message.new" /></c:set>
     <apollo:init-messages textnew="${inMemoryMessage}" />
 
-    <c:set var="rootlevel" value="${value.NavStartLevel.toInteger < 1 ? 1 : value.NavStartLevel.toInteger}" />
-    <c:set var="folderUri" value="${cms.requestContext.folderUri}" />
-    <c:set var="pageUri" value="${cms.requestContext.uri}" />
+    <apollo:nav-items
+        type="forSite"
+        content="${content}"
+        currentPageFolder="${cms.requestContext.folderUri}" 
+        currentPageUri="${cms.requestContext.uri}" 
+        var="nav">
 
-    <c:set var="pathparts" value="${fn:split(folderUri, '/')}" />
-    <c:set var="startFolder" value="/" />
-    <c:forEach var="folderName" items="${pathparts}" varStatus="status">
-        <c:if test="${status.count <= rootlevel}">
-            <c:set var="startFolder">${startFolder}${folderName}/</c:set>
-        </c:if>
-    </c:forEach>
-
-    <cms:navigation 
-        type="forSite" 
-        resource="${startFolder}"
-        startLevel="${rootlevel}" 
-        endLevel="${rootlevel + 3}"
-        locale="${cms.locale}"
-        var="nav" />
-
-    <c:set var="navItems" value="${nav.items}" />
-    <c:set var="navLength" value="${fn:length(navItems) - 1}" />
+    <c:set var="navLength" value="${fn:length(nav.items) - 1}" />
 
     <ul class="sidebar-nav list-group">
     <c:forEach var="i" begin="0" end="${navLength}" >
 
-        <c:set var="navElem" value="${navItems[i]}" />
-        <c:set var="navLevel" value="${0 + navElem.navTreeLevel}" />
-        <c:set var="nextLevel" value="${i < navLength ? navItems[i+1].navTreeLevel : rootlevel}" />
+        <c:set var="navElem" value="${nav.items[i]}" />
+        <c:set var="nextLevel" value="${i < navLength ? nav.items[i+1].navTreeLevel : navStartLevel}" />
+        <c:set var="startSubNav" value="${nextLevel > navElem.navTreeLevel}" />
 
-        <c:set var="activePage" value="${navElem.navigationLevel ? 
-            fn:startsWith(pageUri, navElem.parentFolderName) :
-            fn:startsWith(pageUri, navElem.resourceName)}" />
-        <c:set var="activePageClass" value="${activePage ? ' active currentpage' : ''}" />
+        <c:set var="isCurrentPage" value="${navElem.navigationLevel ? 
+            fn:startsWith(cms.requestContext.uri, navElem.parentFolderName) :
+            fn:startsWith(cms.requestContext.uri, navElem.resourceName)}" />
 
-        <c:set var="needToggle" value="${nextLevel > navLevel}" />
-        <li class="list-group-item ${needToggle ? 'list-toggle' : ''} ${activePageClass}">
+        <c:set var="navLink"><cms:link>${navElem.resourceName}</cms:link></c:set>
+        <li class="list-group-item${isCurrentPage ? ' currentpage' : ''}"><%--
 
-            <c:choose>
+    --%><c:choose>
 
-                <c:when test="${needToggle}">
-                    <a class="accordion-toggle ${activePage ? '' : ' collapsed'}" href="#sidenav-${i}" data-toggle="collapse" aria-expanded="${activePage}">${navElem.navText}</a>
-                    <c:set var="ulStatus" value="${activePage ? 'in' : ''}" /> 
-                    <c:out value='<ul class="collapse ${ulStatus}" id="sidenav-${i}">' escapeXml="false" />
+                <c:when test="${startSubNav}">
+
+                    <%-- Output the start of a new sub-navigation level --%>
+                    <c:set var="collapseId" value="nav-${cms.element.instanceId}-${i}" /> 
+                    <a href="#${collapseId}" <%--  
+                    --%>class="nav-toggle${isCurrentPage ? '' : ' collapsed'}" <%--
+                    --%>data-toggle="collapse" <%--  
+                    --%>aria-expanded="${isCurrentPage}"><%--
+                --%><c:out value='${navElem.navText}' escapeXml="false" /></a><%--
+
+                --%><c:set var="collapseIn" value="${isCurrentPage ? ' in' : ''}" /> 
+                    <c:out value='<ul class="collapse${collapseIn}" id="${collapseId}">' escapeXml="false" />
 
                     <c:if test="${not navElem.navigationLevel}">
-                        <c:set var="activeSubPage" value="${activePage and (folderUri eq navElem.resourceName)}" />
-                         <li class="list-group-item ${activeSubPage ? activePageClass : ''}">
-                            <a href="<cms:link>${navElem.resourceName}</cms:link>">${navElem.navText}</a>
-                         </li>
-                    </c:if>
-                </c:when>
+                        <%-- Sub navigation started by a page (i.e. not a nav level), so we must add another navigation item here --%>
+                        <c:set var="isCurrentSubPage" value="${isCurrentPage and (cms.requestContext.folderUri eq navElem.resourceName)}" />
+                        <li class="list-group-item${isCurrentSubPage ? ' currentpage'  : ''}"><%--
+                        --%><a href="${navLink}">${navElem.navText}</a><%--
+                    --%></li><%--
+                --%></c:if>
 
+                </c:when>
                 <c:otherwise>
-                    <a href="<cms:link>${navElem.resourceName}</cms:link>">${navElem.navText}</a>
+
+                    <%-- Output a regular navigation item --%>
+                    <c:out value='<a href="${navLink}">${navElem.navText}</a>' escapeXml="false" />
+
                 </c:otherwise>
 
             </c:choose>
 
-            <c:if test="${nextLevel < navLevel}">
-                <c:forEach begin="1" end="${navLevel - nextLevel}" >
+            <c:if test="${nextLevel < navElem.navTreeLevel}">
+                <c:forEach begin="1" end="${navElem.navTreeLevel - nextLevel}" >
                     <c:out value='</ul>' escapeXml="false" />
                 </c:forEach>
             </c:if>
 
-        </li>
+        <c:out value='</li>${nl}' escapeXml="false" />
 
     </c:forEach>
     </ul>
 
+    </apollo:nav-items>
 </div>
 
 </cms:formatter>

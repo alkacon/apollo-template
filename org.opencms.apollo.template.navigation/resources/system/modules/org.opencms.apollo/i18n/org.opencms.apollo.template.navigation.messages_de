@@ -1,4 +1,4 @@
-#Tue Nov 29 17:58:51 UTC 2016
+#Mon Dec 05 15:25:08 UTC 2016
 label.ApolloNavigation.Tab.Header.description=<div style\="background-color\: \#ffffcc; color\: \#474747; border\: 1px solid \#c9c9c9; border-radius\: 4px; padding\: 6px; margin\: 8px 25px 2px 3px; font-size\: 14px;">Diese Optionen werden nur benutzt wenn die Navigation für den Kopfbereich der Seite formatiert wird.</div>
 apollo.navigation.navstartlevel.5=5 - Fünfte Ebene
 apollo.navigation.navstartlevel.4=4 - Vierte Ebene
@@ -6,11 +6,12 @@ apollo.navigation.navstartlevel.3=3 - Dritte Ebene
 apollo.navigation.navstartlevel.2=2 - Zweite Ebene
 apollo.navigation.navstartlevel.1=1 - Erste Ebene
 apollo.navigation.navstartlevel.0=0 - Wurzelebene
-label.ApolloNavigation.NavFolder=Navigationsordner
+label.ApolloNavigation.NavFolder=Navigation Startordner
+label.ApolloNavigation.NavDepth.help=Legt die Tiefe der Navigation fest, d.h. die maximale Anzahl der Ebenen in der Navigation.
 label.ApolloNavigation.Tab.Basic=Grundkonfiguration
 label.ApolloNavChoiceInline.LogoWidth=Breite\n
 label.ApolloNavChoiceInline.LogoLink.help=Das Logo Bild wird  im Seitenkopf mit dem hier angegeben Link hinterlegt.
-label.ApolloNavigation.NavFolder.help=Der Ordner, von dem aus die Navigation beginnen soll. Dieser Wert überschreibt die Start Ebenen Einstellung.
+label.ApolloNavigation.NavFolder.help=Der Ordner, von dem aus die Navigation beginnen soll. Falls dieser Wert nicht angegeben ist, so beginnt die Navigation mit dem Wurzelordner '/'
 label.ApolloNavChoiceInline.LogoImage=Logo Bild
 title.a-navigation=Neue Navigation
 label.ApolloNavigation.Inline.help=Zeigt ein statisches Logo oberhalb der Navigation an. Diese Option ist nicht so mächtig wie der Container, aber dafür einfacher in der Verwendung. 
@@ -19,7 +20,7 @@ label.ApolloNavigation.Title=Titel
 label.ApolloNavChoiceInline.LogoHeight.help=Die Höhe in Pixeln in der das Logo angezeigt werden soll. Sollte aus Performance-Gründen gesetzt werden.
 label.ApolloNavigation.Container.help=Fügt oberhalb der Navigation einen Container für frei editierbaren Inhalt ein. Dies ermöglicht eine weitreichende Anpassung des Kopfbereiches. ACHTUNG\: Der Container ist nur in Modell-Gruppen sichtbar.
 label.ApolloNavigation.Title.help=Der Titel wird nicht angezeigt. Er dient zum Auffinden des Elements in den Galerien.
-label.ApolloNavigation.NavStartLevel=Navigation Start Ebene
+label.ApolloNavigation.NavStartLevel=Navigation Startebene
 fileicon.a-navigation=Navigation
 label.ApolloNavigation.Inline=Statisches Logo
 label.ApolloNavChoiceInline.LogoLink=Logo Link
@@ -27,6 +28,7 @@ label.ApolloNavigation.NavStartLevel.help=Setzt die Ordnerebene, von der aus die
 label.ApolloNavigation.PullNavUp.help=Wenn ausgewählt, so wird die Navigation nach oben gezogen und über dem darüber liegendem Element angezeigt. Ansonsten wird die Navigation unterhalb angezeigt.
 label.ApolloNavigation.Container=Inhalts-Container aktivieren
 apollo.navigation.message.onlynumbers=Nur positive Zahlenwerte erlaubt.
+label.ApolloNavigation.NavDepth=Navigation Tiefe
 label.ApolloNavigation.PullNavUp=Navigation nach oben ziehen
 label.ApolloNavChoiceInline.LogoImage.help=Das Bild, welches im Kopfbereich angezeigt werden soll.
 label.ApolloNavChoiceInline.LogoFullWidth=Logo in voller Seitenbreite zeigen

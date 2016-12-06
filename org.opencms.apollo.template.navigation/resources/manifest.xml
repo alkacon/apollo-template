@@ -25,8 +25,7 @@
 		<exportpoints/>
 		<resources>
 			<resource uri="/system/modules/org.opencms.apollo.template.navigation/"/>
-			<resource uri="/system/modules/org.opencms.apollo/tags/nav-breadcrumb.tag"/>
-			<resource uri="/system/modules/org.opencms.apollo/tags/nav-head.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/nav-items.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-folder.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-folder.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/navigation-head.jsp"/>
@@ -371,42 +370,17 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/tags/nav-breadcrumb.tag</source>
-			<destination>system/modules/org.opencms.apollo/tags/nav-breadcrumb.tag</destination>
+			<source>system/modules/org.opencms.apollo/tags/nav-items.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/nav-items.tag</destination>
 			<type>jsp</type>
-			<uuidstructure>5498be21-b492-11e6-aa85-0242ac11002b</uuidstructure>
-			<uuidresource>5498be22-b492-11e6-aa85-0242ac11002b</uuidresource>
-			<datecreated>Sun, 27 Nov 2016 11:12:05 GMT</datecreated>
+			<uuidstructure>463f0ca5-bb00-11e6-8580-0242ac11002b</uuidstructure>
+			<uuidresource>463f0ca6-bb00-11e6-8580-0242ac11002b</uuidresource>
+			<datecreated>Mon, 05 Dec 2016 15:34:13 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Creates the breadcrump navigation]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/tags/nav-head.tag</source>
-			<destination>system/modules/org.opencms.apollo/tags/nav-head.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>bfe177c5-b495-11e6-aa85-0242ac11002b</uuidstructure>
-			<uuidresource>bfe177c6-b495-11e6-aa85-0242ac11002b</uuidresource>
-			<datecreated>Sun, 27 Nov 2016 11:36:34 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Creates the head navigation]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
+					<value><![CDATA[Collects navigation items based on the settings of a navigation XML content]]></value>
 				</property>
 			</properties>
 			<relations/>
