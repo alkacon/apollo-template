@@ -217,8 +217,8 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             padding: 9px 20px 9px 20px;
         }
 
-        &:not(.single) > a:after {
-
+        &.dropdown > a:after {
+            // add caret for top level dropdown lists
             font-size: 12px;
             content: "\f107";
             position: absolute;
@@ -314,14 +314,6 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             border-color: $nav-border;
         }
 
-        > li.dropdown.open {
-            &:nth-last-child(2) > a,
-            &:last-child > a {
-                // add the border of the last 2 list elements if open
-                border-bottom: 1px solid $nav-border;
-            }
-        }
-
         > li {
             float: none; // required to overwrite bootstrap default
 
@@ -334,10 +326,22 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
                 border-bottom: solid 1px $nav-border;
             }
 
-            &:not(.single) > a:after {
-                content: "\f105";
-                top: 9px;
-                right: 10px;
+            &.dropdown {
+
+                > a:after {
+                    // add caret for top level dropdown lists
+                    content: "\f105";
+                    top: 9px;
+                    right: 10px;
+                }
+
+                &.open {
+                    &:nth-last-child(2) > a,
+                    &:last-child > a {
+                        // add the border of the last 2 list elements if open
+                        border-bottom: 1px solid $nav-border;
+                    }
+                }
             }
 
             &.active > a {
@@ -398,7 +402,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
     .search-open {
         // css for open search box-shadow
-        // must stay in the css structure here - javascript apparently expects this
+        // must stay in the css structure here - javascript expects this
         right: 0; 
         top: 40px; 
         display: none;
