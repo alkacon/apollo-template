@@ -14,7 +14,7 @@
         </link>
       </links>
       <content><![CDATA[<a href="%(link0)">
-<img class="pull-right mb-20" src="%(link1)" alt="Alkacon Software">
+<img class="pull-right mb-20" width="150" height="49" src="%(link1)" alt="Alkacon Software">
 </a>]]></content>
     </Code>
   </ApolloFlexibleElement>

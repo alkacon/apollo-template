@@ -2,8 +2,9 @@
 
 <ApolloNavigations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/navigation.xsd">
   <ApolloNavigation language="en">
-    <Title><![CDATA[Apollo Demo main navigation]]></Title>
+    <Title><![CDATA[Apollo Demo head navigation]]></Title>
     <NavStartLevel><![CDATA[0]]></NavStartLevel>
+    <NavDepth><![CDATA[4]]></NavDepth>
     <Container>true</Container>
     <PullNavUp>true</PullNavUp>
   </ApolloNavigation>

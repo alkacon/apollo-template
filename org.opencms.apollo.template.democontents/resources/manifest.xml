@@ -10495,35 +10495,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/modelgroup/modelgroup-00006.html</source>
-			<destination>apollo-demo/.content/modelgroup/modelgroup-00006.html</destination>
-			<type>modelgroup</type>
-			<uuidstructure>07167d1d-b628-11e6-bed3-0242ac11002b</uuidstructure>
-			<uuidresource>07167d1e-b628-11e6-bed3-0242ac11002b</uuidresource>
-			<datecreated>Tue, 29 Nov 2016 11:36:11 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Description</name>
-					<value><![CDATA[test grouop]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[TEST Group]]></value>
-				</property>
-				<property>
-					<name>modelgroup.base</name>
-					<value><![CDATA[78b6a0d1-5638-11e5-bfd9-0242ac11002b]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[true]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>apollo-demo/.content/navigations</destination>
 			<type>folder</type>
 			<uuidstructure>fe480c7d-5638-11e5-bfd9-0242ac11002b</uuidstructure>
@@ -10544,7 +10515,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Demo main navigation]]></value>
+					<value><![CDATA[Apollo Demo head navigation]]></value>
 				</property>
 			</properties>
 			<relations/>
