@@ -107,6 +107,7 @@
 
                 <c:set var="listType">
                 ${isFirstLevel ? 'dropdown' : (startSubNav ? 'dropdown-submenu' : '')}
+				${isFirstLevel ? (nextLevel eq navStartLevel ? ' single' : '') : ''}
                 ${isCurrentPage ? ' active' : ''}
                 </c:set>
 
