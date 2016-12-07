@@ -100,14 +100,15 @@
                 <c:set var="nextLevel" value="${i < navLength ? nav.items[i+1].navTreeLevel : navStartLevel}" />
                 <c:set var="startSubNav" value="${nextLevel > navElem.navTreeLevel}" />
                 <c:set var="isFirstLevel" value="${navElem.navTreeLevel eq navStartLevel}" />
+                <c:set var="nextIsFirstLevel" value="${nextLevel eq navStartLevel}" />
 
                 <c:set var="isCurrentPage" value="${navElem.navigationLevel ? 
                     fn:startsWith(cms.requestContext.uri, navElem.parentFolderName) :
                     fn:startsWith(cms.requestContext.uri, navElem.resourceName)}" />
 
                 <c:set var="listType">
-                ${isFirstLevel ? 'dropdown' : (startSubNav ? 'dropdown-submenu' : '')}
-				${isFirstLevel ? (nextLevel eq navStartLevel ? ' single' : '') : ''}
+                ${isFirstLevel ? (nextIsFirstLevel ? '' : 'dropdown') : (startSubNav ? 'dropdown-submenu' : '')}
+               <%-- ${isFirstLevel ? (nextLevel eq navStartLevel ? ' single' : '') : ''} --%>
                 ${isCurrentPage ? ' active' : ''}
                 </c:set>
 
