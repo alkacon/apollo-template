@@ -602,8 +602,8 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         }
     }
 
-    .ap-linksequence-boxed {
-        // special nav like formatting for link sequence in mega menu
+    .ap-linksequence.boxed {
+        // special nav like formatting for boxed link sequence in mega menu
         li > a {
             border: 1px solid $nav-border;
             border-top: none;

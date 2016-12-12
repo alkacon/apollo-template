@@ -17,28 +17,29 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-.ap-linksequence ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
+.ap-linksequence {
 
-.ap-linksequence ul.ap-bullets {
-    list-style-type: disc;
-    padding: inherit;
-}
+    margin-bottom: 20px;
 
-.ap-linksequence-boxed li a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    margin-bottom: -1px;
-    border: 1px solid $grey-light;
-    text-decoration: none;
-}
 
-.ap-linksequence li a span {
-    margin-right: 8px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &.boxed li a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: -1px;
+        border: 1px solid $grey-light;
+        text-decoration: none;
+    }
+
+    .fa:before {
+        padding-right: 8px;
+    } 
 }
 
 // head / foot formatted links
