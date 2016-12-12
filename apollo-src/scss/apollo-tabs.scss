@@ -20,11 +20,11 @@
 // Apollo tabs and panels 
 
 $tab-text-transform:    none !default;
-$tab-colors:            $border-colors !default;
+$tab-colors:            $reduced-colors !default;
 $tab-active-bg:         $main-theme !default;
 
 $panel-text-transform:  none !default;
-$panel-colors:          $border-colors !default;
+$panel-colors:          $reduced-colors !default;
 $panel-border-color:    $grey-light !default;
 $panel-collapsed-bg:    $grey-lighter !default;
 $panel-active-bg:       $main-theme !default;

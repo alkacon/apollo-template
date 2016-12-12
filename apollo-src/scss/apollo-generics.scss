@@ -19,20 +19,19 @@
 
 // Generic CSS selectors that can apply to any DIV or similar block element
 
-$bg-colors:              $all-colors !default;
-$font-colors:            $primary-colors !default;
+$bg-colors:              $many-colors !default;
+$font-colors:            $many-colors !default;
 
 $margins-paddings:       $spacers !default;
 $font-sizes:             (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 26, 28, 30, 36, 48, 72) !default;
 $line-heights:           (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) !default;
 
 $border-default-color:   $main-theme !default;
-$border-colors:          $primary-colors !default;
+$reduced-colors:         $many-colors !default;
 $border-sizes:           (1, 2) !default;
 $border-radiuses:        ((0, 0px), (2, 2px),  (4, 4px), (5, 5px), (10, 10px), (15, 15px), (20, 20px), (30, 30px), (25p, 25%), (50p, 50%)) !default;
 $border-positions:       (bottom, top, left, right) !default;
 $border-styles:          (none, solid, dotted, dashed, hidden) !default;
-
 
 // Colored backgrounds
 
@@ -144,7 +143,7 @@ a.no-underline {
 	    }        
 	}  
 
-	@each $color-name, $bg-color, $text-color, $highlight-color in $border-colors {
+	@each $color-name, $bg-color, $text-color, $highlight-color in $reduced-colors {
 	
 	    .bo-#{""+$position}-#{""+$color-name}  {
 	        border-#{$position}-color: $bg-color;      
@@ -159,7 +158,7 @@ a.no-underline {
 	}
 }
 
-@each $color-name, $bg-color, $text-color, $highlight-color in $border-colors {
+@each $color-name, $bg-color, $text-color, $highlight-color in $reduced-colors {
 
     .bo-#{""+$color-name}  {
         border-color: $bg-color;      
@@ -185,7 +184,7 @@ span.badge {
     padding: 4px 7px;
 }
 
-@each $color-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+@each $color-name, $bg-color, $text-color, $highlight-color in $many-colors {
 
     span.badge-#{""+$color-name} {
         color: $text-color;

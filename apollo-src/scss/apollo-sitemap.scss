@@ -90,7 +90,7 @@
     }
 }
 
-@each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+@each $type-name, $bg-color, $text-color, $highlight-color in $many-colors {
 
     .sitemap-#{""+$type-name} {
 
@@ -106,11 +106,11 @@
             }
 
             & > ul li {
-                color: get-text-color(lighten($bg-color, 50%));
-                background: lighten($bg-color, 50%);
+                color: get-text-color(lighten($bg-color, 25%));
+                background: lighten($bg-color, 25%);
 
                 a {
-                    color: get-text-color(lighten($bg-color, 50%));
+                    color: get-text-color(lighten($bg-color, 25%));
                 }
             }
         }

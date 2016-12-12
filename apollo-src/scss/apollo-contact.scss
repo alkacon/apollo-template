@@ -39,7 +39,7 @@
         .fn {
             padding-top: 5px;
             margin-top: 0px;
-            margin-bottom: 4px;            
+            margin-bottom: 4px;
         }
 
         .title {
@@ -57,9 +57,17 @@
         }
     }
 
+    .ap-contact-adr {
+        display: none;
+    }
+
+    .only-icon {
+        padding-left: 5px;
+    }
+    
     .fa {
-       padding-right: 5px;
-       width: 20px;
+       margin-right: 5px;
+       width: 15px;
     }
 
     .text-box .button-static {

@@ -17,13 +17,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+// Font definitions
+$font-header:       "Prompt", sans-serif !default; 
+$font-header-weight:300 !default;
+$font-header-size:  24px !default;
+$font-content:      "Open Sans", sans-serif !default; 
+$font-content-size: 13px !default;
+
 // Main colors
-
-$alkacon-red:       #b31b34 !default;
-$alkacon-blue:      #144382 !default; // for print this is #003082
-$alkacon-orange:    #ffa826 !default; // for print this is #ffb340
-$alkacon-grey:      #a8adb4 !default;
-
 $white:             #fff !default;
 $black:             #000 !default;
 
@@ -46,8 +47,7 @@ $orange-dark:       darken($orange, 8%) !default;
 $orange-darker:     darken($orange, 16%) !default;
 
 $grey:              #a8adb4 !default;
-$grey-lightest:     #eee !default;
-$grey-lighter:      lighten($grey, 29%) !default;
+$grey-lighter:      #eee !default;
 $grey-light:        lighten($grey, 21%) !default;  
 $grey-dark:         darken($grey, 15%) !default;
 $grey-darker:       darken($grey, 30%) !default;
@@ -63,11 +63,12 @@ $brown:             mix($blue, $orange) !default;
 $red-orange:        mix($red, $orange) !default;
 $red-cyan:          mix($red, $cyan) !default;
 
-// Text colors 
-$text-light: #fff !default;
-$text-dark: #555 !default;
-$text-header: $text-dark !default;
-$text-content: $text-dark !default;
+// Text and page colors 
+$text-light:        $white !default;
+$text-dark:         #555 !default;
+$text-header:       $text-dark !default;
+$text-content:      $text-dark !default;
+$page-background:   $white !default;
 
 // Drop shadow color for effects
 $dropshadow: rgba(0, 0, 0, 0.3) !default;
@@ -75,64 +76,43 @@ $dropshadow: rgba(0, 0, 0, 0.3) !default;
 // Button padding
 $btn-padding: 8px !default;
 
-// these are all colors that make sense as highlight color, e.g. in a button background
-$primary-colors:
+// large array of colors to be used in backgrounds
+$many-colors:
 (
- // name                         // bg-color        // text-color    // highlight-color
- (white,                       $white,            $text-dark,     $red-light),
- (grey-lighter,                  $grey-lighter,     $text-dark,     $grey-light),
- (grey-light,                    $grey-light,       $text-dark,     $grey-lighter),
- (grey,                        $grey,             $text-light,    $grey-light),
- (grey-dark,                     $grey-dark,        $text-light,    $grey),
- (grey-darker,                   $grey-darker,      $text-light,    $grey-dark),
- (blue-light,                    $blue-light,       $text-light,    $blue),
- (blue,                        $blue,             $text-light,    $blue-light),
- (blue-dark,                     $blue-dark,        $text-light,    $blue),
- (blue-darker,                   $blue-darker,      $text-light,    $blue-dark),
- (cyan,                        $cyan,             $text-light,    $blue-cyan),
- (red-light,                     $red-light,        $text-light,    $red),
- (red,                         $red,              $text-light,    $red-light),
- (red-dark,                      $red-dark,         $text-light,    $red),
- (red-darker,                    $red-darker,       $text-light,    $red-dark),
- (orange-light,                  $orange-light,     $text-dark,     $orange),
- (orange,                      $orange,           $text-light,    $orange-light),
- (orange-dark,                   $orange-dark,      $text-light,    $orange),
- (orange-darker,                 $orange-darker,    $text-light,    $orange-dark),
- (blue-cyan,                     $blue-cyan,        $text-light,    $cyan),
+ // name            // bg-color        // text-color    // highlight-color
+ (white,            $white,            $text-dark,     $red-light),
+ (grey-lighter,     $grey-lighter,     $text-dark,     $grey-light),
+ (grey-light,       $grey-light,       $text-dark,     $grey-lighter),
+ (grey,             $grey,             $text-light,    $grey-light),
+ (grey-dark,        $grey-dark,        $text-light,    $grey),
+ (blue-light,       $blue-light,       $text-light,    $blue),
+ (blue,             $blue,             $text-light,    $blue-light),
+ (blue-dark,        $blue-dark,        $text-light,    $blue),
+ (cyan,             $cyan,             $text-light,    $blue-cyan),
+ (red,              $red,              $text-light,    $red-light),
+ (red-dark,         $red-dark,         $text-light,    $red),
+ (orange-dark,      $red-orange,       $text-light,    $orange),
+ (orange,           $orange,           $text-light,    $orange-light),
+ (violet,           $violet,           $text-light,    $red),
+ (green,            $green,            $text-light,    $orange),
+ (yellow,           $yellow,           $text-light,    $red-orange),
 ) !default; 
 
-
-// complimentary colors not suitable for highlighting  
-$secondary-colors:
+// reduced array of colors to be used in backgrounds
+// use this to keep the generated CSS smaller
+$reduced-colors: 
 (
- (blue-lighter,   $blue-lighter,   $text-dark,     $blue-light),
- (red-lighter,    $red-lighter,    $text-dark,     $red-light),
- (orange-lighter, $orange-lighter, $text-dark,     $orange-light),
- (violet,       $violet,         $text-light,    $red),
- (brown,        $brown,          $text-light,    $orange),
- (red-orange,     $red-orange,     $text-light,    $orange),
- (red-cyan,       $red-cyan,       $text-light,    $red),
- (green,        $green,          $text-light,    $orange),
- (yellow,       $yellow,         $text-light,    $red-orange),
-) !default; 
-
-// all colors combined
-$all-colors: join($primary-colors, $secondary-colors) !default;     
-// $colors:     $all-colors !default;
-
-$border-colors: 
-(
- (grey-lightest,   $grey-lightest, $text-dark,     $grey-lighter),
- (grey-light,      $grey-light,    $text-dark,     $grey-lighter), 
- (grey,          $grey,          $text-light,    $grey-light),
- (blue,          $blue,          $text-light,    $blue-light),
- (red,           $red,           $text-light,    $red-light),
- (cyan,          $cyan,          $text-light,    $blue-cyan),
- (orange,        $orange,        $text-light,    $red),
+ (grey-lighter,     $grey-lighter,     $text-dark,     $grey-light),
+ (grey-light,       $grey-light,    $text-dark,     $grey-light), 
+ (grey,             $grey,          $text-light,    $grey-light),
+ (blue,             $blue,          $text-light,    $blue-light),
+ (red,              $red,           $text-light,    $red-light),
+ (cyan,             $cyan,          $text-light,    $blue-cyan),
+ (orange,           $orange,        $text-light,    $red),
 ) !default;
 
 // Spaces used for margins and paddings
-$spacers:       (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 500) !default;
+$spacers:       (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100) !default;
 
 // Alert colors
 $color-info:        $blue-light !default;
@@ -142,19 +122,16 @@ $color-danger :     $red !default;
 $color-primary:     $blue !default;
 
 // Bootstrap screen sizes (minimum)
-
 $screen-sm-min: 768px !default;
 $screen-md-min: 992px !default;
 $screen-lg-min: 1200px !default;
 
 // Bootstrap screen sizes (maximum)
-
 $screen-xs-max: ($screen-sm-min - 1) !default;
 $screen-sm-max: ($screen-md-min - 1) !default;
 $screen-md-max: ($screen-lg-min - 1) !default;
 
 // function to calculate the best color for text based on the background
-
 @function get-text-color($color) {
     @if (lightness($color) > 69) { // 58 orange, 69 grey to use light text
         @return $text-dark; // light backgorund, dark text

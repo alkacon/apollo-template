@@ -20,35 +20,34 @@
 var mf = module.filename.substring(0, module.filename.length - 'Gruntparts.js'.length);
 exports.mf = mf;
 
-exports.templates = [ 
-	'apollo-additions', 
-	'apollo-animation',
+exports.themes = [ 
+    'apollo-fonts',
+    'apollo-containers',
     'apollo-basics',
-    'apollo-blog', 
+    'apollo-animation',
+    'apollo-additions', 
     'apollo-button',
     'apollo-contact',
-    'apollo-effects', 
-    'apollo-event',
-    'apollo-footer',
-    'apollo-generics', 
-    'apollo-job',
-    'apollo-layoutrow',
     'apollo-linksequence',
-    'apollo-list',
     'apollo-navigation',
+    'apollo-search',
     'apollo-section',
     'apollo-sitemap', 
     'apollo-slider',
     'apollo-socialicons',
     'apollo-tabs',
     'apollo-tiles',
-    'container-markers',
+    'apollo-event',
+    'apollo-blog', 
+    'apollo-job', 
+    'apollo-list',
+    'apollo-generics',
 ];
 
 exports.deployTarget = process.env.OCMOUNT + '/system/modules/org.opencms.apollo.theme/resources';
 
 exports.sassSrc = [
-	mf + '*.scss', 
+    mf + '*.scss', 
 ];
 
 exports.resources = [

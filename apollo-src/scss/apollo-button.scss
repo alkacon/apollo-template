@@ -27,7 +27,7 @@ $btn-text-transform:    none !default;
 $btn-border-style:      none !default;
 $btn-border-radius:     0 !default;
 $btn-min-width:         0 !default;
-$btn-colors:            $primary-colors !default;
+$btn-colors:            $reduced-colors !default;
 
 @mixin apollo-button($bg-color, $text-color, $highlight-color) {
 

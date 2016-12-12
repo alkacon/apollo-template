@@ -17,22 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+$headline-linecolor:    $main-theme !default;
+$headline-bottom:       1px dotted $grey-light !default; 
 
-/* Basic CSS selectors that can define the default look of various elements 
------------------------------------------------------------------------------*/
-
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-$page-background: $white !default;
-
-$font-header: "Prompt", sans-serif !default; 
-$font-header-weight: 300 !default;
-
-$font-header-size: 24px !default;
-$font-header-step: round($font-header-size / 6) !default;
-
-$font-content: "Open Sans", sans-serif !default; 
-$font-content-size: 13px !default;
+$font-header-step:      round($font-header-size / 6) !default; 
 
 $h1-size: $font-header-size + $font-header-step !default;
 $h1-heig: round($h1-size * 1.25) !default;
@@ -48,20 +36,20 @@ $h6-size: $h4-size !default;
 $h6-heig: round($h6-size * 1.25) !default;
 
 * {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 body {
-  font-family: $font-content;
-  font-size: 100%;
-  color: $text-content;
-  font-size: $font-content-size;
-  line-height: 1.5;
-  background-color: $grey-light;
+    font-family: $font-content;
+    font-size: 100%;
+    color: $text-content;
+    font-size: $font-content-size;
+    line-height: 1.5;
+    background-color: $grey-light;
 }
 
 .page {
-  background-color: $page-background;
+    background-color: $page-background;
 }
 
 h1, .h1,
@@ -70,56 +58,62 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: $font-header;
-  font-weight: $font-header-weight;
-  color: $text-header;
-  margin-top: 5px;
-  text-shadow: none; 
+    font-family: $font-header;
+    font-weight: $font-header-weight;
+    color: $text-header;
+    margin-top: 5px;
+    text-shadow: none; 
+}
+
+.ap-plain {
+    h3, .h3,
+    h4, .h4,
+    h5, .h5,
+    h6, .h6 {
+        margin-bottom: 5px;
+    }
 }
 
 h1, .h1 {
-  font-size: $h1-size;
-  line-height: $h1-heig;
+    font-size: $h1-size;
+    line-height: $h1-heig;
 }
 h2, .h2 {
-  font-size: $h2-size;
-  line-height: $h2-heig;
+    font-size: $h2-size;
+    line-height: $h2-heig;
 }
 h3, .h3 {
-  font-size: $h3-size;
-  line-height: $h3-heig;
+    font-size: $h3-size;
+    line-height: $h3-heig;
 }
 h4, .h4 {
-  font-size: $h4-size;
-  line-height: $h4-heig;
+    font-size: $h4-size;
+    line-height: $h4-heig;
 }
 h5, .h5 {
-  font-size: $h5-size;
-  line-height: $h5-heig;
+    font-size: $h5-size;
+    line-height: $h5-heig;
 }
 h6, .h6 {
-  font-size: $h6-size;
-  line-height: $h6-heig;
+    font-size: $h6-size;
+    line-height: $h6-heig;
 }
 
 /* Headline with underline effect */
 
-$headline-linecolor:     $main-theme !default;
-$headline-bottom:        1px dotted $grey-light !default; 
-
 .headline {
-  display: block;
-  margin: 10px 0 25px 0;
-  border-bottom: $headline-bottom;
+    display: block;
+    margin: 10px 0 25px 0;
+    border-bottom: $headline-bottom;
 }
 
 .headline h2,
 .headline h3, 
 .headline h4 {
-  display: inline-block;
-  margin: 0 0 -2px 0;
-  padding-bottom: 5px;
-  border-bottom: 2px solid $headline-linecolor;
+    display: inline-block;
+    margin: 0 0 -2px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $headline-linecolor;
 }
 
 
@@ -139,16 +133,16 @@ a {
 }
 
 a, a:focus {
-   text-decoration: none;  
+    text-decoration: none;
 }
 
 a:hover {
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
 button,
 button:hover {
-   outline: 0 !important;
+    outline: 0 !important;
 }
 
 hr { 

@@ -21,14 +21,24 @@
    
 $ti-maxCols: 12 !default; 
 $ti-margin: 0 !default;
-// columns: 1         2       3       4       5           6,     8,          10,         12
-$ti-cols: ((12, 12), (6, 6), (4, 4), (3, 3), (2o4, 2.4), (2,2), (1o5, 1.5), (1o2, 1.2), (1,1)) !default;
+
+// ALL columns: 1         2       3       4       5           6      8           10          12
+//    $ti-cols: ((12, 12), (6, 6), (4, 4), (3, 3), (2o4, 2.4), (2,2), (1o5, 1.5), (1o2, 1.2), (1,1)) !default;
+
+// REDUCED  4       5           6      8
+$ti-cols: ((3, 3), (2o4, 2.4), (2,2), (1o5, 1.5)) !default;
 
 $sq-maxCols: $ti-maxCols !default; 
 $sq-margin: 0 !default;
 $sq-margins: $spacers !default;
 $sq-cols: $ti-cols !default;
 $sq-padding: 20 !default;
+
+// ALL $fix-cols: (50, 100, 125, 150, 200, 250) !default;
+$fix-cols: (100, 125, 150, 200) !default;
+
+$sizes: ("xs", "sm", "md", "lg") !default;
+$gutter: 15 !default; // this should match the bootstrap gutter used
 
 // Squares
 
@@ -138,10 +148,6 @@ $sq-padding: 20 !default;
 
 // Fixed with columns
 // I know that this is not what Bootstrap is about, but hey who cares ;)
-
-$fix-cols: (50, 100, 125, 150, 200, 250) !default;
-$sizes: ("xs", "sm", "md", "lg") !default;
-$gutter: 15 !default; // this should match the bootstrap gutter used
 
 .fixcol { 
     float: left;

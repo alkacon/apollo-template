@@ -71,7 +71,7 @@
 
 // Coloring for events
 // NOTE: apollo-list-scss containes coloring classes also used by event
-@each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+@each $type-name, $bg-color, $text-color, $highlight-color in $many-colors {
 
     .color-#{""+$type-name} {
 

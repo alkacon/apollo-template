@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-$button-colors:          $primary-colors !default;
+$list-colors:          $reduced-colors !default;
 
 .ap-list-filterbox {
     margin-bottom: 15px;
@@ -182,7 +182,7 @@ $pagination-border: $grey-light !default;
 }
 
 // coloring of teaser elements, shared also with event and other list formatters 
-@each $type-name, $bg-color, $text-color, $highlight-color in $primary-colors {
+@each $type-name, $bg-color, $text-color, $highlight-color in $list-colors {
 
     .color-#{""+$type-name} {
 
