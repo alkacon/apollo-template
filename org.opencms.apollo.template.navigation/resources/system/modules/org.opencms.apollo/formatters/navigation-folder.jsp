@@ -21,7 +21,8 @@
         var="nav">
 
         <apollo:linksequence 
-            wrapperclass="ap-linksequence-boxed ap-navfolder" 
+            wrapperclass="boxed navigation" 
+            iconclass="none"
             title="${value.Title}" 
             links="${nav.items}" /> 
 

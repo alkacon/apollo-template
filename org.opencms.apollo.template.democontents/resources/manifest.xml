@@ -14,9 +14,8 @@
 writeProperty '/' 'Description' 'The OpenCms demo, brought to you by Alkacon Software.'
 writeProperty '/' 'NavText' 'Overview'
 writeProperty '/' 'template' '/system/modules/org.opencms.apollo/templates/apollo-page.jsp'
-writeProperty '/' 'apollo.css.wrapper' 'bg-blue:Blue background|bg-red:Red background|bg-grey-light:Grey background|bo-left-red bo-left-2 bo-left-solid:Red line left|bo-left-grey bo-left-2 bo-left-solid:Grey line left'
+writeProperty '/' 'apollo.css.wrapper' 'bg-blue:Blue background|bg-red:Red background|bg-grey-light:Grey background|bo-left-2 bo-red p-0 pl-10:Red line left|bo-right-1 bo-grey p-0 pr-5:Grey line right'
 writeProperty '/' 'apollo.css.iconbox' 'bg-grey-lighter:%(key.apollo.setting.cssclass.lightbox)|bg-red bo-radius-20:%(key.apollo.setting.cssclass.redbox)'
-writeProperty '/' 'apollo.css.icon' 'info:%(key.apollo.setting.iconclass.info)|link:%(key.apollo.setting.iconclass.link)|external-link:%(key.apollo.setting.iconclass.linkexternal1)|external-link-square:%(key.apollo.setting.iconclass.linkexternal1)|download:%(key.apollo.setting.iconclass.download1)|cloud-download:%(key.apollo.setting.iconclass.download2)|file-text-o:%(key.apollo.setting.iconclass.document)|file-pdf-o:%(key.apollo.setting.iconclass.pdf)|folder-o:%(key.apollo.setting.iconclass.folder)|globe:%(key.apollo.setting.iconclass.globe)|arrow-right:%(key.apollo.setting.iconclass.arrow)|check:%(key.apollo.setting.iconclass.check)'
 writeProperty '/' 'apollo.title.prefix' 'OpenCms |'
 
 createUser 'Author' 'password' 'Sample author user'

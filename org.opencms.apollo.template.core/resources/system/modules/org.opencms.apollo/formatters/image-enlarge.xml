@@ -41,11 +41,11 @@
         ap-shadow:%(key.apollo.section.image.effect.shadownoanim)|    
         bo-radius-10:%(key.apollo.section.image.effect.roundcorners)|
         bo-radius-50p:%(key.apollo.section.image.effect.vignette)|
-        bo-1 bo-grey-lightest p-3:%(key.apollo.section.image.effect.bordered)|
-        bo-1 bo-grey-lightest p-3 bo-radius-10:%(key.apollo.section.image.effect.borderedround)|
-        bo-1 bo-grey-lightest p-3 bo-radius-50p:%(key.apollo.section.image.effect.borderedvignette)|
+        bo-1 bo-grey-lighter p-3:%(key.apollo.section.image.effect.bordered)|
+        bo-1 bo-grey-lighter p-3 bo-radius-10:%(key.apollo.section.image.effect.borderedround)|
+        bo-1 bo-grey-lighter p-3 bo-radius-50p:%(key.apollo.section.image.effect.borderedvignette)|
         ap-shadow bo-radius-10:%(key.apollo.section.image.effect.shadowround)|
-        ap-shadow bo-1 bo-grey-lightest p-3:%(key.apollo.section.image.effect.shadowbordered)
+        ap-shadow bo-1 bo-grey-lighter p-3:%(key.apollo.section.image.effect.shadowbordered)
       ]]></WidgetConfig>
     </Setting>
     <Setting>

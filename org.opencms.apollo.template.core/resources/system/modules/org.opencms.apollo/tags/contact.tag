@@ -50,7 +50,10 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <c:set var="labels">
-    <c:if test="${fn:contains(fragments, 'label-text')}">text</c:if>
+    <c:if test="${fn:contains(fragments, 'label-text')}">
+        text
+        <c:set var="showtext">true</c:set>
+    </c:if>
     <c:if test="${fn:contains(fragments, 'label-icon')}">
         icon
         <c:set var="showicons">true</c:set>
@@ -109,47 +112,43 @@
     <c:if test="${showdescription}"><div class="note" ${description.rdfaAttr}>${description}</div></c:if>
 
     <c:if test="${showaddress}">
-        <div class="ap-contact-address">
+        <div class="adr${showicons ? ' ap-contact-adr' : ''}"
             <c:if test="${showicons}">
-                <div id="ap-contact-adrlink-${cms.element.instanceId}">
-                    <apollo:icon-prefix icon="home" fragments="icon text" >
-                        <jsp:attribute name="text">
-                            <a  href=""
-                                onclick="
-                                    $('#ap-contact-adr-${cms.element.instanceId}').slideDown();
-                                    $('#ap-contact-adrlink-${cms.element.instanceId}').hide();
-                                    return false;">
-                                <fmt:message key="apollo.contact.showaddress"/>
-                            </a>
-                        </jsp:attribute>
-                        <jsp:attribute name="icontitle"><fmt:message key="apollo.contact.showaddress"/></jsp:attribute>
-                    </apollo:icon-prefix>
-                </div>
+                id="ap-contact-adr-${cms.element.instanceId}" 
+                onclick="$('#ap-contact-adr-${cms.element.instanceId}').slideUp();$('#ap-contact-adrlink-${cms.element.instanceId}').slideDown();"
+            </c:if>>
+            <div class="street-address">${data.value.Address.value.StreetAddress}</div>
+            <c:if test="${data.value.Address.value.ExtendedAddress.isSet}">
+                <div class="extended-address">${data.value.Address.value.ExtendedAddress}</div>
             </c:if>
-            <div class="adr"
-                <c:if test="${showicons}">
-                    id="ap-contact-adr-${cms.element.instanceId}" 
-                    style="display: none;" 
-                    onclick="$('#ap-contact-adr-${cms.element.instanceId}').slideUp();$('#ap-contact-adrlink-${cms.element.instanceId}').slideDown();"
-                </c:if>>
-                <div class="street-address"> ${data.value.Address.value.StreetAddress}</div>
-                <c:if test="${data.value.Address.value.ExtendedAddress.isSet}">
-                    <div class="extended-address"> ${data.value.Address.value.ExtendedAddress}</div>
+            <div class="ap-contact-city">
+                <span class="locality">${data.value.Address.value.PostalCode}</span>
+                <span class="region">${data.value.Address.value.Locality}</span>
+            </div>
+            <div class="ap-contact-street">
+                <c:if test="${data.value.Address.value.Region.isSet}">
+                    <span class="postal-code">${data.value.Address.value.Region}</span>
                 </c:if>
-                <div class="ap-contact-city">
-                    <span class="locality"> ${data.value.Address.value.PostalCode}</span>
-                    <span class="region"> ${data.value.Address.value.Locality}</span>
-                </div>
-                <div class="ap-contact-street">
-                    <c:if test="${data.value.Address.value.Region.isSet}">
-                        <span class="postal-code"> ${data.value.Address.value.Region}</span>
-                    </c:if>
-                    <c:if test="${data.value.Address.value.Country.isSet}">
-                        <span class="country-name"> ${data.value.Address.value.Country}</span>
-                    </c:if>
-                </div>
+                <c:if test="${data.value.Address.value.Country.isSet}">
+                    <span class="country-name">${data.value.Address.value.Country}</span>
+                </c:if>
             </div>
         </div>
+        <c:if test="${showicons}">
+            <div class="ap-contact-adrlink" id="ap-contact-adrlink-${cms.element.instanceId}">
+                <apollo:icon-prefix icon="home" fragments="icon text" >
+                    <jsp:attribute name="text">
+                        <span class="${showtext ? 'with-text' : 'only-icon'}"><a href="" onclick="
+                            $('#ap-contact-adr-${cms.element.instanceId}').slideDown();
+                            $('#ap-contact-adrlink-${cms.element.instanceId}').hide();
+                            return false;"><%--
+                        --%><fmt:message key="apollo.contact.showaddress"/>
+                        </a></span>
+                    </jsp:attribute>
+                    <jsp:attribute name="icontitle"><fmt:message key="apollo.contact.showaddress"/></jsp:attribute>
+                </apollo:icon-prefix>
+            </div>
+        </c:if>
     </c:if>
 
     <c:if test="${showphone}">

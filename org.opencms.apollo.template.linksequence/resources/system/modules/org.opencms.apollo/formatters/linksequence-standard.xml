@@ -66,10 +66,10 @@
         file-pdf-o:%(key.apollo.setting.iconclass.pdf)|
         folder-o:%(key.apollo.setting.iconclass.folder)|
         link:%(key.apollo.setting.iconclass.link)|
-        external-link:%(key.apollo.setting.iconclass.linkexternal1)|
-        external-link-square:%(key.apollo.setting.iconclass.linkexternal2)|
-        download:%(key.apollo.setting.iconclass.download1)|
-        cloud-download:%(key.apollo.setting.iconclass.download2)
+        external-link:%(key.apollo.setting.iconclass.external-link)|
+        external-link-square:%(key.apollo.setting.iconclass.external-link-square)|
+        download:%(key.apollo.setting.iconclass.download)|
+        cloud-download:%(key.apollo.setting.iconclass.cloud-download)
         )]]></WidgetConfig>
     </Setting>
     <Setting>
