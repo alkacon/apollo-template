@@ -14,31 +14,31 @@
         <%-- ####### Init messages wrapper ################################## --%>
         <c:set var="textnew"><fmt:message key="apollo.linksequence.message.new" /></c:set>
         <apollo:init-messages textnew="${textnew}" textedit="">
-			<div class="links">
-				<ul class="pull-${cms.element.setting.linkalign}">
+            <div class="links">
+                <ul class="pull-${cms.element.setting.linkalign}">
 
-					<c:if test="${cms.element.settings.showLanguageLinks}">
-						<c:set var="langLinks">
-							<apollo:language-linklist />
-						</c:set>
-						<c:if test="${not empty langLinks}">
-							<li class="hoverSelector">
-								<i class="fa fa-globe"></i>
-								<a><fmt:message key="apollo.linksequence.message.languages" /></a>
-								${langLinks}
-							</li>
-							<li class="divider"></li>
-						</c:if>
-					</c:if>
+                    <c:if test="${cms.element.settings.showLanguageLinks}">
+                        <c:set var="langLinks">
+                            <apollo:language-linklist />
+                        </c:set>
+                        <c:if test="${not empty langLinks}">
+                            <li class="hoverSelector">
+                                <i class="fa fa-globe"></i>
+                                <a><fmt:message key="apollo.linksequence.message.languages" /></a>
+                                ${langLinks}
+                            </li>
+                            <li class="divider"></li>
+                        </c:if>
+                    </c:if>
 
-					<c:forEach var="link" items="${content.valueList.LinkEntry}" varStatus="status">
-						<li><apollo:link link="${link}">${link.value.Text}</apollo:link></li>
-						<c:if test="${not status.last}">
-							<li class="divider"></li>
-						</c:if>
-					</c:forEach>
-				</ul>
-			</div>
+                    <c:forEach var="link" items="${content.valueList.LinkEntry}" varStatus="status">
+                        <li><apollo:link link="${link}">${link.value.Text}</apollo:link></li>
+                        <c:if test="${not status.last}">
+                            <li class="divider"></li>
+                        </c:if>
+                    </c:forEach>
+                </ul>
+            </div>
         </apollo:init-messages>
     </div>  
 </cms:formatter>

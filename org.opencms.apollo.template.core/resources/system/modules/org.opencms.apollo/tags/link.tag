@@ -31,7 +31,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
- <%-- ####### Assign JSP body to a variable, we need to check if this is empty ######## --%>
+<%-- ####### Assign JSP body to a variable, we need to check if this is empty ######## --%>
 <jsp:doBody var="bodyVal" />
 
 <c:choose>
@@ -42,11 +42,11 @@
             <c:if test="${not empty settitle and settitle and link.value.Text.isSet}">${' '}title="${link.value.Text}"</c:if>
             <c:if test="${link.value.NewWindow.isSet and link.value.NewWindow == 'true'}">${' '}target="_blank"</c:if>
             <c:if test="${empty bodyVal and link.value.Text.isSet}">${' '}${link.rdfa.Text}</c:if>
-        >
-            <c:choose>
+        ><%--
+        --%><c:choose>
                 <c:when test="${empty bodyVal and link.value.Text.isSet}">
-                    ${link.value.Text}
-                </c:when>
+                    ${link.value.Text}<%--
+            --%></c:when>
                 <c:when test="${empty bodyVal}">
                     <c:if test="${empty linktext}">
                         <fmt:setLocale value="${cms.locale}" />
@@ -54,19 +54,18 @@
                             <c:set var="linktext"><fmt:message key="apollo.link.frontend.more" /></c:set>
                         </cms:bundle>
                     </c:if>
-                    ${linktext}
-                </c:when>
-                <c:otherwise>
-                    <%-- ####### JSP body inserted here ######## --%>
-                    ${bodyVal}
-                    <%-- ####### /JSP body inserted here ######## --%>
-                </c:otherwise>
+                    ${linktext}<%--
+            --%></c:when>
+
+                <%-- ####### JSP body inserted here ######## --%>
+                <c:otherwise>${bodyVal}</c:otherwise>
+                <%-- ####### /JSP body inserted here ######## --%>
             </c:choose>
         </a>
     </c:when>
-    <c:otherwise>
-        <%-- ####### JSP body inserted here ######## --%>
-        ${bodyVal}
-        <%-- ####### /JSP body inserted here ######## --%>
-    </c:otherwise>
+
+    <%-- ####### JSP body inserted here ######## --%>
+    <c:otherwise>${bodyVal}</c:otherwise>
+    <%-- ####### /JSP body inserted here ######## --%>
+
 </c:choose>

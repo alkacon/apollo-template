@@ -36,10 +36,47 @@
       <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
     </Setting>
     <Setting>
+      <PropertyName><![CDATA[linksequenceType]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.linksequenceType)]]></DisplayName>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[standard]]></Default>
+      <WidgetConfig><![CDATA[
+        standard:%(key.apollo.setting.linksequenceType.standard)|
+        boxed:%(key.apollo.setting.linksequenceType.boxed)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[iconclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.iconclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.iconclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[caret-right]]></Default>
+      <WidgetConfig><![CDATA[%(page-property:apollo.linksequence.icon:
+        none:%(key.apollo.setting.iconclass.none)|
+        caret-right:%(key.apollo.setting.iconclass.caret)|
+        angle-right:%(key.apollo.setting.iconclass.angle)|
+        angle-double-right:%(key.apollo.setting.iconclass.angle-double)|
+        chevron-right:%(key.apollo.setting.iconclass.chevron)|
+        arrow-right:%(key.apollo.setting.iconclass.arrow)|
+        hand-o-right:%(key.apollo.setting.iconclass.hand)|
+        info:%(key.apollo.setting.iconclass.info)|
+        check:%(key.apollo.setting.iconclass.check)|
+        globe:%(key.apollo.setting.iconclass.globe)|
+        file-text-o:%(key.apollo.setting.iconclass.document)|
+        file-pdf-o:%(key.apollo.setting.iconclass.pdf)|
+        folder-o:%(key.apollo.setting.iconclass.folder)|
+        link:%(key.apollo.setting.iconclass.link)|
+        external-link:%(key.apollo.setting.iconclass.linkexternal1)|
+        external-link-square:%(key.apollo.setting.iconclass.linkexternal2)|
+        download:%(key.apollo.setting.iconclass.download1)|
+        cloud-download:%(key.apollo.setting.iconclass.download2)
+        )]]></WidgetConfig>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[hstyle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.section.header.style.label)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>
-      <Default><![CDATA[headline]]></Default>
+      <Default><![CDATA[ap-plain]]></Default>
       <WidgetConfig><![CDATA[
         headline:%(key.apollo.section.header.style.underlined)|
         ap-plain:%(key.apollo.section.header.style.plain)
@@ -49,33 +86,13 @@
       <PropertyName><![CDATA[hsize]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.section.header.size.label)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[h2]]></Default>
+      <Default><![CDATA[h3]]></Default>
       <WidgetConfig><![CDATA[
         h1:%(key.apollo.section.header.size.large)|
         h2:%(key.apollo.section.header.size.normal)|
         h3:%(key.apollo.section.header.size.small)|
         h4:%(key.apollo.section.header.size.verysmall)
       ]]></WidgetConfig>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[iconclass]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.iconclass)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.iconclass.description)]]></Description>
-      <Widget><![CDATA[selectcombo]]></Widget>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.icon:
-        info:%(key.apollo.setting.iconclass.info)|
-        link:%(key.apollo.setting.iconclass.link)|
-        external-link:%(key.apollo.setting.iconclass.linkexternal1)|
-        external-link-square:%(key.apollo.setting.iconclass.linkexternal2)|
-        download:%(key.apollo.setting.iconclass.download1)|
-        cloud-download:%(key.apollo.setting.iconclass.download2)|
-        file-text-o:%(key.apollo.setting.iconclass.document)|
-        file-pdf-o:%(key.apollo.setting.iconclass.pdf)|
-        folder-o:%(key.apollo.setting.iconclass.folder)|
-        globe:%(key.apollo.setting.iconclass.globe)|
-        arrow-right:%(key.apollo.setting.iconclass.arrow)|
-        check:%(key.apollo.setting.iconclass.check)
-        )]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

@@ -7,16 +7,19 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:formatter var="content">
 
-	<cms:bundle basename="org.opencms.apollo.template.linksequence.messages">
-	
-		<c:set var="textnew"><fmt:message key="apollo.linksequence.message.new" /></c:set>
-		<apollo:init-messages textnew="${textnew}" textedit="">
-			<apollo:linksequence
-				linkclass="ap-bullets"
-				title="${content.value.Title}" 
-				links="${content.valueList.LinkEntry}" />
-		</apollo:init-messages>
-		
-	</cms:bundle>
-	
+    <cms:bundle basename="org.opencms.apollo.template.linksequence.messages">
+
+        <c:set var="textnew"><fmt:message key="apollo.linksequence.message.new" /></c:set>
+        <apollo:init-messages textnew="${textnew}" textedit="">
+
+            <apollo:linksequence
+                wrapperclass="${cms.element.setting.linksequenceType} ${cms.element.setting.wrapperclass}"
+                iconclass="${cms.element.setting.iconclass}"
+                title="${content.value.Title}" 
+                links="${content.valueList.LinkEntry}" />
+
+        </apollo:init-messages>
+
+    </cms:bundle>
+
 </cms:formatter>
