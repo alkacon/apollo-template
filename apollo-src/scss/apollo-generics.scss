@@ -37,13 +37,11 @@ $border-styles:          (none, solid, dotted, dashed, hidden) !default;
 
 @each $color-name, $bg-color, $text-color, $highlight-color in $bg-colors {
 
-    .bg-#{""+$color-name} {
-        
-        background-color: $bg-color;
-        color: $text-color;         
-        overflow: hidden;    
-        padding: 20px;  
-        
+    %base-#{""+$color-name} {
+        color: $text-color;
+        overflow: hidden;
+        padding: 20px;
+
         h1, 
         h2, 
         h3, 
@@ -55,13 +53,13 @@ $border-styles:          (none, solid, dotted, dashed, hidden) !default;
         .fa {
             color: $text-color;
         }
-    
+
         a {
             color: $text-color;
             text-decoration: underline;
             &.btn,
- 			&:hover {
-            	text-decoration: none;
+            &:hover {
+                text-decoration: none;
             }
         }
         
@@ -69,12 +67,29 @@ $border-styles:          (none, solid, dotted, dashed, hidden) !default;
               border-bottom: $headline-bottom;
         }        
     }
-    
-    .translucent-bg-#{""+$color-name} {
-        @extend .bg-#{""+$color-name};
-        
+
+    .bc-#{""+$color-name} {
+        background-color: $bg-color;
+    }
+
+    .bg-#{""+$color-name} {
+        @extend %base-#{""+$color-name}, .bc-#{""+$color-name};
+    }
+
+    .t-bc-#{""+$color-name} {
         background-color: rgba($bg-color, 0.7);
-    }    
+    }
+
+    .t-bg-#{""+$color-name} {
+        @extend %base-#{""+$color-name}, .t-bc-#{""+$color-name};
+    }
+}
+
+// Just background colors, no font or padding adjustments
+
+@each $color-name, $bg-color, $text-color, $highlight-color in $bg-colors {
+
+
 }
 
 // Font and text adjustments
@@ -112,7 +127,7 @@ $border-styles:          (none, solid, dotted, dashed, hidden) !default;
 
 a.no-underline:hover,
 a.no-underline {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 // Borders
@@ -149,27 +164,27 @@ a.no-underline {
 
 @each $position in $border-positions {
 
-	@each $line-size in $border-sizes {    
-	
-	    .bo-#{""+$position}-#{""+$line-size}  {
-	        border-#{$position}: #{$line-size}px solid $border-default-color;
-	        padding: 20px;       
-	    }        
-	}  
+    @each $line-size in $border-sizes {    
+    
+        .bo-#{""+$position}-#{""+$line-size}  {
+            border-#{$position}: #{$line-size}px solid $border-default-color;
+            padding: 20px;       
+        }        
+    }  
 
-	@each $color-name, $bg-color, $text-color, $highlight-color in $reduced-colors {
-	
-	    .bo-#{""+$position}-#{""+$color-name}  {
-	        border-#{$position}-color: $bg-color;      
-	    }     
-	}
-	
-	@each $border-style in $border-styles {
-	
-	    .bo-#{""+$position}-#{""+$border-style}  {
-	        border-#{$position}-style: $border-style;    
-	    }        
-	}
+    @each $color-name, $bg-color, $text-color, $highlight-color in $reduced-colors {
+    
+        .bo-#{""+$position}-#{""+$color-name}  {
+            border-#{$position}-color: $bg-color;      
+        }     
+    }
+    
+    @each $border-style in $border-styles {
+    
+        .bo-#{""+$position}-#{""+$border-style}  {
+            border-#{$position}-style: $border-style;    
+        }        
+    }
 }
 
 // Badges (overwrite the Bootstrap defaults)
@@ -222,7 +237,7 @@ span.badge {
 // Vertical align settings
 
 .va-middle {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
 // Shadows
@@ -249,9 +264,9 @@ span.badge {
         padding-left: #{$space}px;
         padding-right: #{$space}px;
     }
-		.pl-#{$space} {
-		    padding-left: #{$space}px;
-		}
+        .pl-#{$space} {
+            padding-left: #{$space}px;
+        }
     .pr-#{$space} {
         padding-right: #{$space}px;
     }
@@ -267,7 +282,7 @@ span.badge {
     .mv-#{$space} {
         margin-top: #{$space}px;
         margin-bottom: #{$space}px;
-    }	
+    }    
     .mh-#{$space} {
         margin-left: #{$space}px;
         margin-right: #{$space}px;
@@ -278,9 +293,9 @@ span.badge {
     .mr-#{$space} {
         margin-right: #{$space}px;
     }       
-		.mt-#{$space} {
-		    margin-top: #{$space}px;
-		}    	
+        .mt-#{$space} {
+            margin-top: #{$space}px;
+        }        
     .mb-#{$space} {
         margin-bottom: #{$space}px;
     }

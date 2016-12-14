@@ -19,14 +19,14 @@
 
 var App = function () {
 
-    //Header Mega Menu
+    // Header Mega Menu
     function handleMegaMenu() {
         jQuery(document).on('click', '.mega-menu .dropdown-menu', function(e) {
             e.stopPropagation();
         })
     }
 
-    //Search Box (Header)
+    // Search Box in Header
     function handleSearch() {
         jQuery('.search').click(function () {
             if(jQuery('.search-btn').hasClass('fa-search')){
@@ -41,65 +41,53 @@ var App = function () {
         }); 
     }
 
-    //Sidebar Navigation Toggle
+    // Sidebar Navigation "active" Toggle
     function handleToggle() {
         jQuery('.list-toggle').on('click', function(e) {
             jQuery(this).toggleClass('active');
-            // e.stopPropagation();
         });
     }
 
-    //Equal Height Columns    
-    function handleEqualHeightColumns() {
-        var EqualHeightColumns = function () {            
-            $(".equal-height-columns").each(function() {
-                heights = [];              
-                $(".equal-height-column", this).each(function() {
-                    $(this).removeAttr("style");
-                    heights.push($(this).height()); // write column's heights to the array
-                });
-                $(".equal-height-column", this).height(Math.max.apply(Math, heights)); //find and set max
-            });
-        }
-
-        EqualHeightColumns();        
-        $(window).resize(function() {            
-            EqualHeightColumns();
-        });
-        $(window).load(function() {
-            EqualHeightColumns("img.equal-height-column");
-        });
-    }    
-
-    //Hover Selector
+    // Hover Selector
     function handleHoverSelector() {
         $('.hoverSelector').on('hover', function(e) {        
             $('.hoverSelectorBlock', this).toggleClass('show');
-            e.stopPropagation();            
+            e.stopPropagation(); 
         });
     }    
 
-    //Bootstrap Tooltips and Popovers
+    // Bootstrap Tooltips and Popovers
     function handleBootstrap() {
-        /*Bootstrap Carousel*/
+        // Bootstrap Carousel
         jQuery('.carousel').carousel({
             interval: 15000,
             pause: 'hover'
         });
 
-        /*Tooltips*/
+        // Tooltips
         jQuery('.tooltips').tooltip();
         jQuery('.tooltips-show').tooltip('show');      
         jQuery('.tooltips-hide').tooltip('hide');       
         jQuery('.tooltips-toggle').tooltip('toggle');       
         jQuery('.tooltips-destroy').tooltip('destroy');       
 
-        /*Popovers*/
+        // Popovers
         jQuery('.popovers').popover();
         jQuery('.popovers-show').popover('show');
         jQuery('.popovers-hide').popover('hide');
         jQuery('.popovers-toggle').popover('toggle');
         jQuery('.popovers-destroy').popover('destroy');
+    }
+
+    // Parallax sections
+    function handleParallax() {
+        var parallaxBackgrounds = jQuery('.parallax-background');
+        /*
+        console.info("parallaxBackground sections:" + parallaxBackgrounds.length);
+        */
+        if ((parallaxBackgrounds.length > 0) && !Modernizr.touch ) {
+            parallaxBackgrounds.initParallaxBackground();
+        }
     }
 
     return {
@@ -109,7 +97,7 @@ var App = function () {
             handleToggle();
             handleMegaMenu();
             handleHoverSelector();
-            handleEqualHeightColumns();
+            handleParallax();
         },
 
         //Animate Dropdown

@@ -348,3 +348,24 @@ $zoom-fg:  $text-light !default;
     color: $zoom-fg;
 }
 
+
+/**
+ * Parallax Background effect. 
+ */
+.parallax-background {
+
+    background-image: none; 
+    background-position: 50% 0px;
+    background-size: cover;
+    background-clip: border-box;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-md-min) {
+        background-attachment: fixed;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        background-attachment: scroll;
+    }
+}

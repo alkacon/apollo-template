@@ -6754,4 +6754,7 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+
+/* Disabling the source map for Apollo 
+ * sourceMappingURL=bootstrap.css.map
+ */
