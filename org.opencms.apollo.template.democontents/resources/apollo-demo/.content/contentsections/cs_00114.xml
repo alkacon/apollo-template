@@ -17,16 +17,16 @@
     </Image>
   </ApolloSection>
   <ApolloSection language="en">
-    <Headline><![CDATA[Architecture]]></Headline>
+    <Headline><![CDATA[Design]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim.</p>]]></content>
+      <content><![CDATA[<p>&nbsp;Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>]]></content>
     </Text>
     <Image>
       <Image>
         <link type="WEAK">
-          <target><![CDATA[/sites/default/.galleries/samples/05.jpg]]></target>
-          <uuid>c2581db0-4705-11e3-8417-000c29d28104</uuid>
+          <target><![CDATA[/sites/default/.galleries/samples/15.jpg]]></target>
+          <uuid>c8d186ae-4705-11e3-8417-000c29d28104</uuid>
         </link>
       </Image>
     </Image>

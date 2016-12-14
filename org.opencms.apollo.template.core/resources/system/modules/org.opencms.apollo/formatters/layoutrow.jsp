@@ -21,6 +21,24 @@
   <c:if test="${content.value.PreMarkup.isSet}">
     <%-- Expand macros in markup --%>
     <c:set var="preMarkup" value="${fn:replace(content.value.PreMarkup, '$(param)', cms.element.setting.param.value)}" />
+
+    <c:set var="exprStart" value="?(link)##" />
+    <c:set var="exprEnd" value="##" />
+    <c:if test="${fn:contains(preMarkup, exprStart)}">
+        <c:set var="preSplit" value="${fn:substringBefore(preMarkup, exprStart)}" />
+        <c:set var="checkSplit" value="${fn:substringAfter(preMarkup, exprStart)}" />
+        <c:set var="expressionSplit" value="${fn:substringBefore(checkSplit, exprEnd)}" />
+        <c:set var="postSplit" value="${fn:substringAfter(checkSplit, exprEnd)}" />
+        <c:choose>
+            <c:when test="${cms.element.setting.link.isSet}">
+                <c:set var="preMarkup" value="${preSplit}${expressionSplit}${postSplit}" />
+            </c:when>
+            <c:otherwise>
+                <c:set var="preMarkup" value="${preSplit}${postSplit}" />
+            </c:otherwise>
+        </c:choose>
+    </c:if>
+
     <c:set var="link" value="" />
     <c:set var="anchor" value="" />
     <c:if test="${cms.element.setting.link.isSet}">

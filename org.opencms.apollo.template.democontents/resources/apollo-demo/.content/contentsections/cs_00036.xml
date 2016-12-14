@@ -5,7 +5,7 @@
     <Headline><![CDATA[Flexible Grid]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Donec pede justo, fringilla vel, aliquet nec, vulputate dolor sit eget, arcu.</p>]]></content>
+      <content><![CDATA[<p>Donec pede justo, fringilla vel, aliquet nec, vulputate dolor sit eget, arcu tellus dolor.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
-  <ApolloSection language="en">
-    <Headline><![CDATA[Machine]]></Headline>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Maschine]]></Headline>
     <Text name="Text0">
       <links/>
       <content><![CDATA[<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
@@ -17,12 +17,11 @@
       </Image>
     </Image>
   </ApolloSection>
-  <ApolloSection language="de">
-    <Headline><![CDATA[Maschine]]></Headline>
+  <ApolloSection language="en">
+    <Headline><![CDATA[Machine]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-<p>&nbsp;</p>]]></content>
+      <content><![CDATA[<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>]]></content>
     </Text>
     <Image>
       <Image>

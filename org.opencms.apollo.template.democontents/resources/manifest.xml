@@ -7125,7 +7125,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Two columns: Powerful and Easy to use]]></value>
+					<value><![CDATA[Powerful and easy to use]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7584,7 +7584,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[About: Turbine]]></value>
+					<value><![CDATA[Turbine]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7601,7 +7601,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[About: Machine]]></value>
+					<value><![CDATA[Machine]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7618,7 +7618,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[About: Architecture]]></value>
+					<value><![CDATA[Architecture]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8486,6 +8486,40 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Real Estate: Space]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00113.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00113.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>75d7bf2b-c20f-11e6-9510-0242ac11002b</uuidstructure>
+			<uuidresource>75d7bf2c-c20f-11e6-9510-0242ac11002b</uuidresource>
+			<datecreated>Wed, 14 Dec 2016 15:10:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Backgrounds: Unlimited formatting]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00114.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00114.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>efc3390d-c211-11e6-9510-0242ac11002b</uuidstructure>
+			<uuidresource>efc3390e-c211-11e6-9510-0242ac11002b</uuidresource>
+			<datecreated>Wed, 14 Dec 2016 15:28:17 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Backgrounds: Design]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10996,6 +11030,40 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/templaterows/tr_00015.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00015.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>a4b94fa8-c149-11e6-9510-0242ac11002b</uuidstructure>
+			<uuidresource>a4b94fa9-c149-11e6-9510-0242ac11002b</uuidresource>
+			<datecreated>Tue, 13 Dec 2016 15:34:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Area - Section (Parallax background)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/templaterows/tr_00016.xml</source>
+			<destination>apollo-demo/.content/templaterows/tr_00016.xml</destination>
+			<type>a-templaterow</type>
+			<uuidstructure>70b7fe4d-c205-11e6-9510-0242ac11002b</uuidstructure>
+			<uuidresource>70b7fe4e-c205-11e6-9510-0242ac11002b</uuidresource>
+			<datecreated>Wed, 14 Dec 2016 13:58:50 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Area - Section (Colored background)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/ugc_config</destination>
 			<type>folder</type>
 			<uuidstructure>13fd4cbb-613b-11e5-bcba-0242ac11002b</uuidstructure>
@@ -12413,6 +12481,102 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Multi-Language]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/new-pages</destination>
+			<type>folder</type>
+			<uuidstructure>0cdc5554-c205-11e6-9510-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Dec 2016 13:56:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[717.0801]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[New pages]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[New pages]]></value>
+				</property>
+				<property>
+					<name>default-file</name>
+					<value><![CDATA[##navigation_level_folder##]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/new-pages/index.html</source>
+			<destination>apollo-demo/new-pages/index.html</destination>
+			<type>htmlredirect</type>
+			<uuidstructure>0ce751da-c205-11e6-9510-0242ac11002b</uuidstructure>
+			<uuidresource>0ce751db-c205-11e6-9510-0242ac11002b</uuidresource>
+			<datecreated>Wed, 14 Dec 2016 13:56:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[page-00001]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+				<property type="shared">
+					<name>template-elements</name>
+					<value><![CDATA[/system/modules/org.opencms.ade.sitemap/pages/redirect-detail.jsp]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/new-pages/backgrounds</destination>
+			<type>folder</type>
+			<uuidstructure>e584572e-c13d-11e6-9510-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 13 Dec 2016 14:10:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[1.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Backgrounds]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Backgrounds]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/new-pages/backgrounds/index.html</source>
+			<destination>apollo-demo/new-pages/backgrounds/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>e58c6d83-c13d-11e6-9510-0242ac11002b</uuidstructure>
+			<uuidresource>e58c6d84-c13d-11e6-9510-0242ac11002b</uuidresource>
+			<datecreated>Tue, 13 Dec 2016 14:10:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Backgrounds]]></value>
 				</property>
 			</properties>
 			<relations/>
