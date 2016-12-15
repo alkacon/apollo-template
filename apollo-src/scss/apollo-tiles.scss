@@ -31,7 +31,7 @@ $ti-cols: ((3, 3), (2o4, 2.4), (2,2), (1o5, 1.5)) !default;
 $sq-maxCols: $ti-maxCols !default; 
 $sq-margin: 0 !default;
 $sq-margins: $spacers !default;
-$sq-cols: $ti-cols !default;
+$sq-cols: ((12, 12), (6, 6), (4, 4), (3, 3), (2,2)) !default;
 $sq-padding: 20 !default;
 
 // ALL $fix-cols: (50, 100, 125, 150, 200, 250) !default;

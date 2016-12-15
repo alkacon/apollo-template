@@ -32,13 +32,14 @@
 
         a:hover {
             text-decoration: none;
-            color: $main-theme !important;
+            color: $main-theme;
         }
 
         margin-top: 0;
         padding-top: 5px;
     }
 
+    // workaround for the right display in the tutorial
     &.ap-image-zoom {
     
         h3.subtitle {
@@ -53,7 +54,7 @@
         position: relative;
 
         div {
-            padding: 2px 5px;
+            padding: 1px 4px;
             font-size: 0.7em;
             background: rgba(255, 255, 255, 0.6);
             color: black;
@@ -67,6 +68,13 @@
 
     text-align: center;
     margin-bottom: 20px;
+}
+
+.no-section-margin .ap-iconbox,
+.no-section-margin .ap-sec,
+.no-section-margin .ap-section {
+
+    margin-bottom: 0px;
 }
 
 // Styles for image section variations

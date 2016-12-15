@@ -33,14 +33,13 @@ $border-radiuses:        ((0, 0px), (2, 2px),  (4, 4px), (5, 5px), (10, 10px), (
 $border-positions:       (bottom, top, left, right) !default;
 $border-styles:          (none, solid, dotted, dashed, hidden) !default;
 
-// Colored backgrounds
+$text-colors:            ((light, $text-light), (dark, $text-dark)) !default;
 
-@each $color-name, $bg-color, $text-color, $highlight-color in $bg-colors {
-
-    %base-#{""+$color-name} {
+// Colored backgrounds (text presets)
+@each $color-name, $text-color in $text-colors {
+    
+    .text-#{""+$color-name} {
         color: $text-color;
-        overflow: hidden;
-        padding: 20px;
 
         h1, 
         h2, 
@@ -62,34 +61,47 @@ $border-styles:          (none, solid, dotted, dashed, hidden) !default;
                 text-decoration: none;
             }
         }
-        
+
+        // used in sections with images
+        h3.subtitle a {
+            color: $text-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $text-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/*
         .headline {
               border-bottom: $headline-bottom;
-        }        
-    }
+        }
+*/
+
+@each $color-name, $bg-color, $text-color, $highlight-color in $bg-colors {
 
     .bc-#{""+$color-name} {
         background-color: $bg-color;
     }
 
-    .bg-#{""+$color-name} {
-        @extend %base-#{""+$color-name}, .bc-#{""+$color-name};
-    }
-
-    .t-bc-#{""+$color-name} {
+    .transparent-bc-#{""+$color-name} {
         background-color: rgba($bg-color, 0.7);
     }
 
-    .t-bg-#{""+$color-name} {
-        @extend %base-#{""+$color-name}, .t-bc-#{""+$color-name};
+    .bg-#{""+$color-name} {
+        background-color: $bg-color;
+        overflow: hidden;
+        padding: 20px;
     }
-}
 
-// Just background colors, no font or padding adjustments
+    .transparent-bg-#{""+$color-name} {
+        @extend .bg-#{""+$color-name};
 
-@each $color-name, $bg-color, $text-color, $highlight-color in $bg-colors {
-
-
+        background-color: rgba($bg-color, 0.7);
+    }
 }
 
 // Font and text adjustments
@@ -98,7 +110,13 @@ $border-styles:          (none, solid, dotted, dashed, hidden) !default;
 
     .fc-#{""+$color-name} {
         color: $bg-color;
-        &.a, p, h1, h2, h3, h4, .fa {
+        &.a, 
+        p, 
+        h1, 
+        h2, 
+        h3, 
+        h4,
+        .fa {
             color: $bg-color;      
         }
     }
