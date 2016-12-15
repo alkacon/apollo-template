@@ -10,6 +10,11 @@
 <%@ attribute name="cssclass" type="java.lang.String" required="false" 
     description="CSS class added to the div tag surrounding the image."%>
 
+<%@ attribute name="anmiatedclass" type="java.lang.String" required="false" 
+    description="CSS class added to the anmiated div tag surrounding the image and the text.
+    This is to be used for an 'image only' formatter, where the text and background is expexted 
+    to also have the effect applied."%>
+
 <%@ attribute name="cssimage" type="java.lang.String" required="false" 
     description="CSS class added directly to the generated image tag."%>
 
@@ -40,7 +45,7 @@
 
 <div class="ap-image ${cssclass}">
 
-    <div class="animated-box">
+    <div class="animated-box ${anmiatedclass}">
         <div  ${image.value.Image.imageDndAttr} class="image-outer-box">
             <cms:img 
                 src="${imageLink}"

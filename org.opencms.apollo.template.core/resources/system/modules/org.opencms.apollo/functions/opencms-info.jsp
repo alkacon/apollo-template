@@ -6,11 +6,11 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.core.messages">
 
-<div class="bg-grey-light mb-10 ph-30 pv-20 ">
+<div class="bg-grey-lighter mb-20 p-20">
 
     <div class="float-row">
         <div class="float-col">
-            <i class="icon fs-36 fa fa-info-circle"></i>
+            <i class="fs-36 fa fa-info-circle"></i>
         </div>
         <div class="float-col">
             <h2>

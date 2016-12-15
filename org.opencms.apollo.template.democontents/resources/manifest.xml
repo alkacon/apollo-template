@@ -6717,7 +6717,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[About: About OpenCms]]></value>
+					<value><![CDATA[About OpenCms]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -6819,7 +6819,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Introduction to the team: Quote from the CEO]]></value>
+					<value><![CDATA[Quote from the CEO]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10528,6 +10528,31 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/modelgroup/modelgroup-00006.html</source>
+			<destination>apollo-demo/.content/modelgroup/modelgroup-00006.html</destination>
+			<type>modelgroup</type>
+			<uuidstructure>624a65b1-c2e9-11e6-acf6-0242ac11002b</uuidstructure>
+			<uuidresource>624a65b2-c2e9-11e6-acf6-0242ac11002b</uuidresource>
+			<datecreated>Thu, 15 Dec 2016 17:10:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Generates the left side navigation for the 'Element pages']]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo Element Page Navigation]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[true]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/navigations</destination>
 			<type>folder</type>
 			<uuidstructure>fe480c7d-5638-11e5-bfd9-0242ac11002b</uuidstructure>
@@ -12524,7 +12549,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[page-00001]]></value>
+					<value><![CDATA[Redirect to first page in navigation]]></value>
 				</property>
 				<property>
 					<name>locale-available</name>
@@ -15002,7 +15027,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Tutorial: The OpenCms Tutorial]]></value>
+					<value><![CDATA[The OpenCms Tutorial]]></value>
 				</property>
 			</properties>
 			<relations/>

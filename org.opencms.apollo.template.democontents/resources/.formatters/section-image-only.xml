@@ -14,7 +14,7 @@
     <AutoEnabled>true</AutoEnabled>
     <Detail>false</Detail>
     <Display>false</Display>
-    <Macro><![CDATA[<div class="ap-sec %(settings.wrapperclass)">
+    <Macro><![CDATA[<div class="ap-sec">
   %(image)
 </div>
 ]]></Macro>
@@ -28,7 +28,7 @@
       <MacroName><![CDATA[image]]></MacroName>
     </Formatters>
     <Setting>
-      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <PropertyName><![CDATA[anmiatedclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
       <Widget><![CDATA[selectcombo]]></Widget>

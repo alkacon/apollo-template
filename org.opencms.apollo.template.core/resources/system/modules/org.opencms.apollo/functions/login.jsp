@@ -35,7 +35,7 @@
 	</c:if>
 </jsp:useBean>
 
-<form class="bg-grey-lighter b-grey-light-2-solid mb-20" action="<cms:link>${cms.requestContext.uri}</cms:link>" method="get">
+<form class="bg-grey-lighter mb-20" action="<cms:link>${cms.requestContext.uri}</cms:link>" method="get">
 
 <input type="hidden" name="requestedResource" value="${param.requestedResource}" />
 
