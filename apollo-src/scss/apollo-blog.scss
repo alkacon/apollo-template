@@ -17,27 +17,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/* Blog */
+/**********
+ *
+ * apollo-blog.scss
+ *
+ */
 
-.ap-blog {
+.ap-blog-teaser {
 
-    color: $text-dark;
-    margin-bottom: 20px;
+    // no special requirements so far
+}
 
-    a.link {
-        color: $text-dark;
-    }
+.ap-blog-page {
 
-    a:hover {
-        color: $main-theme-hover;
-        text-decoration: none;
-    }
-
-    .teaser-body {
-        .teaser-date {
-            font-style: italic;
-        }
-    }
+    // no special requirements so far
 }
 
 // NOTE: apollo-list-scss containes coloring classes also used by blog

@@ -17,6 +17,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/**********
+ *
+ * apollo-variables.scss
+ *
+ */
+
 // Font definitions
 $font-header:       "Prompt", sans-serif !default; 
 $font-header-weight:300 !default;
@@ -99,7 +105,7 @@ $many-colors:
 ) !default; 
 
 // reduced array of colors to be used in backgrounds
-// use this to keep the generated CSS smaller
+// use this to keep the generated CSS small
 $reduced-colors: 
 (
  (grey-lighter,     $grey-lighter,     $text-dark,     $grey-light),
@@ -108,7 +114,18 @@ $reduced-colors:
  (blue,             $blue,          $text-light,    $blue-light),
  (red,              $red,           $text-light,    $red-light),
  (cyan,             $cyan,          $text-light,    $blue-cyan),
- (orange,           $orange,        $text-light,    $red),
+ (orange,           $orange,        $text-light,    $red-orange),
+) !default;
+
+// list currently generates very heavy CSS, 
+// so use only colors really required to keep the generated list CSS small
+$list-colors:
+(
+ (grey-light,       $grey-light,    $text-dark,     $grey-light),
+ (blue,             $blue,          $text-light,    $blue-light),
+ (red,              $red,           $text-light,    $red-light),
+ (cyan,             $cyan,          $text-light,    $blue-cyan),
+ (orange,           $orange,        $text-light,    $red-orange),
 ) !default;
 
 // Spaces used for margins and paddings

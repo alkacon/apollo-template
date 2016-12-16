@@ -17,7 +17,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-// Base style used by all section macro formatters
+/**********
+ *
+ * apollo-section.scss
+ *
+ * Base style used by all section macro formatters.
+ */
 
 .ap-sec,
 .ap-section {
@@ -68,6 +73,56 @@
 
     text-align: center;
     margin-bottom: 20px;
+
+    i.icon-box {
+        width: 60px;
+        height: 60px;
+        font-size: 32px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+.ap-detail-page,
+.ap-paragraph {
+
+    margin-bottom: 20px;
+
+    i.detail-icon {
+        color: $main-theme;
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 5px;
+        text-align: center;
+        display: inline-block;
+        border: solid 1px $main-theme;
+    }
+
+    .detail-date,
+    .detail-location,
+    .detail-author {
+
+        > h5 {
+            font-family: $font-content;
+            font-weight: normal;
+        }
+    }
+
+    .image-ontop {
+        margin-bottom: 20px;
+    }
+}
+
+.ap-teaser {
+    margin-bottom: 20px;
+
+    .teaser-body {
+        .teaser-date {
+            font-style: italic;
+        }
+    }
 }
 
 .no-section-margin .ap-iconbox,
@@ -78,50 +133,6 @@
 }
 
 // Styles for image section variations
-// Plain style
-.ap-img {
-
-    margin-bottom: 20px;
-
-    .ap-img-pic {
-    }
-
-    a {
-
-        color: $text-content;
-
-        &:hover, &:active, &:focus {
-            color: $text-content;
-            text-decoration: none;
-          }
-          .ap-img-desc {
-            color: $main-theme;
-            &:hover, &:active, &:focus {
-                text-decoration: underline;
-            }
-        }
-    }    
-    
-    .info {
-        text-align: right;
-        .copyright {
-            font-size: 10px;
-            color: $grey;
-        }
-    }
-
-    // Image section style "Bold headline, centered"
-    &.ap-img-v1 {
-        .ap-img-title {
-            text-align: center;
-            font-weight: 700;
-        }
-        .ap-img-desc {
-            margin-top: 5px;
-        }
-    }
-}
-
 .ap-img-txt {
     .ap-img-title {
         margin-top: 10px;

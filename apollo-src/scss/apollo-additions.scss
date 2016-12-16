@@ -17,7 +17,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/**********
+ *
+ * apollo-additions.scss
+ *
+ */
+
 /* Extend Bootstrap forms, adjustment corners and colors */
+
 .input-group .form-control,
 select.form-control,
 .form-control {
@@ -32,35 +39,16 @@ select.form-control,
 }
 
 /* Extend Bootstrap alert, removes the round corners. */
+
 .alert {
     border-radius: 0;
 }
 
 /* Extend Bootstrap label, style used in the Release notes. */
+
 span.label {
     font-size: 11px;
     font-weight: 400;
     padding: 4px 7px;
     border-radius: 0;
-}
-
-/* Font Awesome Icon Styles */
-i.icon-detail {
-    color: $main-theme;
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-    line-height: 35px;
-    margin-bottom: 5px;
-    text-align: center;
-    display: inline-block;
-    border: solid 1px $main-theme;
-}
-
-i.icon-box {
-    width: 60px;
-    height: 60px;
-    font-size: 32px;
-    line-height: 60px;
-    margin-bottom: 10px;
 }

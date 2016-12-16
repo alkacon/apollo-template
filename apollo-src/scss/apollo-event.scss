@@ -17,61 +17,54 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/* Event calendar */
+/**********
+ *
+ * apollo-event.scss
+ *
+ */
 
-.ap-event {
+.ap-event-teaser {
 
-    color: $text-dark;
-    margin-bottom: 20px;
-
-    a.link {
-        color: $text-dark;
-    }
-
-    a:hover {
-        color: $main-theme-hover;
-        text-decoration: none;
-    }
-
-    .teaser-body {
-        .teaser-date {
-            font-style: italic;
-        }
-    }
-
-    .calendar-sheet {
-        min-width: 90px;
-        border: 1px solid $grey-light;
-        text-align: center; 
-        background: $grey-lighter;
-
-        &:before {
-            border-top: 20px solid $main-theme;
-            display: block;
-            content: '';
-            margin: 0 10%;
-        }
-
-        .day, 
-        .monthYear {
-            padding: 10px;
-        }
-
-        h3 {
-            color: $main-theme;
-            font-weight: 600;
-        }
-    }
-
-    // Calendar shhets get a slightly different raise effect
+    // required for calendar sheets, as these get a slightly different raise effect
     &.ap-raise-animation:hover .animated-box {
         box-shadow: 5px 5px 8px -1px $dropshadow;
     }
+
+    .teaser-visual {
+        // the teaser visual for the event is the calendar sheet 
+        > a.link,
+        > a.link:hover {
+            color: $text-dark;
+            text-decoration: none;
+        }
+    }
 }
 
-// Coloring for events
-// NOTE: apollo-list-scss containes coloring classes also used by event
-@each $type-name, $bg-color, $text-color, $highlight-color in $many-colors {
+.calendar-sheet {
+    min-width: 90px;
+    border: 1px solid $grey-light;
+    text-align: center; 
+    background: $grey-lighter;
+
+    &:before {
+        border-top: 20px solid $main-theme;
+        display: block;
+        content: '';
+        margin: 0 10%;
+    }
+
+    .day, 
+    .monthYear {
+        padding: 10px;
+    }
+
+    h3 {
+        color: $main-theme;
+        font-weight: 600;
+    }
+}
+
+@each $type-name, $bg-color, $text-color, $highlight-color in $list-colors {
 
     .color-#{""+$type-name} {
 
@@ -85,4 +78,9 @@
             }
         }
     }
+}
+
+.ap-event-page {
+
+    // no special requirements so far
 }

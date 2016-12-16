@@ -17,7 +17,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-// Generic CSS selectors that can apply to any DIV or similar block element
+/**********
+ *
+ * apollo-generics.scss
+ *
+ * Generic CSS selectors that can apply to any DIV or similar block element.
+ */
 
 $bg-colors:              $many-colors !default;
 $font-colors:            $many-colors !default;
@@ -74,12 +79,6 @@ $text-colors:            ((light, $text-light), (dark, $text-dark)) !default;
         }
     }
 }
-
-/*
-        .headline {
-              border-bottom: $headline-bottom;
-        }
-*/
 
 @each $color-name, $bg-color, $text-color, $highlight-color in $bg-colors {
 

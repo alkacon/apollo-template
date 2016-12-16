@@ -17,6 +17,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
+/**********
+ *
+ * apollo-socialicons.scss
+ *
+ */
+
 // Apollo social icons
 
 $social-links-text-hover: $white !default;
@@ -29,6 +36,7 @@ $social-links-box-height: $social-links-size * 2 !default;
 
 
 // Social network colors
+
 $color-facebook:    #3b5998 !default;
 $color-googleplus:  #dd4b39 !default;
 $color-youtube:     #b31217 !default;
@@ -71,6 +79,7 @@ $color-rss:         #ee802f !default;
 }
 
 // Map to generate the social icon styles with
+
 $social-links:
     (facebook, $color-facebook),  
     (googleplus, $color-googleplus), 
@@ -82,6 +91,7 @@ $social-links:
     (slideshare, $color-slideshare) !default;
 
 // Social icons li styles
+
 @each $social-link, $social-color in $social-links {
 .social-links li.#{$social-link} a:hover {
         background-color: $social-color;

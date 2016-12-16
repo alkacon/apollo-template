@@ -17,29 +17,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-$headline-linecolor:     $main-theme !default;
+/**********
+ *
+ * apollo-job.scss
+ *
+ */
 
-.ap-job{
+.ap-job-teaser {
 
-    &.ap-job-detail {
-    	margin-bottom: 20px;
-    	
-    	.ap-job-headline-block .headline {
-    	
-           margin-top: 0;
-    	
-    	   h2 {
-               font-size: 32px;
-               color: $headline-linecolor;
-               border-bottom: none;
-    	   }
-    	}
-    	
-        .ap-job-intro {
-            margin-bottom: 20px;
-        }
-    	
-    }
-    
-    
+    // no special requirements so far
 }
+
+.ap-job-page {
+
+    // no special requirements so far
+}
+
+// NOTE: apollo-list-scss containes coloring classes also used by blog

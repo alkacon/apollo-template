@@ -17,7 +17,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-$list-colors:          $reduced-colors !default;
+/**********
+ *
+ * apollo-list.scss
+ *
+ */
 
 .ap-list-filterbox {
     margin-bottom: 15px;
@@ -134,7 +138,7 @@ $list-colors:          $reduced-colors !default;
 /* Pagination
 ------------------------------------*/ 
 
-$pagination-text: $grey !default;
+$pagination-text: $grey-darker !default;
 $pagination-border: $grey-light !default;
 
 
@@ -205,10 +209,11 @@ $pagination-border: $grey-light !default;
         // pagaination element
         .pagination {
             & > .active {
-                > a, > span, 
-                > a:hover, 
-                > span:hover, 
-                > a:focus, 
+                > a,
+                > span,
+                > a:hover,
+                > span:hover,
+                > a:focus,
                 > span:focus {
                   background-color: $bg-color;
                   border-color: $bg-color;
@@ -217,7 +222,7 @@ $pagination-border: $grey-light !default;
 
             li a:hover {
                 background: $highlight-color;
-                border-color: $highlight-color;   
+                border-color: $highlight-color;
             }
 
             & > button {
@@ -312,7 +317,7 @@ $pagination-border: $grey-light !default;
     }
 }
 
-/*Button Groups*/
+/* Button Groups */
 
 .btn-group .dropdown-menu > li > a {
    padding: 3px 13px;

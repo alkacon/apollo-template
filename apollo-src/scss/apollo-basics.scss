@@ -17,6 +17,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/**********
+ *
+ * apollo-basics.scss
+ *
+ */
+
 $headline-linecolor:    $main-theme !default;
 $headline-bottom:       1px dotted $grey-light !default; 
 
@@ -41,9 +47,9 @@ $h6-heig: round($h6-size * 1.25) !default;
 
 body {
     font-family: $font-content;
-    font-size: 100%;
-    color: $text-content;
     font-size: $font-content-size;
+    font-weight: normal;
+    color: $text-content;
     line-height: 1.5;
     background-color: $grey-light;
 }
