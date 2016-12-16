@@ -20,7 +20,7 @@
 
     <c:set var="showlinkimage" value="${cms.element.setting.showlink.value == 'image' and value.Link.isSet and value.Link.value.URI.isSet}"/>
     <c:set var="showlinktext" value="${cms.element.setting.showlink.value and value.Link.isSet and value.Link.value.URI.isSet}"/>
-    <c:set var="showsubitle" value="${cms.element.setting.showsubtitle.value and (value.Headline.isSet or not empty imageTitle)}"/>
+    <c:set var="showsubitle" value="${(cms.element.setting.showsubtitle.value != 'false') and (value.Headline.isSet or not empty imageTitle)}"/>
     <c:set var="showtext" value="${cms.element.setting.showtext.value and value.Text.isSet}"/>
 
     <apollo:link link="${value.Link}" test="${showlinkimage}">
@@ -49,7 +49,7 @@
                 <div class="text-box">
 
                     <c:if test="${showsubitle}">
-                        <h3 class="subtitle">
+                        <h3 class="${cms.element.setting.showsubtitle}">
                             <apollo:link link="${value.Link}">
                                 ${not empty imageTitle ? imageTitle : value.Headline}
                             </apollo:link>

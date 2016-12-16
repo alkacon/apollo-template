@@ -42,7 +42,7 @@
         </c:otherwise>
     </c:choose>
 
-    <div class="row ap-event ap-teaser ${animationClass} ${cms.element.settings.cssWrapper}">
+    <div class="row ap-teaser ap-event-teaser ${animationClass} ${cms.element.settings.cssWrapper}">
 
         <c:if test="${showImageSmall or showCalendar}">
             <c:out value="${divStart}" escapeXml="false" />

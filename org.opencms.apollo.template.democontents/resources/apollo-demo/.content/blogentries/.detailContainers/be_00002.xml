@@ -93,12 +93,6 @@
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[istyle]]></Name>
-          <Value>
-            <String><![CDATA[ap-img-v0]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[ieffect]]></Name>
           <Value>
             <String><![CDATA[none]]></String>
@@ -163,12 +157,6 @@
           <Name><![CDATA[formatterSettings#9afd51c3-ef6b-11e5-9b44-0242ac11002b-c2]]></Name>
           <Value>
             <String><![CDATA[c6236d09-eec0-11e5-a02c-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[istyle]]></Name>
-          <Value>
-            <String><![CDATA[ap-img-v0]]></String>
           </Value>
         </Properties>
         <Properties>

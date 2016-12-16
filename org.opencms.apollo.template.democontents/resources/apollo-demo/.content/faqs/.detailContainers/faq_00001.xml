@@ -76,12 +76,6 @@
           </Value>
         </Properties>
         <Properties>
-          <Name><![CDATA[istyle]]></Name>
-          <Value>
-            <String><![CDATA[ap-img-v0]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[ieffect]]></Name>
           <Value>
             <String><![CDATA[none]]></String>

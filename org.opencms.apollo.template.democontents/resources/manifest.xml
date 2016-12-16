@@ -8128,7 +8128,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Element pages]]></value>
+					<value><![CDATA[Apollo Element Page Navigation: Element pages]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8520,6 +8520,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Backgrounds: Design]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00115.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00115.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>3ec41ded-c387-11e6-acf1-0242ac11002b</uuidstructure>
+			<uuidresource>3ec41dee-c387-11e6-acf1-0242ac11002b</uuidresource>
+			<datecreated>Fri, 16 Dec 2016 12:00:32 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Job Offer: Other job offerings]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9612,23 +9629,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/flexiblecontents/fc_00005.xml</source>
-			<destination>apollo-demo/.content/flexiblecontents/fc_00005.xml</destination>
-			<type>a-flexible</type>
-			<uuidstructure>cc522f5d-9a83-11e6-85c4-0242ac11002b</uuidstructure>
-			<uuidresource>cc522f5e-9a83-11e6-85c4-0242ac11002b</uuidresource>
-			<datecreated>Tue, 25 Oct 2016 07:22:34 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Job Offer: Horizontal divider]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>apollo-demo/.content/flexiblecontents/fc_00006.xml</source>
 			<destination>apollo-demo/.content/flexiblecontents/fc_00006.xml</destination>
 			<type>a-flexible</type>
@@ -10184,6 +10184,40 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<type>CATEGORY</type>
 				</relation>
 			</relations>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/lists/l_00010.xml</source>
+			<destination>apollo-demo/.content/lists/l_00010.xml</destination>
+			<type>a-list</type>
+			<uuidstructure>c1d4cf9c-c378-11e6-acf1-0242ac11002b</uuidstructure>
+			<uuidresource>c1d4cf9d-c378-11e6-acf1-0242ac11002b</uuidresource>
+			<datecreated>Fri, 16 Dec 2016 10:16:49 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Basic Blog List (not many options set in content)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/lists/l_00011.xml</source>
+			<destination>apollo-demo/.content/lists/l_00011.xml</destination>
+			<type>a-list</type>
+			<uuidstructure>522abbab-c379-11e6-acf1-0242ac11002b</uuidstructure>
+			<uuidresource>522abbac-c379-11e6-acf1-0242ac11002b</uuidresource>
+			<datecreated>Fri, 16 Dec 2016 10:20:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Basic Event List (not many options selected in content)]]></value>
+				</property>
+			</properties>
+			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
@@ -12576,7 +12610,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>NavPos</name>
-					<value><![CDATA[1.0]]></value>
+					<value><![CDATA[0.25]]></value>
 				</property>
 				<property>
 					<name>NavText</name>

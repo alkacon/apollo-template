@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/list.xsd">
+  <ApolloList language="en">
+    <Headline><![CDATA[Basic Blog List]]></Headline>
+    <TypesToCollect>a-blog:532e6791-c663-11e5-a73e-0242ac11002b</TypesToCollect>
+    <Folder>
+      <link type="WEAK">
+        <target><![CDATA[/sites/default/apollo-demo/.content/blogentries/]]></target>
+        <uuid>4e46c146-57cd-11e5-b803-0242ac11002b</uuid>
+      </link>
+    </Folder>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <SortOrder><![CDATA[datedesc]]></SortOrder>
+    <ItemsPerPage><![CDATA[2]]></ItemsPerPage>
+    <Parameters>
+      <Key><![CDATA[teaserLength]]></Key>
+      <Value><![CDATA[100]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[showDate]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[showExpired]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameters>
+    <GalleryTitle><![CDATA[Basic Blog List (not many options set in content)]]></GalleryTitle>
+  </ApolloList>
+</ApolloLists>

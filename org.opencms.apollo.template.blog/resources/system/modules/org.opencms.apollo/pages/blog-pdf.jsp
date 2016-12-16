@@ -61,7 +61,7 @@
         <c:choose>
             <c:when test="${paragraph.value.Image.exists}">       
                 <div>
-                    <apollo:image-simple image="${paragraph.value.Image}" width="400" onlyimage="true" />
+                    <apollo:image-simple image="${paragraph.value.Image}" width="400" />
                 </div>       
                 <div class="mt-20">
                     ${paragraph.value.Text}

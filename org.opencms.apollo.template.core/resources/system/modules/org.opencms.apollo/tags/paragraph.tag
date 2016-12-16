@@ -25,7 +25,7 @@
 
 
 <%-- ####### Render paragraph ######## --%>
-<div class="paragraph mb-20">
+<div class="ap-paragraph">
 
     <c:if test="${headline == 'top' or empty headline}">
         <%-- ####### Show headline on top ######## --%>
@@ -104,7 +104,9 @@
             <div class="row">
 
                 <div class="col-xs-12">
-                    <apollo:image-simple image="${paragraph.value.Image}" />
+                    <apollo:image-animated
+                        image="${paragraph.value.Image}"
+                        cssclass="image-ontop" />
                 </div>
 
                 <div class="col-xs-12">

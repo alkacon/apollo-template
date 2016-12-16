@@ -14,24 +14,24 @@
 <c:set var="textnew"><fmt:message key="apollo.carousel.message.new" /></c:set>
 <apollo:init-messages textnew="${textnew}">
 
-			<c:if test="${not cms.element.settings.hidetitle}">
-				<div class="headline"><h2 ${rdfa.Title}>${value.Title}</h2></div>
-			</c:if>
+            <c:if test="${not cms.element.settings.hidetitle}">
+                <div class="headline"><h2 ${rdfa.Title}>${value.Title}</h2></div>
+            </c:if>
 
-			<c:set var="bg" value="black" />
-			<c:if test="${value.TextBackgroundColor.isSet}">
-				<c:set var="bg" value="${value.TextBackgroundColor}" />
-			</c:if>
-			<c:set var="txt">${value.TextColor}</c:set>
+            <c:set var="bg" value="black" />
+            <c:if test="${value.TextBackgroundColor.isSet}">
+                <c:set var="bg" value="${value.TextBackgroundColor}" />
+            </c:if>
+            <c:set var="txt">${value.TextColor}</c:set>
 
-			<div class="carousel slide carousel-v1" id="ap-carousel-${content.file.structureId}">
-				<div class="carousel-inner">
-					<c:forEach var="image" items="${content.valueList.Image}" varStatus="status">
+            <div class="carousel slide carousel-v1" id="ap-carousel-${content.file.structureId}">
+                <div class="carousel-inner">
+                    <c:forEach var="image" items="${content.valueList.Image}" varStatus="status">
                         <div class="item<c:if test="${status.first}"> active</c:if>">
-							<c:if test="${image.value.Link.isSet}">
-								<a href="<cms:link>${image.value.Link}</cms:link>" ${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?'target="_blank"':''}>
-							</c:if>
-                            <apollo:image-simple image="${image}" onlyimage="true" title="${image.value.SuperTitle.stringValue}" />
+                            <c:if test="${image.value.Link.isSet}">
+                                <a href="<cms:link>${image.value.Link}</cms:link>" ${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?'target="_blank"':''}>
+                            </c:if>
+                            <apollo:image-simple image="${image}" title="${image.value.SuperTitle.stringValue}" />
                             <apollo:image-vars image="${image}" escapecopyright="false">
                                 <c:if test="${image.value.SuperTitle.isSet || image.value.TitleLine1.isSet || image.value.TitleLine2.isSet}">
                                     <div class="carousel-caption <c:if test="${cms.element.settings.showCopy and not empty imageCopyright}">carousel-caption-copyright</c:if>" style="background-color: ${bg};">
@@ -52,29 +52,29 @@
                                     </div>
                                 </c:if>
                              </apollo:image-vars>
-							<c:if test="${image.value.Link.isSet}">
-								</a>
-							</c:if>
-						</div>
-					</c:forEach>
-				</div>
-				<div class="carousel-arrow">
-					<a data-slide="prev" href="#ap-carousel-${content.file.structureId}" class="left carousel-control">
-						<i class="fa fa-angle-left"></i>
-					</a>
-					<a data-slide="next" href="#ap-carousel-${content.file.structureId}" class="right carousel-control">
-						<i class="fa fa-angle-right"></i>
-					</a>
-				</div>
-			</div>
+                            <c:if test="${image.value.Link.isSet}">
+                                </a>
+                            </c:if>
+                        </div>
+                    </c:forEach>
+                </div>
+                <div class="carousel-arrow">
+                    <a data-slide="prev" href="#ap-carousel-${content.file.structureId}" class="left carousel-control">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a data-slide="next" href="#ap-carousel-${content.file.structureId}" class="right carousel-control">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
 
-			<script type="text/javascript">
-				function createCarousel() {
-					$("#ap-carousel-${content.file.structureId}").carousel({
-						interval: ${value.Delay}
-					});	
-				}
-			</script>
+            <script type="text/javascript">
+                function createCarousel() {
+                    $("#ap-carousel-${content.file.structureId}").carousel({
+                        interval: ${value.Delay}
+                    });
+                }
+            </script>
 
 </apollo:init-messages>
 
