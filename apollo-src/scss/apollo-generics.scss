@@ -318,6 +318,16 @@ span.badge {
     }
 }
 
+.container-fluid.nogutter > div {
+    margin-left: $gutter * -1px;
+    margin-right: $gutter * -1px;
+}
+
+.row.nogutter > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .clearfix {
     &:after {
         content: '';

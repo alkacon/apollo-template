@@ -29,30 +29,18 @@
 
     margin-bottom: 20px;
 
-    h3.subtitle {
-
-        a {
-            color: $text-header;
-        }
-
-        a:hover {
-            text-decoration: none;
-            color: $main-theme;
-        }
+    h3.subtitle.header {
 
         margin-top: 0;
         padding-top: 5px;
     }
 
-    // workaround for the right display in the tutorial
-    &.ap-image-zoom {
+    h3.subtitle.centered  {
     
-        h3.subtitle {
-            font-family: $font-content;
-            font-size: $font-content-size;
-            text-align: center;
-            font-weight: 600;
-        }
+        font-family: $font-content;
+        font-size: $font-content-size;
+        text-align: center;
+        font-weight: 600;
     }
 
     .copyright {
