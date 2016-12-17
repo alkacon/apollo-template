@@ -42,9 +42,6 @@
 
     <div class="row ap-teaser ap-blog-teaser ${animationClass} ${cms.element.settings.cssWrapper}">
 
-        <h1>${cms.element.settings.debugAjax}</h1>
-        <h1>${cms.element.settings.debugListMain}</h1>
-
         <c:if test="${showImageSmall or showImageLarge}">
             <c:out value="${divStart}" escapeXml="false" />
 

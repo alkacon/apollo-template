@@ -11298,6 +11298,50 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo/blog/article-v2</destination>
+			<type>folder</type>
+			<uuidstructure>166d07e5-c42f-11e6-aa85-0242ac11002b</uuidstructure>
+			<datecreated>Sat, 17 Dec 2016 08:02:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavInfo</name>
+					<value><![CDATA[ignoreInDefaultNav]]></value>
+				</property>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[12.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Blog article]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Blog article]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/blog/article-v2/index.html</source>
+			<destination>apollo-demo/blog/article-v2/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>166f78eb-c42f-11e6-aa85-0242ac11002b</uuidstructure>
+			<uuidresource>166f78ec-c42f-11e6-aa85-0242ac11002b</uuidresource>
+			<datecreated>Sat, 17 Dec 2016 08:02:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Blog article]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/blog/article</destination>
 			<type>folder</type>
 			<uuidstructure>5d9e3597-b08f-11e6-a18e-0242ac11002b</uuidstructure>

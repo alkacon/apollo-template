@@ -3,14 +3,29 @@
     trimDirectiveWhitespaces="true" 
     description="Provides quick access to image values from XML"%>
 
-<%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" description="The image to format. Must be a generic Apollo nested image content." %>
-<%@ attribute name="escapecopyright" type="java.lang.Boolean" required="false" description="If true, the image copyright text is secaped for usage in HTML attributes." %>
+<%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
+    description="The image to format. Must be a generic Apollo nested image content." %>
 
-<%@ variable name-given="imageLink" declare="true" description="The exported link to the image." %>
-<%@ variable name-given="imageUnscaledLink" declare="true" description="The exported link to the unscaled image." %>
-<%@ variable name-given="imageCopyright" declare="true" description="The exported copyright text." %>
-<%@ variable name-given="imageTitle" declare="true" description="The exported title of the image." %>
-<%@ variable name-given="imageTitleCopyright" declare="true" description="The exported combination of title and copyright." %>
+<%@ attribute name="escapecopyright" type="java.lang.Boolean" required="false" 
+    description="If true, the image copyright text is escaped for usage in HTML attributes." %>
+
+<%@ variable name-given="imageLink" declare="true" 
+    description="The internal resource path of the image, including optional scaling parameters." %>
+
+<%@ variable name-given="imageUnscaledLink" declare="true" 
+    description="The internal resource path of the image, without optional scaling parameters." %>
+
+<%@ variable name-given="imageUrl" declare="true" 
+    description="The external URL of the image." %>
+ 
+<%@ variable name-given="imageCopyright" declare="true" 
+    description="The copyright text." %>
+
+<%@ variable name-given="imageTitle" declare="true" 
+    description="The title of the image." %>
+
+<%@ variable name-given="imageTitleCopyright" declare="true" 
+    description="The combination of title and copyright." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
@@ -19,6 +34,7 @@
 <c:if test="${empty escapecopyright}"><c:set var="escapecopyright" value="true" /></c:if>
 
 <c:set var="imageLink" value="" />
+<c:set var="imageUrl" value="" />
 <c:set var="imageUnscaledLink" value="" />
 <c:set var="imageCopyright" value="" />
 <c:set var="imageTitle" value="" />
@@ -34,6 +50,8 @@
     <c:if test="${fn:contains(imageLink, '?')}">
         <c:set var="imageUnscaledLink">${fn:substringBefore(imageLink, '?')}</c:set>
     </c:if>
+
+    <c:set var="imageUrl"><cms:link>${imageLink}</cms:link></c:set>
 
     <%--
         For the copyright, we check if this is set in the content first, 
