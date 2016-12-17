@@ -33,4 +33,42 @@
     // no special requirements so far
 }
 
+.ap-blog-visual-image {
+
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    h1,
+    h2 {
+        margin: 0;
+        text-align: center;
+
+        font-size: 42px;
+        font-weight: 500;
+        color: $text-light;
+
+        text-shadow: 0 0 15px $dropshadow;
+    }
+
+    h2 {
+        font-weight: normal;
+        margin-top: 10px;
+        font-size: 24px;
+        text-shadow: 0 0 15px $dropshadow;
+    }
+}
+
+.ap-blog-visual-text {
+
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
 // NOTE: apollo-list-scss containes coloring classes also used by blog
