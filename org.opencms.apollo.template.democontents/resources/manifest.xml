@@ -5757,7 +5757,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog Article: OpenCms is just fun]]></value>
+					<value><![CDATA[OpenCms is just fun]]></value>
 				</property>
 			</properties>
 			<relations>

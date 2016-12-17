@@ -16,15 +16,16 @@
 <apollo:megamenu mode="skipTemplatePart" >
   <c:set var="titleprefix"><cms:property name="apollo.title.prefix" file="search" default="" /></c:set>
   <c:set var="titlesuffix"><cms:property name="apollo.title.suffix" file="search" default="" /></c:set>
-  <title>${titleprefix}${not empty titleprefix ? ' ':''}${cms.title}${not empty titlesuffix ? ' ':''}${titlesuffix}</title>
-
+ 
   <meta charset="${cms.requestContext.encoding}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <meta name="description" content="<cms:property name="Description" file="search" default="" />">
   <meta name="keywords" content="<cms:property name="Keywords" file="search" default="" />">
   <meta name="robots" content="index, follow">
   <meta name="revisit-after" content="7 days">
+
+  <title>${titleprefix}${not empty titleprefix ? ' ':''}${cms.title}${not empty titlesuffix ? ' ':''}${titlesuffix}</title>
 
   <c:set var="faviconPath">${cms.subSitePath}favicon.png</c:set>
   <c:if test="${not cms.vfs.existsResource[faviconPath]}">

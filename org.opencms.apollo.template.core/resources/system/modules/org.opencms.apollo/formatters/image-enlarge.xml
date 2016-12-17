@@ -49,14 +49,19 @@
       ]]></WidgetConfig>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[showcopyright]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.showcopyright)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
-    </Setting>
-    <Setting>
       <PropertyName><![CDATA[showsubtitle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.section.image.text.showsubtitle)]]></DisplayName>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[false]]></Default>
+      <WidgetConfig><![CDATA[
+        false:%(key.apollo.section.image.showsubtitle.none)|
+        subtitle header:%(key.apollo.section.image.showsubtitle.header)|
+        subtitle centered:%(key.apollo.section.image.showsubtitle.centered)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showcopyright]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.text.showcopyright)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>

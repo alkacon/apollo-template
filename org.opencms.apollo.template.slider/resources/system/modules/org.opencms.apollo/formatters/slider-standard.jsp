@@ -64,8 +64,7 @@
                                 </c:if>
                                 <apollo:image-vars image="${image}" escapecopyright="false">
                                     <c:if test="${cms.element.settings.showCopy and not empty imageCopyright}">
-                                        <fmt:parseNumber var="y" integerOnly="true" type="number" value="${value.ImageHeight}" />
-                                        <div class="caption copyright" data-x="0" data-y="${y-14}">${imageCopyright}</div>
+                                        <div class="caption copyright" data-x="left" data-y="bottom">${imageCopyright}</div>
                                     </c:if>
                                 </apollo:image-vars>
                             </li>

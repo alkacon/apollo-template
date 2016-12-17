@@ -147,7 +147,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Detailed Blog Article]]></value>
+					<value><![CDATA[Detailed blog article]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -205,7 +205,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Compact Blog Article teaser]]></value>
+					<value><![CDATA[Compact blog article teaser]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -263,7 +263,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Elaborate Blog Article teaser]]></value>
+					<value><![CDATA[Elaborate blog article teaser]]></value>
 				</property>
 				<property>
 					<name>locale</name>

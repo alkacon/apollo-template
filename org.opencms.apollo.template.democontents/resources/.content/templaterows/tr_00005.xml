@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
-  <ApolloTemplateRow language="en">
-    <Title><![CDATA[Segment (Fluid) [For Rows]]]></Title>
-    <PreMarkup><![CDATA[<div class="container-fluid p-0 $(param)">]]></PreMarkup>
+  <ApolloTemplateRow language="de">
+    <Title><![CDATA[Segment (Fluid) [Für Row]]]></Title>
+    <PreMarkup><![CDATA[<div class="container-fluid $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
     <Container><![CDATA[segment]]></Container>
     <Column>
@@ -13,9 +13,9 @@
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
     </Column>
   </ApolloTemplateRow>
-  <ApolloTemplateRow language="de">
-    <Title><![CDATA[Segment (Fluid) [Für Row]]]></Title>
-    <PreMarkup><![CDATA[<div class="container-fluid p-0 $(param)">]]></PreMarkup>
+  <ApolloTemplateRow language="en">
+    <Title><![CDATA[Segment (Fluid) [For Rows]]]></Title>
+    <PreMarkup><![CDATA[<div class="container-fluid $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
     <Container><![CDATA[segment]]></Container>
     <Column>

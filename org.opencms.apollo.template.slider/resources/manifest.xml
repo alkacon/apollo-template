@@ -117,7 +117,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for simple-slider carousel]]></value>
+					<value><![CDATA[Formatter JSP for carousel slider]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -142,7 +142,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Carousel]]></value>
+					<value><![CDATA[Carousel slider]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -171,7 +171,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for simple-slider slider]]></value>
+					<value><![CDATA[Formatter JSP for standard slider]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -196,7 +196,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Slider]]></value>
+					<value><![CDATA[Standard slider]]></value>
 				</property>
 				<property>
 					<name>locale</name>

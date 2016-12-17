@@ -141,7 +141,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Standard Location Map]]></value>
+					<value><![CDATA[Standard location map]]></value>
 				</property>
 				<property>
 					<name>locale</name>

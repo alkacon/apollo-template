@@ -117,7 +117,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for detailed Job Offer]]></value>
+					<value><![CDATA[Formatter JSP for detailed Job offer]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -142,7 +142,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Detailed Job Offer]]></value>
+					<value><![CDATA[Detailed job offer]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -196,7 +196,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Compact Job teaser]]></value>
+					<value><![CDATA[Compact job teaser]]></value>
 				</property>
 				<property>
 					<name>locale</name>

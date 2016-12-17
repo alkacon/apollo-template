@@ -25,7 +25,7 @@
         </c:when>
         <c:otherwise>
 
-            <c:set var="showsubtitle" value="${cms.element.setting.showsubtitle.value and (value.Headline.isSet or not empty imageTitle)}"/>
+            <c:set var="showsubtitle" value="${cms.element.setting.showsubtitle.value != 'false' and (value.Headline.isSet or not empty imageTitle)}"/>
             <c:set var="showtext" value="${cms.element.setting.showtext.value and value.Text.isSet}"/>
 
             <div class="ap-sec ap-image-zoom ${cms.element.settings.wrapperclass}">
@@ -44,7 +44,7 @@
                     <div class="text-box">
 
                         <c:if test="${showsubtitle}">
-                            <h3 class="subtitle">
+                            <h3 class="subtitle ${cms.element.setting.showsubtitle.value}">
                                 <apollo:link link="${value.Link}">
                                     ${not empty imageTitle ? imageTitle : value.Headline}
                                 </apollo:link>

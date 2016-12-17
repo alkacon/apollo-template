@@ -263,7 +263,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[List Facets]]></value>
+					<value><![CDATA[List facets]]></value>
 				</property>
 				<property>
 					<name>locale</name>

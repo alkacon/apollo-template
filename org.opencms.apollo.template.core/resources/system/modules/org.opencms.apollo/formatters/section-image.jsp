@@ -26,11 +26,11 @@
     <apollo:link link="${value.Link}" test="${showlinkimage}">
         <apollo:image-animated
             image="${value.Image}"
-            anmiatedclass="${cms.element.setting.anmiatedclass.value != 'none' ? cms.element.setting.anmiatedclass.value : ''}"
             cssclass="
                 ${showlinktext ? 'ap-button-animation ' : ''}
-                ${cms.element.setting.ieffect.value != 'none' ? cms.element.setting.ieffect.value : ''}">
-
+                ${cms.element.setting.ieffect.value != 'none' ? cms.element.setting.ieffect.value : ''}"
+            addcssclass="${cms.element.setting.addcssclass.value != 'none' ? cms.element.setting.addcssclass.value : ''}"
+        >
             <c:if test="${showlinktext}">
                 <div class="button-box">
                     <apollo:link 

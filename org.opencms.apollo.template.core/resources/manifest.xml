@@ -427,7 +427,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Standard Search]]></value>
+					<value><![CDATA[Standard search]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -456,7 +456,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for Layout Row]]></value>
+					<value><![CDATA[Formatter JSP for standard layout row]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -481,7 +481,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Standard Layout Row]]></value>
+					<value><![CDATA[Standard layout row]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -510,7 +510,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for content section headline only]]></value>
+					<value><![CDATA[Formatter JSP for content section as headline only (direct) ]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -589,7 +589,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Icon Box layout]]></value>
+					<value><![CDATA[Icon box layout]]></value>
 				</property>
 				<property>
 					<name>locale</name>

@@ -120,7 +120,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for Shariff Social Media]]></value>
+					<value><![CDATA[Formatter JSP for shariff social media]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -145,7 +145,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Shariff Social media]]></value>
+					<value><![CDATA[Shariff social media]]></value>
 				</property>
 				<property>
 					<name>locale</name>
