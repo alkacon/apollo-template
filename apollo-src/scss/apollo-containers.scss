@@ -26,46 +26,47 @@
 /* Empty container markers.
 ----------------------------------------------------------------------------- */
 
-$oc-col-area:          #ffc9d2 !default; // darken($red-lighter, 5%)
-$oc-col-segment:       #ffe3e7 !default; // $red-lighter
-$oc-col-grid:          #ffdac7 !default; // mix(darken($red-lighter, 5%), $orange-lighter, 40%)),
-$oc-col-row:           #ffe5bf !default; // $orange-lighter
-$oc-col-element:       #e8f3f8 !default; // "light steel blue"
-$oc-col-special1:      #effab4 !default; // "light green"
+$ap-col-area:          #ffc9d2 !default; // "darker light red" 
+$ap-col-segment:       #ffe3e7 !default; // "light red"
+$ap-col-grid:          #ffdac7 !default; // "light red-orange"
+$ap-col-row:           #ffe5bf !default; // "light orange"
+$ap-col-element:       #e8f3f8 !default; // "light steel blue"
+$ap-col-special1:      #effab4 !default; // "light green"
 
-$oc-col-developer:     #b31b34 !default; // $red
-$oc-col-editor:        #ffa826 !default; // $orange
-$oc-col-author:        #144382 !default; // $blue
-$oc-col-detail:        #1bb39a !default; // $cyan
-$oc-col-detailonly:    #1bb39a !default; // $cyan
-$oc-col-special2:      #ff264a !default; // $red-light
+$ap-col-developer:     #b31b34 !default; // "red"
+$ap-col-editor:        #ffa826 !default; // "orange"
+$ap-col-author:        #144382 !default; // "blue"
+$ap-col-detail:        #1bb39a !default; // "cyan"
+$ap-col-detailonly:    #1bb39a !default; // "cyan"
+$ap-col-special2:      #ff264a !default; // "bright red"
 
-$oc-col-text:          #ffffff !default; // white
-$oc-col-border:        #a8adb4 !default; // $grey
+$ap-col-text-label:    #ffffff !default; // white
+$ap-col-text-small:    #999999 !default; // white
+$ap-col-border:        #dddddd !default; // $grey a8adb4
 
 // Apollo container types
-$oc-container-types:
+$ap-container-types:
 (
- (area, $oc-col-area),        
- (segment, $oc-col-segment),        
- (grid, $oc-col-grid),         
- (row, $oc-col-row),         
- (element, $oc-col-element),         
- (special, $oc-col-special1),
+ (area, $ap-col-area),        
+ (segment, $ap-col-segment),        
+ (grid, $ap-col-grid),         
+ (row, $ap-col-row),         
+ (element, $ap-col-element),         
+ (special, $ap-col-special1),
 ) !default;
 
 // OpenCms roles and their matching colors  
-$oc-container-labels:
+$ap-container-labels:
 (
- (developer, $oc-col-developer),         
- (editor, $oc-col-editor),         
- (author, $oc-col-author),         
- (detail, $oc-col-detail),
- (detailonly, $oc-col-detailonly),         
- (special, $oc-col-special2),
+ (developer, $ap-col-developer),         
+ (editor, $ap-col-editor),         
+ (author, $ap-col-author),         
+ (detail, $ap-col-detail),
+ (detailonly, $ap-col-detailonly),         
+ (special, $ap-col-special2),
 ) !default; 
 
-.oc-container {
+%ap-container {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -74,22 +75,24 @@ $oc-container-labels:
     white-space: normal;
     border-radius: 10px;  
     -webkit-border-radius: 10px;
+    color: $text-dark;
 
-    .oc-container-head  {
+    .head  {
         font-size: 22px;
         font-weight: 400;
         margin: 5px;
     }
 
-    .oc-container-text {
+    .text {
         margin: 5px;
         font-size: 14px;
-        color: darken($oc-col-border, 15%);
         line-height: 1.2;
+        color: $ap-col-text-small;
+        text-transform: capitalize;
     }
 }
 
-.oc-label {
+%ap-label {
     display: inline;
     font-size: 12px;
     font-weight: 400;
@@ -100,28 +103,33 @@ $oc-container-labels:
     border-radius: 5px;
     -webkit-border-radius: 5px;
     white-space: nowrap;
-    color: $oc-col-text;
+    color: $ap-col-text-label;
+    text-transform: uppercase;
 } 
 
 
-@each $type-name, $bg-color in $oc-container-types {
-    .oc-container-#{""+$type-name} {
+@each $type-name, $bg-color in $ap-container-types {
+    .ap-container-#{""+$type-name} {
+        @extend %ap-container;
+
         background-color: rgba($bg-color, 0.75);
     }
 }
 
-@each $role-name, $label-color in $oc-container-labels {      
-    .oc-label-#{""+$role-name} {
+@each $role-name, $label-color in $ap-container-labels { 
+        
+    .ap-label-#{""+$role-name} {
+        @extend %ap-label;
+
         background-color: $label-color;
     }
 }
 
-.oc-modelinfo {
-    border: 2px solid $oc-col-border;
-    padding: 4px;
-    margin-bottom: 10px;
+.ap-modelinfo {
+    border: 4px solid $ap-col-border;
+    padding: 0px;
 
     .alert {
-        margin: 0 0 10px 0;
+        margin: 0;
     }
 }
