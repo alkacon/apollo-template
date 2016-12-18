@@ -5,21 +5,25 @@
   import="org.opencms.jsp.util.CmsJspStandardContextBean, org.opencms.xml.containerpage.CmsContainerBean, java.lang.String" %>
 
 <%@attribute name="label" type="java.lang.String" required="true" 
-		description="Usually the name of the element or the group."%>
+        description="Usually the name of the element or the group."%>
+
 <%@attribute name="boxType" type="java.lang.String" required="true" 
-		description="Determines to type of box to render. 
-		Possible values are [
-		container-box: Render a standard container placeholder.
-		detail-placeholder: Render a detailpage specific placeholder.
-		model-start: Renders the opening part of a model placeholder box.
-		model-end: Renders the closing part of a model placeholder box.
-		]"%>
+        description="Determines to type of box to render. 
+        Possible values are [
+        container-box: Render a standard container placeholder.
+        detail-placeholder: Render a detailpage specific placeholder.
+        model-start: Renders the opening part of a model placeholder box.
+        model-end: Renders the closing part of a model placeholder box.
+        ]"%>
+
 <%@attribute name="role" type="java.lang.String" required="false" 
-		description="The role of the user. Used for displaying in the box." %>
+        description="The role of the user. Used for displaying in the box." %>
+
 <%@attribute name="type" type="java.lang.String" required="false" 
-		description="The type of elements the container takes." %>
+        description="The type of elements the container takes." %>
+
 <%@attribute name="detailView" type="java.lang.String" required="false" 
-		description="A boolean that indicates if this is a detail container." %>
+        description="A boolean that indicates if this is a detail container." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
@@ -64,60 +68,50 @@
   </c:if>
 </c:if>
 
-<c:set var="context" value="${cms}" scope="request" />
-<% 
-    CmsJspStandardContextBean contextBean = (CmsJspStandardContextBean)request.getAttribute("context"); 
-    String parentType = "Template Container";
-    CmsContainerBean container = contextBean.getContainer();
-    if(container != null){
-      container = contextBean.getParentContainers().get(container.getParentInstanceId());
-      if(container != null){
-        parentType = container.getType();
-      }
-    }
-    request.setAttribute("parentType", parentType);
-%>
+<c:set var="parentType" value="Template Container" />
+<c:if test="${not empty cms.container.parentInstanceId}">
+    <c:set var="parentType" value="${cms.parentContainers[cms.container.parentInstanceId].type}" />
+</c:if>
 
-<div class="oc-container oc-container-${variant}${(empty cms.container.type) ? ' mh-20' : ''}">
-  <div class="oc-container-head">
+<div class="ap-container-${variant}${(empty cms.container.type) ? ' mh-20' : ''}">
+  <div class="head">
     <c:choose>
       <c:when test="${boxType == 'detail-placeholder'}">
         <fmt:message key="apollo.row.detailcontainer"/>
-        <div class="oc-label oc-label-special"><fmt:message key="apollo.row.blocked"/></div>
-        <div class="oc-label oc-label-detailonly"><fmt:message key="apollo.row.detailonly"/></div>
+        <div class="ap-label-special"><fmt:message key="apollo.row.blocked"/></div>
+        <div class="ap-label-detailonly"><fmt:message key="apollo.row.detailonly"/></div>
       </c:when>
       <c:otherwise>
         <fmt:message key="apollo.row.headline.emptycontainer"/>
-        <div class="oc-label oc-label-${fn:toLowerCase(role)}">${fn:toUpperCase(role)}</div>
+        <div class="ap-label-${fn:toLowerCase(role)}">${role}</div>
         <c:choose>
           <c:when test="${detailView == 'true'}">
-            <div class="oc-label oc-label-detail"><fmt:message key="apollo.row.detailview"/></div>
+            <div class="ap-label-detail"><fmt:message key="apollo.row.detailview"/></div>
           </c:when>
           <c:when test="${cms.detailRequest && (cms.element.setting.detail == 'only')}">
-            <div class="oc-label oc-label-detail"><fmt:message key="apollo.row.detailonly"/></div>
+            <div class="ap-label-detail"><fmt:message key="apollo.row.detailonly"/></div>
           </c:when>
         </c:choose>
       </c:otherwise>
     </c:choose>
   </div>
-  <p class="oc-container-text">
+  <div class="text">
     ${label}<br>
     <c:if test="${not empty cms.container.type}">
-      <small>
-        <fmt:message key="apollo.row.in"/>${' '}
-        ${fn:toUpperCase(fn:substring(parentType, 0, 1))}${fn:substring(parentType, 1, -1)}
-        ${' - '}
-        <fmt:message key="apollo.row.for"/>${' '}
-        ${fn:toUpperCase(fn:substring(type, 0, 1))}${fn:substring(type, 1, -1)}
-    </small>
+      <div class="small">
+        <fmt:message key="apollo.row.in"/>
+        <c:out value=" ${parentType} - " />
+        <fmt:message key="apollo.row.for"/>
+        <c:out value=" ${type}" />
+    </div>
     </c:if>
     <c:if test="${empty cms.container.type}">
-      <small>
-        <fmt:message key="apollo.row.for"/>${' '}
-        ${fn:toUpperCase(fn:substring(type, 0, 1))}${fn:substring(type, 1, -1)}
-      </small>
+      <div class="small">
+        <fmt:message key="apollo.row.for"/>
+        <c:out value=" ${type}" />
+      </div>
     </c:if>
-  </p>
+  </div>
 </div>
 
 <%-- End of use case 1: Create container box --%>
@@ -131,7 +125,7 @@
   <c:set var="modelTitle">${cms.element.setting.model_group_title}</c:set>
 </c:if>
 
-<c:out value='<div class="oc-modelinfo">' escapeXml='false' />    
+<c:out value='<div class="ap-modelinfo">' escapeXml='false' />    
 
   <div class="row">
     <div class="col-xs-12">
