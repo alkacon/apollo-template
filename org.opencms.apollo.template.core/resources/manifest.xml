@@ -510,7 +510,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for content section as headline only (direct) ]]></value>
+					<value><![CDATA[Formatter JSP for content section as headline only (direct)]]></value>
 				</property>
 				<property>
 					<name>cache</name>

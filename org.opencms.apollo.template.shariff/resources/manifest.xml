@@ -31,11 +31,6 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/shariff.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.shariff.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.shariff.messages_en"/>
-			<resource uri="/system/modules/org.opencms.apollo/resources/shariff-extensions.css"/>
-			<resource uri="/system/modules/org.opencms.apollo/resources/shariff.complete.css"/>
-			<resource uri="/system/modules/org.opencms.apollo/resources/shariff.complete.js"/>
-			<resource uri="/system/modules/org.opencms.apollo/resources/shariff.min.css"/>
-			<resource uri="/system/modules/org.opencms.apollo/resources/shariff.min.js"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/shariff.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/mailconfigchoice.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/mailconfigchoicemail.xsd"/>
@@ -215,71 +210,6 @@
 					<value><![CDATA[all]]></value>
 				</property>
 			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo/resources</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/resources/shariff-extensions.css</source>
-			<destination>system/modules/org.opencms.apollo/resources/shariff-extensions.css</destination>
-			<type>plain</type>
-			<uuidstructure>b48be453-4a73-11e6-b9a4-0242ac11002b</uuidstructure>
-			<uuidresource>b48be454-4a73-11e6-b9a4-0242ac11002b</uuidresource>
-			<datecreated>Fri, 15 Jul 2016 10:05:49 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/resources/shariff.complete.css</source>
-			<destination>system/modules/org.opencms.apollo/resources/shariff.complete.css</destination>
-			<type>plain</type>
-			<uuidstructure>528db2ae-1cf2-11e6-8fbd-0242ac11002b</uuidstructure>
-			<uuidresource>528db2af-1cf2-11e6-8fbd-0242ac11002b</uuidresource>
-			<datecreated>Wed, 18 May 2016 12:16:17 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/resources/shariff.complete.js</source>
-			<destination>system/modules/org.opencms.apollo/resources/shariff.complete.js</destination>
-			<type>plain</type>
-			<uuidstructure>5291f871-1cf2-11e6-8fbd-0242ac11002b</uuidstructure>
-			<uuidresource>5291f872-1cf2-11e6-8fbd-0242ac11002b</uuidresource>
-			<datecreated>Wed, 18 May 2016 12:16:17 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/resources/shariff.min.css</source>
-			<destination>system/modules/org.opencms.apollo/resources/shariff.min.css</destination>
-			<type>plain</type>
-			<uuidstructure>5295c904-1cf2-11e6-8fbd-0242ac11002b</uuidstructure>
-			<uuidresource>5295c905-1cf2-11e6-8fbd-0242ac11002b</uuidresource>
-			<datecreated>Wed, 18 May 2016 12:16:17 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/resources/shariff.min.js</source>
-			<destination>system/modules/org.opencms.apollo/resources/shariff.min.js</destination>
-			<type>plain</type>
-			<uuidstructure>5298d647-1cf2-11e6-8fbd-0242ac11002b</uuidstructure>
-			<uuidresource>5298d648-1cf2-11e6-8fbd-0242ac11002b</uuidresource>
-			<datecreated>Wed, 18 May 2016 12:16:17 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>

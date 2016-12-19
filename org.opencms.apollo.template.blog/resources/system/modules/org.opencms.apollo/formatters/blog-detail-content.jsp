@@ -18,7 +18,7 @@
 
 <div class="ap-detail-page ap-blog-page ap-blog-content">
 
-    <c:set var="imgalign"><cms:elementsetting name="imgalign" default="left" /></c:set>
+    <c:set var="imgalign" value="${cms.element.setting.imgalign}" />
     <c:forEach var="paragraph" items="${content.valueList.Paragraph}" varStatus="status">
 
         <c:if test="${not status.first}">
@@ -45,9 +45,9 @@
 <c:otherwise>
 <div>
 <c:if test="${cms.isEditMode}">
-<div class="oc-container oc-container-element">
+<div class="ap-container-element">
 <cms:bundle basename="org.opencms.apollo.template.core.messages">
-<div class="oc-container-head"><fmt:message key="apollo.core.paragraph.no2nd" /></div>
+<div class="head"><fmt:message key="apollo.core.paragraph.no2nd" /></div>
 </cms:bundle>
 </div>
 </c:if>

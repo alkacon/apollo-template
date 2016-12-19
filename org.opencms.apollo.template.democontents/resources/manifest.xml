@@ -5757,7 +5757,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms is just fun]]></value>
+					<value><![CDATA[Blog Article: OpenCms is just fun]]></value>
 				</property>
 			</properties>
 			<relations>
@@ -10221,6 +10221,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/lists/l_00012.xml</source>
+			<destination>apollo-demo/.content/lists/l_00012.xml</destination>
+			<type>a-list</type>
+			<uuidstructure>1bf16b4b-c5f3-11e6-96f5-0242ac11002b</uuidstructure>
+			<uuidresource>1bf16b4c-c5f3-11e6-96f5-0242ac11002b</uuidresource>
+			<datecreated>Mon, 19 Dec 2016 13:57:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Blog article: More from the Blog]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/maps</destination>
 			<type>folder</type>
 			<uuidstructure>03073309-5afc-11e5-90c1-0242ac11002b</uuidstructure>
@@ -10668,7 +10685,24 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog article: Social media (Shariff and Disqus comments)]]></value>
+					<value><![CDATA[Social media (Shariff and Disqus comments)]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/shariffs/sh_00002.xml</source>
+			<destination>apollo-demo/.content/shariffs/sh_00002.xml</destination>
+			<type>a-shariff</type>
+			<uuidstructure>347fe632-c5f7-11e6-96f5-0242ac11002b</uuidstructure>
+			<uuidresource>347fe633-c5f7-11e6-96f5-0242ac11002b</uuidresource>
+			<datecreated>Mon, 19 Dec 2016 14:27:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Blog article: Social media for blog detail]]></value>
 				</property>
 			</properties>
 			<relations/>

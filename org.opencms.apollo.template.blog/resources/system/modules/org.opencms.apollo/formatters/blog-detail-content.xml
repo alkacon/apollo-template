@@ -25,6 +25,18 @@
     <NestedContainers>false</NestedContainers>
     <HeadIncludeCss/>
     <Setting>
+      <PropertyName><![CDATA[showdate]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showdate)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showauthor]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showauthor)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[imgalign]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.imgalign)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
