@@ -48,18 +48,18 @@
         margin: 0;
         text-align: center;
 
-        font-size: 42px;
-        font-weight: 500;
+        font-size: 48px;
+        font-weight: 200;
         color: $text-light;
 
-        text-shadow: 0 0 15px $dropshadow;
+        text-shadow: 0 0 10px rgba(0,0,0,0.33);
     }
 
     h2 {
-        font-weight: normal;
+        font-weight: 400;
         margin-top: 10px;
         font-size: 24px;
-        text-shadow: 0 0 15px $dropshadow;
+        text-shadow: 0 0 10px rgba(0,0,0,0.33);
     }
 }
 

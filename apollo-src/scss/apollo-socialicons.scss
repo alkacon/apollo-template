@@ -26,19 +26,19 @@
 
 // Apollo social icons
 
-$social-links-text-hover: $white !default;
-$social-links-text:       $text-dark !default;
-$social-links-bg:         $grey !default;
-$social-links-size:       20px !default;
-$social-links-margin:     4px !default;
-$social-links-size-half:  $social-links-size / 2 !default;
-$social-links-box-height: $social-links-size * 2 !default;
+$social-links-text-oncolor: $text-light !default;
+$social-links-text-ongrey:  $text-dark !default;
+$social-links-bg:           $grey !default;
+$social-links-size:         20px !default;
+$social-links-margin:       4px !default;
+$social-links-size-half:    $social-links-size / 2 !default;
+$social-links-box-height:   $social-links-size * 2 !default;
 
 
 // Social network colors
 
 $color-facebook:    #3b5998 !default;
-$color-googleplus:  #dd4b39 !default;
+$color-googleplus:  #d34836 !default;
 $color-youtube:     #b31217 !default;
 $color-twitter:     #55acee !default;
 $color-linkedin:    #0976b4 !default;
@@ -46,54 +46,127 @@ $color-github:      #777777 !default;
 $color-slideshare:  #e98325 !default;
 $color-xing:        #126567 !default;
 $color-rss:         #ee802f !default;
-
-.social-links {
-  list-style: none;
-  font-size: 0px;
-  padding: 0px;
-  margin: $social-links-size-half 0px $social-links-size;
-  li {
-    display: inline-block;
-    margin-right: $social-links-margin;
-    margin-bottom: $social-links-margin;
-    a {
-      width: $social-links-box-height;
-      height: $social-links-box-height;
-      display: block;
-      text-align: center;
-      border: none;
-      font-size: $social-links-size;
-      color: $social-links-text; 
-      background: $social-links-bg;
-    }
-  }
-  li a {
-    &:hover {
-      color: $social-links-text-hover;
-      background-color: transparent;
-    }
-    i {
-      line-height: $social-links-box-height;
-    }
-  }
-}
+$color-whatsapp:    #5cbe4a !default;
+$color-linkedin:    #0077b5 !default;
+$color-mail:        #999999 !default;
 
 // Map to generate the social icon styles with
 
 $social-links:
-    (facebook, $color-facebook),  
-    (googleplus, $color-googleplus), 
-    (youtube, $color-youtube), 
-    (twitter, $color-twitter), 
-    (github, $color-github),
-    (xing, $color-xing),
-    (rss, $color-rss),
-    (slideshare, $color-slideshare) !default;
+    (facebook, facebook, $color-facebook),  
+    (googleplus, google-plus, $color-googleplus), 
+    (youtube, youtube, $color-youtube), 
+    (twitter, twitter, $color-twitter), 
+    (github, github, $color-github),
+    (xing, xing, $color-xing),
+    (rss, rss, $color-rss),
+    (whatsapp, whatsapp, $color-whatsapp),
+    (linkedin, linkedin, $color-linkedin),
+    (mail, envelope, $color-mail),
+    (slideshare, slideshare, $color-slideshare) !default;
 
-// Social icons li styles
+// Default social icon style (grey, boxed)
 
-@each $social-link, $social-color in $social-links {
-.social-links li.#{$social-link} a:hover {
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links .shariff,
+.social-links {
+    list-style: none;
+    font-size: 0px;
+    padding: 0px;
+
+    li {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: $social-links-margin;
+        margin-bottom: $social-links-margin;
+
+        a {
+            width: $social-links-box-height;
+            height: $social-links-box-height;
+            display: block;
+            text-align: center;
+            border: none;
+            font-size: $social-links-size;
+            color: $social-links-text-ongrey;
+            background: $social-links-bg;
+            line-height: $social-links-box-height;
+
+            &:hover {
+                color: $social-links-text-oncolor;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+// Rules to bend shariff to behave like we want
+
+.social-links .shariff {
+
+    .share_text {
+        display: none;
+    }
+
+    li {
+        width: $social-links-box-height;
+        height: $social-links-box-height;
+
+        .fa {
+            vertical-align: inherit;
+            width: $social-links-box-height;
+        }
+    }
+}
+
+// Makes the link icons appear round instead of boxed
+
+.social-links.round .shariff,
+.social-links.round {
+
+    li a {
+        border-radius: 100%;
+
+        :hover {
+            border-radius: 100%;
+        }
+    }
+}
+
+
+// Social icons grey (default) style
+
+@each $social-link, $social-icon, $social-color in $social-links {
+
+    .social-links .shariff li.#{$social-link} a:hover,
+    .social-links li.#{$social-link} a:hover {
         background-color: $social-color;
+    }
+
+    .social-links .shariff .#{$social-link} .fa-#{$social-icon} {
+        font-size: $social-links-size;
+        line-height: $social-links-box-height;
+    }
+}
+
+// Social icons colored style
+
+.social-links.colored .shariff,
+.social-links.colored {
+
+    @each $social-link, $social-icon, $social-color in $social-links {
+
+        li.#{$social-link} a,
+        li.#{$social-link} a {
+            background-color: $social-color;
+            color: $social-links-text-oncolor;
+
+            :hover {
+                background-color: saturate(lighten($social-color, 10%), 20%);
+            }
+        }
     }
 }
