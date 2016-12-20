@@ -31,6 +31,24 @@
     $.fn.initParallaxBackground = function() {
         var $this = $(this);
 
+        // initialize parallax sections with values from data attributes    
+        $this.each(function(){
+
+            var $element = $(this); 
+            var effectType = 1;
+
+            // the following data attribute can to be attached to the div
+            // <div class="parallax-background" data-prallax='{"effect":1}' >
+            if (typeof $element.data("parallax") != 'undefined') {
+                if (typeof $element.data("parallax").effect != 'undefined') {
+                    effectType = $element.data("parallax").effect;
+                }
+            }
+            $element.data("parallax", { effect: effectType } );
+
+            firstTop = $this.offset().top;
+        });
+
         // function to be called whenever the window is scrolled or resized
         function update(){
             var scrollTop = $window.scrollTop();
@@ -50,6 +68,11 @@
 
                         var elementTop = $element.offset().top;
                         var elementHeight = $element.outerHeight(true);
+                        var elementBottom = elementTop + elementHeight;
+                        var elementScrollTop = elementTop - scrollTop;
+                        var elementScrollBottom = elementBottom - scrollTop;
+
+                        var effectType = $element.data("parallax").effect;
 
                         // Check if element is to small for parallax effect
                         if (elementHeight <= 1) {
@@ -57,23 +80,43 @@
                         }
 
                         // Check if element is visible, if not just return
-                        if (elementTop + elementHeight < scrollTop || elementTop > scrollTop + windowHeight) {
+                        if (elementScrollBottom < 0 || elementScrollTop > windowHeight) {
                             return;
                         }
 
-                        // This effect assumes there is a full size background image
-                        // The background is slightly shifted while the element is not in full view
-                        // Once the element is in full view, the shift effect stops 
-                        var elementBottom = (scrollTop + windowHeight) - (elementTop + elementHeight);
+                        // console.info("elementTop: " + elementTop + " elementBottom: " + elementBottom);
+                        // console.info("elementScrollTop: " + elementScrollTop + " elementScrollBottom: " + elementScrollBottom);
 
-                        if (elementHeight > windowHeight) {
-                            // Reduce initial background shift if the window is smaller then the element
-                            elementBottom += elementHeight - windowHeight;
-                        }
+                        if (effectType == 1) {
+                            // This effect assumes there is a full size background image.
+                            // The background is slightly shifted up while the bottom of the
+                            // element is not in view.
+                            // Once the bottom is in view, the shift effect stops.
 
-                        // Calculate the offset based on the element bottom
-                        if (elementBottom < 0) {
-                            offset = Math.round(Math.abs(elementBottom) * 0.5);
+                            elementBottomOffset = elementScrollBottom - windowHeight;
+
+                            if (elementBottomOffset > 0) {
+                                // The bottom is not in view
+
+                                if (elementHeight > windowHeight) {
+                                    // Reduce initial background shift if the window is smaller then the element
+                                    elementBottomOffset += elementHeight - windowHeight;
+                                }
+
+                                offset = Math.round(Math.abs(elementBottomOffset) * 0.5);
+                            }
+                        } else if (effectType == 2) {
+                            // Initially developed for the blog visual.
+                            // This effect assumes there is a full size background image 
+                            // near the screen top (directly under the main navigation).
+                            // The image should have standard 'photo' 4:3 or 3:2 format.
+                            // Initially only the upper part of the image is seen (about 400px).
+                            // When scolling, the image starts shiftig up faster then the scroll
+                            // and reveals the lower part originally hidden.
+
+                            if (elementScrollTop < 0) {
+                                 offset = Math.round(elementScrollTop * 2);
+                            }
                         }
                 }
                 $element.css('background-position', "50% " + offset + "px");

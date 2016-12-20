@@ -28,7 +28,7 @@ var App = function () {
 
     // Search Box in Header
     function handleSearch() {
-        jQuery('.search').click(function () {
+        jQuery('.navbar-nav .search').click(function () {
             if(jQuery('.search-btn').hasClass('fa-search')){
                 jQuery('.search-open').fadeIn(500);
                 jQuery('.search-btn').removeClass('fa-search');

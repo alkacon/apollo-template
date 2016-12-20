@@ -23,85 +23,162 @@
  *
  */
 
-.ap-list-filterbox {
-    margin-bottom: 15px;
-    background-color: $white;
-    border: 1px solid transparent;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-    padding: 15px;
-    border: 1px solid #ddd;
-}
+// list filter menu
 
-.ap-list-filter-labels-wrapper, 
-.ap-list-filter-archive {
-    display: none;
-}
+$list-border-color: #ccc;
 
-.ap-list-filterbox-search {
-    .input {
-        margin: 0;
+.ap-list-filters {
+
+    .filterbox {
+        margin-bottom: 15px;
+        background-color: $white;
+        padding: 15px;
+        border: 1px solid $list-border-color;
+
+        .dialog {
+            display: none;
+        }
+
+        &.search {
+            .input {
+                margin: 0;
+            }
+
+            .icon-prepend,
+            input {
+                border-color: $list-border-color;
+            }
+        }
+
+        &.labels {
+
+            ul {
+                margin: 0;
+                margin-top: 10px;
+                padding: 0;
+                list-style: outside none none;
+
+                li {
+                    margin-top: 1px;
+
+                    &.active .badge {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .badge {
+                color: $text-dark;
+                background-color: $grey-lighter;
+
+                &:hover {
+                    background-color: $grey-light;
+                }
+            }
+        }
+
+        &.archive {
+
+            button.year {
+                color: $text-dark;
+                background-color: $grey-lighter;
+                margin-top: 15px;
+
+                &:hover {
+                    background-color: $grey-light;
+                }
+            }
+
+            ul.year {
+                margin: 0;
+                padding-left: 0;
+                list-style: outside none none;
+
+                > li {
+                    display: inline-block;
+                    padding-top: 5px;
+                    width: 16.666666%;
+                    padding-bottom: 5px;
+                    font-size: 12px;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: $grey-lighter;
+                    } 
+                }
+
+                a {
+                    color: $text-dark;
+
+                    &:hover {
+                        text-decoration: none;
+                    } 
+                }
+
+                li.active a {
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }
 
-.ap-list-filter-labels {
-    margin-top: 0;
-    padding-left: 0;
-    list-style: outside none none;
-}
+// list facet / sort options
 
-.ap-list-filter-labels-wrapper {
-    span.badge {
-        margin-top: 2px;
+.ap-list-options {
+
+    .dropdown-menu {
+        padding: 0;
+        border-radius: 0;
+
+        > li > a {
+            padding: 5px 16px;
+            color: $text-dark;
+
+            &:hover {
+                background-color: $grey-lighter;
+            }
+        }
+
+        .divider {
+            margin: 5px 0;
+        }
     }
 
-    .active span.badge {
-        font-weight: bold;
-    } 
-}
+    .list-option {
+        min-height: 36px;
+        margin-bottom: 20px;
 
-
-.ap-list-filter-labels-wrapper {
-    & ul {
-        margin-top: 13px;
-        margin-bottom: 0;
-    }
-}
-
-.ap-list-filter-archive {
-    ul {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-}
-
-.ap-list-filterbtn-year {
-    margin-top: 15px;
-
-    .fa {
-        padding-top: 3px;
+        .fa {
+            text-align: right;
+            width: 20px;
+        }
     }
 }
 
-.ap-list-filter-year {
-    margin-top: 10px;
-    padding-left: 0;
-    list-style: outside none none;
+// list buttons
 
-    & > li {
-        display: inline-block;
-        padding-top: 5px;
-        width: 16.666666%;
-        padding-bottom: 5px;
-        font-size: 12px;
-        text-align: center;
+.ap-list-filters,
+.ap-list-options {
+    button {
+        border: none;
+        padding-left: 16px;
+        padding-right: 16px;
+        
+        .fa {
+            padding-top: 3px;
+        }
     }
 
-    & li.active a {
-        font-weight: bold;
+    .open .fa-chevron-right:before,
+    .fa-chevron-right.open:before {
+        content: "\f078";
     }
 }
+
 
 // compact list items
+
 .ap-compact {
     
     color: $text-dark;
@@ -128,87 +205,92 @@
         padding: round($btn-padding * 0.25) round($btn-padding * 1.25);
         min-width: 0;
     }
-
-    a:hover {
-        color: $main-theme-hover;
-        text-decoration: none;
-    }
 }
 
-/* Pagination
-------------------------------------*/ 
+// list pagination
 
 $pagination-text: $grey-darker !default;
 $pagination-border: $grey-light !default;
 
+.pagination {
 
-.pagination > li:first-child > a, 
-.pagination > li:first-child > span,
-.pagination > li:last-child > a,
-.pagination > li:last-child > span {
-  border-radius: 0;
-}
-
-.pagination > .active > a, 
-.pagination > .active > span, 
-.pagination > .active > a:hover, 
-.pagination > .active > span:hover, 
-.pagination > .active > a:focus, 
-.pagination > .active > span:focus {
-  background-color: $main-theme;
-  border-color: $main-theme;
-}
-
-.pagination li a {
-  color: $pagination-text;
-  border-color: $pagination-border;
-  padding: 5px 15px;
-}
-
-.pagination li a:hover {
-  color: $text-light;
-  background: $main-theme-hover;
-  border-color: $main-theme-hover;   
-}
-
-// facet row
-.list-option {
-    min-height: 36px;
-    margin-bottom: 20px;
-
-    .dropdown-menu {
+    > li:first-child > a, 
+    > li:first-child > span,
+    > li:last-child > a,
+    > li:last-child > span {
         border-radius: 0;
+    }
 
-        .divider {
-            margin: 5px 0;
+    > .active {
+        > a,
+        > span,
+        > a:hover,
+        > span:hover,
+        > a:focus,
+        > span:focus {
+            background-color: $main-theme;
+            border-color: $main-theme;
+        }
+    }
+
+    li a {
+        color: $pagination-text;
+        border-color: $pagination-border;
+        padding: 5px 15px;
+
+        &:hover {
+            color: $text-light;
+            background: $main-theme-hover;
+            border-color: $main-theme-hover;
         }
     }
 }
+
 
 // coloring of teaser elements, shared also with event and other list formatters 
 @each $type-name, $bg-color, $text-color, $highlight-color in $list-colors {
 
     .color-#{""+$type-name} {
 
-        // teaser headlines
-        h3.teaser-head,
-        .teaser-head {
-            color: $bg-color;
+        // teaser elements
+        .ap-teaser {
+            a {
+                color: $bg-color;
+
+                &:hover {
+                    color: $highlight-color;
+                }
+            }
         }
 
-        a {
-            color: $bg-color;
+        // list filter menu
+        &.ap-list-options,
+        &.ap-list-filters {
+
+            button {
+                background: $bg-color;
+                color: $text-color;
+
+                &:hover {
+                    background: $highlight-color;
+                }
+            }
         }
 
-        .ap-teaser a:hover,
-        a:hover {
-            color: $highlight-color;
-            text-decoration: none;
+        // list facet / sort options
+        &.ap-list-options {
+
+            .btn, 
+            .dropdown-menu > .active > a {
+                background: $bg-color;
+                color: $text-color;
+            }
         }
 
-        // pagaination element
+
+        // list pagination
         .pagination {
-            & > .active {
+            > .active {
                 > a,
                 > span,
                 > a:hover,
@@ -224,101 +306,6 @@ $pagination-border: $grey-light !default;
                 background: $highlight-color;
                 border-color: $highlight-color;
             }
-
-            & > button {
-                background-color: $bg-color;
-                border-color: $bg-color;
-            }
-        }
-
-        // facet row
-        .list-options {
-
-            .btn, 
-            .dropdown-menu > .active > a {
-                background: $bg-color;
-                border-color: $bg-color;  
-                color: $text-color;
-            }
-
-            button:hover, button:focus {
-                background: $highlight-color;
-                border-color: $highlight-color;  
-            }
-        }
-
-        // archive menu
-        div &.ap-list-filters, 
-        .ap-list-filters {
-            .fa.ap-fa-label {
-                padding-top: 3px;
-                color: $text-color;
-            }
-
-            a {
-                color: inherit;
-                text-decoration: none;
-            }
-
-            button {
-                background: $bg-color;
-                border-color: $bg-color;  
-                color: $text-color;
-
-                &:hover, 
-                &:focus {
-                    background: $highlight-color;
-                    border-color: $highlight-color;  
-                }
-            }
-        }
-
-        &.ap-list-filter-labels-wrapper {
-            span.badge {
-                color: $text-color;
-                background: $bg-color;
-                &:hover,
-                &:focus {
-                    background: $highlight-color;
-                    border-color: $highlight-color;  
-                    color: $text-color !important;
-                } 
-            }
-        }
-
-        &.ap-list-filterbox {
-            .ap-list-filter-archive {
-                button {
-                    background: $bg-color;
-                    border-color: $bg-color;  
-                    color: $text-color !important;
-                    &:hover,
-                    &:focus {
-                        background: $highlight-color;
-                        border-color: $highlight-color;  
-                        color: $text-color !important;
-                    } 
-                }
-            }
-
-            li.active {
-                font-weight: bold;
-            }
-
-            .ap-list-filter-year {
-                & > li:hover,
-                & > li:focus {
-                    background: $highlight-color;
-                    border-color: $highlight-color;  
-                    color: $text-color !important;
-                }
-            }
         }
     }
-}
-
-/* Button Groups */
-
-.btn-group .dropdown-menu > li > a {
-   padding: 3px 13px;
 }

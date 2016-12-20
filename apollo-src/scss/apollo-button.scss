@@ -36,7 +36,7 @@ $btn-colors:            $reduced-colors !default;
 @mixin apollo-button($bg-color, $text-color, $highlight-color) {
 
     background-color: $bg-color;
-    color:$text-color !important;
+    color: get-text-color($bg-color);
     border-color:  $highlight-color;
 
     &:hover,
@@ -44,7 +44,7 @@ $btn-colors:            $reduced-colors !default;
     &:active,
     &.active,
     .open .dropdown-toggle & {
-        color:$text-color !important;
+        color: get-text-color($bg-color);
         background-color: $highlight-color;
         border-color: $highlight-color;
     }
