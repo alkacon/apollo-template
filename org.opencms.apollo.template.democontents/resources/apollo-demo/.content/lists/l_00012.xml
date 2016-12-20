@@ -14,8 +14,17 @@
       <Value><![CDATA[50]]></Value>
     </Parameters>
     <Parameters>
+      <Key><![CDATA[listWrapper]]></Key>
+      <Value><![CDATA[color-cyan]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[filterWrapper]]></Key>
+      <Value><![CDATA[color-cyan]]></Value>
+    </Parameters>
+    <Parameters>
       <Key><![CDATA[archivePreopened]]></Key>
       <Value><![CDATA[true]]></Value>
     </Parameters>
+    <GalleryTitle><![CDATA[Blog Detail Side List]]></GalleryTitle>
   </ApolloList>
 </ApolloLists>

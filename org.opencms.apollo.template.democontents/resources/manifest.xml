@@ -6252,7 +6252,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms saves you time]]></value>
+					<value><![CDATA[OpenCms saves valuable time]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10231,7 +10231,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog article: More from the Blog]]></value>
+					<value><![CDATA[Blog Detail Side List]]></value>
 				</property>
 			</properties>
 			<relations/>

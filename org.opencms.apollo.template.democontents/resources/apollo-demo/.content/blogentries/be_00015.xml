@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloBlogs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/blog.xsd">
-  <ApolloBlog language="en">
-    <Title><![CDATA[OpenCms saves you time]]></Title>
+  <ApolloBlog language="de">
+    <Title><![CDATA[OpenCms spart Dir Zeit]]></Title>
     <Date>1491293700000</Date>
     <Teaser><![CDATA[Sit sonet omnesque abiquot tantere torquatos in. Tollit reprehendunt est et, urbanitas rationibus dissentiunt sea at.]]></Teaser>
     <Paragraph>
@@ -27,8 +27,8 @@
     </Category>
     <Author><![CDATA[Cameron Tucker]]></Author>
   </ApolloBlog>
-  <ApolloBlog language="de">
-    <Title><![CDATA[OpenCms spart Dir Zeit]]></Title>
+  <ApolloBlog language="en">
+    <Title><![CDATA[OpenCms saves valuable time]]></Title>
     <Date>1491293700000</Date>
     <Teaser><![CDATA[Sit sonet omnesque abiquot tantere torquatos in. Tollit reprehendunt est et, urbanitas rationibus dissentiunt sea at.]]></Teaser>
     <Paragraph>
