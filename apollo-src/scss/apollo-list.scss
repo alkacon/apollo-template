@@ -1,21 +1,19 @@
-/*
- * This program is part of the OpenCms Apollo Template.
- *
- * Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+// This program is part of the OpenCms Apollo Template.
+//
+// Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+// 
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
  *
@@ -23,10 +21,21 @@
  *
  */
 
+$list-border-color:     $grey-light !default;
+
+$pagination-text:       $grey-darker !default;
+$pagination-border:     $grey-light !default;
+
+// list content
+.ap-list-content {
+    margin-bottom: 20px;
+
+    .separator {
+        padding-top: 10px;
+    }
+}
+
 // list filter menu
-
-$list-border-color: #ccc;
-
 .ap-list-filters {
 
     .filterbox {
@@ -34,6 +43,7 @@ $list-border-color: #ccc;
         background-color: $white;
         padding: 15px;
         border: 1px solid $list-border-color;
+        box-shadow: $panel-shadow;
 
         .dialog {
             display: none;
@@ -123,8 +133,8 @@ $list-border-color: #ccc;
     }
 }
 
-// list facet / sort options
 
+// list facet / sort options
 .ap-list-options {
 
     .dropdown-menu {
@@ -136,7 +146,7 @@ $list-border-color: #ccc;
             color: $text-dark;
 
             &:hover {
-                background-color: $grey-lighter;
+                background-color: $grey-light;
             }
         }
 
@@ -149,6 +159,10 @@ $list-border-color: #ccc;
         min-height: 36px;
         margin-bottom: 20px;
 
+        &.btn-group {
+            margin-left: 10px;
+        }
+
         .fa {
             text-align: right;
             width: 20px;
@@ -156,15 +170,16 @@ $list-border-color: #ccc;
     }
 }
 
-// list buttons
 
+// list buttons
+.ap-disqus, // also used for disqus function
 .ap-list-filters,
 .ap-list-options {
     button {
         border: none;
         padding-left: 16px;
         padding-right: 16px;
-        
+
         .fa {
             padding-top: 3px;
         }
@@ -178,11 +193,10 @@ $list-border-color: #ccc;
 
 
 // compact list items
-
 .ap-compact {
-    
+
     color: $text-dark;
-    
+
     &.ap-teaser {
         margin-bottom: 10px;
     }
@@ -207,11 +221,8 @@ $list-border-color: #ccc;
     }
 }
 
+
 // list pagination
-
-$pagination-text: $grey-darker !default;
-$pagination-border: $grey-light !default;
-
 .pagination {
 
     > li:first-child > a, 
@@ -247,14 +258,14 @@ $pagination-border: $grey-light !default;
 }
 
 
-// coloring of teaser elements, shared also with event and other list formatters 
-@each $type-name, $bg-color, $text-color, $highlight-color in $list-colors {
+// coloring of teaser elements, shared with event, blog and other detail formatters 
+@each $type-name, $bg-color, $highlight-color in $reduced-colors {
 
     .color-#{""+$type-name} {
 
         // teaser elements
         .ap-teaser {
-            a {
+            a:not(.btn) {
                 color: $bg-color;
 
                 &:hover {
@@ -262,31 +273,6 @@ $pagination-border: $grey-light !default;
                 }
             }
         }
-
-        // list filter menu
-        &.ap-list-options,
-        &.ap-list-filters {
-
-            button {
-                background: $bg-color;
-                color: $text-color;
-
-                &:hover {
-                    background: $highlight-color;
-                }
-            }
-        }
-
-        // list facet / sort options
-        &.ap-list-options {
-
-            .btn, 
-            .dropdown-menu > .active > a {
-                background: $bg-color;
-                color: $text-color;
-            }
-        }
-
 
         // list pagination
         .pagination {

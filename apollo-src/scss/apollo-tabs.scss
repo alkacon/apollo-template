@@ -1,21 +1,19 @@
-/*
- * This program is part of the OpenCms Apollo Template.
- *
- * Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+// This program is part of the OpenCms Apollo Template.
+//
+// Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+// 
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
  *
@@ -26,14 +24,10 @@
 // Apollo tabs and panels 
 
 $tab-text-transform:    none !default;
-$tab-colors:            $reduced-colors !default;
-$tab-active-bg:         $main-theme !default;
-
 $panel-text-transform:  none !default;
-$panel-colors:          $reduced-colors !default;
+
 $panel-border-color:    $grey-light !default;
 $panel-collapsed-bg:    $grey-lighter !default;
-$panel-active-bg:       $main-theme !default;
 
 // Tabs:
 
@@ -47,171 +41,148 @@ $panel-active-bg:       $main-theme !default;
     margin-bottom: 0;
 }
 
-.ap-tab .nav-tabs { 
+.ap-tab {
+    .nav-tabs { 
 
-  border: none;
-  background: none;
-  border-bottom: solid 2px $tab-active-bg;
-}
+        border: none;
+        background: none;
+        border-bottom: solid 2px $main-theme;
 
-.ap-tab .nav-tabs > li > a:hover,
-.ap-tab .nav-tabs > .active > a, 
-.ap-tab .nav-tabs > .active > a:hover, 
-.ap-tab .nav-tabs > .active > a:focus { 
+        a { 
+            font-size: 14px;
+            padding: 5px 15px; 
+        }
 
-  color: $text-light;
-  border: none; 
-  background: $tab-active-bg; 
-}
+        > li > a { 
 
-.ap-tab .nav-tabs a { 
+              font-family: $font-header;
+              font-weight: $font-header-weight;
+              color: $text-dark;
+              border: none;
+              text-transform: $tab-text-transform;
+              border-radius: 0;
+              transition: all .2s ease-in-out;
+        }
 
-  font-size: 14px;
-  padding: 5px 15px; 
-}
+        > .active > a,
+        > .active > a:focus { 
 
-.ap-tab .nav-tabs > li > a { 
+            color: $text-light;
+            border: none; 
+            background: $main-theme; 
+        }
 
-  font-family: $font-header;
-  font-weight: $font-header-weight;
-  color: $text-dark;
-  border: none;
-  text-transform: $tab-text-transform;
-  border-radius: 0;
-  transition: all .2s ease-in-out;
-}
+        > li > a:hover,
+        > .active > a:hover { 
 
-.ap-tab .tab-content { 
-
-  padding: 10px 0;
-}
-
-@each $color-name, $bg-color, $text-color, $highlight-color in $tab-colors {
-
-    div.ap-tab-#{""+$color-name}  .ap-tab .nav-tabs { 
-      border-bottom: solid 2px $bg-color;
+            color: $text-light;
+            border: none; 
+            background: $main-theme-hover; 
+        }
     }
 
-    div.ap-tab-#{""+$color-name}  .ap-tab .nav-tabs > li > a:hover,
-    div.ap-tab-#{""+$color-name}  .ap-tab .nav-tabs > .active > a, 
-    div.ap-tab-#{""+$color-name}  .ap-tab .nav-tabs > .active > a:hover, 
-    div.ap-tab-#{""+$color-name}  .ap-tab .nav-tabs > .active > a:focus { 
-      background: $bg-color; 
-      color: $text-color;
+    .tab-content { 
+
+        padding: 10px 0;
     }
 }
 
-// Panels:
+@each $color-name, $bg-color, $highlight-color in $reduced-colors {
 
-.ap-panel {
+    .color-#{""+$color-name} .ap-tab {
+        .nav-tabs { 
+            border-bottom: solid 2px $bg-color;
 
-  margin-bottom: 20px;
-
-    @each $type-name, $bg-color, $text-color, $highlight-color in $panel-colors {
-
-        &.color-#{""+$type-name} {
-
-            .panel-heading h4.panel-title a.accordion-toggle.collapsed:hover,
-            .panel-heading h4.panel-title a:hover {
-
-                color: $text-color;
-                background: $highlight-color;
+            > .active > a,
+            > .active > a:focus { 
+                background: $bg-color; 
+                color: get-text-color($bg-color);
             }
 
-            .panel-heading h4.panel-title a,
-            .panel-heading h4.panel-title a.accordion-toggle.collapsed {
-
-                color: $text-color;
-                background: $bg-color;
+            > li > a:hover,
+            > .active > a:hover { 
+                background: $highlight-color; 
+                color: get-text-color($highlight-color);
             }
         }
     }
 }
 
-.ap-panel-body .ap-section  {
+// Panels:
+.ap-panel.panel-group {
 
-    margin-bottom: 0;
-}
+    margin-bottom: 20px;
 
-// fix Bootstrap CSS rule wich don't work if ADE is enabled
-.panel-group .panel+.panel {
-
-    margin-top: 0;
-}
-.panel-group .panel {
-
-    margin-bottom: 5px;
-}
-
-.panel,
-.panel-heading,
-.panel-group .panel {
-
-    border-radius: 0;
-}
-
-.panel {
-
-    border-color: $panel-border-color;
-}
-
-.panel-heading {
-    color: $text-light;
-    padding: 5px 15px;
-}
-
-.panel-default > .panel-heading {
-
-    padding: 0;
-    color: inherit;
-    border-color: $panel-border-color;
-}
-
-.panel-heading h4.panel-title {
-
-    font-family: $font-header;
-    font-weight: $font-header-weight;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 25px;
-    text-transform: $panel-text-transform;    
-}
-
-.panel-heading h4.panel-title a,
-.panel-heading h4.panel-title a.accordion-toggle.collapsed {
-
-    color: $text-dark;
-    background: $panel-collapsed-bg;
-    transition: all .2s ease-in-out;    
-}
-
-.panel-heading h4.panel-title a.accordion-toggle.collapsed:hover,
-.panel-heading h4.panel-title a:hover {
-
-    color: $text-light; 
-    background: $panel-active-bg; 
-    text-decoration: none;
-}
-
-.ap-panel-title {
-
-    padding: 5px 15px;  
-    background: inherit;
-}
-
-
-@each $color-name, $bg-color, $text-color, $highlight-color in $panel-colors {
-
-    div.ap-tab-#{""+$color-name} div.panel-heading {
-
-        color:  $text-color;
-        background: $bg-color; 
+    .panel-body {
+        // panel has it's own margin so remove the bottom margin from the apollo elements
+        .ap-detail-page:last-child,
+        .ap-paragraph:last-child, 
+        .ap-sec:last-child  {
+            margin-bottom: 0;
+        }
     }
 
-    div.ap-tab-#{""+$color-name} .panel-heading h4.panel-title a.accordion-toggle.collapsed:hover,
-    div.ap-tab-#{""+$color-name} .panel-heading h4.panel-title a:hover {
+    .panel {
+        margin-bottom: 4px;
+        box-shadow: $panel-shadow;
+    }
 
-        color:  $text-color; 
-        background: $highlight-color; 
+    .panel, // need to overwrite some bootstrap defaults here
+    .panel-body,
+    .panel-heading + .panel-collapse > .panel-body {
+
+        border-radius: 0;
+        border-color: $panel-border-color;
+    }
+
+    .panel-heading {
+        padding: 0;
+        border-radius: 0;
+
+        .panel-title {
+            text-transform: $panel-text-transform;
+
+            a > div {
+                color: inherit;
+                background-color: inherit;
+                padding-left: 15px; // the padding is kind of optimized for a h4 title
+                padding-right: 15px;
+                padding-top: 5px;
+                padding-bottom: 2px;
+            }
+
+            a,
+            a.accordion-toggle.collapsed {
+                color: $text-dark;
+                background: $panel-collapsed-bg;
+                transition: all .2s ease-in-out;
+            }
+
+            a.accordion-toggle.collapsed:hover,
+            a:hover {
+                color: $text-light;
+                background: $main-theme;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+@each $type-name, $bg-color, $highlight-color in $reduced-colors {
+
+    .color-#{""+$type-name} .panel .panel-heading .panel-title {
+
+        a,
+        a.accordion-toggle.collapsed {
+            color: get-text-color($bg-color); 
+            background: $bg-color;
+        }
+
+        a.accordion-toggle.collapsed:hover,
+        a:hover {
+            color: get-text-color($highlight-color);
+            background: $highlight-color;
+        }
     }
 }

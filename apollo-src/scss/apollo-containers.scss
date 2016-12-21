@@ -1,21 +1,19 @@
-/*
- * This program is part of the OpenCms Apollo Template.
- *
- * Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+// This program is part of the OpenCms Apollo Template.
+//
+// Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+// 
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
  *
@@ -23,8 +21,7 @@
  *
  */
 
-/* Empty container markers.
------------------------------------------------------------------------------ */
+// Empty container markers.
 
 $ap-col-area:          #ffc9d2 !default; // "darker light red" 
 $ap-col-segment:       #ffe3e7 !default; // "light red"
@@ -33,16 +30,16 @@ $ap-col-row:           #ffe5bf !default; // "light orange"
 $ap-col-element:       #e8f3f8 !default; // "light steel blue"
 $ap-col-special1:      #effab4 !default; // "light green"
 
-$ap-col-developer:     #b31b34 !default; // "red"
-$ap-col-editor:        #ffa826 !default; // "orange"
-$ap-col-author:        #144382 !default; // "blue"
-$ap-col-detail:        #1bb39a !default; // "cyan"
-$ap-col-detailonly:    #1bb39a !default; // "cyan"
-$ap-col-special2:      #ff264a !default; // "bright red"
+$ap-col-developer:     $red    !default;
+$ap-col-editor:        $orange !default;
+$ap-col-author:        $blue   !default;
+$ap-col-detail:        $cyan   !default;
+$ap-col-detailonly:    $cyan   !default;
+$ap-col-special2:      $red-light !default;
 
-$ap-col-text-label:    #ffffff !default; // white
-$ap-col-text-small:    #999999 !default; // white
-$ap-col-border:        #dddddd !default; // $grey a8adb4
+$ap-col-text-label:    $white !default;
+$ap-col-text-small:    #999999 !default;
+$ap-col-border:        $grey-light !default; 
 
 // Apollo container types
 $ap-container-types:
@@ -117,7 +114,7 @@ $ap-container-labels:
 }
 
 @each $role-name, $label-color in $ap-container-labels { 
-        
+
     .ap-label-#{""+$role-name} {
         @extend %ap-label;
 

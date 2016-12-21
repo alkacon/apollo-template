@@ -1,27 +1,27 @@
-/*
- * This program is part of the OpenCms Apollo Template.
- *
- * Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+// This program is part of the OpenCms Apollo Template.
+//
+// Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+// 
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
  *
  * apollo-event.scss
  *
  */
+
+$calendar-sheet-border: $grey-light !default;
 
 .ap-event-teaser {
 
@@ -30,10 +30,14 @@
         box-shadow: 5px 5px 8px -1px $dropshadow;
     }
 
+    &.ap-raise-animation .calendar-sheet {
+        box-shadow: $panel-shadow;
+    }
+
     .teaser-visual {
         // the teaser visual for the event is the calendar sheet 
-        > a.link,
-        > a.link:hover {
+        > a:not(.btn).link, // not(.btn) addition required because of list colors
+        > a:not(.btn).link:hover {
             color: $text-dark;
             text-decoration: none;
         }
@@ -41,13 +45,14 @@
 }
 
 .calendar-sheet {
-    min-width: 90px;
-    border: 1px solid $grey-light;
+    min-width:  90px;
+    border:     1px solid $calendar-sheet-border;
+    box-shadow: $panel-shadow;
     text-align: center; 
     background: $grey-lighter;
 
     &:before {
-        border-top: 20px solid $main-theme;
+        border-bottom: 20px solid $main-theme;
         display: block;
         content: '';
         margin: 0 10%;
@@ -64,13 +69,14 @@
     }
 }
 
-@each $type-name, $bg-color, $text-color, $highlight-color in $list-colors {
+// colored calendar sheets
+@each $type-name, $bg-color, $highlight-color in $reduced-colors {
 
     .color-#{""+$type-name} {
 
         .calendar-sheet {
             &:before {
-                border-top: 20px solid $bg-color;
+                border-color: $bg-color;
             }
 
             h3 {

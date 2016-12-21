@@ -1,28 +1,27 @@
-/*
- * This program is part of the OpenCms Apollo Template.
- *
- * Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+// This program is part of the OpenCms Apollo Template.
+//
+// Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+// 
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
  *
  * apollo-generics.scss
  *
- * Generic CSS selectors that can apply to any DIV or similar block element.
  */
+
+// Generic CSS selectors that can apply to any DIV or similar block element.
 
 $bg-colors:              $many-colors !default;
 $font-colors:            $many-colors !default;
@@ -32,7 +31,6 @@ $font-sizes:             (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24
 $line-heights:           (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) !default;
 
 $border-default-color:   $main-theme !default;
-$reduced-colors:         $many-colors !default;
 $border-sizes:           (1, 2) !default;
 $border-radiuses:        ((0, 0px), (2, 2px),  (4, 4px), (5, 5px), (10, 10px), (15, 15px), (20, 20px), (30, 30px), (25p, 25%), (50p, 50%)) !default;
 $border-positions:       (bottom, top, left, right) !default;
@@ -80,7 +78,7 @@ $text-colors:            ((light, $text-light), (dark, $text-dark)) !default;
     }
 }
 
-@each $color-name, $bg-color, $text-color, $highlight-color in $bg-colors {
+@each $color-name, $bg-color, $highlight-color in $bg-colors {
 
     .bc-#{""+$color-name} {
         background-color: $bg-color;
@@ -105,7 +103,7 @@ $text-colors:            ((light, $text-light), (dark, $text-dark)) !default;
 
 // Font and text adjustments
 
-@each $color-name, $bg-color, $text-color, $highlight-color in $font-colors {
+@each $color-name, $bg-color, $highlight-color in $font-colors {
 
     .fc-#{""+$color-name} {
         color: $bg-color;
@@ -165,7 +163,7 @@ a.no-underline {
     }        
 }
 
-@each $color-name, $bg-color, $text-color, $highlight-color in $reduced-colors {
+@each $color-name, $bg-color, $highlight-color in $reduced-colors {
 
     .bo-#{""+$color-name}  {
         border-color: $bg-color;      
@@ -189,7 +187,7 @@ a.no-underline {
         }        
     }  
 
-    @each $color-name, $bg-color, $text-color, $highlight-color in $reduced-colors {
+    @each $color-name, $bg-color, $highlight-color in $reduced-colors {
     
         .bo-#{""+$position}-#{""+$color-name}  {
             border-#{$position}-color: $bg-color;      
@@ -216,10 +214,10 @@ span.badge {
     padding: 4px 7px;
 }
 
-@each $color-name, $bg-color, $text-color, $highlight-color in $many-colors {
+@each $color-name, $bg-color, $highlight-color in $many-colors {
 
     span.badge-#{""+$color-name} {
-        color: $text-color;
+        color: get-text-color($bg-color);
         background: $bg-color;
     }
 }

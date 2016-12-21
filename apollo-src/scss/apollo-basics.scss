@@ -1,21 +1,19 @@
-/*
- * This program is part of the OpenCms Apollo Template.
- *
- * Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+// This program is part of the OpenCms Apollo Template.
+//
+// Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+// 
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
  *
@@ -24,7 +22,8 @@
  */
 
 $headline-linecolor:    $main-theme !default;
-$headline-bottom:       1px dotted $grey-light !default; 
+$headline-bottom:       1px dotted $grey-light !default;
+$line-height-content:   ($target-line-height / $font-content-size) !default;
 
 $font-header-step:      round($font-header-size / 6) !default; 
 
@@ -50,7 +49,7 @@ body {
     font-size: $font-content-size;
     font-weight: normal;
     color: $text-content;
-    line-height: 1.5;
+    line-height: $line-height-content;
     background-color: $grey-light;
 }
 
@@ -105,7 +104,7 @@ h6, .h6 {
     line-height: $h6-heig;
 }
 
-/* Headline with underline effect */
+// Headline with underline effect
 
 .headline {
     display: block;
@@ -156,7 +155,7 @@ hr {
 }
 
 
-/* Footer */ 
+// Footer 
 
 .footer {
     padding-top: 20px;

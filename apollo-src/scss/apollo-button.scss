@@ -1,21 +1,19 @@
-/*
- * This program is part of the OpenCms Apollo Template.
- *
- * Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+// This program is part of the OpenCms Apollo Template.
+//
+// Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+// 
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
  *
@@ -33,22 +31,22 @@ $btn-border-radius:     0 !default;
 $btn-min-width:         0 !default;
 $btn-colors:            $reduced-colors !default;
 
-@mixin apollo-button($bg-color, $text-color, $highlight-color) {
+@mixin apollo-button($bg-color, $highlight-color) {
 
     background-color: $bg-color;
     color: get-text-color($bg-color);
-    border-color:  $highlight-color;
+    border-color: $highlight-color;
 
     &:hover,
     &:focus,
     &:active,
     &.active,
     .open .dropdown-toggle & {
-        color: get-text-color($bg-color);
+        color: get-text-color($highlight-color);
         background-color: $highlight-color;
         border-color: $highlight-color;
     }
-    
+
     &.disabled,
     &[disabled], 
     fieldset[disabled] & {
@@ -59,8 +57,8 @@ $btn-colors:            $reduced-colors !default;
 
 .btn {
     padding: $btn-padding round($btn-padding * 2);
-    font-size: 14px;
-    line-height: 1.42857143;
+    font-size: $font-content-size;
+    line-height: $line-height-content;
     min-width: $btn-min-width; // was 160
     text-align: center;
     box-shadow: none; 
@@ -69,10 +67,9 @@ $btn-colors:            $reduced-colors !default;
     text-transform: $btn-text-transform;
     margin: 0;
     -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 
-    @include apollo-button($btn-default, $text-light, $btn-default-active);
+    @include apollo-button($btn-default, $btn-default-active);
 }
 
 .btn:focus,
@@ -81,21 +78,17 @@ $btn-colors:            $reduced-colors !default;
     box-shadow: none;
 }
 
-div.ap-btn-lg a.btn,
-.btn.ap-btn-lg, 
 .btn.btn-lg {
     padding: round($btn-padding * 1.25) round($btn-padding * 3);
     font-size: 18px;
     min-width: round($btn-min-width * 1.25);
 }
-div.ap-btn-sm a.btn,
-.btn.ap-btn-sm, 
+
 .btn.btn-sm {
     padding: round($btn-padding * 0.75) round($btn-padding * 1.5);
     min-width: round($btn-min-width * 0.625);
 }
-div.ap-btn-xs a.btn,
-.btn.ap-btn-xs, 
+
 .btn.btn-xs {
     font-size: 12px;
     padding: round($btn-padding * 0.25) round($btn-padding * 1.25);
@@ -103,47 +96,22 @@ div.ap-btn-xs a.btn,
 }
 
 .btn-default  {
-    @include apollo-button($btn-default, $text-light, $btn-default-active);
+    @include apollo-button($btn-default, $btn-default-active);
 }
 
-@each $color-name, $bg-color, $text-color, $highlight-color in $btn-colors {
+// colored buttons
+@each $color-name, $bg-color, $highlight-color in $btn-colors {
 
-    div.color-#{""+$color-name} a.btn,
-    div.ap-btn-#{""+$color-name} a.btn,
-    .btn.ap-btn-#{""+$color-name}  {
-        @include apollo-button($bg-color, $text-color, $highlight-color);
-    }
-}
-
-@each $color-name, $bg-color, $text-color, $highlight-color in $btn-colors {
-
-    .dropdown-#{""+$color-name} > .active {
-        > a, > a:hover, > a:focus {
-            color: $text-color;
-            text-decoration: none;
-            background-color: $bg-color;
-            outline: 0;
-        }
+    .color-#{""+$color-name} .btn,
+    .btn.color-#{""+$color-name}  {
+        @include apollo-button($bg-color, $highlight-color);
     }
 
-}
-
-section.btn-group .btn-group:not(:last-child) {
-    margin-right: 10px;
-}
-
-
-@each $color-name, $bg-color, $text-color, $highlight-color in $btn-colors {
-
-    .btn-group-#{""+$color-name} {
-
-        .btn {
-            @include apollo-button($bg-color, $text-color, $highlight-color);
-        }
-    }
-
-    .btn-group-select-#{""+$color-name} .btn-group .dropdown-menu > .active {
-        > a, > a:hover, > a:focus {
+    .color-#{""+$color-name} .dropdown-menu > .active {
+        > a, 
+        > a:hover, 
+        > a:focus {
+            color: get-text-color($bg-color);
             background-color: $bg-color;
         }
     }

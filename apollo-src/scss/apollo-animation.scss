@@ -1,21 +1,19 @@
-/*
- * This program is part of the OpenCms Apollo Template.
- *
- * Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+// This program is part of the OpenCms Apollo Template.
+//
+// Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+// 
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
  *
@@ -23,10 +21,8 @@
  *
  */
 
-/**
- * Variables for more variation in animation curves.
- * Values taken from: http://http://easings.net/
- **/
+// Variables for more variation in animation curves.
+// Values taken from: http://http://easings.net/
 
 $easeInQuad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
 $easeOutQuad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -233,11 +229,10 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 
-/**
- * Spinner animation.
- * Displays a "currently loading" type spinner symbol.
- * Used e.g. by the list and the image gallery.
- */
+// Spinner animation.
+// Displays a "currently loading" type spinner symbol.
+// Used e.g. by the list and the image gallery.
+
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
@@ -285,9 +280,8 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 
-/**
- * Image gallery image enter animation. 
- */
+// Image gallery image enter animation. 
+
 .comein {
     transform: translateY(120px);
     animation: come-in 0.8s ease forwards;
@@ -303,9 +297,8 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 
-/**
- * Zoom overlay effect used by image gallery. 
- */
+// Zoom overlay effect used by image gallery. 
+
 $zoom-bg:  rgba($black, 0.5) !default;
 $zoom-fg:  $text-light !default;
 
@@ -354,9 +347,8 @@ $zoom-fg:  $text-light !default;
 }
 
 
-/**
- * Parallax Background effect. 
- */
+// Parallax Background effect with background cover image
+
 .parallax-background {
 
     background-image: none; 

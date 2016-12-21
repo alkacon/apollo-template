@@ -1,21 +1,19 @@
-/*
- * This program is part of the OpenCms Apollo Template.
- *
- * Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+// This program is part of the OpenCms Apollo Template.
+//
+// Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+// 
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
  *
@@ -23,8 +21,7 @@
  *
  */
 
-/* Variables
-------------------------------------*/
+// Variables
 
 $nav-theme:         $main-theme !default;   // used for 1st level text and big colored border above / below menus
 $nav-text:          $grey-darker !default;  // standard text color of the nav menu entries
@@ -44,9 +41,7 @@ $nav-toggle-hover:  $main-theme-complementary !default; // show / hide the navig
 
 $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
-/* The Apollo header
-------------------------------------*/
-
+// The Apollo header
 .ap-header {
     z-index: 99;
     background: $nav-header-bg;
@@ -66,7 +61,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             margin-top: 0;
             padding-left: 0;
             padding-right: 0;
-            
+
             .container {
                 padding-left: 0;
                 padding-right: 0;
@@ -84,9 +79,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     }
 
 
-/* Head background container
-------------------------------------*/
-
+    // Head background container
     .head-container {
         @media (max-width: $screen-sm-max) {
             // remove the margins from the row for small screens
@@ -106,10 +99,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         }
     }
 
-
-/* Head navbar container, the nav will be pulled over the head container / content
-------------------------------------*/
-
+    // Head navbar container, the nav will be pulled over the head container / content
     .head-navbar {
         border-bottom: solid 2px $nav-border;
         pointer-events: none;
@@ -143,9 +133,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     }
 
 
-/* The button used to show / hide the nav on small screens
-------------------------------------*/
-
+    // The button used to show / hide the nav on small screens
     .navbar-toggle {
 
         @media (min-width: $screen-md-min) {
@@ -185,9 +173,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     }
 
 
-/* Responsive navbar
-------------------------------------*/
-
+// Responsive navbar
 .navbar-nav {
     pointer-events: all;
 
@@ -429,9 +415,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 }
 
 
-/* Dropdown menus
-------------------------------------*/
-
+// Dropdown menus
 .dropdown-menu {
     border: none;
     padding: 0; // see special padding required on first level above
@@ -556,9 +540,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
 
 
-/* Megamenu
-------------------------------------*/
-
+// Megamenu
 #megamenu-editor {
     .container {
         .ap-header .mega-menu .container {
@@ -639,9 +621,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 }
 
 
-/* Breadcrumbs
-------------------------------------*/
-
+// Breadcrumbs
 .breadcrumbs {
     overflow: hidden;
     padding: 10px 0 6px;
@@ -708,9 +688,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 }
 
 
-/* "Back to top" icon on the lower right of display.
-------------------------------------*/
-
+// "Back to top" icon on the lower right of display.
 #topcontrol {
   color: $text-light;
   background: $text-dark;
@@ -740,15 +718,15 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 }
 
 
-/* Sidebar navigation
-------------------------------------*/
-
+// Sidebar navigation
 .ap-sidebar-nav {
     margin-bottom: 20px;
 }
 
 .sidebar-nav {
     border: 1px solid $nav-border;
+    box-shadow: $panel-shadow;
+
 
     > li {
         &:first-child {
@@ -831,7 +809,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     li.currentpage {
         // highlight the current page
         background: $nav-active-bg;
-         
+
         &:hover {
             border-color: $nav-border;
             background: $nav-bg-hover;
