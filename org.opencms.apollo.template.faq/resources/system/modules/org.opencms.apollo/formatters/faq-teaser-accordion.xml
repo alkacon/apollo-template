@@ -30,9 +30,9 @@
       <Widget><![CDATA[string]]></Widget>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[listWrapper]]></PropertyName>
+      <PropertyName><![CDATA[requiredListWrapper]]></PropertyName>
       <Widget><![CDATA[hidden]]></Widget>
-      <Default><![CDATA[panel-group]]></Default>
+      <Default><![CDATA[ap-panel panel-group]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showExpired]]></PropertyName>

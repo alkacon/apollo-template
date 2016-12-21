@@ -41,14 +41,14 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="hidden-xs pull-right">
-                    <a class="btn ap-btn-xs mt-10"
+                    <a class="btn btn-xs mt-10"
                         href="<cms:pdf format='%(link.weak:/system/modules/org.opencms.apollo/pages/blog-pdf.jsp:ca595340-57ca-11e5-a989-0242ac11002b)' content='${content.filename}' locale='${cms.locale}'/>"
                         target="pdf"> <i class="fa fa-file-pdf-o"></i> Download PDF
                     </a>
                 </div>
                 <apollo:headline headline="${content.value.Title}" />
                 <div class="visible-xs">
-                    <a class="btn ap-btn mb-10"
+                    <a class="btn mb-10"
                         href="<cms:pdf format='%(link.weak:/system/modules/org.opencms.apollo/pages/blog-pdf.jsp:ca595340-57ca-11e5-a989-0242ac11002b)' content='${content.filename}' locale='${cms.locale}'/>"
                         target="pdf"> <i class="fa fa-file-pdf-o"></i> Download PDF
                     </a>

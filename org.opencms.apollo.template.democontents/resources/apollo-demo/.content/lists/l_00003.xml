@@ -21,5 +21,14 @@
       <Key/>
       <Value/>
     </Parameters>
+    <Link>
+      <Text><![CDATA[To the blog overview]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/blog/articles/]]></target>
+          <uuid>a22b306a-5c70-11e5-96ab-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
   </ApolloList>
 </ApolloLists>

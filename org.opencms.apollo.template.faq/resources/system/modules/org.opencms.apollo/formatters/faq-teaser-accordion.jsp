@@ -14,36 +14,44 @@
 <c:set var="inMemoryMessage"><fmt:message key="apollo.faq.message.new" /></c:set>
 <apollo:init-messages textnew="${inMemoryMessage}">
 
-    <div class="ap-panel ${cms.element.settings.cssWrapper} panel panel-default">
-        <div class="panel-heading">
-            <h4 class="panel-title">
-                <a
-                    class="accordion-toggle ${cms.element.settings.index == 0 ? '':'collapsed'}"
-                    data-parent="#list-${cms.element.settings.listid}"
-                    data-toggle="collapse"
-                    href="#collapse-${accId}-${cms.element.settings.index}">
+<%--
 
-                    <div class="ap-panel-title">${content.value.Question}</div>
-                </a>
-            </h4>
-        </div>
+Note about how this elements works in the list:
 
-        <div
-            id="collapse-${accId}-${cms.element.settings.index}"
-            class="panel-collapse collapse ${cms.element.settings.index == 0 ? 'in' : ''}"
-            style="height: ${cms.element.settings.index == 0 ? 'auto' : '0px'};">
-            <div class="panel-body ap-panel-body">
-                <c:forEach var="paragraph" items="${content.valueList.Paragraph}" varStatus="status">
-                    <apollo:paragraph 
-                        showimage="true"
-                        headline="inline"
-                        headlinestyle="ap-faq-header"
-                        paragraph="${paragraph}" />
-                </c:forEach>
-            </div>
-        </div>
+There are hidden element settings configured in the formatter configuration.
+These will add the required "ap-panel panel-group" classes to the surrounding <div>
 
+--%>
+
+<div class="panel ${cms.element.settings.cssWrapper}">
+
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a
+                class="accordion-toggle ${cms.element.settings.index == 0 ? '':'collapsed'}"
+                data-parent="#list-${cms.element.settings.listid}"
+                data-toggle="collapse"
+                href="#collapse-${accId}-${cms.element.settings.index}">
+
+                <div>${content.value.Question}</div>
+            </a>
+        </h4>
     </div>
+
+    <div id="collapse-${accId}-${cms.element.settings.index}"
+        class="panel-collapse collapse ${cms.element.settings.index == 0 ? 'in' : ''}">
+        <div class="panel-body">
+            <c:forEach var="paragraph" items="${content.valueList.Paragraph}" varStatus="status">
+                <apollo:paragraph 
+                    showimage="true"
+                    headline="inline"
+                    headlinestyle="ap-faq-header"
+                    paragraph="${paragraph}" />
+            </c:forEach>
+        </div>
+    </div>
+
+</div>
 
 </apollo:init-messages>
 </cms:formatter>

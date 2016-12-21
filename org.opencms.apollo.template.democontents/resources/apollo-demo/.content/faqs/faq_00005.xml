@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/faq.xsd">
-  <ApolloFaq language="en">
-    <Question><![CDATA[If a fork is made of gold is it still considered as silverware?]]></Question>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Wie übersetze ich am besten englische Wortspiele?]]></Question>
     <Date>1470034800000</Date>
     <Order><![CDATA[550]]></Order>
     <Paragraph>
@@ -35,14 +35,19 @@
     </Category>
     <GalleryTitle><![CDATA[%(value:Question)]]></GalleryTitle>
   </ApolloFaq>
-  <ApolloFaq language="de">
-    <Question><![CDATA[Wie übersetze ich am besten englische Wortspiele?]]></Question>
+  <ApolloFaq language="en">
+    <Question><![CDATA[If a fork is made of gold is it still considered as silverware?]]></Question>
     <Date>1470034800000</Date>
     <Order><![CDATA[550]]></Order>
     <Paragraph>
       <Text name="Text0">
-        <links/>
-        <content><![CDATA[<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+        <links>
+          <link name="link0" internal="true" type="A">
+            <target><![CDATA[/sites/default/apollo-demo/home/]]></target>
+            <uuid>d53f32c1-5c61-11e5-96ab-0242ac11002b</uuid>
+          </link>
+        </links>
+        <content><![CDATA[<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. <a href="%(link0)">Aenean vulputate eleifend tellus.</a></p>
 <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>]]></content>
       </Text>
       <Image>

@@ -5757,7 +5757,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog Article: OpenCms is just fun]]></value>
+					<value><![CDATA[OpenCms is just fun]]></value>
 				</property>
 			</properties>
 			<relations>
@@ -6201,7 +6201,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms lets you be creative]]></value>
+					<value><![CDATA[OpenCms unlocks your creativity]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10124,7 +10124,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[FAQ Entry: Frequently Asked Questions as Accordion]]></value>
+					<value><![CDATA[Frequently Asked Questions as Accordion]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10685,7 +10685,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Social media (Shariff and Disqus comments)]]></value>
+					<value><![CDATA[Blog article: Social media (Shariff and Disqus comments)]]></value>
 				</property>
 			</properties>
 			<relations/>

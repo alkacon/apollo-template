@@ -85,7 +85,7 @@
         <%-- ################################################################################################################# HEAD ######## --%>
         <c:set var="head">
             <c:out value='<div class="list-option btn-group">' escapeXml='false' />
-                <button type="button" class="dropdown-toggle btn ap-btn-${buttonColor}" data-toggle="dropdown" 
+                <button type="button" class="dropdown-toggle btn" data-toggle="dropdown" 
                                 aria-haspopup="true" aria-expanded="false" id="dropdownMenu1" aria-expanded="true">
                     ${buttonLabel} &nbsp; <span class="fa fa-chevron-right"></span>
                 </button>

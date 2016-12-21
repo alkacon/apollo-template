@@ -16,7 +16,7 @@
     <SortOrder><![CDATA[orderdesc]]></SortOrder>
     <ItemsPerPage><![CDATA[50]]></ItemsPerPage>
     <Parameters>
-      <Key><![CDATA[cssWrapper]]></Key>
+      <Key><![CDATA[listWrapper]]></Key>
       <Value><![CDATA[color-orange]]></Value>
     </Parameters>
     <GalleryTitle><![CDATA[FAQ Silly Questions]]></GalleryTitle>

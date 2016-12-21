@@ -44,7 +44,7 @@
 
             <c:if test="${paragraph.value.Link.exists}">
                 <p>
-                    <apollo:link link="${paragraph.value.Link}" cssclass="btn ap-btn-sm"/>
+                    <apollo:link link="${paragraph.value.Link}" cssclass="btn btn-sm"/>
                 </p>
             </c:if>
         </c:when>
@@ -81,7 +81,7 @@
                     <div ${paragraph.rdfa.Text}>${paragraph.value.Text}</div>
                     <c:if test="${paragraph.value.Link.exists}">
                         <p>
-                            <apollo:link link="${paragraph.value.Link}" cssclass="btn ap-btn-sm"/>
+                            <apollo:link link="${paragraph.value.Link}" cssclass="btn btn-sm"/>
                         </p>
                     </c:if>
                 </div>
@@ -113,7 +113,7 @@
                     <div ${paragraph.rdfa.Text}>${paragraph.value.Text}</div>
                     <c:if test="${paragraph.value.Link.exists}">
                         <p>
-                            <apollo:link link="${paragraph.value.Link}" cssclass="btn ap-btn-sm"/>
+                            <apollo:link link="${paragraph.value.Link}" cssclass="btn btn-sm"/>
                         </p>
                     </c:if>
                 </div>

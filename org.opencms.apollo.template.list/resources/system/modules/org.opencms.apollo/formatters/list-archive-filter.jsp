@@ -101,7 +101,7 @@
                         <button type="button" class="btn-block btn" onclick="toggleApListFilter('archive');this.blur();">
                             <span class="pull-left"><span class="fa fa-archive"></span></span>
                             <span class="pull-left pl-10"><fmt:message key="apollo.list.message.archive" /></span>
-                            <span id="aplistarchive_toggle" class="fa fa-chevron-right ${formatterSettings.catPreopened ? 'open' : ''} pull-right"></span>
+                            <span id="aplistarchive_toggle" class="fa fa-chevron-right ${formatterSettings.archivePreopened ? 'open' : ''} pull-right"></span>
                         </button>
 
                         <div id="aplistarchive" class="dialog" ${formatterSettings.archivePreopened ? 'style="display:block;"' : ''}>

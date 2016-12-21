@@ -13,7 +13,11 @@
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <SortOrder><![CDATA[titleasc]]></SortOrder>
+    <SortOrder><![CDATA[orderdesc]]></SortOrder>
     <ItemsPerPage><![CDATA[50]]></ItemsPerPage>
+    <Parameters>
+      <Key><![CDATA[listWrapper]]></Key>
+      <Value><![CDATA[color-grey-light]]></Value>
+    </Parameters>
   </ApolloList>
 </ApolloLists>

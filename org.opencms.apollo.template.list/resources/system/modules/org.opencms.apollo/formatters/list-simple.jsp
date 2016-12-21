@@ -37,7 +37,7 @@
             </c:forEach>
             --%>
 
-            <c:set var="listWrapper" value="${formatterSettings.listWrapper}" />
+            <c:set var="listWrapper" value="${formatterSettings.listWrapper} ${formatterSettings.requiredListWrapper}" />
 
             <div ${not empty listWrapper ? 'class="'.concat(listWrapper).concat('"')  : '' } id="list-${cms.element.instanceId}">
 
@@ -65,13 +65,12 @@
                     </cms:edit>
                 </c:if>
 
+                <c:if test="${con.value.Link.exists}">
+                    <div class="separator">
+                        <apollo:link link="${con.value.Link}" cssclass="btn btn-sm" settitle="false"/>
+                    </div>
+                </c:if>
             </div>
-
-            <c:if test="${con.value.Link.exists}">
-                <div class="bo-grey-light bo-top-1 bo-top-dotted ph-0">
-                    <apollo:link link="${con.value.Link}" cssclass="btn ap-btn-${cms.element.settings.buttoncolor} ap-btn-sm" settitle="false"/>
-                </div>
-            </c:if>
 
         </apollo:init-messages>
 

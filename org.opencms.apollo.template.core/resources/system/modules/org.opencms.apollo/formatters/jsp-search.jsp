@@ -57,7 +57,7 @@
 						<input name="${common.config.queryParam}" class="form-control"
 							type="text" autocomplete="off" placeholder='<fmt:message key="form.enterquery" />'
 							value="${escapedQuery}" /> <span class="input-group-btn">
-							<button class="btn ap-btn lh-13" type="submit"><fmt:message key="button.submit" /></button>
+							<button class="btn lh-13" type="submit"><fmt:message key="button.submit" /></button>
 						</span>
 					</div>
 				</div>

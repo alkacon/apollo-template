@@ -9,5 +9,14 @@
     </Category>
     <SortOrder><![CDATA[datedesc]]></SortOrder>
     <ItemsPerPage><![CDATA[3]]></ItemsPerPage>
+    <Link>
+      <Text><![CDATA[Show all open jobs]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/element-pages/job-offer/]]></target>
+          <uuid>032bae8e-6ebc-11e6-9a42-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
   </ApolloList>
 </ApolloLists>

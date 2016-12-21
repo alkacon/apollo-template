@@ -23,7 +23,7 @@
 		
 		<c:if test="${value.Link.exists and value.Link.value.URI.isSet}">
 			<p>
-				<apollo:link link="${value.Link}" cssclass="btn ap-btn-lg" settitle="false"/>
+				<apollo:link link="${value.Link}" cssclass="btn btn-lg" settitle="false"/>
 			</p>
 		</c:if>
 	</div>

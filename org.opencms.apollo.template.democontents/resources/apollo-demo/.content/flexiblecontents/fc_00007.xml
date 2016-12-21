@@ -15,7 +15,7 @@
 <div class="mb-10"><input type="password" name="pw" placeholder="Pick a password" class="form-control input-sm"/></div>
 <div class="mb-10"><input type="password" name="pw-conf" placeholder="Confirm password" class="form-control input-sm"/></div>
 
-<button type="submit" class="btn ap-btn-sm">Subscribe</button>
+<button type="submit" class="btn btn-sm">Subscribe</button>
 
 </form>	
 						
@@ -37,7 +37,7 @@
 <div class="mb-10"><input type="password" name="pw" placeholder="Passwort auswählen" class="form-control input-sm"/></div>
 <div class="mb-10"><input type="password" name="pw-conf" placeholder="Passwort bestätigen" class="form-control input-sm"/></div>
 
-<button type="submit" class="btn ap-btn-sm">Abonnieren</button>
+<button type="submit" class="btn btn-sm">Abonnieren</button>
 
 </form>
 			

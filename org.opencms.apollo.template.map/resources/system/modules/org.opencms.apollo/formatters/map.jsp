@@ -151,7 +151,7 @@
 							contentString += "<br/><br/><fmt:message key="apollo.map.message.route" /><br/><fmt:message key="apollo.map.message.start" />"
 								+ "<form action=\"https://maps.google.com/maps\" method=\"get\" target=\"_blank\">"
 								+ "<input type=\"text\" class=\"form-control\" size=\"15\" maxlength=\"60\" name=\"saddr\" value=\"\" />"
-								+ "<input value=\"<fmt:message key="apollo.map.message.route.button" />\" type=\"submit\" class=\"mt-10 btn ap-btn btn-sm\"><input type=\"hidden\" name=\"daddr\" value=\""
+								+ "<input value=\"<fmt:message key="apollo.map.message.route.button" />\" type=\"submit\" class=\"mt-10 btn btn-sm\"><input type=\"hidden\" name=\"daddr\" value=\""
 								+ "${loc.lat},${loc.lng}\"/>";
 						</c:if>
 
@@ -270,16 +270,16 @@
 		<div class="ap-mapmarkerbuttons mb-20">
 			<c:choose>
 				<c:when test="${not empty usedMarkers}">
-					<button class="btn ap-btn btn-sm" onclick="showMarkers${varsuffix}('');"><fmt:message key="apollo.map.message.button.showallmarkers" /></button>
+					<button class="btn btn-sm" onclick="showMarkers${varsuffix}('');"><fmt:message key="apollo.map.message.button.showallmarkers" /></button>
 					<c:forEach var="markergroup" items="${usedMarkers}">
-						<button class="btn ap-btn btn-sm" onclick="showMarkers${varsuffix}('<c:out value="${markergroup.key}" />');"><fmt:message key="apollo.map.message.button.show" />${' '}${markergroup.key}</button>
+						<button class="btn btn-sm" onclick="showMarkers${varsuffix}('<c:out value="${markergroup.key}" />');"><fmt:message key="apollo.map.message.button.show" />${' '}${markergroup.key}</button>
 					</c:forEach>
 				</c:when>
 				<c:otherwise>
-					<button class="btn ap-btn btn-sm" onclick="showMarkers${varsuffix}('');"><fmt:message key="apollo.map.message.button.showmarkers" /></button>
+					<button class="btn btn-sm" onclick="showMarkers${varsuffix}('');"><fmt:message key="apollo.map.message.button.showmarkers" /></button>
 				</c:otherwise>
 			</c:choose>
-			<button class="btn ap-btn btn-sm" onclick="showMarkers${varsuffix}('allhide');"><fmt:message key="apollo.map.message.button.hidemarkers" /></button>
+			<button class="btn btn-sm" onclick="showMarkers${varsuffix}('allhide');"><fmt:message key="apollo.map.message.button.hidemarkers" /></button>
 		</div>
 	</c:if>
 	
