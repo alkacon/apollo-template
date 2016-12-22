@@ -16,12 +16,11 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * Source file: apollo-generics.scss
  *
- * apollo-generics.scss
- *
+ * Generic CSS selectors that can apply to most DIV or similar block elements.
+ * These usually are to be used as "CSS Wrapper" in the Apollo element settings.
  */
-
-// Generic CSS selectors that can apply to any DIV or similar block element.
 
 $bg-colors:              $many-colors !default;
 $font-colors:            $many-colors !default;
@@ -37,47 +36,70 @@ $border-positions:       (bottom, top, left, right) !default;
 $border-styles:          (none, solid, dotted, dashed, hidden) !default;
 
 $text-colors:            ((light, $text-light), (dark, $text-dark)) !default;
+$link-colors:            ((default, $main-theme, $main-theme-hover),
+                          (white, $white, $grey-lighter),
+                          (grey, $grey, $grey-light),
+                          (black,  $black, $grey-darker)) !default;
 
-// Colored backgrounds (text presets)
-@each $color-name, $text-color in $text-colors {
-    
-    .text-#{""+$color-name} {
+
+@mixin set-text-color($text-color) {
+
+    color: $text-color;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    li,
+    .fa {
         color: $text-color;
+    }
+}
 
-        h1, 
-        h2, 
-        h3, 
-        h4, 
-        h5, 
-        h6,
-        p,
-        li,
-        .fa {
-            color: $text-color;
-        }
+// Text colors
+@each $color-name, $text-color in $text-colors {
 
-        a {
-            color: $text-color;
-            text-decoration: underline;
-            &.btn,
-            &:hover {
-                text-decoration: none;
-            }
-        }
+    .text-#{""+$color-name} {
 
-        // used in sections with images
-        h3.subtitle a {
-            color: $text-color;
-            text-decoration: none;
+        @include set-text-color($text-color);
+    }
 
-            &:hover {
+    // suppress head link colors
+    .head-links-#{""+$color-name} {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            a:not(.btn) {
                 color: $text-color;
-                text-decoration: underline;
+                &:hover {
+                    color: $text-color;
+                }
             }
         }
     }
 }
 
+// Link color presets
+@each $color-name, $text-color, $highlight-color in $link-colors {
+
+    .links-#{""+$color-name} {
+        a:not(.btn) {
+            color: $text-color;
+
+            &:hover {
+                color: $highlight-color;
+            }
+        }
+    }
+}
+
+// Colored backgrounds
 @each $color-name, $bg-color, $highlight-color in $bg-colors {
 
     .bc-#{""+$color-name} {
@@ -103,19 +125,11 @@ $text-colors:            ((light, $text-light), (dark, $text-dark)) !default;
 
 // Font and text adjustments
 
-@each $color-name, $bg-color, $highlight-color in $font-colors {
+@each $color-name, $text-color, $highlight-color in $font-colors {
 
-    .fc-#{""+$color-name} {
-        color: $bg-color;
-        &.a, 
-        p, 
-        h1, 
-        h2, 
-        h3, 
-        h4,
-        .fa {
-            color: $bg-color;      
-        }
+    .text-#{""+$color-name} {
+
+        @include set-text-color($text-color);
     }
 }
 
@@ -133,6 +147,8 @@ $text-colors:            ((light, $text-light), (dark, $text-dark)) !default;
     } 
 }
 
+// Text alignment
+
 @each $align in (left, center, right) {
 
     .fa-#{$align} {
@@ -140,15 +156,22 @@ $text-colors:            ((light, $text-light), (dark, $text-dark)) !default;
     }
 }
 
-a.no-underline:hover,
-a.no-underline {
-    text-decoration: none;
+// Vertical text align settings
+
+.va-middle {
+    vertical-align: middle;
+}
+
+
+// hide overflow
+.overflow-hidden {
+    overflow: hidden;
 }
 
 // Borders
 
 @each $radius-name, $radius in $border-radiuses {     
-   
+
     .bo-radius-#{""+$radius-name} {
         border: 0 solid;     
         border-radius: $radius;
@@ -202,26 +225,6 @@ a.no-underline {
     }
 }
 
-// Badges (overwrite the Bootstrap defaults)
-
-.badge {
-    border-radius: 4px !important; 
-}
-
-span.badge {
-    color: $text-light;
-    font-weight: 400;
-    padding: 4px 7px;
-}
-
-@each $color-name, $bg-color, $highlight-color in $many-colors {
-
-    span.badge-#{""+$color-name} {
-        color: get-text-color($bg-color);
-        background: $bg-color;
-    }
-}
-
 // Block display settings
 
 .disp-i {
@@ -236,6 +239,7 @@ span.badge {
     display: block;
 }
 
+// Block position settings
 .pos-abs {
     position: absolute;
 }
@@ -248,21 +252,12 @@ span.badge {
     position: static;
 }
 
-
-// Vertical align settings
-
-.va-middle {
-    vertical-align: middle;
-}
-
-// Shadows
+// Drop shadow effect
 
 .ap-shadow {
-    box-shadow: 0 10px 6px -6px #bbb;
-    -moz-box-shadow: 0 10px 6px -6px #bbb;
-    -webkit-box-shadow: 0 10px 6px -6px #bbb;
+    box-shadow: 0 10px 6px -6px $dropshadow;
+    -webkit-box-shadow: 0 10px 6px -6px $dropshadow;
 }
-
 
 // Margins and paddings
 
@@ -279,9 +274,9 @@ span.badge {
         padding-left: #{$space}px;
         padding-right: #{$space}px;
     }
-        .pl-#{$space} {
-            padding-left: #{$space}px;
-        }
+    .pl-#{$space} {
+        padding-left: #{$space}px;
+    }
     .pr-#{$space} {
         padding-right: #{$space}px;
     }
@@ -316,7 +311,10 @@ span.badge {
     }
 }
 
+//removing the gutter from some bootstrap grid elements
+
 .container-fluid.nogutter > div {
+    // apply this to a container-fluid in order to remove gutter from the row inside
     margin-left: $gutter * -1px;
     margin-right: $gutter * -1px;
 }
@@ -324,12 +322,4 @@ span.badge {
 .row.nogutter > div {
     padding-left: 0;
     padding-right: 0;
-}
-
-.clearfix {
-    &:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
 }

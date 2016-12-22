@@ -165,7 +165,6 @@ $pagination-border:     $grey-light !default;
 
         .fa {
             text-align: right;
-            width: 20px;
         }
     }
 }
@@ -185,9 +184,24 @@ $pagination-border:     $grey-light !default;
         }
     }
 
-    .open .fa-chevron-right:before,
-    .fa-chevron-right.open:before {
-        content: "\f078";
+/*
+    .open .fa-chevron-down:before,
+    .fa-chevron-down.open:before {
+        content: "\f054";
+    }
+*/
+
+    i.fa,
+    span.fa {
+        transform: rotate(0) translate(0px, 0px);
+        transition: transform 0.33s;
+    }
+
+    .open span.fa,
+    i.fa.open,
+    span.fa.open {
+        transform: rotate(-90deg) translate(-1px, 0px);
+        transition: transform 0.33s;
     }
 }
 

@@ -21,10 +21,32 @@
  *
  */
 
-.ap-search .panel-default > .panel-heading {
-	padding: 5px 15px;
+.ap-search {
+
+    hr {
+        margin: 10px 0;
+    }
+
+    .panel {
+        margin-bottom: 10px;
+    }
+
+    .panel-default {
+        > .panel-heading,
+        > .panel-footer {
+            padding: 5px 15px;
+        }
+    }
+
+    .input-group-btn .btn {
+        padding-top: 8px;
+        padding-bottom: 7px;
+    }
+
+    select.form-control {
+        // required to remove round corners from chrome
+        -webkit-appearance: none;
+        -webkit-border-radius: 0px;
+    }
 }
 
-.ap-search hr {
-	margin: 10px 0;
-}

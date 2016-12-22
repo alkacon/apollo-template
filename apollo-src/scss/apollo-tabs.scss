@@ -108,32 +108,37 @@ $panel-collapsed-bg:    $grey-lighter !default;
     }
 }
 
-// Panels:
+
+// Panels, reset Bootstrap round corners
+
+.panel-body {
+    // panel has it's own margin so remove the bottom margin from the apollo elements
+    .ap-detail-page:last-child,
+    .ap-paragraph:last-child, 
+    .ap-sec:last-child  {
+        margin-bottom: 0;
+    }
+}
+
+.panel {
+    margin-bottom: 4px;
+    box-shadow: $panel-shadow;
+}
+
+.panel, // need to overwrite some bootstrap defaults here
+.panel-body,
+.panel-heading + .panel-collapse > .panel-body {
+
+    border-radius: 0;
+    border-color: $panel-border-color;
+}
+
+// Colored panels, reset Bootstrap round corners
+
 .ap-panel.panel-group {
 
     margin-bottom: 20px;
 
-    .panel-body {
-        // panel has it's own margin so remove the bottom margin from the apollo elements
-        .ap-detail-page:last-child,
-        .ap-paragraph:last-child, 
-        .ap-sec:last-child  {
-            margin-bottom: 0;
-        }
-    }
-
-    .panel {
-        margin-bottom: 4px;
-        box-shadow: $panel-shadow;
-    }
-
-    .panel, // need to overwrite some bootstrap defaults here
-    .panel-body,
-    .panel-heading + .panel-collapse > .panel-body {
-
-        border-radius: 0;
-        border-color: $panel-border-color;
-    }
 
     .panel-heading {
         padding: 0;

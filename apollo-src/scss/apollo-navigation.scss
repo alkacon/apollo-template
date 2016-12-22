@@ -687,8 +687,44 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     }
 }
 
+// Footer 
+
+.footer {
+    padding-top: 20px;
+    background: $grey-darker;
+    color: $text-light;
+    p,
+    div,
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: $grey-light;
+        a:not(.btn) {
+            color: $white;
+
+            &:hover {
+                color: $grey-lighter;
+            }
+        }
+    }
+
+    &.light {
+        background: $grey-light;
+        color: $grey-dark;
+        p,
+        div,
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: $grey-dark;
+        }
+    }
+}
 
 // "Back to top" icon on the lower right of display.
+
 #topcontrol {
   color: $text-light;
   background: $text-dark;

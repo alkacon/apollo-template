@@ -88,12 +88,17 @@ $social-links:
             text-align: center;
             border: none;
             font-size: $social-links-size;
-            color: $social-links-text-ongrey;
-            background: $social-links-bg;
             line-height: $social-links-box-height;
 
+            .fa {
+                color: $social-links-text-ongrey;
+            }
+            background-color: $social-links-bg;
+
             &:hover {
-                color: $social-links-text-oncolor;
+                .fa {
+                    color: $social-links-text-oncolor;
+                }
                 background-color: transparent;
             }
         }
@@ -159,10 +164,15 @@ $social-links:
         li.#{$social-link} a,
         li.#{$social-link} a {
             background-color: $social-color;
-            color: $social-links-text-oncolor;
+            .fa {
+                color: $social-links-text-oncolor;
+            }
 
-            :hover {
+            &:hover {
                 background-color: saturate(lighten($social-color, 10%), 20%);
+                .fa {
+                    color: $grey-lighter;
+                }
             }
         }
     }

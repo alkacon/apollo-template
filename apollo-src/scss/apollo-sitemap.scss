@@ -27,8 +27,15 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        padding: 5px;
         background: transparent;
+    }
+    
+    ul.row {
+        padding-bottom: 10px;
+        
+        > ul {
+            padding-right: 10px;
+        }
     }
 
     ul > ul{
@@ -56,13 +63,13 @@
             }
 
             i{
-                transform: rotate(-90deg);
-                transition: transform 1s;
                 float: right;
+                transform: rotate(0);
+                transition: transform 0.33s;
 
                 &.open{
-                    transform: rotate(0);
-                    transition: transform 1s;
+                    transform: rotate(-90deg);
+                    transition: transform .033s;
                 }
             }
         }
@@ -70,7 +77,7 @@
         & > ul li {
             color: get-text-color($main-theme-complementary);
             background: $main-theme-complementary;
-            padding: 5px 10px;
+            padding: 6px 10px;
             margin: 0;
             font-weight: normal;
 

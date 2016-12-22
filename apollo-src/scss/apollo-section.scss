@@ -23,7 +23,6 @@
 
 // Base styles used by section macro formatters.
 
-.ap-sec,
 .ap-section {
 
     margin-bottom: 20px;
@@ -35,7 +34,7 @@
     }
 
     h3.subtitle.centered  {
-    
+
         font-family: $font-content;
         font-size: $font-content-size;
         text-align: center;
@@ -58,8 +57,16 @@
 
 .ap-iconbox {
 
+    background-color: $main-theme;
+    overflow: hidden;
+    padding: 20px;
     text-align: center;
     margin-bottom: 20px;
+
+    h3,
+    div { 
+        color: $text-light;
+    }
 
     i.icon-box {
         width: 60px;
@@ -67,6 +74,13 @@
         font-size: 32px;
         line-height: 60px;
         margin-bottom: 10px;
+    }
+
+    .text-box a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        } 
     }
 }
 
@@ -112,11 +126,14 @@
     }
 }
 
-.no-section-margin .ap-iconbox,
-.no-section-margin .ap-sec,
-.no-section-margin .ap-section {
+.ap-tile,
+.no-section-margin {
+    // remove the margins of all sections, usually applied to template rows
+    .ap-iconbox,
+    .ap-section {
 
-    margin-bottom: 0px;
+        margin-bottom: 0px;
+    }
 }
 
 // Styles for image section variations
@@ -126,94 +143,7 @@
     }
     .ap-img-desc {
         margin-top: 5px;
-    }            
-}
-
-a.ap-img-link {
-    color: $text-content;
-
-    &:hover, &:active, &:focus {
-        color: $text-content;
-        text-decoration: none;
     }
-    .ap-img-desc {
-        color: $main-theme;
-        &:hover, &:active, &:focus {
-            text-decoration: underline;
-        }
-    }
-}
-
-.ap-tile .ap-sec,
-.ap-tile .ap-section,
-.ap-tile .ap-sec .ap-img,
-.ap-tile .ap-section .ap-img {
-
-    margin: 0;
-}
-
-// Section as image link box
-
-.ap-sec-imagebox {
-    overflow: hidden;
-    position: relative;
-}
-
-.ap-sec-imagebox .ap-sec-imagebox-overlay {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: 15px 10px 0;
-    opacity: 0.7;
-    padding: 4px 8px;
-    z-index: 5;
-}
-
-.ap-sec-imagebox .ap-img .info .copyright {
-    position: absolute;
-    bottom: 10px;
-    right: 2px;
-}
-
-.ap-sec-imagebox .ap-sec-imagebox-title {
-    margin-right: 26px;
-    text-transform: uppercase;
-}
-
-.ap-sec-imagebox .ap-sec-imagebox-icon {
-    position: absolute;
-    top: 2px;
-    right: 10px;
-    background-color: $white;
-    padding: 0 3px 3px;
-    border: 1px solid $grey;
-    box-shadow: 0 3px 5px $grey-dark;
-}
-
-.ap-sec-imagebox .ap-sec-imagebox-text {
-    margin-top: 20px;
-}
-
-.ap-sec-imagebox-title, 
-.ap-sec-imagebox-icon, 
-.ap-sec-imagebox-text,
-.ap-sec-imagebox
-.ap-img 
-.info 
-.copyright {
-    color: $grey;
-}
-
-.overflow-hidden {
-    overflow: hidden;
-}
-
-.overflow-fix {  
-    // fix for images showing through masks with overflow-hidden during transition.
-    // see http://stackoverflow.com/a/27935035
-    position: relative;
-    z-index: 10;
 }
 
 // Jumbotron headline.

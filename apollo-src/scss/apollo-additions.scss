@@ -50,3 +50,23 @@ span.label {
     padding: 4px 7px;
     border-radius: 0;
 }
+
+// Extend Bootstrap badges
+
+.badge {
+    border-radius: 4px !important; 
+}
+
+span.badge {
+    color: $text-light;
+    font-weight: 400;
+    padding: 4px 7px;
+}
+
+@each $color-name, $bg-color, $highlight-color in $many-colors {
+
+    span.badge-#{""+$color-name} {
+        color: get-text-color($bg-color);
+        background: $bg-color;
+    }
+}
