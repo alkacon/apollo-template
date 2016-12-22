@@ -52,7 +52,7 @@
                         <button type="button" class="btn-block btn" onclick="toggleApListFilter('labels');this.blur();">
                             <span class="pull-left"><span class="fa fa-tag"></span></span>
                             <span class="pull-left pl-10"><fmt:message key="apollo.list.message.labels" /></span>
-                            <span id="aplistlabels_toggle" class="fa fa-chevron-right ${formatterSettings.catPreopened ? 'open' : ''} pull-right"></span>
+                            <span id="aplistlabels_toggle" class="fa fa-chevron-down ${formatterSettings.catPreopened ? 'open' : ''} pull-right"></span>
                         </button>
 
                         <div id="aplistlabels" class="dialog" ${formatterSettings.catPreopened ? 'style="display:block;"' : ''}>
@@ -101,7 +101,7 @@
                         <button type="button" class="btn-block btn" onclick="toggleApListFilter('archive');this.blur();">
                             <span class="pull-left"><span class="fa fa-archive"></span></span>
                             <span class="pull-left pl-10"><fmt:message key="apollo.list.message.archive" /></span>
-                            <span id="aplistarchive_toggle" class="fa fa-chevron-right ${formatterSettings.archivePreopened ? 'open' : ''} pull-right"></span>
+                            <span id="aplistarchive_toggle" class="fa fa-chevron-down ${formatterSettings.archivePreopened ? 'open' : ''} pull-right"></span>
                         </button>
 
                         <div id="aplistarchive" class="dialog" ${formatterSettings.archivePreopened ? 'style="display:block;"' : ''}>
@@ -129,7 +129,7 @@
                                     <c:set var="yearHtml">
                                         <button type="button" class="btn-block btn btn-xs year" onclick="toggleApListFilter('year${currYear}');this.blur();">
                                             <span class="pull-left">${currYear}</span>
-                                            <i id="aplistyear${currYear}_toggle" class="fa fa-chevron-right pull-right"></i>
+                                            <i id="aplistyear${currYear}_toggle" class="fa fa-chevron-down pull-right"></i>
                                         </button>
                                         <ul class="year" id="aplistyear${currYear}" style="display:none;">
                                     </c:set>
@@ -147,7 +147,7 @@
                                 </c:set>
                                 <c:if test="${(not empty selected) or (currYear eq thisYear)}">
                                     <c:set var="yearHtml">${fn:replace(yearHtml, 'style="display:none;"', '')}</c:set>
-                                    <c:set var="yearHtml">${fn:replace(yearHtml, 'fa-chevron-right pull-right', 'fa-chevron-right open pull-right')}</c:set>
+                                    <c:set var="yearHtml">${fn:replace(yearHtml, 'fa-chevron-down pull-right', 'fa-chevron-down open pull-right')}</c:set>
                                 </c:if>
                                 <c:set var="prevYear" value="${currYear}" />
                             </c:forEach>

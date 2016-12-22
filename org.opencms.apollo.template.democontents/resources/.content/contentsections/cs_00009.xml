@@ -9,7 +9,7 @@
           <target><![CDATA[http://opencms.org]]></target>
         </link>
       </links>
-      <content><![CDATA[<p><a class="fc-grey" href="%(link0)">Built with OpenCms 10.5</a></p>]]></content>
+      <content><![CDATA[<p><a class="text-grey" href="%(link0)">Built with OpenCms 10.5</a></p>]]></content>
     </Text>
     <GalleryTitle><![CDATA[Footer Built with OpenCms 10.5]]></GalleryTitle>
   </ApolloSection>

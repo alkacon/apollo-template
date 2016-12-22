@@ -12,7 +12,7 @@
     <c:set var="textnew"><fmt:message key="apollo.tabs.message.new" /></c:set>
     <apollo:init-messages textnew="${textnew}">
 
-        <div class="ap-sec ${cms.element.setting.wrapperclass}">
+        <div class="ap-section ${cms.element.setting.wrapperclass}">
 
             <c:if test="${not cms.element.settings.hidetitle}">
                 <div class="headline"><h2 ${rdfa.Title}>${value.Title}</h2></div>

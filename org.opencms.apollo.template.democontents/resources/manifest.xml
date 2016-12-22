@@ -10073,7 +10073,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Event: Compact Event List]]></value>
+					<value><![CDATA[Compact Event List]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10124,7 +10124,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Frequently Asked Questions as Accordion]]></value>
+					<value><![CDATA[FAQ Entry: Frequently Asked Questions as Accordion]]></value>
 				</property>
 			</properties>
 			<relations/>

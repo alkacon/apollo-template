@@ -87,7 +87,8 @@
             <c:out value='<div class="list-option btn-group">' escapeXml='false' />
                 <button type="button" class="dropdown-toggle btn" data-toggle="dropdown" 
                                 aria-haspopup="true" aria-expanded="false" id="dropdownMenu1" aria-expanded="true">
-                    ${buttonLabel} &nbsp; <span class="fa fa-chevron-right"></span>
+                    <span class="pr-5">${buttonLabel}</span>
+                    <span class="fa fa-chevron-down"></span>
                 </button>
                 
                 <c:out value='<ul class="list-optionlist dropdown-menu dropdown-${buttonColor}">' escapeXml='false' />

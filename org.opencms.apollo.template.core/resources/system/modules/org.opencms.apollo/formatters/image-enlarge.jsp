@@ -28,7 +28,7 @@
             <c:set var="showsubtitle" value="${cms.element.setting.showsubtitle.value != 'false' and (value.Headline.isSet or not empty imageTitle)}"/>
             <c:set var="showtext" value="${cms.element.setting.showtext.value and value.Text.isSet}"/>
 
-            <div class="ap-sec ap-image-zoom ${cms.element.settings.wrapperclass}">
+            <div class="ap-section ap-image-zoom ${cms.element.settings.wrapperclass}">
 
                 <apollo:image-zoom 
                     image="${content.value.Image}"

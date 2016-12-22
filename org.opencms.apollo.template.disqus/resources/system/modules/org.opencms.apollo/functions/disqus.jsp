@@ -46,7 +46,7 @@
                 <c:if test="${clickToLoad}">
                     <button type="button" class="btn-block btn" onclick="toggleComments();this.blur();">
                         <span class="pull-left"><fmt:message key="apollo.disqus.message.comments" /></span>
-                        <i id="disqus_toggle" class="fa fa-chevron-right pull-right"></i>
+                        <i id="disqus_toggle" class="fa fa-chevron-down pull-right"></i>
                     </button>
                 </c:if>
 

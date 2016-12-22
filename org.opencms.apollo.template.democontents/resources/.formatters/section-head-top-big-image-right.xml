@@ -14,7 +14,7 @@
     <AutoEnabled>true</AutoEnabled>
     <Detail>false</Detail>
     <Display>false</Display>
-    <Macro><![CDATA[<div class="row ap-sec %(settings.wrapperclass)">
+    <Macro><![CDATA[<div class="row ap-section %(settings.wrapperclass)">
   <div class="col-sm-12">
     %(headline)
   </div>
