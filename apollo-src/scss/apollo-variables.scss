@@ -80,7 +80,10 @@ $dropshadow:        rgba(0, 0, 0, 0.3) !default;
 $panel-shadow:      0px 1px 1px rgba(0, 0, 0, .05) !default;
 
 // Button padding
-$btn-padding: 8px !default;
+$btn-padding: 8px   !default;
+
+// Gutter (margins left/right) - should match the bootstrap gutter
+$gutter:        15  !default;
 
 // large array of colors to be used in backgrounds
 $many-colors:

@@ -120,7 +120,9 @@ $panel-collapsed-bg:    $grey-lighter !default;
     }
 }
 
-.panel {
+.panel,
+.panel-group .panel {
+    border-radius: 0;
     margin-bottom: 4px;
     box-shadow: $panel-shadow;
 }
@@ -129,7 +131,6 @@ $panel-collapsed-bg:    $grey-lighter !default;
 .panel-body,
 .panel-heading + .panel-collapse > .panel-body {
 
-    border-radius: 0;
     border-color: $panel-border-color;
 }
 

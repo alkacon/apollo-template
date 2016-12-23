@@ -310,16 +310,3 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
         margin-bottom: #{$space}px;
     }
 }
-
-//removing the gutter from some bootstrap grid elements
-
-.container-fluid.nogutter > div {
-    // apply this to a container-fluid in order to remove gutter from the row inside
-    margin-left: $gutter * -1px;
-    margin-right: $gutter * -1px;
-}
-
-.row.nogutter > div {
-    padding-left: 0;
-    padding-right: 0;
-}

@@ -126,15 +126,6 @@
     }
 }
 
-.ap-tile,
-.no-section-margin {
-    // remove the margins of all sections, usually applied to template rows
-    .ap-iconbox,
-    .ap-section {
-
-        margin-bottom: 0px;
-    }
-}
 
 // Styles for image section variations
 .ap-img-txt {
@@ -149,4 +140,38 @@
 // Jumbotron headline.
 .jumbotron h1, .jumbotron .h1 {
   line-height: 1.0;
+}
+
+// classes to set the gid layout margins
+
+// add margin below the header
+div.area-head {
+    margin-bottom: 20px;
+}
+
+// special rule to suppress header margin
+div.no-top-margin {
+    margin-top: -20px;
+}
+
+// remove the margins of all sections, usually applied to template rows
+.ap-tile,
+.no-section-margin {
+    .ap-iconbox,
+    .ap-section {
+
+        margin-bottom: 0px;
+    }
+}
+
+// removing the gutter from selected bootstrap grid elements
+.container-fluid.no-gutter > div {
+    // apply this to a container-fluid in order to remove gutter from the row inside
+    margin-left: $gutter * -1px;
+    margin-right: $gutter * -1px;
+}
+
+.row.no-gutter > div {
+    padding-left: 0;
+    padding-right: 0;
 }
