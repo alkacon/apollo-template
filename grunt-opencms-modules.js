@@ -32,6 +32,7 @@ var themeConcatTasks = [];
 var grunt;
 var deployTarget;
 var buildDir;
+var cssDir;
 var moduleDir;
 
 var path = require('path');
@@ -39,13 +40,15 @@ var path = require('path');
 exports.initGrunt = function(_grunt, _buildDir) {
 
     grunt = _grunt;
-    
+
     moduleDir = path.normalize(process.cwd()) + '/';
-    buildDir = path.normalize(moduleDir + _buildDir);
+    cssDir = path.normalize(moduleDir + _buildDir + 'css/');
+    buildDir = path.normalize(moduleDir + _buildDir + 'grunt/');
 
     if (grunt.option('verbose')) {
         console.log('OpenCms module source directory: ' + moduleDir);
         console.log('OpenCms module build directory : ' + buildDir);
+        console.log('OpenCms css theme output directory : ' + cssDir);
 
         require('time-grunt')(grunt);
     }
@@ -125,30 +128,37 @@ _gruntLoadNpmTasks = function() {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-postcss');
+
+    // Postcss modules required:
+    // ('autoprefixer');
+    // ('stylefmt');
+    // ('postcss-sorting');
 }
 
 _gruntInitConfig = function() {
 
     // Project configuration
     grunt.initConfig({
-            
+
         clean : {
             all : [ buildDir + '**' ],
             theme : {
                 files : [ {
                     expand : true,
+                    cwd : moduleDir,
                     src : [ '*.css', '*.css.map' ],
                     filter : 'isFile',
                 } ],
             },
         },
-        
+
         copy : {
             resources : {
                 files : [ {
                     expand : true,
                     src : oc.resources(),
-                    dest : buildDir + '03_final',
+                    dest : buildDir + '04_final',
                     rename: function (dest, src) {
                         // TODO: determine and remove the 'appollo-src' folder part dynamically
                         src = src.replace(moduleDir + 'apollo-src', '/');
@@ -161,29 +171,38 @@ _gruntInitConfig = function() {
                 files : [ {
                     expand : true,
                     src : [ '*.css', '*.css.map' ],
-                    dest : buildDir + '02_minified',
+                    dest : buildDir + '03_minified',
                     filter : 'isFile',
                 } ],
             },
             restore : {
                 files : [ {
                     expand : true,
-                    cwd : buildDir + '02_minified',
+                    cwd : buildDir + '03_minified',
                     src : [ '*.css', '*.css.map' ],
                     dest : moduleDir,
                     filter : 'isFile',
                 } ],
-            },            
+            },
+            providecss : {
+                files : [ {
+                    expand : true,
+                    cwd : buildDir + '04_final/css/',
+                    src : [ '*.css', '*.css.map' ],
+                    dest : cssDir,
+                    filter : 'isFile',
+                } ]
+            },
             deploy : {
                 files : [ {
                     expand : true,
-                    cwd : buildDir + '03_final/',
+                    cwd : buildDir + '04_final/',
                     src : [ '**' ],
                     dest : oc.deployTarget,
                 } ]
             }
         },
-        
+
         sass : {
             theme : {
                 options : {
@@ -210,10 +229,33 @@ _gruntInitConfig = function() {
                     expand : true,
                     cwd : moduleDir,
                     src : oc.themeSassSrc(),
-                    dest : buildDir + '03_final/csscheck',
+                    dest : buildDir + '04_final/csscheck',
                     ext : '.css',
                     flatten: true
                 } ]
+            }
+        },
+
+        postcss : {
+            theme : {
+                options: {
+                    map: {
+                      inline: false, // save all sourcemaps as separate files...
+                      annotation: buildDir + '02_postcssed' // ...to the specified directory
+                    },
+                    processors : [ 
+                        require('autoprefixer')({browsers: 'last 3 versions'}), // add vendor prefixes
+                        require('stylefmt')(), // pretty-print the output
+                        require('postcss-sorting')({"sort-order": 'default'}), // sort the rules in the output
+                    ]
+                },
+                files : [{
+                    expand : true,
+                    cwd : buildDir + '01_processed',
+                    src : oc.themeCssSrc(),
+                    dest : buildDir + '02_postcssed',
+                    ext : '.css'
+                }]
             }
         },
 
@@ -227,7 +269,7 @@ _gruntInitConfig = function() {
                     moduleDir + 'plugins.min.css', 
                     '<%= grunt.task.current.args[0] %>.min.css' 
                 ], 
-                dest: buildDir + '03_final/css/<%= grunt.task.current.args[0] %>.min.css' 
+                dest: buildDir + '04_final/css/<%= grunt.task.current.args[0] %>.min.css' 
             },
         },
         
@@ -250,7 +292,7 @@ _gruntInitConfig = function() {
             theme : {
                 files : [{
                     expand : true,
-                    cwd : buildDir + '01_processed',
+                    cwd : buildDir + '02_postcssed',
                     src : oc.themeCssSrc(),
                     dest : moduleDir,
                     ext : '.min.css'
@@ -262,7 +304,7 @@ _gruntInitConfig = function() {
             },
             csscheck : {
                 src : oc.cssSrc(),
-                dest : buildDir + '03_final/csscheck/plugins.min.css',
+                dest : buildDir + '04_final/csscheck/plugins.min.css',
             },
         },
         
@@ -281,7 +323,7 @@ _gruntInitConfig = function() {
             },
             pluginJs : {
                 src : oc.jsSrc(),
-                dest : buildDir + '03_final/js/scripts-all.min.js',
+                dest : buildDir + '04_final/js/scripts-all.min.js',
             },
         },
         
@@ -330,6 +372,7 @@ _gruntRegisterTasks = function() {
     
     grunt.registerTask('theme', [ 
         'sass:theme',
+        'postcss:theme',
         'cssmin:theme',
     ]);
     
@@ -348,8 +391,9 @@ _gruntRegisterTasks = function() {
     
     grunt.registerTask('combine',
         oc.themeConcatTasks().concat(
-        'copy:save', 
-        'clean:theme'
+        'copy:save'
+        // ,
+        // 'clean:theme'
     ));
     
     grunt.registerTask('deploy', function() {
@@ -357,6 +401,7 @@ _gruntRegisterTasks = function() {
             grunt.task.run( [
                 'copy:resources',
                 'copy:deploy',
+                'copy:providecss',
             ] );
         } else {
             grunt.log.errorlns('Deploy target CSS folder ' + oc.deployTarget + ' not found, skipping deploy!');
