@@ -17,7 +17,7 @@
 <c:set var="textnew"><fmt:message key="apollo.contact.message.new" /></c:set>
 <apollo:init-messages textnew="${textnew}">
 
-<div class="ap-contact ap-contact-onecol vcard">
+<div class="ap-contact ap-contact-onecol vcard ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
 
     <c:set var="fragments">
         image 

@@ -3,7 +3,7 @@
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
   <ApolloTemplateRow language="de">
     <Title><![CDATA[Area - Seiteninhalt]]></Title>
-    <PreMarkup><![CDATA[<div class="area-section parallax-background $(param)" ?(link)##style="background-image: url('$(link)');"##>]]></PreMarkup>
+    <PreMarkup><![CDATA[<div class="no-top-margin area-section parallax-background $(param)" ?(link)##style="background-image: url('$(link)');"##>]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
     <Container><![CDATA[area]]></Container>
     <Column>
@@ -16,7 +16,7 @@
   </ApolloTemplateRow>
   <ApolloTemplateRow language="en">
     <Title><![CDATA[Area - Section (Parallax background)]]></Title>
-    <PreMarkup><![CDATA[<div class="area-section parallax-background $(param)" ?(link)##style="background-image: url('$(link)');"##>]]></PreMarkup>
+    <PreMarkup><![CDATA[<div class="no-top-margin area-section parallax-background $(param)" ?(link)##style="background-image: url('$(link)');"##>]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
     <Container><![CDATA[area]]></Container>
     <Column>

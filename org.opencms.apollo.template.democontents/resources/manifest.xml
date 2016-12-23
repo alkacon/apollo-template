@@ -15146,33 +15146,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>tutorial/.content/flexiblecontents</destination>
-			<type>folder</type>
-			<uuidstructure>3e41c85d-6104-11e5-9eef-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 22 Sep 2015 08:30:55 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>tutorial/.content/flexiblecontents/fc_00001.xml</source>
-			<destination>tutorial/.content/flexiblecontents/fc_00001.xml</destination>
-			<type>a-flexible</type>
-			<uuidstructure>3e43760f-6104-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>3e437610-6104-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 08:30:55 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Apollo template: Tutorial page: Header for tutorial]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>tutorial/.content/linksequences</destination>
 			<type>folder</type>
 			<uuidstructure>361245ec-afd9-11e6-a18e-0242ac11002b</uuidstructure>

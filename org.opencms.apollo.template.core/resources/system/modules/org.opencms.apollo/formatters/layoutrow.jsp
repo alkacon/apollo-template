@@ -109,6 +109,9 @@
         </c:choose>
 
         <c:set var="cssClass">${column.value.Grid.isSet ? column.value.Grid : (content.value.Defaults.isSet ? content.value.Defaults.value.Grid : '')}</c:set>
+        <c:if test="${(not content.value.PreMarkup.isSet) and cms.element.setting.param.isSet}">
+            <c:set var="cssClass">${cssClass}${' '}${cms.element.setting.param.value}</c:set>
+        </c:if>
         <cms:container
 
           name="${column.value.Name}"

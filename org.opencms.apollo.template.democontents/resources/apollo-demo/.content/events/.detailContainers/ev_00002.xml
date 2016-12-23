@@ -4,7 +4,7 @@
   <AlkaconContainerPage language="en">
     <Containers>
       <Name><![CDATA[c4f79f32-ec41-11e5-8519-0242ac11002b-c1]]></Name>
-      <Type><![CDATA[container]]></Type>
+      <Type><![CDATA[row]]></Type>
       <ParentInstanceId><![CDATA[c4f79f32-ec41-11e5-8519-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
@@ -35,7 +35,7 @@
     </Containers>
     <Containers>
       <Name><![CDATA[7a9e55b0-ef5a-11e5-9d65-0242ac11002b-c1]]></Name>
-      <Type><![CDATA[default]]></Type>
+      <Type><![CDATA[element]]></Type>
       <ParentInstanceId><![CDATA[7a9e55b0-ef5a-11e5-9d65-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
@@ -51,24 +51,6 @@
           </link>
         </Formatter>
         <Properties>
-          <Name><![CDATA[wrapperclass]]></Name>
-          <Value>
-            <String><![CDATA[bg-blue-light]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[hsize]]></Name>
-          <Value>
-            <String><![CDATA[h2]]></String>
-          </Value>
-        </Properties>
-        <Properties>
-          <Name><![CDATA[formatterSettings#7a9e55b0-ef5a-11e5-9d65-0242ac11002b-c1]]></Name>
-          <Value>
-            <String><![CDATA[549e54ad-ec1c-11e5-854f-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[tstyle]]></Name>
           <Value>
             <String><![CDATA[ap-plain]]></String>
@@ -81,16 +63,34 @@
           </Value>
         </Properties>
         <Properties>
+          <Name><![CDATA[wrapperclass]]></Name>
+          <Value>
+            <String><![CDATA[bg-blue-light text-light]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[hsize]]></Name>
+          <Value>
+            <String><![CDATA[h2]]></String>
+          </Value>
+        </Properties>
+        <Properties>
           <Name><![CDATA[hstyle]]></Name>
           <Value>
             <String><![CDATA[ap-plain]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#7a9e55b0-ef5a-11e5-9d65-0242ac11002b-c1]]></Name>
+          <Value>
+            <String><![CDATA[549e54ad-ec1c-11e5-854f-0242ac11002b]]></String>
           </Value>
         </Properties>
       </Elements>
     </Containers>
     <Containers>
       <Name><![CDATA[7a9e55b0-ef5a-11e5-9d65-0242ac11002b-c2]]></Name>
-      <Type><![CDATA[default,group]]></Type>
+      <Type><![CDATA[element]]></Type>
       <ParentInstanceId><![CDATA[7a9e55b0-ef5a-11e5-9d65-0242ac11002b]]></ParentInstanceId>
       <Elements>
         <Uri>
@@ -106,12 +106,6 @@
           </link>
         </Formatter>
         <Properties>
-          <Name><![CDATA[formatterSettings#7a9e55b0-ef5a-11e5-9d65-0242ac11002b-c2]]></Name>
-          <Value>
-            <String><![CDATA[305b02ac-5ad6-11e5-a17e-0242ac11002b]]></String>
-          </Value>
-        </Properties>
-        <Properties>
           <Name><![CDATA[element_instance_id]]></Name>
           <Value>
             <String><![CDATA[87260993-ef5a-11e5-9d65-0242ac11002b]]></String>
@@ -121,6 +115,12 @@
           <Name><![CDATA[hidetitle]]></Name>
           <Value>
             <String><![CDATA[true]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#7a9e55b0-ef5a-11e5-9d65-0242ac11002b-c2]]></Name>
+          <Value>
+            <String><![CDATA[305b02ac-5ad6-11e5-a17e-0242ac11002b]]></String>
           </Value>
         </Properties>
       </Elements>
