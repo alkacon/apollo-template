@@ -105,11 +105,11 @@ var App = function() {
 
         var simpleSliders = jQuery('.ap-slider');
         if (simpleSliders.length > 0) {
-            initSimpleSliders();
-        }        
+            simpleSliders.initSimpleSlider();
+        } 
         var complexSliders = jQuery('.ap-complex-slider');
         if (complexSliders.length > 0) {
-            initComplexSliders();
+            complexSliders.initComplexSlider();
         }
     }
 
