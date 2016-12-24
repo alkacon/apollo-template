@@ -5,7 +5,7 @@
   "license": "AGPL-3.0",
   "repository": "apollo-template",
   "private": true,
-  "dependencies": {  
+  "dependencies": {
     "grunt": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-contrib-sass": "latest",
@@ -14,6 +14,12 @@
     "grunt-contrib-copy": "latest",
     "grunt-contrib-clean": "latest",
     "grunt-contrib-concat": "latest",
-    "time-grunt": "latest"    
+    "time-grunt": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.6.0",
+    "postcss": "^5.2.6",
+    "postcss-sorting": "^1.7.0",
+    "stylefmt": "^5.0.3"
   }
 }

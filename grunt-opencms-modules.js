@@ -32,7 +32,7 @@ var themeConcatTasks = [];
 var grunt;
 var deployTarget;
 var buildDir;
-var cssDir;
+var provideDir;
 var moduleDir;
 
 var path = require('path');
@@ -42,13 +42,13 @@ exports.initGrunt = function(_grunt, _buildDir) {
     grunt = _grunt;
 
     moduleDir = path.normalize(process.cwd()) + '/';
-    cssDir = path.normalize(moduleDir + _buildDir + 'css/');
+    provideDir = path.normalize(moduleDir + _buildDir + 'provide/');
     buildDir = path.normalize(moduleDir + _buildDir + 'grunt/');
 
     if (grunt.option('verbose')) {
         console.log('OpenCms module source directory: ' + moduleDir);
         console.log('OpenCms module build directory : ' + buildDir);
-        console.log('OpenCms css theme output directory : ' + cssDir);
+        console.log('OpenCms theme provision directory : ' + provideDir);
 
         require('time-grunt')(grunt);
     }
@@ -184,12 +184,12 @@ _gruntInitConfig = function() {
                     filter : 'isFile',
                 } ],
             },
-            providecss : {
+            providesrc : {
                 files : [ {
                     expand : true,
-                    cwd : buildDir + '04_final/css/',
-                    src : [ '*.css', '*.css.map' ],
-                    dest : cssDir,
+                    cwd : buildDir + '04_final/',
+                    src : [ '**' ],
+                    dest : provideDir,
                     filter : 'isFile',
                 } ]
             },
@@ -392,16 +392,15 @@ _gruntRegisterTasks = function() {
     grunt.registerTask('combine',
         oc.themeConcatTasks().concat(
         'copy:save'
-        // ,
-        // 'clean:theme'
     ));
-    
+
     grunt.registerTask('deploy', function() {
         if (grunt.file.expand(oc.deployTarget + '*').length) { 
             grunt.task.run( [
                 'copy:resources',
                 'copy:deploy',
-                'copy:providecss',
+                'copy:providesrc',
+                'clean:theme'
             ] );
         } else {
             grunt.log.errorlns('Deploy target CSS folder ' + oc.deployTarget + ' not found, skipping deploy!');
