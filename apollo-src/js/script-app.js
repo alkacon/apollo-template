@@ -17,19 +17,23 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-var App = function () {
+var App = function() {
 
     // Header Mega Menu
     function handleMegaMenu() {
+
         jQuery(document).on('click', '.mega-menu .dropdown-menu', function(e) {
+
             e.stopPropagation();
         })
     }
 
     // Search Box in Header
     function handleSearch() {
-        jQuery('.navbar-nav .search').click(function () {
-            if(jQuery('.search-btn').hasClass('fa-search')){
+
+        jQuery('.navbar-nav .search').click(function() {
+
+            if (jQuery('.search-btn').hasClass('fa-search')) {
                 jQuery('.search-open').fadeIn(500);
                 jQuery('.search-btn').removeClass('fa-search');
                 jQuery('.search-btn').addClass('fa-times');
@@ -37,39 +41,44 @@ var App = function () {
                 jQuery('.search-open').fadeOut(500);
                 jQuery('.search-btn').addClass('fa-search');
                 jQuery('.search-btn').removeClass('fa-times');
-            }   
-        }); 
+            }
+        });
     }
 
     // Sidebar Navigation "active" Toggle
     function handleToggle() {
+
         jQuery('.list-toggle').on('click', function(e) {
+
             jQuery(this).toggleClass('active');
         });
     }
 
     // Hover Selector
     function handleHoverSelector() {
-        $('.hoverSelector').on('hover', function(e) {        
-            $('.hoverSelectorBlock', this).toggleClass('show');
-            e.stopPropagation(); 
+
+        jQuery('.hoverSelector').on('hover', function(e) {
+
+            jQuery('.hoverSelectorBlock', this).toggleClass('show');
+            e.stopPropagation();
         });
-    }    
+    }
 
     // Bootstrap Tooltips and Popovers
     function handleBootstrap() {
+
         // Bootstrap Carousel
         jQuery('.carousel').carousel({
-            interval: 15000,
-            pause: 'hover'
+            interval : 15000,
+            pause : 'hover'
         });
 
         // Tooltips
         jQuery('.tooltips').tooltip();
-        jQuery('.tooltips-show').tooltip('show');      
-        jQuery('.tooltips-hide').tooltip('hide');       
-        jQuery('.tooltips-toggle').tooltip('toggle');       
-        jQuery('.tooltips-destroy').tooltip('destroy');       
+        jQuery('.tooltips-show').tooltip('show');
+        jQuery('.tooltips-hide').tooltip('hide');
+        jQuery('.tooltips-toggle').tooltip('toggle');
+        jQuery('.tooltips-destroy').tooltip('destroy');
 
         // Popovers
         jQuery('.popovers').popover();
@@ -81,47 +90,40 @@ var App = function () {
 
     // Parallax sections
     function handleParallax() {
-        var parallaxBackgrounds = jQuery('.parallax-background');
+
+        var parallaxSections = jQuery('.parallax-background');
         /*
-        console.info("parallaxBackground sections:" + parallaxBackgrounds.length);
+        console.info("parallaxBackground sections:" + parallaxSections.length);
         */
-        if ((parallaxBackgrounds.length > 0) && !Modernizr.touch ) {
-            parallaxBackgrounds.initParallaxBackground();
+        if ((parallaxSections.length > 0) && !Modernizr.touch) {
+            parallaxSections.initParallax();
+        }
+    }
+
+    // Sliders
+    function handleSliders() {
+
+        var simpleSliders = jQuery('.ap-slider');
+        if (simpleSliders.length > 0) {
+            initSimpleSliders();
+        }        
+        var complexSliders = jQuery('.ap-complex-slider');
+        if (complexSliders.length > 0) {
+            initComplexSliders();
         }
     }
 
     return {
-        init: function () {
+        init : function() {
+
             handleBootstrap();
-            handleSearch();       
+            handleSearch();
             handleToggle();
             handleMegaMenu();
             handleHoverSelector();
             handleParallax();
-        },
-
-        //Animate Dropdown
-        initAnimateDropdown: function() {
-          function MenuMode() {
-            jQuery('.dropdown').on('show.bs.dropdown', function() {
-              jQuery(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-            });
-            jQuery('.dropdown').on('hide.bs.dropdown', function() {
-              jQuery(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-            });
-          }
-
-          jQuery(window).resize(function() {
-            if (jQuery(window).width() > 768) {
-              MenuMode();
-            }
-          });
-
-          if (jQuery(window).width() > 768) {
-            MenuMode();
-          }
-        },
-
+            handleSliders();
+        }
     };
 
 }();

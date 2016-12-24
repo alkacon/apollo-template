@@ -28,7 +28,7 @@
         windowHeight = $window.height();
     });
 
-    $.fn.initParallaxBackground = function() {
+    $.fn.initParallax = function() {
         var $this = $(this);
 
         // initialize parallax sections with values from data attributes    
