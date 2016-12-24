@@ -93,9 +93,6 @@
     jQuery(document).ready(function() {
       App.init();
       try {
-        createBanner();
-      } catch (e) {}
-      try {
         $("#list_pagination").bootstrapPaginator(options);
       } catch (e) {}
     });

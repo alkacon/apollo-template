@@ -8,8 +8,14 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.slider.messages">
 <cms:formatter var="content" val="value">
-    <div class="ap-slider" data-sid="${content.file.structureId}" data-init="false" >
-        
+    <div class="ap-slider" 
+        data-sid="${content.file.structureId}" 
+        data-delay="${value.Delay}"
+        data-height="${value.ImageHeight}"
+        data-navtype="${value.ShowNumbers eq 'true' ? 'bullet' : 'none'}"
+        data-navbutton="${value.ShowNavButtons eq 'true' ? 'solo' : 'none'}"
+        data-init="false" >
+
         <%-- ####### Init messages wrapper ################################## --%>
         <c:set var="textnew"><fmt:message key="apollo.slider.message.new" /></c:set>
         <c:set var="textedit"><fmt:message key="apollo.slider.message.edited" /></c:set>
@@ -86,59 +92,6 @@
                 </div>
 
             </div>
-            <fmt:parseNumber var="height" integerOnly="true" type="number" value="${value.ImageHeight}" />
-            <script type="text/javascript">
-                function createBanners() {
-                    var sliders = $(".ap-slider");
-                    for(var i = 0; i < sliders.length; i++){
-                        var slider = sliders.eq(i);
-                        var strucId = slider.data("sid");
-                        if(!slider.data("init")){
-                            $('#ap-slider-' + strucId).revolution({
-                                delay : ${value.Delay},
-                                startheight : ${value.ImageHeight},
-                                navigationType : ${value.ShowNumbers eq 'true'?'"bullet"':'"none"'},
-                                navigationArrows : ${value.ShowNavButtons eq 'true'?'"solo"':'"none"'}, 
-                                navigationStyle : "round", // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
-                                navigationHAlign : "right", // Vertical Align top,center,bottom
-                                navigationVAlign : "bottom", // Horizontal Align left,center,right
-                                navigationHOffset : 20,
-                                navigationVOffset : 20,
-                                soloArrowLeftHalign : "left",
-                                soloArrowLeftValign : "center",
-                                soloArrowLeftHOffset : 20,
-                                soloArrowLeftVOffset : 0,
-                                soloArrowRightHalign : "right",
-                                soloArrowRightValign : "center",
-                                soloArrowRightHOffset : 20,
-                                soloArrowRightVOffset : 0,
-                                touchenabled : "on", // Enable Swipe Function : on/off
-                                onHoverStop : "off", // Stop Banner Timet at Hover on Slide on/off
-                                stopAtSlide : -1,
-                                stopAfterLoops : -1,
-                                fullWidth : "off" // Turns On or Off the Fullwidth Image Centering in FullWidth Modus
-                            });
-
-                            // When stop button is clicked...
-                            $('#stopButton-' +  + strucId).on('click', function(e) {
-                                $('#ap-slider-' + strucId).revpause();
-                                $('#ap-slider-' + strucId + ' .control button').toggle();
-                                $(this).hide();
-                                $('#resumeButton-' +  + strucId).show();
-                            });
-
-                            // When resume button is clicked...
-                            $('#resumeButton-' + strucId).on('click', function(e) {
-                                $('#ap-slider-' + strucId).revresume();
-                                $(this).hide();
-                                $('#stopButton-' + strucId).show();
-                            });
-                            $('#ap-slider-' + strucId).find('li').show();
-                        }
-                        slider.data("init", "true");
-                    }
-                }
-            </script>
         </apollo:init-messages>
     </div>
 </cms:formatter>

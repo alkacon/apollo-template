@@ -44,7 +44,6 @@
           <uuid>5eb4a327-ac01-11e6-b64d-0242ac11002b</uuid>
         </link>
       </JavascriptLink>
-      <JavascriptInline><![CDATA[createBanners();]]></JavascriptInline>
     </HeadIncludeJs>
     <Setting>
       <PropertyName><![CDATA[hidetitle]]></PropertyName>

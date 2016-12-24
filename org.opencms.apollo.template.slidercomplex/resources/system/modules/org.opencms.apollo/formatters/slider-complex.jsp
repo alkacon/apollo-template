@@ -8,7 +8,13 @@
 <cms:bundle basename="org.opencms.apollo.template.slider.messages">
 
 <cms:formatter var="content" val="value" rdfa="rdfa">
-<div>
+<div class="ap-complex-slider" 
+        data-sid="${content.file.structureId}" 
+        data-delay="${value.Duration}"
+        data-height="${value.Height}"
+        data-width="${value.Width}"
+        data-init="false" >
+        
     <c:if test="${not cms.element.settings.hidetitle}">
         <c:if test="${empty cms.element.parent}"><div class="row"></c:if><div class="headline"><h2 ${rdfa.Title}>${value.Title}</h2></div><c:if test="${empty cms.element.parent}"></div></c:if>
     </c:if>
@@ -43,58 +49,9 @@
                 </li>
             </c:forEach>
         </ul>
-    <div class="tp-bannertimer tp-bottom"></div>
+        <div class="tp-bannertimer tp-bottom"></div>
     </div>
-
-    <script type="text/javascript">
-        function createBanner() {
-            $('#ap-slider-${content.file.structureId}').revolution(
-                    {
-                        delay:${value.Duration},
-                        startheight:${value.Height},
-                        startwidth:${value.Width},
-
-                        hideThumbs:10,
-
-                        thumbWidth:100,                         <%-- Thumb With and Height and Amount (only if navigation Tyope set to thumb !) --%>
-                        thumbHeight:50,
-                        thumbAmount:5,
-
-                        navigationType:"bullet",                <%-- bullet, thumb, none --%>
-                        navigationArrows:"solo",                <%-- nexttobullets, solo (old name verticalcentered), none --%>
-
-                        navigationStyle:"round",                <%-- round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom --%>
-
-                        navigationHAlign:"center",              <%-- Vertical Align top,center,bottom --%>
-                        navigationVAlign:"bottom",              <%-- Horizontal Align left,center,right --%>
-                        navigationHOffset:0,
-                        navigationVOffset:20,
-
-                        soloArrowLeftHalign:"left",
-                        soloArrowLeftValign:"center",
-                        soloArrowLeftHOffset:20,
-                        soloArrowLeftVOffset:0,
-
-                        soloArrowRightHalign:"right",
-                        soloArrowRightValign:"center",
-                        soloArrowRightHOffset:20,
-                        soloArrowRightVOffset:0,
-
-                        touchenabled:"on",                       <%-- Enable Swipe Function : on/off --%>
-                        onHoverStop:"off",                       <%-- Stop Banner Timet at Hover on Slide on/off --%>
-
-                        stopAtSlide:-1,
-                        stopAfterLoops:-1,
-
-                        shadow:1,                                <%-- 1 = no Shadow, 1,2,3 = 3 Different Types of Shadows  (No Shadow in Fullwidth Version !) --%>
-                        fullWidth:"on"                           <%-- Turns On or Off the Fullwidth Image Centering in FullWidth Modus --%>
-                    });
-            $('#ap-slider-${content.file.structureId}').find('li').show();
-
-        }
-    </script>
-
-<!--=== End Slider ===--></div>
+</div>
 
 </apollo:init-messages>
 
