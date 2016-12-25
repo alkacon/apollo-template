@@ -609,7 +609,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Pagination row tag for AJAX lists]]></value>
+					<value><![CDATA[Generates a pagination for search results]]></value>
 				</property>
 			</properties>
 			<relations/>

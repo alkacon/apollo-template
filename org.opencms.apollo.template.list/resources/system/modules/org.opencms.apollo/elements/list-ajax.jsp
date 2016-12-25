@@ -53,8 +53,10 @@
                 />
             </c:when>
             <c:otherwise>
-                <apollo:list-pagination
-                    search="${search}"
+                <apollo:list-pagination 
+                    search="${search}" 
+                    singleStep="false"
+                    onclickAction='reloadInnerList("$(LINK)", $(this).parents().filter(".ap-list-entries"))'
                 />
             </c:otherwise>
         </c:choose>

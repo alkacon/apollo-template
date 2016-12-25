@@ -4,25 +4,34 @@
   description="Triggers the archive search with the given filters"%>
 
 <%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" 
-		description="The directory (including subdirectories) from which the elements are read." %>
+    description="The directory (including subdirectories) from which the elements are read." %>
+
 <%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" 
-		description="The type of elements, that will be used." %>
+    description="The type of elements, that will be used." %>
+
 <%@ attribute name="sort" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"
-		description="The sorting field from the XML content." %>
+    description="The sorting field from the XML content." %>
+
 <%@ attribute name="subsite" type="java.lang.String" required="false"
-		description="The subsite the current request comes from. Is needed for AJAX requests because of a then differing context." %>
+    description="The subsite the current request comes from. Is needed for AJAX requests because of a then differing context." %>
+
 <%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false"   
-		description="The categories field from the XML content." %>
-<%@ attribute name="filterqueries" type="java.lang.String" required="false" %>
+     description="The categories field from the XML content." %>
+
+<%@ attribute name="filterqueries" type="java.lang.String" required="false" 
+    description="The search filter queries." %>
+
 <%@ attribute name="count" type="java.lang.Integer" required="false" 
-		description="The amount of elements per page." %>
+    description="The amount of elements per page." %>
+
 <%@ attribute name="showexpired" type="java.lang.Boolean" required="false" 
-		description="Determines if expired elements will be shown when editing the page." %>
+    description="Determines if expired elements will be shown when editing the page." %>
  
 <%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" 
-		description="The results of the search" %>
+    description="The results of the search" %>
+
 <%@ variable name-given="searchConfig" scope="AT_END" declare="true"
-		description="The configuration string that was used in the search." %>
+    description="The configuration string that was used in the search." %>
 
 <%@ variable name-given="categoryPaths" scope="AT_END" declare="true" %>
 <%@ variable name-given="categoryFacetField" scope="AT_END" declare="true" %>
@@ -42,31 +51,31 @@
 
 <%-- ####### Set folder in which to search for items ######## --%>
 <c:choose>
-	<c:when test="${source.isSet}">
-		<c:set var="folder">${source}</c:set>
-		<c:if test="${not fn:startsWith(folder, '/shared/')}"><c:set var="folder">${cms.requestContext.siteRoot}${folder}</c:set></c:if>
-	</c:when>
-	<c:otherwise>
-		<c:set var="folder">${cms.requestContext.siteRoot}${cms.subSitePath}</c:set>
-		<c:set var="folder">${empty subsite ? folder : subsite}</c:set>
-	</c:otherwise>
+    <c:when test="${source.isSet}">
+        <c:set var="folder">${source}</c:set>
+        <c:if test="${not fn:startsWith(folder, '/shared/')}"><c:set var="folder">${cms.requestContext.siteRoot}${folder}</c:set></c:if>
+    </c:when>
+    <c:otherwise>
+        <c:set var="folder">${cms.requestContext.siteRoot}${cms.subSitePath}</c:set>
+        <c:set var="folder">${empty subsite ? folder : subsite}</c:set>
+    </c:otherwise>
 </c:choose>
 <c:set var="folderpath" value="${folder}" />
 
 <c:set var="resType">${fn:substringBefore(types, ":")}</c:set>
 <c:set var="solrCats"></c:set>
 <c:if test="${not empty categories && not categories.isEmpty}">
-	<c:set var="categoryPaths"></c:set>
-	<c:set var="catFilter"></c:set>
-	<c:forEach var="category" items="${categories.leafItems}" varStatus="status">
-		<c:set var="categoryPaths">${categoryPaths}${category.path}</c:set>
-		<c:set var="catFilter">${catFilter}${category.path}</c:set>
-		<c:if test="${not status.last}">
-			<c:set var="categoryPaths">${categoryPaths},</c:set>
-			<c:set var="catFilter">${catFilter}&nbsp;</c:set>
-		</c:if>
-	</c:forEach>
-	<c:set var="solrCats">&fq=${categoryFacetField}:(${catFilter})</c:set>
+    <c:set var="categoryPaths"></c:set>
+    <c:set var="catFilter"></c:set>
+    <c:forEach var="category" items="${categories.leafItems}" varStatus="status">
+        <c:set var="categoryPaths">${categoryPaths}${category.path}</c:set>
+        <c:set var="catFilter">${catFilter}${category.path}</c:set>
+        <c:if test="${not status.last}">
+            <c:set var="categoryPaths">${categoryPaths},</c:set>
+            <c:set var="catFilter">${catFilter}&nbsp;</c:set>
+        </c:if>
+    </c:forEach>
+    <c:set var="solrCats">&fq=${categoryFacetField}:(${catFilter})</c:set>
 </c:if>
 
 <%-- ################################################################################################################# Sortoptions ######## --%>
@@ -104,7 +113,7 @@
 
 <c:set var="solrFilterQue"></c:set>
 <c:if test="${not empty filterqueries}">
-	<c:set var="solrFilterQue">${filterqueries}</c:set>
+    <c:set var="solrFilterQue">${filterqueries}</c:set>
 </c:if>
 <c:set var="extraSolrParams">${solrCats}${solrFilterQue}</c:set>
 <c:set var="pageSize">100</c:set>
@@ -118,47 +127,47 @@
 
 <c:set var="searchConfig">
 {
-	"searchforemptyquery" : true,
-	
+    "searchforemptyquery" : true,
+    
 <c:if test="${showexpired}">
-	"ignoreExpirationDate" : true,
-	"ignoreReleaseDate" : true,
+    "ignoreExpirationDate" : true,
+    "ignoreReleaseDate" : true,
 </c:if>
 
-	"querymodifier" : '{!type=edismax qf="content_${cms.locale} Title_prop spell"}%(query)',
-	"escapequerychars" : true,
-	
-	"extrasolrparams" : "fq=parent-folders:\"${folder}\"&fq=-type:image&fq=type:${resType}${fn:replace(extraSolrParams,'"','\\"')}",
+    "querymodifier" : '{!type=edismax qf="content_${cms.locale} Title_prop spell"}%(query)',
+    "escapequerychars" : true,
+    
+    "extrasolrparams" : "fq=parent-folders:\"${folder}\"&fq=-type:image&fq=type:${resType}${fn:replace(extraSolrParams,'"','\\"')}",
 
-	"pagesize" : ${pageSize},
-	"pagenavlength" : 5,
+    "pagesize" : ${pageSize},
+    "pagenavlength" : 5,
 
-	"sortoptions" : [ ${sortoptions} ],
+    "sortoptions" : [ ${sortoptions} ],
 
-	"fieldfacets" : [
-		{
-			"field" : "${categoryFacetField}",
-			"label" : "Category",
-			"mincount" : 1,
-			"limit" : 200,
-			"order" : "index",
-			"ignoreAllFacetFilters" : true
-		}
+    "fieldfacets" : [
+        {
+            "field" : "${categoryFacetField}",
+            "label" : "Category",
+            "mincount" : 1,
+            "limit" : 200,
+            "order" : "index",
+            "ignoreAllFacetFilters" : true
+        }
 
-	],
+    ],
 
-	"rangefacets" : [
-		{
-			"range" : "newsdate_${cms.locale}_dt",
-			"name" : "${rangeFacetField}",
-			"label" : "Date",
-			"start" : "NOW/YEAR-20YEARS",
-			"end" : "NOW/MONTH+2YEARS",
-			"gap" : "+1MONTHS",
-			"mincount" : 1,
-			"ignoreAllFacetFilters" : true
-		}
-	]
+    "rangefacets" : [
+        {
+            "range" : "newsdate_${cms.locale}_dt",
+            "name" : "${rangeFacetField}",
+            "label" : "Date",
+            "start" : "NOW/YEAR-20YEARS",
+            "end" : "NOW/MONTH+2YEARS",
+            "gap" : "+1MONTHS",
+            "mincount" : 1,
+            "ignoreAllFacetFilters" : true
+        }
+    ]
 
 }
 </c:set>

@@ -92,9 +92,6 @@
   <script type="text/javascript">
     jQuery(document).ready(function() {
       App.init();
-      try {
-        $("#list_pagination").bootstrapPaginator(options);
-      } catch (e) {}
     });
   </script>
 

@@ -1,14 +1,19 @@
 <%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
+
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%-- The import is only necessary to avoid highlighting snippets that destoy the HTML structure --%>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
+
+<%-- This import is only necessary to avoid highlighting snippets that destoy the HTML structure --%>
 <%@ page import="org.opencms.util.CmsHtmlConverter, org.opencms.file.CmsObject, org.opencms.workplace.CmsWorkplaceMessages"%>
+
 <fmt:setLocale value="${cms.locale}" />
 <c:set var="locale" value="${cms.locale}" />
 <c:set var="cmsObject" value="${cms.vfs.cmsObject}" />
 <% CmsObject cmsObject = (CmsObject) pageContext.getAttribute("cmsObject"); %>
+
 <c:set var="uri" value="${cms.requestContext.uri}" />
 <cms:bundle basename="org.opencms.apollo.template.formatters.jsp-search-formatter">
 <c:choose>
@@ -261,48 +266,12 @@
                                 </div>
                                 <hr />
                             </c:forEach>
-                            <c:set var="pagination" value="${controllers.pagination}" />                    
-                            <%-- show pagination if it should be given and if it's really necessary --%>
-                            <c:if test="${not empty pagination && search.numPages > 1}">
-                                <ul class="pagination">
-                                    <c:if test="${pagination.state.currentPage > 1}">
-                                        <li>
-                                            <a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage['1']}</cms:link>"
-                                               aria-label='<fmt:message key="pagination.first.title"/>'>
-                                                <span aria-hidden="true"><fmt:message key="pagination.first"/></span>
-                                            </a>
-                                        </li>
-                                        <c:set var="previousPage">${pagination.state.currentPage > 1 ? pagination.state.currentPage - 1 : 1}</c:set>
-                                        <li>
-                                            <a href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage[previousPage]}</cms:link>"
-                                               aria-label='<fmt:message key="pagination.previous.title"/>'>
-                                               <span aria-hidden="true"><fmt:message key="pagination.previous"/></span>
-                                            </a>
-                                        </li>
-                                    </c:if>
-                                    <c:forEach var="i" begin="${search.pageNavFirst}"
-                                        end="${search.pageNavLast}">
-                                        <c:set var="is">${i}</c:set>
-                                        <li ${pagination.state.currentPage eq i ? "class='active'" : ""}><a
-                                            href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage[is]}</cms:link>">${is}</a></li>
-                                    </c:forEach>
-                                    <c:set var="pages">${search.numPages}</c:set>
-                                    <c:set var="next">${pagination.state.currentPage < search.numPages ? pagination.state.currentPage + 1 : pagination.state.currentPage}</c:set>
-                                    <c:if test="${pagination.state.currentPage < pages}">
-                                        <li>
-                                            <a aria-label='<fmt:message key="pagination.next.title"/>'
-                                               href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage[next]}</cms:link>">
-                                                <span aria-hidden="true"><fmt:message key="pagination.next"/></span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a aria-label='<fmt:message key="pagination.last.title"/>' href="<cms:link>${cms.requestContext.uri}?${search.stateParameters.setPage[pages]}</cms:link>">
-                                                <span aria-hidden="true"><fmt:message key="pagination.last"/></span>
-                                            </a>
-                                        </li>
-                                    </c:if>
-                                </ul>
-                            </c:if>
+                            <c:set var="onclickAction"><cms:link>${cms.requestContext.uri}?$(LINK)</cms:link></c:set>
+                            <apollo:list-pagination 
+                                search="${search}" 
+                                singleStep="true"
+                                onclickAction='window.location.href="${onclickAction}"'
+                            />
                         </c:otherwise>
                     </c:choose>
                 </div>
