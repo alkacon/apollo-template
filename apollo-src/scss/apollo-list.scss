@@ -239,10 +239,17 @@ $pagination-border:     $grey-light !default;
 // list pagination
 .pagination {
 
-    > li:first-child > a, 
-    > li:first-child > span,
-    > li:last-child > a,
-    > li:last-child > span {
+    > li > a {
+        margin-left: 0;
+        margin-right: -1px;
+    }
+
+    > li:first-child > a {
+        border-radius: 0;
+    }
+
+    > li:last-child > a {
+        margin-right: 0;
         border-radius: 0;
     }
 
@@ -261,12 +268,19 @@ $pagination-border:     $grey-light !default;
     li a {
         color: $pagination-text;
         border-color: $pagination-border;
-        padding: 5px 15px;
-
+        min-width: 38px;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
         &:hover {
             color: $text-light;
             background: $main-theme-hover;
             border-color: $main-theme-hover;
+        }
+
+        .number {
+            font-weight: 500;
         }
     }
 }

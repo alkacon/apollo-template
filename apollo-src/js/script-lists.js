@@ -101,7 +101,6 @@ function appendInnerList(searchStateParameters, elem) {
         list_lock[elem.attr("id")] = true;
         var spinner = elem.find(".spinner");
         var entryBox = elem.find(".ap-list-box");
-        console.log("test: " + entryBox.height());
         spinner.hide().removeClass("bounceOut").addClass("bounceIn").css("top", entryBox.height() - 200).show();
         elem.find('.loadMore').addClass("fadeOut");
         $.get(buildAjaxLink(elem) + "&hideOptions=true&".concat(searchStateParameters), function(resultList) {
