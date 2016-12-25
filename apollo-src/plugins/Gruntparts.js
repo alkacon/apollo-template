@@ -23,8 +23,6 @@ exports.mf = mf;
 exports.cssSrc = [        
     mf + 'line-icons/line-icons.css',
     mf + 'animate/animate.css',
-    mf + 'parallax-slider/css/parallax-slider.css',
-    mf + 'owl-carousel/owl.carousel.css',
     mf + 'sky-forms-pro/skyforms/css/sky-forms.css',
     mf + 'sky-forms-pro/skyforms/custom/custom-sky-forms.css',
     mf + 'photoswipe/photoswipe.css',
@@ -32,11 +30,8 @@ exports.cssSrc = [
     mf + 'shariff/shariff.min.css',
 ];
 
-exports.jsSrc = [        
-    mf + 'bootstrap-paginator/bootstrap-paginator.js',
-    mf + 'parallax-slider/js/modernizr.js',
-    mf + 'parallax-slider/js/jquery.cslider.js',
-    mf + 'owl-carousel/owl-carousel/owl.carousel.js',
+exports.jsSrc = [
+    mf + 'modernizr/modernizr.js',
     mf + 'photoswipe/photoswipe.min.js',
     mf + 'photoswipe/photoswipe-ui-default.js',
     mf + 'shariff/shariff.min.js',
