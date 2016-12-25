@@ -25,7 +25,8 @@ var App = function() {
         jQuery(document).on('click', '.mega-menu .dropdown-menu', function(e) {
 
             e.stopPropagation();
-        })
+        });
+        initMegamenu();
     }
 
     // Search Box in Header
@@ -64,6 +65,25 @@ var App = function() {
         });
     }
 
+    // Smooth scrolling to anchor links
+    function handleSmoothScrolling() {
+
+        jQuery('a[href*="#"]:not([href="#"])')
+            .click(function() {
+
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop : target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+    }
+
     // Bootstrap Tooltips and Popovers
     function handleBootstrap() {
 
@@ -88,7 +108,7 @@ var App = function() {
         jQuery('.popovers-destroy').popover('destroy');
     }
 
-    // Parallax sections
+    // Apollo parallax sections
     function handleParallax() {
 
         var parallaxSections = jQuery('.parallax-background');
@@ -100,13 +120,13 @@ var App = function() {
         }
     }
 
-    // Sliders
+    // Apollo sliders
     function handleSliders() {
 
         var simpleSliders = jQuery('.ap-slider');
         if (simpleSliders.length > 0) {
             simpleSliders.initSimpleSlider();
-        } 
+        }
         var complexSliders = jQuery('.ap-complex-slider');
         if (complexSliders.length > 0) {
             complexSliders.initComplexSlider();
@@ -121,8 +141,12 @@ var App = function() {
             handleToggle();
             handleMegaMenu();
             handleHoverSelector();
+            handleSmoothScrolling();
             handleParallax();
             handleSliders();
+
+            initLists();
+            initPhotoSwipe();
         }
     };
 

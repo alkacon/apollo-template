@@ -40,8 +40,3 @@ function insertMenu(path, navElem) {
         navElem.append(dropdown);
     });
 }
-
-$(document).ready(function() {
-
-    initMegamenu();
-});

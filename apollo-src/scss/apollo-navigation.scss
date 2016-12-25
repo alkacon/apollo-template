@@ -719,6 +719,13 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         h3,
         h4 {
             color: $grey-dark;
+            a:not(.btn) {
+                color: $main-theme;
+
+                &:hover {
+                    color: $main-theme-hover;
+                }
+            }
         }
     }
 }

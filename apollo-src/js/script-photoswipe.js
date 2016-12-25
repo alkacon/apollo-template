@@ -164,7 +164,7 @@ function openPhotoSwipeGallery(index) {
 function loadImages(page) {
 
     $('#more').removeClass('fadeIn').addClass('fadeOut');
-    $('.spinner').removeClass('bounceOut').addClass('bounceIn');
+    $('.spinner').removeClass('fadeOut').addClass('fadeIn');
     if (page > 1) {
         $('.spinner').addClass('spinnerBottom');
     }
@@ -192,12 +192,7 @@ function loadImages(page) {
                 $('#more').remove();
             }
         }
-        $('.spinner').removeClass('bounceIn').addClass('bounceOut');
+        $('.spinner').removeClass('fadeIn').addClass('fadeOut');
     });
     $('#more').data('page', page + 1);
 }
-
-$(document).ready(function() {
-
-    initPhotoSwipe();
-});

@@ -33,7 +33,7 @@ $.fn.visible = function(partial) {
 
 var list_lock = new Array();
 
-function initList() {
+function initLists() {
 
     $(".ap-list-entries").each(function() {
 
@@ -69,7 +69,7 @@ function doReloadInnerList(searchStateParameters, elem) {
         }
         var entryBox = elem.find(".ap-list-box");
         var spinner = elem.find(".spinner");
-        spinner.hide().removeClass("bounceOut").addClass("bounceIn").show();
+        spinner.hide().removeClass("fadeOut").addClass("fadeIn").show();
         entryBox.find(".list-entry").each(function() {
 
             $(this).remove();
@@ -87,7 +87,7 @@ function doReloadInnerList(searchStateParameters, elem) {
             if (list_lock && $(resultList).filter(".list-entry").length == 0) {
                 showEmpty(elem);
             }
-            spinner.removeClass("bounceIn").addClass("bounceOut");
+            spinner.removeClass("fadeIn").addClass("fadeOut");
             entryBox.css("min-height", "0");
             _OpenCmsReinitEditButtons();
             list_lock[elem.attr("id")] = false;
@@ -101,7 +101,7 @@ function appendInnerList(searchStateParameters, elem) {
         list_lock[elem.attr("id")] = true;
         var spinner = elem.find(".spinner");
         var entryBox = elem.find(".ap-list-box");
-        spinner.hide().removeClass("bounceOut").addClass("bounceIn").css("top", entryBox.height() - 200).show();
+        spinner.hide().removeClass("fadeOut").addClass("fadeIn").css("top", entryBox.height() - 200).show();
         elem.find('.loadMore').addClass("fadeOut");
         $.get(buildAjaxLink(elem) + "&hideOptions=true&".concat(searchStateParameters), function(resultList) {
 
@@ -111,7 +111,7 @@ function appendInnerList(searchStateParameters, elem) {
             if ($(resultList).filter(".pagination").length == 0) {
                 elem.find('.ap-list-pagination').css("min-height", "0");
             }
-            spinner.removeClass("bounceIn").addClass("bounceOut");
+            spinner.removeClass("fadeIn").addClass("fadeOut");
             _OpenCmsReinitEditButtons();
             list_lock[elem.attr("id")] = false;
         });
@@ -157,8 +157,3 @@ function showEmpty(elem) {
 
     elem.find(".editbox").show();
 }
-
-$(document).ready(function() {
-
-    initList();
-});

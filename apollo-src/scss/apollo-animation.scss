@@ -247,6 +247,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .spinner{
+    top: 45%;
     width: 30px;
     height: auto;
     font-size: 30px;
@@ -276,7 +277,35 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .spinnerBottom {
+
+    top: initial;
+    position: fixed;
     bottom: 80px;
+}
+
+
+// Image gallery base classes
+
+.ap-image-gallery {
+
+    margin-bottom: 20px;
+
+    > button.btn {
+
+        margin-top: 6px;
+        margin-left: 2px;
+        margin-right: 2px;
+        
+        width: calc(100% - 4px);
+    }
+}
+
+// Speeding up animate.css fadeIn effect
+// Used in list and in image gallery
+
+.animated.fadeIn {
+
+    animation-duration: 0.5s;
 }
 
 
@@ -301,7 +330,6 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 
 $zoom-bg:  rgba($black, 0.5) !default;
 $zoom-fg:  $text-light !default;
-
 
 .zoom:hover .zoom-overlay .zoom-icon {
     opacity: 1;
