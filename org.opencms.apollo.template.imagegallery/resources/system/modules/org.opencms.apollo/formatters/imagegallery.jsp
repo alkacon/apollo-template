@@ -42,26 +42,26 @@
     <%-- ################################################################################################################## --%>
     <%-- #######            Gallery body and AJAX-data            ######################################################### --%>
     <%-- ################################################################################################################## --%>
-    
-    <div id="imagegallery" class="mb-20 clearfix">
+
+    <div id="imagegallery" class="ap-image-gallery clearfix">
         <c:set var="textnew"><fmt:message key="apollo.imagegallery.message.new" /></c:set>
         <c:set var="textedit"><fmt:message key="apollo.imagegallery.message.edit" /></c:set>
         <apollo:init-messages textnew="${textnew}" textedit="${textedit}">
-        
+
             <c:set var="pageSize" value="${cms.element.settings.imagesPerPage}" />
             <c:if test="${empty pageSize}"><c:set var="pageSize" value="20" /></c:if>
             <div id="links"></div>
-            <div class="spinner mt-20 animated">
+            <div class="spinner animated">
                 <div class="spinnerInnerBox"><i class="fa fa-spinner"></i></div>
             </div>
-            <button class="btn btn-primary col-xs-12 mt-5 mb-20 animated" id="more" data-page="1" >
+            <button class="btn animated" id="more" data-page="1" >
                 <fmt:message key="apollo.imagegallery.message.more" />
             </button>
 
             <apollo:gallerydata ajax="${ajaxLink}" path="${path}" count="${pageSize}" searchconf="${searchConfig}" />
-            
+
         </apollo:init-messages>
     </div>
-    
+
     </cms:formatter>
 </cms:bundle>
