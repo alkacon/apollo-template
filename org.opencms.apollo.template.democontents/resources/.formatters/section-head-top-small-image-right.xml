@@ -52,6 +52,8 @@
       </Formatter>
       <MacroName><![CDATA[image]]></MacroName>
     </Formatters>
+    <PlaceholderMacro><![CDATA[%(headline)
+]]></PlaceholderMacro>
     <Setting>
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>

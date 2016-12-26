@@ -11,10 +11,11 @@
 
 <apollo:init-messages>
 
-<%-- #### Contact exposed in hCard microformat, see http://microformats.org/wiki/hcard #### --%>
 <cms:formatter var="content" val="value">
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.contact.messages">
+
+<%-- #### Contact exposed in hCard microformat, see http://microformats.org/wiki/hcard #### --%>
 
 <div class="ap-contact ap-contact-onecol vcard ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
 

@@ -27,6 +27,7 @@
       </Formatter>
       <MacroName><![CDATA[image]]></MacroName>
     </Formatters>
+    <PlaceholderMacro><![CDATA[%(image)]]></PlaceholderMacro>
     <Setting>
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>

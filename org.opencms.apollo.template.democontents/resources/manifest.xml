@@ -12720,6 +12720,46 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo/new-pages/test-page</destination>
+			<type>folder</type>
+			<uuidstructure>f645c324-cb2e-11e6-8bc3-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 26 Dec 2016 05:48:44 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.125]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Test page]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Test page]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/new-pages/test-page/index.html</source>
+			<destination>apollo-demo/new-pages/test-page/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>f64f3909-cb2e-11e6-8bc3-0242ac11002b</uuidstructure>
+			<uuidresource>f64f390a-cb2e-11e6-8bc3-0242ac11002b</uuidresource>
+			<datecreated>Mon, 26 Dec 2016 05:48:44 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Test page]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/our-clients</destination>
 			<type>folder</type>
 			<uuidstructure>c7132fa9-607d-11e5-9eef-0242ac11002b</uuidstructure>

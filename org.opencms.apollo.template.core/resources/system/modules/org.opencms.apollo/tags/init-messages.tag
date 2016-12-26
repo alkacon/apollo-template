@@ -37,14 +37,6 @@
             </div>
         </cms:bundle>
     </c:when>
-    <c:when test="${not empty textedit and cms.edited}">
-        <div class="ap-edit-info-reload">
-            ${cms.reloadMarker}
-            <h3>
-                ${textedit}
-            </h3>
-        </div>
-    </c:when>
     <c:when test="${reload and cms.edited}">
         <fmt:setLocale value="${cms.locale}" />
         <cms:bundle basename="org.opencms.apollo.template.core.messages">
