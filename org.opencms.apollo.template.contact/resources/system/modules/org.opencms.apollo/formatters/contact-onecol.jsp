@@ -3,19 +3,18 @@
     session="false"
     trimDirectiveWhitespaces="true"%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
-<fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.contact.messages">
-<cms:formatter var="content" val="value">
+<apollo:init-messages>
 
 <%-- #### Contact exposed in hCard microformat, see http://microformats.org/wiki/hcard #### --%>
-<c:set var="textnew"><fmt:message key="apollo.contact.message.new" /></c:set>
-<apollo:init-messages textnew="${textnew}">
+<cms:formatter var="content" val="value">
+<fmt:setLocale value="${cms.locale}" />
+<cms:bundle basename="org.opencms.apollo.template.contact.messages">
 
 <div class="ap-contact ap-contact-onecol vcard ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
 
@@ -43,7 +42,7 @@
         fragments="${fragments}" />
 </div>
 
-</apollo:init-messages>
-
-</cms:formatter>
 </cms:bundle>
+</cms:formatter>
+
+</apollo:init-messages>

@@ -41,15 +41,12 @@
         />
 
         <%-- ####### Load pagination (dynamic or normal) ######## --%>
-        <c:set var="label"><fmt:message key="pagination.next"/></c:set>
-        <c:set var="arialabel"><fmt:message key="pagination.next.title"/></c:set>
-
         <c:choose>
             <c:when test="${param.dynamic}">
+                <c:set var="label"><fmt:message key="pagination.loadmore"/></c:set>
                 <apollo:list-loadbutton 
                     search="${search}" 
-                    label="${label}" 
-                    arialabel="${arialabel}"
+                    label="${label}"
                 />
             </c:when>
             <c:otherwise>

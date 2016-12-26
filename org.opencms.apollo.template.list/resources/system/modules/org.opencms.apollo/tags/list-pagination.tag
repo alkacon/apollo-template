@@ -26,7 +26,7 @@
     <c:set var="pagination" value="${search.controller.pagination}" />
     <%-- show pagination if it should be given and if it's really necessary --%>
     <c:if test="${not empty pagination && search.numPages > 1}">
-        <div class="paginationWrapper" data-dynamic="false" >
+        <div class="list-append-position" data-dynamic="false" >
             <ul class="pagination">
                 <c:if test="${pagination.state.currentPage != 1}">
                     <c:set var="firstPage">1</c:set>
