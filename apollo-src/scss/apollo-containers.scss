@@ -63,6 +63,14 @@ $ap-container-labels:
  (special, $ap-col-special2),
 ) !default; 
 
+// OpenCms roles and their matching colors  
+$ap-edit-infos:
+(
+ (new, $ap-col-row),         
+ (reload, $ap-col-area),
+) !default; 
+
+
 %ap-container {
     padding: 10px;
     margin-top: 10px;
@@ -73,6 +81,7 @@ $ap-container-labels:
     border-radius: 10px;  
     -webkit-border-radius: 10px;
     color: $text-dark;
+    min-height: 100px;
 
     .head  {
         font-size: 22px;
@@ -86,6 +95,14 @@ $ap-container-labels:
         line-height: 1.2;
         color: $ap-col-text-small;
         text-transform: capitalize;
+    }
+}
+
+%ap-edit-info {
+    @extend %ap-container;
+
+    .text {
+        text-transform: none;
     }
 }
 
@@ -114,11 +131,18 @@ $ap-container-labels:
 }
 
 @each $role-name, $label-color in $ap-container-labels { 
-
     .ap-label-#{""+$role-name} {
         @extend %ap-label;
 
         background-color: $label-color;
+    }
+}
+
+@each $type-name, $bg-color in $ap-edit-infos {
+    .ap-edit-info-#{""+$type-name} {
+        @extend %ap-edit-info;
+
+        background-color: $bg-color;
     }
 }
 

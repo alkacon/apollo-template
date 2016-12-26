@@ -260,7 +260,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 
     left: 50%;
     i {
-        animation: spinner 700ms infinite;
+        animation: spinner 1s infinite;
         animation-timing-function: steps(4, end);
     }
 }

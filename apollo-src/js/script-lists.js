@@ -43,7 +43,7 @@ function initLists() {
             // load more from list if scrolled to last item
             $(window).scroll(function(event) {
 
-                var pag = list.find(".pagination");
+                var pag = list.find(".list-append-position");
                 if (pag.length && pag.data("dynamic") && pag.visible(true)) {
                     appendInnerList(list.find('.loadMore').attr('data-load'), list);
                 }
@@ -60,6 +60,7 @@ function reloadInnerList(searchStateParameters, elem, resetArchive) {
     doReloadInnerList(searchStateParameters, elem);
 }
 
+// Used for both pagination and scroll-reload lists
 function doReloadInnerList(searchStateParameters, elem) {
 
     if (typeof list_lock[elem.attr("id")] === "undefined" || !list_lock[elem.attr("id")]) {
@@ -82,7 +83,7 @@ function doReloadInnerList(searchStateParameters, elem) {
 
             listOptionBox.find(".list-options").remove();
             $(resultList).filter(".list-entry").appendTo(entryBox);
-            $(resultList).filter('.paginationWrapper').appendTo(elem.find('.ap-list-pagination'));
+            $(resultList).filter('.list-append-position').appendTo(elem.find('.ap-list-pagination'));
             $(resultList).filter(".list-options").appendTo(listOptionBox);
             if (list_lock && $(resultList).filter(".list-entry").length == 0) {
                 showEmpty(elem);
@@ -95,6 +96,7 @@ function doReloadInnerList(searchStateParameters, elem) {
     }
 }
 
+// Used for scroll-reload lists
 function appendInnerList(searchStateParameters, elem) {
 
     if (typeof list_lock[elem.attr("id")] === "undefined" || !list_lock[elem.attr("id")]) {
@@ -103,12 +105,14 @@ function appendInnerList(searchStateParameters, elem) {
         var entryBox = elem.find(".ap-list-box");
         spinner.hide().removeClass("fadeOut").addClass("fadeIn").css("top", entryBox.height() - 200).show();
         elem.find('.loadMore').addClass("fadeOut");
+
+        // reload elements with AJAX here
         $.get(buildAjaxLink(elem) + "&hideOptions=true&".concat(searchStateParameters), function(resultList) {
 
-            elem.find('.pagination').remove();
+            elem.find('.list-append-position').remove();
             $(resultList).filter(".list-entry").appendTo(elem.find('.ap-list-box'));
-            $(resultList).filter(".pagination").appendTo(elem.find('.ap-list-pagination'));
-            if ($(resultList).filter(".pagination").length == 0) {
+            $(resultList).filter(".list-append-position").appendTo(elem.find('.ap-list-pagination'));
+            if ($(resultList).filter(".list-append-position").length == 0) {
                 elem.find('.ap-list-pagination').css("min-height", "0");
             }
             spinner.removeClass("fadeIn").addClass("fadeOut");
