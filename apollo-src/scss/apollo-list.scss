@@ -134,26 +134,38 @@ $pagination-border:     $grey-light !default;
 }
 
 
-// list facet / sort options
-.ap-list-options {
+// Override some bootstrap defaults
 
-    .dropdown-menu {
-        padding: 0;
-        border-radius: 0;
+.dropdown-menu {
+    padding: 0;
+    border-radius: 0;
 
-        > li > a {
-            padding: 5px 16px;
-            color: $text-dark;
+    > li > a {
+        padding: 5px 16px;
+        color: $text-dark;
 
-            &:hover {
-                background-color: $grey-light;
-            }
-        }
-
-        .divider {
-            margin: 5px 0;
+        &:hover {
+            background-color: $grey-light;
         }
     }
+
+    > .active {
+        > a, 
+        > a:hover, 
+        > a:focus {
+            color: get-text-color($main-theme);
+            background-color: $main-theme;
+        }
+    }
+
+    .divider {
+        margin: 5px 0;
+    }
+}
+
+
+// list facet / sort options
+.ap-list-options {
 
     .list-option {
         min-height: 36px;

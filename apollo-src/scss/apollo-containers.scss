@@ -44,30 +44,31 @@ $ap-col-border:        $grey-light !default;
 // Apollo container types
 $ap-container-types:
 (
- (area, $ap-col-area),        
- (segment, $ap-col-segment),        
- (grid, $ap-col-grid),         
- (row, $ap-col-row),         
- (element, $ap-col-element),         
- (special, $ap-col-special1),
+    (area, $ap-col-area),        
+    (segment, $ap-col-segment),        
+    (grid, $ap-col-grid),         
+    (row, $ap-col-row),         
+    (element, $ap-col-element),         
+    (special, $ap-col-special1),
 ) !default;
 
 // OpenCms roles and their matching colors  
 $ap-container-labels:
 (
- (developer, $ap-col-developer),         
- (editor, $ap-col-editor),         
- (author, $ap-col-author),         
- (detail, $ap-col-detail),
- (detailonly, $ap-col-detailonly),         
- (special, $ap-col-special2),
+    (developer, $ap-col-developer),         
+    (editor, $ap-col-editor),         
+    (author, $ap-col-author),         
+    (detail, $ap-col-detail),
+    (detailonly, $ap-col-detailonly),         
+    (special, $ap-col-special2),
 ) !default; 
 
 // OpenCms roles and their matching colors  
 $ap-edit-infos:
 (
- (new, $ap-col-row),         
- (reload, $ap-col-area),
+    (new, $ap-col-row),         
+    (reload, $ap-col-area),
+    (message, $ap-col-segment),
 ) !default; 
 
 
