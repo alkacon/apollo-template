@@ -1,18 +1,22 @@
-<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
+<%@page
+    buffer="none"
+    session="false"
+    trimDirectiveWhitespaces="true"%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>	
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
+
 <cms:secureparams />
+<apollo:init-messages>
+
+<cms:formatter var="content" val="value">
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.faq.messages">
 
 <c:set var="accId">${cms.element.instanceId}</c:set>
-
-<cms:formatter var="content" val="value">
-<c:set var="inMemoryMessage"><fmt:message key="apollo.faq.message.new" /></c:set>
-<apollo:init-messages textnew="${inMemoryMessage}">
 
 <%--
 
@@ -53,6 +57,7 @@ These will add the required "ap-panel panel-group" classes to the surrounding <d
 
 </div>
 
-</apollo:init-messages>
+</cms:bundle>
 </cms:formatter>
-</cms:bundle> 
+
+</apollo:init-messages>

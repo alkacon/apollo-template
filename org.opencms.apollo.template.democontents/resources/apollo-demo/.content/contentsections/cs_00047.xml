@@ -6,7 +6,8 @@
     <Text name="Text0">
       <links>
         <link name="link0" internal="true" type="A">
-          <target><![CDATA[/sites/default/grid-demo/]]></target>
+          <target><![CDATA[/sites/default/apollo-demo/home/]]></target>
+          <uuid>d53f32c1-5c61-11e5-96ab-0242ac11002b</uuid>
         </link>
       </links>
       <content><![CDATA[<p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.&nbsp;<a href="%(link0)">Read more...</a></p>]]></content>

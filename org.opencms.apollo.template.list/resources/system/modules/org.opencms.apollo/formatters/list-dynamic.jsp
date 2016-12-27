@@ -11,86 +11,86 @@
 
 <apollo:init-messages reload="true">
 
-<cms:formatter var="con" rdfa="rdfa">
+<cms:formatter var="content" val="value">
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.list.messages">
 
 <apollo:formatter-settings 
-    type="${con.value.TypesToCollect}" 
-    parameters="${con.valueList.Parameters}"
+    type="${value.TypesToCollect}" 
+    parameters="${content.valueList.Parameters}"
     online="${cms.isOnlineProject}" 
 />
 
 <div class="ap-list-content">
 
-    <%-- ####### Headline ######## --%>
-    <c:if test="${not cms.element.settings.hideTitle && con.value.Headline.isSet}">
-        <div class="headline">
-            <h2 ${rdfa.Headline}>
-                <c:out value="${con.value.Headline}" escapeXml="false" />
-            </h2>
-        </div>
-    </c:if>
-
-    <c:choose>
-
-        <c:when test="${not empty formatterSettings.supportedLists and not fn:contains(formatterSettings.supportedLists, 'dynamic')}">
-            <div class="alert alert-warning fade in">
-                <h3>List not configured correctly</h3>
-                <div>
-                    The list '${con.value.Headline}' uses a combination of list formatter and 
-                    list type that is not compatible.
-                    Please change the list formatter using the 'settings' dialog, or the list type in the content editor.
-                </div>
+        <%-- ####### Headline ######## --%>
+        <c:if test="${not cms.element.settings.hideTitle && value.Headline.isSet}">
+            <div class="headline">
+                <h2 ${content.rdfa.Headline}>
+                    <c:out value="${value.Headline}" escapeXml="false" />
+                </h2>
             </div>
-        </c:when>
+        </c:if>
 
-        <c:otherwise>
-            <c:set var="count" value="${con.value.ItemsPerPage.isSet ? con.value.ItemsPerPage.toInteger : 5}" />
-            <c:set var="approxElemHeight" value="150" />
-            <c:set var="ajaxlink"><cms:link>/system/modules/org.opencms.apollo/elements/list-ajax.jsp</cms:link></c:set>
+        <c:choose>
 
-            <%-- ####### The list content will be inserted here with AJAX ####### --%>
-            <div 
-                class="ap-list-entries ${formatterSettings.listWrapper}" 
-                id="list-${cms.element.id}"
-                data-id="${cms.element.id}" 
-                data-ajax="${ajaxlink}"
-                data-teaser="${cms.element.settings.teaserlength}" 
-                data-path="${cms.element.sitePath}" 
-                data-sitepath="${cms.requestContext.folderUri}"
-                data-subsite="${cms.requestContext.siteRoot}${cms.subSitePath}"
-                data-dynamic="${cms.element.settings.listOption == 'scrolling' ? 'true' : 'false'}"
-                data-minheight="${count * approxElemHeight}"
-                data-locale="${cms.locale}">
-
-                <div 
-                    class="ap-list-box" 
-                    id="list-${cms.element.id}" 
-                    style="min-height: ${count * approxElemHeight}px;">
-
-                    <div class="col-xs-12">
-                        <div class="spinner animated mv-20" style="display: none; transform: none;">
-                            <div class="spinnerInnerBox"><i class="fa fa-spinner"></i></div>
-                        </div>
+            <c:when test="${not empty formatterSettings.supportedLists and not fn:contains(formatterSettings.supportedLists, 'dynamic')}">
+                <div class="alert alert-warning fade in">
+                    <h3>List not configured correctly</h3>
+                    <div>
+                        The list '${value.Headline}' uses a combination of list formatter and 
+                        list type that is not compatible.
+                        Please change the list formatter using the 'settings' dialog, or the list type in the content editor.
                     </div>
                 </div>
-                <div class="ap-list-pagination" style="min-height: 50px;"></div>
+            </c:when>
 
-                <%-- ####### Create and edit new entries if empty result ######## --%>
-                <c:set var="createType">${fn:substringBefore(con.value.TypesToCollect.stringValue, ':')}</c:set>
-                <div class="editbox" style="display: none;" >
-                    <cms:edit createType="${createType}" create="true" >
-                        <div class="alert alert-warning fade in">
-                            <h3><fmt:message key="apollo.list.message.empty" /></h3>
-                            <div><fmt:message key="apollo.list.message.newentry" /></div>
+            <c:otherwise>
+                <c:set var="count" value="${value.ItemsPerPage.isSet ? value.ItemsPerPage.toInteger : 5}" />
+                <c:set var="approxElemHeight" value="150" />
+                <c:set var="ajaxlink"><cms:link>/system/modules/org.opencms.apollo/elements/list-ajax.jsp</cms:link></c:set>
+
+                <%-- ####### The list content will be inserted here with AJAX ####### --%>
+                <div 
+                    class="ap-list-entries ${formatterSettings.listWrapper}" 
+                    id="list-${cms.element.id}"
+                    data-id="${cms.element.id}" 
+                    data-ajax="${ajaxlink}"
+                    data-teaser="${cms.element.settings.teaserlength}" 
+                    data-path="${cms.element.sitePath}" 
+                    data-sitepath="${cms.requestContext.folderUri}"
+                    data-subsite="${cms.requestContext.siteRoot}${cms.subSitePath}"
+                    data-dynamic="${cms.element.settings.listOption == 'scrolling' ? 'true' : 'false'}"
+                    data-minheight="${count * approxElemHeight}"
+                    data-locale="${cms.locale}">
+
+                    <div 
+                        class="ap-list-box" 
+                        id="list-${cms.element.id}" 
+                        style="min-height: ${count * approxElemHeight}px;">
+
+                        <div class="col-xs-12">
+                            <div class="spinner animated mv-20" style="display: none; transform: none;">
+                                <div class="spinnerInnerBox"><i class="fa fa-spinner"></i></div>
+                            </div>
                         </div>
-                    </cms:edit>
-                </div>
-            </div>
+                    </div>
+                    <div class="ap-list-pagination" style="min-height: 50px;"></div>
 
-        </c:otherwise>
-    </c:choose>
+                    <%-- ####### Create and edit new entries if empty result ######## --%>
+                    <c:set var="createType">${fn:substringBefore(value.TypesToCollect.stringValue, ':')}</c:set>
+                    <div class="editbox" style="display: none;" >
+                        <cms:edit createType="${createType}" create="true" >
+                            <div class="alert alert-warning fade in">
+                                <h3><fmt:message key="apollo.list.message.empty" /></h3>
+                                <div><fmt:message key="apollo.list.message.newentry" /></div>
+                            </div>
+                        </cms:edit>
+                    </div>
+                </div>
+
+            </c:otherwise>
+        </c:choose>
 
 </div>
 

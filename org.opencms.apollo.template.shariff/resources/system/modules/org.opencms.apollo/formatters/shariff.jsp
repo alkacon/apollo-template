@@ -9,7 +9,7 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.shariff.messages">
 
-<div class="ap-shariff ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : 'mb-20' }">
+<div class="ap-shariff ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
     <c:set var="textnew"><fmt:message key="apollo.shariff.message.new" /></c:set>
     <c:set var="textedit"><fmt:message key="apollo.shariff.message.edited" /></c:set>
     <apollo:init-messages textnew="${textnew}" textedit="${textedit}">

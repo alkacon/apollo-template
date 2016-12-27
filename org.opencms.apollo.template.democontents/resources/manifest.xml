@@ -9690,23 +9690,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>apollo-demo/.content/imagegalleries/imggal_00001.xml</source>
-			<destination>apollo-demo/.content/imagegalleries/imggal_00001.xml</destination>
-			<type>a-imagegallery</type>
-			<uuidstructure>4290fa3f-b23f-11e6-ade4-0242ac11002b</uuidstructure>
-			<uuidresource>4290fa40-b23f-11e6-ade4-0242ac11002b</uuidresource>
-			<datecreated>Thu, 24 Nov 2016 12:12:25 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[More Images]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>apollo-demo/.content/imagegalleries/imggal_00002.xml</source>
 			<destination>apollo-demo/.content/imagegalleries/imggal_00002.xml</destination>
 			<type>a-imagegallery</type>

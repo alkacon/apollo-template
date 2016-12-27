@@ -1,17 +1,19 @@
-<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"%>
+<%@page
+    buffer="none"
+    session="false"
+    trimDirectiveWhitespaces="true"%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
-<fmt:setLocale value="${cms.locale}"/>
-<cms:bundle basename="org.opencms.apollo.template.job.messages">
-<cms:formatter var="content" val="value">
+<apollo:init-messages>
 
-<c:set var="inMemoryMessage"><fmt:message key="apollo.job.message.inmemory" /></c:set>
-<apollo:init-messages textnew="${inMemoryMessage}">
+<cms:formatter var="content" val="value">
+<fmt:setLocale value="${cms.locale}" />
+<cms:bundle basename="org.opencms.apollo.template.job.messages">
 
 <div class="ap-detail-page ap-job-page">
 
@@ -56,14 +58,14 @@
         <c:forEach var="text" items="${content.valueList.Text}" varStatus="status">
             <c:if test="${status.index % 2 == 0}">
                 <%-- Paragraph row OPENED --%>
-                <div class="row">
+                <c:out value='<div class="row">' escapeXml="false" />
             </c:if>
                 <div class="col-xs-12 col-sm-6">
                     <apollo:paragraph paragraph="${text}" />
                 </div>
             <c:if test="${status.index % 2 == 1 or status.last}">
                 <%-- Paragraph row CLOSED --%>
-                </div>
+                <c:out value='</div>' escapeXml="false" />
             </c:if>
         </c:forEach>
     </c:when>
@@ -95,6 +97,7 @@
 
 </div>
 
-</apollo:init-messages>
-</cms:formatter>
 </cms:bundle>
+</cms:formatter>
+
+</apollo:init-messages>
