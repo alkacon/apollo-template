@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
-  <ApolloTemplateRow language="en">
-    <Title><![CDATA[Grid 2 Cols (3 - 9)]]></Title>
-    <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
-    <PostMarkup><![CDATA[</div>]]></PostMarkup>
-    <Container><![CDATA[grid]]></Container>
-    <Column>
-      <Name><![CDATA[g1]]></Name>
-      <Type><![CDATA[row]]></Type>
-      <Count><![CDATA[50]]></Count>
-      <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
-      <Grid><![CDATA[col-md-3]]></Grid>
-    </Column>
-    <Column>
-      <Name><![CDATA[g2]]></Name>
-      <Type><![CDATA[row]]></Type>
-      <Count><![CDATA[50]]></Count>
-      <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
-      <Grid><![CDATA[col-md-9]]></Grid>
-    </Column>
-  </ApolloTemplateRow>
   <ApolloTemplateRow language="de">
     <Title><![CDATA[Grid 2 Spalten (3 - 9)]]></Title>
     <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
@@ -29,14 +9,32 @@
     <Column>
       <Name><![CDATA[g1]]></Name>
       <Type><![CDATA[row]]></Type>
+      <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
+      <Grid><![CDATA[col-md-3]]></Grid>
       <Count><![CDATA[50]]></Count>
+    </Column>
+    <Column>
+      <Name><![CDATA[g2]]></Name>
+      <Type><![CDATA[row]]></Type>
+      <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
+      <Grid><![CDATA[col-md-9]]></Grid>
+      <Count><![CDATA[50]]></Count>
+    </Column>
+  </ApolloTemplateRow>
+  <ApolloTemplateRow language="en">
+    <Title><![CDATA[Grid 2 Cols (3 - 9)]]></Title>
+    <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
+    <PostMarkup><![CDATA[</div>]]></PostMarkup>
+    <Container><![CDATA[grid]]></Container>
+    <Column>
+      <Name><![CDATA[g1]]></Name>
+      <Type><![CDATA[row]]></Type>
       <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
       <Grid><![CDATA[col-md-3]]></Grid>
     </Column>
     <Column>
       <Name><![CDATA[g2]]></Name>
       <Type><![CDATA[row]]></Type>
-      <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-md-9]]></Grid>
     </Column>

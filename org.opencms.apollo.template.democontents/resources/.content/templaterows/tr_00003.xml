@@ -7,18 +7,17 @@
     <Column>
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[head]]></Type>
-      <Count><![CDATA[5]]></Count>
       <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
       <Grid><![CDATA[area-head]]></Grid>
+      <Count><![CDATA[-1]]></Count>
     </Column>
   </ApolloTemplateRow>
   <ApolloTemplateRow language="en">
-    <Title><![CDATA[Area - Head]]></Title>
+    <Title><![CDATA[Area - Header]]></Title>
     <Container><![CDATA[area]]></Container>
     <Column>
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[head]]></Type>
-      <Count><![CDATA[5]]></Count>
       <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
       <Grid><![CDATA[area-head]]></Grid>
     </Column>

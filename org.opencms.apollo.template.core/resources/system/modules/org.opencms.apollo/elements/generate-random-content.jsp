@@ -212,7 +212,7 @@
             <h1>OpenCms Apollo Template</h1>
             <h3>Random content generator</h3>
 
-            <form class="row text-light bg-orange" method="get">
+            <form class="row bg-orange" method="get">
                 <input name="count" class="mb-10 form-control col-xs-12"
                     type="number" placeholder="Count of pages" required="required" />
 

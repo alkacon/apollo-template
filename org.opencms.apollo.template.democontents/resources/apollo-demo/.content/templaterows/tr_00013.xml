@@ -9,23 +9,23 @@
     <Column>
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[element]]></Type>
-      <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-sm-6 col-md-4]]></Grid>
+      <Count><![CDATA[50]]></Count>
     </Column>
     <Column>
       <Name><![CDATA[c2]]></Name>
       <Type><![CDATA[element]]></Type>
-      <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-md-4 hidden-xs hidden-sm]]></Grid>
+      <Count><![CDATA[50]]></Count>
     </Column>
     <Column>
       <Name><![CDATA[c3]]></Name>
       <Type><![CDATA[element]]></Type>
-      <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-sm-6 col-md-4]]></Grid>
+      <Count><![CDATA[50]]></Count>
     </Column>
   </ApolloTemplateRow>
   <ApolloTemplateRow language="en">
@@ -36,21 +36,18 @@
     <Column>
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[element]]></Type>
-      <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-sm-6 col-md-4]]></Grid>
     </Column>
     <Column>
       <Name><![CDATA[c2]]></Name>
       <Type><![CDATA[element]]></Type>
-      <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-md-4 hidden-xs hidden-sm]]></Grid>
     </Column>
     <Column>
       <Name><![CDATA[c3]]></Name>
       <Type><![CDATA[element]]></Type>
-      <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-sm-6 col-md-4]]></Grid>
     </Column>

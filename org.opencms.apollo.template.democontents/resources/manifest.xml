@@ -864,7 +864,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Area - Page Body]]></value>
+					<value><![CDATA[Area - Section]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -881,7 +881,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Area - Foot]]></value>
+					<value><![CDATA[Area - Footer]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -898,7 +898,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Area - Head]]></value>
+					<value><![CDATA[Area - Header]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -15043,7 +15043,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Step 3: Fun with Formatters: It's  the same element]]></value>
+					<value><![CDATA[It's the same element]]></value>
 				</property>
 			</properties>
 			<relations/>

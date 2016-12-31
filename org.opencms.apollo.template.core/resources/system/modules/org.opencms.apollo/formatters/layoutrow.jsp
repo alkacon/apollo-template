@@ -71,6 +71,7 @@
     <c:set var="typeName" value="${column.value.Type.isSet ? column.value.Type : (content.value.Defaults.isSet ? content.value.Defaults.value.Type : 'unknown')}" />
     <c:set var="preMarkup"  value="${column.value.PreMarkup.isSet  ? column.value.PreMarkup  : (content.value.Defaults.isSet ? content.value.Defaults.value.PreMarkup  : '')}" />
     <c:set var="postMarkup" value="${column.value.PostMarkup.isSet ? column.value.PostMarkup : (content.value.Defaults.isSet ? content.value.Defaults.value.PostMarkup : '')}" />
+    <c:set var="tagElement" value="${column.value.TagElement.isSet ? column.value.TagElement : (content.value.Defaults.isSet ? content.value.Defaults.value.TagElement : 'div')}" />
     <c:if test="${not empty gridParts[loop.count -1]}">
       <c:set var="typeName" value="${fn:toLowerCase(gridParts[loop.count -1])}" />
     </c:if>
@@ -119,6 +120,7 @@
 
           name="${column.value.Name}"
           type="${typeName}"
+          tag="${tagElement}"
           tagClass="${cssClass}"
           maxElements="${column.value.Count.isSet ? column.value.Count : (content.value.Defaults.isSet ? content.value.Defaults.value.Count : '50')}"
           detailview="${detailView}"

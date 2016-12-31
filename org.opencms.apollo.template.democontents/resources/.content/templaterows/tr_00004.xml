@@ -7,9 +7,9 @@
     <Column>
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[row]]></Type>
-      <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[container]]></Grid>
+      <Count><![CDATA[50]]></Count>
     </Column>
   </ApolloTemplateRow>
   <ApolloTemplateRow language="en">
@@ -18,7 +18,6 @@
     <Column>
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[row]]></Type>
-      <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[container]]></Grid>
     </Column>

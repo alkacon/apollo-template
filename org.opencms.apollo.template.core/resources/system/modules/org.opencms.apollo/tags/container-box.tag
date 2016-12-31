@@ -1,8 +1,7 @@
 <%@tag display-name="container-box"
   body-content="empty"
   trimDirectiveWhitespaces="true"
-  description="Generates box HTML for layout rows"  
-  import="org.opencms.jsp.util.CmsJspStandardContextBean, org.opencms.xml.containerpage.CmsContainerBean, java.lang.String" %>
+  description="Generates box HTML for layout rows" %>
 
 <%@attribute name="label" type="java.lang.String" required="true" 
         description="Usually the name of the element or the group."%>

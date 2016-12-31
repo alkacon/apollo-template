@@ -7,20 +7,21 @@
     <Column>
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[segment]]></Type>
-      <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
       <Grid><![CDATA[area-foot]]></Grid>
+      <TagElement><![CDATA[footer]]></TagElement>
+      <Count><![CDATA[50]]></Count>
     </Column>
   </ApolloTemplateRow>
   <ApolloTemplateRow language="en">
-    <Title><![CDATA[Area - Foot]]></Title>
+    <Title><![CDATA[Area - Footer]]></Title>
     <Container><![CDATA[area]]></Container>
     <Column>
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[segment]]></Type>
-      <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
       <Grid><![CDATA[area-foot]]></Grid>
+      <TagElement><![CDATA[footer]]></TagElement>
     </Column>
   </ApolloTemplateRow>
 </ApolloTemplateRows>

@@ -3,21 +3,22 @@
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
   <ApolloTemplateRow language="de">
     <Title><![CDATA[Area - Seiteninhalt]]></Title>
-    <PreMarkup><![CDATA[<div class="no-top-margin area-section parallax-background $(param)" ?(link)##style="background-image: url('$(link)');"##>]]></PreMarkup>
-    <PostMarkup><![CDATA[</div>]]></PostMarkup>
+    <PreMarkup><![CDATA[<section class="area-section parallax-background $(param)" ?(link)##style="background-image: url('$(link)');"##>]]></PreMarkup>
+    <PostMarkup><![CDATA[</section>]]></PostMarkup>
     <Container><![CDATA[area]]></Container>
     <Column>
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[row]]></Type>
-      <Count><![CDATA[50]]></Count>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[container]]></Grid>
+      <TagElement><![CDATA[section]]></TagElement>
+      <Count><![CDATA[unlimited]]></Count>
     </Column>
   </ApolloTemplateRow>
   <ApolloTemplateRow language="en">
     <Title><![CDATA[Area - Section (Parallax background)]]></Title>
-    <PreMarkup><![CDATA[<div class="no-top-margin area-section parallax-background $(param)" ?(link)##style="background-image: url('$(link)');"##>]]></PreMarkup>
-    <PostMarkup><![CDATA[</div>]]></PostMarkup>
+    <PreMarkup><![CDATA[<section class="area-section parallax-background $(param)" ?(link)##style="background-image: url('$(link)');"##>]]></PreMarkup>
+    <PostMarkup><![CDATA[</section>]]></PostMarkup>
     <Container><![CDATA[area]]></Container>
     <Column>
       <Name><![CDATA[c1]]></Name>

@@ -2,7 +2,7 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[It's  the same element]]></Headline>
+    <Headline><![CDATA[It's the same element]]></Headline>
     <Text name="Text0">
       <links/>
       <content><![CDATA[<p>This&nbsp;content section element is reused twice on this page. The output is created using different formatters with special style settings.&nbsp;</p>]]></content>
@@ -14,7 +14,6 @@
           <uuid>f67db0b0-55f8-11e4-8db5-005056b61161</uuid>
         </link>
       </Image>
-      <Title><![CDATA[Defaul placeholder image]]></Title>
     </Image>
   </ApolloSection>
 </ApolloSections>

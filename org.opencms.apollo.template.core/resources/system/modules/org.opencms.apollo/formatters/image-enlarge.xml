@@ -55,8 +55,8 @@
       <Default><![CDATA[false]]></Default>
       <WidgetConfig><![CDATA[
         false:%(key.apollo.section.image.showsubtitle.none)|
-        subtitle header:%(key.apollo.section.image.showsubtitle.header)|
-        subtitle centered:%(key.apollo.section.image.showsubtitle.centered)
+        header:%(key.apollo.section.image.showsubtitle.header)|
+        centered:%(key.apollo.section.image.showsubtitle.centered)
       ]]></WidgetConfig>
     </Setting>
     <Setting>

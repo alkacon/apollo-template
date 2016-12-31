@@ -40,15 +40,15 @@
 
             <c:if test="${cms.element.setting.showcopyright.value and not empty imageCopyright}">
                 <div class="copyright">
-                    <div>${imageCopyright}</div>
+                    <div class="text">${imageCopyright}</div>
                 </div>
             </c:if>
 
             <c:if test="${showsubitle or showtext}">
-                <div class="text-box">
+                <div class="image-info text-box">
 
                     <c:if test="${showsubitle}">
-                        <h3 class="${cms.element.setting.showsubtitle}">
+                        <h3 class="subtitle ${cms.element.setting.showsubtitle}">
                             <apollo:link link="${value.Link}">
                                 ${not empty imageTitle ? imageTitle : value.Headline}
                             </apollo:link>

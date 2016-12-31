@@ -52,15 +52,6 @@
         <%-- ####### Show paragraph with aligned image ######## --%>
         <c:when test="${imgalign == 'left' or imgalign == 'right'}">
 
-            <c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
-                <c:if test="${not empty copyright}">
-                <c:set var="copyrightSymbol">(c)</c:set>
-                <c:set var="copyright">${fn:replace(copyright, '&copy;', copyrightSymbol)}</c:set>
-                <c:if test="${not fn:contains(copyright, copyrightSymbol)}">
-                    <c:set var="copyright">${copyrightSymbol}${' '}${copyright}</c:set>
-                </c:if>
-            </c:if>
-
             <div class="row">
 
                 <div class="col-md-4 pull-${imgalign}">
@@ -91,15 +82,6 @@
 
         <%-- ####### Show paragraph with image in top row ######## --%>
         <c:when test="${imgalign == 'top'}">
-
-            <c:set var="copyright">${paragraph.value.Image.value.Copyright}</c:set>
-                <c:if test="${not empty copyright}">
-                <c:set var="copyrightSymbol">(c)</c:set>
-                <c:set var="copyright">${fn:replace(copyright, '&copy;', copyrightSymbol)}</c:set>
-                <c:if test="${not fn:contains(copyright, copyrightSymbol)}">
-                    <c:set var="copyright">${copyrightSymbol}${' '}${copyright}</c:set>
-                </c:if>
-            </c:if>
 
             <div class="row">
 

@@ -47,7 +47,7 @@
         <div  ${image.value.Image.imageDndAttr} class="image-outer-box">
             <cms:img 
                 src="${imageLink}"
-                cssclass="img-responsive image-inner-box ${imagestyle}}"
+                cssclass="img-responsive image-inner-box ${cssimage}"
                 alt="${imageTitleCopyright}"
                 title="${imageTitleCopyright}"
             />

@@ -59,7 +59,7 @@
         <Properties>
           <Name><![CDATA[wrapperclass]]></Name>
           <Value>
-            <String><![CDATA[bg-blue-light text-light]]></String>
+            <String><![CDATA[bg-orange]]></String>
           </Value>
         </Properties>
         <Properties>
