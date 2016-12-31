@@ -334,6 +334,8 @@ $zoom-fg:  $text-light !default;
 .zoom:hover .zoom-overlay .zoom-icon {
     opacity: 1;
     transform: scale(1);
+    border: 0;
+    box-shadow: none;
 }
 
 .zoom-overlay {

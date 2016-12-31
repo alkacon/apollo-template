@@ -18,7 +18,7 @@
 /**********
  * Source file: apollo-generics.scss
  *
- * Generic CSS selectors that can apply to most DIV or similar block elements.
+ * Generic CSS selectors that can apply to most block elements.
  * These usually are to be used as "CSS Wrapper" in the Apollo element settings.
  */
 
@@ -37,6 +37,8 @@ $border-styles:          (none, solid, dotted, dashed, hidden) !default;
 
 $text-colors:            ((light, $text-light), (dark, $text-dark)) !default;
 $link-colors:            ((default, $main-theme, $main-theme-hover),
+                          (dark, $text-dark, $grey),
+                          (light, $text-light, $grey-lighter),
                           (white, $white, $grey-lighter),
                           (grey, $grey, $grey-light),
                           (black,  $black, $grey-darker)) !default;
@@ -46,15 +48,7 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
 
     color: $text-color;
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    li,
-    .fa {
+    *:not(a):not(span) {
         color: $text-color;
     }
 }
@@ -65,23 +59,6 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     .text-#{""+$color-name} {
 
         @include set-text-color($text-color);
-    }
-
-    // suppress head link colors
-    .head-links-#{""+$color-name} {
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            a:not(.btn) {
-                color: $text-color;
-                &:hover {
-                    color: $text-color;
-                }
-            }
-        }
     }
 }
 
@@ -114,6 +91,11 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
         background-color: $bg-color;
         overflow: hidden;
         padding: 20px;
+        color: get-text-color($bg-color);
+
+        *:not(a):not(span) {
+            color: get-text-color($bg-color);
+        }
     }
 
     .transparent-bg-#{""+$color-name} {

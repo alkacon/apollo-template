@@ -27,24 +27,10 @@
 
     margin-bottom: 20px;
 
-    h3.subtitle.header {
-
-        margin-top: 0;
-        padding-top: 5px;
-    }
-
-    h3.subtitle.centered  {
-
-        font-family: $font-content;
-        font-size: $font-content-size;
-        text-align: center;
-        font-weight: 600;
-    }
-
     .copyright {
         position: relative;
 
-        div {
+        > .text {
             padding: 1px 4px;
             font-size: 0.7em;
             background: rgba(255, 255, 255, 0.6);
@@ -68,9 +54,8 @@
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
-
-    h3,
-    div { 
+    
+    *:not(a):not(span) {
         color: $text-light;
     }
 
@@ -132,14 +117,27 @@
     }
 }
 
+// Styles for image descriptions
+.image-info {
 
-// Styles for image section variations
-.ap-img-txt {
-    .ap-img-title {
+    .subtitle {
         margin-top: 10px;
+
+        &.header {
+            margin-top: 10px;
+        }   
+
+        &.centered {
+            font-family: $font-content;
+            font-size: $font-content-size;
+            line-height: $line-height-content;
+            text-align: center;
+            font-weight: 600;
+        }
     }
-    .ap-img-desc {
-        margin-top: 5px;
+
+    .text {
+        margin-top: 10px;
     }
 }
 
@@ -151,18 +149,14 @@
 // classes to set the gid layout margins
 
 // add margin below the header
-div.area-head {
+.area-head {
     margin-bottom: 20px;
-}
-
-// special rule to suppress header margin
-div.no-top-margin {
-    margin-top: -20px;
 }
 
 // remove the margins of all sections, usually applied to template rows
 .ap-tile,
 .no-section-margin {
+
     .ap-iconbox,
     .ap-section {
 
