@@ -16,59 +16,59 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * File: apollo-contact.scss
  *
- * apollo-contact.scss
- *
+ * Styles related to the "contact information" element.
  */
 
 .ap-contact {
 
-    .title, 
-    .org, 
-    .note, 
-    .street-address, 
-    .ap-contact-city, 
-    .ap-contact-street,
-    .ap-contact-phone,
-    .ap-contact-mobie,
-    .ap-contact-fax {
+    .title,
+    .org,
+    .note,
+    .street-address,
+    .city,
+    .street,
+    .phone,
+    .mobie,
+    .fax {
         // nothing so far
     }
 
-    &.ap-contact-threecol,
-    &.ap-contact-onecol {
+    margin-bottom: 20px;
 
-        margin-bottom: 20px;
-
-        .fn {
-            padding-top: 5px;
-            margin-top: 0px;
-            margin-bottom: 4px;
-        }
-
-        .title {
-            font-style: italic;
-            margin-bottom: 4px;
-        }
+    .fn {
+        padding-top: 5px;
+        margin-top: 0px;
+        margin-bottom: 4px;
     }
 
-    .ap-tablerow {
+    .title {
+        font-style: italic;
+        margin-bottom: 4px;
+    }
+
+    .tablerow {
         display: table-row;
 
-        span {
+        > span {
             padding-right: 5px;
             display: table-cell;
         }
     }
 
-    .ap-contact-adr {
+    .clickme {
         display: none;
+    }
+
+    .adr {
+        margin-bottom: 5px;
     }
 
     .only-icon {
         padding-left: 5px;
     }
-    
+
     .fa {
        margin-right: 5px;
        width: 15px;
