@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
+  <ApolloTemplateRow language="en">
+    <Title><![CDATA[Area - Footer]]></Title>
+    <Container><![CDATA[area]]></Container>
+    <Column>
+      <Name><![CDATA[c1]]></Name>
+      <Type><![CDATA[segment]]></Type>
+      <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
+      <Grid><![CDATA[area-foot]]></Grid>
+      <TagElement><![CDATA[footer]]></TagElement>
+    </Column>
+  </ApolloTemplateRow>
+  <ApolloTemplateRow language="de">
+    <Title><![CDATA[Area - Footer / Fußbereich]]></Title>
+    <Container><![CDATA[area]]></Container>
+    <Column>
+      <Name><![CDATA[c1]]></Name>
+      <Type><![CDATA[segment]]></Type>
+      <Editors><![CDATA[ROLE.DEVELOPER]]></Editors>
+      <Grid><![CDATA[area-foot]]></Grid>
+      <TagElement><![CDATA[footer]]></TagElement>
+    </Column>
+  </ApolloTemplateRow>
+</ApolloTemplateRows>

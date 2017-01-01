@@ -11,28 +11,24 @@
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-xs-12 col-sm-6 col-md-3]]></Grid>
-      <Count><![CDATA[50]]></Count>
     </Column>
     <Column>
       <Name><![CDATA[c2]]></Name>
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-xs-12 col-sm-6 col-md-3]]></Grid>
-      <Count><![CDATA[50]]></Count>
     </Column>
     <Column>
       <Name><![CDATA[c3]]></Name>
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-xs-12 col-sm-6 col-md-3]]></Grid>
-      <Count><![CDATA[50]]></Count>
     </Column>
     <Column>
       <Name><![CDATA[c4]]></Name>
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-xs-12 col-sm-6 col-md-3]]></Grid>
-      <Count><![CDATA[50]]></Count>
     </Column>
   </ApolloTemplateRow>
   <ApolloTemplateRow language="en">

@@ -2,7 +2,7 @@
 
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
   <ApolloTemplateRow language="de">
-    <Title><![CDATA[Row 2 Spalten (6 - 6) [Ab XS]]]></Title>
+    <Title><![CDATA[Row 3 Spalten (4 - 4 - 4)]]></Title>
     <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
     <Container><![CDATA[row]]></Container>
@@ -10,19 +10,23 @@
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
-      <Grid><![CDATA[col-xs-6]]></Grid>
-      <Count><![CDATA[50]]></Count>
+      <Grid><![CDATA[col-md-4]]></Grid>
     </Column>
     <Column>
       <Name><![CDATA[c2]]></Name>
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
-      <Grid><![CDATA[col-xs-6]]></Grid>
-      <Count><![CDATA[50]]></Count>
+      <Grid><![CDATA[col-md-4]]></Grid>
+    </Column>
+    <Column>
+      <Name><![CDATA[c3]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
+      <Grid><![CDATA[col-md-4]]></Grid>
     </Column>
   </ApolloTemplateRow>
   <ApolloTemplateRow language="en">
-    <Title><![CDATA[Row 2 Cols (6 - 6) [From XS]]]></Title>
+    <Title><![CDATA[Row 3 Cols (4 - 4 - 4)]]></Title>
     <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
     <Container><![CDATA[row]]></Container>
@@ -30,13 +34,19 @@
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
-      <Grid><![CDATA[col-xs-6]]></Grid>
+      <Grid><![CDATA[col-md-4]]></Grid>
     </Column>
     <Column>
       <Name><![CDATA[c2]]></Name>
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
-      <Grid><![CDATA[col-xs-6]]></Grid>
+      <Grid><![CDATA[col-md-4]]></Grid>
+    </Column>
+    <Column>
+      <Name><![CDATA[c3]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
+      <Grid><![CDATA[col-md-4]]></Grid>
     </Column>
   </ApolloTemplateRow>
 </ApolloTemplateRows>

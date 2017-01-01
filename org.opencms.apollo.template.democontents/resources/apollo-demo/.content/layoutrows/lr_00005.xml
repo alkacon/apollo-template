@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
-  <ApolloTemplateRow language="de">
-    <Title><![CDATA[Row 2 Spalten (6 - 6) [Ab SM]]]></Title>
+  <ApolloTemplateRow language="en">
+    <Title><![CDATA[Row 2 Cols (6 - 6) [From SM]]]></Title>
     <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
     <Container><![CDATA[row]]></Container>
@@ -11,18 +11,16 @@
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-sm-6]]></Grid>
-      <Count><![CDATA[50]]></Count>
     </Column>
     <Column>
       <Name><![CDATA[c2]]></Name>
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
       <Grid><![CDATA[col-sm-6]]></Grid>
-      <Count><![CDATA[50]]></Count>
     </Column>
   </ApolloTemplateRow>
-  <ApolloTemplateRow language="en">
-    <Title><![CDATA[Row 2 Cols (6 - 6) [From SM]]]></Title>
+  <ApolloTemplateRow language="de">
+    <Title><![CDATA[Row 2 Spalten (6 - 6) [Ab SM]]]></Title>
     <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
     <Container><![CDATA[row]]></Container>

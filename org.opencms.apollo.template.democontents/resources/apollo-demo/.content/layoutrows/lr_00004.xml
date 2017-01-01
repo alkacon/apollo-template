@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
-  <ApolloTemplateRow language="de">
-    <Title><![CDATA[Row 2 Spalten (3 - 9)]]></Title>
+  <ApolloTemplateRow language="en">
+    <Title><![CDATA[Row 2 Cols (6 - 6) [From XS]]]></Title>
     <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
     <Container><![CDATA[row]]></Container>
@@ -10,19 +10,17 @@
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
-      <Grid><![CDATA[col-md-3]]></Grid>
-      <Count><![CDATA[50]]></Count>
+      <Grid><![CDATA[col-xs-6]]></Grid>
     </Column>
     <Column>
       <Name><![CDATA[c2]]></Name>
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
-      <Grid><![CDATA[col-md-9]]></Grid>
-      <Count><![CDATA[-1]]></Count>
+      <Grid><![CDATA[col-xs-6]]></Grid>
     </Column>
   </ApolloTemplateRow>
-  <ApolloTemplateRow language="en">
-    <Title><![CDATA[Row 2 Cols (3 - 9)]]></Title>
+  <ApolloTemplateRow language="de">
+    <Title><![CDATA[Row 2 Spalten (6 - 6) [Ab XS]]]></Title>
     <PreMarkup><![CDATA[<div class="row $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</div>]]></PostMarkup>
     <Container><![CDATA[row]]></Container>
@@ -30,13 +28,13 @@
       <Name><![CDATA[c1]]></Name>
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
-      <Grid><![CDATA[col-md-3]]></Grid>
+      <Grid><![CDATA[col-xs-6]]></Grid>
     </Column>
     <Column>
       <Name><![CDATA[c2]]></Name>
       <Type><![CDATA[element]]></Type>
       <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
-      <Grid><![CDATA[col-md-9]]></Grid>
+      <Grid><![CDATA[col-xs-6]]></Grid>
     </Column>
   </ApolloTemplateRow>
 </ApolloTemplateRows>
