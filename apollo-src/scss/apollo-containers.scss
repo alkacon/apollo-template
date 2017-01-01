@@ -16,12 +16,10 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * File: apollo-containers.scss
  *
- * apollo-containers.scss
- *
+ * Empty container and other info markers.
  */
-
-// Empty container markers.
 
 $ap-col-area:          #ffc9d2 !default; // "darker light red" 
 $ap-col-segment:       #ffe3e7 !default; // "light red"
@@ -71,6 +69,7 @@ $ap-edit-infos:
     (message, $ap-col-segment),
 ) !default; 
 
+/* Basic definitions */
 
 %ap-container {
     padding: 10px;
@@ -122,6 +121,7 @@ $ap-edit-infos:
     text-transform: uppercase;
 } 
 
+/* Empty container markers */
 
 @each $type-name, $bg-color in $ap-container-types {
     .ap-container-#{""+$type-name} {
@@ -131,6 +131,8 @@ $ap-edit-infos:
     }
 }
 
+/* Labels colors */
+
 @each $role-name, $label-color in $ap-container-labels { 
     .ap-label-#{""+$role-name} {
         @extend %ap-label;
@@ -139,6 +141,8 @@ $ap-edit-infos:
     }
 }
 
+/* Page information markers */
+
 @each $type-name, $bg-color in $ap-edit-infos {
     .ap-edit-info-#{""+$type-name} {
         @extend %ap-edit-info;
@@ -146,6 +150,8 @@ $ap-edit-infos:
         background-color: $bg-color;
     }
 }
+
+/* Model group markers */
 
 .ap-modelinfo {
     border: 4px solid $ap-col-border;

@@ -35,6 +35,8 @@ var buildDir;
 var provideDir;
 var moduleDir;
 
+var mapScss;
+
 var path = require('path');
 
 exports.initGrunt = function(_grunt, _buildDir) {
@@ -45,12 +47,21 @@ exports.initGrunt = function(_grunt, _buildDir) {
     provideDir = path.normalize(moduleDir + _buildDir + 'provide/');
     buildDir = path.normalize(moduleDir + _buildDir + 'grunt/');
 
+    mapScss = grunt.option('mapscss');
+
     if (grunt.option('verbose')) {
-        console.log('OpenCms module source directory: ' + moduleDir);
-        console.log('OpenCms module build directory : ' + buildDir);
+        console.log('OpenCms module source directory   : ' + moduleDir);
+        console.log('OpenCms module build directory    : ' + buildDir);
         console.log('OpenCms theme provision directory : ' + provideDir);
 
+        console.log('Source mapping of SCSS files      : ' + (mapScss ? 'Enabled' : 'Disabled') );
+
         require('time-grunt')(grunt);
+    }
+
+    if (! mapScss) {
+        console.log('NOTE: Source mapping of SCSS files is disabled');
+        console.log('Start grunt with option "--mapscss" to enable source maps for SCSS');
     }
 
     _gruntLoadNpmTasks();
@@ -201,12 +212,12 @@ _gruntInitConfig = function() {
                     dest : oc.deployTarget,
                 } ]
             }
-        },
+        }, 
 
         sass : {
             theme : {
                 options : {
-                    sourcemap : 'auto',
+                    sourcemap : mapScss ? 'auto' : 'none',
                     lineNumbers : false,
                     style : 'nested',
                 },
@@ -245,8 +256,26 @@ _gruntInitConfig = function() {
                     },
                     processors : [ 
                         require('autoprefixer')({browsers: 'last 3 versions'}), // add vendor prefixes
-                        require('stylefmt')(), // pretty-print the output
                         require('postcss-sorting')({"sort-order": 'default'}), // sort the rules in the output
+                        require('stylefmt')(), // pretty-print the output
+                    ]
+                },
+                files : [{
+                    expand : true,
+                    cwd : buildDir + '01_processed',
+                    src : oc.themeCssSrc(),
+                    dest : buildDir + '02_postcssed',
+                    ext : '.css'
+                }]
+            },
+            // could not come up with a better idea on how to achieve this quickly
+            themeNoMap : {
+                options: {
+                    map: false,
+                    processors : [ 
+                        require('autoprefixer')({browsers: 'last 3 versions'}), // add vendor prefixes
+                        require('postcss-sorting')({"sort-order": 'default'}), // sort the rules in the output
+                        require('stylefmt')(), // pretty-print the output
                     ]
                 },
                 files : [{
@@ -326,7 +355,7 @@ _gruntInitConfig = function() {
                 dest : buildDir + '04_final/js/scripts-all.min.js',
             },
         },
-        
+
         watch: {
             options: {
                 interrupt: true,     // interrupt when new modification happens during build
@@ -362,29 +391,29 @@ _gruntRegisterTasks = function() {
         'pluginJs',
         'deploy',
     ]);
-    
+
     grunt.registerTask('csscheck', [ 
         'clean',
         'sass:csscheck',
         'cssmin:csscheck',
         'deploy',
     ]);
-    
+
     grunt.registerTask('theme', [ 
         'sass:theme',
-        'postcss:theme',
+        mapScss ? 'postcss:theme' : 'postcss:themeNoMap',
         'cssmin:theme',
     ]);
-    
+
     grunt.registerTask('plugins', [ 
         'cssmin:pluginCss',
         'uglify:pluginJs',
     ]);
-    
+
     grunt.registerTask('pluginCss', [ 
         'cssmin:pluginCss',
     ]);
-        
+
     grunt.registerTask('pluginJs', [ 
         'uglify:pluginJs',
     ]);

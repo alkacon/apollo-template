@@ -16,9 +16,16 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * File; apollo-variables.scss
  *
- * apollo-variables.scss
+ * Variable definitions.
+ */
+/**
+ * General theme colors:
  *
+ * Main theme color: #{$main-theme}
+ * Theme hover color: #{$main-theme-hover}
+ * Theme complementary color: #{$main-theme-complementary}
  */
 
 // Font definitions
@@ -107,6 +114,13 @@ $many-colors:
  (yellow,           $yellow,        $red-orange),
 ) !default; 
 
+/**
+ * Colors available for backgrounds:
+ */
+@each $color-name, $bg-color, $highlight-color in $many-colors {
+/* bg-#{""+$color-name}: #{""+$bg-color} */
+}
+
 // reduced array of colors to be used in backgrounds
 // use this to keep the generated CSS small
 $reduced-colors: 
@@ -119,6 +133,14 @@ $reduced-colors:
  (cyan,             $cyan,          $blue-cyan),
  (orange,           $orange,        $red-orange),
 ) !default;
+
+/**
+ * Colors available for coloring buttons, lists:
+ */
+@each $color-name, $bg-color, $highlight-color in $reduced-colors {
+/* color-#{""+$color-name}: #{""+$bg-color} */
+}
+
 
 // Spaces used for margins and paddings
 $spacers:       (0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100) !default;

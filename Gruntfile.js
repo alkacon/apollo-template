@@ -19,19 +19,18 @@
 
 module.exports = function(grunt) {
 
-	oc = require('./grunt-opencms-modules.js');
-	oc.initGrunt(grunt, 'build/');
-	
-	oc.loadModule('./apollo-src/jquery');
-	oc.loadModule('./apollo-src/bootstrap');
-	oc.loadModule('./apollo-src/font-awesome');
-    oc.loadModule('./apollo-src/plugins');	
+    oc = require('./grunt-opencms-modules.js');
+    oc.initGrunt(grunt, 'build/');
+
+    oc.loadModule('./apollo-src/jquery');
+    oc.loadModule('./apollo-src/bootstrap');
+    oc.loadModule('./apollo-src/font-awesome');
+    oc.loadModule('./apollo-src/plugins');    
     oc.loadModule('./apollo-src/js');
     oc.loadModule('./apollo-src/scss');
     oc.loadModule('./apollo-src/scss-themes');
-	// oc.loadModule('./apollo-src/csscheck');
-	
-	oc.registerGruntTasks();
+
+    oc.registerGruntTasks();
 };
 
 /**

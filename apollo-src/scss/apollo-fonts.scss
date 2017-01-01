@@ -16,14 +16,13 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * File: apollo-fonts.scss
  *
- * apollo-fonts.scss
- *
+ * Font definitions.
+ * Generated with the help of: https://google-webfonts-helper.herokuapp.com/
  */
 
-// Generated with the help of: https://google-webfonts-helper.herokuapp.com/
-
-// Main Text Font: Open Sans
+/* Main Text Font: Open Sans */
 
 /* open-sans-300 - latin_latin-ext */
 @font-face {
@@ -116,7 +115,7 @@
        url('../fonts/open-sans-v13-latin_latin-ext-800italic.woff') format('woff');
 }
 
-// Headline Font: Prompt
+/* Headline Font: Prompt */
 
 /* prompt-300 - latin-ext_latin */
 @font-face {

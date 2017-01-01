@@ -16,9 +16,9 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * File: apollo-button.scss
  *
- * apollo-button.scss
- *
+ * Bottstrap extended, colored buttons.
  */
 
 $btn-default:           $main-theme !default;
@@ -55,6 +55,8 @@ $btn-colors:            $reduced-colors !default;
     }
 }
 
+/* Extend bootstrap default buttons */
+
 .btn {
     padding: $btn-padding round($btn-padding * 2);
     font-size: $font-content-size;
@@ -78,6 +80,8 @@ $btn-colors:            $reduced-colors !default;
     box-shadow: none;
 }
 
+/* Button sizes */
+
 .btn.btn-lg {
     padding: round($btn-padding * 1.25) round($btn-padding * 3);
     font-size: 18px;
@@ -99,7 +103,8 @@ $btn-colors:            $reduced-colors !default;
     @include apollo-button($btn-default, $btn-default-active);
 }
 
-// colored buttons
+/* Colored buttons */
+
 @each $color-name, $bg-color, $highlight-color in $btn-colors {
 
     .color-#{""+$color-name} .btn,
@@ -116,3 +121,11 @@ $btn-colors:            $reduced-colors !default;
         }
     }
 }
+
+/* Remove the outline from all 'button' elements */
+
+button,
+button:hover {
+    outline: 0 !important;
+}
+
