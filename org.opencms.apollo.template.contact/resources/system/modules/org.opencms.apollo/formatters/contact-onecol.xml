@@ -38,6 +38,7 @@
       <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
         none:%(key.apollo.section.image.effect.none)|
+        no-img:%(key.apollo.contact.setting.noimage)|
         effect-shadow:%(key.apollo.section.image.effect.animatedshadow)|
         effect-kenburns:%(key.apollo.section.image.effect.kenburns)|
         effect-shadow-effect-kenburns:%(key.apollo.section.image.effect.shadow-kenburns)
@@ -66,6 +67,17 @@
       ]]></WidgetConfig>
     </Setting>
     <Setting>
+      <PropertyName><![CDATA[showAddress]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showaddress)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[true]]></Default>
+      <WidgetConfig><![CDATA[
+        true:%(key.apollo.contact.setting.address.true)|
+        false:%(key.apollo.contact.setting.address.false)|
+        always:%(key.apollo.contact.setting.address.always)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[showOrganization]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.contact.setting.showorganization)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
@@ -74,12 +86,6 @@
     <Setting>
       <PropertyName><![CDATA[showDescription]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.contact.setting.showdescription)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[showAddress]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.contact.setting.showaddress)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>

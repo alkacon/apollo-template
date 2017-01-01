@@ -20,14 +20,15 @@
 <div class="ap-contact ap-contact-onecol vcard ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
 
     <c:set var="fragments">
-        image 
         name 
         ${cms.element.setting.labels.value}
+        <c:if test="${cms.element.setting.effect.value != 'no-img'}">image</c:if>
         <c:if test="${cms.element.setting.effect.value != 'none'}">${cms.element.setting.effect.value}</c:if>
         <c:if test="${cms.element.setting.link.value != 'false'}">${cms.element.setting.link.value}</c:if>
         <c:if test="${cms.element.setting.showOrganization.value}">organization</c:if>
         <c:if test="${cms.element.setting.showDescription.value}">description</c:if>
-        <c:if test="${cms.element.setting.showAddress.value}">address</c:if>
+        <c:if test="${cms.element.setting.showAddress.value == 'true'}">address</c:if>
+        <c:if test="${cms.element.setting.showAddress.value == 'always'}">address-always</c:if>
         <c:if test="${cms.element.setting.showPhone.value}">phone</c:if>
         <c:if test="${cms.element.setting.showEmail.value}">email</c:if>
     </c:set>

@@ -60,6 +60,7 @@
     </c:if>
 </c:set>
 <c:set var="animatedlink" value="${link.isSet and fn:contains(fragments, 'animated-link')}" />
+<c:set var="showImage" value="${fn:contains(fragments, 'image')}" />
 
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.contact.messages">
@@ -67,7 +68,7 @@
 <%-- #### Contact exposed in hCard microformat, see http://microformats.org/wiki/hcard #### --%>
 
 <apollo:image-animated
-    test="${fn:contains(fragments, 'image')}"
+    test="${showImage}"
     image="${image}"
     cssclass="
         ${animatedlink ? 'ap-button-animation' : ''}
@@ -77,7 +78,7 @@
     cssimage="photo"
     >
 
-    <c:if test="${animatedlink}">
+    <c:if test="${animatedlink and showImage}">
         <div class="button-box">
             <apollo:link 
                 link="${link}"
@@ -89,6 +90,7 @@
     <c:set var="showorganization" value="${fn:contains(fragments, 'organization') and organization.isSet}"/>
     <c:set var="showdescription" value="${fn:contains(fragments, 'description') and description.isSet}"/>
     <c:set var="showaddress" value="${fn:contains(fragments, 'address') and data.isSet and data.value.Address.isSet}"/>
+    <c:set var="showaddressalways" value="${showaddress and fn:contains(fragments, 'address-always')}"/>
     <c:set var="showphone" value="${fn:contains(fragments, 'phone') and data.isSet}"/>
     <c:set var="showemail" value="${fn:contains(fragments, 'email') and data.isSet and data.value.Email.isSet and data.value.Email.value.Email.isSet}"/>
     <c:set var="showstaticbutton" value="${fn:contains(fragments, 'static-link') and link.isSet}"/>
@@ -112,20 +114,21 @@
     <c:if test="${showdescription}"><div class="note" ${description.rdfaAttr}>${description}</div></c:if>
 
     <c:if test="${showaddress}">
-        <div class="adr${showicons ? ' ap-contact-adr' : ''}"
-            <c:if test="${showicons}">
-                id="ap-contact-adr-${cms.element.instanceId}" 
-                onclick="$('#ap-contact-adr-${cms.element.instanceId}').slideUp();$('#ap-contact-adrlink-${cms.element.instanceId}').slideDown();"
+        <c:set var="animatedAddress" value="${showicons and not showaddressalways}" />
+        <div class="adr${animatedAddress ? ' clickme' : ''}"
+            <c:if test="${animatedAddress}">
+                id="address-${cms.element.instanceId}" 
+                onclick="$('#address-${cms.element.instanceId}').slideUp();$('#addresslink-${cms.element.instanceId}').slideDown();"
             </c:if>>
             <div class="street-address">${data.value.Address.value.StreetAddress}</div>
             <c:if test="${data.value.Address.value.ExtendedAddress.isSet}">
                 <div class="extended-address">${data.value.Address.value.ExtendedAddress}</div>
             </c:if>
-            <div class="ap-contact-city">
+            <div class="city">
                 <span class="locality">${data.value.Address.value.PostalCode}</span>
                 <span class="region">${data.value.Address.value.Locality}</span>
             </div>
-            <div class="ap-contact-street">
+            <div class="street">
                 <c:if test="${data.value.Address.value.Region.isSet}">
                     <span class="postal-code">${data.value.Address.value.Region}</span>
                 </c:if>
@@ -134,13 +137,13 @@
                 </c:if>
             </div>
         </div>
-        <c:if test="${showicons}">
-            <div class="ap-contact-adrlink" id="ap-contact-adrlink-${cms.element.instanceId}">
+        <c:if test="${animatedAddress}">
+            <div class="addresslink" id="addresslink-${cms.element.instanceId}">
                 <apollo:icon-prefix icon="home" fragments="icon text" >
                     <jsp:attribute name="text">
                         <span class="${showtext ? 'with-text' : 'only-icon'}"><a href="" onclick="
-                            $('#ap-contact-adr-${cms.element.instanceId}').slideDown();
-                            $('#ap-contact-adrlink-${cms.element.instanceId}').hide();
+                            $('#address-${cms.element.instanceId}').slideDown();
+                            $('#addresslink-${cms.element.instanceId}').hide();
                             return false;"><%--
                         --%><fmt:message key="apollo.contact.showaddress"/>
                         </a></span>
@@ -153,11 +156,11 @@
 
     <c:if test="${showphone}">
         <c:if test="${data.value.Phone.isSet}"> 
-            <div class="ap-contact-phone ap-tablerow">
+            <div class="phone tablerow">
                 <apollo:icon-prefix icon="phone" fragments="${labels}">
                     <jsp:attribute name="text"><fmt:message key="apollo.contact.phone"/></jsp:attribute>
                 </apollo:icon-prefix>
-                <span class="ap-contact-value">
+                <span>
                     <a href="tel:${fn:replace(data.value.Phone, ' ','')}" ${data.rdfa.Phone}>
                         <span class="tel">${data.value.Phone}</span>
                     </a>
@@ -165,11 +168,11 @@
             </div>
         </c:if>
         <c:if test="${data.value.Mobile.isSet}">
-            <div class="ap-contact-mobile ap-tablerow">
+            <div class="mobile tablerow">
                 <apollo:icon-prefix icon="mobile" fragments="${labels}">
                     <jsp:attribute name="text"><fmt:message key="apollo.contact.mobile"/></jsp:attribute>
                 </apollo:icon-prefix>
-                <span class="ap-contact-value">
+                <span>
                     <a href="tel:${fn:replace(data.value.Mobile, ' ','')}" ${data.rdfa.Mobile}>
                         <span class="tel">${data.value.Mobile}</span>
                     </a>
@@ -177,11 +180,11 @@
             </div>
         </c:if>
         <c:if test="${data.value.Fax.isSet}">
-            <div class="ap-contact-fax ap-tablerow">
+            <div class="fax tablerow">
                 <apollo:icon-prefix icon="fax" fragments="${labels}">
                     <jsp:attribute name="text"><fmt:message key="apollo.contact.fax"/></jsp:attribute>
                 </apollo:icon-prefix>
-                <span class="ap-contact-value">
+                <span>
                     <a href="tel:${fn:replace(data.value.Fax, ' ','')}" ${data.rdfa.Fax}>
                         <span class="tel">${data.value.Fax}</span>
                     </a>
@@ -191,11 +194,11 @@
     </c:if> 
 
     <c:if test="${showemail}">
-        <div class="ap-contact-email ap-tablerow">
+        <div class="email tablerow">
             <apollo:icon-prefix icon="at" fragments="${labels}" >
                 <jsp:attribute name="text"><fmt:message key="apollo.contact.email"/></jsp:attribute>
             </apollo:icon-prefix>
-            <apollo:email email="${data.value.Email}" cssclass="ap-contact-value">
+            <apollo:email email="${data.value.Email}">
                 <jsp:attribute name="placeholder"><fmt:message key="apollo.contact.obfuscatedemail"/></jsp:attribute>
             </apollo:email>
         </div>

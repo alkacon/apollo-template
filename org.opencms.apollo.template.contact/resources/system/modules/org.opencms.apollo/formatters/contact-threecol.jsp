@@ -15,19 +15,21 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.contact.messages">
 
-<div class="ap-contact ap-contact-threecol vcard">
+<div class="ap-contact vcard">
 
     <c:set var="fragments1">
         image 
         <c:if test="${cms.element.setting.effect.value != 'none'}">${cms.element.setting.effect.value}</c:if>
         <c:if test="${cms.element.setting.link.value == 'animated-link'}">animated-link</c:if>
     </c:set>
+    <c:set var="showImage" value="${cms.element.setting.effect.value != 'no-img'}" />
 
     <c:set var="fragments2">
         name 
         ${cms.element.setting.labels.value}
         <c:if test="${cms.element.setting.showOrganization.value}">organization</c:if>
-        <c:if test="${cms.element.setting.showAddress.value}">address</c:if>
+        <c:if test="${cms.element.setting.showAddress.value == 'true'}">address</c:if>
+        <c:if test="${cms.element.setting.showAddress.value == 'always'}">address-always</c:if>
         <c:if test="${cms.element.setting.showPhone.value}">phone</c:if>
     </c:set>
 
@@ -39,14 +41,16 @@
     </c:set>
 
     <div class="row">
-        <div class="col-sm-4">
-            <apollo:contact
-                image="${value.Image}"
-                link="${value.Link}"
-                fragments="${fragments1}" />
-        </div>
+        <c:if test="${showImage}">
+            <div class="col-sm-4">
+                <apollo:contact
+                    image="${value.Image}"
+                    link="${value.Link}"
+                    fragments="${fragments1}" />
+            </div>
+        </c:if>
 
-        <div class="col-sm-5">
+        <div class="col-sm-${showImage ? '5' : '9'}">
             <apollo:contact
                 data="${value.Contact}"
                 name="${value.Name}"
