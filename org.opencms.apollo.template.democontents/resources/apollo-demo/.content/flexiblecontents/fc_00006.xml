@@ -31,7 +31,7 @@
         </link>
       </links>
       <content><![CDATA[<div>
-<ul class="social-links">
+<ul class="ap-social">
     <li class="facebook"><a target="_blank" title="OpenCms on Facebook" href="%(link0)"><i class="fa fa-facebook"></i></a></li>
     <li class="twitter"><a target="_blank" title="OpenCms on Twitter" href="%(link1)"><i class="fa fa-twitter"></i></a></li>
     <li class="googleplus"><a target="_blank" title="OpenCms on Google+" href="%(link2)"><i class="fa fa-google-plus"></i></a></li>
@@ -74,7 +74,7 @@
         </link>
       </links>
       <content><![CDATA[<div>
-<ul class="social-links">
+<ul class="ap-social">
     <li class="facebook"><a target="_blank" title="OpenCms auf Facebook" href="%(link0)"><i class="fa fa-facebook"></i></a></li>
     <li class="twitter"><a target="_blank" title="OpenCms auf Twitter" href="%(link1)"><i class="fa fa-twitter"></i></a></li>
     <li class="googleplus"><a target="_blank" title="OpenCms auf Google+" href="%(link2)"><i class="fa fa-google-plus"></i></a></li>

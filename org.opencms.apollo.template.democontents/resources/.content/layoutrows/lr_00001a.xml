@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
+  <ApolloTemplateRow language="de">
+    <Title><![CDATA[Area - Section [Row 1 Spalte über die volle Bildschirmbreite] ]]></Title>
+    <PreMarkup><![CDATA[<section class="area-body">
+<div class="container-fluid">
+<div class="row">]]></PreMarkup>
+    <PostMarkup><![CDATA[</div>
+</div>
+</section>]]></PostMarkup>
+    <Container><![CDATA[area]]></Container>
+    <Column>
+      <Name><![CDATA[c1]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
+      <Grid><![CDATA[col-xs-12 no-gutter]]></Grid>
+      <TagElement><![CDATA[section]]></TagElement>
+    </Column>
+  </ApolloTemplateRow>
+  <ApolloTemplateRow language="en">
+    <Title><![CDATA[Area - Section [For Elements] (Full screen width)]]></Title>
+    <PreMarkup><![CDATA[<section class="area-body">
+<div class="container-fluid">
+<div class="row">]]></PreMarkup>
+    <PostMarkup><![CDATA[</div>
+</div>
+</section>]]></PostMarkup>
+    <Container><![CDATA[area]]></Container>
+    <Column>
+      <Name><![CDATA[c1]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <Editors><![CDATA[ROLE.ELEMENT_AUTHOR]]></Editors>
+      <Grid><![CDATA[col-xs-12 no-gutter]]></Grid>
+      <TagElement><![CDATA[section]]></TagElement>
+    </Column>
+  </ApolloTemplateRow>
+</ApolloTemplateRows>

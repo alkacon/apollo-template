@@ -23,16 +23,62 @@
     <Detail>false</Detail>
     <NestedContainers>false</NestedContainers>
     <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[string]]></Widget>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[hidetitle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.hidetitle)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
-      <Widget><![CDATA[selectcombo]]></Widget>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
+      <PropertyName><![CDATA[theme]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.shariff.theme)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[default]]></Default>
+      <WidgetConfig><![CDATA[
+        default:%(key.apollo.shariff.theme.grey)|
+        themed:%(key.apollo.shariff.theme.main)|
+        colored:%(key.apollo.shariff.theme.colored)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[orientation]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.shariff.orientation)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[default]]></Default>
+      <WidgetConfig><![CDATA[
+        default:%(key.apollo.shariff.orientation.horizontal)|
+        stacked:%(key.apollo.shariff.orientation.vertical)|
+        stacked-sm:%(key.apollo.shariff.orientation.vertical-sm)|
+        stacked-md:%(key.apollo.shariff.orientation.vertical-md)|
+        stacked-lg:%(key.apollo.shariff.orientation.vertical-lg)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[verbose]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.shariff.text)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[default]]></Default>
+      <WidgetConfig><![CDATA[
+        default:%(key.apollo.shariff.text.notext)|
+        verbose:%(key.apollo.shariff.text.verbose)|
+        verbose-sm:%(key.apollo.shariff.text.verbose-sm)|
+        verbose-md:%(key.apollo.shariff.text.verbose-md)|
+        verbose-lg:%(key.apollo.shariff.text.verbose-lg)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[shape]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.shariff.shape)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[default]]></Default>
+      <WidgetConfig><![CDATA[
+        default:%(key.apollo.shariff.shape.square)|
+        round:%(key.apollo.shariff.shape.round)
+      ]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

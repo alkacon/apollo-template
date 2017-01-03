@@ -53,12 +53,17 @@
                     <c:if test="${value.TextBackgroundColor.isSet}">
                         <c:set var="bg" value="${value.TextBackgroundColor}" />
                     </c:if>
-                    <li style="display: none;" data-masterspeed=" ${value.Delay}"
-                        data-transition="fade" data-slotamount="12" <c:if test="${image.value.Link.isSet}">data-link="<cms:link>${image.value.Link}</cms:link>" ${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?' data-target="_blank"':''}</c:if>>
+                    <li style="display: none;" 
+                        data-masterspeed=" ${value.Delay}"
+                        data-transition="fade" 
+                        data-slotamount="12" 
+                        <c:if test="${image.value.Link.isSet}">data-link="<cms:link>${image.value.Link}</cms:link>" ${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?' data-target="_blank"':''}</c:if>>
                         <apollo:image-simple image="${image}" title="${image.value.SuperTitle.stringValue}" />
                         <c:if test="${image.value.SuperTitle.isSet || image.value.TitleLine1.isSet || image.value.TitleLine2.isSet}">
-                            <div class="hidden-xs caption fade" data-x="${x}"
-                                data-y="${y}" data-easing="easeOutBack"
+                            <div class="hidden-xs caption fade" 
+                                data-x="${x}"
+                                data-y="${y}" 
+                                data-easing="easeOut"
                                 style="background-color: ${bg}; color: ${value.TextColor};">
                                 <c:if test="${image.value.SuperTitle.isSet}">
                                     <h2 style="color: ${value.TextColor};">${image.value.SuperTitle}</h2>

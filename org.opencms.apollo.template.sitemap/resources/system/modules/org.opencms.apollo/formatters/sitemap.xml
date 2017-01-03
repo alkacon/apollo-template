@@ -27,10 +27,11 @@
       <JavascriptInline><![CDATA[sitemap();]]></JavascriptInline>
     </HeadIncludeJs>
     <Setting>
-      <PropertyName><![CDATA[color]]></PropertyName>
-      <DisplayName><![CDATA[Color]]></DisplayName>
-      <Widget><![CDATA[select]]></Widget>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:Red|blue:Blue|blue-light:Light blue|blue-dark:Dark blue|orange:Orange|cyan:Cyan|grey:Grey)]]></WidgetConfig>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.color)]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[cols]]></PropertyName>

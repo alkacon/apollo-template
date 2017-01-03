@@ -15,7 +15,7 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.slider.messages">
 
-<div class="ap-complex-slider" 
+<div class="ap-complex-slider ${cms.element.setting.wrapperclass}" 
         data-sid="${content.file.structureId}" 
         data-delay="${value.Duration}"
         data-height="${value.Height}"

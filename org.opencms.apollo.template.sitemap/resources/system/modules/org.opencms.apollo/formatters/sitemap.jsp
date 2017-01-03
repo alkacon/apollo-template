@@ -8,7 +8,7 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.sitemap.messages">
     <cms:formatter var="content" val="value" rdfa="rdfa">
-        <div class="sitemap ${cms.element.setting.color.isEmpty ? '' : 'sitemap-'.concat(cms.element.setting.color) }">
+        <div class="ap-sitemap ${cms.element.setting.wrapperclass}">
             <c:if test="${cms.element.settings.hideTitle ne 'true'}">
                 <div class="headline">
                     <h2 ${rdfa.Title}>${value.Title}</h2>

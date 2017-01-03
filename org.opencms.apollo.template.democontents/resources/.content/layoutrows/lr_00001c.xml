@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
-  <ApolloTemplateRow language="en">
-    <Title><![CDATA[Area - Section [For Parallax background]]]></Title>
+  <ApolloTemplateRow language="de">
+    <Title><![CDATA[Area - Section [Für Parallax Hintergrund]]]></Title>
     <PreMarkup><![CDATA[<section class="area-section parallax-background $(param)" ?(link)##style="background-image: url('$(link)');"##>]]></PreMarkup>
     <PostMarkup><![CDATA[</section>]]></PostMarkup>
     <Container><![CDATA[area]]></Container>
@@ -14,8 +14,8 @@
       <TagElement><![CDATA[section]]></TagElement>
     </Column>
   </ApolloTemplateRow>
-  <ApolloTemplateRow language="de">
-    <Title><![CDATA[Area - Section [Für Parallax Hintergrund]]]></Title>
+  <ApolloTemplateRow language="en">
+    <Title><![CDATA[Area - Section [For Rows] (Parallax background)]]></Title>
     <PreMarkup><![CDATA[<section class="area-section parallax-background $(param)" ?(link)##style="background-image: url('$(link)');"##>]]></PreMarkup>
     <PostMarkup><![CDATA[</section>]]></PostMarkup>
     <Container><![CDATA[area]]></Container>

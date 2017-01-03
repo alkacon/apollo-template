@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
-  <ApolloTemplateRow language="en">
-    <Title><![CDATA[Area - Section [For colored background]]]></Title>
+  <ApolloTemplateRow language="de">
+    <Title><![CDATA[Area - Section [Für farbigen Hintergrund]]]></Title>
     <PreMarkup><![CDATA[<section class="area-section $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</section>]]></PostMarkup>
     <Container><![CDATA[area]]></Container>
@@ -14,8 +14,8 @@
       <TagElement><![CDATA[section]]></TagElement>
     </Column>
   </ApolloTemplateRow>
-  <ApolloTemplateRow language="de">
-    <Title><![CDATA[Area - Section [Für farbigen Hintergrund]]]></Title>
+  <ApolloTemplateRow language="en">
+    <Title><![CDATA[Area - Section [For Rows]]]></Title>
     <PreMarkup><![CDATA[<section class="area-section $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</section>]]></PostMarkup>
     <Container><![CDATA[area]]></Container>

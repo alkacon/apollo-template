@@ -15,8 +15,20 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.shariff.messages">
 
-<div class="ap-shariff ${cms.element.setting.wrapperclass}">
-    <c:if test="${cms.element.settings.hidetitle ne 'true'}"><div class="headline"><h2 ${rdfa.Title}>${value.Title}</h2></div></c:if>
+<c:set var="csswrapper">
+    ${cms.element.setting.wrapperclass}
+    ${' '}${cms.element.setting.theme}
+    ${' '}${cms.element.setting.orientation}
+    ${' '}${cms.element.setting.verbose}
+    ${' '}${cms.element.setting.shape}
+</c:set>
+
+<div class="ap-social ${fn:replace(csswrapper, 'default', '')}">
+    <c:if test="${cms.element.settings.hidetitle ne 'true'}">
+        <div class="headline">
+            <h2 ${rdfa.Title}>${value.Title}</h2>
+        </div>
+    </c:if>
     <c:set var="services">[&quot;${fn:replace(value.Services, ',', '&quot;,&quot;')}&quot;]</c:set>
     <c:set var="mailAttrs" value="" />
     <c:if test="${fn:contains(value.Services.stringValue, 'mail')}">
@@ -37,23 +49,11 @@
             </c:choose>
         </c:if>
     </c:if>
-    <c:set var="theme">
-        <c:choose>
-            <c:when test="${value.Theme.isSet}">${value.Theme}</c:when>
-            <c:otherwise>standard</c:otherwise>
-        </c:choose>
-    </c:set>
-    <c:set var="orientation">
-        <c:choose>
-            <c:when test="${value.Orientation.isSet}">${value.Orientation}</c:when>
-            <c:otherwise>horizontal</c:otherwise>
-        </c:choose>
-    </c:set>
     <c:set var="lang">en</c:set>
     <c:if test="${fn:contains('bg,de,en,es,fi,hr,hu,ja,ko,no,pl,pt,ro,ru,sk,sl,sr,sv,tr,zh', cms.locale)}">
         <c:set var="lang">${cms.locale}</c:set>
     </c:if>
-    <div class="shariff" data-services="${services}" data-theme="${theme}" data-orientation="${orientation}" data-lang="${lang}" ${mailAttrs}></div>
+    <div class="shariff" data-services="${services}" data-lang="${lang}" ${mailAttrs}></div>
 </div>
 
 </cms:bundle>

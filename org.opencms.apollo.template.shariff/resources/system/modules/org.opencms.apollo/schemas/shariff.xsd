@@ -16,8 +16,6 @@
 			<xsd:element name="Title" type="OpenCmsString" />
 			<xsd:element name="Services" type="OpenCmsString" />
             <xsd:element name="MailConfig" type="OpenCmsApolloShariffMailConfigChoice" minOccurs="0" />
-			<xsd:element name="Theme" type="OpenCmsString" minOccurs="0" />
-			<xsd:element name="Orientation" type="OpenCmsString" minOccurs="0" />
 			<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
@@ -37,11 +35,7 @@
 			</defaults>
 			<layouts>
 				<layout element="Services" widget="MultiSelectWidget" configuration="twitter:Twitter|facebook:Facebook|googleplus:Google Plus|linkedin:LinkedIn|xing:Xing|whatsapp:Whatsapp|mail:%(key.apollo.shariff.service.mail)" />
-				<layout element="Theme" widget="SelectorWidget" configuration="standard*:%(key.apollo.shariff.theme.standard)|grey:%(key.apollo.shariff.theme.grey)|white:%(key.apollo.shariff.theme.white)" />
-				<layout element="Orientation" widget="SelectorWidget" configuration="horizontal:%(key.apollo.shariff.orientation.horizontal)|vertical:%(key.apollo.shariff.orientation.vertical)" />
 			</layouts>
-			<validationrules/>
-			<relations/>
 			<searchsettings containerPageOnly="true"/>
 		</xsd:appinfo>
 	</xsd:annotation>
