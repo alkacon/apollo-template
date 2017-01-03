@@ -16,15 +16,14 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * Source file: apollo-linksequence.scss
  *
- * apollo-linksequence.scss
- *
+ * Styles related to the "link sequence" element.
  */
 
 .ap-linksequence {
 
     margin-bottom: 20px;
-
 
     ul {
         margin: 0;
@@ -46,7 +45,7 @@
     } 
 }
 
-// head / foot formatted links
+/* Header formatted link sequence */
 
 .ap-linksequence-hf {
 
@@ -67,7 +66,7 @@
             padding-bottom: 15px;
             position: relative;
         }
-    
+
         li.divider {
             border-right: 1px solid $grey;
             font-family: Tahoma;
@@ -77,7 +76,7 @@
             position: relative;
             top: -1px;
         }
-    
+
         li > a, 
         li > a:hover {
             color: $grey-dark;
@@ -86,7 +85,8 @@
         }
     }
 
-    // languages
+    // Language switcher
+
     ul.languages {
         top: 25px;
         left: -5px;

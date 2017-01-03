@@ -16,12 +16,10 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * Source file: apollo-section.scss
  *
- * apollo-section.scss
- *
+ * Syles used by the "content section" element.
  */
-
-// Base styles used by section macro formatters.
 
 .ap-section {
 
@@ -41,11 +39,21 @@
     }
 }
 
+/* Jumbotron formatter */
+
 .ap-section.jumbotron {
 
     background-color: $grey-lighter;
     border-radius: 0;
+
+    // Jumbotron headline.
+    h1, .h1 {
+        line-height: 1.0;
+    }
 }
+
+
+/* Icon box formatter */
 
 .ap-iconbox {
 
@@ -54,7 +62,7 @@
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
-    
+
     *:not(a):not(span) {
         color: $text-light;
     }
@@ -74,6 +82,8 @@
         } 
     }
 }
+
+/* Detail pages */
 
 .ap-detail-page,
 .ap-paragraph {
@@ -117,7 +127,8 @@
     }
 }
 
-// Styles for image descriptions
+/* Image descriptions */
+
 .image-info {
 
     .subtitle {
@@ -141,19 +152,14 @@
     }
 }
 
-// Jumbotron headline.
-.jumbotron h1, .jumbotron .h1 {
-  line-height: 1.0;
-}
 
-// classes to set the gid layout margins
-
-// add margin below the header
+/* Classes to set the gid layout margins */
+/* Add margin below the header */
 .area-head {
     margin-bottom: 20px;
 }
 
-// remove the margins of all sections, usually applied to template rows
+/* Remove the margins of all sections, usually applied to template rows */
 .ap-tile,
 .no-section-margin {
 
@@ -164,13 +170,10 @@
     }
 }
 
-// removing the gutter from selected bootstrap grid elements
-.container-fluid.no-gutter > div {
-    // apply this to a container-fluid in order to remove gutter from the row inside
-    margin-left: $gutter * -1px;
-    margin-right: $gutter * -1px;
-}
-
+/* Apply "no-gutter" to a bootsrap "row" in order to remove the default padding from 
+   the included divs. To be used to create full width screen elements using a structure like this:
+   div.container-fluid > div.row.no-gutter > div.col-xs-12. */
+.no-gutter,
 .row.no-gutter > div {
     padding-left: 0;
     padding-right: 0;

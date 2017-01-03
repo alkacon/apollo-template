@@ -16,12 +16,12 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * Source file:  apollo-sitemap.scss
  *
- * apollo-sitemap.scss
- *
+ * Styles used by the "sitemap" element.
  */
 
-.sitemap {
+.ap-sitemap {
     ul, 
     li {
         margin: 0;
@@ -29,10 +29,10 @@
         list-style: none;
         background: transparent;
     }
-    
+
     ul.row {
         padding-bottom: 10px;
-        
+
         > ul {
             padding-right: 10px;
         }
@@ -43,19 +43,22 @@
         li {
             color: get-text-color($main-theme);
             background: $main-theme;
-            padding: 10px;
             font-weight: bold;
             font-size: 1em; 
             line-height: 1;
+
             &.parent{
+                padding: 10px;
                 cursor: pointer;
             }
 
             a {
+                padding: 10px;
                 color: get-text-color($main-theme);
                 width: 100%;
                 display: block;
                 height: 100%;
+                text-decoration: none;
             }
 
             span {
@@ -77,11 +80,12 @@
         & > ul li {
             color: get-text-color($main-theme-complementary);
             background: $main-theme-complementary;
-            padding: 6px 10px;
+            padding: 0px 10px;
             margin: 0;
             font-weight: normal;
 
             a {
+                padding: 6px 0px;
                 color: get-text-color($main-theme-complementary);
             }
 
@@ -98,9 +102,16 @@
     }
 }
 
-@each $type-name, $bg-color, $highlight-color in $many-colors {
+/* Colored sitemap options */
 
-    .sitemap-#{""+$type-name} {
+@each $type-name, $bg-color, $highlight-color in $reduced-colors {
+
+    $sub-color: lighten($bg-color, 25%);
+    @if (lightness($sub-color) > 95) {
+        $sub-color: darken($bg-color, 25%);
+    }
+
+    .ap-sitemap.color-#{""+$type-name} {
 
         ul > ul {
 
@@ -115,10 +126,19 @@
 
             & > ul li {
                 color: get-text-color(lighten($bg-color, 25%));
-                background: lighten($bg-color, 25%);
+                background: $sub-color;
 
                 a {
-                    color: get-text-color(lighten($bg-color, 25%));
+                    color: get-text-color($sub-color);
+                }
+
+                &:hover {
+                    color: get-text-color($bg-color);
+                    background: $bg-color; 
+    
+                    a {
+                        color: get-text-color($bg-color);
+                    }
                 }
             }
         }

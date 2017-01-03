@@ -27,6 +27,7 @@ var resources = [];
 
 var themeSassSrc = [];
 var themeCssSrc = [];
+var themePostCssSrc = [];
 var themeConcatTasks = [];
 
 var grunt;
@@ -265,7 +266,7 @@ _gruntInitConfig = function() {
                     cwd : buildDir + '01_processed',
                     src : oc.themeCssSrc(),
                     dest : buildDir + '02_postcssed',
-                    ext : '.css'
+                    ext : '.post.css'
                 }]
             },
             // could not come up with a better idea on how to achieve this quickly
@@ -283,7 +284,7 @@ _gruntInitConfig = function() {
                     cwd : buildDir + '01_processed',
                     src : oc.themeCssSrc(),
                     dest : buildDir + '02_postcssed',
-                    ext : '.css'
+                    ext : '.post.css'
                 }]
             }
         },
@@ -301,11 +302,12 @@ _gruntInitConfig = function() {
                 dest: buildDir + '04_final/css/<%= grunt.task.current.args[0] %>.min.css' 
             },
         },
-        
+
         cssmin : {
             options : {
                 advanced: true,  // sometimes setting this to false helps to debug SASS
                 processImport: true,
+                keepSpecialComments: 0,
                 sourceMap: true,
                 sourceMapInlineSources: true,
                 roundingPrecision : -1,
@@ -322,7 +324,7 @@ _gruntInitConfig = function() {
                 files : [{
                     expand : true,
                     cwd : buildDir + '02_postcssed',
-                    src : oc.themeCssSrc(),
+                    src : oc.themePostCssSrc(),
                     dest : moduleDir,
                     ext : '.min.css'
                 }]
@@ -488,6 +490,13 @@ exports.themeCssSrc = function () {
         themeCssSrc[i] = themes[i] + '.css';
     }
     return themeCssSrc;
+}
+
+exports.themePostCssSrc = function () {
+    for (i=0; i<themes.length; i++) {
+        themePostCssSrc[i] = themes[i] + '.post.css';
+    }
+    return themePostCssSrc;
 }
 
 exports.themeConcatTasks = function () {

@@ -68,7 +68,7 @@ var App = function() {
     // Smooth scrolling to anchor links
     function handleSmoothScrolling() {
 
-        jQuery('a[href*="#"]:not([href="#"]):not([data-toggle])')
+        jQuery('a[href*="#"]:not([href="#"]):not([data-toggle]):not([data-slide])')
             .click(function() {
 
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

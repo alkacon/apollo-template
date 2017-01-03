@@ -27,7 +27,7 @@ exports.cssSrc = [
     mf + 'sky-forms-pro/skyforms/custom/custom-sky-forms.css',
     mf + 'photoswipe/photoswipe.css',
     mf + 'photoswipe/default-skin/default-skin.css',
-    mf + 'shariff/shariff.min.css',
+//    mf + 'shariff/shariff.min.css',
 ];
 
 exports.jsSrc = [

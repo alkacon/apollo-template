@@ -16,9 +16,9 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * Source file: apollo-navigation.scss
  *
- * apollo-navigation.scss
- *
+ * Styles for the header, footer and side navigation.
  */
 
 // Variables
@@ -41,7 +41,8 @@ $nav-toggle-hover:  $main-theme-complementary !default; // show / hide the navig
 
 $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
-// The Apollo header
+/* The Apollo header */
+
 .ap-header {
     z-index: 99;
     background: $nav-header-bg;
@@ -76,12 +77,9 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
                 overflow-y: auto !important;
             }
         }
-    }
 
-
-    // Head background container
-    .head-container {
-        @media (max-width: $screen-sm-max) {
+        // Head background container
+        .head-container {
             // remove the margins from the row for small screens
             // this way the head becomes the same size as the navbar, 
             // which also has the margins removed.
@@ -103,20 +101,16 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     .head-navbar {
         border-bottom: solid 2px $nav-border;
         pointer-events: none;
+    }
 
-        @media (min-width: $screen-md-min) {
+    @media (min-width: $screen-md-min) {
+        .head-navbar {
             // pull the nav above the head by default
             margin-top: -40px;
         }
-    }
 
-    .head-inline {
-
-    }
-
-    .head-nopull {
-        // optional css wrapper to prevent pulling the nav above the head-bg
-        @media (min-width: $screen-md-min) {
+        .head-nopull {
+            // optional css wrapper to prevent pulling the nav above the head-bg
             .head-navbar {
                 margin-top: 0;
             }
@@ -171,10 +165,13 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             background:  $nav-toggle-hover;
         }
     }
+}
 
 
-// Responsive navbar
-.navbar-nav {
+/* Responsive navbar */
+
+.ap-header .navbar-nav {
+
     pointer-events: all;
 
     > .active > a {
@@ -384,6 +381,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         // improve some spacing on the search button
         padding-top: 6px;
         padding-bottom: 6px;
+        height: 34px;
     }
 
     @media (min-width: $screen-sm-min){
@@ -415,8 +413,10 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 }
 
 
-// Dropdown menus
-.dropdown-menu {
+/* Dropdown menus in the header */
+
+.ap-header .dropdown-menu {
+
     border: none;
     padding: 0; // see special padding required on first level above
     border-radius: 0;
@@ -532,15 +532,8 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     }
 }
 
+/* Megamenu */
 
-
-
-}
-// end of ap-header
-
-
-
-// Megamenu
 #megamenu-editor {
     .container {
         .ap-header .mega-menu .container {
@@ -560,7 +553,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 }
 
 .mega-menu {
-    
+
     .dropdown {
         position: static;
     }
@@ -621,7 +614,8 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 }
 
 
-// Breadcrumbs
+/* Breadcrumb navigation */
+
 .breadcrumbs {
     overflow: hidden;
     padding: 10px 0 6px;
@@ -687,50 +681,44 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     }
 }
 
-// Footer 
+/* Footer */
 
 .footer {
     padding-top: 20px;
     background: $grey-darker;
-    color: $text-light;
-    p,
-    div,
-    h1,
-    h2,
-    h3,
-    h4 {
-        color: $grey-light;
-        a:not(.btn) {
-            color: $white;
+    color: $grey-light;
 
-            &:hover {
-                color: $grey-lighter;
-            }
+    *:not(a):not(span) {
+        color: $grey-light;
+    }
+
+    a:not(.btn) {
+        color: $white;
+
+        &:hover {
+            color: $grey-lighter;
         }
     }
 
     &.light {
         background: $grey-light;
         color: $grey-dark;
-        p,
-        div,
-        h1,
-        h2,
-        h3,
-        h4 {
-            color: $grey-dark;
-            a:not(.btn) {
-                color: $main-theme;
 
-                &:hover {
-                    color: $main-theme-hover;
-                }
+        *:not(a):not(span) {
+            color: $grey-dark;
+        }
+
+        a:not(.btn) {
+            color:  $main-theme;
+
+            &:hover {
+                color: $main-theme-hover;
             }
         }
     }
 }
 
-// "Back to top" icon on the lower right of display.
+/* "Back to top" icon on the lower right of display */
 
 #topcontrol {
   color: $text-light;
@@ -761,7 +749,8 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 }
 
 
-// Sidebar navigation
+/* Sidebar navigation */
+
 .ap-sidebar-nav {
     margin-bottom: 20px;
 }
@@ -888,4 +877,3 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         border-right: none;
     }
 }
-

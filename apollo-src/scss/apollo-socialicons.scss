@@ -16,15 +16,13 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
- *
- * apollo-socialicons.scss
- *
+ * Source file: apollo-socialicons.scss
+ * 
+ * Styles for the "shariff" and the "disqus" element as well as social networks in general.
  */
 
 // Apollo social icons
 
-$social-links-text-oncolor: $text-light !default;
-$social-links-text-ongrey:  $text-dark !default;
 $social-links-bg:           $grey !default;
 $social-links-size:         20px !default;
 $social-links-margin:       4px !default;
@@ -62,19 +60,35 @@ $social-links:
     (mail, envelope, $color-mail),
     (slideshare, slideshare, $color-slideshare) !default;
 
-// Default social icon style (grey, boxed)
+/**
+ * Suppported social networks with their icons and colors:
+ */
+@each $social-link, $social-icon, $social-color in $social-links {
+/* #{""+$social-link}: .fa-#{""+$social-icon} #{""+$social-color} */
+}
+
+
+/* Default bottom margin */
 
 .ap-disqus,
 .ap-shariff,
-.social-links {
+.ap-social {
+
     margin-bottom: 20px;
 }
 
-.social-links .shariff,
-.social-links {
+
+/* Default social icon style, grey and boxed */
+
+.ap-social {
     list-style: none;
     font-size: 0px;
     padding: 0px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
 
     li {
         display: inline-block;
@@ -84,97 +98,211 @@ $social-links:
         margin-bottom: $social-links-margin;
 
         a {
+            background-color: $social-links-bg;
             width: $social-links-box-height;
             height: $social-links-box-height;
             display: block;
-            text-align: center;
             border: none;
             font-size: $social-links-size;
             line-height: $social-links-box-height;
 
-            .fa {
-                color: $social-links-text-ongrey;
+            * {
+                color: $text-dark;
             }
-            background-color: $social-links-bg;
 
             &:hover {
-                .fa {
-                    color: $social-links-text-oncolor;
+                text-decoration: none;
+                * {
+                    color: $text-light;
                 }
-                background-color: transparent;
             }
         }
     }
-}
-
-// Rules to bend shariff to behave like we want
-
-.social-links .shariff {
 
     .share_text {
         display: none;
+        text-align: left;
+        padding-right: 10px;
+        font-size: $font-content-size;
+        vertical-align: 2px;
     }
 
-    li {
+    .fa {
         width: $social-links-box-height;
-        height: $social-links-box-height;
-
-        .fa {
-            vertical-align: inherit;
-            width: $social-links-box-height;
-        }
+        text-align: center;
     }
 }
 
-// Makes the link icons appear round instead of boxed
 
-.social-links.round .shariff,
-.social-links.round {
+/* Add class 'verbose' to see the 'share' text right to the icons. */
+
+.ap-social.verbose {
+
+    li a {
+        width: initial;
+    }
+
+    .share_text {
+        display: inline;
+    }
+}
+
+
+/* Add class 'round ' for round icons instead of square icons. */
+
+.ap-social.round {
 
     li a {
         border-radius: 100%;
+    }
 
-        :hover {
-            border-radius: 100%;
+    &.verbose {
+        li a {
+            border-radius: 10px;
         }
     }
 }
 
 
-// Social icons grey (default) style
+/* Add class 'stacked' to stack the icons vertically. */
 
-@each $social-link, $social-icon, $social-color in $social-links {
-
-    .social-links .shariff li.#{$social-link} a:hover,
-    .social-links li.#{$social-link} a:hover {
-        background-color: $social-color;
-    }
-
-    .social-links .shariff .#{$social-link} .fa-#{$social-icon} {
-        font-size: $social-links-size;
-        line-height: $social-links-box-height;
+.ap-social.stacked {
+    li {
+        display: list-item;
+        margin-right: 0;
+        a {
+            min-width: initial;
+        }
     }
 }
 
-// Social icons colored style
+// function to calculate width of the verbose icon boxes
+@mixin get-social-size($screen-size) {
+    min-width: floor(($screen-size - 4 * $social-links-margin) / 5);
+}
 
-.social-links.colored .shariff,
-.social-links.colored {
+/**
+ * Responsive adjustmensts:
+ *
+ * Use 'stacked-sm', 'stacked-md' or 'stacked-lg' to start stacking from selected screen with.
+ * Use 'verbose-sm', 'verbose-md' or 'verbose-lg' to show button 'share' text from selected screen with.
+ */
+.ap-social {
+
+    @media (min-width: $screen-sm-min) {
+        &.verbose li a {
+            @include get-social-size($container-sm-useable);
+        }
+        &.verbose-sm {
+            li a {
+                @include get-social-size($container-sm-useable);
+                width: initial;
+            }
+            .share_text {
+                display: inline;
+            }
+        }
+        &.round.verbose-sm li a {
+            border-radius: 10px;
+        }
+        &.stacked-sm li {
+            display: list-item;
+            margin-right: 0;
+            a {
+                min-width: initial;
+            }
+        }
+    }
+
+    @media (min-width: $screen-md-min) {
+        &.verbose li a {
+            @include get-social-size($container-md-useable);
+        }
+        &.verbose-md {
+            li a {
+                @include get-social-size($container-md-useable);
+                width: initial;
+            }
+            .share_text {
+                display: inline;
+            }
+        }
+        &.round.verbose-md li a {
+            border-radius: 10px;
+        }
+        &.stacked-md li {
+            display: list-item;
+            margin-right: 0;
+            a {
+                min-width: initial;
+            }
+        }
+    }
+
+    @media (min-width: $screen-lg-min) {
+        &.verbose li a {
+            @include get-social-size($container-lg-useable);
+        }
+        &.verbose-lg {
+            li a {
+                @include get-social-size($container-lg-useable);
+                width: initial;
+            }
+            .share_text {
+                display: inline;
+            }
+        }
+        &.round.verbose-lg li a {
+            border-radius: 10px;
+        }
+        &.stacked-lg li {
+            display: list-item;
+            margin-right: 0;
+            a {
+                min-width: initial;
+            }
+        }
+    }
+}
+
+
+/* Social icons default style is grey and colored on hover */
+
+@each $social-link, $social-icon, $social-color in $social-links {
+
+    .ap-social li.#{$social-link} a {
+        &:hover {
+            background-color: $social-color;
+        }
+    }
+}
+
+
+/*  Add class 'themed' to use the main theme color for the icons */
+
+.ap-social.themed li a {
+    background-color: $main-theme;
+    * {
+        color: get-text-color($main-theme);
+    }
+}
+
+
+/* Add class 'colored' for individually colored icons */
+
+.ap-social.colored {
+
+    li a * {
+        color: $text-light;
+    }
 
     @each $social-link, $social-icon, $social-color in $social-links {
 
-        li.#{$social-link} a,
         li.#{$social-link} a {
             background-color: $social-color;
-            .fa {
-                color: $social-links-text-oncolor;
-            }
 
             &:hover {
                 background-color: saturate(lighten($social-color, 10%), 20%);
-                .fa {
-                    color: $grey-lighter;
-                }
             }
         }
     }
