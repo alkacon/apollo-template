@@ -10,9 +10,9 @@
 <div class="mb-10"><input type="password" name="pw" placeholder="Pick a password" class="form-control input-sm"/></div>
 <div class="mb-10"><input type="password" name="pw-conf" placeholder="Confirm password" class="form-control input-sm"/></div>
 <div class="mb-10">
-<button type="submit" class="btn-u">Subscribe</button>
+<button type="submit" class="btn">Subscribe</button>
 </div>
-<div class="alert alert-info fade in"><p>Connection to the internet is required for subscription.</p></div>
+<div class="text-grey"><p>Connection to the internet is required for subscription.</p></div>
 </form>]]></content>
     </Code>
   </ApolloFlexibleElement>

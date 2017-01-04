@@ -1,4 +1,3 @@
-apollo.layoutrow.default.Title=Neue Layout-Zeile
 apollo.row.blocked=GESPERRT
 apollo.row.columns.editor.developer=Template Entwickler
 apollo.row.columns.editor.editor=Redakteur
@@ -13,6 +12,8 @@ apollo.row.for=Für\:
 apollo.row.headline.detailonlycontainer=Zur Info\: Diese Layout-Zeile wird nur auf Typen Detailseiten angezeigt.
 apollo.row.headline.emptycontainer=Leerer Container
 apollo.row.in=In\:
+apollo.row.modelinfo.copygroup=Kopiervorlagen-Gruppe
+apollo.row.modelinfo.reusegroup=Wiederverwendete Gruppe
 apollo.row.restricted=Begrenzt
 apollo.row.unlimited=Unbegrenzt
 label.ApolloRowColumn.Count=Max. Elemente\n

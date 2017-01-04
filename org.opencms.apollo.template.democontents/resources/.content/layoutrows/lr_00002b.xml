@@ -3,7 +3,7 @@
 <ApolloTemplateRows xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/layoutrow.xsd">
   <ApolloTemplateRow language="de">
     <Title><![CDATA[Segment [Für Footer / Fußbereich]]]></Title>
-    <PreMarkup><![CDATA[<footer class="area-foot footer $(param)">]]></PreMarkup>
+    <PreMarkup><![CDATA[<footer class="area-foot $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</footer>]]></PostMarkup>
     <Container><![CDATA[area]]></Container>
     <Column>
@@ -15,7 +15,7 @@
   </ApolloTemplateRow>
   <ApolloTemplateRow language="en">
     <Title><![CDATA[Area - Footer [For Rows]]]></Title>
-    <PreMarkup><![CDATA[<footer class="area-foot footer $(param)">]]></PreMarkup>
+    <PreMarkup><![CDATA[<footer class="area-foot $(param)">]]></PreMarkup>
     <PostMarkup><![CDATA[</footer>]]></PostMarkup>
     <Container><![CDATA[area]]></Container>
     <Column>

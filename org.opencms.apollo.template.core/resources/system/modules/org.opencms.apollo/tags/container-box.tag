@@ -29,7 +29,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
-<fmt:setLocale value="${cms.locale}" />
+<fmt:setLocale value="${cms.workplaceLocale}" />
 <cms:bundle basename="org.opencms.apollo.template.schemas.row">
 
 <c:choose>
@@ -72,7 +72,7 @@
     <c:set var="parentType" value="${cms.parentContainers[cms.container.parentInstanceId].type}" />
 </c:if>
 
-<div class="ap-container-${variant}${(empty cms.container.type) ? ' mh-20' : ''}">
+<div id="ap-container" class="box-${variant}${(empty cms.container.type) ? ' mh-20' : ''}">
   <div class="head">
     <c:choose>
       <c:when test="${boxType == 'detail-placeholder'}">
@@ -119,24 +119,20 @@
 <c:when test="${(boxType == 'model-start') && cms.modelGroupElement }">
 <%-- Use case 2: Model box start --%>
 
-<c:set var="modelTitle">${label}</c:set>
-<c:if test="${not empty cms.element.setting.model_group_title}">
-  <c:set var="modelTitle">${cms.element.setting.model_group_title}</c:set>
-</c:if>
-
-<c:out value='<div class="ap-modelinfo">' escapeXml='false' />    
-
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="alert alert-info" role="alert">
-        <button type="button" class="close" data-dismiss="alert">
-            <span aria-hidden="true">&times;</span>
-            <span class="sr-only">Close</span>
-        </button>
-        <strong>Model:</strong> <em>${modelTitle}</em><br>
-        <strong>Description:</strong> ${cms.element.setting.model_group_description}
-      </div>
-    </div>
+<c:out value='<div id="ap-modelinfo-border">' escapeXml='false' />    
+  <div id="ap-modelinfo">
+        <div class="head">
+            <cms:property name="Title" />
+            <c:choose>
+                <c:when test="${cms.element.setting.use_as_copy_model == 'true'}">
+                    <div class="ap-label-developer"><fmt:message key="apollo.row.modelinfo.copygroup"/></div>
+                </c:when>
+                <c:otherwise>
+                    <div class="ap-label-author"><fmt:message key="apollo.row.modelinfo.reusegroup"/></div>
+                </c:otherwise>
+            </c:choose>
+        </div>
+        <div class="text"><cms:property name="Description" /></div>
   </div>
   <%-- Last div is deliberately not closed, it has to be closed by using "model-end" (see below) --%>
 

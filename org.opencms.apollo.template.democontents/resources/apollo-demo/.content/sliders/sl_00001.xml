@@ -9,6 +9,7 @@
     <ShowNavButtons>false</ShowNavButtons>
     <ShowPlayButton>false</ShowPlayButton>
     <TextColor>#FFFFFF</TextColor>
+    <TextBackgroundColor>#555555</TextBackgroundColor>
     <ImageHeight><![CDATA[277]]></ImageHeight>
     <Image>
       <Uri>
@@ -23,8 +24,8 @@
           <uuid>b7e67102-6049-11e5-9199-0242ac11002b</uuid>
         </link>
       </Link>
-      <SuperTitle/>
-      <TitleLine1><![CDATA[Easy to use]]></TitleLine1>
+      <SuperTitle><![CDATA[Easy to use]]></SuperTitle>
+      <TitleLine1/>
       <TitleLine2/>
     </Image>
     <Image>
@@ -34,8 +35,8 @@
           <uuid>8ac494fd-635f-11e5-81df-0242ac11002b</uuid>
         </link>
       </Uri>
-      <SuperTitle/>
-      <TitleLine1><![CDATA[Full control]]></TitleLine1>
+      <SuperTitle><![CDATA[Full control]]></SuperTitle>
+      <TitleLine1/>
       <TitleLine2/>
     </Image>
     <Image>
@@ -45,8 +46,8 @@
           <uuid>c56a66cc-4705-11e3-8417-000c29d28104</uuid>
         </link>
       </Uri>
-      <SuperTitle/>
-      <TitleLine1><![CDATA[Great features]]></TitleLine1>
+      <SuperTitle><![CDATA[Great features]]></SuperTitle>
+      <TitleLine1/>
       <TitleLine2/>
     </Image>
     <Image>
@@ -56,8 +57,8 @@
           <uuid>b6b933a4-4785-11e3-ba23-000c29d28104</uuid>
         </link>
       </Uri>
-      <SuperTitle/>
-      <TitleLine1><![CDATA[Simple and intuitive]]></TitleLine1>
+      <SuperTitle><![CDATA[Simple and intuitive]]></SuperTitle>
+      <TitleLine1/>
       <TitleLine2/>
     </Image>
   </ApolloSlider>

@@ -24,7 +24,7 @@
     <c:when test="${cms.element.inMemoryOnly}">
         <fmt:setLocale value="${cms.locale}" />
         <cms:bundle basename="org.opencms.apollo.template.core.messages">
-            <div class="ap-edit-info-new">
+            <div id="ap-edit-info" class="box-new">
                 <div class="head">
                     <fmt:message key="apollo.core.editor.new">
                         <fmt:param><cms:label>fileicon.${cms.element.resourceTypeName}</cms:label></fmt:param>
@@ -41,7 +41,7 @@
         <fmt:setLocale value="${cms.locale}" />
         <cms:bundle basename="org.opencms.apollo.template.core.messages">
         <cms:formatter var="content" val="value">
-            <div class="ap-edit-info-reload">
+            <div id="ap-edit-info" class="box-reload">
                 ${cms.reloadMarker}
                 <div class="head">
                     <fmt:message key="apollo.core.editor.reload" />

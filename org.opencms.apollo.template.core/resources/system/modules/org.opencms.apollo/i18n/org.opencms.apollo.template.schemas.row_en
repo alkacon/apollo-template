@@ -1,4 +1,3 @@
-apollo.layoutrow.default.Title=New layout row
 apollo.row.blocked=BLOCKED
 apollo.row.columns.editor.developer=Template Developer
 apollo.row.columns.editor.editor=Editor
@@ -13,6 +12,8 @@ apollo.row.for=For\:
 apollo.row.headline.detailonlycontainer=Please note\: This layout row is only shown on type detail pages.
 apollo.row.headline.emptycontainer=Empty Container
 apollo.row.in=In\:
+apollo.row.modelinfo.copygroup=Copy group
+apollo.row.modelinfo.reusegroup=Reuse group
 apollo.row.restricted=Restricted
 apollo.row.unlimited=Unlimited
 label.ApolloRowColumn.Count=Max. Elements

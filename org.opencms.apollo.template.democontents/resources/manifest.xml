@@ -8577,6 +8577,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/contentsections/cs_00116.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00116.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>e904741b-d292-11e6-bfb4-0242ac11002b</uuidstructure>
+			<uuidresource>e904741c-d292-11e6-bfb4-0242ac11002b</uuidresource>
+			<datecreated>Wed, 04 Jan 2017 15:31:49 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tiles and Squares: Test Square]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/events</destination>
 			<type>folder</type>
 			<uuidstructure>ae8e34f8-5b98-11e5-9eb7-0242ac11002b</uuidstructure>
@@ -10708,6 +10725,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<name>search.exclude</name>
 					<value><![CDATA[true]]></value>
 				</property>
+				<property>
+					<name>template-elements</name>
+					<value><![CDATA[use_as_copy_model]]></value>
+				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
@@ -12728,7 +12749,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>NavPos</name>
-					<value><![CDATA[0.125]]></value>
+					<value><![CDATA[0.03125]]></value>
 				</property>
 				<property>
 					<name>NavText</name>
@@ -12754,6 +12775,46 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Test page]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/new-pages/tiles-and-squares</destination>
+			<type>folder</type>
+			<uuidstructure>7f05bf82-d292-11e6-bfb4-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 04 Jan 2017 15:28:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.0625]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Tiles and Squares]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tiles and Squares]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/new-pages/tiles-and-squares/index.html</source>
+			<destination>apollo-demo/new-pages/tiles-and-squares/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>7f168867-d292-11e6-bfb4-0242ac11002b</uuidstructure>
+			<uuidresource>7f168868-d292-11e6-bfb4-0242ac11002b</uuidresource>
+			<datecreated>Wed, 04 Jan 2017 15:28:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tiles and Squares]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -16140,7 +16201,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link to: /overview/]]></value>
+					<value><![CDATA[Link to: /sites/default/overview/]]></value>
 				</property>
 				<property>
 					<name>locale-available</name>

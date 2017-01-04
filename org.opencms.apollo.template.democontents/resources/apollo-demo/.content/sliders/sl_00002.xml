@@ -9,6 +9,7 @@
     <ShowNavButtons>false</ShowNavButtons>
     <ShowPlayButton>false</ShowPlayButton>
     <TextColor>#FFFFFF</TextColor>
+    <TextBackgroundColor>#555555</TextBackgroundColor>
     <ImageHeight><![CDATA[277]]></ImageHeight>
     <Image>
       <Uri>
@@ -63,6 +64,7 @@
     <ShowNavButtons>false</ShowNavButtons>
     <ShowPlayButton>false</ShowPlayButton>
     <TextColor>#FFFFFF</TextColor>
+    <TextBackgroundColor>#555555</TextBackgroundColor>
     <ImageHeight><![CDATA[277]]></ImageHeight>
     <Image>
       <Uri>

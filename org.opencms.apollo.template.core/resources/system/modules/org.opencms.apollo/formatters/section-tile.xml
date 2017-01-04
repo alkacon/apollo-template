@@ -26,8 +26,13 @@
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
-      <Widget><![CDATA[selectcombo]]></Widget>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
+      <Widget><![CDATA[string]]></Widget>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[innerwrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[Inner %(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[string]]></Widget>
     </Setting>
   </NewFormatter>
 </NewFormatters>

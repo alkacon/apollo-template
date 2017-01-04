@@ -44,11 +44,11 @@
                     <c:set var="copyEmpty">${empty copyright or not showcopyright}</c:set>
 
                     <div class="${css} comein zoom">
-                        <a class="content image-gallery" 
+                        <a class="image-gallery" 
                            href="${imagesrc}" 
                            onclick="openGallery(event, ${status.index+count*(page-1)})" 
                            title="${not titleEmpty ? title : ''}${titleEmpty or copyEmpty  ? '' : ' '}${not copyEmpty ? copyright : ''}"> 
-                            <span class="ap-square-section" style="background-image:url('${imagesrc}');">
+                            <span class="content" style="background-image:url('${imagesrc}');">
                                 <span class="zoom-overlay">
                                     <span class="zoom-icon">
                                         <i class="fa fa-search"></i>
