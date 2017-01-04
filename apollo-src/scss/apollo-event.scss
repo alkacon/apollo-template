@@ -16,12 +16,15 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * Source file: apollo-event.scss
  *
- * apollo-event.scss
- *
+ * Styles for the "Evemnt" element
  */
 
 $calendar-sheet-border: $grey-light !default;
+
+
+/* Event teaser with calender sheet */
 
 .ap-event-teaser {
 
@@ -43,6 +46,8 @@ $calendar-sheet-border: $grey-light !default;
         }
     }
 }
+
+/* Calendar sheet base */
 
 .calendar-sheet {
     min-width:  90px;
@@ -69,7 +74,9 @@ $calendar-sheet-border: $grey-light !default;
     }
 }
 
-// colored calendar sheets
+
+/* Colored calendar sheets */
+
 @each $type-name, $bg-color, $highlight-color in $reduced-colors {
 
     .color-#{""+$type-name} {

@@ -16,9 +16,11 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * Source file: apollo-list.scss
  *
- * apollo-list.scss
- *
+ * Styles used by the "List of contents" element.
+ * Some of these styles are also used by the elements loadable form the list,
+ * e.g. Blog, Event, Faq, Job etc.
  */
 
 $list-border-color:     $grey-light !default;
@@ -26,7 +28,9 @@ $list-border-color:     $grey-light !default;
 $pagination-text:       $grey-darker !default;
 $pagination-border:     $grey-light !default;
 
-// list content
+
+/* Main list content */
+
 .ap-list-content {
     margin-bottom: 20px;
 
@@ -35,7 +39,9 @@ $pagination-border:     $grey-light !default;
     }
 }
 
-// list filter menu
+
+/* List filter menu */
+
 .ap-list-filters {
 
     .filterbox {
@@ -134,7 +140,7 @@ $pagination-border:     $grey-light !default;
 }
 
 
-// Override some bootstrap defaults
+/* Override some bootstrap defaults for the dropdown menu */
 
 .dropdown-menu {
     padding: 0;
@@ -164,7 +170,8 @@ $pagination-border:     $grey-light !default;
 }
 
 
-// list facet / sort options
+/* List facet / sort options */
+
 .ap-list-options {
 
     .list-option {
@@ -182,7 +189,8 @@ $pagination-border:     $grey-light !default;
 }
 
 
-// list buttons
+/* List button styling */
+
 .ap-disqus, // also used for disqus function
 .ap-list-filters,
 .ap-list-options {
@@ -196,12 +204,10 @@ $pagination-border:     $grey-light !default;
         }
     }
 
-/*
-    .open .fa-chevron-down:before,
-    .fa-chevron-down.open:before {
-        content: "\f054";
-    }
-*/
+    // .open .fa-chevron-down:before,
+    // .fa-chevron-down.open:before {
+    //     content: "\f054";
+    // }
 
     i.fa,
     span.fa {
@@ -218,7 +224,8 @@ $pagination-border:     $grey-light !default;
 }
 
 
-// compact list items
+/* Compact list items */
+
 .ap-compact {
 
     color: $text-dark;
@@ -248,7 +255,8 @@ $pagination-border:     $grey-light !default;
 }
 
 
-// list pagination
+/* List pagination */
+
 .pagination {
 
     > li > a {
@@ -284,7 +292,7 @@ $pagination-border:     $grey-light !default;
         text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
-        
+
         &:hover {
             color: $text-light;
             background: $main-theme-hover;
@@ -298,7 +306,8 @@ $pagination-border:     $grey-light !default;
 }
 
 
-// coloring of teaser elements, shared with event, blog and other detail formatters 
+/* Colored teaser elements, shared with event, blog and other detail formatters */
+ 
 @each $type-name, $bg-color, $highlight-color in $reduced-colors {
 
     .color-#{""+$type-name} {
@@ -317,12 +326,8 @@ $pagination-border:     $grey-light !default;
         // list pagination
         .pagination {
             > .active {
-                > a,
-                > span,
-                > a:hover,
-                > span:hover,
-                > a:focus,
-                > span:focus {
+                > *,
+                > *:hover {
                   background-color: $bg-color;
                   border-color: $bg-color;
                 }

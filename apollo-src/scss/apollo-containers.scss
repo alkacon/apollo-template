@@ -34,6 +34,7 @@ $ap-col-author:        $blue   !default;
 $ap-col-detail:        $cyan   !default;
 $ap-col-detailonly:    $cyan   !default;
 $ap-col-special2:      $red-light !default;
+$ap-col-modelinfo:     $ap-col-element !default; 
 
 $ap-col-text-label:    $white !default;
 $ap-col-text-small:    #999999 !default;
@@ -64,23 +65,18 @@ $ap-container-labels:
 // OpenCms roles and their matching colors  
 $ap-edit-infos:
 (
-    (new, $ap-col-row),         
-    (reload, $ap-col-area),
-    (message, $ap-col-segment),
+    (new, $blue-light),
+    (reload, $red-dark),
+    (message, $orange),
 ) !default; 
 
-/* Basic definitions */
+// Basic definitions
 
-%ap-container {
+%ap-infobox-base {
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     text-align: center;
     overflow: hidden; 
     white-space: normal;
-    border-radius: 10px;  
-    -webkit-border-radius: 10px;
-    color: $text-dark;
     min-height: 100px;
 
     .head  {
@@ -93,18 +89,85 @@ $ap-edit-infos:
         margin: 5px;
         font-size: 14px;
         line-height: 1.2;
+    }
+}
+
+
+%ap-infobox-round {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#ap-container {
+    @extend %ap-infobox-base,%ap-infobox-round;
+
+    .head  {
+        color: $text-dark;
+    }
+
+    .text {
         color: $ap-col-text-small;
         text-transform: capitalize;
     }
-}
 
-%ap-edit-info {
-    @extend %ap-container;
-
-    .text {
-        text-transform: none;
+    .small {
+        color: $ap-col-text-small;
     }
 }
+
+#ap-edit-info {
+    @extend %ap-infobox-base,%ap-infobox-round;
+
+    .head,
+    .text,
+    .small {
+        color: $text-light;
+    }
+}
+
+/* Empty container markers */
+
+@each $type-name, $bg-color in $ap-container-types {
+    #ap-container.box-#{""+$type-name} {
+
+        background-color: rgba($bg-color, 0.75);
+    }
+}
+
+
+/* Page information markers (new element, page reload) */
+
+@each $type-name, $bg-color in $ap-edit-infos {
+    #ap-edit-info.box-#{""+$type-name} {
+
+        background-color: $bg-color;
+    }
+}
+
+
+/* Model group marker */
+
+#ap-modelinfo-border {
+    border: 4px solid $ap-col-element;
+    padding: 0px;
+}
+
+#ap-modelinfo {
+    @extend %ap-infobox-base;
+
+    background-color: rgba($ap-col-modelinfo, 0.75);
+    .head  {
+        color: $text-dark;
+    }
+    .text,
+    .small {
+        color: $ap-col-text-small;
+    }
+}
+
+/* Label colors */
 
 %ap-label {
     display: inline;
@@ -115,49 +178,15 @@ $ap-edit-infos:
     padding: 2px 5px;
     margin-left: 5px;
     border-radius: 5px;
-    -webkit-border-radius: 5px;
     white-space: nowrap;
     color: $ap-col-text-label;
     text-transform: uppercase;
-} 
-
-/* Empty container markers */
-
-@each $type-name, $bg-color in $ap-container-types {
-    .ap-container-#{""+$type-name} {
-        @extend %ap-container;
-
-        background-color: rgba($bg-color, 0.75);
-    }
 }
-
-/* Labels colors */
 
 @each $role-name, $label-color in $ap-container-labels { 
     .ap-label-#{""+$role-name} {
         @extend %ap-label;
 
         background-color: $label-color;
-    }
-}
-
-/* Page information markers */
-
-@each $type-name, $bg-color in $ap-edit-infos {
-    .ap-edit-info-#{""+$type-name} {
-        @extend %ap-edit-info;
-
-        background-color: $bg-color;
-    }
-}
-
-/* Model group markers */
-
-.ap-modelinfo {
-    border: 4px solid $ap-col-border;
-    padding: 0px;
-
-    .alert {
-        margin: 0;
     }
 }

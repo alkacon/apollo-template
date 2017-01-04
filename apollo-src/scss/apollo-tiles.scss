@@ -16,9 +16,10 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * Source file: apollo-tiles.scss
  *
- * apollo-tiles.scss
- *
+ * Styles used for floating tiles and squares.
+ * Used e.g. by the image gallery.
  */
 
 // Apollo tiles and squares
@@ -28,17 +29,11 @@ $ti-margin:     0 !default;
 
 // ALL columns: 1         2       3       4       5           6      8           10          12
 //    $ti-cols: ((12, 12), (6, 6), (4, 4), (3, 3), (2o4, 2.4), (2,2), (1o5, 1.5), (1o2, 1.2), (1,1)) !default;
+$ti-cols:       ((4, 4), (3, 3), (2o4, 2.4), (2,2), (1o5, 1.5)) !default;
 
-// REDUCED        4       5           6      8
-$ti-cols:       ((3, 3), (2o4, 2.4), (2,2), (1o5, 1.5)) !default;
-
-$sq-maxCols:    $ti-maxCols !default; 
+$sq-maxCols:    12 !default; 
 $sq-margin:     0 !default;
-$sq-margins:    $spacers !default;
-$sq-cols:       ((12, 12), (6, 6), (4, 4), (3, 3), (2,2)) !default;
-//                1/6            1/4           1/3           1/2          1.5           2
-// $sq-heights: ((0o16, 0.166), (0o25, 0.25), (0o33, 0.332), (0o5, 0.5), (1o5, 1.499), (2, 2)) !default;
-$sq-heights:    ((0o25, 0.25), (0o5, 0.5), (2, 2)) !default;
+$sq-margins:    (2, 4, 5, 10, 20, 25, 50, 100) !default;
 $sq-padding:    20 !default;
 
 // $fix-cols:   (50, 100, 125, 150, 200, 250) !default;
@@ -46,84 +41,132 @@ $fix-cols:      (100, 125, 150, 200) !default;
 
 $sizes:         ("xs", "sm", "md", "lg") !default;
 
-// Squares
+$sq-cols-xs:       ((12, 12), (6, 6)) !default;
+$sq-cols-sm:       ((12, 12), (9, 9), (6, 6), (4, 4), (3, 3)) !default;
+$sq-cols-md:       ((12, 12), (9, 9), (6, 6), (4, 4), (3, 3), (2,2)) !default;
+$sq-cols-lg:       ((12, 12), (9, 9), (6, 6), (4, 4), (3, 3), (2,2)) !default;
 
-// For the basics of this square tile solution, see
-// http://stackoverflow.com/questions/20456694/grid-of-responsive-squares
+@function get-square-cols($size) {
+  @if ($size == "xs") {
+     @return $sq-cols-xs;
+  } @else if ($size == "sm") {
+     @return $sq-cols-sm;
+  } @else if ($size == "md") {
+     @return $sq-cols-md;
+  } @else {
+     @return $sq-cols-lg;
+  }
+}
+
+//                1/6            1/4           1/3           1/2          1.5           2
+// $sq-heights: ((0o16, 0.166), (0o25, 0.25), (0o33, 0.332), (0o5, 0.5), (1o5, 1.499), (2, 2)) !default;
+
+$sq-heights-xs:    ((99, 99), (2, 2)) !default;
+$sq-heights-sm:    ((0o5, 0.5), (1o5, 1.5), (2, 2)) !default;
+$sq-heights-md:    ((0o5, 0.5), (1o5, 1.5), (2, 2)) !default;
+$sq-heights-lg:    ((0o25, 0.25), (0o5, 0.5), (1o5, 1.5), (2, 2)) !default;
+
+@function get-square-heights($size) {
+  @if ($size == "xs") {
+     @return $sq-heights-xs;
+  } @else if ($size == "sm") {
+     @return $sq-heights-sm;
+  } @else if ($size == "md") {
+     @return $sq-heights-md;
+  } @else {
+     @return $sq-heights-lg;
+  }
+}
+
+/** 
+ * Squares
+ *
+ * For the basics of this square tile solution, see
+ * http://stackoverflow.com/questions/20456694/grid-of-responsive-squares
+ */
+
+/* Base square definition */
 
 .ap-square { 
-   // base definition that is used if no media query matches
-   float: left;
-   position: relative;
-   width: 100%;
-   padding: 0 0 100% 0 !important; // !important because the "padding-bottom: 100%" is what makes the squares sqaure
+
+    float: left;
+    position: relative;
+    width: 100%;
+    padding: 0 0 100% 0 !important; // !important because the "padding-bottom: 100%" is what makes the squares sqaure
 }
 
 @mixin make-ap-square($size)   { 
 
-    @each $i, $sq-i in $sq-cols { 
+    @each $i, $sq-i in get-square-cols($size) { 
         $sq-width: 100%/($sq-maxCols/$sq-i);
 
         .square-#{$size}-#{$i} { 
            // creates the media query square versions like .square-md-5 etc.
-            width: #{$sq-width};
-            padding: 0 0 #{$sq-width} 0 !important;
+            width: $sq-width;
+            padding-bottom: $sq-width !important;
 
-            @each $h, $sq-h in $sq-heights {             
-
-                &-h-#{$h} { 
-                    // allows adjustmets of square height 
-                    width: #{$sq-width};                          
-                    padding: 0 0 #{$sq-width * $sq-h} 0 !important;            
+            @each $h, $sq-h in get-square-heights($size) {
+                @if ($h != 99) {
+                    &-h-#{$h} { 
+                        // allows adjustmets of square height 
+                        width: $sq-width; 
+                        padding-bottom: #{$sq-width * $sq-h} !important;
+                    }
                 }
             }
         }
-    }  
+    }
 }
 
-.ap-square .ap-square-section { 
-    // required inner square class, the "position: absolute" does the trick 
+
+/* Required inner square class, the "position: absolute" does the trick */
+
+.ap-square .content { 
+
     position: absolute !important; // !important because otherwise OpenCms ADE will mix up the grid
     height: 100%;
     width: 100%;
     margin: 0;
+    overflow: hidden;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
+/* Allows to set the margin in the squares */
+
 @each $m in $sq-margins  { 
-    // allows to set the margin between squares
-    .ap-square.square-m-#{$m} .ap-square-section {
+    .ap-square.square-m-#{$m} .content {
         height: calc(100% - #{$m * 2}px);
         width:  calc(100% - #{$m * 2}px);
         margin: #{$m}px;
     }
 }
 
-.ap-sq-square { 
-    // ensure we can have variable padding squares with hidden overflow
-    width: 100%; 
-    height: 100%;
-    overflow: hidden;    
-}
 
-.ap-sq-table { 
-    // table needed for aligment of content inside square
+/* Table needed for aligment of content inside square */
+
+.ap-square .table { 
+
     display: table;  
     height: 100%;
     width: 100%;
 }
 
-.ap-sq-cell { 
-    // table cell needed for aligment of content inside square
+
+/* Table cell needed for aligment of content inside square */
+
+.ap-square .table-cell { 
+
     display: table-cell;
     vertical-align: middle;
     height: 100%;
     width: 100%;
 }
 
-// Tiles
+
+/* Tile basic definition */
 
 .ap-tile { 
     float: left;
@@ -152,19 +195,20 @@ $sizes:         ("xs", "sm", "md", "lg") !default;
     }
 }
 
-// Fixed with columns
-// I know that this is not what Bootstrap is about, but hey who cares ;)
+
+/* Fixed with columns base */
 
 .fixcol { 
     float: left;
     position: relative;
     min-height: 1px;
-    padding-right: #{$gutter}px;
-    padding-left: #{$gutter}px;
+    padding-right: #{$gutter};
+    padding-left: #{$gutter};
     width: 100%;
 }
 
-// fixed with column base instance
+
+// extend the fixed with column as base responsive instance
 @each $i in $fix-cols { 
     @each $size in $sizes {
         .fixcol-#{$size}-#{$i},
@@ -176,40 +220,65 @@ $sizes:         ("xs", "sm", "md", "lg") !default;
 
 // creates a fixed with column
 @mixin make-fixcol($size)   { 
-    @each $i in $fix-cols { 
+    @each $i in $fix-cols {
+        $fixsize: ($i + 2 * $gutter);
         // the fixed with column
         .fixcol-#{$size}-#{$i} { 
             // add the gutter so that the column pixel size is what the class says
-            width: calc(#{$i}px + 2 * #{$gutter}px); 
+            width: $fixsize; 
         }
         // if fixed size ($i) is 0 we use the default 100%, otherwise the gutter would be substracted
         @if ($i > 0) { 
             // the rest of the column
             .fixcol-#{$size}-#{$i}-rest {
-                width: calc(100% - (#{$i}px + 2 * #{$gutter}px));
+                width: calc(100% - #{$fixsize});
             }
         }
     }
 }
 
+
+/* xs screen size squares */
 @include make-ap-square(xs);
+
+/* xs screen size tiles */
 @include make-ap-tile(xs);
+
+/* xs screen size fixcols */
 @include make-fixcol(xs);
 
 @media (min-width: $screen-sm-min){
+
+    /* sm screen size squares */
     @include make-ap-square(sm);
+
+    /* sm screen size tiles squares */
     @include make-ap-tile(sm);
+
+    /* sm screen size fixcols */
     @include make-fixcol(sm);
 }
 
 @media (min-width: $screen-md-min){
+
+    /* md screen size squares */
     @include make-ap-square(md);
+
+    /* md screen size tiles */
     @include make-ap-tile(md);
+
+    /* md screen size fixcols */
     @include make-fixcol(md);
 }
 
 @media (min-width: $screen-lg-min){
+
+    /* lg screen size squares */
     @include make-ap-square(lg);
+
+    /* lg screen size tiles */
     @include make-ap-tile(lg);
+
+    /* lg screen size fixcols */
     @include make-fixcol(lg);
 }

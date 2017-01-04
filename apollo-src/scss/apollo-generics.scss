@@ -53,16 +53,8 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     }
 }
 
-// Text colors
-@each $color-name, $text-color in $text-colors {
+/* Link text colors */
 
-    .text-#{""+$color-name} {
-
-        @include set-text-color($text-color);
-    }
-}
-
-// Link color presets
 @each $color-name, $text-color, $highlight-color in $link-colors {
 
     .links-#{""+$color-name} {
@@ -76,7 +68,9 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     }
 }
 
-// Colored backgrounds
+
+/* Colored backgrounds */
+
 @each $color-name, $bg-color, $highlight-color in $bg-colors {
 
     .bc-#{""+$color-name} {
@@ -105,7 +99,16 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     }
 }
 
-// Font and text adjustments
+
+/* Colored text */
+
+@each $color-name, $text-color in $text-colors {
+
+    .text-#{""+$color-name} {
+
+        @include set-text-color($text-color);
+    }
+}
 
 @each $color-name, $text-color, $highlight-color in $font-colors {
 
@@ -115,12 +118,18 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     }
 }
 
+
+/* Font sizes */
+
 @each $fontsize in $font-sizes {
 
     .fs-#{$fontsize} {
         font-size: #{$fontsize}px;
     } 
 }
+
+
+/* Line heights */
 
 @each $lineheight in $line-heights {
 
@@ -129,7 +138,8 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     } 
 }
 
-// Text alignment
+
+/* Text alignment */
 
 @each $align in (left, center, right) {
 
@@ -144,36 +154,37 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     vertical-align: middle;
 }
 
-
-// hide overflow
-.overflow-hidden {
-    overflow: hidden;
-}
-
-// Borders
+/* Border base */
 
 @each $radius-name, $radius in $border-radiuses {     
 
     .bo-radius-#{""+$radius-name} {
-        border: 0 solid;     
+        border: 0 solid;
         border-radius: $radius;
     }
-} 
+}
+
+/* Borders with round corners */
 
 @each $line-size in $border-sizes {    
 
     .bo-#{""+$line-size}  {
         border: #{$line-size}px solid $border-default-color;
-        padding: 20px;       
-    }        
+        padding: 20px;
+    }
 }
+
+
+/* Colored borders */
 
 @each $color-name, $bg-color, $highlight-color in $reduced-colors {
 
     .bo-#{""+$color-name}  {
-        border-color: $bg-color;      
-    }    
+        border-color: $bg-color;
+    }
 }
+
+/* Borders styles */
 
 @each $border-style in $border-styles {
 
@@ -182,32 +193,36 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     }
 }
 
+
+/* Borders positions */
+
 @each $position in $border-positions {
 
     @each $line-size in $border-sizes {    
-    
+
         .bo-#{""+$position}-#{""+$line-size}  {
             border-#{$position}: #{$line-size}px solid $border-default-color;
-            padding: 20px;       
-        }        
-    }  
+            padding: 20px;
+        }
+    }
 
     @each $color-name, $bg-color, $highlight-color in $reduced-colors {
-    
+
         .bo-#{""+$position}-#{""+$color-name}  {
-            border-#{$position}-color: $bg-color;      
-        }     
+            border-#{$position}-color: $bg-color;
+        }
     }
-    
+
     @each $border-style in $border-styles {
-    
+
         .bo-#{""+$position}-#{""+$border-style}  {
-            border-#{$position}-style: $border-style;    
-        }        
+            border-#{$position}-style: $border-style;
+        }
     }
 }
 
-// Block display settings
+
+/* Block display settings */
 
 .disp-i {
     display: inline;
@@ -221,7 +236,9 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     display: block;
 }
 
-// Block position settings
+
+/* Block position settings */
+
 .pos-abs {
     position: absolute;
 }
@@ -234,14 +251,22 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     position: static;
 }
 
-// Drop shadow effect
+
+/* Hide overflow */
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+
+/* Drop shadow effect */
 
 .ap-shadow {
     box-shadow: 0 10px 6px -6px $dropshadow;
-    -webkit-box-shadow: 0 10px 6px -6px $dropshadow;
 }
 
-// Margins and paddings
+
+/* Margins and paddings */
 
 @each $space in $margins-paddings {
 

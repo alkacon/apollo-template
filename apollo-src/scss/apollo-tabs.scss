@@ -16,12 +16,10 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
+ * Source file: apollo-tabs.scss
  *
- * apollo-tabs.scss
- *
+ * Styles used by the "Tabs / Accordion" element.
  */
-
-// Apollo tabs and panels 
 
 $tab-text-transform:    none !default;
 $panel-text-transform:  none !default;
@@ -29,7 +27,7 @@ $panel-text-transform:  none !default;
 $panel-border-color:    $grey-light !default;
 $panel-collapsed-bg:    $grey-lighter !default;
 
-// Tabs:
+/* Tabs */
 
 .ap-tab-section {
 
@@ -87,6 +85,8 @@ $panel-collapsed-bg:    $grey-lighter !default;
     }
 }
 
+/* Colored tabs */
+
 @each $color-name, $bg-color, $highlight-color in $reduced-colors {
 
     .color-#{""+$color-name} .ap-tab {
@@ -109,7 +109,7 @@ $panel-collapsed-bg:    $grey-lighter !default;
 }
 
 
-// Panels, reset Bootstrap round corners
+/* General panels, reset some Bootstrap values (also for other elements, not only Accordion) */
 
 .panel-body {
     // panel has it's own margin so remove the bottom margin from the apollo elements
@@ -134,7 +134,8 @@ $panel-collapsed-bg:    $grey-lighter !default;
     border-color: $panel-border-color;
 }
 
-// Colored panels, reset Bootstrap round corners
+
+/* Accordion panels */
 
 .ap-panel.panel-group {
 
@@ -174,6 +175,8 @@ $panel-collapsed-bg:    $grey-lighter !default;
     }
 }
 
+
+/* Colored accordion panels */
 
 @each $type-name, $bg-color, $highlight-color in $reduced-colors {
 

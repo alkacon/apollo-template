@@ -135,7 +135,6 @@ a {
     &:hover {
         color: $main-theme-hover;
         outline: 0 !important;
-        -webkit-transition: all 0.25s;
         transition: all 0.25s;
     }
 }

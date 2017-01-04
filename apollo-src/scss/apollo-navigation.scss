@@ -284,7 +284,6 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
         > .dropdown .dropdown-menu {
             // downslide transition effect
-            -webkit-transition: all 3s;
             transition: all 0.5s ease-in-out;
 
             max-height: 0;
@@ -402,7 +401,6 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         border-top: solid 2px $nav-theme;
         border-bottom: solid 2px $nav-theme;
         z-index: 100;
-        -webkit-box-shadow: 0 6px 12px $nav-shadow;
         box-shadow: 0 6px 12px $nav-shadow;
 
         form {
@@ -495,7 +493,6 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             border-bottom: solid 1px $nav-border;
         }
 
-        -webkit-box-shadow: 0 6px 12px $nav-shadow;
         box-shadow: 0 6px 12px $nav-shadow;
     }
 
@@ -683,7 +680,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
 /* Footer */
 
-.footer {
+.area-foot {
     padding-top: 20px;
     background: $grey-darker;
     color: $grey-light;
@@ -735,7 +732,6 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
 #topcontrol:hover {
   background-color: $main-theme;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
