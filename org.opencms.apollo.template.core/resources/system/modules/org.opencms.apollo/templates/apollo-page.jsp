@@ -97,6 +97,12 @@
         });
     </script>
 
+    <%-- Google Maps API is required by map loading JavaScript --%>
+    <c:set var="googleMapKey"><cms:property name="google.apikey" file="search" default="" /></c:set>
+    <c:if test="${not empty googleMapKey}">
+        <div id="google-map-key" data-key="${googleMapKey}"></div>
+    </c:if>
+
     <%-- include Google Analytics (if required) --%>
     <c:set var="gaprop"><cms:property name="google.analytics" file="search" default="none" /></c:set>
     <c:if test="${cms.requestContext.currentProject.onlineProject && gaprop != 'none'}">
@@ -108,18 +114,6 @@
             ga('create', 'UA-${gaprop}', 'auto');
             ga('set', 'anonymizeIp', true);
             ga('send', 'pageview');
-        </script>
-    </c:if>
-
-    <%-- include Google Maps API (if required) --%>
-    <c:if test="${true}">
-        <c:set var="mapkey"><cms:property name="google.apikey" file="search" default="" /></c:set>
-        <c:set var="mapkeyparam" value="" />
-        <c:if test="${not empty mapkey}">
-            <c:set var="mapkeyparam">&key=${mapkey}</c:set>
-        </c:if>
-        <script async defer
-            src="https://maps.google.com/maps/api/js?callback=initGoogleMaps&language=${cms.locale}${mapkeyparam}">
         </script>
     </c:if>
 
