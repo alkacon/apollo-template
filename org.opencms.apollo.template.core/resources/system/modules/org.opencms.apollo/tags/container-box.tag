@@ -125,10 +125,10 @@
             <cms:property name="Title" />
             <c:choose>
                 <c:when test="${cms.element.setting.use_as_copy_model == 'true'}">
-                    <div class="ap-label-developer"><fmt:message key="apollo.row.modelinfo.copygroup"/></div>
+                    <div class="ap-label-copygroup"><fmt:message key="apollo.row.modelinfo.copygroup"/></div>
                 </c:when>
                 <c:otherwise>
-                    <div class="ap-label-author"><fmt:message key="apollo.row.modelinfo.reusegroup"/></div>
+                    <div class="ap-label-reusegroup"><fmt:message key="apollo.row.modelinfo.reusegroup"/></div>
                 </c:otherwise>
             </c:choose>
         </div>

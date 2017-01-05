@@ -242,7 +242,7 @@
                                                     }' 
                                             />
                                             <c:if test="${not empty highlightSnippet}">
-                                                ${cms:stripHtml(highlightSnippet)}
+                                                ${cms:repairHtml(highlightSnippet)} ...
                                             </c:if>
                                         </c:when>
                                         <c:otherwise>

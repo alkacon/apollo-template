@@ -97,17 +97,30 @@
         });
     </script>
 
+    <%-- include Google Analytics (if required) --%>
     <c:set var="gaprop"><cms:property name="google.analytics" file="search" default="none" /></c:set>
     <c:if test="${cms.requestContext.currentProject.onlineProject && gaprop != 'none'}">
-    <script type="text/javascript">
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-${gaprop}', 'auto');
-        ga('set', 'anonymizeIp', true);
-        ga('send', 'pageview');
-    </script>
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-${gaprop}', 'auto');
+            ga('set', 'anonymizeIp', true);
+            ga('send', 'pageview');
+        </script>
+    </c:if>
+
+    <%-- include Google Maps API (if required) --%>
+    <c:if test="${true}">
+        <c:set var="mapkey"><cms:property name="google.apikey" file="search" default="" /></c:set>
+        <c:set var="mapkeyparam" value="" />
+        <c:if test="${not empty mapkey}">
+            <c:set var="mapkeyparam">&key=${mapkey}</c:set>
+        </c:if>
+        <script async defer
+            src="https://maps.google.com/maps/api/js?callback=initGoogleMaps&language=${cms.locale}${mapkeyparam}">
+        </script>
     </c:if>
 
     <c:set var="afoot"><cms:property name="apollo.template.foot" file="search" default="" /></c:set>

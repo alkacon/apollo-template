@@ -79,6 +79,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/tags/formatter-settings.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/galleryitems.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/headline.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/map.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-simple.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-animated.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-vars.tag"/>
@@ -1712,6 +1713,18 @@
 					<value><![CDATA[Link sequence tag]]></value>
 				</property>
 			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/map.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/map.tag</destination>
+			<type>plain</type>
+			<uuidstructure>d465eb8e-d337-11e6-9c96-0242ac11002b</uuidstructure>
+			<uuidresource>d465eb8f-d337-11e6-9c96-0242ac11002b</uuidresource>
+			<datecreated>Thu, 05 Jan 2017 11:12:22 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
 			<relations/>
 			<accesscontrol/>
 		</file>

@@ -16201,7 +16201,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link to: /sites/default/overview/]]></value>
+					<value><![CDATA[Link to: /overview/]]></value>
 				</property>
 				<property>
 					<name>locale-available</name>

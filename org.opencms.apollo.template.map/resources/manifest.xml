@@ -25,6 +25,8 @@
 		<exportpoints/>
 		<resources>
 			<resource uri="/system/modules/org.opencms.apollo.template.map/"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/map-google.jsp"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/map-google.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/map.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/map.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.map.messages_de"/>
@@ -104,6 +106,40 @@
 			<destination>system/modules/org.opencms.apollo/formatters</destination>
 			<type>folder</type>
 			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/map-google.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/map-google.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>16024f00-d33b-11e6-9c96-0242ac11002b</uuidstructure>
+			<uuidresource>16024f01-d33b-11e6-9c96-0242ac11002b</uuidresource>
+			<datecreated>Thu, 05 Jan 2017 11:35:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/map-google.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/map-google.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>22507c53-d33b-11e6-9c96-0242ac11002b</uuidstructure>
+			<uuidresource>22507c54-d33b-11e6-9c96-0242ac11002b</uuidresource>
+			<datecreated>Thu, 05 Jan 2017 11:36:01 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Google map]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
 		</file>
 		<file>
 			<source>system/modules/org.opencms.apollo/formatters/map.jsp</source>
