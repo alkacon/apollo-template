@@ -21,6 +21,22 @@
  * Google map elements for Apollo.
  */
 
+// this is taken straight from the jQuery docs:
+// http://api.jquery.com/jQuery.getScript/
+jQuery.loadScript = function( url, options ) {
+
+    // Allow user to set any option except for dataType, cache, and url
+    options = $.extend( options || {}, {
+        dataType: "script",
+        cache: true,
+        url: url
+    });
+
+    // Use $.ajax() since it is more flexible than $.getScript
+    // Return the jqXHR object so we can chain callbacks
+    return jQuery.ajax( options );
+};
+
 var __maps = [];
 
 function addMap(mapData) {
@@ -30,6 +46,14 @@ function addMap(mapData) {
 function getMaps() {
     return __maps; 
 }
+
+function loadGoogleMapApi() {
+    var mapKey = ""; // TODO: Grab the key from the #google-map-key div
+    var locale = "en"; // TODO: Grab the locale of the page
+
+    jQuery.loadScript("https://maps.google.com/maps/api/js?callback=initGoogleMaps&language=" + locale);
+}
+
 
 function initGoogleMaps() {
 
@@ -68,7 +92,7 @@ function initGoogleMaps() {
 
 (function( $ ){
 
-    $.fn.initMap = function() {
+    $.fn.initMaps = function() {
         var $this = $(this);
 
         // initialize parallax sections with values from data attributes    
@@ -86,5 +110,7 @@ function initGoogleMaps() {
             }
         });
 
+        // load the Google map API
+        loadGoogleMapApi();
     };
 })(jQuery);

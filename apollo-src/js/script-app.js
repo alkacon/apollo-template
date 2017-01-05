@@ -124,7 +124,7 @@ var App = function() {
         var mapElements = jQuery('.ap-map');
         // console.info("mapElements found: " + mapElements.length);
         if (mapElements.length > 0) {
-            mapElements.initMap();
+            mapElements.initMaps();
         }
     }
 
