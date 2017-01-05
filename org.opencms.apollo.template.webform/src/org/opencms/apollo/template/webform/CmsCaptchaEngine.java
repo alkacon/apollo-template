@@ -124,8 +124,6 @@ public class CmsCaptchaEngine extends ImageCaptchaEngine {
     @Override
     public void setFactories(CaptchaFactory[] arg0) throws CaptchaEngineException {
 
-        // TODO Auto-generated method stub
-
     }
 
     /**

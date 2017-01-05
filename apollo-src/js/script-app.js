@@ -112,11 +112,19 @@ var App = function() {
     function handleParallax() {
 
         var parallaxSections = jQuery('.parallax-background');
-        /*
-        console.info("parallaxBackground sections:" + parallaxSections.length);
-        */
+        // console.info("parallaxSections found: " + parallaxSections.length);
         if ((parallaxSections.length > 0) && !Modernizr.touch) {
             parallaxSections.initParallax();
+        }
+    }
+
+    // Apollo Map sections
+    function handleMaps() {
+
+        var mapElements = jQuery('.ap-map');
+        // console.info("mapElements found: " + mapElements.length);
+        if (mapElements.length > 0) {
+            mapElements.initMap();
         }
     }
 
@@ -143,6 +151,7 @@ var App = function() {
             handleHoverSelector();
             handleSmoothScrolling();
             handleParallax();
+            handleMaps();
             handleSliders();
 
             initLists();

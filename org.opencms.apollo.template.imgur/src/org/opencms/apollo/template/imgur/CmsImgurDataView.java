@@ -271,10 +271,8 @@ public class CmsImgurDataView implements I_CmsDataView {
                                 data2.getJSONArray("images").getJSONObject(0).getString("link"));
                             CmsImgurCache.albumDescription.put(idData.get(j), des);
                         } catch (MalformedURLException e) {
-                            // TODO Auto-generated catch block
                             e.printStackTrace();
                         } catch (IOException e) {
-                            // TODO Auto-generated catch block
                             e.printStackTrace();
                         }
                     } else {

@@ -21,53 +21,35 @@
  * Empty container and other info markers.
  */
 
-$ap-col-area:          #ffc9d2 !default; // "darker light red" 
-$ap-col-segment:       #ffe3e7 !default; // "light red"
-$ap-col-grid:          #ffdac7 !default; // "light red-orange"
-$ap-col-row:           #ffe5bf !default; // "light orange"
-$ap-col-element:       #e8f3f8 !default; // "light steel blue"
-$ap-col-special1:      #effab4 !default; // "light green"
-
-$ap-col-developer:     $red    !default;
-$ap-col-editor:        $orange !default;
-$ap-col-author:        $blue   !default;
-$ap-col-detail:        $cyan   !default;
-$ap-col-detailonly:    $cyan   !default;
-$ap-col-special2:      $red-light !default;
-$ap-col-modelinfo:     $ap-col-element !default; 
-
-$ap-col-text-label:    $white !default;
-$ap-col-text-small:    #999999 !default;
-$ap-col-border:        $grey-light !default; 
-
 // Apollo container types
 $ap-container-types:
 (
-    (area, $ap-col-area),        
-    (segment, $ap-col-segment),        
-    (grid, $ap-col-grid),         
-    (row, $ap-col-row),         
-    (element, $ap-col-element),         
-    (special, $ap-col-special1),
+    (area, #ffc9d2),    // "darker light red" 
+    (segment, #ffe3e7), // "light red"
+    (grid, #ffdac7 ),   // "light red-orange"
+    (row, #ffe5bf),     // "light orange"
+    (element, #e8f3f8), // "light steel blue"
+    (special, #effab4), // "light green"
 ) !default;
 
 // OpenCms roles and their matching colors  
 $ap-container-labels:
 (
-    (developer, $ap-col-developer),         
-    (editor, $ap-col-editor),         
-    (author, $ap-col-author),         
-    (detail, $ap-col-detail),
-    (detailonly, $ap-col-detailonly),         
-    (special, $ap-col-special2),
+    (developer, $red),
+    (editor, $orange),
+    (author, $blue),
+    (detail, $cyan),
+    (detailonly, $cyan),
+    (special, $red-light),
+    (copygroup, $red-light),
+    (reusegroup, $blue-light),
 ) !default; 
 
 // OpenCms roles and their matching colors  
 $ap-edit-infos:
 (
     (new, $blue-light),
-    (reload, $red-dark),
-    (message, $orange),
+    (reload, $red-dark)
 ) !default; 
 
 // Basic definitions
@@ -108,12 +90,12 @@ $ap-edit-infos:
     }
 
     .text {
-        color: $ap-col-text-small;
+        color: $grey;
         text-transform: capitalize;
     }
 
     .small {
-        color: $ap-col-text-small;
+        color: $grey;
     }
 }
 
@@ -150,20 +132,20 @@ $ap-edit-infos:
 /* Model group marker */
 
 #ap-modelinfo-border {
-    border: 4px solid $ap-col-element;
+    border: 4px solid #e8f3f8; // same color as "element"
     padding: 0px;
 }
 
 #ap-modelinfo {
     @extend %ap-infobox-base;
 
-    background-color: rgba($ap-col-modelinfo, 0.75);
+    background-color: rgba(#e8f3f8, 0.75);
     .head  {
         color: $text-dark;
     }
     .text,
     .small {
-        color: $ap-col-text-small;
+        color: $grey;
     }
 }
 
@@ -179,7 +161,7 @@ $ap-edit-infos:
     margin-left: 5px;
     border-radius: 5px;
     white-space: nowrap;
-    color: $ap-col-text-label;
+    color: $white;
     text-transform: uppercase;
 }
 
