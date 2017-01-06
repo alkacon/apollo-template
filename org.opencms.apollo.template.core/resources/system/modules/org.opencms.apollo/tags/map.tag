@@ -1,7 +1,8 @@
 <%@ tag 
     display-name="map"
     trimDirectiveWhitespaces="true" 
-    description="Displays a Google map" %>
+    description="Displays a Google map." %>
+
 
 <%@ attribute name="id" type="java.lang.String" required="true" 
     description="The id the map should use, usually the UID of the element." %>
@@ -26,6 +27,7 @@
 
 <%@ attribute name="coordinates" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" 
     description="This can be a map coordinate point from the Location picker widget." %>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

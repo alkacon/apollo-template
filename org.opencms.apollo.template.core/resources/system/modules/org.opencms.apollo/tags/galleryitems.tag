@@ -1,7 +1,8 @@
 <%@ tag display-name="galleryitems"
   trimDirectiveWhitespaces="true" 
   body-content="empty"
-  description="Searches for images and displays the results with provided searchconfig."%>
+  description="Displays an image gallery based on a content search."%>
+
 
 <%@ attribute name="config" type="java.lang.String" required="true" 
     description="The search configuration string used by the cms:search tag." %>
@@ -21,11 +22,13 @@
 <%@ attribute name="showcopyright" type="java.lang.Boolean" required="false" 
     description="Determines if the copyright text will be shown as tooltip and in the gallery-overlay." %>
 
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo"%>
+
 
 <c:if test="${empty showtitle}"><c:set var="showtitle" value="false" /></c:if>
 

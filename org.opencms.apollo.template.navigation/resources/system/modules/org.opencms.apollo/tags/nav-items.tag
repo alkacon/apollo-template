@@ -3,6 +3,7 @@
     trimDirectiveWhitespaces="true" 
     description="Loads navigation items based on a XML content configuration." %>
 
+
 <%@ attribute name="content" type="org.opencms.jsp.util.CmsJspContentAccessBean" required="true" 
     description="The navigation XML content configuration."%>
 
@@ -18,11 +19,22 @@
 <%@ attribute name="var" type="java.lang.String" required="true" 
     description="The variable name to store the result items in."%>
 
-<%@ variable name-given="navStartLevel" declare="true" description="The start fodler level for the navigation." %>
-<%@ variable name-given="navDepth" declare="true" description="The depth of the navigation." %>
-<%@ variable name-given="navStartFolder" declare="true" description="The start folder of the navigation." %>
-<%@ variable name-given="nav" declare="true" description="The calulated nagivation items." %>
-<%@ variable name-given="nl" declare="true" description="A new line for output using c:out." %>
+
+<%@ variable name-given="navStartLevel" declare="true" 
+    description="The start fodler level for the navigation." %>
+
+<%@ variable name-given="navDepth" declare="true" 
+    description="The depth of the navigation." %>
+
+<%@ variable name-given="navStartFolder" declare="true" 
+    description="The start folder of the navigation." %>
+
+<%@ variable name-given="nav" declare="true" 
+    description="The calulated nagivation items." %>
+
+<%@ variable name-given="nl" declare="true" 
+    description="A new line for output using c:out." %>
+
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>

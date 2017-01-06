@@ -1,25 +1,34 @@
 <%@ tag display-name="list-facetbutton"
   trimDirectiveWhitespaces="true" 
   body-content="empty"
-  description="Generates a facet button for use with AJAX forms."%>
+  description="Generates a facet options dropdown button for the list"%>
+
 
 <%@ attribute name="field" type="java.lang.String" required="true" 
-		description="The name of the solr index field that will be used." %>
+    description="The name of the solr index field that will be used." %>
+
 <%@ attribute name="label" type="java.lang.String" required="false" 
-		description="The label that the button will show." %>
+    description="The label that the button will show." %>
+
 <%@ attribute name="color" type="java.lang.String" required="false" 
-	description="The color of the button." %>
+    description="The color of the button." %>
+
 <%@ attribute name="deselect" type="java.lang.String" required="false" 
-		description="The text on the deselection entry in the list." %>
+    description="The text on the deselection entry in the list." %>
+
 <%@ attribute name="searchconfig" type="java.lang.String" required="false" 
-		description="The configuration string for the search tag." %>
+    description="The configuration string for the search tag." %>
+
 <%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="false" 
-		description="The result of a previous search tag usage." %>
+    description="The result of a previous search tag usage." %>
+
 <%@ attribute name="render" type="java.lang.Boolean" required="false" 
-		description="This boolean decides if the list items will be rendered directly or used through the listItems variable." %>
+    description="This boolean decides if the list items will be rendered directly or used through the listItems variable." %>
+
 
 <%@ variable name-given="listItems" scope="AT_END" declare="true" 
-		description="Stores the resulting list items which can be used for custom facet lists." %>
+    description="Stores the resulting list items which can be used for custom facet lists." %>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
@@ -81,7 +90,7 @@
     <c:set var="facetController" value="${search.controller.fieldFacets.fieldFacetController[categoryFacetField]}" />
     <c:set var="facetResult" value="${search.fieldFacet[categoryFacetField]}" />
     <c:if test="${not empty facetResult and cms:getListSize(facetResult.values) > 0 || field == 'sort' }">
-    
+
         <%-- ################################################################################################################# HEAD ######## --%>
         <c:set var="head">
             <c:out value='<div class="list-option btn-group">' escapeXml='false' />
@@ -90,15 +99,15 @@
                     <span class="pr-5">${buttonLabel}</span>
                     <span class="fa fa-chevron-down"></span>
                 </button>
-                
+
                 <c:out value='<ul class="list-optionlist dropdown-menu dropdown-${buttonColor}">' escapeXml='false' />
-        </c:set>    
+        </c:set>
 
         <c:set var="delimiter" value="|" />
-        
+
         <%-- ################################################################################################################# ITEMS ####### --%>
         <c:set var="items">
-                
+
             <%-- ##### Default option ##### --%>
             <li ${cms:getListSize(facetController.state.checkedEntries) == 0?'class="active"' : ""}>
                 <a href="javascript:void(0)" 
@@ -106,18 +115,17 @@
                     $('#list-' + $(this).parents().filter('.ap-list-options').data('id')))">
                     ${deselectLabel}</a>
             </li>${delimiter}
-            
+
             <li role="separator" class="divider"></li>${delimiter}
 
             <%-- ####### Render category labels ######## --%>
-      
-      
+
       <c:set var="catFilters" value=",${fn:replace(formatterSettings.catfilters,' ','')}," />
       <c:set var="blacklistFilter" value="${fn:startsWith(catFilters,',whitelist') ? 'false' : 'true'}" />
-      
+
             <c:forEach var="value" items="${facetResult.values}" varStatus="outerStatus">
                 <c:set var="selected">${facetController.state.isChecked[value.name] ? ' class="active"' : ""}</c:set>
-                
+
                 <%-- BEGIN: Calculate category label --%>
                 <c:set var="label"></c:set>
                 <c:forEach var="category" items="${cms.readPathCategories[value.name]}" varStatus="status">
@@ -136,9 +144,9 @@
           </li>${delimiter}
         </c:if>
             </c:forEach>
-                    
+
         </c:set>
-                    
+
         <%-- ################################################################################################################# FOOT ######## --%>
         <c:set var="foot">
                 <c:out value='</ul>' escapeXml='false' />

@@ -255,12 +255,8 @@
             }
         </script>
     </c:if>
-        
-        
-<c:set var="textnew"><fmt:message key="apollo.map.message.new" /></c:set>
-<c:set var="textedit"><fmt:message key="apollo.map.message.edit" /></c:set>
-<apollo:init-messages textnew="${textnew}" textedit="${textedit}">
-        
+
+<apollo:init-messages>
 
     <c:if test="${cms.element.settings.hidetitle ne 'true'}"><h1 ${rdfa.Headline}>${value.Headline}</h1></c:if>
     <c:if test="${value.Text.isSet}"><div class="ap-maptext" ${rdfa.Text}>${value.Text}</div></c:if>
@@ -282,8 +278,9 @@
             <button class="btn btn-sm" onclick="showMarkers${varsuffix}('allhide');"><fmt:message key="apollo.map.message.button.hidemarkers" /></button>
         </div>
     </c:if>
-    
+
 </apollo:init-messages>
+
 </cms:formatter>
 <script type="text/javascript">
     // show map after loading

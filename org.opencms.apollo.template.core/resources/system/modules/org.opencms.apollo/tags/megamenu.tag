@@ -2,17 +2,22 @@
     display-name="megamenu"
     body-content="scriptless"
     trimDirectiveWhitespaces="true" 
-    description="Shows the standard message boxes when a new element is used." %>
+    description="Wraps the body content for the mega menu editor (if required)." %>
+
 
 <%@ attribute name="mode" type="java.lang.String" required="true" 
-	description="Supported values are 'wrapContainer' and 'skipTemplatePart'."%>
+    description="Supported values are 'wrapContainer' and 'skipTemplatePart'."%>
+
 
 <%@ variable name-given="containerName" scope="NESTED" declare="true" 
-	description="The name of the main template container. This variable gets exported to requestScope." %>
+    description="The name of the main template container. This variable gets exported to requestScope." %>
+
 <%@ variable name-given="containerTypes" scope="NESTED" declare="true"
-	description="The types of the main template container. This variable gets exported to requestScope." %>
+    description="The types of the main template container. This variable gets exported to requestScope." %>
+
 <%@ variable name-given="megamenuFilename" scope="NESTED" declare="true"
-	description="The name of the megamenu file. This variable gets exported to requestScope." %>
+    description="The name of the megamenu file. This variable gets exported to requestScope." %>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

@@ -2,52 +2,66 @@
   display-name="list-main"
   trimDirectiveWhitespaces="true" 
   body-content="empty"
-  description="Searches for resources and displays a variable amount." %>
+  description="Searches for resources and displays the results." %>
+
 
 <%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" 
-		description="The directory (including subdirectories) from which the elements are read." %>
+    description="The directory (including subdirectories) from which the elements are read." %>
+
 <%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"  
-		description="The type of elements, that will be used." %>
+    description="The type of elements, that will be used." %>
+
 <%@ attribute name="count" type="java.lang.Integer" required="true"  
-		description="The amount of elements per page." %>
+    description="The amount of elements per page." %>
+
 <%@ attribute name="formatterSettings" type="java.util.Map" required="true"  
-		description="A map that can hold a variety of settings that are used to configure the appearance of the list. Is usally read from the list elements content." %>
+    description="A map that can hold a variety of settings that are used to configure the appearance of the list. Is usally read from the list elements content." %>
+
 <%@ attribute name="locale" type="java.lang.String" required="true"  
-		description="The locale to be used." %>
+    description="The locale to be used." %>
 
 <%@ attribute name="sort" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"  
-		description="The sorting field from the XML content, used by the list-search tag." %>
+    description="The sorting field from the XML content, used by the list-search tag." %>
+
 <%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false"  
-		description="The categories field from the XML content, used by the list-search tag." %>
+    description="The categories field from the XML content, used by the list-search tag." %>
+
 <%@ attribute name="listid" type="java.lang.String" required="false"  
-		description="An ID string used for this list. Enables multiple lists on one page." %>
+    description="An ID string used for this list. Enables multiple lists on one page." %>
 
 <%@ attribute name="showfacets" type="java.lang.String" required="false"  
-		description="A string containing keywords that configure which filters will be shown. Multiple keyword can be used.
-		Possible keywords are: [
-		none,
-		category,
-		sort_date,
-		sort_order,
-		sort_title
-		]" %>
+    description="A string containing keywords that configure which filters will be shown. Multiple keyword can be used.
+    Possible keywords are: [
+    none,
+    category,
+    sort_date,
+    sort_order,
+    sort_title
+    ]" %>
+
 <%@ attribute name="pageUri" type="java.lang.String" required="false"  
-		description="The URI of the page where the list is used. Is needed for AJAX requests because of a then differing context." %>
+    description="The URI of the page where the list is used. Is needed for AJAX requests because of a then differing context." %>
+
 <%@ attribute name="subsite" type="java.lang.String" required="false"  
-		description="The subsite the current request comes from. Is needed for AJAX requests because of a then differing context." %>
+    description="The subsite the current request comes from. Is needed for AJAX requests because of a then differing context." %>
+
 <%@ attribute name="ajaxCall" type="java.lang.Boolean" required="false"  
-		description="Indicates if this tag is used during an AJAX request." %>
+    description="Indicates if this tag is used during an AJAX request." %>
+
 
 <%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper"  
-		description="The search result given from the search tag." %>
+    description="The search result given from the search tag." %>
+
 <%@ variable name-given="searchConfig" scope="AT_END" declare="true"  
-		description="The search configuration string that was used by the search tag." %>
+    description="The search configuration string that was used by the search tag." %>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
+
 
 <fmt:setLocale value="${locale}" />
 

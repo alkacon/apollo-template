@@ -1,22 +1,31 @@
 <%@ tag display-name="list-sortbutton"
   trimDirectiveWhitespaces="true" 
   body-content="empty"
-  description="Generates a facet button for use with AJAX forms."%>
+  description="Generates a sort options dropdown button for the list."%>
+
 
 <%@ attribute name="label" type="java.lang.String" required="false" 
-		description="The label that is used for the button." %>
-<%@ attribute name="params" type="java.lang.String" required="false" %>
+    description="The label that is used for the button." %>
+
+<%@ attribute name="params" type="java.lang.String" required="false" 
+    description="Can be used to select the sort options to show. Shows all options if not set." %>
+
 <%@ attribute name="color" type="java.lang.String" required="false" 
-		description="The color of the button." %>
+    description="The color of the button." %>
+
 <%@ attribute name="searchconfig" type="java.lang.String" required="false" 
-		description="The configuration string that was used by the cms:search tag." %>
+    description="The configuration string that was used by the cms:search tag." %>
+
 <%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="false" 
-		description="The results of the search performed by the cms:search tag." %>
+    description="The results of the search performed by the cms:search tag." %>
+
 <%@ attribute name="render" type="java.lang.Boolean" required="false" 
-		description="Determines if the content should be rendered or given as a list of items in the listItems variable." %>
+    description="Determines if the content should be rendered or given as a list of items in the listItems variable." %>
+
 
 <%@ variable name-given="listItems" scope="AT_END" declare="true" 
-		description="The items of the button stored in a list." %>
+    description="The items of the button stored in a list." %>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

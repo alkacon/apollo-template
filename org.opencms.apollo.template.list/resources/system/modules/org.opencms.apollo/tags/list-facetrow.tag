@@ -1,10 +1,12 @@
 <%@ tag display-name="list-facetrow"
   trimDirectiveWhitespaces="true" 
   body-content="empty"
-  description="Generates facet and sorting buttons for use with AJAX forms."%>
+  description="Displays a series of facet and sort buttons for the list."%>
+
 
 <%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="true" 
         description="The result of a previous usage of the cms:search tag." %>
+
 <%@ attribute name="facets" type="java.lang.String" required="false" 
         description="A string containing keywords that configure which filters will be shown. Multiple keyword can be used.
         Possible keywords are: [
@@ -14,14 +16,17 @@
         sort_order,
         sort_title
         ]" %>
+
 <%@ attribute name="color" type="java.lang.String" required="false" 
         description="The color of the buttons." %>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
+
 
 <c:set var="search" value="${searchresult}" />
 

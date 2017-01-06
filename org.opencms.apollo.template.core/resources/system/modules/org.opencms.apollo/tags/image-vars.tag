@@ -1,13 +1,15 @@
 <%@ tag 
     display-name="image-vars"
     trimDirectiveWhitespaces="true" 
-    description="Provides quick access to image values from XML"%>
+    description="Reads a generic Apollo nested image content and sets a series of variables for quick acesss."%>
+
 
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The image to format. Must be a generic Apollo nested image content." %>
 
 <%@ attribute name="escapecopyright" type="java.lang.Boolean" required="false" 
     description="If true, the image copyright text is escaped for usage in HTML attributes." %>
+
 
 <%@ variable name-given="imageLink" declare="true" 
     description="The internal resource path of the image, including optional scaling parameters." %>
@@ -27,9 +29,11 @@
 <%@ variable name-given="imageTitleCopyright" declare="true" 
     description="The combination of title and copyright." %>
 
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
 
 <c:if test="${empty escapecopyright}"><c:set var="escapecopyright" value="true" /></c:if>
 

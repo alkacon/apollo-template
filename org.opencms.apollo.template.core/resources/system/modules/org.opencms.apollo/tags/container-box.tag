@@ -1,7 +1,8 @@
 <%@tag display-name="container-box"
   body-content="empty"
   trimDirectiveWhitespaces="true"
-  description="Generates box HTML for layout rows" %>
+  description="Displays the placehoder boxes for containers and model groups." %>
+
 
 <%@attribute name="label" type="java.lang.String" required="true" 
         description="Usually the name of the element or the group."%>
@@ -24,10 +25,12 @@
 <%@attribute name="detailView" type="java.lang.String" required="false" 
         description="A boolean that indicates if this is a detail container." %>
 
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
 
 <fmt:setLocale value="${cms.workplaceLocale}" />
 <cms:bundle basename="org.opencms.apollo.template.schemas.row">

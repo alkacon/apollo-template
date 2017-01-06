@@ -2,7 +2,8 @@
     display-name="linksequence"
     body-content="empty"
     trimDirectiveWhitespaces="true" 
-    description="Formats a link sequence" %>
+    description="Displays a link sequence." %>
+
 
 <%@ attribute name="wrapperclass" type="java.lang.String" required="true" 
     description="CSS class added to the div tag surrounding the link sequence." %>
@@ -16,11 +17,13 @@
 <%@ attribute name="links" type="java.util.List" required="true" 
     description="The link entries as list. The list can contain objects of the type CmsJspContentAccessValueWrapper or CmsJspNavElement." %>
 
+
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>  
+
 
 <div class="ap-linksequence ${wrapperclass}">
 

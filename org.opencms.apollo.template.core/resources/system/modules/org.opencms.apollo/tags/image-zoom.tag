@@ -2,7 +2,8 @@
     display-name="image-zoom"
     body-content="empty"
     trimDirectiveWhitespaces="true" 
-    description="Shows an image which enlarges on click." %>
+    description="Displays an image which zoom option." %>
+
 
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" 
     description="The image to format. Must be a generic Apollo nested image content." %>
@@ -13,6 +14,7 @@
 <%@ attribute name="cssimage" type="java.lang.String" required="false" 
     description="CSS class added directly to the generated image tag."%>
 
+
 <%-- ####### These variables are actually set in the apollo:image-vars tag included ####### --%>
 <%@ variable name-given="imageLink" declare="true" %>
 <%@ variable name-given="imageUnscaledLink" declare="true" %>
@@ -20,11 +22,13 @@
 <%@ variable name-given="imageTitle" declare="true" %>
 <%@ variable name-given="imageTitleCopyright" declare="true" %>
 
+
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
+
 
 <c:if test="${image.isSet}">
 <apollo:image-vars image="${image}">

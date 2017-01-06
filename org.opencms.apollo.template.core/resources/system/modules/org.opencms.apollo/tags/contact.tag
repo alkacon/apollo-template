@@ -2,7 +2,8 @@
     display-name="contact"
     body-content="empty"
     trimDirectiveWhitespaces="true" 
-    description="Formats contact information from the given content in hCard microformat" %>
+    description="Displays contact information from the given content with support for hCard microformat." %>
+
 
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"
     description="Value wrapper for the contact image data. Standard Apollo image." %>
@@ -43,11 +44,13 @@
     static-link: Show the static link text.
     ]" %>
 
+
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
+
 
 <c:set var="labels">
     <c:if test="${fn:contains(fragments, 'label-text')}">

@@ -380,7 +380,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Collects navigation items based on the settings of a navigation XML content]]></value>
+					<value><![CDATA[Loads navigation items based on a XML content configuration]]></value>
 				</property>
 			</properties>
 			<relations/>

@@ -1,7 +1,8 @@
 <%@tag display-name="list-search"
   trimDirectiveWhitespaces="true" 
   body-content="empty"
-  description="Triggers the archive search with the given filters"%>
+  description="Generates the list search configuration and triggers the search."%>
+
 
 <%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" 
     description="The directory (including subdirectories) from which the elements are read." %>
@@ -26,7 +27,8 @@
 
 <%@ attribute name="showexpired" type="java.lang.Boolean" required="false" 
     description="Determines if expired elements will be shown when editing the page." %>
- 
+
+
 <%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" 
     description="The results of the search" %>
 
@@ -41,6 +43,7 @@
 <%@ variable name-given="rangeFacetController" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.controller.I_CmsSearchControllerFacetRange" %>
 <%@ variable name-given="rangeFacet" scope="AT_END" declare="true" variable-class="org.apache.solr.client.solrj.response.RangeFacet" %>
 <%@ variable name-given="folderpath" scope="AT_END" declare="true" %>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>

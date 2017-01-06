@@ -524,7 +524,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Facet button tag for AJAX lists]]></value>
+					<value><![CDATA[Generates a facet options dropdown button for the list]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -541,7 +541,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Facet and sort button tag for AJAX lists]]></value>
+					<value><![CDATA[Displays a series of facet and sort buttons for the list]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -558,7 +558,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formats a list item in compact form]]></value>
+					<value><![CDATA[Displays a 'compact list teaser' from the given content]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -575,7 +575,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Dynamic loading button for AJAX lists]]></value>
+					<value><![CDATA[Displays a 'load more' button for dynamic list search results]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -592,7 +592,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Search and display list tag]]></value>
+					<value><![CDATA[Searches for resources and displays the results]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -609,7 +609,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Generates a pagination for search results]]></value>
+					<value><![CDATA[Generates a pagination based on search results]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -626,7 +626,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Solr search tag for AJAX lists]]></value>
+					<value><![CDATA[Generates the list search configuration and triggers the search]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -643,7 +643,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Sort button tag for AJAX lists]]></value>
+					<value><![CDATA[Generates a sort options dropdown button for the list]]></value>
 				</property>
 			</properties>
 			<relations/>

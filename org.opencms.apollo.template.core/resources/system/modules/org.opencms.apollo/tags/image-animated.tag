@@ -1,8 +1,9 @@
 <%@ tag
     display-name="image-animated"
     trimDirectiveWhitespaces="true"
-    description="Formates an image with an options Ken Burns and / or shadow animation effect." %>
+    description="Display a responsive image with optional Ken Burns and / or shadow animation effects." %>
     <%-- See https://en.wikipedia.org/wiki/Ken_Burns" --%>
+
 
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The image to format. Must be a generic Apollo nested image content."%>
@@ -21,6 +22,7 @@
     If not set or 'true', the markup from this tag is generated around the body of the tag.
     Otherwise everything is ignored and just the body of the tag is returned. "%>
 
+
 <%-- ####### These variables are actually set in the apollo:image-vars tag included ####### --%>
 <%@ variable name-given="imageLink" declare="true" %>
 <%@ variable name-given="imageUnscaledLink" declare="true" %>
@@ -28,10 +30,12 @@
 <%@ variable name-given="imageTitle" declare="true" %>
 <%@ variable name-given="imageTitleCopyright" declare="true" %>
 
+
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
+
 
 <c:if test="${image.isSet}">
 <apollo:image-vars image="${image}">

@@ -2,23 +2,18 @@
     display-name="init-messages"
     body-content="scriptless"
     trimDirectiveWhitespaces="true" 
-    description="Shows the standard message boxes when a new element is adde to a page,
-    or an element was edited and the page requires a reload." %>
+    description="Displays the standard 'new element' or 'reload required' message boxes." %>
 
-<%@ attribute name="textnew" type="java.lang.String" required="false" 
-    description="The text that is shown when a new element is created on a page." %>
-
-<%@ attribute name="textedit" type="java.lang.String" required="false" 
-    description="The text that is shown when an element was edited. C
-    an be left blank to not have the element reload after edit." %>
 
 <%@ attribute name="reload" type="java.lang.Boolean" required="false" 
     description="Indicates if the page must be reloaded after the element was changed in the form editor." %>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
 
 <c:choose>
     <c:when test="${cms.element.inMemoryOnly}">

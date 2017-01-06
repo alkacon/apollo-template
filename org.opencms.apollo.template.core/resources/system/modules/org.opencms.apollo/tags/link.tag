@@ -2,9 +2,10 @@
     display-name="link"
     body-content="scriptless"
     trimDirectiveWhitespaces="true" 
-    description="Creates a link for the generic Apollo nested link content. 
+    description="Displays a link from the generic Apollo nested link content. 
     Perfroms all checks to make sure the link is correctly set.
     Also honors the 'open in new window' flag." %>
+
 
 <%@ attribute name="link" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" 
     description="The link to format. Must be a generic Apollo nested link content."%> 
@@ -26,10 +27,12 @@
     If not set or 'true', the markup from this tag is generated around the body of the tag.
     Otherwise everything is ignored and just the body of the tag is returned. "%>
 
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
 
 <%-- ####### Assign JSP body to a variable, we need to check if this is empty ######## --%>
 <jsp:doBody var="bodyVal" />

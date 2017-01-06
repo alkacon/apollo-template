@@ -1,7 +1,8 @@
 <%@ tag 
     display-name="icon-prefix"
     trimDirectiveWhitespaces="true" 
-    description="Outputs a text label and / or an icon prefix based on the Font-Awesome library." %>
+    description="Displays a text label with optional icon based on the Font-Awesome library." %>
+
 
 <%@ attribute name="icon" type="java.lang.String" required="true"
     description="The icon to show. Taken from the Font-Awesome library." %>
@@ -19,8 +20,10 @@
     text: Show the text.
     ]" %>
 
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
 
 <c:if test="${((not empty icon) and ('none' ne icon)) or (not empty text)}">
 

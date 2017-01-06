@@ -1,7 +1,8 @@
 <%@ tag display-name="gallerydata"
   trimDirectiveWhitespaces="true" 
   body-content="empty"
-  description="Generates a div with needed data-attributes and a list of all images paths and other data for use with the PhotoSwipe-Gallery."%>
+  description="Generates a div with data-attributes and a list of images for use with PhotoSwipe."%>
+
 
 <%@ attribute name="ajax" type="java.lang.String" required="true" 
     description="The path to the JSP that processes the AJAX call." %>
@@ -15,10 +16,12 @@
 <%@ attribute name="count" type="java.lang.String" required="true" 
     description="The amount of images that are appended to the gallery with every load cycle." %>
 
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo"%>
+
 
 <c:set var="showtitle" value="${cms.element.setting.showTitle.value}" />
 <c:set var="showcopyright" value="${cms.element.setting.showCopyright.value}" />

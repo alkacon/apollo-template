@@ -1,7 +1,8 @@
 <%@ tag 
     display-name="email"
     trimDirectiveWhitespaces="true" 
-    description="Formats an email as link with optional obfuscation" %>
+    description="Displays an email address as link with optional obfuscation." %>
+
 
 <%@ attribute name="email" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="Value wrapper for the email. Has to use the nested schema of type email." %>
@@ -12,8 +13,10 @@
 <%@ attribute name="cssclass" type="java.lang.String" required="false" 
     description="CSS class added to the a tag surrounding the email address."%>
 
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
+
 
 <c:set var="css"><c:if test="not empty ${cssclass}"> class="${cssclass}"</c:if></c:set>
 <c:choose>

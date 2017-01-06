@@ -11,9 +11,9 @@
     org.opencms.xml.content.*,
     org.opencms.xml.containerpage.*
     "
-    description="Reads the default settings from a display formatter, 
-    and merges these with the parameters from a list formatter."
+    description="Reads the default settings from a display formatter and merges these with the parameters from a list formatter."
 %>
+
 
 <%@ attribute name="type" type="java.lang.String" required="true" 
     description="Display formatter type selection, taken from the XML content.
@@ -26,9 +26,6 @@
     description="Parameter list, usually read from the list formatter. 
     Parameters override the default formatter settings." %>
 
-<%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <%@ variable 
     name-given="formatterSettings" 
     variable-class="java.util.Map" 
@@ -36,6 +33,11 @@
     declare="true" 
     description="Result Map[String,String] filled with the display formatter default settings,
     merged with the parameters from the list configuration." %>
+
+
+<%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 
 <c:if test="${not cms.element.inMemoryOnly}">
     <%!

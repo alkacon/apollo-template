@@ -2,13 +2,24 @@
     display-name="paragraph"
     body-content="empty"
     trimDirectiveWhitespaces="true"
-    description="Formats a paragraph with optional elements from the given content" %>
+    description="Displays a paragraph with optional elements." %>
 
-<%@ attribute name="showimage" type="java.lang.String" required="false" description="Shows an image if 'true' and image is set in content." %>
-<%@ attribute name="imgalign" type="java.lang.String" required="false" description="The image can be aligned 'left' or 'right'." %>
-<%@ attribute name="headline" type="java.lang.String" required="false" description="The headline of the paragraph." %>
-<%@ attribute name="headlinestyle" type="java.lang.String" required="false" description="Class attributes that define the headlines styling." %>
-<%@ attribute name="paragraph" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" description="The actual paragraph text." %>
+
+<%@ attribute name="showimage" type="java.lang.String" required="false" 
+    description="Shows an image if 'true' and image is set in content." %>
+
+<%@ attribute name="imgalign" type="java.lang.String" required="false" 
+    description="The image can be aligned 'left' or 'right'." %>
+
+<%@ attribute name="headline" type="java.lang.String" required="false" 
+    description="The headline of the paragraph." %>
+
+<%@ attribute name="headlinestyle" type="java.lang.String" required="false" 
+    description="Class attributes that define the headlines styling." %>
+
+<%@ attribute name="paragraph" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
+    description="The actual paragraph text." %>
+
 
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
