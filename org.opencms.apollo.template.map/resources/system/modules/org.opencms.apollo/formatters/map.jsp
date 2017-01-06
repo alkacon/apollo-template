@@ -11,9 +11,9 @@
 
 <div class="ap-map ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
 <cms:formatter var="map" val="value" rdfa="rdfa">
-    
+
     <c:if test="${!cms.element.inMemoryOnly}">
-        
+
         <%-- calculate map size: width and height --%>
         <c:set var="mapw">600</c:set>
         <c:set var="maph">400</c:set>
@@ -256,7 +256,7 @@
         </script>
     </c:if>
 
-<apollo:init-messages>
+<apollo:init-messages reload="true">
 
     <c:if test="${cms.element.settings.hidetitle ne 'true'}"><h1 ${rdfa.Headline}>${value.Headline}</h1></c:if>
     <c:if test="${value.Text.isSet}"><div class="ap-maptext" ${rdfa.Text}>${value.Text}</div></c:if>

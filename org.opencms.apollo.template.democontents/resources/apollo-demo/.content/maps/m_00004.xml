@@ -9,12 +9,28 @@
     </Text>
     <MapSize><![CDATA[100%x400]]></MapSize>
     <MapType><![CDATA[ROADMAP]]></MapType>
-    <MapZoom><![CDATA[14]]></MapZoom>
+    <MapZoom><![CDATA[11]]></MapZoom>
     <Route>true</Route>
     <ShowMarkers>true</ShowMarkers>
     <MapCoord>
-      <Caption/>
+      <Caption><![CDATA[Caption]]></Caption>
+      <Address><![CDATA[KOMED, Mediapark]]></Address>
+      <MarkerGroup><![CDATA[A]]></MarkerGroup>
       <Coord><![CDATA[{"lat":50.9478274,"lng":6.943844899999931,"zoom":14,"type":"roadmap","mode":"dynamic","address":"Im Mediapark, 50670 Köln, Germany"}]]></Coord>
+    </MapCoord>
+    <MapCoord>
+      <Caption><![CDATA[Cologne Cathedral]]></Caption>
+      <Address><![CDATA[Domkloster 4, 50667 Köln, Germany]]></Address>
+      <MarkerGroup><![CDATA[B]]></MarkerGroup>
+      <Coord><![CDATA[{"lat":50.94127839999999,"lng":6.958281400000033,"zoom":14,"type":"roadmap","mode":"dynamic","address":"Cologne Cathedral, Domkloster 4, 50667 Köln, Germany"}]]></Coord>
+    </MapCoord>
+    <MapCoord>
+      <Caption><![CDATA[Alkacon Software Headquarters]]></Caption>
+      <Address><![CDATA[An der Wachsfabrik 13
+50996 Köln (Cologne)
+Germany]]></Address>
+      <MarkerGroup><![CDATA[C]]></MarkerGroup>
+      <Coord><![CDATA[{"lat":50.8704,"lng":6.998180000000048,"zoom":13,"type":"roadmap","mode":"dynamic","address":"An der Wachsfabrik 13, 50996 Köln, Deutschland"}]]></Coord>
     </MapCoord>
   </ApolloMap>
 </ApolloMaps>

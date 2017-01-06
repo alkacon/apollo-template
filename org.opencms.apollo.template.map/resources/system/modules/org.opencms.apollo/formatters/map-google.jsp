@@ -45,7 +45,7 @@
          height="${maph}"
          zoom="${content.value.MapZoom}"
          type="${content.value.MapType}"
-         coordinates="${content.valueList.MapCoord[0].value.Coord}"
+         coordinates="${content.valueList.MapCoord}"
     />
 
 </div>
