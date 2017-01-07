@@ -90,7 +90,8 @@
         currentPageUri="${cms.requestContext.uri}" 
         var="nav">
 
-        <apollo:megamenu mode="none" />
+        <%-- Set mega menu variables --%>
+        <apollo:megamenu test="none" />
 
         <c:set var="navLength" value="${fn:length(nav.items) - 1}" />
         <div class="head-navbar">

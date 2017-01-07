@@ -5,8 +5,8 @@
     description="Wraps the body content for the mega menu editor (if required)." %>
 
 
-<%@ attribute name="mode" type="java.lang.String" required="true" 
-    description="Supported values are 'wrapContainer' and 'skipTemplatePart'."%>
+<%@ attribute name="test" type="java.lang.String" required="false" 
+    description="Tests if mega menu must be activated, possible value is 'isTemplateRequest' or 'none'."%>
 
 
 <%@ variable name-given="containerName" scope="NESTED" declare="true" 
@@ -31,10 +31,9 @@
 <c:set var="containerName">${templateContainerName}${isMegaMenuRequest ? "-megamenu" : ""}</c:set>
 <c:set var="containerTypes">${templateContainerTypes}${isMegaMenuRequest ? ",row" : ""}</c:set>
 
-<c:if test="${mode == 'wrapContainer' && !cms.isOnlineProject && isMegaMenuRequest && !param.ajaxreq}"><c:set var="wrapContainer" value="true" /></c:if>
-<c:if test="${mode == 'skipTemplatePart' && param.ajaxreq}"><c:set var="skipTemplatePart" value="true" /></c:if>
+<c:choose>
 
-<c:if test="${wrapContainer}">
+<c:when test="${(empty test) && !cms.isOnlineProject && isMegaMenuRequest && !param.ajaxreq}">
     <div id="megamenu-editor">
     <div class="container">
         <c:if test="${cms.isEditMode}"><c:set var="wrapContainer" value="true" />
@@ -51,13 +50,7 @@
           <ul class="nav navbar-nav">
            <li class="dropdown">
             <div class="dropdown-menu dropdown-megamenu">
-</c:if>
-
-<c:if test="${(empty skipTemplatePart || not skipTemplatePart)}">
-  <jsp:doBody/>
-</c:if>
-
-<c:if test="${wrapContainer}">
+                <jsp:doBody/>
             </div>
            </li>
           </ul>
@@ -65,7 +58,13 @@
       </div>
     </div>
   </div>
-</c:if>
+</c:when>
+
+<c:when test="${(empty test) || ((test == 'isTemplateRequest') && !param.ajaxreq)}">
+    <jsp:doBody/>
+</c:when>
+
+</c:choose>
 
 <c:set var="megamenuFilename" scope="request" >${megamenuFilename}</c:set>
 <c:set var="containerName" scope="request" >${containerName}</c:set>
