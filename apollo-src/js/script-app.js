@@ -58,7 +58,7 @@ var App = function() {
     // Hover Selector
     function handleHoverSelector() {
 
-        jQuery('.hoverSelector').on('hover', function(e) {
+        jQuery('.hoverSelector').on('mouseenter mouseleave', function(e) {
 
             jQuery('.hoverSelectorBlock', this).toggleClass('show');
             e.stopPropagation();
@@ -143,6 +143,9 @@ var App = function() {
 
     return {
         init : function() {
+
+            initApollo();
+            initAnalytics();
 
             handleBootstrap();
             handleSearch();

@@ -50,7 +50,7 @@ body {
     font-weight: normal;
     color: $text-content;
     line-height: $line-height-content;
-    background-color: $grey-light;
+    background-color: $grey-light; // this is to extend the footer 
 }
 
 #apollo-page {
@@ -122,6 +122,18 @@ h6, .h6 {
     padding-bottom: 5px;
     border-bottom: 2px solid $headline-linecolor;
 }
+
+/* Page info element */
+#apollo-info {
+    display: none;
+}
+
+/* Placeholder for the OpenCms toolbar */
+#toolbar-placeholder {
+    background-color: $white;
+    height: 52px;
+}
+
 
 /* Links */
 

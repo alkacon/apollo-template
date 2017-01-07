@@ -21,44 +21,10 @@
  * Google map elements for Apollo.
  */
 
-// this is taken straight from the jQuery docs:
-// http://api.jquery.com/jQuery.getScript/
-jQuery.loadScript = function( url, options ) {
-
-    // Allow user to set any option except for dataType, cache, and url
-    options = $.extend( options || {}, {
-        dataType: "script",
-        cache: true,
-        url: url
-    });
-
-    // Use $.ajax() since it is more flexible than $.getScript
-    // Return the jqXHR object so we can chain callbacks
-    return jQuery.ajax( options );
-};
-
-var __mapData = [];
-var __googleMaps = [];
-
-function addMapData(mapData) {
-    __mapData.push(mapData);
-}
-
-function getMapData() {
-    return __mapData; 
-}
-
-function addMap(mapId, map) {
-    __googleMaps[mapId] = map;
-}
-
-function getMap(mapId) {
-    return __googleMaps[mapId]; 
-}
-
 function showMapMarkers(mapId, group) {
+
     console.info("showMapMarkers() called with map id: " + mapId);
-    var markers = getMap(mapId).markers;
+    var markers = apollo.getData(mapId).markers;
     for (var i = 0; i < markers.length; i++) {
         if (markers[i].group == group || group == 'showall') {
             markers[i].setVisible(true);
@@ -69,15 +35,17 @@ function showMapMarkers(mapId, group) {
 }
 
 function showMapInfo(mapId, infoId) {
+
     console.info("showMapInfo() called with map id: " + mapId + " info id: " + infoId);
-    var infoWindows = getMap(mapId).infoWindows;
+    var map = apollo.getData(mapId);
+    var infoWindows = map.infoWindows;
     console.info("showMapInfo() infoWindows.length: " + infoWindows.length);
     for (var i = 0; i < infoWindows.length; i++) {
         if (i != infoId) {
             infoWindows[i].close();
         } else {
             infoWindows[i].open(
-                getMap(mapId), 
+                map, 
                 infoWindows[i].marker
             );
         }
@@ -85,16 +53,20 @@ function showMapInfo(mapId, infoId) {
 }
 
 function loadGoogleMapApi() {
-    var mapKey = ""; // TODO: Grab the key from the #google-map-key div
-    var locale = "en"; // TODO: Grab the locale of the page
 
-    jQuery.loadScript("https://maps.google.com/maps/api/js?callback=initGoogleMaps&language=" + locale);
+    var locale = apollo.getInfo("locale");
+    var mapKey = ""
+    if (apollo.hasInfo("googleMapKey")) {
+        mapKey = "&key=" + apollo.getInfo("googleMapKey");
+    }
+    console.info("googleMapKey: " + mapKey);
+    jQuery.loadScript("https://maps.google.com/maps/api/js?callback=initGoogleMaps&language=" + locale + mapKey);
 }
 
 function initGoogleMaps() {
 
     console.info("initGoogleMaps() called!");
-    var maps = getMapData();
+    var maps = apollo.getElements("map");
     for (var i=0; i < maps.length; i++) {
         var mapData = maps[i];
 
@@ -169,7 +141,7 @@ function initGoogleMaps() {
         }
 
         // store map in global array, required e.g. to select marker categories etc.
-        addMap(mapId, {
+        apollo.addData(mapId, {
             'map': map,
             'markers': markers,
             'infoWindows': infoWindows
@@ -182,18 +154,16 @@ function initGoogleMaps() {
     $.fn.initMaps = function() {
         var $this = $(this);
 
-        // initialize parallax sections with values from data attributes    
+        // initialize map sections with values from data attributes    
         $this.each(function(){
 
             var $element = $(this); 
             var $mapElement = $element.find('.mapwindow');
 
-            // the following data attribute can to be attached to the div
-            // <div class="parallax-background" data-prallax='{"effect":1}' >
             if (typeof $mapElement.data("map") != 'undefined') {
                 var $mapData = $mapElement.data("map");
                 // console.info("mapData found:" + $mapData);
-                addMapData($mapData);
+                apollo.addElement("map", $mapData);
             }
         });
 
