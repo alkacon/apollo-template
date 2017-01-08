@@ -45,7 +45,10 @@
          height="${maph}"
          zoom="${content.value.MapZoom}"
          type="${content.value.MapType}"
-         coordinates="${content.valueList.MapCoord}"
+         useGeocoding="true"
+         showRoute="${content.value.Route.toBoolean}"
+         showMarkers="${content.value.ShowMarkers.toBoolean}"
+         markers="${content.valueList.MapCoord}"
     />
 
 </div>

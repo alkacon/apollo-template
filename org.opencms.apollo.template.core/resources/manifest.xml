@@ -48,8 +48,6 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/section-tile.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/login.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/login.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/functions/tester.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/functions/tester.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/opencms-info.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/opencms-info.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.formatters.jsp-search-formatter_de"/>
@@ -900,52 +898,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OpenCms Info]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/functions/tester.jsp</source>
-			<destination>system/modules/org.opencms.apollo/functions/tester.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>c2e6a139-88f8-11e6-84b3-0242ac11002b</uuidstructure>
-			<uuidresource>c2e6a13a-88f8-11e6-84b3-0242ac11002b</uuidresource>
-			<datecreated>Sun, 02 Oct 2016 23:34:28 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[OpenCms Function Tester JSP]]></value>
-				</property>
-				<property>
-					<name>cache</name>
-					<value><![CDATA[container-element;user]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/functions/tester.xml</source>
-			<destination>system/modules/org.opencms.apollo/functions/tester.xml</destination>
-			<type>function</type>
-			<uuidstructure>b70873c5-88f8-11e6-84b3-0242ac11002b</uuidstructure>
-			<uuidresource>b70873c6-88f8-11e6-84b3-0242ac11002b</uuidresource>
-			<datecreated>Sun, 02 Oct 2016 23:34:08 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Description</name>
-					<value><![CDATA[For testing of OpenCms Apollo Tags.]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[OpenCms Function Tester]]></value>
 				</property>
 			</properties>
 			<relations/>

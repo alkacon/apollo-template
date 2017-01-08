@@ -11,10 +11,10 @@
     <MapType><![CDATA[ROADMAP]]></MapType>
     <MapZoom><![CDATA[14]]></MapZoom>
     <Route>false</Route>
-    <ShowMarkers>true</ShowMarkers>
+    <ShowMarkers>false</ShowMarkers>
     <MapCoord>
       <Caption/>
-      <Coord><![CDATA[{"lat":50.8704,"lng":6.998180000000048,"zoom":14,"type":"roadmap","mode":"dynamic","address":"An der Wachsfabrik 13, 50996 Köln, Germany"}]]></Coord>
+      <Coord><![CDATA[{"lat":47.3763166,"lng":8.5454812,"zoom":14,"type":"roadmap","mode":"dynamic","address":"ETH Zürich"}]]></Coord>
     </MapCoord>
   </ApolloMap>
 </ApolloMaps>

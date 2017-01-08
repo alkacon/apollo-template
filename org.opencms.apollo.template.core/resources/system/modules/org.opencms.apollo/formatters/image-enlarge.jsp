@@ -15,8 +15,6 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.schemas.section">
 
-<apollo:image-vars image="${content.value.Image}">
-
 <div class="ap-section image-zoom ${cms.element.settings.wrapperclass}">
 
     <c:set var="showsubtitle" value="${cms.element.setting.showsubtitle.value != 'false' and (value.Headline.isSet or not empty imageTitle)}"/>
@@ -53,8 +51,6 @@
     </c:if>
 
 </div>
-
-</apollo:image-vars>
 
 </cms:bundle>
 </cms:formatter>

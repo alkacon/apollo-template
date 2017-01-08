@@ -7,6 +7,16 @@
 <%@ attribute name="id" type="java.lang.String" required="true" 
     description="The id the map should use, usually the UID of the element." %>
 
+<%@ attribute name="useGeocoding" type="java.lang.Boolean" required="true" 
+    description="If true, use Google geocoding API to find addresses for markers that have no address set in content.
+    Will also lookup the address if only centerLat/centerLng is used with no markers." %>
+
+<%@ attribute name="showMarkers" type="java.lang.Boolean" required="true"
+    description="If true, show markers with info windows on the map." %>
+
+<%@ attribute name="showRoute" type="java.lang.Boolean" required="false" 
+    description="If true, show route option for each marker in info window." %>
+
 <%@ attribute name="width" type="java.lang.String" required="false" 
     description="The display width of the map, must be a valid CSS unit. If not set, will use '100%' as default." %>
 
@@ -25,9 +35,8 @@
 <%@ attribute name="centerLng" type="java.lang.String" required="false" 
     description="The center longitude of the map." %>
 
-<%@ attribute name="coordinates" type="java.util.List" required="false" 
-    description="A list of map coordinate points from the Location picker widget." %>
-
+<%@ attribute name="markers" type="java.util.List" required="false" 
+    description="A list of map marker points from the Location picker widget." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
@@ -46,10 +55,10 @@
     <c:set var="mapStyle">${mapStyle};width:${width};</c:set>
 </c:if>
 
-<%-- Set map coordinates --%>
-<c:if test="${not empty coordinates}">
+<%-- Set map starting point --%>
+<c:if test="${not empty markers}">
     <jsp:useBean id="locBean" class="org.opencms.widgets.CmsLocationPickerWidgetValue" />
-    <jsp:setProperty name="locBean" property="wrappedValue" value="${coordinates[0].value.Coord}" />
+    <jsp:setProperty name="locBean" property="wrappedValue" value="${markers[0].value.Coord}" />
     <c:set var="centerLat" value="${empty centerLat ? locBean.lat : centerLat}" />
     <c:set var="centerLng" value="${empty centerLng ? locBean.lng : centerLng}" />
 </c:if>
@@ -78,43 +87,66 @@
         "id":"${id}",
         "zoom":"${zoom}",
         "type":"${type}",
+        "geocoding":"${useGeocoding}",
         "centerLat":"${centerLat}",
-        "centerLng":"${centerLng}",
-        <c:if test="${not empty coordinates}">
+        "centerLng":"${centerLng}"<c:if test="${not empty markers and showMarkers}">,</c:if>
+        <c:if test="${not empty markers and showMarkers}">
            <jsp:useBean id="coordBean" class="org.opencms.widgets.CmsLocationPickerWidgetValue" />
             "markers":[ 
-            <c:forEach var="coordinate" items="${coordinates}" varStatus="status">
-                <jsp:setProperty name="coordBean" property="wrappedValue" value="${coordinate.value.Coord.stringValue}" />
+            <c:forEach var="marker" items="${markers}" varStatus="status">
+                <jsp:setProperty name="coordBean" property="wrappedValue" value="${marker.value.Coord.stringValue}" />
 
-                <c:set var="pointLat" value="${coordBean.lat}" />
-                <c:set var="pointLng" value="${coordBean.lng}" />
+                <c:set var="markerLat" value="${coordBean.lat}" />
+                <c:set var="markerLng" value="${coordBean.lng}" />
 
-                <c:set var="pointTitle" value="${coordinate.value.Caption.isEmptyOrWhitespaceOnly ? '' : fn:trim(coordinate.value.Caption)}" />
+                <c:set var="markerTitle" value="${marker.value.Caption.isEmptyOrWhitespaceOnly ? '' : fn:trim(marker.value.Caption)}" />
 
-                <c:set var="pointGroup" value="${coordinate.value.MarkerGroup.isEmptyOrWhitespaceOnly ? 'default' : fn:trim(coordinate.value.MarkerGroup)}" />
-                <c:set target="${mapGroups}" property="${pointGroup}" value="used"/>
+                <c:set var="markerGroup" value="${marker.value.MarkerGroup.isEmptyOrWhitespaceOnly ? 'default' : fn:trim(marker.value.MarkerGroup)}" />
+                <c:set target="${mapGroups}" property="${markerGroup}" value="used"/>
 
+                <c:set var="markerAddress" value="" />
                 <c:choose>
-                    <c:when test="${not coordinate.value.Address.isEmptyOrWhitespaceOnly}">
-                         <c:set var="pointText" value="${fn:trim(coordinate.value.Address)}" scope="request" />
-                         <c:set var="pointInfo">
+                    <c:when test="${not marker.value.Address.isEmptyOrWhitespaceOnly}">
+                         <c:set var="markerText" value="${fn:trim(marker.value.Address)}" scope="request" />
+                         <c:set var="markerAddress">
                              <%
-                                 String pointText = (String)request.getAttribute("pointText");
-                                 pointText = org.opencms.util.CmsStringUtil.escapeHtml(pointText);
+                                 String markerAddress = (String)request.getAttribute("markerText");
+                                 markerAddress = org.opencms.util.CmsStringUtil.escapeHtml(markerAddress);
                              %>
-                             <%= pointText %>
+                             <%= markerAddress %>
                          </c:set>
                     </c:when>
-                    <c:otherwise>
-                         <c:set var="pointInfo" value="$$$useGeoCoder$$$" />
-                    </c:otherwise>
+                    <c:when test="${useGeocoding}">
+                         <c:set var="markerAddress" value="$$$useGeoCoder$$$" />
+                    </c:when>
                 </c:choose>
+
+                <c:if test="${showRoute}">
+                    <c:set var="markerRoute">
+                        <div class="route">
+                            <div class="head"><fmt:message key="apollo.map.message.route" /></div>
+                            <div class="message"><fmt:message key="apollo.map.message.start" /></div>
+                            <form action="https://maps.google.com/maps" method="get" target="_blank">
+                                <input type="text" class="form-control" size="15" maxlength="60" name="saddr" value="" />
+                                <input value="<fmt:message key="apollo.map.message.route.button" />" type="submit" class="btn btn-xs">
+                                <input type="hidden" name="daddr" value="${coordBean.lat},${coordBean.lng}"/>
+                            </form>
+                        </div>
+                    </c:set>
+                 </c:if>
+
+                <c:set var="markerInfo">
+                    <c:if test="${not empty markerTitle}"><h2>${markerTitle}</h2></c:if>
+                    ${markerAddress}
+                    ${markerRoute}
+                </c:set>
+
                 {
-                    "lat":"${pointLat}",
-                    "lng":"${pointLng}",
-                    "title":"${cms:escape(pointTitle, cms.requestContext.encoding)}",
-                    "group":"${cms:escape(pointGroup, cms.requestContext.encoding)}",
-                    "info":"${cms:escape(pointInfo, cms.requestContext.encoding)}"
+                    "lat":"${markerLat}",
+                    "lng":"${markerLng}",
+                    "title":"${cms:escape(markerTitle, cms.requestContext.encoding)}",
+                    "group":"${cms:escape(markerGroup, cms.requestContext.encoding)}",
+                    "info":"${cms:escape(markerInfo, cms.requestContext.encoding)}"
                 }<c:if test="${not status.last}">,</c:if>
             </c:forEach>
             ]

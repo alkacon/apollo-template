@@ -2,7 +2,7 @@
     display-name="formatter-settings"
     body-content="empty"
     trimDirectiveWhitespaces="true"
-	import="
+    import="
     java.util.*,
     org.opencms.main.*,
     org.opencms.file.*,
