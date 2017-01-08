@@ -92,7 +92,7 @@
         "centerLng":"${centerLng}"<c:if test="${not empty markers and showMarkers}">,</c:if>
         <c:if test="${not empty markers and showMarkers}">
            <jsp:useBean id="coordBean" class="org.opencms.widgets.CmsLocationPickerWidgetValue" />
-            "markers":[ 
+            "markers":[
             <c:forEach var="marker" items="${markers}" varStatus="status">
                 <jsp:setProperty name="coordBean" property="wrappedValue" value="${marker.value.Coord.stringValue}" />
 
@@ -104,6 +104,7 @@
                 <c:set var="markerGroup" value="${marker.value.MarkerGroup.isEmptyOrWhitespaceOnly ? 'default' : fn:trim(marker.value.MarkerGroup)}" />
                 <c:set target="${mapGroups}" property="${markerGroup}" value="used"/>
 
+                <c:set var="markerNeedsGeoCode" value="false" />
                 <c:set var="markerAddress" value="" />
                 <c:choose>
                     <c:when test="${not marker.value.Address.isEmptyOrWhitespaceOnly}">
@@ -117,7 +118,8 @@
                          </c:set>
                     </c:when>
                     <c:when test="${useGeocoding}">
-                         <c:set var="markerAddress" value="$$$useGeoCoder$$$" />
+                         <c:set var="markerNeedsGeoCode" value="true" />
+                         <c:set var="markerAddress" value="apolloAddr" />
                     </c:when>
                 </c:choose>
 
@@ -139,19 +141,19 @@
                     <c:if test="${not empty markerTitle}"><h2>${markerTitle}</h2></c:if>
                     ${markerAddress}
                     ${markerRoute}
-                </c:set>
-
-                {
-                    "lat":"${markerLat}",
-                    "lng":"${markerLng}",
-                    "title":"${cms:escape(markerTitle, cms.requestContext.encoding)}",
-                    "group":"${cms:escape(markerGroup, cms.requestContext.encoding)}",
-                    "info":"${cms:escape(markerInfo, cms.requestContext.encoding)}"
-                }<c:if test="${not status.last}">,</c:if>
+                </c:set><%--
+            --%>{<%--
+                --%>"lat":"${markerLat}",<%--
+                --%>"lng":"${markerLng}",<%--
+                --%>"geocode":"${markerNeedsGeoCode}",<%--
+                --%>"title":"${cms:escape(markerTitle, cms.requestContext.encoding)}",<%--
+                --%>"group":"${cms:escape(markerGroup, cms.requestContext.encoding)}",<%--
+                --%>"info":"${cms:escape(markerInfo, cms.requestContext.encoding)}"<%--
+            --%>}<c:if test="${not status.last}">,</c:if>
             </c:forEach>
             ]
-        </c:if>
-    }'
+        </c:if><%--
+--%>}'
     class="mapwindow" 
     style="${mapStyle}">
 </div>
