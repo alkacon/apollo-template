@@ -81,6 +81,9 @@
 <%-- Collects all map marker groups found, this is a Map since we can not add elements to lists in EL --%>
 <jsp:useBean id="mapGroups" class="java.util.HashMap" />
 
+<fmt:setLocale value="${cms.locale}" />
+<cms:bundle basename="org.opencms.apollo.template.map.messages">
+
 <div 
     id="${id}" 
     data-map='{
@@ -158,29 +161,23 @@
     style="${mapStyle}">
 </div>
 
-<c:if test="${fn:length(mapGroups) > 1}">
+<c:if test="${showMarkers and fn:length(mapGroups) > 1}">
     <div class="mapbuttons">
-        <c:choose>
-            <c:when test="${fn:length(mapGroups) > 1}">
-                <button class="btn btn-sm" onclick="showMapMarkers('${id}','showall');">
-                    <fmt:message key="apollo.map.message.button.showallmarkers" />
-                </button>
-                <c:forEach var="group" items="${mapGroups}">
-                    <button class="btn btn-sm" onclick="showMapMarkers('${id}', '${cms:escape(group.key, cms.requestContext.encoding)}');">
-                        <fmt:message key="apollo.map.message.button.show" />${' '}<c:out value="${group.key}" />
-                    </button>
-                </c:forEach>
-            </c:when>
-            <c:otherwise>
-                <button class="btn btn-sm" onclick="showMapMarkers('${id}','showall');">
-                    <fmt:message key="apollo.map.message.button.showmarkers" />
-                </button>
-            </c:otherwise>
-        </c:choose>
+        <button class="btn btn-sm" onclick="showMapMarkers('${id}','showall');">
+            <fmt:message key="apollo.map.message.button.showmarkers" />
+        </button>
+        <c:forEach var="group" items="${mapGroups}">
+            <button class="btn btn-sm" onclick="showMapMarkers('${id}', '${cms:escape(group.key, cms.requestContext.encoding)}');">
+                <fmt:message key="apollo.map.message.button.show">
+                    <fmt:param><c:out value="${group.key}" /></fmt:param>
+                </fmt:message>
+            </button>
+        </c:forEach>
         <button class="btn btn-sm" onclick="showMapMarkers('${id}', 'hideall');">
             <fmt:message key="apollo.map.message.button.hidemarkers" />
         </button>
     </div>
 </c:if>
 
+</cms:bundle>
 
