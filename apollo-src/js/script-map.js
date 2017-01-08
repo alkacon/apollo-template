@@ -36,6 +36,7 @@ function showMapMarkers(mapId, group) {
     }
 }
 
+
 function showMapInfo(mapId, infoId) {
 
     console.info("showMapInfo() called with map id: " + mapId + " info id: " + infoId);
@@ -45,6 +46,11 @@ function showMapInfo(mapId, infoId) {
         if (i != infoId) {
             infoWindows[i].close();
         } else {
+            if (infoWindows[i].geocode == "true") {
+                console.info("showMapInfo() geocode lookup for " + mapId);
+                getGeocodeForInfoWindow(infoWindows[i]);
+                infoWindows[i].geocode = "false";
+            }
             infoWindows[i].open(
                 map, 
                 infoWindows[i].marker
@@ -52,6 +58,70 @@ function showMapInfo(mapId, infoId) {
         }
     }
 }
+
+function formatGeocoderResult(result) {
+    // returns the address from a geocode result in nicely formatted way
+    var street = "";
+    var strNum = "";
+    var zip = "";
+    var city = "";
+    var foundAdr = false;
+
+    for (var i = 0; i < result.address_components.length; i++) {
+        var t = String(result.address_components[i].types);
+        if (street == "" && t.indexOf("route") != -1) {
+            street = result.address_components[i].long_name;
+            foundAdr = true;
+        }
+        if (t.indexOf("street_number") != -1) {
+            strNum = result.address_components[i].long_name;
+            foundAdr = true;
+        }
+        if (t.indexOf("postal_code") != -1) {
+            zip = result.address_components[i].long_name;
+            foundAdr = true;
+        }
+        if (city == "" && t.indexOf("locality") != -1) {
+            city = result.address_components[i].long_name;
+            foundAdr = true;
+        }
+    }
+    if (foundAdr == true) {
+        return street + " " + strNum + "<br/>" + zip + " " + city;
+    } else {
+        return result.formatted_address;
+    }
+}
+
+function setInfoWindowContent(results, status, infoWindow) {
+
+    console.info("setInfoWindowContent() geocode lookup returned status " + status);
+    var addressFound = "";
+    if (status == google.maps.GeocoderStatus.OK) {
+        if (results[0]) {
+            addressFound = formatGeocoderResult(results[0]);
+        }
+    }
+    // replace content in info window
+    var infoContent = infoWindow.getContent();
+    infoContent = infoContent.replace(/apolloAddr/, addressFound);
+    infoWindow.setContent(infoContent);
+}
+
+
+function getGeocodeForInfoWindow(infoWindow) {
+
+    if (!apollo.hasData("geocoder")) {
+        // initialize global geocoder object if required
+        apollo.addData("geocoder", new google.maps.Geocoder());
+    }
+    var geocoder = apollo.getData("geocoder");
+
+    geocoder.geocode({'latLng': infoWindow.marker.position}, function(results, status) {
+        setInfoWindowContent(results, status, infoWindow);
+    });
+}
+
 
 function hideAllMapInfo(mapId) {
 
@@ -125,7 +195,8 @@ function initGoogleMaps() {
                     group: decodeURIComponent(point.group),
                     info: decodeURIComponent(point.info),
                     index: p,
-                    mapId: mapId
+                    mapId: mapId,
+                    geocode: point.geocode
                 });
 
                 // add marker to marker map
@@ -135,6 +206,7 @@ function initGoogleMaps() {
                 var infoWindow = new google.maps.InfoWindow({
                     content: marker.info,
                     marker: marker,
+                    geocode: point.geocode,
                     index: p
                 });
 
