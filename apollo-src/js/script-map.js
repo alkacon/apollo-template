@@ -21,9 +21,13 @@
  * Google map elements for Apollo.
  */
 
+// Note: If MAPDEBUG is false, all MAPDEBUG clauses will be removed 
+// by uglify.js during Apollo JS processing as unreachable code
+var MAPDEBUG = false;
+
 function showMapMarkers(mapId, group) {
 
-    console.info("showMapMarkers() called with map id: " + mapId);
+    if (MAPDEBUG) console.info("showMapMarkers() called with map id: " + mapId);
     var map = apollo.getData(mapId);
     var markers = map.markers;
     hideAllMapInfo(mapId);
@@ -39,7 +43,7 @@ function showMapMarkers(mapId, group) {
 
 function showMapInfo(mapId, infoId) {
 
-    console.info("showMapInfo() called with map id: " + mapId + " info id: " + infoId);
+    if (MAPDEBUG) console.info("showMapInfo() called with map id: " + mapId + " info id: " + infoId);
     var map = apollo.getData(mapId);
     var infoWindows = map.infoWindows;
     for (var i = 0; i < infoWindows.length; i++) {
@@ -47,7 +51,7 @@ function showMapInfo(mapId, infoId) {
             infoWindows[i].close();
         } else {
             if (infoWindows[i].geocode == "true") {
-                console.info("showMapInfo() geocode lookup for " + mapId);
+                if (MAPDEBUG) console.info("showMapInfo() geocode lookup for " + mapId);
                 getGeocodeForInfoWindow(infoWindows[i]);
                 infoWindows[i].geocode = "false";
             }
@@ -95,12 +99,14 @@ function formatGeocoderResult(result) {
 
 function setInfoWindowContent(results, status, infoWindow) {
 
-    console.info("setInfoWindowContent() geocode lookup returned status " + status);
+    if (MAPDEBUG) console.info("setInfoWindowContent() geocode lookup returned status " + status);
     var addressFound = "";
     if (status == google.maps.GeocoderStatus.OK) {
         if (results[0]) {
             addressFound = formatGeocoderResult(results[0]);
         }
+    } else {
+        console.warn("Google GeoCoder returned error status '" + status + "' for coordinates " + infoWindow.marker.position);
     }
     // replace content in info window
     var infoContent = infoWindow.getContent();
@@ -125,7 +131,7 @@ function getGeocodeForInfoWindow(infoWindow) {
 
 function hideAllMapInfo(mapId) {
 
-    console.info("hideAllMapInfo() called with map id: " + mapId);
+    if (MAPDEBUG) console.info("hideAllMapInfo() called with map id: " + mapId);
     var map = apollo.getData(mapId);
     var infoWindows = map.infoWindows;
     for (var i = 0; i < infoWindows.length; i++) {
@@ -140,20 +146,20 @@ function loadGoogleMapApi() {
     if (apollo.hasInfo("googleMapKey")) {
         mapKey = "&key=" + apollo.getInfo("googleMapKey");
     }
-    console.info("googleMapKey: " + mapKey);
+    if (MAPDEBUG) console.info("googleMapKey: " + mapKey);
     jQuery.loadScript("https://maps.google.com/maps/api/js?callback=initGoogleMaps&language=" + locale + mapKey);
 }
 
 function initGoogleMaps() {
 
-    console.info("initGoogleMaps() called!");
+    if (MAPDEBUG) console.info("initGoogleMaps() called!");
     var maps = apollo.getElements("map");
     for (var i=0; i < maps.length; i++) {
         var mapData = maps[i];
 
         var mapId = mapData.id;
 
-        console.info("Initializing map: " + mapId);
+        if (MAPDEBUG) console.info("Initializing map: " + mapId);
 
         var mapOptions = {
             zoom: parseInt(mapData.zoom),
@@ -213,7 +219,7 @@ function initGoogleMaps() {
                 // add marker to marker map
                 infoWindows.push(infoWindow);
 
-                console.info("attaching Event lister: " + p + " to map id " + mapId);
+                if (MAPDEBUG) console.info("attaching Event lister: " + p + " to map id " + mapId);
 
                 // attach event listener that shows info window to marker
                 // see http://you.arenot.me/2010/06/29/google-maps-api-v3-0-multiple-markers-multiple-infowindows/
@@ -245,7 +251,7 @@ function initGoogleMaps() {
 
             if (typeof $mapElement.data("map") != 'undefined') {
                 var $mapData = $mapElement.data("map");
-                // console.info("mapData found:" + $mapData);
+                if (MAPDEBUG) console.info("mapData found:" + $mapData);
                 apollo.addElement("map", $mapData);
             }
         });
