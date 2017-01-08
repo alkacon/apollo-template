@@ -24,7 +24,9 @@
 function showMapMarkers(mapId, group) {
 
     console.info("showMapMarkers() called with map id: " + mapId);
-    var markers = apollo.getData(mapId).markers;
+    var map = apollo.getData(mapId);
+    var markers = map.markers;
+    hideAllMapInfo(mapId);
     for (var i = 0; i < markers.length; i++) {
         if (markers[i].group == group || group == 'showall') {
             markers[i].setVisible(true);
@@ -39,7 +41,6 @@ function showMapInfo(mapId, infoId) {
     console.info("showMapInfo() called with map id: " + mapId + " info id: " + infoId);
     var map = apollo.getData(mapId);
     var infoWindows = map.infoWindows;
-    console.info("showMapInfo() infoWindows.length: " + infoWindows.length);
     for (var i = 0; i < infoWindows.length; i++) {
         if (i != infoId) {
             infoWindows[i].close();
@@ -49,6 +50,16 @@ function showMapInfo(mapId, infoId) {
                 infoWindows[i].marker
             );
         }
+    }
+}
+
+function hideAllMapInfo(mapId) {
+
+    console.info("hideAllMapInfo() called with map id: " + mapId);
+    var map = apollo.getData(mapId);
+    var infoWindows = map.infoWindows;
+    for (var i = 0; i < infoWindows.length; i++) {
+        infoWindows[i].close();
     }
 }
 
@@ -101,7 +112,7 @@ function initGoogleMaps() {
         var markers = [];
         var infoWindows = [];
 
-        if (mapData.markers != "undefined") {
+        if (typeof mapData.markers != "undefined") {
             for (var p=0; p < mapData.markers.length; p++) {
 
                 var point = mapData.markers[p];

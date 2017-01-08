@@ -28,4 +28,33 @@
     .mapbuttons {
         margin-top: 20px;
     }
+
+    .mapwindow {
+
+        h2 {
+            font-family: $font-content;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
+
+        .route {
+
+            .head {
+                margin-top: 5px;
+                font-weight: 400;
+            }
+
+            .btn {
+                margin-top: 5px;
+            }
+
+            .form-control {
+                margin-top: 5px;
+                height: 27px;
+                padding: 3px 6px;
+            }
+        }
+    }
 }
