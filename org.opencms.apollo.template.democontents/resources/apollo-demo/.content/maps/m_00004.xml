@@ -13,14 +13,16 @@
     <Route>false</Route>
     <ShowMarkers>true</ShowMarkers>
     <MapCoord>
-      <Caption><![CDATA[Caption]]></Caption>
-      <Address><![CDATA[KOMED, Mediapark]]></Address>
+      <Caption><![CDATA[KOMED]]></Caption>
+      <Address><![CDATA[Im Mediapark 6C
+50670 Köln]]></Address>
       <MarkerGroup><![CDATA[A]]></MarkerGroup>
-      <Coord><![CDATA[{"lat":50.9478274,"lng":6.943844899999931,"zoom":14,"type":"roadmap","mode":"dynamic","address":"Im Mediapark, 50670 Köln, Germany"}]]></Coord>
+      <Coord><![CDATA[{"lat":50.94851,"lng":6.94417,"zoom":14,"type":"roadmap","mode":"dynamic","address":"Im Mediapark 6Z, 50670 Köln, Germany","height":0,"width":0}]]></Coord>
     </MapCoord>
     <MapCoord>
       <Caption><![CDATA[Cologne Cathedral]]></Caption>
-      <Address><![CDATA[Domkloster 4, 50667 Köln, Germany]]></Address>
+      <Address><![CDATA[Domkloster 4
+50667 Köln]]></Address>
       <MarkerGroup><![CDATA[B]]></MarkerGroup>
       <Coord><![CDATA[{"lat":50.94127839999999,"lng":6.958281400000033,"zoom":14,"type":"roadmap","mode":"dynamic","address":"Cologne Cathedral, Domkloster 4, 50667 Köln, Germany"}]]></Coord>
     </MapCoord>

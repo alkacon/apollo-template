@@ -84,6 +84,8 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.map.messages">
 
+<c:set var="utf8" value="UTF-8" />
+
 <div 
     id="${id}" 
     data-map='{
@@ -149,9 +151,9 @@
                 --%>"lat":"${markerLat}",<%--
                 --%>"lng":"${markerLng}",<%--
                 --%>"geocode":"${markerNeedsGeoCode}",<%--
-                --%>"title":"${cms:escape(markerTitle, cms.requestContext.encoding)}",<%--
-                --%>"group":"${cms:escape(markerGroup, cms.requestContext.encoding)}",<%--
-                --%>"info":"${cms:escape(markerInfo, cms.requestContext.encoding)}"<%--
+                --%>"title":"${cms:escape(markerTitle, utf8)}",<%--
+                --%>"group":"${cms:escape(markerGroup, utf8)}",<%--
+                --%>"info":"${cms:escape(markerInfo, utf8)}"<%--
             --%>}<c:if test="${not status.last}">,</c:if>
             </c:forEach>
             ]
@@ -167,7 +169,7 @@
             <fmt:message key="apollo.map.message.button.showmarkers" />
         </button>
         <c:forEach var="group" items="${mapGroups}">
-            <button class="btn btn-sm" onclick="showMapMarkers('${id}', '${cms:escape(group.key, cms.requestContext.encoding)}');">
+            <button class="btn btn-sm" onclick="showMapMarkers('${id}', '${cms:escape(group.key, utf8)}');">
                 <fmt:message key="apollo.map.message.button.show">
                     <fmt:param><c:out value="${group.key}" /></fmt:param>
                 </fmt:message>

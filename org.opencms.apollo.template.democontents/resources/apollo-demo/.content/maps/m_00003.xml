@@ -13,8 +13,9 @@
     <Route>true</Route>
     <ShowMarkers>true</ShowMarkers>
     <MapCoord>
-      <Caption><![CDATA[Cologne Cathedral]]></Caption>
-      <Address><![CDATA[Domkloster 4, 50667 Köln, Germany]]></Address>
+      <Caption><![CDATA[Kölner Dom]]></Caption>
+      <Address><![CDATA[Domkloster 4
+50667 Köln]]></Address>
       <MarkerGroup/>
       <Coord><![CDATA[{"lat":50.94127839999999,"lng":6.958281400000033,"zoom":14,"type":"roadmap","mode":"dynamic","address":"Cologne Cathedral, Domkloster 4, 50667 Köln, Germany"}]]></Coord>
     </MapCoord>

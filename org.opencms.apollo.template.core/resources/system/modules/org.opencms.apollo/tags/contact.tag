@@ -118,11 +118,8 @@
 
     <c:if test="${showaddress}">
         <c:set var="animatedAddress" value="${showicons and not showaddressalways}" />
-        <div class="adr${animatedAddress ? ' clickme' : ''}"
-            <c:if test="${animatedAddress}">
-                id="address-${cms.element.instanceId}" 
-                onclick="$('#address-${cms.element.instanceId}').slideUp();$('#addresslink-${cms.element.instanceId}').slideDown();"
-            </c:if>>
+        <div class="clickme-showme">
+        <div class="adr${animatedAddress ? ' clickme' : ''}">
             <div class="street-address">${data.value.Address.value.StreetAddress}</div>
             <c:if test="${data.value.Address.value.ExtendedAddress.isSet}">
                 <div class="extended-address">${data.value.Address.value.ExtendedAddress}</div>
@@ -141,13 +138,10 @@
             </div>
         </div>
         <c:if test="${animatedAddress}">
-            <div class="addresslink" id="addresslink-${cms.element.instanceId}">
+            <div class="addresslink showme">
                 <apollo:icon-prefix icon="home" fragments="icon text" >
                     <jsp:attribute name="text">
-                        <span class="${showtext ? 'with-text' : 'only-icon'}"><a href="" onclick="
-                            $('#address-${cms.element.instanceId}').slideDown();
-                            $('#addresslink-${cms.element.instanceId}').hide();
-                            return false;"><%--
+                        <span class="${showtext ? 'with-text' : 'only-icon'}"><a><%--
                         --%><fmt:message key="apollo.contact.showaddress"/>
                         </a></span>
                     </jsp:attribute>
@@ -155,6 +149,7 @@
                 </apollo:icon-prefix>
             </div>
         </c:if>
+        </div>
     </c:if>
 
     <c:if test="${showphone}">
