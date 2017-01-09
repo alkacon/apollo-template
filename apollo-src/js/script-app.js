@@ -17,6 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+// Note: If APPDEBUG is false, all APPDEBUG clauses will be removed 
+// by uglify.js during Apollo JS processing as unreachable code
+var APPDEBUG = false;
+
 var App = function() {
 
     // Header Mega Menu
@@ -112,9 +116,19 @@ var App = function() {
     function handleParallax() {
 
         var parallaxSections = jQuery('.parallax-background');
-        // console.info("parallaxSections found: " + parallaxSections.length);
+        if (APPDEBUG) console.info("parallax-background elements found: " + parallaxSections.length);
         if ((parallaxSections.length > 0) && !Modernizr.touch) {
             parallaxSections.initParallax();
+        }
+    }
+
+    // Apollo parallax sections
+    function handleClickmeShowme() {
+
+        var clickSections = jQuery('.clickme-showme');
+        if (APPDEBUG) console.info("clickme-showme elements found: " + clickSections.length);
+        if (clickSections.length > 0) {
+            clickSections.initClickmeShowme();
         }
     }
 
@@ -154,6 +168,7 @@ var App = function() {
             handleHoverSelector();
             handleSmoothScrolling();
             handleParallax();
+            handleClickmeShowme();
             handleMaps();
             handleSliders();
 
@@ -163,3 +178,45 @@ var App = function() {
     };
 
 }();
+
+
+// Get the path to an element, good for debugging messages.
+// see http://stackoverflow.com/questions/5442767/returning-the-full-path-to-an-element
+(function( $ ){
+
+    $.fn.getFullPath = function(){
+        return $(this).parentsUntil('body')
+            .andSelf()
+            .map(function() {
+                var index = $(this).index();
+                return this.nodeName + '[' + index + ']';
+            }).get().join('>');
+    };
+})(jQuery);
+
+
+(function( $ ){
+
+    $.fn.initClickmeShowme = function() {
+        var $this = $(this);
+
+        $this.each(function(){
+
+            var $element = $(this); 
+            var $clickme = $element.find('> .clickme');
+            var $showme  = $element.find('> .showme');
+
+            if (APPDEBUG) console.info("initClickmeShowme called for " + $clickme.getFullPath());
+
+            $clickme.click(function() {
+                $clickme.slideUp();
+                $showme.slideDown();
+            });
+
+            $showme.click(function() {
+                $showme.slideUp();
+                $clickme.slideDown();
+            });
+        });
+    };
+})(jQuery);

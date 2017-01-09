@@ -24,11 +24,6 @@
 // map colors (for marker groups)
 $map-colors: ($main-theme, $main-theme-complementary, $orange, $cyan) !default;
 
-.ap-map {
-
-    margin-bottom: 20px;
-}
-
 .ap-google-map {
 
     margin-bottom: 20px;
@@ -72,7 +67,7 @@ $themeMAP: ', "map-color":[';
 @each $color in $map-colors {
     $themeMAP: $themeMAP + '"' + $color + '",'
 }
-// ugly but but quick: add grey as last color, so I don't have to find out 
+// ugly but quick: add grey as last color, so I don't have to find out 
 // about the last index to avoid trailing comma ","
 $themeMAP: $themeMAP + '"' + $grey + '"]';
 $themeJSON: $themeJSON + $themeMAP;

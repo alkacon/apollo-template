@@ -222,6 +222,33 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 
 
 /**
+ * Clickme / Showme animation.
+ * This effect relies on jQuery to work, it is NOT pure CSS.
+ * HTML structure:
+ * 
+ * <div class="clickme-showme">    <-- Outer wrapper
+ *     <div classs="clickme">      <-- Content initially hidden
+ *         <!-- Some markup here --> 
+ *     </div>
+ *     <div classs="showme">       <-- Content initially visible
+ *         <!-- Some mearkup here --> 
+ *     </div>
+ * </div>
+ **/
+.clickme-showme {
+
+    cursor: pointer;
+
+    > .clickme {
+        display: none;
+    }
+
+    > .showme {
+        display: block;
+    }
+}
+
+/**
  * Spinner animation, displays a rotating "currently loading" symbol.
  * Used e.g. by the list and the image gallery.
  */
