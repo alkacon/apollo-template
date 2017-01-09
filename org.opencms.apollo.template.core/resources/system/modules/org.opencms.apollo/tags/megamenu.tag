@@ -37,12 +37,11 @@
     <div id="megamenu-editor">
     <div class="container">
         <c:if test="${cms.isEditMode}"><c:set var="wrapContainer" value="true" />
-            <div class="ap-panel  panel panel-default">
-                <div class="panel-heading">
-                    <h2 class="panel-title">
-                        <div class="ap-panel-title">Editing Megamenu for <span class="color-blue">${cms.requestContext.folderUri}</span></div>
-                    </h2>
+            <div id="ap-megamenu-head">
+                <div class="text">
+                    Megamenu Editor
                 </div>
+                <div class="head">${cms.requestContext.folderUri}</div>
             </div>
         </c:if>
       <div class="ap-header">
