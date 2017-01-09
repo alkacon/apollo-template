@@ -139,6 +139,7 @@ function hideAllMapInfo(mapId) {
     }
 }
 
+
 function loadGoogleMapApi() {
 
     var locale = apollo.getInfo("locale");
@@ -146,9 +147,27 @@ function loadGoogleMapApi() {
     if (apollo.hasInfo("googleMapKey")) {
         mapKey = "&key=" + apollo.getInfo("googleMapKey");
     }
+    var addLibs = "";
+    if (! apollo.isOnlineProject()) {
+        // need to load places API for OpenCms map editor
+        addLibs = "&libraries=places"
+    }
     if (MAPDEBUG) console.info("googleMapKey: " + mapKey);
-    jQuery.loadScript("https://maps.google.com/maps/api/js?callback=initGoogleMaps&language=" + locale + mapKey);
+    jQuery.loadScript("https://maps.google.com/maps/api/js?callback=initGoogleMaps&language=" + locale + addLibs + mapKey);
 }
+
+
+function getPuempel(color) {
+    return {
+        path: 'M0-37.06c-5.53 0-10.014 4.148-10.014 9.263 0 7.41 8.01 9.262 10.014 27.787 2.003-18.525 10.014-20.377 10.014-27.787 0-5.115-4.484-9.264-10.014-9.264zm.08 6.988a2.91 2.91 0 0 1 2.91 2.912 2.91 2.91 0 0 1-2.91 2.91 2.91 2.91 0 0 1-2.91-2.91 2.91 2.91 0 0 1 2.91-2.912z',
+        scale: 1,
+        fillOpacity: 1,
+        fillColor: color,
+        strokeColor: '#000000',
+        strokeWeight: 1
+    };
+}
+
 
 function initGoogleMaps() {
 
@@ -187,18 +206,29 @@ function initGoogleMaps() {
         // map markers and info windows
         var markers = [];
         var infoWindows = [];
+        var groups = {};
+        var groupsFound = 0;
 
         if (typeof mapData.markers != "undefined") {
             for (var p=0; p < mapData.markers.length; p++) {
 
                 var point = mapData.markers[p];
+                var group = decodeURIComponent(point.group);
+                if (typeof groups[group] === "undefined" ) {
+                    // Array? Object? 
+                    // see http://stackoverflow.com/questions/9526860/why-does-a-string-index-in-a-javascript-array-not-increase-the-length-size
+                    var color = apollo.getThemeColor("map-color[" + groupsFound++ + "]");
+                    if (MAPDEBUG) console.info("Map new marker group added: " + group + " with color: " + color);
+                    groups[group] = getPuempel(color);
+                }
 
                 // get marker data from calling object
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(point.lat, point.lng),
                     map: map,
                     title: decodeURIComponent(point.title),
-                    group: decodeURIComponent(point.group),
+                    group: group,
+                    icon: groups[group],
                     info: decodeURIComponent(point.info),
                     index: p,
                     mapId: mapId,
@@ -229,7 +259,7 @@ function initGoogleMaps() {
             }
         }
 
-        // store map in global array, required e.g. to select marker categories etc.
+        // store map in global array, required e.g. to select marker groups etc.
         apollo.addData(mapId, {
             'map': map,
             'markers': markers,

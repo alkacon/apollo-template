@@ -121,7 +121,7 @@ var App = function() {
     // Apollo Map sections
     function handleMaps() {
 
-        var mapElements = jQuery('.ap-map');
+        var mapElements = jQuery('.ap-google-map');
         // console.info("mapElements found: " + mapElements.length);
         if (mapElements.length > 0) {
             mapElements.initMaps();

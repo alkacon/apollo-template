@@ -149,6 +149,25 @@ $ap-edit-infos:
     }
 }
 
+
+/* Mega menu editor head */ 
+
+#ap-megamenu-head {
+    @extend %ap-infobox-base;
+
+    background-color: #ffc9d2;
+    min-height: initial;
+
+    .head  {
+        color: $text-dark;
+    }
+    .text {
+        color: $text-dark;
+    }
+}
+
+
+
 /* Label colors */
 
 %ap-label {

@@ -181,3 +181,16 @@ $container-lg-useable:  $container-lg - (2 * $gutter) !default;
         @return $text-light; // dark background, light text
     }
 }
+
+// passing varaibales from SCSS to JavaScript
+// see https://css-tricks.com/making-sass-talk-to-javascript-with-json/ 
+// final DIV is generated in apollo-generics.scss 
+
+@function append-json($json, $label, $value) {
+    @return $json + ', "' + $label + '":"' + $value + '"';
+}
+
+$themeJSON: '"main-theme":"#{$main-theme}"';
+$themeJSON: append-json($themeJSON, "main-theme-complementary", $main-theme-complementary);
+$themeJSON: append-json($themeJSON, "main-theme-hover", $main-theme-hover);
+

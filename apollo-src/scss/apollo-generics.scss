@@ -317,3 +317,15 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
         margin-bottom: #{$space}px;
     }
 }
+
+
+/* Page info element */
+#apollo-info {
+    visibility: hidden;
+
+    // passing varaibales from SCSS to JavaScript
+    // see https://css-tricks.com/making-sass-talk-to-javascript-with-json/ 
+    &:before {
+        content: '{#{$themeJSON}}'
+    }
+}
