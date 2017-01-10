@@ -20,11 +20,10 @@
 
 <div>
     <div id="error" class="alert alert-danger" style="display:none;">
-    </div> 
-    <cms:ugc var="ugcId" editId="${param.fileId}"
-        configPath="${content.filename}" />
+    </div>
+    <cms:ugc var="ugcId" editId="${param.fileId}" configPath="${content.filename}" />
     <div id="postFormLoading" style="display: none"></div>
-    <form id="ugcForm" ugc-id="${ugcId}" back-link="${backlink}" method="post" role="form">
+    <form id="ugcForm" <c:out value='ugc-id="${ugcId}" back-link="${backlink}"' escapeXml="false" /> method="post" role="form">
 
         <div class="form-group">
             <label for="title">Title</label> <input type="text"

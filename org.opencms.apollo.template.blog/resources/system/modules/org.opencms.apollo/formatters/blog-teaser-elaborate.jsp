@@ -54,7 +54,10 @@
 
     <c:out value="${divCenter}" escapeXml="false" />
 
+        <%--
         <c:set var="detailPage" value="/sites/default/apollo-demo/blog/article/" />
+        --%>
+
         <c:set var="text">${content.value.Teaser}</c:set>
         <c:if test="${empty text}"><c:set var="text">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</c:set></c:if>
         <c:set var="href"><cms:link baseUri="${baseUri}" detailPage="${detailPage}">${content.filename}</cms:link></c:set>
@@ -64,7 +67,7 @@
             text="${text}"
             textlength="${teaserLength}"
             title="${content.value.Title}"
-            href="${href}" 
+            href="${href}"
             date="${content.value.Date}"
             showdate="${showDate}"
             btntext="${buttonText}"

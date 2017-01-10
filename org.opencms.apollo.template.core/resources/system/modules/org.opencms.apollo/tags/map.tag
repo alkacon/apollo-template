@@ -1,41 +1,41 @@
-<%@ tag 
+<%@ tag
     display-name="map"
-    trimDirectiveWhitespaces="true" 
+    trimDirectiveWhitespaces="true"
     description="Displays a Google map." %>
 
 
-<%@ attribute name="id" type="java.lang.String" required="true" 
+<%@ attribute name="id" type="java.lang.String" required="true"
     description="The id the map should use, usually the UID of the element." %>
 
-<%@ attribute name="useGeocoding" type="java.lang.Boolean" required="true" 
+<%@ attribute name="useGeocoding" type="java.lang.Boolean" required="true"
     description="If true, use Google geocoding API to find addresses for markers that have no address set in content.
     Will also lookup the address if only centerLat/centerLng is used with no markers." %>
 
 <%@ attribute name="showMarkers" type="java.lang.Boolean" required="true"
     description="If true, show markers with info windows on the map." %>
 
-<%@ attribute name="showRoute" type="java.lang.Boolean" required="false" 
+<%@ attribute name="showRoute" type="java.lang.Boolean" required="false"
     description="If true, show route option for each marker in info window." %>
 
-<%@ attribute name="width" type="java.lang.String" required="false" 
+<%@ attribute name="width" type="java.lang.String" required="false"
     description="The display width of the map, must be a valid CSS unit. If not set, will use '100%' as default." %>
 
 <%@ attribute name="height" type="java.lang.String" required="false"
     description="The display height of the map, must be a valid CSS unit. If not set, will use '400px' as default." %>
 
-<%@ attribute name="zoom" type="java.lang.String" required="false" 
+<%@ attribute name="zoom" type="java.lang.String" required="false"
     description="The initial map zoom factor. If not set, will use '14' as default." %>
 
-<%@ attribute name="type" type="java.lang.String" required="false" 
+<%@ attribute name="type" type="java.lang.String" required="false"
     description="The map type. If not set, will use 'ROADMAP' as default." %>
 
-<%@ attribute name="centerLat" type="java.lang.String" required="false" 
+<%@ attribute name="centerLat" type="java.lang.String" required="false"
     description="The center latitude of the map." %>
 
-<%@ attribute name="centerLng" type="java.lang.String" required="false" 
+<%@ attribute name="centerLng" type="java.lang.String" required="false"
     description="The center longitude of the map." %>
 
-<%@ attribute name="markers" type="java.util.List" required="false" 
+<%@ attribute name="markers" type="java.util.List" required="false"
     description="A list of map marker points from the Location picker widget." %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -62,7 +62,7 @@
     <c:set var="centerLat" value="${empty centerLat ? locBean.lat : centerLat}" />
     <c:set var="centerLng" value="${empty centerLng ? locBean.lng : centerLng}" />
 </c:if>
-<%-- Default location is the Brandenburg Gate in Berlin --%> 
+<%-- Default location is the Brandenburg Gate in Berlin --%>
 <c:if test="${empty centerLat or (centerLat == '0.0')}">
     <c:set var="centerLat" value="52.515823" />
 </c:if>
@@ -79,15 +79,13 @@
 </c:if>
 
 <%-- Collects all map marker groups found, this is a Map since we can not add elements to lists in EL --%>
-<jsp:useBean id="mapGroups" class="java.util.HashMap" />
+<jsp:useBean id="markerGroups" class="java.util.HashMap" />
 
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.map.messages">
 
-<c:set var="utf8" value="UTF-8" />
-
-<div 
-    id="${id}" 
+<div
+    id="${id}"
     data-map='{
         "id":"${id}",
         "zoom":"${zoom}",
@@ -107,20 +105,13 @@
                 <c:set var="markerTitle" value="${marker.value.Caption.isEmptyOrWhitespaceOnly ? '' : fn:trim(marker.value.Caption)}" />
 
                 <c:set var="markerGroup" value="${marker.value.MarkerGroup.isEmptyOrWhitespaceOnly ? 'default' : fn:trim(marker.value.MarkerGroup)}" />
-                <c:set target="${mapGroups}" property="${markerGroup}" value="used"/>
+                <c:set target="${markerGroups}" property="${markerGroup}" value="used"/>
 
                 <c:set var="markerNeedsGeoCode" value="false" />
                 <c:set var="markerAddress" value="" />
                 <c:choose>
                     <c:when test="${not marker.value.Address.isEmptyOrWhitespaceOnly}">
-                         <c:set var="markerText" value="${fn:trim(marker.value.Address)}" scope="request" />
-                         <c:set var="markerAddress">
-                             <%
-                                 String markerAddress = (String)request.getAttribute("markerText");
-                                 markerAddress = org.opencms.util.CmsStringUtil.escapeHtml(markerAddress);
-                             %>
-                             <%= markerAddress %>
-                         </c:set>
+                         <c:set var="markerAddress" value="${cms:escapeHtml(fn:trim(marker.value.Address))}" />
                     </c:when>
                     <c:when test="${useGeocoding}">
                          <c:set var="markerNeedsGeoCode" value="true" />
@@ -151,27 +142,27 @@
                 --%>"lat":"${markerLat}",<%--
                 --%>"lng":"${markerLng}",<%--
                 --%>"geocode":"${markerNeedsGeoCode}",<%--
-                --%>"title":"${cms:escape(markerTitle, utf8)}",<%--
-                --%>"group":"${cms:escape(markerGroup, utf8)}",<%--
-                --%>"info":"${cms:escape(markerInfo, utf8)}"<%--
+                --%>"title":"${cms:encode(markerTitle)}",<%--
+                --%>"group":"${cms:encode(markerGroup)}",<%--
+                --%>"info":"${cms:encode(markerInfo)}"<%--
             --%>}<c:if test="${not status.last}">,</c:if>
             </c:forEach>
             ]
         </c:if><%--
 --%>}'
-    class="mapwindow" 
+    class="mapwindow"
     style="${mapStyle}">
 </div>
 
-<c:if test="${showMarkers and fn:length(mapGroups) > 1}">
+<c:if test="${showMarkers and fn:length(markerGroups) > 1}">
     <div class="mapbuttons">
         <button class="btn btn-sm" onclick="showMapMarkers('${id}','showall');">
             <fmt:message key="apollo.map.message.button.showmarkers" />
         </button>
-        <c:forEach var="group" items="${mapGroups}">
-            <button class="btn btn-sm" onclick="showMapMarkers('${id}', '${cms:escape(group.key, utf8)}');">
+        <c:forEach var="markerGroup" items="${markerGroups}">
+            <button class="btn btn-sm" onclick="showMapMarkers('${id}', '${cms:encode(markerGroup.key)}');">
                 <fmt:message key="apollo.map.message.button.show">
-                    <fmt:param><c:out value="${group.key}" /></fmt:param>
+                    <fmt:param><c:out value="${markerGroup.key}" /></fmt:param>
                 </fmt:message>
             </button>
         </c:forEach>

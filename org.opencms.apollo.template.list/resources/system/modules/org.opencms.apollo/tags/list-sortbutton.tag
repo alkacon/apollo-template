@@ -1,29 +1,29 @@
 <%@ tag display-name="list-sortbutton"
-  trimDirectiveWhitespaces="true" 
+  trimDirectiveWhitespaces="true"
   body-content="empty"
   description="Generates a sort options dropdown button for the list."%>
 
 
-<%@ attribute name="label" type="java.lang.String" required="false" 
+<%@ attribute name="label" type="java.lang.String" required="false"
     description="The label that is used for the button." %>
 
-<%@ attribute name="params" type="java.lang.String" required="false" 
+<%@ attribute name="params" type="java.lang.String" required="false"
     description="Can be used to select the sort options to show. Shows all options if not set." %>
 
-<%@ attribute name="color" type="java.lang.String" required="false" 
+<%@ attribute name="color" type="java.lang.String" required="false"
     description="The color of the button." %>
 
-<%@ attribute name="searchconfig" type="java.lang.String" required="false" 
+<%@ attribute name="searchconfig" type="java.lang.String" required="false"
     description="The configuration string that was used by the cms:search tag." %>
 
-<%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="false" 
+<%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="false"
     description="The results of the search performed by the cms:search tag." %>
 
-<%@ attribute name="render" type="java.lang.Boolean" required="false" 
+<%@ attribute name="render" type="java.lang.Boolean" required="false"
     description="Determines if the content should be rendered or given as a list of items in the listItems variable." %>
 
 
-<%@ variable name-given="listItems" scope="AT_END" declare="true" 
+<%@ variable name-given="listItems" scope="AT_END" declare="true"
     description="The items of the button stored in a list." %>
 
 
@@ -71,24 +71,24 @@
             <c:set var="sortIndex" value="0" />
         </c:if>
     </c:if>
-    
+
         <%-- ################################################################################################################# HEAD ######## --%>
         <c:set var="head">
             <c:out value='<div class="list-option btn-group">' escapeXml='false' />
-                <button type="button" class="dropdown-toggle btn" data-toggle="dropdown" 
+                <button type="button" class="dropdown-toggle btn" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false" id="dropdownMenu1" aria-expanded="true">
                     <span class="pr-5">${label}</span>
                     <span class="fa fa-chevron-down"></span>
                 </button>
 
-                <c:out value='<ul class="list-optionlist dropdown-menu dropdown-${buttonColor}">' escapeXml='false' />   
-        </c:set>    
+                <c:out value='<ul class="list-optionlist dropdown-menu dropdown-${buttonColor}">' escapeXml='false' />
+        </c:set>
 
         <c:set var="delimiter" value="|" />
-        
+
         <%-- ################################################################################################################# ITEMS ####### --%>
         <c:set var="items">
-        
+
             <c:forEach var="sortOption" items="${sortController.config.sortOptions}" varStatus="status">
                 <c:if test="${empty params || fn:contains(params, sortOption.paramValue)}">
                     <c:set var="selected">${sortController.state.checkSelected[sortOption] ? ' class="active"' : ""}</c:set>
@@ -100,16 +100,16 @@
                     </li>
                 </c:if>
             </c:forEach>
-                
+
         </c:set>
-                    
+
         <%-- ################################################################################################################# FOOT ######## --%>
         <c:set var="foot">
-                <c:out value='</ul>' escapeXml='false' />               
-            <c:out value='</div>' escapeXml='false' />   
+                <c:out value='</ul>' escapeXml='false' />
+            <c:out value='</div>' escapeXml='false' />
         </c:set>
-        
-    
+
+
     <%-- ####### build list of list-items ######## --%>
     <c:set var="listItems" value="${items}" />
 
