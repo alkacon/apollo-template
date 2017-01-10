@@ -1,8 +1,7 @@
 <%@ tag
     display-name="image-animated-imgur"
     trimDirectiveWhitespaces="true"
-    description="Formates an image with an options Ken Burns and / or shadow animation effect." %>
-    <%-- See https://en.wikipedia.org/wiki/Ken_Burns" --%>
+    description="Formates an image taken from the imgur server." %>
 
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The image to format. Must be a generic Apollo nested image content."%>
@@ -35,30 +34,25 @@
 <c:set var="imageDesc">${image.value.Description}</c:set>
 <c:set var="imageData">${image.value.Data}</c:set>
 
-<c:if test="${empty test or test}">
-	<c:if test="${(not empty imageLink) and (empty test or test)}">
-		<c:set var="imagefound">true</c:set>
+<c:if test="${(not empty imageLink) and (empty test or test)}">
+    <c:set var="imagefound">true</c:set>
 
-		<%-- ####### Animated image ####### --%>
+    <%-- ####### Animated image ####### --%>
 
-		<div class="ap-image ${cssclass}">
-			<div class="animated-box">
-				<div class="image-outer-box">
-					<img src="${imageLink}" class="img-responsive image-inner-box" >
-				</div>
+    <div class="ap-image ${cssclass}">
+        <div class="animated-box">
+            <div class="image-outer-box">
+                <img src="${imageLink}" class="img-responsive image-inner-box" >
+            </div>
 
-				<div class="copyright">
-					<div>Courtesy of Imgur</div>
-				</div>
+            <%-- ####### JSP body inserted here ######## --%>
+            <jsp:doBody/>
+            <%-- ####### /JSP body inserted here ######## --%>
 
-				<%-- ####### JSP body inserted here ######## --%>
-				<jsp:doBody/>
-				<%-- ####### /JSP body inserted here ######## --%>
-
-			</div>
-		</div>
-	</c:if>
+        </div>
+    </div>
 </c:if>
+
 <c:if test="${empty imagefound}">
     <c:if test="${empty test or test}">
         <fmt:setLocale value="${cms.locale}" />

@@ -32,8 +32,8 @@
         >
             <c:if test="${showlinktext}">
                 <div class="button-box">
-                    <apollo:link 
-                        link="${value.Link}" 
+                    <apollo:link
+                        link="${value.Link}"
                         cssclass="btn btn-xs" />
                 </div>
             </c:if>

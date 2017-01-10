@@ -15,19 +15,19 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.list.messages">
 
-<apollo:formatter-settings 
-    type="${content.value.TypesToCollect}" 
+<apollo:formatter-settings
+    type="${content.value.TypesToCollect}"
     parameters="${content.valueList.Parameters}"
-    online="${cms.isOnlineProject}" 
+    online="${cms.isOnlineProject}"
 />
 
-<apollo:list-search 
-    source="${value.Folder}" 
-    types="${value.TypesToCollect}" 
-    categories="${content.readCategories}" 
-    count="${value.ItemsPerPage.toInteger}" 
-    sort="${value.SortOrder}" 
-    showexpired="${cms.element.settings.showexpired}" 
+<apollo:list-search
+    source="${value.Folder}"
+    types="${value.TypesToCollect}"
+    categories="${content.readCategories}"
+    count="${value.ItemsPerPage.toInteger}"
+    sort="${value.SortOrder}"
+    showexpired="${cms.element.settings.showexpired}"
     filterqueries="${value.FilterQueries}" />
 
 <c:set var="csswrapper" value="${not empty formatterSettings.filterWrapper ? formatterSettings.filterWrapper : formatterSettings.listWrapper}" />
@@ -73,18 +73,18 @@
                                     <c:forTokens var="testCat" items="${categoryPaths}" delims=",">
                                         <c:if test="${fn:startsWith(currCat.path, testCat)}">
                                             <c:set var="showLabel" value="true" />
-                                        </c:if> 
+                                        </c:if>
                                     </c:forTokens>
                                 </c:when>
                                 <c:otherwise>
-                                    <c:set var="showLabel" value="true" />  
+                                    <c:set var="showLabel" value="true" />
                                 </c:otherwise>
                             </c:choose>
 
                             <c:if test="${showLabel}">
                                 <li ${selected}>
                                     <a href="javascript:void(0)"
-                                        onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}', 
+                                        onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}',
                                         $('#list-' + $(this).parents('.ap-list-filters').data('id'))); archiveHighlight($(this)); clearQuery();">
                                         <span class="badge"><i class="fa fa-tag"></i> ${currCat.title} (${value.count})</span>
                                     </a>
@@ -125,7 +125,7 @@
                         <%-- another year, generate year toggle button --%>
                         <c:if test="${not status.first}">
                             <%-- close month list of previous year --%>
-                            <c:set var="yearHtml">${yearHtml}</ul></c:set>
+                            <c:set var="yearHtml">${yearHtml}<c:out value='</ul>' escapeXml='false' /></c:set>
                         </c:if>
                         <c:set var="archiveHtml">${yearHtml}${archiveHtml}</c:set>
                         <c:set var="yearHtml">
@@ -133,7 +133,7 @@
                                 <span class="pull-left">${currYear}</span>
                                 <i id="aplistyear${currYear}_toggle" class="fa fa-chevron-down pull-right"></i>
                             </button>
-                            <ul class="year" id="aplistyear${currYear}" style="display:none;">
+                            <c:out value='<ul class="year" id="aplistyear${currYear}" style="display:none;">' escapeXml='false' />
                         </c:set>
                     </c:if>
                     <%-- add month list entry to current year --%>
@@ -141,7 +141,7 @@
                         ${yearHtml}
                         <li ${selected}>
                             <a href="javascript:void(0)"
-                                    onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}', 
+                                    onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}',
                                     $('#list-' + $(this).parents('.ap-list-filters').data('id'))); archiveHighlight($(this)); clearQuery();" title="${facetItem.count}">
                                 <fmt:formatDate value="${fDate}" pattern="MMM" />
                             </a>
@@ -155,7 +155,7 @@
                 </c:forEach>
 
                 <%-- close month list of last year --%>
-                <c:set var="archiveHtml">${yearHtml}</ul>${archiveHtml}</c:set>
+                <c:set var="archiveHtml">${yearHtml}<c:out value='</ul>' escapeXml='false' />${archiveHtml}</c:set>
 
                 ${archiveHtml}
             </div> <%-- /ap-list-filter-archive --%>

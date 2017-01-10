@@ -32,7 +32,8 @@
             <c:forEach var="image" items="${content.valueList.Image}" varStatus="status">
                 <div class="item<c:if test="${status.first}"> active</c:if>">
                     <c:if test="${image.value.Link.isSet}">
-                        <a href="<cms:link>${image.value.Link}</cms:link>" ${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?'target="_blank"':''}>
+                        <c:set var="newWin">${(image.value.NewWin.isSet and image.value.NewWin eq 'true')?'target="_blank"':''}</c:set>
+                        <c:out value='<a href="<cms:link>${image.value.Link}</cms:link>" ${newWin}>' escapeXml='false' />
                     </c:if>
                     <apollo:image-simple image="${image}" title="${image.value.SuperTitle.stringValue}" />
                     <apollo:image-vars image="${image}" escapecopyright="false">
@@ -56,7 +57,7 @@
                         </c:if>
                      </apollo:image-vars>
                     <c:if test="${image.value.Link.isSet}">
-                        </a>
+                        <c:out value='</a>' escapeXml='false' />
                     </c:if>
                 </div>
             </c:forEach>
