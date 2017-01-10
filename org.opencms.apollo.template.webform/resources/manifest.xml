@@ -19,12 +19,12 @@
 		<datecreated>Thu, 10 Mar 2016 10:00:00 GMT</datecreated>
 		<userinstalled/>
 		<dateinstalled/>
-		<dependencies>
-		</dependencies>
+		<dependencies/>
 		<exportpoints>
 			<exportpoint uri="/system/modules/org.opencms.apollo.template.webform/classes/" destination="WEB-INF/classes/"/>
 			<exportpoint uri="/system/modules/org.opencms.apollo.template.webform/lib/" destination="WEB-INF/lib/"/>
 			<exportpoint uri="/system/modules/org.opencms.apollo.template.webform/captchabackgrounds/" destination="resources/captchabackgrounds/apolloform/"/>
+			<exportpoint uri="/system/modules/org.opencms.apollo.template.webform/libext/" destination="WEB-INF/lib/"/>
 		</exportpoints>
 		<resources>
 			<resource uri="/system/modules/org.opencms.apollo.template.webform/"/>
@@ -679,30 +679,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.webform/lib/antlr-2.7.7.jar</source>
-			<destination>system/modules/org.opencms.apollo.template.webform/lib/antlr-2.7.7.jar</destination>
-			<type>binary</type>
-			<uuidstructure>7e24c06e-e6a8-11e5-8ea1-0242ac11002b</uuidstructure>
-			<uuidresource>7e24c06f-e6a8-11e5-8ea1-0242ac11002b</uuidresource>
-			<datecreated>Wed, 09 Mar 2011 14:43:28 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo.template.webform/lib/jcaptcha-1.0-all.jar</source>
-			<destination>system/modules/org.opencms.apollo.template.webform/lib/jcaptcha-1.0-all.jar</destination>
-			<type>binary</type>
-			<uuidstructure>7e2f6ed6-e6a8-11e5-8ea1-0242ac11002b</uuidstructure>
-			<uuidresource>7e2f6ed7-e6a8-11e5-8ea1-0242ac11002b</uuidresource>
-			<datecreated>Fri, 13 Mar 2009 16:16:55 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.webform/lib/org.opencms.apollo.template.webform.jar</source>
 			<destination>system/modules/org.opencms.apollo.template.webform/lib/org.opencms.apollo.template.webform.jar</destination>
 			<type>binary</type>
@@ -715,8 +691,42 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.webform/lib/stringtemplate-3.2.1.jar</source>
-			<destination>system/modules/org.opencms.apollo.template.webform/lib/stringtemplate-3.2.1.jar</destination>
+			<destination>system/modules/org.opencms.apollo.template.webform/libext</destination>
+			<type>folder</type>
+			<uuidstructure>e7f72f54-d73a-11e6-b2cf-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 10 Jan 2017 13:44:28 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.webform/libext/antlr-2.7.7.jar</source>
+			<destination>system/modules/org.opencms.apollo.template.webform/libext/antlr-2.7.7.jar</destination>
+			<type>binary</type>
+			<uuidstructure>7e24c06e-e6a8-11e5-8ea1-0242ac11002b</uuidstructure>
+			<uuidresource>7e24c06f-e6a8-11e5-8ea1-0242ac11002b</uuidresource>
+			<datecreated>Wed, 09 Mar 2011 14:43:28 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.webform/libext/jcaptcha-1.0-all.jar</source>
+			<destination>system/modules/org.opencms.apollo.template.webform/libext/jcaptcha-1.0-all.jar</destination>
+			<type>binary</type>
+			<uuidstructure>7e2f6ed6-e6a8-11e5-8ea1-0242ac11002b</uuidstructure>
+			<uuidresource>7e2f6ed7-e6a8-11e5-8ea1-0242ac11002b</uuidresource>
+			<datecreated>Fri, 13 Mar 2009 16:16:55 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.webform/libext/stringtemplate-3.2.1.jar</source>
+			<destination>system/modules/org.opencms.apollo.template.webform/libext/stringtemplate-3.2.1.jar</destination>
 			<type>binary</type>
 			<uuidstructure>7e37852e-e6a8-11e5-8ea1-0242ac11002b</uuidstructure>
 			<uuidresource>7e37852f-e6a8-11e5-8ea1-0242ac11002b</uuidresource>
@@ -1099,6 +1109,11 @@
 		</file>
 		<file>
 			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/filetypes</destination>
 			<type>folder</type>
 			<properties/>
 		</file>
