@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -35,8 +35,8 @@ $nav-border:        $grey-light !default;         // the border color for the na
 $nav-header-bg:     $nav-bg !default;       // background of the main header
 $nav-beadcrump-bg:  $grey-lighter !default; // background of the breadcrumps
 
-$nav-toggle:        $nav-theme !default;                // colors for the "nav-toggle" button 
-$nav-toggle-text:   $white !default;                    // this is the button displayed on small screens to 
+$nav-toggle:        $nav-theme !default;                // colors for the "nav-toggle" button
+$nav-toggle-text:   $white !default;                    // this is the button displayed on small screens to
 $nav-toggle-hover:  $main-theme-complementary !default; // show / hide the navigation
 
 $nav-shadow:        $dropshadow !default;   // The shadow effect used
@@ -44,7 +44,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 /* The Apollo header */
 
 .ap-header {
-    z-index: 99;
+    z-index: 9999;
     background: $nav-header-bg;
     position: relative;
 
@@ -81,7 +81,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         // Head background container
         .head-container {
             // remove the margins from the row for small screens
-            // this way the head becomes the same size as the navbar, 
+            // this way the head becomes the same size as the navbar,
             // which also has the margins removed.
             .col-xs-12,
             .row {
@@ -157,7 +157,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         background:  $nav-toggle;
         padding: 2px 8px 2px 8px;
         color: $nav-toggle-text;
-        z-index: 100;
+        z-index: 10000;
         position: relative;
         float: right;
 
@@ -184,7 +184,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         }
     }
 
-    // top level nav elements 
+    // top level nav elements
     > li {
         position: static;
         transition: all 1s;
@@ -244,7 +244,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         li.dropdown:hover > .dropdown-menu {
             // this displays the submenus on hover
             display: block;
-        } 
+        }
 
         > .dropdown .dropdown-menu {
             border-top: solid 2px $nav-theme;
@@ -252,7 +252,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
             > li {
                 &:last-child > a {
-                    // remove the border of the last list element 
+                    // remove the border of the last list element
                     border-bottom: none;
                 }
             }
@@ -277,7 +277,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         float: none !important;
 
         > .dropdown {
-             // we need a padding of one on the first elements in the small screen, 
+             // we need a padding of one on the first elements in the small screen,
              // otherwise there will be a scrollbar with 2px right
             padding: 0 1px 0 0;
         }
@@ -306,7 +306,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             float: none; // required to overwrite bootstrap default
 
             > a {
-                // a top level menu entry 
+                // a top level menu entry
                 background: $nav-bg;
                 font-size: 14px;
                 padding: 9px 10px;
@@ -362,7 +362,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
             &:nth-last-child(2) > a,
             &:last-child > a {
-                // remove the border of the last 2 list elements 
+                // remove the border of the last 2 list elements
                 // there is a border for the navbar below
                 // the last element is the search hidden in small screens
                 border-bottom: none;
@@ -392,19 +392,19 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     .search-open {
         // css for open search box-shadow
         // must stay in the css structure here - javascript expects this
-        right: 0; 
-        top: 40px; 
+        right: 0;
+        top: 40px;
         display: none;
-        padding: 14px; 
+        padding: 14px;
         position: absolute;
-        background: $nav-bg; 
+        background: $nav-bg;
         border-top: solid 2px $nav-theme;
         border-bottom: solid 2px $nav-theme;
-        z-index: 100;
+        z-index: 10000;
         box-shadow: 0 6px 12px $nav-shadow;
 
         form {
-            margin: 0;  
+            margin: 0;
         }
     }
 
@@ -445,14 +445,14 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         }
     }
 
-    .dropdown-submenu { 
-        position: relative; 
+    .dropdown-submenu {
+        position: relative;
 
         > .dropdown-menu {
-            top: 3px; 
-            left: 100%; 
-            margin-top: -5px; 
-            margin-left: 0px; 
+            top: 3px;
+            left: 100%;
+            margin-top: -5px;
+            margin-left: 0px;
         }
 
         &:hover > .dropdown-menu {
@@ -482,6 +482,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     @media (min-width: $screen-md-min) {
         min-width: 200px;
         z-index: 9999 !important;
+        box-shadow: 0 6px 12px $nav-shadow;
 
         li a {
             font-size: 13px;
@@ -492,8 +493,6 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         > li a {
             border-bottom: solid 1px $nav-border;
         }
-
-        box-shadow: 0 6px 12px $nav-shadow;
     }
 
     @media (max-width: $screen-sm-max) {
@@ -536,7 +535,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         .ap-header .mega-menu .container {
             width: inherit;
         }
-    
+
         padding: 0;
     }
 
@@ -634,7 +633,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             color: $nav-text;
         }
         li {
-            &.active, 
+            &.active,
             a:hover {
                 color: $nav-text-hover;
                 text-decoration: none;
@@ -653,7 +652,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         top: -9px;
         left: 4px;
         position: relative;
-        border-radius: 4px; 
+        border-radius: 4px;
     }
 
     @media (max-width: $screen-sm-max) {
@@ -665,7 +664,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
     @media (max-width: round($screen-md-min / 2)) {
         // Headline is centered on very small screens
-        h1.pull-left, 
+        h1.pull-left,
         ul.pull-right {
             width: 100%;
             text-align: center;
@@ -720,7 +719,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 #topcontrol {
   color: $text-light;
   background: $text-dark;
-  z-index: 99;
+  z-index: 9999;
   width: 30px;
   height: 30px;
   font-size: 20px;
@@ -851,22 +850,26 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             right: 10px;
             color: $nav-text;
             font-size: 14px;
-            content: "\f107";
             position: absolute;
             font-weight: normal;
             display: inline-block;
             font-family: FontAwesome;
             pointer-events: none;
+            content: "\f107";
+            transform: rotate(-180deg) translate(0px, 2px);
+            transition: transform .33s;
         }
 
         &.collapsed:after {
-            content: "\f105";
+            transform: rotate(0) translate(0px, 0px);
+            transition: transform 0.33s;
         }
     }
 
+
     @media (max-width: $screen-xs-max) {
         // remove bootstap gutter on small screens
-        // we expect to be in "full width" mode here 
+        // we expect to be in "full width" mode here
         margin-left: -15px;
         margin-right: -15px;
         border-left: none;

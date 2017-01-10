@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -120,7 +120,7 @@ $pagination-border:     $grey-light !default;
 
                     &:hover {
                         background-color: $grey-lighter;
-                    } 
+                    }
                 }
 
                 a {
@@ -128,7 +128,7 @@ $pagination-border:     $grey-light !default;
 
                     &:hover {
                         text-decoration: none;
-                    } 
+                    }
                 }
 
                 li.active a {
@@ -156,8 +156,8 @@ $pagination-border:     $grey-light !default;
     }
 
     > .active {
-        > a, 
-        > a:hover, 
+        > a,
+        > a:hover,
         > a:focus {
             color: get-text-color($main-theme);
             background-color: $main-theme;
@@ -218,7 +218,8 @@ $pagination-border:     $grey-light !default;
     .open span.fa,
     i.fa.open,
     span.fa.open {
-        transform: rotate(-90deg) translate(-1px, 0px);
+        // transform: rotate(-90deg) translate(-1px, 0px);
+        transform: rotate(-180deg) translate(0px, -4px);
         transition: transform 0.33s;
     }
 }
@@ -307,7 +308,7 @@ $pagination-border:     $grey-light !default;
 
 
 /* Colored teaser elements, shared with event, blog and other detail formatters */
- 
+
 @each $type-name, $bg-color, $highlight-color in $reduced-colors {
 
     .color-#{""+$type-name} {

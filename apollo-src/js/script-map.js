@@ -21,7 +21,7 @@
  * Google map elements for Apollo.
  */
 
-// Note: If MAPDEBUG is false, all MAPDEBUG clauses will be removed 
+// Note: If MAPDEBUG is false, all MAPDEBUG clauses will be removed
 // by uglify.js during Apollo JS processing as unreachable code
 var MAPDEBUG = false;
 
@@ -30,9 +30,10 @@ function showMapMarkers(mapId, group) {
     if (MAPDEBUG) console.info("showMapMarkers() called with map id: " + mapId);
     var map = apollo.getData(mapId);
     var markers = map.markers;
+    var g = decodeURIComponent(group);
     hideAllMapInfo(mapId);
     for (var i = 0; i < markers.length; i++) {
-        if (markers[i].group == group || group == 'showall') {
+        if (markers[i].group == g || g == 'showall') {
             markers[i].setVisible(true);
         } else {
             markers[i].setVisible(false);
@@ -56,7 +57,7 @@ function showMapInfo(mapId, infoId) {
                 infoWindows[i].geocode = "false";
             }
             infoWindows[i].open(
-                map, 
+                map,
                 infoWindows[i].marker
             );
         }
@@ -185,9 +186,9 @@ function initGoogleMaps() {
             scrollwheel: false,
             mapTypeId: eval("google.maps.MapTypeId." + mapData.type),
             mapTypeControlOptions: {
-                style: google.maps.MapTypeControlStyle.DEFAULT, 
+                style: google.maps.MapTypeControlStyle.DEFAULT,
                 mapTypeIds: new Array(
-                    google.maps.MapTypeId.ROADMAP, 
+                    google.maps.MapTypeId.ROADMAP,
                     google.maps.MapTypeId.SATELLITE,
                     google.maps.MapTypeId.HYBRID
                 )
@@ -215,7 +216,7 @@ function initGoogleMaps() {
                 var point = mapData.markers[p];
                 var group = decodeURIComponent(point.group);
                 if (typeof groups[group] === "undefined" ) {
-                    // Array? Object? 
+                    // Array? Object?
                     // see http://stackoverflow.com/questions/9526860/why-does-a-string-index-in-a-javascript-array-not-increase-the-length-size
                     var color = apollo.getThemeColor("map-color[" + groupsFound++ + "]");
                     if (MAPDEBUG) console.info("Map new marker group added: " + group + " with color: " + color);
@@ -273,10 +274,10 @@ function initGoogleMaps() {
     $.fn.initMaps = function() {
         var $this = $(this);
 
-        // initialize map sections with values from data attributes    
+        // initialize map sections with values from data attributes
         $this.each(function(){
 
-            var $element = $(this); 
+            var $element = $(this);
             var $mapElement = $element.find('.mapwindow');
 
             if (typeof $mapElement.data("map") != 'undefined') {

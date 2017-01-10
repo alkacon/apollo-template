@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -22,7 +22,7 @@
  */
 
 .ap-sitemap {
-    ul, 
+    ul,
     li {
         margin: 0;
         padding: 0;
@@ -44,7 +44,7 @@
             color: get-text-color($main-theme);
             background: $main-theme;
             font-weight: bold;
-            font-size: 1em; 
+            font-size: 1em;
             line-height: 1;
 
             &.parent{
@@ -67,11 +67,12 @@
 
             i{
                 float: right;
-                transform: rotate(0);
+                transform: rotate(0) translate(0px, 0px);
                 transition: transform 0.33s;
 
                 &.open{
-                    transform: rotate(-90deg);
+                    // transform: rotate(-90deg);
+                    transform: rotate(-180deg) translate(0px, -4px);
                     transition: transform .33s;
                 }
             }
@@ -117,7 +118,7 @@
 
             li {
                 color: get-text-color($bg-color);
-                background: $bg-color; 
+                background: $bg-color;
 
                 a {
                     color: get-text-color($bg-color);
@@ -134,8 +135,8 @@
 
                 &:hover {
                     color: get-text-color($bg-color);
-                    background: $bg-color; 
-    
+                    background: $bg-color;
+
                     a {
                         color: get-text-color($bg-color);
                     }
