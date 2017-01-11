@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -125,7 +125,7 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
 
     .fs-#{$fontsize} {
         font-size: #{$fontsize}px;
-    } 
+    }
 }
 
 
@@ -135,7 +135,7 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
 
     .lh-#{$lineheight} {
         line-height: #{$lineheight / 10};
-    } 
+    }
 }
 
 
@@ -156,7 +156,7 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
 
 /* Border base */
 
-@each $radius-name, $radius in $border-radiuses {     
+@each $radius-name, $radius in $border-radiuses {
 
     .bo-radius-#{""+$radius-name} {
         border: 0 solid;
@@ -166,7 +166,7 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
 
 /* Borders with round corners */
 
-@each $line-size in $border-sizes {    
+@each $line-size in $border-sizes {
 
     .bo-#{""+$line-size}  {
         border: #{$line-size}px solid $border-default-color;
@@ -189,7 +189,7 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
 @each $border-style in $border-styles {
 
     .bo-#{""+$border-style}  {
-        border-style: $border-style;    
+        border-style: $border-style;
     }
 }
 
@@ -198,7 +198,7 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
 
 @each $position in $border-positions {
 
-    @each $line-size in $border-sizes {    
+    @each $line-size in $border-sizes {
 
         .bo-#{""+$position}-#{""+$line-size}  {
             border-#{$position}: #{$line-size}px solid $border-default-color;
@@ -276,7 +276,7 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     .pv-#{$space} {
         padding-top: #{$space}px;
         padding-bottom: #{$space}px;
-    }   
+    }
     .ph-#{$space} {
         padding-left: #{$space}px;
         padding-right: #{$space}px;
@@ -289,30 +289,30 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     }
     .pt-#{$space} {
         padding-top: #{$space}px;
-    }       
+    }
     .pb-#{$space} {
         padding-bottom: #{$space}px;
-    }    
+    }
     .m-#{$space} {
         margin: #{$space}px;
-    }  
+    }
     .mv-#{$space} {
         margin-top: #{$space}px;
         margin-bottom: #{$space}px;
-    }    
+    }
     .mh-#{$space} {
         margin-left: #{$space}px;
         margin-right: #{$space}px;
-    }   
+    }
     .ml-#{$space} {
         margin-left: #{$space}px;
     }
     .mr-#{$space} {
         margin-right: #{$space}px;
-    }       
+    }
         .mt-#{$space} {
             margin-top: #{$space}px;
-        }        
+        }
     .mb-#{$space} {
         margin-bottom: #{$space}px;
     }
@@ -324,8 +324,10 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     visibility: hidden;
 
     // passing variables from SCSS to JavaScript
-    // see https://css-tricks.com/making-sass-talk-to-javascript-with-json/ 
+    // see https://css-tricks.com/making-sass-talk-to-javascript-with-json/
     &:before {
-        content: '{#{$themeJSON}}'
+        content: '{#{$themeJSON}}';
+        position: absolute;
+        bottom: 25px;
     }
 }
