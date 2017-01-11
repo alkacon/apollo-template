@@ -88,10 +88,11 @@
     // Language switcher
 
     ul.languages {
-        top: 25px;
-        left: -5px;
+        top: 21px;
+        left: -8px;
         display: none;
-        padding: 4px 0;
+        padding-top: 2px;
+        padding-bottom: 1px;
         padding-left: 0; 
         list-style: none;
         min-width: 100px;
@@ -118,7 +119,7 @@
             color: $grey-darker;
             display: block;
             font-size: 10px;
-            padding: 2px 12px;
+            padding: 2px 8px 2px 10px;
             margin-bottom: 1px;
             text-transform: uppercase; 
         }

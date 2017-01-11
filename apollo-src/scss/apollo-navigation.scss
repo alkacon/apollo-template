@@ -44,7 +44,6 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 /* The Apollo header */
 
 .ap-header {
-    z-index: 9999;
     background: $nav-header-bg;
     position: relative;
 
@@ -157,7 +156,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         background:  $nav-toggle;
         padding: 2px 8px 2px 8px;
         color: $nav-toggle-text;
-        z-index: 10000;
+        z-index: 1000;
         position: relative;
         float: right;
 
@@ -400,7 +399,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         background: $nav-bg;
         border-top: solid 2px $nav-theme;
         border-bottom: solid 2px $nav-theme;
-        z-index: 10000;
+        z-index: 1000;
         box-shadow: 0 6px 12px $nav-shadow;
 
         form {
@@ -481,7 +480,8 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
     @media (min-width: $screen-md-min) {
         min-width: 200px;
-        z-index: 9999 !important;
+        // OpenCms edit points are at 100000, we want our dropdowns above these
+        z-index: 110000;
         box-shadow: 0 6px 12px $nav-shadow;
 
         li a {
@@ -719,7 +719,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 #topcontrol {
   color: $text-light;
   background: $text-dark;
-  z-index: 9999;
+  z-index: 999;
   width: 30px;
   height: 30px;
   font-size: 20px;
