@@ -1,6 +1,6 @@
-<%@ tag 
+<%@ tag
     display-name="pageinfo"
-    trimDirectiveWhitespaces="true" 
+    trimDirectiveWhitespaces="true"
     description="Generates a DIV with runtime information that can be used from JavaScipt." %>
 
 
@@ -24,5 +24,4 @@
     --%><c:if test="${not empty googleAnalyticsId}">"googleAnalyticsId":"${googleAnalyticsId}",</c:if><%--
     --%>"project":"${project}",<%--
     --%>"locale":"${cms.locale}"<%--
---%>}'
-></div>
+--%>}'></div>

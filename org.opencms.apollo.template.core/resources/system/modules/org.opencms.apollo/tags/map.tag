@@ -158,14 +158,14 @@
     <div class="mapbuttons">
         <button class="btn btn-sm" onclick="showMapMarkers('${id}','showall');">
             <fmt:message key="apollo.map.message.button.showmarkers" />
-        </button>
-        <c:forEach var="markerGroup" items="${markerGroups}">
+        </button><%--
+     --%><c:forEach var="markerGroup" items="${markerGroups}">
             <button class="btn btn-sm" onclick="showMapMarkers('${id}', '${cms:encode(markerGroup.key)}');">
                 <fmt:message key="apollo.map.message.button.show">
                     <fmt:param><c:out value="${markerGroup.key}" /></fmt:param>
                 </fmt:message>
-            </button>
-        </c:forEach>
+            </button><%--
+     --%></c:forEach>
         <button class="btn btn-sm" onclick="showMapMarkers('${id}', 'hideall');">
             <fmt:message key="apollo.map.message.button.hidemarkers" />
         </button>
