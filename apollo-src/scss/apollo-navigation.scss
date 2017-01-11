@@ -129,28 +129,6 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     // The button used to show / hide the nav on small screens
     .navbar-toggle {
 
-        @media (min-width: $screen-md-min) {
-            display: none;
-        }
-
-        @media (max-width: $screen-sm-max) {
-            margin: -40px 0 6px 0;
-            display: block;
-        }
-
-        .fa {
-            font-size: 28px;
-        }
-
-        @media (max-width: round($screen-sm-max /2)) {
-            // on very small screens use a smaller button
-            // otherwise the button quickly becomes larger than the head itself
-            margin: -30px 0 6px 0;
-            .fa {
-                font-size: 14px;
-            }
-        }
-
         border: none;
         border-radius: 0;
         background:  $nav-toggle;
@@ -160,6 +138,34 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         position: relative;
         float: right;
 
+        @media (min-width: $screen-md-min) {
+            display: none;
+        }
+
+        @media (max-width: $screen-sm-max) {
+            margin: -40px -15px 0 0;
+            display: block;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            margin: -40px -8px 6px 0;
+        }
+
+        .fa {
+            font-size: 28px;
+        }
+
+        @media (max-width: round($screen-sm-max /2)) {
+            // on very small screens use a smaller button
+            // otherwise the button quickly becomes larger than the head itself
+            margin: -30px -8px 6px 0;
+            padding: 1px 6px 1px 6px;
+            .fa {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
         &:hover {
             background:  $nav-toggle-hover;
         }
@@ -167,72 +173,31 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 }
 
 
-/* Responsive navbar */
+/* Responsive navigation */
 
-.ap-header .navbar-nav {
+.ap-header .nav {
 
     pointer-events: all;
-
-    > .active > a {
-        // the top level menu entry that belongs to the currently opened page
-        color: $nav-theme;
-        border-bottom-color: $nav-theme;
-
-        &:hover {
-            color: $nav-text-hover;
-        }
-    }
 
     // top level nav elements
     > li {
         position: static;
-        transition: all 1s;
-
-        &:hover > a {
-            color: $nav-text-hover;
-            border-bottom-color: $nav-theme;
-        }
+        transition: background-color 1s;
 
         > a {
-            color:  $nav-text;
             background: none;
             text-transform: uppercase;
             font-size: 15px;
             font-weight: 400;
             position: relative;
             bottom: -2px;
-            border-bottom: solid 2px transparent;
             padding: 9px 20px 9px 20px;
-        }
-
-        &.dropdown > a:after {
-            // add caret for top level dropdown lists
-            font-size: 12px;
-            content: "\f107";
-            position: absolute;
-            top: 11px;
-            right: 6px;
-            display: inline-block;
-            font-family: FontAwesome;
-        }
-
-        > .search {
             color: $nav-text;
-            background: none;
-            cursor: pointer;
-            font-size: 15px;
-            min-width: 35px;
-            text-align: center;
-            display: inline-block;
-            position: relative;
-            bottom: -2px;
-            border-bottom: solid 2px transparent;
-            padding: 11px 0 12px;
 
-            &:focus,
-            &:hover {
-                color: $nav-text-hover;
-                border-bottom-color: $nav-theme;
+            &:after {
+                position: absolute;
+                display: inline-block;
+                font-family: FontAwesome;
             }
         }
     }
@@ -240,66 +205,54 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     @media (min-width: $screen-md-min) {
         float: right;
 
-        li.dropdown:hover > .dropdown-menu {
-            // this displays the submenus on hover
-            display: block;
-        }
+        > li {
+            > a {
+                cursor: default; // change pointer since menu does need no click
+                pointer-events: none; // this prevents setting the focus on the top level elements
 
-        > .dropdown .dropdown-menu {
-            border-top: solid 2px $nav-theme;
-            border-bottom: solid 2px $nav-theme;
+                &:after {
+                    content: "\f107"; // arrow pointing down
+                    top: 11px;
+                    right: 6px;
+                }
 
-            > li {
-                &:last-child > a {
-                    // remove the border of the last list element
-                    border-bottom: none;
+                &:focus {
+                    background: $nav-bg;
+                    border: none;
                 }
             }
-        }
-        .open > .dropdown-menu {
-            // change this to "block" in oder to activate clickable submenues
-            display: none;
-        }
 
-        .open > a {
-            color: $nav-text-hover;
-            background-color: transparent;
-            border-color: transparent;
-        }
-        .open > a:hover {
-            color: $nav-theme;
+            &.active:hover > a,
+            &:hover > a {
+                color: $nav-text-hover;
+            }
+
+            &.active > a {
+                // the top level menu entry that belongs to the currently opened page
+                color: $nav-theme;
+                background: $nav-bg;
+                border-radius: 0;
+                border-bottom: 2px solid $nav-theme;;
+
+                &:hover {
+                    color: $nav-text-hover;
+                }
+            }
+
+            // this displays the submenus on hover,
+            // not on click as the boostrap default
+            &.open > .dropdown-menu {
+                display: none;
+            }
+            &:hover > .dropdown-menu {
+                display: block;
+            }
         }
     }
 
     @media (max-width: $screen-sm-max) {
         margin: 0;
         float: none !important;
-
-        > .dropdown {
-             // we need a padding of one on the first elements in the small screen,
-             // otherwise there will be a scrollbar with 2px right
-            padding: 0 1px 0 0;
-        }
-
-        > .dropdown .dropdown-menu {
-            // downslide transition effect
-            transition: all 0.5s ease-in-out;
-
-            max-height: 0;
-            display: block;
-            overflow: hidden;
-        }
-
-        > .dropdown.open .dropdown-menu {
-            // downslide transition effect
-            max-height: 5000px;
-        }
-
-        .open > a,
-        .open > a:hover {
-            color: $nav-text;
-            border-color: $nav-border;
-        }
 
         > li {
             float: none; // required to overwrite bootstrap default
@@ -311,67 +264,84 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
                 padding: 9px 10px;
                 bottom: 0px;
                 border-bottom: solid 1px $nav-border;
-            }
 
-            &.dropdown {
-
-                > a:after {
-                    // add caret for top level dropdown lists
-                    content: "\f105";
+                &:after {
+                    content: "\f078";
                     top: 9px;
                     right: 10px;
-                }
-
-                &.open {
-                    &:nth-last-child(2) > a,
-                    &:last-child > a {
-                        // add the border of the last 2 list elements if open
-                        border-bottom: 1px solid $nav-border;
-                    }
+                    transform: rotate(0);
+                    transition: transform 0.33s;
                 }
             }
 
-            &.active > a {
-                // the top level menu entry that belongs to the currently opened page
+            &.open > a:after {
+                transform: rotate(-180deg);
+                transition: transform .33s;
+            }
+
+            &.open > a,
+            &.open > a:focus {   // must overwrite bootstrap focus default
+                color: $nav-text;
+                background:  $nav-bg-hover;
+                border-color: $nav-border; // override theme color
+            }
+
+            &.active > a,
+            &.active > a:focus {      // current page uri entry
                 color: $nav-bg;
                 background:  $nav-theme;
                 border-color: $nav-border;
-
-                &:hover {
-                    color: $nav-text-hover;
-                    background:  $nav-bg-hover;
-                    border-color: $nav-bg-hover;
-                }
             }
 
-            &.open > a {
-                // the top level menu entry currently open
-                &:after {
-                    content: "\f107";
-                    top: 9px;
-                    right: 10px;
-                }
-            }
-
-            &:hover > a {
+            > a:hover,          // any entry
+            &.active > a:hover, // current page uri entry
+            &.open > a:hover {  // open menu entry
                 color: $nav-text-hover;
                 background:  $nav-bg-hover;
-                border-bottom: solid 1px $nav-border;
+                border-color: $nav-border; // override theme color
             }
 
             &:nth-last-child(2) > a,
             &:last-child > a {
                 // remove the border of the last 2 list elements
-                // there is a border for the navbar below
-                // the last element is the search hidden in small screens
+                // since there is a border on the navbar below
+                // the last element is the search, hidden in small screens
                 border-bottom: none;
             }
-        }
 
-        #searchContentHeader,
-        #searchButtonHeader {
-            // hide the search function on the small screen version
-            display: none;
+
+            // this adds the downslide transition effect
+            // for the dropdowns on click
+            > .dropdown-menu {
+                transition: all 0.3s ease-out;
+                max-height: 0;
+                display: block;
+                overflow: hidden;
+            }
+            &.open > .dropdown-menu {
+                transition: all 0.5s ease-in-out;
+                max-height: 2000px;
+            }
+        }
+    }
+
+    #searchButtonHeader .search {
+        color: $nav-text;
+        background: none;
+        cursor: pointer;
+        font-size: 15px;
+        min-width: 35px;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        bottom: -2px;
+        border-bottom: solid 2px transparent;
+        padding: 11px 0 12px;
+
+        &:focus,
+        &:hover {
+            color: $nav-text-hover;
+            border-bottom-color: $nav-theme;
         }
     }
 
@@ -382,9 +352,12 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         height: 34px;
     }
 
-    @media (min-width: $screen-sm-min){
-        .form-inline .input-group .form-control {
-            width: auto;
+    @media (max-width: $screen-sm-max) {
+
+        #searchContentHeader,
+        #searchButtonHeader {
+            // hide the search function on the small screen version
+            display: none;
         }
     }
 
@@ -407,15 +380,20 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         }
     }
 
+    @media (min-width: $screen-sm-min){
+        .form-inline .input-group .form-control {
+            width: auto;
+        }
+    }
 }
 
 
 /* Dropdown menus in the header */
 
-.ap-header .dropdown-menu {
+.ap-header .nav .dropdown-menu {
 
     border: none;
-    padding: 0; // see special padding required on first level above
+    padding: 0;
     border-radius: 0;
 
     > li {
@@ -432,13 +410,13 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             }
         }
 
-        &.focus > a,
         &.active > a {
             background-color: $nav-active-bg;
             color: $nav-active;
 
             &:focus,
             &:hover {
+                background-color: $nav-bg-hover;
                 color: $nav-text-hover;
             }
         }
@@ -461,28 +439,23 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     }
 
     // add caret labels to menus that have submenus
-    .dropdown > a:after,
     .dropdown-submenu > a:after {
         top: 8px;
         right: 9px;
         font-size: 11px;
-        content: "\f105";
+        content: "\f105"; // right arrow for default large screens
         position: absolute;
         font-weight: normal;
         display: inline-block;
         font-family: FontAwesome;
     }
-    .dropdown > a:after {
-        top: 9px;
-        right: 15px;
-        content: "\f107";
-    }
 
     @media (min-width: $screen-md-min) {
         min-width: 200px;
-        // OpenCms edit points are at 100000, we want our dropdowns above these
-        z-index: 110000;
+        z-index: 110000; // OpenCms edit points are at 100000, we want our dropdowns above these
         box-shadow: 0 6px 12px $nav-shadow;
+        border-top: solid 2px $nav-theme;
+        border-bottom: solid 2px $nav-theme;
 
         li a {
             font-size: 13px;
@@ -490,8 +463,9 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             padding: 6px 15px;
         }
 
-        > li a {
-            border-bottom: solid 1px $nav-border;
+        li:last-child > a {
+            // remove the border of the last element
+            border-bottom: none;
         }
     }
 
@@ -500,6 +474,16 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         box-shadow: none;
         float: none;
         width: auto;
+
+        > li > a {
+            padding: 5px 25px;
+        }
+        > li > ul > li > a {
+            padding: 5px 50px;
+        }
+        > li > ul > li > ul > li a {
+            padding: 5px 75px;
+        }
 
         .open {
             // this displays the menu if clicked
@@ -511,19 +495,29 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             > .dropdown-menu {
                 display: block; // always display the submenus on the small screens
                 margin-top: 0px;
-                margin-left: 15px;
                 border-left: 0;
                 border-right: 0;
             }
 
-            // this overwrites a bootstrap default
             > a:after {
-                content: "\f107";
+                content: ""; // override bootstrap default
             }
         }
 
         &.pull-right {
             float: none !important;
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        > li > a {
+            padding: 5px 15px;
+        }
+        > li > ul > li > a {
+            padding: 5px 30px;
+        }
+        > li > ul > li > ul > li a {
+            padding: 5px 45px;
         }
     }
 }
@@ -562,7 +556,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         left: auto;
     }
 
-    .dropdown-megamenu .ap-sec {
+    .dropdown-megamenu .ap-linksequence {
         // remove the default bottom margin for apollo sections in mega-menu
         margin-bottom: 0;
     }
@@ -574,9 +568,10 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             left: 0;
         }
 
-        .dropdown-megamenu {
-            padding: 15px;
+        .nav .dropdown-megamenu {
+            padding: 20px 20px 0 20px;
         }
+
     }
 
     .ap-linksequence.boxed {
@@ -596,11 +591,16 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             }
         }
 
-        li:first-child > a {
-            border-top: 1px solid $nav-border;
+        @media (min-width: $screen-lg-min) {
+            li:first-child > a {
+                border-top: 1px solid $nav-border;
+            }
+            li:last-child > a {
+                border-bottom: 1px solid $nav-border;
+            }
         }
 
-        @media (max-width: $screen-md-min) {
+        @media (max-width: $screen-sm-max) {
             li > a {
                 border-right: none;
                 border-left: none;
@@ -662,7 +662,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         }
     }
 
-    @media (max-width: round($screen-md-min / 2)) {
+    @media (max-width: round($screen-sm-max / 2)) {
         // Headline is centered on very small screens
         h1.pull-left,
         ul.pull-right {

@@ -38,7 +38,18 @@
         }
     }
 
-    ul > ul{
+    @media (max-width: $screen-sm-max) {
+        ul.row {
+            padding-bottom: 0;
+
+            > ul {
+                padding-right: 0;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    ul > ul {
 
         li {
             color: get-text-color($main-theme);

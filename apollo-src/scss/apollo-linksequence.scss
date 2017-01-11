@@ -144,4 +144,13 @@
     li:hover ul.languages {
         display: block;
     }
+
+    .hoverSelector > a {
+        // make the language link itself not clickable
+        cursor: default;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
 }

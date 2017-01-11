@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -29,7 +29,12 @@ $map-colors: ($main-theme, $main-theme-complementary, $orange, $cyan) !default;
     margin-bottom: 20px;
 
     .mapbuttons {
-        margin-top: 20px;
+        margin-top: 15px;
+
+        .btn {
+            margin-top: 5px;
+            margin-right: 5px;
+        }
     }
 
     .mapwindow {
@@ -67,7 +72,7 @@ $themeMAP: ', "map-color":[';
 @each $color in $map-colors {
     $themeMAP: $themeMAP + '"' + $color + '",'
 }
-// ugly but quick: add grey as last color, so I don't have to find out 
+// ugly but quick: add grey as last color, so I don't have to find out
 // about the last index to avoid trailing comma ","
 $themeMAP: $themeMAP + '"' + $grey + '"]';
 $themeJSON: $themeJSON + $themeMAP;
