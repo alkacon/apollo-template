@@ -17,9 +17,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-// Note: If APPDEBUG is false, all APPDEBUG clauses will be removed 
+// Note: If APPDEBUG is false, all APPDEBUG clauses will be removed
 // by uglify.js during Apollo JS processing as unreachable code
-var APPDEBUG = false;
+var APPDEBUG = true;
 
 var App = function() {
 
@@ -132,6 +132,16 @@ var App = function() {
         }
     }
 
+    // Bad phone detection
+    function handleDeviceDependent() {
+
+        var deviceSections = jQuery('.device-dependent');
+        if (APPDEBUG) console.info("device-dependent elements found: " + deviceSections.length);
+        if (deviceSections.length > 0) {
+            deviceSections.initDeviceDependent();
+        }
+    }
+
     // Apollo Map sections
     function handleMaps() {
 
@@ -169,6 +179,7 @@ var App = function() {
             handleSmoothScrolling();
             handleParallax();
             handleClickmeShowme();
+            handleDeviceDependent();
             handleMaps();
             handleSliders();
 
@@ -197,12 +208,42 @@ var App = function() {
 
 (function( $ ){
 
+    $.fn.initDeviceDependent = function() {
+        var $this = $(this);
+
+        $this.each(function(){
+
+            var $element = $(this);
+
+            if (APPDEBUG) console.info("initDeviceDependent called for " + $element.getFullPath());
+
+            var onlyDesktop = $element.hasClass("desktop");
+            var onlyMobile = $element.hasClass("mobile");
+            var isMobile = jQuery.browser.mobile;
+
+            if (APPDEBUG) console.info("initDeviceDependent mobile detected is " + isMobile);
+            if (APPDEBUG) console.info("initDeviceDependent show element on desktop:" + onlyDesktop + " on mobile:" + onlyMobile);
+
+            if (isMobile && onlyDesktop) {
+                if (APPDEBUG) console.info("initDeviceDependent hiding mobile element on desktop");
+                $element.hide();
+            } else if (!isMobile && onlyMobile) {
+                if (APPDEBUG) console.info("initDeviceDependent hiding desktop element on mobile");
+                $element.hide();
+            }
+        });
+    };
+})(jQuery);
+
+
+(function( $ ){
+
     $.fn.initClickmeShowme = function() {
         var $this = $(this);
 
         $this.each(function(){
 
-            var $element = $(this); 
+            var $element = $(this);
             var $clickme = $element.find('> .clickme');
             var $showme  = $element.find('> .showme');
 

@@ -305,7 +305,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             }
 
             &:first-child > a {
-                // first entry needs a top border 
+                // first entry needs a top border
                 border-top: solid 1px $nav-border;
             }
 
@@ -688,36 +688,46 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
 /* Footer */
 
+$foot-dark-bg-color:            $grey-darker !default;
+$foot-dark-text-color:          $grey-light !default;
+$foot-dark-link-color:          $grey-light !default;
+$foot-dark-link-hover-color:    $grey-light !default;
+
+$foot-light-bg-color:           $grey-light !default;
+$foot-light-text-color:         $text-dark !default;
+$foot-light-link-color:         $main-theme !default;
+$foot-light-link-hover-color:   $main-theme-hover !default;
+
 .area-foot {
     padding-top: 20px;
-    background: $grey-darker;
-    color: $grey-light;
+    background: $foot-dark-bg-color;
+    color: $foot-dark-text-color;
 
     *:not(a):not(span) {
-        color: $grey-light;
+        color: $foot-dark-text-color;
     }
 
     a:not(.btn) {
-        color: $white;
+        color: $foot-dark-link-color;
 
         &:hover {
-            color: $grey-lighter;
+            color: $foot-dark-link-hover-color;
         }
     }
 
     &.light {
-        background: $grey-light;
-        color: $grey-dark;
+        background: $foot-light-bg-color;
+        color: $foot-light-text-color;
 
         *:not(a):not(span) {
-            color: $grey-dark;
+            color: $foot-light-text-color;
         }
 
         a:not(.btn) {
-            color:  $main-theme;
+            color: $foot-light-link-color;
 
             &:hover {
-                color: $main-theme-hover;
+                color: $foot-light-link-hover-color;
             }
         }
     }

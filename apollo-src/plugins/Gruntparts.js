@@ -20,7 +20,7 @@
 var mf = module.filename.substring(0, module.filename.length - 'Gruntparts.js'.length);
 exports.mf = mf;
 
-exports.cssSrc = [        
+exports.cssSrc = [
     mf + 'line-icons/line-icons.css',
     mf + 'animate/animate.css',
     mf + 'sky-forms-pro/skyforms/css/sky-forms.css',
@@ -34,10 +34,11 @@ exports.jsSrc = [
     mf + 'photoswipe/photoswipe.min.js',
     mf + 'photoswipe/photoswipe-ui-default.js',
     mf + 'shariff/shariff.min.js',
+    mf + 'mobile-detection/detectmobilebrowser.com/detect.js',
 ];
 
 exports.resources = [
-    mf + 'photoswipe/default-skin/*.svg', 
-    mf + 'photoswipe/default-skin/*.png', 
+    mf + 'photoswipe/default-skin/*.svg',
+    mf + 'photoswipe/default-skin/*.png',
     mf + 'photoswipe/default-skin/*.gif',
 ];
