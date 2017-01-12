@@ -25,14 +25,14 @@
 
 $nav-theme:         $main-theme !default;   // used for 1st level text and big colored border above / below menus
 $nav-text:          $grey-darker !default;  // standard text color of the nav menu entries
-$nav-text-hover:    $nav-theme !default;    // hover text color of the nav menu entries
 $nav-bg:            $white !default;        // standard background of the nav menu entries
+$nav-text-hover:    $nav-theme !default;    // hover text color of the nav menu entries
 $nav-bg-hover:      $grey-light !default;   // hover background of the nav menu entries
-$nav-active:        $nav-text !default;     // the currently active / selected nav entry (text)
-$nav-active-bg:     $grey-light !default;   // the currently active / selected nav entry (background)
-$nav-border:        $grey-light !default;         // the border color for the navigation
+$nav-text-active:   $nav-text !default;     // the current page in navigation text
+$nav-bg-active:     $grey-light !default;   // the current page in navigation background
+$nav-border:        $grey-light !default;   // the border color for the navigation
 
-$nav-header-bg:     $nav-bg !default;       // background of the main header
+$nav-header-bg:     $white !default;        // background of the main header
 $nav-beadcrump-bg:  $grey-lighter !default; // background of the breadcrumps
 
 $nav-toggle:        $nav-theme !default;                // colors for the "nav-toggle" button
@@ -138,6 +138,10 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         position: relative;
         float: right;
 
+        .fa {
+            font-size: 28px;
+        }
+
         @media (min-width: $screen-md-min) {
             display: none;
         }
@@ -151,13 +155,9 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             margin: -40px -8px 6px 0;
         }
 
-        .fa {
-            font-size: 28px;
-        }
-
         @media (max-width: round($screen-sm-max /2)) {
             // on very small screens use a smaller button
-            // otherwise the button quickly becomes larger than the head itself
+            // otherwise the button may become larger than the head itself
             margin: -30px -8px 6px 0;
             padding: 1px 6px 1px 6px;
             .fa {
@@ -182,7 +182,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     // top level nav elements
     > li {
         position: static;
-        transition: background-color 1s;
+        transition: all 1s ease-out;
 
         > a {
             background: none;
@@ -209,6 +209,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             > a {
                 cursor: default; // change pointer since menu does need no click
                 pointer-events: none; // this prevents setting the focus on the top level elements
+                border-bottom: 2px solid transparent;
 
                 &:after {
                     content: "\f107"; // arrow pointing down
@@ -217,7 +218,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
                 }
 
                 &:focus {
-                    background: $nav-bg;
+                    background: $nav-header-bg; // top level nav uses main header background
                     border: none;
                 }
             }
@@ -230,9 +231,8 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             &.active > a {
                 // the top level menu entry that belongs to the currently opened page
                 color: $nav-theme;
-                background: $nav-bg;
-                border-radius: 0;
-                border-bottom: 2px solid $nav-theme;;
+                background: $nav-header-bg;  // top level nav uses main header background
+                border-bottom: 2px solid $nav-theme;
 
                 &:hover {
                     color: $nav-text-hover;
@@ -280,25 +280,33 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             }
 
             &.open > a,
-            &.open > a:focus {   // must overwrite bootstrap focus default
+            &.open > a:focus { // must overwrite bootstrap focus default
+                // the currently open menu
                 color: $nav-text;
                 background:  $nav-bg-hover;
                 border-color: $nav-border; // override theme color
             }
 
             &.active > a,
-            &.active > a:focus {      // current page uri entry
-                color: $nav-bg;
+            &.active > a:focus {
+                // the page highlighted by the OpenCms navigation (from the URL)
+                color: $nav-header-bg; // bg/fg colors inverted from larger screen
                 background:  $nav-theme;
                 border-color: $nav-border;
             }
 
-            > a:hover,          // any entry
-            &.active > a:hover, // current page uri entry
-            &.open > a:hover {  // open menu entry
+            > a:hover,
+            &.active > a:hover,
+            &.open > a:hover {
+                // hovered navigation entries are all the same in small screens
                 color: $nav-text-hover;
                 background:  $nav-bg-hover;
                 border-color: $nav-border; // override theme color
+            }
+
+            &:first-child > a {
+                // first entry needs a top border 
+                border-top: solid 1px $nav-border;
             }
 
             &:nth-last-child(2) > a,
@@ -411,8 +419,8 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         }
 
         &.active > a {
-            background-color: $nav-active-bg;
-            color: $nav-active;
+            background-color: $nav-bg-active;
+            color: $nav-text-active;
 
             &:focus,
             &:hover {
@@ -563,7 +571,8 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
     @media (min-width: $screen-md-min) {
         div.dropdown-menu {
-            width: 100%;
+            width: calc(100% + 10px); // expand the width by 10px. reason: gutter size 15, apollo margins 20
+            margin-left: -5px;    // add 10px to align megamenu content exactly with page content
             position: absolute;
             left: 0;
         }
@@ -835,7 +844,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
     li.currentpage {
         // highlight the current page
-        background: $nav-active-bg;
+        background: $nav-bg-active;
 
         &:hover {
             border-color: $nav-border;

@@ -77,10 +77,9 @@
             top: -1px;
         }
 
-        li > a, 
-        li > a:hover {
-            color: $grey-dark;
+        li > a {
             font-size: 11px;
+            color: $grey-dark;
             text-transform: uppercase;
         }
     }
@@ -97,10 +96,12 @@
         list-style: none;
         min-width: 100px;
         position: absolute;
-        background: $grey-light;
+        background-color: $nav-border;
+        box-shadow: 0 6px 12px $nav-shadow;
         z-index: 101;
 
         &:after {
+            // this creates the upward pointing angle
             top: -4px;
             width: 0; 
             height: 0;
@@ -108,7 +109,7 @@
             content: " "; 
             display: block; 
             position: absolute;
-            border-bottom: 6px solid $grey-light;   
+            border-bottom: 6px solid $nav-border;
             border-left: 6px solid transparent;
             border-right: 6px solid transparent;
             border-left-style: inset;
@@ -116,28 +117,33 @@
         }
 
         li a {
-            color: $grey-darker;
+            color: $nav-text;
+            background-color: $nav-bg;
             display: block;
-            font-size: 10px;
+            font-size: 11px;
             padding: 2px 8px 2px 10px;
             margin-bottom: 1px;
-            text-transform: uppercase; 
+            text-transform: uppercase;
         }
 
-        li.active a i {
-            color: $grey-dark;
+        li.active .fa {
             float: right;
             margin-top: 2px;
         }
 
-        li a:hover, 
         li.active a {
-            background: $grey-lighter;
+            color: $nav-text-active;
+            background-color: $nav-bg-active;
         }
 
-        li a:hover {
-            text-decoration: none;
-            font-size: 10px; 
+        li a, 
+        li.active a {
+            &:hover {
+                color: $nav-text-hover;
+                background-color: $nav-bg-hover;
+                transition: background-color 0.5s;
+                text-decoration: none;
+            }
         }
     }
 

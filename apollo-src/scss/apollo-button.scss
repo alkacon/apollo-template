@@ -67,7 +67,7 @@ $btn-colors:            $reduced-colors !default;
     border-radius: $btn-border-radius;
     text-transform: $btn-text-transform;
     margin: 0;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.33s;
 
     @include apollo-button($btn-default, $btn-default-active);
 }

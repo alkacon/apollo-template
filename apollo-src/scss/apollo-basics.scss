@@ -142,7 +142,7 @@ a {
     &:hover {
         color: $main-theme-hover;
         outline: 0 !important;
-        transition: all 0.25s;
+        transition: color 0.33s, background-color 0.33s;
     }
 }
 
