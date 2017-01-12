@@ -207,25 +207,31 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
         > li {
             > a {
-                cursor: default; // change pointer since menu does need no click
-                pointer-events: none; // this prevents setting the focus on the top level elements
                 border-bottom: 2px solid transparent;
-
-                &:after {
-                    content: "\f107"; // arrow pointing down
-                    top: 11px;
-                    right: 6px;
-                }
 
                 &:focus {
                     background: $nav-header-bg; // top level nav uses main header background
-                    border: none;
+                }
+            }
+
+            &.dropdown {
+                > a {
+                    // if NOT li.dropdown, then this is a single head link that can be clicked
+                    cursor: default; // change pointer since menu does need no click
+                    pointer-events: none; // this prevents setting the focus on the top level elements
+
+                    &:after {
+                        content: "\f107"; // arrow pointing down
+                        top: 11px;
+                        right: 6px;
+                    }
                 }
             }
 
             &.active:hover > a,
             &:hover > a {
                 color: $nav-text-hover;
+                border-bottom: 2px solid $nav-theme;
             }
 
             &.active > a {
