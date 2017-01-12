@@ -90,12 +90,12 @@ $ap-edit-infos:
     }
 
     .text {
-        color: $grey;
+        color: $grey-dark;
         text-transform: capitalize;
     }
 
     .small {
-        color: $grey;
+        color: $grey-dark;
     }
 }
 
@@ -132,20 +132,20 @@ $ap-edit-infos:
 /* Model group marker */
 
 #ap-modelinfo-border {
-    border: 4px solid #e8f3f8; // same color as "element"
+    border: 4px solid #eed2ee; // shade of purple
     padding: 0px;
 }
 
 #ap-modelinfo {
     @extend %ap-infobox-base;
 
-    background-color: rgba(#e8f3f8, 0.75);
+    background-color: rgba(#eed2ee, 0.75);
     .head  {
         color: $text-dark;
     }
     .text,
     .small {
-        color: $grey;
+        color: $grey-dark;
     }
 }
 

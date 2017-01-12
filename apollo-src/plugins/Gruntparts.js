@@ -34,7 +34,6 @@ exports.jsSrc = [
     mf + 'photoswipe/photoswipe.min.js',
     mf + 'photoswipe/photoswipe-ui-default.js',
     mf + 'shariff/shariff.min.js',
-    mf + 'mobile-detection/detectmobilebrowser.com/detect.js',
 ];
 
 exports.resources = [

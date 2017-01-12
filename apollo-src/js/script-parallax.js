@@ -20,6 +20,12 @@
 /**
  * Simple parallax effects. 
  */
+
+// Note: If MAPDEBUG is false, all MAPDEBUG clauses will be removed
+// by uglify.js during Apollo JS processing as unreachable code
+var PARADEBUG = false;
+
+
 (function( $ ){
     var $window = $(window);
     var windowHeight = $window.height();
@@ -84,8 +90,8 @@
                             return;
                         }
 
-                        // console.info("elementTop: " + elementTop + " elementBottom: " + elementBottom);
-                        // console.info("elementScrollTop: " + elementScrollTop + " elementScrollBottom: " + elementScrollBottom);
+                        if (PARADEBUG) console.info("elementTop: " + elementTop + " elementBottom: " + elementBottom);
+                        if (PARADEBUG) console.info("elementScrollTop: " + elementScrollTop + " elementScrollBottom: " + elementScrollBottom);
 
                         if (effectType == 1) {
                             // This effect assumes there is a full size background image.
@@ -93,17 +99,22 @@
                             // element is not in view.
                             // Once the bottom is in view, the shift effect stops.
 
-                            elementBottomOffset = elementScrollBottom - windowHeight;
+                            if (elementHeight <= windowHeight) {
+                                elementBottomOffset = elementScrollBottom - windowHeight;
+                            } else {
+                                elementBottomOffset = elementScrollTop;
+                            }
 
                             if (elementBottomOffset > 0) {
                                 // The bottom is not in view
-
-                                if (elementHeight > windowHeight) {
-                                    // Reduce initial background shift if the window is smaller then the element
-                                    elementBottomOffset += elementHeight - windowHeight;
-                                }
-
                                 offset = Math.round(Math.abs(elementBottomOffset) * 0.5);
+
+                                if (PARADEBUG) console.info(
+                                    "elementHeight: " +  elementHeight + 
+                                    " windowHeight: " + windowHeight + 
+                                    " offset: " + offset + 
+                                    " elementScrollTop: " + elementScrollTop);
+
                             }
                         } else if (effectType == 2) {
                             // Initially developed for the blog visual.
