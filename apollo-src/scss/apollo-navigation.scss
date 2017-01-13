@@ -279,20 +279,26 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
                 padding: 9px 10px;
                 bottom: 0px;
                 border-bottom: solid 1px $nav-border;
+            }
 
-                &:after {
-                    content: "\f078";
-                    top: 9px;
-                    right: 10px;
-                    transform: rotate(0);
-                    transition: transform 0.33s;
+            &.dropdown {
+                > a {
+                    // if NOT li.dropdown, then this is a single head link without submenu
+                    &:after {
+                        content: "\f078";
+                        top: 9px;
+                        right: 10px;
+                        transform: rotate(0);
+                        transition: transform 0.33s;
+                    }
+                }
+
+                &.open > a:after {
+                    transform: rotate(-180deg);
+                    transition: transform .33s;
                 }
             }
 
-            &.open > a:after {
-                transform: rotate(-180deg);
-                transition: transform .33s;
-            }
 
             &.open > a,
             &.open > a:focus { // must overwrite bootstrap focus default
