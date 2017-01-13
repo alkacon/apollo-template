@@ -34,7 +34,7 @@
                 delay : $slider.data("delay"),
                 startheight : $slider.data("height"),
                 navigationType : $slider.data("navtype"),
-                navigationArrows : $slider.data("navtbutton"),
+                navigationArrows : $slider.data("navbutton"),
                 navigationStyle : "round", // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
                 navigationHAlign : "right", // Vertical Align top,center,bottom
                 navigationVAlign : "bottom", // Horizontal Align left,center,right
