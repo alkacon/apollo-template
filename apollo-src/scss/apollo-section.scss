@@ -81,6 +81,25 @@
             text-decoration: none;
         } 
     }
+
+    @media (max-width: $screen-xs-max) {
+        // making the icon boxes somewhat more compact on very small screens
+        .text-box {
+            margin: -10px -5px -10px -5px; // extending the margin,  cannot do this on outside since bg_xxx rules are stronger
+
+            h3 {
+                margin-bottom: 5px;
+            }
+        }
+
+        i.icon-box {
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            line-height: 40px;
+            margin-bottom: 5px;
+        }
+    }
 }
 
 /* Detail pages */
@@ -136,7 +155,7 @@
 
         &.header {
             margin-top: 10px;
-        }   
+        }
 
         &.centered {
             font-family: $font-content;
@@ -151,7 +170,6 @@
         margin-top: 10px;
     }
 }
-
 
 /* Classes to set the gid layout margins */
 /* Add margin below the header */

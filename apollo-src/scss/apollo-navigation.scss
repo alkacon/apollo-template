@@ -217,8 +217,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             &.dropdown {
                 > a {
                     // if NOT li.dropdown, then this is a single head link that can be clicked
-                    cursor: default; // change pointer since menu does need no click
-                    pointer-events: none; // this prevents setting the focus on the top level elements
+                    cursor: default; // change pointer since menu does accept click on desktop
 
                     &:after {
                         content: "\f107"; // arrow pointing down
