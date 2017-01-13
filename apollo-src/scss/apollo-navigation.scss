@@ -103,25 +103,31 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     }
 
     @media (min-width: $screen-md-min) {
+
+        .head {
+            position: relative;
+        }
+
         .head-navbar {
             // pull the nav above the head by default
-            margin-top: -40px;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
         }
 
         .head-nopull {
             // optional css wrapper to prevent pulling the nav above the head-bg
             .head-navbar {
-                margin-top: 0;
+                position: relative;
             }
         }
     }
 
     .editor {
-        .head-inline,
         .head-navbar {
             // used by head navigation formatter in the model group editor
             border-top: solid 1px $nav-border;
-            margin-top: 0px;
+            position: relative;
         }
     }
 
@@ -172,6 +178,10 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
     }
 }
 
+/* Remove default bottom margin from head in model group editor */
+#ap-modelinfo-border .area-head {
+    margin-bottom: 0;
+}
 
 /* Responsive navigation */
 
