@@ -31,13 +31,13 @@ exports.cssSrc = [
 
 exports.jsSrc = [
     mf + 'modernizr/modernizr.js',
-    mf + 'photoswipe/photoswipe.min.js',
+    mf + 'photoswipe/photoswipe.js',
     mf + 'photoswipe/photoswipe-ui-default.js',
     mf + 'shariff/shariff.min.js',
 ];
 
 exports.resources = [
-    mf + 'photoswipe/default-skin/*.svg',
-    mf + 'photoswipe/default-skin/*.png',
-    mf + 'photoswipe/default-skin/*.gif',
+    mf + '>photoswipe/default-skin/*.svg',
+    mf + '>photoswipe/default-skin/*.png',
+    mf + '>photoswipe/default-skin/*.gif',
 ];

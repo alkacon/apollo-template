@@ -24,6 +24,7 @@ var sassSrc = [];
 var cssSrc = [];
 var jsSrc = [];
 var resources = [];
+var resourceSources = {};
 
 var themeSassSrc = [];
 var themeCssSrc = [];
@@ -69,26 +70,28 @@ exports.initGrunt = function(_grunt, _buildDir) {
 }
 
 _getModuleThemes = function(envname, themes) {
-    console.log('Value of env ' + envname + ': ' + process.env[envname]);
+    if (grunt.option('verbose')) {
+        console.log('Value of env ' + envname + ': ' + process.env[envname]);
+    }
     if (grunt.option('useenv') && process.env[envname]) {
         return [ process.env[envname] ];
-    } 
+    }
     return themes;
 };
 
 exports.loadModule = function(moduleName) {
-    
+
     var f = path.normalize(moduleDir + moduleName + '/Gruntparts.js');
 
     if (grunt.option('verbose')) {
         console.log('Loading OpenCms module: ' + f);
     }
-    
+
     try {
         var m = require(f);
-        
+
         modules[_moduleName(m.mf)] = m;
-        
+
         if (m.sassSrc) {
             sassSrc = sassSrc.concat(m.sassSrc);
         }
@@ -99,7 +102,16 @@ exports.loadModule = function(moduleName) {
             jsSrc = jsSrc.concat(m.jsSrc);
         }
         if (m.resources) {
-            resources = resources.concat(m.resources);
+            for (var i = 0; i<m.resources.length; i++) {
+                var res = m.resources[i];
+                var idx = res.indexOf('>');
+                if (idx >= 0) {
+                    prefix = res.substr(0, idx);
+                    resourceSources[prefix] = true;
+                    res = res.replace('>', '');
+                }
+                resources.push(res);
+            }
         }
         if (m.themes) {
             themes = themes.concat(_getModuleThemes(m.envname, m.themes));
@@ -109,20 +121,20 @@ exports.loadModule = function(moduleName) {
         }
 
         return m;
-        
+
     } catch (err) {
         grunt.log.errorlns('Error: ' + err.message);
     }
 }
 
 exports.registerGruntTasks = function() {
-    
+
     _gruntInitConfig();
     _gruntRegisterTasks();
-        
+
     if (grunt.option('verbose')) {
         _showImports();
-    }    
+    }
 }
 
 _moduleName = function(mf) {
@@ -172,8 +184,14 @@ _gruntInitConfig = function() {
                     src : oc.resources(),
                     dest : buildDir + '04_final',
                     rename: function (dest, src) {
-                        // TODO: determine and remove the 'appollo-src' folder part dynamically
-                        src = src.replace(moduleDir + 'apollo-src', '/');
+                        // determine and remove the source folder path
+                        for (var sourceDir in resourceSources) {
+                            if (resourceSources.hasOwnProperty(sourceDir)) {
+                                if (src.startsWith(sourceDir)) {
+                                    src = src.replace(sourceDir, '/');
+                                }
+                            }
+                        }
                         return dest + src;
                     },
                     filter : 'isFile'
@@ -213,7 +231,7 @@ _gruntInitConfig = function() {
                     dest : oc.deployTarget,
                 } ]
             }
-        }, 
+        },
 
         sass : {
             theme : {
@@ -255,7 +273,7 @@ _gruntInitConfig = function() {
                       inline: false, // save all sourcemaps as separate files...
                       annotation: buildDir + '02_postcssed' // ...to the specified directory
                     },
-                    processors : [ 
+                    processors : [
                         require('autoprefixer')({browsers: 'last 3 versions'}), // add vendor prefixes
                         require('postcss-sorting')({"sort-order": 'default'}), // sort the rules in the output
                         require('stylefmt')(), // pretty-print the output
@@ -273,7 +291,7 @@ _gruntInitConfig = function() {
             themeNoMap : {
                 options: {
                     map: false,
-                    processors : [ 
+                    processors : [
                         require('autoprefixer')({browsers: 'last 3 versions'}), // add vendor prefixes
                         require('postcss-sorting')({"sort-order": 'default'}), // sort the rules in the output
                         require('stylefmt')(), // pretty-print the output
@@ -295,11 +313,11 @@ _gruntInitConfig = function() {
                     sourceMap: true,
                     sourceMapStyle: 'embed',
                 },
-                src: [ 
-                    moduleDir + 'plugins.min.css', 
-                    '<%= grunt.task.current.args[0] %>.min.css' 
-                ], 
-                dest: buildDir + '04_final/css/<%= grunt.task.current.args[0] %>.min.css' 
+                src: [
+                    moduleDir + 'plugins.min.css',
+                    '<%= grunt.task.current.args[0] %>.min.css'
+                ],
+                dest: buildDir + '04_final/css/<%= grunt.task.current.args[0] %>.min.css'
             },
         },
 
@@ -315,9 +333,9 @@ _gruntInitConfig = function() {
             //
             // Important note regarding the source map handling:
             //   The source map is inlined and also referenced to the original file.
-            //   If we use different src / dest folders the path information 
-            //   to the original source maps gets lost in the cssmin task. 
-            //   The workaround is to write to the 'moduleDir' folder, in which case the relative path information 
+            //   If we use different src / dest folders the path information
+            //   to the original source maps gets lost in the cssmin task.
+            //   The workaround is to write to the 'moduleDir' folder, in which case the relative path information
             //   remains intact. We clean up later in separate 'copy:save' and 'clean:theme' tasks.
             //
             theme : {
@@ -338,16 +356,16 @@ _gruntInitConfig = function() {
                 dest : buildDir + '04_final/csscheck/plugins.min.css',
             },
         },
-        
+
         uglify : {
             options : {
                 sourceMap: true,
                 sourceMapIncludeSources: true,
                 mangleProperties: false,
                 mangle : {
-                    except : [ 
-                        'jQuery', 
-                        'bootstrapPaginator', 
+                    except : [
+                        'jQuery',
+                        'bootstrapPaginator',
                         'revolution',
                     ],
                 },
@@ -361,12 +379,12 @@ _gruntInitConfig = function() {
         watch: {
             options: {
                 interrupt: true,     // interrupt when new modification happens during build
-                debounceDelay: 2000, // wait 2 seconds after file was saved before starting build 
+                debounceDelay: 2000, // wait 2 seconds after file was saved before starting build
             },
             scss : {
                 files : [ oc.sassSrc() ],
                 tasks : [ 'copy:restore', 'theme', 'combine', 'deploy' ],
-            },    
+            },
             pluginCss : {
                 files : [ oc.cssSrc() ],
                 tasks : [ 'copy:restore', 'pluginCss', 'combine', 'deploy' ],
@@ -385,7 +403,7 @@ _gruntInitConfig = function() {
 
 _gruntRegisterTasks = function() {
 
-    grunt.registerTask('default', [ 
+    grunt.registerTask('default', [
         'clean',
         'theme',
         'pluginCss',
@@ -394,39 +412,39 @@ _gruntRegisterTasks = function() {
         'deploy',
     ]);
 
-    grunt.registerTask('csscheck', [ 
+    grunt.registerTask('csscheck', [
         'clean',
         'sass:csscheck',
         'cssmin:csscheck',
         'deploy',
     ]);
 
-    grunt.registerTask('theme', [ 
+    grunt.registerTask('theme', [
         'sass:theme',
         mapScss ? 'postcss:theme' : 'postcss:themeNoMap',
         'cssmin:theme',
     ]);
 
-    grunt.registerTask('plugins', [ 
+    grunt.registerTask('plugins', [
         'cssmin:pluginCss',
         'uglify:pluginJs',
     ]);
 
-    grunt.registerTask('pluginCss', [ 
+    grunt.registerTask('pluginCss', [
         'cssmin:pluginCss',
     ]);
 
-    grunt.registerTask('pluginJs', [ 
+    grunt.registerTask('pluginJs', [
         'uglify:pluginJs',
     ]);
-    
+
     grunt.registerTask('combine',
         oc.themeConcatTasks().concat(
         'copy:save'
     ));
 
     grunt.registerTask('deploy', function() {
-        if (grunt.file.expand(oc.deployTarget + '*').length) { 
+        if (grunt.file.expand(oc.deployTarget + '*').length) {
             grunt.task.run( [
                 'copy:resources',
                 'copy:deploy',
@@ -436,19 +454,19 @@ _gruntRegisterTasks = function() {
         } else {
             grunt.log.errorlns('Deploy target CSS folder ' + oc.deployTarget + ' not found, skipping deploy!');
         }
-    });    
-}    
+    });
+}
 
 _showImports = function() {
-    
+
     console.log('\nLoaded path elements from OpenCms modules');
 
     console.log('- Themes');
     for (var i in themes) { console.log("    " + themes[i]) };
-    
+
     console.log('\n- Sass');
     for (var i in sassSrc) { console.log("    " + sassSrc[i]) };
-    
+
     console.log('\n- Css');
     for (var i in cssSrc) { console.log("    " + cssSrc[i]) };
 
@@ -457,9 +475,15 @@ _showImports = function() {
 
     console.log('\n- Resources');
     for (var i in resources) { console.log("    " + resources[i]) };
+
+    console.log('\n- Resource source folders');
+    for (var sourceDir in resourceSources) {
+        if (resourceSources.hasOwnProperty(sourceDir)) {
+            console.log("    " + sourceDir);
+        }
+    }
     console.log();
-    
-    console.log('\n- Deploy target folder: ' + deployTarget + "\n");    
+    console.log('\n- Deploy target folder: ' + deployTarget + "\n");
 }
 
 exports.sassSrc = function () {

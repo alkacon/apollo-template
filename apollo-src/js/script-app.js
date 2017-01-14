@@ -136,9 +136,20 @@ var App = function() {
     function handleMaps() {
 
         var mapElements = jQuery('.ap-google-map');
-        // console.info("mapElements found: " + mapElements.length);
+        if (APPDEBUG) console.info(".ap-google-map elements found: " + mapElements.length);
         if (mapElements.length > 0) {
             mapElements.initMaps();
+        }
+    }
+
+    // Apollo Image galleries sections
+    function handleImageGalleries() {
+
+        var imageGalleryElements = jQuery('#imagegallery');
+        if (APPDEBUG) console.info("#imagegallery elements found: " + imageGalleryElements.length);
+        if (imageGalleryElements.length > 0) {
+            // TODO: Add support for more then one image gallery
+            initImageGallery();
         }
     }
 
@@ -169,6 +180,7 @@ var App = function() {
             handleSmoothScrolling();
             handleParallax();
             handleClickmeShowme();
+            handleImageGalleries();
             handleMaps();
             handleSliders();
 

@@ -21,5 +21,14 @@ var mf = module.filename.substring(0, module.filename.length - 'Gruntparts.js'.l
 exports.mf = mf;
 
 exports.cssSrc = [
-	mf + 'css/font-awesome.css',
-]
+    mf + 'css/font-awesome.css',
+];
+
+exports.resources = [
+    mf + '>fonts/fontawesome-webfont.eot',
+    mf + '>fonts/fontawesome-webfont.svg',
+    mf + '>fonts/fontawesome-webfont.ttf',
+    mf + '>fonts/fontawesome-webfont.woff',
+    mf + '>fonts/fontawesome-webfont.woff2',
+    mf + '>fonts/FontAwesome.otf',
+];
