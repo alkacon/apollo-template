@@ -22,11 +22,6 @@
     <AutoEnabled>true</AutoEnabled>
     <Detail>true</Detail>
     <NestedContainers>false</NestedContainers>
-    <HeadIncludeJs>
-      <JavascriptInline><![CDATA[
-				initImageGallery();
-			]]></JavascriptInline>
-    </HeadIncludeJs>
     <Setting>
       <PropertyName><![CDATA[showTitle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.showtitle)]]></DisplayName>

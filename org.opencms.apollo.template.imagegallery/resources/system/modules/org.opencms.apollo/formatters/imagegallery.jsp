@@ -27,7 +27,9 @@
 <%-- ################################################################################################################## --%>
 
 <c:set var="pathPrefix">${cms.requestContext.siteRoot}</c:set>
-<c:if test="${fn:startsWith(content.value.ImageFolder.stringValue, '/shared/')}"><c:set var="pathPrefix"></c:set></c:if>
+<c:if test="${fn:startsWith(content.value.ImageFolder.stringValue, '/shared/')}">
+    <c:set var="pathPrefix" value="" />
+</c:if>
 <c:set var="path" value="${pathPrefix}${content.value.ImageFolder}" />
 <c:set var="solrParamType">fq=type:"image"</c:set>
 <c:set var="solrParamDirs">&fq=parent-folders:"${path}"</c:set>
@@ -37,13 +39,14 @@
       "extrasolrparams" : "${fn:replace(extraSolrParams,'"','\\"')}",
       pagesize: 500 }
 </c:set>
+
 <c:set var="ajaxLink">
     <cms:link>%(link.strong:/system/modules/org.opencms.apollo/elements/imagegallery-ajax.jsp:9bb25674-8f80-11e5-a6ad-0242ac11002b)</cms:link>
 </c:set>
+
 <c:set var="pageSize" value="${cms.element.setting.imagesPerPage.isSet ? cms.element.settings.imagesPerPage : '12' }" />
 
 <div id="imagegallery" class="ap-image-gallery clearfix">
-
         <div id="links"></div>
         <div class="spinner animated">
             <div class="spinnerInnerBox"><i class="fa fa-spinner"></i></div>
