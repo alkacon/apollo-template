@@ -24,6 +24,10 @@
     path="${path}"
     count="${pageSize}"
     page="1"
+    css="${cms.element.settings.cssClass}"
+    showtitle="${cms.element.setting.showTitle.value}"
+    showcopyright="${cms.element.setting.showCopyright.value}"
+    autoload="${cms.element.setting.autoload.value}"
 />
 
 </cms:formatter>

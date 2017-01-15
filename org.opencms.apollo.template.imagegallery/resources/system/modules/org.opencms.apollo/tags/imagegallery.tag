@@ -16,12 +16,12 @@
 <%@ attribute name="page" type="java.lang.String" required="true"
     description="The page to load. The 'count' parameter defines the page size." %>
 
+<%@ attribute name="css" type="java.lang.String" required="true"
+    description="CSS to apply to each image in the gallery." %>
+
 <%@ attribute name="searchconfig" type="java.lang.String" required="false"
     description="The full search configuration for finding the gallery elements with the cms:search tag.
     If this is not provided, the 'path' attribute will be used to create a default search configuration." %>
-
-<%@ attribute name="css" type="java.lang.String" required="false"
-    description="Class attributes used in the wrapper of each image in the gallery." %>
 
 <%@ attribute name="showtitle" type="java.lang.Boolean" required="false"
     description="Determines if the image title will be shown as tooltip and in the gallery-overlay." %>
@@ -29,6 +29,9 @@
 <%@ attribute name="showcopyright" type="java.lang.Boolean" required="false"
     description="Determines if the copyright text will be shown as tooltip and in the gallery-overlay." %>
 
+<%@ attribute name="autoload" type="java.lang.Boolean" required="false"
+    description="If 'false' each page will be loaded separately when the user clicks a button.
+    If 'true', only the first page requires a click, subsequent pages are loaded automatically when scrolling down." %>
 
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -36,6 +39,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo"%>
+
 
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.imagegallery.messages">
@@ -54,8 +58,6 @@
 <c:choose>
 <c:when test="${usecase == 'gallery'}">
 
-    <c:set var="showtitle" value="${cms.element.setting.showTitle.value}" />
-    <c:set var="showcopyright" value="${cms.element.setting.showCopyright.value}" />
     <c:set var="ajaxLink">
         <cms:link>/system/modules/org.opencms.apollo/elements/imagegallery-ajax.jsp</cms:link>
     </c:set>
@@ -71,11 +73,11 @@
 
         <div id="galleryData" class="col-xs-12" style="display:none;"
             data-ajax="${ajaxLink}"
-            data-css="${cms.element.settings.cssClass}"
+            data-css="${css}"
             data-showtitle="${showtitle}"
             data-showcopyright="${showcopyright}"
             data-path="${path}"
-            data-autoload="${cms.element.setting.autoload}"
+            data-autoload="${autoload}"
             data-count="${count}">
 
             <cms:search configString="${searchconfig}" var="search">
