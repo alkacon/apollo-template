@@ -10,55 +10,21 @@
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <apollo:init-messages reload="true">
-
 <cms:formatter var="content" val="value">
-<fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.imagegallery.messages">
-
-<%-- ################################################################################################################## --%>
-<%-- #######           How it works                              ######################################################### --%>
-<%-- ################################################################################################################## --%>
-<%-- #                                                                                                                # --%>
-<%-- # The div#links-container starts empty and is filled by AJAX-Request. Through inline script in the               # --%>
-<%-- # imagegallery.xml the Javascript procedure is started, which uses the information from data-attributes          # --%>
-<%-- # provided by generated content of the <apollo:gallerydata> tag. The AJAX-Request is recieved by                 # --%>
-<%-- # imagegallery-inner.jsp which uses the <apollo:galleryitems> tag to render the images into the list.            # --%>
-<%-- #                                                                                                                # --%>
-<%-- ################################################################################################################## --%>
 
 <c:set var="pathPrefix">${cms.requestContext.siteRoot}</c:set>
 <c:if test="${fn:startsWith(content.value.ImageFolder.stringValue, '/shared/')}">
     <c:set var="pathPrefix" value="" />
 </c:if>
 <c:set var="path" value="${pathPrefix}${content.value.ImageFolder}" />
-<c:set var="solrParamType">fq=type:"image"</c:set>
-<c:set var="solrParamDirs">&fq=parent-folders:"${path}"</c:set>
-<c:set var="extraSolrParams">${solrParamType}${solrParamDirs}&sort=path asc</c:set>
-<c:set var="searchConfig">
-    { "ignorequery" : true,
-      "extrasolrparams" : "${fn:replace(extraSolrParams,'"','\\"')}",
-      pagesize: 500 }
-</c:set>
-
-<c:set var="ajaxLink">
-    <cms:link>%(link.strong:/system/modules/org.opencms.apollo/elements/imagegallery-ajax.jsp:9bb25674-8f80-11e5-a6ad-0242ac11002b)</cms:link>
-</c:set>
-
 <c:set var="pageSize" value="${cms.element.setting.imagesPerPage.isSet ? cms.element.settings.imagesPerPage : '12' }" />
 
-<div id="imagegallery" class="ap-image-gallery clearfix">
-        <div id="links"></div>
-        <div class="spinner animated">
-            <div class="spinnerInnerBox"><i class="fa fa-spinner"></i></div>
-        </div>
-        <button class="btn animated" id="more" data-page="1" >
-            <fmt:message key="apollo.imagegallery.message.more" />
-        </button>
+<apollo:imagegallery
+    usecase='gallery'
+    path="${path}"
+    count="${pageSize}"
+    page="1"
+/>
 
-        <apollo:gallerydata ajax="${ajaxLink}" path="${path}" count="${pageSize}" searchconf="${searchConfig}" />
-</div>
-
-</cms:bundle>
 </cms:formatter>
-
 </apollo:init-messages>

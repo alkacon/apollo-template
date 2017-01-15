@@ -1,17 +1,17 @@
-<%@ tag 
+<%@ tag
     display-name="image-zoom"
     body-content="empty"
-    trimDirectiveWhitespaces="true" 
+    trimDirectiveWhitespaces="true"
     description="Displays an image which zoom option." %>
 
 
-<%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" 
+<%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The image to format. Must be a generic Apollo nested image content." %>
 
-<%@ attribute name="cssclass" type="java.lang.String" required="false" 
+<%@ attribute name="cssclass" type="java.lang.String" required="false"
     description="CSS class added to the div tag surrounding the image."%>
 
-<%@ attribute name="cssimage" type="java.lang.String" required="false" 
+<%@ attribute name="cssimage" type="java.lang.String" required="false"
     description="CSS class added directly to the generated image tag."%>
 
 
@@ -38,7 +38,7 @@
 
 <div class="ap-image ${cssclass}">
 
-    <%-- ####### always use originial image, discard all scaling parameters ######## --%>
+    <%-- ####### always use original image for zooming, discard all scaling parameters ######## --%>
     <a  class="zoom"
         href="<cms:link>${imageUnscaledLink}</cms:link>"
         data-gallery="true"
@@ -50,7 +50,7 @@
     >
         <span class="zoom-overlay">
             <span ${image.value.Image.imageDndAttr}>
-                <cms:img 
+                <cms:img
                     src="${imageLink}"
                     cssclass="img-responsive ${cssimage}"
                     alt="${imageTitleCopyright}"

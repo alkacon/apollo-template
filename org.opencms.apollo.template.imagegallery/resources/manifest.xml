@@ -33,6 +33,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imagegallery.messages_en"/>
 			<resource uri="/system/workplace/resources/filetypes/a-imagegallery.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-imagegallery_big.png"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/imagegallery.tag"/>
 		</resources>
 		<excluderesources/>
 		<parameters/>
@@ -255,6 +256,28 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[XSD for image gallery]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/tags</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/imagegallery.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/imagegallery.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>c11583b0-dae4-11e6-85b1-0242ac11002b</uuidstructure>
+			<uuidresource>c11583b1-dae4-11e6-85b1-0242ac11002b</uuidresource>
+			<datecreated>Sun, 15 Jan 2017 05:37:50 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Displays an image gallery based on a content search]]></value>
 				</property>
 			</properties>
 			<relations/>

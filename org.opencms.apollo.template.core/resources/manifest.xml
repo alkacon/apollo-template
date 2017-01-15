@@ -73,10 +73,8 @@
 			<resource uri="/system/modules/org.opencms.apollo/tags/contact.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/container-box.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/copyright.tag"/>
-			<resource uri="/system/modules/org.opencms.apollo/tags/gallerydata.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/pageinfo.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/formatter-settings.tag"/>
-			<resource uri="/system/modules/org.opencms.apollo/tags/galleryitems.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/headline.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/map.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-simple.tag"/>
@@ -1443,40 +1441,6 @@
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/tags/gallerydata.tag</source>
-			<destination>system/modules/org.opencms.apollo/tags/gallerydata.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>15e48a28-58b6-11e6-958f-0242ac11002b</uuidstructure>
-			<uuidresource>15e48a29-58b6-11e6-958f-0242ac11002b</uuidresource>
-			<datecreated>Tue, 02 Aug 2016 13:36:15 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Generates a div with data-attributes and a list of images for use with PhotoSwipe]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/tags/galleryitems.tag</source>
-			<destination>system/modules/org.opencms.apollo/tags/galleryitems.tag</destination>
-			<type>jsp</type>
-			<uuidstructure>0531d024-595d-11e6-958f-0242ac11002b</uuidstructure>
-			<uuidresource>0531d025-595d-11e6-958f-0242ac11002b</uuidresource>
-			<datecreated>Wed, 03 Aug 2016 09:31:13 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Displays an image gallery based on a content search]]></value>
 				</property>
 			</properties>
 			<relations/>
