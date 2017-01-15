@@ -171,16 +171,11 @@ function loadImages(page) {
 
     $.get($("#galleryData").data("ajax") + "?items="
         + $('#galleryData').data('count')
-        + "&page="
-        + page
-        + "&path=\""
-        + $("#galleryData").data("path")
-        + "\"&title="
-        + $("#galleryData").data("showtitle")
-        + "&copyright="
-        + $("#galleryData").data("showcopyright")
-        + "&css="
-        + $("#galleryData").data("css"), function(images) {
+        + "&page=" + page
+        + "&path=" + $("#galleryData").data("path")
+        + "&title="+ $("#galleryData").data("showtitle")
+        + "&copyright=" + $("#galleryData").data("showcopyright")
+        + "&css=" + $("#galleryData").data("css"), function(images) {
 
         if (images.length == 0) {
             $('#more').remove();
@@ -194,5 +189,6 @@ function loadImages(page) {
         }
         $('.spinner').removeClass('fadeIn').addClass('fadeOut');
     });
+
     $('#more').data('page', page + 1);
 }
