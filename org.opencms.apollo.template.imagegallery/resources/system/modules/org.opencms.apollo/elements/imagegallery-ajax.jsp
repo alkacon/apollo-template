@@ -15,7 +15,6 @@
     path="${param.path}"
     count="${param.items}"
     page="${param.page}"
-
     css="${param.css}"
     showtitle="${param.title}"
     showcopyright="${param.copyright}"

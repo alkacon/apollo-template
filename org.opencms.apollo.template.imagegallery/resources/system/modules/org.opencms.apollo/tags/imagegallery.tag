@@ -20,8 +20,6 @@
     description="The full search configuration for finding the gallery elements with the cms:search tag.
     If this is not provided, the 'path' attribute will be used to create a default search configuration." %>
 
-<%-- Attributes for 'item' use case --%>
-
 <%@ attribute name="css" type="java.lang.String" required="false"
     description="Class attributes used in the wrapper of each image in the gallery." %>
 
@@ -48,7 +46,7 @@
     {
         "ignorequery" : true,
         "extrasolrparams" : "${fn:replace(extraSolrParams,'"','\\"')}",
-        "pagesize" : ${page > 1 ? count : 500}
+        "pagesize" : ${usecase == 'gallery' ? 500 : count}
     }
     </c:set>
 </c:if>
