@@ -217,10 +217,11 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
         > li {
             > a {
-                border-bottom: 2px solid transparent;
+                border-bottom: 2px solid $nav-border;
 
                 &:focus {
                     background: $nav-header-bg; // top level nav uses main header background
+                    border-bottom: 2px solid $nav-border; // must overwrite bootstrap default
                 }
             }
 

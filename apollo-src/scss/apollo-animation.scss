@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -43,14 +43,14 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 /**
  * Shadow animation effect.
  * HTML structure:
- * 
+ *
  * <div class="ap-shadow-animation">      <-- Effect trigger box
  *     <div classs="animated-box">        <-- Animated box
  *         ...
  *     </div>
  *     Other content
  * </div>
- * 
+ *
  * This effect does two animations at once.
  * The effect trigger box gets the shadow, and the animated box is shrunk.
  **/
@@ -64,7 +64,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     // Reverse the shadow effect on the surrounding box if no hover
     transition: box-shadow 0.35s $easeInQuad;
 
-    // Shrink the inner box on hover 
+    // Shrink the inner box on hover
     &:hover.animated-box .text-box,
     &:hover .animated-box .text-box {
         transform: scale(0.925);
@@ -81,14 +81,14 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 /**
  * Shadow inset animation effect ('sunken shadow').
  * HTML structure:
- * 
+ *
  * <div class="ap-inset-animation">      <-- Effect trigger box
  *     <div classs="animated-box">       <-- Animated box
  *         ...
  *     </div>
  *     Other content
  * </div>
- * 
+ *
  * This effect does two animations at once.
  * The effect trigger box gets the inset shadow, and the animated box is shrunk.
  **/
@@ -96,13 +96,13 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 
     // Apply inset shadow effect to the surrounding box on hover
     &:hover {
-        box-shadow: 0 0 10px 1px $dropshadow inset; 
+        box-shadow: 0 0 10px 1px $dropshadow inset;
     }
 
     // Reverse the shadow effect on the surrounding box if no hover
     transition: box-shadow 0.35s $easeInQuad;
 
-    // Shrink the inner box on hover 
+    // Shrink the inner box on hover
     &:hover .animated-box {
         transform: scale(0.925);
     }
@@ -117,7 +117,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 /**
  * Raise box effect.
  * HTML structure:
- * 
+ *
  * <div class="ap-raise-animation">      <-- Effect trigger box
  *     <div classs="animated-box">       <-- Animated box
  *         ...
@@ -127,7 +127,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
  **/
 .ap-raise-animation {
 
-    // Apply the raise effect to the animated box on hover 
+    // Apply the raise effect to the animated box on hover
     &:hover.animated-box,
     &:hover .animated-box {
         transform: scale(1.075);
@@ -156,7 +156,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 /**
  * Button animation effect.
  * HTML structure:
- * 
+ *
  * <div class="ap-button-animation">      <-- Effect trigger box
  *     <div classs="button-box">          <-- Place marker box
  *         <a href="..."></a>             <-- Animated link button
@@ -175,7 +175,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     .button-box a {
         bottom: 15px;
         position: absolute;
-        display: inline-block; 
+        display: inline-block;
 
         right: -10px;
         transition: right 0.4s $easeOutQuad;
@@ -191,7 +191,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 /**
  * Ken Burns animation effect.
  * HTML structure:
- * 
+ *
  * <div class="ap-kenburns-animation">    <-- Effect trigger box
  *     <div classs="image-outer-box">     <-- Efect limitation box
  *         <div class="image-inner-box">  <-- Animated box, should be directly in limitation box
@@ -203,7 +203,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
  **/
 .ap-kenburns-animation {
 
-    // Apply the Ken Burn effect to the animated box on hover 
+    // Apply the Ken Burn effect to the animated box on hover
     &:hover .image-inner-box {
        transform: scale(1.25) rotate(2deg);
     }
@@ -225,13 +225,13 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
  * Clickme / Showme animation.
  * This effect relies on jQuery to work, it is NOT pure CSS.
  * HTML structure:
- * 
+ *
  * <div class="clickme-showme">    <-- Outer wrapper
  *     <div classs="clickme">      <-- Content initially hidden
- *         <!-- Some markup here --> 
+ *         <!-- Some markup here -->
  *     </div>
  *     <div classs="showme">       <-- Content initially visible
- *         <!-- Some mearkup here --> 
+ *         <!-- Some mearkup here -->
  *     </div>
  * </div>
  **/
@@ -252,7 +252,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
  * Spinner animation, displays a rotating "currently loading" symbol.
  * Used e.g. by the list and the image gallery.
  */
- 
+
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
@@ -304,22 +304,6 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 
-/* Image gallery base classes */
-
-.ap-image-gallery {
-
-    margin-bottom: 20px;
-
-    > button.btn {
-
-        margin-top: 6px;
-        margin-left: 2px;
-        margin-right: 2px;
-
-        width: calc(100% - 4px);
-    }
-}
-
 /* Speeding up animate.css fadeIn effect */
 /* Used in list and in image gallery */
 
@@ -329,79 +313,11 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 
-/* Image gallery image enter animation, used when the image gallery is displayed */
-
-.comein {
-    transform: translateY(120px);
-    animation: come-in 0.8s ease forwards;
-    &:nth-child(even) {
-        transform: translateY(150px);
-        animation-duration: 1.0s; // This makes the images look staggered when entering
-    }
-}
-
-
-@keyframes come-in {
-    to { transform: translateY(0); }
-}
-
-
-/* Zoom overlay effect used by image gallery as well as the 'image zoom' formatter */
-
-$zoom-bg:  rgba($black, 0.5) !default;
-$zoom-fg:  $text-light !default;
-
-.zoom:hover .zoom-overlay .zoom-icon {
-    opacity: 1;
-    transform: scale(1);
-    border: 0;
-    box-shadow: none;
-}
-
-.zoom-overlay {
-    cursor: pointer;
-    position: relative;
-    display: block;
-    height: 100%;
-    width: 100%;
-    transition: all 0.1s ease-in-out 0s;
-}
-
-.zoom-overlay .zoom-icon {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transform: scale(0);
-    transition: all 0.4s ease-in-out 0s;
-    z-index: 100;
-    background-color: $zoom-bg;
-    &:before {
-        background: transparent;
-    }
-    &:after {
-        background: transparent;
-    }
-}
-
-.zoom-overlay .zoom-icon i {  
-    // trick to position the element in the center of the surrounding div
-    // see http://stackoverflow.com/questions/5703552/css-center-text-horizontal-and-vertical-inside-a-div-block
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%); 
-    font-size: 30px;
-    color: $zoom-fg;
-}
-
-
 /* Parallax Background effect with background cover image */
 
 .parallax-background {
 
-    background-image: none; 
+    background-image: none;
     background-position: 50% 0px;
     background-size: cover;
     background-clip: border-box;

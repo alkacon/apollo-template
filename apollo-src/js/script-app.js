@@ -112,7 +112,7 @@ var App = function() {
         jQuery('.popovers-destroy').popover('destroy');
     }
 
-    // Apollo parallax sections
+    // Parallax sections
     function handleParallax() {
 
         var parallaxSections = jQuery('.parallax-background');
@@ -122,7 +122,7 @@ var App = function() {
         }
     }
 
-    // Apollo parallax sections
+    // Clickme-Showme effect sections
     function handleClickmeShowme() {
 
         var clickSections = jQuery('.clickme-showme');
@@ -132,28 +132,32 @@ var App = function() {
         }
     }
 
-    // Apollo Map sections
+    // Map sections
     function handleMaps() {
 
         var mapElements = jQuery('.ap-google-map');
         if (APPDEBUG) console.info(".ap-google-map elements found: " + mapElements.length);
         if (mapElements.length > 0) {
-            mapElements.initMaps();
+            mapElements.initMap();
         }
     }
 
-    // Apollo Image galleries sections
+    // Image galleries amd image zoom sections
     function handleImageGalleries() {
 
-        var imageGalleryElements = jQuery('#imagegallery');
-        if (APPDEBUG) console.info("#imagegallery elements found: " + imageGalleryElements.length);
+        var imageGalleryElements = jQuery('.ap-image-gallery');
+        if (APPDEBUG) console.info(".ap-image-gallery elements found: " + imageGalleryElements.length);
         if (imageGalleryElements.length > 0) {
-            // TODO: Add support for more then one image gallery
-            initImageGallery();
+            imageGalleryElements.initImageGallery();
+        }
+        var imageZoomElements = jQuery('a[data-imagezoom]');
+        if (APPDEBUG) console.info("a[data-imagezoom] elements found: " + imageZoomElements.length);
+        if (imageZoomElements.length > 0) {
+            imageZoomElements.initImageZoom();
         }
     }
 
-    // Apollo sliders
+    // Slider sections
     function handleSliders() {
 
         var simpleSliders = jQuery('.ap-slider');
@@ -185,7 +189,6 @@ var App = function() {
             handleSliders();
 
             initLists();
-            initPhotoSwipe();
         }
     };
 

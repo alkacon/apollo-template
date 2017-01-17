@@ -1,0 +1,114 @@
+// This program is part of the OpenCms Apollo Template.
+//
+// Copyright (c) Alkacon Software GmbH & Co. KG (http://www.alkacon.com)
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+/**********
+ * Source file: apollo-imagegallery.scss
+ *
+ * Styles used by the "Image Gallery" element
+ */
+
+/* Image gallery base classes */
+
+.ap-image-gallery {
+
+    margin-bottom: 20px;
+
+    > .gallery {
+
+        position: relative;
+    }
+
+    > .gallery > button.btn {
+
+        margin-top: 6px;
+        margin-left: 2px;
+        margin-right: 2px;
+
+        width: calc(100% - 4px);
+    }
+
+    #imagedata {
+
+        display: none;
+    }
+}
+
+/* Image gallery image enter animation, used when the image gallery is displayed */
+
+.comein {
+    transform: translateY(120px);
+    animation: come-in 0.8s ease forwards;
+    &:nth-child(even) {
+        transform: translateY(150px);
+        animation-duration: 1.0s; // This makes the images look staggered when entering
+    }
+}
+
+
+@keyframes come-in {
+    to { transform: translateY(0); }
+}
+
+/* Zoom overlay effect used by image gallery as well as the 'image zoom' formatter */
+
+$zoom-bg:  rgba($black, 0.5) !default;
+$zoom-fg:  $text-light !default;
+
+.zoom:hover .zoom-overlay .zoom-icon {
+    opacity: 1;
+    transform: scale(1);
+    border: 0;
+    box-shadow: none;
+}
+
+.zoom-overlay {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.zoom-overlay .zoom-icon {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 100;
+    background-color: $zoom-bg;
+    &:before {
+        background: transparent;
+    }
+    &:after {
+        background: transparent;
+    }
+}
+
+.zoom-overlay .zoom-icon i {
+    // trick to position the element in the center of the surrounding div
+    // see http://stackoverflow.com/questions/5703552/css-center-text-horizontal-and-vertical-inside-a-div-block
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 30px;
+    color: $zoom-fg;
+}

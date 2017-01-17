@@ -22,6 +22,9 @@
  */
 
 .ap-sitemap {
+
+    margin-bottom: 10px; // sitemap itself has 10px padding-bottom
+
     ul,
     li {
         margin: 0;
@@ -30,85 +33,115 @@
         background: transparent;
     }
 
-    ul.row {
+    li.top {
+        float: left;
+        width: 100%;
         padding-bottom: 10px;
 
-        > ul {
-            padding-right: 10px;
-        }
-    }
-
-    @media (max-width: $screen-sm-max) {
-        ul.row {
-            padding-bottom: 0;
-
-            > ul {
-                padding-right: 0;
-                padding-bottom: 10px;
-            }
-        }
-    }
-
-    ul > ul {
-
-        li {
+        a {
             color: get-text-color($main-theme);
             background: $main-theme;
             font-weight: bold;
             font-size: 1em;
             line-height: 1;
+            padding: 10px;
+            width: 100%;
+            display: block;
+            height: 100%;
+            text-decoration: none;
+            position: relative;
 
-            &.parent{
-                padding: 10px;
-                cursor: pointer;
+            &.nav-toggle {
+                &:after {
+                    position: absolute;
+                    display: inline-block;
+                    font-family: FontAwesome;
+                    font-weight: normal;
+                    content: "\f078";
+                    top: 10px;
+                    right: 9px;
+                    transform: rotate(-180deg) translate(0,0);
+                    transition: transform .33s;
+                }
+                &.collapsed:after {
+                    transform: rotate(0) translate(0,0);
+                    transition: transform 0.33s;
+                }
             }
 
-            a {
-                padding: 10px;
+        }
+
+        li a {
+            color: get-text-color($main-theme-complementary);
+            background: $main-theme-complementary;
+            font-weight: normal;
+            padding-top: 6px;
+            padding-bottom: 6px;
+
+            &:hover {
                 color: get-text-color($main-theme);
-                width: 100%;
-                display: block;
-                height: 100%;
+                background: $main-theme;
                 text-decoration: none;
             }
 
-            span {
-                float: left;
-            }
-
-            i{
-                float: right;
-                transform: rotate(0) translate(0px, 0px);
-                transition: transform 0.33s;
-
-                &.open{
-                    // transform: rotate(-90deg);
-                    transform: rotate(-180deg) translate(0px, -4px);
-                    transition: transform .33s;
+            &.nav-toggle {
+                &:after {
+                    top: 6px;
                 }
             }
         }
+    }
 
-        & > ul li {
-            color: get-text-color($main-theme-complementary);
-            background: $main-theme-complementary;
-            padding: 0px 10px;
-            margin: 0;
-            font-weight: normal;
-
-            a {
-                padding: 6px 0px;
-                color: get-text-color($main-theme-complementary);
+    .col-6 > li.top {
+        @media (min-width: $screen-md-min) {
+            width: 50%;
+            padding-right: 10px;
+            &:nth-of-type(2n+1) {
+                clear: both;
             }
+        }
+    }
 
-            &:hover {
-                background: $main-theme;
-                color: get-text-color($main-theme);
+    .col-4 > li.top {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            width: 50%;
+            padding-right: 10px;
+            &:nth-of-type(2n+1) {
+                clear: both;
+            }
+        }
 
-                a {
-                    color: get-text-color($main-theme);
-                    text-decoration: none;
-                }
+        @media (min-width: $screen-md-min) {
+            width: 33.33333333%;
+            padding-right: 10px;
+            &:nth-of-type(3n+1) {
+                clear: both;
+            }
+        }
+    }
+
+    .col-3 > li.top {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            width: 50%;
+            padding-right: 10px;
+            &:nth-of-type(2n+1) {
+                clear: both;
+            }
+        }
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            width: 33%;
+            padding-right: 10px;
+            &:nth-of-type(3n+1) {
+                clear: both;
+            }
+        }
+
+        @media (min-width: $screen-lg-min) {
+            width: 25%;
+            padding-right: 10px;
+            &:nth-of-type(4n+1) {
+                clear: both;
             }
         }
     }
@@ -125,32 +158,18 @@
 
     .ap-sitemap.color-#{""+$type-name} {
 
-        ul > ul {
-
-            li {
+        li.top {
+            a {
                 color: get-text-color($bg-color);
                 background: $bg-color;
-
-                a {
-                    color: get-text-color($bg-color);
-                }
             }
-
-            & > ul li {
+            li a {
                 color: get-text-color(lighten($bg-color, 25%));
                 background: $sub-color;
-
-                a {
-                    color: get-text-color($sub-color);
-                }
 
                 &:hover {
                     color: get-text-color($bg-color);
                     background: $bg-color;
-
-                    a {
-                        color: get-text-color($bg-color);
-                    }
                 }
             }
         }

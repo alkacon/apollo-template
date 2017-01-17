@@ -271,7 +271,7 @@ function initGoogleMaps() {
 
 (function( $ ){
 
-    $.fn.initMaps = function() {
+    $.fn.initMap = function() {
         var $this = $(this);
 
         // initialize map sections with values from data attributes
@@ -281,9 +281,9 @@ function initGoogleMaps() {
             var $mapElement = $element.find('.mapwindow');
 
             if (typeof $mapElement.data("map") != 'undefined') {
-                var $mapData = $mapElement.data("map");
-                if (MAPDEBUG) console.info("mapData found:" + $mapData);
-                apollo.addElement("map", $mapData);
+                var mapData = $mapElement.data("map");
+                if (MAPDEBUG) console.info("mapData found:" + mapData + ", id=" + mapData.id);
+                apollo.addElement("map", mapData);
             }
         });
 
