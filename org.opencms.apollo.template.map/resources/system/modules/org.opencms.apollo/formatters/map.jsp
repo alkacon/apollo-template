@@ -32,14 +32,16 @@
 <div class="ap-google-map ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
 
     <c:if test="${not cms.element.settings.hidetitle}">
-        <h1 ${value.Headline.rdfaAttr}>${value.Headline}</h1>
+        <div class="headline">
+            <h2 ${value.Headline.rdfaAttr}>${value.Headline}</h2>
+        </div>
     </c:if>
 
     <c:if test="${value.Text.isSet}">
         <div ${value.Text.rdfaAttr}>${value.Text}</div>
     </c:if>
 
-    <apollo:map 
+    <apollo:map
          id="${cms.element.id}"
          width="${mapw}"
          height="${maph}"

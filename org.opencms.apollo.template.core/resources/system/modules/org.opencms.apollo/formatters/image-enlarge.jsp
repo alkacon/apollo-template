@@ -9,7 +9,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
-<apollo:init-messages>
+<apollo:init-messages reload="true">
 
 <cms:formatter var="content" val="value">
 <fmt:setLocale value="${cms.locale}" />
@@ -20,8 +20,8 @@
     <c:set var="showsubtitle" value="${cms.element.setting.showsubtitle.value != 'false' and (value.Headline.isSet or not empty imageTitle)}"/>
     <c:set var="showtext" value="${cms.element.setting.showtext.value and value.Text.isSet}"/>
 
-    <apollo:image-zoom 
-        image="${content.value.Image}" 
+    <apollo:image-zoom
+        image="${content.value.Image}"
         cssimage="${cms.element.setting.ieffect.value != 'none' ? cms.element.setting.ieffect.value : ''}"
     />
 

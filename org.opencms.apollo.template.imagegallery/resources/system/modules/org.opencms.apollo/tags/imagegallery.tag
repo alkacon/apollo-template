@@ -3,9 +3,8 @@
   body-content="empty"
   description="Displays an image gallery based on a content search."%>
 
-
-<%@ attribute name="usecase" type="java.lang.String" required="true"
-    description="The use case of the tag. Valid values are 'gallery' and 'item'." %>
+<%@ attribute name="id" type="java.lang.String" required="true"
+    description="The id the image gallery should use, usually the UID of the element." %>
 
 <%@ attribute name="path" type="java.lang.String" required="true"
     description="The path to the images that will be shown." %>
@@ -50,112 +49,98 @@
     {
         "ignorequery" : true,
         "extrasolrparams" : "${fn:replace(extraSolrParams,'"','\\"')}",
-        "pagesize" : ${usecase == 'gallery' ? 500 : count}
+        "pagesize" : 500
     }
     </c:set>
 </c:if>
 
-<c:choose>
-<c:when test="${usecase == 'gallery'}">
+<%-- Id must not have any "-" character --%>
+<c:set var="id" value="imagegallery_${fn:replace(id, '-', '')}"/>
 
-    <c:set var="ajaxLink">
-        <cms:link>/system/modules/org.opencms.apollo/elements/imagegallery-ajax.jsp</cms:link>
-    </c:set>
+<c:set var="ajaxLink">
+    <cms:link>/system/modules/org.opencms.apollo/elements/imagegallery-ajax.jsp</cms:link>
+</c:set>
 
-    <div id="imagegallery" class="ap-image-gallery clearfix">
-        <div id="links"></div>
-        <div class="spinner animated">
-            <div class="spinnerInnerBox"><i class="fa fa-spinner"></i></div>
-        </div>
-        <button class="btn animated" id="more" data-page="1" >
-            <fmt:message key="apollo.imagegallery.message.more" />
-        </button>
+<c:set var="template">
+    <div class="ap-square square-m-2 ${css} comein zoom">
+        <a class="image-gallery" href="%(src)" title="%(titleAttr)">
+            <span class="content" style="background-image:url('%(src)');">
+                <span class="zoom-overlay">
+                    <span class="zoom-icon">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </span>
+            </span>
+        </a>
+    </div>
+</c:set>
 
-        <div id="galleryData" class="col-xs-12" style="display:none;"
-            data-ajax="${ajaxLink}"
-            data-css="${css}"
-            data-showtitle="${showtitle}"
-            data-showcopyright="${showcopyright}"
-            data-path="${path}"
-            data-autoload="${autoload}"
-            data-count="${count}">
+<div
+    id="${id}"
+    class="gallery"
+    data-imagegallery='{
+        "id": "${id}",
+        "ajax": "${ajaxLink}",
+        "css": "${css}",
+        "showtitle": "${showtitle}",
+        "showcopyright": "${showcopyright}",
+        "path": "${path}",
+        "autoload": "${autoload}",
+        "count": "${count}",
+        "template": "${cms:encode(template)}"
+    }'>
 
-            <cms:search configString="${searchconfig}" var="search">
-                <c:if test="${search.numFound > 0 }">
-                    <ul>
-                        <c:forEach var="result" items="${search.searchResults}"
-                            varStatus="status">
-                            <c:set var="image" value="${result.searchResource}" />
-                            <c:set var="title">${fn:trim(result.fields['Title_dprop_s'])}</c:set>
-                            <c:set var="copyright">${fn:trim(result.fields['Copyright_dprop_s'])}</c:set>
-                            <c:set var="titleEmpty">${empty title or not showtitle}</c:set>
-                            <c:set var="copyEmpty">${empty copyright or not showcopyright}</c:set>
-                            <apollo:copyright text="${copyright}" />
+    <div id="images" class="clearfix"></div>
 
-                            <c:set var="titletext" value="${titleEmpty ? '' : title}${copyEmpty or titleEmpty ? '' : ' '}${copyEmpty ? '' : copyright}" />
-                            <li data-gallery="true"
-                                data-size="${result.fields['image.size_dprop_s']}"
-                                data-src="<cms:link>${image.rootPath}</cms:link>"
-                                data-title="${titletext}"></li>
-                        </c:forEach>
-                    </ul>
-                </c:if>
-            </cms:search>
-        </div>
+    <div class="spinner">
+        <div class="spinnerInnerBox"><i class="fa fa-spinner"></i></div>
     </div>
 
-</c:when>
-<c:when test="${usecase == 'item'}">
+    <button class="btn btn-block" id="more">
+        <fmt:message key="apollo.imagegallery.message.more" />
+    </button>
 
-    <c:if test="${empty showtitle}"><c:set var="showtitle" value="false" /></c:if>
+    <div id="imagedata">
+        <cms:search configString="${searchconfig}" var="search">
+            <c:if test="${search.numFound > 0 }">
+                <ul>
+                    <c:forEach var="result" items="${search.searchResults}" varStatus="status">
+                        <c:set var="src"><cms:link>${result.searchResource.rootPath}</cms:link></c:set>
+                        <c:set var="size">${result.fields['image.size_dprop_s']}</c:set>
 
-    <cms:search configString="${searchconfig}" var="search">
-        <c:choose>
+                        <c:set var="title">${showtitle ? fn:trim(result.fields['Title_dprop_s']) : ''}</c:set>
+                        <c:set var="copyright">${showcopyright ? fn:trim(result.fields['Copyright_dprop_s']) : ''}</c:set>
 
-        <c:when test="${search.numFound > 0 }">
+                        <%-- Caption shown in gallery can contain HTML markup for formatting --%>
+                        <c:set var="caption">
+                            <c:if test="${not empty title}">
+                                <div class="gtitle">${title}</div>
+                            </c:if>
+                            <c:if test="${not empty copyright}">
+                                <div class="gcopyright">${copyright}</div>
+                            </c:if>
+                        </c:set>
 
-            <c:if test="${search.numFound > count*(page-1)}">
-                <c:forEach var="result" items="${search.searchResults}" varStatus="status">
+                        <%-- Title attribute for a href tag can not contain any HTML markup--%>
+                        <c:set var="titleAttr">
+                            <apollo:copyright text="${copyright}"/>
+                            <c:if test="${not empty title}">${title}</c:if>
+                            <c:if test="${not empty title || not empty copyright}"> </c:if>
+                            <c:if test="${not empty copyright}">${copyright}</c:if>
+                        </c:set>
 
-                    <c:set var="image" value="${result.searchResource}" />
-                    <c:set var="title">${fn:trim(result.fields['Title_dprop_s'])}</c:set>
-                    <apollo:copyright text="${fn:trim(result.fields['Copyright_dprop_s'])}" />
-                    <c:set var="imagesrc"><cms:link>${image.rootPath}</cms:link></c:set>
-                    <c:set var="titleEmpty">${empty title or not showtitle}</c:set>
-                    <c:set var="copyEmpty">${empty copyright or not showcopyright}</c:set>
-
-                    <div class="${css} comein zoom">
-                        <a class="image-gallery"
-                           href="${imagesrc}"
-                           onclick="openGallery(event, ${status.index+count*(page-1)})"
-                           title="${not titleEmpty ? title : ''}${titleEmpty or copyEmpty  ? '' : ' '}${not copyEmpty ? copyright : ''}">
-                            <span class="content" style="background-image:url('${imagesrc}');">
-                                <span class="zoom-overlay">
-                                    <span class="zoom-icon">
-                                        <i class="fa fa-search"></i>
-                                    </span>
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                </c:forEach>
-
-                <%-- ####### If last results found, include stopper which disables loading ######## --%>
-                <c:if test="${search.numFound <= count*page}">
-                    <span class="hideMore" style="display: none;"></span>
-                </c:if>
-
+                        <li data-image='{<%--
+                            --%>"src": "${src}",
+                                "size": "${size}",
+                                "caption": "${cms:encode(caption)}",
+                                "titleAttr": "${cms:encode(titleAttr)}"<%--
+                        --%>}' />
+                    </c:forEach>
+                </ul>
             </c:if>
-        </c:when>
+        </cms:search>
+    </div>
 
-        <c:otherwise>
-            <fmt:message key="apollo.imagegallery.message.empty" />
-        </c:otherwise>
-
-        </c:choose>
-    </cms:search>
-
-</c:when>
-</c:choose>
+</div>
 
 </cms:bundle>

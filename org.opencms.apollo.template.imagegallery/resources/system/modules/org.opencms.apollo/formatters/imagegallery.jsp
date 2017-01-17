@@ -19,16 +19,26 @@
 <c:set var="path" value="${pathPrefix}${content.value.ImageFolder}" />
 <c:set var="pageSize" value="${cms.element.setting.imagesPerPage.isSet ? cms.element.settings.imagesPerPage : '12' }" />
 
-<apollo:imagegallery
-    usecase='gallery'
-    path="${path}"
-    count="${pageSize}"
-    page="1"
-    css="${cms.element.settings.cssClass}"
-    showtitle="${cms.element.setting.showTitle.value}"
-    showcopyright="${cms.element.setting.showCopyright.value}"
-    autoload="${cms.element.setting.autoload.value}"
-/>
+<div class="ap-image-gallery ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
+
+    <c:if test="${not cms.element.settings.hidetitle}">
+        <div class="headline">
+            <h2 ${value.Title.rdfaAttr}>${value.Title}</h2>
+        </div>
+    </c:if>
+
+    <apollo:imagegallery
+        id="${cms.element.id}"
+        path="${path}"
+        count="${pageSize}"
+        page="1"
+        css="${cms.element.settings.cssClass}"
+        showtitle="${cms.element.setting.showTitle.value}"
+        showcopyright="${cms.element.setting.showCopyright.value}"
+        autoload="${cms.element.setting.autoload.value}"
+    />
+
+</div>
 
 </cms:formatter>
 </apollo:init-messages>

@@ -86,6 +86,8 @@
 
 <div
     id="${id}"
+    class="mapwindow"
+    style="${mapStyle}"
     data-map='{
         "id":"${id}",
         "zoom":"${zoom}",
@@ -149,9 +151,7 @@
             </c:forEach>
             ]
         </c:if><%--
---%>}'
-    class="mapwindow"
-    style="${mapStyle}">
+--%>}'>
 </div>
 
 <c:if test="${showMarkers and fn:length(markerGroups) > 1}">

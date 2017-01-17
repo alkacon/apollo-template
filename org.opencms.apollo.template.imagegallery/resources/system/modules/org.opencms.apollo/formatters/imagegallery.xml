@@ -23,6 +23,43 @@
     <Detail>true</Detail>
     <NestedContainers>false</NestedContainers>
     <Setting>
+      <PropertyName><![CDATA[hidetitle]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.hidetitle)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[String]]></Widget>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[cssClass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.imagecss)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.imagecss.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[square-sm-6 square-md-4 square-lg-3]]></Default>
+      <WidgetConfig><![CDATA[
+        square-xs-6 square-sm-4 square-md-3 square-lg-2:XS-2 SM-3 MD-4 LG-6|
+        square-xs-6 square-sm-6 square-md-4 square-lg-3:XS-2 SM-2 MD-3 LG-4|
+        square-sm-6 square-md-4 square-lg-3:            XS-1 SM-2 MD-3 LG-4|
+        square-sm-6 square-lg-4:                        XS-1 SM-2 MD-2 LG-3|
+        square-sm-12 square-md-6:                       XS-1 SM-1 MD-2 LG-2|
+        square-sm-12:                                   XS-1 SM-1 MD-1 LG-1
+        ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[imagesPerPage]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.imagesperpage)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.imagesperpage.description)]]></Description>
+      <Widget><![CDATA[string]]></Widget>
+      <Default><![CDATA[12]]></Default>
+      <RuleRegex><![CDATA[[0-9]+]]></RuleRegex>
+      <RuleType><![CDATA[error]]></RuleType>
+      <Error><![CDATA[%(key.apollo.setting.imagesperpage.error)]]></Error>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[showTitle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.showtitle)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.showtitle.description)]]></Description>
@@ -42,23 +79,6 @@
       <Description><![CDATA[%(key.apollo.setting.autoload.description)]]></Description>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[imagesPerPage]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.imagesperpage)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.imagesperpage.description)]]></Description>
-      <Widget><![CDATA[string]]></Widget>
-      <Default><![CDATA[12]]></Default>
-      <RuleRegex><![CDATA[[0-9]+]]></RuleRegex>
-      <RuleType><![CDATA[error]]></RuleType>
-      <Error><![CDATA[%(key.apollo.setting.imagesperpage.error)]]></Error>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[cssClass]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.imagecss)]]></DisplayName>
-      <Description><![CDATA[%(key.apollo.setting.imagecss.description)]]></Description>
-      <Widget><![CDATA[string]]></Widget>
-      <Default><![CDATA[ap-square square-sm-6 square-md-4 square-lg-3 square-m-2]]></Default>
     </Setting>
   </NewFormatter>
 </NewFormatters>

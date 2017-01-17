@@ -23,9 +23,6 @@
     <Detail>true</Detail>
     <Display>false</Display>
     <NestedContainers>false</NestedContainers>
-    <HeadIncludeJs>
-      <JavascriptInline><![CDATA[sitemap();]]></JavascriptInline>
-    </HeadIncludeJs>
     <Setting>
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>

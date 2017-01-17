@@ -25,7 +25,6 @@
 		<exportpoints/>
 		<resources>
 			<resource uri="/system/modules/org.opencms.apollo.template.imagegallery/"/>
-			<resource uri="/system/modules/org.opencms.apollo/elements/imagegallery-ajax.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/imagegallery.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/imagegallery.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/imagegallery.xsd"/>
@@ -98,32 +97,6 @@
 			<destination>system/modules/org.opencms.apollo</destination>
 			<type>folder</type>
 			<properties/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.apollo/elements</destination>
-			<type>folder</type>
-			<properties/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/elements/imagegallery-ajax.jsp</source>
-			<destination>system/modules/org.opencms.apollo/elements/imagegallery-ajax.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>9bb25674-8f80-11e5-a6ad-0242ac11002b</uuidstructure>
-			<uuidresource>9bb25675-8f80-11e5-a6ad-0242ac11002b</uuidresource>
-			<datecreated>Fri, 20 Nov 2015 12:17:03 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Ajax element for image gallery]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
 		</file>
 		<file>
 			<destination>system/modules/org.opencms.apollo/formatters</destination>

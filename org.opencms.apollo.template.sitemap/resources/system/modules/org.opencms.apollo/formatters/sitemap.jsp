@@ -1,10 +1,3 @@
-<%@page buffer="none" session="false" trimDirectiveWhitespaces="true"
-    import="org.opencms.file.types.CmsResourceTypeFolderSubSitemap, org.opencms.file.CmsResource"%>
-<%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-
 <%@page
     buffer="none"
     session="false"
@@ -24,13 +17,6 @@
 
 <c:set var="startLevel">0</c:set>
 <c:set var="maxDepth">${value.MaximumDepth.isSet ? value.MaximumDepth : 100}</c:set>
-<c:set var="firstLevel">0</c:set>
-<c:set var="colCount">0</c:set>
-<c:set var="ulCount">0</c:set>
-<c:set var="oldLevel" value="0" />
-<c:set var="hideItem">false</c:set>
-<c:set var="isSubsiteMap">false</c:set>
-<c:set var="subsiteMapLevel">0</c:set>
 
 <div class="ap-sitemap ${cms.element.setting.wrapperclass}">
 
@@ -39,6 +25,7 @@
             <h2 ${value.Title.rdfaAttr}>${value.Title}</h2>
         </div>
     </c:if>
+
     <c:if test="${not cms.element.settings.hideText}">
         <div ${value.Text.rdfaAttr}>${value.Text}</div>
     </c:if>
@@ -50,125 +37,58 @@
         var="nav"
         resource="${value.ShowFrom.isSet and not empty value.ShowFrom? value.ShowFrom:cms.subSitePath}" />
 
-    <ul class="row">
-        <%--begin loop over all --%>
-        <c:forEach items="${nav.items}" var="item" varStatus="status">
+    <c:set var="navLength" value="${fn:length(nav.items) - 1}" />
 
-            <c:if test="${status.first }">
-                <c:set var="firstLevel">${item.navTreeLevel}</c:set>
-            </c:if>
+    <div class="clearfix">
+    <ul class="col-${not empty cms.element.settings.cols?cms.element.settings.cols: '4'}">
+    <c:forEach var="i" begin="0" end="${navLength}" >
 
-            <c:if test="${item.navTreeLevel < maxDepth}">
-                <c:set var="currentLevel"
-                    value="${item.navTreeLevel-firstLevel}" />
+        <c:set var="navElem" value="${nav.items[i]}" />
+        <c:set var="nextLevel" value="${i < navLength ? nav.items[i+1].navTreeLevel : navStartLevel}" />
+        <c:set var="startSubNav" value="${nextLevel > navElem.navTreeLevel}" />
+        <c:set var="navLink"><cms:link>${navElem.resourceName}</cms:link></c:set>
+        <li${navElem.navTreeLevel eq 1 ? ' class="top"' : ''}><%--
 
-                <%--close opened ul tags --%>
-                <c:if test="${currentLevel < oldLevel}">
-                    <c:forEach begin="${currentLevel+1}" end="${oldLevel}">
-                            <c:out value='</ul>' escapeXml='false' />
-                    </c:forEach>
-                    <c:set var="ulCount">${ulCount-currentLevel}</c:set>
-                    <c:if test="${currentLevel==0}">
-                        <c:out value='</ul>' escapeXml='false' />
-                    </c:if>
-                </c:if>
+    --%><c:choose>
 
-                <%-- begin test if subsitemaps should be shown --%>
-                <c:if test="${isSubsiteMap eq 'false'}">
-                    <c:if test="${cms:isSubSitemap(item.resource)}">
-                        <c:set var="subsiteMapLevel">${currentLevel}</c:set>
-                    </c:if>
-                </c:if>
-                <c:choose>
-                    <c:when
-                        test="${value.IncludeSubSiteMaps == 'false' and isSubsiteMap eq 'true'  and hideItem eq 'false'}">
-                        <c:set var="hideItem">true</c:set>
-                    </c:when>
-                    <c:when
-                        test="${hideItem == 'true' and currentLevel == subsiteMapLevel}">
-                        <c:set var="isSubsiteMap">false</c:set>
-                        <c:set var="hideItem">false</c:set>
-                    </c:when>
-                </c:choose>
-                <%-- end test if subsitemaps should be shown --%>
+            <c:when test="${startSubNav}">
 
-                <c:if test="${hideItem == 'false'}">
+                <%-- Output the start of a new sub-navigation level --%>
+                <c:set var="collapseId" value="nav-${cms.element.instanceId}-${i}" />
+                <a href="#${collapseId}" <%--
+                --%>class="nav-toggle collapsed" <%--
+                --%>data-toggle="collapse" <%--
+                --%>aria-expanded="false">${navElem.navText}</a><%--
+            --%><c:out value='<ul class="collapse" id="${collapseId}">' escapeXml="false" />
+                <c:if test="${not navElem.navigationLevel}">
+                    <%-- Sub navigation started by a page (i.e. not a nav level), so we must add another navigation item here --%>
+                    <li><a href="${navLink}">${navElem.navText}</a></li><%--
+            --%></c:if>
 
-                    <c:choose>
-                        <%-- Special markup for top level --%>
-                        <c:when test="${currentLevel == 0}">
-                            <%-- close previous top level item --%>
-                            <c:if test="${not status.first and oldLevel == 0}">
-                                <c:out value='</ul>' escapeXml='false' />
-                            </c:if>
+            </c:when>
+            <c:otherwise>
 
-                            <%-- Create new row in case of enough columns --%>
-                            <c:if test="${colCount > (not empty cms.element.settings.cols?((12/cms.element.settings.cols)-1):2)}">
-                                <c:set var="colCount">0</c:set>
-                                <c:out value='</ul><ul class="row">' escapeXml='false' />
-                            </c:if>
+                <%-- Output a regular navigation item --%>
+                <c:out value='<a href="${navLink}">${navElem.navText}</a>' escapeXml="false" />
 
-                            <c:set var="colCount">${colCount +1}</c:set>
-                            <c:set var="ulCount">${ulCount+1}</c:set>
-                            <c:set var="mdClass">${not empty cms.element.settings.cols?cms.element.settings.cols: '4'}</c:set>
-                            <c:out value='<ul class="col-xs-12 col-md-${mdClass}">' escapeXml='false' />
-                        </c:when>
+            </c:otherwise>
 
-                        <%-- open new sublist in case of subitems --%>
-                        <c:when test="${currentLevel > oldLevel}">
-                            <c:set var="ulCount">${ulCount+1}</c:set>
-                            <c:set var="visClass">${(value.SubFoldersOpenedPerDefault == 'true' or (currentLevel == 1 and value.SitemapOpenedPerDefault == 'true'))?'':'style="display: none;"'}</c:set>
-                            <c:out value='<ul ${visClass}>' escapeXml='false' />
-                        </c:when>
-                    </c:choose>
+        </c:choose>
 
-                    <%-- test if item includes subitems --%>
-                    <c:set var="parentItem">false</c:set>
-                    <c:forEach items="${nav.items}" var="nextItem"
-                        varStatus="nextstatus">
-                        <c:if
-                            test="${(nextstatus.index eq (status.index + 1) and (nextItem.navTreeLevel-firstLevel) > currentLevel) and nextItem.navTreeLevel < maxDepth}">
-                            <c:set var="parentItem">true</c:set>
-                        </c:if>
-                    </c:forEach>
-
-                    <%-- begin show of the item depending on type (parent or not) --%>
-                    <c:choose>
-                        <c:when test="${parentItem eq 'true'}">
-                            <li class="parent clearfix">
-                                <span>${item.navText}</span>
-                                <i class="fa fa-chevron-down ${(value.SitemapOpenedPerDefault eq 'true' and currentLevel == 0) or (value.SubFoldersOpenedPerDefault eq 'true')?'open':'' }"></i>
-                            </li>
-                        </c:when>
-                        <c:otherwise>
-                            <li><a href="<cms:link>${item.resourceName}</cms:link>">${item.navText}</a>
-                            </li>
-                        </c:otherwise>
-                    </c:choose>
-                    <%-- end show of the item depending on type (parent or not) --%>
-
-                    <c:set var="oldLevel">${currentLevel}</c:set>
-                </c:if>
-            </c:if>
-        </c:forEach>
-        <%-- close opened sublists --%>
-        <c:if test="${ulCount>0}">
-            <c:forEach begin="0" end="${ulCount}">
-                <c:out value='<ul' escapeXml='false' /> 
+        <c:if test="${nextLevel < navElem.navTreeLevel}">
+            <c:forEach begin="1" end="${navElem.navTreeLevel - nextLevel}" >
+                <c:out value='</ul>' escapeXml="false" />
             </c:forEach>
         </c:if>
-        <%--end loop over all --%>
+
+        <c:out value='</li>${nl}' escapeXml="false" />
+
+    </c:forEach>
     </ul>
+    </div>
+
 </div>
 
-<script>
-    function sitemap() {
-        $('li').click(function() {
-            $(this).next('ul').slideToggle();
-            $(this).find('i').toggleClass('open');
-        });
-    }
-</script>
 
 </cms:bundle>
 </cms:formatter>

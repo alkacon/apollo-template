@@ -39,12 +39,11 @@
 <div class="ap-image ${cssclass}">
 
     <%-- ####### always use original image for zooming, discard all scaling parameters ######## --%>
-    <a  class="zoom"
+    <c:set var="imageSize">${cms.vfs.property[imageUnscaledLink]['image.size']}</c:set>
+    <a class="zoom"
         href="<cms:link>${imageUnscaledLink}</cms:link>"
-        data-gallery="true"
-        data-size="${cms.vfs.property[imageUnscaledLink]['image.size']}"
+        data-imagezoom='{ "size": "${imageSize}", "caption": "${cms:encode(imageTitleCopyright)}" }'
         <c:if test="${not empty imageTitleCopyright}">
-            data-title="${imageTitleCopyright}"
             title="${imageTitleCopyright}"
         </c:if>
     >
