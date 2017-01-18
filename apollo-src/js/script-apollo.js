@@ -19,11 +19,11 @@
 
 /**
  * Global Apollo information object.
- * 
+ *
  * Provides selected information about the current page from OpenCms to JavaScript.
  */
 
-// Note: If INITDEBUG is false, all INITDEBUG clauses will be removed 
+// Note: If INITDEBUG is false, all INITDEBUG clauses will be removed
 // by uglify.js during Apollo JS processing as unreachable code
 var INITDEBUG = false;
 
@@ -47,7 +47,7 @@ jQuery.loadScript = function( url, options ) {
 
 
 // Acessing object path by String value
-// see: http://stackoverflow.com/questions/6491463/accessing-nested-javascript-objects-with-string-key 
+// see: http://stackoverflow.com/questions/6491463/accessing-nested-javascript-objects-with-string-key
 Object.byString = function(o, s) {
     s = s.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
     s = s.replace(/^\./, '');           // strip a leading dot
@@ -170,30 +170,16 @@ ApolloInfo.prototype.getThemeColor = function(color) {
     return result;
 }
 
-
-// This is the global Apollo information instance
-
-var apollo = new ApolloInfo();
-
-
-function initApollo() {
-
-    var infos = jQuery('#apollo-info');
-    if (infos.length > 0) {
-        infos.initApolloInfo();
-    }
-}
-
-// passing varaibales from SCSS to JavaScript
-// see https://css-tricks.com/making-sass-talk-to-javascript-with-json/ 
-function removeApolloThemeQuotes(string) {
+ApolloInfo.prototype.removeApolloThemeQuotes = function(string) {
+    // passing varaibales from SCSS to JavaScript
+    // see https://css-tricks.com/making-sass-talk-to-javascript-with-json/
     if (typeof string === 'string' || string instanceof String) {
         string = string.replace(/^['"]+|\s+|\\|(;\s?})+|['"]$/g, '');
     }
     return string;
 }
 
-function getApolloTheme(elementId) {
+ApolloInfo.prototype.getApolloTheme= function(elementId) {
     var theme = null;
     element = document.getElementById(elementId);
     if (window.getComputedStyle && window.getComputedStyle(element, '::before') ) {
@@ -201,27 +187,31 @@ function getApolloTheme(elementId) {
         theme = theme.content;
         if (INITDEBUG) console.info("Apollo theme found in ::before: " + theme);
     }
-    return JSON.parse(removeApolloThemeQuotes(theme));
+    return JSON.parse(apollo.removeApolloThemeQuotes(theme));
 }
 
-(function($) {
+ApolloInfo.prototype.initApolloInfo = function() {
 
-    $.fn.initApolloInfo = function() {
-        var $this = $(this);
+    // initialize info sections with values from data attributes
+    jQuery('#apollo-info').each(function(){
 
-        // initialize info sections with values from data attributes    
-        $this.each(function(){
+        var $element = $(this);
 
-            var $element = $(this); 
- 
-            if (typeof $element.data("info") != 'undefined') {
-                var $info = $element.data("info");
-                apollo.addInfo($info);
-            }
+        if (typeof $element.data("info") != 'undefined') {
+            var $info = $element.data("info");
+            apollo.addInfo($info);
+        }
 
-            var theme = getApolloTheme($element.attr('id'));
-            apollo.addElement("theme", theme);
-            if (INITDEBUG) console.info("Apollo main theme color: " + apollo.getThemeColor("main-theme"));
-        });
-    }
-})(jQuery);
+        var theme = apollo.getApolloTheme($element.attr('id'));
+        apollo.addElement("theme", theme);
+        if (INITDEBUG) console.info("Apollo main theme color: " + apollo.getThemeColor("main-theme"));
+    });
+}
+
+// This is the global Apollo information instance
+var apollo = new ApolloInfo();
+
+function initApollo() {
+
+    apollo.initApolloInfo();
+}

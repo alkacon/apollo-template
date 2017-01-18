@@ -23,20 +23,11 @@ var APPDEBUG = false;
 
 var App = function() {
 
-    // Header Mega Menu
-    function handleMegaMenu() {
+    // Elements in head navigation
+    function handleHeadNavigation() {
 
-        jQuery(document).on('click', '.mega-menu .dropdown-menu', function(e) {
-
-            e.stopPropagation();
-        });
-        initMegamenu();
-    }
-
-    // Search Box in Header
-    function handleSearch() {
-
-        jQuery('.navbar-nav .search').click(function() {
+        // The search button
+        jQuery('.head .navbar-nav .search').click(function() {
 
             if (jQuery('.search-btn').hasClass('fa-search')) {
                 jQuery('.search-open').fadeIn(500);
@@ -48,25 +39,36 @@ var App = function() {
                 jQuery('.search-btn').removeClass('fa-times');
             }
         });
-    }
 
-    // Sidebar Navigation "active" Toggle
-    function handleToggle() {
-
-        jQuery('.list-toggle').on('click', function(e) {
-
-            jQuery(this).toggleClass('active');
-        });
-    }
-
-    // Hover Selector
-    function handleHoverSelector() {
-
+        // Hover Selector used for language switch
         jQuery('.hoverSelector').on('mouseenter mouseleave', function(e) {
 
             jQuery('.hoverSelectorBlock', this).toggleClass('show');
             e.stopPropagation();
         });
+
+        // Responsive navbar toggle button
+        jQuery('.head .navbar-toggle').click(function() {
+
+            jQuery('.head .navbar-toggle').toggleClass('active');
+            if (jQuery('.head .navbar-toggle .fa').hasClass('fa-bars')) {
+                jQuery('.head .navbar-toggle .fa').removeClass('fa-bars');
+                jQuery('.head .navbar-toggle .fa').addClass('fa-times');
+            } else {
+                jQuery('.head .navbar-toggle .fa').removeClass('fa-times');
+                jQuery('.head .navbar-toggle .fa').addClass('fa-bars');
+            }
+        });
+    }
+
+    // Header Mega Menu
+    function handleMegaMenu() {
+
+        jQuery(document).on('click', '.mega-menu .dropdown-menu', function(e) {
+
+            e.stopPropagation();
+        });
+        initMegamenu();
     }
 
     // Smooth scrolling to anchor links
@@ -88,24 +90,6 @@ var App = function() {
             });
     }
 
-    // Bootstrap Tooltips and Popovers
-    function handleBootstrap() {
-
-        // Tooltips
-        jQuery('.tooltips').tooltip();
-        jQuery('.tooltips-show').tooltip('show');
-        jQuery('.tooltips-hide').tooltip('hide');
-        jQuery('.tooltips-toggle').tooltip('toggle');
-        jQuery('.tooltips-destroy').tooltip('destroy');
-
-        // Popovers
-        jQuery('.popovers').popover();
-        jQuery('.popovers-show').popover('show');
-        jQuery('.popovers-hide').popover('hide');
-        jQuery('.popovers-toggle').popover('toggle');
-        jQuery('.popovers-destroy').popover('destroy');
-    }
-
     // Parallax sections
     function handleParallax() {
 
@@ -119,11 +103,26 @@ var App = function() {
     // Clickme-Showme effect sections
     function handleClickmeShowme() {
 
-        var clickSections = jQuery('.clickme-showme');
+        var $clickSections = jQuery('.clickme-showme');
         if (APPDEBUG) console.info("clickme-showme elements found: " + clickSections.length);
-        if (clickSections.length > 0) {
-            clickSections.initClickmeShowme();
-        }
+        $clickSections.each(function() {
+
+            var $element = $(this);
+            var $clickme = $element.find('> .clickme');
+            var $showme  = $element.find('> .showme');
+
+            if (APPDEBUG) console.info("initClickmeShowme called for " + $clickme.getFullPath());
+
+            $clickme.click(function() {
+                $clickme.slideUp();
+                $showme.slideDown();
+            });
+
+            $showme.click(function() {
+                $showme.slideUp();
+                $clickme.slideDown();
+            });
+        });
     }
 
     // Map sections
@@ -171,11 +170,8 @@ var App = function() {
             initApollo();
             initAnalytics();
 
-            handleBootstrap();
-            handleSearch();
-            handleToggle();
+            handleHeadNavigation();
             handleMegaMenu();
-            handleHoverSelector();
             handleSmoothScrolling();
             handleParallax();
             handleClickmeShowme();
@@ -189,43 +185,3 @@ var App = function() {
 
 }();
 
-
-// Get the path to an element, good for debugging messages.
-// see http://stackoverflow.com/questions/5442767/returning-the-full-path-to-an-element
-(function( $ ){
-
-    $.fn.getFullPath = function(){
-        return $(this).parentsUntil('body')
-            .andSelf()
-            .map(function() {
-                var index = $(this).index();
-                return this.nodeName + '[' + index + ']';
-            }).get().join('>');
-    };
-})(jQuery);
-
-(function( $ ){
-
-    $.fn.initClickmeShowme = function() {
-        var $this = $(this);
-
-        $this.each(function(){
-
-            var $element = $(this);
-            var $clickme = $element.find('> .clickme');
-            var $showme  = $element.find('> .showme');
-
-            if (APPDEBUG) console.info("initClickmeShowme called for " + $clickme.getFullPath());
-
-            $clickme.click(function() {
-                $clickme.slideUp();
-                $showme.slideDown();
-            });
-
-            $showme.click(function() {
-                $showme.slideUp();
-                $clickme.slideDown();
-            });
-        });
-    };
-})(jQuery);
