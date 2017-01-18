@@ -11,14 +11,14 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /**********
  * Source file: apollo-slider.scss
  *
- * Styles for the "simple slider" and "complex slider" elements.
+ * Styles for the "simple slider", "complex slider" and "carousel" elements.
  */
 
 
@@ -94,8 +94,8 @@
 
 .tp-caption {
 
-    &.mediumthickblackbg, 
-    &.mediumthickgreybg,  
+    &.mediumthickblackbg,
+    &.mediumthickgreybg,
     &.mediumthickwhitebg {
         font-size: 36px;
         line-height: 36px;
@@ -149,7 +149,7 @@
         }
     }
 
-    .carousel-caption h3, 
+    .carousel-caption h3,
     .carousel-caption p {
         color: $white;
         line-height: 1.1;
