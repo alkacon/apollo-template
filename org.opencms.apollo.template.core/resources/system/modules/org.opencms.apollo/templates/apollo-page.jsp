@@ -23,7 +23,8 @@
 
     <meta charset="${cms.requestContext.encoding}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<cms:property name="Description" file="search" default="" />">
     <meta name="keywords" content="<cms:property name="Keywords" file="search" default="" />">
     <meta name="robots" content="index, follow">
@@ -35,6 +36,7 @@
     <c:if test="${not cms.vfs.existsResource[faviconPath]}">
     <c:set var="faviconPath">/system/modules/org.opencms.apollo.theme/resources/img/favicon_120.png</c:set>
     </c:if>
+
     <link rel="apple-touch-icon" href="<cms:link>${faviconPath}</cms:link>" />
     <link rel="icon" href="<cms:link>${faviconPath}</cms:link>" type="image/png" />
 
@@ -50,7 +52,7 @@
           <c:if test="${not fn:startsWith(theme, '/')}">
              <c:set var="theme">/system/modules/org.opencms.apollo.theme/resources/css/style-${theme}.min.css</c:set>
           </c:if>
-            <link rel="stylesheet" href="<cms:link>${theme}</cms:link>" />      
+            <link rel="stylesheet" href="<cms:link>${theme}</cms:link>" />
       </c:otherwise>
     </c:choose>
 
@@ -68,22 +70,22 @@
 
 <apollo:megamenu>
     <%-- Values containerName and containerTypes are defined by the mega menu tag --%>
-    <cms:container 
-        name="${requestScope.containerName}" 
-        type="${requestScope.containerTypes}" 
-        width="1200" 
-        maxElements="50" 
+    <cms:container
+        name="${requestScope.containerName}"
+        type="${requestScope.containerTypes}"
+        width="1200"
+        maxElements="50"
         editableby="ROLE.DEVELOPER">
 
         <cms:bundle basename="org.opencms.apollo.template.core.messages">
             <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
         </cms:bundle>
 
-        <apollo:container-box 
-            label="${message}" 
-            boxType="container-box" 
-            type="area" 
-            role="ROLE.DEVELOPER" 
+        <apollo:container-box
+            label="${message}"
+            boxType="container-box"
+            type="area"
+            role="ROLE.DEVELOPER"
         />
     </cms:container>
 </apollo:megamenu>

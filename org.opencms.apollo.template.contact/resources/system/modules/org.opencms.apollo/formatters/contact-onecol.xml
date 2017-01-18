@@ -23,7 +23,6 @@
     <AutoEnabled>true</AutoEnabled>
     <Detail>true</Detail>
     <NestedContainers>false</NestedContainers>
-    <HeadIncludeJs/>
     <Setting>
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>

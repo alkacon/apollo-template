@@ -22,7 +22,6 @@
     <AutoEnabled>true</AutoEnabled>
     <Detail>true</Detail>
     <NestedContainers>false</NestedContainers>
-    <HeadIncludeCss/>
     <Setting>
       <PropertyName><![CDATA[imgalign]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.imgalign)]]></DisplayName>

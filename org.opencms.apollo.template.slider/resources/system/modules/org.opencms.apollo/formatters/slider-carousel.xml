@@ -23,9 +23,6 @@
     <Detail>false</Detail>
     <Display>false</Display>
     <NestedContainers>false</NestedContainers>
-    <HeadIncludeJs>
-      <JavascriptInline><![CDATA[createCarousel();]]></JavascriptInline>
-    </HeadIncludeJs>
     <Setting>
       <PropertyName><![CDATA[hidetitle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.hidetitle)]]></DisplayName>

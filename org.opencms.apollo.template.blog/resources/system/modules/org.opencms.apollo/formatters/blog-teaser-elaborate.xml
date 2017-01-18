@@ -23,7 +23,6 @@
     <Detail>false</Detail>
     <Display>true</Display>
     <NestedContainers>false</NestedContainers>
-    <HeadIncludeCss/>
     <Setting>
       <PropertyName><![CDATA[cssWrapper]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>

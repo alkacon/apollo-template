@@ -15,6 +15,9 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.slider.messages">
 
+<%-- Id must not have any "-" character --%>
+<c:set var="id" value="carousel_${fn:replace(content.file.structureId, '-', '')}"/>
+
 <div class="ap-carousel">
 
     <c:if test="${not cms.element.settings.hidetitle}">
@@ -27,8 +30,13 @@
     </c:if>
     <c:set var="txt">${value.TextColor}</c:set>
 
-    <div class="carousel slide carousel-v1" id="ap-carousel-${content.file.structureId}">
-        <div class="carousel-inner">
+    <div
+        id="${id}"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="${value.Delay}">
+
+        <div class="carousel-inner" role="listbox">
             <c:forEach var="image" items="${content.valueList.Image}" varStatus="status">
                 <div class="item<c:if test="${status.first}"> active</c:if>">
                     <c:if test="${image.value.Link.isSet}">
@@ -63,22 +71,14 @@
             </c:forEach>
         </div>
         <div class="carousel-arrow">
-            <a data-slide="prev" href="#ap-carousel-${content.file.structureId}" class="left carousel-control">
+            <a data-slide="prev" href="#${id}" class="left carousel-control">
                 <i class="fa fa-angle-left"></i>
             </a>
-            <a data-slide="next" href="#ap-carousel-${content.file.structureId}" class="right carousel-control">
+            <a data-slide="next" href="#${id}" class="right carousel-control">
                 <i class="fa fa-angle-right"></i>
             </a>
         </div>
     </div>
-
-    <script type="text/javascript">
-        function createCarousel() {
-            $("#ap-carousel-${content.file.structureId}").carousel({
-                interval: ${value.Delay}
-            });
-        }
-    </script>
 
 </div>
 
