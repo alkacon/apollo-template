@@ -17,11 +17,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
- // Note: If GALLERYDEBUG is false, all GALLERYDEBUG clauses will be removed
+// Note: If GALLERYDEBUG is false, all if clauses using it will be removed
 // by uglify.js during Apollo JS processing as unreachable code
 var GALLERYDEBUG = false;
 
-function appendPhotoSwipeToBody() {
+// Apollo OpenCms page information class
+var ApolloImageGallery = function() {}
+
+ApolloImageGallery.appendPhotoSwipeToBody = function() {
 
 $('body').append(
 '<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">' +
@@ -57,10 +60,9 @@ $('body').append(
         '</div>' +
     '</div>' +
 '</div>'
-);
-}
+);}
 
-function openPhotoSwipe(index, id) {
+ApolloImageGallery.openPhotoSwipe = function(index, id) {
 
     var pswpElement = document.querySelectorAll('.pswp')[0];
     var options = {
@@ -74,22 +76,24 @@ function openPhotoSwipe(index, id) {
         counterEl : true
     };
 
-    var images = apollo.getData(id).images;
+    var images = AP.getData(id).images;
     new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, images, options).init();
 }
 
-function autoLoadGalleries() {
-    var galleries = apollo.getElements("autoLoadGalleries");
-    for (i=0; i<galleries.length; i++) {
-        var galleryData = galleries[i];
-        // NOTE: $.visible() ist defineds in script-list.js
-        if (!galleryData.loaded && (galleryData.page > 0) && galleryData.element.find("#more").visible()) {
-            renderGalleryImages(galleryData, galleryData.page + 1);
+ApolloImageGallery.handleAutoLoaders = function() {
+    var galleries = AP.getElements("autoLoadGalleries");
+    if (galleries != null) {
+        for (i=0; i<galleries.length; i++) {
+            var galleryData = galleries[i];
+            // NOTE: $.visible() is defined in script-jquery-extensions.js
+            if (!galleryData.loaded && (galleryData.page > 0) && galleryData.element.find("#more").visible()) {
+                ApolloImageGallery.render(galleryData, galleryData.page + 1);
+            }
         }
     }
 }
 
-function renderGalleryImages(galleryData, page) {
+ApolloImageGallery.render = function(galleryData, page) {
 
     // disable the gallery 'more' button
     var $moreButton = galleryData.element.find("#more");
@@ -123,7 +127,7 @@ function renderGalleryImages(galleryData, page) {
         // add click handler
         $imageElement.click(image, function(event) {
             event.preventDefault();
-            openPhotoSwipe(event.data.index, event.data.id);
+            ApolloImageGallery.openPhotoSwipe(event.data.index, event.data.id);
         });
         // append the image html to the gallery
         $appendElement.append($imageElement);
@@ -139,12 +143,12 @@ function renderGalleryImages(galleryData, page) {
         if (page == 0 || galleryData.autoload != "true") {
             // add click handlerto button if no autoload
             $moreButton.click(function() {
-                renderGalleryImages(galleryData, page + 1);
+                ApolloImageGallery.render(galleryData, page + 1);
             });
         }
         $moreButton.finish().fadeIn(250);
         // call autoload once to ensure visible buttons are directly rendered without scrolling
-        autoLoadGalleries();
+        ApolloImageGallery.handleAutoLoaders();
     } else {
         // the gallery images are all rendered
         galleryData.loaded = true;
@@ -152,7 +156,12 @@ function renderGalleryImages(galleryData, page) {
     }
 }
 
-function collectGalleryImages(galleryData) {
+ApolloImageGallery.collect = function(galleryData) {
+
+    if (GALLERYDEBUG) console.info("HERE!" + typeof galleryData);
+    if (typeof galleryData.element === "undefined") {
+        return;
+    }
 
     galleryData.template = decodeURIComponent(galleryData.template);
     var images = [];
@@ -178,76 +187,92 @@ function collectGalleryImages(galleryData) {
 
     if (GALLERYDEBUG) console.info("Image gallery collected " + images.length + " images:" + galleryData + ", path=" + galleryData.path + ", template=" + galleryData.template);
 
-    renderGalleryImages(galleryData, 0);
+    ApolloImageGallery.render(galleryData, 0);
 }
 
-(function( $ ){
+ApolloImageGallery.initGalleries = function($elements) {
 
-    $.fn.initImageZoom = function() {
+    // initialize gallery with values from data attributes
+    var needAutoLoad = false;
 
-        if (! apollo.hasData("imageGalleries")) {
-            // append the PhotoSwipe markup
-            appendPhotoSwipeToBody();
-        }
+    $elements.each(function(){
+        var $element = $(this);
+        var $galleryElement = $element.find('.gallery');
 
-        var images = [];
-        $(this).each(function(index){
-
-            var imageData = $(this).data("imagezoom");
-            imageData.id = "imagezoom";
-            imageData.src = $(this).attr('href');
-            imageData.index = index;
-            imageData.title = decodeURIComponent(imageData.caption);
-
-            // calculate image width and height by parsing the property string
-            if (imageData.size.indexOf(',') >= 0 && imageData.size.indexOf(':') >= 0) {
-                var size = imageData.size.split(',');
-                imageData.w = size[0].split(':')[1];
-                imageData.h = size[1].split(':')[1];
+        if (typeof $galleryElement.data("imagegallery") != 'undefined') {
+            var galleryData = $galleryElement.data("imagegallery");
+            galleryData.element = $galleryElement;
+            AP.addData(galleryData.id, galleryData);
+            if (galleryData.autoload == "true") {
+                needAutoLoad = true;
+                AP.addElement("autoLoadGalleries", galleryData);
             }
-            images.push(imageData);
-            $(this).click(function(e) {
-                e.preventDefault();
-                openPhotoSwipe(index, "imagezoom");
-            });
+            if (GALLERYDEBUG) console.info("Image gallery data found:" + galleryData + ", path=" + galleryData.path + ", count=" + galleryData.count);
+            ApolloImageGallery.collect(galleryData);
+        }
+    });
 
-            if (GALLERYDEBUG) console.info("Image zoom element found path=" + imageData.src + ", index=" + imageData.index);
+    if (needAutoLoad) {
+        // only enable scroll listener if we have at least one autoloading gallery
+        $(window).bind('scroll', ApolloImageGallery.handleAutoLoaders).resize(ApolloImageGallery.handleAutoLoaders);
+    }
+}
+
+ApolloImageGallery.initZoomers = function($elements) {
+
+    var images = [];
+    $elements.each(function(index){
+
+        var imageData = $(this).data("imagezoom");
+        imageData.id = "imagezoom";
+        imageData.src = $(this).attr('href');
+        imageData.index = index;
+        imageData.title = decodeURIComponent(imageData.caption);
+
+        // calculate image width and height by parsing the property string
+        if (imageData.size.indexOf(',') >= 0 && imageData.size.indexOf(':') >= 0) {
+            var size = imageData.size.split(',');
+            imageData.w = size[0].split(':')[1];
+            imageData.h = size[1].split(':')[1];
+        }
+        images.push(imageData);
+        $(this).click(function(e) {
+            e.preventDefault();
+            ApolloImageGallery.openPhotoSwipe(index, "imagezoom");
         });
 
-        var galleryData = {};
-        galleryData.images = images;
-        apollo.addData("imagezoom", galleryData);
-    };
+        if (GALLERYDEBUG) console.info("Image zoom element found path=" + imageData.src + ", index=" + imageData.index);
+    });
 
-    $.fn.initImageGallery = function() {
-        // append the PhotoSwipe markup
-        appendPhotoSwipeToBody();
+    var galleryData = {};
+    galleryData.images = images;
+    AP.addData("imagezoom", galleryData);
+}
 
-        // initialize gallery with values from data attributes
-        var needAutoLoad = false;
-        apollo.addData("imageGalleries", true);
+ApolloImageGallery.init = function() {
 
-        $(this).each(function(){
-            var $element = $(this);
-            var $galleryElement = $element.find('.gallery');
+    if (GALLERYDEBUG) console.info("ApolloImageGallery.init()");
+    // Note: Carousel sliders are initialized directly via Bootstrap data attributes
 
-            if (typeof $galleryElement.data("imagegallery") != 'undefined') {
-                var galleryData = $galleryElement.data("imagegallery");
-                galleryData.element = $galleryElement;
-                apollo.addData(galleryData.id, galleryData);
-                if (galleryData.autoload == "true") {
-                    needAutoLoad = true;
-                    apollo.addElement("autoLoadGalleries", galleryData);
-                }
-                if (GALLERYDEBUG) console.info("Image gallery data found:" + galleryData + ", path=" + galleryData.path + ", count=" + galleryData.count);
-                collectGalleryImages(galleryData);
-            }
-        });
+    var $imageGalleryElements = jQuery('.ap-image-gallery');
+    var $imageZoomElements = jQuery('a[data-imagezoom]');
 
-        if (needAutoLoad) {
-            // only enable scroll listener if we have at least one autoloading gallery
-            $(window).bind('scroll', autoLoadGalleries).resize(autoLoadGalleries);
+    if (GALLERYDEBUG) console.info(".ap-image-gallery elements found: " + $imageGalleryElements.length);
+    if (GALLERYDEBUG) console.info("a[data-imagezoom] elements found: " + $imageZoomElements.length);
+
+    if ($imageGalleryElements.length > 0 || $imageZoomElements.length > 0) {
+        // We have found gallery images, append the PhotoSwipe markup
+        ApolloImageGallery.appendPhotoSwipeToBody();
+        if ($imageGalleryElements.length > 0) {
+            ApolloImageGallery.initGalleries($imageGalleryElements);
         }
-    };
+        if ($imageZoomElements.length > 0) {
+            ApolloImageGallery.initZoomers($imageZoomElements);
+        }
+    }
+}
 
-})(jQuery);
+function initApolloImageGalleries() {
+
+    ApolloImageGallery.init();
+}

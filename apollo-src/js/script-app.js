@@ -135,22 +135,6 @@ var App = function() {
         }
     }
 
-    // Image galleries amd image zoom sections
-    function handleImageGalleries() {
-
-        var imageGalleryElements = jQuery('.ap-image-gallery');
-        if (APPDEBUG) console.info(".ap-image-gallery elements found: " + imageGalleryElements.length);
-        if (imageGalleryElements.length > 0) {
-            imageGalleryElements.initImageGallery();
-        }
-        var imageZoomElements = jQuery('a[data-imagezoom]');
-        if (APPDEBUG) console.info("a[data-imagezoom] elements found: " + imageZoomElements.length);
-        if (imageZoomElements.length > 0) {
-            imageZoomElements.initImageZoom();
-        }
-        // Note: Carousel sliders are initialized via Bootstrap data attributes
-    }
-
     // Slider sections
     function handleSliders() {
 
@@ -175,10 +159,10 @@ var App = function() {
             handleSmoothScrolling();
             handleParallax();
             handleClickmeShowme();
-            handleImageGalleries();
             handleMaps();
             handleSliders();
 
+            initApolloImageGalleries();
             initLists();
         }
     };

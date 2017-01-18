@@ -23,59 +23,19 @@
  * Provides selected information about the current page from OpenCms to JavaScript.
  */
 
-// Note: If INITDEBUG is false, all INITDEBUG clauses will be removed
+// Note: If INITDEBUG is false, all if clauses using it will be removed
 // by uglify.js during Apollo JS processing as unreachable code
 var INITDEBUG = false;
 
-// this is taken straight from the jQuery docs:
-// http://api.jquery.com/jQuery.getScript/
-jQuery.loadScript = function( url, options ) {
-
-    if (INITDEBUG) console.info("Apollo loading script from url: " + url);
-
-    // Allow user to set any option except for dataType, cache, and url
-    options = $.extend( options || {}, {
-        dataType: "script",
-        cache: true,
-        url: url
-    });
-
-    // Use $.ajax() since it is more flexible than $.getScript
-    // Return the jqXHR object so we can chain callbacks
-    return jQuery.ajax( options );
-};
-
-
-// Acessing object path by String value
-// see: http://stackoverflow.com/questions/6491463/accessing-nested-javascript-objects-with-string-key
-Object.byString = function(o, s) {
-    s = s.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
-    s = s.replace(/^\./, '');           // strip a leading dot
-    var a = s.split('.');
-    for (var i = 0, n = a.length; i < n; ++i) {
-        var k = a[i];
-        if (k in o) {
-            o = o[k];
-        } else {
-            return;
-        }
-    }
-    return o;
-}
-
-
 // Apollo OpenCms page information class
-// See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
-
-var ApolloInfo = function() {
+var Apollo = function() {
 
     this.elements = {};
     this.info = {};
     this.data = {};
 }
 
-
-ApolloInfo.prototype.addElement = function(key, element) {
+Apollo.prototype.addElement = function(key, element) {
 
     if(! (key in this.elements)) {
         // element with that name has not been used before, add new array
@@ -87,12 +47,12 @@ ApolloInfo.prototype.addElement = function(key, element) {
     if (INITDEBUG) console.info("Apollo element for key '" + key + "' added");
 }
 
-ApolloInfo.prototype.hasElement = function(key) {
+Apollo.prototype.hasElement = function(key) {
 
     return key in this.elements;
 }
 
-ApolloInfo.prototype.getElements = function(key) {
+Apollo.prototype.getElements = function(key) {
 
     if(key in this.elements) {
         return this.elements[key];
@@ -101,18 +61,18 @@ ApolloInfo.prototype.getElements = function(key) {
 }
 
 
-ApolloInfo.prototype.addData = function(key, data) {
+Apollo.prototype.addData = function(key, data) {
 
     this.data[key] = data;
     if (INITDEBUG) console.info("Apollo data for key '" + key + "' added");
 }
 
-ApolloInfo.prototype.hasData = function(key) {
+Apollo.prototype.hasData = function(key) {
 
     return key in this.data;
 }
 
-ApolloInfo.prototype.getData = function(key) {
+Apollo.prototype.getData = function(key) {
 
     if(key in this.data) {
         return this.data[key];
@@ -121,7 +81,7 @@ ApolloInfo.prototype.getData = function(key) {
 }
 
 
-ApolloInfo.prototype.addInfo = function(info) {
+Apollo.prototype.addInfo = function(info) {
 
     jQuery.extend(this.info, info);
 
@@ -129,12 +89,12 @@ ApolloInfo.prototype.addInfo = function(info) {
     if (INITDEBUG) jQuery.each(this.info, function( key, value ) { console.info( "- " + key + ": " + value ); });
 }
 
-ApolloInfo.prototype.hasInfo = function(key) {
+Apollo.prototype.hasInfo = function(key) {
 
     return key in this.info;
 }
 
-ApolloInfo.prototype.getInfo = function(key) {
+Apollo.prototype.getInfo = function(key) {
 
     if(key in this.info) {
         return this.info[key];
@@ -142,17 +102,17 @@ ApolloInfo.prototype.getInfo = function(key) {
     return null;
 }
 
-ApolloInfo.prototype.isOnlineProject = function() {
+Apollo.prototype.isOnlineProject = function() {
 
     return ("online" == this.info["project"]);
 }
 
-ApolloInfo.prototype.getTheme = function() {
+Apollo.prototype.getTheme = function() {
 
     return this.getElements("theme")[0];
 }
 
-ApolloInfo.prototype.getThemeColor = function(color) {
+Apollo.prototype.getThemeColor = function(color) {
 
     var result = "#f00"; // default return color when all else fails
     var theme = this.getTheme();
@@ -170,7 +130,7 @@ ApolloInfo.prototype.getThemeColor = function(color) {
     return result;
 }
 
-ApolloInfo.prototype.removeApolloThemeQuotes = function(string) {
+Apollo.removeApolloThemeQuotes = function(string) {
     // passing varaibales from SCSS to JavaScript
     // see https://css-tricks.com/making-sass-talk-to-javascript-with-json/
     if (typeof string === 'string' || string instanceof String) {
@@ -179,7 +139,7 @@ ApolloInfo.prototype.removeApolloThemeQuotes = function(string) {
     return string;
 }
 
-ApolloInfo.prototype.getApolloTheme= function(elementId) {
+Apollo.getApolloTheme= function(elementId) {
     var theme = null;
     element = document.getElementById(elementId);
     if (window.getComputedStyle && window.getComputedStyle(element, '::before') ) {
@@ -187,31 +147,33 @@ ApolloInfo.prototype.getApolloTheme= function(elementId) {
         theme = theme.content;
         if (INITDEBUG) console.info("Apollo theme found in ::before: " + theme);
     }
-    return JSON.parse(apollo.removeApolloThemeQuotes(theme));
+    return JSON.parse(Apollo.removeApolloThemeQuotes(theme));
 }
 
-ApolloInfo.prototype.initApolloInfo = function() {
+
+Apollo.init = function() {
+
+    // Set the global Apollo information instance
+    window.AP = new Apollo();
+    window.apollo = AP;
 
     // initialize info sections with values from data attributes
     jQuery('#apollo-info').each(function(){
 
-        var $element = $(this);
+        var $element = jQuery(this);
 
         if (typeof $element.data("info") != 'undefined') {
             var $info = $element.data("info");
-            apollo.addInfo($info);
+            AP.addInfo($info);
         }
 
-        var theme = apollo.getApolloTheme($element.attr('id'));
-        apollo.addElement("theme", theme);
-        if (INITDEBUG) console.info("Apollo main theme color: " + apollo.getThemeColor("main-theme"));
+        var theme = Apollo.getApolloTheme($element.attr('id'));
+        AP.addElement("theme", theme);
+        if (INITDEBUG) console.info("Apollo main theme color: " + AP.getThemeColor("main-theme"));
     });
 }
 
-// This is the global Apollo information instance
-var apollo = new ApolloInfo();
-
 function initApollo() {
 
-    apollo.initApolloInfo();
+    Apollo.init();
 }

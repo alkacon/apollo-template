@@ -17,20 +17,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-$.fn.visible = function(partial) {
-
-    var $t = $(this);
-    var $w = $(window);
-    var viewTop = $w.scrollTop();
-    var viewBottom = viewTop + $w.height();
-    var _top = $t.offset().top;
-    var _bottom = _top + $t.height();
-    var compareTop = partial === true ? _bottom : _top;
-    var compareBottom = partial === true ? _top : _bottom;
-
-    return ((compareBottom - 100 <= viewBottom) && (compareTop >= viewTop));
-};
-
 var list_lock = new Array();
 
 function initLists() {
