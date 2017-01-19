@@ -45,7 +45,7 @@ exports.initGrunt = function(_grunt, _buildDir) {
 
     grunt = _grunt;
 
-    moduleDir = path.normalize(process.cwd()) + '/';
+    moduleDir = path.normalize(process.cwd() + '/');
     provideDir = path.normalize(moduleDir + _buildDir + 'provide/');
     buildDir = path.normalize(moduleDir + _buildDir + 'grunt/');
 
@@ -117,7 +117,7 @@ exports.loadModule = function(moduleName) {
             themes = themes.concat(_getModuleThemes(m.envname, m.themes));
         }
         if (m.deployTarget) {
-            exports.deployTarget = deployTarget = m.deployTarget;
+            exports.deployTarget = deployTarget = path.normalize(m.deployTarget + '/');
         }
 
         return m;
@@ -132,6 +132,13 @@ exports.registerGruntTasks = function() {
     _gruntInitConfig();
     _gruntRegisterTasks();
 
+    themes = _normalizeAll(themes);
+    sassSrc = _normalizeAll(sassSrc);
+    cssSrc = _normalizeAll(cssSrc);
+    jsSrc = _normalizeAll(jsSrc);
+    resources = _normalizeAll(resources);
+    resourceSources = _normalizeAll(resourceSources);
+
     if (grunt.option('verbose')) {
         _showImports();
     }
@@ -140,6 +147,14 @@ exports.registerGruntTasks = function() {
 _moduleName = function(mf) {
 
     return mf.split('/').slice(-1);
+}
+
+_normalizeAll = function(paths) {
+
+    for (i=0; i<paths.length; i++) {
+        paths[i] = path.normalize(paths[i]);
+    }
+    return paths;
 }
 
 _gruntLoadNpmTasks = function() {
@@ -184,11 +199,13 @@ _gruntInitConfig = function() {
                     src : oc.resources(),
                     dest : buildDir + '04_final',
                     rename: function (dest, src) {
+                        dest = path.normalize(dest);
+                        src = path.normalize(src);
                         // determine and remove the source folder path
                         for (var sourceDir in resourceSources) {
                             if (resourceSources.hasOwnProperty(sourceDir)) {
                                 if (src.startsWith(sourceDir)) {
-                                    src = src.replace(sourceDir, '/');
+                                    src = path.normalize(src.replace(sourceDir, '/'));
                                 }
                             }
                         }
