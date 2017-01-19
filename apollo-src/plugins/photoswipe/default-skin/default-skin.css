@@ -15,7 +15,7 @@
 // NOTE FOR APOLLO INTEGRATION:
 //
 // If you install a new version of this CSS you must replace the resource path information.
-// Search for ": url" and replace the path with the relative path in the OpenCms VFS.
+// Search for "PATCH" and replace the path with the relative path in the OpenCms VFS.
 //
 */
 /*
@@ -59,6 +59,7 @@
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
+  /* PATCH */
   background: url(../photoswipe/default-skin/default-skin.png) 0 0 no-repeat;
   background-size: 264px 88px;
   width: 44px;
@@ -69,6 +70,7 @@
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
+  /* PATCH */
     background-image: url(../photoswipe/default-skin/default-skin.svg); }
   .pswp--svg .pswp__button--arrow--left,
   .pswp--svg .pswp__button--arrow--right {
@@ -161,7 +163,8 @@
   left: 0;
   padding: 10px;
   position: absolute;
-  z-index: 1600;
+  /* PATCH OpenCms edit points are at 100000, we want the lightbox above these */
+  z-index: 100600;
   opacity: 0;
   -webkit-transition: opacity 0.25s ease-out;
           transition: opacity 0.25s ease-out;
@@ -172,7 +175,8 @@
   display: none; }
 
 .pswp__share-tooltip {
-  z-index: 1620;
+  /* PATCH OpenCms edit points are at 100000, we want the lightbox above these */
+  z-index: 100620;
   position: absolute;
   background: #FFF;
   top: 56px;
@@ -323,6 +327,7 @@ a.pswp__share--download:hover {
   opacity: 1; }
   .pswp__preloader--active .pswp__preloader__icn {
     /* We use .gif in browsers that don't support CSS animation */
+    /* PATCH */
     background: url(../photoswipe/default-skin/preloader.gif) 0 0 no-repeat; }
 
 .pswp--css_animation .pswp__preloader--active {
@@ -425,7 +430,8 @@ a.pswp__share--download:hover {
   -webkit-font-smoothing: auto;
   visibility: visible;
   opacity: 1;
-  z-index: 1550; }
+  /* PATCH OpenCms edit points are at 100000, we want the lightbox above these */
+  z-index: 100550; }
 
 /* top black bar with buttons and "1 of X" indicator */
 .pswp__top-bar {

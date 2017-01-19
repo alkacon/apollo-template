@@ -17,26 +17,53 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-function initMegamenu() {
+// Module implemented using the "revealing module pattern", see
+// https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript
+// https://www.christianheilmann.com/2007/08/22/again-with-the-module-pattern-reveal-something-to-the-world/
+var ApolloMegaMenu = function(jQ) {
 
-    var menus = $("[data-menu]");
-    for (var i = 0; i < menus.length; i++) {
-        var menu = menus.eq(i);
-        insertMenu(menu.data("menu"), menu);
+    // Note: If DEBUG is false, all if clauses using it will be removed
+    // by uglify.js during Apollo JS processing as unreachable code
+    this.DEBUG = false;
+
+    function insertMenu(path, $megaMenu) {
+
+        jQ.ajax({
+            method : "POST",
+            url : path + "?__disableDirectEdit=true&ajaxreq=true"
+        }).done(function(content) {
+
+            var $dropdown = jQuery("<div></div>").addClass("dropdown-menu").addClass("dropdown-megamenu");
+            var $row = jQuery(content).find(".row").eq(0);
+            $dropdown.append($row);
+
+            $megaMenu.find("ul").remove();
+            $megaMenu.append($dropdown);
+        });
     }
-}
 
-function insertMenu(path, navElem) {
+    function init() {
 
-    $.ajax({
-        method : "POST",
-        url : path + "?__disableDirectEdit=true&ajaxreq=true"
-    }).done(function(content) {
+        if (DEBUG) console.info("ApolloMegaMenu.init()");
 
-        var dropdown = $("<div></div>").addClass("dropdown-menu").addClass("dropdown-megamenu");
-        var row = $(content).find(".row").eq(0);
-        dropdown.append(row);
-        navElem.find("ul").remove();
-        navElem.append(dropdown);
-    });
-}
+        var $megaMenus = jQ("[data-menu]");
+        if (DEBUG) console.info("[data-menu] elements found: " + $megaMenus.length);
+
+        if ($megaMenus.length > 0) {
+            jQ(document).on('click', '.mega-menu .dropdown-menu', function(e) {
+                e.stopPropagation();
+            });
+            for (var i = 0; i < $megaMenus.length; i++) {
+                var $megaMenu = $megaMenus.eq(i);
+                insertMenu($megaMenu.data("menu"), $megaMenu);
+            }
+        }
+    }
+
+    // public available functions
+    return {
+        init: init
+    }
+
+}(jQuery);
+

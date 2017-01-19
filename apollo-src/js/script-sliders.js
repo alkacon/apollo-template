@@ -17,118 +17,149 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/**
- * Revolution slider initializations. 
- */
-(function($) {
+// Module implemented using the "revealing module pattern", see
+// https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript
+// https://www.christianheilmann.com/2007/08/22/again-with-the-module-pattern-reveal-something-to-the-world/
+var ApolloSliders = function(jQ) {
+
+    // Note: If DEBUG is false, all if clauses using it will be removed
+    // by uglify.js during Apollo JS processing as unreachable code
+    this.DEBUG = false;
 
     /**
      * Simple sliders
      */
-    $.fn.initSimpleSlider = function() {
+    function initSimpleSliders($sliders) {
 
-        var $slider = $(this);
-        var strucId = $slider.data("sid");
-        if (!$slider.data("init")) {
-            $('#ap-slider-' + strucId).revolution({
-                delay : $slider.data("delay"),
-                startheight : $slider.data("height"),
-                navigationType : $slider.data("navtype"),
-                navigationArrows : $slider.data("navbutton"),
-                navigationStyle : "round", // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
-                navigationHAlign : "right", // Vertical Align top,center,bottom
-                navigationVAlign : "bottom", // Horizontal Align left,center,right
-                navigationHOffset : 20,
-                navigationVOffset : 20,
-                soloArrowLeftHalign : "left",
-                soloArrowLeftValign : "center",
-                soloArrowLeftHOffset : 20,
-                soloArrowLeftVOffset : 0,
-                soloArrowRightHalign : "right",
-                soloArrowRightValign : "center",
-                soloArrowRightHOffset : 20,
-                soloArrowRightVOffset : 0,
-                touchenabled : "on", // Enable Swipe Function : on/off
-                onHoverStop : "off", // Stop Banner Timet at Hover on Slide on/off
-                stopAtSlide : -1,
-                stopAfterLoops : -1,
-                fullWidth : "off" // Turns On or Off the Fullwidth Image Centering in FullWidth Modus
-            });
+        $sliders.each(function(){
 
-            // When stop button is clicked...
-            $('#stopButton-' + +strucId).on('click', function(e) {
+            var $slider = jQ(this);
+            var sliderId = $slider.data("sid");
+            if (!$slider.data("init")) {
+                jQ('#ap-slider-' + sliderId).revolution({
+                    delay : $slider.data("delay"),
+                    startheight : $slider.data("height"),
+                    navigationType : $slider.data("navtype"),
+                    navigationArrows : $slider.data("navbutton"),
+                    navigationStyle : "round", // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+                    navigationHAlign : "right", // Vertical Align top,center,bottom
+                    navigationVAlign : "bottom", // Horizontal Align left,center,right
+                    navigationHOffset : 20,
+                    navigationVOffset : 20,
+                    soloArrowLeftHalign : "left",
+                    soloArrowLeftValign : "center",
+                    soloArrowLeftHOffset : 20,
+                    soloArrowLeftVOffset : 0,
+                    soloArrowRightHalign : "right",
+                    soloArrowRightValign : "center",
+                    soloArrowRightHOffset : 20,
+                    soloArrowRightVOffset : 0,
+                    touchenabled : "on", // Enable Swipe Function : on/off
+                    onHoverStop : "off", // Stop Banner Timet at Hover on Slide on/off
+                    stopAtSlide : -1,
+                    stopAfterLoops : -1,
+                    fullWidth : "off" // Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+                });
 
-                $('#ap-slider-' + strucId).revpause();
-                $('#ap-slider-' + strucId + ' .control button').toggle();
-                $(this).hide();
-                $('#resumeButton-' + +strucId).show();
-            });
+                // When stop button is clicked...
+                jQ('#stopButton-' + +sliderId).on('click', function(e) {
 
-            // When resume button is clicked...
-            $('#resumeButton-' + strucId).on('click', function(e) {
+                    jQ('#ap-slider-' + sliderId).revpause();
+                    jQ('#ap-slider-' + sliderId + ' .control button').toggle();
+                    jQ(this).hide();
+                    jQ('#resumeButton-' + +sliderId).show();
+                });
 
-                $('#ap-slider-' + strucId).revresume();
-                $(this).hide();
-                $('#stopButton-' + strucId).show();
-            });
-            $('#ap-slider-' + strucId).find('li').show();
-        }
-        $slider.data("init", "true");
+                // When resume button is clicked...
+                jQ('#resumeButton-' + sliderId).on('click', function(e) {
+
+                    jQ('#ap-slider-' + sliderId).revresume();
+                    jQ(this).hide();
+                    jQ('#stopButton-' + sliderId).show();
+                });
+                jQ('#ap-slider-' + sliderId).find('li').show();
+            }
+            $slider.data("init", "true");
+        });
     }
 
     /**
      * Complex sliders
      */
-    $.fn.initComplexSlider = function() {
+    function initComplexSliders($sliders) {
 
-        var $slider = $(this);
-        var strucId = $slider.data("sid");
-        if (!$slider.data("init")) {
-            $('#ap-slider-' + strucId).revolution({
+        $sliders.each(function(){
+            var $slider = jQ(this);
+            var sliderId = $slider.data("sid");
+            if (!$slider.data("init")) {
+                jQ('#ap-slider-' + sliderId).revolution({
 
-                delay : $slider.data("delay"),
-                startheight : $slider.data("height"),
-                startwidth : $slider.data("width"),
+                    delay : $slider.data("delay"),
+                    startheight : $slider.data("height"),
+                    startwidth : $slider.data("width"),
 
-                hideThumbs : 10,
+                    hideThumbs : 10,
 
-                thumbWidth : 100, // Thumb With and Height and Amount (only if navigation Tyope set to thumb!)
-                thumbHeight : 50,
-                thumbAmount : 5,
+                    thumbWidth : 100, // Thumb With and Height and Amount (only if navigation Tyope set to thumb!)
+                    thumbHeight : 50,
+                    thumbAmount : 5,
 
-                navigationType : "bullet", // bullet, thumb, none
-                navigationArrows : "solo", // nexttobullets, solo (old name verticalcentered), none
+                    navigationType : "bullet", // bullet, thumb, none
+                    navigationArrows : "solo", // nexttobullets, solo (old name verticalcentered), none
 
-                navigationStyle : "round", // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+                    navigationStyle : "round", // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
 
-                navigationHAlign : "center", // Vertical Align top,center,bottom
-                navigationVAlign : "bottom", // Horizontal Align left,center,right
-                navigationHOffset : 0,
-                navigationVOffset : 20,
+                    navigationHAlign : "center", // Vertical Align top,center,bottom
+                    navigationVAlign : "bottom", // Horizontal Align left,center,right
+                    navigationHOffset : 0,
+                    navigationVOffset : 20,
 
-                soloArrowLeftHalign : "left",
-                soloArrowLeftValign : "center",
-                soloArrowLeftHOffset : 20,
-                soloArrowLeftVOffset : 0,
+                    soloArrowLeftHalign : "left",
+                    soloArrowLeftValign : "center",
+                    soloArrowLeftHOffset : 20,
+                    soloArrowLeftVOffset : 0,
 
-                soloArrowRightHalign : "right",
-                soloArrowRightValign : "center",
-                soloArrowRightHOffset : 20,
-                soloArrowRightVOffset : 0,
+                    soloArrowRightHalign : "right",
+                    soloArrowRightValign : "center",
+                    soloArrowRightHOffset : 20,
+                    soloArrowRightVOffset : 0,
 
-                touchenabled : "on", // Enable Swipe Function : on/off
-                onHoverStop : "off", // Stop Banner Timet at Hover on Slide on/off
+                    touchenabled : "on", // Enable Swipe Function : on/off
+                    onHoverStop : "off", // Stop Banner Timet at Hover on Slide on/off
 
-                stopAtSlide : -1,
-                stopAfterLoops : -1,
+                    stopAtSlide : -1,
+                    stopAfterLoops : -1,
 
-                shadow : 1, // 1 = no Shadow, 1,2,3 = 3 Different Types of Shadows  (No Shadow in Fullwidth Version !)
-                fullWidth : "on" // Turns On or Off the Fullwidth Image Centering in FullWidth Modus
-            });
+                    shadow : 1, // 1 = no Shadow, 1,2,3 = 3 Different Types of Shadows  (No Shadow in Fullwidth Version !)
+                    fullWidth : "on" // Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+                });
 
-            $('#ap-slider-' + strucId).find('li').show();
-        }
-        $slider.data("init", "true");
+                jQ('#ap-slider-' + sliderId).find('li').show();
+            }
+            $slider.data("init", "true");
+        });
     }
 
-})(jQuery);
+    function init() {
+
+        if (DEBUG) console.info("ApolloSliders.init()");
+
+        var $simpleSliders = jQuery('.ap-slider');
+        if (DEBUG) console.info(".ap-slider elements found: " + $simpleSliders.length);
+        if ($simpleSliders.length > 0) {
+            initSimpleSliders($simpleSliders);
+        }
+
+        var $complexSliders = jQuery('.ap-complex-slider');
+        if (DEBUG) console.info(".ap-complex-slider elements found: " + $complexSliders.length);
+        if ($complexSliders.length > 0) {
+            initComplexSliders($complexSliders);
+        }
+    }
+
+    // public available functions
+    return {
+        init: init
+    }
+
+}(jQuery);

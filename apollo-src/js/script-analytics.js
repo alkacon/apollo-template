@@ -17,27 +17,44 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/**
- * Load Google Analytics (if required).
- */
+// Module implemented using the "revealing module pattern", see
+// https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript
+// https://www.christianheilmann.com/2007/08/22/again-with-the-module-pattern-reveal-something-to-the-world/
+var ApolloAnalytics = function(jQ) {
 
-function initGoogleAnalytics(analyticsId) {
+    // Note: If DEBUG is false, all if clauses using it will be removed
+    // by uglify.js during Apollo JS processing as unreachable code
+    this.DEBUG = false;
 
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', analyticsId, 'auto');
-    ga('set', 'anonymizeIp', true);
-    ga('send', 'pageview');
-}
 
-function initAnalytics() {
+    function addGoogleAnalytics(analyticsId) {
 
-    if (apollo.isOnlineProject() && apollo.hasInfo("googleAnalyticsId")) {
-        // only enable google analytics in the online project when ID is set
-        var googleAnalyticsId = "UA-" + apollo.getInfo("googleAnalyticsId");
-        console.info("googleAnalyticsId: " + googleAnalyticsId);
-        initGoogleAnalytics(googleAnalyticsId);
+        if (DEBUG) console.info("addGoogleAnalytics() using id: " + analyticsId);
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', analyticsId, 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
     }
-}
+
+
+    function init() {
+
+        if (DEBUG) console.info("ApolloAnalytics.init()");
+
+        if (Apollo.isOnlineProject() && Apollo.hasInfo("googleAnalyticsId")) {
+            // only enable google analytics in the online project when ID is set
+            var googleAnalyticsId = "UA-" + Apollo.getInfo("googleAnalyticsId");
+            addGoogleAnalytics(googleAnalyticsId);
+        }
+    }
+
+    // public available functions
+    return {
+        init: init
+    }
+
+}(jQuery);

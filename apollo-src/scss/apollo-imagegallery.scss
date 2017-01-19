@@ -47,6 +47,20 @@
     }
 }
 
+.pswp {
+
+    .title {
+        font-family: $font-header;
+        font-weight: $font-header-weight;
+        font-size: $h3-size;
+        line-height: $h3-height;
+    }
+
+    .copyright {
+        font-size: 0.7em;
+    }
+}
+
 /* Image gallery image enter animation, used when the image gallery is displayed */
 
 .comein {

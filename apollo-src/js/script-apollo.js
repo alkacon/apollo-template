@@ -17,163 +17,134 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/**
- * Global Apollo information object.
- *
- * Provides selected information about the current page from OpenCms to JavaScript.
- */
+// Module implemented using the "revealing module pattern", see
+// https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript
+// https://www.christianheilmann.com/2007/08/22/again-with-the-module-pattern-reveal-something-to-the-world/
+var Apollo = function(jQ) {
 
-// Note: If INITDEBUG is false, all if clauses using it will be removed
-// by uglify.js during Apollo JS processing as unreachable code
-var INITDEBUG = false;
+    // Note: If DEBUG is false, all if clauses using it will be removed
+    // by uglify.js during Apollo JS processing as unreachable code
+    this.DEBUG = true;
 
-// Apollo OpenCms page information class
-var Apollo = function() {
+    // container for information passed from CSS to JavaScript
+    this.m_info = {};
 
-    this.elements = {};
-    this.info = {};
-    this.data = {};
-}
+    // the color theme passed from CSS to JavaScript
+    this.m_theme = null;
 
-Apollo.prototype.addElement = function(key, element) {
 
-    if(! (key in this.elements)) {
-        // element with that name has not been used before, add new array
-        this.elements[key] = [element];
-    } else {
-        // add element to array
-        this.elements[key].push(element);
+    function addInfo(info) {
+
+        jQ.extend(m_info, info);
+
+        if (DEBUG) console.info("Apollo info extended to:");
+        if (DEBUG) jQ.each(this.info, function( key, value ) { console.info( "- " + key + ": " + value ); });
     }
-    if (INITDEBUG) console.info("Apollo element for key '" + key + "' added");
-}
 
-Apollo.prototype.hasElement = function(key) {
 
-    return key in this.elements;
-}
+    function hasInfo(key) {
 
-Apollo.prototype.getElements = function(key) {
-
-    if(key in this.elements) {
-        return this.elements[key];
+        return key in m_info;
     }
-    return null;
-}
 
 
-Apollo.prototype.addData = function(key, data) {
+    function getInfo(key) {
 
-    this.data[key] = data;
-    if (INITDEBUG) console.info("Apollo data for key '" + key + "' added");
-}
-
-Apollo.prototype.hasData = function(key) {
-
-    return key in this.data;
-}
-
-Apollo.prototype.getData = function(key) {
-
-    if(key in this.data) {
-        return this.data[key];
+        if(key in m_info) {
+            return m_info[key];
+        }
+        return null;
     }
-    return null;
-}
 
 
-Apollo.prototype.addInfo = function(info) {
+    function isOnlineProject() {
 
-    jQuery.extend(this.info, info);
-
-    if (INITDEBUG) console.info("Apollo info extended to:");
-    if (INITDEBUG) jQuery.each(this.info, function( key, value ) { console.info( "- " + key + ": " + value ); });
-}
-
-Apollo.prototype.hasInfo = function(key) {
-
-    return key in this.info;
-}
-
-Apollo.prototype.getInfo = function(key) {
-
-    if(key in this.info) {
-        return this.info[key];
+        return ("online" == m_info["project"]);
     }
-    return null;
-}
 
-Apollo.prototype.isOnlineProject = function() {
 
-    return ("online" == this.info["project"]);
-}
+    function getThemeColor(color) {
 
-Apollo.prototype.getTheme = function() {
-
-    return this.getElements("theme")[0];
-}
-
-Apollo.prototype.getThemeColor = function(color) {
-
-    var result = "#f00"; // default return color when all else fails
-    var theme = this.getTheme();
-    if (theme) {
-        try {
-            var col = Object.byString(theme, color);
-            if (typeof col != "undefined") {
-                result = col;
+        var result = "#f00"; // default return color when all else fails
+        if (m_theme) {
+            try {
+                var col = Object.byString(m_theme, color);
+                if (typeof col != "undefined") {
+                    result = col;
+                }
+            } catch (e) {
+                // result will be default
             }
-        } catch (e) {
-            // result will be default
-        }
-    }
-
-    return result;
-}
-
-Apollo.removeApolloThemeQuotes = function(string) {
-    // passing varaibales from SCSS to JavaScript
-    // see https://css-tricks.com/making-sass-talk-to-javascript-with-json/
-    if (typeof string === 'string' || string instanceof String) {
-        string = string.replace(/^['"]+|\s+|\\|(;\s?})+|['"]$/g, '');
-    }
-    return string;
-}
-
-Apollo.getApolloTheme= function(elementId) {
-    var theme = null;
-    element = document.getElementById(elementId);
-    if (window.getComputedStyle && window.getComputedStyle(element, '::before') ) {
-        theme = window.getComputedStyle(element, '::before');
-        theme = theme.content;
-        if (INITDEBUG) console.info("Apollo theme found in ::before: " + theme);
-    }
-    return JSON.parse(Apollo.removeApolloThemeQuotes(theme));
-}
-
-
-Apollo.init = function() {
-
-    // Set the global Apollo information instance
-    window.AP = new Apollo();
-    window.apollo = AP;
-
-    // initialize info sections with values from data attributes
-    jQuery('#apollo-info').each(function(){
-
-        var $element = jQuery(this);
-
-        if (typeof $element.data("info") != 'undefined') {
-            var $info = $element.data("info");
-            AP.addInfo($info);
         }
 
-        var theme = Apollo.getApolloTheme($element.attr('id'));
-        AP.addElement("theme", theme);
-        if (INITDEBUG) console.info("Apollo main theme color: " + AP.getThemeColor("main-theme"));
-    });
-}
+        return result;
+    }
 
-function initApollo() {
 
-    Apollo.init();
-}
+    function removeQuotes(string) {
+        // passing varaibales from SCSS to JavaScript
+        // see https://css-tricks.com/making-sass-talk-to-javascript-with-json/
+        if (typeof string === 'string' || string instanceof String) {
+            string = string.replace(/^['"]+|\s+|\\|(;\s?})+|['"]$/g, '');
+        }
+        return string;
+    }
+
+
+    function getApolloTheme(elementId) {
+        var theme = null;
+        element = document.getElementById(elementId);
+        if (window.getComputedStyle && window.getComputedStyle(element, '::before') ) {
+            theme = window.getComputedStyle(element, '::before');
+            theme = theme.content;
+            if (DEBUG) console.info("Apollo theme found in ::before: " + theme);
+        }
+        return JSON.parse(removeQuotes(theme));
+    }
+
+
+    function initInfo() {
+
+        // initialize info sections with values from data attributes
+        jQ('#apollo-info').each(function(){
+
+            var $element = jQ(this);
+
+            if (typeof $element.data("info") != 'undefined') {
+                var $info = $element.data("info");
+                addInfo($info);
+            }
+
+            m_theme = getApolloTheme($element.attr('id'));
+            if (DEBUG) console.info("Apollo main theme color: " + getThemeColor("main-theme"));
+        });
+    }
+
+    // public available functions
+    return {
+        init: init,
+        hasInfo: hasInfo,
+        getInfo: getInfo,
+        isOnlineProject: isOnlineProject,
+        getThemeColor: getThemeColor
+    }
+
+    // Apollos main init function!
+    // Add you additional modules or init calls here.
+    function init() {
+
+        if (DEBUG) console.info("Apollo.init()");
+
+        initInfo();
+
+        ApolloHandlers.init();
+        ApolloSliders.init();
+        ApolloAnalytics.init();
+        ApolloMegaMenu.init();
+        ApolloParallax.init();
+        ApolloMap.init();
+        ApolloImageGallery.init();
+        ApolloList.init();
+    }
+
+}(jQuery);
