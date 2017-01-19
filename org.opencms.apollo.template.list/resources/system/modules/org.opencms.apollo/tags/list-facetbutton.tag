@@ -111,7 +111,7 @@
             <%-- ##### Default option ##### --%>
             <li ${cms:getListSize(facetController.state.checkedEntries) == 0?'class="active"' : ""}>
                 <a href="javascript:void(0)"
-                    onclick="reloadInnerList('${search.stateParameters.resetFacetState[categoryFacetField]}',
+                    onclick="ApolloList.reload('${search.stateParameters.resetFacetState[categoryFacetField]}',
                     $('#list-' + $(this).parents().filter('.ap-list-options').data('id')))">
                     ${deselectLabel}</a>
             </li>${delimiter}
@@ -137,7 +137,7 @@
         <c:if test="${blacklistFilter != fn:contains(catFilters, currCatTitle)}">
           <li ${selected}>
             <a href="javascript:void(0)"
-            onclick="reloadInnerList('${search.stateParameters.resetFacetState[categoryFacetField].checkFacetItem[categoryFacetField][value.name]}',
+            onclick="ApolloList.reload('${search.stateParameters.resetFacetState[categoryFacetField].checkFacetItem[categoryFacetField][value.name]}',
               $('#list-' + $(this).parents().filter('.ap-list-options').data('id')))">
               ${label} (${value.count})
             </a>

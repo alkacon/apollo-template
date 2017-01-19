@@ -114,10 +114,10 @@
                         <%-- Caption shown in gallery can contain HTML markup for formatting --%>
                         <c:set var="caption">
                             <c:if test="${not empty title}">
-                                <div class="gtitle">${title}</div>
+                                <div class="title">${title}</div>
                             </c:if>
                             <c:if test="${not empty copyright}">
-                                <div class="gcopyright">${copyright}</div>
+                                <div class="copyright">${copyright}</div>
                             </c:if>
                         </c:set>
 

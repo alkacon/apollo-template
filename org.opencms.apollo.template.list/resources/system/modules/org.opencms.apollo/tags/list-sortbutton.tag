@@ -93,7 +93,7 @@
                 <c:if test="${empty params || fn:contains(params, sortOption.paramValue)}">
                     <c:set var="selected">${sortController.state.checkSelected[sortOption] ? ' class="active"' : ""}</c:set>
                     <li ${selected}>
-                        <a href="javascript:void(0)" onclick="reloadInnerList('${search.stateParameters.setSortOption[sortOption.paramValue]}',
+                        <a href="javascript:void(0)" onclick="ApolloList.reload('${search.stateParameters.setSortOption[sortOption.paramValue]}',
                             $('#list-' + $(this).parents().filter('.ap-list-options').data('id')))">
                             <fmt:message key="${sortOption.label}" />
                         </a>

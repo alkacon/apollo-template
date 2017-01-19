@@ -2,11 +2,11 @@
 
 <ApolloImageGallerys xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/imagegallery.xsd">
   <ApolloImageGallery language="en">
-    <Title><![CDATA[Photo image gallery]]></Title>
+    <Title><![CDATA[Clipart image gallery]]></Title>
     <ImageFolder>
       <link type="WEAK">
-        <target><![CDATA[/sites/default/.galleries/samples/]]></target>
-        <uuid>959d764a-4705-11e3-8417-000c29d28104</uuid>
+        <target><![CDATA[/sites/default/.galleries/cliparts/]]></target>
+        <uuid>d3f812a8-55fb-11e4-8db5-005056b61161</uuid>
       </link>
     </ImageFolder>
   </ApolloImageGallery>

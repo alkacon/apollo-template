@@ -3441,6 +3441,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<name>Copyright</name>
 					<value><![CDATA[CC0 Public Domain / Pixabay.com]]></value>
 				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Turbine]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:1024,h:768]]></value>
@@ -3461,6 +3465,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Copyright</name>
 					<value><![CDATA[CC0 Public Domain / Pixabay.com]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Glass tunnel]]></value>
 				</property>
 				<property type="shared">
 					<name>image.size</name>
@@ -3483,6 +3491,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 					<name>Copyright</name>
 					<value><![CDATA[CC0 Public Domain / Pixabay.com]]></value>
 				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Construction worker]]></value>
+				</property>
 				<property type="shared">
 					<name>image.size</name>
 					<value><![CDATA[w:1024,h:768]]></value>
@@ -3503,6 +3515,10 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Copyright</name>
 					<value><![CDATA[CC0 Public Domain / Pixabay.com]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Office space]]></value>
 				</property>
 				<property type="shared">
 					<name>image.size</name>
@@ -7550,7 +7566,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Home: Intuitive]]></value>
+					<value><![CDATA[Intuitive]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7567,7 +7583,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Home: Simple]]></value>
+					<value><![CDATA[Simple]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7584,7 +7600,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Home: Fun]]></value>
+					<value><![CDATA[Fun]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7601,7 +7617,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Home: Responsive]]></value>
+					<value><![CDATA[Responsive]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8588,6 +8604,40 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Tiles and Squares: Test Square]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00117.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00117.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>935d5b29-de44-11e6-93cd-0242ac11002b</uuidstructure>
+			<uuidresource>935d5b2a-de44-11e6-93cd-0242ac11002b</uuidresource>
+			<datecreated>Thu, 19 Jan 2017 12:41:19 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[The Image Gallery Element]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/contentsections/cs_00118.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00118.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>a1806f8e-de44-11e6-93cd-0242ac11002b</uuidstructure>
+			<uuidresource>a1806f8f-de44-11e6-93cd-0242ac11002b</uuidresource>
+			<datecreated>Thu, 19 Jan 2017 12:41:43 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Image Gallery: Gallery from zooming images]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9741,6 +9791,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/imagegalleries/imggal_00001.xml</source>
+			<destination>apollo-demo/.content/imagegalleries/imggal_00001.xml</destination>
+			<type>a-imagegallery</type>
+			<uuidstructure>4636a4c3-de43-11e6-93cd-0242ac11002b</uuidstructure>
+			<uuidresource>4636a4c4-de43-11e6-93cd-0242ac11002b</uuidresource>
+			<datecreated>Thu, 19 Jan 2017 12:32:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Clipart image gallery]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>apollo-demo/.content/imagegalleries/imggal_00002.xml</source>
 			<destination>apollo-demo/.content/imagegalleries/imggal_00002.xml</destination>
 			<type>a-imagegallery</type>
@@ -9751,7 +9818,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Image gallery]]></value>
+					<value><![CDATA[Photo image gallery]]></value>
 				</property>
 			</properties>
 			<relations/>

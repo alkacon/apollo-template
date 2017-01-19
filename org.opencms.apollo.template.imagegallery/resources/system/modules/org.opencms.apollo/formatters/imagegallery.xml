@@ -44,9 +44,12 @@
         square-xs-6 square-sm-4 square-md-3 square-lg-2:XS-2 SM-3 MD-4 LG-6|
         square-xs-6 square-sm-6 square-md-4 square-lg-3:XS-2 SM-2 MD-3 LG-4|
         square-sm-6 square-md-4 square-lg-3:            XS-1 SM-2 MD-3 LG-4|
+        square-sm-6 square-md-3:                        XS-1 SM-2 MD-4 LG-4|
+        square-xs-6 square-sm-3:                        XS-2 SM-4 MD-4 LG-4|
         square-sm-6 square-lg-4:                        XS-1 SM-2 MD-2 LG-3|
-        square-sm-12 square-md-6:                       XS-1 SM-1 MD-2 LG-2|
-        square-sm-12:                                   XS-1 SM-1 MD-1 LG-1
+        square-md-6:                                    XS-1 SM-1 MD-2 LG-2|
+        square-sm-6:                                    XS-1 SM-2 MD-2 LG-2|
+        square-xs-12:                                   XS-1 SM-1 MD-1 LG-1
         ]]></WidgetConfig>
     </Setting>
     <Setting>

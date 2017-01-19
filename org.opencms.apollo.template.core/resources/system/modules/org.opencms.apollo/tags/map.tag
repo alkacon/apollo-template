@@ -156,17 +156,17 @@
 
 <c:if test="${showMarkers and fn:length(markerGroups) > 1}">
     <div class="mapbuttons">
-        <button class="btn btn-sm" onclick="showMapMarkers('${id}','showall');">
+        <button class="btn btn-sm" onclick="ApolloMap.showMarkers('${id}','showall');">
             <fmt:message key="apollo.map.message.button.showmarkers" />
         </button><%--
      --%><c:forEach var="markerGroup" items="${markerGroups}">
-            <button class="btn btn-sm" onclick="showMapMarkers('${id}', '${cms:encode(markerGroup.key)}');">
+            <button class="btn btn-sm" onclick="ApolloMap.showMarkers('${id}', '${cms:encode(markerGroup.key)}');">
                 <fmt:message key="apollo.map.message.button.show">
                     <fmt:param><c:out value="${markerGroup.key}" /></fmt:param>
                 </fmt:message>
             </button><%--
      --%></c:forEach>
-        <button class="btn btn-sm" onclick="showMapMarkers('${id}', 'hideall');">
+        <button class="btn btn-sm" onclick="ApolloMap.showMarkers('${id}', 'hideall');">
             <fmt:message key="apollo.map.message.button.hidemarkers" />
         </button>
     </div>

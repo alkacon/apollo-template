@@ -42,7 +42,13 @@
                     <input type="hidden" name="${search.controller.common.config.reloadedParam}" />
                     <label class="input">
                         <i class="icon-prepend fa fa-search"></i>
-                        <input name="${search.controller.common.config.queryParam}" id="queryinput" class="" type="text" value="${escapedQuery}" placeholder="<fmt:message key="apollo.list.message.search" />">
+                        <input
+                            name="${search.controller.common.config.queryParam}"
+                            id="queryinput"
+                            type="text"
+                            value="${escapedQuery}"
+                            placeholder="<fmt:message key="apollo.list.message.search" />"
+                        >
                     </label>
             </form>
         </div>
@@ -84,8 +90,8 @@
                             <c:if test="${showLabel}">
                                 <li ${selected}>
                                     <a href="javascript:void(0)"
-                                        onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}',
-                                        $('#list-' + $(this).parents('.ap-list-filters').data('id'))); archiveHighlight($(this)); clearQuery();">
+                                        onclick="ApolloList.reload('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}',
+                                        $('#list-' + $(this).parents('.ap-list-filters').data('id'))); ApolloList.archiveHighlight($(this)); clearQuery();">
                                         <span class="badge"><i class="fa fa-tag"></i> ${currCat.title} (${value.count})</span>
                                     </a>
                                 </li>
@@ -141,8 +147,8 @@
                         ${yearHtml}
                         <li ${selected}>
                             <a href="javascript:void(0)"
-                                    onclick="reloadInnerList('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}',
-                                    $('#list-' + $(this).parents('.ap-list-filters').data('id'))); archiveHighlight($(this)); clearQuery();" title="${facetItem.count}">
+                                    onclick="ApolloList.reload('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}',
+                                    $('#list-' + $(this).parents('.ap-list-filters').data('id'))); ApolloList.archiveHighlight($(this)); clearQuery();" title="${facetItem.count}">
                                 <fmt:formatDate value="${fDate}" pattern="MMM" />
                             </a>
                         </li>
@@ -170,9 +176,11 @@
         }
 
         window.onload = function () {
-            $( "#queryform" ).submit(function( event ) {
-                reloadInnerList("${search.stateParameters.resetAllFacetStates}&q=" + $("#queryinput").val(), $('#list-' + $(this).parents('.ap-list-filters').data('id')));
-            });
+            $( "#queryform" ).submit(
+                function( event ) {
+                    ApolloList.reload("${search.stateParameters.resetAllFacetStates}&q=" + $("#queryinput").val(), $('#list-' + $(this).parents('.ap-list-filters').data('id')));
+                    ApolloList.archiveRemoveHighlight();
+                });
         }
 
         function clearQuery(){

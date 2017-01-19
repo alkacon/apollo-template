@@ -2,10 +2,10 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[The Image Gallery Element]]></Headline>
+    <Headline><![CDATA[Gallery from zooming images]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>The <em>Image Gallery</em> creates a list of all images found in&nbsp;a given source folder. The gallery supports zooming and swiping on mobile devices.</p>]]></content>
+      <content><![CDATA[<p>The zoom effect can also be applied to individual images in <em>content sections</em>, which then create a dynamic gallery from all zooming images on the page.</p>]]></content>
     </Text>
     <Image>
       <Image>

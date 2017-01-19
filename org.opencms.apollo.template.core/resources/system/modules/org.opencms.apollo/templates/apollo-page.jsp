@@ -98,7 +98,7 @@
     <cms:headincludes type="javascript" defaults="%(link.weak:/system/modules/org.opencms.apollo.theme/resources/js/scripts-all.min.js:0fc90357-5155-11e5-abeb-0242ac11002b)" />
     <script type="text/javascript">
         jQuery(document).ready(function() {
-          App.init();
+          Apollo.init();
         });
     </script>
 

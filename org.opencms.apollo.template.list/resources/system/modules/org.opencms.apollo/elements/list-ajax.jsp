@@ -15,18 +15,18 @@
     <c:if test="${not empty con}">
 
         <%-- ####### Merge the list parameters with the default formatter settings ######## --%>
-        <apollo:formatter-settings 
-            type="${con.value.TypesToCollect}" 
+        <apollo:formatter-settings
+            type="${con.value.TypesToCollect}"
             parameters="${con.valueList.Parameters}"
-            online="${cms.isOnlineProject}" 
+            online="${cms.isOnlineProject}"
         />
 
         <%-- ####### List entries ######## --%>
 
         <apollo:list-main
-            source="${con.value.Folder}" 
-            types="${con.value.TypesToCollect}" 
-            count="${con.value.ItemsPerPage.isSet ? con.value.ItemsPerPage.toInteger : 5}" 
+            source="${con.value.Folder}"
+            types="${con.value.TypesToCollect}"
+            count="${con.value.ItemsPerPage.isSet ? con.value.ItemsPerPage.toInteger : 5}"
             locale="${param.loc}"
             sort="${con.value.SortOrder}"
             categories="${con.readCategories}"
@@ -44,16 +44,16 @@
         <c:choose>
             <c:when test="${param.dynamic}">
                 <c:set var="label"><fmt:message key="pagination.loadmore"/></c:set>
-                <apollo:list-loadbutton 
-                    search="${search}" 
+                <apollo:list-loadbutton
+                    search="${search}"
                     label="${label}"
                 />
             </c:when>
             <c:otherwise>
-                <apollo:list-pagination 
-                    search="${search}" 
+                <apollo:list-pagination
+                    search="${search}"
                     singleStep="false"
-                    onclickAction='reloadInnerList("$(LINK)", $(this).parents().filter(".ap-list-entries"))'
+                    onclickAction='ApolloList.reload("$(LINK)", $(this).parents().filter(".ap-list-entries"))'
                 />
             </c:otherwise>
         </c:choose>

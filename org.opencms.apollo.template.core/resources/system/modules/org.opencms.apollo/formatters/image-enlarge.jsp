@@ -23,6 +23,7 @@
     <apollo:image-zoom
         image="${content.value.Image}"
         cssimage="${cms.element.setting.ieffect.value != 'none' ? cms.element.setting.ieffect.value : ''}"
+        title="${not empty imageTitle ? imageTitle : value.Headline}"
     />
 
     <c:if test="${cms.element.setting.showcopyright.value and not empty imageCopyright}">
