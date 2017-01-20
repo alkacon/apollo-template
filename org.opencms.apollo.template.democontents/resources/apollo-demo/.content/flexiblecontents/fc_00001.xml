@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/flexible.xsd">
+  <ApolloFlexibleElement language="en">
+    <Title><![CDATA[Available CSS Style Visualizer]]></Title>
+    <Code name="Code0">
+      <links>
+        <link name="link0" internal="true" type="A">
+          <target><![CDATA[]]></target>
+          <anchor><![CDATA[]]></anchor>
+        </link>
+      </links>
+      <content><![CDATA[<!-- HTML from Apollo squares -->
+<div id="backgrounds" class="ap-magic many-colors">
+<div class="ap-square square-xs-6 square-sm-3 square-lg-2 square-m-5">
+<div class="content bg-%(name)">
+<div class="table">
+<div class="table-cell">
+<div class="lead">bg-%(name)</div>
+%(value)
+</div>
+</div>
+</div>
+</div>
+</div><!-- End background colors -->
+
+
+
+<!-- HTML from Apollo squares -->
+<div id="coloroptions" class="ap-magic reduced-colors">
+<div class="ap-square square-xs-6 square-sm-3 square-lg-2 square-m-5">
+<div class="content color-%(name)">
+<div class="table">
+<div class="table-cell">
+<div class="lead">color-%(name)</div>
+<button class="btn">This is a button</button>
+</div>
+</div>
+</div>
+</div>
+</div><!-- End color options -->
+
+
+<!-- HTML from Apollo tiles -->
+<div id="fontcolor" class="ap-magic link-colors bc-grey-light mh-5 mt-10">
+<div class="ap-tile tile-sm-6 tile-md-4">
+<div class="m-5 links-%(name)">
+<div class="lead">links-%(name)</div>
+<a href="%(link0)">The quick brown fox jumps over the lazy dog.</a>
+</div>
+</div>
+</div><!-- End link colors  -->
+
+
+<!-- HTML from Apollo tiles -->
+<div id="fontcolor" class="ap-magic text-colors bc-grey-light mh-5 mt-10">
+<div class="ap-tile tile-sm-6 tile-md-4">
+<div class="m-5 text-%(name)">
+<div class="lead">text-%(name)</div>
+The quick brown fox jumps over the lazy dog.
+</div>
+</div>
+</div><!-- End text colors  -->
+
+
+<!-- HTML from Apollo tiles -->
+<div id="fontcolor2" class="ap-magic many-colors bc-grey-light mh-5">
+<!-- HTML used for Apollo Tiles -->
+<div class="ap-tile tile-sm-6 tile-md-4">
+<div class="m-5 text-%(name)">
+<div class="lead">text-%(name)</div>
+The quick brown fox jumps over the lazy dog.
+</div>
+</div>
+</div><!-- End extended text colors  -->]]></content>
+    </Code>
+  </ApolloFlexibleElement>
+</ApolloFlexibleElements>

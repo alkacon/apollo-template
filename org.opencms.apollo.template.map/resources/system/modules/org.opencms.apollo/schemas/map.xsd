@@ -20,6 +20,7 @@
             <xsd:element name="MapZoom" type="OpenCmsString" />
             <xsd:element name="Route" type="OpenCmsBoolean" />
             <xsd:element name="ShowMarkers" type="OpenCmsBoolean" />
+            <xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
             <xsd:element name="MapCoord" type="OpenCmsApolloMapCoord" minOccurs="1" maxOccurs="30" />
         </xsd:sequence>
         <xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
@@ -31,6 +32,7 @@
             <defaults>
                 <default element="MapSize" value="100%x400" />
                 <default element="ShowMarkers" value="true" />
+                <default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Headline)" resolveMacros="false" />
                 <default element="MapCoord/Coord" value="lat:50.947487,lng:6.941113,zoom:14,type:'roadmap',mode:'dynamic'"/>
             </defaults>
             <layouts useAcacia="true">
@@ -40,19 +42,24 @@
                 <layout element="MapZoom" widget="SelectorWidget" configuration="2|3|4|5|6|7|8|9|10|11|12|13|14*|15|16|17|18|19|20" />
             </layouts>
             <mappings>
-                <mapping element="Headline" mapto="property:Title" />
+                <mapping element="GalleryTitle" mapto="property:Title" useDefault="true" />
+                <mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
             </mappings>
             <tabs>
                 <tab element="Headline" name="General" collapse="false" />
                 <tab element="MapCoord" name="Points" collapse="false" />
             </tabs>
             <searchsettings containerPageOnly="true">
-                  <searchsetting element="MapSize" searchcontent="false"/>
+                <searchsetting element="MapSize" searchcontent="false"/>
                 <searchsetting element="MapType" searchcontent="false"/>
                 <searchsetting element="MapZoom" searchcontent="false"/>
                 <searchsetting element="Route" searchcontent="false"/>
                 <searchsetting element="ShowMarkers" searchcontent="false"/>
             </searchsettings>
+            <visibilities>
+                <visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
+            </visibilities>
         </xsd:appinfo>
     </xsd:annotation>
+
 </xsd:schema>

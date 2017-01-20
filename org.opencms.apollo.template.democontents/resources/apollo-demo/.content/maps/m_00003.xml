@@ -12,6 +12,7 @@
     <MapZoom><![CDATA[14]]></MapZoom>
     <Route>true</Route>
     <ShowMarkers>true</ShowMarkers>
+    <GalleryTitle><![CDATA[Map with 2 locations]]></GalleryTitle>
     <MapCoord>
       <Caption><![CDATA[Kölner Dom]]></Caption>
       <Address><![CDATA[Domkloster 4

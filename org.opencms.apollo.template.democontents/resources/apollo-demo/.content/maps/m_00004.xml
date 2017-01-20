@@ -12,6 +12,7 @@
     <MapZoom><![CDATA[11]]></MapZoom>
     <Route>false</Route>
     <ShowMarkers>true</ShowMarkers>
+    <GalleryTitle><![CDATA[Map with multiple groups]]></GalleryTitle>
     <MapCoord>
       <Caption><![CDATA[KOMED]]></Caption>
       <Address><![CDATA[Im Mediapark 6C

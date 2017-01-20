@@ -22,6 +22,7 @@
         </xsd:sequence>
         <xsd:attribute name="language" type="OpenCmsLocale" use="required" />
     </xsd:complexType>
+
     <xsd:annotation>
         <xsd:appinfo>
             <resourcebundle name="org.opencms.apollo.template.schemas.section" />
@@ -39,7 +40,10 @@
                 <modelfolder uri="/system/modules/org.opencms.apollo.template.schemas/models/section/" />
             -->
             <layouts>
-                <layout element="Text" widget="HtmlWidget" configuration="height:400px,link,anchor,source,downloadgallery,formatselect" />
+                <layout
+                    element="Text"
+                    widget="HtmlWidget"
+                    configuration="height:400px,link,anchor,source,downloadgallery,formatselect" />
             </layouts>
             <validationrules />
             <searchsettings containerPageOnly="true">
@@ -49,8 +53,10 @@
                 <visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
             </visibilities>
             <editorchangehandlers>
-                <editorchangehandler class="org.opencms.ade.contenteditor.CmsEditorChangeHandlerProperty"
-                    scope="Image*/Image" configuration="Copyright|../Copyright" />
+                <editorchangehandler
+                    class="org.opencms.ade.contenteditor.CmsEditorChangeHandlerProperty"
+                    scope="Image*/Image"
+                    configuration="Copyright|../Copyright" />
             </editorchangehandlers>
         </xsd:appinfo>
     </xsd:annotation>

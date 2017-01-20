@@ -9696,6 +9696,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/flexiblecontents/fc_00001.xml</source>
+			<destination>apollo-demo/.content/flexiblecontents/fc_00001.xml</destination>
+			<type>a-flexible</type>
+			<uuidstructure>5490713b-dee8-11e6-bf7b-0242ac11002b</uuidstructure>
+			<uuidresource>5490713c-dee8-11e6-bf7b-0242ac11002b</uuidresource>
+			<datecreated>Fri, 20 Jan 2017 08:13:31 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Test page: Available CSS Style Visualizer]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>apollo-demo/.content/flexiblecontents/fc_00003.xml</source>
 			<destination>apollo-demo/.content/flexiblecontents/fc_00003.xml</destination>
 			<type>a-flexible</type>
@@ -10624,7 +10641,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Alkacon office map]]></value>
+					<value><![CDATA[Alkacon office]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10641,7 +10658,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Location]]></value>
+					<value><![CDATA[ETH Zürich]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10658,7 +10675,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Company Location]]></value>
+					<value><![CDATA[Map with 2 locations]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10675,7 +10692,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[MediaPark]]></value>
+					<value><![CDATA[Map with multiple groups]]></value>
 				</property>
 			</properties>
 			<relations/>
