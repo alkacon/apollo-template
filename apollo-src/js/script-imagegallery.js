@@ -22,10 +22,6 @@
 // https://www.christianheilmann.com/2007/08/22/again-with-the-module-pattern-reveal-something-to-the-world/
 var ApolloImageGallery = function(jQ) {
 
-    // Note: If DEBUG is false, all if clauses using it will be removed
-    // by uglify.js during Apollo JS processing as unreachable code
-    this.DEBUG = false;
-
     // all auto loading image galleries as array for easy iteration
     this.m_autoLoadGalleries = [];
 

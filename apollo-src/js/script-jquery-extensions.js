@@ -17,15 +17,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-// Note: If EXTDEBUG is false, all if clauses using it will be removed
-// by uglify.js during Apollo JS processing as unreachable code
-var EXTDEBUG = false;
-
 // this is taken straight from the jQuery docs:
 // http://api.jquery.com/jQuery.getScript/
 jQuery.loadScript = function( url, options ) {
 
-    if (EXTDEBUG) console.info("Apollo loading script from url: " + url);
+    if (DEBUG) console.info("Apollo loading script from url: " + url);
 
     // Allow user to set any option except for dataType, cache, and url
     options = jQuery.extend( options || {}, {
@@ -54,6 +50,18 @@ jQuery.fn.visible = function( partial ) {
     return ((compareBottom - 100 <= viewBottom) && (compareTop >= viewTop));
 };
 
+
+// Get the path to an element, good for debugging messages.
+// see http://stackoverflow.com/questions/5442767/returning-the-full-path-to-an-element
+jQuery.fn.getFullPath = function(){
+
+    return $(this).parentsUntil('body')
+        .andSelf()
+        .map(function() {
+            var index = $(this).index();
+            return this.nodeName + '[' + index + ']';
+        }).get().join('>');
+};
 
 
 // Acessing object path by String value

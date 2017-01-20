@@ -20,30 +20,37 @@
 // Module implemented using the "revealing module pattern", see
 // https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript
 // https://www.christianheilmann.com/2007/08/22/again-with-the-module-pattern-reveal-something-to-the-world/
-var ApolloAnalytics = function(jQ) {
+var ApolloCssSampler = function(jQ) {
 
-    function addGoogleAnalytics(analyticsId) {
+    function replaceAll(template, key, value) {
 
-        if (DEBUG) console.info("addGoogleAnalytics() using id: " + analyticsId);
-
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', analyticsId, 'auto');
-        ga('set', 'anonymizeIp', true);
-        ga('send', 'pageview');
+        return template.split("%(" + key + ")").join(value);
     }
-
 
     function init() {
 
-        if (DEBUG) console.info("ApolloAnalytics.init()");
+        if (DEBUG) console.info("ApolloCssSampler.init()");
 
-        if (Apollo.isOnlineProject() && Apollo.hasInfo("googleAnalyticsId")) {
-            // only enable google analytics in the online project when ID is set
-            var googleAnalyticsId = "UA-" + Apollo.getInfo("googleAnalyticsId");
-            addGoogleAnalytics(googleAnalyticsId);
+        var $magicElements = jQ(".ap-magic");
+        if (DEBUG) console.info(".ap-magic elements found: " + $magicElements.length);
+
+        for (var i = 0; i < $magicElements.length; i++) {
+            $element = jQ($magicElements[i]);
+            var template = $element.html();
+            $element.empty();
+
+            data = Apollo.getCssData($element.attr('id'));
+
+            for (var j = 0; j<data.length; j++) {
+
+                var obj = data[j];
+                if (obj.name) {
+                    var html = template;
+                    html = replaceAll(html, "name", obj.name);
+                    html = replaceAll(html, "value", obj.value);
+                    $element.append(jQ(html));
+                }
+            }
         }
     }
 

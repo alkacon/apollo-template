@@ -330,3 +330,51 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
         content: '{#{$themeJSON}}';
     }
 }
+
+.ap-magic {
+    clear: both;
+
+    &:after {
+        content: "";
+        display: block;
+        visibility: hidden;
+        height: 0;
+        clear: both;
+    }
+
+    &.many-colors {
+
+        $JSON: get-json($many-colors);
+        &:before {
+            display: none;
+            content: '[#{$JSON}]';
+        }
+    }
+
+    &.text-colors {
+
+        $JSON: get-json($text-colors);
+        &:before {
+            display: none;
+            content: '[#{$JSON}]';
+        }
+    }
+
+    &.link-colors {
+
+        $JSON: get-json($link-colors);
+        &:before {
+            display: none;
+            content: '[#{$JSON}]';
+        }
+    }
+
+    &.reduced-colors {
+
+        $JSON: get-json($reduced-colors);
+        &:before {
+            display: none;
+            content: '[#{$JSON}]';
+        }
+    }
+}

@@ -38,6 +38,7 @@ var provideDir;
 var moduleDir;
 
 var mapScss;
+var debugJs;
 
 var path = require('path');
 
@@ -50,6 +51,7 @@ exports.initGrunt = function(_grunt, _buildDir) {
     buildDir = path.normalize(moduleDir + _buildDir + 'grunt/');
 
     mapScss = grunt.option('mapscss');
+    debugJs = grunt.option('debug');
 
     if (grunt.option('verbose')) {
         console.log('OpenCms module source directory   : ' + moduleDir);
@@ -57,6 +59,7 @@ exports.initGrunt = function(_grunt, _buildDir) {
         console.log('OpenCms theme provision directory : ' + provideDir);
 
         console.log('Source mapping of SCSS files      : ' + (mapScss ? 'Enabled' : 'Disabled') );
+        console.log('Debug output for JavaScript files : ' + (debugJs ? 'Enabled' : 'Disabled') );
 
         require('time-grunt')(grunt);
     }
@@ -382,9 +385,13 @@ _gruntInitConfig = function() {
                 mangle : {
                     except : [
                         'jQuery',
-                        'bootstrapPaginator',
                         'revolution',
                     ],
+                },
+                compress: {
+                    global_defs: {
+                        'DEBUG': oc.debugJs()
+                    }
                 },
             },
             pluginJs : {
@@ -513,6 +520,10 @@ exports.cssSrc = function () {
 
 exports.jsSrc = function () {
     return jsSrc;
+}
+
+exports.debugJs = function () {
+    return debugJs;
 }
 
 exports.resources = function () {

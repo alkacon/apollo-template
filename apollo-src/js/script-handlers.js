@@ -22,10 +22,6 @@
 // https://www.christianheilmann.com/2007/08/22/again-with-the-module-pattern-reveal-something-to-the-world/
 var ApolloHandlers = function(jQ) {
 
-    // Note: If DEBUG is false, all if clauses using it will be removed
-    // by uglify.js during Apollo JS processing as unreachable code
-    this.DEBUG = true;
-
     // Elements in head navigation
     function handleHeadNavigation() {
 
@@ -88,7 +84,7 @@ var ApolloHandlers = function(jQ) {
     function handleClickmeShowme() {
 
         var $clickSections = jQ('.clickme-showme');
-        if (DEBUG) console.info("clickme-showme elements found: " + clickSections.length);
+        if (DEBUG) console.info("clickme-showme elements found: " + $clickSections.length);
         $clickSections.each(function() {
 
             var $element = jQ(this);

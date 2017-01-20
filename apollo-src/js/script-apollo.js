@@ -17,14 +17,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+// Note: If DEBUG is false, all if clauses using it will be removed
+// by uglify.js during Apollo JS processing as unreachable code. See
+// https://github.com/mishoo/UglifyJS#use-as-a-code-pre-processor
+if (typeof DEBUG === 'undefined') {
+    DEBUG = true;
+}
+
 // Module implemented using the "revealing module pattern", see
 // https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript
 // https://www.christianheilmann.com/2007/08/22/again-with-the-module-pattern-reveal-something-to-the-world/
 var Apollo = function(jQ) {
-
-    // Note: If DEBUG is false, all if clauses using it will be removed
-    // by uglify.js during Apollo JS processing as unreachable code
-    this.DEBUG = true;
 
     // container for information passed from CSS to JavaScript
     this.m_info = {};
@@ -32,6 +35,15 @@ var Apollo = function(jQ) {
     // the color theme passed from CSS to JavaScript
     this.m_theme = null;
 
+    // additional init functions
+    this.m_init = [];
+
+
+    function addInit(initFunction) {
+
+        if (DEBUG) console.info("Apollo added init function: " + initFunction.name);
+        m_init.push(initFunction);
+    }
 
     function addInfo(info) {
 
@@ -91,15 +103,23 @@ var Apollo = function(jQ) {
     }
 
 
-    function getApolloTheme(elementId) {
-        var theme = null;
+    function getCssData(elementId) {
+        var data = null;
         element = document.getElementById(elementId);
         if (window.getComputedStyle && window.getComputedStyle(element, '::before') ) {
-            theme = window.getComputedStyle(element, '::before');
-            theme = theme.content;
-            if (DEBUG) console.info("Apollo theme found in ::before: " + theme);
+            data = window.getComputedStyle(element, '::before');
+            data = data.content;
+            if (DEBUG) console.info("Apollo data found in ::before: " + data);
         }
-        return JSON.parse(removeQuotes(theme));
+        return JSON.parse(removeQuotes(data));
+    }
+
+
+    function initFunctions() {
+
+        for (i=0; i<m_init.length; i++) {
+            m_init[i]();
+        }
     }
 
 
@@ -115,7 +135,7 @@ var Apollo = function(jQ) {
                 addInfo($info);
             }
 
-            m_theme = getApolloTheme($element.attr('id'));
+            m_theme = getCssData($element.attr('id'));
             if (DEBUG) console.info("Apollo main theme color: " + getThemeColor("main-theme"));
         });
     }
@@ -123,7 +143,9 @@ var Apollo = function(jQ) {
     // public available functions
     return {
         init: init,
+        addInit: addInit,
         hasInfo: hasInfo,
+        getCssData: getCssData,
         getInfo: getInfo,
         isOnlineProject: isOnlineProject,
         getThemeColor: getThemeColor
@@ -145,6 +167,9 @@ var Apollo = function(jQ) {
         ApolloMap.init();
         ApolloImageGallery.init();
         ApolloList.init();
+        ApolloCssSampler.init();
+
+        initFunctions();
     }
 
 }(jQuery);
