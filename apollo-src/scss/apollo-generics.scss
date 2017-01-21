@@ -102,7 +102,7 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
 
 /* Colored text */
 
-@each $color-name, $text-color in $text-colors {
+@each $color-name, $text-color, $highlight-color in $font-colors {
 
     .text-#{""+$color-name} {
 
@@ -110,7 +110,7 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     }
 }
 
-@each $color-name, $text-color, $highlight-color in $font-colors {
+@each $color-name, $text-color in $text-colors {
 
     .text-#{""+$color-name} {
 
@@ -331,16 +331,9 @@ $link-colors:            ((default, $main-theme, $main-theme-hover),
     }
 }
 
-.ap-magic {
-    clear: both;
 
-    &:after {
-        content: "";
-        display: block;
-        visibility: hidden;
-        height: 0;
-        clear: both;
-    }
+/* Page info elements providing JavaScript access to selected styles */
+.apollo-info {
 
     &.many-colors {
 

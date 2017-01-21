@@ -24,15 +24,15 @@ var ApolloCssSampler = function(jQ) {
 
     function replaceAll(template, key, value) {
 
-        return template.split("%(" + key + ")").join(value);
+        return template.split("$(" + key + ")").join(value);
     }
 
     function init() {
 
         if (DEBUG) console.info("ApolloCssSampler.init()");
 
-        var $magicElements = jQ(".ap-magic");
-        if (DEBUG) console.info(".ap-magic elements found: " + $magicElements.length);
+        var $magicElements = jQ(".apollo-info.sample");
+        if (DEBUG) console.info(".apollo-info.sample elements found: " + $magicElements.length);
 
         for (var i = 0; i < $magicElements.length; i++) {
             $element = jQ($magicElements[i]);

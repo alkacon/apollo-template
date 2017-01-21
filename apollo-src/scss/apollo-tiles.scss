@@ -27,7 +27,7 @@
 $ti-maxCols:    12 !default;
 $ti-margin:     0 !default;
 
-// ALL columns: 1         2       3       4       5           6      8           10          12
+// ALL columns:   1         2       3       4       5           6      8           10          12
 //    $ti-cols: ((12, 12), (6, 6), (4, 4), (3, 3), (2o4, 2.4), (2,2), (1o5, 1.5), (1o2, 1.2), (1,1)) !default;
 $ti-cols:       ((6, 6), (4, 4), (3, 3), (2o4, 2.4), (2,2), (1o5, 1.5)) !default;
 
@@ -43,8 +43,8 @@ $sizes:         ("xs", "sm", "md", "lg") !default;
 
 $sq-cols-xs:       ((12, 12), (6, 6)) !default;
 $sq-cols-sm:       ((12, 12), (9, 9), (6, 6), (4, 4), (3, 3)) !default;
-$sq-cols-md:       ((12, 12), (9, 9), (6, 6), (4, 4), (3, 3), (2,2)) !default;
-$sq-cols-lg:       ((12, 12), (9, 9), (6, 6), (4, 4), (3, 3), (2,2)) !default;
+$sq-cols-md:       ((12, 12), (9, 9), (6, 6), (4, 4), (3, 3), (2o4, 2.4), (2,2)) !default;
+$sq-cols-lg:       ((12, 12), (9, 9), (6, 6), (4, 4), (3, 3), (2o4, 2.4), (2,2)) !default;
 
 @function get-square-cols($size) {
   @if ($size == "xs") {
