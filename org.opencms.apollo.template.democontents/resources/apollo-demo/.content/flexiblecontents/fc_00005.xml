@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/flexible.xsd">
+  <ApolloFlexibleElement language="en">
+    <Title><![CDATA[CSS Text and Link Classes Visualizer]]></Title>
+    <Code name="Code0">
+      <links>
+        <link name="link0" internal="true" type="A">
+          <target><![CDATA[]]></target>
+          <anchor><![CDATA[]]></anchor>
+        </link>
+      </links>
+      <content><![CDATA[<!-- 
+
+Visualization of all available text / link color options.
+Output is created from JavaScript using the color coded compiled into the theme.
+HTML for the boxes is using Apollo Tiles. 
+
+-->
+
+<!-- Links -->
+<div id="linkcolors" class="apollo-info sample link-colors bc-grey-light mh-5 mt-10 clearfix">
+<div class="ap-tile tile-sm-6 tile-md-4">
+
+<div class="m-5 links-$(name)">
+<div class="lead text-dark"><div>links-$(name)</div></div>
+<a href="%(link0)">The quick brown fox jumps over the lazy dog.</a>
+</div>
+
+</div>
+</div>
+
+
+<!-- Theme dependent text color -->
+<div id="themetextcolor" class="apollo-info sample text-colors bc-grey-light mh-5 mt-10 clearfix">
+<div class="ap-tile tile-sm-6 tile-md-4">
+
+<div class="m-5 text-$(name)">
+<div class="lead text-dark"><div>text-$(name)</div></div>
+The quick brown fox jumps over the lazy dog.
+</div>
+
+</div>
+</div>
+
+
+<!-- Extended colored text options -->
+<div id="extendtextcolor" class="apollo-info sample many-colors bc-grey-light mh-5 mt-10 clearfix">
+<div class="ap-tile tile-sm-6 tile-md-4">
+
+<div class="m-5 text-$(name)">
+<div class="lead text-dark"><div>text-$(name)</div></div>
+The quick brown fox jumps over the lazy dog.
+</div>
+
+</div>
+</div>]]></content>
+    </Code>
+  </ApolloFlexibleElement>
+</ApolloFlexibleElements>

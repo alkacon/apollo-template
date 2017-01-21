@@ -2,28 +2,24 @@
 
 <ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/flexible.xsd">
   <ApolloFlexibleElement language="en">
-    <Title><![CDATA[CSS Background Classes Visualizer]]></Title>
+    <Title><![CDATA[CSS Color Classes Visualizer]]></Title>
     <Code name="Code0">
       <links/>
       <content><![CDATA[<!-- 
 
-Visualization of all available Background colors.
+Visualization of all available color options.
 Output is created from JavaScript using the color coded compiled into the theme.
-HTML for the boxes is using Apollo squares 
+HTML for the boxes is using Apollo tiles. 
 
 -->
-<div id="backgrounds" class="apollo-info sample many-colors clearfix">
-<div class="ap-square square-xs-6 square-sm-3 square-md-2o4 square-lg-2 square-m-5">
-<div class="content bg-$(name)">
-<div class="table">
-<div class="table-cell">
+<div id="coloroptions" class="apollo-info sample reduced-colors clearfix">
+<div class="ap-tile tile-sm-6 tile-md-4 tile-lg-3">
 
-<div class="lead">bg-$(name)</div>
-<div>$(value)</div>
+<div class="color-$(name) m-5">
+<div class="lead">color-$(name)</div>
+<button class="btn">Button in $(value)</button>
+</div>
 
-</div>
-</div>
-</div>
 </div>
 </div>]]></content>
     </Code>

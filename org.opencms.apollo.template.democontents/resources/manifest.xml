@@ -9706,7 +9706,24 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Test page: Available CSS Style Visualizer]]></value>
+					<value><![CDATA[Test page: CSS Background Classes Visualizer]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/flexiblecontents/fc_00002.xml</source>
+			<destination>apollo-demo/.content/flexiblecontents/fc_00002.xml</destination>
+			<type>a-flexible</type>
+			<uuidstructure>dcf4d9fb-dfb4-11e6-8886-0242ac11002b</uuidstructure>
+			<uuidresource>dcf4d9fc-dfb4-11e6-8886-0242ac11002b</uuidresource>
+			<datecreated>Sat, 21 Jan 2017 08:37:37 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Test page: CSS Color Classes Visualizer]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9741,6 +9758,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Flexible Content: Slideshare presentation]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/flexiblecontents/fc_00005.xml</source>
+			<destination>apollo-demo/.content/flexiblecontents/fc_00005.xml</destination>
+			<type>a-flexible</type>
+			<uuidstructure>d3f17fbe-dfb6-11e6-8886-0242ac11002b</uuidstructure>
+			<uuidresource>d3f17fbf-dfb6-11e6-8886-0242ac11002b</uuidresource>
+			<datecreated>Sat, 21 Jan 2017 08:51:41 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Test page: CSS Text and Link Classes Visualizer]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10726,7 +10760,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Olympia Grand Hall]]></value>
+					<value><![CDATA[Website demo contents: Olympia Grand Hall]]></value>
 				</property>
 			</properties>
 			<relations/>
