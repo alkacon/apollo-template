@@ -1,16 +1,16 @@
-<%@ tag 
+<%@ tag
     display-name="email"
-    trimDirectiveWhitespaces="true" 
+    trimDirectiveWhitespaces="true"
     description="Displays an email address as link with optional obfuscation." %>
 
 
 <%@ attribute name="email" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="Value wrapper for the email. Has to use the nested schema of type email." %>
 
-<%@ attribute name="placeholder" fragment="true" required="true" 
+<%@ attribute name="placeholder" fragment="true" required="true"
     description="Text to show in case the Email is obfuscated." %>
 
-<%@ attribute name="cssclass" type="java.lang.String" required="false" 
+<%@ attribute name="cssclass" type="java.lang.String" required="false"
     description="CSS class added to the a tag surrounding the email address."%>
 
 
@@ -21,6 +21,7 @@
 <c:set var="css"><c:if test="not empty ${cssclass}"> class="${cssclass}"</c:if></c:set>
 <c:choose>
     <c:when test="${email.value.ObfuscateEmail.stringValue}">
+        <c:set var="obfuscate" value="true" />
         <c:set var="href">javascript:unobfuscateString('<apollo:obfuscate text="${email.value.Email}"/>', true);</c:set>
         <c:set var="address"><jsp:invoke fragment='placeholder' /></c:set>
     </c:when>
@@ -34,5 +35,5 @@
     href="${href}"
     title="${address}">
     <%-- Set class="email" so that hCard microformat can be supported --%>
-    <span class="email">${address}</span>
+    <span ${obfuscate ? '' : 'class="email"'}>${address}</span>
 </a>

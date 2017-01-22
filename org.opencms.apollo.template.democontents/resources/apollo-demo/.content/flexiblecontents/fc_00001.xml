@@ -14,7 +14,7 @@ HTML for the boxes is using Apollo squares
 -->
 <div id="backgrounds" class="apollo-info sample many-colors clearfix">
 <div class="ap-square square-xs-6 square-sm-3 square-md-2o4 square-lg-2 square-m-5">
-<div class="content bg-$(name)">
+<div class="content bo-1 bo-grey bg-$(name)">
 <div class="table">
 <div class="table-cell">
 

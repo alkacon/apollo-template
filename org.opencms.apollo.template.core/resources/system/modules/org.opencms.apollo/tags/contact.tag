@@ -1,7 +1,7 @@
-<%@ tag 
+<%@ tag
     display-name="contact"
     body-content="empty"
-    trimDirectiveWhitespaces="true" 
+    trimDirectiveWhitespaces="true"
     description="Displays contact information from the given content with support for hCard microformat." %>
 
 
@@ -17,13 +17,13 @@
 <%@ attribute name="position" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"
     description="Value wrapper for the contact position. Standard string." %>
 
-<%@ attribute name="organization" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" 
+<%@ attribute name="organization" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"
     description="Value wrapper for the contact organization. Standard string." %>
 
-<%@ attribute name="description" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" 
+<%@ attribute name="description" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"
     description="Value wrapper for the contact description. Standard HTML." %>
 
-<%@ attribute name="data" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" 
+<%@ attribute name="data" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"
     description="Value wrapper for the contact data that includes address, telephone etc. From nested schema type contact-data." %>
 
 <%@ attribute name="fragments" type="java.lang.String" required="false"
@@ -33,7 +33,7 @@
     label-icon: Use icons for labels.
     label-text: Use text for labels.
     effect-kenburns: Apply a 'Ken Burns' effect to the image.
-    effect-shadow: Apply a shadow effect to the image. 
+    effect-shadow: Apply a shadow effect to the image.
     animated-link: Show the animated link button over the image.
     name: Show the contact name and position.
     address: Show the contact address.
@@ -83,7 +83,7 @@
 
     <c:if test="${animatedlink and showImage}">
         <div class="button-box">
-            <apollo:link 
+            <apollo:link
                 link="${link}"
                 cssclass="btn btn-xs" />
         </div>
@@ -119,23 +119,25 @@
     <c:if test="${showaddress}">
         <c:set var="animatedAddress" value="${showicons and not showaddressalways}" />
         <div class="clickme-showme">
-        <div class="adr${animatedAddress ? ' clickme' : ''}">
+        <div class="adr ${animatedAddress ? 'clickme' : ''}">
             <div class="street-address">${data.value.Address.value.StreetAddress}</div>
             <c:if test="${data.value.Address.value.ExtendedAddress.isSet}">
                 <div class="extended-address">${data.value.Address.value.ExtendedAddress}</div>
             </c:if>
-            <div class="city">
-                <span class="locality">${data.value.Address.value.PostalCode}</span>
-                <span class="region">${data.value.Address.value.Locality}</span>
+            <div>
+                <span class="postal-code">${data.value.Address.value.PostalCode}</span>
+                <span class="locality">${data.value.Address.value.Locality}</span>
             </div>
-            <div class="street">
-                <c:if test="${data.value.Address.value.Region.isSet}">
-                    <span class="postal-code">${data.value.Address.value.Region}</span>
-                </c:if>
-                <c:if test="${data.value.Address.value.Country.isSet}">
-                    <span class="country-name">${data.value.Address.value.Country}</span>
-                </c:if>
-            </div>
+            <c:if test="${data.value.Address.value.Region.isSet or data.value.Address.value.Country.isSet}">
+                <div>
+                    <c:if test="${data.value.Address.value.Region.isSet}">
+                        <span class="region">${data.value.Address.value.Region}</span>
+                    </c:if>
+                    <c:if test="${data.value.Address.value.Country.isSet}">
+                        <span class="country-name">${data.value.Address.value.Country}</span>
+                    </c:if>
+                </div>
+            </c:if>
         </div>
         <c:if test="${animatedAddress}">
             <div class="addresslink showme">
@@ -145,7 +147,9 @@
                         --%><fmt:message key="apollo.contact.showaddress"/>
                         </a></span>
                     </jsp:attribute>
-                    <jsp:attribute name="icontitle"><fmt:message key="apollo.contact.showaddress"/></jsp:attribute>
+                    <jsp:attribute name="icontitle">
+                        <fmt:message key="apollo.contact.showaddress"/>
+                    </jsp:attribute>
                 </apollo:icon-prefix>
             </div>
         </c:if>
@@ -153,7 +157,7 @@
     </c:if>
 
     <c:if test="${showphone}">
-        <c:if test="${data.value.Phone.isSet}"> 
+        <c:if test="${data.value.Phone.isSet}">
             <div class="phone tablerow">
                 <apollo:icon-prefix icon="phone" fragments="${labels}">
                     <jsp:attribute name="text"><fmt:message key="apollo.contact.phone"/></jsp:attribute>
@@ -189,10 +193,10 @@
                 </span>
             </div>
         </c:if>
-    </c:if> 
+    </c:if>
 
     <c:if test="${showemail}">
-        <div class="email tablerow">
+        <div class="tablerow">
             <apollo:icon-prefix icon="at" fragments="${labels}" >
                 <jsp:attribute name="text"><fmt:message key="apollo.contact.email"/></jsp:attribute>
             </apollo:icon-prefix>

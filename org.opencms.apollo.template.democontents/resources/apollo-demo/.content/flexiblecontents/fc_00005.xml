@@ -9,6 +9,10 @@
           <target><![CDATA[]]></target>
           <anchor><![CDATA[]]></anchor>
         </link>
+        <link name="link1" internal="true" type="A">
+          <target><![CDATA[]]></target>
+          <anchor><![CDATA[]]></anchor>
+        </link>
       </links>
       <content><![CDATA[<!-- 
 
@@ -19,12 +23,17 @@ HTML for the boxes is using Apollo Tiles.
 -->
 
 <!-- Links -->
-<div id="linkcolors" class="apollo-info sample link-colors bc-grey-light mh-5 mt-10 clearfix">
+<div id="linkcolors" class="apollo-info sample link-colors mh-5 mt-10 clearfix">
 <div class="ap-tile tile-sm-6 tile-md-4">
 
-<div class="m-5 links-$(name)">
-<div class="lead text-dark"><div>links-$(name)</div></div>
-<a href="%(link0)">The quick brown fox jumps over the lazy dog.</a>
+<div class="m-5 bo-1 bo-grey links-$(name) $(background)">
+<div class="lead"><a href="%(link0)">links-$(name)</a></div>
+<p>
+<a href="%(link1)">
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+$(value)
+</a>
+</p>
 </div>
 
 </div>
@@ -32,12 +41,15 @@ HTML for the boxes is using Apollo Tiles.
 
 
 <!-- Theme dependent text color -->
-<div id="themetextcolor" class="apollo-info sample text-colors bc-grey-light mh-5 mt-10 clearfix">
+<div id="themetextcolor" class="apollo-info sample text-colors mh-5 mt-10 clearfix">
 <div class="ap-tile tile-sm-6 tile-md-4">
 
-<div class="m-5 text-$(name)">
-<div class="lead text-dark"><div>text-$(name)</div></div>
-The quick brown fox jumps over the lazy dog.
+<div class="m-5 bo-1 bo-grey text-$(name) $(background)">
+<div class="lead">text-$(name)</div>
+<p>
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+$(value)
+</p>
 </div>
 
 </div>
@@ -45,12 +57,15 @@ The quick brown fox jumps over the lazy dog.
 
 
 <!-- Extended colored text options -->
-<div id="extendtextcolor" class="apollo-info sample many-colors bc-grey-light mh-5 mt-10 clearfix">
+<div id="extendtextcolor" class="apollo-info sample many-colors mh-5 mt-10 clearfix">
 <div class="ap-tile tile-sm-6 tile-md-4">
 
-<div class="m-5 text-$(name)">
-<div class="lead text-dark"><div>text-$(name)</div></div>
-The quick brown fox jumps over the lazy dog.
+<div class="m-5 bo-1 bo-grey text-$(name) $(background)">
+<div class="lead">text-$(name)</div>
+<p>
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+$(value)
+</p>
 </div>
 
 </div>

@@ -15,7 +15,7 @@ HTML for the boxes is using Apollo tiles.
 <div id="coloroptions" class="apollo-info sample reduced-colors clearfix">
 <div class="ap-tile tile-sm-6 tile-md-4 tile-lg-3">
 
-<div class="color-$(name) m-5">
+<div class="m-5 bo-1 bo-grey color-$(name) m-5">
 <div class="lead">color-$(name)</div>
 <button class="btn">Button in $(value)</button>
 </div>
