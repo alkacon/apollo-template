@@ -65,8 +65,8 @@ $grey-dark:         darken($grey, 15%) !default;
 $grey-darker:       darken($grey, 30%) !default;
 
 $cyan:              #1bb39a !default;
-$yellow:            #f1c40f !default;
-$green:             mix($orange, $cyan) !default;
+$yellow:            #ffd900 !default;
+$green:             #00af33 !default;
 $green-light:       lighten($green, 20%) !default;
 
 $blue-cyan:         mix($blue, $cyan) !default;
@@ -93,22 +93,22 @@ $btn-padding: 8px   !default;
 $many-colors:
 (
  // name            // bg-color      // highlight-color
- (white,            $white,         $main-theme),
- (grey-lighter,     $grey-lighter,  $main-theme),
- (grey-light,       $grey-light,    $main-theme),
- (grey,             $grey,          $main-theme),
  (grey-dark,        $grey-dark,     $main-theme),
- (blue-light,       $blue-light,    $blue),
- (blue,             $blue,          $blue-light),
- (blue-dark,        $blue-dark,     $blue),
- (cyan,             $cyan,          $blue-cyan),
- (red,              $red,           $red-light),
- (red-dark,         $red-dark,      $red),
- (orange-dark,      $red-orange,    $orange),
- (orange,           $orange,        $orange-light),
+ (grey,             $grey,          $main-theme),
+ (grey-light,       $grey-light,    $main-theme),
+ (grey-lighter,     $grey-lighter,  $main-theme),
  (violet,           $violet,        $red),
  (green,            $green,         $orange),
  (yellow,           $yellow,        $red-orange),
+ (cyan,             $cyan,          $blue-cyan),
+ (blue-dark,        $blue-dark,     $blue),
+ (blue,             $blue,          $blue-light),
+ (blue-light,       $blue-light,    $blue),
+ (orange-dark,      $red-orange,    $orange),
+ (orange,           $orange,        $orange-light),
+ (red-dark,         $red-dark,      $red),
+ (red,              $red,           $red-light),
+ (white,            $white,         $main-theme),
 ) !default;
 
 /**
@@ -122,13 +122,13 @@ $many-colors:
 // use this to keep the generated CSS small
 $reduced-colors:
 (
- (grey-lighter,     $grey-lighter,  $main-theme),
- (grey-light,       $grey-light,    $main-theme),
  (grey,             $grey,          $main-theme),
- (blue,             $blue,          $blue-light),
- (red,              $red,           $red-light),
+ (grey-light,       $grey-light,    $main-theme),
+ (grey-lighter,     $grey-lighter,  $main-theme),
  (cyan,             $cyan,          $blue-cyan),
  (orange,           $orange,        $red-orange),
+ (blue,             $blue,          $blue-light),
+ (red,              $red,           $red-light),
 ) !default;
 
 /**

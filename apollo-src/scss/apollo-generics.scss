@@ -35,13 +35,16 @@ $border-radiuses:        ((0, 0px), (2, 2px),  (4, 4px), (5, 5px), (10, 10px), (
 $border-positions:       (bottom, top, left, right) !default;
 $border-styles:          (none, solid, dotted, dashed, hidden) !default;
 
-$text-colors:            ((light, $text-light), (dark, $text-dark)) !default;
-$link-colors:            ((default, $main-theme, $main-theme-hover),
-                          (dark, $text-dark, $grey),
-                          (light, $text-light, $grey-lighter),
-                          (white, $white, $grey-lighter),
+$text-colors:            ((theme, $main-theme),
+                          (complementary, $main-theme-complementary),
+                          (light, $text-light),
+                          (dark, $text-dark)) !default;
+$link-colors:            ((black,  $black, $grey-darker),
                           (grey, $grey, $grey-light),
-                          (black,  $black, $grey-darker)) !default;
+                          (white, $white, $grey-lighter),
+                          (default, $main-theme, $main-theme-hover),
+                          (light, $text-light, $grey-lighter),
+                          (dark, $text-dark, $grey)) !default;
 
 
 @mixin set-text-color($text-color) {

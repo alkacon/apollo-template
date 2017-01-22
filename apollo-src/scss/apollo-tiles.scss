@@ -172,7 +172,6 @@ $sq-heights-lg:    ((0o25, 0.25), (0o5, 0.5), (1o5, 1.5), (2, 2)) !default;
     float: left;
     position: relative;
     min-height: 1px;
-    white-space: nowrap;
     width: calc(100% - #{$ti-margin*2}px);
     margin: #{$ti-margin}px;
 }
