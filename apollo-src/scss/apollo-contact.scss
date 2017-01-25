@@ -45,6 +45,7 @@
         }
     }
 
+    .org,
     .adr {
         margin-bottom: 5px;
     }
@@ -58,7 +59,8 @@
        width: 15px;
     }
 
-    .text-box .button-static {
-        margin: 5px 0px;
+    .card,
+    .button-static {
+         margin-top: 5px;
     }
 }
