@@ -2,7 +2,7 @@
 
 <ApolloContacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/contact.xsd">
   <ApolloContact language="en">
-    <Kind><![CDATA[org]]></Kind>
+    <Kind><![CDATA[person]]></Kind>
     <Organization><![CDATA[Locial Loop Ltd.]]></Organization>
     <Name>
       <FirstName><![CDATA[Pepper]]></FirstName>
@@ -11,7 +11,7 @@
     <Position><![CDATA[Analyst]]></Position>
     <Description name="Description0">
       <links/>
-      <content><![CDATA[<p>This is the description</p>]]></content>
+      <content><![CDATA[<p>Pepper likes sharp images.</p>]]></content>
     </Description>
     <Image>
       <Image>
@@ -21,6 +21,15 @@
         </link>
       </Image>
     </Image>
+    <Link>
+      <Text><![CDATA[Get in contact]]></Text>
+      <URI>
+        <link internal="true" type="WEAK">
+          <target><![CDATA[/sites/default/apollo-demo/the-team/]]></target>
+          <uuid>a3023c68-6079-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </URI>
+    </Link>
     <Contact>
       <Address>
         <StreetAddress><![CDATA[Friesenstr. 64-66]]></StreetAddress>

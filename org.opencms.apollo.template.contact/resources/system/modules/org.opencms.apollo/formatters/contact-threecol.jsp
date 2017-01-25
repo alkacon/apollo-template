@@ -15,22 +15,34 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.contact.messages">
 
-<div class="ap-contact vcard">
+<%-- #### Contact exposed as 'Person', see http://schema.org/Person #### --%>
+
+<c:choose>
+    <c:when test="${value.Kind eq 'org'}">
+        <c:set var="kind">itemscope itemtype="https://schema.org/Organization"</c:set>
+    </c:when>
+    <c:otherwise>
+        <c:set var="kind">itemscope itemtype="http://schema.org/Person"</c:set>
+    </c:otherwise>
+</c:choose>
+
+<div class="ap-contact ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }" ${kind}>
 
     <c:set var="fragments1">
-        image 
+        image
         <c:if test="${cms.element.setting.effect.value != 'none'}">${cms.element.setting.effect.value}</c:if>
         <c:if test="${cms.element.setting.link.value == 'animated-link'}">animated-link</c:if>
     </c:set>
     <c:set var="showImage" value="${cms.element.setting.effect.value != 'no-img'}" />
 
     <c:set var="fragments2">
-        name 
+        name
         ${cms.element.setting.labels.value}
         <c:if test="${cms.element.setting.showOrganization.value}">organization</c:if>
         <c:if test="${cms.element.setting.showAddress.value == 'true'}">address</c:if>
         <c:if test="${cms.element.setting.showAddress.value == 'always'}">address-always</c:if>
         <c:if test="${cms.element.setting.showPhone.value}">phone</c:if>
+        <c:if test="${cms.element.setting.showVcard.value}">vcard</c:if>
     </c:set>
 
     <c:set var="fragments3">

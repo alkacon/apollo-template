@@ -15,14 +15,14 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.contact.messages">
 
-<%-- #### Contact exposed in hCard microformat, see http://microformats.org/wiki/hcard #### --%>
+<%-- #### Contact exposed as 'Person', see http://schema.org/Person #### --%>
 
 <c:choose>
     <c:when test="${value.Kind eq 'org'}">
-        <c:set var="kind">itemprop="Organization" itemscope itemtype="https://schema.org/Organization"</c:set>
+        <c:set var="kind">itemscope itemtype="https://schema.org/Organization"</c:set>
     </c:when>
     <c:otherwise>
-        <c:set var="kind">itemprop="Person" itemscope itemtype="http://schema.org/Person"</c:set>
+        <c:set var="kind">itemscope itemtype="http://schema.org/Person"</c:set>
     </c:otherwise>
 </c:choose>
 
