@@ -1,7 +1,8 @@
-<%@ tag display-name="imagegallery"
-  trimDirectiveWhitespaces="true"
-  body-content="empty"
-  description="Displays an image gallery based on a content search."%>
+<%@ tag
+    display-name="imagegallery"
+    body-content="empty"
+    trimDirectiveWhitespaces="true"
+    description="Displays an image gallery based on a content search."%>
 
 <%@ attribute name="id" type="java.lang.String" required="true"
     description="The id the image gallery should use, usually the UID of the element." %>

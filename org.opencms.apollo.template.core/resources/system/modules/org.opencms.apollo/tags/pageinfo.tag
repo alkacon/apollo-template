@@ -1,5 +1,6 @@
 <%@ tag
     display-name="pageinfo"
+    body-content="empty"
     trimDirectiveWhitespaces="true"
     description="Generates a DIV with runtime information that can be used from JavaScipt." %>
 

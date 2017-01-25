@@ -2,8 +2,10 @@
     display-name="contact"
     body-content="empty"
     trimDirectiveWhitespaces="true"
-    description="Displays contact information from the given content with support for hCard microformat." %>
+    description="Displays contact information from the given content with support for schema.org annotation." %>
 
+<%@ attribute name="kind" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"
+    description="Value wrapper for the contact kind. Standard string." %>
 
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"
     description="Value wrapper for the contact image data. Standard Apollo image." %>
@@ -41,6 +43,7 @@
     description: Show the contact description.
     phone: Show the contact phone numbers.
     email: Show the contact email.
+    vcard: Show the vCard download option.
     static-link: Show the static link text.
     ]" %>
 
@@ -68,7 +71,7 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.contact.messages">
 
-<%-- #### Contact exposed in hCard microformat, see http://microformats.org/wiki/hcard #### --%>
+<%-- #### Contact exposed as 'Person', see http://schema.org/Person #### --%>
 
 <apollo:image-animated
     test="${showImage}"
@@ -79,12 +82,14 @@
         ${fn:contains(fragments, 'effect-shadow') ? ' ap-raise-animation' : ''}"
 
     cssimage="photo"
+    attr='itemprop="image"'
     >
 
     <c:if test="${animatedlink and showImage}">
         <div class="button-box">
             <apollo:link
                 link="${link}"
+                attr='itemprop="url"'
                 cssclass="btn btn-xs" />
         </div>
     </c:if>
@@ -97,44 +102,67 @@
     <c:set var="showphone" value="${fn:contains(fragments, 'phone') and data.isSet}"/>
     <c:set var="showemail" value="${fn:contains(fragments, 'email') and data.isSet and data.value.Email.isSet and data.value.Email.value.Email.isSet}"/>
     <c:set var="showstaticbutton" value="${fn:contains(fragments, 'static-link') and link.isSet}"/>
+    <c:set var="showvcard" value="${fn:contains(fragments, 'vcard')}"/>
 
     <c:if test="${showname or showorganization or showdescription or showaddress or showphone or showemail or showstaticbutton}">
     <div class="text-box">
 
-    <c:if test="${showname}">
-        <h3 class="fn n">
-            <c:if test="${name.value.Title.isSet}"><span class="honorific-prefix">${name.value.Title} </span></c:if>
-            <span class="given-name"> ${name.value.FirstName}</span>
-            <c:if test="${name.value.MiddleName.isSet}"><span class="additional-name"> ${name.value.MiddleName}</span></c:if>
-            <span class="family-name"> ${name.value.LastName}</span>
-            <c:if test="${name.value.Suffix.isSet}"><span class="honorific-suffix"> ${name.value.Suffix}</span></c:if>
-        </h3>
+    <c:set var="personname">
+        <c:if test="${name.value.Title.isSet}"><span itemprop="honorificPrefix">${name.value.Title} </span></c:if>
+        <span itemprop="givenName"> ${name.value.FirstName}</span>
+        <c:if test="${name.value.MiddleName.isSet}"><span itemprop="additionalName"> ${name.value.MiddleName}</span></c:if>
+        <span itemprop="familyName"> ${name.value.LastName}</span>
+        <c:if test="${name.value.Suffix.isSet}"><span itemprop="honorificSuffix"> ${name.value.Suffix}</span></c:if>
+    </c:set>
 
-        <c:if test="${position.isSet}"><h4 class="title" ${position.rdfaAttr}>${position}</h4></c:if>
-    </c:if>
+    <c:choose>
+        <c:when test="${kind eq 'org'}">
+            <c:if test="${showorganization}">
+                <h3 class="fn n" ${organization.rdfaAttr} itemprop="name">
+                    ${organization}
+                </h3>
+                <c:if test="${position.isSet}"><h4 itemprop="description" class="title" ${position.rdfaAttr}>${position}</h4></c:if>
+            </c:if>
+            <c:if test="${showname}">
+                <div class="org" itemprop="employee" itemscope itemtype="http://schema.org/Person">${personname}</div>
+            </c:if>
+        </c:when>
+        <c:otherwise>
+            <c:if test="${showname}">
+                <h3 class="fn n" itemprop="name">
+                    ${personname}
+                </h3>
+                <c:if test="${position.isSet}"><h4 itemprop="jobTitle" class="title" ${position.rdfaAttr}>${position}</h4></c:if>
+            </c:if>
+            <c:if test="${showorganization}">
+                <div class="org" itemprop="worksFor" ${organization.rdfaAttr}>${organization}</div>
+            </c:if>
+        </c:otherwise>
+    </c:choose>
 
-    <c:if test="${showorganization}"><div class="org" ${organization.rdfaAttr}>${organization}</div></c:if>
-    <c:if test="${showdescription}"><div class="note" ${description.rdfaAttr}>${description}</div></c:if>
+    <c:if test="${showdescription}"><div itemprop="description" class="note" ${description.rdfaAttr}>${description}</div></c:if>
 
     <c:if test="${showaddress}">
         <c:set var="animatedAddress" value="${showicons and not showaddressalways}" />
         <div class="clickme-showme">
-        <div class="adr ${animatedAddress ? 'clickme' : ''}">
-            <div class="street-address">${data.value.Address.value.StreetAddress}</div>
+        <div class="adr ${animatedAddress ? 'clickme' : ''}"
+            itemprop="address" itemscope
+            itemtype="http://schema.org/PostalAddress">
+            <div itemprop="streetAddress" class="street-address">${data.value.Address.value.StreetAddress}</div>
             <c:if test="${data.value.Address.value.ExtendedAddress.isSet}">
-                <div class="extended-address">${data.value.Address.value.ExtendedAddress}</div>
+                <div itemprop="streetAddress" class="extended-address">${data.value.Address.value.ExtendedAddress}</div>
             </c:if>
             <div>
-                <span class="postal-code">${data.value.Address.value.PostalCode}</span>
-                <span class="locality">${data.value.Address.value.Locality}</span>
+                <span itemprop="postalCode" class="postal-code">${data.value.Address.value.PostalCode}</span>
+                <span itemprop="addressLocality" class="locality">${data.value.Address.value.Locality}</span>
             </div>
             <c:if test="${data.value.Address.value.Region.isSet or data.value.Address.value.Country.isSet}">
                 <div>
                     <c:if test="${data.value.Address.value.Region.isSet}">
-                        <span class="region">${data.value.Address.value.Region}</span>
+                        <span itemprop="addressRegion" class="region">${data.value.Address.value.Region}</span>
                     </c:if>
                     <c:if test="${data.value.Address.value.Country.isSet}">
-                        <span class="country-name">${data.value.Address.value.Country}</span>
+                        <span itemprop="addressCountry" class="country-name">${data.value.Address.value.Country}</span>
                     </c:if>
                 </div>
             </c:if>
@@ -164,7 +192,7 @@
                 </apollo:icon-prefix>
                 <span>
                     <a href="tel:${fn:replace(data.value.Phone, ' ','')}" ${data.rdfa.Phone}>
-                        <span class="tel">${data.value.Phone}</span>
+                        <span itemprop="telephone" class="tel">${data.value.Phone}</span>
                     </a>
                 </span>
             </div>
@@ -176,7 +204,7 @@
                 </apollo:icon-prefix>
                 <span>
                     <a href="tel:${fn:replace(data.value.Mobile, ' ','')}" ${data.rdfa.Mobile}>
-                        <span class="tel">${data.value.Mobile}</span>
+                        <span itemprop="telephone" class="tel">${data.value.Mobile}</span>
                     </a>
                 </span>
             </div>
@@ -188,7 +216,7 @@
                 </apollo:icon-prefix>
                 <span>
                     <a href="tel:${fn:replace(data.value.Fax, ' ','')}" ${data.rdfa.Fax}>
-                        <span class="tel">${data.value.Fax}</span>
+                        <span itemprop="faxNumber" class="tel">${data.value.Fax}</span>
                     </a>
                 </span>
             </div>
@@ -206,8 +234,16 @@
         </div>
     </c:if>
 
+    <c:if test="${showvcard}">
+        <div class="card">
+            <a href="<cms:link>/system/modules/org.opencms.apollo/pages/contact.vcf?id=${cms.element.id}</cms:link>">
+                <fmt:message key="apollo.contact.vcard.download"/>
+            </a>
+        </div>
+    </c:if>
+
     <c:if test="${showstaticbutton}">
-        <apollo:link link="${link}" cssclass="btn btn-sm button-static" />
+        <apollo:link link="${link}" cssclass="btn btn-sm button-static" attr='itemprop="url"' />
     </c:if>
 
     </div>

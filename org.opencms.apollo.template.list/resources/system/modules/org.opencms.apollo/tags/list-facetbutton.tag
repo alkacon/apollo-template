@@ -1,7 +1,8 @@
-<%@ tag display-name="list-facetbutton"
-  trimDirectiveWhitespaces="true"
-  body-content="empty"
-  description="Generates a facet options dropdown button for the list"%>
+<%@ tag
+    display-name="list-facetbutton"
+    body-content="empty"
+    trimDirectiveWhitespaces="true"
+    description="Generates a facet options dropdown button for the list"%>
 
 
 <%@ attribute name="field" type="java.lang.String" required="true"

@@ -1,38 +1,39 @@
-<%@ tag 
+<%@ tag
     display-name="nav-items"
-    trimDirectiveWhitespaces="true" 
+    body-content="scriptless"
+    trimDirectiveWhitespaces="true"
     description="Loads navigation items based on a XML content configuration." %>
 
 
-<%@ attribute name="content" type="org.opencms.jsp.util.CmsJspContentAccessBean" required="true" 
+<%@ attribute name="content" type="org.opencms.jsp.util.CmsJspContentAccessBean" required="true"
     description="The navigation XML content configuration."%>
 
-<%@ attribute name="currentPageUri" type="java.lang.String" required="true" 
+<%@ attribute name="currentPageUri" type="java.lang.String" required="true"
     description="The requested page URI."%>
 
-<%@ attribute name="currentPageFolder" type="java.lang.String" required="true" 
+<%@ attribute name="currentPageFolder" type="java.lang.String" required="true"
     description="The requested page folder URI."%>
 
-<%@ attribute name="type" type="java.lang.String" required="true" 
+<%@ attribute name="type" type="java.lang.String" required="true"
     description="The type of navigation to create. Valid values are 'forSite', 'forFolder' and 'breadCrumb'"%>
 
-<%@ attribute name="var" type="java.lang.String" required="true" 
+<%@ attribute name="var" type="java.lang.String" required="true"
     description="The variable name to store the result items in."%>
 
 
-<%@ variable name-given="navStartLevel" declare="true" 
+<%@ variable name-given="navStartLevel" declare="true"
     description="The start fodler level for the navigation." %>
 
-<%@ variable name-given="navDepth" declare="true" 
+<%@ variable name-given="navDepth" declare="true"
     description="The depth of the navigation." %>
 
-<%@ variable name-given="navStartFolder" declare="true" 
+<%@ variable name-given="navStartFolder" declare="true"
     description="The start folder of the navigation." %>
 
-<%@ variable name-given="nav" declare="true" 
+<%@ variable name-given="nav" declare="true"
     description="The calulated nagivation items." %>
 
-<%@ variable name-given="nl" declare="true" 
+<%@ variable name-given="nl" declare="true"
     description="A new line for output using c:out." %>
 
 
@@ -80,10 +81,10 @@
         </c:when>
     </c:choose>
 
-    <cms:navigation 
+    <cms:navigation
         type="${type}"
         resource="${navStartFolder}"
-        startLevel="${navStartLevel}" 
+        startLevel="${navStartLevel}"
         endLevel="${endLevel}"
         locale="${cms.locale}"
         param="true"
@@ -102,12 +103,12 @@
 <!--
 No navigation items found in selected folder!
 
-type="${type}" 
-currentPageFolder="${currentPageFolder}" 
-currentPageUri="${currentPageUri}" 
+type="${type}"
+currentPageFolder="${currentPageFolder}"
+currentPageUri="${currentPageUri}"
 content.value.NavFolder="${content.value.NavFolder}"
 navStartFolder="${navStartFolder}"
-navStartLevel="${navStartLevel}" 
+navStartLevel="${navStartLevel}"
 endLevel="${endLevel}"
 navDepth="${navDepth}"
 locale="${cms.locale}"

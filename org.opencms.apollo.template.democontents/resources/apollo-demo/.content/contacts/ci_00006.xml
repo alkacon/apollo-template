@@ -2,12 +2,13 @@
 
 <ApolloContacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/contact.xsd">
   <ApolloContact language="en">
+    <Kind><![CDATA[person]]></Kind>
+    <Organization><![CDATA[Hectic Hackers Inc.]]></Organization>
     <Name>
       <FirstName><![CDATA[Mitchell]]></FirstName>
       <LastName><![CDATA[Pritchett]]></LastName>
       <Suffix><![CDATA[M.A.]]></Suffix>
     </Name>
-    <Organization><![CDATA[Hectic Hackers Inc.]]></Organization>
     <Position><![CDATA[Designer]]></Position>
     <Description name="Description0">
       <links/>

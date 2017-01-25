@@ -1,32 +1,32 @@
 <%@ tag display-name="teaserbody"
-  trimDirectiveWhitespaces="true" 
   body-content="empty"
+  trimDirectiveWhitespaces="true"
   description="Displays the main content of a teaser element."%>
 
 
-<%@ attribute name="title" type="java.lang.String" required="true" 
+<%@ attribute name="title" type="java.lang.String" required="true"
     description="The title of the teaser element." %>
 
-<%@ attribute name="text" type="java.lang.String" required="true" 
+<%@ attribute name="text" type="java.lang.String" required="true"
     description="The text of the teaser element." %>
 
-<%@ attribute name="href" type="java.lang.String" required="true" 
+<%@ attribute name="href" type="java.lang.String" required="true"
     description="The link used in the teaser element." %>
 
 
-<%@ attribute name="btntext" type="java.lang.String" required="false" 
+<%@ attribute name="btntext" type="java.lang.String" required="false"
     description="An optional button label used on the link button." %>
 
-<%@ attribute name="date" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" 
+<%@ attribute name="date" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"
     description="The date shown in the teaser." %>
 
-<%@ attribute name="enddate" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false" 
+<%@ attribute name="enddate" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"
     description="The enddate shown in the teaser." %>
 
-<%@ attribute name="showdate" type="java.lang.Boolean" required="false" 
+<%@ attribute name="showdate" type="java.lang.Boolean" required="false"
     description="Determines if the date will be shown." %>
 
-<%@ attribute name="textlength" type="java.lang.Integer" required="false" 
+<%@ attribute name="textlength" type="java.lang.Integer" required="false"
     description="The maximum length of the teaser. If no length given, full text will be used." %>
 
 

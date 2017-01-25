@@ -1,5 +1,6 @@
 <%@ tag
     display-name="map"
+    body-content="empty"
     trimDirectiveWhitespaces="true"
     description="Displays a Google map." %>
 

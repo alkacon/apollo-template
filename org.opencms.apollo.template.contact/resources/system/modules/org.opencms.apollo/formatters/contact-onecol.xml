@@ -100,5 +100,11 @@
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showVcard]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showvcard)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
   </NewFormatter>
 </NewFormatters>

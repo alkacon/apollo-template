@@ -2,6 +2,8 @@
 
 <ApolloContacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/contact.xsd">
   <ApolloContact language="en">
+    <Kind><![CDATA[person]]></Kind>
+    <Organization><![CDATA[Markup Brewers Inc.]]></Organization>
     <Name>
       <Title><![CDATA[Dr.]]></Title>
       <FirstName><![CDATA[Jake]]></FirstName>
@@ -9,7 +11,6 @@
       <LastName><![CDATA[Pritchett III]]></LastName>
       <Suffix><![CDATA[Ph. D.]]></Suffix>
     </Name>
-    <Organization><![CDATA[Markup Brewers Inc.]]></Organization>
     <Position><![CDATA[CEO]]></Position>
     <Description name="Description0">
       <links/>

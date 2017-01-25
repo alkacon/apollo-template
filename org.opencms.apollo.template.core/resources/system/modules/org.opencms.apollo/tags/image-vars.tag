@@ -1,32 +1,33 @@
-<%@ tag 
+<%@ tag
     display-name="image-vars"
-    trimDirectiveWhitespaces="true" 
+    body-content="scriptless"
+    trimDirectiveWhitespaces="true"
     description="Reads a generic Apollo nested image content and sets a series of variables for quick acesss."%>
 
 
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The image to format. Must be a generic Apollo nested image content." %>
 
-<%@ attribute name="escapecopyright" type="java.lang.Boolean" required="false" 
+<%@ attribute name="escapecopyright" type="java.lang.Boolean" required="false"
     description="If true, the image copyright text is escaped for usage in HTML attributes." %>
 
 
-<%@ variable name-given="imageLink" declare="true" 
+<%@ variable name-given="imageLink" declare="true"
     description="The internal resource path of the image, including optional scaling parameters." %>
 
-<%@ variable name-given="imageUnscaledLink" declare="true" 
+<%@ variable name-given="imageUnscaledLink" declare="true"
     description="The internal resource path of the image, without optional scaling parameters." %>
 
-<%@ variable name-given="imageUrl" declare="true" 
+<%@ variable name-given="imageUrl" declare="true"
     description="The external URL of the image." %>
- 
-<%@ variable name-given="imageCopyright" declare="true" 
+
+<%@ variable name-given="imageCopyright" declare="true"
     description="The copyright text." %>
 
-<%@ variable name-given="imageTitle" declare="true" 
+<%@ variable name-given="imageTitle" declare="true"
     description="The title of the image." %>
 
-<%@ variable name-given="imageTitleCopyright" declare="true" 
+<%@ variable name-given="imageTitleCopyright" declare="true"
     description="The combination of title and copyright." %>
 
 
@@ -58,7 +59,7 @@
     <c:set var="imageUrl"><cms:link>${imageLink}</cms:link></c:set>
 
     <%--
-        For the copyright, we check if this is set in the content first, 
+        For the copyright, we check if this is set in the content first,
         if not we try to read it from the property.
     --%>
     <c:choose>
@@ -72,18 +73,18 @@
             </c:if>
             <c:set var="imageCopyright"><cms:property name="Copyright" file="${imageUri}" default="" /></c:set>
         </c:otherwise>
-    </c:choose>    
+    </c:choose>
 
     <%--
         Set the image title from the dedicated field.
     --%>
     <c:if test="${image.value.Title.isSet}">
         <c:set var="imageTitle">${image.value.Title}</c:set>
-        <c:set var="imageTitleCopyright">${imageTitle}</c:set>        
+        <c:set var="imageTitleCopyright">${imageTitle}</c:set>
     </c:if>
 
     <%--
-        Add copyright symbol. Make sure &copy; is replaced 
+        Add copyright symbol. Make sure &copy; is replaced
         with (c) since tooltips / title attributes have problems with HTML entities.
     --%>
     <c:if test="${not empty imageCopyright}">
@@ -102,7 +103,7 @@
             </c:otherwise>
         </c:choose>
 
-        <c:set var="imageTitleCopyright">${imageTitle}${' '}${imageCopyright}</c:set>        
+        <c:set var="imageTitleCopyright">${imageTitle}${' '}${imageCopyright}</c:set>
     </c:if>
 
 </c:if>

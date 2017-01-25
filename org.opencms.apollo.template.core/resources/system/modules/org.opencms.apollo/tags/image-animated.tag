@@ -1,5 +1,6 @@
 <%@ tag
     display-name="image-animated"
+    body-content="scriptless"
     trimDirectiveWhitespaces="true"
     description="Display a responsive image with optional Ken Burns and / or shadow animation effects." %>
     <%-- See https://en.wikipedia.org/wiki/Ken_Burns" --%>
@@ -8,14 +9,17 @@
 <%@ attribute name="image" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The image to format. Must be a generic Apollo nested image content."%>
 
-<%@ attribute name="cssclass" type="java.lang.String" required="false" 
+<%@ attribute name="cssclass" type="java.lang.String" required="false"
     description="CSS class added to the div tag surrounding the image."%>
 
-<%@ attribute name="addcssclass" type="java.lang.String" required="false" 
+<%@ attribute name="addcssclass" type="java.lang.String" required="false"
     description="CSS class added directly to the anmiated div tag surrounding the image and the text."%>
 
-<%@ attribute name="cssimage" type="java.lang.String" required="false" 
+<%@ attribute name="cssimage" type="java.lang.String" required="false"
     description="CSS class added directly to the generated image tag."%>
+
+<%@ attribute name="attr" type="java.lang.String" required="false"
+    description="Attribute added directly to the generated image tag."%>
 
 <%@ attribute name="test" type="java.lang.String" required="false"
     description="Can be used to defer the decision to actually create the markup around the body to the calling element.
@@ -49,12 +53,16 @@
 
     <div class="animated-box ${addcssclass}">
         <div  ${image.value.Image.imageDndAttr} class="image-outer-box">
-            <cms:img 
-                src="${imageLink}"
-                cssclass="img-responsive image-inner-box ${cssimage}"
+            <img
+                <cms:img
+                    src="${imageLink}"
+                    partialTag="true"
+                />
+                class="img-responsive image-inner-box ${cssimage}"
                 alt="${imageTitleCopyright}"
                 title="${imageTitleCopyright}"
-            />
+                ${attr}
+            >
         </div>
 
         <%-- ####### JSP body inserted here ######## --%>

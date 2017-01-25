@@ -1,13 +1,14 @@
-<%@ tag display-name="list-facetrow"
-  trimDirectiveWhitespaces="true" 
-  body-content="empty"
-  description="Displays a series of facet and sort buttons for the list."%>
+<%@ tag
+    display-name="list-facetrow"
+    body-content="empty"
+    trimDirectiveWhitespaces="true"
+    description="Displays a series of facet and sort buttons for the list."%>
 
 
-<%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="true" 
+<%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="true"
         description="The result of a previous usage of the cms:search tag." %>
 
-<%@ attribute name="facets" type="java.lang.String" required="false" 
+<%@ attribute name="facets" type="java.lang.String" required="false"
         description="A string containing keywords that configure which filters will be shown. Multiple keyword can be used.
         Possible keywords are: [
         none,
@@ -17,7 +18,7 @@
         sort_title
         ]" %>
 
-<%@ attribute name="color" type="java.lang.String" required="false" 
+<%@ attribute name="color" type="java.lang.String" required="false"
         description="The color of the buttons." %>
 
 
@@ -52,7 +53,7 @@
                 <c:if test="${empty facets || fn:contains(facets, 'sort_order')}">
                     <c:set var="buttonLabel"><fmt:message key="sort.options.order.label" /></c:set>
                     <apollo:list-sortbutton searchresult="${search}" color="${color}"  label="${buttonLabel}" params="order_a+order_d" />
-                </c:if>    
+                </c:if>
 
                 <%-- ####### Sort by title ######## --%>
                 <c:if test="${empty facets || fn:contains(facets, 'sort_title')}">

@@ -46,6 +46,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/section-text.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/section-tile.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/section-tile.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/set-content-disposition.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/login.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/login.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/opencms-info.jsp"/>
@@ -1716,6 +1717,27 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Displays a paragraph with optional elements]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/set-content-disposition.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/set-content-disposition.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>6e4ef089-e210-11e6-a9a1-0242ac11002b</uuidstructure>
+			<uuidresource>6e4ef08a-e210-11e6-a9a1-0242ac11002b</uuidresource>
+			<datecreated>Tue, 24 Jan 2017 08:38:07 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Sets the response 'Content-Disposition' header]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
 				</property>
 			</properties>
 			<relations/>

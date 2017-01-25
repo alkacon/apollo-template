@@ -2,11 +2,12 @@
 
 <ApolloContacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/contact.xsd">
   <ApolloContact language="en">
+    <Kind><![CDATA[person]]></Kind>
+    <Organization><![CDATA[Locial Loop Ltd.]]></Organization>
     <Name>
       <FirstName><![CDATA[Pepper]]></FirstName>
       <LastName><![CDATA[Saltzman]]></LastName>
     </Name>
-    <Organization><![CDATA[Locial Loop Ltd.]]></Organization>
     <Position><![CDATA[Analyst]]></Position>
     <Image>
       <Image>
@@ -19,6 +20,7 @@
     <Contact>
       <Address>
         <StreetAddress><![CDATA[Friesenstr. 64-66]]></StreetAddress>
+        <ExtendedAddress><![CDATA[Room äöü]]></ExtendedAddress>
         <PostalCode><![CDATA[50670]]></PostalCode>
         <Locality><![CDATA[Cologne]]></Locality>
         <Region><![CDATA[NRW]]></Region>

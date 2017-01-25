@@ -1,13 +1,14 @@
-<%@ tag display-name="list-loadbutton"
-  trimDirectiveWhitespaces="true" 
-  body-content="empty"
-  description="Displays a 'load more' button for dynamic list search results."%>
+<%@ tag
+    display-name="list-loadbutton"
+    body-content="empty"
+    trimDirectiveWhitespaces="true"
+    description="Displays a 'load more' button for dynamic list search results."%>
 
 
-<%@ attribute name="search" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="true" 
+<%@ attribute name="search" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="true"
     description="The result of a previous search using the cms:search tag." %>
 
-<%@ attribute name="label" type="java.lang.String" required="false" 
+<%@ attribute name="label" type="java.lang.String" required="false"
     description="The text shown on the load button." %>
 
 

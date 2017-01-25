@@ -17,10 +17,19 @@
 
 <%-- #### Contact exposed in hCard microformat, see http://microformats.org/wiki/hcard #### --%>
 
-<div class="ap-contact ap-contact-onecol vcard ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
+<c:choose>
+    <c:when test="${value.Kind eq 'org'}">
+        <c:set var="kind">itemprop="Organization" itemscope itemtype="https://schema.org/Organization"</c:set>
+    </c:when>
+    <c:otherwise>
+        <c:set var="kind">itemprop="Person" itemscope itemtype="http://schema.org/Person"</c:set>
+    </c:otherwise>
+</c:choose>
+
+<div class="ap-contact ap-contact-onecol ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }" ${kind}>
 
     <c:set var="fragments">
-        name 
+        name
         ${cms.element.setting.labels.value}
         <c:if test="${cms.element.setting.effect.value != 'no-img'}">image</c:if>
         <c:if test="${cms.element.setting.effect.value != 'none'}">${cms.element.setting.effect.value}</c:if>
@@ -31,9 +40,11 @@
         <c:if test="${cms.element.setting.showAddress.value == 'always'}">address-always</c:if>
         <c:if test="${cms.element.setting.showPhone.value}">phone</c:if>
         <c:if test="${cms.element.setting.showEmail.value}">email</c:if>
+        <c:if test="${cms.element.setting.showVcard.value}">vcard</c:if>
     </c:set>
 
     <apollo:contact
+        kind="${value.Kind}"
         image="${value.Image}"
         link="${value.Link}"
         name="${value.Name}"
@@ -42,6 +53,7 @@
         description="${value.Description}"
         data="${value.Contact}"
         fragments="${fragments}" />
+
 </div>
 
 </cms:bundle>

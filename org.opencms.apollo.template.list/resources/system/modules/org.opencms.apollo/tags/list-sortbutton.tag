@@ -1,7 +1,8 @@
-<%@ tag display-name="list-sortbutton"
-  trimDirectiveWhitespaces="true"
-  body-content="empty"
-  description="Generates a sort options dropdown button for the list."%>
+<%@ tag
+    display-name="list-sortbutton"
+    body-content="empty"
+    trimDirectiveWhitespaces="true"
+    description="Generates a sort options dropdown button for the list."%>
 
 
 <%@ attribute name="label" type="java.lang.String" required="false"

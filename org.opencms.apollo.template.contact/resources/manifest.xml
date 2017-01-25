@@ -35,6 +35,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/contact-data.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/contact-name.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo.template.contact/"/>
+			<resource uri="/system/modules/org.opencms.apollo/pages/contact.vcf"/>
 			<resource uri="/system/workplace/resources/filetypes/a-contact.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-contact_big.png"/>
 		</resources>
@@ -253,6 +254,28 @@
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.apollo/pages</destination>
+			<type>folder</type>
+			<properties/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/pages/contact.vcf</source>
+			<destination>system/modules/org.opencms.apollo/pages/contact.vcf</destination>
+			<type>jsp</type>
+			<uuidstructure>206a57e4-e18c-11e6-a9a1-0242ac11002b</uuidstructure>
+			<uuidresource>206a57e5-e18c-11e6-a9a1-0242ac11002b</uuidresource>
+			<datecreated>Mon, 23 Jan 2017 16:51:03 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
 				</property>
 			</properties>
 			<relations/>

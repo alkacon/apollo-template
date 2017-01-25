@@ -1,5 +1,6 @@
 <%@ tag
     display-name="image-animated-imgur"
+    body-content="scriptless"
     trimDirectiveWhitespaces="true"
     description="Formates an image taken from the imgur server." %>
 

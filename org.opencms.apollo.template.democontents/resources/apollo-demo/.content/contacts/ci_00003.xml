@@ -2,11 +2,12 @@
 
 <ApolloContacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/contact.xsd">
   <ApolloContact language="en">
+    <Kind><![CDATA[person]]></Kind>
+    <Organization><![CDATA[Cascading Styles LLC]]></Organization>
     <Name>
       <FirstName><![CDATA[Cameron]]></FirstName>
       <LastName><![CDATA[Tucker]]></LastName>
     </Name>
-    <Organization><![CDATA[Cascading Styles LLC]]></Organization>
     <Position><![CDATA[Director Customer Relations]]></Position>
     <Image>
       <Image>

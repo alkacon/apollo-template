@@ -1,13 +1,14 @@
-<%@tag display-name="list-search"
-  trimDirectiveWhitespaces="true" 
-  body-content="empty"
-  description="Generates the list search configuration and triggers the search."%>
+<%@tag
+    display-name="list-search"
+    body-content="empty"
+    trimDirectiveWhitespaces="true"
+    description="Generates the list search configuration and triggers the search."%>
 
 
-<%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" 
+<%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The directory (including subdirectories) from which the elements are read." %>
 
-<%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true" 
+<%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The type of elements, that will be used." %>
 
 <%@ attribute name="sort" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="false"
@@ -16,20 +17,20 @@
 <%@ attribute name="subsite" type="java.lang.String" required="false"
     description="The subsite the current request comes from. Is needed for AJAX requests because of a then differing context." %>
 
-<%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false"   
+<%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false"
      description="The categories field from the XML content." %>
 
-<%@ attribute name="filterqueries" type="java.lang.String" required="false" 
+<%@ attribute name="filterqueries" type="java.lang.String" required="false"
     description="The search filter queries." %>
 
-<%@ attribute name="count" type="java.lang.Integer" required="false" 
+<%@ attribute name="count" type="java.lang.Integer" required="false"
     description="The amount of elements per page." %>
 
-<%@ attribute name="showexpired" type="java.lang.Boolean" required="false" 
+<%@ attribute name="showexpired" type="java.lang.Boolean" required="false"
     description="Determines if expired elements will be shown when editing the page." %>
 
 
-<%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" 
+<%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper"
     description="The results of the search" %>
 
 <%@ variable name-given="searchConfig" scope="AT_END" declare="true"
@@ -109,7 +110,7 @@
     <c:otherwise>
         <%-- ### Default: Sort by date asc ### --%>
         <c:set var="sortoptions" value="${sortdateasc},${sortdatedesc},${sorttitleasc},${sorttitledesc},${sortorderasc},${sortorderdesc}" />
-    </c:otherwise>        
+    </c:otherwise>
 </c:choose>
 
 <%-- ################################################################################################################# END Sortoption ######## --%>
@@ -131,7 +132,7 @@
 <c:set var="searchConfig">
 {
     "searchforemptyquery" : true,
-    
+
 <c:if test="${showexpired}">
     "ignoreExpirationDate" : true,
     "ignoreReleaseDate" : true,
@@ -139,7 +140,7 @@
 
     "querymodifier" : '{!type=edismax qf="content_${cms.locale} Title_prop spell"}%(query)',
     "escapequerychars" : true,
-    
+
     "extrasolrparams" : "fq=parent-folders:\"${folder}\"&fq=-type:image&fq=type:${resType}${fn:replace(extraSolrParams,'"','\\"')}",
 
     "pagesize" : ${pageSize},

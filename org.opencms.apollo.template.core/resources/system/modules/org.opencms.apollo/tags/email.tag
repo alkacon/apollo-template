@@ -1,5 +1,6 @@
 <%@ tag
     display-name="email"
+    body-content="scriptless"
     trimDirectiveWhitespaces="true"
     description="Displays an email address as link with optional obfuscation." %>
 
@@ -35,5 +36,5 @@
     href="${href}"
     title="${address}">
     <%-- Set class="email" so that hCard microformat can be supported --%>
-    <span ${obfuscate ? '' : 'class="email"'}>${address}</span>
+    <span ${obfuscate ? '' : 'class="email" itemprop="email"'}>${address}</span>
 </a>

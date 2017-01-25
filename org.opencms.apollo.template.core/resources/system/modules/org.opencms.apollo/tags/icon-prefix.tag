@@ -1,6 +1,7 @@
-<%@ tag 
+<%@ tag
     display-name="icon-prefix"
-    trimDirectiveWhitespaces="true" 
+    body-content="scriptless"
+    trimDirectiveWhitespaces="true"
     description="Displays a text label with optional icon based on the Font-Awesome library." %>
 
 
