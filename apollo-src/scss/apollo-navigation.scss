@@ -217,11 +217,11 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
         > li {
             > a {
-                border-bottom: 2px solid $nav-border;
+                margin-bottom: 2px;
 
                 &:focus {
                     background-color: transparentize($nav-header-bg, 0.25); // top level nav uses main header background
-                    border-bottom: 2px solid $nav-border; // must overwrite bootstrap default
+                    border-bottom: 0; // must overwrite bootstrap default
                 }
             }
 
@@ -242,6 +242,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             &:hover > a {
                 color: $nav-text-hover;
                 background-color: $nav-header-bg;
+                margin-bottom: 0;
                 border-bottom: 2px solid $nav-theme;
             }
 
@@ -249,6 +250,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
                 // the top level menu entry that belongs to the currently opened page
                 color: $nav-theme;
                 background-color: transparentize($nav-header-bg, 0.25);  // top level nav uses main header background
+                margin-bottom: 0;
                 border-bottom: 2px solid $nav-theme;
 
                 &:hover {
