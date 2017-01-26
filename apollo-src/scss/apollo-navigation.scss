@@ -191,7 +191,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
     // top level nav elements
     > li {
-        position: static;
+        position: relative;
         transition: all 1s ease-out;
 
         > a {
@@ -576,7 +576,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
 .mega-menu {
 
-    .dropdown {
+    .nav > li.dropdown.mega {
         position: static;
     }
 

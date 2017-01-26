@@ -52,6 +52,18 @@ var ApolloMegaMenu = function(jQ) {
             for (var i = 0; i < $megaMenus.length; i++) {
                 var $megaMenu = $megaMenus.eq(i);
                 insertMenu($megaMenu.data("menu"), $megaMenu);
+
+                $megaMenu.on('mouseenter', function(e) {
+
+                    var $this = jQ(this);
+                    var $menu = $this.find('.dropdown-megamenu');
+                    var posTop = $this.position().top + $this.outerHeight();
+
+                    if (DEBUG) console.info("Mega menu top offset position: " + posTop);
+
+                    $menu.css({'top':'' + posTop + 'px'});
+                });
+
             }
         }
     }
