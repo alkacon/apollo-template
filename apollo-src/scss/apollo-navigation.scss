@@ -195,14 +195,14 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         transition: all 1s ease-out;
 
         > a {
-            background: none;
+            background-color: transparentize($nav-header-bg, 0.25);
+            color: $nav-text;
             text-transform: uppercase;
             font-size: 15px;
             font-weight: 400;
             position: relative;
             bottom: -2px;
             padding: 9px 20px 9px 20px;
-            color: $nav-text;
 
             &:after {
                 position: absolute;
@@ -220,7 +220,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
                 border-bottom: 2px solid $nav-border;
 
                 &:focus {
-                    background: $nav-header-bg; // top level nav uses main header background
+                    background-color: transparentize($nav-header-bg, 0.25); // top level nav uses main header background
                     border-bottom: 2px solid $nav-border; // must overwrite bootstrap default
                 }
             }
@@ -241,13 +241,14 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             &.active:hover > a,
             &:hover > a {
                 color: $nav-text-hover;
+                background-color: $nav-header-bg;
                 border-bottom: 2px solid $nav-theme;
             }
 
             &.active > a {
                 // the top level menu entry that belongs to the currently opened page
                 color: $nav-theme;
-                background: $nav-header-bg;  // top level nav uses main header background
+                background-color: transparentize($nav-header-bg, 0.25);  // top level nav uses main header background
                 border-bottom: 2px solid $nav-theme;
 
                 &:hover {
@@ -357,7 +358,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
     #searchButtonHeader .search {
         color: $nav-text;
-        background: none;
+        background-color: transparentize($nav-header-bg, 0.25);
         cursor: pointer;
         font-size: 15px;
         min-width: 35px;
@@ -365,12 +366,13 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         display: inline-block;
         position: relative;
         bottom: -2px;
-        border-bottom: solid 2px transparent;
+        border-bottom: solid 2px $nav-border;
         padding: 11px 0 12px;
 
         &:focus,
         &:hover {
             color: $nav-text-hover;
+            background-color: $nav-header-bg;
             border-bottom-color: $nav-theme;
         }
     }

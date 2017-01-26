@@ -22,7 +22,8 @@
 // https://www.christianheilmann.com/2007/08/22/again-with-the-module-pattern-reveal-something-to-the-world/
 var ApolloList = function(jQ) {
 
-    var list_lock = new Array();
+    // list locks to prevent triggering actions while load still in process
+    var m_list_lock = {};
 
     function reloadList(searchStateParameters, elem, resetArchive) {
 
@@ -35,8 +36,8 @@ var ApolloList = function(jQ) {
     // Used for both pagination and scroll-reload lists
     function doReloadInnerList(searchStateParameters, elem) {
 
-        if (typeof list_lock[elem.attr("id")] === "undefined" || !list_lock[elem.attr("id")]) {
-            list_lock[elem.attr("id")] = true;
+        if (typeof m_list_lock[elem.attr("id")] === "undefined" || !m_list_lock[elem.attr("id")]) {
+            m_list_lock[elem.attr("id")] = true;
             if (typeof elem === 'undefined') {
                 elem = $('.ap-list-entries').first();
             }
@@ -57,13 +58,13 @@ var ApolloList = function(jQ) {
                 $(resultList).filter(".list-entry").appendTo(entryBox);
                 $(resultList).filter('.list-append-position').appendTo(elem.find('.ap-list-pagination'));
                 $(resultList).filter(".list-options").appendTo(listOptionBox);
-                if (list_lock && $(resultList).filter(".list-entry").length == 0) {
+                if (m_list_lock && $(resultList).filter(".list-entry").length == 0) {
                     showEmpty(elem);
                 }
                 spinner.removeClass("fadeIn").addClass("fadeOut");
                 entryBox.css("min-height", "0");
                 _OpenCmsReinitEditButtons();
-                list_lock[elem.attr("id")] = false;
+                m_list_lock[elem.attr("id")] = false;
             });
         }
     }
@@ -71,8 +72,11 @@ var ApolloList = function(jQ) {
     // Used for scroll-reload lists
     function appendInnerList(searchStateParameters, elem) {
 
-        if (typeof list_lock[elem.attr("id")] === "undefined" || !list_lock[elem.attr("id")]) {
-            list_lock[elem.attr("id")] = true;
+        var listId = elem.attr("id");
+        if (DEBUG) console.info("appendInnerList() called id=" + listId + " parameters=" + searchStateParameters);
+
+        if (typeof m_list_lock[elem.attr("id")] === "undefined" || !m_list_lock[elem.attr("id")]) {
+            m_list_lock[elem.attr("id")] = true;
             var spinner = elem.find(".spinner");
             var entryBox = elem.find(".ap-list-box");
             spinner.hide().removeClass("fadeOut").addClass("fadeIn").css("top", entryBox.height() - 200).show();
@@ -89,7 +93,7 @@ var ApolloList = function(jQ) {
                 }
                 spinner.removeClass("fadeIn").addClass("fadeOut");
                 _OpenCmsReinitEditButtons();
-                list_lock[elem.attr("id")] = false;
+                m_list_lock[elem.attr("id")] = false;
             });
         }
     }
@@ -136,21 +140,29 @@ var ApolloList = function(jQ) {
 
     function init() {
 
-        $(".ap-list-entries").each(function() {
+        if (DEBUG) console.info("ApolloList.init()");
 
-            reloadList("", $(this));
-            var list = $(this);
-            if (list.data("dynamic") === true) {
-                // load more from list if scrolled to last item
-                $(window).scroll(function(event) {
+        var $listElements = jQ('.ap-list-entries');
 
-                    var pag = list.find(".list-append-position");
-                    if (pag.length && pag.data("dynamic") && pag.visible(true)) {
-                        appendInnerList(list.find('.loadMore').attr('data-load'), list);
-                    }
-                });
-            }
-        });
+        if (DEBUG) console.info(".ap-list-entries elements found: " + $listElements.length);
+
+        if ($listElements.length > 0 ) {
+            $listElements.each(function() {
+
+                reloadList("", $(this));
+                var list = $(this);
+                 if (list.data("dynamic") === true) {
+                    // load more from list if scrolled to last item
+                    $(window).scroll(function(event) {
+
+                        var appendPosition = list.find(".list-append-position");
+                        if (appendPosition.length && appendPosition.data("dynamic") && appendPosition.visible(true)) {
+                            appendInnerList(list.find('.loadMore').attr('data-load'), list);
+                        }
+                    });
+                }
+            });
+        }
     }
 
     // public available functions
@@ -158,6 +170,7 @@ var ApolloList = function(jQ) {
         init: init,
         archiveHighlight: archiveHighlight,
         archiveRemoveHighlight: archiveRemoveHighlight,
+        appendInnerList: appendInnerList,
         reload: reloadList
     }
 
