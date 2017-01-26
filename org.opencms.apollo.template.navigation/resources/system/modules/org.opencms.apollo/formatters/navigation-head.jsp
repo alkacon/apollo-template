@@ -23,8 +23,8 @@
 
     <c:if test="${value.Container.toBoolean}">
         <div class="head-container">
-            <cms:container 
-                name="head-bg" 
+            <cms:container
+                name="head-bg"
                 type="segment"
                 width="1200"
                 maxElements="50"
@@ -35,11 +35,11 @@
                     <cms:bundle basename="org.opencms.apollo.template.core.messages">
                         <c:set var="message"><fmt:message key="apollo.page.text.emptycontainer" /></c:set>
                     </cms:bundle>
-                    <apollo:container-box 
-                        label="${message}" 
-                        boxType="container-box" 
-                        type="segment" 
-                        role="ROLE.DEVELOPER" 
+                    <apollo:container-box
+                        label="${message}"
+                        boxType="container-box"
+                        type="segment"
+                        role="ROLE.DEVELOPER"
                     />
                 </c:if>
             </cms:container>
@@ -78,7 +78,7 @@
 
     <div class="head-toggle container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-            <span class="sr-only">Toggle navigation</span> 
+            <span class="sr-only">Toggle navigation</span>
             <span class="fa fa-bars"></span>
         </button>
     </div>
@@ -86,8 +86,8 @@
     <apollo:nav-items
         type="forSite"
         content="${content}"
-        currentPageFolder="${cms.requestContext.folderUri}" 
-        currentPageUri="${cms.requestContext.uri}" 
+        currentPageFolder="${cms.requestContext.folderUri}"
+        currentPageUri="${cms.requestContext.uri}"
         var="nav">
 
         <%-- Set mega menu variables --%>
@@ -98,7 +98,7 @@
         <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
         <div class="container">
 
-        <ul class="nav navbar-nav"> 
+        <ul class="nav navbar-nav">
         <c:forEach var="i" begin="0" end="${navLength}" >
 
             <c:set var="navElem" value="${nav.items[i]}" />
@@ -107,7 +107,7 @@
             <c:set var="isFirstLevel" value="${navElem.navTreeLevel eq navStartLevel}" />
             <c:set var="nextIsFirstLevel" value="${nextLevel eq navStartLevel}" />
 
-            <c:set var="isCurrentPage" value="${navElem.navigationLevel ? 
+            <c:set var="isCurrentPage" value="${navElem.navigationLevel ?
                 fn:startsWith(cms.requestContext.uri, navElem.parentFolderName) :
                 fn:startsWith(cms.requestContext.uri, navElem.resourceName)}" />
 
@@ -127,6 +127,7 @@
                 <c:if test="${cms.vfs.existsXml[megaMenuVfsPath]}">
                     <c:set var="megaMenuLink"><cms:link>${megaMenuVfsPath}</cms:link></c:set>
                     <c:set var="megaMenu" value=' data-menu="${megaMenuLink}"' />
+                    <c:set var="listType" value="${listType} mega" />
                 </c:if>
             </c:if>
 
@@ -202,11 +203,11 @@
             </c:if>
         </h1>
 
-        <apollo:nav-items 
+        <apollo:nav-items
             type="breadCrumb"
             content="${content}"
-            currentPageFolder="${cms.requestContext.folderUri}" 
-            currentPageUri="${cms.requestContext.uri}" 
+            currentPageFolder="${cms.requestContext.folderUri}"
+            currentPageUri="${cms.requestContext.uri}"
             var="nav">
 
             <ul class="pull-right breadcrumb">
