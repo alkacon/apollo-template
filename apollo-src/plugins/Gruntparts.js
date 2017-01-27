@@ -31,6 +31,7 @@ exports.cssSrc = [
 
 exports.jsSrc = [
     mf + 'modernizr/modernizr.js',
+    mf + 'match-height/jquery.matchHeight.js',
     mf + 'photoswipe/photoswipe.js',
     mf + 'photoswipe/photoswipe-ui-default.js',
     mf + 'shariff/shariff.min.js',

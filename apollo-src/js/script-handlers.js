@@ -84,7 +84,7 @@ var ApolloHandlers = function(jQ) {
     function handleClickmeShowme() {
 
         var $clickSections = jQ('.clickme-showme');
-        if (DEBUG) console.info("clickme-showme elements found: " + $clickSections.length);
+        if (DEBUG) console.info(".clickme-showme elements found: " + $clickSections.length);
         $clickSections.each(function() {
 
             var $element = jQ(this);
@@ -106,11 +106,23 @@ var ApolloHandlers = function(jQ) {
     }
 
 
+    // match-height sections
+    function handleMatchHeight() {
+
+        var $mhSections = jQ('.match-height');
+        if (DEBUG) console.info(".match-height elements found: " + $mhSections.length);
+        if ($mhSections.length > 0) {
+            $mhSections.matchHeight();
+        }
+    }
+
+
     function init() {
 
         if (DEBUG) console.info("ApolloHandlers.init()");
 
         handleHeadNavigation();
+        handleMatchHeight();
         handleSmoothScrolling();
         handleClickmeShowme();
     }
