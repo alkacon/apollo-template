@@ -59,6 +59,12 @@
     .copyright {
         font-size: 0.7em;
     }
+
+    @if ($default-border-radius != 0) {
+        img {
+            border-radius: $default-border-radius * 2;
+        }
+    }
 }
 
 /* Image gallery image enter animation, used when the image gallery is displayed */

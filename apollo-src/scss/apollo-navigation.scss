@@ -23,23 +23,29 @@
 
 // Variables
 
-$nav-theme:         $main-theme !default;   // used for 1st level text and big colored border above / below menus
-$nav-text:          $grey-darker !default;  // standard text color of the nav menu entries
-$nav-bg:            $white !default;        // standard background of the nav menu entries
-$nav-text-hover:    $nav-theme !default;    // hover text color of the nav menu entries
-$nav-bg-hover:      $grey-light !default;   // hover background of the nav menu entries
-$nav-text-active:   $nav-text !default;     // the current page in navigation text
-$nav-bg-active:     $grey-light !default;   // the current page in navigation background
-$nav-border:        $grey-light !default;   // the border color for the navigation
+$nav-theme:                 $main-theme !default;   // used for 1st level text and big colored border above / below menus
+$nav-text:                  $grey-darker !default;  // standard text color of the nav menu entries
+$nav-bg:                    $white !default;        // standard background of the nav menu entries
+$nav-text-hover:            $nav-theme !default;    // hover text color of the nav menu entries
+$nav-bg-hover:              $grey-light !default;   // hover background of the nav menu entries
+$nav-text-active:           $nav-text !default;     // the current page in navigation text color
+$nav-header-text-active:    $nav-theme !default;    // the current head element in navigation text color
+$nav-bg-active:             $grey-light !default;   // the current page in navigation background color
+$nav-border:                $grey-light !default;   // the border color for the navigation
 
-$nav-header-bg:     $white !default;        // background of the main header
-$nav-beadcrump-bg:  $grey-lighter !default; // background of the breadcrumps
+$nav-header-bg:             $white !default;        // background of the main header
+$nav-beadcrump-bg:          $grey-lighter !default; // background of the breadcrumps
 
-$nav-toggle:        $nav-theme !default;                // colors for the "nav-toggle" button
-$nav-toggle-text:   $white !default;                    // this is the button displayed on small screens to
-$nav-toggle-hover:  $main-theme-complementary !default; // show / hide the navigation
+$nav-toggle:                $nav-theme !default;                // colors for the "nav-toggle" button
+$nav-toggle-text:           $white !default;                    // this is the button displayed on small screens to
+$nav-toggle-hover:          $main-theme-complementary !default; // show / hide the navigation
 
-$nav-shadow:        $dropshadow !default;   // The shadow effect used
+$nav-shadow:                $dropshadow !default;   // The shadow effect used
+
+$nav-font-size:             13px !default;          // font size of dropdown entries and side navigation
+$nav-font-header-size:      15px !default;          // font size of head entries
+$nav-padding:               6px 15px !default;      // padding for dropdown entries
+$nav-header-padding:        9px 20px !default;      // padding for head entries
 
 /* The Apollo header */
 
@@ -198,11 +204,11 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             background-color: transparentize($nav-header-bg, 0.25);
             color: $nav-text;
             text-transform: uppercase;
-            font-size: 15px;
+            font-size: $nav-font-header-size;
             font-weight: 400;
             position: relative;
             bottom: -2px;
-            padding: 9px 20px 9px 20px;
+            padding: $nav-header-padding;
 
             &:after {
                 position: absolute;
@@ -248,7 +254,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
 
             &.active > a {
                 // the top level menu entry that belongs to the currently opened page
-                color: $nav-theme;
+                color: $nav-header-text-active;
                 background-color: transparentize($nav-header-bg, 0.25);  // top level nav uses main header background
                 margin-bottom: 0;
                 border-bottom: 2px solid $nav-theme;
@@ -279,7 +285,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
             > a {
                 // a top level menu entry
                 background: $nav-bg;
-                font-size: 14px;
+                font-size: $nav-font-header-size;
                 padding: 9px 10px;
                 bottom: 0px;
                 border-bottom: solid 1px $nav-border;
@@ -362,7 +368,7 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         color: $nav-text;
         background-color: transparentize($nav-header-bg, 0.25);
         cursor: pointer;
-        font-size: 15px;
+        font-size: $nav-font-header-size;
         min-width: 35px;
         text-align: center;
         display: inline-block;
@@ -492,9 +498,9 @@ $nav-shadow:        $dropshadow !default;   // The shadow effect used
         border-bottom: solid 2px $nav-theme;
 
         li a {
-            font-size: 13px;
+            font-size: $nav-font-size;
             font-weight: 400;
-            padding: 6px 15px;
+            padding: $nav-padding;
         }
 
         li:last-child > a {
@@ -814,7 +820,7 @@ $foot-light-link-hover-color:   $main-theme-hover !default;
         border-left: none;   // remove all boostrap default borders
         border-right: none;  // remove all boostrap default borders
         margin-bottom: 0;    // remove boostrap default margin
-        font-size: 13px;
+        font-size: $nav-font-size;
         padding: 0;
 
         a {
@@ -881,6 +887,9 @@ $foot-light-link-hover-color:   $main-theme-hover !default;
     li.currentpage {
         // highlight the current page
         background: $nav-bg-active;
+        > a {
+            color: $nav-text-active;
+        }
 
         &:hover {
             border-color: $nav-border;

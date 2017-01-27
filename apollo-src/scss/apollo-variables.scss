@@ -81,6 +81,7 @@ $text-dark:         #555 !default;
 $text-header:       $text-dark !default;
 $text-content:      $text-dark !default;
 $page-background:   $white !default;
+$default-border-radius: 0 !default;     // default border radius for all sections
 
 // Drop shadow color for effects
 $dropshadow:        rgba(0, 0, 0, 0.3) !default;
@@ -172,10 +173,11 @@ $container-sm-useable:  $container-sm - (2 * $gutter) !default;
 $container-md-useable:  $container-md - (2 * $gutter) !default;
 $container-lg-useable:  $container-lg - (2 * $gutter) !default;
 
-
+// Controls the lightness threshold where the text is switched
+$text-lightness-threshold: 69 !default;
 // function to calculate the best color for text based on the background
 @function get-text-color($color) {
-    @if (lightness($color) > 69) { // 58 orange, 69 grey to use light text
+    @if (lightness($color) > $text-lightness-threshold) { // 58 orange, 69 grey to use light text
         @return $text-dark; // light backgorund, dark text
     } @else {
         @return $text-light; // dark background, light text

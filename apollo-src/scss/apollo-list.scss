@@ -186,6 +186,16 @@ $pagination-border:     $grey-light !default;
             text-align: right;
         }
     }
+
+    @if ($default-border-radius != 0) {
+        // overwrite some really nasty bootstrap defaults regarding round corners
+        .btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
+        .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle,
+        .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn,
+        .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
+            border-radius: $default-border-radius;
+        }
+    }
 }
 
 

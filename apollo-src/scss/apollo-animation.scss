@@ -36,8 +36,11 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 @mixin animated-box-reset {
 
     box-shadow: none;
-     transition: all 0.4s $easeOutQuad;
-     z-index: 5;
+    transition: all 0.4s $easeOutQuad;
+    z-index: 5;
+    @if ($default-border-radius != 0) {
+        border-radius: $default-border-radius;
+    }
 }
 
 /**
@@ -63,6 +66,9 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 
     // Reverse the shadow effect on the surrounding box if no hover
     transition: box-shadow 0.35s $easeInQuad;
+    @if ($default-border-radius != 0) {
+        border-radius: $default-border-radius;
+    }
 
     // Shrink the inner box on hover
     &:hover.animated-box .text-box,
@@ -101,10 +107,16 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 
     // Reverse the shadow effect on the surrounding box if no hover
     transition: box-shadow 0.35s $easeInQuad;
+    @if ($default-border-radius != 0) {
+        border-radius: $default-border-radius;
+    }
 
     // Shrink the inner box on hover
     &:hover .animated-box {
         transform: scale(0.925);
+        @if ($default-border-radius != 0) {
+            border-radius: $default-border-radius;
+        }
     }
 
     // Reverse the effect to the animated box if no hover
@@ -132,6 +144,9 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     &:hover .animated-box {
         transform: scale(1.075);
         box-shadow: 0 0 10px 1px $dropshadow;
+        @if ($default-border-radius != 0) {
+            border-radius: $default-border-radius;
+        }
     }
 
     // Animated text gets a slight border
@@ -217,6 +232,12 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     &.image-outer-box,
     .image-outer-box {
         overflow: hidden;
+    }
+
+    @if ($default-border-radius != 0) {
+        .animated-box {
+            border-radius: $default-border-radius;
+        }
     }
 }
 

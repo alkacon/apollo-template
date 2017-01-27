@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -25,7 +25,7 @@ $headline-linecolor:    $main-theme !default;
 $headline-bottom:       1px dotted $grey-light !default;
 $line-height-content:   ($target-line-height / $font-content-size) !default;
 
-$font-header-step:      round($font-header-size / 6) !default; 
+$font-header-step:      round($font-header-size / 6) !default;
 
 $h1-size: $font-header-size + $font-header-step !default;
 $h1-height: round($h1-size * 1.25) !default;
@@ -50,7 +50,7 @@ body {
     font-weight: normal;
     color: $text-content;
     line-height: $line-height-content;
-    background-color: $grey-light; // this is to extend the footer 
+    background-color: $grey-light; // this is to extend the footer
 }
 
 #apollo-page {
@@ -69,7 +69,7 @@ h6, .h6 {
     font-weight: $font-header-weight;
     color: $text-header;
     margin-top: 5px;
-    text-shadow: none; 
+    text-shadow: none;
 }
 
 .ap-plain {
@@ -115,7 +115,7 @@ h6, .h6 {
 }
 
 .headline h2,
-.headline h3, 
+.headline h3,
 .headline h4 {
     display: inline-block;
     margin: 0 0 -2px 0;
@@ -138,7 +138,7 @@ a {
         color: $main-theme;
         outline: 0 !important;
     }
-    &:focus, 
+    &:focus,
     &:hover {
         color: $main-theme-hover;
         outline: 0 !important;
@@ -187,7 +187,7 @@ span.label {
 /* Extend Bootstrap badges */
 
 .badge {
-    border-radius: 4px !important; 
+    border-radius: 4px !important;
 }
 
 span.badge {

@@ -159,6 +159,19 @@ $link-colors:            ((black,  $black, $grey-darker),
 
 /* Border base */
 
+@each $line-size in $border-sizes {
+
+    .bo-#{""+$line-size}  {
+        border: #{$line-size}px solid $border-default-color;
+        padding: 20px;
+        @if ($default-border-radius != 0) {
+            border-radius: $default-border-radius;
+        }
+    }
+}
+
+/* Borders with round corners */
+
 @each $radius-name, $radius in $border-radiuses {
 
     .bo-radius-#{""+$radius-name} {
@@ -166,17 +179,6 @@ $link-colors:            ((black,  $black, $grey-darker),
         border-radius: $radius;
     }
 }
-
-/* Borders with round corners */
-
-@each $line-size in $border-sizes {
-
-    .bo-#{""+$line-size}  {
-        border: #{$line-size}px solid $border-default-color;
-        padding: 20px;
-    }
-}
-
 
 /* Colored borders */
 

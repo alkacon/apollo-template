@@ -55,6 +55,9 @@ $calendar-sheet-border: $grey-light !default;
     box-shadow: $panel-shadow;
     text-align: center; 
     background: $grey-lighter;
+    @if ($default-border-radius != 0) {
+        border-radius: $default-border-radius;
+    }
 
     &:before {
         border-bottom: 20px solid $main-theme;

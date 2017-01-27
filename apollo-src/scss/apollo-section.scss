@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -24,6 +24,9 @@
 .ap-section {
 
     margin-bottom: 20px;
+    @if ($default-border-radius != 0) {
+        border-radius: $default-border-radius;
+    }
 
     .copyright {
         position: relative;
@@ -44,7 +47,11 @@
 .ap-section.jumbotron {
 
     background-color: $grey-lighter;
-    border-radius: 0;
+    @if ($default-border-radius != 0) {
+        border-radius: $default-border-radius * 2;
+    } @else {
+        border-radius: 0; // overwrite bootstrap default
+    }
 
     // Jumbotron headline.
     h1, .h1 {
@@ -62,6 +69,9 @@
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
+    @if ($default-border-radius != 0) {
+        border-radius: $default-border-radius;
+    }
 
     *:not(a):not(span) {
         color: $text-light;
@@ -79,7 +89,7 @@
         text-decoration: none;
         &:hover {
             text-decoration: none;
-        } 
+        }
     }
 
     @media (max-width: $screen-xs-max) {
@@ -171,6 +181,16 @@
     }
 }
 
+@if ($default-border-radius != 0) {
+    .zoom-overlay .zoom-icon,
+    .zoom-overlay .img-responsive,
+    .image-inner-box,
+    .image-outer-box {
+         border-radius: $default-border-radius;
+    }
+}
+
+
 /* Classes to set the gid layout margins */
 /* Add margin below the header */
 .area-head {
@@ -188,7 +208,7 @@
     }
 }
 
-/* Apply "no-gutter" to a bootsrap "row" in order to remove the default padding from 
+/* Apply "no-gutter" to a bootsrap "row" in order to remove the default padding from
    the included divs. To be used to create full width screen elements using a structure like this:
    div.container-fluid > div.row.no-gutter > div.col-xs-12. */
 .no-gutter,

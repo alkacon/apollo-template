@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -22,35 +22,35 @@
  */
 
 $btn-default:           $main-theme !default;
-$btn-default-active:    $main-theme-hover !default;
+$btn-default-hover:     $main-theme-hover !default;
 $btn-text:              $text-light !default;
 $btn-dark-text:         $text-dark !default;
 $btn-text-transform:    none !default;
 $btn-border-style:      none !default;
-$btn-border-radius:     0 !default;
+$btn-border-radius:     $default-border-radius !default;
 $btn-min-width:         0 !default;
 $btn-colors:            $reduced-colors !default;
 
-@mixin apollo-button($bg-color, $highlight-color) {
+@mixin apollo-button($bg-color, $hover-color) {
 
     background-color: $bg-color;
     color: get-text-color($bg-color);
-    border-color: $highlight-color;
+    border-color: $hover-color;
 
     &:hover,
     &:active,
     &.active,
     .open .dropdown-toggle & {
-        color: get-text-color($highlight-color);
-        background-color: $highlight-color;
-        border-color: $highlight-color;
+        color: get-text-color($hover-color);
+        background-color: $hover-color;
+        border-color: $hover-color;
     }
 
     &.disabled,
-    &[disabled], 
+    &[disabled],
     fieldset[disabled] & {
-        background-color: $highlight-color;
-        border-color: $highlight-color;
+        background-color: $hover-color;
+        border-color: $hover-color;
     }
 }
 
@@ -62,14 +62,14 @@ $btn-colors:            $reduced-colors !default;
     line-height: $line-height-content;
     min-width: $btn-min-width; // was 160
     text-align: center;
-    box-shadow: none; 
+    box-shadow: none;
     border: $btn-border-style;
     border-radius: $btn-border-radius;
     text-transform: $btn-text-transform;
     margin: 0;
     transition: all 0.33s;
 
-    @include apollo-button($btn-default, $btn-default-active);
+    @include apollo-button($btn-default, $btn-default-hover);
 }
 
 .btn:focus,
@@ -99,20 +99,20 @@ $btn-colors:            $reduced-colors !default;
 }
 
 .btn-default  {
-    @include apollo-button($btn-default, $btn-default-active);
+    @include apollo-button($btn-default, $btn-default-hover);
 }
 
 /* Colored buttons */
 
-@each $color-name, $bg-color, $highlight-color in $btn-colors {
+@each $color-name, $bg-color, $hover-color in $btn-colors {
 
     .color-#{""+$color-name} .btn,
     .btn.color-#{""+$color-name}  {
-        @include apollo-button($bg-color, $highlight-color);
+        @include apollo-button($bg-color, $hover-color);
     }
 
     .color-#{""+$color-name} .dropdown-menu > .active {
-        > a, 
+        > a,
         > a:hover {
             color: get-text-color($bg-color);
             background-color: $bg-color;
