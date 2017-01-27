@@ -137,6 +137,30 @@
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/style-religio.min.css</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/style-religio.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>6869289a-e474-11e6-ac0a-0242ac11002b</uuidstructure>
+			<uuidresource>6869289b-e474-11e6-ac0a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 27 Jan 2017 09:38:50 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.theme/resources/css/style-religio.min.css.map</source>
+			<destination>system/modules/org.opencms.apollo.theme/resources/css/style-religio.min.css.map</destination>
+			<type>plain</type>
+			<uuidstructure>68786adc-e474-11e6-ac0a-0242ac11002b</uuidstructure>
+			<uuidresource>68786add-e474-11e6-ac0a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 27 Jan 2017 09:38:50 GMT</datecreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>system/modules/org.opencms.apollo.theme/resources/fonts</destination>
 			<type>folder</type>
 			<uuidstructure>cd80a57b-514d-11e5-abeb-0242ac11002b</uuidstructure>
