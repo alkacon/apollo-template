@@ -39,6 +39,7 @@ var moduleDir;
 
 var mapScss;
 var debugJs;
+var cssOnly;
 
 var path = require('path');
 
@@ -52,6 +53,11 @@ exports.initGrunt = function(_grunt, _buildDir) {
 
     mapScss = grunt.option('mapscss');
     debugJs = grunt.option('debug');
+    cssOnly = grunt.option('cssonly');
+
+    if (cssOnly) {
+        console.log('NOTE: Only generating CSS, no JavaScript or Resources');
+    }
 
     if (grunt.option('verbose')) {
         console.log('OpenCms module source directory   : ' + moduleDir);
@@ -138,10 +144,16 @@ exports.registerGruntTasks = function() {
     themes = _normalizeAll(themes);
     sassSrc = _normalizeAll(sassSrc);
     cssSrc = _normalizeAll(cssSrc);
-    jsSrc = _normalizeAll(jsSrc);
-    resources = _normalizeAll(resources);
-    resourceSources = _normalizeAll(resourceSources);
-
+    if (! cssOnly) {
+        jsSrc = _normalizeAll(jsSrc);
+        resources = _normalizeAll(resources);
+        resourceSources = _normalizeAll(resourceSources);
+    } else {
+        // just clear all non-css input resource arrays
+        jsSrc = [];
+        resources = [];
+        resourceSources = [];
+    }
     if (grunt.option('verbose')) {
         _showImports();
     }
@@ -519,7 +531,7 @@ exports.cssSrc = function () {
 }
 
 exports.jsSrc = function () {
-    return jsSrc;
+    return cssOnly ? [] : jsSrc;
 }
 
 exports.debugJs = function () {
@@ -527,7 +539,7 @@ exports.debugJs = function () {
 }
 
 exports.resources = function () {
-    return resources;
+    return cssOnly ? [] : resources;
 }
 
 exports.themeSassSrc = function () {
