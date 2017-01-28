@@ -187,13 +187,14 @@ $pagination-border:     $grey-light !default;
         }
     }
 
-    @if ($default-border-radius != 0) {
+    @if ($btn-border-radius != 0) {
+        // we rely on 'apollo-button.scss' begin included first
         // overwrite some really nasty bootstrap defaults regarding round corners
         .btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
         .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle,
         .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn,
         .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
-            border-radius: $default-border-radius;
+            border-radius: $btn-border-radius;
         }
     }
 }

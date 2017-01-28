@@ -21,11 +21,14 @@
  * Syles used by the "content section" element.
  */
 
+$section-border-radius:     $default-border-radius !default;
+$iconbox-border-radius:     $default-border-radius !default;
+
 .ap-section {
 
     margin-bottom: 20px;
-    @if ($default-border-radius != 0) {
-        border-radius: $default-border-radius;
+    @if ($section-border-radius != 0) {
+        border-radius: $section-border-radius;
     }
 
     .copyright {
@@ -47,8 +50,8 @@
 .ap-section.jumbotron {
 
     background-color: $grey-lighter;
-    @if ($default-border-radius != 0) {
-        border-radius: $default-border-radius * 2;
+    @if ($section-border-radius != 0) {
+        border-radius: $section-border-radius * 2;
     } @else {
         border-radius: 0; // overwrite bootstrap default
     }
@@ -69,8 +72,8 @@
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
-    @if ($default-border-radius != 0) {
-        border-radius: $default-border-radius;
+    @if ($iconbox-border-radius != 0) {
+        border-radius: $iconbox-border-radius;
     }
 
     *:not(a):not(span) {
@@ -178,15 +181,6 @@
 
     .text {
         margin-top: 10px;
-    }
-}
-
-@if ($default-border-radius != 0) {
-    .zoom-overlay .zoom-icon,
-    .zoom-overlay .img-responsive,
-    .image-inner-box,
-    .image-outer-box {
-         border-radius: $default-border-radius;
     }
 }
 

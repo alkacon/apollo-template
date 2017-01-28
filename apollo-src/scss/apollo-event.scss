@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -21,8 +21,8 @@
  * Styles for the "Evemnt" element
  */
 
-$calendar-sheet-border: $grey-light !default;
-
+$calendar-sheet-border:         $grey-light !default;
+$calendar-sheet-border-radius:  $default-border-radius !default;
 
 /* Event teaser with calender sheet */
 
@@ -38,7 +38,7 @@ $calendar-sheet-border: $grey-light !default;
     }
 
     .teaser-visual {
-        // the teaser visual for the event is the calendar sheet 
+        // the teaser visual for the event is the calendar sheet
         > a:not(.btn).link, // not(.btn) addition required because of list colors
         > a:not(.btn).link:hover {
             color: $text-dark;
@@ -53,10 +53,10 @@ $calendar-sheet-border: $grey-light !default;
     min-width:  90px;
     border:     1px solid $calendar-sheet-border;
     box-shadow: $panel-shadow;
-    text-align: center; 
+    text-align: center;
     background: $grey-lighter;
-    @if ($default-border-radius != 0) {
-        border-radius: $default-border-radius;
+    @if ($calendar-sheet-border-radius != 0) {
+        border-radius: $calendar-sheet-border-radius;
     }
 
     &:before {
@@ -66,7 +66,7 @@ $calendar-sheet-border: $grey-light !default;
         margin: 0 10%;
     }
 
-    .day, 
+    .day,
     .monthYear {
         padding: 10px;
     }

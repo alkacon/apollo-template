@@ -24,6 +24,8 @@
 
 // Apollo tiles and squares
 
+$tile-border-radius:        $default-border-radius !default;
+
 $ti-maxCols:    12 !default;
 $ti-margin:     0 !default;
 
@@ -93,9 +95,9 @@ $sq-heights-lg:    ((0o25, 0.25), (0o5, 0.5), (1o5, 1.5), (2, 2)) !default;
     position: relative;
     width: 100%;
     padding: 0 0 100% 0 !important; // !important because the "padding-bottom: 100%" is what makes the squares sqaure
-    @if ($default-border-radius != 0) {
+    @if ($tile-border-radius != 0) {
         .content {
-            border-radius: $default-border-radius;
+            border-radius: $tile-border-radius;
         }
     }
 }

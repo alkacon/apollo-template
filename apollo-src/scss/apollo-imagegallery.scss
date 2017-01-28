@@ -21,6 +21,9 @@
  * Styles used by the "Image Gallery" element
  */
 
+// we rely on 'apollo-animation.scss' begin included first
+$imagegallery-border-radius:  ($image-border-radius) * 2 !default;
+
 /* Image gallery base classes */
 
 .ap-image-gallery {
@@ -45,6 +48,11 @@
 
         display: none;
     }
+
+    .ap-square .content {
+        // must always set this because this may reset tile rounding
+        border-radius: $image-border-radius;
+    }
 }
 
 .pswp {
@@ -60,9 +68,9 @@
         font-size: 0.7em;
     }
 
-    @if ($default-border-radius != 0) {
+    @if ($imagegallery-border-radius != 0) {
         img {
-            border-radius: $default-border-radius * 2;
+            border-radius: $imagegallery-border-radius;
         }
     }
 }
@@ -131,4 +139,13 @@ $zoom-fg:  $text-light !default;
     transform: translateX(-50%) translateY(-50%);
     font-size: 30px;
     color: $zoom-fg;
+}
+
+@if ($image-border-radius != 0) {
+    .zoom-overlay .zoom-icon,
+    .zoom-overlay .img-responsive,
+    .image-inner-box,
+    .image-outer-box {
+         border-radius: $image-border-radius;
+    }
 }

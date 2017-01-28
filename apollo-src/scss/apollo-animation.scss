@@ -24,6 +24,8 @@
 // Please note the build process assumes that this is run through postcss using the 'autoprefixer' plugin,
 // therefore ALL VENDOR PREFIXES like 'webkit-*" are AUTOMATICALLY ADDED later.
 
+$image-border-radius:       $default-border-radius !default;
+
 // Variables for more variation in animation curves.
 // Values taken from: http://http://easings.net/
 
@@ -38,9 +40,6 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     box-shadow: none;
     transition: all 0.4s $easeOutQuad;
     z-index: 5;
-    @if ($default-border-radius != 0) {
-        border-radius: $default-border-radius;
-    }
 }
 
 /**
@@ -66,8 +65,8 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 
     // Reverse the shadow effect on the surrounding box if no hover
     transition: box-shadow 0.35s $easeInQuad;
-    @if ($default-border-radius != 0) {
-        border-radius: $default-border-radius;
+    @if ($image-border-radius != 0) {
+        border-radius: $image-border-radius;
     }
 
     // Shrink the inner box on hover
@@ -107,15 +106,15 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 
     // Reverse the shadow effect on the surrounding box if no hover
     transition: box-shadow 0.35s $easeInQuad;
-    @if ($default-border-radius != 0) {
-        border-radius: $default-border-radius;
+    @if ($image-border-radius != 0) {
+        border-radius: $image-border-radius;
     }
 
     // Shrink the inner box on hover
     &:hover .animated-box {
         transform: scale(0.925);
-        @if ($default-border-radius != 0) {
-            border-radius: $default-border-radius;
+        @if ($image-border-radius != 0) {
+            border-radius: $image-border-radius;
         }
     }
 
@@ -144,8 +143,12 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     &:hover .animated-box {
         transform: scale(1.075);
         box-shadow: 0 0 10px 1px $dropshadow;
-        @if ($default-border-radius != 0) {
-            border-radius: $default-border-radius;
+    }
+
+    &.ap-image:hover.animated-box,
+    &.ap-image:hover .animated-box {
+        @if ($image-border-radius != 0) {
+            border-radius: $image-border-radius;
         }
     }
 
@@ -234,9 +237,11 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
         overflow: hidden;
     }
 
-    @if ($default-border-radius != 0) {
-        .animated-box {
-            border-radius: $default-border-radius;
+    @if ($image-border-radius != 0) {
+        &.ap-image,
+        &.ap-image .animated-box,
+        &.ap-image .image-outer-box {
+            border-radius: $image-border-radius;
         }
     }
 }
