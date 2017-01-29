@@ -42,7 +42,8 @@
       <Default><![CDATA[standard]]></Default>
       <WidgetConfig><![CDATA[
         standard:%(key.apollo.setting.linksequenceType.standard)|
-        boxed:%(key.apollo.setting.linksequenceType.boxed)
+        boxed:%(key.apollo.setting.linksequenceType.boxed)|
+        navigation:%(key.apollo.setting.linksequenceType.navigation)
       ]]></WidgetConfig>
     </Setting>
     <Setting>

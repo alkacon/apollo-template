@@ -15,13 +15,13 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.navigation.messages">
 
-<div class="ap-sidebar-nav ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
+<div class="ap-sidebar-nav ${cms.element.setting.wrapperclass}">
 
     <apollo:nav-items
         type="forSite"
         content="${content}"
-        currentPageFolder="${cms.requestContext.folderUri}" 
-        currentPageUri="${cms.requestContext.uri}" 
+        currentPageFolder="${cms.requestContext.folderUri}"
+        currentPageUri="${cms.requestContext.uri}"
         var="nav">
 
     <c:set var="navLength" value="${fn:length(nav.items) - 1}" />
@@ -33,7 +33,7 @@
         <c:set var="nextLevel" value="${i < navLength ? nav.items[i+1].navTreeLevel : navStartLevel}" />
         <c:set var="startSubNav" value="${nextLevel > navElem.navTreeLevel}" />
 
-        <c:set var="isCurrentPage" value="${navElem.navigationLevel ? 
+        <c:set var="isCurrentPage" value="${navElem.navigationLevel ?
             fn:startsWith(cms.requestContext.uri, navElem.parentFolderName) :
             fn:startsWith(cms.requestContext.uri, navElem.resourceName)}" />
 
@@ -45,14 +45,14 @@
                 <c:when test="${startSubNav}">
 
                     <%-- Output the start of a new sub-navigation level --%>
-                    <c:set var="collapseId" value="nav-${cms.element.instanceId}-${i}" /> 
-                    <a href="#${collapseId}" <%--  
+                    <c:set var="collapseId" value="nav-${cms.element.instanceId}-${i}" />
+                    <a href="#${collapseId}" <%--
                     --%>class="nav-toggle${isCurrentPage ? '' : ' collapsed'}" <%--
-                    --%>data-toggle="collapse" <%--  
+                    --%>data-toggle="collapse" <%--
                     --%>aria-expanded="${isCurrentPage}"><%--
                 --%><c:out value='${navElem.navText}' escapeXml="false" /></a><%--
 
-                --%><c:set var="collapseIn" value="${isCurrentPage ? ' in' : ''}" /> 
+                --%><c:set var="collapseIn" value="${isCurrentPage ? ' in' : ''}" />
                     <c:out value='<ul class="collapse${collapseIn}" id="${collapseId}">' escapeXml="false" />
 
                     <c:if test="${not navElem.navigationLevel}">

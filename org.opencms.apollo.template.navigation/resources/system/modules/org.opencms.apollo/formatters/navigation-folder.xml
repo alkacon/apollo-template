@@ -62,19 +62,25 @@
       <DisplayName><![CDATA[%(key.apollo.setting.iconclass)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.iconclass.description)]]></Description>
       <Widget><![CDATA[selectcombo]]></Widget>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.icon:
+      <WidgetConfig><![CDATA[%(page-property:apollo.linksequence.icon:
+        none:%(key.apollo.setting.iconclass.none)|
+        caret-right:%(key.apollo.setting.iconclass.caret)|
+        angle-right:%(key.apollo.setting.iconclass.angle)|
+        angle-double-right:%(key.apollo.setting.iconclass.angle-double)|
+        chevron-right:%(key.apollo.setting.iconclass.chevron)|
+        arrow-right:%(key.apollo.setting.iconclass.arrow)|
+        hand-o-right:%(key.apollo.setting.iconclass.hand)|
         info:%(key.apollo.setting.iconclass.info)|
-        link:%(key.apollo.setting.iconclass.link)|
-        external-link:%(key.apollo.setting.iconclass.linkexternal1)|
-        external-link-square:%(key.apollo.setting.iconclass.linkexternal2)|
-        download:%(key.apollo.setting.iconclass.download1)|
-        cloud-download:%(key.apollo.setting.iconclass.download2)|
+        check:%(key.apollo.setting.iconclass.check)|
+        globe:%(key.apollo.setting.iconclass.globe)|
         file-text-o:%(key.apollo.setting.iconclass.document)|
         file-pdf-o:%(key.apollo.setting.iconclass.pdf)|
         folder-o:%(key.apollo.setting.iconclass.folder)|
-        globe:%(key.apollo.setting.iconclass.globe)|
-        arrow-right:%(key.apollo.setting.iconclass.arrow)|
-        check:%(key.apollo.setting.iconclass.check)
+        link:%(key.apollo.setting.iconclass.link)|
+        external-link:%(key.apollo.setting.iconclass.external-link)|
+        external-link-square:%(key.apollo.setting.iconclass.external-link-square)|
+        download:%(key.apollo.setting.iconclass.download)|
+        cloud-download:%(key.apollo.setting.iconclass.cloud-download)
         )]]></WidgetConfig>
     </Setting>
   </NewFormatter>

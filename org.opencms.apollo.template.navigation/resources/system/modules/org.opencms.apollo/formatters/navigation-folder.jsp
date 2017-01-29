@@ -18,15 +18,17 @@
 <apollo:nav-items
     type="forFolder"
     content="${content}"
-    currentPageFolder="${cms.requestContext.folderUri}" 
-    currentPageUri="${cms.requestContext.uri}" 
+    currentPageFolder="${cms.requestContext.folderUri}"
+    currentPageUri="${cms.requestContext.uri}"
     var="nav">
 
-    <apollo:linksequence 
-        wrapperclass="boxed navigation" 
-        iconclass="none"
-        title="${value.Title}" 
-        links="${nav.items}" /> 
+    <apollo:linksequence
+        wrapperclass="ap-sidebar-nav ${cms.element.setting.wrapperclass}"
+        ulwrapper="sidebar-nav list-group"
+        liwrapper="list-group-item"
+        iconclass="${cms.element.setting.iconclass.isSet ? cms.element.setting.iconclass : 'none'}"
+        title="${value.Title}"
+        links="${nav.items}" />
 
 </apollo:nav-items>
 
