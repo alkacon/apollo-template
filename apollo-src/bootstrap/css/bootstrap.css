@@ -4,6 +4,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/*
+// NOTE FOR APOLLO INTEGRATION:
+//
+// If you install a new version of this CSS you must replace the resource path information.
+// Search for "../fonts/" and replace it with "../../../org.opencms.apollo.theme/resources/fonts/".
+*/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -263,8 +269,8 @@ th {
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../../../org.opencms.apollo.theme/resources/fonts/glyphicons-halflings-regular.eot');
+  src: url('../../../org.opencms.apollo.theme/resources/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../../org.opencms.apollo.theme/resources/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../../../org.opencms.apollo.theme/resources/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../../org.opencms.apollo.theme/resources/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../../org.opencms.apollo.theme/resources/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -6755,6 +6761,6 @@ button.close {
   }
 }
 
-/* Disabling the source map for Apollo 
+/* Disabling the source map for Apollo
  * sourceMappingURL=bootstrap.css.map
  */

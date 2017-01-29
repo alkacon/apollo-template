@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -38,11 +38,16 @@
         margin-bottom: -1px;
         border: 1px solid $grey-light;
         text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
-    .fa:before {
+    .fa {
         padding-right: 8px;
-    } 
+        color: $text-dark;
+    }
 }
 
 /* Header formatted link sequence */
@@ -92,7 +97,7 @@
         display: none;
         padding-top: 2px;
         padding-bottom: 1px;
-        padding-left: 0; 
+        padding-left: 0;
         list-style: none;
         min-width: 100px;
         position: absolute;
@@ -103,11 +108,11 @@
         &:after {
             // this creates the upward pointing angle
             top: -4px;
-            width: 0; 
+            width: 0;
             height: 0;
             left: 8px;
-            content: " "; 
-            display: block; 
+            content: " ";
+            display: block;
             position: absolute;
             border-bottom: 6px solid $nav-border;
             border-left: 6px solid transparent;
@@ -136,7 +141,7 @@
             background-color: $nav-bg-active;
         }
 
-        li a, 
+        li a,
         li.active a {
             &:hover {
                 color: $nav-text-hover;

@@ -47,6 +47,8 @@ $nav-font-header-size:      15px !default;          // font size of head entries
 $nav-padding:               6px 15px !default;      // padding for dropdown entries
 $nav-header-padding:        9px 20px !default;      // padding for head entries
 
+$sidebar-nav-boxed:         true !default;          // boxes around sidebar navigation
+
 /* The Apollo header */
 
 .ap-header {
@@ -593,6 +595,7 @@ $nav-header-padding:        9px 20px !default;      // padding for head entries
         max-height: none;
         display: block;
         overflow: visible;
+        position: relative;
     }
 }
 
@@ -811,10 +814,6 @@ $foot-light-link-hover-color:   $main-theme-hover !default;
 
 /* Sidebar navigation */
 
-.ap-sidebar-nav {
-    margin-bottom: 20px;
-}
-
 .sidebar-nav {
     border: 1px solid $nav-border;
     box-shadow: $panel-shadow;
@@ -850,6 +849,10 @@ $foot-light-link-hover-color:   $main-theme-hover !default;
                 color: $nav-text-hover;
                 background: $nav-bg-hover;
                 text-decoration: none;
+            }
+
+            .fa {
+                padding-right: 8px;
             }
         }
 
@@ -942,5 +945,23 @@ $foot-light-link-hover-color:   $main-theme-hover !default;
         margin-right: -15px;
         border-left: none;
         border-right: none;
+    }
+}
+
+/* Options for sidebar */
+
+.ap-sidebar-nav {
+    margin-bottom: 20px;
+
+    @if ($sidebar-nav-boxed) {
+        &.only-lines > .sidebar-nav {
+            border: none;
+            box-shadow: none;
+        }
+    } @else {
+        > .sidebar-nav {
+            border: none;
+            box-shadow: none;
+        }
     }
 }

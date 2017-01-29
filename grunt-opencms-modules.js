@@ -36,6 +36,7 @@ var deployTarget;
 var buildDir;
 var provideDir;
 var moduleDir;
+var themeDir;
 
 var mapScss;
 var debugJs;
@@ -43,29 +44,25 @@ var cssOnly;
 
 var path = require('path');
 
-exports.initGrunt = function(_grunt, _buildDir) {
+exports.initGrunt = function(_grunt, _buildDir, _cssOnly) {
 
     grunt = _grunt;
+    mapScss = grunt.option('mapscss');
+    debugJs = grunt.option('debug');
+    cssOnly = _cssOnly || grunt.option('cssonly');
 
     moduleDir = path.normalize(process.cwd() + '/');
     provideDir = path.normalize(moduleDir + _buildDir + 'provide/');
     buildDir = path.normalize(moduleDir + _buildDir + 'grunt/');
 
-    mapScss = grunt.option('mapscss');
-    debugJs = grunt.option('debug');
-    cssOnly = grunt.option('cssonly');
-
-    if (cssOnly) {
-        console.log('NOTE: Only generating CSS, no JavaScript or Resources');
-    }
+    console.log('Only CSS theme generation  [--cssonly] ' + (cssOnly ? 'ENABLED' : 'Disabled') );
+    console.log('Source mapping of SCSS     [--mapscss] ' + (mapScss ? 'ENABLED' : 'Disabled') );
+    console.log('Debug output in JavaScript [--debug  ] ' + (debugJs ? 'ENABLED' : 'Disabled') );
 
     if (grunt.option('verbose')) {
         console.log('OpenCms module source directory   : ' + moduleDir);
         console.log('OpenCms module build directory    : ' + buildDir);
         console.log('OpenCms theme provision directory : ' + provideDir);
-
-        console.log('Source mapping of SCSS files      : ' + (mapScss ? 'Enabled' : 'Disabled') );
-        console.log('Debug output for JavaScript files : ' + (debugJs ? 'Enabled' : 'Disabled') );
 
         require('time-grunt')(grunt);
     }
@@ -124,6 +121,7 @@ exports.loadModule = function(moduleName) {
         }
         if (m.themes) {
             themes = themes.concat(_getModuleThemes(m.envname, m.themes));
+            themeDir = m.mf;
         }
         if (m.deployTarget) {
             exports.deployTarget = deployTarget = path.normalize(m.deployTarget + '/');
@@ -138,9 +136,6 @@ exports.loadModule = function(moduleName) {
 
 exports.registerGruntTasks = function() {
 
-    _gruntInitConfig();
-    _gruntRegisterTasks();
-
     themes = _normalizeAll(themes);
     sassSrc = _normalizeAll(sassSrc);
     cssSrc = _normalizeAll(cssSrc);
@@ -149,11 +144,15 @@ exports.registerGruntTasks = function() {
         resources = _normalizeAll(resources);
         resourceSources = _normalizeAll(resourceSources);
     } else {
-        // just clear all non-css input resource arrays
+        // for 'css only', clear all non-css input resource arrays
         jsSrc = [];
         resources = [];
         resourceSources = [];
     }
+
+    _gruntInitConfig();
+    _gruntRegisterTasks();
+
     if (grunt.option('verbose')) {
         _showImports();
     }
@@ -181,7 +180,6 @@ _gruntLoadNpmTasks = function() {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-postcss');
 
     // Postcss modules required:
@@ -280,21 +278,6 @@ _gruntInitConfig = function() {
                     ext : '.css',
                     flatten: true
                 } ]
-            },
-            csscheck : {
-                options : {
-                    sourcemap : 'auto',
-                    lineNumbers : false,
-                    style : 'nested',
-                },
-                files : [ {
-                    expand : true,
-                    cwd : moduleDir,
-                    src : oc.themeSassSrc(),
-                    dest : buildDir + '04_final/csscheck',
-                    ext : '.css',
-                    flatten: true
-                } ]
             }
         },
 
@@ -339,20 +322,6 @@ _gruntInitConfig = function() {
             }
         },
 
-        concat : {
-            theme : {
-                options: {
-                    sourceMap: true,
-                    sourceMapStyle: 'embed',
-                },
-                src: [
-                    moduleDir + 'plugins.min.css',
-                    '<%= grunt.task.current.args[0] %>.min.css'
-                ],
-                dest: buildDir + '04_final/css/<%= grunt.task.current.args[0] %>.min.css'
-            },
-        },
-
         cssmin : {
             options : {
                 advanced: true,  // sometimes setting this to false helps to debug SASS
@@ -383,9 +352,23 @@ _gruntInitConfig = function() {
                 src : oc.cssSrc(),
                 dest : moduleDir + 'plugins.min.css',
             },
-            csscheck : {
-                src : oc.cssSrc(),
-                dest : buildDir + '04_final/csscheck/plugins.min.css',
+            concat : {
+                options: {
+                    shorthandCompacting: false,
+                    advanced: false,
+                    processImport: false,
+                    rebase: false,
+                    keepSpecialComments: 0,
+                    sourceMap: true,
+                    sourceMapInlineSources: true,
+                    roundingPrecision : -1
+                },
+                src: [
+                    oc.themeDir() + '<%= grunt.task.current.args[0] %>' + '-imports.css',
+                    moduleDir + 'plugins.min.css',
+                    '<%= grunt.task.current.args[0] %>.min.css'
+                ],
+                dest: buildDir + '04_final/css/<%= grunt.task.current.args[0] %>.min.css'
             },
         },
 
@@ -445,13 +428,6 @@ _gruntRegisterTasks = function() {
         'pluginCss',
         'combine',
         'pluginJs',
-        'deploy',
-    ]);
-
-    grunt.registerTask('csscheck', [
-        'clean',
-        'sass:csscheck',
-        'cssmin:csscheck',
         'deploy',
     ]);
 
@@ -531,7 +507,7 @@ exports.cssSrc = function () {
 }
 
 exports.jsSrc = function () {
-    return cssOnly ? [] : jsSrc;
+    return jsSrc;
 }
 
 exports.debugJs = function () {
@@ -539,7 +515,7 @@ exports.debugJs = function () {
 }
 
 exports.resources = function () {
-    return cssOnly ? [] : resources;
+    return resources;
 }
 
 exports.themeSassSrc = function () {
@@ -547,6 +523,10 @@ exports.themeSassSrc = function () {
         themeSassSrc[i] = '**/' + themes[i] + '.scss';
     }
     return themeSassSrc;
+}
+
+exports.themeDir = function() {
+    return themeDir;
 }
 
 exports.themeCssSrc = function () {
@@ -565,7 +545,7 @@ exports.themePostCssSrc = function () {
 
 exports.themeConcatTasks = function () {
     for (i=0; i<themes.length; i++) {
-        themeConcatTasks[i] = 'concat:theme:' + themes[i];
+        themeConcatTasks[i] = 'cssmin:concat:' + themes[i];
     }
     return themeConcatTasks;
 }
