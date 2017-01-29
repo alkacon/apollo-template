@@ -37,6 +37,8 @@ var buildDir;
 var provideDir;
 var moduleDir;
 var themeDir;
+var deployDir;
+var resourceDir;
 
 var mapScss;
 var debugJs;
@@ -55,7 +57,7 @@ exports.initGrunt = function(_grunt, _buildDir, _cssOnly) {
     provideDir = path.normalize(moduleDir + _buildDir + 'provide/');
     buildDir = path.normalize(moduleDir + _buildDir + 'grunt/');
 
-    console.log('Only CSS theme generation  [--cssonly] ' + (cssOnly ? 'ENABLED' : 'Disabled') );
+    console.log('CSS only theme generation  [--cssonly] ' + (cssOnly ? 'ENABLED' : 'Disabled') );
     console.log('Source mapping of SCSS     [--mapscss] ' + (mapScss ? 'ENABLED' : 'Disabled') );
     console.log('Debug output in JavaScript [--debug  ] ' + (debugJs ? 'ENABLED' : 'Disabled') );
 
@@ -65,11 +67,6 @@ exports.initGrunt = function(_grunt, _buildDir, _cssOnly) {
         console.log('OpenCms theme provision directory : ' + provideDir);
 
         require('time-grunt')(grunt);
-    }
-
-    if (! mapScss) {
-        console.log('NOTE: Source mapping of SCSS files is disabled');
-        console.log('Start grunt with option "--mapscss" to enable source maps for SCSS');
     }
 
     _gruntLoadNpmTasks();
@@ -122,6 +119,18 @@ exports.loadModule = function(moduleName) {
         if (m.themes) {
             themes = themes.concat(_getModuleThemes(m.envname, m.themes));
             themeDir = m.mf;
+        }
+        if (m.deployDir) {
+            // deployDir is also setting the default for resourceDir
+            exports.deployDir = deployDir = m.deployDir;
+            exports.resourceDir = resourceDir = m.deployDir;
+        }
+        if (m.resourceDir) {
+            // Required for extension themes that do not copy the resources
+            // because only CSS is to be generated.
+            // In this case URLs in the minified CSS from the plugins
+            // are rewritten to point to another folder.
+            exports.resourceDir = resourceDir = m.resourceDir;
         }
         if (m.deployTarget) {
             exports.deployTarget = deployTarget = path.normalize(m.deployTarget + '/');
@@ -180,6 +189,7 @@ _gruntLoadNpmTasks = function() {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-postcss');
 
     // Postcss modules required:
@@ -319,7 +329,45 @@ _gruntInitConfig = function() {
                     dest : buildDir + '02_postcssed',
                     ext : '.post.css'
                 }]
-            }
+            },
+            pluginCss : {
+                options: {
+                    map: {
+                        inline: false, // save all sourcemaps as separate files...
+                        annotation: moduleDir // ...to the specified directory
+                      },
+                      processors : [
+                          require('postcss-urlrewrite')({
+                              imports:  true,
+                              properties: ['src', 'background', 'background-image'],
+                              rules: [{
+                                  from: '../../resources/',
+                                  to:   oc.resourceDir
+                              },{
+                                  from: '../fonts/',
+                                  to:   oc.resourceDir + 'fonts/'
+                              }]
+                          })
+                      ]
+                },
+                src :  moduleDir + 'plugins.min.css',
+                dest : moduleDir + 'plugins.min.post.css',
+            },
+        },
+
+        concat : {
+            theme : {
+                options: {
+                    sourceMap: true,
+                    sourceMapStyle: 'embed',
+                },
+                src: [
+                  oc.themeDir() + '<%= grunt.task.current.args[0] %>' + '-imports.css',
+                  moduleDir + 'plugins.min.post.css',
+                  '<%= grunt.task.current.args[0] %>.min.css'
+                ],
+                dest: buildDir + '04_final/css/<%= grunt.task.current.args[0] %>.min.css'
+            },
         },
 
         cssmin : {
@@ -351,24 +399,6 @@ _gruntInitConfig = function() {
             pluginCss : {
                 src : oc.cssSrc(),
                 dest : moduleDir + 'plugins.min.css',
-            },
-            concat : {
-                options: {
-                    shorthandCompacting: false,
-                    advanced: false,
-                    processImport: false,
-                    rebase: false,
-                    keepSpecialComments: 0,
-                    sourceMap: true,
-                    sourceMapInlineSources: true,
-                    roundingPrecision : -1
-                },
-                src: [
-                    oc.themeDir() + '<%= grunt.task.current.args[0] %>' + '-imports.css',
-                    moduleDir + 'plugins.min.css',
-                    '<%= grunt.task.current.args[0] %>.min.css'
-                ],
-                dest: buildDir + '04_final/css/<%= grunt.task.current.args[0] %>.min.css'
             },
         },
 
@@ -427,9 +457,11 @@ _gruntRegisterTasks = function() {
         'theme',
         'pluginCss',
         'combine',
-        'pluginJs',
+         cssOnly ? 'skipResources' : 'pluginJs',
         'deploy',
     ]);
+
+    grunt.registerTask('skipResources', []);
 
     grunt.registerTask('theme', [
         'sass:theme',
@@ -439,15 +471,17 @@ _gruntRegisterTasks = function() {
 
     grunt.registerTask('plugins', [
         'cssmin:pluginCss',
-        'uglify:pluginJs',
+        'postcss:pluginCss',
+         cssOnly ? 'skipResources' : 'uglify:pluginJs',
     ]);
 
     grunt.registerTask('pluginCss', [
         'cssmin:pluginCss',
+        'postcss:pluginCss',
     ]);
 
     grunt.registerTask('pluginJs', [
-        'uglify:pluginJs',
+        cssOnly ? 'skipResources' : 'uglify:pluginJs',
     ]);
 
     grunt.registerTask('combine',
@@ -458,7 +492,7 @@ _gruntRegisterTasks = function() {
     grunt.registerTask('deploy', function() {
         if (grunt.file.expand(oc.deployTarget + '*').length) {
             grunt.task.run( [
-                'copy:resources',
+                oc.cssOnly ? '' : 'copy:resources',
                 'copy:deploy',
                 'copy:providesrc',
                 'clean:theme'
@@ -494,8 +528,10 @@ _showImports = function() {
             console.log("    " + sourceDir);
         }
     }
-    console.log();
-    console.log('\n- Deploy target folder: ' + deployTarget + "\n");
+    console.log('\n');
+    console.log('- Theme folder   : ' + deployDir);
+    console.log('- Theme resources: ' + resourceDir);
+    console.log('- Deploy target  : ' + deployTarget + "\n");
 }
 
 exports.sassSrc = function () {
@@ -545,7 +581,7 @@ exports.themePostCssSrc = function () {
 
 exports.themeConcatTasks = function () {
     for (i=0; i<themes.length; i++) {
-        themeConcatTasks[i] = 'cssmin:concat:' + themes[i];
+        themeConcatTasks[i] = 'concat:theme:' + themes[i];
     }
     return themeConcatTasks;
 }
