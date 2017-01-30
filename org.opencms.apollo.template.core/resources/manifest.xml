@@ -72,6 +72,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/rowcolumn.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/categorylist.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/contact.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/label.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/container-box.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/copyright.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/pageinfo.tag"/>
@@ -1577,6 +1578,27 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Displays the standard 'new element' or 'reload required' message boxes]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/label.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/label.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>fbc231a3-e6f6-11e6-9a6a-0242ac11002b</uuidstructure>
+			<uuidresource>fbc231a4-e6f6-11e6-9a6a-0242ac11002b</uuidresource>
+			<datecreated>Mon, 30 Jan 2017 14:18:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Displays a message from the OpenCms workplace bundles]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
 				</property>
 			</properties>
 			<relations/>
