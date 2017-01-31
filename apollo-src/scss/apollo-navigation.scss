@@ -48,6 +48,9 @@ $nav-padding:               6px 15px !default;      // padding for dropdown entr
 $nav-header-padding:        9px 20px !default;      // padding for head entries
 
 $sidebar-nav-boxed:         true !default;          // boxes around sidebar navigation
+$nav-header-menu-full:      false !default;         // use full screen width for the navigation head bar
+$nav-header-menu-bg:        transparentize($nav-header-bg, 0.25) !default;
+$nav-header-menu-bg-hover:  $nav-header-bg !default;
 
 /* The Apollo header */
 
@@ -121,6 +124,14 @@ $sidebar-nav-boxed:         true !default;          // boxes around sidebar navi
             position: absolute;
             bottom: 0px;
             width: 100%;
+
+            @if ($nav-header-menu-full) {
+                background-color: $nav-header-menu-bg;
+
+                .container {
+                    margin-top: -2px;
+                }
+            }
         }
 
         .head-nopull {
@@ -217,7 +228,9 @@ $sidebar-nav-boxed:         true !default;          // boxes around sidebar navi
         transition: all 1s ease-out;
 
         > a {
-            background-color: transparentize($nav-header-bg, 0.25);
+            @if ($nav-header-menu-full == false) {
+                background-color: $nav-header-menu-bg;
+            }
             color: $nav-text;
             text-transform: uppercase;
             font-size: $nav-font-header-size;
@@ -242,7 +255,9 @@ $sidebar-nav-boxed:         true !default;          // boxes around sidebar navi
                 margin-bottom: 2px;
 
                 &:focus {
-                    background-color: transparentize($nav-header-bg, 0.25); // top level nav uses main header background
+                    @if ($nav-header-menu-full == false) {
+                        background-color: $nav-header-menu-bg; // top level nav
+                    }
                     border-bottom: 0; // must overwrite bootstrap default
                 }
             }
@@ -263,7 +278,7 @@ $sidebar-nav-boxed:         true !default;          // boxes around sidebar navi
             &.active:hover > a,
             &:hover > a {
                 color: $nav-text-hover;
-                background-color: $nav-header-bg;
+                background-color: $nav-header-menu-bg-hover;
                 margin-bottom: 0;
                 border-bottom: 2px solid $nav-theme;
             }
@@ -271,7 +286,9 @@ $sidebar-nav-boxed:         true !default;          // boxes around sidebar navi
             &.active > a {
                 // the top level menu entry that belongs to the currently opened page
                 color: $nav-header-text-active;
-                background-color: transparentize($nav-header-bg, 0.25);  // top level nav uses main header background
+                @if ($nav-header-menu-full == false) {
+                    background-color: $nav-header-menu-bg; // top level nav
+                }
                 margin-bottom: 0;
                 border-bottom: 2px solid $nav-theme;
 
@@ -382,7 +399,9 @@ $sidebar-nav-boxed:         true !default;          // boxes around sidebar navi
 
     #searchButtonHeader .search {
         color: $nav-text;
-        background-color: transparentize($nav-header-bg, 0.25);
+        @if ($nav-header-menu-full == false) {
+            background-color: $nav-header-menu-bg; // top level nav
+        }
         cursor: pointer;
         font-size: $nav-font-header-size;
         min-width: 35px;
@@ -396,7 +415,7 @@ $sidebar-nav-boxed:         true !default;          // boxes around sidebar navi
         &:focus,
         &:hover {
             color: $nav-text-hover;
-            background-color: $nav-header-bg;
+            background-color: $nav-header-menu-bg-hover;
             border-bottom-color: $nav-theme;
         }
     }

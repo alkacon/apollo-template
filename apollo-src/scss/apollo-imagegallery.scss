@@ -148,4 +148,14 @@ $zoom-fg:  $text-light !default;
     .image-outer-box {
          border-radius: $image-border-radius;
     }
+
+    // special reset for images in sections
+    .bo-radius-0 {
+        .zoom-overlay .zoom-icon,
+        .zoom-overlay .img-responsive,
+        .image-inner-box,
+        .image-outer-box {
+             border-radius: 0;
+        }
+    }
 }
