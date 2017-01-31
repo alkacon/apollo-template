@@ -210,3 +210,10 @@ $iconbox-border-radius:     $default-border-radius !default;
     padding-left: 0;
     padding-right: 0;
 }
+
+/* Remove the negative margin from a bootstrap row. */
+.row.no-margin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
