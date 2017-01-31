@@ -31,10 +31,8 @@
             addcssclass="${cms.element.setting.addcssclass.value != 'none' ? cms.element.setting.addcssclass.value : ''}"
         >
             <c:if test="${showlinktext}">
-                <div class="button-box">
-                    <apollo:link
-                        link="${value.Link}"
-                        cssclass="btn btn-xs" />
+                <div class="button-box"}>
+                    <apollo:link link="${value.Link}" cssclass="btn btn-xs" />
                 </div>
             </c:if>
 
@@ -48,15 +46,15 @@
                 <div class="image-info text-box">
 
                     <c:if test="${showsubitle}">
-                        <h3 class="subtitle ${cms.element.setting.showsubtitle}">
+                        <h3 class="subtitle ${cms.element.setting.showsubtitle}" ${empty imageTitle ? value.Headline.rdfaAttr : ''}>
                             <apollo:link link="${value.Link}">
-                                ${not empty imageTitle ? imageTitle : value.Headline}
+                                ${empty imageTitle ? value.Headline : imageTitle}
                             </apollo:link>
                         </h3>
                     </c:if>
 
                     <c:if test="${showtext}">
-                        <div class="text">
+                        <div class="text" ${value.Text.rdfaAttr}>
                             ${value.Text}
                         </div>
                     </c:if>
