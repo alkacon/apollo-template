@@ -105,6 +105,7 @@ $social-links:
             border: none;
             font-size: $social-links-size;
             line-height: $social-links-box-height;
+            transition: background-color 0.33s;
             @if ($btn-border-radius != 0) {
                 border-radius: $btn-border-radius;
             }

@@ -44,6 +44,7 @@ $btn-colors:            $reduced-colors !default;
         color: get-text-color($hover-color);
         background-color: $hover-color;
         border-color: $hover-color;
+        transition: all 0.33s;
     }
 
     &.disabled,

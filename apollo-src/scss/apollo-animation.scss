@@ -196,7 +196,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
         display: inline-block;
 
         right: -10px;
-        transition: right 0.4s $easeOutQuad;
+        transition: right 0.4s $easeOutQuad, background-color 0.33s, border-color 0.33s;
     }
 
     // Marks the position for absolute button placement

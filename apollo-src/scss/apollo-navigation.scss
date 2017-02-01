@@ -930,6 +930,9 @@ $foot-light-link-hover-color:   $main-theme-hover !default;
         &:hover {
             border-color: $nav-border;
             background: $nav-bg-hover;
+            > a {
+                color: $nav-text-hover;
+            }
         }
     }
 
