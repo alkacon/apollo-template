@@ -342,10 +342,10 @@ _gruntInitConfig = function() {
                               properties: ['src', 'background', 'background-image'],
                               rules: [{
                                   from: '../../resources/',
-                                  to:   oc.resourceDir
+                                  to: oc.resourcePath('/')
                               },{
                                   from: '../fonts/',
-                                  to:   oc.resourceDir + 'fonts/'
+                                  to: oc.resourcePath('fonts/')
                               }]
                           })
                       ]
@@ -531,6 +531,7 @@ _showImports = function() {
     console.log('\n');
     console.log('- Theme folder   : ' + deployDir);
     console.log('- Theme resources: ' + resourceDir);
+    console.log('- Path to fonts  : ' + oc.resourcePath('fonts/'));
     console.log('- Deploy target  : ' + deployTarget + "\n");
 }
 
@@ -540,6 +541,15 @@ exports.sassSrc = function () {
 
 exports.cssSrc = function () {
     return cssSrc;
+}
+
+exports.resourcePath = function (target) {
+    return path.normalize(
+        path.relative(
+            oc.deployDir + '/css/',
+            oc.resourceDir
+        ) + '/' + target
+    )
 }
 
 exports.jsSrc = function () {
@@ -561,7 +571,7 @@ exports.themeSassSrc = function () {
     return themeSassSrc;
 }
 
-exports.themeDir = function() {
+exports.themeDir = function () {
     return themeDir;
 }
 
