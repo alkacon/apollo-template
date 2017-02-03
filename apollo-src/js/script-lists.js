@@ -23,12 +23,24 @@
 var ApolloList = function(jQ) {
 
     // list locks to prevent triggering actions while load still in process
-    var m_list_lock = {};
+    var m_list_locked = {};
 
-    function reloadListById(searchStateParameters, id, resetArchive) {
+    function updateList(searchStateParameters, id, resetArchive) {
+
+        if (DEBUG) console.info("updateList() called id=" + id);
 
         var elem = jQ('#' + id);
         reloadList(searchStateParameters, elem, resetArchive);
+    }
+
+
+    function filterList(searchStateParameters, className, resetArchive) {
+
+        if (DEBUG) console.info("filterList() called className=" + className);
+
+        jQ('div[data-id="' + className + '"]').each(function () {
+                reloadList(searchStateParameters, $(this), resetArchive);
+        });
     }
 
 
@@ -44,12 +56,17 @@ var ApolloList = function(jQ) {
     // Used for both pagination and scroll-reload lists
     function doReloadInnerList(searchStateParameters, elem) {
 
+        var instanceId = elem.attr("id");
+        var elementId = elem.data("id");
 
-        if (typeof m_list_lock[elem.attr("id")] === "undefined" || !m_list_lock[elem.attr("id")]) {
-            m_list_lock[elem.attr("id")] = true;
-            if (typeof elem === 'undefined') {
-                elem = $('.ap-list-entries').first();
-            }
+        if (DEBUG) console.info("doReloadInnerList() called instanceId=" + instanceId + " elementId=" + elementId + " parameters=" + searchStateParameters);
+
+        if (!m_list_locked[instanceId]) {
+            m_list_locked[instanceId] = true;
+
+            // hide the "no resluts found" message during search
+            elem.find(".editbox").hide();
+
             var entryBox = elem.find(".ap-list-box");
             var spinner = elem.find(".spinner");
             spinner.hide().removeClass("fadeOut").addClass("fadeIn").show();
@@ -60,20 +77,24 @@ var ApolloList = function(jQ) {
 
             entryBox.css("min-height", elem.data("minheight"));
             elem.find(".ap-list-pagination").empty();
-            var listOptionBox = $('#listoption_box-' + elem.data('id'));
-            $.get(buildAjaxLink(elem) + "&".concat(searchStateParameters), function(resultList) {
+            var listOptionBox = $('#listoption_box-' + elementId);
+            $.get(buildAjaxLink(elem, instanceId, elementId) + "&".concat(searchStateParameters), function(resultList) {
 
                 listOptionBox.find(".list-options").remove();
                 $(resultList).filter(".list-entry").appendTo(entryBox);
                 $(resultList).filter('.list-append-position').appendTo(elem.find('.ap-list-pagination'));
                 $(resultList).filter(".list-options").appendTo(listOptionBox);
-                if (m_list_lock && $(resultList).filter(".list-entry").length == 0) {
-                    showEmpty(elem);
+                if ($(resultList).filter(".list-entry").length == 0) {
+                    // show the "no resluts found" message
+                    elem.find(".editbox").show();
+                    elem.find(".ap-list-pagination").hide();
+                } else {
+                    elem.find(".ap-list-pagination").show();
                 }
                 spinner.removeClass("fadeIn").addClass("fadeOut");
                 entryBox.css("min-height", "0");
                 _OpenCmsReinitEditButtons();
-                m_list_lock[elem.attr("id")] = false;
+                m_list_locked[instanceId] = false;
             });
         }
     }
@@ -81,18 +102,20 @@ var ApolloList = function(jQ) {
     // Used for scroll-reload lists
     function appendInnerList(searchStateParameters, elem) {
 
-        var listId = elem.attr("id");
-        if (DEBUG) console.info("appendInnerList() called id=" + listId + " parameters=" + searchStateParameters);
+        var instanceId = elem.attr("id");
+        var elementId = elem.data("id");
 
-        if (typeof m_list_lock[elem.attr("id")] === "undefined" || !m_list_lock[elem.attr("id")]) {
-            m_list_lock[elem.attr("id")] = true;
+        if (DEBUG) console.info("appendInnerList() called instanceId=" + instanceId + " elementId=" + elementId + " parameters=" + searchStateParameters);
+
+        if (!m_list_locked[instanceId]) {
+            m_list_locked[instanceId] = true;
             var spinner = elem.find(".spinner");
             var entryBox = elem.find(".ap-list-box");
             spinner.hide().removeClass("fadeOut").addClass("fadeIn").css("top", entryBox.height() - 200).show();
             elem.find('.loadMore').addClass("fadeOut");
 
             // reload elements with AJAX here
-            $.get(buildAjaxLink(elem) + "&hideOptions=true&".concat(searchStateParameters), function(resultList) {
+            $.get(buildAjaxLink(elem, instanceId, elementId) + "&hideOptions=true&".concat(searchStateParameters), function(resultList) {
 
                 elem.find('.list-append-position').remove();
                 $(resultList).filter(".list-entry").appendTo(elem.find('.ap-list-box'));
@@ -102,16 +125,18 @@ var ApolloList = function(jQ) {
                 }
                 spinner.removeClass("fadeIn").addClass("fadeOut");
                 _OpenCmsReinitEditButtons();
-                m_list_lock[elem.attr("id")] = false;
+                m_list_locked[instanceId] = false;
             });
         }
     }
 
-    function buildAjaxLink(elem) {
+    function buildAjaxLink(elem, instanceId, elementId) {
 
         var params = "?contentpath=" + elem.data("path")
-            + "&id="
-            + elem.data("id")
+            + "&instanceId="
+            + instanceId
+            + "&elementId="
+            + elementId
             + "&sitepath="
             + elem.data("sitepath")
             + "&subsite="
@@ -121,7 +146,7 @@ var ApolloList = function(jQ) {
             + "&loc="
             + elem.data("locale");
 
-        var facets = $("#listoption_box-" + elem.data("id"));
+        var facets = $("#listoption_box-" + elementId);
         if (facets.length != 0) {
             params = params + "&facets=" + facets.data("facets");
         }
@@ -142,11 +167,6 @@ var ApolloList = function(jQ) {
         $(".ap-list-filters li.active").removeClass("active");
     }
 
-    function showEmpty(elem) {
-
-        elem.find(".editbox").show();
-    }
-
     function init() {
 
         if (DEBUG) console.info("ApolloList.init()");
@@ -158,15 +178,22 @@ var ApolloList = function(jQ) {
         if ($listElements.length > 0 ) {
             $listElements.each(function() {
 
-                reloadList("", $(this));
-                var list = $(this);
-                if (list.data("dynamic") === true) {
+                var $list = $(this);
+                var instanceId = $list.attr("id");
+                m_list_locked[instanceId] = false;
+                reloadList("", $list);
+
+                if ($list.data("dynamic") === true) {
                     // load more from list if scrolled to last item
                     $(window).scroll(function(event) {
 
-                        var appendPosition = list.find(".list-append-position");
-                        if (appendPosition.length && appendPosition.data("dynamic") && appendPosition.visible(true)) {
-                            appendInnerList(list.find('.loadMore').attr('data-load'), list);
+                        var appendPosition = $list.find(".list-append-position");
+
+                        if (appendPosition.length
+                            && !m_list_locked[instanceId]
+                            && appendPosition.data("dynamic")
+                            && appendPosition.visible(true)) {
+                            appendInnerList($list.find('.loadMore').attr('data-load'), $list);
                         }
                     });
                 }
@@ -179,9 +206,8 @@ var ApolloList = function(jQ) {
         init: init,
         archiveHighlight: archiveHighlight,
         archiveRemoveHighlight: archiveRemoveHighlight,
-        appendInnerList: appendInnerList,
-        reload: reloadList,
-        update: reloadListById
+        update: updateList,
+        filter: filterList
     }
 
 }(jQuery);

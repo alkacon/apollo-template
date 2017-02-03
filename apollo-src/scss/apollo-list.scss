@@ -89,6 +89,7 @@ $pagination-border:     $grey-light !default;
 
                 &:hover {
                     background-color: $grey-light;
+                    transition: background-color 0.33s;
                 }
             }
         }
@@ -117,9 +118,11 @@ $pagination-border:     $grey-light !default;
                     padding-bottom: 5px;
                     font-size: 12px;
                     text-align: center;
+                    cursor: pointer;
 
                     &:hover {
                         background-color: $grey-lighter;
+                        transition: background-color 0.33s;
                     }
                 }
 
