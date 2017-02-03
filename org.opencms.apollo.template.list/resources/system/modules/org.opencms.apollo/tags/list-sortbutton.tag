@@ -5,6 +5,9 @@
     description="Generates a sort options dropdown button for the list."%>
 
 
+<%@ attribute name="elementId" type="java.lang.String" required="false"
+    description="The id of the list content element (UID of the list resource)." %>
+
 <%@ attribute name="label" type="java.lang.String" required="false"
     description="The label that is used for the button." %>
 
@@ -94,8 +97,9 @@
                 <c:if test="${empty params || fn:contains(params, sortOption.paramValue)}">
                     <c:set var="selected">${sortController.state.checkSelected[sortOption] ? ' class="active"' : ""}</c:set>
                     <li ${selected}>
-                        <a href="javascript:void(0)" onclick="ApolloList.reload('${search.stateParameters.setSortOption[sortOption.paramValue]}',
-                            $('#list-' + $(this).parents().filter('.ap-list-options').data('id')))">
+                        <a href="javascript:void(0)" onclick="ApolloList.filter(
+                            '${search.stateParameters.setSortOption[sortOption.paramValue]}',
+                            '${elementId}' )">
                             <fmt:message key="${sortOption.label}" />
                         </a>
                     </li>

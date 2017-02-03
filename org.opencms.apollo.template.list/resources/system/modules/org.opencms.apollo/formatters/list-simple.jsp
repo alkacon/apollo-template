@@ -40,15 +40,15 @@
     --%>
 
     <c:set var="listWrapper" value="${formatterSettings.listWrapper} ${formatterSettings.requiredListWrapper}" />
+    <c:set var="instanceId" value="li_${fn:replace(cms.element.instanceId, '-', '')}"/>
 
     <%-- Id must not have any "-" character --%>
-    <c:set var="id" value="list_${fn:replace(cms.element.instanceId, '-', '')}"/>
 
-    <div class="${listWrapper}" id="${id}">
+    <div class="${listWrapper}" id="${instanceId}">
 
         <%-- ####### List entries ######## --%>
         <apollo:list-main
-            id="${id}"
+            instanceId="${instanceId}"
             source="${con.value.Folder}"
             types="${con.value.TypesToCollect}"
             count="${con.value.ItemsPerPage.isSet ? con.value.ItemsPerPage.toInteger : 5}"

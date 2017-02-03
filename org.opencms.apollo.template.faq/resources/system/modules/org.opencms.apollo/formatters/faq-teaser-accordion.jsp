@@ -16,7 +16,7 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.faq.messages">
 
-<c:set var="accId">${cms.element.instanceId}</c:set>
+<c:set var="instanceId">${cms.element.instanceId}</c:set>
 
 <%--
 
@@ -35,14 +35,14 @@ These will add the required "ap-panel panel-group" classes to the surrounding <d
                 class="accordion-toggle ${cms.element.settings.index == 0 ? '':'collapsed'}"
                 data-parent="#${cms.element.settings.listid}"
                 data-toggle="collapse"
-                href="#collapse-${accId}-${cms.element.settings.index}">
+                href="#collapse-${instanceId}-${cms.element.settings.index}">
 
                 <div>${content.value.Question}</div>
             </a>
         </h4>
     </div>
 
-    <div id="collapse-${accId}-${cms.element.settings.index}"
+    <div id="collapse-${instanceId}-${cms.element.settings.index}"
         class="panel-collapse collapse ${cms.element.settings.index == 0 ? 'in' : ''}">
         <div class="panel-body">
             <c:forEach var="paragraph" items="${content.valueList.Paragraph}" varStatus="status">

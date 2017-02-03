@@ -15,26 +15,43 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
-<c:if test="${not cms.isOnlineProject}">
+<c:choose>
+<c:when test="${not cms.isOnlineProject}">
 
-<fmt:setLocale value="${cms.workplaceLocale}" />
-<cms:bundle basename="org.opencms.apollo.template.list.messages">
+    <fmt:setLocale value="${cms.workplaceLocale}" />
+    <cms:bundle basename="org.opencms.apollo.template.list.messages">
 
-<cms:edit createType="${type}" create="true" >
-    <div id="ap-edit-info" class="box-new">
-    <%-- div class="alert alert-warning fade in">  --%>
-        <div class="head">
+    <cms:edit createType="${type}" create="true" >
+        <div id="ap-edit-info" class="box-new animated fadeIn">
+            <div class="head">
+                <fmt:message key="apollo.list.message.empty" />
+            </div>
+            <div class="text">
+                <fmt:message key="apollo.list.message.newentry">
+                    <fmt:param>
+                        <apollo:label locale="${cms.workplaceLocale}" key="fileicon.${type}" />
+                    </fmt:param>
+                </fmt:message>
+            </div>
+        </div>
+    </cms:edit>
+    </cms:bundle>
+
+</c:when>
+<c:otherwise>
+
+    <fmt:setLocale value="${cms.locale}" />
+    <cms:bundle basename="org.opencms.apollo.template.list.messages">
+
+    <div class="animated fadeIn">
+        <div class="message">
             <fmt:message key="apollo.list.message.empty" />
         </div>
-        <div class="text">
-            <fmt:message key="apollo.list.message.newentry">
-                <fmt:param>
-                    <apollo:label locale="${cms.workplaceLocale}" key="fileicon.${type}" />
-                </fmt:param>
-            </fmt:message>
-        </div>
     </div>
-</cms:edit>
+    </cms:bundle>
 
-</cms:bundle>
-</c:if>
+</c:otherwise>
+</c:choose>
+
+
+

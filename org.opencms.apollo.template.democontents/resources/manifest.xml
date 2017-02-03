@@ -12876,7 +12876,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>apollo-demo/new-pages/test-page</destination>
+			<destination>apollo-demo/new-pages/css-visualizer</destination>
 			<type>folder</type>
 			<uuidstructure>f645c324-cb2e-11e6-8bc3-0242ac11002b</uuidstructure>
 			<datecreated>Mon, 26 Dec 2016 05:48:44 GMT</datecreated>
@@ -12885,6 +12885,46 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>NavPos</name>
 					<value><![CDATA[0.03125]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[CSS Visualizer]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[CSS Visualizer]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/new-pages/css-visualizer/index.html</source>
+			<destination>apollo-demo/new-pages/css-visualizer/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>f64f3909-cb2e-11e6-8bc3-0242ac11002b</uuidstructure>
+			<uuidresource>f64f390a-cb2e-11e6-8bc3-0242ac11002b</uuidresource>
+			<datecreated>Mon, 26 Dec 2016 05:48:44 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[CSS Visualizer]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/new-pages/test-page</destination>
+			<type>folder</type>
+			<uuidstructure>8790b6f4-e9fb-11e6-a02b-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 03 Feb 2017 10:28:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.015625]]></value>
 				</property>
 				<property>
 					<name>NavText</name>
@@ -12902,9 +12942,9 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<source>apollo-demo/new-pages/test-page/index.html</source>
 			<destination>apollo-demo/new-pages/test-page/index.html</destination>
 			<type>containerpage</type>
-			<uuidstructure>f64f3909-cb2e-11e6-8bc3-0242ac11002b</uuidstructure>
-			<uuidresource>f64f390a-cb2e-11e6-8bc3-0242ac11002b</uuidresource>
-			<datecreated>Mon, 26 Dec 2016 05:48:44 GMT</datecreated>
+			<uuidstructure>87a0bc89-e9fb-11e6-a02b-0242ac11002b</uuidstructure>
+			<uuidresource>87a0bc8a-e9fb-11e6-a02b-0242ac11002b</uuidresource>
+			<datecreated>Fri, 03 Feb 2017 10:28:40 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>

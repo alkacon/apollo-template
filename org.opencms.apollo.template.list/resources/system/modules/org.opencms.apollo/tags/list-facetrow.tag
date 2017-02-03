@@ -5,6 +5,9 @@
     description="Displays a series of facet and sort buttons for the list."%>
 
 
+<%@ attribute name="elementId" type="java.lang.String" required="false"
+    description="The id of the list content element (UID of the list resource)." %>
+
 <%@ attribute name="searchresult" type="org.opencms.jsp.search.result.I_CmsSearchResultWrapper" required="true"
         description="The result of a previous usage of the cms:search tag." %>
 
@@ -40,25 +43,50 @@
                 <c:if test="${empty facets || fn:contains(facets, 'category')}">
                     <c:set var="buttonLabel"><fmt:message key="facet.category.label" /></c:set>
                     <c:set var="noSelection"><fmt:message key="facet.category.none" /></c:set>
-                    <apollo:list-facetbutton field="category_exact" label="${buttonLabel}" deselect="${noSelection}" searchresult="${search}" color="${color}" />
+                    <apollo:list-facetbutton
+                        elementId="${elementId}"
+                        field="category_exact"
+                        label="${buttonLabel}"
+                        deselect="${noSelection}"
+                        searchresult="${search}"
+                        color="${color}"
+                   />
                 </c:if>
 
                 <%-- ####### Sort by date ######## --%>
                 <c:if test="${empty facets || fn:contains(facets, 'sort_date')}">
                     <c:set var="buttonLabel"><fmt:message key="sort.options.date.label" /></c:set>
-                    <apollo:list-sortbutton searchresult="${search}" color="${color}"  label="${buttonLabel}" params="asc+desc" />
+                    <apollo:list-sortbutton
+                        elementId="${elementId}"
+                        searchresult="${search}"
+                        color="${color}"
+                        label="${buttonLabel}"
+                        params="asc+desc"
+                    />
                 </c:if>
 
                 <%-- ####### Sort by order ######## --%>
                 <c:if test="${empty facets || fn:contains(facets, 'sort_order')}">
                     <c:set var="buttonLabel"><fmt:message key="sort.options.order.label" /></c:set>
-                    <apollo:list-sortbutton searchresult="${search}" color="${color}"  label="${buttonLabel}" params="order_a+order_d" />
+                    <apollo:list-sortbutton
+                        elementId="${elementId}"
+                        searchresult="${search}"
+                        color="${color}"
+                        label="${buttonLabel}"
+                        params="order_a+order_d"
+                    />
                 </c:if>
 
                 <%-- ####### Sort by title ######## --%>
                 <c:if test="${empty facets || fn:contains(facets, 'sort_title')}">
                     <c:set var="buttonLabel"><fmt:message key="sort.options.title.label" /></c:set>
-                    <apollo:list-sortbutton searchresult="${search}" color="${color}"  label="${buttonLabel}" params="title_a+title_d" />
+                    <apollo:list-sortbutton
+                        elementId="${elementId}"
+                        searchresult="${search}"
+                        color="${color}"
+                        label="${buttonLabel}"
+                        params="title_a+title_d"
+                    />
                 </c:if>
 
             </section>

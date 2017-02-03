@@ -24,7 +24,8 @@
         <%-- ####### List entries ######## --%>
 
         <apollo:list-main
-            id="${param.id}"
+            elementId="${param.elementId}"
+            instanceId="${param.instanceId}"
 
             source="${con.value.Folder}"
             types="${con.value.TypesToCollect}"
@@ -53,7 +54,7 @@
                 <apollo:list-pagination
                     search="${search}"
                     singleStep="false"
-                    onclickAction='ApolloList.update("$(LINK)", "${param.id}")'
+                    onclickAction='ApolloList.update("$(LINK)", "${param.instanceId}")'
                 />
             </c:otherwise>
         </c:choose>

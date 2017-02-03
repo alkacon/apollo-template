@@ -4,8 +4,13 @@
   trimDirectiveWhitespaces="true"
   description="Searches for resources and displays the results." %>
 
-<%@ attribute name="id" type="java.lang.String" required="true"
-    description="The id the list should use, usually the UID of the element." %>
+<%@ attribute name="instanceId" type="java.lang.String" required="true"
+    description="The id of the list element instance (dynamically generated UID for the container).
+    This will always be unique even if the same list is on a page more then once." %>
+
+<%@ attribute name="elementId" type="java.lang.String" required="false"
+    description="The id of the list content element (UID of the list resource).
+    If the same list is on a page more then once, then all list instances share this id." %>
 
 <%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The directory (including subdirectories) from which the elements are read." %>
@@ -81,6 +86,7 @@
     <%-- ####### The facet filters ######## --%>
     <c:if test="${not empty showfacets}">
         <apollo:list-facetrow
+            elementId="${elementId}"
             searchresult="${search}"
             color="${color}"
             facets="${showfacets}"
@@ -104,7 +110,7 @@
                      <cms:param name="${parameter.key}" value="${parameter.value}" />
                 </c:forEach>
 
-                <cms:param name="listid">${id}</cms:param>
+                <cms:param name="listid">${instanceId}</cms:param>
                 <cms:param name="index">${status.index}</cms:param>
                 <cms:param name="last">${status.last}</cms:param>
                 <cms:param name="pageUri">${pageUri}</cms:param>

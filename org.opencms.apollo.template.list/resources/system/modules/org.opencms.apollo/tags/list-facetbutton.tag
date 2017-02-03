@@ -5,6 +5,9 @@
     description="Generates a facet options dropdown button for the list"%>
 
 
+<%@ attribute name="elementId" type="java.lang.String" required="false"
+    description="The id of the list content element (UID of the list resource)." %>
+
 <%@ attribute name="field" type="java.lang.String" required="true"
     description="The name of the solr index field that will be used." %>
 
@@ -112,8 +115,9 @@
             <%-- ##### Default option ##### --%>
             <li ${cms:getListSize(facetController.state.checkedEntries) == 0?'class="active"' : ""}>
                 <a href="javascript:void(0)"
-                    onclick="ApolloList.reload('${search.stateParameters.resetFacetState[categoryFacetField]}',
-                    $('#list-' + $(this).parents().filter('.ap-list-options').data('id')))">
+                    onclick="ApolloList.filter(
+                        '${search.stateParameters.resetFacetState[categoryFacetField]}',
+                        '${elementId}' )">
                     ${deselectLabel}</a>
             </li>${delimiter}
 
@@ -138,8 +142,9 @@
         <c:if test="${blacklistFilter != fn:contains(catFilters, currCatTitle)}">
           <li ${selected}>
             <a href="javascript:void(0)"
-            onclick="ApolloList.reload('${search.stateParameters.resetFacetState[categoryFacetField].checkFacetItem[categoryFacetField][value.name]}',
-              $('#list-' + $(this).parents().filter('.ap-list-options').data('id')))">
+            onclick="ApolloList.filter(
+                '${search.stateParameters.resetFacetState[categoryFacetField].checkFacetItem[categoryFacetField][value.name]}',
+                '${elementId}' )">
               ${label} (${value.count})
             </a>
           </li>${delimiter}

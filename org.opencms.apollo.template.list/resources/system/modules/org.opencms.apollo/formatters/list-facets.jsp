@@ -13,15 +13,16 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.list.messages">
 
-<apollo:formatter-settings 
-    type="${content.value.TypesToCollect}" 
+<apollo:formatter-settings
+    type="${content.value.TypesToCollect}"
     parameters="${content.valueList.Parameters}"
-    online="${cms.isOnlineProject}" 
+    online="${cms.isOnlineProject}"
 />
 
 <%-- ####### Build facet settings ######## --%>
+<c:set var="elementId" value="le_${fn:replace(cms.element.id, '-', '')}"/>
 <c:set var="settings" value="${cms.element.settings}" />
-<c:set var="facetsettings" 
+<c:set var="facetsettings"
     value="none
     ${settings.showfacetcategory ? 'category' : ''}
     ${settings.showsorttitle ? 'sort_title' : ''}
@@ -30,15 +31,16 @@
 
 <%-- ##################################### --%>
 
-<div class="ap-list-options ${formatterSettings.listWrapper}" 
-    id="listoption_box-${cms.element.id}" 
-    data-id="${cms.element.id}" 
+<div class="ap-list-options ${formatterSettings.listWrapper}"
+    id="listoption_box-${elementId}"
     data-facets="${facetsettings}">
+
+    <%-- The list options are filled by JavaScript --%>
 
     ${cms.reloadMarker}
 
     <c:if test="${cms.isEditMode}">
-        <div class="list-options editMessage-${cms.element.id} ap-edit-info-message">
+        <div class="list-options editMessage-${elementId} ap-edit-info-message">
             <div class="head">
                 <fmt:message key="apollo.list.message.facets" />&nbsp;${value.Headline}
             </div>

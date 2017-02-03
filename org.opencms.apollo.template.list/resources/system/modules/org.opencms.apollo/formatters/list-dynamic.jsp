@@ -49,15 +49,15 @@
                 <c:set var="count" value="${value.ItemsPerPage.isSet ? value.ItemsPerPage.toInteger : 5}" />
                 <c:set var="approxElemHeight" value="150" />
                 <c:set var="ajaxlink"><cms:link>/system/modules/org.opencms.apollo/elements/list-ajax.jsp</cms:link></c:set>
-                <%-- Id must not have any "-" character --%>
-                <c:set var="id" value="list_${fn:replace(cms.element.instanceId, '-', '')}"/>
+                <c:set var="instanceId" value="li_${fn:replace(cms.element.instanceId, '-', '')}"/>
+                <c:set var="elementId" value="le_${fn:replace(cms.element.id, '-', '')}"/>
 
                 <%-- ####### The list content will be inserted here with AJAX ####### --%>
                 <div
                     class="ap-list-entries ${formatterSettings.listWrapper}"
-                    id="${id}"
+                    id="${instanceId}"
+                    data-id="${elementId}"
 
-                    data-id="${id}"
                     data-ajax="${ajaxlink}"
                     data-teaser="${cms.element.settings.teaserlength}"
                     data-path="${cms.element.sitePath}"

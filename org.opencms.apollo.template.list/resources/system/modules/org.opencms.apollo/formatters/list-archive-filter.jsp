@@ -31,8 +31,9 @@
     filterqueries="${value.FilterQueries}" />
 
 <c:set var="csswrapper" value="${not empty formatterSettings.filterWrapper ? formatterSettings.filterWrapper : formatterSettings.listWrapper}" />
+<c:set var="elementId" value="le_${fn:replace(cms.element.id, '-', '')}"/>
 
-<div class="ap-list-filters ${csswrapper}" data-id="${cms.element.id}">
+<div class="ap-list-filters ${csswrapper}">
 
     <c:if test="${cms.element.settings.showsearch}">
         <div class="filterbox search">
@@ -89,9 +90,12 @@
 
                             <c:if test="${showLabel}">
                                 <li ${selected}>
-                                    <a href="javascript:void(0)"
-                                        onclick="ApolloList.reload('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}',
-                                        $('#list-' + $(this).parents('.ap-list-filters').data('id'))); ApolloList.archiveHighlight($(this)); clearQuery();">
+                                    <a href="javascript:void(0)" onclick="ApolloList.filter(<%--
+                                            --%>'${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}',<%--
+                                            --%>'${elementId}'<%--
+                                        --%>);<%--
+                                        --%>ApolloList.archiveHighlight($(this));<%--
+                                        --%>clearQuery();">
                                         <span class="badge"><i class="fa fa-tag"></i> ${currCat.title} (${value.count})</span>
                                     </a>
                                 </li>
@@ -145,10 +149,13 @@
                     <%-- add month list entry to current year --%>
                     <c:set var="yearHtml">
                         ${yearHtml}
-                        <li ${selected}>
-                            <a href="javascript:void(0)"
-                                    onclick="ApolloList.reload('${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}',
-                                    $('#list-' + $(this).parents('.ap-list-filters').data('id'))); ApolloList.archiveHighlight($(this)); clearQuery();" title="${facetItem.count}">
+                        <li ${selected} onclick="ApolloList.filter(<%--
+                                        --%>'${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}',<%--
+                                        --%>'${elementId}'<%--
+                                        --%>);<%--
+                                    --%>ApolloList.archiveHighlight($(this).find('a'));<%--
+                                    --%>clearQuery();" title="${facetItem.count}">
+                            <a href="javascript:void(0)">
                                 <fmt:formatDate value="${fDate}" pattern="MMM" />
                             </a>
                         </li>
@@ -178,7 +185,10 @@
         window.onload = function () {
             $( "#queryform" ).submit(
                 function( event ) {
-                    ApolloList.reload("${search.stateParameters.resetAllFacetStates}&q=" + $("#queryinput").val(), $('#list-' + $(this).parents('.ap-list-filters').data('id')));
+                    ApolloList.filter(
+                        "${search.stateParameters.resetAllFacetStates}&q=" + $("#queryinput").val(),
+                        "${elementId}"
+                    );
                     ApolloList.archiveRemoveHighlight();
                 });
         }
