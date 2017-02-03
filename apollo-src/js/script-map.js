@@ -280,7 +280,15 @@ var ApolloMap = function(jQ) {
 
     function init() {
 
-        if (DEBUG) console.info("ApolloMap.init()");
+        if (DEBUG) {
+            console.info("ApolloMap.init()");
+            if (Apollo.hasInfo("googleMapKey")) {
+                // Goggle map key is read in apollo:pageinfo tag and read to JavaScript via Apollo.init()
+                console.info("Google map key is: " + Apollo.getInfo("googleMapKey"));
+            } else {
+                console.info("Google map key not set in OpenCms VFS!");
+            }
+        }
 
         var $mapElements = jQ('.ap-google-map');
         if (DEBUG) console.info(".ap-google-map elements found: " + $mapElements.length);

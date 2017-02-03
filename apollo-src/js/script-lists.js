@@ -25,6 +25,13 @@ var ApolloList = function(jQ) {
     // list locks to prevent triggering actions while load still in process
     var m_list_lock = {};
 
+    function reloadListById(searchStateParameters, id, resetArchive) {
+
+        var elem = jQ('#' + id);
+        reloadList(searchStateParameters, elem, resetArchive);
+    }
+
+
     function reloadList(searchStateParameters, elem, resetArchive) {
 
         if (arguments.length == 3 && resetArchive) {
@@ -33,8 +40,10 @@ var ApolloList = function(jQ) {
         doReloadInnerList(searchStateParameters, elem);
     }
 
+
     // Used for both pagination and scroll-reload lists
     function doReloadInnerList(searchStateParameters, elem) {
+
 
         if (typeof m_list_lock[elem.attr("id")] === "undefined" || !m_list_lock[elem.attr("id")]) {
             m_list_lock[elem.attr("id")] = true;
@@ -151,7 +160,7 @@ var ApolloList = function(jQ) {
 
                 reloadList("", $(this));
                 var list = $(this);
-                 if (list.data("dynamic") === true) {
+                if (list.data("dynamic") === true) {
                     // load more from list if scrolled to last item
                     $(window).scroll(function(event) {
 
@@ -171,7 +180,8 @@ var ApolloList = function(jQ) {
         archiveHighlight: archiveHighlight,
         archiveRemoveHighlight: archiveRemoveHighlight,
         appendInnerList: appendInnerList,
-        reload: reloadList
+        reload: reloadList,
+        update: reloadListById
     }
 
 }(jQuery);

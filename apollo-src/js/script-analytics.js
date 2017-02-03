@@ -38,8 +38,15 @@ var ApolloAnalytics = function(jQ) {
 
     function init() {
 
-        if (DEBUG) console.info("ApolloAnalytics.init()");
-
+        if (DEBUG) {
+            console.info("ApolloAnalytics.init()");
+            if (Apollo.hasInfo("googleAnalyticsId")) {
+                // Goggle analytics ID is read in apollo:pageinfo tag and read to JavaScript via Apollo.init()
+                console.info("Google analytic ID is: " + Apollo.getInfo("googleAnalyticsId"));
+            } else {
+                console.info("Google analytic ID not set in OpenCms VFS!");
+            }
+        }
         if (Apollo.isOnlineProject() && Apollo.hasInfo("googleAnalyticsId")) {
             // only enable google analytics in the online project when ID is set
             var googleAnalyticsId = "UA-" + Apollo.getInfo("googleAnalyticsId");

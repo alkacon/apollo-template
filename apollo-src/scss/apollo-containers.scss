@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -24,7 +24,7 @@
 // Apollo container types
 $ap-container-types:
 (
-    (area, #ffc9d2),    // "darker light red" 
+    (area, #ffc9d2),    // "darker light red"
     (segment, #ffe3e7), // "light red"
     (grid, #ffdac7 ),   // "light red-orange"
     (row, #ffe5bf),     // "light orange"
@@ -32,7 +32,7 @@ $ap-container-types:
     (special, #effab4), // "light green"
 ) !default;
 
-// OpenCms roles and their matching colors  
+// OpenCms roles and their matching colors
 $ap-container-labels:
 (
     (developer, $red),
@@ -43,21 +43,21 @@ $ap-container-labels:
     (special, $red-light),
     (copygroup, $red-light),
     (reusegroup, $blue-light),
-) !default; 
+) !default;
 
-// OpenCms roles and their matching colors  
+// OpenCms roles and their matching colors
 $ap-edit-infos:
 (
     (new, $blue-light),
     (reload, $red-dark)
-) !default; 
+) !default;
 
 // Basic definitions
 
 %ap-infobox-base {
     padding: 10px;
     text-align: center;
-    overflow: hidden; 
+    overflow: hidden;
     white-space: normal;
     min-height: 100px;
 
@@ -83,7 +83,7 @@ $ap-edit-infos:
 }
 
 #ap-container {
-    @extend %ap-infobox-base,%ap-infobox-round;
+    @extend %ap-infobox-base, %ap-infobox-round;
 
     .head  {
         color: $text-dark;
@@ -100,7 +100,7 @@ $ap-edit-infos:
 }
 
 #ap-edit-info {
-    @extend %ap-infobox-base,%ap-infobox-round;
+    @extend %ap-infobox-base, %ap-infobox-round;
 
     .head,
     .text,
@@ -150,7 +150,7 @@ $ap-edit-infos:
 }
 
 
-/* Mega menu editor head */ 
+/* Mega menu editor head */
 
 #ap-megamenu-head {
     @extend %ap-infobox-base;
@@ -184,7 +184,7 @@ $ap-edit-infos:
     text-transform: uppercase;
 }
 
-@each $role-name, $label-color in $ap-container-labels { 
+@each $role-name, $label-color in $ap-container-labels {
     .ap-label-#{""+$role-name} {
         @extend %ap-label;
 
