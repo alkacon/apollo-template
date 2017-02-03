@@ -26,13 +26,13 @@
         </div>
     </c:if>
 
-    <apollo:formatter-settings 
-        type="${con.value.TypesToCollect}" 
+    <apollo:formatter-settings
+        type="${con.value.TypesToCollect}"
         parameters="${con.valueList.Parameters}"
-        online="${cms.isOnlineProject}" 
+        online="${cms.isOnlineProject}"
     />
 
-    <%--  
+    <%--
     <h3>Formatter settings:</h3>
     <c:forEach var="setting" items="${formatterSettings}">
         <div>${setting.key}=${setting.value}</div>
@@ -41,30 +41,27 @@
 
     <c:set var="listWrapper" value="${formatterSettings.listWrapper} ${formatterSettings.requiredListWrapper}" />
 
-    <div ${not empty listWrapper ? 'class="'.concat(listWrapper).concat('"')  : '' } id="list-${cms.element.instanceId}">
+    <%-- Id must not have any "-" character --%>
+    <c:set var="id" value="list_${fn:replace(cms.element.instanceId, '-', '')}"/>
+
+    <div class="${listWrapper}" id="${id}">
 
         <%-- ####### List entries ######## --%>
         <apollo:list-main
+            id="${id}"
             source="${con.value.Folder}"
             types="${con.value.TypesToCollect}"
-            count="${con.value.ItemsPerPage.isSet ? con.value.ItemsPerPage.toInteger : 5}" 
+            count="${con.value.ItemsPerPage.isSet ? con.value.ItemsPerPage.toInteger : 5}"
             locale="${cms.locale}"
             sort="${con.value.SortOrder}"
-            categories="${con.readCategories}" 
+            categories="${con.readCategories}"
             formatterSettings="${formatterSettings}"
-
-            listid="${cms.element.instanceId}"
         />
 
         <%-- ####### Create and edit new entries if empty result ######## --%>
         <c:if test="${search.numFound == 0}">
             <c:set var="createType">${fn:substringBefore(con.value.TypesToCollect.stringValue, ':')}</c:set>
-            <cms:edit createType="${createType}" create="true" >
-                <div class="alert alert-warning fade in">
-                    <h3><fmt:message key="apollo.list.message.empty" /></h3>
-                    <div><fmt:message key="apollo.list.message.newentry" /></div>
-                </div>
-            </cms:edit>
+            <apollo:list-messages type="${createType}" />
         </c:if>
 
         <c:if test="${con.value.Link.exists}">

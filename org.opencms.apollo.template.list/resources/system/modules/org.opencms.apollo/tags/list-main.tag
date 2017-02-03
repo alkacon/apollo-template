@@ -4,6 +4,8 @@
   trimDirectiveWhitespaces="true"
   description="Searches for resources and displays the results." %>
 
+<%@ attribute name="id" type="java.lang.String" required="true"
+    description="The id the list should use, usually the UID of the element." %>
 
 <%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The directory (including subdirectories) from which the elements are read." %>
@@ -25,9 +27,6 @@
 
 <%@ attribute name="categories" type="org.opencms.jsp.util.CmsJspCategoryAccessBean" required="false"
     description="The categories field from the XML content, used by the list-search tag." %>
-
-<%@ attribute name="listid" type="java.lang.String" required="false"
-    description="An ID string used for this list. Enables multiple lists on one page." %>
 
 <%@ attribute name="showfacets" type="java.lang.String" required="false"
     description="A string containing keywords that configure which filters will be shown. Multiple keyword can be used.
@@ -105,7 +104,7 @@
                      <cms:param name="${parameter.key}" value="${parameter.value}" />
                 </c:forEach>
 
-                <cms:param name="listid">${listid}</cms:param>
+                <cms:param name="listid">${id}</cms:param>
                 <cms:param name="index">${status.index}</cms:param>
                 <cms:param name="last">${status.last}</cms:param>
                 <cms:param name="pageUri">${pageUri}</cms:param>

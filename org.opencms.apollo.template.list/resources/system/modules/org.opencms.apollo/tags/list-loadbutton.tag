@@ -25,7 +25,6 @@
     <c:if test="${not empty pagination && search.numPages > 1}">
         <c:set var="next">${pagination.state.currentPage < search.numPages ? pagination.state.currentPage + 1 : pagination.state.currentPage}</c:set>
         <c:if test="${pagination.state.currentPage < search.numPages}">
-            <%--  div class="paginationWrapper pagination col-xs-12" data-dynamic="true">--%>
             <div class="list-append-position" data-dynamic="true">
                 <c:set var="pages">${search.numPages}</c:set>
                 <button

@@ -33,7 +33,7 @@ These will add the required "ap-panel panel-group" classes to the surrounding <d
         <h4 class="panel-title">
             <a
                 class="accordion-toggle ${cms.element.settings.index == 0 ? '':'collapsed'}"
-                data-parent="#list-${cms.element.settings.listid}"
+                data-parent="#${cms.element.settings.listid}"
                 data-toggle="collapse"
                 href="#collapse-${accId}-${cms.element.settings.index}">
 
@@ -46,7 +46,7 @@ These will add the required "ap-panel panel-group" classes to the surrounding <d
         class="panel-collapse collapse ${cms.element.settings.index == 0 ? 'in' : ''}">
         <div class="panel-body">
             <c:forEach var="paragraph" items="${content.valueList.Paragraph}" varStatus="status">
-                <apollo:paragraph 
+                <apollo:paragraph
                     showimage="true"
                     headline="inline"
                     headlinestyle="ap-faq-header"

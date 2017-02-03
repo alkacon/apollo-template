@@ -49,6 +49,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-item-compact.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-loadbutton.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-main.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/list-messages.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-pagination.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-search.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/list-sortbutton.tag"/>
@@ -593,6 +594,23 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Searches for resources and displays the results]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/list-messages.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/list-messages.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>7e639da7-e9c7-11e6-b1ea-0242ac11002b</uuidstructure>
+			<uuidresource>7e639da8-e9c7-11e6-b1ea-0242ac11002b</uuidresource>
+			<datecreated>Fri, 03 Feb 2017 04:16:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Displays the 'empty' list message and other messages used for the list]]></value>
 				</property>
 			</properties>
 			<relations/>

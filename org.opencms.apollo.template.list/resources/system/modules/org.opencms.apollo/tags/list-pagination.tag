@@ -10,7 +10,8 @@
 
 <%@ attribute name="onclickAction" type="java.lang.String" required="true"
     description="The on click action string that reloads the list. It has to contain a $(LINK) macro that
-    is replaced with the actual link calculated for the individual pages."%>
+    is replaced with the actual link calculated for the individual pages.
+    This is a workaround to use the pagination tag for the list as well as the search result. "%>
 
 <%@ attribute name="singleStep" type="java.lang.Boolean" required="false"
     description="Selects if single step next / previous awwows are shown."%>

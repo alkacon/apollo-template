@@ -24,6 +24,8 @@
         <%-- ####### List entries ######## --%>
 
         <apollo:list-main
+            id="${param.id}"
+
             source="${con.value.Folder}"
             types="${con.value.TypesToCollect}"
             count="${con.value.ItemsPerPage.isSet ? con.value.ItemsPerPage.toInteger : 5}"
@@ -32,8 +34,6 @@
             categories="${con.readCategories}"
             formatterSettings="${formatterSettings}"
             ajaxCall="true"
-
-            listid="${param.id}"
 
             showfacets="${param.facets}"
             pageUri="${param.sitepath}"
@@ -53,7 +53,7 @@
                 <apollo:list-pagination
                     search="${search}"
                     singleStep="false"
-                    onclickAction='ApolloList.reload("$(LINK)", $(this).parents().filter(".ap-list-entries"))'
+                    onclickAction='ApolloList.update("$(LINK)", "${param.id}")'
                 />
             </c:otherwise>
         </c:choose>
