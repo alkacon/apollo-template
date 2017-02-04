@@ -72,12 +72,6 @@ var ApolloList = function(jQ) {
 
             var ajaxOptions = "&";
             if (reloadEntries) {
-                // set min-height of list to avoid screen flicker
-                list.$entrybox.css("min-height", list.$entrybox.height() + 'px');
-                // clear the current displayed list entries
-                list.$entrybox.find(".list-entry").each(function() {
-                    $(this).remove();
-                });
                 // hide the "no results found" message during search
                 list.$editbox.hide();
             } else {
@@ -94,14 +88,26 @@ var ApolloList = function(jQ) {
             $.get(buildAjaxLink(list) + ajaxOptions + searchStateParameters, function(resultList) {
 
                 var $result = $(resultList);
+
+                // append all results from the ajax call to a new element that is not yet displayed
                 var $entries = $result.filter(".list-entry");
-                var $wrapper = $('<div class="list-entry-page"></div>');
-                // append all results from the ajax call to the list on the page
-                $entries.appendTo($wrapper);
-                $wrapper.appendTo(list.$entrybox);
+                var $newPage = $('<div class="list-entry-page"></div>');
+                $entries.appendTo($newPage);
 
                 // clear the pagination element
                 list.$pagination.empty();
+
+                if (reloadEntries) {
+                    // remove the old entries when list is relaoded
+                    var $oldPage = list.$entrybox.find(".list-entry-page");
+                    // set min-height of list to avoid screen flicker
+                    list.$entrybox.css("min-height", list.$entrybox.height() + 'px');
+                    $oldPage.remove();
+                }
+
+                // add the new elements to the list
+                $newPage.appendTo(list.$entrybox);
+
                 // set pagination element with new content
                 $result.filter('.list-append-position').appendTo(list.$pagination);
 
