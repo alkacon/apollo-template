@@ -22,10 +22,13 @@
 // https://www.christianheilmann.com/2007/08/22/again-with-the-module-pattern-reveal-something-to-the-world/
 var ApolloList = function(jQ) {
 
-    // all initialized Lists
+    // all initialized lists by unique instance id
     this.m_lists = {};
 
-    // all auto loading LISTS as array for easy iteration
+    // groups of initialized lists by element id (potentially more then once on a page)
+    this.m_listGroups = {};
+
+    // all auto loading lists as array for easy iteration
     this.m_autoLoadLists = [];
 
     // list locks to prevent triggering actions while load still in process
@@ -38,7 +41,7 @@ var ApolloList = function(jQ) {
         if (arguments.length == 3 && resetArchive) {
             archiveRemoveHighlight();
         }
-        reloadInnerList(id, searchStateParameters);
+        updateInnerList(id, searchStateParameters, true);
     }
 
 
@@ -49,88 +52,89 @@ var ApolloList = function(jQ) {
         if (arguments.length == 3 && resetArchive) {
             archiveRemoveHighlight();
         }
-        jQ('div[data-id="' + elementId + '"]').each(function () {
-            reloadInnerList($(this).attr("id"), searchStateParameters);
-        });
-    }
-
-
-    // Used for both pagination and scroll-reload lists
-    function reloadInnerList(id, searchStateParameters) {
-        searchStateParameters = searchStateParameters || "";
-
-        var list = m_lists[id];
-
-        if (DEBUG) console.info("reloadInnerList() called instanceId=" + list.id + " elementId=" + list.elementId + " parameters=" + searchStateParameters);
-
-        if (!list.locked) {
-            list.locked = true;
-
-            // hide the "no results found" message during search
-            list.$editbox.hide();
-            list.$spinner.hide().removeClass("fadeOut").addClass("fadeIn").show();
-
-            // clear the current displayed list entries
-            list.$entrybox.find(".list-entry").each(function() {
-                $(this).remove();
-            });
-
-            list.$entrybox.css("min-height", list.minheigh);
-            list.$pagination.empty();
-
-            var listOptionBox = $('#listoption_box-' + list.elementId);
-            $.get(buildAjaxLink(list) + "&" + searchStateParameters, function(resultList) {
-
-                listOptionBox.find(".list-options").remove();
-                $(resultList).filter(".list-entry").appendTo(list.$entrybox);
-                $(resultList).filter('.list-append-position').appendTo(list.$pagination);
-                $(resultList).filter(".list-options").appendTo(listOptionBox);
-                if ($(resultList).filter(".list-entry").length == 0) {
-                    // show the "no resluts found" message
-                    list.$editbox.show();
-                    list.$pagination.hide();
-                } else {
-                    list.$pagination.show();
-                }
-                list.$spinner.removeClass("fadeIn").addClass("fadeOut");
-                list.$entrybox.css("min-height", "0");
-                _OpenCmsReinitEditButtons();
-                list.locked = false;
-                if (list.dynamic == "true") {
-                    // check if we can render more of this dynamic loading list
-                    handleAutoLoaders()
-                }
-            });
+        var listGroup = m_listGroups[elementId];
+        for (i=0; i<listGroup.length; i++) {
+            updateInnerList(listGroup[i].id, searchStateParameters, true);
         }
     }
 
-    // Used for scroll-reload lists
-    function appendInnerList(id, searchStateParameters) {
+    // used for both pagination and scroll-reload lists
+    function updateInnerList(id, searchStateParameters, reloadEntries) {
         searchStateParameters = searchStateParameters || "";
+        reloadEntries = reloadEntries || false;
 
         var list = m_lists[id];
 
-        if (DEBUG) console.info("appendInnerList() called instanceId=" + list.id + " elementId=" + list.elementId + " parameters=" + searchStateParameters);
+        if (DEBUG) console.info("updateInnerList() called instanceId=" + list.id + " elementId=" + list.elementId + " parameters=" + searchStateParameters);
 
         if (!list.locked) {
             list.locked = true;
 
-            list.$spinner.hide().removeClass("fadeOut").addClass("fadeIn").css("top", list.$entrybox.height() - 200).show();
+            var ajaxOptions = "&";
+            if (reloadEntries) {
+                // set min-height of list to avoid screen flicker
+                list.$entrybox.css("min-height", list.$entrybox.height() + 'px');
+                // clear the current displayed list entries
+                list.$entrybox.find(".list-entry").each(function() {
+                    $(this).remove();
+                });
+                // hide the "no results found" message during search
+                list.$editbox.hide();
+            } else {
+                // fade out the load more button
+                list.$element.find('.loadMore').addClass("fadeOut");
+                // we don't need to calculate facets again if we do not reload all entries
+                ajaxOptions = "&hideOptions=true&";
+            }
 
-            list.$element.find('.loadMore').addClass("fadeOut");
+            // show the spinner
+            list.$spinner.hide().removeClass("fadeOut").addClass("fadeIn").show();
 
-            // reload elements with AJAX here
-            $.get(buildAjaxLink(list) + "&hideOptions=true&" + searchStateParameters, function(resultList) {
+            var listOptionBox = $('#listoption_box-' + list.elementId);
+            $.get(buildAjaxLink(list) + ajaxOptions + searchStateParameters, function(resultList) {
 
-                list.$element.find('.list-append-position').remove();
-                $(resultList).filter(".list-entry").appendTo(list.$entrybox);
-                $(resultList).filter(".list-append-position").appendTo(list.$pagination);
-                if ($(resultList).filter(".list-append-position").length == 0) {
-                    list.$pagination.css("min-height", "0");
+                var $result = $(resultList);
+                var $entries = $result.filter(".list-entry");
+                var $wrapper = $('<div class="list-entry-page"></div>');
+                // append all results from the ajax call to the list on the page
+                $entries.appendTo($wrapper);
+                $wrapper.appendTo(list.$entrybox);
+
+                // clear the pagination element
+                list.$pagination.empty();
+                // set pagination element with new content
+                $result.filter('.list-append-position').appendTo(list.$pagination);
+
+                if (reloadEntries) {
+                    // reset the list option box
+                    listOptionBox.find(".list-options").remove();
+                    $result.filter(".list-options").appendTo(listOptionBox);
+
+                    // check if we have found any results
+                    if ($entries.length == 0) {
+                        // show the "no results found" message
+                        list.$editbox.show();
+                        // no results means we don't need any pagination element
+                        list.$pagination.hide();
+                    } else {
+                        // show the pagination element
+                        list.$pagination.show();
+                    }
                 }
+
+                // fade out the spinner
                 list.$spinner.removeClass("fadeIn").addClass("fadeOut");
+                // reset the min-height of the list now that the elements are visible
+                list.$entrybox.animate({'min-height': "0px"}, 500);
+
+                // reset the OpenCms edit buttons
                 _OpenCmsReinitEditButtons();
                 list.locked = false;
+
+                if (reloadEntries && (list.dynamic == "true")) {
+                    // check if we can render more of this dynamic loading list
+                    handleAutoLoaders()
+                }
             });
         }
     }
@@ -189,7 +193,8 @@ var ApolloList = function(jQ) {
                     // NOTE: jQuery.visible() is defined in script-jquery-extensions.js
                     && appendPosition.visible()) {
 
-                    appendInnerList(list.id, list.$element.find('.loadMore').attr('data-load'));
+                    // appendInnerList(list.id, list.$element.find('.loadMore').attr('data-load'));
+                    updateInnerList(list.id, list.$element.find('.loadMore').attr('data-load'), false);
                 }
             }
         }
@@ -228,11 +233,18 @@ var ApolloList = function(jQ) {
                     }
                     // store list data in global array
                     m_lists[list.id] = list;
+                    // store list in global group array
+                    var group = m_listGroups[list.elementId];
+                    if (typeof group != 'undefined') {
+                        group.push(list);
+                    } else {
+                        m_listGroups[list.elementId] = [list];
+                    }
                     if (DEBUG) console.info("List data found: id=" + list.id + ", elementId=" + list.elementId);
                 }
 
                 // load the initial list
-                reloadInnerList(list.id);
+                updateInnerList(list.id, "", true);
             });
 
             if (m_autoLoadLists.length > 0) {
