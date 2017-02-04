@@ -31,7 +31,7 @@
             addcssclass="${cms.element.setting.addcssclass.value != 'none' ? cms.element.setting.addcssclass.value : ''}"
         >
             <c:if test="${showlinktext}">
-                <div class="button-box"}>
+                <div class="button-box">
                     <apollo:link link="${value.Link}" cssclass="btn btn-xs" />
                 </div>
             </c:if>
