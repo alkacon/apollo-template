@@ -70,10 +70,7 @@
                 --%>}'>
                     <div
                         class="ap-list-box"
-                        <%--
-                        style="min-height: ${count * approxElemHeight}px;"
-                        --%>
-                        >
+                        style="min-height: ${count * approxElemHeight}px;">
 
                         <div class="col-xs-12">
                             <div class="spinner animated mv-20" style="display: none; transform: none;">
