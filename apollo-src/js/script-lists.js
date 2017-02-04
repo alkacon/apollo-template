@@ -82,7 +82,8 @@ var ApolloList = function(jQ) {
             }
 
             // show the spinner
-            list.$spinner.hide().removeClass("fadeOut").addClass("fadeIn").show();
+            var spinnerPos = Math.max(list.$entrybox.height() - 200, 0);
+            list.$spinner.hide().removeClass("fadeOut").addClass("fadeIn").css("top", spinnerPos).show();
 
             var listOptionBox = $('#listoption_box-' + list.elementId);
             $.get(buildAjaxLink(list) + ajaxOptions + searchStateParameters, function(resultList) {
