@@ -35,6 +35,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-facets.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-dynamic.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-pagination.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/list-pagination-scrolling.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-scrolling.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-simple.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-simple.xml"/>
@@ -277,6 +278,23 @@
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/list-pagination-scrolling.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/list-pagination-scrolling.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>806a8573-eba3-11e6-9bed-0242ac11002b</uuidstructure>
+			<uuidresource>806a8574-eba3-11e6-9bed-0242ac11002b</uuidresource>
+			<datecreated>Sun, 05 Feb 2017 13:03:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[List with pagination]]></value>
 				</property>
 			</properties>
 			<relations/>

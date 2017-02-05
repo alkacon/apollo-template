@@ -25,4 +25,9 @@
     --%><c:if test="${not empty googleAnalyticsId}">"googleAnalyticsId":"${googleAnalyticsId}",</c:if><%--
     --%>"project":"${project}",<%--
     --%>"locale":"${cms.locale}"<%--
---%>}'></div>
+--%>}'><%--
+
+--%><div id="apollo-grid-info"></div><%--
+
+--%></div>
+
