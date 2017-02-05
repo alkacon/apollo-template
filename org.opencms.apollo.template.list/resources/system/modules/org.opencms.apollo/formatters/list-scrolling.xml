@@ -30,8 +30,13 @@
     </Setting>
     <Setting>
       <PropertyName><![CDATA[listOption]]></PropertyName>
-      <Widget><![CDATA[hidden]]></Widget>
+      <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[scrolling]]></Default>
+      <WidgetConfig><![CDATA[
+        scrolling:          %(key.apollo.setting.list.scrolling)|
+        clickfirst:         %(key.apollo.setting.list.clickfirst)|
+        clickonly:          %(key.apollo.setting.list.clickonly)
+        ]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

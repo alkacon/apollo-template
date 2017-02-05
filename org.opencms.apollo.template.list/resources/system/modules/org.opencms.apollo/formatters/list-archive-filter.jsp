@@ -28,7 +28,8 @@
     count="${value.ItemsPerPage.toInteger}"
     sort="${value.SortOrder}"
     showexpired="${cms.element.settings.showexpired}"
-    filterqueries="${value.FilterQueries}" />
+    filterqueries="${value.FilterQueries}"
+/>
 
 <c:set var="csswrapper" value="${not empty formatterSettings.filterWrapper ? formatterSettings.filterWrapper : formatterSettings.listWrapper}" />
 <c:set var="elementId" value="le_${fn:replace(cms.element.id, '-', '')}"/>

@@ -44,13 +44,13 @@
     ]" %>
 
 <%@ attribute name="pageUri" type="java.lang.String" required="false"
-    description="The URI of the page where the list is used. Is needed for AJAX requests because of a then differing context." %>
+    description="The URI of the page where the list is used. Is needed for AJAX requests to setup the search context." %>
 
 <%@ attribute name="subsite" type="java.lang.String" required="false"
-    description="The subsite the current request comes from. Is needed for AJAX requests because of a then differing context." %>
+    description="The subsite the current request comes from. Is needed for AJAX requests to setup the search context." %>
 
 <%@ attribute name="ajaxCall" type="java.lang.Boolean" required="false"
-    description="Indicates if this tag is used during an AJAX request." %>
+    description="Indicates if this tag is used from an AJAX request." %>
 
 
 <%@ variable name-given="search" scope="AT_END" declare="true" variable-class="org.opencms.jsp.search.result.I_CmsSearchResultWrapper"
@@ -69,8 +69,7 @@
 
 <fmt:setLocale value="${locale}" />
 
-<%-- ####### Search items ################ --%>
-
+<%-- ####### Perform the search ################ --%>
 <apollo:list-search
     source="${source}"
     subsite="${subsite}"
@@ -93,7 +92,7 @@
         />
     </c:if>
 
-    <%-- ####### Elements of the list ######## --%>
+    <%--####### Elements of the list ######## --%>
     <c:forEach var="result" items="${search.searchResults}" varStatus="status">
         <%-- ###### MUST add one DIV here, otherwise OpenCms edit points won't load in Ajax lists ! ###### --%>
         <c:if test="${ajaxCall}"><c:out value='<div class="list-entry">' escapeXml="false" /></c:if>

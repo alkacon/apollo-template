@@ -469,9 +469,9 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<source>.content/.config</source>
 			<destination>.content/.config</destination>
 			<type>sitemap_config</type>
-			<uuidstructure>92ecc639-60f6-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>92ecc63a-60f6-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 06:53:04 GMT</datecreated>
+			<uuidstructure>f209e6d3-eaa4-11e6-9d0c-0242ac11002b</uuidstructure>
+			<uuidresource>f209e6d4-eaa4-11e6-9d0c-0242ac11002b</uuidresource>
+			<datecreated>Sat, 04 Feb 2017 06:41:23 GMT</datecreated>
 			<flags>512</flags>
 			<properties>
 				<property>
@@ -9706,7 +9706,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Test page: CSS Background Classes Visualizer]]></value>
+					<value><![CDATA[CSS Visualizer: CSS Background Classes Visualizer]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9723,7 +9723,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Test page: CSS Color Classes Visualizer]]></value>
+					<value><![CDATA[CSS Visualizer: CSS Color Classes Visualizer]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9774,7 +9774,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Test page: CSS Text and Link Classes Visualizer]]></value>
+					<value><![CDATA[CSS Visualizer: CSS Text and Link Classes Visualizer]]></value>
 				</property>
 			</properties>
 			<relations/>

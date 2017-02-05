@@ -11,53 +11,64 @@
 <fmt:setLocale value="${param.loc}" />
 <cms:bundle basename="org.opencms.apollo.template.list.messages">
 
-    <c:set var="con" value="${cms.vfs.readXml[param.contentpath]}" />
-    <c:if test="${not empty con}">
+<c:set var="con" value="${cms.vfs.readXml[param.contentpath]}" />
+<c:if test="${not empty con}">
 
-        <%-- ####### Merge the list parameters with the default formatter settings ######## --%>
-        <apollo:formatter-settings
-            type="${con.value.TypesToCollect}"
-            parameters="${con.valueList.Parameters}"
-            online="${cms.isOnlineProject}"
-        />
+    <%-- ####### Merge the list parameters with the default formatter settings ######## --%>
+    <apollo:formatter-settings
+        type="${con.value.TypesToCollect}"
+        parameters="${con.valueList.Parameters}"
+        online="${cms.isOnlineProject}"
+    />
 
-        <%-- ####### List entries ######## --%>
+    <%-- ####### List entries ######## --%>
+    <apollo:list-main
+        elementId="${param.elementId}"
+        instanceId="${param.instanceId}"
 
-        <apollo:list-main
-            elementId="${param.elementId}"
-            instanceId="${param.instanceId}"
+        source="${con.value.Folder}"
+        types="${con.value.TypesToCollect}"
+        count="${con.value.ItemsPerPage.isSet ? con.value.ItemsPerPage.toInteger : 5}"
+        locale="${param.loc}"
+        sort="${con.value.SortOrder}"
+        categories="${con.readCategories}"
+        formatterSettings="${formatterSettings}"
+        ajaxCall="true"
 
-            source="${con.value.Folder}"
-            types="${con.value.TypesToCollect}"
-            count="${con.value.ItemsPerPage.isSet ? con.value.ItemsPerPage.toInteger : 5}"
-            locale="${param.loc}"
-            sort="${con.value.SortOrder}"
-            categories="${con.readCategories}"
-            formatterSettings="${formatterSettings}"
-            ajaxCall="true"
+        showfacets="${param.facets}"
+        pageUri="${param.sitepath}"
+        subsite="${param.subsite}"
+    />
 
-            showfacets="${param.facets}"
-            pageUri="${param.sitepath}"
-            subsite="${param.subsite}"
-        />
+    <%-- ####### Load pagination (dynamic or normal) ######## --%>
+    <c:choose>
+        <c:when test="${
+            (param.dynamic eq 'scrolling') or
+            (param.dynamic eq 'clickfirst') or
+            (param.dynamic eq 'clickonly')}">
+            <c:set var="label"><fmt:message key="pagination.loadmore"/></c:set>
+            <apollo:list-loadbutton
+                search="${search}"
+                label="${label}"
+                onclickAction='ApolloList.update("$(LINK)", "${param.instanceId}", "false", "true")'
+            />
+        </c:when>
+        <c:otherwise>
+            <apollo:list-pagination
+                search="${search}"
+                singleStep="false"
+                onclickAction='ApolloList.update("$(LINK)", "${param.instanceId}")'
+            />
+        </c:otherwise>
+    </c:choose>
 
-        <%-- ####### Load pagination (dynamic or normal) ######## --%>
-        <c:choose>
-            <c:when test="${param.dynamic}">
-                <c:set var="label"><fmt:message key="pagination.loadmore"/></c:set>
-                <apollo:list-loadbutton
-                    search="${search}"
-                    label="${label}"
-                />
-            </c:when>
-            <c:otherwise>
-                <apollo:list-pagination
-                    search="${search}"
-                    singleStep="false"
-                    onclickAction='ApolloList.update("$(LINK)", "${param.instanceId}")'
-                />
-            </c:otherwise>
-        </c:choose>
-    </c:if>
+    <%-- ####### Provide information about search result for JavaScript ######## --%>
+    <div id="resultdata" data-result='{<%--
+    --%>"pages": "${search.numPages}", <%--
+    --%>"found": "${search.numFound}", <%--
+    --%>"start": "${search.start}", <%--
+    --%>"end": "${search.end}"<%--
+--%>}'></div>
+</c:if>
 
 </cms:bundle>

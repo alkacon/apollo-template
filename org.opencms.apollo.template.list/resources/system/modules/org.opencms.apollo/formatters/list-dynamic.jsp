@@ -51,7 +51,6 @@
                 <c:set var="ajaxlink"><cms:link>/system/modules/org.opencms.apollo/elements/list-ajax.jsp</cms:link></c:set>
                 <c:set var="instanceId" value="li_${fn:replace(cms.element.instanceId, '-', '')}"/>
                 <c:set var="elementId" value="le_${fn:replace(cms.element.id, '-', '')}"/>
-                <c:set var="loadType" value="${cms.element.settings.listOption == 'scrolling' ? 'true' : 'false'}" />
 
                 <%-- ####### The list content will be inserted here with AJAX ####### --%>
                 <div
@@ -64,7 +63,7 @@
                     --%>"path": "${cms.element.sitePath}",<%--
                     --%>"sitepath": "${cms.requestContext.folderUri}",<%--
                     --%>"subsite": "${cms.requestContext.siteRoot}${cms.subSitePath}",<%--
-                    --%>"dynamic": "${loadType}",<%--
+                    --%>"dynamic": "${cms.element.settings.listOption}",<%--
                     --%>"minheight": "${count * approxElemHeight}",<%--
                     --%>"locale": "${cms.locale}"<%--
                 --%>}'>
@@ -73,7 +72,7 @@
                         style="min-height: ${count * approxElemHeight}px;">
 
                         <div class="col-xs-12">
-                            <div class="spinner animated mv-20" style="display: none; transform: none;">
+                            <div class="spinner animated" style="display: none; transform: none;">
                                 <div class="spinnerInnerBox"><i class="fa fa-spinner"></i></div>
                             </div>
                         </div>
