@@ -81,18 +81,28 @@ var ApolloList = function(jQ) {
                 ajaxOptions = "&hideOptions=true&";
             }
 
+            // calculate the spinner position in context to the visible list part
+            var scrollTop = jQ(window).scrollTop();
+            var windowHeight = jQ(window).height();
+            var elementTop = list.$element.offset().top;
+            var elementHeight = list.$element.outerHeight(true);
+            var topOffset = Math.max(scrollTop - elementTop, 0);
+            var visibleHeight = Math.min(scrollTop + windowHeight, elementTop + elementHeight) - Math.max(scrollTop, elementTop);
+            var spinnerPos = (visibleHeight * (reloadEntries ? 0.5 : 0.8)) + topOffset - 15;
             // show the spinner
-            var spinnerPos = Math.max(list.$entrybox.height() - 200, 0);
             list.$spinner.hide().removeClass("fadeOut").addClass("fadeIn").css("top", spinnerPos).show();
 
-            var listOptionBox = $('#listoption_box-' + list.elementId);
-            $.get(buildAjaxLink(list) + ajaxOptions + searchStateParameters, function(resultList) {
+            var listOptionBox = jQ('#listoption_box-' + list.elementId);
+            $.get(buildAjaxLink(list, ajaxOptions, searchStateParameters), function(resultList) {
 
-                var $result = $(resultList);
+                var $result = jQ(resultList);
+                // collect information about the search result
+                var resultData = $result.filter('#resultdata').first().data('result');
+                if (DEBUG) console.info("Search result: list=" + list.id + ", start=" + resultData.start + ", end=" + resultData.end + ", entries=" + resultData.found + ", pages=" + resultData.pages);
 
                 // append all results from the ajax call to a new element that is not yet displayed
                 var $entries = $result.filter(".list-entry");
-                var $newPage = $('<div class="list-entry-page"></div>');
+                var $newPage = jQ('<div class="list-entry-page"></div>');
                 $entries.appendTo($newPage);
 
                 // clear the pagination element
@@ -127,12 +137,12 @@ var ApolloList = function(jQ) {
                         // show the pagination element
                         list.$pagination.show();
                     }
+                    // reset the min-height of the list now that the elements are visible
+                    list.$entrybox.animate({'min-height': "0px"}, 500);
                 }
 
                 // fade out the spinner
                 list.$spinner.removeClass("fadeIn").addClass("fadeOut");
-                // reset the min-height of the list now that the elements are visible
-                list.$entrybox.animate({'min-height': "0px"}, 500);
 
                 // reset the OpenCms edit buttons
                 _OpenCmsReinitEditButtons();
@@ -147,7 +157,7 @@ var ApolloList = function(jQ) {
     }
 
 
-    function buildAjaxLink(list) {
+    function buildAjaxLink(list, ajaxOptions, searchStateParameters) {
 
         var params = "?contentpath=" + list.path
             + "&instanceId="
@@ -163,14 +173,14 @@ var ApolloList = function(jQ) {
             + "&loc="
             + list.locale;
 
-        var facets = $("#listoption_box-" + list.elementId);
+        var facets = jQ("#listoption_box-" + list.elementId);
         if (facets.length != 0) {
             params = params + "&facets=" + facets.data("facets");
         }
         if (list.dynamic == "true") {
             params = params + "&dynamic=true";
         }
-        return list.ajax + params;
+        return list.ajax + params + ajaxOptions + searchStateParameters;
     }
 
 
@@ -183,7 +193,7 @@ var ApolloList = function(jQ) {
 
     function archiveRemoveHighlight() {
 
-        $(".ap-list-filters li.active").removeClass("active");
+        jQ(".ap-list-filters li.active").removeClass("active");
     }
 
 
@@ -220,7 +230,7 @@ var ApolloList = function(jQ) {
             $listElements.each(function() {
 
                 // initialize lists with values from data attributes
-                var $list = $(this);
+                var $list = jQ(this);
 
                 if (typeof $list.data("list") != 'undefined') {
                     // read list data
