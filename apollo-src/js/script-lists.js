@@ -255,6 +255,16 @@ var ApolloList = function(jQ) {
                     list.$spinner = $list.find(".spinner");
                     list.$pagination = $list.find(".ap-list-pagination");
                     list.autoload = false;
+                    if (DEBUG) console.info("List dynamic: " + list.dynamic);
+                    if (list.dynamic == "autoscrolling") {
+                        // list should page on larger screens and scroll with click on smaller screens
+                        if (Apollo.gridInfo().grid == "xs") {
+                            list.dynamic = "clickonly";
+                        } else {
+                            list.dynamic = "pagination";
+                        }
+                    };
+                    if (DEBUG) console.info("List dynamic after check: " + list.dynamic);
                     if (list.dynamic == "scrolling") {
                         // this is a auto loading list on scrolling
                         m_autoLoadLists.push(list);

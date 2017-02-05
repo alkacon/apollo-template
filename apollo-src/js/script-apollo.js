@@ -35,6 +35,9 @@ var Apollo = function(jQ) {
     // the color theme passed from CSS to JavaScript
     this.m_theme = null;
 
+    // the grid size when the page was loaded
+    this.m_gridSize = null;
+
     // additional init functions
     this.m_init = [];
 
@@ -115,6 +118,12 @@ var Apollo = function(jQ) {
     }
 
 
+    function gridInfo() {
+
+        return m_gridInfo;
+    }
+
+
     function initFunctions() {
 
         for (i=0; i<m_init.length; i++) {
@@ -138,6 +147,10 @@ var Apollo = function(jQ) {
             m_theme = getCssData($element.attr('id'));
             if (DEBUG) console.info("Apollo main theme color: " + getThemeColor("main-theme"));
         });
+
+        // initialize grid size
+        m_gridInfo = getCssData('apollo-grid-info');
+        if (DEBUG) console.info("Apollo grid info: " + m_gridSize);
     }
 
     // public available functions
@@ -148,7 +161,8 @@ var Apollo = function(jQ) {
         getCssData: getCssData,
         getInfo: getInfo,
         isOnlineProject: isOnlineProject,
-        getThemeColor: getThemeColor
+        getThemeColor: getThemeColor,
+        gridInfo: gridInfo
     }
 
     // Apollos main init function!
