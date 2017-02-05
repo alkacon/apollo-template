@@ -34,14 +34,16 @@ var ApolloList = function(jQ) {
     // list locks to prevent triggering actions while load still in process
     var m_list_locked = {};
 
-    function updateList(searchStateParameters, id, resetArchive) {
+    function updateList(searchStateParameters, id, resetArchive, keepEntries) {
+        resetArchive = resetArchive || false;
+        keepEntries = keepEntries || false;
 
         if (DEBUG) console.info("updateList() called id=" + id);
 
         if (arguments.length == 3 && resetArchive) {
             archiveRemoveHighlight();
         }
-        updateInnerList(id, searchStateParameters, true);
+        updateInnerList(id, searchStateParameters, !keepEntries);
     }
 
 
@@ -148,8 +150,17 @@ var ApolloList = function(jQ) {
                 _OpenCmsReinitEditButtons();
                 list.locked = false;
 
-                if (reloadEntries && (list.dynamic == "true")) {
-                    // check if we can render more of this dynamic loading list
+                if ((list.dynamic == "clickfirst") && list.notclicked && !reloadEntries) {
+                    // this is a auto loading list that is activated on first click
+                    m_autoLoadLists.push(list);
+                    list.notclicked = false;
+                    if (m_autoLoadLists.length == 1) {
+                        // enable scroll listener because we now have one autoloading gallery
+                        jQ(window).bind('scroll', handleAutoLoaders);
+                    }
+                }
+                if (reloadEntries && list.autoload) {
+                    // check if we can render more of this automatic loading list
                     handleAutoLoaders()
                 }
             });
@@ -177,8 +188,8 @@ var ApolloList = function(jQ) {
         if (facets.length != 0) {
             params = params + "&facets=" + facets.data("facets");
         }
-        if (list.dynamic == "true") {
-            params = params + "&dynamic=true";
+        if (list.autoload) {
+            params = params + "&dynamic=" + list.dynamic;
         }
         return list.ajax + params + ajaxOptions + searchStateParameters;
     }
@@ -210,7 +221,6 @@ var ApolloList = function(jQ) {
                     // NOTE: jQuery.visible() is defined in script-jquery-extensions.js
                     && appendPosition.visible()) {
 
-                    // appendInnerList(list.id, list.$element.find('.loadMore').attr('data-load'));
                     updateInnerList(list.id, list.$element.find('.loadMore').attr('data-load'), false);
                 }
             }
@@ -244,10 +254,21 @@ var ApolloList = function(jQ) {
                     list.$entrybox = $list.find(".ap-list-box");
                     list.$spinner = $list.find(".spinner");
                     list.$pagination = $list.find(".ap-list-pagination");
-                    if (list.dynamic == "true") {
-                        // this is a auto loading list (on scrolling)
+                    list.autoload = false;
+                    if (list.dynamic == "scrolling") {
+                        // this is a auto loading list on scrolling
                         m_autoLoadLists.push(list);
-                    }
+                        list.autoload = true;
+                    };
+                    if (list.dynamic == "clickfirst") {
+                        // click first, then  auto load rest of the list on scrolling
+                        list.autoload = true;
+                        list.notclicked = true;
+                    };
+                    if (list.dynamic == "clickonly") {
+                        // list appends on click, no auto loading
+                        list.autoload = true;
+                    };
                     // store list data in global array
                     m_lists[list.id] = list;
                     // store list in global group array
