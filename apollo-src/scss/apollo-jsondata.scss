@@ -41,17 +41,17 @@
     }
     @media (min-width: $screen-sm-min) {
         &:before {
-            content: '{"grid":"sm-xs"}';
+            content: '{"grid":"sm"}';
         }
     }
     @media (min-width: $screen-md-min) {
         &:before {
-            content: '{"grid":"md-sm-xs"}';
+            content: '{"grid":"md"}';
         }
     }
     @media (min-width: $screen-lg-min) {
         &:before {
-            content: '{"grid":"lg-md-sm-xs"}';
+            content: '{"grid":"lg"}';
         }
     }
 }

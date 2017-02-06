@@ -150,7 +150,7 @@ var ApolloList = function(jQ) {
                 _OpenCmsReinitEditButtons();
                 list.locked = false;
 
-                if ((list.dynamic == "clickfirst") && list.notclicked && !reloadEntries) {
+                if ((list.appendOption == "clickfirst") && list.notclicked && !reloadEntries) {
                     // this is a auto loading list that is activated on first click
                     m_autoLoadLists.push(list);
                     list.notclicked = false;
@@ -158,10 +158,10 @@ var ApolloList = function(jQ) {
                         // enable scroll listener because we now have one autoloading gallery
                         jQ(window).bind('scroll', handleAutoLoaders);
                     }
-                }
-                if (reloadEntries && list.autoload) {
+                    handleAutoLoaders();
+                } else if (reloadEntries && list.autoload) {
                     // check if we can render more of this automatic loading list
-                    handleAutoLoaders()
+                    handleAutoLoaders();
                 }
             });
         }
@@ -188,9 +188,7 @@ var ApolloList = function(jQ) {
         if (facets.length != 0) {
             params = params + "&facets=" + facets.data("facets");
         }
-        if (list.autoload) {
-            params = params + "&dynamic=" + list.dynamic;
-        }
+        params = params + "&option=" + list.option;
         return list.ajax + params + ajaxOptions + searchStateParameters;
     }
 
@@ -255,27 +253,17 @@ var ApolloList = function(jQ) {
                     list.$spinner = $list.find(".spinner");
                     list.$pagination = $list.find(".ap-list-pagination");
                     list.autoload = false;
-                    if (list.dynamic == "autoscrolling") {
-                        // list should page on larger screens and scroll with click on smaller screens
-                        if (Apollo.gridInfo().grid == "xs") {
-                            list.dynamic = "clickonly";
-                        } else {
-                            list.dynamic = "pagination";
-                        }
-                    };
-                    if (list.dynamic == "scrolling") {
-                        // this is a auto loading list on scrolling
+                    list.notclicked = true;
+                    if (list.appendSwitch.includes(Apollo.gridInfo().grid)) {
+                        // I think this is a cool way for checking the screen size ;)
+                        list.option = "append";
+                    } else {
+                        list.option = "paginate";
+                    }
+                    if ((list.option == "append") && (list.appendOption == "noclick")) {
+                        // list automatically loads in scrolling
+                        list.autoload = true;
                         m_autoLoadLists.push(list);
-                        list.autoload = true;
-                    };
-                    if (list.dynamic == "clickfirst") {
-                        // click first, then  auto load rest of the list on scrolling
-                        list.autoload = true;
-                        list.notclicked = true;
-                    };
-                    if (list.dynamic == "clickonly") {
-                        // list appends on click, no auto loading
-                        list.autoload = true;
                     };
                     // store list data in global array
                     m_lists[list.id] = list;
@@ -286,7 +274,7 @@ var ApolloList = function(jQ) {
                     } else {
                         m_listGroups[list.elementId] = [list];
                     }
-                    if (DEBUG) console.info("List data found: id=" + list.id + ", elementId=" + list.elementId + " dynamic=" + list.dynamic);
+                    if (DEBUG) console.info("List data found: id=" + list.id + ", elementId=" + list.elementId + " option=" + list.option);
                 }
 
                 // load the initial list
