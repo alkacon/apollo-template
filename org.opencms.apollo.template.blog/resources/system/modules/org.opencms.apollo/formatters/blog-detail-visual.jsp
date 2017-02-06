@@ -25,7 +25,7 @@
         <apollo:image-vars image="${paragraph.value.Image}">
 
         <c:if test="${not empty imageLink}">
-            <div class="visual-image parallax-background" data-parallax='{"effect":2}' style="background-image: url(${imageUrl})">
+            <div class="visual-image parallax-background" data-parallax='{"effect":3}' style="background-image: url(${imageUrl})">
                 <div class="visual-overlay">
                     <h1>${content.value.Title}</h1>
                     <c:if test="${paragraph.value.Headline.isSet}">

@@ -30,7 +30,7 @@
         <c:set var='divStart' value='<div class="col-sm-4 hidden-xs teaser-visual">' />
         <c:set var='divCenter' value='</div><div class="col-sm-8 teaser-body">' />
         <c:set var='divEnd' value='</div>' />
-        <c:set var="animationClass" value="ap-kenburns-animation " />
+        <c:set var="animationClass" value="${cms.element.settings.ieffect != 'none' ? cms.element.settings.ieffect : ''}" />
     </c:when>
     <c:when test="${showCalendar}">
         <c:set var='divStart' value='<div class="fixcol-sm-125 hidden-xs teaser-visual">' />
@@ -42,10 +42,11 @@
         <c:set var='divStart' value='' />
         <c:set var='divCenter' value='<div class="col-xs-12 teaser-body">' />
         <c:set var='divEnd' value='</div>' />
+        <c:set var="animationClass" value="${cms.element.settings.ieffect != 'none' ? cms.element.settings.ieffect : ''}" />
     </c:otherwise>
 </c:choose>
 
-<div class="row ap-teaser ap-event-teaser ${animationClass} ${cms.element.settings.cssWrapper}">
+<div class="row ap-teaser ap-event-teaser ${animationClass}${' '}${cms.element.settings.cssWrapper}">
 
     <c:if test="${showImageSmall or showCalendar}">
         <c:out value="${divStart}" escapeXml="false" />

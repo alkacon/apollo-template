@@ -46,7 +46,23 @@
       <DisplayName><![CDATA[%(key.apollo.setting.displayoptions)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[smallImage]]></Default>
-      <WidgetConfig><![CDATA[smallImage:%(key.apollo.setting.displayoption.smallimage)|hideImage:%(key.apollo.setting.displayoption.hideimage)|largeImage:%(key.apollo.setting.displayoption.largeimage)]]></WidgetConfig>
+      <WidgetConfig><![CDATA[
+            smallImage:     %(key.apollo.setting.displayoption.smallimage)|
+            hideImage:      %(key.apollo.setting.displayoption.hideimage)|
+            largeImage:     %(key.apollo.setting.displayoption.largeimage)
+        ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[ieffect]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[ap-kenburns-animation]]></Default>
+      <WidgetConfig><![CDATA[
+        none:%(key.apollo.section.image.effect.none)|
+        ap-raise-animation:%(key.apollo.section.image.effect.raise)|
+        ap-kenburns-animation:%(key.apollo.section.image.effect.kenburns)|
+        ap-raise-animation ap-kenburns-animation:%(key.apollo.section.image.effect.raise-kenburns)
+      ]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showExpired]]></PropertyName>

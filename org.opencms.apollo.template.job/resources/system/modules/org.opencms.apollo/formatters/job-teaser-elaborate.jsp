@@ -24,12 +24,13 @@
         <c:set var='divStart' value='<div class="col-sm-4 hidden-xs teaser-visual">' />
         <c:set var='divCenter' value='</div><div class="col-sm-8 teaser-body">' />
         <c:set var='divEnd' value='</div>' />
-        <c:set var="animationClass" value="ap-kenburns-animation " />
+        <c:set var="animationClass" value="${cms.element.settings.ieffect != 'none' ? cms.element.settings.ieffect : ''}" />
     </c:when>
     <c:when test="${showImageLarge}">
         <c:set var='divStart' value='<div class="col-xs-12 teaser-visual">' />
         <c:set var='divCenter' value='</div><div class="col-xs-12 teaser-body">' />
         <c:set var='divEnd' value='</div>' />
+        <c:set var="animationClass" value="${cms.element.settings.ieffect != 'none' ? cms.element.settings.ieffect : ''}" />
     </c:when>
     <c:otherwise>
         <c:set var='divStart' value='' />
@@ -38,7 +39,7 @@
     </c:otherwise>
 </c:choose>
 
-<div class="row ap-teaser ap-job-teaser ${animationClass} ${cms.element.settings.cssWrapper}">
+<div class="row ap-teaser ap-job-teaser ${animationClass}${' '}${cms.element.settings.cssWrapper}">
     <c:set var="paragraph" value="${content.valueList.Introduction['0']}" />
     <c:set var="teaserLength" value="${cms.element.settings.teaserlength}" />
     <c:set var="showDate" value="${cms.element.settings.showdate}" />
@@ -58,10 +59,10 @@
 
         <cms:bundle basename="org.opencms.apollo.template.list.messages">
             <apollo:teaserbody
-                text="${text}" 
+                text="${text}"
                 textlength="${teaserLength}"
                 title="${content.value.Title}"
-                href="${href}" 
+                href="${href}"
                 date="${content.value.Date}"
                 showdate="${showDate}"
             />

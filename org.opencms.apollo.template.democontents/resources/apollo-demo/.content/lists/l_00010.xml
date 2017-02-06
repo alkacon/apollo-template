@@ -20,6 +20,10 @@
       <Value><![CDATA[100]]></Value>
     </Parameters>
     <Parameters>
+      <Key><![CDATA[ieffect]]></Key>
+      <Value><![CDATA[ap-raise-animation]]></Value>
+    </Parameters>
+    <Parameters>
       <Key><![CDATA[showDate]]></Key>
       <Value><![CDATA[true]]></Value>
     </Parameters>

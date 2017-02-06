@@ -11,7 +11,11 @@
     <ItemsPerPage><![CDATA[2]]></ItemsPerPage>
     <Parameters>
       <Key><![CDATA[displayOption]]></Key>
-      <Value><![CDATA[showCalendar]]></Value>
+      <Value><![CDATA[smallImage]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[ieffect]]></Key>
+      <Value><![CDATA[ap-kenburns-animation]]></Value>
     </Parameters>
     <Parameters>
       <Key><![CDATA[showDate]]></Key>

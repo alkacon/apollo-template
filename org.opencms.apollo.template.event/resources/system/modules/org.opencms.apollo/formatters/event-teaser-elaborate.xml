@@ -46,7 +46,24 @@
       <DisplayName><![CDATA[%(key.apollo.setting.displayoptions)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[showCalendar]]></Default>
-      <WidgetConfig><![CDATA[showCalendar:%(key.apollo.setting.displayoption.showcalendar)|hideCalendar:%(key.apollo.setting.displayoption.hidecalendar)|largeImage:%(key.apollo.setting.displayoption.showimagehidecalendar)|smallImage:%(key.apollo.setting.displayoption.showsmallimagehidecalendar)]]></WidgetConfig>
+      <WidgetConfig><![CDATA[
+        showCalendar:%(key.apollo.setting.displayoption.showcalendar)|
+        hideCalendar:%(key.apollo.setting.displayoption.hidecalendar)|
+        largeImage:%(key.apollo.setting.displayoption.showimagehidecalendar)|
+        smallImage:%(key.apollo.setting.displayoption.showsmallimagehidecalendar)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[ieffect]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[none]]></Default>
+      <WidgetConfig><![CDATA[
+        none:%(key.apollo.section.image.effect.none)|
+        ap-raise-animation:%(key.apollo.section.image.effect.raise)|
+        ap-kenburns-animation:%(key.apollo.section.image.effect.kenburns)|
+        ap-raise-animation ap-kenburns-animation:%(key.apollo.section.image.effect.raise-kenburns)
+      ]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showExpired]]></PropertyName>
