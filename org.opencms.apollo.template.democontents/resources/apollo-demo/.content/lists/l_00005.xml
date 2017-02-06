@@ -13,6 +13,14 @@
       <Key><![CDATA[teaserLength]]></Key>
       <Value><![CDATA[300]]></Value>
     </Parameters>
+    <Parameters>
+      <Key><![CDATA[listButtonText]]></Key>
+      <Value><![CDATA[Show more jobs]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[entryButtonText]]></Key>
+      <Value><![CDATA[Check out job]]></Value>
+    </Parameters>
     <Link>
       <Text><![CDATA[Show all open jobs]]></Text>
       <URI>

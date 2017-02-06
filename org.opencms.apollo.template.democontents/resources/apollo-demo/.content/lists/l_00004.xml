@@ -9,5 +9,9 @@
     </Category>
     <SortOrder><![CDATA[orderdesc]]></SortOrder>
     <ItemsPerPage><![CDATA[2]]></ItemsPerPage>
+    <Parameters>
+      <Key><![CDATA[entryButtonText]]></Key>
+      <Value><![CDATA[See event description...]]></Value>
+    </Parameters>
   </ApolloList>
 </ApolloLists>

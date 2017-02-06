@@ -86,17 +86,15 @@
         <c:set var="text">${content.value.Teaser}</c:set>
         <c:if test="${empty text}"><c:set var="text">${cms:trimToSize(cms:stripHtml(paragraph.value.Text), teaserLength)}</c:set></c:if>
         <c:set var="href"><cms:link baseUri="${baseUri}">${content.filename}</cms:link></c:set>
-        <c:set var="buttonText"><fmt:message key="apollo.event.message.readmore" /></c:set>
 
-        <apollo:teaserbody 
+        <apollo:teaserbody
             text="${text}"
             textlength="${teaserLength}"
             title="${content.value.Title}"
-            href="${href}" 
-            date="${content.value.Date}" 
+            href="${href}"
+            date="${content.value.Date}"
             enddate="${content.value.EndDate}"
             showdate="${showDate}"
-            btntext="${buttonText}"
         />
 
     <c:out value="${divEnd}" escapeXml="false" />

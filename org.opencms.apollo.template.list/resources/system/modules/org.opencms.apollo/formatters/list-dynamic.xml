@@ -2,7 +2,7 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Dynamic list with scrolling]]></NiceName>
+    <NiceName><![CDATA[Dynamic list]]></NiceName>
     <Type><![CDATA[a-list]]></Type>
     <Jsp>
       <link type="WEAK">
@@ -29,13 +29,27 @@
       <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
-      <PropertyName><![CDATA[listOption]]></PropertyName>
+      <PropertyName><![CDATA[appendSwitch]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.list.appendSwitch)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
-      <Default><![CDATA[scrolling]]></Default>
+      <Default><![CDATA[xs]]></Default>
       <WidgetConfig><![CDATA[
-        scrolling:          %(key.apollo.setting.list.scrolling)|
-        clickfirst:         %(key.apollo.setting.list.clickfirst)|
-        clickonly:          %(key.apollo.setting.list.clickonly)
+        never:          %(key.apollo.setting.list.appendSwitch.never)|
+        xs:             %(key.apollo.setting.list.appendSwitch.xs)|
+        sm-xs:          %(key.apollo.setting.list.appendSwitch.sm)|
+        md-sm-xs:       %(key.apollo.setting.list.appendSwitch.md)|
+        md-sm-xs-lg:    %(key.apollo.setting.list.appendSwitch.always)
+        ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[appendOption]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.list.appendOption)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[clickonly]]></Default>
+      <WidgetConfig><![CDATA[
+        clickonly:  %(key.apollo.setting.list.appendOption.clickonly)|
+        clickfirst: %(key.apollo.setting.list.appendOption.clickfirst)|
+        noclick:    %(key.apollo.setting.list.appendOption.noclick)
         ]]></WidgetConfig>
     </Setting>
   </NewFormatter>

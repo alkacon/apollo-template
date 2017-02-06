@@ -63,7 +63,8 @@
                     --%>"path":"${cms.element.sitePath}", <%--
                     --%>"sitepath":"${cms.requestContext.folderUri}", <%--
                     --%>"subsite":"${cms.requestContext.siteRoot}${cms.subSitePath}", <%--
-                    --%>"dynamic":"${cms.element.settings.listOption}", <%--
+                    --%>"appendSwitch":"${cms.element.settings.appendSwitch}", <%--
+                    --%>"appendOption":"${cms.element.settings.appendOption}", <%--
                     --%>"minheight":"${count * approxElemHeight}", <%--
                     --%>"locale":"${cms.locale}"<%--
                 --%>}'>
@@ -77,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ap-list-pagination" style="min-height: 50px;"></div>
+                    <div class="ap-list-pagination"></div>
 
                     <%-- ####### Create and edit new entries if empty result ######## --%>
                     <c:set var="createType">${fn:substringBefore(value.TypesToCollect.stringValue, ':')}</c:set>

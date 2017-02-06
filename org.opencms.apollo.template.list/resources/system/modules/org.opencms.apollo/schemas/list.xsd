@@ -17,7 +17,7 @@
 		<xsd:sequence>
 			<xsd:element name="Headline" type="OpenCmsString" />
 			<xsd:element name="TypesToCollect" type="OpenCmsDisplayFormatter" />
-            <xsd:element name="Folder" type="OpenCmsVfsFile" minOccurs="0" />
+			<xsd:element name="Folder" type="OpenCmsVfsFile" minOccurs="0" />
 			<xsd:element name="Category" type="OpenCmsDynamicCategory" />
 			<xsd:element name="SortOrder" type="OpenCmsString" />
 			<xsd:element name="ItemsPerPage" type="OpenCmsString" minOccurs="0" />
@@ -53,6 +53,14 @@
 				<searchsetting element="SortOrder" searchcontent="false" />
 				<searchsetting element="ItemsPerPage" searchcontent="false" />
 			</searchsettings>
+			<synchronizations>
+				<synchronization element="TypesToCollect" />
+				<synchronization element="Folder" />
+				<synchronization element="Category" />
+				<synchronization element="SortOrder" />
+				<synchronization element="ItemsPerPage" />
+				<synchronization element="FilterQueries" />
+			</synchronizations>
 			<visibilities>
 				<visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
 			</visibilities>

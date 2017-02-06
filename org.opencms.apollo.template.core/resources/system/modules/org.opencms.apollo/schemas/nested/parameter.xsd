@@ -1,35 +1,39 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
-    <xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd" />
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd" />
 
-    <xsd:element name="ApolloParameters" type="OpenCmsApolloParameters" />
+	<xsd:element name="ApolloParameters" type="OpenCmsApolloParameters" />
 
-    <xsd:complexType name="OpenCmsApolloParameters">
-        <xsd:sequence>
-            <xsd:element name="ApolloParameter" type="OpenCmsApolloParameter" minOccurs="0" maxOccurs="unbounded" />
-        </xsd:sequence>
-    </xsd:complexType>
+	<xsd:complexType name="OpenCmsApolloParameters">
+		<xsd:sequence>
+			<xsd:element name="ApolloParameter" type="OpenCmsApolloParameter" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
 
-    <xsd:complexType name="OpenCmsApolloParameter">
-        <xsd:sequence>
-            <xsd:element name="Key" type="OpenCmsString" />
-            <xsd:element name="Value" type="OpenCmsString" />
-        </xsd:sequence>
-        <xsd:attribute name="language" type="OpenCmsLocale" use="optional" />
-    </xsd:complexType>
+	<xsd:complexType name="OpenCmsApolloParameter">
+		<xsd:sequence>
+			<xsd:element name="Key" type="OpenCmsString" />
+			<xsd:element name="Value" type="OpenCmsString" />
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="optional" />
+	</xsd:complexType>
 
 	<xsd:annotation>
 		<xsd:appinfo>
 			<layouts>
-				<layout element="Key" widget="ComboWidget" configuration="archiveWrapper:%(key.apollo.parameter.archivewrapper)|
-					archivePreopened:%(key.apollo.parameter.archivepreopened)|
-					catfilters:%(key.apollo.parameter.catfilters)|
-					catPreopened:%(key.apollo.parameter.catpreopened)|
-					filterWrapper:%(key.apollo.parameter.filterwrapper)|
-					listWrapper:%(key.apollo.parameter.listwrapper)|
+				<layout element="Key" widget="ComboWidget" configuration="
+					teaserLength:%(key.apollo.parameter.teaserlength)|
+					entryButtonText:%(key.apollo.parameter.entryButtonText)|
+					listButtonText:%(key.apollo.parameter.listButtonText)|
 					showDate:%(key.apollo.parameter.showdate)|
 					showExpired:%(key.apollo.parameter.showexpired)|
-					teaserLength:%(key.apollo.parameter.teaserlength)" display="column" />
+					catfilters:%(key.apollo.parameter.catfilters)|
+					catPreopened:%(key.apollo.parameter.catpreopened)|
+					archivePreopened:%(key.apollo.parameter.archivepreopened)|
+					archiveWrapper:%(key.apollo.parameter.archivewrapper)|
+					filterWrapper:%(key.apollo.parameter.filterwrapper)|
+					listWrapper:%(key.apollo.parameter.listwrapper)
+					" display="column" />
 				<layout element="Value" widget="StringWidget" display="column" />
 			</layouts>
 		</xsd:appinfo>

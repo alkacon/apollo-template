@@ -5,11 +5,11 @@
   description="Searches for resources and displays the results." %>
 
 <%@ attribute name="instanceId" type="java.lang.String" required="true"
-    description="The id of the list element instance (dynamically generated UID for the container).
+    description="The id of the list element instance (generated from the UID for the container).
     This will always be unique even if the same list is on a page more then once." %>
 
 <%@ attribute name="elementId" type="java.lang.String" required="false"
-    description="The id of the list content element (UID of the list resource).
+    description="The id of the list content element (generated from the UID of the list resource).
     If the same list is on a page more then once, then all list instances share this id." %>
 
 <%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"

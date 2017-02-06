@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/list.xsd">
+  <ApolloList language="de">
+    <Headline><![CDATA[Die neusten Einträge aus dem Tagebuch]]></Headline>
+    <TypesToCollect>a-blog:532e6791-c663-11e5-a73e-0242ac11002b</TypesToCollect>
+    <Folder>
+      <link type="WEAK">
+        <target><![CDATA[/sites/default/apollo-demo/.content/blogentries/]]></target>
+        <uuid>4e46c146-57cd-11e5-b803-0242ac11002b</uuid>
+      </link>
+    </Folder>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <SortOrder><![CDATA[datedesc]]></SortOrder>
+    <ItemsPerPage><![CDATA[4]]></ItemsPerPage>
+    <Parameters>
+      <Key><![CDATA[teaserLength]]></Key>
+      <Value><![CDATA[200]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[showDate]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[showExpired]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[filterWrapper]]></Key>
+      <Value><![CDATA[color-cyan]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[listWrapper]]></Key>
+      <Value><![CDATA[color-cyan]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[catPreopened]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[archivePreopened]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[catfilters]]></Key>
+      <Value><![CDATA[Priority / Importance, Topic]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[listButtonText]]></Key>
+      <Value><![CDATA[Weitere Artikel anzeigen]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[entryButtonText]]></Key>
+      <Value><![CDATA[Artikel lesen]]></Value>
+    </Parameters>
+  </ApolloList>
   <ApolloList language="en">
     <Headline><![CDATA[Latest entries from the Blog]]></Headline>
     <TypesToCollect>a-blog:532e6791-c663-11e5-a73e-0242ac11002b</TypesToCollect>
@@ -36,10 +91,6 @@
       <Value><![CDATA[color-cyan]]></Value>
     </Parameters>
     <Parameters>
-      <Key><![CDATA[archiveWrapper]]></Key>
-      <Value><![CDATA[color-grey-light]]></Value>
-    </Parameters>
-    <Parameters>
       <Key><![CDATA[catPreopened]]></Key>
       <Value><![CDATA[true]]></Value>
     </Parameters>
@@ -50,6 +101,14 @@
     <Parameters>
       <Key><![CDATA[catfilters]]></Key>
       <Value><![CDATA[Priority / Importance, Topic]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[listButtonText]]></Key>
+      <Value><![CDATA[Show more articles]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[entryButtonText]]></Key>
+      <Value><![CDATA[Read article]]></Value>
     </Parameters>
   </ApolloList>
 </ApolloLists>

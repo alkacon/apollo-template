@@ -34,9 +34,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-facets.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-facets.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-dynamic.jsp"/>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/list-pagination.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/list-pagination-scrolling.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/formatters/list-scrolling.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/list-dynamic.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-simple.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/list-simple.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.list.messages_de"/>
@@ -215,7 +213,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for dynamic lists]]></value>
+					<value><![CDATA[Formatter JSP for dynamic list]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -224,6 +222,23 @@
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/list-dynamic.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/list-dynamic.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>008497fe-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
+			<uuidresource>008497ff-3dc5-11e6-b70e-0242ac11002b</uuidresource>
+			<datecreated>Wed, 29 Jun 2016 06:45:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Dynamic list]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -266,69 +281,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Dynamic list facets]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-pagination-scrolling.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-pagination-scrolling.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>806a8573-eba3-11e6-9bed-0242ac11002b</uuidstructure>
-			<uuidresource>806a8574-eba3-11e6-9bed-0242ac11002b</uuidresource>
-			<datecreated>Sun, 05 Feb 2017 13:03:34 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Dynamic list with automatic pagination or scrolling]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-pagination.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-pagination.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>008497fe-3dc5-11e6-b70e-0242ac11002b</uuidstructure>
-			<uuidresource>008497ff-3dc5-11e6-b70e-0242ac11002b</uuidresource>
-			<datecreated>Wed, 29 Jun 2016 06:45:00 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Dynamic list with pagination]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/formatters/list-scrolling.xml</source>
-			<destination>system/modules/org.opencms.apollo/formatters/list-scrolling.xml</destination>
-			<type>formatter_config</type>
-			<uuidstructure>d268a456-5871-11e5-b803-0242ac11002b</uuidstructure>
-			<uuidresource>d268a457-5871-11e5-b803-0242ac11002b</uuidresource>
-			<datecreated>Fri, 11 Sep 2015 10:42:38 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Dynamic list with scrolling]]></value>
 				</property>
 				<property>
 					<name>locale</name>

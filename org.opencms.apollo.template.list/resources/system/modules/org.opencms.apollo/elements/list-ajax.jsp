@@ -40,13 +40,19 @@
         subsite="${param.subsite}"
     />
 
-    <%-- ####### Load pagination (dynamic or normal) ######## --%>
+    <%-- ####### Load pagination ######## --%>
     <c:choose>
-        <c:when test="${
-            (param.dynamic eq 'scrolling') or
-            (param.dynamic eq 'clickfirst') or
-            (param.dynamic eq 'clickonly')}">
-            <c:set var="label"><fmt:message key="pagination.loadmore"/></c:set>
+        <c:when test="${param.option eq 'append'}">
+            <c:set var="label">
+                <c:choose>
+                    <c:when test="${not empty formatterSettings.listButtonText}">
+                        <c:out value="${formatterSettings.listButtonText}" />
+                    </c:when>
+                    <c:otherwise>
+                        <fmt:message key="pagination.loadmore" />
+                    </c:otherwise>
+                </c:choose>
+            </c:set>
             <apollo:list-loadbutton
                 search="${search}"
                 label="${label}"

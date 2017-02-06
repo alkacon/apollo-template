@@ -18,6 +18,14 @@
       <Value><![CDATA[true]]></Value>
     </Parameters>
     <Parameters>
+      <Key><![CDATA[entryButtonText]]></Key>
+      <Value><![CDATA[Show event]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[listButtonText]]></Key>
+      <Value><![CDATA[Load more events]]></Value>
+    </Parameters>
+    <Parameters>
       <Key><![CDATA[cssWrapper]]></Key>
       <Value/>
     </Parameters>

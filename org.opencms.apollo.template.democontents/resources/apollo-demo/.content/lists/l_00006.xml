@@ -15,5 +15,9 @@
     </Category>
     <SortOrder><![CDATA[titleasc]]></SortOrder>
     <ItemsPerPage><![CDATA[4]]></ItemsPerPage>
+    <Parameters>
+      <Key><![CDATA[entryButtonText]]></Key>
+      <Value><![CDATA[See answer]]></Value>
+    </Parameters>
   </ApolloList>
 </ApolloLists>

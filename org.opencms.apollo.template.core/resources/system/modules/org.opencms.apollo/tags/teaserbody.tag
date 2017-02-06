@@ -67,8 +67,14 @@
         <c:when test="${not empty btntext}">
             ${btntext}
         </c:when>
+        <c:when test="${not empty cms.element.settings.entryButtonText}">
+            <c:out value="${cms.element.settings.entryButtonText}" />
+        </c:when>
         <c:otherwise>
-            <fmt:message key="apollo.list.message.readmore" />
+            <fmt:setLocale value="${cms.locale}" />
+            <cms:bundle basename="org.opencms.apollo.template.list.messages">
+                <fmt:message key="apollo.list.message.readmore" />
+            </cms:bundle>
         </c:otherwise>
     </c:choose>
 </a>

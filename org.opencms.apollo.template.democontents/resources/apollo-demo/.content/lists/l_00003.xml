@@ -10,16 +10,20 @@
     <SortOrder><![CDATA[datedesc]]></SortOrder>
     <ItemsPerPage><![CDATA[2]]></ItemsPerPage>
     <Parameters>
-      <Key><![CDATA[listWrapper]]></Key>
-      <Value><![CDATA[color-blue]]></Value>
-    </Parameters>
-    <Parameters>
       <Key><![CDATA[teaserLength]]></Key>
       <Value><![CDATA[100]]></Value>
     </Parameters>
     <Parameters>
-      <Key/>
-      <Value/>
+      <Key><![CDATA[entryButtonText]]></Key>
+      <Value><![CDATA[Read blog article]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[listButtonText]]></Key>
+      <Value><![CDATA[More from the blog]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[listWrapper]]></Key>
+      <Value><![CDATA[color-blue]]></Value>
     </Parameters>
     <Link>
       <Text><![CDATA[To the blog overview]]></Text>
