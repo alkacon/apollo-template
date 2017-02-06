@@ -21,11 +21,12 @@
     online="${cms.isOnlineProject}"
 />
 
+<%-- We just want to load facet metadata here, no actual results, so the count is 0 --%>
 <apollo:list-search
     source="${value.Folder}"
     types="${value.TypesToCollect}"
     categories="${content.readCategories}"
-    count="${value.ItemsPerPage.toInteger}"
+    count="0"
     sort="${value.SortOrder}"
     showexpired="${cms.element.settings.showexpired}"
     filterqueries="${value.FilterQueries}"
