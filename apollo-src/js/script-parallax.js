@@ -71,8 +71,8 @@ var ApolloParallax = function(jQ) {
                 if (effectType == 1) {
                     // This effect assumes there is a full size background image.
                     // The background is slightly shifted up while the bottom of the
-                    // element is not in view.
-                    // Once the bottom is in view, the shift effect stops.
+                    // element is not in view. Once the bottom is in view,
+                    // or the screen top is reached, the shift effect stops.
 
                     if (elementHeight <= windowHeight) {
                         elementBottomOffset = elementScrollBottom - windowHeight;
@@ -103,6 +103,15 @@ var ApolloParallax = function(jQ) {
                     if (elementScrollTop < 0) {
                          offset = Math.round(elementScrollTop * 2);
                     }
+                } else if (effectType == 3) {
+                    // Also developed for the blog visual.
+                    // This effect assumes there is a full size background image
+                    // near the screen top (directly under the main navigation).
+                    // The image should have standard 'photo' 4:3 or 3:2 format.
+                    // When scolling, the image starts shiftig very slow
+                    // and reveals some of the lower part originally hidden.
+
+                    offset = Math.round(elementScrollTop * 0.33);
                 }
             }
             $element.css('background-position', "50% " + offset + "px");
