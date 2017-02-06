@@ -32,7 +32,7 @@
 />
 
 <c:set var="csswrapper" value="${not empty formatterSettings.filterWrapper ? formatterSettings.filterWrapper : formatterSettings.listWrapper}" />
-<c:set var="elementId" value="le_${fn:replace(cms.element.id, '-', '')}"/>
+<c:set var="elementId"><apollo:idgen prefix="le" uuid="${cms.element.id}" /></c:set>
 
 <div class="ap-list-filters ${csswrapper}">
 

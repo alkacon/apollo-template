@@ -40,7 +40,7 @@
     --%>
 
     <c:set var="listWrapper" value="${formatterSettings.listWrapper} ${formatterSettings.requiredListWrapper}" />
-    <c:set var="instanceId" value="li_${fn:replace(cms.element.instanceId, '-', '')}"/>
+    <c:set var="instanceId"><apollo:idgen prefix="li" uuid="${cms.element.instanceId}" /></c:set>
 
     <%-- Id must not have any "-" character --%>
 

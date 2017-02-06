@@ -16,8 +16,8 @@
 <%@ attribute name="page" type="java.lang.String" required="true"
     description="The page to load. The 'count' parameter defines the page size." %>
 
-<%@ attribute name="css" type="java.lang.String" required="true"
-    description="CSS to apply to each image in the gallery." %>
+<%@ attribute name="template" type="java.lang.String" required="true"
+    description="The HTML template to use for rendering the images in the gallery." %>
 
 <%@ attribute name="searchconfig" type="java.lang.String" required="false"
     description="The full search configuration for finding the gallery elements with the cms:search tag.
@@ -55,41 +55,22 @@
     </c:set>
 </c:if>
 
-<%-- Id must not have any "-" character --%>
-<c:set var="id" value="imagegallery_${fn:replace(id, '-', '')}"/>
-
 <c:set var="ajaxLink">
     <cms:link>/system/modules/org.opencms.apollo/elements/imagegallery-ajax.jsp</cms:link>
-</c:set>
-
-<c:set var="template">
-    <div class="ap-square square-m-2 ${css} comein zoom">
-        <a class="image-gallery" href="%(src)" title="%(titleAttr)">
-            <span class="content" style="background-image:url('%(src)');">
-                <span class="zoom-overlay">
-                    <span class="zoom-icon">
-                        <i class="fa fa-search"></i>
-                    </span>
-                </span>
-            </span>
-        </a>
-    </div>
 </c:set>
 
 <div
     id="${id}"
     class="gallery"
-    data-imagegallery='{
-        "id": "${id}",
-        "ajax": "${ajaxLink}",
-        "css": "${css}",
-        "showtitle": "${showtitle}",
-        "showcopyright": "${showcopyright}",
-        "path": "${path}",
-        "autoload": "${autoload}",
-        "count": "${count}",
-        "template": "${cms:encode(template)}"
-    }'>
+    data-imagegallery='{<%--
+    --%>"ajax":"${ajaxLink}", <%--
+    --%>"showtitle":"${showtitle}", <%--
+    --%>"showcopyright":"${showcopyright}", <%--
+    --%>"path":"${path}", <%--
+    --%>"autoload":"${autoload}", <%--
+    --%>"count":"${count}", <%--
+    --%>"template":"${cms:encode(template)}"<%--
+--%>}'>
 
     <div id="images" class="clearfix"></div>
 

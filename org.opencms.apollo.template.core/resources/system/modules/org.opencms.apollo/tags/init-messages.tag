@@ -39,7 +39,7 @@
         <fmt:setLocale value="${cms.workplaceLocale}" />
         <cms:bundle basename="org.opencms.apollo.template.core.messages">
         <cms:formatter var="content" val="value">
-            <div id="ap-edit-info" class="box-reload">
+            <div id="ap-edit-info" class="box-reload animated fadeIn slow">
                 ${cms.reloadMarker}
                 <div class="head">
                     <fmt:message key="apollo.core.editor.reload" />

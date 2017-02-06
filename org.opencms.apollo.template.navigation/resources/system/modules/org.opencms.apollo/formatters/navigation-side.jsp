@@ -45,7 +45,7 @@
                 <c:when test="${startSubNav}">
 
                     <%-- Output the start of a new sub-navigation level --%>
-                    <c:set var="collapseId" value="nav-${cms.element.instanceId}-${i}" />
+                    <c:set var="collapseId"><apollo:idgen prefix="nav" uuid="${cms.element.instanceId}" />_${i}</c:set>
                     <a href="#${collapseId}" <%--
                     --%>class="nav-toggle${isCurrentPage ? '' : ' collapsed'}" <%--
                     --%>data-toggle="collapse" <%--

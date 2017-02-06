@@ -49,8 +49,8 @@
                 <c:set var="count" value="${value.ItemsPerPage.isSet ? value.ItemsPerPage.toInteger : 5}" />
                 <c:set var="approxElemHeight" value="150" />
                 <c:set var="ajaxlink"><cms:link>/system/modules/org.opencms.apollo/elements/list-ajax.jsp</cms:link></c:set>
-                <c:set var="instanceId" value="li_${fn:replace(cms.element.instanceId, '-', '')}"/>
-                <c:set var="elementId" value="le_${fn:replace(cms.element.id, '-', '')}"/>
+                <c:set var="instanceId"><apollo:idgen prefix="li" uuid="${cms.element.instanceId}" /></c:set>
+                <c:set var="elementId"><apollo:idgen prefix="le" uuid="${cms.element.id}" /></c:set>
 
                 <%-- ####### The list content will be inserted here with AJAX ####### --%>
                 <div
@@ -58,14 +58,14 @@
                     id="${instanceId}"
                     data-id="${elementId}"
                     data-list='{<%--
-                    --%>"ajax": "${ajaxlink}",<%--
-                    --%>"teaser": "${cms.element.settings.teaserlength}",<%--
-                    --%>"path": "${cms.element.sitePath}",<%--
-                    --%>"sitepath": "${cms.requestContext.folderUri}",<%--
-                    --%>"subsite": "${cms.requestContext.siteRoot}${cms.subSitePath}",<%--
-                    --%>"dynamic": "${cms.element.settings.listOption}",<%--
-                    --%>"minheight": "${count * approxElemHeight}",<%--
-                    --%>"locale": "${cms.locale}"<%--
+                    --%>"ajax":"${ajaxlink}", <%--
+                    --%>"teaser":"${cms.element.settings.teaserlength}", <%--
+                    --%>"path":"${cms.element.sitePath}", <%--
+                    --%>"sitepath":"${cms.requestContext.folderUri}", <%--
+                    --%>"subsite":"${cms.requestContext.siteRoot}${cms.subSitePath}", <%--
+                    --%>"dynamic":"${cms.element.settings.listOption}", <%--
+                    --%>"minheight":"${count * approxElemHeight}", <%--
+                    --%>"locale":"${cms.locale}"<%--
                 --%>}'>
                     <div
                         class="ap-list-box"

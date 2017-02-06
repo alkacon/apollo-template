@@ -21,18 +21,20 @@
         <div class="headline"><h2 ${content.rdfa.Title}>${value.Title}</h2></div>
     </c:if>
 
+    <c:set var="id"><apollo:idgen prefix="tab" uuid="${cms.element.instanceId}" /></c:set>
+
     <div class="ap-tab">
         <ul class="nav nav-tabs">
             <c:forEach var="label" items="${content.valueList.Label}" varStatus="status">
-                <li ${status.first ? ' class="active"' : ''}><a href="#collapse-${cms.element.instanceId}-${status.count}" data-toggle="tab">${label}</a></li>
+                <li ${status.first ? ' class="active"' : ''}><a href="#${id}_${status.count}" data-toggle="tab">${label}</a></li>
             </c:forEach>
         </ul>
 
         <div class="tab-content">
             <c:forEach var="label" items="${content.valueList.Label}" varStatus="status">
 
-                <div 
-                    id="collapse-${cms.element.instanceId}-${status.count}"
+                <div
+                    id="${id}_${status.count}"
                     class="tab-pane ap-tab-pane fade ${status.first? 'active in':''}" >
                 <cms:container
                     name="tab-container${status.count}"

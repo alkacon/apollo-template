@@ -21,7 +21,9 @@
         <div class="headline"><h2 ${content.rdfa.Title}>${value.Title}</h2></div>
     </c:if>
 
-    <div class="ap-panel panel-group" id="accordion-${cms.element.instanceId}">
+    <c:set var="id"><apollo:idgen prefix="acco" uuid="${cms.element.instanceId}" /></c:set>
+
+    <div class="ap-panel panel-group" id="${id}">
         <c:forEach var="label" items="${content.valueList.Label}" varStatus="status">
             <div class="panel">
                 <div  class="panel-heading">
@@ -29,8 +31,8 @@
                         <a
                             class="accordion-toggle ${status.first? '':'collapsed'}"
                             data-toggle="collapse"
-                            data-parent="#accordion-${cms.element.instanceId}"
-                            href="#collapse-${cms.element.instanceId}-${status.count}">
+                            data-parent="#${id}"
+                            href="#${id}_${status.count}">
 
                             <div>${label}</div>
 
@@ -38,7 +40,7 @@
                     </h4>
                 </div>
                 <div class="panel-collapse collapse ${status.first? 'in':''}"
-                     id="collapse-${cms.element.instanceId}-${status.count}">
+                     id="${id}_${status.count}">
 
                     <cms:container
                         name="tab-container${status.count}"

@@ -161,7 +161,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for archive list filters]]></value>
+					<value><![CDATA[Formatter JSP for list archive filters]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -186,7 +186,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Archive list filters]]></value>
+					<value><![CDATA[Dynamic list archive filters]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -215,7 +215,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for dynamic lists (scrolling or pagination)]]></value>
+					<value><![CDATA[Formatter JSP for dynamic lists]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -240,7 +240,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Formatter JSP for archive list filters]]></value>
+					<value><![CDATA[Formatter JSP for list factes]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -265,7 +265,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[List facets]]></value>
+					<value><![CDATA[Dynamic list facets]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -294,7 +294,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[List with pagination]]></value>
+					<value><![CDATA[Dynamic list with automatic pagination or scrolling]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -311,7 +311,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[List with pagination]]></value>
+					<value><![CDATA[Dynamic list with pagination]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -328,7 +328,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[List with loading while scolling]]></value>
+					<value><![CDATA[Dynamic list with scrolling]]></value>
 				</property>
 				<property>
 					<name>locale</name>

@@ -19,6 +19,22 @@
 <c:set var="path" value="${pathPrefix}${content.value.ImageFolder}" />
 <c:set var="pageSize" value="${cms.element.setting.imagesPerPage.isSet ? cms.element.settings.imagesPerPage : '12' }" />
 
+<c:set var="template"><%--
+--%><div class="ap-square square-m-2 ${cms.element.settings.cssClass} comein zoom"><%--
+    --%><a class="image-gallery" href="%(src)" title="%(titleAttr)"><%--
+        --%><span class="content" style="background-image:url('%(src)');"><%--
+            --%><span class="zoom-overlay"><%--
+                --%><span class="zoom-icon"><%--
+                    --%><i class="fa fa-search"></i><%--
+               --%></span><%--
+            --%></span><%--
+        --%></span><%--
+    --%></a><%--
+--%></div>
+</c:set>
+
+<c:set var="id"><apollo:idgen prefix='imgal' uuid='${cms.element.instanceId}' /></c:set>
+
 <div class="ap-image-gallery ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : '' }">
 
     <c:if test="${not cms.element.settings.hidetitle}">
@@ -28,11 +44,11 @@
     </c:if>
 
     <apollo:imagegallery
-        id="${cms.element.id}"
+        id="${id}"
         path="${path}"
         count="${pageSize}"
         page="1"
-        css="${cms.element.settings.cssClass}"
+        template="${template}"
         showtitle="${cms.element.setting.showTitle.value}"
         showcopyright="${cms.element.setting.showCopyright.value}"
         autoload="${cms.element.setting.autoload.value}"

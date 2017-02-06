@@ -79,6 +79,7 @@
 			<resource uri="/system/modules/org.opencms.apollo/tags/formatter-settings.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/headline.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/map.tag"/>
+			<resource uri="/system/modules/org.opencms.apollo/tags/idgen.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-simple.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-animated.tag"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-vars.tag"/>
@@ -1485,6 +1486,23 @@
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/tags/idgen.tag</source>
+			<destination>system/modules/org.opencms.apollo/tags/idgen.tag</destination>
+			<type>jsp</type>
+			<uuidstructure>9ee9f7f7-ec24-11e6-9bed-0242ac11002b</uuidstructure>
+			<uuidresource>9ee9f7f8-ec24-11e6-9bed-0242ac11002b</uuidresource>
+			<datecreated>Mon, 06 Feb 2017 04:27:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Generates a JavaScript ID based on element UID and name]]></value>
 				</property>
 			</properties>
 			<relations/>

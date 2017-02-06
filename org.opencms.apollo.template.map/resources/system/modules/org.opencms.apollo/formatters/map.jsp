@@ -41,8 +41,10 @@
         <div ${value.Text.rdfaAttr}>${value.Text}</div>
     </c:if>
 
+    <c:set var="id"><apollo:idgen prefix='map' uuid='${cms.element.instanceId}' /></c:set>
+
     <apollo:map
-         id="${cms.element.id}"
+         id="${id}"
          width="${mapw}"
          height="${maph}"
          zoom="${content.value.MapZoom}"

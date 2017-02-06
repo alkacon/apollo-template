@@ -6,7 +6,7 @@
 
 
 <%@ attribute name="id" type="java.lang.String" required="true"
-    description="The id the map should use, usually the UID of the element." %>
+    description="The id the map should use." %>
 
 <%@ attribute name="useGeocoding" type="java.lang.Boolean" required="true"
     description="If true, use Google geocoding API to find addresses for markers that have no address set in content.
@@ -43,9 +43,7 @@
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-
-<%-- Id must not have any "-" character --%>
-<c:set var="id" value="map_${fn:replace(id, '-', '')}"/>
+<%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
 <%-- Set map window height / width --%>
 <c:set var="mapStyle" value="height:400px" />
@@ -89,27 +87,23 @@
     id="${id}"
     class="mapwindow"
     style="${mapStyle}"
-    data-map='{
-        "id":"${id}",
-        "zoom":"${zoom}",
-        "type":"${type}",
-        "geocoding":"${useGeocoding}",
-        "centerLat":"${centerLat}",
-        "centerLng":"${centerLng}"<c:if test="${not empty markers and showMarkers}">,</c:if>
+    data-map='{<%--
+    --%>"zoom":"${zoom}", <%--
+    --%>"type":"${type}", <%--
+    --%>"geocoding":"${useGeocoding}", <%--
+    --%>"centerLat":"${centerLat}", <%--
+    --%>"centerLng":"${centerLng}"<c:if test="${not empty markers and showMarkers}">,</c:if>
         <c:if test="${not empty markers and showMarkers}">
-           <jsp:useBean id="coordBean" class="org.opencms.widgets.CmsLocationPickerWidgetValue" />
-            "markers":[
-            <c:forEach var="marker" items="${markers}" varStatus="status">
+           <jsp:useBean id="coordBean" class="org.opencms.widgets.CmsLocationPickerWidgetValue" /><%--
+        --%> "markers":[<%--
+        --%><c:forEach var="marker" items="${markers}" varStatus="status">
                 <jsp:setProperty name="coordBean" property="wrappedValue" value="${marker.value.Coord.stringValue}" />
 
                 <c:set var="markerLat" value="${coordBean.lat}" />
                 <c:set var="markerLng" value="${coordBean.lng}" />
-
                 <c:set var="markerTitle" value="${marker.value.Caption.isEmptyOrWhitespaceOnly ? '' : fn:trim(marker.value.Caption)}" />
-
                 <c:set var="markerGroup" value="${marker.value.MarkerGroup.isEmptyOrWhitespaceOnly ? 'default' : fn:trim(marker.value.MarkerGroup)}" />
                 <c:set target="${markerGroups}" property="${markerGroup}" value="used"/>
-
                 <c:set var="markerNeedsGeoCode" value="false" />
                 <c:set var="markerAddress" value="" />
                 <c:choose>
@@ -142,17 +136,17 @@
                     ${markerRoute}
                 </c:set><%--
             --%>{<%--
-                --%>"lat":"${markerLat}",<%--
-                --%>"lng":"${markerLng}",<%--
-                --%>"geocode":"${markerNeedsGeoCode}",<%--
-                --%>"title":"${cms:encode(markerTitle)}",<%--
-                --%>"group":"${cms:encode(markerGroup)}",<%--
+                --%>"lat":"${markerLat}", <%--
+                --%>"lng":"${markerLng}", <%--
+                --%>"geocode":"${markerNeedsGeoCode}", <%--
+                --%>"title":"${cms:encode(markerTitle)}", <%--
+                --%>"group":"${cms:encode(markerGroup)}", <%--
                 --%>"info":"${cms:encode(markerInfo)}"<%--
-            --%>}<c:if test="${not status.last}">,</c:if>
-            </c:forEach>
-            ]
-        </c:if><%--
---%>}'>
+            --%>}<c:if test="${not status.last}">, </c:if>
+            </c:forEach><%--
+        --%>]<%--
+    --%></c:if><%--
+--%> }'>
 </div>
 
 <c:if test="${showMarkers and fn:length(markerGroups) > 1}">
