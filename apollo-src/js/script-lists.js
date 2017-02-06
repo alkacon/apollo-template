@@ -94,7 +94,7 @@ var ApolloList = function(jQ) {
             // show the spinner
             list.$spinner.hide().removeClass("fadeOut").addClass("fadeIn").css("top", spinnerPos).show();
 
-            var listOptionBox = jQ('#listoption_box-' + list.elementId);
+            var facetOptions = jQ('#facets_' + list.elementId);
             $.get(buildAjaxLink(list, ajaxOptions, searchStateParameters), function(resultList) {
 
                 var $result = jQ(resultList);
@@ -126,8 +126,8 @@ var ApolloList = function(jQ) {
 
                 if (reloadEntries) {
                     // reset the list option box
-                    listOptionBox.find(".list-options").remove();
-                    $result.filter(".list-options").appendTo(listOptionBox);
+                    facetOptions.find(".list-options").remove();
+                    $result.filter(".list-options").appendTo(facetOptions);
 
                     // check if we have found any results
                     if ($entries.length == 0) {
@@ -184,7 +184,7 @@ var ApolloList = function(jQ) {
             + "&loc="
             + list.locale;
 
-        var facets = jQ("#listoption_box-" + list.elementId);
+        var facets = jQ("#facets_" + list.elementId);
         if (facets.length != 0) {
             params = params + "&facets=" + facets.data("facets");
         }
@@ -255,7 +255,6 @@ var ApolloList = function(jQ) {
                     list.$spinner = $list.find(".spinner");
                     list.$pagination = $list.find(".ap-list-pagination");
                     list.autoload = false;
-                    if (DEBUG) console.info("List dynamic: " + list.dynamic);
                     if (list.dynamic == "autoscrolling") {
                         // list should page on larger screens and scroll with click on smaller screens
                         if (Apollo.gridInfo().grid == "xs") {
@@ -264,7 +263,6 @@ var ApolloList = function(jQ) {
                             list.dynamic = "pagination";
                         }
                     };
-                    if (DEBUG) console.info("List dynamic after check: " + list.dynamic);
                     if (list.dynamic == "scrolling") {
                         // this is a auto loading list on scrolling
                         m_autoLoadLists.push(list);
@@ -288,7 +286,7 @@ var ApolloList = function(jQ) {
                     } else {
                         m_listGroups[list.elementId] = [list];
                     }
-                    if (DEBUG) console.info("List data found: id=" + list.id + ", elementId=" + list.elementId);
+                    if (DEBUG) console.info("List data found: id=" + list.id + ", elementId=" + list.elementId + " dynamic=" + list.dynamic);
                 }
 
                 // load the initial list

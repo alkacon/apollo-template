@@ -304,6 +304,7 @@ var ApolloMap = function(jQ) {
 
                 if (typeof $mapElement.data("map") != 'undefined') {
                     var mapData = $mapElement.data("map");
+                    mapData.id = $mapElement.attr("id");
                     if (DEBUG) console.info("mapData found:" + mapData + ", id=" + mapData.id);
                     m_mapData.push(mapData);
                 }

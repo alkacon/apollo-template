@@ -150,7 +150,7 @@ var Apollo = function(jQ) {
 
         // initialize grid size
         m_gridInfo = getCssData('apollo-grid-info');
-        if (DEBUG) console.info("Apollo grid info: " + m_gridSize);
+        if (DEBUG) console.info("Apollo grid info: " + m_gridInfo.grid);
     }
 
     // public available functions

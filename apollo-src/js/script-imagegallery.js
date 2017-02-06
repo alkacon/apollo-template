@@ -196,11 +196,12 @@ var ApolloImageGallery = function(jQ) {
         // initialize gallery with values from data attributes
         $elements.each(function(){
             var $element = $(this);
-            var $galleryElement = $element.find('.gallery');
+            var $gallery = $element.find('.gallery');
 
-            if (typeof $galleryElement.data("imagegallery") != 'undefined') {
-                var gallery = $galleryElement.data("imagegallery");
-                gallery.element = $galleryElement;
+            if (typeof $gallery.data("imagegallery") != 'undefined') {
+                var gallery = $gallery.data("imagegallery");
+                gallery.id = $gallery.attr("id");
+                gallery.element = $gallery;
                 m_galleries[gallery.id] = gallery;
                 if (gallery.autoload == "true") {
                     m_autoLoadGalleries.push(gallery);
