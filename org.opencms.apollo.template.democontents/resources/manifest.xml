@@ -1167,7 +1167,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Headline left, big image right]]></value>
+					<value><![CDATA[Headline and text left, big image right]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1200,7 +1200,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Headline left, small image right]]></value>
+					<value><![CDATA[Headline and text left, small image right]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1266,7 +1266,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Headline right, big image left]]></value>
+					<value><![CDATA[Headline and text right, big image left]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1299,7 +1299,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Headline right, small image left]]></value>
+					<value><![CDATA[Headline and text right, small image left]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1365,7 +1365,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Headline and text only]]></value>
+					<value><![CDATA[Headline and text]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1398,7 +1398,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Headline on top, big image left]]></value>
+					<value><![CDATA[Headline on top, big image left, text right]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1431,7 +1431,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Headline on top, big image right]]></value>
+					<value><![CDATA[Headline on top, big image right, text left]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1464,7 +1464,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Headline on top, small image left]]></value>
+					<value><![CDATA[Headline on top, small image left, text right]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -1497,7 +1497,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Headline on top, small image right]]></value>
+					<value><![CDATA[Headline on top, small image right, text left]]></value>
 				</property>
 				<property>
 					<name>cache</name>
@@ -9564,7 +9564,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[How comes software this great is free?]]></value>
+					<value><![CDATA[FAQ Entry: How comes software this great is free?]]></value>
 				</property>
 			</properties>
 			<relations>

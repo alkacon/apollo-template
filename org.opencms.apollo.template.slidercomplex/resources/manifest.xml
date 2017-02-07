@@ -140,7 +140,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Complex slider]]></value>
+					<value><![CDATA[Default complex slider]]></value>
 				</property>
 				<property>
 					<name>locale</name>

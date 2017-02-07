@@ -142,7 +142,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Carousel slider]]></value>
+					<value><![CDATA[??? formatter.a-slider.carousel ???]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -196,7 +196,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Default slider]]></value>
+					<value><![CDATA[??? formatter.a-slider.default ???]]></value>
 				</property>
 				<property>
 					<name>locale</name>

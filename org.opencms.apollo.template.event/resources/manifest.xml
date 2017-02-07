@@ -142,7 +142,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Event detail view]]></value>
+					<value><![CDATA[??? formatter.a-event.detail ???]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -196,7 +196,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Compact event teaser]]></value>
+					<value><![CDATA[??? formatter.a-event.teaser.compact ???]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -250,7 +250,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Elaborate event teaser]]></value>
+					<value><![CDATA[??? formatter.a-event.teaser.elaborate ???]]></value>
 				</property>
 				<property>
 					<name>locale</name>

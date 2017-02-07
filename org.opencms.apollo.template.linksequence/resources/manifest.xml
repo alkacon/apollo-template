@@ -142,7 +142,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link sequence in a row]]></value>
+					<value><![CDATA[??? formatter.a-linksequence.row ???]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -196,7 +196,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link sequence as bullet points]]></value>
+					<value><![CDATA[??? formatter.a-linksequence.default ???]]></value>
 				</property>
 				<property>
 					<name>locale</name>

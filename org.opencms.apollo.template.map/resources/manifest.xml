@@ -139,7 +139,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Default location map]]></value>
+					<value><![CDATA[??? formatter.a-map.default ???]]></value>
 				</property>
 				<property>
 					<name>locale</name>

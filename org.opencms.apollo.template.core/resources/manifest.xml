@@ -427,7 +427,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Standard search]]></value>
+					<value><![CDATA[Default search]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -481,7 +481,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Default layout row]]></value>
+					<value><![CDATA[??? formatter.a-templaterow.default ???]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -535,7 +535,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Headline only (direct)]]></value>
+					<value><![CDATA[Default headline (internal)]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -589,7 +589,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Icon box layout]]></value>
+					<value><![CDATA[Icon box]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -685,7 +685,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Jumbotron layout]]></value>
+					<value><![CDATA[Text as Jumbotron]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -739,7 +739,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Text only (direct)]]></value>
+					<value><![CDATA[Default text (internal)]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -793,7 +793,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Section as square tile]]></value>
+					<value><![CDATA[Square element]]></value>
 				</property>
 				<property>
 					<name>locale</name>
