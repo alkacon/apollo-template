@@ -45,17 +45,18 @@
     <%-- Id must not have any "-" character --%>
 
     <div class="${listWrapper}" id="${instanceId}">
-
+    
         <%-- ####### List entries ######## --%>
         <apollo:list-main
             instanceId="${instanceId}"
-            source="${con.value.Folder}"
+            source="${con.valueList.Folder}"
             types="${con.value.TypesToCollect}"
             count="${con.value.ItemsPerPage.isSet ? con.value.ItemsPerPage.toInteger : 5}"
             locale="${cms.locale}"
             sort="${con.value.SortOrder}"
             categories="${con.readCategories}"
             formatterSettings="${formatterSettings}"
+            filterqueries="${con.value.FilterQueries}"
         />
 
         <%-- ####### Create and edit new entries if empty result ######## --%>

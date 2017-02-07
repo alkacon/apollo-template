@@ -33,7 +33,8 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/asset-imgur-formatter-config.xml "/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/imgursection.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/dataview.xsd"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages "/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages_en"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/tags/image-animated-imgur.tag"/>
 		</resources>
 		<excluderesources/>
@@ -138,7 +139,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Asset Connections > Imgur]]></value>
+					<value><![CDATA[Default asset connection > Imgur]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -183,14 +184,47 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages</destination>
-			<type>xmlvfsbundle</type>
-			<uuidstructure>3a8fc879-7f0e-11e6-95f6-0242ac11002b</uuidstructure>
-			<uuidresource>3a8fc87a-7f0e-11e6-95f6-0242ac11002b</uuidresource>
-			<datecreated>Tue, 20 Sep 2016 08:42:57 GMT</datecreated>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages_de</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages_de</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>a0bdfca3-ed2f-11e6-8c0c-0242ac11002b</uuidstructure>
+			<uuidresource>a0bdfca4-ed2f-11e6-8c0c-0242ac11002b</uuidresource>
+			<datecreated>Tue, 07 Feb 2017 12:19:09 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages_en</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.imgur.messages_en</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>a0c21b56-ed2f-11e6-8c0c-0242ac11002b</uuidstructure>
+			<uuidresource>a0c21b57-ed2f-11e6-8c0c-0242ac11002b</uuidresource>
+			<datecreated>Tue, 07 Feb 2017 12:19:09 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
@@ -215,7 +249,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Sample resource type schema]]></value>
+					<value><![CDATA[XSD for asset connection > Imgur example]]></value>
 				</property>
 			</properties>
 			<relations/>

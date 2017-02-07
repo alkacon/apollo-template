@@ -12,8 +12,8 @@
     description="The id of the list content element (generated from the UID of the list resource).
     If the same list is on a page more then once, then all list instances share this id." %>
 
-<%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
-    description="The directory (including subdirectories) from which the elements are read." %>
+<%@ attribute name="source" type="java.util.List" required="true"
+    description="The directories (including subdirectories) from which the elements are read." %>
 
 <%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The type of elements, that will be used." %>
@@ -42,6 +42,9 @@
     sort_order,
     sort_title
     ]" %>
+    
+<%@ attribute name="filterqueries" type="java.lang.String" required="false"
+    description='A string an additional solr query string, e.g., fq=parent-folders:"/shared/"' %>    
 
 <%@ attribute name="pageUri" type="java.lang.String" required="false"
     description="The URI of the page where the list is used. Is needed for AJAX requests to setup the search context." %>
@@ -78,6 +81,7 @@
     count="${count}"
     categories="${categories}"
     showexpired="${empty formatterSettings.showExpired || formatterSettings.showExpired}"
+    filterqueries="${filterqueries}"
 />
 
 <c:if test="${search.numFound > 0}">

@@ -27,8 +27,8 @@
 			<resource uri="/system/modules/org.opencms.apollo/functions/disqus-load.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/disqus.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/functions/disqus.xml"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus_en"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.disqus.messages_de"/>
+			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.disqus.messages_en"/>
 			<resource uri="/system/workplace/resources/filetypes/a-disqus.png"/>
 			<resource uri="/system/workplace/resources/filetypes/a-disqus_big.png"/>
 		</resources>
@@ -129,8 +129,8 @@
 			<properties/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus_de</destination>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.disqus.messages_de</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.disqus.messages_de</destination>
 			<type>propertyvfsbundle</type>
 			<uuidstructure>fce23472-ada9-11e6-a18e-0242ac11002b</uuidstructure>
 			<uuidresource>fce23473-ada9-11e6-a18e-0242ac11002b</uuidresource>
@@ -154,8 +154,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.disqus_en</destination>
+			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.disqus.messages_en</source>
+			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.disqus.messages_en</destination>
 			<type>propertyvfsbundle</type>
 			<uuidstructure>fce40935-ada9-11e6-a18e-0242ac11002b</uuidstructure>
 			<uuidresource>fce40936-ada9-11e6-a18e-0242ac11002b</uuidresource>

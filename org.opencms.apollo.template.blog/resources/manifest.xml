@@ -205,7 +205,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Detailed blog article (visual only)]]></value>
+					<value><![CDATA[Detailed blog article (Visual)]]></value>
 				</property>
 				<property>
 					<name>locale</name>

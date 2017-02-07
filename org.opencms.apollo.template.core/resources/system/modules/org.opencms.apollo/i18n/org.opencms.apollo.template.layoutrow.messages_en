@@ -19,6 +19,9 @@ apollo.row.role.author=Author
 apollo.row.role.developer=Developer
 apollo.row.role.editor=Editor
 apollo.row.unlimited=Unlimited
+desc.a-templaterow=Defines page layout containers that can be filled with content elements.
+fileicon.a-templaterow=Layout row
+formatter.a-templaterow.default=Default layout row
 label.ApolloRowColumn.Count=Max. Elements
 label.ApolloRowColumn.Count.help=The maximum number of elements that can be placed in the generated container.
 label.ApolloRowColumn.Editors=Permissions
@@ -48,3 +51,4 @@ label.ApolloTemplateRow.PreMarkup=Pre Markup
 label.ApolloTemplateRow.PreMarkup.help=The HTML rendered before any other output of the formatter is rendered. Can contain macros $(param) and $(link).\n\n$(param) is directly substituted by the value of the element setting "Param".\n$(link) is substituted by the value of the element setting "Link".\n\nExample for a pre markup\: &lt;div class\="row $(param)"&gt;\n
 label.ApolloTemplateRow.Title=Title
 label.ApolloTemplateRow.Title.help=The title of this layout row.
+title.a-templaterow=New layout row

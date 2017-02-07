@@ -33,41 +33,41 @@
     </Setting>
     <Setting>
       <PropertyName><![CDATA[ieffect]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.effect.label)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>
       <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
-        none:%(key.apollo.section.image.effect.none)|
-        ap-shadow:%(key.apollo.section.image.effect.shadownoanim)|    
-        bo-radius-10:%(key.apollo.section.image.effect.roundcorners)|
-        bo-radius-50p:%(key.apollo.section.image.effect.vignette)|
-        bo-1 bo-grey-lighter p-3:%(key.apollo.section.image.effect.bordered)|
-        bo-1 bo-grey-lighter p-3 bo-radius-10:%(key.apollo.section.image.effect.borderedround)|
-        bo-1 bo-grey-lighter p-3 bo-radius-50p:%(key.apollo.section.image.effect.borderedvignette)|
-        ap-shadow bo-radius-10:%(key.apollo.section.image.effect.shadowround)|
-        ap-shadow bo-1 bo-grey-lighter p-3:%(key.apollo.section.image.effect.shadowbordered)
+        none:%(key.apollo.setting.image.effect.none)|
+        ap-shadow:%(key.apollo.setting.image.effect.shadownoanim)|    
+        bo-radius-10:%(key.apollo.setting.image.effect.roundcorners)|
+        bo-radius-50p:%(key.apollo.setting.image.effect.vignette)|
+        bo-1 bo-grey-lighter p-3:%(key.apollo.setting.image.effect.bordered)|
+        bo-1 bo-grey-lighter p-3 bo-radius-10:%(key.apollo.setting.image.effect.borderedround)|
+        bo-1 bo-grey-lighter p-3 bo-radius-50p:%(key.apollo.setting.image.effect.borderedvignette)|
+        ap-shadow bo-radius-10:%(key.apollo.setting.image.effect.shadowround)|
+        ap-shadow bo-1 bo-grey-lighter p-3:%(key.apollo.setting.image.effect.shadowbordered)
       ]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showsubtitle]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.showsubtitle)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.text.showsubtitle)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>
       <Default><![CDATA[false]]></Default>
       <WidgetConfig><![CDATA[
-        false:%(key.apollo.section.image.showsubtitle.none)|
-        header:%(key.apollo.section.image.showsubtitle.header)|
-        centered:%(key.apollo.section.image.showsubtitle.centered)
+        false:%(key.apollo.setting.image.showsubtitle.none)|
+        header:%(key.apollo.setting.image.showsubtitle.header)|
+        centered:%(key.apollo.setting.image.showsubtitle.centered)
       ]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showcopyright]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.showcopyright)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.text.showcopyright)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showtext]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.showtext)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.text.showtext)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>

@@ -26,7 +26,7 @@
         elementId="${param.elementId}"
         instanceId="${param.instanceId}"
 
-        source="${con.value.Folder}"
+        source="${con.valueList.Folder}"
         types="${con.value.TypesToCollect}"
         count="${con.value.ItemsPerPage.isSet ? con.value.ItemsPerPage.toInteger : 5}"
         locale="${param.loc}"
@@ -38,6 +38,7 @@
         showfacets="${param.facets}"
         pageUri="${param.sitepath}"
         subsite="${param.subsite}"
+        filterqueries="${con.value.FilterQueries}"
     />
 
     <%-- ####### Load pagination ######## --%>
@@ -70,10 +71,11 @@
 
     <%-- ####### Provide information about search result for JavaScript ######## --%>
     <div id="resultdata" data-result='{<%--
-    --%>"pages": "${search.numPages}", <%--
-    --%>"found": "${search.numFound}", <%--
-    --%>"start": "${search.start}", <%--
-    --%>"end": "${search.end}"<%--
+    --%>"currentPage":"${search.controller.pagination.state.currentPage}", <%--
+    --%>"pages":"${search.numPages}", <%--
+    --%>"found":"${search.numFound}", <%--
+    --%>"start":"${search.start}", <%--
+    --%>"end":"${search.end}"<%--
 --%>}'></div>
 </c:if>
 

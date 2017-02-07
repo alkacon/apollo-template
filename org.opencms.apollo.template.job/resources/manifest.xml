@@ -142,7 +142,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Detailed job offer]]></value>
+					<value><![CDATA[Job ad detail view]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -196,7 +196,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Compact job teaser]]></value>
+					<value><![CDATA[Compact job ad teaser]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -250,7 +250,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Elaborate Job teaser]]></value>
+					<value><![CDATA[Elaborate job ad teaser]]></value>
 				</property>
 				<property>
 					<name>locale</name>

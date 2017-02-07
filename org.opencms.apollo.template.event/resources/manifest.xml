@@ -142,7 +142,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Detailed event]]></value>
+					<value><![CDATA[Event detail view]]></value>
 				</property>
 				<property>
 					<name>locale</name>

@@ -23,7 +23,7 @@
 
 <%-- We just want to load facet metadata here, no actual results, so the count is 0 --%>
 <apollo:list-search
-    source="${value.Folder}"
+    source="${content.valueList.Folder}"
     types="${value.TypesToCollect}"
     categories="${content.readCategories}"
     count="0"
@@ -68,29 +68,54 @@
 
             <div id="aplistlabels" class="dialog" ${formatterSettings.catPreopened ? 'style="display:block;"' : ''}>
                 <ul>
-                    <c:set var="catFilters" value=",${fn:replace(formatterSettings.catfilters,' ','')}," />
-                    <c:set var="blacklistFilter" value="${fn:startsWith(catFilters,',whitelist') ? 'false' : 'true'}" />
-                    <c:forEach var="value" items="${fieldFacetResult.values}">
-                        <c:set var="selected">${fieldFacetController.state.isChecked[value.name] ? ' class="active"' : ''}</c:set>
-                        <c:set var="itemName">${value.name}</c:set>
-                        <c:set var="currCat" value="${cms.readCategory[itemName]}" />
-                        <c:set var="currCatTitle" value=",${fn:replace(currCat.title,' ','')}," />
-                        <c:if test="${blacklistFilter != fn:contains(catFilters, currCatTitle)}">
-                            <c:set var="showLabel" value="false" />
-                            <c:choose>
-                                <c:when test="${not empty categoryPaths}">
-                                    <c:forTokens var="testCat" items="${categoryPaths}" delims=",">
-                                        <c:if test="${fn:startsWith(currCat.path, testCat)}">
-                                            <c:set var="showLabel" value="true" />
-                                        </c:if>
-                                    </c:forTokens>
-                                </c:when>
-                                <c:otherwise>
-                                    <c:set var="showLabel" value="true" />
-                                </c:otherwise>
-                            </c:choose>
-
-                            <c:if test="${showLabel}">
+                	<%-- BEGIN: Calculate category filters --%>
+					<c:set var="catFilters"
+						value="${not empty formatterSettings.catfilters ? fn:replace(formatterSettings.catfilters,' ','') : ''}" />
+					<c:set var="blacklistFilter" value="true" />
+					<c:if test="${not empty catFilters}">
+						<c:if test="${fn:startsWith(catFilters,'whitelist:')}">
+							<c:set var="catFilters"
+								value="${fn:replace(catFilters,'whitelist:','')}" />
+							<c:set var="blacklistFilter" value="false" />
+						</c:if>
+						<c:set var="catFilters" value='${fn:split(catFilters, ",")}' />
+					</c:if>
+					<%-- END: Calculate category filters --%>
+					
+					<%-- Read additional options (parameters) that influence the display of categories --%>
+					<c:set var="displayCatPath" value="${fn:toLowerCase(formatterSettings.catlabelfullpath) eq 'true'}" />
+					<c:set var="onlyLeafs" value="${fn:toLowerCase(formatterSettings.catshowonlyleafs) eq 'true'}" />
+					
+					<c:set var="facetValues" value="${fieldFacetResult.values}" />
+                    <c:forEach var="value" items="${facetValues}" varStatus="outerStatus">
+                    	<c:if test="${not onlyLeafs or outerStatus.last or not fn:startsWith(facetValues[outerStatus.count].name, value.name)}">
+	                        <c:set var="selected">${fieldFacetController.state.isChecked[value.name] ? ' class="active"' : ''}</c:set>
+	                        
+	                        <%-- BEGIN: Calculate category label --%>
+							<c:set var="catCompareLabel"></c:set>
+							<c:set var="label"></c:set>
+							<c:forEach var="category"
+								items="${cms.readPathCategories[value.name]}" varStatus="status">
+								<c:if test="${displayCatPath or status.last}"><c:set var="label">${label}${category.title}</c:set></c:if>
+								<c:set var="catCompareLabel">${catCompareLabel}${category.title}</c:set>
+								<c:if test="${not status.last}">
+									<c:if test="${displayCatPath}"><c:set var="label">${label}&nbsp;/&nbsp;</c:set></c:if>
+									<c:set var="catCompareLabel">${catCompareLabel} / </c:set>
+								</c:if>
+							</c:forEach>
+							<%-- END: Calculate category label --%>
+							
+							<c:set var="catCompareLabel"
+								value="${fn:replace(catCompareLabel,' ','')}" />
+							<c:set var="isMatchedByFilter" value="false" />
+							<c:forEach var="filterValue" items="${catFilters}" varStatus="status">
+								<!-- Filter value: ${filterValue} -->
+								<c:if test="${isMatchedByFilter or fn:contains(catCompareLabel, filterValue)}">
+									<c:set var="isMatchedByFilter" value="true" />
+								</c:if>
+							</c:forEach>
+							
+	                        <c:if test="${blacklistFilter != isMatchedByFilter}">	
                                 <li ${selected}>
                                     <a href="javascript:void(0)" onclick="ApolloList.filter(<%--
                                             --%>'${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}',<%--
@@ -98,10 +123,10 @@
                                         --%>);<%--
                                         --%>ApolloList.archiveHighlight($(this));<%--
                                         --%>clearQuery();">
-                                        <span class="badge"><i class="fa fa-tag"></i> ${currCat.title} (${value.count})</span>
+                                        <span class="badge"><i class="fa fa-tag"></i> ${label} (${value.count})</span>
                                     </a>
                                 </li>
-                            </c:if>
+	                        </c:if>
                         </c:if>
                     </c:forEach>
                 </ul>

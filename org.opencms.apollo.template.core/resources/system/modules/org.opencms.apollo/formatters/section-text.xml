@@ -24,12 +24,12 @@
     <NestedContainers>false</NestedContainers>
     <Setting>
       <PropertyName><![CDATA[tstyle]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.text.style.label)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.text.style.label)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>
       <Default><![CDATA[ap-plain]]></Default>
       <WidgetConfig><![CDATA[
-        ap-plain:%(key.apollo.section.text.style.plain)|
-        lead:%(key.apollo.section.text.style.lead)
+        ap-plain:%(key.apollo.setting.text.style.plain)|
+        lead:%(key.apollo.setting.text.style.lead)
       ]]></WidgetConfig>
     </Setting>
   </NewFormatter>

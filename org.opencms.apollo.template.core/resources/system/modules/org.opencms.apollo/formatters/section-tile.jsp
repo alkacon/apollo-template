@@ -13,7 +13,7 @@
 
 <cms:formatter var="content" val="value">
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.section">
+<cms:bundle basename="org.opencms.apollo.template.section.messages">
 
 <apollo:image-vars image="${value.Image}">
 

@@ -1,0 +1,16 @@
+apollo.imgursection.message.link=Auf Imgur anzeigen
+apollo.section.message.new=Neues Asset-Connections Element, bitte editieren.
+apollo.setting.image.effect.inset=Shadow inside
+apollo.setting.image.effect.inset-kenburns=Rotating image and shadow inside
+apollo.setting.image.effect.kenburns=Rotating image
+apollo.setting.image.effect.raise=Raised effect
+apollo.setting.image.effect.raise-kenburns=Rotating image and raised effect
+apollo.setting.image.effect.shadow-kenburns=Rotating image and shadow outside
+apollo.setting.image.text.showlink=Zeige Link
+apollo.setting.image.text.showsubtitle=Zeige Untertitel
+apollo.setting.image.text.showtext=Zeige Text
+apollo.setting.imgursection.usetitle=Benutze Imgur Titel
+desc.a-imgursection=Eine Content-Section, die ein Imgur Bild und weitere Informationen anzeigt.
+fileicon.a-imgursection=Asset Connection > Imgur
+formatter.a-imgursection.default=Standard Asset Connection > Imgur
+title.a-imgursection=Asset Connection > Imgur

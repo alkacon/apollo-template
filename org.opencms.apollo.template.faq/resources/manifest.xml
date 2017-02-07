@@ -142,7 +142,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Detailed FAQ entry]]></value>
+					<value><![CDATA[FAQ entry detail view]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -196,7 +196,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Accordion FAQ entry teaser]]></value>
+					<value><![CDATA[FAQ entry teaser for accordion list]]></value>
 				</property>
 				<property>
 					<name>locale</name>

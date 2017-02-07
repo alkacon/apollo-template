@@ -3,8 +3,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.disqus">
+<cms:bundle basename="org.opencms.apollo.template.disqus.messages">
+
     <div class="ap-disqus ${cms.element.setting.wrapperclass.isSet ? cms.element.setting.wrapperclass : 'mb-20' }">
         <c:set var="clickToLoad" value="false"/>
         <c:if test="${param.clicktoload == 'true'}"><c:set var="clickToLoad" value="true"/></c:if>

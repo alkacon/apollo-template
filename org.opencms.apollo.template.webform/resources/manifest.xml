@@ -640,18 +640,6 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/org.opencms.apollo.template.webform/i18n/org.opencms.apollo.template.webform.workplace</source>
-			<destination>system/modules/org.opencms.apollo.template.webform/i18n/org.opencms.apollo.template.webform.workplace</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>7e5d818f-e75d-11e5-ae6a-0242ac11002b</uuidstructure>
-			<uuidresource>7e5d8190-e75d-11e5-ae6a-0242ac11002b</uuidresource>
-			<datecreated>Fri, 11 Mar 2016 07:47:24 GMT</datecreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<source>system/modules/org.opencms.apollo.template.webform/i18n/org.opencms.apollo.template.webform.workplace_de</source>
 			<destination>system/modules/org.opencms.apollo.template.webform/i18n/org.opencms.apollo.template.webform.workplace_de</destination>
 			<type>propertyvfsbundle</type>
@@ -661,6 +649,27 @@
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo.template.webform/i18n/org.opencms.apollo.template.webform.workplace_en</source>
+			<destination>system/modules/org.opencms.apollo.template.webform/i18n/org.opencms.apollo.template.webform.workplace_en</destination>
+			<type>propertyvfsbundle</type>
+			<uuidstructure>7e5d818f-e75d-11e5-ae6a-0242ac11002b</uuidstructure>
+			<uuidresource>7e5d8190-e75d-11e5-ae6a-0242ac11002b</uuidresource>
+			<datecreated>Fri, 11 Mar 2016 07:47:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property type="shared">
 					<name>content-encoding</name>
 					<value><![CDATA[UTF-8]]></value>
 				</property>

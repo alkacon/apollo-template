@@ -29,8 +29,6 @@
 			<resource uri="/system/modules/org.opencms.apollo/formatters/map.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.map.messages_de"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.map.messages_en"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.map_de"/>
-			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.map_en"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/map.xsd"/>
 			<resource uri="/system/modules/org.opencms.apollo/schemas/nested/map-coord.xsd"/>
 			<resource uri="/system/workplace/resources/filetypes/a-map.png"/>
@@ -141,7 +139,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Standard location map]]></value>
+					<value><![CDATA[Default location map]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -196,56 +194,6 @@
 			<uuidstructure>ec964c89-ada9-11e6-a18e-0242ac11002b</uuidstructure>
 			<uuidresource>ec964c8a-ada9-11e6-a18e-0242ac11002b</uuidresource>
 			<datecreated>Fri, 18 Nov 2016 16:13:21 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>content-encoding</name>
-					<value><![CDATA[UTF-8]]></value>
-				</property>
-				<property type="shared">
-					<name>content-encoding</name>
-					<value><![CDATA[UTF-8]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.map_de</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.map_de</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>553dfd1c-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>553dfd1d-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:16:16 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>content-encoding</name>
-					<value><![CDATA[UTF-8]]></value>
-				</property>
-				<property type="shared">
-					<name>content-encoding</name>
-					<value><![CDATA[UTF-8]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.map_en</source>
-			<destination>system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.schemas.map_en</destination>
-			<type>propertyvfsbundle</type>
-			<uuidstructure>5541f4bf-adaa-11e6-a18e-0242ac11002b</uuidstructure>
-			<uuidresource>5541f4c0-adaa-11e6-a18e-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Nov 2016 16:16:16 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>

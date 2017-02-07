@@ -2,7 +2,7 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Contact in three columns ]]></NiceName>
+    <NiceName><![CDATA[%(key.formatter.a-contact.threecol)]]></NiceName>
     <Type><![CDATA[a-contact]]></Type>
     <Jsp>
       <link type="WEAK">
@@ -32,15 +32,15 @@
     </Setting>
     <Setting>
       <PropertyName><![CDATA[effect]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.effect.label)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
-        none:%(key.apollo.section.image.effect.none)|
+        none:%(key.apollo.setting.image.effect.none)|
         no-img:%(key.apollo.contact.setting.noimage)|
-        effect-shadow:%(key.apollo.section.image.effect.animatedshadow)|
-        effect-kenburns:%(key.apollo.section.image.effect.kenburns)|
-        effect-shadow-effect-kenburns:%(key.apollo.section.image.effect.shadow-kenburns)
+        effect-shadow:%(key.apollo.setting.image.effect.animatedshadow)|
+        effect-kenburns:%(key.apollo.setting.image.effect.kenburns)|
+        effect-shadow-effect-kenburns:%(key.apollo.setting.image.effect.shadow-kenburns)
       ]]></WidgetConfig>
     </Setting>
     <Setting>

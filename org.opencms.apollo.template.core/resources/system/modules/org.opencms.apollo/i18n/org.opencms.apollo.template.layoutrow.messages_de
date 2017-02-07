@@ -19,6 +19,9 @@ apollo.row.role.author=Autor
 apollo.row.role.developer=Entwickler
 apollo.row.role.editor=Redakteur
 apollo.row.unlimited=Unbegrenzt
+desc.a-templaterow=Erzeugt Seitenlayout-Felder die mit Inhaltselementen gefüllt werden können.
+fileicon.a-templaterow=Layout-Zeile
+formatter.a-templaterow.default=Standard Layout-Zeile
 label.ApolloRowColumn.Count=Max. Elemente\n
 label.ApolloRowColumn.Count.help=Die maximale Anzahl von Elementen, welche in den erzeugten Container gelegt werden können.
 label.ApolloRowColumn.Editors=Berechtigungen
@@ -48,3 +51,4 @@ label.ApolloTemplateRow.PreMarkup=Pre-Markup
 label.ApolloTemplateRow.PreMarkup.help=Dieses HTML wird direkt vor der erzeugten Layout-Zeile eingefügt. Es können die Makros $(param) und $(link) genutzt werden.\n\n$(param) wird direkt durch den Wert der Element-Einstellung "Param" ersetzt\n$(link) wird durch den Wert des Element-Einstellung "Link" ersetzt.\n\nBeispiel für ein Pre-Markup\: &lt;div class\="row $(param)"&gt; 
 label.ApolloTemplateRow.Title=Titel
 label.ApolloTemplateRow.Title.help=Der Titel dieser Layout-Zeile.
+title.a-templaterow=Neue Layout-Zeile

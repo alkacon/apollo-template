@@ -99,16 +99,20 @@
       <Value><![CDATA[true]]></Value>
     </Parameters>
     <Parameters>
-      <Key><![CDATA[catfilters]]></Key>
-      <Value><![CDATA[Priority / Importance, Topic]]></Value>
-    </Parameters>
-    <Parameters>
       <Key><![CDATA[listButtonText]]></Key>
       <Value><![CDATA[Show more articles]]></Value>
     </Parameters>
     <Parameters>
       <Key><![CDATA[entryButtonText]]></Key>
       <Value><![CDATA[Read article]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[catfilters]]></Key>
+      <Value><![CDATA[whitelist:Top,Loc]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[catlabelfullpath]]></Key>
+      <Value><![CDATA[true]]></Value>
     </Parameters>
   </ApolloList>
 </ApolloLists>

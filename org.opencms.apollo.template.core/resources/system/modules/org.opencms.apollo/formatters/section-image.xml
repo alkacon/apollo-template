@@ -26,54 +26,54 @@
     <NestedContainers>false</NestedContainers>
     <Setting>
       <PropertyName><![CDATA[ieffect]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.effect.label)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>
       <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
-        none:%(key.apollo.section.image.effect.none)|
-        ap-shadow:%(key.apollo.section.image.effect.shadownoanim)| 
-        bo-1 bo-grey-lighter p-3:%(key.apollo.section.image.effect.bordered)|
-        ap-shadow bo-1 bo-grey-lighter p-3:%(key.apollo.section.image.effect.shadowbordered)|
-        ap-shadow-animation:%(key.apollo.section.image.effect.shadow)|
-        ap-inset-animation:%(key.apollo.section.image.effect.inset)|
-        ap-raise-animation:%(key.apollo.section.image.effect.raise)|
-        ap-kenburns-animation:%(key.apollo.section.image.effect.kenburns)|
-        ap-shadow-animation ap-kenburns-animation:%(key.apollo.section.image.effect.shadow-kenburns)|
-        ap-inset-animation ap-kenburns-animation:%(key.apollo.section.image.effect.inset-kenburns)|
-        ap-raise-animation ap-kenburns-animation:%(key.apollo.section.image.effect.raise-kenburns)
+        none:%(key.apollo.setting.image.effect.none)|
+        ap-shadow:%(key.apollo.setting.image.effect.shadownoanim)| 
+        bo-1 bo-grey-lighter p-3:%(key.apollo.setting.image.effect.bordered)|
+        ap-shadow bo-1 bo-grey-lighter p-3:%(key.apollo.setting.image.effect.shadowbordered)|
+        ap-shadow-animation:%(key.apollo.setting.image.effect.shadow)|
+        ap-inset-animation:%(key.apollo.setting.image.effect.inset)|
+        ap-raise-animation:%(key.apollo.setting.image.effect.raise)|
+        ap-kenburns-animation:%(key.apollo.setting.image.effect.kenburns)|
+        ap-shadow-animation ap-kenburns-animation:%(key.apollo.setting.image.effect.shadow-kenburns)|
+        ap-inset-animation ap-kenburns-animation:%(key.apollo.setting.image.effect.inset-kenburns)|
+        ap-raise-animation ap-kenburns-animation:%(key.apollo.setting.image.effect.raise-kenburns)
       ]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showlink]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.showlink)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.text.showlink)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[false]]></Default>
       <WidgetConfig><![CDATA[
-        false:%(key.apollo.section.image.link.none)|
-        image:%(key.apollo.section.image.link.imagedirectly)|
-        true:%(key.apollo.section.image.link.textoverlay)
+        false:%(key.apollo.setting.image.link.none)|
+        image:%(key.apollo.setting.image.link.imagedirectly)|
+        true:%(key.apollo.setting.image.link.textoverlay)
       ]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showsubtitle]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.showsubtitle)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.text.showsubtitle)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>
       <Default><![CDATA[false]]></Default>
       <WidgetConfig><![CDATA[
-        false:%(key.apollo.section.image.showsubtitle.none)|
-        header:%(key.apollo.section.image.showsubtitle.header)|
-        centered:%(key.apollo.section.image.showsubtitle.centered)
+        false:%(key.apollo.setting.image.showsubtitle.none)|
+        header:%(key.apollo.setting.image.showsubtitle.header)|
+        centered:%(key.apollo.setting.image.showsubtitle.centered)
       ]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showcopyright]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.showcopyright)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.text.showcopyright)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showtext]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.showtext)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.text.showtext)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>

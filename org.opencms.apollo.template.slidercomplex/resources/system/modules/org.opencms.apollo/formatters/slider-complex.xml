@@ -59,7 +59,7 @@
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showCopy]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.copy)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.text.copy)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>

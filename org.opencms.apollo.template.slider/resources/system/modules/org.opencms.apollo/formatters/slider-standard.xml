@@ -2,7 +2,7 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Standard slider]]></NiceName>
+    <NiceName><![CDATA[%(key.formatter.a-slider.default)]]></NiceName>
     <Type><![CDATA[a-slider]]></Type>
     <Jsp>
       <link type="WEAK">
@@ -53,7 +53,7 @@
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showCopy]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.copy)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.text.copy)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[true]]></Default>
     </Setting>

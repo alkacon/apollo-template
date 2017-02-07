@@ -28,6 +28,8 @@
 					showDate:%(key.apollo.parameter.showdate)|
 					showExpired:%(key.apollo.parameter.showexpired)|
 					catfilters:%(key.apollo.parameter.catfilters)|
+					catlabelfullpath:%(key.apollo.parameter.catlabelfullpath)|
+					catshowonlyleafs:%(key.apollo.parameter.catshowonlyleafs)|
 					catPreopened:%(key.apollo.parameter.catpreopened)|
 					archivePreopened:%(key.apollo.parameter.archivepreopened)|
 					archiveWrapper:%(key.apollo.parameter.archivewrapper)|

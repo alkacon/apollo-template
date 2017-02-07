@@ -33,7 +33,7 @@
 
 
 <fmt:setLocale value="${cms.workplaceLocale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.row">
+<cms:bundle basename="org.opencms.apollo.template.layoutrow.messages">
 
 <c:choose>
 <c:when test="${cms.isOnlineProject or not cms.isEditMode}">

@@ -81,7 +81,7 @@
 
     <c:if test="${empty test or test}">
         <fmt:setLocale value="${cms.locale}" />
-        <cms:bundle basename="org.opencms.apollo.template.schemas.section">
+        <cms:bundle basename="org.opencms.apollo.template.section.messages">
             <div class="alert">
                 <fmt:message key="apollo.section.message.noimage" />
             </div>

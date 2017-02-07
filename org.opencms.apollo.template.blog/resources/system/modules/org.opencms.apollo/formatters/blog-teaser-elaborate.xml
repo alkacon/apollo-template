@@ -2,7 +2,7 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Elaborate blog article teaser]]></NiceName>
+    <NiceName><![CDATA[%(key.formatter.a-blog.teaser.elaborate)]]></NiceName>
     <Type><![CDATA[a-blog]]></Type>
     <Jsp>
       <link type="WEAK">
@@ -54,14 +54,14 @@
     </Setting>
     <Setting>
       <PropertyName><![CDATA[ieffect]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.effect.label)]]></DisplayName>
       <Widget><![CDATA[selectcombo]]></Widget>
       <Default><![CDATA[ap-kenburns-animation]]></Default>
       <WidgetConfig><![CDATA[
-        none:%(key.apollo.section.image.effect.none)|
-        ap-raise-animation:%(key.apollo.section.image.effect.raise)|
-        ap-kenburns-animation:%(key.apollo.section.image.effect.kenburns)|
-        ap-raise-animation ap-kenburns-animation:%(key.apollo.section.image.effect.raise-kenburns)
+        none:%(key.apollo.setting.image.effect.none)|
+        ap-raise-animation:%(key.apollo.setting.image.effect.raise)|
+        ap-kenburns-animation:%(key.apollo.setting.image.effect.kenburns)|
+        ap-raise-animation ap-kenburns-animation:%(key.apollo.setting.image.effect.raise-kenburns)
       ]]></WidgetConfig>
     </Setting>
     <Setting>

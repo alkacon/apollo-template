@@ -2,7 +2,7 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Detailed FAQ entry]]></NiceName>
+    <NiceName><![CDATA[%(key.formatter.a-faq.detail)]]></NiceName>
     <Type><![CDATA[a-faq]]></Type>
     <Jsp>
       <link type="WEAK">

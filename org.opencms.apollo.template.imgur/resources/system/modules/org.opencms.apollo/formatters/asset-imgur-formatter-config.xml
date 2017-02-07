@@ -2,7 +2,7 @@
 
 <NewFormatters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/formatters/new_formatter.xsd">
   <NewFormatter language="en">
-    <NiceName><![CDATA[Asset Connections > Imgur]]></NiceName>
+    <NiceName><![CDATA[%(key.formatter.a-imgursection.default)]]></NiceName>
     <Type><![CDATA[a-imgursection]]></Type>
     <Jsp>
       <link type="WEAK">
@@ -23,18 +23,18 @@
     <NestedContainers>false</NestedContainers>
     <Setting>
       <PropertyName><![CDATA[ieffect]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.effect.label)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.effect.label)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[none]]></Default>
       <WidgetConfig><![CDATA[
-        none:%(key.apollo.section.image.effect.none)|
-        ap-shadow-animation:%(key.apollo.section.image.effect.shadow)|
-        ap-inset-animation:%(key.apollo.section.image.effect.inset)|
-        ap-raise-animation:%(key.apollo.section.image.effect.raise)|
-        ap-kenburns-animation:%(key.apollo.section.image.effect.kenburns)|
-        ap-shadow-animation ap-kenburns-animation:%(key.apollo.section.image.effect.shadow-kenburns)|
-        ap-inset-animation ap-kenburns-animation:%(key.apollo.section.image.effect.inset-kenburns)|
-        ap-raise-animation ap-kenburns-animation:%(key.apollo.section.image.effect.raise-kenburns)
+        none:%(key.apollo.setting.image.effect.none)|
+        ap-shadow-animation:%(key.apollo.setting.image.effect.shadow)|
+        ap-inset-animation:%(key.apollo.setting.image.effect.inset)|
+        ap-raise-animation:%(key.apollo.setting.image.effect.raise)|
+        ap-kenburns-animation:%(key.apollo.setting.image.effect.kenburns)|
+        ap-shadow-animation ap-kenburns-animation:%(key.apollo.setting.image.effect.shadow-kenburns)|
+        ap-inset-animation ap-kenburns-animation:%(key.apollo.setting.image.effect.inset-kenburns)|
+        ap-raise-animation ap-kenburns-animation:%(key.apollo.setting.image.effect.raise-kenburns)
       ]]></WidgetConfig>
     </Setting>
     <Setting>
@@ -45,19 +45,19 @@
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showlink]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.showlink)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.text.showlink)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showsubtitle]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.showsubtitle)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.text.showsubtitle)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[showtext]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.section.image.text.showtext)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.text.showtext)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
       <Default><![CDATA[false]]></Default>
     </Setting>

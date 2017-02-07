@@ -17,7 +17,7 @@
 		<xsd:sequence>
 			<xsd:element name="Headline" type="OpenCmsString" />
 			<xsd:element name="TypesToCollect" type="OpenCmsDisplayFormatter" />
-			<xsd:element name="Folder" type="OpenCmsVfsFile" minOccurs="0" />
+			<xsd:element name="Folder" type="OpenCmsVfsFile" minOccurs="0" maxOccurs="unbounded" />
 			<xsd:element name="Category" type="OpenCmsDynamicCategory" />
 			<xsd:element name="SortOrder" type="OpenCmsString" />
 			<xsd:element name="ItemsPerPage" type="OpenCmsString" minOccurs="0" />
@@ -31,7 +31,7 @@
 
 	<xsd:annotation>
 		<xsd:appinfo>
-			<resourcebundle name="org.opencms.apollo.template.schemas.list" />
+			<resourcebundle name="org.opencms.apollo.template.list.messages" />
 			<mappings>
 				<mapping element="GalleryTitle" mapto="property:Title" useDefault="true" />
 				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />

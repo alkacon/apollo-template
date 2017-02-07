@@ -1,0 +1,9 @@
+apollo.login.label.login=Anmelden
+apollo.login.label.logoff=Abmelden
+apollo.login.label.password=Passwort
+apollo.login.label.username=Name
+apollo.login.message.failed=Login fehlgeschlagen
+apollo.login.message.loggedin=Angemeldet als
+apollo.login.message.loggedoff=Bitte Benutzername und Passwort eingeben
+apollo.login.title.loggedin=Angemeldet bei OpenCms
+apollo.login.title.loggedoff=Bei OpenCms anmelden

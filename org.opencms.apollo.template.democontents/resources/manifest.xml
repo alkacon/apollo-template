@@ -6042,7 +6042,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog Article: OpenCms is feature rich]]></value>
+					<value><![CDATA[OpenCms is feature rich]]></value>
 				</property>
 			</properties>
 			<relations>

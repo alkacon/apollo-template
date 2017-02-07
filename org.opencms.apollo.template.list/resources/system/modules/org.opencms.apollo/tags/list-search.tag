@@ -5,8 +5,8 @@
     description="Generates the list search configuration and triggers the search."%>
 
 
-<%@ attribute name="source" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
-    description="The directory (including subdirectories) from which the elements are read." %>
+<%@ attribute name="source" type="java.util.List" required="true"
+    description="The directories (including subdirectories) from which the elements are read." %>
 
 <%@ attribute name="types" type="org.opencms.jsp.util.CmsJspContentAccessValueWrapper" required="true"
     description="The type of elements, that will be used." %>
@@ -55,16 +55,26 @@
 
 <%-- ####### Set folder in which to search for items ######## --%>
 <c:choose>
-    <c:when test="${source.isSet}">
-        <c:set var="folder">${source}</c:set>
-        <c:if test="${not fn:startsWith(folder, '/shared/')}"><c:set var="folder">${cms.requestContext.siteRoot}${folder}</c:set></c:if>
+    <c:when test="${not empty source}">
+    	<c:set var="first" value="${true}" />
+    	<c:set var="folderFilter"></c:set>
+    	<c:forEach var="folder" items="${source}" varStatus="status">
+			<c:set var="rootPath">${cms.vfs.resource[folder].rootPath}</c:set>
+			<c:if test="${not empty rootPath}">
+				<c:if test="${not status.first}">
+					<c:set var="folderFilter">${folderFilter}${' OR '}</c:set>
+				</c:if>
+				<c:set var="folderFilter">${folderFilter}\"${rootPath}\"</c:set>
+			</c:if>	
+    	</c:forEach>
     </c:when>
     <c:otherwise>
-        <c:set var="folder">${cms.requestContext.siteRoot}${cms.subSitePath}</c:set>
-        <c:set var="folder">${empty subsite ? folder : subsite}</c:set>
+        <c:set var="folderFilter">\"${cms.requestContext.siteRoot}${cms.subSitePath}\"</c:set>
+        <c:if test="${not empty subsite}">
+        	<c:set var="folderFilter">\"${subsite}\"</c:set>
+        </c:if>
     </c:otherwise>
 </c:choose>
-<c:set var="folderpath" value="${folder}" />
 
 <c:set var="resType">${fn:substringBefore(types, ":")}</c:set>
 <c:set var="solrCats"></c:set>
@@ -118,6 +128,9 @@
 <c:set var="solrFilterQue"></c:set>
 <c:if test="${not empty filterqueries}">
     <c:set var="solrFilterQue">${filterqueries}</c:set>
+    <c:if test="${not fn:startsWith(solrFilterQue,'&')}">
+    	<c:set var="solrFilterQue">&${solrFilterQue}</c:set>
+	</c:if>    
 </c:if>
 <c:set var="extraSolrParams">${solrCats}${solrFilterQue}</c:set>
 <c:set var="pageSize">100</c:set>
@@ -141,7 +154,7 @@
     "querymodifier" : '{!type=edismax qf="content_${cms.locale} Title_prop spell"}%(query)',
     "escapequerychars" : true,
 
-    "extrasolrparams" : "fq=parent-folders:\"${folder}\"&fq=-type:image&fq=type:${resType}${fn:replace(extraSolrParams,'"','\\"')}",
+    "extrasolrparams" : "fq=parent-folders:(${folderFilter})&fq=-type:image&fq=type:${resType}${fn:replace(extraSolrParams,'"','\\"')}",
 
     "pagesize" : ${pageSize},
     "pagenavlength" : 5,

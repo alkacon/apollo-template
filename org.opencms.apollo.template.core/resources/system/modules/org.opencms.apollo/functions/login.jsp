@@ -7,7 +7,7 @@
 <cms:secureparams />
 
 <fmt:setLocale value="${cms.locale}" />
-<cms:bundle basename="org.opencms.apollo.template.schemas.login">
+<cms:bundle basename="org.opencms.apollo.template.login.messages">
 
 <jsp:useBean id="login" class="org.opencms.jsp.CmsJspLoginBean" scope="page">
 	<%
