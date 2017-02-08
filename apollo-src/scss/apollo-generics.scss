@@ -35,17 +35,17 @@ $border-radiuses:        ((0, 0px), (2, 2px),  (4, 4px), (5, 5px), (10, 10px), (
 $border-positions:       (bottom, top, left, right) !default;
 $border-styles:          (none, solid, dotted, dashed, hidden) !default;
 
-$text-colors:            ((theme, $main-theme),
-                          (complementary, $main-theme-complementary),
-                          (light, $text-light),
-                          (dark, $text-dark)) !default;
+
 $link-colors:            ((black,  $black, $grey-darker),
                           (grey, $grey, $grey-light),
                           (white, $white, $grey-lighter),
-                          (default, $main-theme, $main-theme-hover),
                           (light, $text-light, $grey-lighter),
-                          (dark, $text-dark, $grey)) !default;
+                          (dark, $text-dark, $grey),
+                          (theme, $main-theme, $main-theme-hover),
+                          (complementary, $main-theme-complementary, $main-theme-hover),
+                          (default, default, default)) !default;
 
+$text-colors:            $link-colors !default;
 
 @mixin set-text-color($text-color) {
 
@@ -61,16 +61,19 @@ $link-colors:            ((black,  $black, $grey-darker),
 @each $color-name, $text-color, $highlight-color in $link-colors {
 
     .links-#{""+$color-name} {
-        a:not(.btn) {
-            color: $text-color;
+        @if (""+$color-name != "default") {
+            a:not(.btn) {
+                color: $text-color;
 
-            &:hover {
-                color: $highlight-color;
+                &:hover {
+                    color: $highlight-color;
+                }
             }
+        } @else {
+            @extend .links-theme;
         }
     }
 }
-
 
 /* Colored backgrounds */
 
@@ -105,7 +108,7 @@ $link-colors:            ((black,  $black, $grey-darker),
 
 /* Colored text */
 
-@each $color-name, $text-color, $highlight-color in $font-colors {
+@each $color-name, $text-color in $font-colors {
 
     .text-#{""+$color-name} {
 
@@ -116,11 +119,13 @@ $link-colors:            ((black,  $black, $grey-darker),
 @each $color-name, $text-color in $text-colors {
 
     .text-#{""+$color-name} {
-
-        @include set-text-color($text-color);
+        @if (""+$color-name != "default") {
+            @include set-text-color($text-color);
+        } @else {
+            @extend .text-dark;
+        }
     }
 }
-
 
 /* Font sizes */
 

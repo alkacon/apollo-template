@@ -45,7 +45,7 @@ var ApolloParallax = function(jQ) {
             var offset = 0;
 
             // only apply effect on screen size lager then "sm", i.e. "md" and "lg"
-            if (m_$window.width() > 991) {
+            if (m_$window.width() >= 992) {
 
                 var elementTop = $element.offset().top;
                 var elementHeight = $element.outerHeight(true);
