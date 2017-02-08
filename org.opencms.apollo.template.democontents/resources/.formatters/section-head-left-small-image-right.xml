@@ -15,11 +15,11 @@
     <Detail>false</Detail>
     <Display>false</Display>
     <Macro><![CDATA[<div class="row ap-section %(settings.wrapperclass)">
-  <div class="col-xs-10 col-sm-9">
+  <div class="col-xs-12 col-sm-9">
     %(headline)
     %(text)
   </div>
-  <div class="col-xs-2 col-sm-3">
+  <div class="hidden-xs col-sm-3">
     %(image)
   </div>
 </div>]]></Macro>

@@ -140,7 +140,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-tabs.accordion ???]]></value>
+					<value><![CDATA[Tabs as accordion]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -194,7 +194,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-tabs.default ???]]></value>
+					<value><![CDATA[Tabs in a row]]></value>
 				</property>
 				<property>
 					<name>locale</name>

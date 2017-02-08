@@ -481,7 +481,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-templaterow.default ???]]></value>
+					<value><![CDATA[Default layout row]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -643,7 +643,11 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Image with animation effect]]></value>
+					<value><![CDATA[Default image (internal)]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
 				</property>
 			</properties>
 			<relations/>

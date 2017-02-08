@@ -138,7 +138,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-sitemap.default ???]]></value>
+					<value><![CDATA[Default sitemap]]></value>
 				</property>
 				<property>
 					<name>locale</name>

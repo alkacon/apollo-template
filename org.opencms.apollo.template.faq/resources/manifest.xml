@@ -142,7 +142,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-faq.detail ???]]></value>
+					<value><![CDATA[FAQ entry detail view]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -196,7 +196,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-faq.teaser.accordion ???]]></value>
+					<value><![CDATA[FAQ entry teaser for accordion list]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -250,7 +250,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-faq.teaser.compact ???]]></value>
+					<value><![CDATA[Compact FAQ entry teaser]]></value>
 				</property>
 				<property>
 					<name>locale</name>

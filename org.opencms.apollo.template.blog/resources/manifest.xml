@@ -151,7 +151,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Detailed blog article (content only)]]></value>
+					<value><![CDATA[Blog article detail view (Visual) [content]]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -205,7 +205,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-blog.detail.visual ???]]></value>
+					<value><![CDATA[Blog article detail view (Visual)]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -259,7 +259,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-blog.detail ???]]></value>
+					<value><![CDATA[Blog article detail view]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -317,7 +317,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-blog.teaser.compact ???]]></value>
+					<value><![CDATA[Compact blog article teaser]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -375,7 +375,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-blog.teaser.elaborate ???]]></value>
+					<value><![CDATA[Elaborate blog article teaser]]></value>
 				</property>
 				<property>
 					<name>locale</name>

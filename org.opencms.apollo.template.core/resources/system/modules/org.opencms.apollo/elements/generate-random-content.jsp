@@ -147,7 +147,7 @@
                 out.println("Creating folder " + targetFolderSitePath + " first<br />\n");
                 cms.createResource(targetFolderSitePath,
                     OpenCms.getResourceManager().getResourceType(CmsResourceTypeFolder.getStaticTypeName()),
-                    null, 
+                    null,
                     new ArrayList<CmsProperty>(0));
             }
             for (int i = 1; i <= fileCount; i++) {
@@ -166,7 +166,7 @@
                 String creationPath = targetFolderSitePath + "/" + prefix + "_" + String.format("%04d", Integer.valueOf(i)) + "." + ext;
                 if (!cms.existsResource(creationPath)) {
                     out.println("Creating file " + creationPath + "<br />\n");
-                    CmsResource createdResource = 
+                    CmsResource createdResource =
                         cms
                         .createResource(creationPath, OpenCms.getResourceManager()
                         .getResourceType(CmsResourceTypeBinary.getStaticTypeName()), null, properties);
@@ -204,6 +204,7 @@
     overflow: auto;
     text-align: left;
 }
+
 </style>
 </head>
 <body class="wrapper">
@@ -212,20 +213,20 @@
             <h1>OpenCms Apollo Template</h1>
             <h3>Random content generator</h3>
 
-            <form class="row bg-orange" method="get">
+            <form class="row bg-orange text-dark" method="get">
                 <input name="count" class="mb-10 form-control col-xs-12"
                     type="number" placeholder="Count of pages" required="required" />
 
                 <input class="mb-10 form-control col-xs-12" type="text" name="path"
-                    placeholder="Path to files (recursive to active site)" required="required" /> 
+                    placeholder="Path to files (recursive to active site)" required="required" />
 
                 <input class="mb-10 form-control col-xs-12" type="text" name="prefix"
-                    placeholder="Prefix of files" required="required" /> 
+                    placeholder="Prefix of files" required="required" />
 
-                <input class="mb-10 form-control col-xs-12" type="text" name="ext" 
+                <input class="mb-10 form-control col-xs-12" type="text" name="ext"
                     placeholder="file extension of files" required="required" />
 
-                <button type="submit" class="col-xs-12 btn submit">Submit</button>
+                <button type="submit" class="color-red col-xs-12 btn submit">Submit</button>
             </form>
             <div id="log"></div>
         </div>
@@ -233,26 +234,22 @@
 
     <script src="<cms:link>%(link.weak:/system/modules/org.opencms.apollo.theme/resources/js/scripts-all.min.js:0fc90357-5155-11e5-abeb-0242ac11002b)</cms:link>"></script>
     <script type="text/javascript">
-        $("form")
-                .submit(
-                        function(e) {
-                            $('.submit').text("Working...");
-                            e.preventDefault();
-                            var str = $("form").serialize();
-                            $
-                                    .get("?" + str, function(resultList) {
-                                        $("#log").html(resultList);
-                                    })
-                                    .fail(
-                                            function(error) {
-                                                $("#log")
-                                                        .html(
-                                                                "I'm sorry, something went wrong. Perhaps the timeout was too small. Please take a look at the explorer if the files are created.");
-                                            }).always(function() {
-                                        $('.submit').text("Submit");
-                                    });
-                            ;
-                        });
+        $("form").submit( function(e) {
+            $('.submit').text("Working...");
+            e.preventDefault();
+            var str = $("form").serialize();
+
+            $.get("?" + str, function(resultList) {
+                $("#log").html(resultList);
+            }).fail( function(error) {
+                $("#log").html(
+                    "I'm sorry, something went wrong. " +
+                    "Perhaps the timeout was too small. " +
+                    "Please take a look at the explorer if the files are created.");
+            }).always( function() {
+                $('.submit').text("Submit");
+            });
+        });
     </script>
 </body>
 </html>

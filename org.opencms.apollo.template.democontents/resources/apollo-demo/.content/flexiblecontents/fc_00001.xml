@@ -2,7 +2,7 @@
 
 <ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/flexible.xsd">
   <ApolloFlexibleElement language="en">
-    <Title><![CDATA[CSS Background Classes Visualizer]]></Title>
+    <Title><![CDATA[CSS Background Classes]]></Title>
     <Code name="Code0">
       <links/>
       <content><![CDATA[<!-- 
@@ -12,7 +12,7 @@ Output is created from JavaScript using the color coded compiled into the theme.
 HTML for the boxes is using Apollo squares 
 
 -->
-<div id="backgrounds" class="apollo-info sample many-colors clearfix">
+<div id="backgrounds" class="apollo-info sample many-colors mb-20 clearfix">
 <div class="ap-square square-xs-6 square-sm-3 square-md-2o4 square-lg-2 square-m-5">
 <div class="content bo-1 bo-grey bg-$(name)">
 <div class="table">

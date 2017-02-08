@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[CSS Visualizer]]></Headline>
+    <Text name="Text0">
+      <links>
+        <link name="link0" internal="false" type="A">
+          <target><![CDATA[https://github.com/alkacon/apollo-template]]></target>
+        </link>
+      </links>
+      <content><![CDATA[<p>The Apollo template supports a "CSS wrapper" setting on many element formatters. This page shows several wrapper classes which are part of the default CSS and frequently&nbsp;used in this demo. The Apollo template sources are available on <a href="%(link0)">GitHub</a>, so with a little effort&nbsp;you can create your own customized Apollo CSS version.</p>]]></content>
+    </Text>
+  </ApolloSection>
+</ApolloSections>

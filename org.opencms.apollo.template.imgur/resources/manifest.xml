@@ -139,7 +139,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-imgursection.default ???]]></value>
+					<value><![CDATA[Default asset connection > Imgur]]></value>
 				</property>
 				<property>
 					<name>locale</name>

@@ -139,7 +139,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-imagegallery.default ???]]></value>
+					<value><![CDATA[Default image gallery]]></value>
 				</property>
 				<property>
 					<name>locale</name>

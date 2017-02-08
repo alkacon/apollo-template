@@ -144,7 +144,11 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-contact.onecol ???]]></value>
+					<value><![CDATA[Contact information in one column]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -186,7 +190,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-contact.threecol ???]]></value>
+					<value><![CDATA[Contact information in three columns]]></value>
 				</property>
 				<property>
 					<name>locale</name>

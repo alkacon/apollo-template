@@ -249,7 +249,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Northamerica]]></value>
+					<value><![CDATA[North America]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -264,7 +264,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Southamerica]]></value>
+					<value><![CDATA[South America]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -4804,6 +4804,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>.galleries/slider/bubbles.png</source>
+			<destination>.galleries/slider/bubbles.png</destination>
+			<type>image</type>
+			<uuidstructure>e729707f-ee22-11e6-93fa-0242ac11002b</uuidstructure>
+			<uuidresource>e7297080-ee22-11e6-93fa-0242ac11002b</uuidresource>
+			<datecreated>Wed, 08 Feb 2017 17:20:35 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>image.size</name>
+					<value><![CDATA[w:1000,h:1415]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<source>.galleries/slider/opencms_logo.png</source>
 			<destination>.galleries/slider/opencms_logo.png</destination>
 			<type>image</type>
@@ -8644,6 +8661,23 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/contentsections/cs_00119.xml</source>
+			<destination>apollo-demo/.content/contentsections/cs_00119.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>ffbadfd9-ee20-11e6-93fa-0242ac11002b</uuidstructure>
+			<uuidresource>ffbadfda-ee20-11e6-93fa-0242ac11002b</uuidresource>
+			<datecreated>Wed, 08 Feb 2017 17:06:57 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[CSS Visualizer: CSS Visualizer]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/events</destination>
 			<type>folder</type>
 			<uuidstructure>ae8e34f8-5b98-11e5-9eb7-0242ac11002b</uuidstructure>
@@ -9706,7 +9740,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[CSS Visualizer: CSS Background Classes Visualizer]]></value>
+					<value><![CDATA[CSS Visualizer: CSS Background Classes]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9723,7 +9757,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[CSS Visualizer: CSS Color Classes Visualizer]]></value>
+					<value><![CDATA[CSS Visualizer: CSS Color Classes]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9774,7 +9808,7 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[CSS Visualizer: CSS Text and Link Classes Visualizer]]></value>
+					<value><![CDATA[CSS Visualizer: CSS Text and Link Classes]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11656,6 +11690,222 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo/demo-pages</destination>
+			<type>folder</type>
+			<uuidstructure>0cdc5554-c205-11e6-9510-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 14 Dec 2016 13:56:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[717.0801]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Demo pages]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Demo pages]]></value>
+				</property>
+				<property>
+					<name>default-file</name>
+					<value><![CDATA[##navigation_level_folder##]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/demo-pages/index.html</source>
+			<destination>apollo-demo/demo-pages/index.html</destination>
+			<type>htmlredirect</type>
+			<uuidstructure>0ce751da-c205-11e6-9510-0242ac11002b</uuidstructure>
+			<uuidresource>0ce751db-c205-11e6-9510-0242ac11002b</uuidresource>
+			<datecreated>Wed, 14 Dec 2016 13:56:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Redirect to first page in navigation]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+				<property type="shared">
+					<name>template-elements</name>
+					<value><![CDATA[/system/modules/org.opencms.ade.sitemap/pages/redirect-detail.jsp]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/demo-pages/backgrounds</destination>
+			<type>folder</type>
+			<uuidstructure>e584572e-c13d-11e6-9510-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 13 Dec 2016 14:10:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.0078125]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Backgrounds]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Backgrounds]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/demo-pages/backgrounds/index.html</source>
+			<destination>apollo-demo/demo-pages/backgrounds/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>e58c6d83-c13d-11e6-9510-0242ac11002b</uuidstructure>
+			<uuidresource>e58c6d84-c13d-11e6-9510-0242ac11002b</uuidresource>
+			<datecreated>Tue, 13 Dec 2016 14:10:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Backgrounds]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/demo-pages/css-visualizer</destination>
+			<type>folder</type>
+			<uuidstructure>f645c324-cb2e-11e6-8bc3-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 26 Dec 2016 05:48:44 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.03125]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[CSS Visualizer]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[CSS Visualizer]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/demo-pages/css-visualizer/index.html</source>
+			<destination>apollo-demo/demo-pages/css-visualizer/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>f64f3909-cb2e-11e6-8bc3-0242ac11002b</uuidstructure>
+			<uuidresource>f64f390a-cb2e-11e6-8bc3-0242ac11002b</uuidresource>
+			<datecreated>Mon, 26 Dec 2016 05:48:44 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[CSS Visualizer]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/demo-pages/real-estate</destination>
+			<type>folder</type>
+			<uuidstructure>fe98d448-b238-11e6-ade4-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 24 Nov 2016 11:27:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.013671875]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Real Estate]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Real Estate]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/demo-pages/real-estate/index.html</source>
+			<destination>apollo-demo/demo-pages/real-estate/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>fea5f3ad-b238-11e6-ade4-0242ac11002b</uuidstructure>
+			<uuidresource>fea5f3ae-b238-11e6-ade4-0242ac11002b</uuidresource>
+			<datecreated>Thu, 24 Nov 2016 11:27:34 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Real Estate]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/demo-pages/tiles-and-squares</destination>
+			<type>folder</type>
+			<uuidstructure>7f05bf82-d292-11e6-bfb4-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 04 Jan 2017 15:28:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.01171875]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[Tiles and Squares]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tiles and Squares]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/demo-pages/tiles-and-squares/index.html</source>
+			<destination>apollo-demo/demo-pages/tiles-and-squares/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>7f168867-d292-11e6-bfb4-0242ac11002b</uuidstructure>
+			<uuidresource>7f168868-d292-11e6-bfb4-0242ac11002b</uuidresource>
+			<datecreated>Wed, 04 Jan 2017 15:28:52 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Tiles and Squares]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/element-pages</destination>
 			<type>folder</type>
 			<uuidstructure>fbf6580e-610e-11e5-9eef-0242ac11002b</uuidstructure>
@@ -12780,222 +13030,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>apollo-demo/new-pages</destination>
-			<type>folder</type>
-			<uuidstructure>0cdc5554-c205-11e6-9510-0242ac11002b</uuidstructure>
-			<datecreated>Wed, 14 Dec 2016 13:56:02 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[717.0801]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[New pages]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[New pages]]></value>
-				</property>
-				<property>
-					<name>default-file</name>
-					<value><![CDATA[##navigation_level_folder##]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/new-pages/index.html</source>
-			<destination>apollo-demo/new-pages/index.html</destination>
-			<type>htmlredirect</type>
-			<uuidstructure>0ce751da-c205-11e6-9510-0242ac11002b</uuidstructure>
-			<uuidresource>0ce751db-c205-11e6-9510-0242ac11002b</uuidresource>
-			<datecreated>Wed, 14 Dec 2016 13:56:02 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Redirect to first page in navigation]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-				<property type="shared">
-					<name>template-elements</name>
-					<value><![CDATA[/system/modules/org.opencms.ade.sitemap/pages/redirect-detail.jsp]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>apollo-demo/new-pages/backgrounds</destination>
-			<type>folder</type>
-			<uuidstructure>e584572e-c13d-11e6-9510-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 13 Dec 2016 14:10:26 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[0.25]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[Backgrounds]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Backgrounds]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/new-pages/backgrounds/index.html</source>
-			<destination>apollo-demo/new-pages/backgrounds/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>e58c6d83-c13d-11e6-9510-0242ac11002b</uuidstructure>
-			<uuidresource>e58c6d84-c13d-11e6-9510-0242ac11002b</uuidresource>
-			<datecreated>Tue, 13 Dec 2016 14:10:26 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Backgrounds]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>apollo-demo/new-pages/css-visualizer</destination>
-			<type>folder</type>
-			<uuidstructure>f645c324-cb2e-11e6-8bc3-0242ac11002b</uuidstructure>
-			<datecreated>Mon, 26 Dec 2016 05:48:44 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[0.03125]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[CSS Visualizer]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[CSS Visualizer]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/new-pages/css-visualizer/index.html</source>
-			<destination>apollo-demo/new-pages/css-visualizer/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>f64f3909-cb2e-11e6-8bc3-0242ac11002b</uuidstructure>
-			<uuidresource>f64f390a-cb2e-11e6-8bc3-0242ac11002b</uuidresource>
-			<datecreated>Mon, 26 Dec 2016 05:48:44 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[CSS Visualizer]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>apollo-demo/new-pages/test-page</destination>
-			<type>folder</type>
-			<uuidstructure>8790b6f4-e9fb-11e6-a02b-0242ac11002b</uuidstructure>
-			<datecreated>Fri, 03 Feb 2017 10:28:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[0.015625]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[Test page]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Test page]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/new-pages/test-page/index.html</source>
-			<destination>apollo-demo/new-pages/test-page/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>87a0bc89-e9fb-11e6-a02b-0242ac11002b</uuidstructure>
-			<uuidresource>87a0bc8a-e9fb-11e6-a02b-0242ac11002b</uuidresource>
-			<datecreated>Fri, 03 Feb 2017 10:28:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Test page]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>apollo-demo/new-pages/tiles-and-squares</destination>
-			<type>folder</type>
-			<uuidstructure>7f05bf82-d292-11e6-bfb4-0242ac11002b</uuidstructure>
-			<datecreated>Wed, 04 Jan 2017 15:28:51 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[0.0625]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[Tiles and Squares]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Tiles and Squares]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/new-pages/tiles-and-squares/index.html</source>
-			<destination>apollo-demo/new-pages/tiles-and-squares/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>7f168867-d292-11e6-bfb4-0242ac11002b</uuidstructure>
-			<uuidresource>7f168868-d292-11e6-bfb4-0242ac11002b</uuidresource>
-			<datecreated>Wed, 04 Jan 2017 15:28:52 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Tiles and Squares]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>apollo-demo/our-clients</destination>
 			<type>folder</type>
 			<uuidstructure>c7132fa9-607d-11e5-9eef-0242ac11002b</uuidstructure>
@@ -13030,46 +13064,6 @@ addUserToRole 'Templator' 'DEVELOPER']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[A selection of clients]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>apollo-demo/real-estate</destination>
-			<type>folder</type>
-			<uuidstructure>fe98d448-b238-11e6-ade4-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 24 Nov 2016 11:27:34 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[735.6162]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[Real Estate]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Real Estate]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/real-estate/index.html</source>
-			<destination>apollo-demo/real-estate/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>fea5f3ad-b238-11e6-ade4-0242ac11002b</uuidstructure>
-			<uuidresource>fea5f3ae-b238-11e6-ade4-0242ac11002b</uuidresource>
-			<datecreated>Thu, 24 Nov 2016 11:27:34 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Real Estate]]></value>
 				</property>
 			</properties>
 			<relations/>

@@ -25,6 +25,14 @@
       <Key><![CDATA[listWrapper]]></Key>
       <Value><![CDATA[color-blue]]></Value>
     </Parameters>
+    <Parameters>
+      <Key><![CDATA[catfilters]]></Key>
+      <Value><![CDATA[whitelist:Topic]]></Value>
+    </Parameters>
+    <Parameters>
+      <Key><![CDATA[catshowonlyleafs]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameters>
     <Link>
       <Text><![CDATA[To the blog overview]]></Text>
       <URI>

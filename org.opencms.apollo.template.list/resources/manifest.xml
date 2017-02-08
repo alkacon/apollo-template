@@ -182,7 +182,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-list.archive-filter ???]]></value>
+					<value><![CDATA[Dynamic list: Archive filters]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -236,7 +236,11 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-list.dynamic ???]]></value>
+					<value><![CDATA[Dynamic list]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -278,7 +282,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-list.facets ???]]></value>
+					<value><![CDATA[Dynamic list: Facets selectors]]></value>
 				</property>
 				<property>
 					<name>locale</name>
@@ -332,7 +336,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[??? formatter.a-list.simple ???]]></value>
+					<value><![CDATA[Static list]]></value>
 				</property>
 				<property>
 					<name>locale</name>

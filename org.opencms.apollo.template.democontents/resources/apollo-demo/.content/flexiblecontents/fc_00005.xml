@@ -2,7 +2,7 @@
 
 <ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/flexible.xsd">
   <ApolloFlexibleElement language="en">
-    <Title><![CDATA[CSS Text and Link Classes Visualizer]]></Title>
+    <Title><![CDATA[CSS Text and Link Classes]]></Title>
     <Code name="Code0">
       <links>
         <link name="link0" internal="true" type="A">
@@ -23,7 +23,7 @@ HTML for the boxes is using Apollo Tiles.
 -->
 
 <!-- Links -->
-<div id="linkcolors" class="apollo-info sample link-colors mh-5 mt-10 clearfix">
+<div id="linkcolors" class="apollo-info sample link-colors mh-5 mb-10 clearfix">
 <div class="ap-tile tile-sm-6 tile-md-4">
 
 <div class="m-5 bo-1 bo-grey links-$(name) $(background)">
@@ -41,7 +41,7 @@ $(value)
 
 
 <!-- Theme dependent text color -->
-<div id="themetextcolor" class="apollo-info sample text-colors mh-5 mt-10 clearfix">
+<div id="themetextcolor" class="apollo-info sample text-colors mh-5 mb-10 clearfix">
 <div class="ap-tile tile-sm-6 tile-md-4">
 
 <div class="m-5 bo-1 bo-grey text-$(name) $(background)">
@@ -57,7 +57,7 @@ $(value)
 
 
 <!-- Extended colored text options -->
-<div id="extendtextcolor" class="apollo-info sample many-colors mh-5 mt-10 clearfix">
+<div id="extendtextcolor" class="apollo-info sample many-colors mh-5 mb-20 clearfix">
 <div class="ap-tile tile-sm-6 tile-md-4">
 
 <div class="m-5 bo-1 bo-grey text-$(name) $(background)">

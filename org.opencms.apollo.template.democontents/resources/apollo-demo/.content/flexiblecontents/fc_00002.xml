@@ -2,7 +2,7 @@
 
 <ApolloFlexibleElements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/flexible.xsd">
   <ApolloFlexibleElement language="en">
-    <Title><![CDATA[CSS Color Classes Visualizer]]></Title>
+    <Title><![CDATA[CSS Color Classes]]></Title>
     <Code name="Code0">
       <links/>
       <content><![CDATA[<!-- 
@@ -12,10 +12,10 @@ Output is created from JavaScript using the color coded compiled into the theme.
 HTML for the boxes is using Apollo tiles. 
 
 -->
-<div id="coloroptions" class="apollo-info sample reduced-colors clearfix">
+<div id="coloroptions" class="apollo-info sample reduced-colors mb-20 clearfix">
 <div class="ap-tile tile-sm-6 tile-md-4 tile-lg-3">
 
-<div class="m-5 bo-1 bo-grey color-$(name) m-5">
+<div class="m-5 bo-1 bo-grey color-$(name)">
 <div class="lead">color-$(name)</div>
 <button class="btn">Button in $(value)</button>
 </div>
