@@ -26,7 +26,23 @@
       <PropertyName><![CDATA[imgalign]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.imgalign)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
-      <WidgetConfig><![CDATA[left:%(key.apollo.setting.image.left)|right:%(key.apollo.setting.image.right)]]></WidgetConfig>
+      <Default><![CDATA[left]]></Default>
+      <WidgetConfig><![CDATA[
+        left:%(key.apollo.setting.image.left)|
+        right:%(key.apollo.setting.image.right)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showmarkers]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showmarkers)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showpdflink]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showpdflink)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
     </Setting>
   </NewFormatter>
 </NewFormatters>

@@ -18,7 +18,11 @@
 <div class="ap-detail-page ap-event-page">
 
     <%-- event header --%>
-    <div class="ap-event-header">
+    <div class="ap-event-header clearfix">
+
+    <c:choose>
+    <c:when test="${cms.element.setting.showmarkers.toBoolean}">
+
         <div class="row">
             <div class="col-xs-12">
                 <apollo:headline headline="${content.value.Title}" />
@@ -28,21 +32,21 @@
 
                 <div class="row">
                 <div class="col-xs-1 col-sm-2">
-                    <i class="detail-icon fa fa-calendar"></i>                                
+                    <i class="detail-icon fa fa-calendar"></i>
                 </div>
                 <div class="col-xs-11 col-sm-10 detail-date">
 
                     <h5>
                         <fmt:formatDate
-                            value="${cms:convertDate(value.Date)}" 
+                            value="${cms:convertDate(value.Date)}"
                             dateStyle="SHORT"
-                            timeStyle="SHORT" 
-                            type="both" /> 
-                        <c:if test="${value.EndDate.isSet}"> 
+                            timeStyle="SHORT"
+                            type="both" />
+                        <c:if test="${value.EndDate.isSet}">
                             - <fmt:formatDate
-                                value="${cms:convertDate(value.EndDate)}" 
+                                value="${cms:convertDate(value.EndDate)}"
                                 dateStyle="SHORT"
-                                timeStyle="SHORT" 
+                                timeStyle="SHORT"
                                 type="both" />
                         </c:if>
                     </h5>
@@ -84,20 +88,27 @@
                         </div>
                     </c:if>
                 </div>
-            </c:if> 
+            </c:if>
 
         </div>
+
+    </c:when>
+    <c:otherwise>
+        <apollo:headline headline="${content.value.Title}" />
+    </c:otherwise>
+    </c:choose>
+
     </div>
     <%-- //END event header --%>
 
     <%-- paragraphs --%>
     <c:set var="imgalign"><cms:elementsetting name="imgalign" default="left" /></c:set>
-    <c:forEach 
-        var="paragraph" 
+    <c:forEach
+        var="paragraph"
         items="${content.valueList.Paragraph}"
         varStatus="status">
 
-        <apollo:paragraph 
+        <apollo:paragraph
             showimage="true"
             imgalign="${imgalign}"
             paragraph="${paragraph}" />

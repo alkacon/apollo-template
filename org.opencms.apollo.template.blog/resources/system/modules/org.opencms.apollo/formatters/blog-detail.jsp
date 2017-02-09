@@ -17,6 +17,10 @@
 
 <div class="ap-detail-page ap-blog-page">
 
+    <%-- blog header --%>
+    <c:choose>
+    <c:when test="${cms.element.setting.showmarkers.toBoolean}">
+
     <%-- create author link --%>
     <c:set var="author" value="${fn:trim(value.Author)}" />
     <c:choose>
@@ -38,22 +42,20 @@
         </c:otherwise>
     </c:choose>
     <%-- //END create author link --%>
-    <%-- blog header --%>
+
     <div class="ap-blog-header">
         <div class="row">
             <div class="col-xs-12">
-                <div class="hidden-xs pull-right">
-                    <a class="btn btn-xs mt-10"
-                        href="<cms:pdf format='%(link.weak:/system/modules/org.opencms.apollo/pages/blog-pdf.jsp:ca595340-57ca-11e5-a989-0242ac11002b)' content='${content.filename}' locale='${cms.locale}'/>"
-                        target="pdf"> <i class="fa fa-file-pdf-o"></i> Download PDF
-                    </a>
-                </div>
-                <apollo:headline headline="${content.value.Title}" />
-                <div class="visible-xs">
-                    <a class="btn mb-10"
-                        href="<cms:pdf format='%(link.weak:/system/modules/org.opencms.apollo/pages/blog-pdf.jsp:ca595340-57ca-11e5-a989-0242ac11002b)' content='${content.filename}' locale='${cms.locale}'/>"
-                        target="pdf"> <i class="fa fa-file-pdf-o"></i> Download PDF
-                    </a>
+               <c:if test="${cms.element.setting.showpdflink.toBoolean}">
+                    <div class="pull-right">
+                        <a class="btn btn-xs"
+                            href="<cms:pdf format='%(link.weak:/system/modules/org.opencms.apollo/pages/blog-pdf.jsp:ca595340-57ca-11e5-a989-0242ac11002b)' content='${content.filename}' locale='${cms.locale}'/>"
+                            target="pdf"> <i class="fa fa-file-pdf-o"></i> <fmt:message key="apollo.blog.message.pdflink" />
+                        </a>
+                    </div>
+                </c:if>
+                <div class="headline pull-left">
+                    <h2 ${content.value.Title.rdfaAttr}>${content.value.Title}</h2>
                 </div>
             </div>
 
@@ -67,10 +69,10 @@
 
                     <h5>
                         <fmt:formatDate
-                            value="${cms:convertDate(value.Date)}" 
+                            value="${cms:convertDate(value.Date)}"
                             dateStyle="SHORT"
-                            timeStyle="SHORT" 
-                            type="both" /> 
+                            timeStyle="SHORT"
+                            type="both" />
                     </h5>
 
                 </div>
@@ -87,23 +89,41 @@
                 <div class="col-xs-11 col-sm-5 detail-author">
                     <h5>${author}</h5>
                 </div>
-            </c:if> 
+            </c:if>
 
         </div>
     </div>
+
+    </c:when>
+    <c:otherwise>
+       <div class="clearfix">
+           <c:if test="${cms.element.setting.showpdflink.toBoolean}">
+                <div class="pull-right">
+                    <a class="btn btn-xs"
+                        href="<cms:pdf format='%(link.weak:/system/modules/org.opencms.apollo/pages/blog-pdf.jsp:ca595340-57ca-11e5-a989-0242ac11002b)' content='${content.filename}' locale='${cms.locale}'/>"
+                        target="pdf"> <i class="fa fa-file-pdf-o"></i> Download PDF
+                    </a>
+                </div>
+            </c:if>
+            <div class="headline pull-left">
+                <h2 ${content.value.Title.rdfaAttr}>${content.value.Title}</h2>
+            </div>
+        </div>
+    </c:otherwise>
+    </c:choose>
     <%-- //END blog header --%>
 
     <%-- paragraphs --%>
     <c:set var="imgalign"><cms:elementsetting name="imgalign" default="left" /></c:set>
     <c:forEach var="paragraph" items="${content.valueList.Paragraph}" varStatus="status">
 
-        <apollo:paragraph 
+        <apollo:paragraph
             showimage="true"
             imgalign="${imgalign}"
             paragraph="${paragraph}" />
 
     </c:forEach>
-    <%-- //END paragraphs --%> 
+    <%-- //END paragraphs --%>
 
     <c:set var="editblogpage">${cms.subSitePath}blog/post-a-new-blog-entry/</c:set>
     <c:if test="${content.isEditable and cms.vfs.existsResource[editblogpage]}">

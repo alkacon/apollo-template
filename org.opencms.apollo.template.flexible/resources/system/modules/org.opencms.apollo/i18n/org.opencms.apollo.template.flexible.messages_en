@@ -1,12 +1,12 @@
-apollo.flexible.message.changed=The content has been edited, the page will reload now.
-apollo.flexible.message.edit=<strong>New flexible content</strong>, please edit the content.
 desc.a-flexible=Allows to place any type of markup (HTML, JavaScript) in a page.
 fileicon.a-flexible=Flexible content
 formatter.a-flexible.default=Default flexible content
 label.ApolloFlexibleElement.Code=Code
-label.ApolloFlexibleElement.Code.help=Use this to include HTML-Code or JavaScript. 
-label.ApolloFlexibleElement.GalleryTitle=Gallery Title
-label.ApolloFlexibleElement.GalleryTitle.help=The gallery title of the flexible content. It is not shown on the page.
+label.ApolloFlexibleElement.Code.help=Use this to enter HTML-Code or JavaScript. 
+label.ApolloFlexibleElement.GalleryTitle=Gallery title
+label.ApolloFlexibleElement.GalleryTitle.help=Used to identify the content in the OpenCms internal gallery. Not shown in the output page.
+label.ApolloFlexibleElement.RequireReload=Page reload required
+label.ApolloFlexibleElement.RequireReload.help=Check this is a page must be reloaded when this element is placed on it. Usually required for proper initialization of JavaScript.
 label.ApolloFlexibleElement.Title=Title
 label.ApolloFlexibleElement.Title.help=The title of the flexible element. It can be hidden with a setting.
 title.a-flexible=New flexible content

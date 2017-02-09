@@ -1,8 +1,9 @@
 apollo.blog.default.Text=Bitte bearbeiten Sie den Blogtext.
 apollo.blog.message.by=Von
 apollo.blog.message.edit=<strong>Neuer Blog-Artikel</strong>, bitte bearbeiten Sie den Inhalt.
+apollo.blog.message.pdflink=PDF anzeigen
 apollo.blog.message.readmore=Weiter lesen
-desc.a-blog=Ein Artikel bestehend aus mehreren Absätzen mit optionalen Bildern, Autor, Datum und Kategorien.
+desc.a-blog=Ein Blog- oder News-Artikel bestehend aus mehreren Absätzen mit optionalen Bildern, Autor, Datum und Kategorien.
 fileicon.a-blog=Blog-Artikel
 formatter.a-blog.detail=Blog-Artikel Detailansicht
 formatter.a-blog.detail.visual=Blog-Artikel Detailansicht (Visuell)

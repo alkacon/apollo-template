@@ -9,9 +9,10 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="apollo" tagdir="/WEB-INF/tags/apollo" %>
 
-<apollo:init-messages reload="true">
-
 <cms:formatter var="content" val="value">
+<c:set var="hasScript" value="${fn:contains(fn:toLowerCase(value.Code), 'script')}" />
+<apollo:init-messages reload="${value.RequireReload.toBoolean or hasScript}">
+
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.flexible.messages">
 
@@ -25,6 +26,6 @@
 </div>
 
 </cms:bundle>
-</cms:formatter>
 
 </apollo:init-messages>
+</cms:formatter>

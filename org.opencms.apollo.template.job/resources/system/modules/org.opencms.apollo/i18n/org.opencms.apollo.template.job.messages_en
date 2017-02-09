@@ -1,7 +1,11 @@
-apollo.job.message.inmemory=<strong>New job element.</strong> Please open the editor to edit the content.
-apollo.job.setting.buttonstyle=Style of link-button
+apollo.job.setting.buttonstyle=Link button position
+apollo.job.setting.buttonstyle.center=Centered
+apollo.job.setting.buttonstyle.full=Full column width
+apollo.job.setting.buttonstyle.left=Left aligned
 apollo.job.setting.columns=Format main text in columns
-apollo.job.setting.titlepos=Position of title
+apollo.job.setting.titlepos=Position des Titels
+apollo.job.setting.titlepos.bottom=Below the introduction
+apollo.job.setting.titlepos.top=Above the introduction
 desc.a-job=Contains information about a job advertisement.
 fileicon.a-job=Job advertisement
 formatter.a-job.detail=Job ad detail view

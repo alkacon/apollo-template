@@ -1,9 +1,9 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-	
+
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
-		
+
 	<xsd:element name="ApolloFlexibleElements" type="OpenCmsApolloFlexibleElements"/>
-	
+
 	<xsd:complexType name="OpenCmsApolloFlexibleElements">
 		<xsd:sequence>
 			<xsd:element name="ApolloFlexibleElement" type="OpenCmsApolloFlexibleElement" minOccurs="0" maxOccurs="unbounded"/>
@@ -14,7 +14,8 @@
 		<xsd:sequence>
 			<xsd:element name="Title" type="OpenCmsString" />
 			<xsd:element name="Code" type="OpenCmsHtml" />
-      		<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="RequireReload" type="OpenCmsBoolean" minOccurs="0" />
+			<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
 	</xsd:complexType>
@@ -30,13 +31,16 @@
 				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
 			</mappings>
 			<defaults>
+				<default element="Title" value="%(key.title.a-flexible)" />
+				<default element="RequireReload" value="false" />
 				<default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Title)" resolveMacros="false" />
 			</defaults>
 			<validationrules>
 				<rule element="Title" regex=".+" type="error" message="The title must not be empty." />
-			</validationrules>  
+			</validationrules>
 			<searchsettings containerPageOnly="true">
 				<searchsetting element="Code" searchcontent="false"/>
+				<searchsetting element="RequireReload" searchcontent="false"/>
 				<searchsetting element="GalleryTitle" searchcontent="false"/>
 			</searchsettings>
 			<visibilities>

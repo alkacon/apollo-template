@@ -1,12 +1,12 @@
-apollo.flexible.message.changed=Der Inhalt wurde geändert, die Seite wird jetzt neu geladen.
-apollo.flexible.message.edit=<strong>Neuer flexibler Inhalt</strong>, bitte bearbeiten Sie den Inhalt.
 desc.a-flexible=Ermöglicht das Einfügen von beliebigen Code (HTML, JavaScript) auf einer Seite.
 fileicon.a-flexible=Flexibler Inhalt
 formatter.a-flexible.default=Standard flexibler Inhalt
 label.ApolloFlexibleElement.Code=Code
-label.ApolloFlexibleElement.Code.help=Hiermit kann HTML-Code oder JavaScript eingebettet werden.
-label.ApolloFlexibleElement.GalleryTitle=Galerie Titel
-label.ApolloFlexibleElement.GalleryTitle.help=Der Titel des flexiblen Inhalts für die Galerie. Er wird nicht auf der Seite angezeigt.
+label.ApolloFlexibleElement.Code.help=Hier kann HTML-Code oder JavaScript eingegeben werden.
+label.ApolloFlexibleElement.GalleryTitle=Galerie-Titel
+label.ApolloFlexibleElement.GalleryTitle.help=Dient zur Identifikation des Inhalts in den internen OpenCms-Galerien. Wird nicht auf der Seite angezeigt.
+label.ApolloFlexibleElement.RequireReload=Seite muss neu geladen werden
+label.ApolloFlexibleElement.RequireReload.help=Ankreuzen wenn eine Seite neu geladen werden muss nachdem dieses Element darauf abgelegt wurde. In der Regel zur korrekten Initialisierung von JavaScript erforderlich.\n
 label.ApolloFlexibleElement.Title=Titel
 label.ApolloFlexibleElement.Title.help=Der Titel des flexiblen Inhalts. Er kann mit Hilfe einer Einstellung ausgeblendet werden.
 title.a-flexible=Neuer flexibler Inhalt

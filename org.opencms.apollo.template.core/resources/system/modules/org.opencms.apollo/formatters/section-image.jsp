@@ -12,6 +12,10 @@
 <apollo:init-messages>
 
 <cms:formatter var="content" val="value">
+
+<c:choose>
+<c:when test="${value.Image.value.Image.isSet}">
+
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.section.messages">
 
@@ -64,8 +68,34 @@
         </apollo:image-animated>
     </apollo:link>
 </div>
-
 </cms:bundle>
+
+</c:when>
+<c:when test="${cms.isEditMode}">
+<%-- ###### No image: Offline version: Output warning ###### --%>
+
+<fmt:setLocale value="${cms.workplaceLocale}" />
+<cms:bundle basename="org.opencms.apollo.template.section.messages">
+
+<div id="ap-edit-info" class="box-warn animated fadeIn" ${value.Image.value.Image.imageDndAttr}>
+    <div class="head">
+         <fmt:message key="apollo.section.message.noimage" />
+    </div>
+    <div class="text">
+         <fmt:message key="apollo.section.message.noimage.hint" />
+    </div>
+</div>
+</cms:bundle>
+
+</c:when>
+<c:otherwise>
+<%-- ######  No image: Online version: Output nothing ###### --%>
+
+<div></div>
+
+</c:otherwise>
+</c:choose>
+
 </cms:formatter>
 
 </apollo:init-messages>

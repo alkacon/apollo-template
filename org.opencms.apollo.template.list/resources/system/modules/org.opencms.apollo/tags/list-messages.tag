@@ -22,7 +22,7 @@
     <cms:bundle basename="org.opencms.apollo.template.list.messages">
 
     <cms:edit createType="${type}" create="true" >
-        <div id="ap-edit-info" class="box-new animated fadeIn">
+        <div id="ap-edit-info" class="box-warn animated fadeIn">
             <div class="head">
                 <fmt:message key="apollo.list.message.empty" />
             </div>

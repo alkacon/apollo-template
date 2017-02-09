@@ -35,9 +35,6 @@
 			</layouts>
 			<relations />
 			<searchsettings containerPageOnly="true">
-				<searchsetting element="Title" searchcontent="false">
-					<solrfield targetfield="disptitle" sourcefield="*_s" />
-				</searchsetting>
 				<searchsetting element="ImageFolder" searchcontent="false" />
 				<searchsetting element="GalleryTitle" searchcontent="false" />
 			</searchsettings>

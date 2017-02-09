@@ -32,27 +32,37 @@
       <PropertyName><![CDATA[titlepos]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.job.setting.titlepos)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[top]]></Default>
       <WidgetConfig><![CDATA[
-		top:Top|
-		bottom:Below introduction
-		]]></WidgetConfig>
+        top:%(key.apollo.job.setting.titlepos.top)|
+        bottom:%(key.apollo.job.setting.titlepos.bottom)
+        ]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[buttoncolor]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.buttoncolor)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[red]]></Default>
-      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:red:%(key.apollo.setting.color.red)|blue:%(key.apollo.setting.color.blue)|blue-light:%(key.apollo.setting.color.lightblue)|blue-dark:%(key.apollo.setting.color.darkblue)|orange:%(key.apollo.setting.color.orange)|cyan:%(key.apollo.setting.color.cyan)|grey:%(key.apollo.setting.color.grey))]]></WidgetConfig>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.color:
+        red:%(key.apollo.setting.color.red)|
+        blue:%(key.apollo.setting.color.blue)|
+        blue-light:%(key.apollo.setting.color.lightblue)|
+        blue-dark:%(key.apollo.setting.color.darkblue)|
+        orange:%(key.apollo.setting.color.orange)|
+        cyan:%(key.apollo.setting.color.cyan)|
+        grey:%(key.apollo.setting.color.grey)
+      )]]></WidgetConfig>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[btnstyle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.job.setting.buttonstyle)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[left]]></Default>
       <WidgetConfig><![CDATA[
-		left:Left aligned|
-		center:Centered|
-		full:Full row
-		]]></WidgetConfig>
+        left:%(key.apollo.job.setting.buttonstyle.left)|
+        center:%(key.apollo.job.setting.buttonstyle.center)|
+        full:%(key.apollo.job.setting.buttonstyle.full)
+        ]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

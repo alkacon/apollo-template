@@ -39,9 +39,6 @@
 			</layouts>
 			<validationrules />
 			<searchsettings containerPageOnly="true">
-				<searchsetting element="Title" searchcontent="false">
-					<solrfield targetfield="disptitle" sourcefield="*_s" />
-				</searchsetting>
 				<searchsetting element="Item" searchcontent="false" />
 				<searchsetting element="GalleryTitle" searchcontent="false" />
 			</searchsettings>
