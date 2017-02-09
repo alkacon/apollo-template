@@ -10,11 +10,6 @@
 		<nicename><![CDATA[Apollo Template Default Theme]]></nicename>
 		<group>Apollo Template</group>
 		<class/>
-		<import-script><![CDATA[login Admin admin
-setCurrentProject "Offline"
-lockResource "/system/modules/org.opencms.apollo/formatters"
-touchResource "/system/modules/org.opencms.apollo/formatters"
-publishProjectAndWait]]></import-script>
 		<import-site>/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[Contains the default Apollo CSS, JavaScript and resources.]]></description>

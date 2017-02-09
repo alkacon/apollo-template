@@ -37,7 +37,9 @@ addUserToRole 'Demo' 'WORKPLACE_USER'
 
 createUser 'Templator' 'password' 'Sample user with template development permissions'
 addUserToGroup 'Templator' 'Users'
-addUserToRole 'Templator' 'DEVELOPER']]></import-script>
+addUserToRole 'Templator' 'DEVELOPER'
+
+touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 		<import-site>/sites/default/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[The OpenCms 10.5.0 Apollo template demo contents.]]></description>
