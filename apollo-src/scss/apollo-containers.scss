@@ -49,6 +49,7 @@ $ap-container-labels:
 $ap-edit-infos:
 (
     (new, $blue-light),
+    (warn, $orange),
     (reload, $red-dark)
 ) !default;
 
