@@ -2,7 +2,7 @@
 
 <ApolloImageGallerys xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/imagegallery.xsd">
   <ApolloImageGallery language="en">
-    <Title><![CDATA[Photo image gallery]]></Title>
+    <Title><![CDATA[Buildings, Machines, Things]]></Title>
     <ImageFolder>
       <link type="WEAK">
         <target><![CDATA[/sites/default/.galleries/samples/]]></target>

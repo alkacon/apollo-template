@@ -7,7 +7,7 @@
       <Text><![CDATA[Description]]></Text>
       <URI>
         <link internal="true" type="WEAK">
-          <target><![CDATA[/sites/default/apollo-demo/real-estate/]]></target>
+          <target><![CDATA[/sites/default/apollo-demo/demo-pages/real-estate/]]></target>
           <uuid>fe98d448-b238-11e6-ade4-0242ac11002b</uuid>
           <anchor><![CDATA[Description]]></anchor>
         </link>
@@ -17,7 +17,7 @@
       <Text><![CDATA[Property Images]]></Text>
       <URI>
         <link internal="true" type="WEAK">
-          <target><![CDATA[/sites/default/apollo-demo/real-estate/]]></target>
+          <target><![CDATA[/sites/default/apollo-demo/demo-pages/real-estate/]]></target>
           <uuid>fe98d448-b238-11e6-ade4-0242ac11002b</uuid>
           <anchor><![CDATA[MoreImages]]></anchor>
         </link>
@@ -27,7 +27,7 @@
       <Text><![CDATA[Location]]></Text>
       <URI>
         <link internal="true" type="WEAK">
-          <target><![CDATA[/sites/default/apollo-demo/real-estate/]]></target>
+          <target><![CDATA[/sites/default/apollo-demo/demo-pages/real-estate/]]></target>
           <uuid>fe98d448-b238-11e6-ade4-0242ac11002b</uuid>
           <anchor><![CDATA[Location]]></anchor>
         </link>

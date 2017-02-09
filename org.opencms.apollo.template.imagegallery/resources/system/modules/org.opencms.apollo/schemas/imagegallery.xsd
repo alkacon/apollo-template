@@ -14,6 +14,7 @@
 		<xsd:sequence>
 			<xsd:element name="Title" type="OpenCmsString" />
 			<xsd:element name="ImageFolder" type="OpenCmsVfsFile" />
+			<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="required" />
 	</xsd:complexType>
@@ -22,17 +23,27 @@
 		<xsd:appinfo>
 			<resourcebundle name="org.opencms.apollo.template.imagegallery.messages" />
 			<mappings>
-				<mapping element="Title" mapto="property:Title" />
-				<mapping element="Title" mapto="urlName" />
+				<mapping element="GalleryTitle" mapto="property:Title" useDefault="true" />
+				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
 			</mappings>
 			<defaults>
 				<default element="Title" value="%(key.apollo.imagegallery.default.Title)" />
+				<default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Title)" resolveMacros="false" />
 			</defaults>
 			<layouts>
 				<layout element="ImageFolder" widget="VfsFileWidget" configuration="{galleryselect}" />
 			</layouts>
 			<relations />
-			<searchsettings containerPageOnly="true" />
+			<searchsettings containerPageOnly="true">
+				<searchsetting element="Title" searchcontent="false">
+					<solrfield targetfield="disptitle" sourcefield="*_s" />
+				</searchsetting>
+				<searchsetting element="ImageFolder" searchcontent="false" />
+				<searchsetting element="GalleryTitle" searchcontent="false" />
+			</searchsettings>
+			<visibilities>
+				<visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
+			</visibilities>
 		</xsd:appinfo>
 	</xsd:annotation>
 </xsd:schema>

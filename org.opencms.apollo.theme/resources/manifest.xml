@@ -10,11 +10,16 @@
 		<nicename><![CDATA[Apollo Template Default Theme]]></nicename>
 		<group>Apollo Template</group>
 		<class/>
+		<import-script><![CDATA[login Admin admin
+setCurrentProject "Offline"
+lockResource "/system/modules/org.opencms.apollo/formatters"
+touchResource "/system/modules/org.opencms.apollo/formatters"
+publishProjectAndWait]]></import-script>
 		<import-site>/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[Contains the default Apollo CSS, JavaScript and resources.]]></description>
 		<version>10.5.0</version>
-		<authorname><![CDATA[Alkacon Software GmbH]]></authorname>
+		<authorname><![CDATA[Alkacon Software GmbH & Co. KG]]></authorname>
 		<authoremail/>
 		<datecreated/>
 		<userinstalled/>
