@@ -9888,7 +9888,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Clipart image gallery]]></value>
+					<value><![CDATA[Image Gallery: Clipart image gallery]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9932,7 +9932,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Imgur cat example]]></value>
+					<value><![CDATA[Asset Connection: Imgur cat example]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9949,7 +9949,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[A beautiful cat]]></value>
+					<value><![CDATA[Asset Connection: A beautiful cat]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9976,7 +9976,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Overly Friendly Manager (m/f)]]></value>
+					<value><![CDATA[Job Offer: Overly Friendly Manager (m/f)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -9993,7 +9993,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Vice President of Sweaty Handshakes (m/f)]]></value>
+					<value><![CDATA[Job Offer: Vice President of Sweaty Handshakes (m/f)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10010,7 +10010,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Personal Detail Overshare Consultant (m/f)]]></value>
+					<value><![CDATA[Job Offer: Personal Detail Overshare Consultant (m/f)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10044,7 +10044,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Head of Office Gossip (m/f)]]></value>
+					<value><![CDATA[Job Offer: Head of Office Gossip (m/f)]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10061,7 +10061,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Principal Party Planner (m/f)]]></value>
+					<value><![CDATA[Job Offer: Principal Party Planner (m/f)]]></value>
 				</property>
 			</properties>
 			<relations/>

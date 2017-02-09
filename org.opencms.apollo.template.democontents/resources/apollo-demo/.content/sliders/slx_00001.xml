@@ -4,7 +4,7 @@
   <ApolloSlider language="en">
     <Title><![CDATA[OpenCms 10.5 Promo Slider  ]]></Title>
     <Duration><![CDATA[6000]]></Duration>
-    <Width><![CDATA[900]]></Width>
+    <Width><![CDATA[962]]></Width>
     <Height><![CDATA[500]]></Height>
     <Item>
       <Image>
@@ -34,7 +34,7 @@
         <Text><![CDATA[OPENCMS 10.5]]></Text>
         <Class><![CDATA[caption mediumthickblackbg blackbgtransparent sfb]]></Class>
         <PosX><![CDATA[180]]></PosX>
-        <PosY><![CDATA[205]]></PosY>
+        <PosY><![CDATA[200]]></PosY>
         <Start><![CDATA[800]]></Start>
         <Speed><![CDATA[600]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -56,8 +56,8 @@
           </link>
         </Image>
         <Class><![CDATA[caption randomrotate]]></Class>
-        <PosX><![CDATA[475]]></PosX>
-        <PosY><![CDATA[103]]></PosY>
+        <PosX><![CDATA[462]]></PosX>
+        <PosY><![CDATA[101]]></PosY>
         <Start><![CDATA[1800]]></Start>
         <Speed><![CDATA[2000]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -90,8 +90,8 @@
       <Caption>
         <Text><![CDATA[BOOTSTRAP BASED APOLLO TEMPLATE]]></Text>
         <Class><![CDATA[caption mediumthickblackbg blackbgtransparent sfb]]></Class>
-        <PosX><![CDATA[10]]></PosX>
-        <PosY><![CDATA[105]]></PosY>
+        <PosX><![CDATA[0]]></PosX>
+        <PosY><![CDATA[100]]></PosY>
         <Start><![CDATA[600]]></Start>
         <Speed><![CDATA[600]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -99,7 +99,7 @@
       <Caption>
         <Text><![CDATA[BUILD YOUR WEBSITE WITHOUT CODING]]></Text>
         <Class><![CDATA[caption sft mediumthickwhitebg]]></Class>
-        <PosX><![CDATA[10]]></PosX>
+        <PosX><![CDATA[0]]></PosX>
         <PosY><![CDATA[160]]></PosY>
         <Start><![CDATA[900]]></Start>
         <Speed><![CDATA[600]]></Speed>
@@ -113,8 +113,8 @@
           </link>
         </Image>
         <Class><![CDATA[caption randomrotate]]></Class>
-        <PosX><![CDATA[10]]></PosX>
-        <PosY><![CDATA[210]]></PosY>
+        <PosX><![CDATA[-10]]></PosX>
+        <PosY><![CDATA[212]]></PosY>
         <Start><![CDATA[1200]]></Start>
         <Speed><![CDATA[900]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -135,7 +135,7 @@
         <Text><![CDATA[100% OPEN SOURCE]]></Text>
         <Class><![CDATA[caption sft mediumthickwhitebg]]></Class>
         <PosX><![CDATA[75]]></PosX>
-        <PosY><![CDATA[330]]></PosY>
+        <PosY><![CDATA[320]]></PosY>
         <Start><![CDATA[1200]]></Start>
         <Speed><![CDATA[600]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -144,7 +144,7 @@
         <Text><![CDATA[COMMERCIAL SUPPORT AVAILABLE]]></Text>
         <Class><![CDATA[caption mediumthickblackbg blackbgtransparent sfb]]></Class>
         <PosX><![CDATA[75]]></PosX>
-        <PosY><![CDATA[385]]></PosY>
+        <PosY><![CDATA[380]]></PosY>
         <Start><![CDATA[1400]]></Start>
         <Speed><![CDATA[600]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -158,8 +158,8 @@
           </link>
         </Image>
         <Class><![CDATA[caption randomrotate]]></Class>
-        <PosX><![CDATA[595]]></PosX>
-        <PosY><![CDATA[130]]></PosY>
+        <PosX><![CDATA[600]]></PosX>
+        <PosY><![CDATA[123]]></PosY>
         <Start><![CDATA[900]]></Start>
         <Speed><![CDATA[600]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -183,7 +183,7 @@
       <Caption>
         <Text><![CDATA[MAKE YOUR <span style="color: #d31d34">CONTENT MANAGERS</span> HAPPY!]]></Text>
         <Class><![CDATA[caption mediumthickgreybg sfb ltl]]></Class>
-        <PosX><![CDATA[0]]></PosX>
+        <PosX><![CDATA[10]]></PosX>
         <PosY><![CDATA[35]]></PosY>
         <Start><![CDATA[800]]></Start>
         <Speed><![CDATA[300]]></Speed>
@@ -299,7 +299,7 @@
         <Text><![CDATA[START USING OPENCMS TODAY]]></Text>
         <Class><![CDATA[caption mediumthickgreybg lft ltb]]></Class>
         <PosX><![CDATA[0]]></PosX>
-        <PosY><![CDATA[395]]></PosY>
+        <PosY><![CDATA[400]]></PosY>
         <Start><![CDATA[200]]></Start>
         <Speed><![CDATA[600]]></Speed>
         <Easing><![CDATA[easeOutElastic]]></Easing>
@@ -341,7 +341,7 @@
         <Text><![CDATA[OPENCMS 10.5]]></Text>
         <Class><![CDATA[caption mediumthickblackbg blackbgtransparent sfb]]></Class>
         <PosX><![CDATA[180]]></PosX>
-        <PosY><![CDATA[205]]></PosY>
+        <PosY><![CDATA[200]]></PosY>
         <Start><![CDATA[800]]></Start>
         <Speed><![CDATA[600]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -363,8 +363,8 @@
           </link>
         </Image>
         <Class><![CDATA[caption randomrotate]]></Class>
-        <PosX><![CDATA[465]]></PosX>
-        <PosY><![CDATA[103]]></PosY>
+        <PosX><![CDATA[462]]></PosX>
+        <PosY><![CDATA[101]]></PosY>
         <Start><![CDATA[1800]]></Start>
         <Speed><![CDATA[2000]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -397,8 +397,8 @@
       <Caption>
         <Text><![CDATA[BOOTSTRAP BASIERTES APOLLO TEMPLATE]]></Text>
         <Class><![CDATA[caption mediumthickblackbg blackbgtransparent sfb]]></Class>
-        <PosX><![CDATA[10]]></PosX>
-        <PosY><![CDATA[105]]></PosY>
+        <PosX><![CDATA[0]]></PosX>
+        <PosY><![CDATA[100]]></PosY>
         <Start><![CDATA[600]]></Start>
         <Speed><![CDATA[600]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -406,7 +406,7 @@
       <Caption>
         <Text><![CDATA[WEBSEITEN ERSTELLEN OHNE ZU PROGRAMMIEREN]]></Text>
         <Class><![CDATA[caption sft mediumthickwhitebg]]></Class>
-        <PosX><![CDATA[10]]></PosX>
+        <PosX><![CDATA[0]]></PosX>
         <PosY><![CDATA[160]]></PosY>
         <Start><![CDATA[900]]></Start>
         <Speed><![CDATA[600]]></Speed>
@@ -420,8 +420,8 @@
           </link>
         </Image>
         <Class><![CDATA[caption randomrotate]]></Class>
-        <PosX><![CDATA[10]]></PosX>
-        <PosY><![CDATA[210]]></PosY>
+        <PosX><![CDATA[-10]]></PosX>
+        <PosY><![CDATA[212]]></PosY>
         <Start><![CDATA[1200]]></Start>
         <Speed><![CDATA[900]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -442,7 +442,7 @@
         <Text><![CDATA[100% OPEN SOURCE]]></Text>
         <Class><![CDATA[caption sft mediumthickwhitebg]]></Class>
         <PosX><![CDATA[75]]></PosX>
-        <PosY><![CDATA[330]]></PosY>
+        <PosY><![CDATA[320]]></PosY>
         <Start><![CDATA[1200]]></Start>
         <Speed><![CDATA[600]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -451,7 +451,7 @@
         <Text><![CDATA[MIT PROFESSIONELLER UNTERSTÜTZUNG]]></Text>
         <Class><![CDATA[caption mediumthickblackbg blackbgtransparent sfb]]></Class>
         <PosX><![CDATA[75]]></PosX>
-        <PosY><![CDATA[385]]></PosY>
+        <PosY><![CDATA[380]]></PosY>
         <Start><![CDATA[1400]]></Start>
         <Speed><![CDATA[600]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -465,8 +465,8 @@
           </link>
         </Image>
         <Class><![CDATA[caption randomrotate]]></Class>
-        <PosX><![CDATA[595]]></PosX>
-        <PosY><![CDATA[130]]></PosY>
+        <PosX><![CDATA[600]]></PosX>
+        <PosY><![CDATA[123]]></PosY>
         <Start><![CDATA[900]]></Start>
         <Speed><![CDATA[600]]></Speed>
         <Easing><![CDATA[easeOutExpo]]></Easing>
@@ -490,7 +490,7 @@
       <Caption>
         <Text><![CDATA[MACHEN SIE IHRE <span style="color: #d31d34">REDAKTEURE</span> GLÜCKLICH!]]></Text>
         <Class><![CDATA[caption mediumthickgreybg sfb ltl]]></Class>
-        <PosX><![CDATA[0]]></PosX>
+        <PosX><![CDATA[10]]></PosX>
         <PosY><![CDATA[35]]></PosY>
         <Start><![CDATA[800]]></Start>
         <Speed><![CDATA[300]]></Speed>
@@ -606,7 +606,7 @@
         <Text><![CDATA[FANGEN SIE NOCH HEUTE MIT OPENCMS AN ]]></Text>
         <Class><![CDATA[caption mediumthickgreybg lft ltb]]></Class>
         <PosX><![CDATA[0]]></PosX>
-        <PosY><![CDATA[395]]></PosY>
+        <PosY><![CDATA[400]]></PosY>
         <Start><![CDATA[200]]></Start>
         <Speed><![CDATA[600]]></Speed>
         <Easing><![CDATA[easeOutElastic]]></Easing>

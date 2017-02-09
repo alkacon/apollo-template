@@ -175,13 +175,13 @@ $(function() {
 		}
 	}
 
-	$(window).unload(function() {
+	$(window).on("unload", function() {
 		// make sure to kill the UGC session if the page is just left
 		ugc.destroySession();
 	});
 
 	function showError(out) {
-		$('#error').html(out).show();		
+		$('#error').html(out).show();
 		$('html, body').animate({
 			scrollTop : $("#error").offset().top - 100
 		}, 1000);
