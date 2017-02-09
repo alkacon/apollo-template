@@ -283,7 +283,7 @@ var ApolloList = function(jQ) {
 
             if (m_autoLoadLists.length > 0) {
                 // only enable scroll listener if we have at least one autoloading gallery
-                jQ(window).bind('scroll', handleAutoLoaders);
+                jQ(window).on('scroll', handleAutoLoaders);
             }
         }
     }

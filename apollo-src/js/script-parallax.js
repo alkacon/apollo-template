@@ -146,7 +146,7 @@ var ApolloParallax = function(jQ) {
         if ((m_$parallaxElements.length > 0) && !Modernizr.touch) {
             initParallax();
 
-            m_$window.bind('scroll', update).resize(update);
+            m_$window.on('scroll', update).resize(update);
             update();
         }
     }

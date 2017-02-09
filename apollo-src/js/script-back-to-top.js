@@ -2,7 +2,7 @@
 //** Available/ usage terms at http://www.dynamicdrive.com (March 30th, 09')
 //** v1.1 (April 7th, 09'):
 //** 1) Adds ability to scroll to an absolute position (from top of page) or specific element on the page instead.
-//** 2) Fixes scroll animation not working in Opera. 
+//** 2) Fixes scroll animation not working in Opera.
 
 var scrolltotop = {
     //startline: Integer. Number of pixels from top of doc scrollbar is scrolled before showing control
@@ -102,7 +102,7 @@ var scrolltotop = {
                 mainobj.scrollup()
                 return false
             })
-            $(window).bind('scroll resize', function(e) {
+            $(window).on('scroll resize', function(e) {
 
                 mainobj.togglecontrol()
             })

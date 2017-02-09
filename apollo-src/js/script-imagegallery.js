@@ -213,7 +213,7 @@ var ApolloImageGallery = function(jQ) {
 
         if (m_autoLoadGalleries.length > 0) {
             // only enable scroll listener if we have at least one autoloading gallery
-            jQ(window).bind('scroll', handleAutoLoaders).resize(handleAutoLoaders);
+            jQ(window).on('scroll', handleAutoLoaders).resize(handleAutoLoaders);
         }
     }
 
