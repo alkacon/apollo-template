@@ -26,6 +26,8 @@
 		<resources>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-onecol.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-onecol.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-twocol.xml"/>
+			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-twocol.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-threecol.jsp"/>
 			<resource uri="/system/modules/org.opencms.apollo/formatters/contact-threecol.xml"/>
 			<resource uri="/system/modules/org.opencms.apollo/i18n/org.opencms.apollo.template.contact.messages_de"/>
@@ -191,6 +193,60 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Contact information in three columns]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/contact-twocol.jsp</source>
+			<destination>system/modules/org.opencms.apollo/formatters/contact-twocol.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>fc77029a-efac-11e6-92f8-0242ac11002b</uuidstructure>
+			<uuidresource>fc77029b-efac-11e6-92f8-0242ac11002b</uuidresource>
+			<datecreated>Fri, 10 Feb 2017 16:21:33 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Contact in two columns formatter]]></value>
+				</property>
+				<property>
+					<name>cache</name>
+					<value><![CDATA[container-element;locale]]></value>
+				</property>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.apollo/formatters/contact-twocol.xml</source>
+			<destination>system/modules/org.opencms.apollo/formatters/contact-twocol.xml</destination>
+			<type>formatter_config</type>
+			<uuidstructure>eb459cc4-efac-11e6-92f8-0242ac11002b</uuidstructure>
+			<uuidresource>eb459cc5-efac-11e6-92f8-0242ac11002b</uuidresource>
+			<datecreated>Fri, 10 Feb 2017 16:21:04 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Contact information in two columns]]></value>
 				</property>
 				<property>
 					<name>locale</name>
