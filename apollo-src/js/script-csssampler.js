@@ -58,7 +58,7 @@ var ApolloCssSampler = function(jQ) {
             $element.empty();
 
             if (DEBUG) console.info("Creating CSS sample for id: " + $element.attr('id'));
-            data = Apollo.getCssData($element.attr('id'));
+            data = Apollo.getCssJsonData($element.attr('id'));
 
             for (var j = data.length-1; j>=0; j--) {
 

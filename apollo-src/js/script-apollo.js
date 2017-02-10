@@ -36,7 +36,7 @@ var Apollo = function(jQ) {
     this.m_theme = null;
 
     // the grid size when the page was loaded
-    this.m_gridSize = null;
+    this.m_gridInfo = {};
 
     // additional init functions
     this.m_init = [];
@@ -114,7 +114,12 @@ var Apollo = function(jQ) {
             data = data.content;
             if (DEBUG) console.info("Apollo data found in ::before: " + data);
         }
-        return JSON.parse(removeQuotes(data));
+        return removeQuotes(data);
+    }
+
+
+    function getCssJsonData(elementId) {
+        return JSON.parse(getCssData(elementId));
     }
 
 
@@ -144,12 +149,12 @@ var Apollo = function(jQ) {
                 addInfo($info);
             }
 
-            m_theme = getCssData($element.attr('id'));
+            m_theme = getCssJsonData($element.attr('id'));
             if (DEBUG) console.info("Apollo main theme color: " + getThemeColor("main-theme"));
         });
 
         // initialize grid size
-        m_gridInfo = getCssData('apollo-grid-info');
+        m_gridInfo.grid = getCssData('apollo-grid-info');
         if (DEBUG) console.info("Apollo grid info: " + m_gridInfo.grid);
     }
 
@@ -158,7 +163,7 @@ var Apollo = function(jQ) {
         init: init,
         addInit: addInit,
         hasInfo: hasInfo,
-        getCssData: getCssData,
+        getCssJsonData: getCssJsonData,
         getInfo: getInfo,
         isOnlineProject: isOnlineProject,
         getThemeColor: getThemeColor,

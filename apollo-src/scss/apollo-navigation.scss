@@ -718,18 +718,25 @@ $nav-header-menu-bg-hover:  $nav-header-bg !default;
         }
     }
 
+    .badge-screensize,
     .badge-user {
         // Special badge used for indicating the current user */
-        color: $nav-bg;
-        background: $nav-text;
+        color: $nav-text;
+        background: $nav-bg;
         font-family: $font-content;
         font-weight: 400;
         font-size: 12px;
-        padding: 3px 7px;
-        top: -9px;
+        padding: 5px;
+        top: -7px;
         left: 4px;
         position: relative;
         border-radius: 4px;
+    }
+
+    .badge-screensize {
+        text-transform: uppercase;
+        color: $nav-text-hover;
+        left: 0;
     }
 
     @media (max-width: $screen-sm-max) {

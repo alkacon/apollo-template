@@ -34,28 +34,30 @@
     }
 }
 
-#apollo-grid-info {
+.apollo-grid-info {
     &:before {
-        display: none;
-        content: '{"grid":"xs"}';
+        content: 'xs';
     }
     @media (min-width: $screen-sm-min) {
         &:before {
-            content: '{"grid":"sm"}';
+            content: 'sm';
         }
     }
     @media (min-width: $screen-md-min) {
         &:before {
-            content: '{"grid":"md"}';
+            content: 'md';
         }
     }
     @media (min-width: $screen-lg-min) {
         &:before {
-            content: '{"grid":"lg"}';
+            content: 'lg';
         }
     }
 }
 
+#apollo-grid-info:before {
+    display: none;
+}
 
 /* Page info elements providing JavaScript access to selected styles */
 .apollo-info {
