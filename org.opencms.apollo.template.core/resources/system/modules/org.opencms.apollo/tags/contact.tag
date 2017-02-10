@@ -38,6 +38,7 @@
     effect-shadow: Apply a shadow effect to the image.
     animated-link: Show the animated link button over the image.
     name: Show the contact name and position.
+    position: Show the contact position.
     address: Show the contact address.
     organization: Show the contact organization.
     description: Show the contact description.
@@ -63,6 +64,11 @@
     <c:if test="${fn:contains(fragments, 'label-icon')}">
         icon
         <c:set var="showicons">true</c:set>
+    </c:if>
+    <c:if test="${fn:contains(fragments, 'label-min')}">
+        text
+        <c:set var="showtext">true</c:set>
+        <c:set var="minlabels">true</c:set>
     </c:if>
 </c:set>
 <c:set var="animatedlink" value="${link.isSet and fn:contains(fragments, 'animated-link')}" />
@@ -95,6 +101,7 @@
     </c:if>
 
     <c:set var="showname" value="${fn:contains(fragments, 'name') and name.isSet}"/>
+    <c:set var="showposition" value="${fn:contains(fragments, 'position')}"/>
     <c:set var="showorganization" value="${fn:contains(fragments, 'organization') and organization.isSet}"/>
     <c:set var="showdescription" value="${fn:contains(fragments, 'description') and description.isSet}"/>
     <c:set var="showaddress" value="${fn:contains(fragments, 'address') and data.isSet and data.value.Address.isSet}"/>
@@ -108,11 +115,11 @@
     <div class="text-box">
 
     <c:set var="personname">
-        <c:if test="${name.value.Title.isSet}"><span itemprop="honorificPrefix">${name.value.Title} </span></c:if>
-        <span itemprop="givenName"> ${name.value.FirstName}</span>
-        <c:if test="${name.value.MiddleName.isSet}"><span itemprop="additionalName"> ${name.value.MiddleName}</span></c:if>
-        <span itemprop="familyName"> ${name.value.LastName}</span>
-        <c:if test="${name.value.Suffix.isSet}"><span itemprop="honorificSuffix"> ${name.value.Suffix}</span></c:if>
+        <c:if test="${name.value.Title.isSet}"><span itemprop="honorificPrefix" ${name.value.Title.rdfaAttr}>${name.value.Title} </span></c:if>
+        <span itemprop="givenName" ${name.value.FirstName.rdfaAttr}> ${name.value.FirstName}</span>
+        <c:if test="${name.value.MiddleName.isSet}"><span itemprop="additionalName" ${name.value.MiddleName.rdfaAttr}> ${name.value.MiddleName}</span></c:if>
+        <span itemprop="familyName" ${name.value.LastName.rdfaAttr}> ${name.value.LastName}</span>
+        <c:if test="${name.value.Suffix.isSet}"><span itemprop="honorificSuffix"  ${name.value.Suffix.rdfaAttr}> ${name.value.Suffix}</span></c:if>
     </c:set>
 
     <c:choose>
@@ -121,7 +128,7 @@
                 <h3 class="fn n" ${organization.rdfaAttr} itemprop="name">
                     ${organization}
                 </h3>
-                <c:if test="${position.isSet}"><h4 itemprop="description" class="title" ${position.rdfaAttr}>${position}</h4></c:if>
+                <c:if test="${showposition and position.isSet}"><h4 itemprop="description" class="title" ${position.rdfaAttr}>${position}</h4></c:if>
             </c:if>
             <c:if test="${showname}">
                 <div class="org" itemprop="employee" itemscope itemtype="http://schema.org/Person">${personname}</div>
@@ -132,7 +139,7 @@
                 <h3 class="fn n" itemprop="name">
                     ${personname}
                 </h3>
-                <c:if test="${position.isSet}"><h4 itemprop="jobTitle" class="title" ${position.rdfaAttr}>${position}</h4></c:if>
+                <c:if test="${showposition and position.isSet}"><h4 itemprop="jobTitle" class="title" ${position.rdfaAttr}>${position}</h4></c:if>
             </c:if>
             <c:if test="${showorganization}">
                 <div class="org" itemprop="worksFor" ${organization.rdfaAttr}>${organization}</div>
@@ -143,44 +150,51 @@
     <c:if test="${showdescription}"><div itemprop="description" class="note" ${description.rdfaAttr}>${description}</div></c:if>
 
     <c:if test="${showaddress}">
-        <c:set var="animatedAddress" value="${showicons and not showaddressalways}" />
-        <div class="clickme-showme">
-        <div class="adr ${animatedAddress ? 'clickme' : ''}"
-            itemprop="address" itemscope
-            itemtype="http://schema.org/PostalAddress">
-            <div itemprop="streetAddress" class="street-address">${data.value.Address.value.StreetAddress}</div>
-            <c:if test="${data.value.Address.value.ExtendedAddress.isSet}">
-                <div itemprop="streetAddress" class="extended-address">${data.value.Address.value.ExtendedAddress}</div>
-            </c:if>
-            <div>
-                <span itemprop="postalCode" class="postal-code">${data.value.Address.value.PostalCode}</span>
-                <span itemprop="addressLocality" class="locality">${data.value.Address.value.Locality}</span>
-            </div>
-            <c:if test="${data.value.Address.value.Region.isSet or data.value.Address.value.Country.isSet}">
+        <c:set var="animatedAddress" value="${not showaddressalways}" />
+        <div ${animatedAddress ? 'class="clickme-showme"' : ''}>
+            <div class="adr ${animatedAddress ? 'clickme' : ''}"
+                itemprop="address" itemscope
+                itemtype="http://schema.org/PostalAddress">
+                <div itemprop="streetAddress" class="street-address" ${animatedAddress ? '' : data.value.Address.value.StreetAddress.rdfaAttr}>${data.value.Address.value.StreetAddress}</div>
+                <c:if test="${data.value.Address.value.ExtendedAddress.isSet}">
+                    <div itemprop="streetAddress" class="extended-address" ${animatedAddress ? '' : data.value.Address.value.ExtendedAddress.rdfaAttr}>${data.value.Address.value.ExtendedAddress}</div>
+                </c:if>
                 <div>
-                    <c:if test="${data.value.Address.value.Region.isSet}">
-                        <span itemprop="addressRegion" class="region">${data.value.Address.value.Region}</span>
-                    </c:if>
-                    <c:if test="${data.value.Address.value.Country.isSet}">
-                        <span itemprop="addressCountry" class="country-name">${data.value.Address.value.Country}</span>
-                    </c:if>
+                    <span itemprop="postalCode" class="postal-code" ${animatedAddress ? '' : data.value.Address.value.PostalCode.rdfaAttr}>${data.value.Address.value.PostalCode}</span>
+                    <span itemprop="addressLocality" class="locality" ${animatedAddress ? '' : data.value.Address.value.Locality.rdfaAttr}>${data.value.Address.value.Locality}</span>
+                </div>
+                <c:if test="${data.value.Address.value.Region.isSet or data.value.Address.value.Country.isSet}">
+                    <div>
+                        <c:if test="${data.value.Address.value.Region.isSet}">
+                            <span itemprop="addressRegion" class="region" ${animatedAddress ? '' : data.value.Address.value.Region.rdfaAttr}>${data.value.Address.value.Region}</span>
+                        </c:if>
+                        <c:if test="${data.value.Address.value.Country.isSet}">
+                            <span itemprop="addressCountry" class="country-name" ${animatedAddress ? '' : data.value.Address.value.Country.rdfaAttr}>${data.value.Address.value.Country}</span>
+                        </c:if>
+                    </div>
+                </c:if>
+            </div>
+            <c:if test="${animatedAddress}">
+                <div class="addresslink showme">
+                    <c:choose>
+                        <c:when test="${showicons}">
+                            <apollo:icon-prefix icon="home" fragments="icon text" >
+                                <jsp:attribute name="text">
+                                    <span class="${showtext ? 'with-text' : 'only-icon'}"><a><%--
+                                    --%><fmt:message key="apollo.contact.showaddress"/>
+                                    </a></span>
+                                </jsp:attribute>
+                                <jsp:attribute name="icontitle">
+                                    <fmt:message key="apollo.contact.showaddress"/>
+                                </jsp:attribute>
+                            </apollo:icon-prefix>
+                        </c:when>
+                        <c:otherwise>
+                            <a class="adr"><fmt:message key="apollo.contact.showaddress"/></a>
+                        </c:otherwise>
+                    </c:choose>
                 </div>
             </c:if>
-        </div>
-        <c:if test="${animatedAddress}">
-            <div class="addresslink showme">
-                <apollo:icon-prefix icon="home" fragments="icon text" >
-                    <jsp:attribute name="text">
-                        <span class="${showtext ? 'with-text' : 'only-icon'}"><a><%--
-                        --%><fmt:message key="apollo.contact.showaddress"/>
-                        </a></span>
-                    </jsp:attribute>
-                    <jsp:attribute name="icontitle">
-                        <fmt:message key="apollo.contact.showaddress"/>
-                    </jsp:attribute>
-                </apollo:icon-prefix>
-            </div>
-        </c:if>
         </div>
     </c:if>
 
@@ -224,10 +238,12 @@
     </c:if>
 
     <c:if test="${showemail}">
-        <div class="tablerow">
-            <apollo:icon-prefix icon="at" fragments="${labels}" >
-                <jsp:attribute name="text"><fmt:message key="apollo.contact.email"/></jsp:attribute>
-            </apollo:icon-prefix>
+        <div class="${minlabels ? 'mail' : 'mail tablerow'}" ${data.rdfa.Email}>
+            <c:if test="${!minlabels}">
+                <apollo:icon-prefix icon="at" fragments="${labels}" >
+                    <jsp:attribute name="text"><fmt:message key="apollo.contact.email"/></jsp:attribute>
+                </apollo:icon-prefix>
+            </c:if>
             <apollo:email email="${data.value.Email}">
                 <jsp:attribute name="placeholder"><fmt:message key="apollo.contact.obfuscatedemail"/></jsp:attribute>
             </apollo:email>

@@ -28,7 +28,7 @@
       <Fax><![CDATA[+49 (170) 123-4567]]></Fax>
       <Email>
         <Email><![CDATA[haleydun@example.org]]></Email>
-        <ObfuscateEmail>true</ObfuscateEmail>
+        <ObfuscateEmail>false</ObfuscateEmail>
       </Email>
     </Contact>
   </ApolloContact>

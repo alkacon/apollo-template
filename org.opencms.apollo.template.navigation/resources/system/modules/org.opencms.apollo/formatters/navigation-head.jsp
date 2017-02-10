@@ -200,6 +200,7 @@
             ${cms.title}
             <c:if test="${cms.isEditMode}">
                 <span class="badge badge-user">${cms.requestContext.currentUser.name}</span>
+                <span class="badge badge-screensize"><span class="apollo-grid-info"></span></span>
             </c:if>
         </h1>
 

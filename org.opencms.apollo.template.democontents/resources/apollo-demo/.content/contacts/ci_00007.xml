@@ -3,7 +3,7 @@
 <ApolloContacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/contact.xsd">
   <ApolloContact language="en">
     <Kind><![CDATA[person]]></Kind>
-    <Organization><![CDATA[Short Cuts LLP]]></Organization>
+    <Organization><![CDATA[<p>Short Cuts LLP</p>]]></Organization>
     <Name>
       <FirstName><![CDATA[Lily]]></FirstName>
       <LastName><![CDATA[Tucker-Pritchett]]></LastName>
@@ -27,7 +27,7 @@
       <Mobile><![CDATA[+49 (170) 123-4567]]></Mobile>
       <Email>
         <Email><![CDATA[lily.tucker-pritchett@example.org]]></Email>
-        <ObfuscateEmail>true</ObfuscateEmail>
+        <ObfuscateEmail>false</ObfuscateEmail>
       </Email>
     </Contact>
   </ApolloContact>

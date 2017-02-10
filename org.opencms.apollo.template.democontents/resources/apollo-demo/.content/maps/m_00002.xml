@@ -14,7 +14,7 @@
     <ShowMarkers>true</ShowMarkers>
     <GalleryTitle><![CDATA[ETH Zürich]]></GalleryTitle>
     <MapCoord>
-      <Caption/>
+      <Caption><![CDATA[My dream house]]></Caption>
       <Coord><![CDATA[{"lat":47.3763166,"lng":8.5454812,"zoom":14,"type":"roadmap","mode":"dynamic","address":"ETH Zürich"}]]></Coord>
     </MapCoord>
   </ApolloMap>

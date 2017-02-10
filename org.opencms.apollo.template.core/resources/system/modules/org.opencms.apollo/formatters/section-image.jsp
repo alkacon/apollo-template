@@ -77,7 +77,7 @@
 <fmt:setLocale value="${cms.workplaceLocale}" />
 <cms:bundle basename="org.opencms.apollo.template.section.messages">
 
-<div id="ap-edit-info" class="box-warn animated fadeIn" ${value.Image.value.Image.imageDndAttr}>
+<div id="ap-edit-info" class="box-warn animated fadeIn">
     <div class="head">
          <fmt:message key="apollo.section.message.noimage" />
     </div>

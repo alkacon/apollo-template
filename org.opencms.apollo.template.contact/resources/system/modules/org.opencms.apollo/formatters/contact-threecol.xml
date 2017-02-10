@@ -77,6 +77,12 @@
       ]]></WidgetConfig>
     </Setting>
     <Setting>
+      <PropertyName><![CDATA[showPosition]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.contact.setting.showposition)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[showOrganization]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.contact.setting.showorganization)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>

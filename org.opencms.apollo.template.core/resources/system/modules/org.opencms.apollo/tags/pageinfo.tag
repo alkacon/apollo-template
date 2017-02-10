@@ -27,7 +27,7 @@
     --%>"locale":"${cms.locale}"<%--
 --%>}'><%--
 
---%><div id="apollo-grid-info"></div><%--
+--%><div id="apollo-grid-info" class="apollo-grid-info"></div><%--
 
 --%></div>
 

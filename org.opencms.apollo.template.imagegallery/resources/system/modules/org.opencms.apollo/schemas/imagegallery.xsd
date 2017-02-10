@@ -27,7 +27,7 @@
 				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
 			</mappings>
 			<defaults>
-				<default element="Title" value="%(key.apollo.imagegallery.default.Title)" />
+				<default element="Title" value="%(key.title.a-imagegallery)" />
 				<default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Title)" resolveMacros="false" />
 			</defaults>
 			<layouts>

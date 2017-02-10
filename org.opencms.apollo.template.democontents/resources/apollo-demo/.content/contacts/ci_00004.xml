@@ -37,7 +37,7 @@
       <Mobile><![CDATA[+49 (180) 123-4567]]></Mobile>
       <Email>
         <Email><![CDATA[m.delgado@example.org ]]></Email>
-        <ObfuscateEmail>false</ObfuscateEmail>
+        <ObfuscateEmail>true</ObfuscateEmail>
       </Email>
     </Contact>
   </ApolloContact>

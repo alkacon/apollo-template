@@ -26,7 +26,7 @@
       <PropertyName><![CDATA[hidetitle]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.hidetitle)]]></DisplayName>
       <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[true]]></Default>
+      <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
@@ -36,20 +36,18 @@
     </Setting>
     <Setting>
       <PropertyName><![CDATA[cssClass]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.imagecss)]]></DisplayName>
+      <DisplayName><![CDATA[%(key.apollo.setting.imagegallery.css)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.imagecss.description)]]></Description>
       <Widget><![CDATA[selectcombo]]></Widget>
       <Default><![CDATA[square-sm-6 square-md-4 square-lg-3]]></Default>
       <WidgetConfig><![CDATA[
-        square-xs-6 square-sm-4 square-md-3 square-lg-2:XS-2 SM-3 MD-4 LG-6|
-        square-xs-6 square-sm-6 square-md-4 square-lg-3:XS-2 SM-2 MD-3 LG-4|
-        square-sm-6 square-md-4 square-lg-3:            XS-1 SM-2 MD-3 LG-4|
-        square-sm-6 square-md-3:                        XS-1 SM-2 MD-4 LG-4|
-        square-xs-6 square-sm-3:                        XS-2 SM-4 MD-4 LG-4|
-        square-sm-6 square-lg-4:                        XS-1 SM-2 MD-2 LG-3|
-        square-md-6:                                    XS-1 SM-1 MD-2 LG-2|
-        square-sm-6:                                    XS-1 SM-2 MD-2 LG-2|
-        square-xs-12:                                   XS-1 SM-1 MD-1 LG-1
+        square-xs-6 square-sm-4 square-md-3 square-lg-2:%(key.apollo.setting.imagegallery.css.xs6-sm4-md3-lg2)|
+        square-xs-6 square-sm-4 square-lg-2:            %(key.apollo.setting.imagegallery.css.xs6-sm4-lg2)|
+        square-sm-6 square-md-4 square-lg-3:            %(key.apollo.setting.imagegallery.css.sm6-md4-lg3)|
+        square-sm-6 square-lg-4:                        %(key.apollo.setting.imagegallery.css.sm6-lg4)|
+        square-md-6:                                    %(key.apollo.setting.imagegallery.css.md6)|
+        square-sm-6:                                    %(key.apollo.setting.imagegallery.css.sm6)|
+        square-xs-12:                                   %(key.apollo.setting.imagegallery.css.xs12)
         ]]></WidgetConfig>
     </Setting>
     <Setting>

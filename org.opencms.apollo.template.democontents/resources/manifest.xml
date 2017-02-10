@@ -9912,6 +9912,23 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>apollo-demo/.content/imagegalleries/imggal_00003.xml</source>
+			<destination>apollo-demo/.content/imagegalleries/imggal_00003.xml</destination>
+			<type>a-imagegallery</type>
+			<uuidstructure>b4f7ad7c-ef88-11e6-92f8-0242ac11002b</uuidstructure>
+			<uuidresource>b4f7ad7d-ef88-11e6-92f8-0242ac11002b</uuidresource>
+			<datecreated>Fri, 10 Feb 2017 12:01:51 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Test page: New image gallery ]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/imgur-sections</destination>
 			<type>folder</type>
 			<uuidstructure>ef373614-800a-11e6-95f6-0242ac11002b</uuidstructure>

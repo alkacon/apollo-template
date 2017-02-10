@@ -43,16 +43,42 @@
         </div>
     </c:if>
 
-    <apollo:imagegallery
-        id="${id}"
-        path="${path}"
-        count="${pageSize}"
-        page="1"
-        template="${template}"
-        showtitle="${cms.element.setting.showTitle.value}"
-        showcopyright="${cms.element.setting.showCopyright.value}"
-        autoload="${cms.element.setting.autoload.value}"
-    />
+    <c:choose>
+    <c:when test="${value.ImageFolder.isSet}">
+        <apollo:imagegallery
+            id="${id}"
+            path="${path}"
+            count="${pageSize}"
+            page="1"
+            template="${template}"
+            showtitle="${cms.element.setting.showTitle.value}"
+            showcopyright="${cms.element.setting.showCopyright.value}"
+            autoload="${cms.element.setting.autoload.value}"
+        />
+    </c:when>
+    <c:when test="${cms.isEditMode}">
+        <fmt:setLocale value="${cms.workplaceLocale}" />
+        <cms:bundle basename="org.opencms.apollo.template.imagegallery.messages">
+        <div id="ap-edit-info" class="box-warn animated fadeIn">
+            <div class="head">
+                 <fmt:message key="apollo.imagegallery.message.nofolder" />
+            </div>
+            <div class="text">
+                 <fmt:message key="apollo.imagegallery.message.nofolder.hint" />
+            </div>
+        </div>
+        </cms:bundle>
+    </c:when>
+    <c:otherwise>
+        <fmt:setLocale value="${cms.locale}" />
+        <cms:bundle basename="org.opencms.apollo.template.imagegallery.messages">
+        <div>
+            <fmt:message key="apollo.imagegallery.message.nofolder" />
+        </div>
+        </cms:bundle>
+    </c:otherwise>
+    </c:choose>
+
 
 </div>
 

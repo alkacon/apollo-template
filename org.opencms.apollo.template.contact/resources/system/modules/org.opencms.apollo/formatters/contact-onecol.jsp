@@ -34,6 +34,7 @@
         <c:if test="${cms.element.setting.effect.value != 'no-img'}">image</c:if>
         <c:if test="${cms.element.setting.effect.value != 'none'}">${cms.element.setting.effect.value}</c:if>
         <c:if test="${cms.element.setting.link.value != 'false'}">${cms.element.setting.link.value}</c:if>
+        <c:if test="${cms.element.setting.showPosition.value}">position</c:if>
         <c:if test="${cms.element.setting.showOrganization.value}">organization</c:if>
         <c:if test="${cms.element.setting.showDescription.value}">description</c:if>
         <c:if test="${cms.element.setting.showAddress.value == 'true'}">address</c:if>

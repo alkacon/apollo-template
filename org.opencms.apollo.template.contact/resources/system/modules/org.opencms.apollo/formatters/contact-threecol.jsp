@@ -38,6 +38,7 @@
     <c:set var="fragments2">
         name
         ${cms.element.setting.labels.value}
+        <c:if test="${cms.element.setting.showPosition.value}">position</c:if>
         <c:if test="${cms.element.setting.showOrganization.value}">organization</c:if>
         <c:if test="${cms.element.setting.showAddress.value == 'true'}">address</c:if>
         <c:if test="${cms.element.setting.showAddress.value == 'always'}">address-always</c:if>
@@ -67,7 +68,7 @@
                 data="${value.Contact}"
                 name="${value.Name}"
                 position="${value.Position}"
-                organization="${value.Organisation}"
+                organization="${value.Organization}"
                 fragments="${fragments2}" />
         </div>
 
