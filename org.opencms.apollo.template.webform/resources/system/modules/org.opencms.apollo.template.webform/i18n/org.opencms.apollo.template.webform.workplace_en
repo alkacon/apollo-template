@@ -1,6 +1,6 @@
 apollo.webform.err.xmlcontent.field.empty=This field must not be empty.
 apollo.webform.warn.xmlcontent.field.empty=This field should not be empty. 
-desc.a-webform=Configurable forms that will send their submitted data to an email recipient.
+desc.a-webform=A configurable form that will send its submitted data to an email recipient.
 fileicon.a-webform=Form
 form.button.checked=All OK
 form.button.correct=Correct entries

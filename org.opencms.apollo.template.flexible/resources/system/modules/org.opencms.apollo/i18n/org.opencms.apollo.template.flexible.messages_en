@@ -1,4 +1,4 @@
-desc.a-flexible=Allows to place any type of markup (HTML, JavaScript) in a page.
+desc.a-flexible=Any type of markup (HTML, JavaScript) that can be placed on a page.
 fileicon.a-flexible=Flexible content
 formatter.a-flexible.default=Default flexible content
 label.ApolloFlexibleElement.Code=Code

@@ -1,6 +1,6 @@
 apollo.webform.err.xmlcontent.field.empty=Dieses Feld darf nicht leer sein.
 apollo.webform.warn.xmlcontent.field.empty=Dieses Feld sollte nicht leer sein.
-desc.a-webform=Konfigurierbare Formulare, deren Daten in einer E-Mail versendet werden.
+desc.a-webform=Ein konfigurierbares Formular, dessen Daten in einer E-Mail versendet werden.
 fileicon.a-webform=Formular
 form.button.checked=Endgültig schicken
 form.button.correct=Daten korrigieren

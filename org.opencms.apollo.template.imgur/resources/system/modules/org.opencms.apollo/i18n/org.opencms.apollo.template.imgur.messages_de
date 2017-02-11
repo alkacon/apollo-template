@@ -1,6 +1,6 @@
 apollo.imgursection.message.link=Auf Imgur anzeigen
 apollo.setting.imgursection.usetitle=Benutze Imgur Titel
-desc.a-imgursection=Zeigt ein Bild an, welches über den Imgur Online-Dienst geladen wird.
+desc.a-imgursection=Ein Bild, welches über den Imgur Online-Dienst geladen wird.
 fileicon.a-imgursection=Asset Connection > Imgur
 formatter.a-imgursection.default=Standard Asset Connection > Imgur
 label.ApolloImgur.GalleryTitle=Galerie-Titel
