@@ -145,6 +145,36 @@
             }
         }
     }
+
+    li.top > ul > li {
+        > ul {
+            // add padding for 3nd level
+            li a {
+                padding-left: 20px;
+            }
+
+            > li > ul {
+                // add padding for 4rd level
+                li a {
+                    padding-left: 30px;
+                }
+
+                > li > ul {
+                    // add padding for 5th level
+                    li a {
+                        padding-left: 40px;
+                    }
+
+                    > li > ul {
+                        // add padding for 6th level
+                        li a {
+                            padding-left: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Colored sitemap options */
