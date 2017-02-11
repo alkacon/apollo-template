@@ -1,4 +1,3 @@
-apollo.list.default.Headline=New list
 apollo.list.message.archive=Archive
 apollo.list.message.empty=No entries found for this list.
 apollo.list.message.facets=Facets for the "{0}" list
@@ -36,7 +35,7 @@ apollo.setting.list.appendSwitch.md=Append on screen size XS, SM and MD
 apollo.setting.list.appendSwitch.never=Always pagination
 apollo.setting.list.appendSwitch.sm=Append on screen size XS or SM
 apollo.setting.list.appendSwitch.xs=Append on screen size XS only
-desc.a-list=Displays a configurable list of contents, e.g. blog entries, events etc.
+desc.a-list=Collects a list of contents, e.g. blog entries or events, depending on selected search criteria.
 facet.category.label=Filter by category
 facet.category.none=All categories
 fileicon.a-list=List of contents
@@ -50,8 +49,8 @@ label.ApolloList.FilterQueries=Filter options
 label.ApolloList.FilterQueries.help=Additional Solr filter queries <i>(use syntax like\: &amp;fq\=fieldName\:"term")</i>.
 label.ApolloList.Folder=Folder
 label.ApolloList.Folder.help=Optional selection of the folder that contains the list entries.
-label.ApolloList.GalleryTitle=Gallery Title
-label.ApolloList.GalleryTitle.help=The gallery title of the list. It is not shown on the page.
+label.ApolloList.GalleryTitle=Gallery title
+label.ApolloList.GalleryTitle.help=Used to identify the content in the OpenCms internal gallery. Not shown in the output page.
 label.ApolloList.Headline=Headline
 label.ApolloList.Headline.help=The headline of the list, can be hidden by using an element setting.
 label.ApolloList.ItemsPerPage=Items per page

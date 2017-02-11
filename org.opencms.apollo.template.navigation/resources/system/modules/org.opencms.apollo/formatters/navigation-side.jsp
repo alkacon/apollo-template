@@ -42,42 +42,42 @@
 
     --%><c:choose>
 
-                <c:when test="${startSubNav}">
+            <c:when test="${startSubNav}">
 
-                    <%-- Output the start of a new sub-navigation level --%>
-                    <c:set var="collapseId"><apollo:idgen prefix="nav" uuid="${cms.element.instanceId}" />_${i}</c:set>
-                    <a href="#${collapseId}" <%--
-                    --%>class="nav-toggle${isCurrentPage ? '' : ' collapsed'}" <%--
-                    --%>data-toggle="collapse" <%--
-                    --%>aria-expanded="${isCurrentPage}"><%--
-                --%><c:out value='${navElem.navText}' escapeXml="false" /></a><%--
+                <%-- Output the start of a new sub-navigation level --%>
+                <c:set var="collapseId"><apollo:idgen prefix="nav" uuid="${cms.element.instanceId}" />_${i}</c:set>
+                <a href="#${collapseId}" <%--
+                --%>class="nav-toggle${isCurrentPage ? '' : ' collapsed'}" <%--
+                --%>data-toggle="collapse" <%--
+                --%>aria-expanded="${isCurrentPage}"><%--
+            --%><c:out value='${navElem.navText}' escapeXml="false" /></a><%--
 
-                --%><c:set var="collapseIn" value="${isCurrentPage ? ' in' : ''}" />
-                    <c:out value='<ul class="collapse${collapseIn}" id="${collapseId}">' escapeXml="false" />
+            --%><c:set var="collapseIn" value="${isCurrentPage ? ' in' : ''}" />
+                <c:out value='<ul class="collapse${collapseIn}" id="${collapseId}">' escapeXml="false" />
 
-                    <c:if test="${not navElem.navigationLevel}">
-                        <%-- Sub navigation started by a page (i.e. not a nav level), so we must add another navigation item here --%>
-                        <c:set var="isCurrentSubPage" value="${isCurrentPage and (cms.requestContext.folderUri eq navElem.resourceName)}" />
-                        <li class="list-group-item${isCurrentSubPage ? ' currentpage'  : ''}"><%--
-                        --%><a href="${navLink}">${navElem.navText}</a><%--
-                    --%></li><%--
-                --%></c:if>
+                <c:if test="${not navElem.navigationLevel}">
+                    <%-- Sub navigation started by a page (i.e. not a nav level), so we must add another navigation item here --%>
+                    <c:set var="isCurrentSubPage" value="${isCurrentPage and (cms.requestContext.folderUri eq navElem.resourceName)}" />
+                    <li class="list-group-item${isCurrentSubPage ? ' currentpage'  : ''}"><%--
+                    --%><a href="${navLink}">${navElem.navText}</a><%--
+                --%></li><%--
+            --%></c:if>
 
-                </c:when>
-                <c:otherwise>
+            </c:when>
+            <c:otherwise>
 
-                    <%-- Output a regular navigation item --%>
-                    <c:out value='<a href="${navLink}">${navElem.navText}</a>' escapeXml="false" />
+                <%-- Output a regular navigation item --%>
+                <c:out value='<a href="${navLink}">${navElem.navText}</a>' escapeXml="false" />
 
-                </c:otherwise>
+            </c:otherwise>
 
-            </c:choose>
+        </c:choose>
 
-            <c:if test="${nextLevel < navElem.navTreeLevel}">
-                <c:forEach begin="1" end="${navElem.navTreeLevel - nextLevel}" >
-                    <c:out value='</ul>' escapeXml="false" />
-                </c:forEach>
-            </c:if>
+        <c:if test="${nextLevel < navElem.navTreeLevel}">
+            <c:forEach begin="1" end="${navElem.navTreeLevel - nextLevel}" >
+                <c:out value='</ul>' escapeXml="false" />
+            </c:forEach>
+        </c:if>
 
         <c:out value='</li>${nl}' escapeXml="false" />
 

@@ -27,6 +27,8 @@
 					listButtonText:%(key.apollo.parameter.listButtonText)|
 					showDate:%(key.apollo.parameter.showdate)|
 					showExpired:%(key.apollo.parameter.showexpired)|
+					displayOption:%(key.apollo.setting.displayoptions)|
+					ieffect:%(key.apollo.setting.image.effect.label)|
 					catfilters:%(key.apollo.parameter.catfilters)|
 					catlabelfullpath:%(key.apollo.parameter.catlabelfullpath)|
 					catshowonlyleafs:%(key.apollo.parameter.catshowonlyleafs)|

@@ -1,61 +1,61 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
-    <xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
-    <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/navchoiceinline.xsd"/>
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/navchoiceinline.xsd"/>
 
-    <xsd:element name="ApolloNavigations" type="OpenCmsApolloNavigations"/>
+	<xsd:element name="ApolloNavigations" type="OpenCmsApolloNavigations"/>
 
-    <xsd:complexType name="OpenCmsApolloNavigations">
-        <xsd:sequence>
-            <xsd:element name="ApolloNavigation" type="OpenCmsApolloNavigation" minOccurs="0" maxOccurs="unbounded"/>
-        </xsd:sequence>
-    </xsd:complexType>
+	<xsd:complexType name="OpenCmsApolloNavigations">
+		<xsd:sequence>
+			<xsd:element name="ApolloNavigation" type="OpenCmsApolloNavigation" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
 
-    <xsd:complexType name="OpenCmsApolloNavigation">
-        <xsd:sequence>
-            <xsd:element name="Title" type="OpenCmsString" />
-            <xsd:element name="NavStartLevel" type="OpenCmsString" />
-            <xsd:element name="NavDepth" type="OpenCmsString" minOccurs="0" />
-            <xsd:element name="NavFolder" type="OpenCmsVfsFile" minOccurs="0" />
-            <xsd:element name="Container" type="OpenCmsBoolean" />
-            <xsd:element name="PullNavUp" type="OpenCmsBoolean" />
-            <xsd:element name="Inline" type="OpenCmsApolloNavChoiceInline" minOccurs="0" />
-        </xsd:sequence>
-        <xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
-    </xsd:complexType>
+	<xsd:complexType name="OpenCmsApolloNavigation">
+		<xsd:sequence>
+			<xsd:element name="Title" type="OpenCmsString" />
+			<xsd:element name="NavStartLevel" type="OpenCmsString" />
+			<xsd:element name="NavDepth" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="NavFolder" type="OpenCmsVfsFile" minOccurs="0" />
+			<xsd:element name="Container" type="OpenCmsBoolean" />
+			<xsd:element name="PullNavUp" type="OpenCmsBoolean" />
+			<xsd:element name="Inline" type="OpenCmsApolloNavChoiceInline" minOccurs="0" />
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
+	</xsd:complexType>
 
-    <xsd:annotation>
-        <xsd:appinfo>
-            <resourcebundle name="org.opencms.apollo.template.navigation.messages" />
-            <mappings>
-                <mapping element="Title" mapto="property:Title" />
-                <mapping element="Title" mapto="urlName" />
-            </mappings>
-            <defaults>
-                <default element="NavDepth" value="3" />
-                <default element="Container" value="true" />
-                <default element="PullNavUp" value="true" />
-            </defaults>
-            <layouts>
-                <layout element="NavStartLevel" widget="SelectorWidget" configuration="0:%(key.apollo.navigation.navstartlevel.0)|1*:%(key.apollo.navigation.navstartlevel.1)|2:%(key.apollo.navigation.navstartlevel.2)|3:%(key.apollo.navigation.navstartlevel.3)|4:%(key.apollo.navigation.navstartlevel.4)|5:%(key.apollo.navigation.navstartlevel.5)" />
-                <layout element="NavDepth" widget="SelectorWidget" configuration="1|2|3*|4|5" />
-            </layouts>
-            <tabs>              
-                <tab element="Title" name="Tab.Basic" collapse="false" />
-                <tab element="Container" name="Tab.Header" collapse="true">
-                    <description><![CDATA[%(key.label.ApolloNavigation.Tab.Header.description)]]></description>
-                </tab>
-            </tabs>
-            <searchsettings containerPageOnly="true">
-                <searchsetting element="Title" searchcontent="false"/>
-                <searchsetting element="NavStartLevel" searchcontent="false"/>
-                <searchsetting element="NavDepth" searchcontent="false"/>
-                <searchsetting element="NavFolder" searchcontent="false"/>
-                <searchsetting element="Container" searchcontent="false"/>
-                <searchsetting element="PullNavUp" searchcontent="false"/>
-                <searchsetting element="Container" searchcontent="false"/>
-            </searchsettings>
-        </xsd:appinfo>
-    </xsd:annotation>
+	<xsd:annotation>
+		<xsd:appinfo>
+			<resourcebundle name="org.opencms.apollo.template.navigation.messages" />
+			<mappings>
+				<mapping element="Title" mapto="property:Title" />
+				<mapping element="Title" mapto="urlName" />
+			</mappings>
+			<defaults>
+				<default element="NavDepth" value="3" />
+				<default element="Container" value="true" />
+				<default element="PullNavUp" value="true" />
+			</defaults>
+			<layouts>
+				<layout element="NavStartLevel" widget="SelectorWidget" configuration="0:%(key.apollo.navigation.navstartlevel.0)|1*:%(key.apollo.navigation.navstartlevel.1)|2:%(key.apollo.navigation.navstartlevel.2)|3:%(key.apollo.navigation.navstartlevel.3)|4:%(key.apollo.navigation.navstartlevel.4)|5:%(key.apollo.navigation.navstartlevel.5)" />
+				<layout element="NavDepth" widget="SelectorWidget" configuration="1|2|3*|4|5" />
+			</layouts>
+			<tabs>
+				<tab element="Title" name="Tab.Basic" collapse="false" />
+				<tab element="Container" name="Tab.Header" collapse="true">
+					<description><![CDATA[%(key.label.ApolloNavigation.Tab.Header.description)]]></description>
+				</tab>
+			</tabs>
+			<searchsettings containerPageOnly="true">
+				<searchsetting element="Title" searchcontent="false"/>
+				<searchsetting element="NavStartLevel" searchcontent="false"/>
+				<searchsetting element="NavDepth" searchcontent="false"/>
+				<searchsetting element="NavFolder" searchcontent="false"/>
+				<searchsetting element="Container" searchcontent="false"/>
+				<searchsetting element="PullNavUp" searchcontent="false"/>
+				<searchsetting element="Container" searchcontent="false"/>
+			</searchsettings>
+		</xsd:appinfo>
+	</xsd:annotation>
 
 </xsd:schema>

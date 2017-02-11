@@ -24,6 +24,12 @@
     <Display>false</Display>
     <NestedContainers>false</NestedContainers>
     <Setting>
+      <PropertyName><![CDATA[hideTitle]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.hideTitle)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[wrapperclass]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
       <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
@@ -37,12 +43,6 @@
       <Widget><![CDATA[select]]></Widget>
       <Default><![CDATA[4]]></Default>
       <WidgetConfig><![CDATA[12:1|6:2|4:3|3:4]]></WidgetConfig>
-    </Setting>
-    <Setting>
-      <PropertyName><![CDATA[hideTitle]]></PropertyName>
-      <DisplayName><![CDATA[%(key.apollo.setting.hideTitle)]]></DisplayName>
-      <Widget><![CDATA[checkbox]]></Widget>
-      <Default><![CDATA[false]]></Default>
     </Setting>
     <Setting>
       <PropertyName><![CDATA[hideText]]></PropertyName>

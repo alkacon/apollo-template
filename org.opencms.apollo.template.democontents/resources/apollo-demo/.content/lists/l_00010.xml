@@ -21,7 +21,7 @@
     </Parameters>
     <Parameters>
       <Key><![CDATA[ieffect]]></Key>
-      <Value><![CDATA[ap-raise-animation]]></Value>
+      <Value><![CDATA[none]]></Value>
     </Parameters>
     <Parameters>
       <Key><![CDATA[showDate]]></Key>
