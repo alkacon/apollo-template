@@ -44,7 +44,7 @@
                         <apollo:container-box
                             label="${msg}"
                             boxType="container-box"
-                            role="role.EDITOR"
+                            role="role.ELEMENT_AUTHOR"
                             type="row" />
                     </cms:container>
                 </div>
