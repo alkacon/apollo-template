@@ -1,44 +1,44 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
-    <xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
-    <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/link.xsd" />
+	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/link.xsd" />
 
-    <xsd:element name="ApolloNavChoiceInlines" type="OpenCmsApolloNavChoiceInlines"/>
+	<xsd:element name="ApolloNavChoiceInlines" type="OpenCmsApolloNavChoiceInlines"/>
 
-    <xsd:complexType name="OpenCmsApolloNavChoiceInlines">
-        <xsd:sequence>
-            <xsd:element name="ApolloNavChoiceInline" type="OpenCmsApolloNavChoiceInline" minOccurs="0" maxOccurs="unbounded"/>
-        </xsd:sequence>
-    </xsd:complexType>
+	<xsd:complexType name="OpenCmsApolloNavChoiceInlines">
+		<xsd:sequence>
+			<xsd:element name="ApolloNavChoiceInline" type="OpenCmsApolloNavChoiceInline" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
 
-    <xsd:complexType name="OpenCmsApolloNavChoiceInline">
-        <xsd:sequence>
-            <xsd:element name="LogoImage" type="OpenCmsVfsFile" minOccurs="0" />
-            <xsd:element name="LogoFullWidth" type="OpenCmsBoolean" />
-            <xsd:element name="LogoWidth" type="OpenCmsString" />
-            <xsd:element name="LogoHeight" type="OpenCmsString" />
-            <xsd:element name="LogoLink" type="OpenCmsApolloLink" minOccurs="0" />
-        </xsd:sequence>
-        <xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
-    </xsd:complexType>
+	<xsd:complexType name="OpenCmsApolloNavChoiceInline">
+		<xsd:sequence>
+			<xsd:element name="LogoImage" type="OpenCmsVfsFile" minOccurs="0" />
+			<xsd:element name="LogoFullWidth" type="OpenCmsBoolean" />
+			<xsd:element name="LogoWidth" type="OpenCmsString" />
+			<xsd:element name="LogoHeight" type="OpenCmsString" />
+			<xsd:element name="LogoLink" type="OpenCmsApolloLink" minOccurs="0" />
+		</xsd:sequence>
+		<xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
+	</xsd:complexType>
 
-    <xsd:annotation>
-        <xsd:appinfo>
-            <layouts>
-                <layout element="LogoImage" widget="ImageGalleryWidget" configuration="{useformat:false}" />
-            </layouts>
-            <searchsettings containerPageOnly="true">
-                <searchsetting element="LogoImage" searchcontent="false"/>
-                <searchsetting element="LogoFullWidth" searchcontent="false"/>
-                <searchsetting element="LogoLink" searchcontent="false"/>
-                <searchsetting element="LogoWidth" searchcontent="false"/>
-                <searchsetting element="LogoHeight" searchcontent="false"/>
-            </searchsettings>
-			
-            <validationrules>
+	<xsd:annotation>
+		<xsd:appinfo>
+			<layouts>
+				<layout element="LogoImage" widget="ImageGalleryWidget" configuration="{useformat:false}" />
+			</layouts>
+			<searchsettings containerPageOnly="true">
+				<searchsetting element="LogoImage" searchcontent="false"/>
+				<searchsetting element="LogoFullWidth" searchcontent="false"/>
+				<searchsetting element="LogoLink" searchcontent="false"/>
+				<searchsetting element="LogoWidth" searchcontent="false"/>
+				<searchsetting element="LogoHeight" searchcontent="false"/>
+			</searchsettings>
+
+			<validationrules>
 				<rule element="LogoWidth" regex="[0-9]*" type="error" message="%(key.apollo.navigation.message.onlynumbers)"/>
 				<rule element="LogoHeight" regex="[0-9]*" type="error" message="%(key.apollo.navigation.message.onlynumbers)"/>
 			</validationrules>
-        </xsd:appinfo>
-    </xsd:annotation>
+		</xsd:appinfo>
+	</xsd:annotation>
 </xsd:schema>

@@ -1,9 +1,9 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-	
+
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
 
 	<xsd:element name="DataviewItems" type="OpenCmsDataviewItems"/>
-	
+
 	<xsd:complexType name="OpenCmsDataviewItems">
 		<xsd:sequence>
 			<xsd:element name="DataviewItem" type="OpenCmsDataviewItem" minOccurs="0" maxOccurs="unbounded"/>
@@ -23,5 +23,5 @@
 	<xsd:annotation>
 		<xsd:appinfo>
 		</xsd:appinfo>
-	</xsd:annotation>  
+	</xsd:annotation>
 </xsd:schema>

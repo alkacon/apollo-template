@@ -58,6 +58,7 @@
 				<searchsetting element="TypesToCollect" searchcontent="false" />
 				<searchsetting element="SortOrder" searchcontent="false" />
 				<searchsetting element="ItemsPerPage" searchcontent="false" />
+				<searchsetting element="GalleryTitle" searchcontent="false" />
 			</searchsettings>
 			<synchronizations>
 				<synchronization element="TypesToCollect" />

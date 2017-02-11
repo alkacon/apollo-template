@@ -1,10 +1,10 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-	
+
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
 	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/slidercomplex-caption.xsd"/>
 
 	<xsd:element name="ApolloSliderItems" type="OpenCmsApolloSliderItems"/>
-	
+
 	<xsd:complexType name="OpenCmsApolloSliderItems">
 		<xsd:sequence>
 			<xsd:element name="ApolloSliderItem" type="OpenCmsApolloSliderItem" minOccurs="0" maxOccurs="unbounded"/>
@@ -33,5 +33,5 @@
 				<layout element="Image" widget="ImageGalleryWidget" configuration="{useformat: true}" />
 			</layouts>
 		</xsd:appinfo>
-	</xsd:annotation>  
+	</xsd:annotation>
 </xsd:schema>

@@ -39,6 +39,7 @@
 				<layout element="Delay" widget="SelectorWidget" configuration="1000:1 %(key.apollo.slider.delay.sec)|2000:2 %(key.apollo.slider.delay.secs)|3000:3 %(key.apollo.slider.delay.secs)|5000:5 %(key.apollo.slider.delay.secs)|8000:8 %(key.apollo.slider.delay.secs)|10000:10 %(key.apollo.slider.delay.secs)|15000:15 %(key.apollo.slider.delay.secs)" />
 			</layouts>
 			<defaults>
+				<default element="Title" value="%(key.title.a-slider)" />
 				<default element="Delay" value="5000" />
 				<default element="ShowTimer" value="true" />
 				<default element="ShowNumbers" value="true" />
@@ -61,8 +62,8 @@
 				<searchsetting element="GalleryTitle" searchcontent="false" />
 			</searchsettings>
 			<visibilities>
-                <visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
-            </visibilities>
+				<visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
+			</visibilities>
 		</xsd:appinfo>
 	</xsd:annotation>
 

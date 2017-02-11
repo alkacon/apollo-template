@@ -1,10 +1,10 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-	
+
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
 	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/slidercomplex-item.xsd"/>
-		
+
 	<xsd:element name="ApolloSliders" type="OpenCmsApolloSliders"/>
-	
+
 	<xsd:complexType name="OpenCmsApolloSliders">
 		<xsd:sequence>
 			<xsd:element name="ApolloSlider" type="OpenCmsApolloSlider" minOccurs="0" maxOccurs="unbounded"/>
@@ -17,7 +17,7 @@
 			<xsd:element name="Duration" type="OpenCmsString" />
 			<xsd:element name="Width" type="OpenCmsString" />
 			<xsd:element name="Height" type="OpenCmsString" />
-      		<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
+			  <xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
 			<xsd:element name="Item" type="OpenCmsApolloSliderItem" minOccurs="2" maxOccurs="50" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
@@ -31,13 +31,13 @@
 				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
 			</mappings>
 			<defaults>
-			 	<default element="Title" value="%(key.apollo.slider.default.Title)" />
+				<default element="Title" value="%(key.title.a-sliderextended)" />
 				<default element="Width" value="960" />
 				<default element="Height" value="500" />
 				<default element="Item/Caption/Class" value="caption randomrotate" />
 				<default element="Item/Caption/Start" value="900" />
 				<default element="Item/Caption/Speed" value="600" />
-        <default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Title)" resolveMacros="false" />
+		<default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Title)" resolveMacros="false" />
 			</defaults>
 			<tabs>
 				<tab element="Title" name="TabGeneral" collapse="false" />
@@ -65,9 +65,9 @@
 				<searchsetting element="Item/Caption/End" searchcontent="false"/>
 				<searchsetting element="Item/Caption/EndEasing" searchcontent="false"/>
 			</searchsettings>
-		  	<visibilities>
-                <visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
-            </visibilities>
+			<visibilities>
+				<visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
+			</visibilities>
 		</xsd:appinfo>
 	</xsd:annotation>
 

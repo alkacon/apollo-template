@@ -31,25 +31,26 @@
         </ul>
 
         <div class="tab-content">
+            <fmt:setLocale value="${cms.workplaceLocale}" />
+            <cms:bundle basename="org.opencms.apollo.template.tabs.messages">
             <c:forEach var="label" items="${content.valueList.Label}" varStatus="status">
 
-                <div
-                    id="${id}_${status.count}"
-                    class="tab-pane ap-tab-pane fade ${status.first? 'active in':''}" >
+                <div id="${id}_${status.count}" class="tab-pane ap-tab-pane fade ${status.first? 'active in':''}" >
                 <cms:container
                     name="tab-container${status.count}"
                     type="row"
-                    maxElements="10">
+                    maxElements="50">
                         <c:set var="msg"><fmt:message key="apollo.tabs.emptycontainer.text"/></c:set>
                         <apollo:container-box
                             label="${msg}"
                             boxType="container-box"
-                            role="author"
+                            role="role.EDITOR"
                             type="row" />
                     </cms:container>
                 </div>
 
             </c:forEach>
+            </cms:bundle>
         </div>
     </div>
 

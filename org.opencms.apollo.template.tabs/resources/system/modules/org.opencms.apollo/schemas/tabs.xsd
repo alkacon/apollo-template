@@ -1,9 +1,9 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-	
+
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
-		
+
 	<xsd:element name="ApolloTabs" type="OpenCmsApolloTabs"/>
-	
+
 	<xsd:complexType name="OpenCmsApolloTabs">
 		<xsd:sequence>
 			<xsd:element name="ApolloTab" type="OpenCmsApolloTab" minOccurs="0" maxOccurs="unbounded"/>
@@ -13,8 +13,8 @@
 	<xsd:complexType name="OpenCmsApolloTab">
 		<xsd:sequence>
 			<xsd:element name="Title" type="OpenCmsString" />
-			<xsd:element name="Label" type="OpenCmsString" minOccurs="2" maxOccurs="8" />
-      		<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Label" type="OpenCmsString" minOccurs="2" maxOccurs="unbounded" />
+			<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
 	</xsd:complexType>
@@ -27,15 +27,17 @@
 				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
 			</mappings>
 			<defaults>
-				<default element="Title" value="%(key.apollo.tabs.default.Title)" />
+				<default element="Title" value="%(key.title.a-tabs)" />
 				<default element="Label" value="%(key.apollo.tabs.default.Label)" />
-        <default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Title)" resolveMacros="false" />
+				<default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Title)" resolveMacros="false" />
 			</defaults>
-			<searchsettings containerPageOnly="true"/>
-		  	<visibilities>
-                <visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
-            </visibilities>
+			<searchsettings containerPageOnly="true">
+				<searchsetting element="GalleryTitle" searchcontent="false" />
+			</searchsettings>
+			<visibilities>
+				<visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />
+			</visibilities>
 		</xsd:appinfo>
-	</xsd:annotation> 
+	</xsd:annotation>
 
 </xsd:schema>

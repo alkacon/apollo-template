@@ -14,13 +14,13 @@
 	<xsd:complexType name="OpenCmsApolloMap">
 		<xsd:sequence>
 			<xsd:element name="Headline" type="OpenCmsString" />
-			<xsd:element name="Text" type="OpenCmsHtml" />
+			<xsd:element name="Text" type="OpenCmsHtml" minOccurs="0" />
 			<xsd:element name="MapSize" type="OpenCmsString" />
 			<xsd:element name="MapType" type="OpenCmsString" />
 			<xsd:element name="MapZoom" type="OpenCmsString" />
-			<xsd:element name="Route" type="OpenCmsBoolean" />
-			<xsd:element name="ShowMarkers" type="OpenCmsBoolean" />
 			<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="ShowMarkers" type="OpenCmsBoolean" />
+			<xsd:element name="Route" type="OpenCmsBoolean" />
 			<xsd:element name="MapCoord" type="OpenCmsApolloMapCoord" minOccurs="1" maxOccurs="30" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
@@ -30,6 +30,7 @@
 		<xsd:appinfo>
 			<resourcebundle name="org.opencms.apollo.template.map.messages"/>
 			<defaults>
+				<default element="Headline" value="%(key.title.a-map)" />
 				<default element="MapSize" value="100%x400" />
 				<default element="ShowMarkers" value="true" />
 				<default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Headline)" resolveMacros="false" />
@@ -47,7 +48,7 @@
 			</mappings>
 			<tabs>
 				<tab element="Headline" name="General" collapse="false" />
-				<tab element="MapCoord" name="Points" collapse="false" />
+				<tab element="ShowMarkers" name="Points" collapse="false" />
 			</tabs>
 			<searchsettings containerPageOnly="true">
 				<searchsetting element="MapSize" searchcontent="false"/>
@@ -55,6 +56,7 @@
 				<searchsetting element="MapZoom" searchcontent="false"/>
 				<searchsetting element="Route" searchcontent="false"/>
 				<searchsetting element="ShowMarkers" searchcontent="false"/>
+				<searchsetting element="GalleryTitle" searchcontent="false" />
 			</searchsettings>
 			<visibilities>
 				<visibility element="GalleryTitle" params="ROLE.GALLERY_EDITOR" />

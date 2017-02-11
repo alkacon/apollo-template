@@ -1,9 +1,9 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-	
+
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
 
 	<xsd:element name="ApolloMapCoords" type="OpenCmsApolloMapCoords"/>
-	
+
 	<xsd:complexType name="OpenCmsApolloMapCoords">
 		<xsd:sequence>
 			<xsd:element name="ApolloMapCoord" type="OpenCmsApolloMapCoord" minOccurs="0" maxOccurs="unbounded"/>
@@ -24,14 +24,13 @@
 		<xsd:appinfo>
 			<resourcebundle name="org.opencms.website.schemas.map"/>
 			<layouts>
-				<layout element="Address" widget="TextareaWidget" configuration="3" />
-				<layout element="MarkerGroup" widget="ComboWidget" configuration="1|2|3" />
+				<layout element="Address" widget="TextareaWidget" configuration="4" />
 				<layout element="Coord" widget="LocationPickerWidget" configuration="inline:['address'],edit:['coords','address','zoom','map']" />
 			</layouts>
-            <searchsettings>
-                <searchsetting element="MarkerGroup" searchcontent="false" />
-                <searchsetting element="Coord" searchcontent="false" />
-            </searchsettings>
+			<searchsettings>
+				<searchsetting element="MarkerGroup" searchcontent="false" />
+				<searchsetting element="Coord" searchcontent="false" />
+			</searchsettings>
 		</xsd:appinfo>
-	</xsd:annotation>  
+	</xsd:annotation>
 </xsd:schema>

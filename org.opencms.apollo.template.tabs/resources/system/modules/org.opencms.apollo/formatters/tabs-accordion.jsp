@@ -24,6 +24,9 @@
     <c:set var="id"><apollo:idgen prefix="acco" uuid="${cms.element.instanceId}" /></c:set>
 
     <div class="ap-panel panel-group" id="${id}">
+        <fmt:setLocale value="${cms.workplaceLocale}" />
+        <cms:bundle basename="org.opencms.apollo.template.tabs.messages">
+
         <c:forEach var="label" items="${content.valueList.Label}" varStatus="status">
             <div class="panel">
                 <div  class="panel-heading">
@@ -39,24 +42,25 @@
                         </a>
                     </h4>
                 </div>
-                <div class="panel-collapse collapse ${status.first? 'in':''}"
-                     id="${id}_${status.count}">
+                <div class="panel-collapse collapse ${status.first? 'in':''}" id="${id}_${status.count}">
 
                     <cms:container
                         name="tab-container${status.count}"
                         type="row"
                         tagClass="panel-body"
-                        maxElements="10">
+                        maxElements="50">
                             <c:set var="msg"><fmt:message key="apollo.tabs.emptycontainer.text"/></c:set>
                             <apollo:container-box
                                 label="${msg}"
                                 boxType="container-box"
-                                role="author"
+                                role="role.EDITOR"
                                 type="row" />
                     </cms:container>
+
                 </div>
             </div>
         </c:forEach>
+        </cms:bundle>
     </div>
 </div>
 

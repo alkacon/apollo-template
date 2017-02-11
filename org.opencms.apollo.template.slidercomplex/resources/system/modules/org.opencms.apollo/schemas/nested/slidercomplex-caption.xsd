@@ -1,9 +1,9 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-	
+
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
 
 	<xsd:element name="ApolloSliderCaptions" type="OpenCmsApolloSliderCaptions"/>
-	
+
 	<xsd:complexType name="OpenCmsApolloSliderCaptions">
 		<xsd:sequence>
 			<xsd:element name="ApolloSliderCaption" type="OpenCmsApolloSliderCaption" minOccurs="0" maxOccurs="unbounded"/>
@@ -40,5 +40,5 @@
 				<layout element="EndEasing" widget="SelectorWidget" configuration="easeOutBack|easeInQuad|easeOutQuad|easeInOutQuad|easeInCubic|easeOutCubic|easeInOutCubic|easeInQuart|easeOutQuart|easeInOutQuart|easeInQuint|easeOutQuint|easeInOutQuint|easeInSine|easeOutSine|easeInOutSine|easeInExpo|easeOutExpo*|easeInOutExpo|easeInCirc|easeOutCirc|easeInOutCirc|easeInElastic|easeOutElastic|easeInOutElastic|easeInBack|easeOutBack|easeInOutBack|easeInBounce|easeOutBounce|easeInOutBounce" />
 			</layouts>
 		</xsd:appinfo>
-	</xsd:annotation>  
+	</xsd:annotation>
 </xsd:schema>

@@ -1,14 +1,13 @@
-apollo.carousel.message.new=Neues Karussell, bitte bearbeiten Sie den Inhalt.
 apollo.slider.delay.sec=Sekunde
 apollo.slider.delay.secs=Sekunden
-apollo.slider.message.edited=Der Slider wurde bearbeitet, die Seite wird neu geladen.
-apollo.slider.message.new=Neuer Slider, bitte bearbeiten Sie den Inhalt.
-desc.a-slider=Ein simpler Bild-Slider mit Texteinblendungen und einfachen Effekten.
+desc.a-slider=Ein Bild-Rotator mit Texteinblendungen und einfachen Effekten.
 fileicon.a-slider=Einfacher Slider
 formatter.a-slider.carousel=Karussell-Slider
 formatter.a-slider.default=Standard Slider
 label.ApolloSlider.Delay=Verzögerung
 label.ApolloSlider.Delay.help=Die Zeit bis zum nächsten Bildwechsel.
+label.ApolloSlider.GalleryTitle=Galerie-Titel
+label.ApolloSlider.GalleryTitle.help=Dient zur Identifikation des Inhalts in den internen OpenCms-Galerien. Wird nicht auf der Seite angezeigt.
 label.ApolloSlider.Image=Bild
 label.ApolloSlider.Image.help=Das hier ausgewählte Bild wird für den Rotator verwendet.
 label.ApolloSlider.ImageHeight=Bildhöhe

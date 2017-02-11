@@ -1,7 +1,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
 	<xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
-    <xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/mailconfigchoice.xsd"/>
+	<xsd:include schemaLocation="opencms://system/modules/org.opencms.apollo/schemas/nested/mailconfigchoice.xsd"/>
 
 	<xsd:element name="ApolloShariffs" type="OpenCmsApolloShariffs"/>
 
@@ -15,7 +15,7 @@
 		<xsd:sequence>
 			<xsd:element name="Title" type="OpenCmsString" />
 			<xsd:element name="Services" type="OpenCmsString" />
-            <xsd:element name="MailConfig" type="OpenCmsApolloShariffMailConfigChoice" minOccurs="0" />
+			<xsd:element name="MailConfig" type="OpenCmsApolloShariffMailConfigChoice" minOccurs="0" />
 			<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
 		</xsd:sequence>
 		<xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
@@ -29,14 +29,23 @@
 				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
 			</mappings>
 			<defaults>
-				<default element="Title" value="%(key.apollo.shariff.default.Title)" />
+				<default element="Title" value="%(key.title.a-shariff)" />
 				<default element="Services" value="twitter,facebook,googleplus" />
 				<default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Title)" resolveMacros="false" />
 			</defaults>
 			<layouts>
-				<layout element="Services" widget="MultiSelectWidget" configuration="twitter:Twitter|facebook:Facebook|googleplus:Google Plus|linkedin:LinkedIn|xing:Xing|whatsapp:Whatsapp|mail:%(key.apollo.shariff.service.mail)" />
+				<layout element="Services" widget="MultiSelectWidget" configuration="
+					twitter:Twitter|
+					facebook:Facebook|
+					googleplus:Google Plus|
+					linkedin:LinkedIn|
+					xing:Xing|
+					whatsapp:Whatsapp|
+					mail:%(key.apollo.shariff.service.mail)" />
 			</layouts>
-			<searchsettings containerPageOnly="true"/>
+			<searchsettings containerPageOnly="true">
+				<searchsetting element="GalleryTitle" searchcontent="false" />
+			</searchsettings>
 		</xsd:appinfo>
 	</xsd:annotation>
 

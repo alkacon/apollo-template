@@ -36,7 +36,7 @@
 				<mapping element="GalleryTitle" mapto="urlName" useDefault="true" />
 			</mappings>
 			<defaults>
-                <default element="Title" value="%(key.title.a-job)" />
+				<default element="Title" value="%(key.title.a-job)" />
 				<default element="Date" value="%(currenttime)" />
 				<default element="EndDate" value="%(currenttime + 604800000)" />
 				<default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Title)" resolveMacros="false" />
