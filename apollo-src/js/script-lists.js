@@ -25,42 +25,89 @@ var ApolloList = function(jQ) {
     // all initialized lists by unique instance id
     this.m_lists = {};
 
-    // groups of initialized lists by element id (potentially more then once on a page)
+    // all initialized list archive filters by unique instance id
+    this.m_archiveFilters = {};
+
+    // groups of lists by element id (potentially more then one on a page)
     this.m_listGroups = {};
+
+    // groups of archive filters lists by list element id (potentially more then one on a page)
+    this.m_archiveFilterGroups = {};
 
     // all auto loading lists as array for easy iteration
     this.m_autoLoadLists = [];
 
-    // list locks to prevent triggering actions while load still in process
-    var m_list_locked = {};
 
-    function updateList(searchStateParameters, id, resetArchive, keepEntries) {
-        resetArchive = resetArchive || false;
-        keepEntries = keepEntries || false;
+    function facetFilter(id, triggerId, searchStateParameters) {
 
-        if (DEBUG) console.info("updateList() called id=" + id);
-
-        if (arguments.length == 3 && resetArchive) {
-            archiveRemoveHighlight();
-        }
-        updateInnerList(id, searchStateParameters, !keepEntries);
+        listFilter(id, triggerId, null, searchStateParameters);
     }
 
 
-    function filterList(searchStateParameters, elementId, resetArchive) {
+    function archiveFilter(id, triggerId, searchStateParameters) {
 
-        if (DEBUG) console.info("filterList() called elementId=" + elementId);
+        var filter = m_archiveFilters[id];
+        listFilter(filter.elementId, triggerId, id, searchStateParameters);
+    }
 
-        if (arguments.length == 3 && resetArchive) {
-            archiveRemoveHighlight();
+
+    function archiveSearch(id, searchStateParameters) {
+
+        var filter = m_archiveFilters[id];
+        listFilter(filter.elementId, null, filter.id, searchStateParameters + filter.$textsearch.val());
+    }
+
+
+    function listFilter(id, triggerId, filterId, searchStateParameters) {
+
+        if (DEBUG) console.info("listFilter() called elementId=" + id);
+
+        if (triggerId != "SORT") {
+            // reset filters of not sorting
+            var filterGroup = m_archiveFilterGroups[id];
+            // potentially the same filter may be on the same page
+            // here we make sure to reset them all
+            for (i=0; i<filterGroup.length; i++) {
+                var fi = filterGroup[i];
+                // remove all active / highlighted filters
+                fi.$element.find("li.active").removeClass("active");
+                if (triggerId != null) {
+                    // activate / highlight clicked filter
+                    fi.$element.find("#" + triggerId).addClass("active");
+                    fi.$textsearch.val('');
+                } else if (fi.id != filterId) {
+                    // clear text search input in other filter instances
+                    fi.$textsearch.val('');
+                }
+            }
         }
-        var listGroup = m_listGroups[elementId];
+
+        var listGroup = m_listGroups[id];
         for (i=0; i<listGroup.length; i++) {
             updateInnerList(listGroup[i].id, searchStateParameters, true);
         }
     }
 
-    // used for both pagination and scroll-reload lists
+
+    function archiveToggle(id, toggleId) {
+
+        var filter = m_archiveFilters[id];
+        if (DEBUG) console.info("toggleArchiveFilter() called archiveFilterId=" + filter.id + " elementId=" + filter.elementId + " toggleId=" + toggleId);
+
+        $toggleButton = filter.$element.find("#" + toggleId + "_toggle");
+        $toggleElement = filter.$element.find("#" + toggleId);
+
+        $toggleButton.toggleClass("open");
+        $toggleElement.slideToggle();
+    }
+
+
+    function updateList(id, searchStateParameters, reloadEntries) {
+
+        updateInnerList(id, searchStateParameters, reloadEntries == "true");
+    }
+
+
     function updateInnerList(id, searchStateParameters, reloadEntries) {
         searchStateParameters = searchStateParameters || "";
         reloadEntries = reloadEntries || false;
@@ -95,7 +142,7 @@ var ApolloList = function(jQ) {
             list.$spinner.hide().removeClass("fadeOut").addClass("fadeIn").css("top", spinnerPos).show();
 
             var facetOptions = jQ('#facets_' + list.elementId);
-            $.get(buildAjaxLink(list, ajaxOptions, searchStateParameters), function(resultList) {
+            jQ.get(buildAjaxLink(list, ajaxOptions, searchStateParameters), function(resultList) {
 
                 var $result = jQ(resultList);
                 // collect information about the search result
@@ -193,19 +240,6 @@ var ApolloList = function(jQ) {
     }
 
 
-    function archiveHighlight(elem) {
-
-        archiveRemoveHighlight();
-        elem.parent().addClass("active");
-    }
-
-
-    function archiveRemoveHighlight() {
-
-        jQ(".ap-list-filters li.active").removeClass("active");
-    }
-
-
     function handleAutoLoaders() {
         if (m_autoLoadLists != null) {
             for (i=0; i<m_autoLoadLists.length; i++) {
@@ -231,7 +265,6 @@ var ApolloList = function(jQ) {
         if (DEBUG) console.info("ApolloList.init()");
 
         var $listElements = jQ('.ap-list-entries');
-
         if (DEBUG) console.info(".ap-list-entries elements found: " + $listElements.length);
 
         if ($listElements.length > 0 ) {
@@ -245,13 +278,13 @@ var ApolloList = function(jQ) {
                     var list = $list.data("list");
                     // add more data to list
                     list.$element = $list;
-                    list.locked = false;
                     list.id = $list.attr("id");
                     list.elementId = $list.data("id");
                     list.$editbox = $list.find(".editbox");
                     list.$entrybox = $list.find(".ap-list-box");
                     list.$spinner = $list.find(".spinner");
                     list.$pagination = $list.find(".ap-list-pagination");
+                    list.locked = false;
                     list.autoload = false;
                     list.notclicked = true;
                     if (list.appendSwitch.includes(Apollo.gridInfo().grid)) {
@@ -286,15 +319,46 @@ var ApolloList = function(jQ) {
                 jQ(window).on('scroll', handleAutoLoaders);
             }
         }
+
+        var $listArchiveFilters = jQ('.ap-list-archive');
+        if (DEBUG) console.info(".ap-list-archive elements found: " + $listArchiveFilters.length);
+
+        if ($listArchiveFilters.length > 0 ) {
+            $listArchiveFilters.each(function() {
+
+                // initialize filter archives
+                var $archiveFilter = jQ(this);
+
+                var filter = $archiveFilter.data("filter");
+                filter.$element = $archiveFilter;
+                filter.id = $archiveFilter.attr("id");
+                filter.elementId = $archiveFilter.data("id");
+                filter.$form = $archiveFilter.find("#queryform");
+                filter.$textsearch = $archiveFilter.find("#textsearch");
+
+                // store filter data in global array
+                m_archiveFilters[filter.id] = filter;
+
+                // store filter in global group array
+                var group = m_archiveFilterGroups[filter.elementId];
+                if (typeof group != 'undefined') {
+                    group.push(filter);
+                } else {
+                    m_archiveFilterGroups[filter.elementId] = [filter];
+                }
+                if (DEBUG) console.info("Archive filter data found: id=" + filter.id + ", elementId=" + filter.elementId);
+            });
+        }
     }
 
     // public available functions
     return {
         init: init,
-        archiveHighlight: archiveHighlight,
-        archiveRemoveHighlight: archiveRemoveHighlight,
         update: updateList,
-        filter: filterList
+        facetFilter: facetFilter,
+        archiveToggle: archiveToggle,
+        archiveFilter: archiveFilter,
+        archiveSearch: archiveSearch
     }
 
 }(jQuery);

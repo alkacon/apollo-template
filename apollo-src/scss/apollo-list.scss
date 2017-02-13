@@ -40,9 +40,9 @@ $pagination-border:     $grey-light !default;
 }
 
 
-/* List filter menu */
+/* List archive filter menu */
 
-.ap-list-filters {
+.ap-list-archive {
 
     .filterbox {
         margin-bottom: 15px;
@@ -66,7 +66,7 @@ $pagination-border:     $grey-light !default;
             }
         }
 
-        &.labels {
+        &.categories {
 
             ul {
                 margin: 0;
@@ -79,6 +79,10 @@ $pagination-border:     $grey-light !default;
 
                     &.active .badge {
                         font-weight: bold;
+                    }
+
+                    > a {
+                        cursor: pointer;
                     }
                 }
             }
@@ -206,7 +210,7 @@ $pagination-border:     $grey-light !default;
 /* List button styling */
 
 .ap-disqus, // also used for disqus function
-.ap-list-filters,
+.ap-list-archive,
 .ap-list-options {
     button {
         border: none;

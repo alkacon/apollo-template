@@ -56,7 +56,7 @@ jQuery.fn.visible = function( partial ) {
 jQuery.fn.getFullPath = function(){
 
     return $(this).parentsUntil('body')
-        .andSelf()
+        .addBack()
         .map(function() {
             var index = $(this).index();
             return this.nodeName + '[' + index + ']';
