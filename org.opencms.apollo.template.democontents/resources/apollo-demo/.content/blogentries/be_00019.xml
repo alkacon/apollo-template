@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloBlogs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/blog.xsd">
-  <ApolloBlog language="en">
-    <Title><![CDATA[OpenCms makes editing effortless]]></Title>
+  <ApolloBlog language="de">
+    <Title><![CDATA[OpenCms ermöglicht einfaches arbeiten]]></Title>
     <Date>1472840340000</Date>
     <Teaser><![CDATA[
 Mel ut corpora phaedrum, quot viris facilisi te his, option interesset qui ne. Ex eum possit feugait definiebas, vix ei etiam nonumes, posse inani comprehensam eu usu.]]></Teaser>
@@ -27,8 +27,8 @@ Mel ut corpora phaedrum, quot viris facilisi te his, option interesset qui ne. E
     </Category>
     <Author><![CDATA[Arno Admin]]></Author>
   </ApolloBlog>
-  <ApolloBlog language="de">
-    <Title><![CDATA[OpenCms ermöglicht einfaches arbeiten]]></Title>
+  <ApolloBlog language="en">
+    <Title><![CDATA[OpenCms makes editing effortless]]></Title>
     <Date>1472840340000</Date>
     <Teaser><![CDATA[
 Mel ut corpora phaedrum, quot viris facilisi te his, option interesset qui ne. Ex eum possit feugait definiebas, vix ei etiam nonumes, posse inani comprehensam eu usu.]]></Teaser>

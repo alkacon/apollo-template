@@ -33,13 +33,30 @@
 />
 
 <c:set var="csswrapper" value="${not empty formatterSettings.filterWrapper ? formatterSettings.filterWrapper : formatterSettings.listWrapper}" />
+
 <c:set var="elementId"><apollo:idgen prefix="le" uuid="${cms.element.id}" /></c:set>
+<c:set var="archiveId"><apollo:idgen prefix="la" uuid="${cms.element.instanceId}" /></c:set>
 
-<div class="ap-list-filters ${csswrapper}">
+<c:set var="showSearch" value="${cms.element.setting.showsearch.toBoolean}" />
+<c:set var="showCategories" value="${cms.element.setting.showlabels.toBoolean and not empty fieldFacetResult and cms:getListSize(fieldFacetResult.values) > 0}" />
+<c:set var="showArchive" value="${cms.element.setting.showarchive.toBoolean and not empty rangeFacet and cms:getListSize(rangeFacet.counts) > 0}" />
 
-    <c:if test="${cms.element.settings.showsearch}">
+<div class="ap-list-archive ${csswrapper}" id="${archiveId}"
+data-id="${elementId}"
+data-filter='{
+    "search":"${showSearch}",
+    "categories":"${showCategories}",
+    "archive":"${showArchive}"
+}'>
+
+    <c:if test="${showSearch}">
         <div class="filterbox search">
-            <form role="form" class="sky-form bo-none" id="queryform" onsubmit="return false;">
+            <form role="form" class="sky-form bo-none" id="queryform" onsubmit="ApolloList.archiveSearch(<%--
+                --%>'${archiveId}', <%--
+                --%>'${search.stateParameters.resetAllFacetStates}&q='<%--
+            --%>); <%--
+            --%>return false;">
+
                     <c:set var="escapedQuery">${fn:replace(search.controller.common.state.query,'"','&quot;')}</c:set>
                     <input type="hidden" name="${search.controller.common.config.lastQueryParam}" value="${escapedQuery}" />
                     <input type="hidden" name="${search.controller.common.config.reloadedParam}" />
@@ -47,7 +64,7 @@
                         <i class="icon-prepend fa fa-search"></i>
                         <input
                             name="${search.controller.common.config.queryParam}"
-                            id="queryinput"
+                            id="textsearch"
                             type="text"
                             value="${escapedQuery}"
                             placeholder="<fmt:message key="apollo.list.message.search" />"
@@ -57,76 +74,75 @@
         </div>
     </c:if>
 
-    <c:if test="${cms.element.settings.showlabels and not empty fieldFacetResult and cms:getListSize(fieldFacetResult.values) > 0}">
-        <div class="filterbox labels">
+    <c:if test="${showCategories}">
+        <div class="filterbox categories">
 
-            <button type="button" class="btn-block btn" onclick="toggleApListFilter('labels');this.blur();">
+            <button type="button" class="btn-block btn" onclick="ApolloList.archiveToggle('${archiveId}', 'labels');">
                 <span class="pull-left"><span class="fa fa-tag"></span></span>
-                <span class="pull-left pl-10"><fmt:message key="apollo.list.message.labels" /></span>
-                <span id="aplistlabels_toggle" class="fa fa-chevron-down ${formatterSettings.catPreopened ? 'open' : ''} pull-right"></span>
+                <span class="pull-left pl-10"><fmt:message key="apollo.list.message.categories" /></span>
+                <span id="labels_toggle" class="fa fa-chevron-down ${formatterSettings.catPreopened ? 'open' : ''} pull-right"></span>
             </button>
 
-            <div id="aplistlabels" class="dialog" ${formatterSettings.catPreopened ? 'style="display:block;"' : ''}>
+            <div id="labels" class="dialog" ${formatterSettings.catPreopened ? 'style="display:block;"' : ''}>
                 <ul>
-                	<%-- BEGIN: Calculate category filters --%>
-					<c:set var="catFilters"
-						value="${not empty formatterSettings.catfilters ? fn:replace(formatterSettings.catfilters,' ','') : ''}" />
-					<c:set var="blacklistFilter" value="true" />
-					<c:if test="${not empty catFilters}">
-						<c:if test="${fn:startsWith(catFilters,'whitelist:')}">
-							<c:set var="catFilters"
-								value="${fn:replace(catFilters,'whitelist:','')}" />
-							<c:set var="blacklistFilter" value="false" />
-						</c:if>
-						<c:set var="catFilters" value='${fn:split(catFilters, ",")}' />
-					</c:if>
-					<%-- END: Calculate category filters --%>
-					
-					<%-- Read additional options (parameters) that influence the display of categories --%>
-					<c:set var="displayCatPath" value="${fn:toLowerCase(formatterSettings.catlabelfullpath) eq 'true'}" />
-					<c:set var="onlyLeafs" value="${fn:toLowerCase(formatterSettings.catshowonlyleafs) eq 'true'}" />
-					
-					<c:set var="facetValues" value="${fieldFacetResult.values}" />
+                    <%-- BEGIN: Calculate category filters --%>
+                    <c:set var="catFilters"
+                        value="${not empty formatterSettings.catfilters ? fn:replace(formatterSettings.catfilters,' ','') : ''}" />
+                    <c:set var="blacklistFilter" value="true" />
+                    <c:if test="${not empty catFilters}">
+                        <c:if test="${fn:startsWith(catFilters,'whitelist:')}">
+                            <c:set var="catFilters"
+                                value="${fn:replace(catFilters,'whitelist:','')}" />
+                            <c:set var="blacklistFilter" value="false" />
+                        </c:if>
+                        <c:set var="catFilters" value='${fn:split(catFilters, ",")}' />
+                    </c:if>
+                    <%-- END: Calculate category filters --%>
+
+                    <%-- Read additional options (parameters) that influence the display of categories --%>
+                    <c:set var="displayCatPath" value="${fn:toLowerCase(formatterSettings.catlabelfullpath) eq 'true'}" />
+                    <c:set var="onlyLeafs" value="${fn:toLowerCase(formatterSettings.catshowonlyleafs) eq 'true'}" />
+
+                    <c:set var="facetValues" value="${fieldFacetResult.values}" />
                     <c:forEach var="value" items="${facetValues}" varStatus="outerStatus">
-                    	<c:if test="${not onlyLeafs or outerStatus.last or not fn:startsWith(facetValues[outerStatus.count].name, value.name)}">
-	                        <c:set var="selected">${fieldFacetController.state.isChecked[value.name] ? ' class="active"' : ''}</c:set>
-	                        
-	                        <%-- BEGIN: Calculate category label --%>
-							<c:set var="catCompareLabel"></c:set>
-							<c:set var="label"></c:set>
-							<c:forEach var="category"
-								items="${cms.readPathCategories[value.name]}" varStatus="status">
-								<c:if test="${displayCatPath or status.last}"><c:set var="label">${label}${category.title}</c:set></c:if>
-								<c:set var="catCompareLabel">${catCompareLabel}${category.title}</c:set>
-								<c:if test="${not status.last}">
-									<c:if test="${displayCatPath}"><c:set var="label">${label}&nbsp;/&nbsp;</c:set></c:if>
-									<c:set var="catCompareLabel">${catCompareLabel} / </c:set>
-								</c:if>
-							</c:forEach>
-							<%-- END: Calculate category label --%>
-							
-							<c:set var="catCompareLabel"
-								value="${fn:replace(catCompareLabel,' ','')}" />
-							<c:set var="isMatchedByFilter" value="false" />
-							<c:forEach var="filterValue" items="${catFilters}" varStatus="status">
-								<!-- Filter value: ${filterValue} -->
-								<c:if test="${isMatchedByFilter or fn:contains(catCompareLabel, filterValue)}">
-									<c:set var="isMatchedByFilter" value="true" />
-								</c:if>
-							</c:forEach>
-							
-	                        <c:if test="${blacklistFilter != isMatchedByFilter}">	
-                                <li ${selected}>
-                                    <a href="javascript:void(0)" onclick="ApolloList.filter(<%--
-                                            --%>'${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}',<%--
-                                            --%>'${elementId}'<%--
-                                        --%>);<%--
-                                        --%>ApolloList.archiveHighlight($(this));<%--
-                                        --%>clearQuery();">
+                        <c:if test="${not onlyLeafs or outerStatus.last or not fn:startsWith(facetValues[outerStatus.count].name, value.name)}">
+                            <c:set var="selected">${fieldFacetController.state.isChecked[value.name] ? ' class="active"' : ''}</c:set>
+
+                            <%-- BEGIN: Calculate category label --%>
+                            <c:set var="catCompareLabel" value="" />
+                            <c:set var="label" value="" />
+                            <c:forEach var="category" items="${cms.readPathCategories[value.name]}" varStatus="status">
+                                <c:if test="${displayCatPath or status.last}">
+                                    <c:set var="label">${label}${category.title}</c:set>
+                                    <c:set var="catId"><apollo:idgen prefix="cat" uuid="${category.id}" /></c:set>
+                                </c:if>
+                                <c:set var="catCompareLabel">${catCompareLabel}${category.title}</c:set>
+                                <c:if test="${not status.last}">
+                                    <c:if test="${displayCatPath}"><c:set var="label">${label}&nbsp;/&nbsp;</c:set></c:if>
+                                    <c:set var="catCompareLabel">${catCompareLabel}/</c:set>
+                                </c:if>
+                            </c:forEach>
+                            <%-- END: Calculate category label --%>
+
+                            <c:set var="catCompareLabel" value="${fn:replace(catCompareLabel,' ','')}" />
+                            <c:set var="isMatchedByFilter" value="false" />
+                            <c:forEach var="filterValue" items="${catFilters}" varStatus="status">
+                                <c:if test="${isMatchedByFilter or fn:contains(catCompareLabel, filterValue)}">
+                                    <c:set var="isMatchedByFilter" value="true" />
+                                </c:if>
+                            </c:forEach>
+
+                            <c:if test="${blacklistFilter != isMatchedByFilter}">
+                                <li id="${catId}" ${selected}>
+                                    <a onclick="ApolloList.archiveFilter(<%--
+                                            --%>'${archiveId}', <%--
+                                            --%>'${catId}', <%--
+                                            --%>'${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[categoryFacetField][value.name]}'<%--
+                                        --%>);">
                                         <span class="badge"><i class="fa fa-tag"></i> ${label} (${value.count})</span>
                                     </a>
                                 </li>
-	                        </c:if>
+                            </c:if>
                         </c:if>
                     </c:forEach>
                 </ul>
@@ -134,16 +150,16 @@
         </div>
     </c:if>
 
-    <c:if test="${cms.element.settings.showarchive and not empty rangeFacet and cms:getListSize(rangeFacet.counts) > 0}">
+    <c:if test="${showArchive}">
         <div class="filterbox archive">
 
-            <button type="button" class="btn-block btn" onclick="toggleApListFilter('archive');this.blur();">
+            <button type="button" class="btn-block btn" onclick="ApolloList.archiveToggle('${archiveId}', 'archive');">
                 <span class="pull-left"><span class="fa fa-archive"></span></span>
                 <span class="pull-left pl-10"><fmt:message key="apollo.list.message.archive" /></span>
-                <span id="aplistarchive_toggle" class="fa fa-chevron-down ${formatterSettings.archivePreopened ? 'open' : ''} pull-right"></span>
+                <span id="archive_toggle" class="fa fa-chevron-down ${formatterSettings.archivePreopened ? 'open' : ''} pull-right"></span>
             </button>
 
-            <div id="aplistarchive" class="dialog" ${formatterSettings.archivePreopened ? 'style="display:block;"' : ''}>
+            <div id="archive" class="dialog" ${formatterSettings.archivePreopened ? 'style="display:block;"' : ''}>
 
                 <c:set var="archiveHtml" value="" />
                 <c:set var="yearHtml" value="" />
@@ -165,26 +181,27 @@
                             <c:set var="yearHtml">${yearHtml}<c:out value='</ul>' escapeXml='false' /></c:set>
                         </c:if>
                         <c:set var="archiveHtml">${yearHtml}${archiveHtml}</c:set>
+                        <c:set var="yearId">y_${currYear}</c:set>
                         <c:set var="yearHtml">
-                            <button type="button" class="btn-block btn btn-xs year" onclick="toggleApListFilter('year${currYear}');this.blur();">
+                            <button type="button" class="btn-block btn btn-xs year" onclick="<%--
+                                --%>ApolloList.archiveToggle('${archiveId}', '${yearId}');">
                                 <span class="pull-left">${currYear}</span>
-                                <i id="aplistyear${currYear}_toggle" class="fa fa-chevron-down pull-right"></i>
+                                <i id="${yearId}_toggle" class="fa fa-chevron-down pull-right"></i>
                             </button>
-                            <c:out value='<ul class="year" id="aplistyear${currYear}" style="display:none;">' escapeXml='false' />
+                            <c:out value='<ul class="year" id="${yearId}" style="display:none;">' escapeXml='false' />
                         </c:set>
                     </c:if>
                     <%-- add month list entry to current year --%>
+                    <c:set var="currMonth"><fmt:formatDate value="${fDate}" pattern="MMM" /></c:set>
+                    <c:set var="monthId">${yearId}${currMonth}</c:set>
                     <c:set var="yearHtml">
                         ${yearHtml}
-                        <li ${selected} onclick="ApolloList.filter(<%--
-                                        --%>'${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}',<%--
-                                        --%>'${elementId}'<%--
-                                        --%>);<%--
-                                    --%>ApolloList.archiveHighlight($(this).find('a'));<%--
-                                    --%>clearQuery();" title="${facetItem.count}">
-                            <a href="javascript:void(0)">
-                                <fmt:formatDate value="${fDate}" pattern="MMM" />
-                            </a>
+                        <li id="${monthId}" ${selected} onclick="ApolloList.archiveFilter(<%--
+                                --%>'${archiveId}', <%--
+                                --%>'${monthId}', <%--
+                                --%>'${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}'<%--
+                                --%>);" title="${facetItem.count}">
+                            <a>${currMonth}</a>
                         </li>
                     </c:set>
                     <c:if test="${(not empty selected) or (currYear eq thisYear)}">
@@ -202,31 +219,6 @@
 
         </div> <%-- /ap-list-filterbox-archive --%>
     </c:if>
-
-    <script type="text/javascript">
-        function toggleApListFilter(fType) {
-            $("#aplist" + fType + "_toggle").toggleClass("open");
-            $("#aplist" + fType + "").slideToggle();
-        }
-
-        window.onload = function () {
-            $( "#queryform" ).submit(
-                function( event ) {
-                    ApolloList.filter(
-                        "${search.stateParameters.resetAllFacetStates}&q=" + $("#queryinput").val(),
-                        "${elementId}"
-                    );
-                    ApolloList.archiveRemoveHighlight();
-                });
-        }
-
-        function clearQuery(){
-            if(window.jQuery){
-                $("#queryinput").val('');
-            }
-        }
-    </script>
-
 </div>
 
 </cms:bundle>

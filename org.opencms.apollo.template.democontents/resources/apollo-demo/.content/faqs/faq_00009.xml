@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/faq.xsd">
-  <ApolloFaq language="en">
-    <Question><![CDATA[What happens if you find a penguin in the freezer?]]></Question>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Was passiert wenn man einen Pinguin im Kühlschrank findet?]]></Question>
     <Date>1473687000000</Date>
     <Order><![CDATA[450]]></Order>
     <Paragraph>
@@ -26,8 +26,8 @@
       <!--Categories are read dynamically-->
     </Category>
   </ApolloFaq>
-  <ApolloFaq language="de">
-    <Question><![CDATA[Was passiert wenn man einen Pinguin im Kühlschrank findet?]]></Question>
+  <ApolloFaq language="en">
+    <Question><![CDATA[What happens if you find a penguin in the freezer?]]></Question>
     <Date>1473687000000</Date>
     <Order><![CDATA[450]]></Order>
     <Paragraph>

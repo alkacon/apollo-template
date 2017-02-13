@@ -3,8 +3,8 @@
 <ApolloEvents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/event.xsd">
   <ApolloEvent language="en">
     <Title><![CDATA[Summer of Code]]></Title>
-    <Date>1466146800000</Date>
-    <EndDate>1466175600000</EndDate>
+    <Date>1502694000000</Date>
+    <EndDate>1503068400000</EndDate>
     <Teaser><![CDATA[Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus.]]></Teaser>
     <Paragraph>
       <Text name="Text0">

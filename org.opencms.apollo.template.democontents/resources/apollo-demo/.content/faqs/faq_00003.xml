@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/faq.xsd">
-  <ApolloFaq language="en">
-    <Question><![CDATA[Can I use the Apollo Template for my website?]]></Question>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Kann ich das Apollo Template für meine Website verwenden?]]></Question>
     <Date>1471937400000</Date>
     <Order><![CDATA[1000]]></Order>
     <Paragraph>
-      <Headline><![CDATA[Yes, You Can!]]></Headline>
+      <Headline><![CDATA[Auf jeden Fall!]]></Headline>
       <Text name="Text0">
         <links/>
         <content><![CDATA[<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
@@ -26,12 +26,12 @@
       <!--Categories are read dynamically-->
     </Category>
   </ApolloFaq>
-  <ApolloFaq language="de">
-    <Question><![CDATA[Kann ich das Apollo Template für meine Website verwenden?]]></Question>
+  <ApolloFaq language="en">
+    <Question><![CDATA[Can I use the Apollo Template for my website?]]></Question>
     <Date>1471937400000</Date>
     <Order><![CDATA[1000]]></Order>
     <Paragraph>
-      <Headline><![CDATA[Auf jeden Fall!]]></Headline>
+      <Headline><![CDATA[Yes, You Can!]]></Headline>
       <Text name="Text0">
         <links/>
         <content><![CDATA[<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>

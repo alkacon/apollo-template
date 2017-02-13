@@ -33,5 +33,9 @@
       <Key><![CDATA[listWrapper]]></Key>
       <Value><![CDATA[color-orange]]></Value>
     </Parameters>
+    <Parameters>
+      <Key><![CDATA[archivePreopened]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameters>
   </ApolloList>
 </ApolloLists>

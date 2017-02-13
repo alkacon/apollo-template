@@ -57,14 +57,14 @@
             <apollo:list-loadbutton
                 search="${search}"
                 label="${label}"
-                onclickAction='ApolloList.update("$(LINK)", "${param.instanceId}", "false", "true")'
+                onclickAction='ApolloList.update("${param.instanceId}", "$(LINK)", "false")'
             />
         </c:when>
         <c:otherwise>
             <apollo:list-pagination
                 search="${search}"
                 singleStep="false"
-                onclickAction='ApolloList.update("$(LINK)", "${param.instanceId}")'
+                onclickAction='ApolloList.update("${param.instanceId}", "$(LINK)", "true")'
             />
         </c:otherwise>
     </c:choose>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloBlogs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/blog.xsd">
-  <ApolloBlog language="en">
-    <Title><![CDATA[OpenCms is the first choice]]></Title>
+  <ApolloBlog language="de">
+    <Title><![CDATA[OpenCms ist die erste Wahl]]></Title>
     <Date>1502470740000</Date>
     <Teaser><![CDATA[Eum id quot sanctus. Sed accusamus reprehendunt in, et has illud postulant consequuntur. No duo corrumpit sadipscing. At aliquip oportere suscipiantur eam, vis wisi harum essent no, et duo admodum periculis. Quodsi omittam oporteat mel no.
 ]]></Teaser>
@@ -27,8 +27,8 @@
     </Category>
     <Author><![CDATA[Cameron Tucker]]></Author>
   </ApolloBlog>
-  <ApolloBlog language="de">
-    <Title><![CDATA[OpenCms ist die erste Wahl]]></Title>
+  <ApolloBlog language="en">
+    <Title><![CDATA[OpenCms is the first choice]]></Title>
     <Date>1502470740000</Date>
     <Teaser><![CDATA[Eum id quot sanctus. Sed accusamus reprehendunt in, et has illud postulant consequuntur. No duo corrumpit sadipscing. At aliquip oportere suscipiantur eam, vis wisi harum essent no, et duo admodum periculis. Quodsi omittam oporteat mel no.
 ]]></Teaser>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloBlogs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/blog.xsd">
-  <ApolloBlog language="en">
-    <Title><![CDATA[OpenCms is for you]]></Title>
+  <ApolloBlog language="de">
+    <Title><![CDATA[OpenCms ist für Dich]]></Title>
     <Date>1506172200000</Date>
     <Teaser><![CDATA[Eros mollis explicari ad has. Option detracto conceptam sed in, id regione consequat ius. Cu dictas equidem mel. Duo sapientem repudiandae ex, cu mea alia commodo salutatus, ei nec inermis invenire repudiare.]]></Teaser>
     <Paragraph>
@@ -27,8 +27,8 @@
     </Category>
     <Author><![CDATA[Jay Pritchett]]></Author>
   </ApolloBlog>
-  <ApolloBlog language="de">
-    <Title><![CDATA[OpenCms ist für Dich]]></Title>
+  <ApolloBlog language="en">
+    <Title><![CDATA[OpenCms is for you]]></Title>
     <Date>1506172200000</Date>
     <Teaser><![CDATA[Eros mollis explicari ad has. Option detracto conceptam sed in, id regione consequat ius. Cu dictas equidem mel. Duo sapientem repudiandae ex, cu mea alia commodo salutatus, ei nec inermis invenire repudiare.]]></Teaser>
     <Paragraph>

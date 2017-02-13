@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/faq.xsd">
-  <ApolloFaq language="en">
-    <Question><![CDATA[What is the Apollo Template?]]></Question>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Was ist das Apollo Template?]]></Question>
     <Date>1472718823214</Date>
     <Order><![CDATA[600]]></Order>
     <Paragraph>
-      <Headline><![CDATA[It's a customizable, responsive website template based on Bootstrap!]]></Headline>
+      <Headline><![CDATA[Es ist ein responsives Template für Webseiten basierend auf Bootstrap!]]></Headline>
       <Text name="Text0">
         <links/>
         <content><![CDATA[<p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
@@ -26,12 +26,12 @@
       <!--Categories are read dynamically-->
     </Category>
   </ApolloFaq>
-  <ApolloFaq language="de">
-    <Question><![CDATA[Was ist das Apollo Template?]]></Question>
+  <ApolloFaq language="en">
+    <Question><![CDATA[What is the Apollo Template?]]></Question>
     <Date>1472718823214</Date>
     <Order><![CDATA[600]]></Order>
     <Paragraph>
-      <Headline><![CDATA[Es ist ein responsives Template für Webseiten basierend auf Bootstrap!]]></Headline>
+      <Headline><![CDATA[It's a customizable, responsive website template based on Bootstrap!]]></Headline>
       <Text name="Text0">
         <links/>
         <content><![CDATA[<p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>

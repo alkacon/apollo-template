@@ -3,8 +3,8 @@
 <ApolloEvents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/event.xsd">
   <ApolloEvent language="en">
     <Title><![CDATA[Mindful Members Mingling]]></Title>
-    <Date>1459580400000</Date>
-    <EndDate>1459609200000</EndDate>
+    <Date>1491202800000</Date>
+    <EndDate>1491231600000</EndDate>
     <Paragraph>
       <Headline><![CDATA[Section 1]]></Headline>
       <Text name="Text0">

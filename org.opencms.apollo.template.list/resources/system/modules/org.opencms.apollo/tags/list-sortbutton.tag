@@ -32,9 +32,9 @@
 
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 
 <%-- ########################################### --%>
@@ -97,9 +97,10 @@
                 <c:if test="${empty params || fn:contains(params, sortOption.paramValue)}">
                     <c:set var="selected">${sortController.state.checkSelected[sortOption] ? ' class="active"' : ""}</c:set>
                     <li ${selected}>
-                        <a href="javascript:void(0)" onclick="ApolloList.filter(
-                            '${search.stateParameters.setSortOption[sortOption.paramValue]}',
-                            '${elementId}' )">
+                        <a href="javascript:void(0)" onclick="ApolloList.facetFilter(<%--
+                        --%>'${elementId}', <%--
+                        --%>'SORT', <%--
+                        --%>'${search.stateParameters.setSortOption[sortOption.paramValue]}')">
                             <fmt:message key="${sortOption.label}" />
                         </a>
                     </li>

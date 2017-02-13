@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/faq.xsd">
-  <ApolloFaq language="en">
-    <Question><![CDATA[Is it true cannibals don't eat clowns because they taste funny?]]></Question>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Stimmt es dass Kannibalen keine Clowns mögen weil sie komisch schmecken?]]></Question>
     <Date>1472713200000</Date>
     <Order><![CDATA[750]]></Order>
     <Paragraph>
@@ -35,8 +35,8 @@
     </Category>
     <GalleryTitle><![CDATA[%(value:Question)]]></GalleryTitle>
   </ApolloFaq>
-  <ApolloFaq language="de">
-    <Question><![CDATA[Stimmt es dass Kannibalen keine Clowns mögen weil sie komisch schmecken?]]></Question>
+  <ApolloFaq language="en">
+    <Question><![CDATA[Is it true cannibals don't eat clowns because they taste funny?]]></Question>
     <Date>1472713200000</Date>
     <Order><![CDATA[750]]></Order>
     <Paragraph>

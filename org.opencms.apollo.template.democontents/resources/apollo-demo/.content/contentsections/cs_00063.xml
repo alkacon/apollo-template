@@ -2,11 +2,15 @@
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
   <ApolloSection language="en">
-    <Headline><![CDATA[List with facet row and archive filter element]]></Headline>
+    <Headline><![CDATA[Filter options for dynamic lists]]></Headline>
     <Text name="Text0">
       <links/>
-      <content><![CDATA[<p>The list element is an easy way to collect and display collections of contents on a page. To allow for sorting and filtering on that list, two special formatters can be used additionally. The facet row can filter categories and sort the list on configurable criteria. Furthermore the List Archive filter provides powerful search and filtering mechanisms. It comes with search field, category filter and archive list. If you do not need one of those features, you can simple deactivate it in the settings.</p>
-<p>Adding one of those elements to a page is as easy as dropping another list element instance on the site and choosing the corresponding formatter for it to appear. Instantly ready to use!</p>]]></content>
+      <content><![CDATA[<p>The list element provides powerful features&nbsp;to collect and display collections of elements on a page. The "Dynamic List" formatter provides Ajax-based paging trough long lists. For sorting and filtering a dynamic list, two special formatters can be used:</p>
+<ul>
+<li>The "<em>Sort / category filter</em>" formatter allows to sort the list and filter by category.</li>
+<li>The "<em>Archive filter</em>" formatter provides&nbsp;full text search in the list, filtering by date (year / month) and also filtering by category.&nbsp;</li>
+</ul>
+<p>In order to use these features, just drop the same list element on the page multiple times and select different "Dynamic List" formatters.</p>]]></content>
     </Text>
   </ApolloSection>
 </ApolloSections>

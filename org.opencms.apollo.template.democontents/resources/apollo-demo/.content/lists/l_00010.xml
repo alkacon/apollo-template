@@ -24,6 +24,10 @@
       <Value><![CDATA[none]]></Value>
     </Parameters>
     <Parameters>
+      <Key><![CDATA[displayOption]]></Key>
+      <Value><![CDATA[smallImage]]></Value>
+    </Parameters>
+    <Parameters>
       <Key><![CDATA[showDate]]></Key>
       <Value><![CDATA[true]]></Value>
     </Parameters>

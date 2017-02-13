@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloBlogs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/blog.xsd">
-  <ApolloBlog language="en">
-    <Title><![CDATA[OpenCms is right for the job]]></Title>
+  <ApolloBlog language="de">
+    <Title><![CDATA[OpenCms ist die richtige Wahl]]></Title>
     <Date>1476546300000</Date>
     <Teaser><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.]]></Teaser>
     <Paragraph>
@@ -36,8 +36,8 @@
     </Category>
     <Author><![CDATA[Arno Admin]]></Author>
   </ApolloBlog>
-  <ApolloBlog language="de">
-    <Title><![CDATA[OpenCms ist die richtige Wahl]]></Title>
+  <ApolloBlog language="en">
+    <Title><![CDATA[OpenCms is right for the job]]></Title>
     <Date>1476546300000</Date>
     <Teaser><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.]]></Teaser>
     <Paragraph>

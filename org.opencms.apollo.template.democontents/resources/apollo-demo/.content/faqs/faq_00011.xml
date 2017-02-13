@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/faq.xsd">
-  <ApolloFaq language="en">
-    <Question><![CDATA[How comes software this great is free?]]></Question>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Warum ist diese phantastische Software kostenfrei?]]></Question>
     <Date>1472801400000</Date>
     <Order><![CDATA[800]]></Order>
     <Paragraph>
-      <Headline><![CDATA[Because Open Source is better!]]></Headline>
+      <Headline><![CDATA[Weil Open Source einfach besser ist!]]></Headline>
       <Text name="Text0">
         <links/>
         <content><![CDATA[<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
@@ -26,12 +26,12 @@
       <!--Categories are read dynamically-->
     </Category>
   </ApolloFaq>
-  <ApolloFaq language="de">
-    <Question><![CDATA[Warum ist diese phantastische Software kostenfrei?]]></Question>
+  <ApolloFaq language="en">
+    <Question><![CDATA[How comes software this great is free?]]></Question>
     <Date>1472801400000</Date>
     <Order><![CDATA[800]]></Order>
     <Paragraph>
-      <Headline><![CDATA[Weil Open Source einfach besser ist!]]></Headline>
+      <Headline><![CDATA[Because Open Source is better!]]></Headline>
       <Text name="Text0">
         <links/>
         <content><![CDATA[<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>

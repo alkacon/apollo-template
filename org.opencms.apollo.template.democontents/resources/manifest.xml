@@ -273,96 +273,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>.categories/priority</destination>
-			<type>folder</type>
-			<uuidstructure>06a1f766-718d-11e0-87bc-000c2972a6a4</uuidstructure>
-			<datecreated>Thu, 28 Jun 2012 11:45:33 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Priority / Importance]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>.categories/priority/01_very_low</destination>
-			<type>folder</type>
-			<uuidstructure>c8b3ea1b-7193-11e0-87bc-000c2972a6a4</uuidstructure>
-			<datecreated>Thu, 28 Jun 2012 12:33:56 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Very Low]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>.categories/priority/02_low</destination>
-			<type>folder</type>
-			<uuidstructure>bab32ac8-7193-11e0-87bc-000c2972a6a4</uuidstructure>
-			<datecreated>Thu, 28 Jun 2012 12:33:32 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Low]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>.categories/priority/03_medium</destination>
-			<type>folder</type>
-			<uuidstructure>b5e32c25-7193-11e0-87bc-000c2972a6a4</uuidstructure>
-			<datecreated>Thu, 28 Jun 2012 12:33:24 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Medium]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>.categories/priority/04_high</destination>
-			<type>folder</type>
-			<uuidstructure>acb97052-7193-11e0-87bc-000c2972a6a4</uuidstructure>
-			<datecreated>Thu, 28 Jun 2012 12:33:09 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[High]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>.categories/priority/05_very_high</destination>
-			<type>folder</type>
-			<uuidstructure>a2182faf-7193-11e0-87bc-000c2972a6a4</uuidstructure>
-			<datecreated>Thu, 28 Jun 2012 12:32:51 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Very High]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>.categories/topic</destination>
 			<type>folder</type>
 			<uuidstructure>a37520f5-5534-11e4-af67-005056b61161</uuidstructure>
@@ -5793,16 +5703,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			</properties>
 			<relations>
 				<relation>
-					<id>b5e32c25-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/03_medium/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>06a1f766-718d-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
 					<id>a37520f5-5534-11e4-af67-005056b61161</id>
 					<path>/.categories/topic/</path>
 					<type>CATEGORY</type>
@@ -5841,16 +5741,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 					<type>CATEGORY</type>
 				</relation>
 				<relation>
-					<id>bab32ac8-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/02_low/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>06a1f766-718d-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
 					<id>a37520f5-5534-11e4-af67-005056b61161</id>
 					<path>/.categories/topic/</path>
 					<type>CATEGORY</type>
@@ -5878,16 +5768,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 			</properties>
 			<relations>
-				<relation>
-					<id>acb97052-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/04_high/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>06a1f766-718d-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/</path>
-					<type>CATEGORY</type>
-				</relation>
 				<relation>
 					<id>a37520f5-5534-11e4-af67-005056b61161</id>
 					<path>/.categories/topic/</path>
@@ -5921,16 +5801,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 			</properties>
 			<relations>
-				<relation>
-					<id>bab32ac8-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/02_low/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>06a1f766-718d-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/</path>
-					<type>CATEGORY</type>
-				</relation>
 				<relation>
 					<id>a37520f5-5534-11e4-af67-005056b61161</id>
 					<path>/.categories/topic/</path>
@@ -5967,16 +5837,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<relation>
 					<id>f41fca37-7193-11e0-87bc-000c2972a6a4</id>
 					<path>/.categories/location/northamerica/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>a2182faf-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/05_very_high/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>06a1f766-718d-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/</path>
 					<type>CATEGORY</type>
 				</relation>
 				<relation>
@@ -6023,16 +5883,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 					<type>CATEGORY</type>
 				</relation>
 				<relation>
-					<id>a2182faf-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/05_very_high/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>06a1f766-718d-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
 					<id>a37520f5-5534-11e4-af67-005056b61161</id>
 					<path>/.categories/topic/</path>
 					<type>CATEGORY</type>
@@ -6073,16 +5923,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<relation>
 					<id>01e3597a-7194-11e0-87bc-000c2972a6a4</id>
 					<path>/.categories/location/southamerica/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>b5e32c25-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/03_medium/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>06a1f766-718d-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/</path>
 					<type>CATEGORY</type>
 				</relation>
 				<relation>
@@ -6129,16 +5969,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 					<type>CATEGORY</type>
 				</relation>
 				<relation>
-					<id>b5e32c25-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/03_medium/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>06a1f766-718d-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
 					<id>a37520f5-5534-11e4-af67-005056b61161</id>
 					<path>/.categories/topic/</path>
 					<type>CATEGORY</type>
@@ -6171,16 +6001,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 			</properties>
 			<relations>
-				<relation>
-					<id>a2182faf-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/05_very_high/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>06a1f766-718d-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/</path>
-					<type>CATEGORY</type>
-				</relation>
 				<relation>
 					<id>a37520f5-5534-11e4-af67-005056b61161</id>
 					<path>/.categories/topic/</path>
@@ -6217,16 +6037,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<relation>
 					<id>e73ef9d1-7193-11e0-87bc-000c2972a6a4</id>
 					<path>/.categories/location/europe/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>acb97052-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/04_high/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>06a1f766-718d-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/</path>
 					<type>CATEGORY</type>
 				</relation>
 				<relation>
@@ -7721,7 +7531,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog Archive: List with facet row and archive filter element]]></value>
+					<value><![CDATA[List filters: Filter options for dynamic lists]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8796,8 +8606,13 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 					<type>CATEGORY</type>
 				</relation>
 				<relation>
-					<id>caf3e85e-5534-11e4-af67-005056b61161</id>
-					<path>/.categories/topic/machines/</path>
+					<id>bbef2688-5534-11e4-af67-005056b61161</id>
+					<path>/.categories/topic/people/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>5ce3fc25-5535-11e4-af67-005056b61161</id>
+					<path>/.categories/topic/transportation/</path>
 					<type>CATEGORY</type>
 				</relation>
 			</relations>
@@ -8973,36 +8788,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 					<type>CATEGORY</type>
 				</relation>
 				<relation>
-					<id>c8b3ea1b-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/01_very_low/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>bab32ac8-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/02_low/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>b5e32c25-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/03_medium/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>acb97052-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/04_high/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>a2182faf-7193-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/05_very_high/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
-					<id>06a1f766-718d-11e0-87bc-000c2972a6a4</id>
-					<path>/.categories/priority/</path>
-					<type>CATEGORY</type>
-				</relation>
-				<relation>
 					<id>a37520f5-5534-11e4-af67-005056b61161</id>
 					<path>/.categories/topic/</path>
 					<type>CATEGORY</type>
@@ -9109,8 +8894,13 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 					<type>CATEGORY</type>
 				</relation>
 				<relation>
-					<id>caf3e85e-5534-11e4-af67-005056b61161</id>
-					<path>/.categories/topic/machines/</path>
+					<id>c3025e6b-5534-11e4-af67-005056b61161</id>
+					<path>/.categories/topic/nature/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>bbef2688-5534-11e4-af67-005056b61161</id>
+					<path>/.categories/topic/people/</path>
 					<type>CATEGORY</type>
 				</relation>
 			</relations>
@@ -9149,6 +8939,16 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<relation>
 					<id>caf3e85e-5534-11e4-af67-005056b61161</id>
 					<path>/.categories/topic/machines/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>c3025e6b-5534-11e4-af67-005056b61161</id>
+					<path>/.categories/topic/nature/</path>
+					<type>CATEGORY</type>
+				</relation>
+				<relation>
+					<id>bbef2688-5534-11e4-af67-005056b61161</id>
+					<path>/.categories/topic/people/</path>
 					<type>CATEGORY</type>
 				</relation>
 			</relations>
@@ -12008,46 +11808,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>apollo-demo/element-pages/blog-archive</destination>
-			<type>folder</type>
-			<uuidstructure>b20a8d6f-b25c-11e6-ade4-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 24 Nov 2016 15:43:07 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>NavPos</name>
-					<value><![CDATA[0.5703125]]></value>
-				</property>
-				<property>
-					<name>NavText</name>
-					<value><![CDATA[Blog Archive]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Blog Archive]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/element-pages/blog-archive/index.html</source>
-			<destination>apollo-demo/element-pages/blog-archive/index.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>b20d73a4-b25c-11e6-ade4-0242ac11002b</uuidstructure>
-			<uuidresource>b20d73a5-b25c-11e6-ade4-0242ac11002b</uuidresource>
-			<datecreated>Thu, 24 Nov 2016 15:43:07 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Blog Archive]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>apollo-demo/element-pages/blog-article</destination>
 			<type>folder</type>
 			<uuidstructure>aaedc032-ef9d-11e5-afc5-0242ac11002b</uuidstructure>
@@ -12578,6 +12338,46 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Link Sequence]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/element-pages/list-filters</destination>
+			<type>folder</type>
+			<uuidstructure>b20a8d6f-b25c-11e6-ade4-0242ac11002b</uuidstructure>
+			<datecreated>Thu, 24 Nov 2016 15:43:07 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[0.5917969]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[List filters]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[List filters]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/element-pages/list-filters/index.html</source>
+			<destination>apollo-demo/element-pages/list-filters/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>b20d73a4-b25c-11e6-ade4-0242ac11002b</uuidstructure>
+			<uuidresource>b20d73a5-b25c-11e6-ade4-0242ac11002b</uuidresource>
+			<datecreated>Thu, 24 Nov 2016 15:43:07 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[List filters]]></value>
 				</property>
 			</properties>
 			<relations/>

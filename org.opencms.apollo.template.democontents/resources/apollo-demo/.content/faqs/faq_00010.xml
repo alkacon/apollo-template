@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloFaqs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/faq.xsd">
-  <ApolloFaq language="en">
-    <Question><![CDATA[Is is safe to update to OpenCms 10.5?]]></Question>
+  <ApolloFaq language="de">
+    <Question><![CDATA[Kann ich problemlos auf OpenCms 10.5 updaten?]]></Question>
     <Date>1474639200000</Date>
     <Order><![CDATA[500]]></Order>
     <Paragraph>
-      <Headline><![CDATA[Yes! It is safe to update!]]></Headline>
+      <Headline><![CDATA[Ja! Das Update ist einfach!]]></Headline>
       <Text name="Text0">
         <links/>
-        <content><![CDATA[<p>As usual ;)</p>
+        <content><![CDATA[<p>Wie immer ;)</p>
 <p>Phasellus viverra nulla ut metus varius laoreet. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>]]></content>
       </Text>
       <Image>
@@ -36,15 +36,15 @@
     </Category>
     <GalleryTitle><![CDATA[%(value:Question)]]></GalleryTitle>
   </ApolloFaq>
-  <ApolloFaq language="de">
-    <Question><![CDATA[Kann ich problemlos auf OpenCms 10.5 updaten?]]></Question>
+  <ApolloFaq language="en">
+    <Question><![CDATA[Is is safe to update to OpenCms 10.5?]]></Question>
     <Date>1474639200000</Date>
     <Order><![CDATA[500]]></Order>
     <Paragraph>
-      <Headline><![CDATA[Ja! Das Update ist einfach!]]></Headline>
+      <Headline><![CDATA[Yes! It is safe to update!]]></Headline>
       <Text name="Text0">
         <links/>
-        <content><![CDATA[<p>Wie immer ;)</p>
+        <content><![CDATA[<p>As usual ;)</p>
 <p>Phasellus viverra nulla ut metus varius laoreet. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>]]></content>
       </Text>
       <Image>
