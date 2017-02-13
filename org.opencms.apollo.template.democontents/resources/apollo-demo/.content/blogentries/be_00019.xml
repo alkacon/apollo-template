@@ -22,10 +22,10 @@ Mel ut corpora phaedrum, quot viris facilisi te his, option interesset qui ne. E
         <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Arno Admin]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Arno Admin]]></Author>
   </ApolloBlog>
   <ApolloBlog language="en">
     <Title><![CDATA[OpenCms makes editing effortless]]></Title>
@@ -45,12 +45,11 @@ Mel ut corpora phaedrum, quot viris facilisi te his, option interesset qui ne. E
             <uuid>e00b8972-7047-11e6-9a42-0242ac11002b</uuid>
           </link>
         </Image>
-        <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Arno Admin]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Arno Admin]]></Author>
   </ApolloBlog>
 </ApolloBlogs>

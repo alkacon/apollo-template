@@ -20,9 +20,6 @@
         <Title/>
       </Image>
     </Paragraph>
-    <Category>
-      <!--Categories are read dynamically-->
-    </Category>
     <Location><![CDATA[Olympia Grand Hall, London]]></Location>
     <Address name="Address0">
       <links/>
@@ -32,5 +29,8 @@
 <div class="cards-text-truncate-and-wrap">Vereinigtes Königreich</div>
 </div>]]></content>
     </Address>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
   </ApolloEvent>
 </ApolloEvents>

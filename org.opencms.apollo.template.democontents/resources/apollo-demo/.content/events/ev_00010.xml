@@ -3,8 +3,8 @@
 <ApolloEvents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/event.xsd">
   <ApolloEvent language="en">
     <Title><![CDATA[Christmas Tree Convention]]></Title>
-    <Date>1482652800000</Date>
-    <EndDate>1482681600000</EndDate>
+    <Date>1514188800000</Date>
+    <EndDate>1514304000000</EndDate>
     <Teaser><![CDATA[Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.]]></Teaser>
     <Paragraph>
       <Text name="Text0">
@@ -21,13 +21,13 @@
         <Title/>
       </Image>
     </Paragraph>
-    <Category>
-      <!--Categories are read dynamically-->
-    </Category>
     <Location><![CDATA[Haus der Kulturen der Welt, Berlin]]></Location>
     <Address name="Address0">
       <links/>
       <content><![CDATA[<div class="cards-text-truncate-and-wrap">John-Foster-Dulles-Allee 10<br />10557 Berlin<br />Germany</div>]]></content>
     </Address>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
   </ApolloEvent>
 </ApolloEvents>

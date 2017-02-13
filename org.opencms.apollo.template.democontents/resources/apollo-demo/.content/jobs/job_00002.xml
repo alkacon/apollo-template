@@ -5,9 +5,6 @@
     <Title><![CDATA[Vice President of Sweaty Handshakes (m/f)]]></Title>
     <Date>1467107160000</Date>
     <Location><![CDATA[Derry, Maine]]></Location>
-    <Category>
-      <!--Categories are read dynamically-->
-    </Category>
     <Introduction>
       <Text name="Text0">
         <links/>
@@ -70,5 +67,8 @@
         </link>
       </URI>
     </Link>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
   </ApolloJob>
 </ApolloJobs>

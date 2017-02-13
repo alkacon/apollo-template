@@ -32,10 +32,10 @@
         </URI>
       </Link>
     </Paragraph>
+    <Author><![CDATA[Phil Dunphy]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Phil Dunphy]]></Author>
   </ApolloBlog>
   <ApolloBlog language="en">
     <Title><![CDATA[OpenCms can do it]]></Title>
@@ -68,9 +68,9 @@
         </URI>
       </Link>
     </Paragraph>
+    <Author><![CDATA[Phil Dunphy]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Phil Dunphy]]></Author>
   </ApolloBlog>
 </ApolloBlogs>

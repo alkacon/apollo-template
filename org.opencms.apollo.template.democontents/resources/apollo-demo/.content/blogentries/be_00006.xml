@@ -19,10 +19,10 @@
         </Image>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Manny Delgado]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Manny Delgado]]></Author>
   </ApolloBlog>
   <ApolloBlog language="en">
     <Title><![CDATA[OpenCms is simple to use]]></Title>
@@ -42,9 +42,9 @@
         </Image>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Manny Delgado]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Manny Delgado]]></Author>
   </ApolloBlog>
 </ApolloBlogs>

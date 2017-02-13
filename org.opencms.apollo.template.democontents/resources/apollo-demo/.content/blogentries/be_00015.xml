@@ -22,10 +22,10 @@
         <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Cameron Tucker]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Cameron Tucker]]></Author>
   </ApolloBlog>
   <ApolloBlog language="en">
     <Title><![CDATA[OpenCms saves valuable time]]></Title>
@@ -45,12 +45,11 @@
             <uuid>2fec4309-7061-11e6-9a42-0242ac11002b</uuid>
           </link>
         </Image>
-        <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Cameron Tucker]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Cameron Tucker]]></Author>
   </ApolloBlog>
 </ApolloBlogs>

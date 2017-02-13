@@ -21,10 +21,10 @@
         </Image>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Luke Dunphy]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Luke Dunphy]]></Author>
   </ApolloBlog>
   <ApolloBlog language="en">
     <Title><![CDATA[OpenCms is feature rich]]></Title>
@@ -46,9 +46,9 @@
         </Image>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Luke Dunphy]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Luke Dunphy]]></Author>
   </ApolloBlog>
 </ApolloBlogs>

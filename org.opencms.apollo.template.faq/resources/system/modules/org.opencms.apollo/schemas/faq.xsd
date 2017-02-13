@@ -29,8 +29,8 @@
 		<xsd:appinfo>
 			<resourcebundle name="org.opencms.apollo.template.faq.messages" />
 			<tabs>
-				<tab element="Question" collapse="false" name="General" />
-				<tab element="Availability" collapse="true" name="Availability" />
+				<tab element="Question" collapse="false" name="TabGeneral" />
+				<tab element="Category" collapse="true" name="TabAvailability" />
 			</tabs>
 			<mappings>
 				<mapping element="GalleryTitle" mapto="property:Title" useDefault="true" />
@@ -42,7 +42,9 @@
 				<default element="Question" value="%(key.title.a-faq)" />
 				<default element="Paragraph/Text" value="%(key.apollo.faq.default.Text)" />
 				<default element="Date" value="%(currenttime)" />
-				<default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Question)" resolveMacros="false" />
+				<default element="Availability/Release" value="%(currenttime)" />
+				<default element="Availability/Expiration" value="%(currenttime + 31536000000)" />
+				<default element="GalleryTitle" value="%(value:Question)" resolveMacros="false" />
 			</defaults>
 			<layouts>
 				<layout element="Category" widget="CategoryWidget" configuration="onlyleafs=false" />

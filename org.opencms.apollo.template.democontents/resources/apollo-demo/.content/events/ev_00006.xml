@@ -21,13 +21,16 @@
         <Title/>
       </Image>
     </Paragraph>
-    <Category>
-      <!--Categories are read dynamically-->
-    </Category>
     <Location><![CDATA[MediaPark, Cologne]]></Location>
     <Address name="Address0">
       <links/>
       <content><![CDATA[<p>Im Mediapark<br />50670 Köln<br />Germany</p>]]></content>
     </Address>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <Availability>
+      <Release>1501578000000</Release>
+    </Availability>
   </ApolloEvent>
 </ApolloEvents>

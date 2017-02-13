@@ -22,10 +22,10 @@
         <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Admin]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Admin]]></Author>
   </ApolloBlog>
   <ApolloBlog language="en">
     <Title><![CDATA[OpenCms unlocks your creativity]]></Title>
@@ -48,9 +48,9 @@
         <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Admin]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Admin]]></Author>
   </ApolloBlog>
 </ApolloBlogs>

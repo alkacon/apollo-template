@@ -3,8 +3,8 @@
 <ApolloEvents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/event.xsd">
   <ApolloEvent language="en">
     <Title><![CDATA[Core Developer Convention]]></Title>
-    <Date>1486972800000</Date>
-    <EndDate>1487174400000</EndDate>
+    <Date>1511942400000</Date>
+    <EndDate>1511971200000</EndDate>
     <Paragraph>
       <Text name="Text0">
         <links/>
@@ -13,20 +13,22 @@
       <Image>
         <Image>
           <link type="WEAK">
-            <target><![CDATA[/sites/default/.galleries/samples/41.jpg]]></target>
-            <uuid>626949db-61f4-11e5-bcba-0242ac11002b</uuid>
+            <target><![CDATA[/sites/default/.galleries/samples/38.jpg]]></target>
+            <uuid>b3ffe0f0-4785-11e3-ba23-000c29d28104</uuid>
           </link>
         </Image>
-        <Title/>
       </Image>
     </Paragraph>
-    <Category>
-      <!--Categories are read dynamically-->
-    </Category>
     <Location><![CDATA[Haus der Kulturen der Welt, Berlin]]></Location>
     <Address name="Address0">
       <links/>
       <content><![CDATA[<div class="cards-text-truncate-and-wrap">John-Foster-Dulles-Allee 10<br />10557 Berlin<br />Germany</div>]]></content>
     </Address>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <Availability>
+      <Release>1508137200000</Release>
+    </Availability>
   </ApolloEvent>
 </ApolloEvents>

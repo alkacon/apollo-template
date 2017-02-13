@@ -5,9 +5,6 @@
     <Title><![CDATA[Principal Party Planner (m/f)]]></Title>
     <Date>1467270000000</Date>
     <Location><![CDATA[Dark Score Lake]]></Location>
-    <Category>
-      <!--Categories are read dynamically-->
-    </Category>
     <Introduction>
       <Text name="Text0">
         <links/>
@@ -69,5 +66,8 @@
         </link>
       </URI>
     </Link>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
   </ApolloJob>
 </ApolloJobs>

@@ -25,10 +25,10 @@
         <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Arno Admin]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Arno Admin]]></Author>
   </ApolloBlog>
   <ApolloBlog language="en">
     <Title><![CDATA[OpenCms is easy]]></Title>
@@ -51,12 +51,11 @@
           </link>
         </Image>
         <Title><![CDATA[Painting]]></Title>
-        <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Arno Admin]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Arno Admin]]></Author>
   </ApolloBlog>
 </ApolloBlogs>

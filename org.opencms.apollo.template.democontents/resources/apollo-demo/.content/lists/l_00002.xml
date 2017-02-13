@@ -37,5 +37,9 @@
       <Key><![CDATA[archivePreopened]]></Key>
       <Value><![CDATA[true]]></Value>
     </Parameters>
+    <Parameters>
+      <Key><![CDATA[catshowonlyleafs]]></Key>
+      <Value><![CDATA[true]]></Value>
+    </Parameters>
   </ApolloList>
 </ApolloLists>

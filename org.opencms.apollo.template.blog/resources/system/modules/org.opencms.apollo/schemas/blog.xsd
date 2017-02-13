@@ -18,9 +18,9 @@
 			<xsd:element name="Date" type="OpenCmsDateTime" />
 			<xsd:element name="Teaser" type="OpenCmsString" minOccurs="0" />
 			<xsd:element name="Paragraph" type="OpenCmsApolloParagraph" maxOccurs="5" />
-			<xsd:element name="Category" type="OpenCmsDynamicCategory" />
 			<xsd:element name="Author" type="OpenCmsString" />
 			<xsd:element name="AuthorMail" type="OpenCmsString" minOccurs="0" />
+			<xsd:element name="Category" type="OpenCmsDynamicCategory" />
 			<xsd:element name="Availability" type="OpenCmsApolloAvailability" minOccurs="0" />
 			<xsd:element name="GalleryTitle" type="OpenCmsString" minOccurs="0" />
 		</xsd:sequence>
@@ -31,9 +31,9 @@
 		<xsd:appinfo>
 			<resourcebundle name="org.opencms.apollo.template.blog.messages" />
 			<tabs>
-				<tab element="Title" collapse="false" name="General" />
-				<tab element="Author" collapse="false" name="AuthorTab" />
-				<tab element="Availability" collapse="true" name="Availability" />
+				<tab element="Title" collapse="false" name="TabGeneral" />
+				<tab element="Author" collapse="false" name="TabAuthor" />
+				<tab element="Category" collapse="true" name="TabAvailability" />
 			</tabs>
 			<mappings>
 				<mapping element="GalleryTitle" mapto="property:Title" useDefault="true" />
@@ -48,7 +48,8 @@
 				<default element="Author" value="%(currentuser.firstname) %(currentuser.lastname)" />
 				<default element="AuthorMail" value="%(currentuser.email)" />
 				<default element="Availability/Release" value="%(currenttime)" />
-				<default element="GalleryTitle" value="%(page_title)%(no_prefix:: )%(value:Title)" resolveMacros="false" />
+				<default element="Availability/Expiration" value="%(currenttime + 31536000000)" />
+				<default element="GalleryTitle" value="%(value:Title)" resolveMacros="false" />
 			</defaults>
 			<layouts>
 				<layout element="Teaser" widget="TextareaWidget" configuration="4" />

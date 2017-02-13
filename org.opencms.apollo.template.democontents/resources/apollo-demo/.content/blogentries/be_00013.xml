@@ -21,10 +21,10 @@
         <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Admin]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Admin]]></Author>
   </ApolloBlog>
   <ApolloBlog language="en">
     <Title><![CDATA[OpenCms is Open Source]]></Title>
@@ -43,12 +43,11 @@
             <uuid>2fb63ed7-7061-11e6-9a42-0242ac11002b</uuid>
           </link>
         </Image>
-        <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Admin]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Admin]]></Author>
   </ApolloBlog>
 </ApolloBlogs>

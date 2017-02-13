@@ -5,9 +5,6 @@
     <Title><![CDATA[Overly Friendly Manager (m/f)]]></Title>
     <Date>1467963055223</Date>
     <Location><![CDATA[Ludlow, Maine]]></Location>
-    <Category>
-      <!--Categories are read dynamically-->
-    </Category>
     <Introduction>
       <Headline><![CDATA[Headline for new job advertisement]]></Headline>
       <Text name="Text0">
@@ -70,5 +67,8 @@
         </link>
       </URI>
     </Link>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
   </ApolloJob>
 </ApolloJobs>

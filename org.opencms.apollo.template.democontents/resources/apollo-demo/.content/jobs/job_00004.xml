@@ -5,9 +5,6 @@
     <Title><![CDATA[Email Reply-All Specialist (m/f)]]></Title>
     <Date>1472549400000</Date>
     <Location><![CDATA[Derry, Maine]]></Location>
-    <Category>
-      <!--Categories are read dynamically-->
-    </Category>
     <Introduction>
       <Text name="Text0">
         <links/>
@@ -70,5 +67,8 @@
         </link>
       </URI>
     </Link>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
   </ApolloJob>
 </ApolloJobs>

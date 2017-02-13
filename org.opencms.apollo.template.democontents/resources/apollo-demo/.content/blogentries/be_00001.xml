@@ -20,10 +20,10 @@
         </Image>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Jay Pritchett]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Jay Pritchett]]></Author>
     <Availability>
       <Release>1483376400000</Release>
     </Availability>
@@ -47,12 +47,10 @@
         </Image>
       </Image>
     </Paragraph>
+    <Author><![CDATA[Jay Pritchett]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Jay Pritchett]]></Author>
-    <Availability>
-      <Release>1483376400000</Release>
-    </Availability>
+    <Availability/>
   </ApolloBlog>
 </ApolloBlogs>

@@ -17,12 +17,8 @@
             <uuid>60d31972-61f4-11e5-bcba-0242ac11002b</uuid>
           </link>
         </Image>
-        <Title/>
       </Image>
     </Paragraph>
-    <Category>
-      <!--Categories are read dynamically-->
-    </Category>
     <Location><![CDATA[Olympia Grand Hall, London]]></Location>
     <Address name="Address0">
       <links/>
@@ -32,5 +28,8 @@
 <div class="cards-text-truncate-and-wrap">United Kingdom</div>
 </div>]]></content>
     </Address>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
   </ApolloEvent>
 </ApolloEvents>

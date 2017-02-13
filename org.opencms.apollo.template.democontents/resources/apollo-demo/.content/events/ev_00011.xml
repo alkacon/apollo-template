@@ -3,8 +3,8 @@
 <ApolloEvents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/event.xsd">
   <ApolloEvent language="en">
     <Title><![CDATA[Happy Hacking Days]]></Title>
-    <Date>1486022400000</Date>
-    <EndDate>1486051200000</EndDate>
+    <Date>1507100400000</Date>
+    <EndDate>1507215600000</EndDate>
     <Teaser><![CDATA[Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. ]]></Teaser>
     <Paragraph>
       <Text name="Text0">
@@ -22,13 +22,16 @@
         <Copyright><![CDATA[By Namedina. Cropped by Oleg Alexandrov (Own work) [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY 2.5 (http://creativecommons.org/licenses/by/2.5)], via Wikimedia Commons]]></Copyright>
       </Image>
     </Paragraph>
-    <Category>
-      <!--Categories are read dynamically-->
-    </Category>
     <Location><![CDATA[Lawrence Hall of Science, San Francisco]]></Location>
     <Address name="Address0">
       <links/>
       <content><![CDATA[<p>1 Centennial Drive<br />Berkeley, CA 94720-5200<br />510-642-5132</p>]]></content>
     </Address>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+    <Availability>
+      <Release>1489616280000</Release>
+    </Availability>
   </ApolloEvent>
 </ApolloEvents>

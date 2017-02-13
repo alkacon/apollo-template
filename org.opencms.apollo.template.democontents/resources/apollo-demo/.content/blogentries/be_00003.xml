@@ -30,10 +30,10 @@
         </URI>
       </Link>
     </Paragraph>
+    <Author><![CDATA[Phil Dunphy]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Phil Dunphy]]></Author>
   </ApolloBlog>
   <ApolloBlog language="en">
     <Title><![CDATA[OpenCms is the tool]]></Title>
@@ -52,8 +52,6 @@
             <uuid>2f8c2189-7061-11e6-9a42-0242ac11002b</uuid>
           </link>
         </Image>
-        <Title/>
-        <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
       </Image>
       <Link>
         <Text><![CDATA[The Alkacon Homepage]]></Text>
@@ -64,9 +62,9 @@
         </URI>
       </Link>
     </Paragraph>
+    <Author><![CDATA[Phil Dunphy]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>
-    <Author><![CDATA[Phil Dunphy]]></Author>
   </ApolloBlog>
 </ApolloBlogs>

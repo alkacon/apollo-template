@@ -3,8 +3,8 @@
 <ApolloEvents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/event.xsd">
   <ApolloEvent language="en">
     <Title><![CDATA[Pre-Release Poster Party]]></Title>
-    <Date>1478160000000</Date>
-    <EndDate>1478188800000</EndDate>
+    <Date>1509696000000</Date>
+    <EndDate>1509724800000</EndDate>
     <Paragraph>
       <Text name="Text0">
         <links/>
@@ -20,13 +20,13 @@
         <Title/>
       </Image>
     </Paragraph>
-    <Category>
-      <!--Categories are read dynamically-->
-    </Category>
     <Location><![CDATA[ETH Zürich]]></Location>
     <Address name="Address0">
       <links/>
       <content><![CDATA[<p>Rämistrasse 101<br />8092 Zürich<br />Switzerland</p>]]></content>
     </Address>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
   </ApolloEvent>
 </ApolloEvents>
