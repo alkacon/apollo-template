@@ -62,9 +62,9 @@ var ApolloList = function(jQ) {
 
         if (DEBUG) console.info("listFilter() called elementId=" + id);
 
-        if (triggerId != "SORT") {
-            // reset filters of not sorting
-            var filterGroup = m_archiveFilterGroups[id];
+        // reset filters of not sorting
+        var filterGroup = m_archiveFilterGroups[id];
+        if ((triggerId != "SORT") && (typeof filterGroup != "undefined")) {
             // potentially the same filter may be on the same page
             // here we make sure to reset them all
             for (i=0; i<filterGroup.length; i++) {

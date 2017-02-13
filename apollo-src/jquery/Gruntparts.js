@@ -22,5 +22,5 @@ exports.mf = mf;
 
 exports.jsSrc = [
     mf + 'js/jQuery_3_1_1.js',
-    mf + 'js/jQuery-migrate_3_0_0.js'
+    // mf + 'js/jQuery-migrate_3_0_0.js'
 ]
