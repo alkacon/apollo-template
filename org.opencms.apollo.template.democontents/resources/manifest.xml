@@ -9455,7 +9455,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Website demo contents: Is OpenCms open source or open sauce?]]></value>
+					<value><![CDATA[Is OpenCms open source or open sauce?]]></value>
 				</property>
 			</properties>
 			<relations>
@@ -9483,7 +9483,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Website demo contents: Can I use the Apollo Template for my website?]]></value>
+					<value><![CDATA[Can I use the Apollo Template for my website?]]></value>
 				</property>
 			</properties>
 			<relations>
@@ -9679,7 +9679,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[FAQ Entry: How comes software this great is free?]]></value>
+					<value><![CDATA[How comes software this great is free?]]></value>
 				</property>
 			</properties>
 			<relations>
@@ -13936,6 +13936,23 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>release/.content/contentsections/cs_00020.xml</source>
+			<destination>release/.content/contentsections/cs_00020.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>e539ade3-f2ba-11e6-8018-0242ac11002b</uuidstructure>
+			<uuidresource>e539ade4-f2ba-11e6-8018-0242ac11002b</uuidresource>
+			<datecreated>Tue, 14 Feb 2017 13:38:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.5.1: Release Notes for OpenCms 10.5.1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>release/.content/flexiblecontents</destination>
 			<type>folder</type>
 			<uuidstructure>4f9dda93-6060-11e5-9199-0242ac11002b</uuidstructure>
@@ -14157,6 +14174,46 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OpenCms 10.5.0]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>release/opencms-10.5.1</destination>
+			<type>folder</type>
+			<uuidstructure>e5222e3b-f2ba-11e6-8018-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 14 Feb 2017 13:38:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[8.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[OpenCms 10.5.1]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.5.1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>release/opencms-10.5.1/index.html</source>
+			<destination>release/opencms-10.5.1/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>e5312260-f2ba-11e6-8018-0242ac11002b</uuidstructure>
+			<uuidresource>e5312261-f2ba-11e6-8018-0242ac11002b</uuidresource>
+			<datecreated>Tue, 14 Feb 2017 13:38:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.5.1]]></value>
 				</property>
 			</properties>
 			<relations/>

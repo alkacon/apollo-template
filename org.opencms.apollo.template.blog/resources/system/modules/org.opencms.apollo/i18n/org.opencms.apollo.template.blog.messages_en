@@ -2,6 +2,7 @@ apollo.blog.default.Text=Please edit the blog article text.
 apollo.blog.message.by=By
 apollo.blog.message.pdflink=Show PDF
 apollo.blog.message.readmore=Read more
+apollo.setting.blog.showparallax=Parallax image effekt
 desc.a-blog=A blog or news article that consists of several paragraphs with optional images, author, date and categories.
 fileicon.a-blog=Blog Article
 formatter.a-blog.detail=Blog article detail view

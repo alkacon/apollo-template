@@ -5,6 +5,7 @@
     <Title><![CDATA[OpenCms ist einfach zu bedienen]]></Title>
     <Date>1508246400000</Date>
     <Paragraph>
+      <Headline><![CDATA[Und es macht auch noch Spass]]></Headline>
       <Text name="Text0">
         <links/>
         <content><![CDATA[<p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
@@ -27,7 +28,9 @@
   <ApolloBlog language="en">
     <Title><![CDATA[OpenCms is simple to use]]></Title>
     <Date>1508246400000</Date>
+    <Teaser><![CDATA[Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.]]></Teaser>
     <Paragraph>
+      <Headline><![CDATA[And it's fun, too]]></Headline>
       <Text name="Text0">
         <links/>
         <content><![CDATA[<p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
@@ -41,6 +44,28 @@
           </link>
         </Image>
       </Image>
+    </Paragraph>
+    <Paragraph>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Please edit the blog article text.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/office/10.jpg]]></target>
+            <uuid>2f97ba4d-7061-11e6-9a42-0242ac11002b</uuid>
+          </link>
+        </Image>
+        <Copyright><![CDATA[CC0 Public Domain / unsplash.com]]></Copyright>
+      </Image>
+    </Paragraph>
+    <Paragraph>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu.</p>
+<p>Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque.</p>]]></content>
+      </Text>
     </Paragraph>
     <Author><![CDATA[Manny Delgado]]></Author>
     <Category>

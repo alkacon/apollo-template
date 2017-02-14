@@ -59,8 +59,8 @@
       <Default><![CDATA[ap-kenburns-animation]]></Default>
       <WidgetConfig><![CDATA[
         none:%(key.apollo.setting.image.effect.none)|
-        ap-raise-animation:%(key.apollo.setting.image.effect.raise)|
         ap-kenburns-animation:%(key.apollo.setting.image.effect.kenburns)|
+        ap-raise-animation:%(key.apollo.setting.image.effect.raise)|
         ap-raise-animation ap-kenburns-animation:%(key.apollo.setting.image.effect.raise-kenburns)
       ]]></WidgetConfig>
     </Setting>

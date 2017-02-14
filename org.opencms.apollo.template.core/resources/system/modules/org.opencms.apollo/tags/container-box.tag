@@ -98,8 +98,8 @@
       </c:otherwise>
     </c:choose>
   </div>
-  <div class="text">
-    ${label}<br>
+  <div class="text capital">
+    <div class="main">${label}</div>
     <c:if test="${not empty cms.container.type}">
       <div class="small">
         <fmt:message key="apollo.row.in"/>

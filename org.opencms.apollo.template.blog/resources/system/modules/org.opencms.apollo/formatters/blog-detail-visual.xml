@@ -24,10 +24,62 @@
     <Detail>true</Detail>
     <NestedContainers>false</NestedContainers>
     <Setting>
+      <PropertyName><![CDATA[wrapperclass]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.cssclass)]]></DisplayName>
+      <Description><![CDATA[%(key.apollo.setting.cssclass.description)]]></Description>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <WidgetConfig><![CDATA[%(page-property:apollo.css.wrapper)]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[partselection]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.partselection)]]></DisplayName>
+      <Widget><![CDATA[select]]></Widget>
+      <Default><![CDATA[all]]></Default>
+      <WidgetConfig><![CDATA[
+        all:%(key.apollo.setting.partselection.all)|
+        head:%(key.apollo.setting.partselection.head)|
+        body:%(key.apollo.setting.partselection.body)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showparallax]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.blog.showparallax)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[false]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showdate]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showdate)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[showauthor]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.showauthor)]]></DisplayName>
+      <Widget><![CDATA[checkbox]]></Widget>
+      <Default><![CDATA[true]]></Default>
+    </Setting>
+    <Setting>
       <PropertyName><![CDATA[imgalign]]></PropertyName>
       <DisplayName><![CDATA[%(key.apollo.setting.imgalign)]]></DisplayName>
       <Widget><![CDATA[select]]></Widget>
-      <WidgetConfig><![CDATA[left:%(key.apollo.setting.image.left)|right:%(key.apollo.setting.image.right)]]></WidgetConfig>
+      <Default><![CDATA[left]]></Default>
+      <WidgetConfig><![CDATA[
+        left:%(key.apollo.setting.image.left)|
+        right:%(key.apollo.setting.image.right)
+      ]]></WidgetConfig>
+    </Setting>
+    <Setting>
+      <PropertyName><![CDATA[ieffect]]></PropertyName>
+      <DisplayName><![CDATA[%(key.apollo.setting.image.effect.label)]]></DisplayName>
+      <Widget><![CDATA[selectcombo]]></Widget>
+      <Default><![CDATA[ap-kenburns-animation]]></Default>
+      <WidgetConfig><![CDATA[
+        none:%(key.apollo.setting.image.effect.none)|
+        ap-kenburns-animation:%(key.apollo.setting.image.effect.kenburns)|
+        ap-raise-animation:%(key.apollo.setting.image.effect.raise)|
+        ap-raise-animation ap-kenburns-animation:%(key.apollo.setting.image.effect.raise-kenburns)
+      ]]></WidgetConfig>
     </Setting>
   </NewFormatter>
 </NewFormatters>

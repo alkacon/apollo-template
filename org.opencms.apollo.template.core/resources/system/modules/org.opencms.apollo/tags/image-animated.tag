@@ -52,7 +52,7 @@
 <div class="ap-image ${cssclass}">
 
     <div class="animated-box ${addcssclass}">
-        <div  ${image.value.Image.imageDndAttr} class="image-outer-box">
+        <div ${image.value.Image.imageDndAttr} class="image-outer-box">
             <img
                 <cms:img
                     src="${imageLink}"

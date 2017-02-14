@@ -12,6 +12,9 @@
     description="The image can be aligned 'left' or 'right'.
     Default is 'left' if not provided." %>
 
+<%@ attribute name="imagecss" type="java.lang.String" required="false"
+    description="CSS classes to attach to the image, for animation effects." %>
+
 <%@ attribute name="headline" type="java.lang.String" required="false"
     description="If not set or 'top', the headline is placed on top of the content.
     If set to 'inline', then the headline is shown inline with the text.
@@ -37,6 +40,7 @@
 <c:set var="hasText" value="${paragraph.value.Text.isSet}" />
 <c:set var="hasImage" value="${((empty showimage) or (showimage == 'true')) and paragraph.value.Image.isSet and paragraph.value.Image.value.Image.isSet}" />
 <c:set var="hasLink" value="${paragraph.value.Link.isSet and paragraph.value.Link.value.URI.isSet}"/>
+<c:set var="imagecss" value="${empty imagecss ? 'ap-kenburns-animation' : (imagecss != 'none' ? imagecss : '')}" />
 
 <%-- ####### Render paragraph ######## --%>
 <div class="ap-paragraph">
@@ -70,7 +74,7 @@
                 <div class="col-md-4 pull-${imgalign}">
                     <apollo:image-animated
                         image="${paragraph.value.Image}"
-                        cssclass="ap-kenburns-animation" />
+                        cssclass="${imagecss}" />
                 </div>
 
                 <div class="col-md-8">
@@ -103,7 +107,7 @@
                 <div class="col-xs-12">
                     <apollo:image-animated
                         image="${paragraph.value.Image}"
-                        cssclass="${(hasText or hasLink) ? 'image-ontop' : ''}" />
+                        cssclass="${(hasText or hasLink) ? 'image-ontop ' : ''}${imagecss}" />
                 </div>
 
                 <c:if test="${hasText or hasLink}">

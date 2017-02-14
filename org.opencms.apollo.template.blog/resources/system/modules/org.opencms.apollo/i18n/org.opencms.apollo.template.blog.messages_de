@@ -2,6 +2,7 @@ apollo.blog.default.Text=Bitte bearbeiten Sie den Blogtext.
 apollo.blog.message.by=Von
 apollo.blog.message.pdflink=PDF anzeigen
 apollo.blog.message.readmore=Weiter lesen
+apollo.setting.blog.showparallax=Parallax-Bildeffekt
 desc.a-blog=Ein Blog- oder News-Artikel bestehend aus mehreren Absätzen mit optionalen Bildern, Autor, Datum und Kategorien.
 fileicon.a-blog=Blog-Artikel
 formatter.a-blog.detail=Blog-Artikel Detailansicht

@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloBlogs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/blog.xsd">
+  <ApolloBlog language="en">
+    <Title><![CDATA[OpenCms is amazing]]></Title>
+    <Date>1480674660000</Date>
+    <Teaser><![CDATA[Movet delicata gubergren ne est. An iuvaret officiis gloriatur mea, duo at nostrum eligendi democritum. Et quaeque delectus vix, ex mel nonumes accusamus. Ne malis dicit volumus vim, cibo vitae aliquip eu per.]]></Teaser>
+    <Paragraph>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Movet delicata gubergren ne est. An iuvaret officiis gloriatur mea, duo at nostrum eligendi democritum. Et quaeque delectus vix, ex mel nonumes accusamus. Ne malis dicit volumus vim, cibo vitae aliquip eu per. Quis tritani an nec, pro choro mentitum temporibus ea.</p>
+<p>Mucius pertinacia ut nam, populo euismod electram cu vim. Sit libris eleifend electram id. Ne usu vitae erroribus. Clita assueverit qui ut. Animal nonumes no vix, laudem verterem pri id. Nam audire invenire ocurreret ex.</p>]]></content>
+      </Text>
+      <Image>
+        <Image>
+          <link type="WEAK">
+            <target><![CDATA[/sites/default/.galleries/samples/31.jpg]]></target>
+            <uuid>b571e789-4785-11e3-ba23-000c29d28104</uuid>
+          </link>
+        </Image>
+      </Image>
+    </Paragraph>
+    <Author><![CDATA[Cameron Tucker]]></Author>
+    <Category>
+      <!--Categories are read dynamically-->
+    </Category>
+  </ApolloBlog>
   <ApolloBlog language="de">
     <Title><![CDATA[OpenCms ist erstaunlich]]></Title>
     <Date>1480674660000</Date>
@@ -21,31 +45,7 @@
         <Copyright><![CDATA[CC0 Public Domain / Pixabay.com]]></Copyright>
       </Image>
     </Paragraph>
-    <Author><![CDATA[Admin]]></Author>
-    <Category>
-      <!--Categories are read dynamically-->
-    </Category>
-  </ApolloBlog>
-  <ApolloBlog language="en">
-    <Title><![CDATA[OpenCms is amazing]]></Title>
-    <Date>1480674660000</Date>
-    <Teaser><![CDATA[Movet delicata gubergren ne est. An iuvaret officiis gloriatur mea, duo at nostrum eligendi democritum. Et quaeque delectus vix, ex mel nonumes accusamus. Ne malis dicit volumus vim, cibo vitae aliquip eu per.]]></Teaser>
-    <Paragraph>
-      <Text name="Text0">
-        <links/>
-        <content><![CDATA[<p>Movet delicata gubergren ne est. An iuvaret officiis gloriatur mea, duo at nostrum eligendi democritum. Et quaeque delectus vix, ex mel nonumes accusamus. Ne malis dicit volumus vim, cibo vitae aliquip eu per. Quis tritani an nec, pro choro mentitum temporibus ea.</p>
-<p>Mucius pertinacia ut nam, populo euismod electram cu vim. Sit libris eleifend electram id. Ne usu vitae erroribus. Clita assueverit qui ut. Animal nonumes no vix, laudem verterem pri id. Nam audire invenire ocurreret ex.</p>]]></content>
-      </Text>
-      <Image>
-        <Image>
-          <link type="WEAK">
-            <target><![CDATA[/sites/default/.galleries/samples/31.jpg]]></target>
-            <uuid>b571e789-4785-11e3-ba23-000c29d28104</uuid>
-          </link>
-        </Image>
-      </Image>
-    </Paragraph>
-    <Author><![CDATA[Arno Admin]]></Author>
+    <Author><![CDATA[Cameron Tucker]]></Author>
     <Category>
       <!--Categories are read dynamically-->
     </Category>

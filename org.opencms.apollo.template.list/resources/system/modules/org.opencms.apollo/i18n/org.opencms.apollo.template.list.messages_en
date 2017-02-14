@@ -1,6 +1,6 @@
 apollo.list.message.archive=Archive
 apollo.list.message.categories=Categories
-apollo.list.message.empty=No entries found for this list.
+apollo.list.message.empty=No entries found for this list
 apollo.list.message.facets=Facets for the "{0}" list
 apollo.list.message.facetsusage=You must place the same list on this page again using the dynamic list formatter.
 apollo.list.message.newentry=Create a new "{0}" using the edit point.
