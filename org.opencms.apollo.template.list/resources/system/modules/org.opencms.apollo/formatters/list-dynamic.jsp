@@ -21,10 +21,12 @@
     online="${cms.isOnlineProject}"
 />
 
-<div class="ap-list-content">
+<c:set var="showTitle" value="${not cms.element.settings.hideTitle && value.Headline.isSet}" />
+
+<div class="ap-list-content ${cms.isEditMode and !showTitle ? 'oc-point-T-25_L15' : ''}">
 
         <%-- ####### Headline ######## --%>
-        <c:if test="${not cms.element.settings.hideTitle && value.Headline.isSet}">
+        <c:if test="${showTitle}">
             <div class="headline">
                 <h2 ${content.rdfa.Headline}>
                     <c:out value="${value.Headline}" escapeXml="false" />

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AlkaconContainerPages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.containerpage/schemas/container_page.xsd">
+  <AlkaconContainerPage language="en">
+    <Containers>
+      <Name><![CDATA[65c84863-f2d1-11e6-8018-0242ac11002b-c1]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <ParentInstanceId><![CDATA[65c84863-f2d1-11e6-8018-0242ac11002b]]></ParentInstanceId>
+      <Elements>
+        <Uri>
+          <link type="STRONG">
+            <target><![CDATA[/sites/default/apollo-demo/.content/imagegalleries/imggal_00001.xml]]></target>
+            <uuid>4636a4c3-de43-11e6-93cd-0242ac11002b</uuid>
+          </link>
+        </Uri>
+        <Formatter>
+          <link type="STRONG">
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/imagegallery.jsp]]></target>
+            <uuid>68958b5e-8f73-11e5-9ae7-0242ac11002b</uuid>
+          </link>
+        </Formatter>
+        <CreateNew>true</CreateNew>
+        <Properties>
+          <Name><![CDATA[autoload]]></Name>
+          <Value>
+            <String><![CDATA[true]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[cssClass]]></Name>
+          <Value>
+            <String><![CDATA[square-xs-6 square-sm-4 square-md-3 square-lg-2]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[6c3f1937-f2d1-11e6-8018-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#65c84863-f2d1-11e6-8018-0242ac11002b-c1]]></Name>
+          <Value>
+            <String><![CDATA[689934e1-8f73-11e5-9ae7-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[hidetitle]]></Name>
+          <Value>
+            <String><![CDATA[true]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[imagesPerPage]]></Name>
+          <Value>
+            <String><![CDATA[12]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[showCopyright]]></Name>
+          <Value>
+            <String><![CDATA[true]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[showTitle]]></Name>
+          <Value>
+            <String><![CDATA[true]]></String>
+          </Value>
+        </Properties>
+      </Elements>
+    </Containers>
+    <Containers>
+      <Name><![CDATA[e79c4771-b0a5-11e6-a18e-0242ac11002b-c1]]></Name>
+      <Type><![CDATA[row]]></Type>
+      <ParentInstanceId><![CDATA[e79c4771-b0a5-11e6-a18e-0242ac11002b]]></ParentInstanceId>
+      <IsRootContainer>true</IsRootContainer>
+      <Elements>
+        <Uri>
+          <link type="STRONG">
+            <target><![CDATA[/sites/default/apollo-demo/.content/layoutrows/lr_00001.xml]]></target>
+            <uuid>4c445574-eb91-11e5-8519-0242ac11002b</uuid>
+          </link>
+        </Uri>
+        <Formatter>
+          <link type="STRONG">
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/layoutrow.jsp]]></target>
+            <uuid>d652a05d-523d-11e5-9495-0242ac11002b</uuid>
+          </link>
+        </Formatter>
+        <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[65c84863-f2d1-11e6-8018-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#e79c4771-b0a5-11e6-a18e-0242ac11002b-c1]]></Name>
+          <Value>
+            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+      </Elements>
+    </Containers>
+  </AlkaconContainerPage>
+</AlkaconContainerPages>

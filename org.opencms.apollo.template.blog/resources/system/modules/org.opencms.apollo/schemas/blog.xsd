@@ -43,7 +43,6 @@
 			</mappings>
 			<defaults>
 				<default element="Title" value="%(key.title.a-blog)" />
-				<default element="Paragraph/Text" value="%(key.apollo.blog.default.Text)" />
 				<default element="Date" value="%(currenttime)" />
 				<default element="Author" value="%(currentuser.firstname) %(currentuser.lastname)" />
 				<default element="AuthorMail" value="%(currentuser.email)" />

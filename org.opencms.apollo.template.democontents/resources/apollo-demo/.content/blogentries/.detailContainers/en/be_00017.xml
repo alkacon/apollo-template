@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AlkaconContainerPages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.containerpage/schemas/container_page.xsd">
+  <AlkaconContainerPage language="en">
+    <Containers>
+      <Name><![CDATA[3f4cd5ef-f2d3-11e6-8018-0242ac11002b-c2]]></Name>
+      <Type><![CDATA[element]]></Type>
+      <ParentInstanceId><![CDATA[3f4cd5ef-f2d3-11e6-8018-0242ac11002b]]></ParentInstanceId>
+      <Elements>
+        <Uri>
+          <link type="STRONG">
+            <target><![CDATA[/sites/default/apollo-demo/.content/jobs/job_00001.xml]]></target>
+            <uuid>44079d22-6ebe-11e6-9a42-0242ac11002b</uuid>
+          </link>
+        </Uri>
+        <Formatter>
+          <link type="STRONG">
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/job-teaser-elaborate.jsp]]></target>
+            <uuid>61613e22-42b7-11e6-a4ea-0242ac11002b</uuid>
+          </link>
+        </Formatter>
+        <Properties>
+          <Name><![CDATA[displayOption]]></Name>
+          <Value>
+            <String><![CDATA[largeImage]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[4ec95fd4-f2d3-11e6-8018-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#3f4cd5ef-f2d3-11e6-8018-0242ac11002b-c2]]></Name>
+          <Value>
+            <String><![CDATA[6166bc67-42b7-11e6-a4ea-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[ieffect]]></Name>
+          <Value>
+            <String><![CDATA[none]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[showdate]]></Name>
+          <Value>
+            <String><![CDATA[true]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[teaserlength]]></Name>
+          <Value>
+            <String><![CDATA[200]]></String>
+          </Value>
+        </Properties>
+      </Elements>
+    </Containers>
+    <Containers>
+      <Name><![CDATA[e79c4771-b0a5-11e6-a18e-0242ac11002b-c1]]></Name>
+      <Type><![CDATA[row]]></Type>
+      <ParentInstanceId><![CDATA[e79c4771-b0a5-11e6-a18e-0242ac11002b]]></ParentInstanceId>
+      <IsRootContainer>true</IsRootContainer>
+      <Elements>
+        <Uri>
+          <link type="STRONG">
+            <target><![CDATA[/sites/default/apollo-demo/.content/layoutrows/lr_00005.xml]]></target>
+            <uuid>69d2a96f-eb9b-11e5-8519-0242ac11002b</uuid>
+          </link>
+        </Uri>
+        <Formatter>
+          <link type="STRONG">
+            <target><![CDATA[/system/modules/org.opencms.apollo/formatters/layoutrow.jsp]]></target>
+            <uuid>d652a05d-523d-11e5-9495-0242ac11002b</uuid>
+          </link>
+        </Formatter>
+        <Properties>
+          <Name><![CDATA[element_instance_id]]></Name>
+          <Value>
+            <String><![CDATA[3f4cd5ef-f2d3-11e6-8018-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+        <Properties>
+          <Name><![CDATA[formatterSettings#e79c4771-b0a5-11e6-a18e-0242ac11002b-c1]]></Name>
+          <Value>
+            <String><![CDATA[d65670f0-523d-11e5-9495-0242ac11002b]]></String>
+          </Value>
+        </Properties>
+      </Elements>
+    </Containers>
+  </AlkaconContainerPage>
+</AlkaconContainerPages>

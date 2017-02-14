@@ -6537,6 +6537,172 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>apollo-demo/.content/blogentries/.detailContainers/de</destination>
+			<type>folder</type>
+			<uuidstructure>42b89ef2-f2d5-11e6-8018-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 14 Feb 2017 16:47:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/.detailContainers/de/be_00006.xml</source>
+			<destination>apollo-demo/.content/blogentries/.detailContainers/de/be_00006.xml</destination>
+			<type>containerpage</type>
+			<uuidstructure>42be1d35-f2d5-11e6-8018-0242ac11002b</uuidstructure>
+			<uuidresource>42be1d36-f2d5-11e6-8018-0242ac11002b</uuidresource>
+			<datecreated>Tue, 14 Feb 2017 16:47:24 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is simple to use [Detail]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>apollo-demo/.content/blogentries/.detailContainers/en</destination>
+			<type>folder</type>
+			<uuidstructure>291cf3ca-f2be-11e6-8018-0242ac11002b</uuidstructure>
+			<datecreated>Tue, 14 Feb 2017 14:02:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[all]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/.detailContainers/en/be_00002.xml</source>
+			<destination>apollo-demo/.content/blogentries/.detailContainers/en/be_00002.xml</destination>
+			<type>containerpage</type>
+			<uuidstructure>29246ddd-f2be-11e6-8018-0242ac11002b</uuidstructure>
+			<uuidresource>29246dde-f2be-11e6-8018-0242ac11002b</uuidresource>
+			<datecreated>Tue, 14 Feb 2017 14:02:02 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is just fun [Detail]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/.detailContainers/en/be_00003.xml</source>
+			<destination>apollo-demo/.content/blogentries/.detailContainers/en/be_00003.xml</destination>
+			<type>containerpage</type>
+			<uuidstructure>79303698-f2d4-11e6-8018-0242ac11002b</uuidstructure>
+			<uuidresource>79303699-f2d4-11e6-8018-0242ac11002b</uuidresource>
+			<datecreated>Tue, 14 Feb 2017 16:41:46 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is the tool [Detail]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/.detailContainers/en/be_00005.xml</source>
+			<destination>apollo-demo/.content/blogentries/.detailContainers/en/be_00005.xml</destination>
+			<type>containerpage</type>
+			<uuidstructure>558daa1a-f2d2-11e6-8018-0242ac11002b</uuidstructure>
+			<uuidresource>558daa1b-f2d2-11e6-8018-0242ac11002b</uuidresource>
+			<datecreated>Tue, 14 Feb 2017 16:26:27 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is powerful [Detail]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/.detailContainers/en/be_00006.xml</source>
+			<destination>apollo-demo/.content/blogentries/.detailContainers/en/be_00006.xml</destination>
+			<type>containerpage</type>
+			<uuidstructure>81ee78a9-f2cf-11e6-8018-0242ac11002b</uuidstructure>
+			<uuidresource>81ee78aa-f2cf-11e6-8018-0242ac11002b</uuidresource>
+			<datecreated>Tue, 14 Feb 2017 16:06:13 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is simple to use [Detail]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/.detailContainers/en/be_00011.xml</source>
+			<destination>apollo-demo/.content/blogentries/.detailContainers/en/be_00011.xml</destination>
+			<type>containerpage</type>
+			<uuidstructure>9371a07d-f2d2-11e6-8018-0242ac11002b</uuidstructure>
+			<uuidresource>9371a07e-f2d2-11e6-8018-0242ac11002b</uuidresource>
+			<datecreated>Tue, 14 Feb 2017 16:28:11 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is reliable [Detail]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/.detailContainers/en/be_00012.xml</source>
+			<destination>apollo-demo/.content/blogentries/.detailContainers/en/be_00012.xml</destination>
+			<type>containerpage</type>
+			<uuidstructure>66628c94-f2d1-11e6-8018-0242ac11002b</uuidstructure>
+			<uuidresource>66628c95-f2d1-11e6-8018-0242ac11002b</uuidresource>
+			<datecreated>Tue, 14 Feb 2017 16:19:46 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms unlocks your creativity [Detail]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>apollo-demo/.content/blogentries/.detailContainers/en/be_00017.xml</source>
+			<destination>apollo-demo/.content/blogentries/.detailContainers/en/be_00017.xml</destination>
+			<type>containerpage</type>
+			<uuidstructure>3fe852a0-f2d3-11e6-8018-0242ac11002b</uuidstructure>
+			<uuidresource>3fe852a1-f2d3-11e6-8018-0242ac11002b</uuidresource>
+			<datecreated>Tue, 14 Feb 2017 16:33:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms is modular [Detail]]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>apollo-demo/.content/blogentries/images-ugc</destination>
 			<type>imagegallery</type>
 			<uuidstructure>cb5f1937-5ad1-11e5-a17e-0242ac11002b</uuidstructure>
@@ -11356,7 +11522,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Blog article: Social media for blog detail]]></value>
+					<value><![CDATA[Blog article: Shariff Social media for blog detail]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14180,7 +14346,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>release/opencms-10.5.1</destination>
+			<destination>release/opencms-10.5.1-notes</destination>
 			<type>folder</type>
 			<uuidstructure>e5222e3b-f2ba-11e6-8018-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 14 Feb 2017 13:38:40 GMT</datecreated>
@@ -14203,8 +14369,8 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>release/opencms-10.5.1/index.html</source>
-			<destination>release/opencms-10.5.1/index.html</destination>
+			<source>release/opencms-10.5.1-notes/index.html</source>
+			<destination>release/opencms-10.5.1-notes/index.html</destination>
 			<type>containerpage</type>
 			<uuidstructure>e5312260-f2ba-11e6-8018-0242ac11002b</uuidstructure>
 			<uuidresource>e5312261-f2ba-11e6-8018-0242ac11002b</uuidresource>

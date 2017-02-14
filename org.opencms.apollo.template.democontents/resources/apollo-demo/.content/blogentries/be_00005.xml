@@ -6,6 +6,7 @@
     <Date>1496516400000</Date>
     <Teaser><![CDATA[Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. ]]></Teaser>
     <Paragraph>
+      <Headline><![CDATA[Alle Funktionen sind vorhanden]]></Headline>
       <Text name="Text0">
         <links/>
         <content><![CDATA[<p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
@@ -40,6 +41,7 @@
     <Date>1496516400000</Date>
     <Teaser><![CDATA[Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. ]]></Teaser>
     <Paragraph>
+      <Headline><![CDATA[All the features in one place]]></Headline>
       <Text name="Text0">
         <links/>
         <content><![CDATA[<p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
@@ -63,6 +65,14 @@
           </link>
         </URI>
       </Link>
+    </Paragraph>
+    <Paragraph>
+      <Headline><![CDATA[Over-the-top example]]></Headline>
+      <Text name="Text0">
+        <links/>
+        <content><![CDATA[<p>Want to show a dynamic list of events in the defail page of you blog entry?</p>
+<p>Not a problem for OpenCms and the Apollo template!</p>]]></content>
+      </Text>
     </Paragraph>
     <Author><![CDATA[Pepper Saltzman]]></Author>
     <Category>

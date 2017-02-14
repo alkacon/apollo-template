@@ -15,10 +15,12 @@
 <fmt:setLocale value="${cms.locale}" />
 <cms:bundle basename="org.opencms.apollo.template.list.messages">
 
-<div class="ap-list-content">
+<c:set var="showTitle" value="${not cms.element.settings.hideTitle && value.Headline.isSet}" />
+
+<div class="ap-list-content ${cms.isEditMode and !showTitle ? 'oc-point-T-1_L-25' : ''}">
 
     <%-- ####### Headline ######## --%>
-    <c:if test="${not cms.element.settings.hideTitle && con.value.Headline.isSet}">
+    <c:if test="${showTitle}">
         <div class="headline">
             <h2 ${rdfa.Headline}>
                 <c:out value="${con.value.Headline}" escapeXml="false" />
@@ -45,7 +47,7 @@
     <%-- Id must not have any "-" character --%>
 
     <div class="${listWrapper}" id="${instanceId}">
-    
+
         <%-- ####### List entries ######## --%>
         <apollo:list-main
             instanceId="${instanceId}"
