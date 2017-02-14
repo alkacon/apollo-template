@@ -92,7 +92,10 @@ $ap-edit-infos:
 
     .text {
         color: $grey-dark;
-        text-transform: capitalize;
+
+        &.capital {
+            text-transform: capitalize;
+        }
     }
 
     .small {

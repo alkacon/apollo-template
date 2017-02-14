@@ -11,7 +11,7 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -28,15 +28,47 @@
 
 .ap-blog-page {
 
-    // no special requirements so far
-}
-
-/* Blog visual formatter */
-
-.blog-visual {
-
     .visual-image {
         height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .visual-info {
+
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+
+        .author {
+            float: left;
+             &:before {
+                font-family: FontAwesome;
+                padding-right: 10px;
+                content: "\f2c0";
+            }
+        }
+
+        .date {
+            float: right;
+             &:before {
+                font-family: FontAwesome;
+                padding-right: 10px;
+                content: "\f133";
+            }
+        }
+    }
+
+    .visual-text {
+
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+
+    .visual-overlay {
+        background-color: rgba(0,0,0,0.1);
+        height: 100%;
 
         h1,
         h2 {
@@ -51,26 +83,36 @@
 
         h1 {
             font-size: 48px;
+            line-height: 1em;
             padding-top: 175px;
         }
 
         h2 {
             font-size: 24px;
+            line-height: 1em;
             margin-top: 10px;
         }
     }
 
-    .visual-text {
+    .ap-image {
+        &.visual-image {
+            position: relative;
+            height: auto;
+        }
 
-        margin-top: 20px;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.4;
-    }
+        .visual-overlay {
+            position: absolute;
+            top: 0;
+            width: 100%;
 
-    .visual-overlay {
-        background-color: rgba(0,0,0,0.1);
-        height: 100%;
+            .spacer {
+                height: calc(50% - 35px);
+            }
+
+            h1 {
+                padding-top: 0;
+            }
+        }
     }
 }
 
