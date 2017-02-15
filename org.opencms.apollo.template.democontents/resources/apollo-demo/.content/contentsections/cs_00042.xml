@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
-  <ApolloSection language="de">
-    <Headline><![CDATA[Responsives Apollo Template]]></Headline>
-    <Text name="Text0">
-      <links/>
-      <content><![CDATA[<p>OpenCms 10.5 bringt das <strong>Apollo Template in der Version 2.0</strong> mit, ein ausgefeiltes, konfigurierbares Template, welches auf Bootstrap aufbaut.</p>
-<p>Mit Apollo können Sie toll aussehende Webseiten erstellen ohne programmieren zu müssen.</p>
-<p>Diese Version von OpenCms bietet mächtige Funktionen und ist einfach zu bedienen.</p>]]></content>
-    </Text>
-    <Image>
-      <Image>
-        <link type="WEAK">
-          <target><![CDATA[/sites/default/.galleries/people/26.jpg]]></target>
-          <uuid>8fb1fbec-635e-11e5-81df-0242ac11002b</uuid>
-        </link>
-      </Image>
-    </Image>
-  </ApolloSection>
   <ApolloSection language="en">
     <Headline><![CDATA[Responsive Apollo Template]]></Headline>
     <Text name="Text0">
@@ -30,6 +13,23 @@
       <content><![CDATA[<p>OpenCms 10.5 comes with the ready-to-use <strong>Apollo Template</strong>, an advanced, configurable Template based on Bootstrap. Apollo enables you to generate feature rich, nice&nbsp;looking websites without coding.</p>
 <p>Check out the <a href="%(link0)">Element pages</a> section to get an impression about what kind of pages you can generate using <strong>Apollo</strong></p>
 <p>With more features than ever, this latest OpenCms version is powerful and easy to use.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/.galleries/people/26.jpg]]></target>
+          <uuid>8fb1fbec-635e-11e5-81df-0242ac11002b</uuid>
+        </link>
+      </Image>
+    </Image>
+  </ApolloSection>
+  <ApolloSection language="de">
+    <Headline><![CDATA[Responsives Apollo Template]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>OpenCms 10.5 bringt das <strong>Apollo Template</strong>&nbsp;mit, ein ausgefeiltes, konfigurierbares Template, welches auf Bootstrap aufbaut.</p>
+<p>Mit Apollo können Sie toll aussehende Webseiten erstellen ohne programmieren zu müssen.</p>
+<p>Diese Version von OpenCms bietet mächtige Funktionen und ist einfach zu bedienen.</p>]]></content>
     </Text>
     <Image>
       <Image>

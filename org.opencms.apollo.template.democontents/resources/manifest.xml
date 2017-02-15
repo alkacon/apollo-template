@@ -7945,7 +7945,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Full Demo Footer: Contact us]]></value>
+					<value><![CDATA[Apollo Demo Footer: Contact us]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -7962,7 +7962,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Full Demo Footer: About OpenCms]]></value>
+					<value><![CDATA[Apollo Demo Footer: About OpenCms]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8047,7 +8047,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Full Demo Footer: More information]]></value>
+					<value><![CDATA[Apollo Demo Footer: More information]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8064,7 +8064,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Tutorial Footer: Release notes footer content]]></value>
+					<value><![CDATA[Apollo Tutorial / Release Notes Footer: Release notes footer content]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -8387,7 +8387,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Element Page Navigation: Element pages]]></value>
+					<value><![CDATA[Apollo 'Element Page' Navigation: Element pages]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10045,7 +10045,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Full Demo Footer: Stay connected]]></value>
+					<value><![CDATA[Apollo Demo Footer: Stay connected]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10062,7 +10062,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Full Demo Footer: The OpenCms Mailing List]]></value>
+					<value><![CDATA[Apollo Demo Footer: The OpenCms Mailing List]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10079,7 +10079,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Tutorial Footer: Footer Alkacon Image]]></value>
+					<value><![CDATA[Apollo Tutorial / Release Notes Footer: Footer Alkacon Image]]></value>
 				</property>
 			</properties>
 			<relations/>
