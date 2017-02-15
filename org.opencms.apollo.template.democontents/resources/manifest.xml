@@ -16756,7 +16756,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link to: /overview/]]></value>
+					<value><![CDATA[Link to: /sites/default/overview/]]></value>
 				</property>
 				<property>
 					<name>locale-available</name>
