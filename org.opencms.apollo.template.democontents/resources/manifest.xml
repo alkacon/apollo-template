@@ -6901,7 +6901,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms is powerful [Detail]: Special detail content]]></value>
+					<value><![CDATA[Special detail content]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -10133,7 +10133,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Image Gallery: Clipart image gallery]]></value>
+					<value><![CDATA[Clipart image gallery]]></value>
 				</property>
 			</properties>
 			<relations/>

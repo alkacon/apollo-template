@@ -41,13 +41,14 @@
 <c:set var="showCategories" value="${cms.element.setting.showlabels.toBoolean and not empty fieldFacetResult and cms:getListSize(fieldFacetResult.values) > 0}" />
 <c:set var="showArchive" value="${cms.element.setting.showarchive.toBoolean and not empty rangeFacet and cms:getListSize(rangeFacet.counts) > 0}" />
 
-<div class="ap-list-archive ${csswrapper}" id="${archiveId}"
-data-id="${elementId}"
-data-filter='{
-    "search":"${showSearch}",
-    "categories":"${showCategories}",
-    "archive":"${showArchive}"
-}'>
+<div class="ap-list-archive ${csswrapper}" <%--
+--%>id="${archiveId}" <%--
+--%>data-id="${elementId}" <%--
+--%>data-filter='{<%--
+    --%>"search":"${showSearch}", <%--
+    --%>"categories":"${showCategories}", <%--
+    --%>"archive":"${showArchive}"<%--
+--%>}'>
 
     <c:if test="${showSearch}">
         <div class="filterbox search">
@@ -62,13 +63,12 @@ data-filter='{
                     <input type="hidden" name="${search.controller.common.config.reloadedParam}" />
                     <label class="input">
                         <i class="icon-prepend fa fa-search"></i>
-                        <input
-                            name="${search.controller.common.config.queryParam}"
-                            id="textsearch"
-                            type="text"
-                            value="${escapedQuery}"
-                            placeholder="<fmt:message key="apollo.list.message.search" />"
-                        >
+                        <input <%--
+                        --%>name="${search.controller.common.config.queryParam}" <%--
+                        --%>id="textsearch" <%--
+                        --%>type="text" <%--
+                        --%>value="${escapedQuery}" <%--
+                        --%>placeholder="<fmt:message key="apollo.list.message.search" />">
                     </label>
             </form>
         </div>
@@ -77,14 +77,14 @@ data-filter='{
     <c:if test="${showCategories}">
         <div class="filterbox categories">
 
-            <button type="button"
-                class="btn btn-block li-label ${formatterSettings.catPreopened ? '' : 'collapsed'}"
-                data-target="#cats_${archiveId}"
-                aria-controls="cats_${archiveId}"
-                aria-expanded="${formatterSettings.catPreopened}"
-                data-toggle="collapse">
-                <fmt:message key="apollo.list.message.categories" />
-            </button>
+            <button type="button" <%--
+            --%>class="btn btn-block li-label ${formatterSettings.catPreopened ? '' : 'collapsed'}" <%--
+            --%>data-target="#cats_${archiveId}" <%--
+            --%>aria-controls="cats_${archiveId}" <%--
+            --%>aria-expanded="${formatterSettings.catPreopened}" <%--
+            --%>data-toggle="collapse"><%--
+            --%><fmt:message key="apollo.list.message.categories" /><%--
+         --%></button>
 
             <div id="cats_${archiveId}" class="collapse${formatterSettings.catPreopened ? ' in' : ''}">
                 <ul>
@@ -109,7 +109,7 @@ data-filter='{
                     <c:set var="facetValues" value="${fieldFacetResult.values}" />
                     <c:forEach var="value" items="${facetValues}" varStatus="outerStatus">
                         <c:if test="${not onlyLeafs or outerStatus.last or not fn:startsWith(facetValues[outerStatus.count].name, value.name)}">
-                            <c:set var="selected">${fieldFacetController.state.isChecked[value.name] ? ' class="active"' : ''}</c:set>
+                            <c:set var="active">${fieldFacetController.state.isChecked[value.name] ? ' class="active"' : ''}</c:set>
 
                             <%-- BEGIN: Calculate category label --%>
                             <c:set var="catCompareLabel" value="" />
@@ -136,7 +136,7 @@ data-filter='{
                             </c:forEach>
 
                             <c:if test="${blacklistFilter != isMatchedByFilter}">
-                                <li id="${catId}" ${selected}>
+                                <li id="${catId}" ${active}>
                                     <a onclick="ApolloList.archiveFilter(<%--
                                             --%>'${archiveId}', <%--
                                             --%>'${catId}', <%--
@@ -156,14 +156,14 @@ data-filter='{
     <c:if test="${showArchive}">
         <div class="filterbox archive">
 
-            <button type="button"
-                class="btn btn-block li-label ${formatterSettings.archivePreopened ? '' : 'collapsed'}"
-                data-target="#arch_${archiveId}"
-                aria-controls="arch_${archiveId}"
-                aria-expanded="${formatterSettings.archivePreopened}"
-                data-toggle="collapse">
-                <fmt:message key="apollo.list.message.archive" />
-            </button>
+            <button type="button" <%--
+            --%>class="btn btn-block li-label ${formatterSettings.archivePreopened ? '' : 'collapsed'}" <%--
+            --%>data-target="#arch_${archiveId}" <%--
+            --%>aria-controls="arch_${archiveId}" <%--
+            --%>aria-expanded="${formatterSettings.archivePreopened}" <%--
+            --%>data-toggle="collapse"><%--
+            --%><fmt:message key="apollo.list.message.archive" /><%--
+        --%></button>
 
             <div id="arch_${archiveId}" class="collapse${formatterSettings.archivePreopened ? ' in' : ''}">
 
@@ -176,10 +176,10 @@ data-filter='{
                 <c:set var="thisYear"><fmt:formatDate value="${now}" pattern="yyyy" /></c:set>
 
                 <c:forEach var="facetItem" items="${rangeFacet.counts}" varStatus="status">
-                    <c:set var="selected">${rangeFacetController.state.isChecked[facetItem.value] ? ' class="active"' : ''}</c:set>
+                    <c:set var="active">${rangeFacetController.state.isChecked[facetItem.value] ? ' class="active"' : ''}</c:set>
                     <fmt:parseDate var="fDate" pattern="yyyy-MM-dd'T'HH:mm:ss'Z'" value="${facetItem.value}"/>
                     <c:set var="currYear"><fmt:formatDate value="${fDate}" pattern="yyyy" /></c:set>
-
+                    <c:set var="activeYear" value="${(not empty active) or (currYear eq thisYear)}" />
                     <c:if test="${prevYear != currYear}">
                         <%-- another year, generate year toggle button --%>
                         <c:if test="${not status.first}">
@@ -187,14 +187,18 @@ data-filter='{
                             <c:set var="yearHtml">${yearHtml}<c:out value='</ul>' escapeXml='false' /></c:set>
                         </c:if>
                         <c:set var="archiveHtml">${yearHtml}${archiveHtml}</c:set>
-                        <c:set var="yearId">y_${currYear}</c:set>
+                        <c:set var="yearId">y_${currYear}_${archiveId}</c:set>
                         <c:set var="yearHtml">
-                            <button type="button" class="btn-block btn btn-xs year" onclick="<%--
-                                --%>ApolloList.archiveToggle('${archiveId}', '${yearId}');">
-                                <span class="pull-left">${currYear}</span>
-                                <i id="${yearId}_toggle" class="fa fa-chevron-down pull-right"></i>
-                            </button>
-                            <c:out value='<ul class="year" id="${yearId}" style="display:none;">' escapeXml='false' />
+                            <button type="button"<%--
+                            --%>class="btn btn-xs btn-block year li-label ${activeYear ? '' : 'collapsed'}" <%--
+                            --%>data-target="#${yearId}" <%--
+                            --%>aria-controls="${yearId}" <%--
+                            --%>aria-expanded="${activeYear}" <%--
+                            --%>data-toggle="collapse"><%--
+                            --%>${currYear}<%--
+                        --%></button>
+                            <c:set var="in" value="${activeYear ? 'in' : ''}" />
+                            <c:out value='<ul class="year collapse ${in}" id="${yearId}">' escapeXml='false' />
                         </c:set>
                     </c:if>
                     <%-- add month list entry to current year --%>
@@ -202,7 +206,7 @@ data-filter='{
                     <c:set var="monthId">${yearId}${currMonth}</c:set>
                     <c:set var="yearHtml">
                         ${yearHtml}
-                        <li id="${monthId}" ${selected} onclick="ApolloList.archiveFilter(<%--
+                        <li id="${monthId}" ${active} onclick="ApolloList.archiveFilter(<%--
                                 --%>'${archiveId}', <%--
                                 --%>'${monthId}', <%--
                                 --%>'${search.stateParameters.resetAllFacetStates.newQuery[''].checkFacetItem[rangeFacetField][facetItem.value]}'<%--
@@ -210,16 +214,11 @@ data-filter='{
                             <a>${currMonth}</a>
                         </li>
                     </c:set>
-                    <c:if test="${(not empty selected) or (currYear eq thisYear)}">
-                        <c:set var="yearHtml">${fn:replace(yearHtml, 'style="display:none;"', '')}</c:set>
-                        <c:set var="yearHtml">${fn:replace(yearHtml, 'fa-chevron-down pull-right', 'fa-chevron-down open pull-right')}</c:set>
-                    </c:if>
                     <c:set var="prevYear" value="${currYear}" />
                 </c:forEach>
 
                 <%-- close month list of last year --%>
                 <c:set var="archiveHtml">${yearHtml}<c:out value='</ul>' escapeXml='false' />${archiveHtml}</c:set>
-
                 ${archiveHtml}
             </div> <%-- /ap-list-filter-archive --%>
 
