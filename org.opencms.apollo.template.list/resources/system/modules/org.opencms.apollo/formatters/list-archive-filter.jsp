@@ -77,13 +77,16 @@ data-filter='{
     <c:if test="${showCategories}">
         <div class="filterbox categories">
 
-            <button type="button" class="btn-block btn" onclick="ApolloList.archiveToggle('${archiveId}', 'labels');">
-                <span class="pull-left"><span class="fa fa-tag"></span></span>
-                <span class="pull-left pl-10"><fmt:message key="apollo.list.message.categories" /></span>
-                <span id="labels_toggle" class="fa fa-chevron-down ${formatterSettings.catPreopened ? 'open' : ''} pull-right"></span>
+            <button type="button"
+                class="btn btn-block li-label ${formatterSettings.catPreopened ? '' : 'collapsed'}"
+                data-target="#cats_${archiveId}"
+                aria-controls="cats_${archiveId}"
+                aria-expanded="${formatterSettings.catPreopened}"
+                data-toggle="collapse">
+                <fmt:message key="apollo.list.message.categories" />
             </button>
 
-            <div id="labels" class="dialog" ${formatterSettings.catPreopened ? 'style="display:block;"' : ''}>
+            <div id="cats_${archiveId}" class="collapse${formatterSettings.catPreopened ? ' in' : ''}">
                 <ul>
                     <%-- BEGIN: Calculate category filters --%>
                     <c:set var="catFilters"
@@ -153,13 +156,16 @@ data-filter='{
     <c:if test="${showArchive}">
         <div class="filterbox archive">
 
-            <button type="button" class="btn-block btn" onclick="ApolloList.archiveToggle('${archiveId}', 'archive');">
-                <span class="pull-left"><span class="fa fa-archive"></span></span>
-                <span class="pull-left pl-10"><fmt:message key="apollo.list.message.archive" /></span>
-                <span id="archive_toggle" class="fa fa-chevron-down ${formatterSettings.archivePreopened ? 'open' : ''} pull-right"></span>
+            <button type="button"
+                class="btn btn-block li-label ${formatterSettings.archivePreopened ? '' : 'collapsed'}"
+                data-target="#arch_${archiveId}"
+                aria-controls="arch_${archiveId}"
+                aria-expanded="${formatterSettings.archivePreopened}"
+                data-toggle="collapse">
+                <fmt:message key="apollo.list.message.archive" />
             </button>
 
-            <div id="archive" class="dialog" ${formatterSettings.archivePreopened ? 'style="display:block;"' : ''}>
+            <div id="arch_${archiveId}" class="collapse${formatterSettings.archivePreopened ? ' in' : ''}">
 
                 <c:set var="archiveHtml" value="" />
                 <c:set var="yearHtml" value="" />
