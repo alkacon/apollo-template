@@ -1,4 +1,4 @@
-<%@ tag 
+<%@ tag
     display-name="formatter-settings"
     body-content="empty"
     trimDirectiveWhitespaces="true"
@@ -15,22 +15,22 @@
 %>
 
 
-<%@ attribute name="type" type="java.lang.String" required="true" 
+<%@ attribute name="type" type="java.lang.String" required="true"
     description="Display formatter type selection, taken from the XML content.
     Currently supports only ONE result type / display formatter setting per list." %>
 
-<%@ attribute name="online" type="java.lang.Boolean" required="true" 
+<%@ attribute name="online" type="java.lang.Boolean" required="true"
     description="Must be 'true' if the current project is the Online project." %>
 
-<%@ attribute name="parameters" type="java.util.List" required="false" 
-    description="Parameter list, usually read from the list formatter. 
+<%@ attribute name="parameters" type="java.util.List" required="false"
+    description="Parameter list, usually read from the list formatter.
     Parameters override the default formatter settings." %>
 
-<%@ variable 
-    name-given="formatterSettings" 
-    variable-class="java.util.Map" 
-    scope="AT_END" 
-    declare="true" 
+<%@ variable
+    name-given="formatterSettings"
+    variable-class="java.util.Map"
+    scope="AT_END"
+    declare="true"
     description="Result Map[String,String] filled with the display formatter default settings,
     merged with the parameters from the list configuration." %>
 
@@ -71,9 +71,12 @@
             // iterate all default settings values from the formatter
             result = new HashMap<String, String>();
             for (Map.Entry<String,CmsXmlContentProperty> prop:fb.getSettings().entrySet()) {
-                result.put(
-                    prop.getKey(), 
-                    prop.getValue().getDefault());
+                String value = prop.getValue().getDefault();
+                if (value != null) {
+                    result.put(
+                        prop.getKey().trim(),
+                        prop.getValue().getDefault().trim());
+                }
             }
         }
         if (parameters != null) {
@@ -81,8 +84,8 @@
             // merge the parameters from the list configuration over the default settings
             for (CmsJspContentAccessValueWrapper para: list) {
                 result.put(
-                    para.getValue().get("Key").getStringValue(), 
-                    para.getValue().get("Value").getStringValue());
+                    para.getValue().get("Key").getStringValue().trim(),
+                    para.getValue().get("Value").getStringValue().trim());
             }
         }
         return result;
@@ -90,13 +93,13 @@
     %><%
         getJspContext().setAttribute("formatterSettings",
             getFormatterSettings(
-                // the display formatter type 
+                // the display formatter type
                 (String)getJspContext().getAttribute("type"),
                 // the parameters from the list configuration
                 getJspContext().getAttribute("parameters"),
                 // indicates if we are in the Online project (true) or not (false)
                 ((Boolean)getJspContext().getAttribute("online")).booleanValue()
-            ) 
+            )
         );
     %>
 </c:if>

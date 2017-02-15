@@ -28,7 +28,7 @@
     categories="${content.readCategories}"
     count="0"
     sort="${value.SortOrder}"
-    showexpired="${cms.element.settings.showexpired}"
+    showexpired="${empty formatterSettings.showExpired || formatterSettings.showExpired}"
     filterqueries="${value.FilterQueries}"
 />
 
