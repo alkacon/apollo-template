@@ -74,7 +74,7 @@ $pagination-border:     $grey-light !default;
             &:before {
                 font-family: FontAwesome;
                 font-weight: normal;
-                padding-right: 5px;
+                padding-right: 10px;
             }
             &:after {
                 position: absolute;
@@ -131,7 +131,7 @@ $pagination-border:     $grey-light !default;
         &.archive {
 
             .li-label:before {
-                content: "\f187";
+                content: "\f133";
             }
 
             button.year {
@@ -142,11 +142,19 @@ $pagination-border:     $grey-light !default;
                 &:hover {
                     background-color: $grey-light;
                 }
+
+                &:before {
+                    content: "";
+                    padding-right: 7px;
+                }
             }
 
             ul.year {
                 margin: 0;
-                padding-left: 0;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-top: 5px;
+
                 list-style: outside none none;
 
                 > li {

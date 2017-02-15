@@ -89,19 +89,6 @@ var ApolloList = function(jQ) {
     }
 
 
-    function archiveToggle(id, toggleId) {
-
-        var filter = m_archiveFilters[id];
-        if (DEBUG) console.info("toggleArchiveFilter() called archiveFilterId=" + filter.id + " elementId=" + filter.elementId + " toggleId=" + toggleId);
-
-        $toggleButton = filter.$element.find("#" + toggleId + "_toggle");
-        $toggleElement = filter.$element.find("#" + toggleId);
-
-        $toggleButton.toggleClass("open");
-        $toggleElement.slideToggle();
-    }
-
-
     function updateList(id, searchStateParameters, reloadEntries) {
 
         updateInnerList(id, searchStateParameters, reloadEntries == "true");
@@ -356,7 +343,6 @@ var ApolloList = function(jQ) {
         init: init,
         update: updateList,
         facetFilter: facetFilter,
-        archiveToggle: archiveToggle,
         archiveFilter: archiveFilter,
         archiveSearch: archiveSearch
     }
