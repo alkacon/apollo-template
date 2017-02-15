@@ -407,42 +407,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>.content/.modelgroups</destination>
-			<type>folder</type>
-			<uuidstructure>5740a35a-ec79-11e5-a02c-0242ac11002b</uuidstructure>
-			<datecreated>Thu, 17 Mar 2016 19:49:20 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/.modelgroups/modelgroup_0001.html</source>
-			<destination>.content/.modelgroups/modelgroup_0001.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>5743b09d-ec79-11e5-a02c-0242ac11002b</uuidstructure>
-			<uuidresource>5743b09e-ec79-11e5-a02c-0242ac11002b</uuidresource>
-			<datecreated>Thu, 17 Mar 2016 19:49:20 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Description</name>
-					<value><![CDATA[Copy groups for row basics]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Row templates]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
 			<destination>.content/.templates</destination>
 			<type>folder</type>
 			<uuidstructure>57959d3b-61d1-11e5-bcba-0242ac11002b</uuidstructure>
@@ -461,18 +425,26 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<source>.content/.templates/templatemodel_0001.html</source>
 			<destination>.content/.templates/templatemodel_0001.html</destination>
 			<type>containerpage</type>
-			<uuidstructure>8b62b902-61d1-11e5-bcba-0242ac11002b</uuidstructure>
-			<uuidresource>8b62b903-61d1-11e5-bcba-0242ac11002b</uuidresource>
-			<datecreated>Wed, 23 Sep 2015 09:00:31 GMT</datecreated>
+			<uuidstructure>fb947b67-562c-11e5-bfd9-0242ac11002b</uuidstructure>
+			<uuidresource>fb947b68-562c-11e5-bfd9-0242ac11002b</uuidresource>
+			<datecreated>Tue, 08 Sep 2015 13:24:50 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Description</name>
-					<value><![CDATA[Classic left and center column layout]]></value>
+					<value><![CDATA[Default page with a single empty content column plus header and footer presets.]]></value>
+				</property>
+				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Standard-Seite mit einem leeren Inhaltsbereich über die ganze Seite sowie vorbelegten Kopf- und Fußbereichen.]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Template: Left column page]]></value>
+					<value><![CDATA[Apollo template: Default page]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Template: Standardseite]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -482,18 +454,26 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<source>.content/.templates/templatemodel_0002.html</source>
 			<destination>.content/.templates/templatemodel_0002.html</destination>
 			<type>containerpage</type>
-			<uuidstructure>33cedf69-61d2-11e5-bcba-0242ac11002b</uuidstructure>
-			<uuidresource>33cedf6a-61d2-11e5-bcba-0242ac11002b</uuidresource>
-			<datecreated>Wed, 23 Sep 2015 09:05:14 GMT</datecreated>
+			<uuidstructure>8b62b902-61d1-11e5-bcba-0242ac11002b</uuidstructure>
+			<uuidresource>8b62b903-61d1-11e5-bcba-0242ac11002b</uuidresource>
+			<datecreated>Wed, 23 Sep 2015 09:00:31 GMT</datecreated>
 			<flags>0</flags>
 			<properties>
 				<property>
 					<name>Description</name>
-					<value><![CDATA[Classic right and center column layout]]></value>
+					<value><![CDATA[Layout with a large column right and a small column left.]]></value>
+				</property>
+				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Layout mit einer breiten Spalte rechts und einer schmalen Spalte links.]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Template: Right column page]]></value>
+					<value><![CDATA[Apollo template: Main column right]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Template: Hauptbereich rechts]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -503,6 +483,35 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<source>.content/.templates/templatemodel_0003.html</source>
 			<destination>.content/.templates/templatemodel_0003.html</destination>
 			<type>containerpage</type>
+			<uuidstructure>33cedf69-61d2-11e5-bcba-0242ac11002b</uuidstructure>
+			<uuidresource>33cedf6a-61d2-11e5-bcba-0242ac11002b</uuidresource>
+			<datecreated>Wed, 23 Sep 2015 09:05:14 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Layout with a large column left and a small column right.]]></value>
+				</property>
+				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Layout mit einer breiten Spalte links und einer schmalen Spalte rechts.]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo template: Main column left]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Template: Hauptbereich links]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/.templates/templatemodel_0004.html</source>
+			<destination>.content/.templates/templatemodel_0004.html</destination>
+			<type>containerpage</type>
 			<uuidstructure>dd905ca1-61d2-11e5-bcba-0242ac11002b</uuidstructure>
 			<uuidresource>dd905ca2-61d2-11e5-bcba-0242ac11002b</uuidresource>
 			<datecreated>Wed, 23 Sep 2015 09:09:59 GMT</datecreated>
@@ -510,11 +519,77 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Description</name>
-					<value><![CDATA[Classic left sidebar with navigation layout]]></value>
+					<value><![CDATA[Classic layout with a navigation in left sidebar.]]></value>
+				</property>
+				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Klassisches Layout mit linker Navigationsspalte.]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Template: Left sidebar with navigation page]]></value>
+					<value><![CDATA[Apollo template: Navigation left]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Template: Navigation links]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/.templates/templatemodel_0005.html</source>
+			<destination>.content/.templates/templatemodel_0005.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>b46d0788-605c-11e5-9199-0242ac11002b</uuidstructure>
+			<uuidresource>b46d0789-605c-11e5-9199-0242ac11002b</uuidresource>
+			<datecreated>Mon, 21 Sep 2015 12:31:38 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Default preset for the release notes pages.]]></value>
+				</property>
+				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Vorbelegung für die "Release Notes" Seiten.]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo template: Release notes page]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Template: Vorlage für die Release Notes]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>.content/.templates/templatemodel_0006.html</source>
+			<destination>.content/.templates/templatemodel_0006.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>647f47aa-6102-11e5-9eef-0242ac11002b</uuidstructure>
+			<uuidresource>647f47ab-6102-11e5-9eef-0242ac11002b</uuidresource>
+			<datecreated>Tue, 22 Sep 2015 08:17:40 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description</name>
+					<value><![CDATA[Preset for the tutorial subsite.]]></value>
+				</property>
+				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Vorbelegung für die Tutorial-Subsite.]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Apollo template: Tutorial page]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Template: Vorlage für das Tutorial]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -955,51 +1030,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<datecreated>Thu, 17 Mar 2016 19:51:11 GMT</datecreated>
 			<flags>0</flags>
 			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>.content/modelgroup/modelgroup-00001.xml</source>
-			<destination>.content/modelgroup/modelgroup-00001.xml</destination>
-			<type>modelgroup</type>
-			<uuidstructure>6fb25d7e-ed43-11e5-a02c-0242ac11002b</uuidstructure>
-			<uuidresource>6fb25d7f-ed43-11e5-a02c-0242ac11002b</uuidresource>
-			<datecreated>Fri, 18 Mar 2016 19:55:59 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Description</name>
-					<value><![CDATA[For creating page layouts]]></value>
-				</property>
-				<property type="shared">
-					<name>Description</name>
-					<value><![CDATA[For creating page layouts]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Mainsection grid 3-9 with left navigation]]></value>
-				</property>
-				<property type="shared">
-					<name>Title</name>
-					<value><![CDATA[Mainsection grid 3-9 with left navigation]]></value>
-				</property>
-				<property>
-					<name>modelgroup.base</name>
-					<value><![CDATA[2db2879c-562d-11e5-bfd9-0242ac11002b]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[true]]></value>
-				</property>
-				<property>
-					<name>template-elements</name>
-					<value><![CDATA[use_as_copy_model]]></value>
-				</property>
-				<property type="shared">
-					<name>template-elements</name>
-					<value><![CDATA[use_as_copy_model]]></value>
-				</property>
-			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
@@ -5614,63 +5644,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>apollo-demo/.content/.templates</destination>
-			<type>folder</type>
-			<uuidstructure>fb8957d4-562c-11e5-bfd9-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 08 Sep 2015 13:24:50 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/.templates/templatemodel_0001.html</source>
-			<destination>apollo-demo/.content/.templates/templatemodel_0001.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>fb947b67-562c-11e5-bfd9-0242ac11002b</uuidstructure>
-			<uuidresource>fb947b68-562c-11e5-bfd9-0242ac11002b</uuidresource>
-			<datecreated>Tue, 08 Sep 2015 13:24:50 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Description</name>
-					<value><![CDATA[Default Apollo template page with head and foot and one single center column]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Apollo template: Default page]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>apollo-demo/.content/.templates/templatemodel_0002.html</source>
-			<destination>apollo-demo/.content/.templates/templatemodel_0002.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>b46d0788-605c-11e5-9199-0242ac11002b</uuidstructure>
-			<uuidresource>b46d0789-605c-11e5-9199-0242ac11002b</uuidresource>
-			<datecreated>Mon, 21 Sep 2015 12:31:38 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Description</name>
-					<value><![CDATA[Apollo template page for the release notes pages.]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Apollo template: Release notes page]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11220,19 +11193,27 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Description</name>
-					<value><![CDATA[Generates the full demo page footer.]]></value>
+					<value><![CDATA[The footer used for the Apollo demo.]]></value>
 				</property>
 				<property type="shared">
 					<name>Description</name>
 					<value><![CDATA[Generates the default page footer.]]></value>
 				</property>
 				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Der Fußbereich für die Apollo Demo.]]></value>
+				</property>
+				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Full Demo Footer]]></value>
+					<value><![CDATA[Apollo Demo Footer]]></value>
 				</property>
 				<property type="shared">
 					<name>Title</name>
 					<value><![CDATA[Apollo Demo Footer]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Demo Fußbereich]]></value>
 				</property>
 				<property>
 					<name>modelgroup.base</name>
@@ -11241,10 +11222,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[true]]></value>
-				</property>
-				<property>
-					<name>template-elements</name>
-					<value><![CDATA[use_as_copy_model]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -11261,19 +11238,27 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Description</name>
-					<value><![CDATA[Generates the demo header with Breadcrumb navigation.]]></value>
+					<value><![CDATA[Used for most of the demo pages.]]></value>
 				</property>
 				<property type="shared">
 					<name>Description</name>
 					<value><![CDATA[Generates the default page header.]]></value>
 				</property>
 				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Wird für die meisten Seiten in der Demo verwendet.]]></value>
+				</property>
+				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Full Demo Header (with Breadcrumb)]]></value>
+					<value><![CDATA[Apollo Header with menu and breadcrumb navigation]]></value>
 				</property>
 				<property type="shared">
 					<name>Title</name>
 					<value><![CDATA[Apollo Demo Header]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Kopfbereich mit Menü und Brotkrumen-Navigation]]></value>
 				</property>
 				<property>
 					<name>modelgroup.base</name>
@@ -11298,19 +11283,27 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Description</name>
-					<value><![CDATA[Generates the demo header without Breadcrumb navigation.]]></value>
+					<value><![CDATA[No breadcrumb navigation, used on some demo pages.]]></value>
 				</property>
 				<property type="shared">
 					<name>Description</name>
 					<value><![CDATA[Generates the default page header.]]></value>
 				</property>
 				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Keine Brotkrumen-Navigation, wird auf einigen Seiten der Demo verwendet.]]></value>
+				</property>
+				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Reduced Demo Header (no Breadcrumb)]]></value>
+					<value><![CDATA[Apollo Header with menu navigation]]></value>
 				</property>
 				<property type="shared">
 					<name>Title</name>
 					<value><![CDATA[Apollo Demo Header]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Kopfbereich mit Menü-Navigation]]></value>
 				</property>
 				<property>
 					<name>modelgroup.base</name>
@@ -11335,11 +11328,15 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Description</name>
-					<value><![CDATA[Generates the much reduced tutorial header.]]></value>
+					<value><![CDATA[Generates the reduced tutorial header.]]></value>
 				</property>
 				<property type="shared">
 					<name>Description</name>
 					<value><![CDATA[Generates the release notes header.]]></value>
+				</property>
+				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Erzeugt den reduzierten Kopfbereich für das Tutorial.]]></value>
 				</property>
 				<property>
 					<name>Title</name>
@@ -11348,6 +11345,10 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<property type="shared">
 					<name>Title</name>
 					<value><![CDATA[Apollo Release Notes Header]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Kopfbereich für das Tutorial]]></value>
 				</property>
 				<property>
 					<name>modelgroup.base</name>
@@ -11379,12 +11380,20 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 					<value><![CDATA[Generates the footer for release notes.]]></value>
 				</property>
 				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Erzeugt den reduzierten Fußbereich für die Release Notes und das Tutorial.]]></value>
+				</property>
+				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Tutorial Footer]]></value>
+					<value><![CDATA[Apollo Tutorial / Release Notes Footer]]></value>
 				</property>
 				<property type="shared">
 					<name>Title</name>
 					<value><![CDATA[Apollo Release Notes Footer]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Fußbereich für Tutorial / Release Notes]]></value>
 				</property>
 				<property>
 					<name>modelgroup.base</name>
@@ -11409,11 +11418,19 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Description</name>
-					<value><![CDATA[Generates the left side navigation for the 'Element pages']]></value>
+					<value><![CDATA[Generates the left side navigation for the 'Element pages'.]]></value>
+				</property>
+				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Erzeugt die linke Navigation für die  'Element pages' Seiten.]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Apollo Element Page Navigation]]></value>
+					<value><![CDATA[Apollo 'Element Page' Navigation]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo 'Element Page' Navigation]]></value>
 				</property>
 				<property>
 					<name>search.exclude</name>
@@ -15055,42 +15072,6 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<property>
 					<name>search.exclude</name>
 					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>tutorial/.content/.templates</destination>
-			<type>folder</type>
-			<uuidstructure>647cfdb7-6102-11e5-9eef-0242ac11002b</uuidstructure>
-			<datecreated>Tue, 22 Sep 2015 08:17:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[all]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>tutorial/.content/.templates/templatemodel_0001.html</source>
-			<destination>tutorial/.content/.templates/templatemodel_0001.html</destination>
-			<type>containerpage</type>
-			<uuidstructure>647f47aa-6102-11e5-9eef-0242ac11002b</uuidstructure>
-			<uuidresource>647f47ab-6102-11e5-9eef-0242ac11002b</uuidresource>
-			<datecreated>Tue, 22 Sep 2015 08:17:40 GMT</datecreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Description</name>
-					<value><![CDATA[Classic left and center column layout with simple head and foot]]></value>
-				</property>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Apollo template: Tutorial page]]></value>
 				</property>
 			</properties>
 			<relations/>
