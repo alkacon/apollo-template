@@ -13,14 +13,14 @@
 		<import-site>/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[The OpenCms 10 Apollo template link sequence extension.]]></description>
-		<version>10.5.0</version>
+		<version>10.5.1</version>
 		<authorname><![CDATA[Alkacon Software GmbH & Co. KG]]></authorname>
 		<authoremail/>
 		<datecreated/>
 		<userinstalled/>
 		<dateinstalled/>
 		<dependencies>
-			<dependency name="org.opencms.apollo.template.core" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.core" version="10.5.1"/>
 		</dependencies>
 		<exportpoints>
 			<exportpoint uri="/system/modules/org.opencms.apollo.template.linksequence/tags/" destination="WEB-INF/tags/apollo/"/>

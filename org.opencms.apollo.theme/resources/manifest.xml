@@ -13,7 +13,7 @@
 		<import-site>/</import-site>
 		<export-mode name="reduced"/>
 		<description><![CDATA[Contains the default Apollo CSS, JavaScript and resources.]]></description>
-		<version>10.5.0</version>
+		<version>10.5.1</version>
 		<authorname><![CDATA[Alkacon Software GmbH & Co. KG]]></authorname>
 		<authoremail/>
 		<datecreated/>

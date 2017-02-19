@@ -42,34 +42,34 @@ addUserToRole 'Templator' 'DEVELOPER'
 touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 		<import-site>/sites/default/</import-site>
 		<export-mode name="reduced"/>
-		<description><![CDATA[The OpenCms 10.5.0 Apollo template demo contents.]]></description>
-		<version>10.5.0</version>
+		<description><![CDATA[The OpenCms 10.5.1 Apollo template demo contents.]]></description>
+		<version>10.5.1</version>
 		<authorname><![CDATA[Alkacon Software GmbH & Co. KG]]></authorname>
 		<authoremail/>
 		<datecreated/>
 		<userinstalled/>
 		<dateinstalled/>
 		<dependencies>
-			<dependency name="org.opencms.apollo.template.blog" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.contact" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.disqus" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.event" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.faq" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.flexible" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.imagegallery" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.job" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.core" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.linksequence" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.list" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.map" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.navigation" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.shariff" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.sitemap" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.slider" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.slidercomplex" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.tabs" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.webform" version="10.5.0"/>
-			<dependency name="org.opencms.apollo.template.imgur" version="10.5.0"/>
+			<dependency name="org.opencms.apollo.template.blog" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.contact" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.disqus" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.event" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.faq" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.flexible" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.imagegallery" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.job" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.core" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.linksequence" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.list" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.map" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.navigation" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.shariff" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.sitemap" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.slider" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.slidercomplex" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.tabs" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.webform" version="10.5.1"/>
+			<dependency name="org.opencms.apollo.template.imgur" version="10.5.1"/>
 		</dependencies>
 		<exportpoints/>
 		<resources>
@@ -14112,7 +14112,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.5.0: Release Notes for OpenCms 10.5]]></value>
+					<value><![CDATA[OpenCms 10.5.1: Release Notes for OpenCms 10.5]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14323,7 +14323,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>release/opencms-10.5.0-notes</destination>
+			<destination>release/opencms-10.5.1-notes</destination>
 			<type>folder</type>
 			<uuidstructure>75cbc29e-7993-11e6-af54-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 13 Sep 2016 09:21:32 GMT</datecreated>
@@ -14335,19 +14335,19 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[OpenCms 10.5.0]]></value>
+					<value><![CDATA[OpenCms 10.5.1]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.5.0]]></value>
+					<value><![CDATA[OpenCms 10.5.1]]></value>
 				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>release/opencms-10.5.0-notes/index.html</source>
-			<destination>release/opencms-10.5.0-notes/index.html</destination>
+			<source>release/opencms-10.5.1-notes/index.html</source>
+			<destination>release/opencms-10.5.1-notes/index.html</destination>
 			<type>containerpage</type>
 			<uuidstructure>75deae63-7993-11e6-af54-0242ac11002b</uuidstructure>
 			<uuidresource>75deae64-7993-11e6-af54-0242ac11002b</uuidresource>
@@ -14356,7 +14356,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.5.0]]></value>
+					<value><![CDATA[OpenCms 10.5.1]]></value>
 				</property>
 			</properties>
 			<relations/>
