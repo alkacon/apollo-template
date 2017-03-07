@@ -24,7 +24,7 @@ var ApolloAnalytics = function(jQ) {
 
     function addGoogleAnalytics(analyticsId) {
 
-        if (DEBUG) console.info("addGoogleAnalytics() using id: " + analyticsId);
+        if (DEBUG) console.info("addGoogleAnalytics() initializing Google analytics using id: " + analyticsId);
 
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -38,18 +38,25 @@ var ApolloAnalytics = function(jQ) {
 
     function init() {
 
-        if (DEBUG) {
-            console.info("ApolloAnalytics.init()");
-            if (Apollo.hasInfo("googleAnalyticsId")) {
-                // Goggle analytics ID is read in apollo:pageinfo tag and read to JavaScript via Apollo.init()
-                console.info("Google analytic ID is: " + Apollo.getInfo("googleAnalyticsId"));
-            } else {
-                console.info("Google analytic ID not set in OpenCms VFS!");
+        if (DEBUG) console.info("ApolloAnalytics.init()");
+        var googleAnalyticsId = null;
+        if (Apollo.hasInfo("googleAnalyticsId")) {
+            googleAnalyticsId = Apollo.getInfo("googleAnalyticsId");
+            if (! googleAnalyticsId.toUpperCase().startsWith("UA-")) {
+                googleAnalyticsId = "UA-" + googleAnalyticsId;
             }
         }
-        if (Apollo.isOnlineProject() && Apollo.hasInfo("googleAnalyticsId")) {
+        if (DEBUG) {
+            if (googleAnalyticsId != null) {
+                // Goggle analytics ID is read in apollo:pageinfo tag and stored in JavaScript via Apollo.init()
+                console.info("Google analytic ID is: " + googleAnalyticsId);
+                if (! Apollo.isOnlineProject()) console.info("Google analytics NOT initialized because not in the ONLINE project!");
+            } else {
+                console.info("Google analytic ID (property 'google.analytics') not set in OpenCms VFS!");
+            }
+        }
+        if (Apollo.isOnlineProject() && (googleAnalyticsId != null)) {
             // only enable google analytics in the online project when ID is set
-            var googleAnalyticsId = "UA-" + Apollo.getInfo("googleAnalyticsId");
             addGoogleAnalytics(googleAnalyticsId);
         }
     }
