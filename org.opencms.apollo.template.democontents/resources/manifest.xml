@@ -14136,6 +14136,23 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>release/.content/contentsections/cs_00021.xml</source>
+			<destination>release/.content/contentsections/cs_00021.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>1fdbad43-6557-11e7-bf7f-0242ac11002b</uuidstructure>
+			<uuidresource>1fdbad44-6557-11e7-bf7f-0242ac11002b</uuidresource>
+			<datecreated>Mon, 10 Jul 2017 10:04:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.5.2: Release Notes for OpenCms 10.5.2]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>release/.content/flexiblecontents</destination>
 			<type>folder</type>
 			<uuidstructure>4f9dda93-6060-11e5-9199-0242ac11002b</uuidstructure>
@@ -14179,7 +14196,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Installation]]></value>
+					<value><![CDATA[Installation notes]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14219,7 +14236,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Mailing list]]></value>
+					<value><![CDATA[The OpenCms Mailing list]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14250,6 +14267,10 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<flags>0</flags>
 			<properties>
 				<property>
+					<name>Description</name>
+					<value><![CDATA[Release notes for OpenCms, brought to you by Alkacon Software.]]></value>
+				</property>
+				<property>
 					<name>NavPos</name>
 					<value><![CDATA[20.0]]></value>
 				</property>
@@ -14259,7 +14280,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.0.0]]></value>
+					<value><![CDATA[Release notes for OpenCms 10.0.0]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14299,7 +14320,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.0.1]]></value>
+					<value><![CDATA[Release notes for OpenCms 10.0.1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14323,7 +14344,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
-			<destination>release/opencms-10.5.1-notes</destination>
+			<destination>release/opencms-10.5.0-notes</destination>
 			<type>folder</type>
 			<uuidstructure>75cbc29e-7993-11e6-af54-0242ac11002b</uuidstructure>
 			<datecreated>Tue, 13 Sep 2016 09:21:32 GMT</datecreated>
@@ -14335,19 +14356,19 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>NavText</name>
-					<value><![CDATA[OpenCms 10.5.1]]></value>
+					<value><![CDATA[OpenCms 10.5.0]]></value>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.5.1]]></value>
+					<value><![CDATA[Release notes for OpenCms 10.5.0]]></value>
 				</property>
 			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>release/opencms-10.5.1-notes/index.html</source>
-			<destination>release/opencms-10.5.1-notes/index.html</destination>
+			<source>release/opencms-10.5.0-notes/index.html</source>
+			<destination>release/opencms-10.5.0-notes/index.html</destination>
 			<type>containerpage</type>
 			<uuidstructure>75deae63-7993-11e6-af54-0242ac11002b</uuidstructure>
 			<uuidresource>75deae64-7993-11e6-af54-0242ac11002b</uuidresource>
@@ -14356,7 +14377,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.5.1]]></value>
+					<value><![CDATA[OpenCms 10.5.0]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14379,7 +14400,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.5.1]]></value>
+					<value><![CDATA[Release notes for OpenCms 10.5.1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14403,6 +14424,46 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<destination>release/opencms-10.5.2-notes</destination>
+			<type>folder</type>
+			<uuidstructure>1fc788fb-6557-11e7-bf7f-0242ac11002b</uuidstructure>
+			<datecreated>Mon, 10 Jul 2017 10:04:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[7.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[OpenCms 10.5.2]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Release notes for OpenCms 10.5.2]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>release/opencms-10.5.2-notes/index.html</source>
+			<destination>release/opencms-10.5.2-notes/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>1fd23760-6557-11e7-bf7f-0242ac11002b</uuidstructure>
+			<uuidresource>1fd23761-6557-11e7-bf7f-0242ac11002b</uuidresource>
+			<datecreated>Mon, 10 Jul 2017 10:04:12 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.5.2]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>release/opencms-8.0.0-notes</destination>
 			<type>folder</type>
 			<uuidstructure>7c26b45d-6066-11e5-9199-0242ac11002b</uuidstructure>
@@ -14419,7 +14480,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 8.0.0]]></value>
+					<value><![CDATA[Release notes for OpenCms 8.0.0]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14459,7 +14520,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 8.0.1]]></value>
+					<value><![CDATA[Release notes for OpenCms 8.0.1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14499,7 +14560,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 8.0.2]]></value>
+					<value><![CDATA[Release notes for OpenCms 8.0.2]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14539,7 +14600,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 8.0.3]]></value>
+					<value><![CDATA[Release notes for OpenCms 8.0.3]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14579,7 +14640,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 8.0.4]]></value>
+					<value><![CDATA[Release notes for OpenCms 8.0.4]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14619,7 +14680,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 8.5.0]]></value>
+					<value><![CDATA[Release notes for OpenCms 8.5.0]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14659,7 +14720,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 8.5.1]]></value>
+					<value><![CDATA[Release notes for OpenCms 8.5.1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14699,7 +14760,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 8.5.2]]></value>
+					<value><![CDATA[Release notes for OpenCms 8.5.2]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14739,7 +14800,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 9.0.0]]></value>
+					<value><![CDATA[Release notes for OpenCms 9.0.0]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14779,7 +14840,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 9.0.1]]></value>
+					<value><![CDATA[Release notes for OpenCms 9.0.1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14819,7 +14880,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 9.5.0]]></value>
+					<value><![CDATA[Release notes for OpenCms 9.5.0]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14859,7 +14920,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 9.5.1]]></value>
+					<value><![CDATA[Release notes for OpenCms 9.5.1]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14899,7 +14960,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 9.5.2]]></value>
+					<value><![CDATA[Release notes for OpenCms 9.5.2]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14939,7 +15000,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 9.5.3]]></value>
+					<value><![CDATA[Release notes for OpenCms 9.5.3]]></value>
 				</property>
 			</properties>
 			<relations/>
