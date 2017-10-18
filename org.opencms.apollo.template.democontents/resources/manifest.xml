@@ -14112,7 +14112,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[OpenCms 10.5.1: Release Notes for OpenCms 10.5]]></value>
+					<value><![CDATA[OpenCms 10.5.0: Release Notes for OpenCms 10.5]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14147,6 +14147,23 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OpenCms 10.5.2: Release Notes for OpenCms 10.5.2]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>release/.content/contentsections/cs_00022.xml</source>
+			<destination>release/.content/contentsections/cs_00022.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>66be029e-b3cf-11e7-90f4-0242ac11002b</uuidstructure>
+			<uuidresource>66be029f-b3cf-11e7-90f4-0242ac11002b</uuidresource>
+			<datecreated>Wed, 18 Oct 2017 06:41:42 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.5.3: Release Notes for OpenCms 10.5.3]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -14458,6 +14475,54 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OpenCms 10.5.2]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>release/opencms-10.5.3-notes</destination>
+			<type>folder</type>
+			<uuidstructure>3976abbb-b3cf-11e7-90f4-0242ac11002b</uuidstructure>
+			<datecreated>Wed, 18 Oct 2017 06:40:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[6.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[OpenCms 10.5.3]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Release notes for OpenCms 10.5.3]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>release/opencms-10.5.3-notes/index.html</source>
+			<destination>release/opencms-10.5.3-notes/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>39a07ae0-b3cf-11e7-90f4-0242ac11002b</uuidstructure>
+			<uuidresource>39a07ae1-b3cf-11e7-90f4-0242ac11002b</uuidresource>
+			<datecreated>Wed, 18 Oct 2017 06:40:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Vorbelegung für die "Release Notes" Seiten.]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.5.3]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Template: Vorlage für die Release Notes]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -16817,7 +16882,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Link to: /sites/default/overview/]]></value>
+					<value><![CDATA[Link to: /overview/]]></value>
 				</property>
 				<property>
 					<name>locale-available</name>
