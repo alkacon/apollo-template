@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ApolloSections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.apollo/schemas/section.xsd">
+  <ApolloSection language="en">
+    <Headline><![CDATA[! Demo Content Section]]></Headline>
+    <Text name="Text0">
+      <links/>
+      <content><![CDATA[<p>Hey, great, you just moved your first content to a page in OpenCms. Congratulations.</p>]]></content>
+    </Text>
+    <Image>
+      <Image>
+        <link type="WEAK">
+          <target><![CDATA[/sites/default/tutorial/.galleries/tutorial-images/opencms_logo.png]]></target>
+          <uuid>36fbc84e-6101-11e5-9eef-0242ac11002b</uuid>
+        </link>
+      </Image>
+      <Copyright><![CDATA[Trademark of  Alkacon Software - http://alkacon.com]]></Copyright>
+    </Image>
+    <GalleryTitle><![CDATA[! Demo Content Section]]></GalleryTitle>
+  </ApolloSection>
+</ApolloSections>

@@ -42,8 +42,8 @@ addUserToRole 'Templator' 'DEVELOPER'
 touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 		<import-site>/sites/default/</import-site>
 		<export-mode name="reduced"/>
-		<description><![CDATA[The OpenCms 10.5.1 Apollo template demo contents.]]></description>
-		<version>10.5.1</version>
+		<description><![CDATA[The OpenCms 10.5.4 Apollo template demo contents.]]></description>
+		<version>10.5.4</version>
 		<authorname><![CDATA[Alkacon Software GmbH & Co. KG]]></authorname>
 		<authoremail/>
 		<datecreated/>
@@ -14170,6 +14170,23 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>release/.content/contentsections/cs_00023.xml</source>
+			<destination>release/.content/contentsections/cs_00023.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>b12c1512-54ff-11e8-93ee-0242ac11002b</uuidstructure>
+			<uuidresource>b12c1513-54ff-11e8-93ee-0242ac11002b</uuidresource>
+			<datecreated>Fri, 11 May 2018 09:43:00 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.5.4: Release Notes for OpenCms 10.5.4]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>release/.content/flexiblecontents</destination>
 			<type>folder</type>
 			<uuidstructure>4f9dda93-6060-11e5-9199-0242ac11002b</uuidstructure>
@@ -14519,6 +14536,54 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				<property>
 					<name>Title</name>
 					<value><![CDATA[OpenCms 10.5.3]]></value>
+				</property>
+				<property>
+					<name>Title_de</name>
+					<value><![CDATA[Apollo Template: Vorlage für die Release Notes]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>release/opencms-10.5.4-notes</destination>
+			<type>folder</type>
+			<uuidstructure>799ebdec-54ff-11e8-93ee-0242ac11002b</uuidstructure>
+			<datecreated>Fri, 11 May 2018 09:41:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>NavPos</name>
+					<value><![CDATA[5.0]]></value>
+				</property>
+				<property>
+					<name>NavText</name>
+					<value><![CDATA[OpenCms 10.5.4]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Release notes for OpenCms 10.5.3]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>release/opencms-10.5.4-notes/index.html</source>
+			<destination>release/opencms-10.5.4-notes/index.html</destination>
+			<type>containerpage</type>
+			<uuidstructure>79a39ff1-54ff-11e8-93ee-0242ac11002b</uuidstructure>
+			<uuidresource>79a39ff2-54ff-11e8-93ee-0242ac11002b</uuidresource>
+			<datecreated>Fri, 11 May 2018 09:41:26 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Description_de</name>
+					<value><![CDATA[Vorbelegung für die "Release Notes" Seiten.]]></value>
+				</property>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[OpenCms 10.5.4]]></value>
 				</property>
 				<property>
 					<name>Title_de</name>
@@ -15928,6 +15993,23 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 			<accesscontrol/>
 		</file>
 		<file>
+			<source>tutorial/.content/contentsections/cs_00043.xml</source>
+			<destination>tutorial/.content/contentsections/cs_00043.xml</destination>
+			<type>a-section</type>
+			<uuidstructure>fd3be1e2-54f9-11e8-93ee-0242ac11002b</uuidstructure>
+			<uuidresource>fd3be1e3-54f9-11e8-93ee-0242ac11002b</uuidresource>
+			<datecreated>Fri, 11 May 2018 09:02:10 GMT</datecreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[! Demo Content Section]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
 			<destination>tutorial/.content/linksequences</destination>
 			<type>folder</type>
 			<uuidstructure>361245ec-afd9-11e6-a18e-0242ac11002b</uuidstructure>
@@ -16093,7 +16175,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:800,h:600]]></value>
+					<value><![CDATA[w:1041,h:622]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -16114,7 +16196,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:800,h:600]]></value>
+					<value><![CDATA[w:1077,h:634]]></value>
 				</property>
 			</properties>
 			<relations/>
@@ -16135,7 +16217,7 @@ touchResource '/system/modules/org.opencms.apollo/formatters']]></import-script>
 				</property>
 				<property type="shared">
 					<name>image.size</name>
-					<value><![CDATA[w:800,h:600]]></value>
+					<value><![CDATA[w:1067,h:584]]></value>
 				</property>
 			</properties>
 			<relations/>
